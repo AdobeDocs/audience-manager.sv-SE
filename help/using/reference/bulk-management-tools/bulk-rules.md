@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Skapa eller uppdatera dragregler och segmentregler
 uuid: bdd5f8f1-bb83-4844-b681-654e45ace3e1
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 ---
 
@@ -23,7 +23,7 @@ Kalkylbladen för att skapa och uppdatera accepterar ett traitRule-huvud som gö
 
 >[!NOTE]
 >
->De [!UICONTROL Bulk Management Tools] stöds inte *av* [!DNL Audience Manager]. Det här verktyget finns endast till för att underlätta och för att underlätta. För större förändringar rekommenderar vi att du arbetar med API:erna [för](../../api/rest-api-main/aam-api-getting-started.md) Audience Manager i stället. [RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
 
 ## Arbeta med varumärkesregler {#trait-rules}
 
