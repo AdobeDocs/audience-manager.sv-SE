@@ -1,0 +1,18 @@
+---
+description: Du kan skapa egna trait-regler med kodredigeraren i Trait Builder. Hitta kodredigeraren i Traits > Add New > Rule-based > Trait Expression och växla till Code View. Audience Manager har stöd för alla tillgängliga konstruktioner för reguljära uttryck som refereras i Java Regular Expression Class Pattern. Du kan validera alla reguljära uttryck direkt i uttrycksverktyget.
+seo-description: Du kan skapa egna trait-regler med kodredigeraren i Trait Builder. Hitta kodredigeraren i Traits > Add New > Rule-based > Trait Expression och växla till Code View. Audience Manager har stöd för alla tillgängliga konstruktioner för reguljära uttryck som refereras i Java Regular Expression Class Pattern. Du kan validera alla reguljära uttryck direkt i uttrycksverktyget.
+seo-title: Använda reguljära uttryck i Trait Builder
+solution: Audience Manager
+title: Använda reguljära uttryck i Trait Builder
+uuid: c263dc26-a920-48b8-b76a-6d82e7836196
+translation-type: tm+mt
+source-git-commit: 6169e8aefc4c215c83d6229be7378f90453f19e9
+
+---
+
+
+# Använda reguljära uttryck i Trait Builder {#using-regular-expressions-in-trait-builder}
+
+Du kan skapa egna trait-regler med [!UICONTROL Trait Builder] kodredigeraren. Hitta kodredigeraren i [!UICONTROL Traits > Add New > Rule-based > Trait Expression] och växla till [!UICONTROL Code View]. Audience Manager har stöd för alla tillgängliga konstruktioner för reguljära uttryck som refereras i [!DNL Java Regular Expression Class Pattern]. Du kan validera alla reguljära uttryck direkt i [!DNL Expression Builder].
+
+Se även [Java Regular Expression Class Patterns](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html).
