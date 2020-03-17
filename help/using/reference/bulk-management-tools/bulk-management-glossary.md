@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Grupphanteringsverktyg - ordlista
 uuid: 4658a6bc-9515-4d31-9715-0084760b0cea
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 ---
 
@@ -23,7 +23,7 @@ Kolumnrubriketiketter har definierats.
 
 >[!NOTE]
 >
->De [!UICONTROL Bulk Management Tools] stöds inte *av* [!DNL Audience Manager]. Det här verktyget finns endast till för att underlätta och för att underlätta. För större förändringar rekommenderar vi att du arbetar med API:erna [för](../../api/rest-api-main/aam-api-getting-started.md) Audience Manager i stället. [RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
 
 <table id="table_2C2BC2FB3EFC443C9A5AE18EFC6FABFD"> 
  <thead> 
