@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Felsökningstips för verktygen för masshantering
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 translation-type: tm+mt
-source-git-commit: 994b12fd442a08da3b606dabca1f9382a7bd6f74
+source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 ---
 
@@ -25,7 +25,7 @@ Vad du ska göra när kalkylbladen returnerar ett fel eller när gruppbegäran m
 
 >[!NOTE]
 >
->De [!UICONTROL Bulk Management Tools] stöds inte *av* [!DNL Audience Manager]. Det här verktyget finns endast till för att underlätta och för att underlätta. För större förändringar rekommenderar vi att du arbetar med API:erna [för](../../api/rest-api-main/aam-api-getting-started.md) Audience Manager i stället. [RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
 
 Faktorer som hög nätverkstrafik, serveranvändning och stora datauppsättningar kan göra att en gruppbegäran misslyckas eller tar slut. Om ett problem uppstår slutar kalkylbladet att skriva data och ett felmeddelande visas. När detta händer bör du:
 
