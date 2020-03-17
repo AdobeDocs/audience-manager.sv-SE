@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Komma igång med masshantering
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
-source-git-commit: ee31681e5805bff274b4051a354886fcda0599ff
+source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 ---
 
@@ -24,7 +24,7 @@ c_bulk_start.xml
 
 >[!NOTE]
 >
->De [!UICONTROL Bulk Management Tools] stöds inte *av* [!DNL Audience Manager]. Det här verktyget finns endast till för att underlätta och för att underlätta. För större förändringar rekommenderar vi att du arbetar med API:erna [för](../../api/rest-api-main/aam-api-getting-started.md) Audience Manager i stället. [RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
 
 ## Översikt {#overview}
 
@@ -32,7 +32,7 @@ Den här funktionen använder ett Microsoft Excel-kalkylblad med makron som gör
 
 ## Hämta {#download}
 
-Ladda ned det senaste kalkylbladet **[här](assets/BAAAM_V2_20191205.xlsm)**.
+Ladda ned det senaste kalkylbladet **[här](assets/BAAAM_V2_20200311.xlsm)**.
 
 ## Förutsättningar {#prereqs}
 
