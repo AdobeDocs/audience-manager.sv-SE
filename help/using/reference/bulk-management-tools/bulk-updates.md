@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Massuppdateringar
 uuid: 22f1badd-a274-4d3e-9957-a24bf8c1d0dc
 translation-type: tm+mt
-source-git-commit: 30d4cec4502a2cf8b217816ea4ae62eb1b22f641
+source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 ---
 
@@ -24,22 +24,22 @@ t_bulk_updates.xml
 
 >[!NOTE]
 >
->De [!UICONTROL Bulk Management Tools] stöds inte *av* [!DNL Audience Manager]. Det här verktyget finns endast till för att underlätta och för att underlätta. För större förändringar rekommenderar vi att du arbetar med API:erna [för](../../api/rest-api-main/aam-api-getting-started.md) Audience Manager i stället. [RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
 
 Om du vill göra större uppdateringar öppnar du [!UICONTROL Bulk Management Tools] kalkylbladet och:
 
 1. Klicka på **[!UICONTROL Headers]** fliken och kopiera uppdateringshuvuden för objektet som du vill redigera.
-1. Klicka på **[!UICONTROL Update]** fliken.
-1. Klistra in uppdateringshuvuden i den första raden i uppdateringskalkylbladet. Observera följande:
+2. Klicka på **[!UICONTROL Update]** fliken.
+3. Klistra in uppdateringshuvuden i den första raden i uppdateringskalkylbladet. Observera följande:
 
    * När du uppdaterar en mapp krävs alla sidhuvuden.
    * När du uppdaterar segment eller egenskaper behöver du bara segmentets ID (SID) och rubrikelementet som behöver ändras. Ta bort rubriker som inte används.
 
-1. Klistra in eller skriv in data som du vill ändra i en motsvarande kolumn baserat på rubriketiketten.
-1. Klicka på en uppdateringsknapp som matchar det objekt du uppdaterar i verktygsfältet för kalkylblad.
+4. Klistra in eller skriv in data som du vill ändra i en motsvarande kolumn baserat på rubriketiketten.
+5. Klicka på en uppdateringsknapp som matchar det objekt du uppdaterar i verktygsfältet för kalkylblad.
 Den här åtgärden öppnar [!UICONTROL Account Information] dialogrutan.
 
-1. Ange nödvändig [inloggningsinformation](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) och klicka på **[!UICONTROL Submit]**.
+6. Ange nödvändig [inloggningsinformation](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) och klicka på **[!UICONTROL Submit]**.
 
    Kalkylbladet skapar en [!UICONTROL Results] kolumn. Kolumnen returnerar JSON-svaret för en slutförd åtgärd. [!UICONTROL Results] Se exempel på [REST API](../../api/rest-api-main/rest-api-main.md) . Innan du anger data bör kalkylbladet för bulkuppdatering se ut ungefär så här:
 
