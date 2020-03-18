@@ -5,7 +5,7 @@ seo-title: Krav och överväganden för personbaserade destinationer
 solution: Audience Manager
 title: Förutsättningar och överväganden
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: c605e04489ad444193e1e884ee6a3b05f437b9f2
 
 ---
 
@@ -32,11 +32,23 @@ Kontakta din Adobe-representant för att få tillgång till denna premiumfunktio
 
 Innan du kan använda [!DNL People-Based Destinations] för att skicka dina egna målgruppssegment till [!DNL Facebook]kontrollerar du att du uppfyller följande krav:
 
-1. Ditt [!DNL Facebook] användarkonto måste ha behörigheten **Hantera kampanjer** aktiverad för annonskontot som du tänker använda.
+1. Ditt [!DNL Facebook] användarkonto måste ha behörigheten **Hantera kampanjer** aktiverad för det annonskonto som du tänker använda.
 2. Lägg till **Adobe Experience Cloud** -företagskontot som annonspartner i ert [!DNL Facebook Ad Account]företag. Använd `business ID=206617933627973`. Mer information finns i [Lägg till partners i din Business Manager](https://www.facebook.com/business/help/1717412048538897) .
    >[!IMPORTANT]
    > När du konfigurerar behörigheter för Adobe Experience Cloud måste du aktivera behörigheten **Hantera kampanjer** . Detta krävs för [!DNL People-Based Destinations] integreringen.
 3. Läs och signera [!DNL Facebook Custom Audiences] användarvillkoren. För att göra detta, gå till `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`, var `accountID` är din [!DNL Facebook Ad Account ID].
+
+### [!DNL LinkedIn]
+
+>[!IMPORTANT]
+>
+> Integrationen [!DNL People-Based Destinations] med [!DNL LinkedIn] är för närvarande under betatestningsfasen och är endast tillgänglig för ett begränsat antal kunder.
+> 
+> När betatestningen är klar är integreringen tillgänglig för alla Audience Manager-kunder som har anmält sig till [!DNL People-Based Destinations].
+
+Innan du kan använda [!DNL People-Based Destinations] för att skicka dina egna målgruppssegment till [!DNL LinkedIn], måste du se till att ditt [!DNL LinkedIn Campaign Manager] konto har den [!DNL Creative Manager] eller högre behörighetsnivån.
+
+Mer information om hur du redigerar [!DNL LinkedIn Campaign Manager] användarbehörigheter finns i [Lägga till, redigera och ta bort användarbehörigheter på annonskonton](https://www.linkedin.com/help/lms/answer/5753)
 
 ## Datainhämtning {#data-onboarding}
 
