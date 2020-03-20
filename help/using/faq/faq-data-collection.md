@@ -5,8 +5,9 @@ seo-title: Vanliga frågor om datainsamling och produktintegrering
 solution: Audience Manager
 title: Vanliga frågor om datainsamling och produktintegrering
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
+keywords: SFTP; SFTP address; STFP IP address; FTP address
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: d221890d2a80cd557a6968d3382ee8842fea9aef
 
 ---
 
@@ -39,7 +40,7 @@ Tyvärr kan vi inte. Dessa IP-adresser tilldelas dynamiskt, per geografisk regio
 
 <br> 
 
-**Kan du ge mig en IP-adress som jag kan vitlista för din inkommande och utgående FTP-server?**
+**Kan du ge mig en IP-adress som jag kan vitlista för din inkommande och utgående sFTP-server?**
 
 Ja, se nedan.
 
@@ -81,7 +82,7 @@ Detta inträffar vanligtvis när:
 
 **Vilka versioner av[!DNL Analytics]fungerar med[!UICONTROL DIL]?**
 
-Du måste använda [!DNL Analytics] version 20.2 (eller senare) och biblioteksversion 3.5.2 (eller senare) för att arbeta med [!DNL Adobe AppMeasurement AS] [!UICONTROL DIL]. Om du inte känner till din [!DNL Analytics] eller [!DNL AppMeasurement] version kan du kontrollera vilket [!DNL Analytics] samtal som görs från sidan. Versionsinformation visas nedan:
+Du måste använda [!DNL Analytics] version 20.2 (eller senare) och biblioteksversion 3.5.2 (eller senare) för att arbeta med [!DNL Adobe AppMeasurement AS] [!UICONTROL DIL]. Om du inte känner till din [!DNL Analytics] eller [!DNL AppMeasurement] version kontrollerar du det [!DNL Analytics] samtal som görs från sidan. Versionsinformation visas nedan:
 
 Den här kunden använder [!DNL Analytics] version 24.4:
 
