@@ -29,8 +29,7 @@ Information om andra godkända filinnehållsformat finns i [Anpassade partnerint
 >
 >Vi har en gräns på 200 rader som vi kan behandla för varje användar-ID som skickas i den inkommande datafilen. Om du till exempel skickar 300 rader för ett användar-ID behålls de första 200 raderna och de ytterligare 100 raderna tas bort. I exemplet nedan är du bra eftersom du skickar tre rader vardera för användar-ID 1 och användar-ID 2. Vi har ingen begränsning för hur många traits- eller key-value-par du får med på en rad.
 >
->
-```
+>```
 ><user ID1><TAB><trait ID>,<trait ID>,<trait ID>
 ><user ID1><TAB><trait ID>,<trait ID>,<trait ID>
 ><user ID1><TAB><trait ID>,<trait ID>,<trait ID>
