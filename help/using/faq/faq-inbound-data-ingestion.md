@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Vanliga frågor och svar om inkommande kunddata
 uuid: 491e9ec1-4731-46a8-86e7-d8c613e6cedc
 translation-type: tm+mt
-source-git-commit: 6b9afa7c53f5bc2738f185440160f62a87e0bda1
+source-git-commit: 187874fb5d0c4363f771297766f3c4bc9d967c9b
 
 ---
 
@@ -16,53 +16,42 @@ source-git-commit: 6b9afa7c53f5bc2738f185440160f62a87e0bda1
 
 Frågor och svar om hur man lägger in offlinedata i Audience Manager.
 
-<br> 
-
-<!-- 
-
-c_inbound_crm_data_ingestion.xml
-
- -->
+ 
 
 **Kan du sammanfatta introduktionsprocessen?**
 
-Startprocessen består av två kärnkomponenter som beskrivs i [Batch Data Transfer Process Descripted](../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md). Dessa omfattar:
+Startprocessen består av två steg som beskrivs i [Skicka batchdata till Audience Manager-översikt](../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md):
 
-* ID-synkronisering
-* Inkommande datafil ( [!DNL .sync] fil eller [!DNL .overwrite] fil)
+* Steg 1: synkronisera användar-ID;
+* Steg 2: skapa och överföra den inkommande datafilen enligt kraven för filformat.
 
-<!-- 
-
-Removed the Data Translation File bullet from the list above.
-
- -->
-
-Nedan finns en lista med frågor och svar som du kan ha nytta av när du har granskat dokumentationen.
-
->[!NOTE]
->
->Exemplen i det här avsnittet är förenklade eller förkortade för att ge en kort presentation. Mer information om filformat och syntax finns i dokumentationen för inkommande datainmatning.
-
-<br> 
+ 
 
 **Kan du sammanfatta distributionsprocessen?**
 
 Vi rekommenderar följande:
 
-* Samarbeta med din dataleverantör för att formatera den dagliga inkommande datafilen enligt [!DNL Adobe] specifikationerna.
-* Överför en testdatafil till [!DNL Adobe] för formatverifiering.
+* Samarbeta med din dataleverantör för att formatera den dagliga inkommande datafilen enligt Adobes specifikationer. Följande dokumentation innehåller information om namngivning och syntaxkrav:
+   * [Namn- och innehållskrav för ID-synkroniseringsfiler](../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
+   * [Innehåll i inkommande datafil: Syntax, ogiltiga tecken, variabler och exempel](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
+   * [Krav för Amazon S3-namn och filstorlek för inkommande datafiler](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+* Samarbeta med din [!DNL Adobe] konsult för att överföra en testdatafil till [!DNL Adobe] för formatverifiering.
 * Samarbeta med din [!DNL Adobe] konsult och ta fram en taxonomi som passar för att tolka innehållet i datafilen.
 * I staging-/utvecklingsmiljön bekräftar du att ID-synkroniseringen är konfigurerad för att hämta dataleverantörens besökar-ID och överföra det till [!DNL Audience Manager] servrarna i realtid.
 * Distribuera DIL/ID-synkronisering till produktion. Synkroniseringen av ID:n kommer redan att konfigureras som en modul i DIL-koden av din Adobe-konsult.
 * Överför produktionsdatafiler till [!DNL Audience Manager]. Med tanke på beroendena av ID-synkroniseringsmappningar kan det vara bra att börja överföra data upp till en vecka efter distributionen av produktionskoden, men du kan börja överföra datafilerna så fort koden går till produktion.
 
-<br> 
+ 
 
 **Vilket FTP-läge ska jag använda för att överföra komprimerade eller krypterade filer?**
 
 Se [Filkomprimering för inkommande dataöverföringsfiler](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md).
 
-<br> 
+>[!WARNING]
+>
+>Vi fasar ut stödet för FTP-konfigurationer. Inläsning av inkommande datafiler stöds fortfarande i befintliga FTP-integreringar, men vi rekommenderar starkt att du använder Amazon S3 för att lägga in offlinedata för nya integreringar. Mer information finns i [Krav för namn och filstorlek för Amazon S3 för inkommande datafiler](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) .
+
+ 
 
 **Kan jag överföra en inkommande datafil (filen[!DNL .sync]eller[!DNL .overwrite]) innan jag driftsätter[!DNL Audience Manager]-koden i produktionen?**
 
@@ -138,25 +127,25 @@ Consider the following use cases in which the data provider is not configured to
 
 [!DNL Audience Manager] söker efter och bearbetar filer flera gånger under dagen. Överför dina data när du är redo.
 
-<br> 
+ 
 
 **Hur lång tid tar det innan data från en överförd fil är tillgängliga för målinriktning?**
 
 Data är tillgängliga för målinriktning efter 48 timmar. Tolka inte heller e-postmeddelandet om att överföringen har slutförts som ett uttalande om att data är tillgängliga. Detta innebär bara att [!DNL Audience Manager] har hämtat filen och slutfört det första steget i bearbetningen.
 
-<br> 
+ 
 
 **Hur ofta ska jag skicka filer och ska de vara fullständiga eller inkrementella?**
 
 Det bästa är att skicka en inkrementell fil en gång om dagen för nya besökare och för besökare vars data har ändrats. Många [!DNL Audience Manager] kunder skickar en fullständig fil en gång i månaden. Dessa filintervall och steg är dock flexibla. Du bör skicka data i steg och vid tidpunkter som passar dig.
 
-<br> 
+ 
 
 **Hur länge behåller Audience Manager mina filer på servern?**
 
 FTP-filer tas bort efter att de har bearbetats. [!DNL S3] filer tas bort efter 30 dagar. Filer som inte kan bearbetas på grund av format, syntax eller andra fel tas bort. Se även Frågor och svar om [sekretess och datalagring](../faq/faq-privacy.md).
 
-<br> 
+ 
 
 **Vad är skillnaden mellan fullständiga och inkrementella filer?**
 
@@ -170,46 +159,22 @@ FTP-filer tas bort efter att de har bearbetats. [!DNL S3] filer tas bort efter 3
 
 I följande exempel visas hur dessa filtyper påverkar lagrade besökarprofiler.
 
-<table id="table_CE43B49508384ABF8B25FA8A8FFE5362"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Användningsfall </th> 
-   <th colname="col2" class="entry"> Beskrivning </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p><b>Inkrementell och fullständig</b> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_E89301D815174D45B9B238F2CDE6CCC6"> 
-      <li id="li_FA841FEEC0534AD59D1AB61DD5B9DEC4">Dag 1 - <code> .sync</code> filinnehåll: <code> visitor123 = a,b,c</code> </li> 
-      <li id="li_0E1A57B04D26481C8C41EBA63ACBEFE0">Dag 2- <code> .overwrite</code> filens innehåll: <code> visitor123 = c,d,e</code> </li> 
-      <li id="li_497A5604AD9A49A2ADE548C7CE158F0E"> Dag 3 besökarprofil-ID 123 innehåller <code> c,d,e </code> </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Endast inkrementell</b> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_8271C9796BD040E4B8DC64DCE4FE2AD3"> 
-      <li id="li_347959BDE83549F794E6661C95097891">Dag 1 - <code> .sync</code> filinnehåll: <code> visitor123 = a,b,c </code> </li> 
-      <li id="li_B25D96526DE94171A3A5DC8DB7A19415">Dag 2- <code> .sync</code> filens innehåll: <code> visitor123 = c,d,e</code> </li> 
-      <li id="li_6E17809D49C74F4991B0B445469055E6">Dag 3 besökarprofil-ID 123 innehåller <code> a,b,c,d,e</code> </li> 
-     </ul> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Användningsfall | Beskrivning |
+|---|---|
+| Inkrementell och fullständig | <ul><li>Dag 1 - `.sync` filinnehåll: `visitor123 = a,b,c`</li><li>Dag 2- `.overwrite` filens innehåll: `visitor123 = c,d,e`</li><li>Innehåll i profil-ID 123 för besökare dag 3: `c,d,e`</li></ul> |
+| Endast inkrementell | <ul><li>Dag 1 - `.sync` filinnehåll: `visitor123 = a,b,c`</li><li>Dag 2- `.sync` filens innehåll: `visitor123 = c,d,e`</li><li>Innehåll i profil-ID 123 för besökare dag 3: `a,b,c,d,e`</li></ul> |
 
 Mer information om fullständiga och inkrementella filtyper finns i:
 
 * [Krav för Amazon S3-namn och filstorlek för inkommande data..](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
-<br> 
+ 
 
 **Vad händer om jag skickar in en fil med ID:n för besökare som aldrig har utfört synkroniseringen av ID:n på sidan?**
 
-Under bearbetningen hoppar [!DNL Audience Manager] bara över den posten och går vidare till nästa. Om ett DPID (Data Provider ID) har ställts in som ett DPID för flera enheter, sparas data som hämtas innan en ID-synkronisering och är tillgängliga för användning kort efter att ID-synkroniseringen görs.
+Under bearbetningen [!DNL Audience Manager] hoppar över den posten och går vidare till nästa. Om ett [DPID (Data Provider ID)](../reference/ids-in-aam.md) ställs in som ett DPID för flera enheter, sparas data som hämtas innan en ID-synkronisering sparas och är tillgängliga för användning kort efter att ID-synkroniseringen görs.
 
-<br> 
+ 
 
 **Vad är tidsstämpeln, vad är den till och kan du ge ett exempel?**
 
@@ -217,20 +182,19 @@ Tidsstämplar används för loggning och registrering. De krävs av den syntax s
 
 * [Amazon S3-namnkrav för inkommande datafiler](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
-
-<br> 
+ 
 
 **Vad är ett Data Provider ID (DPID) och hur får jag det?**
 
-Din Adobe-konsult kommer att tilldela din datakälla ett tresiffrigt eller fyrsiffrigt DPID. Detta ID är unikt och ändras inte.
+Din Adobe-konsult kommer att tilldela din datakälla ett tresiffrigt eller fyrsiffrigt [DPID (Data Provider ID)](../reference/ids-in-aam.md) . Detta ID är unikt och ändras inte.
 
-<br> 
+ 
 
 **Hur stora kan de dagliga datafilerna vara?**
 
 Se [Filkomprimering för inkommande dataöverföringsfiler](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md).
 
-<br> 
+ 
 
 **Har Audience Manager stöd för filkomprimering?**
 
@@ -239,38 +203,39 @@ Ja, se:
 * [Filkomprimering för inkommande dataöverföringsfiler](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
 * [Amazon S3-namnkrav för inkommande datafiler](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
-
-<br> 
+ 
 
 **Den primära nyckeln i min datakälldatabas är en e-postadress. Betraktar det personligt identifierbar information?**
 
-Ja. [!DNL Audience Manager] lagrar inte e-postadresser i vår databas. Besökarna bör tilldelas ett slumpmässigt ID eller en ensidig version av e-postadressen innan ID-synkroniseringen initieras.
+Ja. [!DNL Audience Manager] sparar inte e-postadresser i databasen. Besökarna bör tilldelas ett slumpmässigt genererat ID eller en ensidig version av e-postadressen innan ID-synkroniseringen initieras.
 
-<br> 
+ 
 
-**Är innehållet i datafilen skiftlägeskänsligt? Vad sägs om ID-synkronisering?**
+**Är innehållet i datafilen skiftlägeskänsligt? Vad sägs om ID-synkroniseringen?**
 
-Det finns två grundläggande komponenter i en datafil: Ett användar-ID (se Användar-ID i [Filvariabler definierade](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#file-variables-defined)) och profildata, vanligtvis i form av nyckelvärdepar eller koder. Användar-ID:t är skiftlägeskänsligt. I allmänhet är profil- eller nyckelvärdesdata inte skiftlägeskänsliga.
+Det finns två grundläggande komponenter i en datafil: A [!UICONTROL User ID] (se [!UICONTROL User ID] i [Definierade](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#file-variables-defined)filvariabler) och profildata, vanligtvis i form av nyckelvärdepar eller koder. Det [!UICONTROL User ID] är skiftlägeskänsligt. I allmänhet är profil- eller nyckelvärdesdata inte skiftlägeskänsliga.
 
-<br> 
+ 
 
 **Ska jag använda FTP eller[!DNL Amazon S3]för att överföra filer?**
 
 Vi rekommenderar [!DNL Amazon S3] eftersom processen är enklare. [!DNL Audience Manager] FTP-filer överförs till [!DNL S3] alla andra, så processen blir smidigare om du släpper filerna på [!DNL Amazon S3] dig själv. Dessutom delar kunder som överför samtidigt till FTP FTP FTP bandbredden, så de förväntar sig lägre överföringshastigheter. [!DNL Amazon S3] replikeras och distribueras också, så den är vanligtvis säkrare och mer tillförlitlig än en FTP-server. Mer information finns i [Om Amazon S3](../reference/amazon-s3.md).
 
-<br> 
+>[!WARNING]
+>
+>Vi fasar ut stödet för FTP-konfigurationer. Inläsning av inkommande datafiler stöds fortfarande i befintliga FTP-integreringar, men vi rekommenderar starkt att du använder Amazon S3 för att lägga in offlinedata för nya integreringar. Mer information finns i [Krav för namn och filstorlek för Amazon S3 för inkommande datafiler](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) .
+
+ 
 
 **Hur bearbetar Audience Manager inkommande filer?**
 
 [!DNL Audience Manager] används [!DNL Amazon Simple Queue Service (SQS)] för inkommande databearbetning. Så här fungerar det:
 
 1. [!DNL Audience Manager] kunderna överför sina inkommande data till en [!DNL Amazon S3] bucket.
+1. Data kommer in i [!DNL Amazon SQS] kön och väntar på att bearbetas av [!DNL Audience Manager].
+1. [!DNL Audience Manager] läser upp till 119000 poster från [!DNL Amazon SQS] kön och delar upp dem i upp till 3 grupper. Filer i varje grupp bearbetas samtidigt.
 
-2. Data kommer in i [!DNL Amazon SQS] kön och väntar på att bearbetas av [!DNL Audience Manager].
-
-3. [!DNL Audience Manager] läser upp till 119000 poster från [!DNL Amazon SQS] kön och delar upp dem i upp till 3 grupper. Filer i varje grupp bearbetas samtidigt.
-
-<br> 
+ 
 
 **Jag måste överföra flera filer samtidigt. Bearbetas filerna samtidigt?**
 
