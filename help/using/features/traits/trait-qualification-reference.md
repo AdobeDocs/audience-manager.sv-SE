@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Referens för dragningskvalitet
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 translation-type: tm+mt
-source-git-commit: 40ac91af26ed4a95492dde872288dc2e9059cdf9
+source-git-commit: ceda75d2bc57aa164cb048c20e3fcff33000cddb
 
 ---
 
@@ -30,9 +30,17 @@ Trait-kvalificering, eller trait-implementering, behandlas annorlunda i Audience
 
 ![unique-trait-realization](assets/trait-graph.png)
 
-Antalet [!UICONTROL Unique Trait Realizations] besökare som har lagt till egenskapen i sin profil, inom olika tidsintervall.
+Beroende på vilken typ av resultat du vill att diagrammet ska visa (filtreras efter [!UICONTROL Device ID] eller [!UICONTORL enhets-ID]) har måtten olika innebörd:
 
-Värdet anger [!UICONTROL Total Trait Population] antalet besökare som har den här egenskapen i sin profil.
+Vid filtrering av resultaten med [!UICONTROL Device ID]:
+
+* Antalet [!UICONTROL Unique Trait Realizations] besökare på den anonyma enheten som har lagt till egenskapen i sin profil, inom olika tidsintervall.
+* Det totala [!UICONTROL Total Trait Population] antalet anonyma enhetsbesökare som har egenskapen i sin profil räknas.
+
+Vid filtrering av resultaten med [!UICONTROL Cross-Device ID]:
+
+* Antalet [!UICONTROL Unique Trait Realizations] autentiserade besökare som har lagt till egenskapen i sin profil, inom olika tidsintervall.
+* Det totala [!UICONTROL Total Trait Population] antalet autentiserade besökare som har den här egenskapen i sin profil räknas.
 
 Tänk på siffrorna på det här sättet. I bilden ovan representerar 90 173 antalet aktiva enheter från vyn [Trait Details](../../features/traits/trait-details-page.md) (Trait Details) som besökte dina egenskaper i går. Värdet [!UICONTROL Total Trait Population] på 55 757 representerar det antal användare som för närvarande är kvalificerade för den här egenskapen. Bilden är avsedd att visa det totala antalet användare som kan användas för segmentering/målinriktning. [!UICONTROL Total Trait Population] Vanligtvis ingår användarna i ett spår i 120 dagar.
 
@@ -42,7 +50,7 @@ För att ytterligare driva hem poängen skulle de dyka upp i morgondagens [!UICO
 
 Alla förändringar i intäktsrealisationen återspeglas i segmentpopulationerna.
 
-## Population av realtidssegment och total segmentpopulation {#real-time-segment}
+## Population av segment i realtid och total segmentpopulation {#real-time-segment}
 
 ![unique-trait-realization](assets/segment-graph.png)
 
