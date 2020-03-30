@@ -7,7 +7,7 @@ title: Hantera abonnemang på dataflöden
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: b1f4fe1180001a92577adc9e55f2697f3285ea46
 
 ---
 
@@ -50,6 +50,27 @@ När du har prenumererat på en datafeed:
 * Kontrollera prenumerationen genom att kontrollera din [!UICONTROL Traits] mapp. Mer information finns i [Lagring för prenumererade datafeeds](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee).
 
 * Granska fakturerings- och betalningsdokumentationen. Se de relaterade länkarna nedan.
+
+### Bästa praxis {#best-practices}
+
+Här är en uppsättning metodtips som vi rekommenderar att du följer när du arbetar med [!UICONTROL Audience Marketplace]:
+
+När du utforskar nya datauppsättningar från tredje part och från andra leverantörer [!UICONTROL Audience Marketplace]är det första steget vi rekommenderar att du aktiverar dataflöden för [!UICONTROL Segments & Overlap]. På så sätt kan användarna utforska data genom att bygga segment för att utvärdera målgruppens storlek och köra överlappningsrapporter för att få inledande målgruppsinsikter. De flesta dataleverantörer erbjuder denna användning kostnadsfritt, så du kan utföra analysen utan extra kostnad.
+
+När du kör överlappningsrapporter bör du följa dessa metodtips för att vara säker på att du får användbara resultat.
+
+1. Se till att de överlappande datauppsättningarna är lika vad gäller datatyp och insamlingsmetoder, till exempel:
+   * Besöksgeografi
+   * Cookie jämfört med Mobile ID
+   * Fönstret Lookback
+   * Offline- kontra onlineaktivitet
+   * Den frekvens med vilken dataleverantören uppdaterar data
+
+1. Överlappningen kan växa något över tiden, så se till att du tillåter upp till 30 dagar att skicka innan du kör överlappningsrapporter så att data kan synkroniseras.
+1. Överlappningen kan öka om ni använder data från en dataleverantör i flera marknadsföringskampanjer.
+och initiativ. Detta ger fler möjligheter för användare från de två datauppsättningarna att synkronisera.
+1. Det finns ingen garanti för att datauppsättningarna kommer att överlappa varandra. För att en överlappning ska vara giltig måste en användare från kundens datauppsättning kopplas till dataproviderns datauppsättning under rapportens tidsram. Om kundens mediedata inte delades ut till användarna i dataleverantörens datauppsättning kommer det aldrig att finnas någon överlappning.
+1. Tänk inte på låg överlappning som något dåligt. Utnyttja den låga överlappningen för potentiella kunder och engagera nya användare.
 
 ## Prenumerera på en privat datafeed {#subscript-private-data-feed}
 
