@@ -7,7 +7,7 @@ title: Användningsgränser
 keywords: ID mapping, ID mappings, cookie mappings
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 translation-type: tm+mt
-source-git-commit: d893998e9e59dbce64195a167e267c6f7ed16f90
+source-git-commit: f9f201824accdde18efafa0a8c389af48423534d
 
 ---
 
@@ -18,12 +18,12 @@ Audience Manager sätter en maxgräns för antalet egenskaper, segment, mål och
 
 ## Gränser för ID-mappning {#id-mapping-limits}
 
-Tabellen nedan visar gränserna för [ID-mappning](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) för enhets-ID:n. När ett ID når någon av gränserna nedan lägger Audience Manager till nya ID-mappningar som baseras på en [!DNL FIFO] (först in, först ut) logik genom att ta bort den äldsta lagrade ID-mappningen och lägger till den nya. Mer information om vilka ID:n som stöds av Audience Manager finns i [Index of ID](../../reference/ids-in-aam.md) i Audience Manager.
+Tabellen nedan visar gränserna för [ID-mappning](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) för enhets-ID:n. När ett ID når någon av gränserna nedan lägger Audience Manager till nya ID-mappningar som baseras på en [!DNL FIFO] (först in, först ut) logik genom att ta bort den äldsta lagrade ID-mappningen och lägga till den nya. Mer information om vilka ID:n som stöds av Audience Manager finns i [Index of ID](../../reference/ids-in-aam.md) i Audience Manager.
 
 | ID-mappning | Maximal gräns |
 |-----------|-------------- |
-| Enhetens annonserings-ID (DAID) till CRM-ID (Cross-device ID) | 100 ID för enhetsannonsering (DAID) till 1 CRM ID (Cross-device ID) |
-| CRM-ID (Cross-device ID) till enhetsanpassnings-ID (DAID) | 10 CRM-ID:n (Cross-device ID) till 1 DAID (Device Advertising ID) |
+| Device Advertising ID ([DAID](../../reference/ids-in-aam.md)) to Cross-device ID ([DPUUID](../../reference/ids-in-aam.md)) | 100[DAID (Device Advertising IDs](../../reference/ids-in-aam.md)) till 1[DPUUID](../../reference/ids-in-aam.md)(Cross-device ID) |
+| Enhets-ID ([DPUUID](../../reference/ids-in-aam.md)) till enhets-ID ([DAID](../../reference/ids-in-aam.md)) | 10[DPUUID](../../reference/ids-in-aam.md)(Cross-device ID) till 1[DAID](../../reference/ids-in-aam.md)(Device Advertising ID) för varje [DPID](../../reference/ids-in-aam.md) |
 | Cookie/browser ID to cookie/browser ID | 1000 cookie/browser IDs to 1 cookie/browser ID |
 
 ## Objektgränser {#item-limits}
