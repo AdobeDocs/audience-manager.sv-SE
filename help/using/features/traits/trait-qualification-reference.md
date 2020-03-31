@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Referens för dragningskvalitet
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 translation-type: tm+mt
-source-git-commit: ceda75d2bc57aa164cb048c20e3fcff33000cddb
+source-git-commit: bd0ebcddc89c2141e9ce55d7fa2e68b5ca1cbb22
 
 ---
 
@@ -34,13 +34,13 @@ Beroende på vilken typ av resultat du vill att diagrammet ska visa (filtreras e
 
 Vid filtrering av resultaten med [!UICONTROL Device ID]:
 
-* Antalet [!UICONTROL Unique Trait Realizations] besökare på den anonyma enheten som har lagt till egenskapen i sin profil, inom olika tidsintervall.
-* Det totala [!UICONTROL Total Trait Population] antalet anonyma enhetsbesökare som har egenskapen i sin profil räknas.
+* [!UICONTROL Unique Trait Realizations] är antalet anonyma enhetsbesökare som har lagt till egenskapen i sin profil inom olika tidsintervall.
+* [!UICONTROL Total Trait Population] är antalet anonyma enhetsbesökare som har den här egenskapen i sin profil.
 
 Vid filtrering av resultaten med [!UICONTROL Cross-Device ID]:
 
-* Antalet [!UICONTROL Unique Trait Realizations] autentiserade besökare som har lagt till egenskapen i sin profil, inom olika tidsintervall.
-* Det totala [!UICONTROL Total Trait Population] antalet autentiserade besökare som har den här egenskapen i sin profil räknas.
+* [!UICONTROL Unique Trait Realizations] är antalet autentiserade besökare som har lagt till egenskapen i sin profil, inom olika tidsintervall.
+* [!UICONTROL Total Trait Population] är antalet autentiserade besökare som har denna egenskap i sin profil.
 
 Tänk på siffrorna på det här sättet. I bilden ovan representerar 90 173 antalet aktiva enheter från vyn [Trait Details](../../features/traits/trait-details-page.md) (Trait Details) som besökte dina egenskaper i går. Värdet [!UICONTROL Total Trait Population] på 55 757 representerar det antal användare som för närvarande är kvalificerade för den här egenskapen. Bilden är avsedd att visa det totala antalet användare som kan användas för segmentering/målinriktning. [!UICONTROL Total Trait Population] Vanligtvis ingår användarna i ett spår i 120 dagar.
 
