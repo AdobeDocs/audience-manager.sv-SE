@@ -1,13 +1,13 @@
 ---
 description: Detaljsidan för en enskild trait innehåller en översikt över information som trait name, ID, performance metrics, expressions som definierar trait, segments som den tillhör och trait Audit log. Om du vill visa den här informationen går du till Målgruppsdata > Traits och klickar på namnet på den trait du vill arbeta med.
-seo-description: Detaljsidan för en enskild trait innehåller en översikt över information som trait name, ID, performance metrics, expressions som definierar trait, segments som den tillhör och trait Audit log. Om du vill visa den här informationen går du till Målgruppsdata > Traits och klickar på namnet på den trait du vill arbeta med.
+seo-description: Detaljsidan för en enskild trait innehåller en översikt över information som trait name, ID, performance metrics, expressions som definierar trait, segments som den tillhör och trait Audit log. Om du vill visa den här informationen går du till Målgruppsdata > Traits och klickar på namnet på den trait som du vill arbeta med.
 seo-title: Anpassa detaljsida
 solution: Audience Manager
 title: Anpassa detaljsida
 uuid: 23301376-c1cc-4778-b8c4-9831f6739db9
 keywords: identity type breakdown, identity breakdown, audience identity reporting
 translation-type: tm+mt
-source-git-commit: 51f38819bfbc72c2588f63a63fb8ba2e963919ff
+source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 ---
 
@@ -47,8 +47,10 @@ Här [!UICONTROL Trait Graph] finns en överskådlig prestandamätning för det 
 * **[!UICONTROL Identity Type Breakdown]**: De första tre posterna visar de tre viktigaste datakällorna för olika enheter med det högsta antalet populationer som har kvalificerat sig för egenskapen, i fallande ordning. Den fjärde posten visar summan av alla andra [!DNL DPUUIDs] ([!DNL CRM IDs]) som kvalificerar sig för egenskapen, från datakällor mellan enheter som inte finns i de tre översta. Den här rapporten visas bara om du väljer Enhets-ID i den [!UICONTROL Show Results By] nedrullningsbara menyn längst upp till höger på sidan. Standardalternativet är [!UICONTROL Device ID]där den här rapporten inte visas.
 
    ![trait-graph](assets/trait-identity.png)
-   > [!NOTE]
-   > Audience Manager visar bara rapporten om du har ett ID-nummer mellan olika enheter som är kvalificerat för egenskapen. [!UICONTROL Identity Type Breakdown]
+
+   >[!NOTE]
+   >
+   >Audience Manager visar bara rapporten om du har ett ID-nummer mellan olika enheter som är kvalificerat för egenskapen. [!UICONTROL Identity Type Breakdown]
 
    >[!VIDEO](https://video.tv.adobe.com/v/27977/)
 
