@@ -5,7 +5,7 @@ seo-title: Realiseringar av bakåtfyllnad
 title: Realiseringar av bakåtfyllnad
 uuid: 8b0ef4e6-d16a-4d1d-94f1-b84eebffa9a5
 translation-type: tm+mt
-source-git-commit: 383d529d656f86fa39e2e11d312e8a8a2092926b
+source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 383d529d656f86fa39e2e11d312e8a8a2092926b
 
 >[!IMPORTANT]
 >
-> [!UICONTROL Data Explorer Trait Backfill] är en premiumfunktion som förbättrar Audience Manager-upplevelsen genom att låsa upp ytterligare användningsfall. Backfill kräver extra processorkraft och är tillgänglig för alla Audience Manager-kunder till en tillkommande kostnad. Kontakta din Adobe-återförsäljare för mer information.
+>[!UICONTROL Data Explorer Trait Backfill] är en premiumfunktion som förbättrar Audience Manager-upplevelsen genom att låsa upp ytterligare användningsfall. Backfill kräver extra processorkraft och är tillgänglig för alla Audience Manager-kunder till en tillkommande kostnad. Kontakta din Adobe-återförsäljare för mer information.
 
 När du skapar egenskaper utifrån oanvända signaler kan du välja att fylla i trait-implementeringarna igen under en viss tidsperiod. [!DNL Audience Manager] samlar in historiska data om målgrupper som kvalificerar sig för det nya varumärket och lagrar dem på motsvarande profil. Du kan se informationen **[!UICONTROL Backfill Options]** i [!UICONTROL Trait Expression] delen av **[Trait Builder](../../features/traits/about-trait-builder.md)**.
 
