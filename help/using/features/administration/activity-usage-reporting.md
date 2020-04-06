@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Aktivitetsanvändningsrapportering
 topic: Activity Usage Reporting
 translation-type: tm+mt
-source-git-commit: 7a3914af8fb225508f57724a75fe2547aac3f241
+source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 ---
 
@@ -24,9 +24,9 @@ Dessutom kan du ladda ned [!UICONTROL Activity Usage Report] vid behov för att 
 
 Den [!UICONTROL Activity Usage Report] är tillgänglig för alla Audience Manager-användare med [administratörsbehörighet](edit-account-settings.md).
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
-> Här [!UICONTROL Activity Usage Report] visas aktivitetsanvändningsstatistik för din Audience Manager-instans. Kontakta din Adobe-representant om du har faktureringsfrågor som rör din aktivitetsanvändning.
+>Här [!UICONTROL Activity Usage Report] visas aktivitetsanvändningsstatistik för din Audience Manager-instans. Kontakta din Adobe-representant om du har faktureringsfrågor som rör din aktivitetsanvändning.
 
 ## Användningsexempel {#use-cases}
 
@@ -52,8 +52,9 @@ När rapporten har lästs in kan du se en beskrivning av den valda perioden [!UI
 * **[!UICONTROL On-Boarded Records]**: Unika poster som hämtas från ditt eget CRM-system eller andra offlinedatafiler, t.ex. kundtjänstposter, enhets-ID:n och anpassade dataflöden från externa dataleverantörer.
 * **[!UICONTROL Log File Records]**: Unika poster från loggfiler som hämtats till Audience Manager från en målplattform.
 
-> [!NOTE]
-> En unik post definierar varje enskild datapost i en fil som lagras av Adobe för en Audience Manager-kunds räkning.
+>[!NOTE]
+>
+>En unik post definierar varje enskild datapost i en fil som lagras av Adobe för en Audience Manager-kunds räkning.
 
 Dessutom kan du använda diagramtyperna för att växla mellan två typer av diagram [!UICONTROL Activity Usage Trends] .
 
