@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Trait Recommendations
 uuid: null
 translation-type: tm+mt
-source-git-commit: 51f38819bfbc72c2588f63a63fb8ba2e963919ff
+source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 ---
 
@@ -27,7 +27,7 @@ I nästa video visas arbetsflödet för [!UICONTROL Marketplace Recommendations]
 
 ## Översikt
 
-[!UICONTROL Trait Recommendations], som drivs av [!DNL Adobe Sensei], för in datavetenskap i era dagliga arbetsflöden för Audience Manager.
+[!UICONTROL Trait Recommendations], som drivs av [!DNL Adobe Sensei], för in datavetenskap i era dagliga arbetsflöden i Audience Manager.
 När du skapar [!UICONTROL Trait Recommendations]eller redigerar ett segment i [Segment Builder](segment-builder.md)får du rekommendationer om ytterligare egenskaper som du kan inkludera, som liknar egenskaperna i segmentregeln.
 
 Audience Manager visar era rekommendationer både från era egna egenskaper, i **[!UICONTROL Recommendations]** avsnittet och från **[!UICONTROL Audience Marketplace]**, i **[!UICONTROL Recommendations from Marketplace]** avsnittet.
@@ -83,15 +83,19 @@ När du skapar eller redigerar ett segment i [Segment Builder](segment-builder.m
 2. Lägg till minst ett drag till segmentregeln i den nedrullningsbara menyn **Traits** .
 3. I [!UICONTROL Audience Marketplace] avsnittet kan du se förstahandsrekommendationer för egenskaper och **[!UICONTROL Recommendations]** egenskaper för feeds som du prenumererar på. I det här **[!UICONTROL Recommendations from Marketplace]** avsnittet visas hur du hanterar rekommendationer från feeds som du inte prenumererar på. Alla dessa rekommendationer liknar de egenskaper som du har lagt till i segmentregeln. Rulla ned för att se alla rekommenderade egenskaper.
 4. (Valfritt) Om du vill utesluta rekommenderade egenskaper från första part från vissa datakällor klickar du på **X** -symbolen för de datakällor som du vill utesluta.
-   > [!NOTE]
-   >
-   > De utelämnade datakällorna visas alldeles ovanför listan med rekommenderade egenskaper. Klicka på **X** i den grå rutan om du vill ta bort undantagen och se resultaten från respektive datakälla igen.
-5. Om du vill lägga till rekommenderade egenskaper i segmentlinjen klickar du på **+** -symbolen.
 
-> [!IMPORTANT]
-> När du lägger till [!UICONTROL Marketplace] egenskaper i ett segment används egenskaperna bara för segmentberäkning, tills du prenumererar på motsvarande datafeed. Fällor som kommer från dataflöden som du inte prenumererar på markeras med en kundvagnsikon i listan. Klicka på namnet på trait för att gå till datafeedsidan och prenumerera på den.
-> ![marketplace-not-subscribed](assets/trait-recommendations-marketplace.png)
-> Du kan bara spara ett segment med egenskaper från tredje part efter att du har prenumererat på motsvarande dataflöden.
+   >[!NOTE]
+   >
+   >De utelämnade datakällorna visas alldeles ovanför listan med rekommenderade egenskaper. Klicka på **X** i den grå rutan om du vill ta bort undantagen och se resultaten från respektive datakälla igen.
+1. Om du vill lägga till rekommenderade egenskaper i segmentlinjen klickar du på **+** -symbolen.
+
+>[!IMPORTANT]
+>
+>När du lägger till [!UICONTROL Marketplace] egenskaper i ett segment används egenskaperna bara för segmentberäkning, tills du prenumererar på motsvarande datafeed. Fällor som kommer från dataflöden som du inte prenumererar på markeras med en kundvagnsikon i listan. Klicka på namnet på trait för att gå till datafeedsidan och prenumerera på den.
+>
+>![marketplace-not-subscribed](assets/trait-recommendations-marketplace.png)
+>
+>Du kan bara spara ett segment med egenskaper från tredje part efter att du har prenumererat på motsvarande dataflöden.
 
 ### Befintliga segment
 
@@ -99,9 +103,10 @@ När du skapar eller redigerar ett segment i [Segment Builder](segment-builder.m
 1. Rulla ned till [!UICONTROL Traits] listrutan.
 1. Rekommenderade egenskaper som liknar de egenskaper som redan finns i segmentregeln visas. Rulla ned för att se alla rekommenderade egenskaper.
 1. (Valfritt) Om du vill utesluta rekommenderade egenskaper från vissa datakällor klickar du på **X** -symbolen för de datakällor som du vill utesluta.
-   > [!NOTE]
+
+   >[!NOTE]
    >
-   > De utelämnade datakällorna visas alldeles ovanför listan med rekommenderade egenskaper. Klicka på **X** i den grå rutan om du vill ta bort undantagen och se resultaten från respektive datakälla igen.
+   >De utelämnade datakällorna visas alldeles ovanför listan med rekommenderade egenskaper. Klicka på **X** i den grå rutan om du vill ta bort undantagen och se resultaten från respektive datakälla igen.
 1. Om du vill lägga till rekommenderade egenskaper i segmentlinjen klickar du på **+** -symbolen.
 
 När du skapar eller redigerar ett segment och lägger till ett drag i segmentregeln, visas maximalt femtio rekommenderade egenskaper, liknande den som du har lagt till. Om segmentregeln innehåller mer än ett drag, använder Audience Manager en runda banderollmetod för att visa den bästa matchningen för varje egenskap, den näst bästa matchningen för varje egenskap och så vidare, för de största femtio egenskaperna per population, i segmentregeln.
@@ -111,10 +116,10 @@ När du skapar eller redigerar ett segment och lägger till ett drag i segmentre
 Om det till exempel finns tre egenskaper i segmentregeln, som visas nedan, är de rekommenderade egenskaperna:
 
 1. Bästa matchning för trait 3 (egenskapen med den största befolkningen).
-2. Best match for trait 1;
-3. Best match for trait 2;
-4. Andra bästa matchningen för trait 3;
-5. Den näst bästa matchningen för trait 1 och så vidare tills du når femtio traits.
+1. Best match for trait 1;
+1. Best match for trait 2;
+1. Andra bästa matchningen för trait 3;
+1. Den näst bästa matchningen för trait 1 och så vidare tills du når femtio traits.
 
 Om du vill få rekommendationer för en viss egenskap kan du klicka på egenskaperna i segmentregeln (1) eller i vyn med rekommenderade egenskaper (2).
 
@@ -124,13 +129,13 @@ När du klickar på ett spår från första part öppnas ett popup-fönster, vil
 
 ![tillägg till segment](assets/add_to_segments.png)
 
-> [!TIP]
+>[!TIP]
 >
 >Undantagna datakällor från huvudsidan beaktas när rekommendationer genereras i popup-fönstret för trait-information. Om du exkluderar datakällor i den här vyn gäller undantagen för huvudsidan.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Rekommenderade egenskaper kan vara egna egenskaper eller egenskaper från tredje part för dataflöden som du prenumererar på i [!UICONTROL Audience Marketplace].
+>Rekommenderade egenskaper kan vara egna egenskaper eller egenskaper från tredje part för dataflöden som du prenumererar på i [!UICONTROL Audience Marketplace].
 
 ## Så här fungerar det
 
@@ -173,9 +178,9 @@ Använd tabellen nedan som en grov stödlinje för att anpassa likheter. Den hä
 
 För företag som använder [!UICONTROL Role-Based Access Controls] ([!UICONTROL RBAC]) måste du ha behörighet att skapa och redigera segment för att kunna se rekommenderade egenskaper. De rekommendationer för egenskaper som du ser är endast sådana från datakällor som du har åtkomst till via [!UICONTROL RBAC].
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
-> Om du vill lägga [!UICONTROL Marketplace Recommendations] till i ett segment måste användarna först prenumerera på motsvarande dataflöden. Endast användare med administratörsbehörighet kan prenumerera på [!UICONTROL Audience Marketplace] dataflöden.
+>Om du vill lägga [!UICONTROL Marketplace Recommendations] till i ett segment måste användarna först prenumerera på motsvarande dataflöden. Endast användare med administratörsbehörighet kan prenumerera på [!UICONTROL Audience Marketplace] dataflöden.
 
 Läs mer om [!UICONTROL RBAC] kontroller [här](../administration/administration-overview.md).
 
