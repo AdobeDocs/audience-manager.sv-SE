@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Allmänna användningsexempel för profilkopplingsregler
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 >[!TIP]
 >
->Definitioner och beskrivningar av de här [!UICONTROL Merge Rule] inställningarna finns i Alternativ för [profilsammanfogningsregel definierade](merge-rule-definitions.md).
+>Definitioner och beskrivningar av de här [!UICONTROL Merge Rule] inställningarna finns i Alternativ för [profilkopplingsregel definierade](merge-rule-definitions.md).
 
 ## Målinriktning {#device-personalization}
 
@@ -63,9 +63,9 @@ Tack vare länken mellan enheten och hushållsprofilen kan Audience Manager kval
 
 ## Målgruppsanpassning för personbaserade destinationer {#all-cross-device}
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
-> Den här artikeln innehåller produktdokumentation som ska hjälpa dig att konfigurera och använda den här funktionen. Ingenting i det här är juridisk rådgivning. Vänligen kontakta ditt eget juridiska ombud för att få juridisk rådgivning.
+>Den här artikeln innehåller produktdokumentation som ska hjälpa dig att konfigurera och använda den här funktionen. Ingenting i det här är juridisk rådgivning. Vänligen kontakta ditt eget juridiska ombud för att få juridisk rådgivning.
 
 Detta målinriktningsscenario är endast tillgängligt för kunder som har köpt [!DNL People-Based Destinations] tillägget. Med den här regeln kan marknadsförarna nå kunder utifrån sina egna autentiserade data.
 
