@@ -5,7 +5,7 @@ seo-title: Delningsbara målgrupper
 solution: Audience Manager
 title: Delningsbara målgrupper
 translation-type: tm+mt
-source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
+source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 ---
 
@@ -31,7 +31,7 @@ Mätvärdet på en personbaserad målsida anger det totala antalet hash-kodade e
 
 ![delningsbara målgrupper](assets/dest-shareable-audiences.png)
 
-Det här måttet har en livslång summeringsperiod. Detta hjälper er att förstå hur stor målgrupp ni kan nå utifrån datakällan för hash-kodade e-postadresser.
+Det här måttet har en livslång summeringsperiod. Detta hjälper er att förstå hur stor målgrupp ni kan nå från datakällan för hash-kodade e-postadresser.
 
 ## Exempel
 
@@ -51,6 +51,6 @@ I detta scenario:
 
 ![shareable-audiences-chart](assets/shareable-audiences.png)
 
-> [!NOTE]
+>[!NOTE]
 >
-> I exemplet ovan betyder det inte att alla de 80 000 hash-kodade e-postadresserna från de tre segmenten matchar befintliga konton på målplattformarna. Det innebär bara att Audience Manager skickar de hash-kodade identifierarna från de tre segmenten till sina respektive destinationer. När målgruppssegment skickas till personbaserade mål sker målgruppsmatchning på partnersidan. Mål A kan ha upp till 30 000 matchande användarkonton, medan mål B kan ha upp till 50 000 matchande användarkonton, men det finns ingen garanti för matchningsfrekvenser. Adobe har inte tillgång till partnerspecifika mätvärden. Se [Matcha frekvenser](../../faq/faq-people-based-destinations.md#match-rates) för vanliga frågor om synlighet för personbaserade destinationer i matchningsfrekvenser.
+>I exemplet ovan betyder det inte att alla de 80 000 hash-kodade e-postadresserna från de tre segmenten matchar befintliga konton på målplattformarna. Det innebär bara att Audience Manager skickar de hash-kodade identifierarna från de tre segmenten till sina respektive destinationer. När målgruppssegment skickas till personbaserade mål sker målgruppsmatchning på partnersidan. Mål A kan ha upp till 30 000 matchande användarkonton, medan mål B kan ha upp till 50 000 matchande användarkonton, men det finns ingen garanti för matchningsfrekvenser. Adobe har inte tillgång till partnerspecifika mätvärden. Se [Matcha frekvenser](../../faq/faq-people-based-destinations.md#match-rates) för vanliga frågor om synlighet för personbaserade destinationer i matchningsfrekvenser.
