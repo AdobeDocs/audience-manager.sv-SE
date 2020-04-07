@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Datainsamling och felfrekvens i valda rapporter för Audience Manager
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 translation-type: tm+mt
-source-git-commit: d96182b0741dd31cc5ec0ffb68182ed5f8445c03
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -23,7 +23,7 @@ Dessa rapporter använder exempeldata eftersom de behöver en enorm mängd dator
 
 Rapporter som använder sampling utesluter egenskaper och segment när de inte uppfyller minimikraven för unika besökare. Dessa minimikrav är följande:
 
-* Traits: 28 000 [unika](/help/using/features/traits/trait-qualification-reference.md#unique-trait-realizations) intäktsgenereringar under en 14-dagarsperiod.
+* Traits: 28 000 [unika](/help/using/features/traits/trait-and-segment-qualification-reference.md#unique-trait-realizations) intäktsgenereringar under en 14-dagarsperiod.
 * Segment: 70 000 användare i realtid under en 14-dagarsperiod.
 
 ## Felfrekvens {#error-rates}
@@ -49,5 +49,5 @@ Observera att våra tester och modeller visar att felfrekvensen *minskar* i en o
 De [!DNL Audience Manager] rapporter där exempeldata används är bland annat:
 
 * [Överlappningsrapporter](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) (trait-to-trait, segment-to-trait och segment-to-segment).
-* [Adresserbara](../features/addressable-audiences.md) målgruppsdata (data på kund- och segmentnivå).
+* [Adresserbara målgruppsdata](../features/addressable-audiences.md) (data på kund- och segmentnivå).
 * Måttet [för totala enheter](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) för en [!UICONTROL Profile Merge Rule].
