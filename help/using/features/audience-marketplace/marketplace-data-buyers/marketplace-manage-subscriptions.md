@@ -7,7 +7,7 @@ title: Hantera abonnemang på dataflöden
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
 translation-type: tm+mt
-source-git-commit: b1f4fe1180001a92577adc9e55f2697f3285ea46
+source-git-commit: aaf4e178cd6faf8fe18f54454277e4253a524130
 
 ---
 
@@ -26,22 +26,22 @@ Så här prenumererar du på en allmän datafeed:
 
 1. Gå till **[!UICONTROL Audience Marketplace > Marketplace]**. Använd sökfunktionen eller bläddra igenom listan för att hitta en datafeed.
 
-   ![](assets/subscribe1.png)
+   ![prenumerera](assets/subscribe1.png)
 
 1. Klicka på namnet på den datafeed som du vill använda. Då öppnas sidan [med](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#marketplace-buyer-details) planinformation för vald feed.
 
-   ![](assets/plan-details.png)
+   ![plan-details](assets/plan-details.png)
 
 1. Välj ett användningsfall i prenumerationstabellen och:
    * Flytta reglaget **[!UICONTROL Subscription]** till **[!UICONTROL On]**.
    * Klicka på **[!UICONTROL Review & Subscribe]**. Då öppnas [!UICONTROL Terms and Conditions] fönstret.
-   ![](assets/subscribe3.png)
+   ![prenumerera](assets/subscribe3.png)
 
 1. I [!UICONTROL Terms and Conditions] fönstret:
 
    * **Viktigt:** Låt kryssrutan vara **[!UICONTROL ID sync]** markerad. Den här inställningen hjälper till att förbättra matchningsfrekvensen hos din DataProvider.
    * Markera rutan Villkor och klicka sedan på **[!UICONTROL Accept]** för att slutföra prenumerationsprocessen.
-   ![](assets/subscribe4.png)
+   ![prenumerera](assets/subscribe4.png)
 
 ### Nästa steg
 
