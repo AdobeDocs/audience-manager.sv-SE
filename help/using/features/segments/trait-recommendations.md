@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Trait Recommendations
 uuid: null
 translation-type: tm+mt
-source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
+source-git-commit: 019396917482340f15b4eb23736b15322815bd84
 
 ---
 
@@ -80,9 +80,9 @@ När du skapar eller redigerar ett segment i [Segment Builder](segment-builder.m
 ### Nya segment
 
 1. Gå till **Målgruppsdata > Segment** och klicka på **Lägg till ny**.
-2. Lägg till minst ett drag till segmentregeln i den nedrullningsbara menyn **Traits** .
-3. I [!UICONTROL Audience Marketplace] avsnittet kan du se förstahandsrekommendationer för egenskaper och **[!UICONTROL Recommendations]** egenskaper för feeds som du prenumererar på. I det här **[!UICONTROL Recommendations from Marketplace]** avsnittet visas hur du hanterar rekommendationer från feeds som du inte prenumererar på. Alla dessa rekommendationer liknar de egenskaper som du har lagt till i segmentregeln. Rulla ned för att se alla rekommenderade egenskaper.
-4. (Valfritt) Om du vill utesluta rekommenderade egenskaper från första part från vissa datakällor klickar du på **X** -symbolen för de datakällor som du vill utesluta.
+1. Lägg till minst ett drag till segmentregeln i den nedrullningsbara menyn **Traits** .
+1. I [!UICONTROL Audience Marketplace] avsnittet kan du se förstahandsrekommendationer för egenskaper och **[!UICONTROL Recommendations]** egenskaper för feeds som du prenumererar på. I det här **[!UICONTROL Recommendations from Marketplace]** avsnittet visas hur du hanterar rekommendationer från feeds som du inte prenumererar på. Alla dessa rekommendationer liknar de egenskaper som du har lagt till i segmentregeln. Rulla ned för att se alla rekommenderade egenskaper.
+1. (Valfritt) Om du vill utesluta rekommenderade egenskaper från första part från vissa datakällor klickar du på **X** -symbolen för de datakällor som du vill utesluta.
 
    >[!NOTE]
    >
