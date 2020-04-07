@@ -2,10 +2,10 @@
 product: audience-manager
 solution: Audience Manager
 audience: end-user
-user-guide-title: Audience Manager User Guide
+user-guide-title: Användarhandbok för Audience Manager
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: b22302ebf16bc71c61a974e33dc399caafb96095
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -134,6 +134,7 @@ source-git-commit: b22302ebf16bc71c61a974e33dc399caafb96095
       + [Kodsyntax som används i segmentuttrycksredigeraren](features/segments/segment-code-syntax.md)
       + [Trait and Segment Population Data in Segment Builder](features/segments/segment-builder-data.md)
       + [Trait Recommendations](features/segments/trait-recommendations.md)
+      + [Referens för egenskaper för trait och segment](features/traits/trait-and-segment-qualification-reference.md)
    + Traits{#traits}
       + [Traits Overview](/help/using/features/traits/traits-overview.md)
       + [Anpassa detaljsida](features/traits/trait-details-page.md)
@@ -158,7 +159,7 @@ source-git-commit: b22302ebf16bc71c61a974e33dc399caafb96095
       + [Geogeting med tangenter på plattformsnivå](features/traits/trait-geotarget-keys.md)
       + [Målinriktning på enheter med plattformsnivå](features/traits/trait-device-targeting.md)
       + [Exempeluttryck med booleska operatorer och jämförelseoperatorer](features/traits/trait-expression-samples.md)
-      + [Referens för dragningskvalitet](features/traits/trait-qualification-reference.md)
+      + [Referens för egenskaper för trait och segment](features/traits/trait-and-segment-qualification-reference.md)
    + [Visningsprogram för besökarprofiler](features/visitor-profile-viewer.md)
 + Rapportering{#reporting}
    + [Rapportöversikt](reporting/reports-overview.md)
@@ -228,7 +229,7 @@ source-git-commit: b22302ebf16bc71c61a974e33dc399caafb96095
          + [DCS API-metoder](api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
          + [Felkoder, meddelanden och exempel för DCS](api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
          + [ID-övervakning och svartlistning](api/dcs-intro/dcs-api-reference/id-monitoring-blacklisting.md)
-         + [DCS-region-ID, -platser och -värdnamn](api/dcs-intro/dcs-api-reference/dcs-regions.md)
+         + [ID för DCS-region, -platser och -värdnamn](api/dcs-intro/dcs-api-reference/dcs-regions.md)
          + [Formatera nyckelvärdepar i DCS-anrop](api/dcs-intro/dcs-api-reference/dcs-key-format.md)
          + [Ansiktsvillkor och felhantering](api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
          + [Attribut som stöds för DCS API-anrop](api/dcs-intro/dcs-api-reference/dcs-keys.md)
