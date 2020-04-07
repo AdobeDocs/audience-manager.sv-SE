@@ -7,7 +7,7 @@ title: Användningsgränser
 keywords: ID mapping, ID mappings, cookie mappings
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 translation-type: tm+mt
-source-git-commit: f9f201824accdde18efafa0a8c389af48423534d
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -35,7 +35,7 @@ Tabellerna visar de aktuella gränserna per objekttyp. Du kan inte skapa nya ege
 | Trait Type | Maximal gräns |
 | -------------------------- | ------------------------------------- |
 | Totalt antal egenskaper | 100,000 |
-| Kompetens totalt | 150,000. Mer information om kvalificering av trait finns i Gräns för trait-kvalificering i [Trait Qualifications Reference](/help/using/features/traits/trait-qualification-reference.md#trait-qualification-limit). |
+| Kompetens totalt | 150,000. Mer information om kvalificering av trait finns i Gräns för trait-kvalificering i [Trait Qualifications Reference](/help/using/features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit). |
 | Algoritmisk | 50 |
 | Regelbaserad | 100,000 |
 | Anonboarding | 100,000 |
