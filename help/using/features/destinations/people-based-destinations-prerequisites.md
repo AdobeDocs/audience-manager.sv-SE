@@ -5,7 +5,7 @@ seo-title: Krav och överväganden för personbaserade destinationer
 solution: Audience Manager
 title: Förutsättningar och överväganden
 translation-type: tm+mt
-source-git-commit: c605e04489ad444193e1e884ee6a3b05f437b9f2
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -64,7 +64,7 @@ Om du överför mer än 10 hash-kodade e-postadresser som är länkade till ett 
 
 Kryptering är en tvåvägsfunktion. All krypterad information kan också dekrypteras med rätt dekrypteringsnyckel. Kryptering av data i samband med Audience Manager medför allvarliga risker, eftersom alla krypterade former av personligt identifierbar information också kan dekrypteras. I motsats till kryptering [!DNL People-Based Destinations] är de utformade för att fungera med hash-kodade data i stället.
 
-Hash-kodning är en envägsfunktion som krymper inmatningen och ger ett unikt resultat. Genom att använda rätt hash-algoritmer, som [!DNL SHA256]att det inte finns något sätt att vända på hashfunktionen och visa den okramade informationen. De e-postadresser som du kommer att anlita till Audience Manager måste hash-kodas med [!DNL SHA256] algoritmen. På så sätt kan du se till att inga ohashade e-postadresser når Audience Manager.
+Hash-funktionen är en envägsfunktion som förvränger indata och ger ett unikt resultat. Genom att använda rätt hash-algoritmer, som [!DNL SHA256]att det inte finns något sätt att vända på hashfunktionen och visa den okramade informationen. De e-postadresser som du kommer att anlita till Audience Manager måste hash-kodas med [!DNL SHA256] algoritmen. På så sätt kan du se till att inga ohashade e-postadresser når Audience Manager.
 
 ## Hash-krav {#hashing-requirements}
 
@@ -101,5 +101,5 @@ När du använder [!UICONTROL People-Based Destinations]kan du använda [Dataexp
 
 Det finns två sätt att överföra offlinedata till Audience Manager för [!DNL People-Based Destinations].
 
-* [Skicka batchdata](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) till Audience Manager för att importera hashade e-postadresser. Med den här metoden kan du välja att använda hash-kodade e-postadresser från din [!DNL CRM] databas i [!DNL People-Based Destinations]. När du använder den här metoden kan du dessutom kvalificera hash-kodade e-postadresser för [anpassade egenskaper](../traits/trait-qualification-reference.md).
+* [Skicka batchdata](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) till Audience Manager för att importera hashade e-postadresser. Med den här metoden kan du välja att använda hash-kodade e-postadresser från din [!DNL CRM] databas i [!DNL People-Based Destinations]. När du använder den här metoden kan du dessutom kvalificera hash-kodade e-postadresser för [anpassade egenskaper](../traits/trait-and-segment-qualification-reference.md).
 * Använd [deklarerade ID:n](../declared-ids.md) för att deklarera hashade e-postadresser när autentiserade kund-ID skickas. När du använder den här metoden skickar Audience Manager bara till [!DNL People-Based Destinations] de streckade e-postadresserna från användare som har autentiserat online. E-postadresserna som aktiveras via personbaserade kanaler är bara de som anges i de deklarerade ID-händelseanropen. Andra e-postadresser som är kopplade till kund-ID:t skickas inte i realtid.
