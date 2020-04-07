@@ -5,7 +5,7 @@ seo-title: Implementeringsvägledning för personbaserade destinationer
 solution: Audience Manager
 title: Implementeringsvägledning
 translation-type: tm+mt
-source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -62,7 +62,7 @@ Om ni vill inrikta er på målgrupper i [!DNL People-Based Destinations] måste 
 
 För att målgruppsanpassa [!DNL People-Based Destinations]måste era användare kvalificera sig för regelbaserade eller anpassade egenskaper, beroende på vilken typ av målgruppsanpassning ni vill ha.
 
-**Svar: Kvalificera dina kund-ID:n och enhets-ID:n i realtid för regelbaserade egenskaper**. Det här alternativet gäller för fall A från [1. Definiera användningsfall](people-based-destinations-workflow.md#defining-your-use-case). Om ni planerar att rikta in er på målgrupper baserat på online- och offlineaktiviteter är det troligt att ni redan kvalificerar er målgrupp för [regelbaserade egenskaper](../traits/trait-qualification-reference.md).
+**Svar: Kvalificera dina kund-ID:n och enhets-ID:n i realtid för regelbaserade egenskaper**. Det här alternativet gäller för fall A från [1. Definiera användningsfall](people-based-destinations-workflow.md#defining-your-use-case). Om ni planerar att rikta in er på målgrupper baserat på online- och offlineaktiviteter är det troligt att ni redan kvalificerar er målgrupp för [regelbaserade egenskaper](../traits/trait-and-segment-qualification-reference.md).
 
 **B) Integrera egenskaper mot dina kund-ID:n via inkommande datafiler**. Det här alternativet gäller för användning av fall B från [1. Definiera användningsfall](people-based-destinations-workflow.md#defining-your-use-case). När ni riktar er till era målgrupper baserat på enbart offlineaktiviteter måste ni kvalificera era kund-ID:n för anpassade egenskaper via [inkommande datafiler](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md).
 
