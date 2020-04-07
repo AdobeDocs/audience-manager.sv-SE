@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Vanliga frågor om sekretess och datalagring
 uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
 translation-type: tm+mt
-source-git-commit: 3a4f23bc853a2324a4c91c6e65b14455293a5b1b
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -111,7 +111,7 @@ Tabellen nedan listar bibehållningsalternativen för kvalifikationer.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Fackgränsen har nåtts </p> </td> 
-   <td colname="col2"> <p>Vi inför en gräns på 100 000 kvalifikationer för varje användarprofil. Gränsen gäller autentiserade profiler och enhetsprofiler. Om en användarprofil når denna gräns raderas först-in-och-ut-kursen för de äldsta egenskaperna. </p> <p>Mer information finns i vår <a href="../features/traits/trait-qualification-reference.md#trait-qualification-limit"> Trait Qualification Limit</a>. </p> </td> 
+   <td colname="col2"> <p>Vi inför en gräns på 100 000 kvalifikationer för varje användarprofil. Gränsen gäller autentiserade profiler och enhetsprofiler. Om en användarprofil når denna gräns raderas först-in-och-ut-kursen för de äldsta egenskaperna. </p> <p>Mer information finns i vår <a href="../features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit"> Trait Qualification Limit</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
