@@ -5,7 +5,7 @@ seo-title: Arbetsflöde B - Personalisering baserad på data som bara är offlin
 solution: Audience Manager
 title: Arbetsflöde B - Personalisering baserad på data som bara är offline
 translation-type: tm+mt
-source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -23,7 +23,7 @@ Det första steget för att skapa målgruppssegment i det här scenariot är att
 
 >[!IMPORTANT]
 >
-> Innan du fortsätter måste du se till att kundaktiviteten du är på väg att anställa redan har definierats i Audience Manager med motsvarande [introduktionsegenskaper](../traits/trait-qualification-reference.md).
+> Innan du fortsätter måste du se till att kundaktiviteten du är på väg att anställa redan har definierats i Audience Manager med motsvarande [introduktionsegenskaper](../traits/trait-and-segment-qualification-reference.md).
 
 Oavsett om dina befintliga kund-ID:n för Audience Manager ([DPUID](../../reference/ids-in-aam.md)) är hashas-e-postmeddelanden eller inte, måste du utföra trait onboarding mot datakällan som innehåller dina [DPUID](../../reference/ids-in-aam.md).
 
