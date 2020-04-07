@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Allmänna rapporter
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
 translation-type: tm+mt
-source-git-commit: 1c626c770208150d209d93f666b581113ada8de9
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -96,7 +96,7 @@ Det här måttet representerar den totala mängden trait som utlöses för trait
 
 **Population för totalt fack**
 
-Det här måttet representerar den totala mängden UUID för Audience Manager som för närvarande är kvalificerade för egenskapen. Använd det här numret för att förstå hur många användare du kan använda för segmentering och målinriktning. Vanligtvis ingår användare i ett varumärke i [120 dagar](../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval). En användare som till exempel besöker din hemsida tre gånger idag och aldrig återvänder efteråt, blir kvar som användare i den här befolkningen varje dag till 120 dagar från och med nu. Vid 120 dagars markering skulle de tas bort från befolkningen. Läs vår [Trait Qualification Reference](../features/traits/trait-qualification-reference.md) för fler exempel på skillnaden mellan Unique Trait Realizations och Total Trait Population.
+Det här måttet representerar den totala mängden UUID för Audience Manager som för närvarande är kvalificerade för egenskapen. Använd det här numret för att förstå hur många användare du kan använda för segmentering och målinriktning. Vanligtvis ingår användare i ett varumärke i [120 dagar](../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval). En användare som till exempel besöker din hemsida tre gånger idag och aldrig återvänder efteråt, blir kvar som användare i den här befolkningen varje dag till 120 dagar från och med nu. Vid 120 dagars markering skulle de tas bort från befolkningen. Läs vår referens [för](../features/traits/trait-and-segment-qualification-reference.md) Trait and Segment Qualification om du vill ha fler exempel på skillnaden mellan Unique Trait Realizations och Total Trait Population.
 
 Bilden nedan visar resultatet av att köra en allmän rapport för rapporttypen Trait.
 
