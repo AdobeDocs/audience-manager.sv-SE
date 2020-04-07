@@ -6,7 +6,7 @@ seo-title: Traits Overview
 solution: Audience Manager
 title: Traits Overview
 translation-type: tm+mt
-source-git-commit: 94046c4ed825949451d0dbad37adbe9fba0f9191
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -20,4 +20,4 @@ Hantera datainsamling och målgruppsframtagning med regelbaserade, onboardbasera
 * [Mappegenskaper: Om](/help/using/features/traits/about-folder-traits.md)
 * [Trait Storage](/help/using/features/traits/trait-storage.md)
 * [Synkroniserade egenskaper för aktiv målgrupp och datakälla](/help/using/features/traits/client-activity-synced-audience-traits.md)
-* [Referens för dragningskvalitet](/help/using/features/traits/trait-qualification-reference.md)
+* [Referens för egenskaper för trait och segment](/help/using/features/traits/trait-and-segment-qualification-reference.md)
