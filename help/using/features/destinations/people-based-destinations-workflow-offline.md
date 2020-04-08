@@ -5,7 +5,7 @@ seo-title: Arbetsflöde B - Personalisering baserad på data som bara är offlin
 solution: Audience Manager
 title: Arbetsflöde B - Personalisering baserad på data som bara är offline
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: 1302d8c9dba8e7bb7f0c57bcbd5531ec56fad0d5
 
 ---
 
@@ -38,7 +38,8 @@ Du vill kvalificera kund-ID:n från tabellen nedan för motsvarande anpassade ID
 | 89159024796760343733111707646026765593 | 11223, 93342, 27341 |
 
 <br />
-För att kvalificera kund-ID:n i exemplet ovan för motsvarande onboardförmåner måste du överföra en [inkommande datafil](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md) med följande innehåll:
+
+Om du vill kvalificera kund-ID:n i exemplet ovan för motsvarande onboardförmåner måste du överföra en [inkommande datafil](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md) med följande innehåll:
 
 ```
 68079982765673198504052656074456196039<TAB>d_sid=12345,d_sid=23456
