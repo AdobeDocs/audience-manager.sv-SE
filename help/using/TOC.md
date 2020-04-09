@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: e70c3dde2777d0ec128bae8998697b28e92df19a
 
 ---
 
@@ -229,7 +229,7 @@ source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
          + [DCS API-metoder](api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
          + [Felkoder, meddelanden och exempel för DCS](api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
          + [ID-övervakning och svartlistning](api/dcs-intro/dcs-api-reference/id-monitoring-blacklisting.md)
-         + [ID för DCS-region, -platser och -värdnamn](api/dcs-intro/dcs-api-reference/dcs-regions.md)
+         + [DCS-region-ID, -platser och -värdnamn](api/dcs-intro/dcs-api-reference/dcs-regions.md)
          + [Formatera nyckelvärdepar i DCS-anrop](api/dcs-intro/dcs-api-reference/dcs-key-format.md)
          + [Ansiktsvillkor och felhantering](api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
          + [Attribut som stöds för DCS API-anrop](api/dcs-intro/dcs-api-reference/dcs-keys.md)
@@ -387,6 +387,13 @@ source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
    + [Översikt](/help/using/help-legal/help-legal-overview.md)
    + [Om det finns ett problem](/help/using/help-legal/help-problem.md)
    + [Kontakt och juridisk information](/help/using/help-legal/help-legal-contact.md)
++ De vanligaste frågorna för kundsupport{#top-support-issues}
+   + [Översikt](/help/using/support-issues/support-issues-overview.md)
+   + [Varför sjönk mina populationer i Trait-klassen till 0 runt den 15 oktober? ](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
+   + [Varför visas inte mina egenskaper eller segment på sidan Överlappningsrapporter?](/help/using/support-issues/why-do-my-traits-or-segments-not-show-up-in-the-overlap-reports.md)
+   + [Varför kan våra skrivskyddade användare skapa, redigera eller ta bort egenskaper och segment?](/help/using/support-issues/aam-read-only-users-create-delete-traits-segments.md)
+   + [Vi är inte en Audience Manager-kund, men se Javascript-anropen för Audience Manager på vår webbplats](/help/using/support-issues/not-using-aam-but-seeing-aam-javascript.md)
+   + [Ska jag se de segment som har mappats till Audience Manager Audience Lab på sidan med målinformation?](/help/using/support-issues/should-i-see-audience-lab-mapped-segments-on-the-destination-page.md)
 + Dokumentationsuppdateringar{#documentation-updates}
    + [Dokumentationsuppdateringar för 2020](docs-updates/docs-2020.md)
    + [Dokumentationsuppdateringar för 2019](docs-updates/docs-2019.md)
