@@ -5,7 +5,7 @@ seo-title: Vi använder inte Audience Manager, men vi ser Javascript-anrop till 
 solution: Audience Manager
 title: Vi använder inte Audience Manager, men vi ser Javascript-anrop till Audience Manager i Javascript-felsökaren - Varför?
 translation-type: tm+mt
-source-git-commit: 7206b43562eded19bfb30f8aea3bcad946a3f834
+source-git-commit: 1f5c1a91f0b5df5291d3143d297e25128b5bb716
 
 ---
 
@@ -14,10 +14,12 @@ source-git-commit: 7206b43562eded19bfb30f8aea3bcad946a3f834
 
 ## Fråga
 
-Vi använder inte Adobe Audience Manager, men vi ser Javascript-anrop till Audience Manager i Javascript-felsökningsprogrammet.  Varför skulle detta hända?
+Vi använder inte Adobe Audience Manager, men vi ser Javascript-anrop till Audience Manager i Javascript-felsökningsprogrammet.
+
+Varför händer detta?
 
 ## Svar
 
-Det är troligt att du kör tjänsten för besöks-ID på din egenskap. Om du gör det refererar AAM-referensen inte nödvändigtvis till egenskapen som kör Audience Manager, men det betyder att Audience Manager faktiskt driver den här tjänsten.
+Det är troligt att du kör [Experience Cloud Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html) på din egendom. Om du är det refererar den här referensen för Audience Manager inte nödvändigtvis till egenskapen som kör Audience Manager. Det innebär i stället att Audience Manager driver den här tjänsten.
 
-Observera att AAM-anropet vanligtvis görs för att synkronisera Set customer IDs.
+Audience Manager-serveranropet görs vanligtvis för att [synkronisera kund-ID:n](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/setcustomerids.html).
