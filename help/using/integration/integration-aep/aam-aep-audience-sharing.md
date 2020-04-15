@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 translation-type: tm+mt
-source-git-commit: a7311c35c70bbfd0aac015524f6e65b0e59415f5
+source-git-commit: efc07cb0aacc31f3708c98e1c82c195c202c10ef
 
 ---
 
@@ -15,13 +15,11 @@ source-git-commit: a7311c35c70bbfd0aac015524f6e65b0e59415f5
 
 >[!NOTE]
 >
-> Funktionerna som beskrivs på den här sidan är tillgängliga för kunder som har Audience Manager och Adobe Experience Platform.
->
 > Kontakta din Adobe-återförsäljare för att få tillgång till den här funktionen.
 
 ## Översikt {#overview}
 
-Tack vare funktionen för målgruppsdelning mellan Audience Manager och Adobe Experience Platform kan ni dela era egenskaper och segment i Audience Manager med Adobe Experience Platform och vice versa.
+Tack vare funktionen för målgruppsdelning mellan Audience Manager och Adobe Experience Platform kan ni dela era egenskaper och segment i Audience Manager med Adobe Experience Platform och vice versa. Ni behöver [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/source-connectors/adobe-applications/audience-manager.html) för att kunna dela målgrupper mellan Audience Manager och Adobe Experience Platform.
 
 Ni kan använda egenskaper och segment i Audience Manager i Experience Platform för att lägga till Audience Manager-data i era kundprofiler och dra nytta av Experience Platform- [segmenteringstjänsten](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md).
 
@@ -46,8 +44,9 @@ Se tabellen nedan för en översikt över användningsfall för målgruppsdelnin
 
 Era egenskaper och segment i Audience Manager visas i Experience Platform som **målgrupper** i segmentarbetsflödet. Mer information om era Audience Manager-segment och egenskaper i Experience Platform finns i:
 
-* [Översikt över segmenteringstjänsten](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)
-* [Användarhandbok för Experience Platform Segment Builder](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segment-builder-guide.md)
+* [Översikt över segmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html#audiences)
+* [Användarhandbok för Experience Platform Segment Builder](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html#audiences)
+* [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/source-connectors/adobe-applications/audience-manager.html)
 
 <br> 
 
