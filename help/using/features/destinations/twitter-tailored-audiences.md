@@ -5,7 +5,7 @@ seo-title: Konfigurera Twitter-anpassade målgrupper som självbetjäningsbasera
 solution: Audience Manager
 title: Konfigurera Twitter-anpassade målgrupper som självbetjäningsbaserade enhetsbaserade mål
 translation-type: tm+mt
-source-git-commit: 0f1ab99b648dd6e1eda5f2e5b6bd1f620c0331ee
+source-git-commit: fb1bec17023b7b70c53659d68e2fbc431d9022fa
 
 ---
 
@@ -96,4 +96,4 @@ När du mappar målgruppssegment till [!UICONTROL Twitter]måste du se till att 
 ## Överväganden om matchningsfrekvenser {#match-rates-considerations}
 
 * När du använder [!UICONTROL Twitter Tailored Audiences]visas inga värden i målsidans mått [!UICONTROL Segment Addressable Audience] och [!UICONTROL Segment Match Rate] mått. Detta är normalt eftersom målgruppsmatchning och matchningsfrekvenser för detta mål hanteras och hanteras av [!UICONTROL Twitter], inte av Adobe.
-* För närvarande har integreringen mellan Audience Manager och [!UICONTROL Twitter Tailored Audiences] saknar stöd för historiska efterfyllningar av målgrupper. Det innebär att bara de segmentkvalifikationer som inträffar *efter* att segmentet har mappats till ett Twitter-mål skickas till [!UICONTROL Twitter] i realtid.
+* Integrationen mellan Audience Manager och [!UICONTROL Twitter Tailored Audiences] stöd för historiska efterfyllningar av målgrupper. Alla segmentkvalifikationer skickas till [!UICONTROL Twitter] när du skapar målet.
