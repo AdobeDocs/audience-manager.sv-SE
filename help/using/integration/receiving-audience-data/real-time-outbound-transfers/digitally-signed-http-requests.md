@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Digitalt signerade HTTP(S)-begäranden
 uuid: 1183a70f-0c96-42cf-a4f5-37a83ffa1286
 translation-type: tm+mt
-source-git-commit: e7bb837a9a4a4e41ca5c73a192f68a4caa30335d
+source-git-commit: 5dddaaae3a5cb2ce4c4649e2a153edf1992fa964
 
 ---
 
@@ -89,8 +89,6 @@ RFC för [!DNL HMAC] hash-implementeringen är [https://www.ietf.org/rfc/rfc2104
 Av säkerhetsskäl bör du regelbundet rotera den privata nyckeln. Det är upp till dig att bestämma den privata nyckeln och rotationsperioden. För att uppnå tangentrotationen utan driftstopp har [!UICONTROL IRIS] stöd för att lägga till flera signaturrubriker. En rubrik innehåller signaturen som skapades med den gamla nyckeln, en annan rubrik innehåller signaturen som genererats med den nya privata nyckeln. Se stegen nedan i detalj:
 
 1. Partnern kommunicerar den nya privata nyckeln till [!DNL Adobe Audience Manager].
-1. [!UICONTROL IRIS] börjar skicka två signaturrubriker (den ena med den gamla tangenten och den andra med den nya tangenten).
-1. När du har börjat ta emot båda rubrikerna kan du välja att ta bort den gamla nyckeln och bara titta på den nya signaturen.
 1. Den gamla nyckeln tas bort från [!DNL Audience Manager] och skickar [!UICONTROL IRIS] bara den nya signaturrubriken. Tangenterna har roterats.
 
 ## Data som används för signering {#data-signing}
