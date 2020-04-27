@@ -5,48 +5,47 @@ seo-description: Beskriver de obligatoriska och valfria stegen som gör att du k
 seo-title: Skapa en algoritmisk modell
 solution: Audience Manager
 title: Skapa en algoritmisk modell
-topic: DIL API
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 4d10aaac5779f283aa675eef10cf13392837157f
 
 ---
 
 
-# Skapa en algoritmisk modell {#create-an-algorithmic-model}
+# Skapa en look-Alike-modell {#create-an-algorithmic-model}
 
-Beskriver de obligatoriska och valfria stegen som gör att du kan skapa en algoritmisk modell i [!UICONTROL Model Builder].
+Beskriver de obligatoriska och valfria stegen som du kan använda för att skapa en [!UICONTROL Look-Alike Model].
 
-## Skapa en modell {#build-model}
-
-<!-- t_model_build.xml -->
-
-### Model Builder-avsnitt
+## Model Builder-avsnitt
 
 [!UICONTROL Model Builder] består av avsnitten [!UICONTROL Basic Information] och [!UICONTROL Configuration] . Om du vill skapa en modell fyller du i de obligatoriska fälten i dessa två avsnitt. Spara modellen för att starta algoritmen. [!DNL Audience Manager] skickar ett automatiskt meddelande när den första datakörningen har slutförts. När du har fått e-postmeddelandet kan du gå till [Trait Builder](../../features/traits/about-trait-builder.md) och skapa algoritmiska egenskaper.
 
 >[!NOTE]
 >
 >* Modelleringsprocessen körs bara en gång om du skapar en modell och inte skapar några egenskaper med den.
->* Skapa modeller från datakällor som innehåller meningsfull information. Modeller med otillräckliga data kommer att köras, men de kommer inte att returnera några resultat.
+>* Skapa modeller från datakällor som innehåller meningsfull information. Modeller med otillräckliga data kommer att köras, men returnerar inga resultat.
 >* *Skapa inte* modeller med andra algoritmiska egenskaper eller segment.
 >* Det automatiska e-postmeddelandet skickas endast en gång (efter den första datakörningen).
 
 
-### Bygg modellen
+## Bygg modellen
 
-Om du vill skapa en modell går du till [!UICONTROL Models] avsnittet och klickar **[!UICONTROL Add New]** och följer stegen nedan:
+Följ stegen nedan för att skapa en [!UICONTROL Look-Alike Model]:
 
-1. I avsnittet [Grundläggande information](../../features/algorithmic-models/create-model.md#basic-information)
+1. Gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Models]** och klicka **[!UICONTROL Add New]** i [!UICONTROL Look-Alike Modeling] avsnittet.
+   ![look-alike-add](assets/look-alike-add.png)
+2. I avsnittet [Grundläggande information](../../features/algorithmic-models/create-model.md#basic-information)
    * Ge modellen ett namn.
    * *(Valfritt)* Ge en kort beskrivning av modellen.
    * Ange status för modellen till **[!UICONTROL Active]** eller **[!UICONTROL Inactive]**. Inaktiva modeller kommer inte att köras och kommer inte att generera några data.
-1. I avsnittet [Konfiguration](../../features/algorithmic-models/create-model.md#configuration) :
+      ![look-alike-basic](assets/look-alike-basic.png)
+3. I avsnittet [Konfiguration](../../features/algorithmic-models/create-model.md#configuration) :
    * Klicka **[!UICONTROL Browse All Traits]** eller **[!UICONTROL Browse All Segments]** för att markera ett spår eller segment som du vill modellera mot. Välj en fördel, en regelbaserad egenskap eller ett segment som baslinje. Annars körs inte modellerna.
    * Välj en 30-, 60- eller 90-dagars summeringsperiod. Detta anger ett tidsintervall för modellen.
    * Algoritmen [!UICONTROL TraitWeight] är markerad som standard.
    * Välj en datakälla i [!UICONTROL Available Data] listan.
    * Klicka **[!UICONTROL Save]** när du är klar.
+      ![look-alike-configuration](assets/look-alike-configuration.png)
 
 ## Grundläggande information för algoritmiska modeller {#basic-information}
 
