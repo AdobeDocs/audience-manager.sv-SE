@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Förbättra bearbetningstiden för loggfiler med uppslagstabeller
 uuid: ffc77618-474b-455e-9c91-15b32fc151a5
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
 
 ---
 
@@ -27,7 +27,7 @@ En vanlig loggfil som används av rapporten innehåller vanligtvis tusentals rad
 
 Denna icke-ID-information kallas *`metadata`* (dvs. information om annan information) och skrivs i varje rad i loggfilen.
 
-Däremot fungerar rapporten huvudsakligen med ID:n i loggfilen [!UICONTROL Delivery Performance] . Metadata är användbara, men repetitiva. Det ökar filstorleken och tar längre tid att hämta in data.
+Däremot fungerar rapporten huvudsakligen med ID:n i loggfilen [!UICONTROL Delivery Performance] . Metadata är användbara, men repetitiva. Det ökar filstorleken och tar längre tid att hämta data.
 
 ## Minska filstorleken och förkorta behandlingstiden med indextabeller
 
@@ -69,8 +69,3 @@ Sökfilen nedan innehåller metadata och kan länkas tillbaka till huvudfilen me
 ## API:er kan eliminera behovet av uppslagstabeller
 
 Om ert annonssystem har ett API kanske ni inte behöver skicka metadata i en sökfil. Vi kan kanske få den informationen via API:t. I så fall bör loggfilerna endast innehålla ID:n. Vi arbetar tillsammans med dig för att avgöra om metadata kan hämtas via ett API.
-
->[!MORELIKETHIS]
->
->* [Rapport om leverans och prestanda](../../reporting/dynamic-reports/delivery-performance-report.md)
-
