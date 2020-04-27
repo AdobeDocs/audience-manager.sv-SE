@@ -5,12 +5,12 @@ seo-title: Uteslutning av algoritmiska modeller
 title: Uteslutning av algoritmiska modeller
 uuid: 1359800b-6e6c-41e1-88b4-23d31952abb3
 translation-type: tm+mt
-source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
+source-git-commit: 4d10aaac5779f283aa675eef10cf13392837157f
 
 ---
 
 
-# Algoritmiska modeller: Uteslutning av trait {#algorithmic-models-trait-exclusion}
+# Look-Alike Modeling: Uteslutning av trait {#algorithmic-models-trait-exclusion}
 
 [!UICONTROL Trait Exclusion] har ytterligare kontroller i modelleringsarbetsflödet, vilket gör att du kan lägga till nödvändiga skyddsspår till modellen, baserat på din domänexpertis och lagstadgade krav. Använd alternativet [!UICONTROL Exclusions] för att välja vilka egenskaper som ska ignoreras när du skapar modeller från en eller flera datakällor.
 
