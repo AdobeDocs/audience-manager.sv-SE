@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: e70c3dde2777d0ec128bae8998697b28e92df19a
+source-git-commit: 5518531ce008e42eb3f0168a845464d9d4da3e44
 
 ---
 
@@ -39,9 +39,15 @@ source-git-commit: e70c3dde2777d0ec128bae8998697b28e92df19a
       + [Användningsgränser](features/administration/usage-limits.md)
       + [Aktivitetsanvändningsrapportering](features/administration/activity-usage-reporting.md)
    + Algoritmiska modeller{#algorithmic-models}
-      + [Algoritmiska modeller](features/algorithmic-models/understanding-models.md)
-      + [Skapa en algoritmisk modell](features/algorithmic-models/create-model.md)
-      + [Algoritmiska modeller: Uteslutning av trait](features/algorithmic-models/trait-exclusion-algo-models.md)
+      + [Översikt över algoritmiska modeller](features/algorithmic-models/algo-models-overview.md)
+      + Utseendeliknande modellering {#look-alike-modeling}
+         + [Understanding Look-Alike modeling](features/algorithmic-models/understanding-models.md)
+         + [Skapa en look-Alike-modell](features/algorithmic-models/create-model.md)
+         + [Look-Alike Modeling: Uteslutning av trait](features/algorithmic-models/trait-exclusion-algo-models.md)
+      + Prediktiva målgrupper {#predictive-audiences}
+         + [Översikt över prediktiva målgrupper](features/algorithmic-models/predictive-audiences.md)
+         + [Komma igång med prediktiva målgrupper](features/algorithmic-models/predictive-audiences-start.md)
+         + [Rapportering om prediktiva målgrupper](features/algorithmic-models/predictive-audiences-reporting.md)
    + Audience Lab{#audience-lab}
       + [Audience Lab - översikt](features/audience-lab/audience-lab.md)
       + [Hantera testgrupper](features/audience-lab/audience-lab-manage-test-groups.md)
@@ -381,6 +387,7 @@ source-git-commit: e70c3dde2777d0ec128bae8998697b28e92df19a
    + [Vanliga frågor om personbaserade destinationer](faq/faq-people-based-destinations.md)
    + [Funktioner och funktioner Frågor och svar](faq/faq-features.md)
    + [Vanliga frågor om regler för profilsammanslagning och enhetsdiagram](faq/faq-profile-merge.md)
+   + [Vanliga frågor om prediktiva målgrupper](faq/faq-predictive-audiences.md)
    + [Vanliga frågor om målgruppsanpassning](faq/faq-targeting.md)
    + [Vanliga frågor om rapportering](faq/faq-reporting.md)
 + Hjälp och juridik{#help-and-legal}
