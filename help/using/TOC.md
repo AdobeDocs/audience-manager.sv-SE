@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 5518531ce008e42eb3f0168a845464d9d4da3e44
+source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
 
 ---
 
@@ -202,7 +202,6 @@ source-git-commit: 5518531ce008e42eb3f0168a845464d9d4da3e44
       + [Rapport över variationer för daglig trait](reporting/audience-optimization-reports/daily-trait-variation-report.md)
    + Interaktiva rapporter och överlappande rapporter {#interactive-and-overlap-reports}
       + [Översikt över interaktiva rapporter och överlappningsrapporter](reporting/dynamic-reports/dynamic-reports.md)
-      + [Rapport om leverans och prestanda](reporting/dynamic-reports/delivery-performance-report.md)
       + [Överlappningsrapport för spår-till-trait](reporting/dynamic-reports/trait-trait-overlap-report.md)
       + [Överlappningsrapport för segment-till-trait](reporting/dynamic-reports/segment-trait-overlap-report.md)
       + [Överlappningsrapport för segment-till-segment](reporting/dynamic-reports/segment-segment-overlap-report.md)
