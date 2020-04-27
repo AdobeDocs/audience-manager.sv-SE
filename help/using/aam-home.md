@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience Manager - produktdokumentation
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: d8c18b80aa2e22444a509af65bc81567d0902e51
 
 ---
 
@@ -156,7 +156,7 @@ Den här tekniska handboken ger självhjälp för Audience Manager - en branschl
      <br> 
      <p> <b>Senaste funktioner</b> </p> <p> 
      Läs om de senaste funktionerna i Audience Manager:</p>
-     <p><ul><li><a href="/help/using/features/administration/activity-usage-reporting.md">Aktivitetsanvändningsrapportering</a></li>
+     <p><ul><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Prediktiva målgrupper</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">Aktivitetsanvändningsrapportering</a></li>
      <li><a href="/help/using/overview/data-security-and-privacy/data-privacy.md">California Consumer Privacy Act (CCPA) Support and Privacy Documentation Overhaul</a></li>
      <li><a href="/help/using/features/segments/trait-recommendations.md">Intelligent Recommendations for Audience Marketplace Data från Adobe Sensei</a></li>
      <li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">Förbättringar av regler för profilsammanslagning</a></li></ul><p>
