@@ -1,37 +1,26 @@
 ---
-description: Bygg och hantera de egenskaper och segment som används i algoritmisk modellering, som också kallas look-alike-modellering. Modellfunktionerna finns i Målgruppsdata > Modeller.
+description: Bygg och hantera de egenskaper och segment som används i look-alike-modellering.
 keywords: relative weight, lookalike
-seo-description: Bygg och hantera de egenskaper och segment som används i algoritmisk modellering, som också kallas look-alike-modellering. Modellfunktionerna finns i Målgruppsdata > Modeller.
-seo-title: Om algoritmiska modeller
+seo-description: Bygg och hantera de egenskaper och segment som används i look-alike-modellering.
+seo-title: Om lookalike-modellering
 solution: Audience Manager
-title: Om algoritmiska modeller
-topic: DIL API
+title: Om lookalike-modellering
 uuid: 39441e72-5316-453d-9aff-0e0b633aabcd
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: a6e8db30c54e0629e27b1ee7f189a6c471d2bb6d
 
 ---
 
 
-# Om algoritmiska modeller {#about-algorithmic-models}
+# Understanding Look-Alike modeling {#about-algorithmic-models}
 
-Bygg och hantera de egenskaper och segment som används i algoritmisk modellering, som också kallas look-alike-modellering. Modellfunktionerna finns i **[!UICONTROL Audience Data > Models]**.
+## Hitta nya användare med lookalike-modellering {#find-new-users}
 
-<!-- c_models.xml -->
-
-## Förstå algoritmiska modeller {#understanding-models}
-
-Avsnitten nedan representerar en granskning av algoritmisk modellering i [!DNL Audience Manager]. De beskriver hur modellering fungerar, fördelarna och arbetsflödet.
-
-<!-- understanding-models.xml -->
-
-## Hitta nya användare med algoritmisk modellering {#find-new-users}
-
-Med algoritmisk modellering kan ni identifiera nya, unika målgrupper genom automatiserad dataanalys. Processen startar när du väljer ett trait- eller segment, ett tidsintervall samt datakällor från första och tredje part. Dina val innehåller indata för den algoritmiska modellen. När analysprocessen körs letar programmet efter berättigade användare baserat på delade egenskaper från den valda populationen. När du är klar är dessa data tillgängliga i [Trait Builder](../../features/traits/about-trait-builder.md) där du kan använda dem för att skapa egenskaper baserat på [precision och räckvidd](../../features/traits/trait-accuracy-reach.md). Dessutom kan du skapa segment som kombinerar algoritmiska egenskaper med regelbaserade egenskaper och lägga till andra kvalificeringskrav med booleska uttryck och jämförelseoperatorer. Algoritmisk modellering ger ett dynamiskt sätt att extrahera värde från alla tillgängliga trait-data.
+[!UICONTROL Look-Alike Modeling] hjälper er att identifiera nya, unika målgrupper genom automatiserad dataanalys. Processen startar när du väljer ett trait- eller segment, ett tidsintervall samt datakällor från första och tredje part. Dina val innehåller indata för den algoritmiska modellen. När analysprocessen körs letar programmet efter berättigade användare baserat på delade egenskaper från den valda populationen. När du är klar är dessa data tillgängliga i [Trait Builder](../../features/traits/about-trait-builder.md) där du kan använda dem för att skapa egenskaper baserat på [precision och räckvidd](../../features/traits/trait-accuracy-reach.md). Dessutom kan du skapa segment som kombinerar algoritmiska egenskaper med regelbaserade egenskaper och lägga till andra kvalificeringskrav med booleska uttryck och jämförelseoperatorer. [!UICONTROL Look-Alike Modeling] ger dig ett dynamiskt sätt att extrahera värde från alla tillgängliga trait-data.
 
 ## Fördelar {#advantages}
 
-De största fördelarna med att använda [!DNL Audience Manager] modellering är:
+De största fördelarna med att använda [!UICONTROL Look-Alike Modeling] :
 
 * **Noggrannhet:** Algoritmen körs regelbundet, vilket bidrar till att hålla resultaten aktuella och relevanta.
 * **Automatisering:** Du behöver inte hantera en stor uppsättning statiska regler. Algoritmen hittar målgrupper åt er.
@@ -50,7 +39,7 @@ Du hanterar modeller i **[!UICONTROL Audience Data > Models]**. På en hög niv�
 
 ## Felsökning {#troubleshooting}
 
-Vi inaktiverar alla algoritmiska modeller som inte kan generera data för tre på varandra följande körningar. Observera att du inte kan ange status för modellen till aktiv i efterhand. Vi rekommenderar att du skapar modeller från datakällor med tillräckliga egenskaper för att kunna samla in data från dina modeller.
+Vi inaktiverar alla [!UICONTROL Look-Alike Model] som inte kan generera data för tre på varandra följande körningar. Observera att du inte kan ange status för modellen till aktiv i efterhand. Vi rekommenderar att du skapar modeller från datakällor med tillräckliga egenskaper för att kunna samla in data från dina modeller.
 
 ## TraitWeight - introduktion {#understanding-traitweight}
 
@@ -91,13 +80,13 @@ Relaterade länkar:
 * [Model Builder](../../features/algorithmic-models/create-model.md)
 * [Noggrannhet och räckvidd](../../features/traits/trait-accuracy-reach.md)
 
-## Uppdateringsschema för algoritmiska modeller och egenskaper {#update-schedule}
+## Uppdatera schema för stilliknande modeller och egenskaper {#update-schedule}
 
 Skapa och uppdatera scheman för nya eller befintliga algoritmiska modeller och egenskaper.
 
 <!-- c_model_update_schedule.xml -->
 
-### Schema för att skapa och uppdatera algoritmiska modeller
+### Skapa och uppdatera snygga modeller
 
 <table id="table_E75A2B334A7F47ED9DFFBD6DF8636641"> 
  <thead>
@@ -109,11 +98,11 @@ Skapa och uppdatera scheman för nya eller befintliga algoritmiska modeller och 
  <tbody>
   <tr> 
    <td colname="col1"> <b>Skapa eller klona en modell</b> </td>
-   <td colname="col2"> <p>För nya eller klonade algoritmiska modeller körs skapandeprocessen en gång om dagen på: 
+   <td colname="col2"> <p>För nya eller klonade [!UICONTROL Look-Alike Models] körs skapandet en gång om dagen på: 
      <ul id="ul_97333AC409AF4760A91D90A06050122B"> 
       <li id="li_3A43809F924341FCAC3A85E3825E0F61"> 17:00 EST (november - mars) </li> 
       <li id="li_C07D22AB192D4E0191D9EBF6426EC73D"> 6:00 EDT (mars - november) </li> 
-     </ul> </p> <p>Modeller som byggts eller klonats efter att tidsgränsen för skapandet har uppnåtts behandlas följande dag. </p> <p>Om den första körningen av en modell inte genererar några data körs den en andra gång, nästa dag. Om det andra försöket inte genererar några data kommer det att göras ett tredje försök nästa dag. Modellen kommer att sluta köras om det tredje försöket inte genererar några data. I det här fallet inaktiverar vi modellen. Se mer i <a href="../../features/algorithmic-models/understanding-models.md#troubleshooting"> Felsökning av algoritmiska modeller</a>. </p> </td>
+     </ul> </p> <p>Modeller som byggts eller klonats efter att tidsgränsen för skapandet har uppnåtts behandlas följande dag. </p> <p>Om den första körningen av en modell inte genererar några data kommer den att köras en andra gång nästa dag. Om det andra försöket inte genererar några data kommer det att göras ett tredje försök nästa dag. Modellen kommer att sluta köras om det tredje försöket inte genererar några data. I det här fallet inaktiverar vi modellen. Se mer i <a href="../../features/algorithmic-models/understanding-models.md#troubleshooting"> Felsöka stilliknande modeller</a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <b>Uppdatera en modell</b> </td> 
@@ -126,7 +115,7 @@ Skapa och uppdatera scheman för nya eller befintliga algoritmiska modeller och 
  </tbody>
 </table>
 
-### Schema för generering och uppdatering av algoritmisk trait
+### Skapa och uppdatera bilder som ser ut som om de vore anpassade
 
 <table id="table_92A908818C4F4F2287EA56C786CD0BBD"> 
  <thead> 
