@@ -5,7 +5,7 @@ seo-title: Översikt över prediktiva målgrupper
 solution: Audience Manager
 title: Audience Manager Predictive Audience
 translation-type: tm+mt
-source-git-commit: 8cf504fa811e4043f83d0b9f11754065efccf7bb
+source-git-commit: 74a5de961b2f9ab6afa2caf998ba1100d40cc93a
 
 ---
 
@@ -97,7 +97,7 @@ När du utvärderar förstapartsmålgrupper och tilldelar poäng används standa
 ## Överväganden och begränsningar {#considerations}
 
 >[!IMPORTANT]
-> Läs igenom den här artikeln noggrant innan du går vidare till implementeringsfasen.
+> Läs igenom detta avsnitt noggrant innan du går vidare till implementeringsfasen.
 
 Tänk på följande när du konfigurerar dina [!UICONTROL Predictive Audiences] modeller:
 
