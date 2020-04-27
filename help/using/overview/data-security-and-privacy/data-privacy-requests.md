@@ -7,7 +7,7 @@ keywords: GDPR UI, GDPR API, CCPA, privacy
 title: Begäranden om dataintegritet
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 1a7f207b593ea783e20a0398bb0d543628253049
+source-git-commit: 39e0224d97d1d27c2b1dcee8e3b0d2d21847551b
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 1a7f207b593ea783e20a0398bb0d543628253049
 
 ## Översikt {#overview}
 
-Det här dokumentet innehåller en översikt över hur du hanterar enskilda dataintegritetsfrågor och avanmälningsbegäranden som du kan skicka till Audience Manager via användargränssnittet [för](https://gdprui.cloud.adobe.io/) sekretesstjänsten och **[!DNL Privacy Service API]**.
+Det här dokumentet innehåller en översikt över hur du hanterar enskilda dataintegritetsfrågor och avanmälningsbegäranden som du kan skicka till Audience Manager via användargränssnittet [för](https://privacyui.cloud.adobe.io/) sekretesstjänsten och **[!DNL Privacy Service API]**.
 
 Med dessa verktyg kan du skicka förfrågningar om sekretess för konsumentdata som gjorts i enlighet med GDPR och CCPA.
 
@@ -24,7 +24,7 @@ Innan vi läser den här artikeln rekommenderar vi att du går igenom ordlistan 
 
 Du kan skicka enskilda förfrågningar för att få tillgång till och ta bort konsumentdata från Audience Manager på två sätt:
 
-* Genom gränssnittet för [integritetstjänsten](https://gdprui.cloud.adobe.io/). Se dokumentationen [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md).
+* Genom gränssnittet för [integritetstjänsten](https://privacyui.cloud.adobe.io/). Se dokumentationen [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md).
 * Genom **[!DNL Privacy Service API]**. Läs dokumentationen [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md) och API-referensen [här](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml).
 
 När du skickar individuella förfrågningar om dataintegritet kan du skicka alla identifierare (ID) för Audience Manager som beskrivs i avsnittet Identifierare **[för](data-privacy-ids.md)**Audience Manager tillsammans med deras respektive ID för namnrymd (datakälla).
@@ -33,9 +33,9 @@ Integritetstjänsten [](https://www.adobe.io/apis/experienceplatform/home/servic
 
 ## Begäranden om dataåtkomst {#access-data}
 
-Du kan skicka enskilda förfrågningar om dataåtkomst via [sekretessgränssnittet](https://gdprui.cloud.adobe.io/) (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)) eller genom att ringa [!DNL Privacy Service API] (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) och [!DNL API] referens [här](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)).
+Du kan skicka enskilda förfrågningar om dataåtkomst via [sekretessgränssnittet](https://privacyui.cloud.adobe.io/) (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)) eller genom att ringa [!DNL Privacy Service API] (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) och [!DNL API] referens [här](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)).
 
-Med [sekretessgränssnittet](https://gdprui.cloud.adobe.io/) kan du skapa nya jobbförfrågningar genom att använda [!UICONTROL Request Builder] eller överföra en [!DNL JSON] fil.
+Med [sekretessgränssnittet](https://privacyui.cloud.adobe.io/) kan du skapa nya jobbförfrågningar genom att använda [!UICONTROL Request Builder] eller överföra en [!DNL JSON] fil.
 
 Om du vill se hur en giltig [!DNL JSON] fil ser ut kan du [hämta ett exempel på JSON](../data-security-and-privacy/assets/access_request.json).
 
@@ -43,9 +43,9 @@ Vi förstår att ni strävar efter att uppfylla era förfrågningar om datainteg
 
 ## Begäranden om borttagning av data{#delete-data}
 
-Du kan skicka begäranden om borttagning av data via [sekretesstjänstens gränssnitt](https://gdprui.cloud.adobe.io/) (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)) eller genom att ringa till [!DNL Privacy Service API] (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) och API-referens [här](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)).
+Du kan skicka begäranden om borttagning av data via [sekretesstjänstens gränssnitt](https://privacyui.cloud.adobe.io/) (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)) eller genom att ringa till [!DNL Privacy Service API] (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) och API-referens [här](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)).
 
-Med [sekretessgränssnittet](https://gdprui.cloud.adobe.io/) kan du skapa nya jobbförfrågningar genom att använda [!UICONTROL Request Builder] eller överföra en [!DNL JSON] fil.
+Med [sekretessgränssnittet](https://privacyui.cloud.adobe.io/) kan du skapa nya jobbförfrågningar genom att använda [!UICONTROL Request Builder] eller överföra en [!DNL JSON] fil.
 
 Om du vill se hur en giltig [!DNL JSON] fil ser ut kan du [hämta ett exempel på JSON](../data-security-and-privacy/assets/access_request.json).
 
