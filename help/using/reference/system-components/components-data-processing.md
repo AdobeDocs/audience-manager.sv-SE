@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Databearbetningskomponenter
 uuid: d458d869-7a23-4016-871d-0b994cf4af06
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
 
 ---
 
@@ -44,7 +44,6 @@ Kunderna har inte direktåtkomst till dessa system. Men kunderna arbetar med dem
 Detta är inte på något sätt en heltäckande lista, men några vanliga kontrollpanelrapporter som [!UICONTROL Snowflake] ansvarar för är:
 
 * [Rapport över variationer för daglig trait](/help/using/reporting/audience-optimization-reports/daily-trait-variation-report.md)
-* [Rapport om leverans och prestanda](/help/using/reporting/dynamic-reports/delivery-performance-report.md)
 * Alla överlappande rapporter (se avsnittet [Interaktiva rapporter](/help/using/reporting/dynamic-reports/dynamic-reports.md) för information om varje överlappningsrapport).
 * [Rapport om oanvända signaler](/help/using/reporting/dynamic-reports/unused-signals.md)
 
