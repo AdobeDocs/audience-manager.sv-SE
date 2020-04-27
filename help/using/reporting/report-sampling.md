@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Datainsamling och felfrekvens i valda rapporter för Audience Manager
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: 6dca5c8bc338a670050123a94808795705450c3a
 
 ---
 
@@ -51,3 +51,4 @@ De [!DNL Audience Manager] rapporter där exempeldata används är bland annat:
 * [Överlappningsrapporter](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) (trait-to-trait, segment-to-trait och segment-to-segment).
 * [Adresserbara målgruppsdata](../features/addressable-audiences.md) (data på kund- och segmentnivå).
 * Måttet [för totala enheter](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) för en [!UICONTROL Profile Merge Rule].
+* [Data Explorer](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md) använder exempeldata på [!UICONTROL Search] fliken och alla andra [!UICONTROL Saved Searches].
