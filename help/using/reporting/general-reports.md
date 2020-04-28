@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Allmänna rapporter
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: 723c75e8946c42779b4c27727ff9e6398b5fc9b1
 
 ---
 
@@ -84,33 +84,51 @@ Siffrorna i [!UICONTROL General Reports] genereras direkt från vår [!UICONTROL
 
 ## Resultat av allmänna rapporter för egenskaper {#general-report-results-traits}
 
-Måtten nedan är tillgängliga när du kör en allmän rapport och väljer **[!UICONTROL Trait]** som rapporttyp:
+Filtren nedan är tillgängliga när du kör en allmän rapport och väljer **[!UICONTROL Trait]** som rapporttyp.
 
-**Unika kundrelationer**
+Vid filtrering av resultaten med [!UICONTROL Device ID]:
 
-Det här måttet representerar det unika antalet [Audience Manager-unika användar-ID (UUID)](../reference/ids-in-aam.md) som är kvalificerade för egenskapen i det valda tidsintervallet. Om en användare till exempel besökte din hemsida tre gånger den 10/1 skulle du se en Unik Trait Realization.
+* [!UICONTROL Unique Trait Realizations] är antalet anonyma enhetsbesökare som har lagt till egenskapen i sin profil inom det valda tidsintervallet.
+* [!UICONTROL Total Trait Realization] är det totala antalet anonyma trait-realiseringar inom det valda tidsintervallet.
+* [!UICONTROL Total Trait Population] är antalet anonyma enhetsbesökare som har den här egenskapen i sin profil.
 
-**Totalt antal anpassningar**
+![general-report-traits-device](assets/general-report-traits-deviceid.png)
 
-Det här måttet representerar den totala mängden trait som utlöses för trait i det valda tidsintervallet. Om en användare till exempel besökte din hemsida och sedan navigerade till dina tekniska nyheter och dina sportnyheter, skulle de visas i den allmänna rapporten som tre kompletta trait-implementeringar och en unik trait-implementering.
+Vid filtrering av resultaten med [!UICONTROL Cross-Device ID]:
 
-**Population för totalt fack**
+* [!UICONTROL Unique Trait Realizations] är antalet autentiserade besökare som har lagt till egenskapen i sin profil inom det valda tidsintervallet.
+* [!UICONTROL Total Trait Realization] är det totala antalet autentiserade trait-realiseringar inom det valda tidsintervallet.
+* [!UICONTROL Total Trait Population] är antalet autentiserade besökare som har denna egenskap i sin profil.
 
-Det här måttet representerar den totala mängden UUID för Audience Manager som för närvarande är kvalificerade för egenskapen. Använd det här numret för att förstå hur många användare du kan använda för segmentering och målinriktning. Vanligtvis ingår användare i ett varumärke i [120 dagar](../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval). En användare som till exempel besöker din hemsida tre gånger idag och aldrig återvänder efteråt, blir kvar som användare i den här befolkningen varje dag till 120 dagar från och med nu. Vid 120 dagars markering skulle de tas bort från befolkningen. Läs vår referens [för](../features/traits/trait-and-segment-qualification-reference.md) Trait and Segment Qualification om du vill ha fler exempel på skillnaden mellan Unique Trait Realizations och Total Trait Population.
+![general-report-traits-cross-device](assets/general-report-traits-cross-device.png)
 
-Bilden nedan visar resultatet av att köra en allmän rapport för rapporttypen Trait.
+<!-- 
+### Unique Trait Realizations
 
-![](assets/general_reports_metrics.png)
+This metric represents the unique number of [Audience Manager Unique User IDs (UUID)](../reference/ids-in-aam.md) that qualified for the trait in your selected time range. For example, if a user visited your homepage three times on 10/1, you would see one Unique Trait Realization.
+
+### Total Trait Realizations
+
+This metric represents the total amount of trait fires for the trait in your selected time range. For example, if a user visited your homepage, then navigated to your tech news and your sports news sections, they would appear in the General Report as three total trait realizations, and one unique trait realization.
+
+### Total Trait Population
+
+This metric represents the total amount of Audience Manager UUIDs that are currently qualified for the trait. Use this number to understand the total amount of users you could use for segmentation and targeting. Typically, users remain part of a trait for [120 days](../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval). For example, a user visiting your homepage three times today and never returning afterwards, would remain as a user in this population every day until 120 days from now. At the 120 day mark, they would be removed from the population. Read our [Trait and Segment Qualification Reference](../features/traits/trait-and-segment-qualification-reference.md) for more examples on the difference between Unique Trait Realizations and Total Trait Population.
+
+The illustration below shows the results of running a general report for the Trait report type. -->
+<!-- 
+![](assets/general_reports_metrics.png) -->
+
 
 ## Resultat av allmänna rapporter för segment {#general-report-results-segments}
 
 Måtten nedan är tillgängliga när du kör en allmän rapport och väljer **[!UICONTROL Segment]** som rapporttyp:
 
-**Segmentpopulering i realtid**
+### Segmentpopulering i realtid
 
 Det här måttet visar det faktiska antalet unika besökare som har setts i realtid i det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av Audience Manager.
 
-**Total segmentpopulation**
+### Total segmentpopulation
 
 Det här måttet representerar det totala antalet Audience Manager UUID:n som är kvalificerade för segmentet under den summeringsperiod som du valde. Den totala segmentpopulationen på en dag representerar den mest korrekta användarbasen för målinriktning.
 
