@@ -5,7 +5,7 @@ seo-title: Uteslutning av algoritmiska modeller
 title: Uteslutning av algoritmiska modeller
 uuid: 1359800b-6e6c-41e1-88b4-23d31952abb3
 translation-type: tm+mt
-source-git-commit: 4d10aaac5779f283aa675eef10cf13392837157f
+source-git-commit: ee291fd9a06261afb71cc393fff0f4a1ee5cf7f4
 
 ---
 
@@ -35,8 +35,10 @@ Använd [Skapa ett modellarbetsflöde](../../features/algorithmic-models/create-
 1. Markeringen är nedtonad tills du väljer en eller flera datakällor för modellering. [!UICONTROL Exclusions]
 2. När du har valt en eller flera datakällor för modellering trycker du på **[!UICONTROL Browse All Traits]**.
 3. I **[!UICONTROL Select Traits to Exclude]** fönstret ser du alla egenskaper som är kopplade till de datakällor du valde tidigare. Välj de egenskaper som du vill utesluta.
-4. Du kan filtrera egenskaperna efter trait-typ eller bläddra bland trait-mapparna. Observera att trait-mappar bara visar de egenskaper som är kopplade till de valda datakällorna.
+4. Du kan filtrera egenskaperna efter trait-typ, trait-populationstyp eller bläddra bland svällningsmapparna. Observera att trait-mappar bara visar de egenskaper som är kopplade till de valda datakällorna.
 5. Tryck **[!UICONTROL Exclude Selected Traits]**.
+
+![trait-exclusions](assets/trait-exclusions-browse-traits.png)
 
 >[!TIP]
 >
