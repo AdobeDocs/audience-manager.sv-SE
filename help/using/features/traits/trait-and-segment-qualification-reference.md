@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Referens för dragningskvalitet
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 translation-type: tm+mt
-source-git-commit: 46d1770d50284e0e73bc2c43f5e5ccca22c12574
+source-git-commit: 22780105bc356100af8b64b50e3c92137adeb83a
 
 ---
 
@@ -71,3 +71,4 @@ För att ytterligare driva hem poängen skulle de dyka upp i morgondagens [!UICO
 ## Trait Qualification Limit {#trait-qualification-limit}
 
 Vi tillämpar en gräns på 150 000 trait-kvalifikationer för varje användarprofil, oavsett om det är en autentiserad profil ([DPUUID](../../reference/ids-in-aam.md)) eller ett enhets-ID ([UID](../../reference/ids-in-aam.md)). Observera att även om DPUUID:n är unika för en specifik instans av [!DNL Audience Manager], delas UUID:n över [!DNL Audience Manager] plattformen. För [!UICONTROL UUID]övrigt inför vi en rättvisepolicy när vi lagrar kvalifikationer. En algoritm säkerställer att en lika stor del av [!UICONTROL UUID] profilen är tillgänglig för alla instanser av [!DNL Audience Manager].
+
