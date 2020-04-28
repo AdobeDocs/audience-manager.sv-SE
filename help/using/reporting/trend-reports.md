@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Trendrapporter
 uuid: bedbe7d4-7cbb-4403-9104-312f9230aea1
 translation-type: tm+mt
-source-git-commit: 18bb00d494d44d7028dcc51dcb2fc57b23420142
+source-git-commit: 760818663ff3eb32c6de876c756697e1d9034369
 
 ---
 
@@ -40,16 +40,12 @@ Följande bild ger en översikt på hög nivå över viktiga element i [!UICONTR
 ![](assets/trend_reports.png)
 
 1. Konfigurera följande alternativ:
-
    **Typ av rapportering:** Välj önskad rapporttyp (Trait (Trait) eller Segment).
-
    **Datumintervall:** Ange datumintervallet för rapporten (startdatum och slutdatum).
-
    **Visningsintervall:** Ange visningsintervall (1, 7, 14, 30, 60 och 90 dagars intervall).
-
-2. Sök efter ett varumärke eller segment efter namn eller ID.
-3. Dra och släpp de egenskaper eller segment som du vill rapportera i mapplistan till [!UICONTROL Selections] panelen till höger.
-4. Generera rapporten som ska visas i grafiskt format eller exportera rapporten till CSV-format.
+1. Sök efter ett varumärke eller segment efter namn eller ID.
+1. Dra och släpp de egenskaper eller segment som du vill rapportera i mapplistan till [!UICONTROL Selections] panelen till höger.
+1. Generera rapporten som ska visas i grafiskt format eller exportera rapporten till CSV-format.
 
 ## Kör en trendrapport {#run-trend-report}
 
@@ -67,11 +63,8 @@ t_working_with_trend_reports.xml
 1. Ange visningsintervall: med 1, 7, 14, 30, 60 eller 90 dagar.
 1. Sök efter ett varumärke eller segment efter namn eller ID.
 1. Dra och släpp de egenskaper eller segment som du vill rapportera i mapplistan till [!UICONTROL Selections] panelen till höger.
-
-   För bästa prestanda ska du köra en [!UICONTROL Trend] rapport på färre än 20 egenskaper eller segment åt gången.
-1. Klicka **[!UICONTROL Graph Traits]** eller **[!UICONTROL Graph Segments]**, beroende på vilken typ av rapport du visar (Traits eller Segments).
-
-   Dessa alternativ ignorerar alla mappar och diagram endast individuellt markerade egenskaper eller segment.
+   * För bästa prestanda ska du köra en [!UICONTROL Trend] rapport på färre än 20 egenskaper eller segment åt gången.
+1. Klicka **[!UICONTROL Graph Traits]** eller **[!UICONTROL Graph Segments]**, beroende på vilken typ av rapport du visar (Traits eller Segments). Dessa alternativ ignorerar alla mappar och diagram endast individuellt markerade egenskaper eller segment.
 
    eller
 
@@ -81,10 +74,33 @@ t_working_with_trend_reports.xml
    >
    >[!UICONTROL Total Trait Realizations] beräknas [!UICONTROL Rule-based Traits] endast för.
 
-1. (Valfritt) För musen över enskilda egenskaper eller segment för att visa antalet besök och datumet för varje datapunkt.
+1. (Valfritt) För musen över enskilda egenskaper eller segment för att visa antalet besök och datumet för varje datapunkt. Du kan klicka på kolumnrubrikerna i tabellen om du vill sortera resultaten i stigande eller fallande ordning.
 
-   Du kan klicka på kolumnrubrikerna i tabellen om du vill sortera resultaten i stigande eller fallande ordning.
+## Trendrapportresultat för egenskaper {#trend-report-results-traits}
 
-För [!UICONTROL Trended Trait] rapporter visar nollor att det inte [!DNL Audience Manager] samlats in data för den dagen. Tomma poster anger att egenskapen inte fanns. I följande exempel visas exempel på båda typerna av poster:
+Filtren nedan är tillgängliga när du kör ett [!UICONTROL Trend Report] program och väljer **[!UICONTROL Trait]** som rapporttyp.
 
-![](assets/trended_data.png)
+Vid filtrering av resultaten med [!UICONTROL Device ID]:
+
+* [!UICONTROL Unique Trait Realizations] är antalet anonyma enhetsbesökare som har lagt till egenskapen i sin profil inom det valda tidsintervallet.
+* [!UICONTROL Total Trait Realization] är det totala antalet anonyma trait-realiseringar inom det valda tidsintervallet.
+* [!UICONTROL Total Trait Population] är antalet anonyma enhetsbesökare som har den här egenskapen i sin profil.
+
+Vid filtrering av resultaten med [!UICONTROL Cross-Device ID]:
+
+* [!UICONTROL Unique Trait Realizations] är antalet autentiserade besökare som har lagt till egenskapen i sin profil inom det valda tidsintervallet.
+* [!UICONTROL Total Trait Realization] är det totala antalet autentiserade trait-realiseringar inom det valda tidsintervallet.
+* [!UICONTROL Total Trait Population] är antalet autentiserade besökare som har denna egenskap i sin profil.
+
+![trendrapporter-egenskaper](assets/trend-report-traits.png)
+
+Nollor anger att uppgifterna inte [!DNL Audience Manager] samlades in för den dagen. Tomma poster anger att egenskapen inte fanns.
+
+## Trendrapportresultat för segment {#segment-report-results-traits}
+
+Filtren nedan är tillgängliga när du kör ett [!UICONTROL Trend Report] program och väljer **[!UICONTROL Segments]** som rapporttyp.
+
+* **[!UICONTROL Real-time Segment Population]**: antalet besökare som är kvalificerade för segmentet inom det valda tidsintervallet.
+* **[!UICONTROL Total Segment Population]**: det totala antalet besökare som är kvalificerade för segmentet.
+
+![trendrapportsegment](assets/trend-report-segments.png)
