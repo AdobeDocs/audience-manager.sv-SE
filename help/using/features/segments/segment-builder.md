@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Segment Builder
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
 translation-type: tm+mt
-source-git-commit: f162d62fff490aaabfec0ddbb31801fcae482e3b
+source-git-commit: 723c75e8946c42779b4c27727ff9e6398b5fc9b1
 
 ---
 
@@ -27,24 +27,29 @@ Börja med att titta på videon [](https://images-tv.adobe.com/avp/vr/b7f88801-e
 
 [!UICONTROL Segment Builder] består av tre separata avsnitt: [!UICONTROL Basic Information], [!UICONTROL Traits]och [!UICONTROL Destinations Mapping]. Om du vill skapa ett segment fyller du i de obligatoriska fälten i [!UICONTROL Basic Information] - och [!UICONTROL Traits] -avsnitten. [!UICONTROL Destinations Mapping] inställningarna är valfria. Se instruktionerna nedan för ytterligare hjälp.
 
-![create-segment](assets/create-segment.png)
-
 1. Under [Grundläggande information](../../features/segments/segment-builder.md#segment-builder-controls-basics) :
+
+   ![create-segment](assets/create-segment.png)
+
    * Namnge segmentet. Segmentnamnet får innehålla högst 255 tecken.
    * Ange segmentstatus (aktiv är standard).
    * Välj en datakälla. Använd den första listrutan för att filtrera mellan datakällor i Audience Manager, rapportsviter i Adobe Analytics eller båda. Använd sedan den andra listrutan för att välja datakälla. Om du inte använder rapportsviter från Adobe Analytics inaktiveras typväljaren för datakällan och används som standard endast för datakällor i Audience Manager.
    * Välj en profilkopplingsregel som ska användas för segmentkvalificering.
    * Tilldela segmentet till en lagringsmapp.
-2. I avsnittet [Traits](../../features/segments/segment-builder.md#segment-builder-controls-traits) :
+
+1. I avsnittet [Traits](../../features/segments/segment-builder.md#segment-builder-controls-traits) :
+   ![segment-builder-traits](assets/segment-builder-traits.png)
    * Sök efter den egenskap som du vill lägga till i ett segment och klicka på **[!UICONTROL Add Trait]**. Lägg till en annan egenskap för att skapa en egen trait-grupp.
-   * Visa spärren för avancerad sökning genom att klicka **[!UICONTROL Browse All Traits]**. Sök efter egenskaper efter namn, ID, beskrivning eller datakälla. Klicka på en mapp medan du söker för att begränsa resultatet till den mappen och dess undermappar. Du kan också filtrera egenskaper efter trait-typ.
+   * Visa spärren för avancerad sökning genom att klicka **[!UICONTROL Browse All Traits]**. Sök efter egenskaper efter namn, ID, beskrivning eller datakälla. Klicka på en mapp medan du söker för att begränsa resultatet till den mappen och dess undermappar. Du kan också filtrera egenskaper efter trait-typ ([!UICONTROL Folder Trait], [!UICONTROL Rule-based], [!UICONTROL Onboarded]och [!UICONTROL Algorithmic]) eller populationstyp ([enhets-ID](../../reference/ids-in-aam.md) och [korsenhets-ID](../../reference/ids-in-aam.md)).
+      ![segment-builder-browser-traits](assets/segment-builder-browse-traits.png)
    * Få rekommendationer [för](trait-recommendations.md) aktuella egenskaper när du bygger upp ditt segment.
    * Klicka och dra traits för att skapa separata grupper.
    * Hovra mellan grupper för att ange relationer med booleska värden [!UICONTROL AND], [!UICONTROL OR]och [!UICONTROL AND NOT] värden.
    * Håll muspekaren över klockikonen för att lägga till regler för [senaste](../../features/segments/recency-and-frequency.md) och frekvens i egenskapen.
    * Visa segmentpopulationsdata när du lägger till eller tar bort egenskaper. Klicka **[!UICONTROL Calculate Estimates]** för att visa (eller uppdatera) de beräknade populationssiffrorna. Läs mer om [segmentpopulationsdata](../../features/segments/segment-builder-data.md#segment-populations) i Segment Builder.
    * Klicka **[!UICONTROL Save]** när du är klar.
-3. *(Valfritt)* Mappa ett segment till ett mål i avsnittet [Målmappning](../../features/segments/segment-builder.md#segment-builder-controls-destinations) :
+
+1. *(Valfritt)* Mappa ett segment till ett mål i avsnittet [Målmappning](../../features/segments/segment-builder.md#segment-builder-controls-destinations) :
    * Sök efter målet och klicka på **[!UICONTROL Add Destination]**. Observera att målet måste finnas innan du kan lägga till det i ett segment.
    * Klicka **[!UICONTROL Save]** när du är klar.
 
