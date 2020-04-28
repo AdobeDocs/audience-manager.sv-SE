@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 translation-type: tm+mt
-source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
+source-git-commit: f191035a1ad4b83bb3d391de80e1f925d6295df7
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
 
 ## Översikt {#overview}
 
-Tack vare funktionen för målgruppsdelning mellan Audience Manager och Adobe Experience Platform kan ni dela era egenskaper och segment i Audience Manager med Adobe Experience Platform och vice versa. Ni behöver [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/source-connectors/adobe-applications/audience-manager.html) för att kunna dela målgrupper mellan Audience Manager och Adobe Experience Platform.
+Tack vare funktionen för målgruppsdelning mellan Audience Manager och Adobe Experience Platform kan ni dela era egenskaper och segment i Audience Manager med Adobe Experience Platform och vice versa. Ni behöver [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) för att kunna dela målgrupper mellan Audience Manager och Adobe Experience Platform.
 
 Ni kan använda egenskaper och segment i Audience Manager i Experience Platform för att lägga till Audience Manager-data i era kundprofiler och dra nytta av Experience Platform- [segmenteringstjänsten](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md).
 
@@ -46,7 +46,7 @@ Era egenskaper och segment i Audience Manager visas i Experience Platform som **
 
 * [Översikt över segmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html#audiences)
 * [Användarhandbok för Experience Platform Segment Builder](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html#audiences)
-* [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/source-connectors/adobe-applications/audience-manager.html)
+* [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
 
 <br> 
 
@@ -91,7 +91,23 @@ Ett exempel på ett segment som skapats automatiskt från ett Experience Platfor
 
 | Artikelnummer | Namn | Beskrivning |
 ---------|----------|---------
-| 1 | Integrationskod | Integrationskoden motsvarar segment-ID:t i Experience Platform. |
-| 2 | Datakälla | Automatiskt skapat. Alla egenskaper och segment som skapas automatiskt från Experience Platform-segment lagras i datakällan **Adobe Experience Platform Audience Sharing**. |
-| 3 | Sammanfogningsregel för profil | **Extern sammanfogningspolicy** anger att automatiskt skapade segment följer den sammanfogningspolicy som har konfigurerats i Experience Platform. |
-| 4 | Segmentregel | Segmentet består av det trait som beskrivs i avsnittet [](#aep-segments-as-aam-traits)Traits. |
+| 1 | [!UICONTROL Integration Code] | Integrationskoden motsvarar segment-ID:t i Experience Platform. |
+| 2 | [!UICONTROL Data Source] | Automatiskt skapat. Alla egenskaper och segment som skapas automatiskt från Experience Platform-segment lagras i datakällan **[!DNL Adobe Experience Platform Audience Sharing]**. |
+| 3 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** anger att automatiskt skapade segment följer den sammanslagningsprincip som har konfigurerats i Experience Platform. |
+| 4 | [!UICONTROL Segment Rule] | Segmentet består av det trait som beskrivs i avsnittet [](#aep-segments-as-aam-traits)Traits. |
+
+## Förstå skillnader i segmentpopulationen mellan Audience Manager och Experience Platform
+
+Antalet segmentpopulationer kan variera mellan era Audience Manager- och Experience Platform-segment. Segmentnummer för liknande eller identiska målgrupper bör vara nära, men skillnaderna i populationer kan bero på:
+
+* Körtider för segmenteringsjobb. Audience Manager kör ett segmenteringsjobb som uppdaterar siffrorna i gränssnittet en gång om dagen. Detta jobb är sällan anpassat till segmenteringsjobben i Experience Platform.
+* [Regler](/help/using/features/profile-merge-rules/merge-rules-overview.md) för profilsammanslagning i Audience Manager och [sammanslagningsprinciper](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) i Experience Platform fungerar olika, och identitetsdiagrammet som används för varje regel varierar. På grund av detta förväntas vissa skillnader mellan segmentpopulationerna.
+
+
+>[!MORELIKETHIS]
+>
+>* [Översikt över segmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html#audiences)
+>* [Användarhandbok för Experience Platform Segment Builder](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html#audiences)
+>* [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
+
+
