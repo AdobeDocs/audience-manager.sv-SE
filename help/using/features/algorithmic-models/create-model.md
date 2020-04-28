@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Skapa en algoritmisk modell
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 translation-type: tm+mt
-source-git-commit: 4d10aaac5779f283aa675eef10cf13392837157f
+source-git-commit: 35bad7e676aa1d4143f5d114a1eff85d6aba5f1d
 
 ---
 
@@ -34,13 +34,14 @@ Följ stegen nedan för att skapa en [!UICONTROL Look-Alike Model]:
 
 1. Gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Models]** och klicka **[!UICONTROL Add New]** i [!UICONTROL Look-Alike Modeling] avsnittet.
    ![look-alike-add](assets/look-alike-add.png)
-2. I avsnittet [Grundläggande information](../../features/algorithmic-models/create-model.md#basic-information)
+1. I avsnittet [Grundläggande information](../../features/algorithmic-models/create-model.md#basic-information)
    * Ge modellen ett namn.
    * *(Valfritt)* Ge en kort beskrivning av modellen.
    * Ange status för modellen till **[!UICONTROL Active]** eller **[!UICONTROL Inactive]**. Inaktiva modeller kommer inte att köras och kommer inte att generera några data.
       ![look-alike-basic](assets/look-alike-basic.png)
-3. I avsnittet [Konfiguration](../../features/algorithmic-models/create-model.md#configuration) :
-   * Klicka **[!UICONTROL Browse All Traits]** eller **[!UICONTROL Browse All Segments]** för att markera ett spår eller segment som du vill modellera mot. Välj en fördel, en regelbaserad egenskap eller ett segment som baslinje. Annars körs inte modellerna.
+1. I avsnittet [Konfiguration](../../features/algorithmic-models/create-model.md#configuration) :
+   * Klicka **[!UICONTROL Browse All Traits]** eller **[!UICONTROL Browse All Segments]** för att markera ett spår eller segment som du vill modellera mot. Sök efter egenskaper efter namn, ID, beskrivning eller datakälla. Klicka på en mapp medan du söker för att begränsa resultatet till den mappen och dess undermappar. Du kan också filtrera egenskaper efter trait-typ ([!UICONTROL Folder Trait], [!UICONTROL Rule-based], [!UICONTROL Onboarded]och [!UICONTROL Algorithmic]) eller populationstyp ([enhets-ID](../../reference/ids-in-aam.md) och [korsenhets-ID](../../reference/ids-in-aam.md)).
+      ![browse-traits](assets/browse-traits.png)
    * Välj en 30-, 60- eller 90-dagars summeringsperiod. Detta anger ett tidsintervall för modellen.
    * Algoritmen [!UICONTROL TraitWeight] är markerad som standard.
    * Välj en datakälla i [!UICONTROL Available Data] listan.
