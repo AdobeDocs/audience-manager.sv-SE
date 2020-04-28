@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Komma igång med REST API:er
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
+source-git-commit: d086b0cacd93f126ae7b362f4a2632bdccfcb1c2
 
 ---
 
@@ -34,7 +34,22 @@ Observera följande när du arbetar med [Audience Manager API](https://bank.demd
 
 * **Exempel på dokumentation och kod:** Text i *kursiv stil* representerar en variabel som du anger eller skickar in när du skapar eller tar emot [!DNL API] data. Ersätt *kursiv* text med egen kod, egna parametrar eller annan obligatorisk information.
 
-## Rekommendationer: Skapa en allmän API-användare {#requirements}
+## JWT-autentisering (tjänstkonto) {#jwt}
+
+Om du vill skapa en säker Adobe I/O API-session för service-till-tjänst måste du skapa en JSON Web Token (JWT) som kapslar in identiteten på din integrering och sedan byta ut den mot en åtkomsttoken. Varje begäran till en Adobe-tjänst måste innehålla åtkomsttoken i auktoriseringshuvudet tillsammans med API-nyckeln (klient-ID) som genererades när du skapade [tjänstkontointegreringen](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) i [Adobe I/O-konsolen](https://console.adobe.io/).
+
+Mer information om hur du konfigurerar din autentisering finns i [JWT-autentisering](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) (tjänstkonto).
+
+## OAuth-autentisering (inaktuell) {#oauth}
+
+>[!WARNING]
+> Audience Manager- [!UICONTROL REST API] tokenautentisering och förnyelse via [!DNL OAuth 2.0] är nu föråldrat.
+>
+> Använd [JWT-autentisering](#jwt-service-account-authentication-jwt) (tjänstkonto) i stället.
+
+Audience Manager [!UICONTROL REST API] följer [!DNL OAuth 2.0] standarderna för tokenautentisering och förnyelse. Avsnitten nedan beskriver hur du autentiserar och börjar arbeta med [!DNL API]dem.
+
+## Skapa en allmän API-användare {#requirements}
 
 Vi rekommenderar att du skapar ett separat, tekniskt användarkonto för att arbeta med Audience Manager [!DNL API]. Det här är ett generiskt konto som inte är kopplat till eller kopplat till en viss användare i organisationen. Den här typen av [!DNL API] användarkonto hjälper dig att uppnå två saker:
 
@@ -44,10 +59,6 @@ Vi rekommenderar att du skapar ett separat, tekniskt användarkonto för att arb
 Ett exempel eller ett användningsexempel för den här typen av konto är att du vill ändra många segment samtidigt med [grupphanteringsverktygen](../../reference/bulk-management-tools/bulk-management-intro.md). För att göra detta behöver ditt användarkonto [!DNL API] åtkomst. I stället för att lägga till behörigheter till en viss användare skapar du ett icke-specifikt, användarkonto som har rätt autentiseringsuppgifter, nyckel och hemlighet för att ringa [!DNL API] [!DNL API] samtal. Detta är också användbart om du utvecklar egna program som använder Audience Manager [!DNL API].
 
 Samarbeta med er Audience Manager-konsult för att skapa ett generiskt, [!DNL API]enbart användarkonto.
-
-## OAuth-autentisering {#oauth}
-
-Audience Manager [!UICONTROL REST API] följer [!DNL OAuth 2.0] standarderna för tokenautentisering och förnyelse. Avsnitten nedan beskriver hur du autentiserar och börjar arbeta med [!DNL API]dem.
 
 ## Lösenordsautentisering {#password-authentication-workflow}
 
@@ -108,6 +119,7 @@ I följande steg beskrivs arbetsflödet för att använda en uppdateringstoken f
 Skicka en begäran om en uppdateringstoken till den önskade [!DNL JSON] klienten. När du skapar begäran:
 
 * Använd en `POST` anropsmetod `https://api.demdex.com/oauth/token`.
+* Begäranrubriker: När du använder [Adobe I/O](https://www.adobe.io/) -tokens måste du ange `x-api-key` rubriken. Du kan hämta API-nyckeln genom att följa instruktionerna på sidan Integrering [av](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) tjänstkonto.
 * Konvertera ditt klient-ID och hemlighet till en base-64-kodad sträng. Separera ID:t och hemligheten med ett kolon under konverteringsprocessen. Inloggningsuppgifterna `testId : testSecret` konverteras till exempel till `dGVzdElkOnRlc3RTZWNyZXQ=`.
 * Skicka HTTP-rubrikerna `Authorization:Basic <base-64 clientID:clientSecret>` och `Content-Type: application/x-www-form-urlencoded`. Sidhuvudet kan till exempel se ut så här: <br/> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/> `Content-Type: application/x-www-form-urlencoded`
 * I den begärande texten anger du `grant_type:refresh_token` och skickar den uppdateringstoken som du fick i din tidigare åtkomstbegäran. Begäran ska se ut så här: <br/> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
