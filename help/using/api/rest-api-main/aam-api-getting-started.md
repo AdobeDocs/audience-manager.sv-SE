@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Komma igång med REST API:er
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: 184f9c298f776977c375e4c7a918c5a131c4bcd1
+source-git-commit: f4247b9b80e575f7450a78254acda9af9c230b3a
 
 ---
 
@@ -26,6 +26,7 @@ Saker som ni måste och bör göra när ni arbetar med Audience Manager [!DNL AP
 Observera följande när du arbetar med [Audience Manager API](https://bank.demdex.com/portal/swagger/index.html#/) -kod:
 
 * **Begäranparametrar:** Alla frågeparametrar är obligatoriska om inte annat anges.
+* **Begäranrubriker**: När du använder [Adobe I/O](https://www.adobe.io/) -tokens måste du ange `x-api-key` rubriken. Du kan hämta API-nyckeln genom att följa instruktionerna på sidan Integrering [av](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) tjänstkonto.
 * **[!DNL JSON]innehållstyp:**Ange`content-type: application/json`och **`accept: application/json`i koden.
 
 * **Förfrågningar och svar:** Skicka begäranden som ett korrekt formaterat [!DNL JSON] objekt. [!DNL Audience Manager] svarar med [!DNL JSON] formaterade data. Serversvar kan innehålla begärda data, en statuskod eller båda.
@@ -38,8 +39,8 @@ Observera följande när du arbetar med [Audience Manager API](https://bank.demd
 
 Audience Manager REST API:er har stöd för två autentiseringsmetoder.
 
-* [JWT-autentisering](#jwt) (tjänstkonto) är den rekommenderade autentiseringsmetoden.
-* [OAuth-autentisering (borttagen)](#oauth). Kunder med befintliga OAuth-integreringar kan fortsätta att använda den här metoden.
+* [JWT-autentisering](#jwt)(tjänstkonto). Detta är den rekommenderade autentiseringsmetoden.
+* [OAuth-autentisering (borttagen)](#oauth). Den här metoden är föråldrad, men kunder med befintliga OAuth-integreringar kan fortsätta använda den här metoden.
 
 >[!IMPORTANT]
 >
@@ -130,7 +131,6 @@ I följande steg beskrivs arbetsflödet för att använda en uppdateringstoken f
 Skicka en begäran om en uppdateringstoken till den önskade [!DNL JSON] klienten. När du skapar begäran:
 
 * Använd en `POST` anropsmetod `https://api.demdex.com/oauth/token`.
-<!-- * Request headers: when using [Adobe I/O](https://www.adobe.io/) tokens, you must provide the `x-api-key` header. You can get your API key by following the instructions in the [Service Account Integration](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) page. -->
 * Konvertera ditt klient-ID och hemlighet till en base-64-kodad sträng. Separera ID:t och hemligheten med ett kolon under konverteringsprocessen. Inloggningsuppgifterna `testId : testSecret` konverteras till exempel till `dGVzdElkOnRlc3RTZWNyZXQ=`.
 * Skicka HTTP-rubrikerna `Authorization:Basic <base-64 clientID:clientSecret>` och `Content-Type: application/x-www-form-urlencoded`. Sidhuvudet kan till exempel se ut så här: <br/> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/> `Content-Type: application/x-www-form-urlencoded`
 * I den begärande texten anger du `grant_type:refresh_token` och skickar den uppdateringstoken som du fick i din tidigare åtkomstbegäran. Begäran ska se ut så här: <br/> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
