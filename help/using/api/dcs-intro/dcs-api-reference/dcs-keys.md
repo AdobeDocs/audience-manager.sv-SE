@@ -7,7 +7,7 @@ title: Attribut som stöds för DCS API-anrop
 keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tdpid_ic
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -77,7 +77,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!UICONTROL DCS].
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Experience Platform Identity Service och beror på <code> idSyncDisable3rdPartySyncing</code> konfigurationen. Se <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_coppa.html" format="https" scope="external"> COPPA-stöd i Adobe Experience Platform Identity Service</a>. </p> </td>
+   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Experience Platform Identity Service och beror på <code> idSyncDisable3rdPartySyncing</code> konfigurationen. Se <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/coppa.html" format="https" scope="external"> COPPA-stöd i Adobe Experience Platform Identity Service</a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
@@ -119,7 +119,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!UICONTROL DCS].
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>Anger Experience Cloud ID-uppsättningen och som används av <span class="keyword"> Experience Cloud</span> ID-tjänsten. Mer information om ECID finns i <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid_cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID</a>. </p> </td> 
+   <td colname="col2"> <p>Anger Experience Cloud ID-uppsättningen och som används av <span class="keyword"> Experience Cloud</span> ID-tjänsten. Mer information om ECID finns i <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
