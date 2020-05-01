@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Ordlista
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -60,7 +60,7 @@ I [adresserbar publik](/help/using/features/addressable-audiences.md)representer
 
 **Kundattribut**
 
-Se [Kundattribut](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) i [!DNL Experience Cloud Core Services] produktdokumentationen.
+Se [Kundattribut](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) i [!DNL Experience Cloud Core Services] produktdokumentationen.
 
 <br> 
 
@@ -112,7 +112,7 @@ Detta [!UICONTROL Data Integration Library] är ett API-bibliotek som används a
 
 **Experience Cloud ID (ECID)**
 
-Tidigare kallat [!DNL Marketing Cloud] -ID (MID eller MCID). ID:t [!DNL Experience Cloud] är centralt för ID-tjänsten. Det är en unik och beständig identifierare för era webbplatsbesökare. Se Cookies och [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html).
+Tidigare kallat [!DNL Marketing Cloud] -ID (MID eller MCID). ID:t [!DNL Experience Cloud] är centralt för ID-tjänsten. Det är en unik och beständig identifierare för era webbplatsbesökare. Se Cookies och [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html).
 
 <br> 
 
@@ -269,7 +269,7 @@ TTL definierar hur många dagar en kvalificerad besökare stannar i ett intryck.
 
 ID- [!DNL Experience Cloud] tjänsten (tidigare besökar-ID) innehåller ett universellt, beständigt ID som identifierar besökarna i alla lösningar i [!DNL Experience Cloud].
 
-Se dokumentationen för [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/reference/marketing-cloud-id-service.html) .
+Se dokumentationen för [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html) .
 
 ## W-X-Y-Z {#w-z}
 
