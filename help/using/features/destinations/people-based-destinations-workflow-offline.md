@@ -5,7 +5,7 @@ seo-title: Arbetsflöde B - Personalisering baserad på data som bara är offlin
 solution: Audience Manager
 title: Arbetsflöde B - Personalisering baserad på data som bara är offline
 translation-type: tm+mt
-source-git-commit: 1302d8c9dba8e7bb7f0c57bcbd5531ec56fad0d5
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -133,6 +133,8 @@ I exemplet ovan skulle filnamnet se ut så här:
 `c2c_id_999999_987654_1560431657.sync`
 
 [Hämta exempelfilen här](https://marketing.adobe.com/resources/help/en_US/aam/downloads/c2c_id_999999_987654_1560431657.sync).
+
+<!-- Victor/Vlad: Please check the above link. Any way you can move this download to Git? I'm concerned about the plans to decommission marketing.adobe.com -Bob -->
 
 När du har skapat din ID-synkroniseringsfil måste du överföra den till en [!DNL Amazon S3] bucket. Mer information om hur du överför ID-synkroniseringsfiler finns i [Skicka batchdata till Audience Manager](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md).
 
