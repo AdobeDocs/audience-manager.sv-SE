@@ -7,7 +7,7 @@ title: Vanliga frågor om datainsamling och produktintegrering
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 translation-type: tm+mt
-source-git-commit: d221890d2a80cd557a6968d3382ee8842fea9aef
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -172,7 +172,7 @@ Nej, förlita dig inte på [!UICONTROL General Reports] och [!UICONTROL Trend Re
 
 Rapporterna beräknar populationer baserat på de oautentiserade profilposter (UUID) som vi ser i serverdelen när rapporterna skapas.
 
-Vid ett första anrop till [!UICONTROL DCS]servern är de deklarerade ID:na *inte* länkade till något UUID (dvs. det finns ingen [demdexcookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_am.html) på klientsidan). Användaren [!UICONTROL DCS] genererar ett UUID slumpmässigt och ställer in en [!DNL demdex] cookie och skickar den i svarsanropet, men den skickar inte UUID till serverdelen.
+Vid ett första anrop till [!UICONTROL DCS]servern är de deklarerade ID:na *inte* länkade till något UUID (dvs. det finns ingen [demdexcookie](hhttps://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html) på klientsidan). Användaren [!UICONTROL DCS] genererar ett UUID slumpmässigt och ställer in en [!DNL demdex] cookie och skickar den i svarsanropet, men den skickar inte UUID till serverdelen.
 
 >[!NOTE]
 >
