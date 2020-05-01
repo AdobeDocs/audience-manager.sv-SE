@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Funktioner och funktioner Frågor och svar
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -30,7 +30,7 @@ Detta *`Organization ID`* är ett unikt ID som identifierar din organisation fö
 
 En *`Organization ID`* stil ser till exempel ut så här: `1FD6776A524453CC0A490D44@AdobeOrg`.
 
-Detta *`Organization ID`* används av Audience Managers [DIL](../dil/dil-overview.md) API, [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/)och andra [!DNL Experience Cloud] lösningar. Användare med administratörsbehörighet kan hitta *`Organization ID`* på [!DNL Adobe Admin Console]. Se Vanliga frågor om [administration - Användarhantering](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html).
+Detta *`Organization ID`* används av Audience Managers [DIL](../dil/dil-overview.md) API, [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)och andra [!DNL Experience Cloud] lösningar. Användare med administratörsbehörighet kan hitta *`Organization ID`* på [!DNL Adobe Admin Console]. Se Vanliga frågor om [administration - Användarhantering](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 <br> 
 
@@ -58,7 +58,7 @@ Din datafeed och alla egenskaper som finns i feeden visas som undermappar och eg
 
 **Vad är[!UICONTROL Tag Insertion Manager (TIM)]?**
 
-Audience Manager använde [!UICONTROL Tag Insertion Manager] (TIM) för att skapa och hantera [!UICONTROL data collection code (DIL)]. Den här funktionen är föråldrad och har ersatts först av [!UICONTROL Dynamic Tag Manager (DTM)] och därefter av [!DNL Adobe Experience Platform Launch]. For more information, see [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) and [Dynamic Tag Management](https://marketing.adobe.com/resources/help/en_US/dtm/).
+Audience Manager använde [!UICONTROL Tag Insertion Manager] (TIM) för att skapa och hantera [!UICONTROL data collection code (DIL)]. Den här funktionen är föråldrad och har ersatts först av [!UICONTROL Dynamic Tag Manager (DTM)] och därefter av [!DNL Adobe Experience Platform Launch]. For more information, see [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) and [Dynamic Tag Management](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html).
 
 <br> 
 
@@ -86,4 +86,4 @@ Du bör använda Trait Recommendations när:
 
 **Är det någon skillnad mellan Adobe Analytics- och Audience Manager-segmenten?**
 
-Ja, läs [Understanding Segments in Analytics and Audience Manager](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/aam-analytics-segments.html) för en ingående beskrivning av skillnaderna.
+Ja, läs [Understanding Segments in Analytics and Audience Manager](https://docs.adobe.com/content/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) för en ingående beskrivning av skillnaderna.
