@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Allmänna användningsexempel för profilkopplingsregler
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 translation-type: tm+mt
-source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 >[!TIP]
 >
->Definitioner och beskrivningar av de här [!UICONTROL Merge Rule] inställningarna finns i Alternativ för [profilkopplingsregel definierade](merge-rule-definitions.md).
+>Definitioner och beskrivningar av de här [!UICONTROL Merge Rule] inställningarna finns i Alternativ för [profilsammanfogningsregel definierade](merge-rule-definitions.md).
 
 ## Målinriktning {#device-personalization}
 
@@ -98,7 +98,7 @@ Om du väljer ett [!UICONTROL device graph] alternativ för en [!UICONTROL Profi
   </tr> 
   <tr> 
    <td colname="col1"> <p>Alternativ för externt enhetsdiagram </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> Regler för profilsammanslagning</span> som skapats med <a href="https://marketing.adobe.com/resources/help/en_US/mcdc/" format="https" scope="external"> Experience Cloud Device Co-op</a> eller ett externt enhetsdiagram som är integrerat med <span class="keyword"> Audience Manager</span> är idealiska för: </p> <p> 
+   <td colname="col2"> <p><span class="wintitle"> Regler för profilsammanslagning</span> som skapats med <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html" format="https" scope="external"> Experience Cloud Device Co-op</a> eller ett externt enhetsdiagram som är integrerat med <span class="keyword"> Audience Manager</span> är idealiska för: </p> <p> 
      <ul id="ul_D76D773988604A619FA4A3BF37F910F0"> 
       <li id="li_969A0755A9E34CBEB2F7331C137B9A26">Digitala egenskaper med låg nivå av kundautentisering. </li> 
       <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">Breda, heltäckande varumärkeskampanjer. </li> 
