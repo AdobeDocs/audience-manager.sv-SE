@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Komma igång med profilkopplingsregler
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -135,7 +135,7 @@ visitor.setCustomerIDs({
      "authState":Visitor.AuthState.AUTHENTICATED
 ```
 
-Mer information finns i [Skapa en datakälla](#create-data-source) för olika enheter samt [Kund-ID och autentiseringstillstånd](https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid_customer_ids.html).
+Mer information finns i [Skapa en datakälla](#create-data-source) för olika enheter samt [Kund-ID och autentiseringstillstånd](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html).
 
 ### Konfigurera `DIL.create` funktion
 
@@ -150,7 +150,7 @@ var vDil = DIL.create({
 });
 ```
 
-I namnutrymmets nyckelvärdepar är `*`MCORG`*` -variabeln ditt [!DNL Experience Cloud] Organization ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration] avsnittet på [!DNL Experience Cloud] instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: Bastjänster](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html).
+I namnutrymmets nyckelvärdepar är `*`MCORG`*` -variabeln ditt [!DNL Experience Cloud] Organization ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration] avsnittet på [!DNL Experience Cloud] instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: Bastjänster](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 ### Konfigurera SDK:er
 
@@ -208,7 +208,7 @@ Kontrollera de metoder i koden [!DNL SDK] som gör att du kan skicka [!UICONTROL
  </tbody>
 </table>
 
-Se även [Audience Manager Methods for Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/?f=c_audience_manager_methods.html) and [Audience Manager Methods for iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/?f=aam_methods.html).
+Se även [Audience Manager Methods for Android](hhttps://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html) and [Audience Manager Methods for iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html).
 
 >[!MORELIKETHIS]
 >
