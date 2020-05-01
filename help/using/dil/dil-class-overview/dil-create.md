@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DIL skapa
 uuid: 6e054600-703c-4a97-af2a-8207c50013db
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -45,12 +45,12 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> containerNSID </code> </p> </td> 
    <td colname="col2"> <p>Heltal </p> </td> 
-   <td colname="col3"> <p>Den här egenskapen anger det behållar-ID som används av <span class="keyword"> Audience Manager </span> för ID-synkroniseringar. Du skulle ange <code> containerNSID </code> om du har <span class="wintitle"> DIL </span> distribuerad över flera platser. Var och en av dessa platser kommer att ha sina egna behållar-ID- och ID-synkroniseringar. När du bara har en plats är behållar-ID 0 som standard och du behöver inte ange detta korrekt. Kontakta din konsult för att få en lista över dina webbplatser och deras behållar-ID:n. </p> <p>I <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="https" scope="external"> Adobe Experience Platform Identity Service </a>motsvarar egenskapen <code> idSyncContainerID </code> egenskapen <code> containerNSID </code> i <span class="wintitle"> DIL </span>. Observera följande om du använder <span class="wintitle"> DIL </span> och <i></i> ID-tjänsten på flera platser: </p> <p> 
+   <td colname="col3"> <p>Den här egenskapen anger det behållar-ID som används av <span class="keyword"> Audience Manager </span> för ID-synkroniseringar. Du skulle ange <code> containerNSID </code> om du har <span class="wintitle"> DIL </span> distribuerad över flera platser. Var och en av dessa platser kommer att ha sina egna behållar-ID- och ID-synkroniseringar. När du bara har en plats är behållar-ID 0 som standard och du behöver inte ange detta korrekt. Kontakta din konsult för att få en lista över dina webbplatser och deras behållar-ID:n. </p> <p>I <a href="https://docs.adobe.com/content/help/en/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service </a>motsvarar egenskapen <code> idSyncContainerID </code> egenskapen <code> containerNSID </code> i <span class="wintitle"> DIL </span>. Observera följande om du använder <span class="wintitle"> DIL </span> och <i></i> ID-tjänsten på flera platser: </p> <p> 
      <ul id="ul_FF17004C21FC408BB8C8CCE670E45F37"> 
       <li id="li_FFB23BB3CD224678B0A1CF3731F6A206">För varje plats anger du samma behållar-ID på <code> containerNSID </code> och <code> idSyncContainerID </code>. </li> 
       <li id="li_CC932D3A0D154F6C9566EF31260A14CF">Både <span class="wintitle"> DIL </span> och ID-tjänsten kommer att försöka skicka ID-synk till vår datainsamling iFrame. Men iFrame säkerställer att <span class="wintitle"> DIL </span> inte startar en ID-synkronisering. Detta förhindrar duplicering. </li> 
       <li id="li_0A909AD26DE94EAA960DC1374C7AF89F">Endast <span class="wintitle"> DIL </span> skickar data till ett <a href="../../features/destinations/destinations.md"> URL-mål </a>. </li> 
-     </ul> </p> <p>Se även <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-idsyncontainerid.html" format="https" scope="external"> idSyncContainerID </a>. </p> </td> 
+     </ul> </p> <p>Se även <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/idsyncontainerid.html" format="https" scope="external"> idSyncContainerID </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> declaredId </code> </p> </td> 
@@ -62,7 +62,7 @@ r_dil_create.xml
     <ul id="ul_75E64D7DDBD14670BB0BC7819F72036C"> 
      <li id="li_43C7F0EAC5B24F07BBF4ADAB4B0142B7"> <code> dpid </code>: Data partner-ID som tilldelats dig av <span class="keyword"> Audience Manager </span>. </li> 
      <li id="li_3BD52ADEA1E24B41B51AFA95D71DD1FC"> <code> dpuuid </code>: Ditt unika ID för en användare. </li> 
-    </ul> <p> <p>Viktigt:  Använd endast okodade värden för dina ID:n. Kodningen skapar dubbelkodade identifierare. </p> </p> <p> <p>Obs!  Om du använder <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="https" scope="external"> Adobe Experience Platform Identity Service </a>anger du kundens ID med <code> setCustomerIDs </code> metoden i stället för <span class="wintitle"> DIL </span>. See <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid-authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a>. </p> </p> </td> 
+    </ul> <p> <p>Viktigt:  Använd endast okodade värden för dina ID:n. Kodningen skapar dubbelkodade identifierare. </p> </p> <p> <p>Obs!  Om du använder <a href="https://docs.adobe.com/content/help/en/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service </a>anger du kundens ID med <code> setCustomerIDs </code> metoden i stället för <span class="wintitle"> DIL </span>. See <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a>. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> delayAllUntilWindowLoad </code> </p> </td> 
@@ -77,12 +77,12 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> disableDestinationPublishingIframe </code> </p> </td> 
    <td colname="col2"> <p>Boolean </p> </td> 
-   <td colname="col3"> <p> <p>Viktigt:  Detta element har ersatts med <span class="wintitle"> DIL </span> version 8.0 (släppt augusti 2018). Använd <code> visitor.disableIdSyncs </code> funktionen <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-disableidsync.html" format="https" scope="external"> </a> i Adobe Experience Platform Identity Service i stället. </p> </p> <p> Om <code> true </code>inte, bifogar inte destinationspubliceringen IFRAME till DOM eller branddestinationerna. Standardvärdet är <code> false </code>. </p> </td> 
+   <td colname="col3"> <p> <p>Viktigt:  Detta element har ersatts med <span class="wintitle"> DIL </span> version 8.0 (släppt augusti 2018). Använd <code> visitor.disableIdSyncs </code> funktionen <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external"> </a> i Adobe Experience Platform Identity Service i stället. </p> </p> <p> Om <code> true </code>inte, bifogar inte destinationspubliceringen IFRAME till DOM eller branddestinationerna. Standardvärdet är <code> false </code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> disableIDSyncs </code> </p> </td> 
    <td colname="col2"> <p>Boolean </p> </td> 
-   <td colname="col3"> <p> <p>Viktigt:  Detta element har ersatts med <span class="wintitle"> DIL </span> version 8.0 (släppt augusti 2018). Använd <code> visitor.disableIdSyncs </code> funktionen <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-disableidsync.html" format="https" scope="external"> </a> i Adobe Experience Platform Identity Service i stället. </p> </p> <p>Inaktiverar ID-synkronisering. Du måste inaktivera ID-synkronisering när du använder DIL v6.2+ och Visitor ID-tjänsten. Funktionen <code> visitorService </code> (se exempelkoden nedan) hanterar den här åtgärden. </p> </td> 
+   <td colname="col3"> <p> <p>Viktigt:  Detta element har ersatts med <span class="wintitle"> DIL </span> version 8.0 (släppt augusti 2018). Använd <code> visitor.disableIdSyncs </code> funktionen <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external"> </a> i Adobe Experience Platform Identity Service i stället. </p> </p> <p>Inaktiverar ID-synkronisering. Du måste inaktivera ID-synkronisering när du använder DIL v6.2+ och Visitor ID-tjänsten. Funktionen <code> visitorService </code> (se exempelkoden nedan) hanterar den här åtgärden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> enableErrorReporting </code> </p> </td> 
@@ -92,7 +92,7 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> iframeAkamaiHTTPS </code> </p> </td> 
    <td colname="col2"> <p>Boolean </p> </td> 
-   <td colname="col3"> <p> <p>Viktigt:  Detta element har ersatts med <span class="wintitle"> DIL </span> version 8.0 (släppt augusti 2018). Använd <code> visitor.idSyncSSLUseAkamai </code> funktionen <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-idSyncSSLUseAkamai.html" format="https" scope="external"> </a> i Adobe Experience Platform Identity Service i stället. </p> </p> <p> Anger om målpubliceringsmallen ska använda Akamai för HTTPS-anslutningar. Aktiverat per partner. </p> </td> 
+   <td colname="col3"> <p> <p>Viktigt:  Detta element har ersatts med <span class="wintitle"> DIL </span> version 8.0 (släppt augusti 2018). Använd <code> visitor.idSyncSSLUseAkamai </code> funktionen <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/idsyncssluseakamai.html" format="https" scope="external"> </a> i Adobe Experience Platform Identity Service i stället. </p> </p> <p> Anger om målpubliceringsmallen ska använda Akamai för HTTPS-anslutningar. Aktiverat per partner. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> mappings </code> </p> </td> 
@@ -102,7 +102,7 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> namespace </code> </p> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>Obligatoriskt. </p> <p>Nyckelvärdesparet <code> namespace </code> innehåller ditt <span class="keyword"> Experience Cloud- </span> organisations-ID. Om du inte har det här ID:t kan du hitta det i <span class="wintitle"> administrationsavsnittet på </span> Experience Cloud- <span class="keyword"> </span> instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se <a href="../../faq/faq-features.md"> Funktioner och Funktioner Frågor och svar </a> och <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html" format="https" scope="external"> Administration - Användarhantering och Frågor och svar </a>. </p> </td> 
+   <td colname="col3"> <p>Obligatoriskt. </p> <p>Nyckelvärdesparet <code> namespace </code> innehåller ditt <span class="keyword"> Experience Cloud- </span> organisations-ID. Om du inte har det här ID:t kan du hitta det i <span class="wintitle"> administrationsavsnittet på </span> Experience Cloud- <span class="keyword"> </span> instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se <a href="../../faq/faq-features.md"> Funktioner och Funktioner Frågor och svar </a> och <a href="https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html" format="https" scope="external"> Administration - Användarhantering och Frågor och svar </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> partner </code> </p> </td> 
@@ -122,7 +122,7 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> visitorService </code> </p> </td> 
    <td colname="col2"> <p>Objekt </p> </td> 
-   <td colname="col3"> <p>Krävs med <span class="wintitle"> DIL </span> 6.2 eller senare. </p> <p> DIL förlitar sig på <code> setCustomerIDs </code> funktionen i <span class="wintitle"> Adobe Experience Platform Identity Service </span> för att skicka deklarerade ID:n till <span class="keyword"> Audience Manager </span>. Mer information finns i <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid-authenticated-state.html" format="https" scope="external"> Kund-ID och Autentiseringstillstånd </a> . </p> </td> 
+   <td colname="col3"> <p>Krävs med <span class="wintitle"> DIL </span> 6.2 eller senare. </p> <p> DIL förlitar sig på <code> setCustomerIDs </code> funktionen i <span class="wintitle"> Adobe Experience Platform Identity Service </span> för att skicka deklarerade ID:n till <span class="keyword"> Audience Manager </span>. Mer information finns i <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Kund-ID och Autentiseringstillstånd </a> . </p> </td> 
   </tr> 
  </tbody> 
 </table>
