@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Hämta användar-ID:n och regioner via Adobe Experience Platform Identity Service
 uuid: 80de6cf2-5d9e-4ef8-a0f2-d53b5d574c89
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -17,7 +17,7 @@ ID-tjänstkunder bör läsa det här avsnittet för information om hur du läser
 
 ## Hämta användar-ID från ID-tjänstens cookie {#get-user-ids-from-service-cookie}
 
-Med [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/) får användare som kommer till din webbplats ett besöks- och regions-ID. Dessa ID:n identifierar användare i alla lösningar i [!DNL Experience Cloud] och de krävs om du vill ringa [!UICONTROL DCS] samtal.
+Med [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html) får användare som kommer till din webbplats ett besöks- och regions-ID. Dessa ID:n identifierar användare i alla lösningar i [!DNL Experience Cloud] och de krävs om du vill ringa [!UICONTROL DCS] samtal.
 
 * Informationen [!UICONTROL user ID] krävs för att identifiera och koppla data till en viss besökare.
 * Detta [!UICONTROL region ID] är obligatoriskt eftersom det är kopplat till ett regionalt servernamn som du måste skicka data till [!UICONTROL DCS]. Informationen [!UICONTROL DCS] lagras i datacenter som är geografiskt närmast besökarna. Se ID:n för [DCS-region, platser och värdnamn](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
@@ -36,15 +36,15 @@ Kod i *kursiv stil* representerar en variabel platshållare.
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>1. Kontrollera din <span class="keyword"> Experience Cloud</span> -status</b> </p> </td> 
-   <td colname="col2"> <p>Du behöver ett <span class="keyword"> Experience Cloud</span> -konto för att använda ID-tjänsten. Om du har ett <span class="keyword"> Experience Cloud</span> -konto, bra! </p> <p> Registrera dig om du inte är en del av <span class="keyword"> Experience Cloud</span>. Vi vill gärna ha dig och det finns alltid plats för mer. Instruktioner om hur du konfigurerar ett konto finns i <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services.html" format="https" scope="external"> bastjänster - Aktivera dina lösningar</a>. </p> </td> 
+   <td colname="col2"> <p>Du behöver ett <span class="keyword"> Experience Cloud</span> -konto för att använda ID-tjänsten. Om du har ett <span class="keyword"> Experience Cloud</span> -konto, bra! </p> <p> Registrera dig om du inte är en del av <span class="keyword"> Experience Cloud</span>. Vi vill gärna ha dig och det finns alltid plats för mer. Instruktioner om hur du konfigurerar ett konto finns i <a href="https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html" format="https" scope="external"> Aktivera dina lösningar för bastjänster</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>2. Konfigurera <span class="keyword"> ID-tjänsten</span></b> </p> </td> 
-   <td colname="col2"> <p>ID- <span class="keyword"> tjänsten</span> består av JavaScript-kod som placeras på varje sida som du vill använda för datainsamling. Mer information finns i <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-implementation-guides.html" format="https" scope="external"> implementeringsguiderna</a> för ID-tjänster. </p> </td> 
+   <td colname="col2"> <p>ID- <span class="keyword"> tjänsten</span> består av JavaScript-kod som placeras på varje sida som du vill använda för datainsamling. Mer information finns i <a href="https://docs.adobe.com/content/help/en/id-service/using/implementation/implementation-guides.html" format="https" scope="external"> implementeringsguiderna</a> för ID-tjänster. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>3. Läs <span class="keyword"> ID-tjänstens</span> cookie</b> </p> </td> 
-   <td colname="col2"> <p>ID-tjänsten <span class="keyword"></span> lagrar användar-ID och region-ID i AMCV-cookien. Det fullständiga cookie-namnet är <code>AMCV_<i>###</i>@AdobeOrg</code>. Elementen är <code><i>###</i></code> platshållare för ditt företags-ID. Mer information finns i <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID</a> . </p> <p>Tolka AMCV-cookien för följande nyckelvärdepar: </p> <p> 
+   <td colname="col2"> <p>ID-tjänsten <span class="keyword"></span> lagrar användar-ID och region-ID i AMCV-cookien. Det fullständiga cookie-namnet är <code>AMCV_<i>###</i>@AdobeOrg</code>. Elementen är <code><i>###</i></code> platshållare för ditt företags-ID. Mer information finns i <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID</a> . </p> <p>Tolka AMCV-cookien för följande nyckelvärdepar: </p> <p> 
      <ul id="ul_502ECFCDDD084D448B5EDC4E5C0909C1"> 
       <li id="li_662FFA36AC854E699D50A183B161D654"> <code>mid=<i>user ID</i></code>: Detta nyckelvärdepar innehåller <span class="keyword"> Experience Cloud</span> -användar-ID:t. </li> 
       <li id="li_65422233187B4217B50DC52DBD58F404"> <code>aamlh=<i>region ID</i></code>: Detta nyckelvärdepar innehåller region-ID (kallas ibland för <span class="term"> platstips</span>) som är associerat med ett regionalt servernamn. </li> 
@@ -52,12 +52,12 @@ Kod i *kursiv stil* representerar en variabel platshållare.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>4. Hämta <span class="keyword"> Experience Cloud ID</span> med getMarketingCloudVisitorID</b> </p> </td> 
-   <td colname="col2"> <p><i>(Valfritt)</i> Den här funktionen returnerar besökar-ID:t för <span class="keyword"> Experience Cloud</span> . Den är utformad för anpassade lösningar och specifika användningsfall. Se <a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#working-with-getmarketingcloudvisitorid"> Arbeta med getMarketingCloudVisitorID</a> nedan och den <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-getmcvid.html" format="https" scope="external"> relaterade dokumentationen</a>för ID-tjänsten. </p> <p>Du behöver inte använda detta om du hämtar användar-ID:n och plats-ID:n från ID-tjänstens cookie. </p> </td> 
+   <td colname="col2"> <p><i>(Valfritt)</i> Den här funktionen returnerar besökar-ID:t för <span class="keyword"> Experience Cloud</span> . Den är utformad för anpassade lösningar och specifika användningsfall. Se <a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#working-with-getmarketingcloudvisitorid"> Arbeta med getMarketingCloudVisitorID</a> nedan och den <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/getmcvid.html" format="https" scope="external"> relaterade dokumentationen</a>för ID-tjänsten. </p> <p>Du behöver inte använda detta om du hämtar användar-ID:n och plats-ID:n från ID-tjänstens cookie. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Arbeta med `getMarketingCloudVisitorID`{#working-with-getmarketingcloudvisitorid}
+## Arbeta med `getMarketingCloudVisitorID` {#working-with-getmarketingcloudvisitorid}
 
 Ett annat sätt att hämta besökar-ID är med `getMarketingCloudVisitorID` funktionen. När funktionen anropas efterfrågas [!DNL ID service] och ett ID returneras. `getMarketingCloudVisitorID` godkänner det valfria `callback` argumentet som visas:
 
