@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Vanliga frågor om sekretess och datalagring
 uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -25,7 +25,7 @@ Svar på vanliga sekretessfrågor och datarelaterade frågor eller frågor.
 
 **Hur använder Audience Manager cookies och vilka cookies används?**
 
-Se [Cookies](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_am.html)för Audience Manager.
+Se [Cookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html)för Audience Manager.
 
 **Kan Audience Manager-kunder i USA rikta in sig på EU-resurser?**
 
