@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Implementera modulen för målgruppshantering
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -24,7 +24,7 @@ Följ stegen i den här självstudien för att vidarebefordra [!DNL Analytics] d
 
 Förutom att aktivera tilläggen eller implementera koden som beskrivs i det här dokumentet måste du också:
 
-* Implementera [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
+* Implementera [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html).
 * Aktivera vidarebefordran [på](https://docs.adobe.com/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) serversidan för rapportsviter i [!UICONTROL Adobe Analytics Admin Console].
 
 ## Implementering {#implementation}
@@ -50,7 +50,7 @@ Adobe rekommenderar att du använder [Launch](https://docs.adobe.com/content/hel
 
 Så här implementerar du [!UICONTROL Audience Management Module] med [Adobe DTM](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html) eller någon annan tagghanteringslösning:
 
-1. Hämta [!UICONTROL AppMeasurement] med [Analytics Code Manager](https://marketing.adobe.com/resources/help/en_US/reference/code_manager_admin.html) (kräver version 1.5 eller senare).
+1. Hämta [!UICONTROL AppMeasurement] med [Analytics Code Manager](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html) (kräver version 1.5 eller senare).
 1. Uppdatera din [!UICONTROL AppMeasurement] kod till den version som finns i den hämtade zip-filen.
 1. Kopiera all kod från `AppMeasurement_Module_AudienceManagement.js` zip-filen. Klistra in den i `appMeasurement.js` filen alldeles ovanför texten, `"DO NOT ALTER ANYTHING BELOW THIS LINE."`
 1. Lägg till koden, `s.loadModule("AudienceManagement");``AppMeasurement_Module_AudienceManagement.js` precis ovanför den kod som du nyss lade till i det föregående steget.
@@ -83,7 +83,7 @@ I följande tabell definieras viktiga variabler i kodexemplet.
 | `partner` | Obligatoriskt. Det här är ett partnernamn som tilldelats dig av Adobe. Det kallas ibland för din &quot;partner-ID&quot; eller &quot;partnerunderdomän&quot;.  Kontakta din Adobe-konsult eller [kundtjänst](https://helpx.adobe.com/marketing-cloud/contact-support.html) om du inte känner till ditt partnernamn. |
 | `containerNSID` | Obligatoriskt. De flesta kunder kan bara ställa in `"containerNSID":0` . Om ditt företag behöver anpassa ID-synkronisering med en annan behållare kan du ange detta behållar-ID här. |
 | `uuidCookie` | Valfritt. Med den här konfigurationen kan du ange en Adobe-cookie i förstahandsdomänen. Denna cookie innehåller [UID](../../reference/ids-in-aam.md) . |
-| `visitorService` - `namespace` | Obligatoriskt. Parametern `namespace` krävs om du använder AudienceManagement-modulen som medföljer [!UICONTROL AppMeasurement] version 2.10 eller senare. Den här [!UICONTROL AudienceManagement] modulen kräver att du använder [!UICONTROL Adobe Experience Platform Identity Service] 3.3 eller senare. <br> Detta [!UICONTROL Experience Cloud Organization ID] är det ID som ett företag får när det registrerar sig för [!UICONTROL Experience Cloud]. Ta reda på ditt företags organisations-ID i [organisationer och kontolänkning](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html). |
+| `visitorService` - `namespace` | Obligatoriskt. Parametern `namespace` krävs om du använder AudienceManagement-modulen som medföljer [!UICONTROL AppMeasurement] version 2.10 eller senare. Den här [!UICONTROL AudienceManagement] modulen kräver att du använder [!UICONTROL Adobe Experience Platform Identity Service] 3.3 eller senare. <br> Detta [!UICONTROL Experience Cloud Organization ID] är det ID som ett företag får när det registrerar sig för [!UICONTROL Experience Cloud]. Ta reda på ditt företags organisations-ID i [organisationer och kontolänkning](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html). |
 
 ## Resultat: Datavidarebefordran till Audience Manager {#results-data-forwarding}
 
