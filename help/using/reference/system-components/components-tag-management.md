@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Tagghanteringskomponenter
 uuid: e5059478-6ba7-4e1a-afec-e41ad7a27750
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -35,7 +35,7 @@ Klientportalen är det primära användargränssnittet för tagg- och datahanter
 
 ## DIL/TIM-behållare {#dil-tim}
 
-Behållaren [!UICONTROL DIL] hjälper dig att distribuera [!DNL Audience Manager] datainsamlingskod till din webbplats. [!UICONTROL TIM] är den borttagna taggiginfogningshanteraren. Den används inte längre av [!DNL Audience Manager]. I stället använder du [Dynamic Tag Management](https://marketing.adobe.com/resources/help/en_US/dtm/) eller [!DNL Audience Manager] tillägget i [Adobe Experience Platform Launch](https://docs.adobelaunch.com/extension-reference/web/adobe-audience-manager-extension) för att konfigurera och generera behållarkod som du placerar på sidorna i lagret. Behållaren fungerar [!UICONTROL DTM] med [!UICONTROL Data Information Library (DIL)] för att samla in data från din webbplats och skicka den till [!DNL Audience Manager].
+Behållaren [!UICONTROL DIL] hjälper dig att distribuera [!DNL Audience Manager] datainsamlingskod till din webbplats. [!UICONTROL TIM] är den borttagna taggiginfogningshanteraren. Den används inte längre av [!DNL Audience Manager]. I stället använder du [Dynamic Tag Management](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html) eller [!DNL Audience Manager] tillägget i [Adobe Experience Platform Launch](https://docs.adobelaunch.com/extension-reference/web/adobe-audience-manager-extension) för att konfigurera och generera behållarkod som du placerar på sidorna i lagret. Behållaren fungerar [!UICONTROL DTM] med [!UICONTROL Data Information Library (DIL)] för att samla in data från din webbplats och skicka den till [!DNL Audience Manager].
 
 ## Dataintegreringsbibliotek (DIL) {#dil}
 
