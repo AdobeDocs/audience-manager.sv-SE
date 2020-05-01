@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Flash DIL
 uuid: 65833cfd-768e-4b16-95c5-debd8411df38
 translation-type: tm+mt
-source-git-commit: d72460ee33be0bfffe56eff04286284b2e5f3918
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -158,5 +158,8 @@ s.loadModule(d);
 >* [Signaler, egenskaper och segment](../reference/signal-trait-segment.md)
 >* [Förklaring av nyckelvärdepar](../reference/key-value-pairs-explained.md)
 >* [Prefixkrav för nyckelvariabler](../features/traits/trait-variable-prefixes.md)
->* [Implementeringshandbok för AppMeasurement Flash, Flex och OSMF](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/flash/)
 
+
+<!-- Victor/Vlad: Do we still need this link? It doesn't look like this content has been migrated.
+>* [AppMeasurement Flash, Flex, and OSMF Implementation Guide](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/flash/)
+-->
