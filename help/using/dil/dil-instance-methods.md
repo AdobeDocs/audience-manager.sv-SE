@@ -7,7 +7,7 @@ solution: Audience Manager
 title: DIL-metoder på förekomstnivå
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -483,7 +483,7 @@ state = {
 
 ## idSync {#idsync}
 
-Består av två funktioner som gör att datapartners kan utbyta och synkronisera användar-ID mellan sig och Audience Manager.
+Består av två funktioner som gör att datapartners kan utbyta och synkronisera användar-ID:n mellan sig och Audience Manager.
 
 <!-- 
 
@@ -719,7 +719,7 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >
 >* [Namnkrav för nyckelvariabler](../features/traits/trait-key-name-requirements.md)
 >* [Prefixkrav för nyckelvariabler](../features/traits/trait-variable-prefixes.md)
->* [Synkroniseringsfunktioner i Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-idsync.html)
+>* [Synkroniseringsfunktioner i Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
 >* [DIL skapa](../dil/dil-class-overview/dil-create.md#dil-create)
 >* [Adobe Experience Platform Identity Service: AnvändCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
 >* [CORS-stöd i Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
