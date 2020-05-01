@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Förstå anrop till Demdex-domänen
 uuid: c06dae3a-f169-4712-80fb-d6d448dce51a
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -32,14 +32,14 @@ Audience Manager och Adobe Experience Platform Identity Service anropar och tar 
    <td colname="col2"> <p><span class="wintitle"> DPM</span> är en förkortning för <span class="wintitle"> Data Provider Match</span>. Den talar om för interna, <span class="keyword"> Adobe</span> -system att ett anrop från <span class="keyword"> Audience Manager</span> eller <span class="wintitle"> ID-tjänsten</span> skickar kunddata för synkronisering eller begär ett ID. Det här är det vanligaste <code> demdex.net</code> anropet du kan se från <span class="keyword"> Audience Manager</span> eller <span class="wintitle"> ID-tjänsten</span>. </p> <p><span class="wintitle"> Grundläggande om DPM</span> -anrop: </p> <p> 
      <ul id="ul_44023BB060774518BE414EE10820C141"> 
       <li id="li_0F94D1988A6944BA885FD40AB26FC49F"> <b> <span class="keyword"> Audience Manager</span> </b>: Ett <span class="wintitle"> DPM</span> -anrop från <span class="keyword"> Audience Manager</span> skickar data till <span class="wintitle"> datainsamlingsservrarna</span> och <span class="wintitle"> profilcacheservrarna</span>. Se <a href="../reference/system-components/components-data-collection.md"> Datainsamlingskomponenter</a>. </li> 
-      <li id="li_5A7EA9EE16EE4D828F0A24AE2B969122"> <b> <span class="wintitle"> ID-tjänst</span> </b>: Ett <span class="wintitle"> DPM</span> -anrop från <span class="wintitle"> ID-tjänsten</span> är en begäran om ett besökar-ID. Se <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies och Adobe Experience Platform Identity Service</a> och <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_id_request.html" format="https" scope="external"> How the Adobe Experience Platform Identity Service Requests and Sets ID</a>. </li> 
-     </ul> </p> <p> <p>Obs!  <span class="wintitle"> ID-tjänstens</span> kunder kan ändra <span class="wintitle"> DPM</span> -prefixet i domännamnet. Se <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-subdomain-config.html" format="https" scope="external"> auditionManager Server och auditionManagerServerSecure</a>. </p> </p> </td> 
+      <li id="li_5A7EA9EE16EE4D828F0A24AE2B969122"> <b> <span class="wintitle"> ID-tjänst</span> </b>: Ett <span class="wintitle"> DPM</span> -anrop från <span class="wintitle"> ID-tjänsten</span> är en begäran om ett besökar-ID. Se <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Adobe Experience Platform Identity Service</a> och <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/id-request.html" format="https" scope="external"> How the Adobe Experience Platform Identity Service Requests and Sets ID</a>. </li> 
+     </ul> </p> <p> <p>Obs!  <span class="wintitle"> ID-tjänstens</span> kunder kan ändra <span class="wintitle"> DPM</span> -prefixet i domännamnet. Se <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/subdomain-config.html" format="https" scope="external"> auditionManager Server och auditionManagerServerSecure</a>. </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/)
->* [Cookies för Audience Manager](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_am.html)
+>* [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)
+>* [Cookies för Audience Manager](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html)
 
