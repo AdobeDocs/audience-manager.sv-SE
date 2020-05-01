@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Lista över datakällor och inställningar
 uuid: 280a6acd-fef0-4737-a96d-9e22fbc8bfaf
 translation-type: tm+mt
-source-git-commit: c785c07a1572e9968e62a1bc753d24780eda64c5
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -58,7 +58,7 @@ Förutom textfält innehåller avsnittet de kontroller och alternativ som anges 
       <li id="li_063F1B263B3B4D69B8880F7ACCB82450"> <b><span class="uicontrol"> Enhetsövergripande</span></b>: Ett autentiserat ID som tillhandahålls av kunden. Välj det här alternativet när du vill skapa: 
        <ul id="ul_D998B4081AD843C2B3B3E642DD011C1F"> 
         <li id="li_C9D2AF70603043D7BE9DF12FD494D7C7">En datakälla för olika enheter och bygg en <span class="wintitle"> profilkopplingsregel</span>. </li> 
-        <li id="li_992BD05E2AFE454CAA4460DDEB2B839B">En datakälla som använder länkar från <a href="https://marketing.adobe.com/resources/help/en_US/mcdc/" format="https" scope="external"> Adobe Experience Cloud Device Co-op</a> eller ett annat enhetsdiagram från tredje part som är integrerat med <span class="keyword"> Audience Manager</span>. </li> 
+        <li id="li_992BD05E2AFE454CAA4460DDEB2B839B">En datakälla som använder länkar från <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html" format="https" scope="external"> Adobe Experience Cloud Device Co-op</a> eller ett annat enhetsdiagram från tredje part som är integrerat med <span class="keyword"> Audience Manager</span>. </li> 
        </ul> </li> 
      </ul> </p> </td> 
   </tr> 
@@ -95,7 +95,7 @@ Den [!UICONTROL Data Source Settings] innehåller de kontroller och alternativ s
 
 ### Inställningar för inkommande datakälla
 
-Markera den **[!UICONTROL Inbound]** här kryssrutan när datakällan är avsedd att ta emot inkommande data. Om du markerar **[!UICONTROL Inbound]** kryssrutan visas ytterligare två grupper av kontroller som beskrivs nedan.
+Markera kryssrutan **[!UICONTROL Inbound]** när datakällan är avsedd att ta emot inkommande data. Om du markerar **[!UICONTROL Inbound]** kryssrutan visas ytterligare två grupper av kontroller som beskrivs nedan.
 
 <table id="table_B2825B7BE0DB4665B47C589A3787CD93"> 
  <thead> 
@@ -111,7 +111,7 @@ Markera den **[!UICONTROL Inbound]** här kryssrutan när datakällan är avsedd
      <ul id="ul_3BC963CE378B4F6CB1861643A4541634"> 
       <li id="li_B86C5E7847424A2B9C094DF02741DDB8"> <b><span class="uicontrol"> Kund-ID</span></b>: Identifierar inkommande data med ett kund-ID. </li> 
       <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol"> Audience Manager-ID</span></b>: Identifierar inkommande data med ett <span class="keyword"> Audience Manager</span> -ID. </li> 
-      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud-ID</span></b>: Identifierar inkommande data med ett <span class="keyword"> Experience Cloud</span> ID. See <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </li> 
+      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud-ID</span></b>: Identifierar inkommande data med ett <span class="keyword"> Experience Cloud</span> ID. See <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
