@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DIL-användningsexempel och kodexempel
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -240,5 +240,5 @@ Så här kör du `dil.js` filen i GTM:
 >
 >* [Hjälpcenter för Google Tag Manager](https://support.google.com/tagmanager#topic=3441530)
 >* [Signaler](../dil/dil-instance-methods.md#signals)
->* [Prefixkrav för nyckelvariabler](https://marketing.adobe.com/resources/help/en_US/aam/r_tb_variable_prefixes.html)
+>* [Prefixkrav för nyckelvariabler](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/traits/trait-variable-prefixes.html#prefix-requirements-for-key-variables)
 
