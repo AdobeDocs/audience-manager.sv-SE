@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Autentiseringstillstånd för besökare i Audience Manager
 uuid: d748c0c3-5833-4fb9-ab3e-793f5f252e47
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 Status för besöksautentisering i Audience Manager avgör om den nya trait-informationen skrivs till besökarens autentiserade profil eller till enhetsprofilen, där data samlades in. Audience Manager hanterar autentiseringsstatusarna för besökar-ID UNKNOWN och LOGGED_OUT i händelseanrop på samma sätt.
 
-Från och med [!DNL Experience Cloud] ID-tjänsten v1.5+ innehåller metoden det valfria `setCustomerID` `AuthState` objektet. `AuthState` identifierar besökare utifrån deras [autentiseringsstatus](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html). [!DNL Audience Manager] hanterar de realiserade egenskaperna på olika sätt, beroende på vilken autentiseringsstatus som skickas i anropet och vilken [profilkopplingsregel](../features/profile-merge-rules/merge-rules-dashboard.md) du använder för segmentering.
+Från och med [!DNL Experience Cloud] ID-tjänsten v1.5+ innehåller metoden det valfria `setCustomerID` `AuthState` objektet. `AuthState` identifierar besökare utifrån deras [autentiseringsstatus](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html). [!DNL Audience Manager] hanterar de realiserade egenskaperna på olika sätt, beroende på vilken autentiseringsstatus som skickas i anropet och vilken [profilkopplingsregel](../features/profile-merge-rules/merge-rules-dashboard.md) du använder för segmentering.
 
 ## Autentiseringsstatus: OKÄND {#auth-status-unknown}
 
@@ -102,5 +102,5 @@ Exempelanrop (det begärandevärde som motsvarar autentiseringsstatusen markeras
 
 >[!MORELIKETHIS]
 >
->* [Kund-ID:n och autentiseringstillstånd](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html)
+>* [Kund-ID:n och autentiseringstillstånd](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html)
 
