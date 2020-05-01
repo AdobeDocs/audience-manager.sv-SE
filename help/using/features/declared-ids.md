@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Deklarerade ID:n
 uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -36,7 +36,7 @@ Vissa webbläsare, och de flesta mobila enheter, accepterar inte cookies från t
  <tbody> 
   <tr> 
    <td colname="col1"> <b>Händelseanrop</b> </td> 
-   <td colname="col2"> <p>För att fungera behöver du <span class="wintitle"> DIL </span> och <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="https" scope="external"> Adobe Experience Platform Identity Service- </a> koden på sidan. <span class="wintitle"> DIL </span> får <span class="wintitle"> deklarerade ID:n </span> från <code> setVisitorID </code> funktionen som tillhandahålls av <span class="keyword"> Adobe Experience Platform Identity Service </span> och skickar vidare dessa till <span class="keyword"> Audience Manager </span>. </p> </td> 
+   <td colname="col2"> <p>För att fungera behöver du <span class="wintitle"> DIL </span> och <a href="https://docs.adobe.com/content/help/en/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service- </a> koden på sidan. <span class="wintitle"> DIL </span> får <span class="wintitle"> deklarerade ID:n </span> från <code> setVisitorID </code> funktionen som tillhandahålls av <span class="keyword"> Adobe Experience Platform Identity Service </span> och skickar vidare dessa till <span class="keyword"> Audience Manager </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Matcha ID</b> </td> 
@@ -57,7 +57,7 @@ För att komma igång måste du konfigurera [!DNL Experience Cloud] ID-tjänsten
 
 ## Avanmäl samtal {#opt-out-calls}
 
-Processen uppfyller besökarnas önskemål om att avanmäla sig från målgruppsanpassning för Audience Manager på er webbplats. [!UICONTROL declared ID] När Audience Manager tar emot en avanmälningsbegäran innehåller den [!DNL JSON] som returneras av [!UICONTROL DCS] felkoden 171, med meddelandet&quot;En avanmälningstagg påträffades&quot;, i stället för användar-ID för Audience Manager.
+Processen följer besökarnas preferenser för att avanmäla sig från målgruppsanpassning för Audience Manager på er webbplats. [!UICONTROL declared ID] När Audience Manager tar emot en avanmälningsbegäran innehåller den [!DNL JSON] som returneras av [!UICONTROL DCS] felkoden 171, med meddelandet&quot;En avanmälningstagg påträffades&quot;, i stället för användar-ID för Audience Manager.
 
 * Audience Manager kan skicka in en [!UICONTROL declared ID] avanmälan tillsammans med en Audience Manager [!UICONTROL UUID] i [!DNL URL].
 * Avanmälningen lagras [!UICONTROL declared ID] per partner i [!UICONTROL Profile Cache Server ([!UICONTROL PCS]). Det finns ingen avanmälan på plattformsnivå med [!UICONTROL declared IDs]. Dessutom väljer Audience Manager att användaren ska vara borta från just den regionen i kanten (avanmälan gäller inte för flera [!UICONTROL DCS] regioner).
@@ -187,7 +187,7 @@ Beskriver de konfigurationsvariabler som används för att skicka deklarerade ID
 
 <!-- r_dil_declared_id_vars.xml -->
 
-När du använder med [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/)behöver du inte längre skicka in [!UICONTROL declared IDs] de borttagna `dpid` och `dpuuid` variablerna. I stället förlitar sig de aktuella versionerna på [!UICONTROL DIL] funktionen `visitorService` för att hämta [!UICONTROL declared IDs] från `setCustomerIDs` funktionen i [!UICONTROL Adobe Experience Platform Identity Service]. Mer information finns i [Kund-ID och autentiseringstillstånd](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html). Du ringer `visitorService` in `DIL.create` enligt nedan.
+När du använder med [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)behöver du inte längre skicka in [!UICONTROL declared IDs] de borttagna `dpid` och `dpuuid` variablerna. I stället förlitar sig de aktuella versionerna på [!UICONTROL DIL] funktionen `visitorService` för att hämta [!UICONTROL declared IDs] från `setCustomerIDs` funktionen i [!UICONTROL Adobe Experience Platform Identity Service]. Mer information finns i [Kund-ID och autentiseringstillstånd](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html). Du ringer `visitorService` in `DIL.create` enligt nedan.
 
 ```js
 var vDil = DIL.create({
@@ -198,7 +198,7 @@ var vDil = DIL.create({
 });
 ```
 
-I nyckelvärdepar `namespace` är det ditt `MCORG` [!DNL Experience Cloud] organisations-ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration] avsnittet på [!DNL Experience Cloud] instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: Bastjänster](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html).
+I nyckelvärdepar `namespace` är det ditt `MCORG` [!DNL Experience Cloud] organisations-ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration] avsnittet på [!DNL Experience Cloud] instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: Bastjänster](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html).
 
 ## Föråldrade funktioner {#deprecated-functions}
 
