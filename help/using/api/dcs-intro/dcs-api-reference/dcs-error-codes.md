@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Felkoder, meddelanden och exempel för DCS
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 05609645bef676bbd98aa08caf32a4ae2dcb6f00
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -41,7 +41,7 @@ I tabellerna nedan representerar kursiv *text* en variabelplatshållare.
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>Ogiltigt <code> d_orgid</code> värde (det gick inte att hitta någon konfiguration för detta organisations-ID): <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Organisations-ID:t är felaktigt. </p> <p>Kontrollera ditt ID och försök igen. Om du inte känner till eller har ditt organisations-ID kan du läsa avsnittet Administrationssida i <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html" format="https" scope="external"> Experience Cloud Administration</a> för att få information om hur du hittar det. </p> </td> 
+   <td colname="col3"> <p>Organisations-ID:t är felaktigt. </p> <p>Kontrollera ditt ID och försök igen. Om du inte känner till eller har ditt företags-ID kan du läsa avsnittet Administrationssida i <a href="https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external"> Organisationer och kontolänkning</a> för mer information om hur du hittar det. </p> </td> 
   </tr>
  </tbody>
 </table>
