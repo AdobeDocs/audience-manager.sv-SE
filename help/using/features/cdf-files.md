@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Kunddataflöden
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -105,7 +105,7 @@ En [!UICONTROL CDF] fil innehåller några eller alla fält som definieras nedan
   <tr> 
    <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>Det <span class="keyword"> Experience Cloud</span> ID (MID) som tilldelats webbplatsbesökaren. Se även Cookies <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> och Adobe Experience Platform Identity Service</a>. </p> </td> 
+   <td colname="col3"> <p>Det <span class="keyword"> Experience Cloud</span> ID (MID) som tilldelats webbplatsbesökaren. Se även Cookies <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> och Adobe Experience Platform Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> All Segments</code> </p> </td> 
@@ -159,7 +159,7 @@ Visar och definierar datastrukturen för en [!UICONTROL CDF] fil. Detta inkluder
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">Begärandeparametrar </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referent </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP-adress </li> 
-      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud-enhets-ID (eller MID). Se även <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> cookies och Adobe Experience Platform Identity Service</a> </li> 
+      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud-enhets-ID (eller MID). Se även <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> cookies och Adobe Experience Platform Identity Service</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595">Alla segment </li> 
       <li id="li_1B5A6F076A354BA0A931CB260E6D2675">Alla egenskaper </li> 
      </ol> </p> <p>Fältbeskrivningar finns i Innehåll för <a href="#cdf-defined"> kunddatafeed definierad</a>. </p> </td> 
@@ -252,7 +252,7 @@ I följande tabell visas och definieras elementen i ett [!UICONTROL CDF] filnamn
 
 ## Bearbetningsmeddelanden för kunddataflödesfil {#cdf-file-processing-notifications}
 
-[!DNL Audience Manager] skriver en `.info` fil till din [!DNL S3] katalog så att du vet när ( [!UICONTROL Customer Data File] ) [!UICONTROL CDF]är klar för hämtning. Filen `.info` innehåller även [!DNL JSON] formaterade metadata om innehållet i dina [!UICONTROL CDF] filer. I det här avsnittet finns information om syntaxen och fälten som används i den här meddelandefilen.
+[!DNL Audience Manager] skriver en `.info` fil till din [!DNL S3] katalog så att du vet när ( [!UICONTROL Customer Data File] )[!UICONTROL CDF]är klar för hämtning. Filen `.info` innehåller även [!DNL JSON] formaterade metadata om innehållet i dina [!UICONTROL CDF] filer. I det här avsnittet finns information om syntaxen och fälten som används i den här meddelandefilen.
 
 ## Exempelinformationsfil {#sample-info-file}
 
