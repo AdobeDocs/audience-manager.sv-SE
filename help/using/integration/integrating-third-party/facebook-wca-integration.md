@@ -5,7 +5,7 @@ seo-title: Integrering med Facebook WCA
 solution: Audience Manager
 title: Integrering med Facebook WCA
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -29,9 +29,9 @@ Den här sidan illustrerar processen att skapa WCA-pixlar (Custom Audiences) fö
 1. Facebook-annonskonto
 2. Audience Manager-segment, redo att tilldelas till ditt nya Facebook-mål. Så här [skapar du ett segment](/help/using/features/segments/segment-builder.md) i gränssnittet för Audience Manager.
 3. Adobe Experience Platform Identity Service (ECID) version 4.1.0 eller senare. Ladda ned den senaste versionen **[här](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**.
-4. Audience Manager Data Integration Library (DIL) version 9.0 eller senare, kan laddas ned **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Om du använder[SSF (Server-Side Forwarding)](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html)för att importera data till Audience Manager måste du använda AppMeasurement version 2.12 eller senare. Hämta AppMeasurement med[Analytics Code Manager](https://marketing.adobe.com/resources/help/en_US/reference/code_manager_admin.html).
+4. Audience Manager Data Integration Library (DIL) version 9.0 eller senare, kan laddas ned **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Om du använder[SSF (Server-Side Forwarding)](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)för att importera data till Audience Manager måste du använda AppMeasurement version 2.12 eller senare. Hämta AppMeasurement med[Analytics Code Manager](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html).
 
-Vi rekommenderar att du installerar eller uppgraderar biblioteken i steg 3 och 4 med [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) eller [Adobe Dynamic Tag Management](https://marketing.adobe.com/resources/help/en_US/dtm/).
+Vi rekommenderar att du installerar eller uppgraderar biblioteken i steg 3 och 4 med [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) eller [Adobe Dynamic Tag Management](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html).
 
 ## Steg 1 - Skapa ett Facebook-mål i Audience Manager {#step-1-create-facebook-destination}
 
