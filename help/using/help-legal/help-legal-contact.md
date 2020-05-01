@@ -5,7 +5,7 @@ seo-title: Kontakt och juridisk information
 solution: Audience Manager
 title: Kontakt och juridisk information
 translation-type: tm+mt
-source-git-commit: 0b32a48e99b35990dc7ccdcc03fcc68ba769d93e
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Experience Cloud Customer Care-teamet är här för att hjälpa er och til
 
 * [På hjälpsidorna för Experience Cloud finns råd, tips och vanliga frågor](https://helpx.adobe.com/support.ec.html)
 * [Ställ en snabb fråga på Twitter @AdobeExpCare](https://twitter.com/AdobeExpCare)
-* [Kontakta kundtjänstteamet direkt](https://helpx.adobe.com/contact/enterprise-support.ec.html)
+* [Kontakta kundtjänstteamet direkt](https://helpx.adobe.com/se/contact/enterprise-support.ec.html)
 * [Kontrollera tillgänglighet och status för Experience Cloud-lösningar](https://status.adobe.com/)
 
 ## Service, kapacitet och fakturering {#billing}
@@ -31,7 +31,7 @@ Beroende på din lösningskonfiguration kanske vissa alternativ som beskrivs i d
 
 Publicerat av Adobe Systems Incorporated.
 
-[Användarvillkor](https://marketing.adobe.com/resources/help/en_US/terms.html) | [Sekretesscenter](https://www.adobe.com/privacy.html)
+[Användarvillkor](https://www.adobe.com/legal/terms.html) | [Sekretesscenter](https://www.adobe.com/privacy.html)
 
 Adobe och Adobes logotyp är antingen registrerade varumärken eller varumärken som tillhör Adobe Systems Incorporated i USA och/eller andra länder. Varumärkessymbol (®, ™ osv.) betecknar ett Adobe-varumärke.
 
