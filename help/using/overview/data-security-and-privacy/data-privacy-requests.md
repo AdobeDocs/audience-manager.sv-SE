@@ -7,7 +7,7 @@ keywords: GDPR UI, GDPR API, CCPA, privacy
 title: Begäranden om dataintegritet
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 39e0224d97d1d27c2b1dcee8e3b0d2d21847551b
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -94,8 +94,8 @@ Den globala avanmälningen representerar en avanmälan för Audience Manager och
    <td colname="col1"> <p>Mobila enheter </p> </td> 
    <td colname="col2"> <p>Se avanmälnings- och sekretessinställningarna för: </p> <p> 
      <ul id="ul_78042D6D302F4119A2439BF71F228288"> 
-      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://marketing.adobe.com/resources/help/en_US/mobile/android/privacy.html" format="https" scope="external"> Android-enheter </a> </li> 
-      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://marketing.adobe.com/resources/help/en_US/mobile/ios/privacy.html" format="https" scope="external"> iOS-enheter </a> </li> 
+      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html" format="https" scope="external"> Android-enheter </a> </li> 
+      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://docs.adobe.com/content/help/en/mobile-services/ios/privacy-gdpr-ios/privacy.html" format="https" scope="external"> iOS-enheter </a> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
