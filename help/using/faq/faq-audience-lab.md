@@ -7,7 +7,7 @@ title: Vanliga frågor om Audience Lab
 topic: DIL API
 uuid: b1daf99d-af60-4f65-987d-794a6d45d566
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -52,6 +52,6 @@ I det här fallet [!UICONTROL Audience Lab] räknas tre konverteringar, en för 
 
 Mer information om hur du använder [med](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups) behörigheter finns i [!UICONTROL Audience Lab] Skapa segmenttestgrupp [!UICONTROL RBAC] .
 
-**Kan jag använda[!UICONTROL Audience Lab]tillsammans med[!UICONTROL Profile Link Device Graph]och externa enhetsdiagram ([Adobe Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/mcdc-overview.html), Tapad Device Graph, Liveramp Device Graph)?**
+**Kan jag använda[!UICONTROL Audience Lab]tillsammans med[!UICONTROL Profile Link Device Graph]och externa enhetsdiagram ([Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/home.html), Tapad Device Graph, Liveramp Device Graph)?**
 
 För närvarande [!UICONTROL Audience Lab] kan bara dela upp segmentpopulationer med enheter som är anslutna till en kvalificerande enhet när du använder [!UICONTROL Profile Link Device Graph]. Vi arbetar med att lägga till stöd i [!UICONTROL Audience Lab] för andra enhetsdiagram och kommer att meddela när vi gör det.
