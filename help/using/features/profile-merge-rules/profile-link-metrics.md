@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Rapportera mått för profilkopplingsregler
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## Sammanfoga regelmått {#merge-rule-metrics}
 
-Rapporter returnerar data i liggande diagram sida vid sida när dina kopplingsregler använder data från [Adobe Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/) eller andra enhetsdiagram från tredje part som du har tillgång till i [!DNL Audience Manager]. På så sätt kan du jämföra autentiserade förstahandsdata med enhetsövergripande data från enhetsdiagram [!UICONTROL Experience Cloud Device Co-op] eller andra tredjepartsdiagram. Mer information om data som returneras av [!UICONTROL Device Co-op]finns [i Enhetsdiagram: Interna processer och utdata](https://marketing.adobe.com/resources/help/en_US/mcdc/mcdc-processes.html). Dessa data uppdateras dagligen.
+Rapporter returnerar data i liggande diagram sida vid sida när dina kopplingsregler använder data från [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html) eller andra enhetsdiagram från tredje part som du har tillgång till i [!DNL Audience Manager]. På så sätt kan du jämföra autentiserade förstahandsdata med enhetsövergripande data från enhetsdiagram [!UICONTROL Experience Cloud Device Co-op] eller andra tredjepartsdiagram. Mer information om data som returneras av [!UICONTROL Device Co-op]finns [i Enhetsdiagram: Interna processer och utdata](https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/device-graph-overview.html). Dessa data uppdateras dagligen.
 
 <table id="table_A7FB2F9804F84AC8A6DD05C0E6EE7555"> 
  <thead> 
