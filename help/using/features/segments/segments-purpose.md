@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Segmentsyfte, komposition och regler
 uuid: 886d4abe-b1b6-4983-b4fb-b552d54d51ba
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -33,7 +33,7 @@ När du mappar Adobe Analytics-segment eller rapportsviter till din Experience C
 
 >[!TIP]
 >
->Audience Manager-segment skiljer sig från [!DNL Adobe Analytics] segment. Läs [Understanding Segments in Analytics and Audience Manager](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/aam-analytics-segments.html) om du vill ha en detaljerad beskrivning av skillnaderna.
+>Audience Manager-segment skiljer sig från [!DNL Adobe Analytics] segment. Läs [Understanding Segments in Analytics and Audience Manager](https://docs.adobe.com/content/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) om du vill ha en detaljerad beskrivning av skillnaderna.
 
 ## Skapa regelbaserade segment med segmentbyggaren
 
