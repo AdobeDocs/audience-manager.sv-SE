@@ -7,7 +7,7 @@ keywords: GDPR UI, GDPR API, CCPA, privacy, consent
 title: Hantering av samtycke
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 9004dc46c0ac431e9f193467a2147a2d9ac36cdc
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -40,7 +40,7 @@ Audience Manager-kunder kan lagra användares samtycke för olika användningsom
 
 ## Hantera avanmälan/återtagande av samtycke
 
-Du kan hantera avanmälan för Adobe Experience Cloud via sidan [Dina sekretessval](https://www.adobe.com/privacy/opt-out.html#customeruse) . Med enklicksfunktioner kan slutanvändarna styra och avanmäla datainsamling via annonslösningarna i Adobe Experience Cloud (inklusive Audience Manager). Mer information finns i avsnittet om [företagskunder](https://www.adobe.com/privacy/opt-out.html#customeruse) på sidan Sekretessalternativ. Information om webbläsare som inte stöder cookies från tredje part finns i [Deklarerad ID-målning](../../features/declared-ids.md#declared-id-targeting). För mobila enheter kan du hämta relevanta Audience Manager-identifierare och anropa Audience Managers avanmälnings-API:er enligt exemplen [med](../../features/declared-ids.md#opt-out-examples)deklarerade ID-avhopp. Därefter kan du upphöra med all datainsamling för de användare som har avanmälnings-API:er från Mobile SDK - se [Android-enheter](https://marketing.adobe.com/resources/help/en_US/mobile/android/privacy.html) och [iOS-enheter](https://marketing.adobe.com/resources/help/en_US/mobile/ios/privacy.html). Mer information om avanmälan finns i dokumentationen för [datasekretessförfrågningar](../../overview/data-security-and-privacy/data-privacy-requests.md).
+Du kan hantera avanmälan för Adobe Experience Cloud via sidan [Dina sekretessval](https://www.adobe.com/privacy/opt-out.html#customeruse) . Med enklicksfunktioner kan slutanvändarna styra och avanmäla datainsamling via annonslösningarna i Adobe Experience Cloud (inklusive Audience Manager). Mer information finns i avsnittet om [företagskunder](https://www.adobe.com/privacy/opt-out.html#customeruse) på sidan Sekretessalternativ. Information om webbläsare som inte stöder cookies från tredje part finns i [Deklarerad ID-målning](../../features/declared-ids.md#declared-id-targeting). För mobila enheter kan du hämta relevanta Audience Manager-identifierare och anropa Audience Managers avanmälnings-API:er enligt exemplen [med](../../features/declared-ids.md#opt-out-examples)deklarerade ID-avhopp. Därefter kan du upphöra med all datainsamling för de användare som har avanmälnings-API:er från Mobile SDK - se [Android-enheter](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html) och [iOS-enheter](https://docs.adobe.com/content/help/en/mobile-services/ios/privacy-gdpr-ios/privacy.html). Mer information om avanmälan finns i dokumentationen för [datasekretessförfrågningar](../../overview/data-security-and-privacy/data-privacy-requests.md).
 
 ## Hantera samtycke för andra partspartners
 
