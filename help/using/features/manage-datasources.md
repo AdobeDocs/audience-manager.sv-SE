@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Hantera datakällor
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -33,7 +33,7 @@ Så här slutför du [!UICONTROL Data Source Details] avsnittet:
 1. Ange en integreringskod. Integrationskoder är vanligtvis valfria. De krävs när du vill:
 
    * [Skapa en datakälla](../features/profile-merge-rules/merge-rules-start.md#create-data-source)för olika enheter.
-   * Använd [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
+   * Använd [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html).
    * Arbeta med [profilkopplingsregler](../features/profile-merge-rules/merge-rules-start.md).
 
 1. Välj en **[!UICONTROL ID Type]**. ID-typsalternativen är:
@@ -74,7 +74,7 @@ Ta bort en datakälla som du inte längre behöver.
 >Observera följande begränsningar:
 >
 >* Du kan inte ta bort en [aktiv publik eller en synkroniserad egenskap](../features/traits/client-activity-synced-audience-traits.md)för datakälla.
->* För kunder som använder Adobe Analytics: Med Audience Manager kan du inte ta bort datakällor som skapas automatiskt från dina [!DNL Analytics] rapportsviter. Använd [bastjänsten](https://marketing.adobe.com/resources/help/en_US/mcloud/) för att ta bort mappningen för dessa datakällor.
+>* För kunder som använder Adobe Analytics: Med Audience Manager kan du inte ta bort datakällor som skapas automatiskt från dina [!DNL Analytics] rapportsviter. Använd [bastjänsten](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services-landing.html) för att ta bort mappningen för dessa datakällor.
 
 
 1. Klicka på **[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**.
