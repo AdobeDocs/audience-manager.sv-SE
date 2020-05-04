@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Skapa en algoritmisk modell
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 translation-type: tm+mt
-source-git-commit: 35bad7e676aa1d4143f5d114a1eff85d6aba5f1d
+source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
 
 ---
 
@@ -47,6 +47,10 @@ Följ stegen nedan för att skapa en [!UICONTROL Look-Alike Model]:
    * Välj en datakälla i [!UICONTROL Available Data] listan.
    * Klicka **[!UICONTROL Save]** när du är klar.
       ![look-alike-configuration](assets/look-alike-configuration.png)
+
+Titta på videon nedan för att få en detaljerad bild av hur enhetsövergripande mätvärden fungerar.
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## Grundläggande information för algoritmiska modeller {#basic-information}
 
