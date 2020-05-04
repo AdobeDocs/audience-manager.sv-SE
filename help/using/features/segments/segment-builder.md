@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Segment Builder
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
 translation-type: tm+mt
-source-git-commit: 723c75e8946c42779b4c27727ff9e6398b5fc9b1
+source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
 
 ---
 
@@ -52,6 +52,10 @@ Börja med att titta på videon [](https://images-tv.adobe.com/avp/vr/b7f88801-e
 1. *(Valfritt)* Mappa ett segment till ett mål i avsnittet [Målmappning](../../features/segments/segment-builder.md#segment-builder-controls-destinations) :
    * Sök efter målet och klicka på **[!UICONTROL Add Destination]**. Observera att målet måste finnas innan du kan lägga till det i ett segment.
    * Klicka **[!UICONTROL Save]** när du är klar.
+
+Titta på videon nedan för att få en detaljerad bild av hur enhetsövergripande mätvärden fungerar.
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## Segment Builder Controls: Avsnittet Grundläggande information {#segment-builder-controls-basics}
 
