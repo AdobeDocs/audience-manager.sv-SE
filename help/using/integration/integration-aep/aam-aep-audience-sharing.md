@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 translation-type: tm+mt
-source-git-commit: f191035a1ad4b83bb3d391de80e1f925d6295df7
+source-git-commit: 7dddf19aa3b0fc0655b1b206d9c8f0c772190601
 
 ---
 
@@ -71,11 +71,11 @@ Ett exempel på ett trait som skapats automatiskt från ett Experience Platform-
 
 | Artikelnummer | Namn | Beskrivning |
 ---------|----------|---------
-| 1 | Trait Type | Traits created from Experience Platform segments are created as onboard traits in Audience Manager. |
-| 2 | Datakälla | Automatiskt skapat. Alla egenskaper och segment som skapas automatiskt från Experience Platform-segment lagras i datakällan **Adobe Experience Platform Audience Sharing**. |
-| 3 | Integrationskod | Integrationskoden motsvarar segment-ID:t i Experience Platform. |
-| 4 | Trait-uttryck | Uttrycket trait är `segID = segment ID in Experience Platform`. |
-| 5 | Segment med detta fack | Ett automatiskt skapat segment som använder det här tecknet som komposition. |
+| 1 | [!UICONTROL Trait Type] | Traits created from Experience Platform segments are created as onboard traits in Audience Manager. |
+| 2 | [!UICONTROL Data Source] | Automatiskt skapat. Alla egenskaper och segment som skapas automatiskt från Experience Platform-segment lagras i datakällan **[!UICONTROL Adobe Experience Platform Audience Sharing]**. |
+| 3 | [!UICONTROL Integration Code] | Integrationskoden motsvarar segment-ID:t i Experience Platform. |
+| 4 | [!UICONTROL Trait Expression] | Uttrycket trait är `segID = segment ID in Experience Platform`. |
+| 5 | [!UICONTROL Segments with this Trait] | Ett automatiskt skapat segment som använder det här tecknet som komposition. |
 
 <br> 
 
@@ -103,11 +103,8 @@ Antalet segmentpopulationer kan variera mellan era Audience Manager- och Experie
 * Körtider för segmenteringsjobb. Audience Manager kör ett segmenteringsjobb som uppdaterar siffrorna i gränssnittet en gång om dagen. Detta jobb är sällan anpassat till segmenteringsjobben i Experience Platform.
 * [Regler](/help/using/features/profile-merge-rules/merge-rules-overview.md) för profilsammanslagning i Audience Manager och [sammanslagningsprinciper](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) i Experience Platform fungerar olika, och identitetsdiagrammet som används för varje regel varierar. På grund av detta förväntas vissa skillnader mellan segmentpopulationerna.
 
-
 >[!MORELIKETHIS]
 >
 >* [Översikt över segmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html#audiences)
 >* [Användarhandbok för Experience Platform Segment Builder](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html#audiences)
 >* [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
-
-
