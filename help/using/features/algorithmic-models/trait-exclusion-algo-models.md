@@ -5,7 +5,7 @@ seo-title: Uteslutning av algoritmiska modeller
 title: Uteslutning av algoritmiska modeller
 uuid: 1359800b-6e6c-41e1-88b4-23d31952abb3
 translation-type: tm+mt
-source-git-commit: e6e22c0c4a8f1374d3d8d18cb7b242e18a29571f
+source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
 
 ---
 
@@ -47,6 +47,10 @@ Använd [Skapa ett modellarbetsflöde](../../features/algorithmic-models/create-
 Om du föredrar videosjälvstudiekurser kan du titta på vår videodemonstration om undantag för trait:
 
 >[!VIDEO](https://video.tv.adobe.com/v/25569/?quality=12)
+
+Titta dessutom på videon nedan för att få en detaljerad bild av hur enhetsövergripande mätvärden fungerar.
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## Viktiga aspekter och begränsningar {#important-aspects-and-limitations}
 
