@@ -1,13 +1,13 @@
 ---
 description: Med grupphanteringsverktygen kan du skapa och hantera flera objekt samtidigt med en enda åtgärd. Du kan använda grupphanteringsverktyg för att arbeta med datakällor, härledda signaler, destinationer, mappar, segment och egenskaper.
-keywords: baaam;BAAAM
+keywords: baaam;BAAAM;download baaam
 seo-description: Med grupphanteringsverktygen kan du skapa och hantera flera objekt samtidigt med en enda åtgärd. Du kan använda grupphanteringsverktyg för att arbeta med datakällor, härledda signaler, destinationer, mappar, segment och egenskaper.
 seo-title: Komma igång med masshantering
 solution: Audience Manager
 title: Komma igång med masshantering
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
-source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
+source-git-commit: a4569127b748374b5707daedb0809c58bca74e9b
 
 ---
 
@@ -32,14 +32,14 @@ Den här funktionen använder ett Microsoft Excel-kalkylblad med makron som gör
 
 ## Hämta {#download}
 
-Ladda ned det senaste kalkylbladet **[här](assets/BAAAM_V2_20200311.xlsm)**.
+Ladda ned det senaste kalkylbladet **[här](assets/BAAAM_V2_20200502.xlsm)**.
 
 ## Förutsättningar {#prereqs}
 
 För att kunna använda [!DNL Bulk Management Tools]programmet behöver du följande:
 
 * Din [!DNL Experience Cloud] inloggning. Som kund bör du redan ha dessa uppgifter.
-* Kalkylbladet [!DNL Bulk Management Tools] . [Hämta kalkylbladet](assets/BAAAM_V2_20200311.xlsm) för att hämta den senaste versionen.
+* Kalkylbladet [!DNL Bulk Management Tools] . [Hämta kalkylbladet](assets/BAAAM_V2_20200502.xlsm) för att hämta den senaste versionen.
 * Microsoft Excel körs på [!DNL macOS] eller 64-bitars [!DNL Microsoft Windows]. Vi rekommenderar att du använder den senaste versionen av Microsoft Excel.
 * När du öppnar kalkylbladet måste du **aktivera makron** för [!DNL Bulk Management Tools] att det ska fungera.
 
