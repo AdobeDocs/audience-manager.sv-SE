@@ -5,7 +5,7 @@ seo-title: Plugin-program för Audience Manager för IAB TCF
 solution: Audience Manager
 title: Plugin-program för Audience Manager för IAB TCF
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 5fff9315558d3088f68268f32681842bb8d5e7d3
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 En viktig aspekt av de integritetsskyldigheter du har gentemot dina användare är att man får tag i och överför användarval över hur deras personuppgifter kan användas (dvs.&quot;syften&quot;) och av vem (dvs.&quot;företag&quot;).
 
-Adobe ger er möjlighet att hantera och förmedla användarnas valmöjligheter i fråga om integritet genom [valfunktionen](hhttps://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) och stödet för [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) .
+Adobe ger er möjlighet att hantera och förmedla användarnas valmöjligheter i fråga om integritet genom [valfunktionen](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) och stödet för [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) .
 
 I den här artikeln beskrivs de fall där Audience Manager har stöd för IAB TCF och hur man implementerar stöd för IAB TCF i Audience Manager. Audience Manager är registrerat i IAB TCF med leverantörs-ID 565.
 
@@ -40,7 +40,7 @@ Du måste uppfylla följande krav för att kunna använda IAB TCF med Audience M
 1. Du måste använda Adobe Experience Platform Identity Service (ECID) version 4.1 eller senare. [Ladda ned](https://github.com/Adobe-Marketing-Cloud/id-service/releases) vår senaste ECID-version.
 1. Du måste använda Audience Manager Data Integration Library (DIL) version 9.0 eller senare, som kan hämtas [här](https://github.com/Adobe-Marketing-Cloud/dil/releases). Läs om [DIL i dokumentationen](../..//dil/dil-overview.md)till Audience Manager.
 1. Om du använder SSF (Server-Side Forwarding) för att importera data till Audience Manager måste du uppgradera till den senaste versionen av AppMeasurement. Hämta AppMeasurement med [Analytics Code Manager](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html).
-1. Du måste använda en CMP (Consent Management Platform), antingen kommersiell eller egen, som har stöd för IAB TCF och är registrerad med IAB TCF. Se listan över [CMP som registrerats i IAB-ramverket](https://advertisingconsent.eu/cmp-list/).
+1. Du måste använda en CMP (Consent Management Platform), antingen kommersiell eller egen, som har stöd för IAB TCF och är registrerad med IAB TCF. Se listan över [CMP som registrerats i IAB-ramverket](https://iabeurope.eu/cmp-list/).
 
 ## Rekommendationer och hur man implementerar {#recommendations}
 
@@ -70,7 +70,7 @@ När användaren har valt sina sekretessval registreras användarens val i IAB T
 
 ## Standardsyften som behövs av Audience Manager {#aam-standard-purposes}
 
-Audience Manager utvärderar användarnas val som lagras i IAB TFC-medgivandesträngen för:
+Audience Manager utvärderar användarnas val som lagras i IAB TCF-medgivandesträngen för:
 
 * Lagring och åtkomst av information (syfte-ID 1 i den [globala leverantörslistan](https://vendorlist.consensu.org/vendorlist.json))
 * Personalisering (syfte-ID 2)
