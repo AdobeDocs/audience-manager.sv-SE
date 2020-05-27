@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Lista över datakällor och inställningar
 uuid: 280a6acd-fef0-4737-a96d-9e22fbc8bfaf
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 6b55441c2bdde6cf2333852fd59fbe87f4e531eb
+workflow-type: tm+mt
+source-wordcount: '1158'
+ht-degree: 0%
 
 ---
 
@@ -96,6 +99,10 @@ Den [!UICONTROL Data Source Settings] innehåller de kontroller och alternativ s
 ### Inställningar för inkommande datakälla
 
 Markera kryssrutan **[!UICONTROL Inbound]** när datakällan är avsedd att ta emot inkommande data. Om du markerar **[!UICONTROL Inbound]** kryssrutan visas ytterligare två grupper av kontroller som beskrivs nedan.
+
+>[!NOTE]
+>
+>Kryssrutan är bara avsedd att visa eller dölja de datakällkontroller som beskrivs nedan. **[!UICONTROL Inbound]** Om du avmarkerar alternativet påverkas inte dataanvändningen på något sätt. **[!UICONTROL Inbound]** Dina inbyggda data kommer att bearbetas oavsett vilket alternativ du markerar.
 
 <table id="table_B2825B7BE0DB4665B47C589A3787CD93"> 
  <thead> 
