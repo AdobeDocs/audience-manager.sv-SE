@@ -5,9 +5,12 @@ seo-title: Anpassa detaljsida
 solution: Audience Manager
 title: Anpassa detaljsida
 uuid: 23301376-c1cc-4778-b8c4-9831f6739db9
-keywords: identity type breakdown, identity breakdown, audience identity reporting
+keywords: identity type breakdown, identity breakdown, audience identity reporting, cross-device, cross-device ID, device ID
 translation-type: tm+mt
-source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
+source-git-commit: 3b56d7ecdef4375bf3b007fa9b325618c701c174
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
@@ -37,12 +40,20 @@ Här [!UICONTROL Trait Graph] finns en överskådlig prestandamätning för det 
 
 [!UICONTROL Unique Trait Realizations] representerar ett antal unika användare som har lagt till den här egenskapen i sin profil under det angivna tidsintervallet. Anger [!UICONTROL Total Trait Population] antalet unika användare som för närvarande är kvalificerade för den här egenskapen.
 
-* När det gäller regelbaserade egenskaper sker en kvalificering i realtid, eftersom användarna kvalificerar sig för en egenskap i sina webbläsare.
-* För praktik som introduceras sker en trait-kvalificering efter att en inkommande fil har bearbetats, dvs. den inkommande filen [matas in i Audience Manager](../../faq/faq-inbound-data-ingestion.md) och det är när trait-kvalificeringen görs.
+När det gäller regelbaserade egenskaper sker en kvalificering i realtid, eftersom användarna kvalificerar sig för en egenskap i sina webbläsare.
+
+För praktik som introduceras sker en trait-kvalificering efter att en inkommande fil har bearbetats, dvs. den inkommande filen [matas in i Audience Manager](../../faq/faq-inbound-data-ingestion.md) och det är när trait-kvalificeringen görs.
+
+Följande information [!UICONTROL Trait Graph] visas:
+
+* **[!UICONTROL Show results by]**
+   * **[!UICONTROL Cross-Device ID]**: Välj det här alternativet om du vill se resultat för egenskaper som samlar in data för autentiserade profiler. När du väljer det här alternativet visas bara data i [!UICONTROL Cross-Device ID] rapporten, och inga data kommer att finnas under [!UICONTROL Device ID] rapporten.
+   * **[!UICONTROL Device ID]**: Välj det här alternativet om du vill se resultat för egenskaper som samlar in data för enhetsprofiler. När du väljer det här alternativet visas bara data i [!UICONTROL Device ID] rapporten, och inga data kommer att finnas under [!UICONTROL Cross-Device ID] rapporten.
+
+      ![trait-graph](assets/trait-summary.png)
+
 * **[!UICONTROL Unique Trait Realizations]**: Antal unika användare som har lagt till den här egenskapen i sin profil under det angivna tidsintervallet.
 * **[!UICONTROL Total Trait Population]**: Antalet unika användare som är kvalificerade för den här egenskapen.
-
-   ![trait-graph](assets/trait-summary.png)
 
 * **[!UICONTROL Identity Type Breakdown]**: De första tre posterna visar de tre viktigaste datakällorna för olika enheter med det högsta antalet populationer som har kvalificerat sig för egenskapen, i fallande ordning. Den fjärde posten visar summan av alla andra [!DNL DPUUIDs] ([!DNL CRM IDs]) som kvalificerar sig för egenskapen, från datakällor mellan enheter som inte finns i de tre översta. Den här rapporten visas bara om du väljer Enhets-ID i den [!UICONTROL Show Results By] nedrullningsbara menyn längst upp till höger på sidan. Standardalternativet är [!UICONTROL Device ID]där den här rapporten inte visas.
 
