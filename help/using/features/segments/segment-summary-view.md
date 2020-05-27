@@ -5,9 +5,12 @@ seo-title: Sidan Segmentinformation
 solution: Audience Manager
 title: Sidan Segmentinformation
 uuid: e844e423-9701-42d4-9ba5-d82f41358adc
-keywords: identity type breakdown, identity breakdown, audience identity reporting
+keywords: identity type breakdown, identity breakdown, audience identity reporting, cross-device, cross-device ID, device ID
 translation-type: tm+mt
-source-git-commit: 51f38819bfbc72c2588f63a63fb8ba2e963919ff
+source-git-commit: 3b56d7ecdef4375bf3b007fa9b325618c701c174
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 0%
 
 ---
 
