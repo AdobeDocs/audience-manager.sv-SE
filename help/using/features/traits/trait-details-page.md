@@ -1,5 +1,5 @@
 ---
-description: Detaljsidan för en enskild trait innehåller en översikt över information som trait name, ID, performance metrics, expressions som definierar trait, segments som den tillhör och trait Audit log. Om du vill visa den här informationen går du till Målgruppsdata > Traits och klickar på namnet på den trait du vill arbeta med.
+description: Detaljsidan för en enskild trait innehåller en översikt över information som trait name, ID, performance metrics, expressions som definierar trait, segments som den tillhör och trait Audit log. Om du vill visa den här informationen går du till Målgruppsdata > Traits och klickar på namnet på den trait som du vill arbeta med.
 seo-description: Detaljsidan för en enskild trait innehåller en översikt över information som trait name, ID, performance metrics, expressions som definierar trait, segments som den tillhör och trait Audit log. Om du vill visa den här informationen går du till Målgruppsdata > Traits och klickar på namnet på den trait som du vill arbeta med.
 seo-title: Anpassa detaljsida
 solution: Audience Manager
@@ -7,7 +7,7 @@ title: Anpassa detaljsida
 uuid: 23301376-c1cc-4778-b8c4-9831f6739db9
 keywords: identity type breakdown, identity breakdown, audience identity reporting, cross-device, cross-device ID, device ID
 translation-type: tm+mt
-source-git-commit: 3b56d7ecdef4375bf3b007fa9b325618c701c174
+source-git-commit: c761682f31c777368a21744b21d7302829007c66
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Följande information [!UICONTROL Trait Graph] visas:
    * **[!UICONTROL Cross-Device ID]**: Välj det här alternativet om du vill se resultat för egenskaper som samlar in data för autentiserade profiler. När du väljer det här alternativet visas bara data i [!UICONTROL Cross-Device ID] rapporten, och inga data kommer att finnas under [!UICONTROL Device ID] rapporten.
    * **[!UICONTROL Device ID]**: Välj det här alternativet om du vill se resultat för egenskaper som samlar in data för enhetsprofiler. När du väljer det här alternativet visas bara data i [!UICONTROL Device ID] rapporten, och inga data kommer att finnas under [!UICONTROL Cross-Device ID] rapporten.
 
-      ![trait-graph](assets/trait-summary.png)
+      ![trait-graph](assets/trait-summary.gif)
 
 * **[!UICONTROL Unique Trait Realizations]**: Antal unika användare som har lagt till den här egenskapen i sin profil under det angivna tidsintervallet.
 * **[!UICONTROL Total Trait Population]**: Antalet unika användare som är kvalificerade för den här egenskapen.
