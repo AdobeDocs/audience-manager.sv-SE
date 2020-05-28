@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Ordlista
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 62147fc719a59d2b2c7b444bce853334b03816c6
+workflow-type: tm+mt
+source-wordcount: '1186'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Definitioner och länkar till ytterligare läsning.
 
 Använd [!UICONTROL Algorithmic Modeling] som ett sätt att nå ut utanför kärnan för de användare du har identifierat. Funktionen hjälper er att identifiera nya, unika målgrupper genom automatiserad dataanalys. Hantera ditt [!UICONTROL Algorithmic Models] i **[!UICONTROL Audience Data > Models]**.
 
-Se [Förstå algoritmiska modeller](../features/algorithmic-models/understanding-models.md#understanding-models).
+Se [Förstå algoritmiska modeller](../features/algorithmic-models/algo-models-overview.md).
 
 <br> 
 
