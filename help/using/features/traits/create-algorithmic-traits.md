@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Skapa algoritmiska egenskaper
 uuid: 50c2d2d1-f412-479b-bb70-4f139429c388
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 62147fc719a59d2b2c7b444bce853334b03816c6
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ I [!UICONTROL Trait Builder][!UICONTROL Configuration] avsnittet kan du associer
 
 <!-- r_algo_trait_config_section.xml -->
 
-* [Skapa en algoritmisk modell](../../features/algorithmic-models/create-model.md#build-model).
+* [Skapa en look-Alike-modell](../../features/algorithmic-models/create-model.md).
 * Vänta på e-postmeddelandet som talar om för dig att körningen av modelldata har slutförts.
 * Fyll i de obligatoriska fälten i avsnittet [Grundläggande information](../../features/traits/create-onboarded-rule-based-traits.md) .
 
