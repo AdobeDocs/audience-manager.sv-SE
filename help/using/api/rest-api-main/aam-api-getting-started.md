@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Komma igång med REST API:er
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: 1bbfa4b537a344d58f20763bb40ebe0827ad8698
+source-git-commit: 680c4491176755915d2d45ee64f5d88410cb7072
+workflow-type: tm+mt
+source-wordcount: '1898'
+ht-degree: 1%
 
 ---
 
@@ -50,7 +53,10 @@ Audience Manager REST API:er har stöd för två autentiseringsmetoder.
 
 Om du vill skapa en säker Adobe I/O API-session för service-till-tjänst måste du skapa en JSON Web Token (JWT) som kapslar in identiteten på din integrering och sedan byta ut den mot en åtkomsttoken. Varje begäran till en Adobe-tjänst måste innehålla åtkomsttoken i auktoriseringshuvudet tillsammans med API-nyckeln (klient-ID) som genererades när du skapade [tjänstkontointegreringen](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) i [Adobe I/O-konsolen](https://console.adobe.io/).
 
-Mer information om hur du konfigurerar din autentisering finns i [JWT-autentisering](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) (tjänstkonto).
+Följ stegen nedan för att konfigurera JWT-autentisering (tjänstkonto):
+
+1. Gå till Integrering [av](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) tjänstkonto och följ alla steg som krävs för att konfigurera anslutningen till ditt tjänstkonto och generera din JWT-token.
+2. Gå till [JWT-autentisering](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) (tjänstkonto) och följ stegen för att byta ut din JWT-token (skapad i steg 1) mot en åtkomsttoken.
 
 ## OAuth-autentisering (inaktuell) {#oauth}
 
