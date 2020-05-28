@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Geogeting med tangenter på plattformsnivå
 uuid: c7e4cbfe-e564-404e-a565-bbe5fd2fb519
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 8959e0023f7663d7a20080aaf130d469ed8a4313
+workflow-type: tm+mt
+source-wordcount: '649'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +44,7 @@ Vi arbetar med [Digital Envoy](https://www.digitalenvoy.com/) för att få och u
 |--- |--- |
 | d_area_code | [Nordamerika riktnummer](https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes).  Exempel: <ul><li>**Fack**:  d_area_code=801</li><li>**Trait Name**: Utah</li></ul> |
 | _Ort | Städer och städer. Ladda ned [stadslistan](assets/d_city.txt).  Exempel: <ul><li>Fack:  d_city=bonn</li><li>Trait Name: Bonn</li></ul> **Tips**: Du kan använda `d_city` tillsammans med för `d_country` att vara säker på att du inte riktar in dig på två städer med samma namn i olika länder. Ni kan vara ännu mer specifika när det gäller er målinriktning genom att använda `d_postal_code`. |
-| d_country | Värdena motsvarar ISO-landskoder. En sökbar lista med koder finns i [ISO Online Browsing Platform](https://www.iso.org/obp/ui/#home). <br>  Det enda specialfall som inte följer ISO 3166 är inriktat på Förenade kungariket. Du bör använda&quot;UK&quot; i stället för&quot;GB&quot; för målinriktning i Storbritannien.  För att rikta sig till Nederländska Antillerna har koden&quot;AN&quot; tagits bort sedan 2010. Området har upplösts till fem separata territoriella enheter. Konsekvensen är att ni inte bör använda&quot;AN&quot; för målinriktning i Nederländska Antillerna, utan en kombination av landskoderna för&quot;CW&quot;,&quot;SX&quot; och&quot;BQ&quot;.  Till exempel:  <br>Fack:  d_country=CZ <br>Trait Name: Tjeckien <br>Trait:  d_country=UK <br>Trait Name: United Kingdom <br>Trait:  d_country=CW OR d_country=SX OR d_country=BQ <br>Trait Name: Nederländska Antillerna |
+| d_country | Värdena motsvarar ISO-landskoder. En sökbar lista med koder finns i [ISO Online Browsing Platform](https://www.iso.org/obp/ui/#home). <br>  Det enda specialfall som inte följer ISO 3166 är inriktat på Förenade kungariket. Du bör använda&quot;UK&quot; i stället för&quot;GB&quot; för målinriktning i Storbritannien.  För att rikta sig till Nederländska Antillerna har koden&quot;AN&quot; tagits bort sedan 2010. Området har upplösts till fem separata territoriella enheter. Konsekvensen är att ni inte bör använda&quot;AN&quot; för målinriktning i Nederländska Antillerna, utan en kombination av landskoderna för&quot;CW&quot;,&quot;SX&quot; och&quot;BQ&quot;.  Till exempel:  <br>  Fack:  d_country=CZ <br>Trait Name: Tjeckien <br>Trait:  d_country=UK <br>Trait Name: United Kingdom <br>Trait:  d_country=CW OR d_country=SX OR d_country=BQ <br>Trait Name: Nederländska Antillerna |
 | d_dma_code | Metropolitan area DMA codes. Hämta [DMA-regionlistan](assets/DMAregions.csv) (.csv-format).  Exempel: <ul><li>Fack:  d_dma_code=807</li><li>Trait Name: San Francisco</li></ul> |
 | d_lat | Latitud (t.ex. d_lat=40.75). Ladda ned [latitudlistan](assets/d_lat.txt). |
 | d_long | Longitud (t.ex. d_long=73.98). Ladda ned [longitudlistan](assets/d_long.txt). |
@@ -50,7 +53,7 @@ Vi arbetar med [Digital Envoy](https://www.digitalenvoy.com/) för att få och u
 | d_region | Regionala alfanumeriska ID:n. Hämta [regionlistan](assets/Country_RegionCodes_City.csv).  Sedan kan du använda den här listan för att matcha region-ID:n med regionnamn. |
 | d_isp | Internetleverantör/organisation. Ladda ned [ISP-listan](assets/d_isp.txt). |
 
-Förteckningen över [alla platsbaserade signaler](assets/all.csv) omfattar alla signaler ovan, i följande ordning: `d_country,d_city,d_region,d_state,d_dma_code,d_postal_code,d_area_code,d_lat,d_long`
+Förteckningen över [alla platsbaserade signaler](assets/all.txt) omfattar alla signaler ovan, i följande ordning: `d_country,d_city,d_region,d_state,d_dma_code,d_postal_code,d_area_code,d_lat,d_long`
 
 >[!MORELIKETHIS]
 >
