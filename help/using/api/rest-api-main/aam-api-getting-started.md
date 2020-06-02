@@ -8,7 +8,7 @@ uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
 source-git-commit: b78dc6df380d43b809ae169f23eea208cd951a4b
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1890'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ Audience Manager REST API:er har stöd för två autentiseringsmetoder.
 
 Kontrollera att du har tillgång till [Adobe Developer Console](https://console.adobe.io/)innan du kan konfigurera JWT-autentisering. Kontakta din organisations administratör för åtkomstbegäranden.
 
-### Autentisering {authentication}
+### Autentisering
 
 Följ stegen nedan för att konfigurera JWT-autentisering (tjänstkonto):
 
