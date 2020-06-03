@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Komma igång med profilkopplingsregler
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 56a9626b1fa77926bdc31ef72b058d2aa9b58f43
+workflow-type: tm+mt
+source-wordcount: '1327'
+ht-degree: 0%
 
 ---
 
@@ -98,6 +101,19 @@ Så här slutför du [!UICONTROL Proflie Merge Rule Setup] avsnittet:
    * **[!UICONTROL Profile Link Device Graph]**
    * **[!UICONTROL Device Co-op]**
 4. Klicka på **[!UICONTROL Save]**.
+
+### Överväganden för Adobe Campaign-destinationer som använder enhets-ID:n som användar-ID-nycklar {#considerations}
+
+I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profilsammanslagning för att förbättra exaktheten hos gruppfiler som genererats med hjälp av enhets-ID:n. Dessa förbättringar respekteras strikt i Audience Manager-instansen från och med måndagen den 16 mars 2020. Därför kommer segment som mappas till ett mål med hjälp av enhets-ID att sluta producera exporter i vissa konfigurationer av profilkopplingsregler.
+
+För att säkerställa korrekt integrering mellan Audience Manager-instansen och destinationerna med olika enhets-ID:n, som Adobe Campaign, måste du uppfylla följande krav:
+
+1. Granska den profilkopplingsregel som används av de segment som är mappade till ditt deklarerade ID-mål för Adobe Campaign. Regeln för profilsammanfogning måste använda [!UICONTROL Last Authenticated Profile] alternativet så att alla autentiserade profiler kan inkluderas i exporten. Om du använder ett annat alternativ för profilkopplingsregeln växlar du till [!UICONTROL Last Authenticated Profile].
+2. Välj datakällan för deklarerat ID i Adobe Campaign i inställningarna för profilkopplingsregel.
+
+>[!NOTE]
+>
+> Vi har ökat gränsen för profilsammanfogningsregel med 1 för kunder som befinner sig i den här situationen, så att du kan skapa en dedikerad profilsammanfogningsregel för de segment som mappas till det deklarerade ID-målet för Adobe Campaign, utan att ändra reglerna för profilsammanfogning för andra användningsfall.
 
 ## Konfigurera kopplingsregelkod {#configure-merge-rule-code}
 
