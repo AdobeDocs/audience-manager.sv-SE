@@ -7,9 +7,9 @@ solution: Audience Manager
 title: Vanliga frågor om regler för profilsammanslagning och enhetsdiagram
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
 translation-type: tm+mt
-source-git-commit: 56a9626b1fa77926bdc31ef72b058d2aa9b58f43
+source-git-commit: 6876ca5ee0bc5f50c2aa1acd5c683b151a07fd59
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1548'
 ht-degree: 0%
 
 ---
@@ -259,7 +259,7 @@ Ja. Det totala segmentets populationsmått omfattar de ytterligare enheter som h
 
 Nej.
 
-**Varför visas min segmentexport till Adobe Campaign som 0 efter den 16 mars 2020?**
+**Varför ser jag ingen segmentpopulation för segmentexport till Adobe Campaign efter den 16 mars 2020?**
 
 I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profilsammanslagning för att förbättra exaktheten hos gruppfiler som genererats med hjälp av enhets-ID:n. Dessa förbättringar respekteras strikt i Audience Manager-instansen från och med måndagen den 16 mars 2020. Därför kommer segment som mappas till ett mål med hjälp av enhets-ID att sluta producera exporter i vissa konfigurationer av profilkopplingsregler.
 
