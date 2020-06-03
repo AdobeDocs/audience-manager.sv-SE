@@ -7,7 +7,10 @@ solution: Audience Manager
 title: Vanliga frågor om regler för profilsammanslagning och enhetsdiagram
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 56a9626b1fa77926bdc31ef72b058d2aa9b58f43
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 0%
 
 ---
 
@@ -255,6 +258,19 @@ Ja. Det totala segmentets populationsmått omfattar de ytterligare enheter som h
 **Finns det enheter som är kvalificerade för ett segment med ett enhetsdiagram[!UICONTROL Profile Merge Rule]som ingår i[!UICONTROL Interactive]rapporter,[!UICONTROL Overlap]rapporter och[!UICONTROL Audience Optimization]rapporter?**
 
 Nej.
+
+**Varför visas min segmentexport till Adobe Campaign som 0 efter den 16 mars 2020?**
+
+I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profilsammanslagning för att förbättra exaktheten hos gruppfiler som genererats med hjälp av enhets-ID:n. Dessa förbättringar respekteras strikt i Audience Manager-instansen från och med måndagen den 16 mars 2020. Därför kommer segment som mappas till ett mål med hjälp av enhets-ID att sluta producera exporter i vissa konfigurationer av profilkopplingsregler.
+
+För att säkerställa korrekt integrering mellan Audience Manager-instansen och destinationerna med olika enhets-ID:n, som Adobe Campaign, måste du uppfylla följande krav:
+
+1. Granska den profilkopplingsregel som används av de segment som är mappade till ditt deklarerade ID-mål för Adobe Campaign. Regeln för profilsammanfogning måste använda [!UICONTROL Last Authenticated Profile] alternativet så att alla autentiserade profiler kan inkluderas i exporten. Om du använder ett annat alternativ för profilkopplingsregeln växlar du till [!UICONTROL Last Authenticated Profile].
+2. Välj datakällan för deklarerat ID i Adobe Campaign i inställningarna för profilkopplingsregel.
+
+>[!NOTE]
+>
+> Vi har ökat gränsen för profilsammanfogningsregel med 1 för kunder som befinner sig i den här situationen, så att du kan skapa en dedikerad profilsammanfogningsregel för de segment som mappas till det deklarerade ID-målet för Adobe Campaign, utan att ändra reglerna för profilsammanfogning för andra användningsfall.
 
 >[!MORELIKETHIS]
 >
