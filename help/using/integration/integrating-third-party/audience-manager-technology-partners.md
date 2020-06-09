@@ -6,7 +6,10 @@ keywords: activation; activation partners, destination, destinations
 solution: Audience Manager
 title: Adobe Audience Manager Technology Partners
 translation-type: tm+mt
-source-git-commit: fab074926de1ff5e42092b9f7f8b0d5585fe2edc
+source-git-commit: da0eb0244fc3ae158fa151727f4253625dcff2c4
+workflow-type: tm+mt
+source-wordcount: '1178'
+ht-degree: 11%
 
 ---
 
@@ -19,7 +22,7 @@ Den här sidan innehåller endast aktuella [server-till-server-integreringar](/h
 
 * **Uppdaterat** = Visar det senaste datumet när en uppdatering för den här aktiveringspartnern har gjorts.
 * **Dela upp segment** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från segment. Din möjlighet att ta bort en enhetsprofil från ett segment beror på vilket enhetsalternativ som används för att skapa en profilkopplingsregel. Avsegmentering används också i samband med GDPR-borttagningsbegäranden Läs [profilkopplingsregler och Osegmenteringsprocesser](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) för enheter och [Audience Manager-partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation). Audience Manager skickar information om att dela upp segment till de destinationer som är markerade med Ja nedan.
-* **Mottagande av IAB TCF-medgivandesignaler** = Plugin-programmet Audience Manager för IAB TCF gör att du kan vidarebefordra IAB TCF-medgivandesträngen till aktiveringspartners med respekt för användarnas sekretessval. Läs Plugin-programmet [Audience Manager för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
+* **Mottagande av IAB TCF-medgivandesignaler** = Plugin-programmet Audience Manager för IAB TCF gör att du kan vidarebefordra IAB TC-strängen till aktiveringspartners med respekt för användarnas sekretessval. Läs Plugin-programmet [Audience Manager för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
 * **ICDS** = Den här kolumnen listar de partners som stöder Instant Cross-Device Suppression. Läs [Direkt undertryckning av enheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
 * **ID för mobila enheter** = Den här kolumnen listar partners som kan ta emot ID:n för mobila enheter från Audience Manager.
 
