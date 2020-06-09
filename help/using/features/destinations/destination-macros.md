@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Målmakron definierade
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: da0eb0244fc3ae158fa151727f4253625dcff2c4
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 0%
 
 ---
 
@@ -54,9 +57,17 @@ När du skapar ett [!DNL URL] mål kan du infoga följande makron i [!DNL URL] s
        Baserat på AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
      </draft-comment> </p> </td> 
   </tr> 
+  <tr>
+    <td><p><code>${GDPR}</code></p></td>
+    <td><p>Anger om GDPR-reglerna gäller för besökaren eller inte. Använd det här makrot för att inkludera samtycke i segment som skickas till URL-adresser som är integrerade med IAB. Mer information finns i Plugin-programmet <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF</a> .</p></td>
+  </tr>
+   <tr>
+    <td><code>${GDPR_CONSENT_XXXX}</code></p></td>
+    <td><p>Medgivandesträngen (inklusive IAB-leverantörs-ID) som samlas in när besökare ger eller nekar samtycke på din webbplats. Använd det här makrot för att inkludera medgivandesträngen i segment som skickas till URL-mål som är integrerade med IAB. Ersätt <code>XXXX</code> med målpartner-ID:t. Mer information finns i Plugin-programmet <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF</a> . </p></td>
+  </tr>
   <tr> 
    <td colname="col1"> <p><code> %http_proto%</code> </p> </td> 
-   <td colname="col2"> <p>Identifierar det protokoll som används på den överordnade webbsidan och infogar det i mål-URL:en. Exempel: 
+   <td colname="col2"> <p>Identifierar det protokoll som används på den överordnade webbsidan och infogar det i mål-URL:en. Exempel:
      <br> 
      <ul id="ul_026F56EC46E94D9EB1153557C0F65325"> 
       <li id="li_B41EF140CC274CB68FE7213DD8B908C0">om webbsidan är <b>/aam_client.com:/kommer det här makrot att ersättas med</b>https <b></b>://url-destination.com </li> 
@@ -86,18 +97,18 @@ När du skapar ett [!DNL URL] mål kan du infoga följande makron i [!DNL URL] s
 
 Makrona `%rnd%` och `%timestamp%` infogar unika värden i en [!DNL URL] sträng för att förhindra webbläsarcachelagring.
 
-## Cache Busting med `%rnd%` och `%timestamp%`{#dest-cache-busting}
+## Cache Busting med `%rnd%` och `%timestamp%` {#dest-cache-busting}
 
 <!-- c_dest_cache_busting.xml -->
 
-Webbläsare cachelagrar (spara) ofta begärt innehåll i minnet. När en sida läses in kommer sparat innehåll att användas från cacheminnet i stället för från en fjärrserver. Den här processen hjälper till att hålla effektiv nedladdningstid eftersom data används lokalt i stället för från en annan plats. Men eftersom cachelagring inte kräver något serveranrop kan det fördröja rapporteringen genom att artificiellt minska antalet unika begäranden.
+Webbläsare cachelagrar (spara) ofta begärt innehåll i minnet. När en sida läses in kommer sparat innehåll att användas från cacheminnet i stället för från en fjärrserver. Den här processen hjälper dig att hålla effektiv nedladdningstid eftersom data används lokalt i stället för från en annan plats. Men eftersom cachelagring inte kräver något serveranrop kan det fördröja rapporteringen genom att artificiellt minska antalet unika begäranden.
 
 Cache-lagring förhindrar att webbläsare sparar och återanvänder innehåll. Den här tekniken använder kod som infogar ett slumpmässigt tal eller en tidsstämpel i en URL-sträng, vilket gör att koden ser unik ut i webbläsaren. Därför räknas varje `HTTP` anrop som en separat begäran till servern. Genom att tvinga fram ett nytt serveranrop för varje begäran kan du bibehålla rapporteringsnoggrannheten och minska diskrepanser. [!DNL Audience Manager] innehåller två makron för cachepublicering:
 
 * `%rnd%`: Infogar ett slumpmässigt tal i en URL.
 * `%timestamp%`: Infogar Unix-datum/tid i en URL.
 
-## Jämföra `%rnd%` och `%timestamp%`{#compare-rnd-timestamp}
+## Jämföra `%rnd%` och `%timestamp%` {#compare-rnd-timestamp}
 
 Båda makrona förhindrar cachelagring, men de `%rnd%` kan vara mer effektiva. Om flera användare till exempel `%timestamp%`visar en sida samtidigt får de samma datum/tid-värde. Resultatet blir att [!DNL URL] anropet inte är unikt och flera anrop räknas bara en gång. Men `%rnd%` genererar ett unikt numeriskt värde för varje anrop (även när användarna ser samma sida samtidigt). Det innebär att [!DNL URL] strängen innehåller olika värden och räknas som unik.
 
