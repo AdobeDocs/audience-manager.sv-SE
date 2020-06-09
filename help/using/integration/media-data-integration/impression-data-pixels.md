@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Samla in data för kampanjexponering via pixelanrop
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: 132e36175a69a270ea608643049931fbc06efc69
+source-git-commit: 72cf5f30c74736f7143841c0edd6c5c69154a0c2
+workflow-type: tm+mt
+source-wordcount: '716'
+ht-degree: 17%
 
 ---
 
@@ -94,12 +97,12 @@ Impression-händelseanrop accepterar data som har formats till nyckelvärdepar. 
    <td colname="col2"> <p>Datakällans ID eller integrationskod för den plattform som tillhandahåller metadata (t.ex. DFA, Atlas, GBM, Media Math). </p> <p>Krävs för <span class="wintitle"> Audience Optimization- </span> rapporter. </p> </td> 
   </tr> 
    <tr> 
-   <td colname="col1"> <code><i>gdpr</i></code>  </td> 
+   <td colname="col1"> <code>gdpr</code>  </td> 
    <td colname="col2"> <p>Rör plugin-programmet <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF.</a></p> <p><code>gdpr</code> kan vara 0 (GDPR gäller inte) eller 1 (GDPR gäller).</p> <p>Standardvärdet är 0.</p><p>Valfritt.</p> </td> 
   </tr>
    <tr> 
    <td colname="col1"> <code>gdpr_consent</code> </td> 
-   <td colname="col2"> <p>Rör plugin-programmet <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF.</a></p><p> Om <code>gdpr=1</code> så ersätts <code>%gdpr_consent%</code> med strängen <code>gdpr_consent</code> (se <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB-specifikation</a>).</p> <p>Standardvärdet är 0.</p><p>Valfritt.</p> </td> 
+   <td colname="col2"> <p>Rör plugin-programmet <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF.</a></p><p> Om <code>gdpr=1</code>ersätts <code>${gdpr_consent_XXXX}</code> av <code>gdpr_consent</code> strängen och leverantörs-ID:t (se <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20Consent%20string%20and%20vendor%20list%20formats%20v2.md#about-the-transparency--consent-string-tc-string" format="http" scope="external"> IAB-specifikationen</a>).</p> <p>Standardvärdet är 0.</p><p>Valfritt.</p></td> 
   </tr> 
  </tbody> 
 </table>
