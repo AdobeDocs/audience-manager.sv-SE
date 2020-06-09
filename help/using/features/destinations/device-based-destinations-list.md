@@ -6,7 +6,10 @@ keywords: activation; activation partners, destination, destinations
 solution: Audience Manager
 title: Adobe Audience Manager Server-to-Server Destinations
 translation-type: tm+mt
-source-git-commit: 7a2a42ed3b591e1466adf93f3fd31ce6555775a2
+source-git-commit: da0eb0244fc3ae158fa151727f4253625dcff2c4
+workflow-type: tm+mt
+source-wordcount: '1389'
+ht-degree: 16%
 
 ---
 
@@ -20,7 +23,7 @@ Den här sidan innehåller endast aktuella [enhetsbaserade mål](/help/using/fea
 * **Senast uppdaterad** = Visar det senaste datumet när det fanns en uppdatering för det här enhetsbaserade målet.
 * **Uppdateringar** = Anger om Audience Manager skickar data i realtid eller i batch (1:e dag) till det här målet.
 * **Dela upp segment** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från segment. Din möjlighet att ta bort en enhetsprofil från ett segment beror på vilket enhetsalternativ som används för att skapa en profilkopplingsregel. Osegmentering används också i samband med GDPR-borttagningsbegäranden. Läs [regler för profilsammanslagning och osegmenteringsprocesser](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) för enheter och [målgruppshanterarpartners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation). Audience Manager skickar information om att dela upp segment till de destinationer som är markerade med **Ja** nedan.
-* **Mottagande av IAB TCF-medgivandesignaler** = Plugin-programmet Audience Manager för IAB TCF gör att du kan vidarebefordra IAB TCF-medgivandesträngen till aktiveringspartners med respekt för användarnas sekretessval. Läs Plugin-programmet [Audience Manager för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
+* **Mottagande av IAB TCF-medgivandesignaler** = Plugin-programmet Audience Manager för IAB TCF gör att du kan vidarebefordra IAB TC-strängen till aktiveringspartners med respekt för användarnas sekretessval. Läs Plugin-programmet [Audience Manager för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
 * **ICDS** = Den här kolumnen listar de partners som stöder Instant Cross-Device Suppression. Läs om [direkt undertryckning](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)av olika enheter.
 * **ID för mobila enheter** = Den här kolumnen listar partners som kan ta emot ID:n för mobila enheter från Audience Manager.
 
