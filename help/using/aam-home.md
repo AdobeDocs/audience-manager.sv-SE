@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Audience Manager - produktdokumentation
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: d8c18b80aa2e22444a509af65bc81567d0902e51
+source-git-commit: 54d108d3ab2a5476e919d706be74821d6ef8c2bd
+workflow-type: tm+mt
+source-wordcount: '667'
+ht-degree: 4%
 
 ---
 
@@ -152,11 +155,11 @@ Den här tekniska handboken ger självhjälp för Audience Manager - en branschl
  <tbody> 
   <tr> 
    <td> <p> <b>Versionsinformation</b> </p> <p> 
-     I den senaste versionsinformationen <a href="https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html" format="https" scope="external"> om</a> Experience Cloud finns nya funktioner och korrigeringar.</p> 
+     Se den senaste <a href="https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html" format="https" scope="external"> versionsinformationen för Experience Cloud</a> angående nya funktioner och korrigeringar.</p> 
      <br> 
      <p> <b>Senaste funktioner</b> </p> <p> 
      Läs om de senaste funktionerna i Audience Manager:</p>
-     <p><ul><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Prediktiva målgrupper</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">Aktivitetsanvändningsrapportering</a></li>
+     <p><ul><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Plugin-programmet Audience Manager för IAB TCF v2.0</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Prediktiva målgrupper</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">Aktivitetsanvändningsrapportering</a></li>
      <li><a href="/help/using/overview/data-security-and-privacy/data-privacy.md">California Consumer Privacy Act (CCPA) Support and Privacy Documentation Overhaul</a></li>
      <li><a href="/help/using/features/segments/trait-recommendations.md">Intelligent Recommendations for Audience Marketplace Data från Adobe Sensei</a></li>
      <li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">Förbättringar av regler för profilsammanslagning</a></li></ul><p>
@@ -193,7 +196,7 @@ Read about the latest Audience Manager features:
  <tbody> 
   <tr> 
    <td colname="col2"> 
-     <p> <b>Experience Cloud-resurser</b> </p>
+     <p> <b>Experience Cloud-resurser </b> </p>
      <p>Besök länkarna nedan för att få kontakt med andra Audience Manager-kunder i communityforumen, för att se genomgången självstudievideor om våra funktioner eller för att felsöka problem i utbildningscentret och supportcentret.</p>
      <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
@@ -205,7 +208,7 @@ Read about the latest Audience Manager features:
       <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/support/audience-manager.html" format="https" scope="external"> Lär dig mer och support för Audience Manager</a> </li> 
      </ul> </p> 
      <br> 
-     <p>Se även 2020- <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/documentation-updates/docs-2020.html"> dokumentationsuppdateringar</a>. </p> </td>
+     <p>Se även 2020- <a href="https://docs.adobe.com/content/help/sv-SE/audience-manager/user-guide/documentation-updates/docs-2020.html"> dokumentationsuppdateringar</a>. </p> </td>
   </tr> 
  </tbody> 
 </table>
