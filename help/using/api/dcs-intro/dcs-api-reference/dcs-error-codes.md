@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Felkoder, meddelanden och exempel för DCS
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 07fb9269f285a8662a9ce5e03d8be8b8d51df553
+workflow-type: tm+mt
+source-wordcount: '1533'
+ht-degree: 2%
 
 ---
 
@@ -247,6 +250,23 @@ I tabellerna nedan representerar kursiv *text* en variabelplatshållare.
    <td colname="col3"> <p>DCS <span class="wintitle">-</span> koden returnerar den här felkoden när begäran innehåller ett ogiltigt globalt enhets-ID. DCS ignorerar det ogiltiga ID:t och genererar ett 312-fel tillsammans med de specifika felen för det ogiltiga ID:t. Se <a href="../../../features/global-data-sources.md" format="dita" scope="local">Global Data Sources</a> and <a href="../../../reference/ids-in-aam.md" format="dita" scope="local">Index of IDs in Audience Manager</a> för detaljerad information om rätt enhetsannons-ID-format och motsvarande globala datakällor.</p>
    <p>Exempel på ett felaktigt anrop: <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
    <p>Förklaring: En <span class="keyword">IDFA (DPID 20915)</span> måste vara ett versalt ID. ID:t som angavs i begäran är gemener.</p>
+   </td>
+  </tr>
+   <tr> 
+   <td colname="col1"> <p>313 </p> </td> 
+   <td colname="col2"> <p>CMP ID finns inte i GCL</p> </td> 
+   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av ett CMP-ID som inte finns i Audience Managers cachelagrade version av den globala CMP-listan vid tidpunkten för utvärderingen, tar Audience Manager-pluginen för IAB TCF bort IAB TC-strängen och bearbetar begäran som vanligt. IAB TCF v2.0 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p>
+   </td>
+  </tr>
+   <tr> 
+   <td colname="col1"> <p>314 </p> </td> 
+   <td colname="col2"> <p>CMP ID har markerats som borttaget i GCL</p> </td> 
+   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av en CMP som är markerad som borttagen i vår cachelagrade version av Global CMP List, tar Audience Manager-pluginen för IAB TCF bort TC-strängen och bearbetar begäran som vanligt, om utvärderingstiden är förbi borttagningstiden i den globala CMP-listan. IAB TCF v2.0 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p></td>
+  </tr>
+   <tr> 
+   <td colname="col1"> <p>315 </p> </td> 
+   <td colname="col2"> <p>Godkännandesträngen anger inget samtycke</p> </td> 
+   <td colname="col3"> <p>Om inget samtycke ges, kommer Audience Manager-plugin-programmet för IAB TCF att stoppa användaren från ytterligare datainsamling, eller ta bort anropet helt om ingen partnerkontext hittas.</p>
    </td>
   </tr>
 
