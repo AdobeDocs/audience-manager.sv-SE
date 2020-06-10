@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Felkoder, meddelanden och exempel för DCS
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 07fb9269f285a8662a9ce5e03d8be8b8d51df553
+source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1545'
 ht-degree: 2%
 
 ---
@@ -212,22 +212,22 @@ I tabellerna nedan representerar kursiv *text* en variabelplatshållare.
   <tr> 
    <td colname="col1"> <p>303 </p> </td> 
    <td colname="col2"> <p>Blockerat kund-ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Returneras när kund-ID:t har identifierats som skadligt och har svartlistats. </p> </td> 
+   <td colname="col3"> <p>Returneras när kund-ID:t har identifierats som skadligt och har lagts till i en denylist. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>304 </p> </td> 
    <td colname="col2"> <p>ID för blockerad datakälla <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Returneras när datakällans ID har identifierats som skadligt och har svartlistats. </p> </td> 
+   <td colname="col3"> <p>Returneras när datakällans ID har identifierats som skadligt och har lagts till i en denylist </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>306 </p> </td> 
    <td colname="col2"> <p>Blockerat deklarerat enhets-ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Enhets-ID:t har identifierats som skadligt och har svartlistats. Det här kan hända om vi tar emot ett mycket stort antal <span class="wintitle"> DCS</span> -begäranden som innehåller det här enhets-ID:t på kort tid. </p> </td>
+   <td colname="col3"> <p>Enhets-ID:t har identifierats som skadligt och har lagts till i en denylist Detta kan inträffa när vi på kort tid tar emot ett mycket stort antal <span class="wintitle"> DCS</span> -begäranden som innehåller detta enhets-ID. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>307 </p> </td> 
    <td colname="col2"> <p>Spärrad profilåtgärd för <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>En läs-/skrivåtgärd har blockerats eftersom ett ID har identifierats som skadligt och har svartlistats. Se felkod 306. </p> </td> 
+   <td colname="col3"> <p>En läs-/skrivåtgärd har blockerats eftersom ett ID har identifierats som skadligt och har lagts till i en denylist Se felkod 306. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>309 </p> </td> 
