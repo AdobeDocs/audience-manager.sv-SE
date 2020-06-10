@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Konvertering över flera kanaler
 uuid: 0fecec23-e502-490b-b7dd-47a3753a3f75
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 6988c6750c98f382a3440a606677243646551ad1
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 3%
 
 ---
 
@@ -34,11 +37,7 @@ I följande tabell visas viktiga aspekter när du konfigurerar [!UICONTROL Cross
   <tr> 
    <td colname="col01"> <p>Minsta antal konverteringsegenskaper </p> </td> 
    <td colname="col1"> <p>Minst en konverteringsegenskap måste tilldelas till en datakälla för att rapporterna för <span class="wintitle"> kanalkonvertering</span> ska kunna köras. Mer information om egenskaper finns i <a href="../../../features/traits/create-onboarded-rule-based-traits.md"> Grundläggande information om traits</a> . </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col01"> <p>Maximalt antal konverteringsegenskaper </p> </td> 
-   <td colname="col1"> <p>Rapporterna innehåller <i>högst</i> 50 konverteringsegenskaper från användaren. Om du når det högsta värdet används de första 50 konverteringsegenskaperna baserat på trait-ID, i stigande ordning. </p> </td> 
-  </tr> 
+  </tr>
   <tr> 
    <td> <p>Attributionsfönster </p> </td> 
    <td> <p> <b><span class="uicontrol"> AAM+DCM</span></b> -attribueringsfönstret är 14 dagar, vilket innebär att endast konverteringsegenskaper som visats under de senaste två veckorna beaktas. </p> </td> 
