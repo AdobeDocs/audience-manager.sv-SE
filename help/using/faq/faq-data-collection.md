@@ -7,7 +7,10 @@ title: Vanliga frågor om datainsamling och produktintegrering
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+workflow-type: tm+mt
+source-wordcount: '1072'
+ht-degree: 0%
 
 ---
 
@@ -34,13 +37,13 @@ Trakter som introduceras via [!UICONTROL Inbound] fylls i på [!UICONTROL Inboun
 
 <br> 
 
-**Kan du ge mig en lista över IP-adresser som jag kan vitlista för dpm.demdex.net?**
+**Kan du ge mig en lista över IP-adresser som jag kan lägga till i en Tillåt-lista för dpm.demdex.net?**
 
 Tyvärr kan vi inte. Dessa IP-adresser tilldelas dynamiskt, per geografisk region, via [!DNL Amazon Web Services]. Detta innebär att [!DNL Audience Manager] inte kontrollerar vilket IP-intervall som kan tilldelas till den här adressen.
 
 <br> 
 
-**Kan du ge mig en IP-adress som jag kan vitlista för din inkommande och utgående sFTP-server?**
+**Kan du ge mig en IP-adress jag kan lägga till i en Tillåt-lista för din inkommande och utgående sFTP-server?**
 
 Ja, se nedan.
 
