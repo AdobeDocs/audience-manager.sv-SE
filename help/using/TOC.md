@@ -5,12 +5,15 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
+source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+workflow-type: tm+mt
+source-wordcount: '1711'
+ht-degree: 1%
 
 ---
 
 
-# Användarhandbok för Audience Manager {#user-guide}
+# Audience Manager User Guide {#user-guide}
 
 + [Audience Manager - produktdokumentation](aam-home.md)
 + Översikt{#overview}
@@ -167,7 +170,7 @@ source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
       + [Exempeluttryck med booleska operatorer och jämförelseoperatorer](features/traits/trait-expression-samples.md)
       + [Referens för egenskaper för trait och segment](features/traits/trait-and-segment-qualification-reference.md)
    + [Visningsprogram för besökarprofiler](features/visitor-profile-viewer.md)
-+ Rapportering{#reporting}
++ Rapporter {#reporting}
    + [Rapportöversikt](reporting/reports-overview.md)
    + [Kontrollpanel för rapporter](reporting/reports-dashboard.md)
    + [Allmänna rapporter](reporting/general-reports.md)
@@ -233,7 +236,7 @@ source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
          + [API-referens för DCS - översikt](api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)
          + [DCS API-metoder](api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
          + [Felkoder, meddelanden och exempel för DCS](api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
-         + [ID-övervakning och svartlistning](api/dcs-intro/dcs-api-reference/id-monitoring-blacklisting.md)
+         + [ID-övervakning och Neka-lista](api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
          + [DCS-region-ID, -platser och -värdnamn](api/dcs-intro/dcs-api-reference/dcs-regions.md)
          + [Formatera nyckelvärdepar i DCS-anrop](api/dcs-intro/dcs-api-reference/dcs-key-format.md)
          + [Ansiktsvillkor och felhantering](api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
@@ -342,7 +345,7 @@ source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
    + [Amazon S3: Om](reference/amazon-s3.md)
    + [Användningsexempel för annonsörer](reference/advertiser-use-cases.md)
    + [Användningsexempel för utgivare](reference/publisher-use-cases.md)
-   + [Beta Environment](reference/beta-environment.md)
+   + [Beta-miljö](reference/beta-environment.md)
    + [Booleska uttryck i Trait och Segment Builder](reference/boolean-expressions-tsb.md)
    + Masshanteringsverktyg{#bulk-management-tools}
       + [Komma igång med masshantering](reference/bulk-management-tools/bulk-management-intro.md)
