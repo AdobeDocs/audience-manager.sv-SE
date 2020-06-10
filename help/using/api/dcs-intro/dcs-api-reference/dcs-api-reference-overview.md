@@ -4,7 +4,10 @@ seo-description: Konceptuell information, beskrivningar och definitioner för DC
 seo-title: DCS API Reference Overview i Adobe Audience Manager (AAM)
 title: API-referens för DCS - översikt
 translation-type: tm+mt
-source-git-commit: a1960a65058622c198bb07d7c20c1e21e2eaf00a
+source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ Konceptuell information, beskrivningar och definitioner för DCS API-kod, metode
 
    Felkoder och meddelanden som genereras av datainsamlingsservrarna (DCS) listas i numerisk ordning efter kod-ID.
 
-* [ID-övervakning och svartlistning](/help/using/api/dcs-intro/dcs-api-reference/id-monitoring-blacklisting.md)
+* [ID-övervakning och Neka-lista](/help/using/api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
 
-   DCS övervakar de ID som tas emot och svartlistar de som skickas med en ovanligt hög hastighet under en kort tidsperiod.
+   DCS övervakar de ID som tas emot och lägger till de ID som skickas med ett ovanligt högt pris under en kort tidsperiod till en lista över nekade.
 
 * [DCS-region-ID, -platser och -värdnamn](/help/using/api/dcs-intro/dcs-api-reference/dcs-regions.md)
 
