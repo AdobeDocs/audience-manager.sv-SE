@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Överlappningsrapport för segment-till-segment
 uuid: 0339eb6c-6355-44a3-9c46-f159485449d1
 translation-type: tm+mt
-source-git-commit: c05541df2d0dfc8753b06eaa8f2baee9bc6c2a16
+source-git-commit: a35be513c2cec40257f2df0731eaccbb98e3a000
+workflow-type: tm+mt
+source-wordcount: '375'
+ht-degree: 0%
 
 ---
 
