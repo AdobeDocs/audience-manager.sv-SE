@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Rapportteknik
 uuid: 5f3d815b-e1e6-42f2-b848-ac035a5aa77d
 translation-type: tm+mt
-source-git-commit: b5a962381780f1a1627e39b59e3ca86fd51763b5
+source-git-commit: a35be513c2cec40257f2df0731eaccbb98e3a000
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 0%
 
 ---
 
@@ -79,52 +82,6 @@ Följande tabell definierar de former, storlekar och färger som används i de d
  </tbody> 
 </table>
 
-## Ikoner och verktyg för rapporter förklaras {#icons-tools-explained}
+## Dokumentation för surfplatta {#tableau-documentation}
 
-Beskriver hur du söker efter och använder de olika ikonverktygen som används i de dynamiska rapporterna.
-
-<!-- 
-
-r_icons.xml
-
- -->
-
-### Dataikoner och verktyg
-
-Följande ikonverktyg finns längst ned i varje dynamiskt rapportfönster. Följande bild innehåller mer information om dessa verktyg.
-
-![](assets/tools_icons90.png)
-
-### Exportera data
-
-Med dessa verktyg kan du exportera data från rapporten i fyra olika format.
-
-| Exportalternativ | Exporterar data |
-|---|---|
-| **[!UICONTROL Image]** | Som en bildfil (.png). Användbart när du vill hämta och dela rapportdata i det ursprungliga grafiska formatet. |
-| **[!UICONTROL PDF]** | Som en PDF-fil. |
-| **[!UICONTROL Data]** | I ett nytt webbläsarfönster som numeriska data i kolumner och rader. |
-| **[!UICONTROL Crosstab]** | Som en CSV-fil. |
-
-### Återställ ändringar
-
-Välj det här verktyget om du vill ångra alla interaktiva klickningsändringar som du har gjort i rapporten.
-
-### Automatiska uppdateringar
-
-Rapporterna [!UICONTROL Delivery-Performance] och [!UICONTROL Trait-to-Trait Overlap] rapporterna är dynamiska rapporter som svarar på och ändras baserat på klickåtgärder.
-
-Anta att du vill välja flera annonsörer i [!UICONTROL Overlap] rapporten. När det här alternativet är aktiverat börjar automatiska uppdateringar returnera data så fort du markerar en kryssruta. Detta dynamiska beteende kan avbryta ditt arbetsflöde eftersom du måste vänta tills rapporten har bearbetats innan du väljer en annan annonsörer. Använd det här verktyget för att inaktivera (och aktivera igen) funktionen efter behov.
-
-### Uppdatera data
-
-Klicka på uppdateringsikonen om du vill köra en rapport eller läsa in datauppsättningen igen. När automatiska uppdateringar är inaktiverade klickar du på Uppdatera för att köra eller uppdatera rapporten.
-
-### Sökverktyg
-
-Sökningen representeras av en allmän förstoringsglasikon (visas inte). Sökfältet är dolt tills du klickar på markeringsetiketterna till vänster på skärmen. Tabellen nedan beskriver sökverktygets plats för varje rapport.
-
-| Rapport | Söka efter sökningar genom att hovra över |
-|---|---|
-| [!UICONTROL Delivery and Performance] rapport | Etiketten&quot;Advertiser Name&quot;. |
-| [!UICONTROL Overlap] rapporter | Etiketten SID-namn. |
+Mer information om flikkontroller som du kan se i våra interaktiva rapporter finns i den officiella dokumentationen för [Tableau Server i Linux 2018.2](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm.)
