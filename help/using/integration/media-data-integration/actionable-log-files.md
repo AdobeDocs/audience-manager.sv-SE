@@ -7,7 +7,10 @@ solution: Audience Manager
 title: Åtgärdsbara loggfiler
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 translation-type: tm+mt
-source-git-commit: 408ebf38ad75f32d110455b754a096328f2c456e
+source-git-commit: 8f5dadb44ada3822b7336827c8863a7277b687c3
+workflow-type: tm+mt
+source-wordcount: '1376'
+ht-degree: 2%
 
 ---
 
@@ -29,13 +32,14 @@ source-git-commit: 408ebf38ad75f32d110455b754a096328f2c456e
 För att komma igång med [!UICONTROL Actionable Log Files]måste du importera loggdata till [!DNL Audience Manager]. Följande länkar hjälper dig att komma igång:
 
 * Mer [!UICONTROL Google DCM] information finns i [Importera DCM-datafiler till Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) *och* kontakta din [!DNL Audience Manager] konsult.
+* Mer [!UICONTROL Google DFP] information finns i [Importera DFP-datafiler till Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *och* kontakta din [!DNL Audience Manager] konsult.
 * Andra annonsserverloggar finns i [Data- och metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) *och* kontakta din [!DNL Audience Manager] konsult.
 
-Om du redan importerar loggdata till [!DNL Audience Manager]ber du din [!DNL Audience Manager] konsult eller [kundtjänst](https://helpx.adobe.com/contact/enterprise-support.ec.html) att aktivera [!UICONTROL Actionable Log Files] för dig.
+Om du redan importerar loggdata till [!DNL Audience Manager]ber du din [!DNL Audience Manager] konsult eller [kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html) att aktivera [!UICONTROL Actionable Log Files] för dig.
 
 >[!IMPORTANT]
 >
-> I slutet av 2019 började [!UICONTROL Actionable Log Files] tillgängligheten att nå nya annonsservrar. Be din [!DNL Audience Manager] konsult eller [kundtjänst](https://helpx.adobe.com/contact/enterprise-support.ec.html) att komma igång.
+> I slutet av 2019 började [!UICONTROL Actionable Log Files] tillgängligheten att nå nya annonsservrar. Be din [!DNL Audience Manager] konsult eller [kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html) att komma igång.
 
 ## Arbeta med körbara loggfiler {#working-with-actionable-log-files}
 
