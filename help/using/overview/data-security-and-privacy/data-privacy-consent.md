@@ -7,7 +7,10 @@ keywords: GDPR UI, GDPR API, CCPA, privacy, consent
 title: Hantering av samtycke
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 34af220db2cf23ccde225eb1e05af7ce0e1513b7
+workflow-type: tm+mt
+source-wordcount: '737'
+ht-degree: 0%
 
 ---
 
@@ -28,11 +31,11 @@ Audience Manager har verktyg som hjälper er att få ut det innehåll ni behöve
 
 ## Experience Cloud-anmälningstjänst
 
-Med [Experience Clouds anmälningstjänst](https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/opt-in-service/optin-overview.html) kan ni konfigurera protokoll för besökaren för att hjälpa er att avgöra om ni kan ställa in en cookie på personens enhet eller webbläsare när ni besöker er webbplats.
+Med [Experience Clouds anmälningstjänst](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) kan ni konfigurera protokoll för besökaren för att hjälpa er att avgöra om ni kan ställa in en cookie på personens enhet eller webbläsare när ni besöker er webbplats.
 
 Detta är ett tillägg till [!DNL Experience Cloud ID (ECID) Service], som är utformat för att du ska kunna kontrollera om och vilka Experience Cloud-lösningar som kan placera cookies på webbsidor för besökare innan användaren ger sitt samtycke.
 
-Med [Experience Clouds anmälningstjänst](https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/opt-in-service/optin-overview.html) kan ni också ange protokoll som ska integreras med er plattform för hantering av samtycke (CMP) och befintliga system som en del av er större design.
+Med [Experience Clouds anmälningstjänst](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) kan ni också ange protokoll som ska integreras med er plattform för hantering av samtycke (CMP) och befintliga system som en del av er större design.
 
 ## Hantera anmälan/inhämtning av samtycke
 
