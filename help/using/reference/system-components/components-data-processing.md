@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Databearbetningskomponenter
 uuid: d458d869-7a23-4016-871d-0b994cf4af06
 translation-type: tm+mt
-source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
+source-git-commit: 9a92420b1f0116c0fd71db56895720e0ee894f30
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +28,9 @@ Audience Manager använder följande komponenter för att bearbeta data:
 
 ## Hadoop {#hadoop}
 
-I [!DNL Audience Manager]är Hadoop huvuddatabasen som innehåller allt som [!DNL Audience Manager] vet om en användare. När till exempel [profilcacheservrarna](../../reference/system-components/components-data-collection.md) skapar loggfiler som innehåller data om dina användare, skickas dessa data till Hadoop för lagring. Andra viktiga Hadoop-element är:
+Hadoop [!DNL Audience Manager]är i sin tur huvuddatabasen som innehåller allt [!DNL Audience Manager] om en användare. När till exempel [profilcacheservrarna](../../reference/system-components/components-data-collection.md) skapar loggfiler som innehåller data om dina användare, skickas dessa data till Hadoop för lagring. Andra viktiga Hadoop-element är:
 
-* **Hive:** Ett datalager för Hadoop. Hive hanterar ad hoc-frågor till data som lagras i Hadoop.
+* **Hive:** data warehouse för Hadoop. Hive hanterar ad hoc-frågor till data som lagras i Hadoop.
 
 * **HBase:** En mycket stor Hadoop-databas. Den behandlar och hanterar inkommande och utgående data, varumärkesregler, algoritmisk modelleringsinformation och utför många andra funktioner som rör lagring och flyttning av data till olika system.
 
