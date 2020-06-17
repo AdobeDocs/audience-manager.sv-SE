@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Samla in data för kampanjexponering via pixelanrop
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: 1fb8ee6c229418e48fcaa412a8ea0f1ab5f00331
+source-git-commit: b1d953837766f5822f5ba0246f7e10042c6f1072
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 17%
@@ -111,7 +111,7 @@ Impression-händelseanrop accepterar data som har formats till nyckelvärdepar. 
 >
 >Kontakta din kontaktperson för Adobe Audience Manager eller ditt kontokonto för att få en exakt URL som är specifik för klientdomänen.
 
-## Ytterligare funktioner - [!DNL Audience Optimization Reports]
+## Ytterligare funktioner - [!DNL Audience Optimization Reports] {#additional-functionality-aor}
 
 Du kan använda pixelanrop för att styra [målgruppsoptimeringsrapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md). Se [Översikt och mappningar för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) om du vill använda pixlar som stöd för rapporterna.
 
