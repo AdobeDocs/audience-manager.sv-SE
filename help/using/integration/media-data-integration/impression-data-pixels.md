@@ -1,14 +1,14 @@
 ---
-description: Ett sätt att skicka mediedata till Audience Manager är att använda annonsservermakron för att skicka kampanjattribut till Audience Manager.
-seo-description: Ett sätt att skicka mediedata till Audience Manager är att använda annonsservermakron för att skicka kampanjattribut till Audience Manager.
+description: Ett tillvägagångssätt för att skicka mediedata till Audience Manager använder annonsservermakron för att skicka kampanjattribut till Audience Manager.
+seo-description: Ett tillvägagångssätt för att skicka mediedata till Audience Manager använder annonsservermakron för att skicka kampanjattribut till Audience Manager.
 seo-title: Samla in data för kampanjexponering via pixelanrop
 solution: Audience Manager
 title: Samla in data för kampanjexponering via pixelanrop
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: 72cf5f30c74736f7143841c0edd6c5c69154a0c2
+source-git-commit: 1fb8ee6c229418e48fcaa412a8ea0f1ab5f00331
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '713'
 ht-degree: 17%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 17%
 
 # Samla in data för kampanjexponering via pixelanrop{#capturing-campaign-impression-data-via-pixel-calls}
 
-Ett sätt att skicka mediedata till Audience Manager är att använda annonsservermakron för att skicka kampanjattribut till Audience Manager.
+Ett tillvägagångssätt för att skicka mediedata till Audience Manager använder annonsservermakron för att skicka kampanjattribut till Audience Manager.
 
 Den här metoden kallas ofta&quot;pixelering av den kreativa&quot;. Dessa datapunkter infogas dynamiskt i [!DNL Audience Manager] pixelkoden av tredjeparts- och servermakron, som används för att mappa och rapportera alla visningar och klickningar baserat på kampanjens huvudrapporteringsattribut. De aggregerade data ger en enhetlig bild av kampanjens resultat, hjälper till att identifiera anpassade konverteringsvägar och hjälper kunderna att förbättra sekvensen av annonsserverhändelser som leder till konverteringar.
 
@@ -62,7 +62,7 @@ Impression-händelseanrop accepterar data som har formats till nyckelvärdepar. 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bust </code> </p> </td> 
-   <td colname="col2"> <p>Cachebuffertvärde. <span class="keyword"> Audience Manager skickar </span> automatiskt rubriker för cachekontroll som stöds av de flesta webbläsare och proxies. Om du vill utföra ytterligare cachepublicering tar du med den här parametern i ett händelseanrop, följt av en slumpmässig sträng. </p> <p> Valfritt. </p> </td> 
+   <td colname="col2"> <p>Cachebuffertvärde. <span class="keyword"> Audience Manager </span> skickar automatiskt rubriker för cachekontroll som stöds av de flesta webbläsare och proxies. Om du vill utföra ytterligare cachepublicering tar du med den här parametern i ett händelseanrop, följt av en slumpmässig sträng. </p> <p> Valfritt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_campaign </code> </td> 
@@ -109,9 +109,9 @@ Impression-händelseanrop accepterar data som har formats till nyckelvärdepar. 
 
 >[!NOTE]
 >
->Kontakta er Adobe Audience Manager-konsult eller kontoansvarige för att få en exakt URL som är specifik för klientdomänen.
+>Kontakta din kontaktperson för Adobe Audience Manager eller ditt kontokonto för att få en exakt URL som är specifik för klientdomänen.
 
-## Ytterligare funktionalitet - rapporter om målgruppsoptimering
+## Ytterligare funktioner - [!DNL Audience Optimization Reports]
 
 Du kan använda pixelanrop för att styra [målgruppsoptimeringsrapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md). Se [Översikt och mappningar för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) om du vill använda pixlar som stöd för rapporterna.
 
