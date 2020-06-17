@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 3ca199ec386d812f53e03508353763d31badbd29
+source-git-commit: 1b31f10effa2780b5e4374516dd6c76d92a0123a
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1740'
 ht-degree: 1%
 
 ---
@@ -311,6 +311,7 @@ ht-degree: 1%
          + [OAuth 2.0-integrering för utgående överföringar i realtid](integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)
       + Batchutgående dataöverföringar{#batch-outbound-data-transfers}
          + [Översikt över utgående dataöverföringar i grupp](integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)
+         + [Konfigurera integrering av batchdataöverföring](integration/receiving-audience-data/batch-outbound-transfers/batch-server-configuration.md)
          + [Namn på utgående datafil: Syntax och exempel](integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
          + [Överföringskontrollfiler för loggfilsöverföringar](integration/receiving-audience-data/batch-outbound-transfers/transfer-control-files.md)
          + [Utgående mallmakron](integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)
