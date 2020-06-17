@@ -3,14 +3,17 @@ description: Med prediktiva målgrupper kan ni klassificera okända målgrupper 
 seo-description: Med prediktiva målgrupper kan ni klassificera okända målgrupper i distinkta personligheter i realtid med datavetenskap.
 seo-title: Översikt över prediktiva målgrupper
 solution: Audience Manager
-title: Audience Manager Predictive Audience
+title: Audience Manager prediktiva målgrupper
 translation-type: tm+mt
-source-git-commit: 74a5de961b2f9ab6afa2caf998ba1100d40cc93a
+source-git-commit: 4df2a7536155d42133c0873ed4e3376eb24cba1a
+workflow-type: tm+mt
+source-wordcount: '1275'
+ht-degree: 0%
 
 ---
 
 
-# Översikt över prediktiva målgrupper {#predictive-audiences}
+# [!UICONTROL Predictive Audiences] Översikt {#predictive-audiences}
 
 [!UICONTROL Predictive Audiences] hjälper er att klassificera en okänd publik i distinkta personligheter, i realtid, med avancerad datavetenskap.
 
@@ -19,11 +22,11 @@ source-git-commit: 74a5de961b2f9ab6afa2caf998ba1100d40cc93a
 
 I ett marknadsföringssammanhang är en person ett målgruppssegment som definieras av besökare, användare eller potentiella köpare som delar en viss uppsättning egenskaper, som demografi, surfvanor, shoppinghistorik osv.
 
-[!UICONTROL Predictive Audiences] modeller tar detta koncept ett steg längre genom att göra det möjligt för er att använda Audience Managers maskininlärningsfunktioner för att klassificera okända målgrupper i distinkta personligheter. Audience Manager hjälper er att uppnå detta genom att beräkna sannolikheten för er okända förstapartsmålgrupp för en uppsättning kända förstapartsmålgrupper.
+[!UICONTROL Predictive Audiences] modeller tar det här konceptet ett steg längre genom att du kan använda Audience Manager maskininlärningsfunktioner för att klassificera okända målgrupper i distinkta personligheter. Audience Manager hjälper er att uppnå detta genom att beräkna hur benägen era okända förstapartsmålgrupper är för en uppsättning kända förstapartsmålgrupper.
 
 När du skapar en [!UICONTROL Predictive Audiences] modell är det första steget att välja de baslinjeegenskaper eller segment som du vill att målgruppen ska klassificeras efter. Dessa egenskaper eller segment kommer att definiera er personlighet.
 
-Under utvärderingsfasen skapar modellen ett nytt [!UICONTROL Predictive Audiences] segment för varje drag eller segment som du har definierat som baslinje. Nästa gång Audience Manager ser en besökare från målgruppen som inte är klassificerad som en persona (som inte var kvalificerad för någon av era grundläggande egenskaper eller segment) avgör [!UICONTROL Predictive Audiences] modellen vilka av de prediktiva segment som besökaren ska tillhöra och lägger till besökaren i det segmentet.
+Under utvärderingsfasen skapar modellen ett nytt [!UICONTROL Predictive Audiences] segment för varje drag eller segment som du har definierat som baslinje. Nästa gång Audience Manager ser en besökare från målgruppen som inte är klassificerad som en person (som inte var kvalificerad för någon av dina grundläggande egenskaper eller segment), avgör [!UICONTROL Predictive Audiences] modellen vilka av de prediktiva segment som besökaren ska tillhöra och lägger till besökaren i det segmentet.
 
 Du kan identifiera de prediktiva segment som skapas av modellen på [!UICONTROL Segments] sidan. Varje [!UICONTROL Predictive Audiences] modell har en egen mapp under [!UICONTROL Predictive Audiences] mappen, och du kan se varje modells segment genom att klicka på modellmappen.
 
@@ -31,7 +34,7 @@ Du kan identifiera de prediktiva segment som skapas av modellen på [!UICONTROL 
 
 ## Användningsexempel {#use-cases}
 
-För att ni ska få en bättre förståelse för hur och när ni kan använda [!UICONTROL Predictive Audiences]finns det några användningsområden som Audience Manager-kunder kan lösa med den här funktionen.
+För att du bättre ska förstå hur och när du kan använda [!UICONTROL Predictive Audiences]finns det några exempel på hur Audience Manager-kunder kan lösa det med den här funktionen.
 
 ### Användningsfall 1
 
@@ -75,7 +78,7 @@ Du kan välja vilken som helst av dina egna egenskaper eller segment för att de
 * Välj baslinjetrafik eller segment med minimal överlappning.
 * Se till att ni fångar in detaljrikedom i alla era digitala resurser.
 
-### Urvalskriterier för målpublik {#selection-audience}
+### Urvalskriterier för Target-målgrupp {#selection-audience}
 
 På samma sätt som för en personlig markering bör du välja ett varumärke eller segment som definierar målgruppen på ett sådant sätt att den har realtidsanvändare med många uppsättningar egenskaper, för klassificering i rätt profil.
 
@@ -111,7 +114,7 @@ Tänk på följande när du konfigurerar dina [!UICONTROL Predictive Audiences] 
 * Segmentutvärdering för [!UICONTROL Predictive Audiences] använder den standard **[!UICONTROL Profile Merge Rule]** som du definierade i ditt konto. Mer information om [!UICONTROL Profile Merge Rules] finns i den dedikerade [dokumentationen](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-overview.html).
 * Vissa egenskaper och segment stöds inte som baslinjer eller målgrupper. [!UICONTROL Predictive Audiences] modeller kan inte sparas när du väljer något av följande som baslinjer eller målgrupper:
    * Prediktiva egenskaper och segment som skapats med prediktiva egenskaper.
-   * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md) -egenskaper eller -segment.
+   * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md) egenskaper eller segment,
    * Algoritmiska egenskaper.
    * Andra och tredje parts egenskaper.
 
@@ -128,6 +131,6 @@ Fastigheter som har ytterligare begränsningar som inte ingår i [!UICONTROL Pre
 
 ## Rollbaserade åtkomstkontroller{#rbac}
 
-De egenskaper och segment som du väljer för personifiering och målgruppsklassificering omfattas av [rollbaserade åtkomstkontroller](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/administration/administration-overview.html)för Audience Manager.
+Vilka egenskaper och segment du väljer för personifiering och målgruppsklassificering omfattas av [rollbaserade åtkomstkontroller](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/administration/administration-overview.html)för Audience Manager.
 
-Användare av Audience Manager kan bara välja egenskaper eller segment för personer och målgrupper som de har [behörighet att visa](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions).
+Audience Manager-användare kan bara välja egenskaper eller segment för personer och målgrupper som de har [behörighet att visa](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions).
