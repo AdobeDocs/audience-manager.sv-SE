@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Datainsamlingskomponenter
 uuid: 51bb1719-5ff2-4bc7-8eb1-98795e05d08f
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '762'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ c_compcollect.xml
 
  -->
 
-Audience Manager innehåller följande komponenter för datainsamling:
+Audience Manager innehåller följande datainsamlingskomponenter:
 
 * [Datainsamlingsservrar (DCS) och profilcacheservrar (PCS)](../../reference/system-components/components-data-collection.md#dcs-pcs)
 * [Dataintegreringsbibliotek (DIL)](../../reference/system-components/components-data-collection.md#dil)
@@ -42,23 +45,23 @@ I [!DNL Audience Manager]DCS:
 * Kontrollerar om det finns ytterligare egenskaper hos PCS som en användare redan har uppnått före ett händelsesamtal i realtid. På så sätt kan DCS-användarna kvalificera sig baserat på realtidsdata och historiska data.
 * Skriver loggfiler och skickar dem till analyssystem för lagring och bearbetning.
 
-**[!UICONTROL DCS]Hanterar efterfrågan via[!UICONTROL Global Server Load Balancing (GSLB)]**
+**[!DNL DCS]Hanterar efterfrågan via[!UICONTROL Global Server Load Balancing (GSLB)]**
 
-Systemet [!UICONTROL DCS] är ett geografiskt fördelat och lastbalanserat system. Detta innebär att [!DNL Audience Manager] kan dirigera förfrågningar till och från ett regionalt datacenter baserat på den geografiska platsen för en besökare. Denna strategi hjälper till att förbättra svarstiderna eftersom ett svar går direkt till ett datacenter som innehåller information om besökaren. [!UICONTROL DCS] [!UICONTROL GSLB] gör vårt system effektivt eftersom relevanta data cachas i servrar som ligger närmast användaren.
+Systemet [!DNL DCS] är ett geografiskt fördelat och lastbalanserat system. Detta innebär att [!DNL Audience Manager] kan dirigera förfrågningar till och från ett regionalt datacenter baserat på den geografiska platsen för en besökare. Denna strategi hjälper till att förbättra svarstiderna eftersom ett svar går direkt till ett datacenter som innehåller information om besökaren. [!DNL DCS] [!UICONTROL GSLB] gör vårt system effektivt eftersom relevanta data cachas i servrar som ligger närmast användaren.
 
 >[!IMPORTANT]
 >
->Den identifierar [!UICONTROL DCS] bara webbtrafik som kommer från enheter som använder IPv4.
+>Den identifierar [!DNL DCS] bara webbtrafik som kommer från enheter som använder IPv4.
 
 I ett händelseanrop hämtas geografisk plats i ett nyckelvärdepar som returneras i en större mängd JSON-data. Detta nyckelvärdepar är `"dcs_region": region ID` parametern.
 
 ![](assets/dcs-map.png)
 
-Som kund interagerar ni med det [!UICONTROL DCS] indirekt via vår datainsamlingskod. Du kan också arbeta direkt med [!UICONTROL DCS] via en uppsättning API:er. Se API-metoder och kod [för](../../api/dcs-intro/dcs-event-calls/dcs-event-calls.md)Data Collection Server (DCS).
+Som kund interagerar ni med det [!DNL DCS] indirekt via vår datainsamlingskod. Du kan också arbeta direkt med [!DNL DCS] via en uppsättning API:er. Se API-metoder och kod [för](../../api/dcs-intro/dcs-event-calls/dcs-event-calls.md)Data Collection Server (DCS).
 
 **[!UICONTROL Profile Cache Servers (PCS)]**
 
-Det [!UICONTROL PCS] är en stor databas (i stort sett en stor cookie på serversidan). Den lagrar data som tas emot för aktiva användare från server till server-överföringar och [!UICONTROL DCS]. [!UICONTROL PCS] data består av enhets-ID, autentiserade profil-ID:n och tillhörande egenskaper. När användaren [!UICONTROL DCS] får ett realtidssamtal kontrolleras [!UICONTROL PCS] om användaren har andra egenskaper som han/hon kan tillhöra eller vara berättigad till. Och om en egenskap läggs till i ett segment vid ett senare tillfälle läggs dessa trait-ID:n till i [!UICONTROL PCS] och användarna kan kvalificera sig för det segmentet automatiskt, utan att besöka en viss webbplats eller app. Detta [!UICONTROL PCS] bidrar till att fördjupa [!DNL Audience Manager]förståelsen för era användare eftersom det kan matcha och segmentera användare i realtid eller bakom kulisserna med nya och historiska traits-data. Detta beteende ger en mer fullständig och korrekt bild av era användare än bara med realtidskvalifikationer.
+Det [!UICONTROL PCS] är en stor databas (i stort sett en stor cookie på serversidan). Den lagrar data som tas emot för aktiva användare från server till server-överföringar och [!DNL DCS]. [!UICONTROL PCS] data består av enhets-ID, autentiserade profil-ID:n och tillhörande egenskaper. När användaren [!DNL DCS] får ett realtidssamtal kontrolleras [!UICONTROL PCS] om användaren har andra egenskaper som han/hon kan tillhöra eller vara berättigad till. Och om en egenskap läggs till i ett segment vid ett senare tillfälle läggs dessa trait-ID:n till i [!UICONTROL PCS] och användarna kan kvalificera sig för det segmentet automatiskt, utan att besöka en viss webbplats eller app. Detta [!UICONTROL PCS] bidrar till att fördjupa [!DNL Audience Manager]förståelsen för era användare eftersom det kan matcha och segmentera användare i realtid eller bakom kulisserna med nya och historiska traits-data. Detta beteende ger en mer fullständig och korrekt bild av era användare än bara med realtidskvalifikationer.
 
 Det finns inga gränssnittskontroller som gör att våra kunder kan arbeta direkt med [!UICONTROL PCS]. Kundåtkomst till [!UICONTROL PCS] är indirekt genom sin roll som datalager och dataöverföringar. De [!UICONTROL PCS] springer på Apache Cassandra.
 
