@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Ordlista
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
 translation-type: tm+mt
-source-git-commit: 62147fc719a59d2b2c7b444bce853334b03816c6
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Se [Kunddatafeeds](../features/cdf-files.md).
 
 **CRM-ID**
 
-CRM-ID är det ID med vilket kunderna identifierar användare i sina egna CRM-system. I stället för CRM ID använder vi termen DPUID i Audience Manager.
+CRM-ID är det ID med vilket kunderna identifierar användare i sina egna CRM-system. I stället för CRM ID använder vi termen DPUUID i Audience Manager.
 
 Se DPUID i [index för ID:n i Audience Manager](../reference/ids-in-aam.md).
 
@@ -184,7 +184,7 @@ Se [Experience Cloud-ID](../reference/aam-glossary.md#e-f).
 
 **PCS**
 
-[!UICONTROL Profile Cache Server]. Det [!UICONTROL PCS] är en stor databas som körs på Apache Cassandra. Den lagrar data som tas emot för aktiva användare från server till server-överföringar och [!UICONTROL DCS]. [!UICONTROL PCS] data består av enhets-ID, autentiserade profil-ID:n och tillhörande egenskaper.
+[!UICONTROL Profile Cache Server]. Det [!UICONTROL PCS] är en stor databas som körs på Apache Cassandra. Den lagrar data som tas emot för aktiva användare från server till server-överföringar och [!DNL DCS]. [!UICONTROL PCS] data består av enhets-ID, autentiserade profil-ID:n och tillhörande egenskaper.
 
 Se [Datainsamlingskomponenter](../reference/system-components/components-data-collection.md).
 
@@ -220,7 +220,7 @@ Se [Segment: Syfte, Disposition och Regler](../features/segments/segments-purpos
 
 **Segmentadresserbar publik**
 
-I [adresserbar publik](/help/using/features/addressable-audiences.md)representerar det här måttet antalet användare som har tillhört segmentet under rapportens kontrollperiod och har en aktiv ID-synkronisering på din webbplats. Segment kan innehålla egna data från första part och data från andra part och tredje part via egenskaper som förvärvats på [Audience Marketplace](/help/using/features/audience-marketplace/audience-marketplace.md).
+I [adresserbar publik](/help/using/features/addressable-audiences.md)representerar det här måttet antalet användare som har tillhört segmentet under rapportens kontrollperiod och har en aktiv ID-synkronisering på din webbplats. Segmenten kan innehålla egna data från första part samt data från andra part och tredje part via egenskaper som förvärvats i [Audience Marketplace](/help/using/features/audience-marketplace/audience-marketplace.md).
 
 <br> 
 
