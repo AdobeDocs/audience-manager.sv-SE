@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Regler för profilsammanslagning - översikt
 uuid: 9e7988cc-9145-432b-840a-54fbd8657b3b
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 0%
 
 ---
 
@@ -37,8 +40,8 @@ Vanligtvis bygger målgruppssegmentering och målgruppsanpassning på data som s
    <td colname="col1"> Enhetsprofil </td> 
    <td colname="col2"> <p>En enhetsprofil är kopplad till ett ID för en viss enhet, till exempel ett cookie-ID eller ett mobilenhets-ID. Den innehåller följande uppgifter: </p> <p>
      <ul id="ul_0420875DE65E44FFAC76E0DD205CFEC4"> 
-      <li id="li_044AD85C644A41FB8EF48164BAC0CE34">Regelbaserade egenskaper som realiseras när en användare inte autentiseras. </li> 
-      <li id="li_984D9790A6984139AFCFC2DFE4DF1BFC">Inbyggda egenskaper kopplade till ett enhets-ID, t.ex. cookie-baserade data från tredje part. </li>
+      <li id="li_044AD85C644A41FB8EF48164BAC0CE34">Rule-based traits realized when a user is not authenticated. </li> 
+      <li id="li_984D9790A6984139AFCFC2DFE4DF1BFC">Onboarded traits tied to a device ID such as cookie-based, third-party data. </li>
      </ul> </p> </td>
   </tr>
   <tr> 
@@ -52,16 +55,16 @@ Vanligtvis bygger målgruppssegmentering och målgruppsanpassning på data som s
  </tbody>
 </table>
 
-Dessa olika profiler styr vilka data du kan använda för segmentering. Med en [autentiserad profil](../../reference/visitor-authentication-states.md)kan du till exempel skapa korrekta segment baserat på data från flera enheter för en enskild användare. Detta innebär att ni kan leverera en enhetlig varumärkesupplevelse till kunder på flera enheter. Audience Manager uppnår detta genom att lagra mappningen av de olika enheter som en person använder för sina onlineaktiviteter i sin [autentiserade profil](../../reference/visitor-authentication-states.md). De här mappningarna kallas [!UICONTROL Profile Link Device Graph].
+These different profiles control the data you can use for segmentation. For example, with an [authenticated profile](../../reference/visitor-authentication-states.md), you can build accurate segments based on data from multiple devices for a single user. This means you can deliver a consistent brand experience to customers across multiple devices. [!DNL Audience Manager] achieves this by storing the mapping of the different devices a person uses for their online activities to their [authenticated profile](../../reference/visitor-authentication-states.md). These mappings are called the [!UICONTROL Profile Link Device Graph].
 
 ![](assets/authenticated2.png)
 
 ## Fördelar {#advantages}
 
-Med [!UICONTROL Profile Merge Rules] dig kan du
+With [!UICONTROL Profile Merge Rules] you can:
 
-* Rikta in er mot användare baserat på [autentiserad profil](../../reference/visitor-authentication-states.md), anonyma profiler eller kombinationer av båda.
-* Rikta in er till en viss kund på olika enheter.
+* Target-användare baserat på [autentiserad profil](../../reference/visitor-authentication-states.md), anonyma profiler eller kombinationer av båda.
+* Target är en specifik kund på alla deras enheter.
 * Skapa ett enhetsdiagram baserat på deterministiska data.
 * Finjustera data i era segment baserat på olika profiler.
 * Få ytterligare insikter om er målgrupp.
