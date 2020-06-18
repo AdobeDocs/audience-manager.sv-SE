@@ -7,7 +7,10 @@ solution: Audience Manager
 title: Deklarerade ID:n
 uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '1230'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +21,13 @@ Hur deklarerade ID:n fungerar, konfigurera procedurer, kodexempel och variabler.
 
 ## Deklarerat ID-mål {#declared-id-targeting}
 
-Utbyt och synkronisera användar-ID:n med Audience Manager från enheter eller webbläsare som inte använder eller accepterar beständiga lagringsmekanismer, till exempel cookies från tredje part.
+Utbyt och synkronisera användar-ID:n med [!DNL Audience Manager] enheter eller webbläsare som inte använder eller accepterar beständiga lagringsmekanismer, till exempel cookies från tredje part.
 
 <!-- declared_id_about.xml -->
 
 ## Syftet med deklarerat ID-mål {#declared-id-targeting-purpose}
 
-Vissa webbläsare, och de flesta mobila enheter, accepterar inte cookies från tredje part. Detta gör det svårt att behålla information om webbplatsbesökare eller tilldela beständiga ID:n. För att lösa det här problemet använder Audience Manager [!UICONTROL DIL] för att låta dig logga in [!UICONTROL declared IDs] på ett eventsamtal. En användare [!UICONTROL declared ID] kan också fungera som ett universellt ID som gäller för samma användare för alla lösningar i [!DNL Experience Cloud]. I följande tabell beskrivs ID-målnings-/matchningsprocessen:
+Vissa webbläsare, och de flesta mobila enheter, accepterar inte cookies från tredje part. Detta gör det svårt att behålla information om webbplatsbesökare eller tilldela beständiga ID:n. För att lösa det här problemet [!DNL Audience Manager] använder [!UICONTROL DIL] för att låta dig logga in [!UICONTROL declared IDs] på ett händelseanrop. En användare [!UICONTROL declared ID] kan också fungera som ett universellt ID som gäller för samma användare för alla lösningar i [!DNL Experience Cloud]. I följande tabell beskrivs ID-målnings-/matchningsprocessen:
 
 <table id="table_5D59CD5AF70B44C3B45D279283D4691F"> 
  <thead> 
@@ -36,19 +39,19 @@ Vissa webbläsare, och de flesta mobila enheter, accepterar inte cookies från t
  <tbody> 
   <tr> 
    <td colname="col1"> <b>Händelseanrop</b> </td> 
-   <td colname="col2"> <p>För att fungera behöver du <span class="wintitle"> DIL </span> och <a href="https://docs.adobe.com/content/help/en/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service- </a> koden på sidan. <span class="wintitle"> DIL </span> får <span class="wintitle"> deklarerade ID:n </span> från <code> setVisitorID </code> funktionen som tillhandahålls av <span class="keyword"> Adobe Experience Platform Identity Service </span> och skickar vidare dessa till <span class="keyword"> Audience Manager </span>. </p> </td> 
+   <td colname="col2"> <p>För att fungera behöver du <span class="wintitle"> DIL </span> och <a href="https://docs.adobe.com/content/help/en/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service- </a> koden på sidan. <span class="wintitle"> DIL </span> hämtar <span class="wintitle"> deklarerade ID:n </span> från <code> setVisitorID </code> funktionen som tillhandahålls av <span class="keyword"> Adobe Experience Platform Identity Service </span> och skickar vidare dessa till <span class="keyword"> Audience Manager </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Matcha ID</b> </td> 
-   <td colname="col2"> <p>Audience Manager försöker matcha klient- och besöks-ID med motsvarande ID i vårt system. Om det inte finns något matchande ID skapar Audience Manager ett nytt ID och associerar det med klient- och besökar-ID:t. </p> <p> <p>Obs!  Den senaste mappningen används om ditt ID mappar till mer än ett Audience Manager-ID. </p> </p> </td> 
+   <td colname="col2"> <p>Audience Manager försöker matcha klient- och besökar-ID med ett motsvarande ID i vårt system. Om det inte finns något matchande ID skapar Audience Manager ett nytt ID och associerar det med klient- och besökar-ID:t. </p> <p> <p>Obs!  Den senaste mappningen används om ditt ID mappar till mer än ett Audience Manager-ID. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Returnr</b> </td> 
-   <td colname="col2"> <p>Audience Manager skriver sitt synkroniserade ID till en cookie (eller annat adresserbart lagringsutrymme) från en första part i klientdomänen eller programmet. </p> </td>
+   <td colname="col2"> <p>Audience Manager skriver sitt synkroniserade ID till en cookie (eller annat adresserbart lagringsutrymme) i klientdomänen eller -programmet. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <b>Efterföljande händelseanrop</b> </td>
-   <td colname="col2"> <p>Ytterligare händelseanrop läser Audience Manager-ID:t från klientens domän och skickar det till Audience Manager. </p> </td>
+   <td colname="col2"> <p>Ytterligare händelseanrop läser Audience Manager-ID från klientens domän och skickar det till Audience Manager. </p> </td>
   </tr> 
  </tbody>
 </table>
@@ -57,16 +60,16 @@ För att komma igång måste du konfigurera [!DNL Experience Cloud] ID-tjänsten
 
 ## Avanmäl samtal {#opt-out-calls}
 
-Processen följer besökarnas preferenser för att avanmäla sig från målgruppsanpassning för Audience Manager på er webbplats. [!UICONTROL declared ID] När Audience Manager tar emot en avanmälningsbegäran innehåller den [!DNL JSON] som returneras av [!UICONTROL DCS] felkoden 171, med meddelandet&quot;En avanmälningstagg påträffades&quot;, i stället för användar-ID för Audience Manager.
+Processen följer besökarnas preferenser för att avanmäla sig från [!UICONTROL declared ID] [!DNL Audience Manager] målgruppsanpassning på er webbplats. När [!DNL Audience Manager] tar emot en avanmälningsbegäran innehåller den [!DNL JSON] som returneras av [!DNL DCS] felkoden 171, med meddelandet&quot;En avanmälningstagg påträffades&quot;, i stället för [!DNL Audience Manager] användar-ID:t.
 
-* Audience Manager kan skicka in en [!UICONTROL declared ID] avanmälan tillsammans med en Audience Manager [!UICONTROL UUID] i [!DNL URL].
-* Avanmälningen lagras [!UICONTROL declared ID] per partner i [!UICONTROL Profile Cache Server ([!UICONTROL PCS]). Det finns ingen avanmälan på plattformsnivå med [!UICONTROL declared IDs]. Dessutom väljer Audience Manager att användaren ska vara borta från just den regionen i kanten (avanmälan gäller inte för flera [!UICONTROL DCS] regioner).
+* [!DNL Audience Manager] kan skicka in en [!UICONTROL declared ID] avanmälan tillsammans med en [!DNL Audience Manager] i [!UICONTROL UUID] [!DNL URL].
+* Avanmälningen lagras [!UICONTROL declared ID] per partner i [!UICONTROL Profile Cache Server ([!UICONTROL PCS]). Det finns ingen avanmälan på plattformsnivå med [!UICONTROL declared IDs]. Dessutom [!DNL Audience Manager] avmarkerar användaren från den specifika regionen på kanten (avanmälan omfattar inte flera [!DNL DCS] regioner).
 
 Mer information om att välja bort datainsamling finns i [Dataintegritet](../overview/data-security-and-privacy/data-privacy.md) .
 
 ## Exempel på avanmälan av deklarerat ID {#opt-out-examples}
 
-Du kan göra en [!UICONTROL declared ID] avanmälningsbegäran med `d_cid` - och `d_cid_ic` nyckelvärdepar. Gamla parametrar som `d_dpid` och `d_dpuuid` fungerar fortfarande, men betraktas som inaktuella. Se [CID ersätter DPID och DPUUID](../reference/cid.md). I exemplen *visar kursiv* en variabelplatshållare.
+Du kan göra en [!UICONTROL declared ID] avanmälningsbegäran med `d_cid` - och `d_cid_ic` nyckelvärdepar. Gamla parametrar som `d_dpid` och `d_dpuuid` fungerar fortfarande, men anses vara föråldrade. Se [CID ersätter DPID och DPUUID](../reference/cid.md). I exemplen *visar kursiv* en variabelplatshållare.
 
 ### Avanmäl dig med CID och CID_IC
 
@@ -113,7 +116,7 @@ Dessa metoder fungerar fortfarande men anses vara föråldrade. Denna informatio
   </tr> 
   <tr> 
    <td colname="col1"> <p>Avanmälan på partnernivå </p> </td> 
-   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid= user ID&amp;d_dpid= data provider ID </code> </p> <p>En avanmälan på partnernivå lagras för den senaste mappningen av det här <code> dpid </code> +- <code> dpuuid </code> paret till ett AAM UUID. Om det inte finns någon befintlig mappning kontrollerar Audience Manager om begäran innehåller ett AAM UUID i cookien, och om den gör det använder den för lagring av avanmälan. Annars genererar Audience Manager ett nytt AAM UUID och lagrar avanmälan under det. </p> </td> 
+   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid= user ID&amp;d_dpid= data provider ID </code> </p> <p>En avanmälan på partnernivå lagras för den senaste mappningen av det här <code> dpid </code> +- <code> dpuuid </code> paret till ett AAM UUID. Om det inte finns någon befintlig mappning kontrollerar Audience Manager om begäran innehåller ett AAM UUID i cookien, och om så är fallet använder den för lagring av avanmälan. I annat fall genererar Audience Manager ett nytt AAM UUID och lagrar avanmälan under det. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_dpuuid </code> + <code> d_dpid </code> och explicit <code> d_uuid </code> </p> </td> 
@@ -183,7 +186,7 @@ Med tanke på dessa nyckelvärdepar och deras obligatoriska syntax gör du händ
 
 Beskriver de konfigurationsvariabler som används för att skicka deklarerade ID:n [!UICONTROL DIL] till [!DNL Audience Manager.]
 
-## DIL Använder Adobe Experience Platform Identity Service för att skicka deklarerade ID:n {#dil-id-service-pass-declared-ids}
+## DIL Använder identitetstjänsten Adobe Experience Platform för att skicka deklarerade ID:n {#dil-id-service-pass-declared-ids}
 
 <!-- r_dil_declared_id_vars.xml -->
 
@@ -217,7 +220,7 @@ I följande tabell beskrivs de äldre variablerna som används av `declaredId` o
   <tr> 
    <td colname="col1"> <code> dpid </code> </td> 
    <td colname="col2"> Sträng </td> 
-   <td colname="col3"> <p>Data partner-ID som tilldelats av Audience Manager. </p> </td> 
+   <td colname="col3"> <p>Datapartnerns ID tilldelat av Audience Manager. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> dpuuid </code> </td> 
@@ -229,9 +232,9 @@ I följande tabell beskrivs de äldre variablerna som används av `declaredId` o
 
 ### `DPID` och `DPUUID`
 
-Audience Manager jämför och matchar det kombinerade `DPID` och `DPUUID` ett motsvarande användar-ID i vårt system. Om det inte finns något ID skapar Audience Manager ett nytt användar-ID och synkroniserar det med `DPID/DPUUID` kombinationen. När Audience Manager matchar eller skapar ett användar-ID ( `UUID`) returnerar det ID:t i [!DNL JSON] svaret på cookien i klientens domän (cookie från första part) eller annan lokal lagring.
+[!DNL Audience Manager] jämför och matchar det kombinerade `DPID` och `DPUUID` ett motsvarande användar-ID i vårt system. Om det inte finns något ID skapar [!DNL Audience Manager] ett nytt användar-ID och synkroniserar det med `DPID/DPUUID` kombinationen. När [!DNL Audience Manager] matchar eller skapar ett användar-ID ( `UUID`) returnerar det ID:t i [!DNL JSON] svaret på cookien i klientens domän (cookie från första part) eller annan lokal lagring.
 
-Anropa den här funktionen när du använder [!UICONTROL DIL] v6.1 eller tidigare. Den här funktionen har dock ersatts med den nya versionen som kommer [!UICONTROL declared IDs] från [!UICONTROL Adobe Experience Platform Identity Service].
+Anropa den här funktionen när du använder [!UICONTROL DIL] v6.1 eller tidigare. Den här funktionen har dock ersatts med den nya versionen som kommer [!UICONTROL declared IDs] från [!DNL Adobe Experience Platform Identity Service].
 
 ```js
 DIL.create({
@@ -245,7 +248,7 @@ DIL.create({
 
 >[!NOTE]
 >
->Obs! Du måste programmässigt utveckla koden som tillhandahåller ID-värden för `d_dpuuid` och `d_dpid` nycklar.
+>Du måste programmässigt utveckla koden som tillhandahåller ID-värden för `d_dpuuid` och `d_dpid` nycklar.
 
 ### Skicka ID:n efter DIL-förekomster
 
@@ -262,13 +265,13 @@ DIL.getDil('partner name').api.signals({...}).declaredId({
 
 ## Exempel på begäran/svar {#request-response-examples}
 
-Begäran skickar en DataProvider och ett användar-ID till Audience Manager:
+Begäran skickar en DataProvider och ett användar-ID till [!DNL Audience Manager]:
 
 ```
 https://my_domain.net/event?d_rtbd=json&d_cb=myCallback&key=val&d_dpuuid=1234&d_dpid=5678
 ```
 
-Svaret returnerar Audience Manager-ID (t.ex. `UUID`) som är skrivet till en cookie för första part i siddomänen.
+Svaret returnerar Audience Manager-ID (t.ex. `UUID`) som är skrivet till en cookie från en annan leverantör i siddomänen.
 
 ```js
 myCallback({
@@ -277,9 +280,9 @@ myCallback({
 })
 ```
 
-## Anrop för inte mål och avanmäl {#do-not-target}
+## Ring inte Target och avanmäl dig {#do-not-target}
 
-Processen uppfyller besökarnas önskemål om att avanmäla sig från målgruppsanpassning för Audience Manager på er webbplats. [!UICONTROL declared ID] När Audience Manager tar emot en avanmälningsbegäran [!UICONTROL DCS] returneras ett tomt [!DNL JSON] objekt i stället för användar-ID:t för Audience Manager.
+Processen följer besökarnas preferenser för att avanmäla sig från [!UICONTROL declared ID] [!DNL Audience Manager] målgruppsanpassning på er webbplats. När [!DNL Audience Manager] tar emot en avanmälningsbegäran [!DNL DCS] returneras ett tomt [!DNL JSON] objekt i stället för [!DNL Audience Manager] användar-ID.
 
 >[!MORELIKETHIS]
 >
