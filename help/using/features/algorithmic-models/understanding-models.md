@@ -7,7 +7,10 @@ solution: Audience Manager
 title: Om lookalike-modellering
 uuid: 39441e72-5316-453d-9aff-0e0b633aabcd
 translation-type: tm+mt
-source-git-commit: a6e8db30c54e0629e27b1ee7f189a6c471d2bb6d
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '1685'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +72,7 @@ Varje användare i de valda datakällorna får ett poängvärde som är lika med
 
 ### Steg 5: Visa och arbeta med resultat
 
-Audience Manager visar viktade modellresultat i [!UICONTROL Trait Builder]. När du vill skapa en algoritmisk egenskap [!UICONTROL Trait Builder] kan du skapa egenskaper baserat på den viktade poäng som genereras av algoritmen under en datakörning. Du kan välja en högre precision om du bara vill kvalificera användare som har mycket höga användarpoäng och därför är mycket lika den ursprungliga målgruppen, i stället för den övriga målgruppen. Om du vill nå en större publik (räckvidd) kan du minska noggrannheten.
+[!DNL Audience Manager] visar viktade modellresultat i [!UICONTROL Trait Builder]. När du vill skapa en algoritmisk egenskap [!UICONTROL Trait Builder] kan du skapa egenskaper baserat på den viktade poäng som genereras av algoritmen under en datakörning. Du kan välja en högre precision om du bara vill kvalificera användare som har mycket höga användarpoäng och därför är mycket lika den ursprungliga målgruppen, i stället för den övriga målgruppen. Om du vill nå en större publik (räckvidd) kan du minska noggrannheten.
 
 ### Steg 6: Utvärdera vikten av ett tåg i olika bearbetningscykler
 
@@ -182,13 +185,13 @@ Modellsammanfattningssidan innehåller följande avsnitt.
    <td colname="col2"> <p>The <span class="wintitle"> Influential Traits</span> table: </p> <p> 
      <ul id="ul_FB15A554CADC40D09F9AC6D384D54ECD"> 
       <li id="li_343E25E8B3584D38B1E2BCB211033DBF"> Visar de 50 mest inflytelserika egenskaperna som bäst representeras i modellens baslinjepopulation. </li> 
-      <li id="li_44957F46C0744A84A987D8F25D93E24E">Rangordna varje egenskap efter dess <span class="wintitle"> relativa vikt</span> . Den <span class="wintitle"> relativa vikten</span> sorterar nyligen identifierade egenskaper i ordning av påverkan eller önskvärdhet. Viktskalan är ett procentvärde mellan 0 % och 100 %. Fällor rankade närmare 100 % innebär att de är mer som målgruppen i din baslinjepopulation. Se <a href="../../features/algorithmic-models/understanding-models.md#understanding-traitweight"> Förstå TraitWeight</a>. </li> 
+      <li id="li_44957F46C0744A84A987D8F25D93E24E">Ranks each trait in order of its <span class="wintitle"> Relative Weight</span> rank. The <span class="wintitle"> Relative Weight</span> sorts newly discovered traits in order of influence or desirability. Viktskalan är ett procentvärde mellan 0 % och 100 %. Traits ranked closer to 100% means they're more like the audience in your baseline population. Se <a href="../../features/algorithmic-models/understanding-models.md#understanding-traitweight"> Förstå TraitWeight</a>. </li> 
       <li id="li_260151E23B1E484BA06C8494552A04F0">Visar en 30-dagars unix och den totala trait-populationen för varje egenskap. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> Traits Using Model</span> </p> </td>
-   <td colname="col2"> <p>Visar en lista över algoritmiska egenskaper baserat på den valda modellen. Klicka på ett trait-namn eller trait-ID om du vill ha mer information om trait. Välj <b><span class="uicontrol"> Skapa nytt spår med modell</span></b> för att gå till processen för att skapa algoritmiska egenskaper. </p> <p>Avsnittsetiketten ändras baserat på modellens namn. Anta att du skapar en modell och ger den namnet Modell A. När du läser in sammanfattningssidan ändras namnet på det här avsnittet till <span class="wintitle"> Traits Using Model A</span>. </p> </td>
+   <td colname="col2"> <p>Shows a list of the algorithmic traits based on the selected model. Klicka på ett trait-namn eller trait-ID om du vill ha mer information om trait. Välj <b><span class="uicontrol"> Skapa nytt spår med modell</span></b> för att gå till processen för att skapa algoritmiska egenskaper. </p> <p>Avsnittsetiketten ändras baserat på modellens namn. Anta att du skapar en modell och ger den namnet Modell A. När du läser in sammanfattningssidan ändras namnet på det här avsnittet till <span class="wintitle"> Traits Using Model A</span>. </p> </td>
   </tr>
  </tbody>
 </table>
