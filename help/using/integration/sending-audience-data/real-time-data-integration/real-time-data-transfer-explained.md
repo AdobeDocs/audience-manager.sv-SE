@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Dataöverföringsprocessen i realtid beskrivs
 uuid: b68781b3-0b7a-442d-8e34-2db2474849a4
 translation-type: tm+mt
-source-git-commit: ea95df8531c00c183f22b09a4a78fc6b35ee279d
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +29,9 @@ Dataöverföringar i realtid skickar och tar emot segment-ID:n när en användar
 Integreringen av data i realtid fungerar på följande sätt:
 
 1. En användare besöker en kunds webbplats som innehåller Audience Manager-kod.
-1. Audience Manager läser in en iframe och anropar vår [!UICONTROL Data Collection Server] ( [!UICONTROL DCS]).
-1. Servern [!UICONTROL DCS] anropar tredjepartsservern (i realtid) för att kontrollera om leverantören har någon segmentinformation om användaren.
+1. Audience Manager läser in en iframe och anropar vår [!UICONTROL Data Collection Server] ( [!DNL DCS]).
+1. Servern [!DNL DCS] anropar tredjepartsservern (i realtid) för att kontrollera om leverantören har någon segmentinformation om användaren.
 1. Innehållsleverantören returnerar segmentinformation om den användaren till Audience Manager.
-1. Audience Manager tar emot denna segmentinformation och gör den tillgänglig för målinriktning och framtagning av nya egenskaper och segment.
+1. Audience Manager får denna segmentinformation och kan målinrikta och bygga nya egenskaper och segment.
 
 ![](assets/rt_reduce70.png)
