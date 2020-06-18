@@ -6,14 +6,17 @@ solution: Audience Manager
 title: DCS-region-ID, -platser och -värdnamn
 uuid: ad150ffe-4583-472b-ac8b-fb900a7966e4
 translation-type: tm+mt
-source-git-commit: 51a326d0ac02175e0e1452e0a00b4a3a415d88ff
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
 
 # DCS-region-ID, -platser och -värdnamn {#dcs-region-ids-locations-and-host-names}
 
-Det regionala [!UICONTROL DCS] servervärdnamnet krävs för att anropa [!UICONTROL DCS]. Detta beror på att informationen [!UICONTROL DCS] lagras i datacenter som är geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel [!UICONTROL DCS], men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en [!UICONTROL DCS] begäran måste du matcha region-ID:t med dess motsvarande regionala värdnamn och skapa frågan med rätt värdnamn.
+Det regionala [!DNL DCS] servervärdnamnet krävs för att anropa [!DNL DCS]. Detta beror på att informationen [!DNL DCS] lagras i datacenter som är geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel [!DNL DCS], men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en [!DNL DCS] begäran måste du matcha region-ID:t med dess motsvarande regionala värdnamn och skapa frågan med rätt värdnamn.
 
 <table id="table_643212E4F9C64DFF9443904B01D89CB3"> 
  <thead> 
@@ -67,4 +70,4 @@ Det regionala [!UICONTROL DCS] servervärdnamnet krävs för att anropa [!UICONT
  </tbody> 
 </table>
 
-Du kan också använda [!DNL API] metoder för att hämta en lista över tillgängliga [!UICONTROL DCS] regioner. Se API-metoder för [DCS-regioner](../../../api/rest-api-main/aam-api-dcs-regions.md).
+Du kan också använda [!DNL API] metoder för att hämta en lista över tillgängliga [!DNL DCS] regioner. Se API-metoder för [DCS-regioner](../../../api/rest-api-main/aam-api-dcs-regions.md).
