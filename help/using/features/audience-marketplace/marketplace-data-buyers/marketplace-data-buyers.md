@@ -1,18 +1,21 @@
 ---
 description: Översikt och arbetsflöde för datainköpare som vill köpa data från tredje part inifrån Audience Manager
 seo-description: Översikt och arbetsflöde för datainköpare som vill köpa data från tredje part inifrån Audience Manager
-seo-title: Audience Marketplace for Data Buyers
+seo-title: Audience Marketplace för datainköpare
 solution: Audience Manager
-title: Audience Marketplace for Data Buyers
+title: Audience Marketplace för datainköpare
 topic: DIL API
 uuid: f505b5f4-4231-4e84-993a-cd64128b540f
 translation-type: tm+mt
-source-git-commit: f66c5a0fb6ea1b0e89b804e56fa7045978427ab8
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '777'
+ht-degree: 0%
 
 ---
 
 
-# Audience Marketplace for Data Buyers {#audience-marketplace-for-data-buyers}
+# Audience Marketplace för datainköpare {#audience-marketplace-for-data-buyers}
 
 Översikt och arbetsflöde för datainköpare som vill köpa data från tredje part inifrån [!DNL Audience Manager].
 
@@ -33,7 +36,7 @@ I [!UICONTROL Marketplace]kan du med rapportverktygen spåra flödeanvändningen
 
 >[!TIP]
 >
->Använd **[Adobe Audience Finder](https://www.adobe-audience-finder.com/)**för att hitta högkvalitativa dataflöden som du kan prenumerera på. Gå sedan tillbaka till Audience Manager-gränssnittet eller använd[Audience Marketplace Buyer API](https://bank.demdex.com/portal/swagger/index.html#/Audience_Marketplace_Buyer_API)för att prenumerera på de flöden du har hittat.
+>Använd **[Adobe Audience Finder](https://www.adobe-audience-finder.com/)**för att hitta högkvalitativa dataflöden som du kan prenumerera på. Gå sedan tillbaka till[!DNL Audience Manager]användargränssnittet eller använd[Audience Marketplace Buyer API](https://bank.demdex.com/portal/swagger/index.html#/Audience_Marketplace_Buyer_API)för att prenumerera på de feeds du har hittat.
 
 ![customer-marketplace-overview](assets/buyer-marketplace-overview.png)
 
@@ -76,7 +79,7 @@ Om du vill visa en fullständig lista över liknande egenskaper klickar du på s
 
 >[!NOTE]
 >
-> Audience Marketplace visar de 500 mest likartade egenskaperna från alla dataflöden.
+> Audience Marketplace visar de 500 vanligaste likartade egenskaperna från dataflödena.
 
 I videon nedan finns en fullständig översikt över hur du hittar liknande egenskaper.
 
@@ -88,6 +91,6 @@ I [!UICONTROL Marketplace] listan markeras ibland providerns namn och egenskaper
 
 >[!MORELIKETHIS]
 >
->* [Förstå sidan med avtalsinformation på Audience Marketplace](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#marketplace-buyer-details)
+>* [Sidan med avtalsinformation i Audience Marketplace](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#marketplace-buyer-details)
 >* [Rabatter för datainköpare](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#buyer-discount)
 
