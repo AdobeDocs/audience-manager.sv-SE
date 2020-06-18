@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Samla in data för kampanjklickningar via pixelanrop
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: 72cf5f30c74736f7143841c0edd6c5c69154a0c2
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '657'
 ht-degree: 5%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 5%
 
 # Samla in data för kampanjklickningar via pixelanrop {#capturing-campaign-click-data-via-pixel-calls}
 
-Klickspårning möjliggör mätning av besökarnas engagemang under hela kampanjen, eftersom klickbaserade aktiviteter registreras för tredjepartskreatörer. På samma sätt som vid [avtrycksinsamling](/help/using/integration/media-data-integration/impression-data-pixels.md)skickas ett händelseanrop till insamlingsservrarna för Audience Manager ([!UICONTROL DCS]) för bearbetning. Besökaren omdirigeras sedan till den avsedda webbadressen.
+Klickspårning möjliggör mätning av besökarnas engagemang under hela kampanjen, eftersom klickbaserade aktiviteter registreras för tredjepartskreatörer. På samma sätt som vid [visningar](/help/using/integration/media-data-integration/impression-data-pixels.md)skickas ett händelseanrop till Audience Manager datainsamlingsservrar ([!DNL DCS]) för behandling. Besökaren omdirigeras sedan till den avsedda webbadressen.
 
 >[!NOTE]
 >
->Kontakta er Adobe Audience Manager-konsult eller kontoansvarige för att få en exakt URL som är specifik för klientdomänen.
+>Kontakta din [!DNL Audience Manager] konsult- eller kontoansvarige om du vill ha information om exakt [!DNL URL] vad som gäller för klientdomänen.
 
 ## Krav
 
@@ -66,7 +66,7 @@ Klickhändelser stöder de makron som anges i följande tabell. Ett makro är en
   <tr> 
    <td colname="col1"> <p> <code> d_adsrc</code> </p> </td> 
    <td colname="col02"> <p>Inget makro. </p> <p>Accepterar ett hårdkodat ID-värde. </p> </td> 
-   <td colname="col2"> <p>Advertiser-ID.</p> <p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till datakällor för Audience Manager.</p> <p> Krävs för <span class="wintitle"> målgruppsoptimeringsrapporter</span> . </p> </td> 
+   <td colname="col2"> <p>Advertiser-ID.</p> <p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till datakällor i Audience Manager.</p> <p> Krävs för <span class="wintitle"> målgruppsoptimeringsrapporter</span> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bu</code> </p> </td> 
@@ -96,7 +96,7 @@ Klickhändelser stöder de makron som anges i följande tabell. Ett makro är en
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Experience Cloud</span> ID (ECID). Mer information om ECID finns i <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID</a>. </p> <p>Valfritt. </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Experience Cloud</span> -ID (ECID). Mer information om ECID finns i <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID</a>. </p> <p>Valfritt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_placement</code> </p> </td> 
@@ -121,7 +121,7 @@ Klickhändelser stöder de makron som anges i följande tabell. Ett makro är en
   <tr> 
    <td colname="col1"> <p> <code> d_src</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_src%</code> </p> </td> 
-   <td colname="col2"> <p>DPID för källan som Audience Manager hämtar metadata från. </p> <p>Obligatoriskt. </p> </td> 
+   <td colname="col2"> <p>DPID för den källa som Audience Manager hämtar metadata från. </p> <p>Obligatoriskt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_uuid</code> </p> </td> 
