@@ -5,9 +5,9 @@ seo-title: Lägg till nya enhetsbaserade mål
 solution: Audience Manager
 title: Lägg till nya enhetsbaserade mål
 translation-type: tm+mt
-source-git-commit: 69fb3601ac9de300032abc8730a40c41abc12d97
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Processen att lägga till ett nytt enhetsbaserat mål består av två huvudsteg.
 
 När du skapar det första enhetsbaserade målet med en integrerad plattform kontaktar du Adobe Consulting eller Customer Care för att aktivera synkronisering av ID mellan Audience Manager och den integrerade plattformen för ditt konto. Detta krävs för korrekt synkronisering mellan Audience Manager och målplattformen.
 
-## Steg 1. Autentisera med en målplattform {#step1}
+## Steg 1. Autentisera med ett Platform-mål {#step1}
 
 Innan du kan skapa ett nytt enhetsbaserat mål måste du konfigurera integreringen mellan Audience Manager och målplattformen. Så här gör du:
 
@@ -39,7 +39,7 @@ Innan du kan skapa ett nytt enhetsbaserat mål måste du konfigurera integrering
 
    ![integrerade plattformar](assets/dbd-integrated-platforms.png)
 
-1. När du har autentiserat dig för destinationsplattformskontot omdirigeras du till Audience Manager där du bör se dina associerade annonskonton. Välj det annonserarkonto som du vill använda och klicka på **[!DNL Confirm]**.
+1. När du har autentiserat dig för destinationsplattformskontot omdirigeras du till Audience Manager där du ska se dina associerade annonskonton. Välj det annonserarkonto som du vill använda och klicka på **[!DNL Confirm]**.
 
 ## Steg 2. Skapa ett nytt enhetsbaserat mål {#step2}
 
