@@ -6,14 +6,17 @@ solution: Audience Manager
 title: Förstå anrop till Demdex-domänen
 uuid: c06dae3a-f169-4712-80fb-d6d448dce51a
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: d219f6fa1e2a8396b049f86391142c00e263b629
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 0%
 
 ---
 
 
 # Förstå anrop till Demdex-domänen{#understanding-calls-to-the-demdex-domain}
 
-Audience Manager och Adobe Experience Platform Identity Service anropar och tar emot data från domänen demdex.net. Det kan verka som att Adobe arbetar med en ovanlig tredjepartsdomän, men så är inte fallet. I det här avsnittet beskrivs elementen i ett demdex.net-anrop.
+[!DNL Audience Manager] och Adobe Experience Platform Identity Service gör anrop till och tar emot data från domänen demdex.net. Det kan verka som att Adobe arbetar med en ovanlig tredjepartsdomän, men så är inte fallet. I det här avsnittet beskrivs elementen i ett `demdex.net` samtal.
 
 <table id="table_B846CBEDDA4C4AD19416F7C27FC325C6"> 
  <thead> 
@@ -25,7 +28,7 @@ Audience Manager och Adobe Experience Platform Identity Service anropar och tar 
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> demdex.net</code> </p> </td> 
-   <td colname="col2"> <p>Detta är en äldre domän som styrs av <span class="keyword"> Adobe</span>. Det återspeglar <span class="keyword"> Audience Managers</span>ursprungliga förvärvningsnamn (<span class="keyword"> Demdex</span>). <span class="keyword"> Adobe</span> förvärvade <span class="keyword"> Demdex</span> 2011 och gav företaget ett nytt varumärke som <span class="keyword"> Audience Manager</span>. Det är svårt att ändra den här domänen eftersom den är djupt sammankopplad med Audience Manager <span class="keyword"> ,</span>ID-tjänsten <span class="wintitle"></span>och vår installerade användarbas. Se <a href="../overview/aam-overview.md#history-and-background"> Historik och Bakgrund</a>. </p> <p>Du kan se andra prefix som är kopplade till äldre <code> demdex.net</code> samtal (t.ex. <code> dcs.demdex.net</code>, <code> fast.demdex.net</code>osv.). Oberoende av prefix <code><i>something</i>.demdex.net</code> är ett anrop till alltid ett anrop till <span class="keyword"> Adobe</span> och inte till någon okänd eller misstänkt tredjepartsdomän. </p> </td> 
+   <td colname="col2"> <p>Detta är en äldre domän som styrs av <span class="keyword"> Adobe</span>. Det återspeglar <span class="keyword"> Audience Manager</span>ursprungliga förvärvningsnamn (<span class="keyword"> Demdex</span>). <span class="keyword"> Adobe</span> förvärvade <span class="keyword"> Demdex</span> 2011 och gav företaget ett nytt varumärke som <span class="keyword"> Audience Manager</span>. Det är svårt att ändra den här domänen eftersom den är djupt inskriven i <span class="keyword"> Audience Manager</span>, <span class="wintitle"> ID-tjänsten</span>och vår installerade användarbas. Se <a href="../overview/aam-overview.md#history-and-background"> Historik och Bakgrund</a>. </p> <p>Du kan se andra prefix som är kopplade till äldre <code> demdex.net</code> samtal (t.ex. <code> dcs.demdex.net</code>, <code> fast.demdex.net</code>osv.). Oberoende av prefix <code><i>something</i>.demdex.net</code> är ett anrop till alltid ett anrop till <span class="keyword"> Adobe</span> och inte till någon okänd eller misstänkt tredjepartsdomän. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> dpm</code> </p> </td> 
@@ -41,5 +44,5 @@ Audience Manager och Adobe Experience Platform Identity Service anropar och tar 
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)
->* [Cookies för Audience Manager](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html)
+>* [Audience Manager Cookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html)
 
