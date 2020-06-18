@@ -6,14 +6,17 @@ solution: Audience Manager
 title: API-metoder för DCS-region
 uuid: 00b70927-b3b7-46bb-8be1-37c6100ecf80
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 0%
 
 ---
 
 
 # API-metoder för DCS-region {#dcs-region-api-methods}
 
-Metoder som gör att du programmässigt kan lista Audience Manager- [!UICONTROL DCS] regioner.
+Metoder som gör att du programmässigt kan lista Audience Manager- [!DNL DCS] regioner.
 
 <!-- c_rest_api_regions.xml -->
 
@@ -21,7 +24,7 @@ En lista med regioner och deras motsvarande heltal finns i [DCS-regions-ID, -pla
 
 ## Lista en specifik DCS-region {#list-specific-dcs-region}
 
-En `GET` metod för att lista en viss [!UICONTROL DCS] region.
+En `GET` metod för att lista en viss [!DNL DCS] region.
 
 <!-- r_rest_api_regions_list_specific.xml -->
 
@@ -51,7 +54,7 @@ En lista med regioner och deras motsvarande heltal finns i [DCS-regions-ID, -pla
 
 ## Lista DCS-regioner {#list-dcs-regions}
 
-En `GET` metod för att lista [!UICONTROL DCS] regioner.
+En `GET` metod för att lista [!DNL DCS] regioner.
 
 <!-- r_rest_api_regions_list.xml -->
 
