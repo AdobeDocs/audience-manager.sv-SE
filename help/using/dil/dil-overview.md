@@ -7,40 +7,43 @@ solution: Audience Manager
 title: Understanding the Data Integration Library (DIL)
 uuid: 77b12f35-81e4-4639-ada6-bf982f27b36e
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
 
-# Understanding the Data Integration Library (DIL){#understanding-the-data-integration-library-dil}
+# Förstå [!DNL Data Integration Library] (DIL){#understanding-the-data-integration-library-dil}
 
-Översikt, komma igång och kodmetoder som finns i Audience Manager DIL-kodbiblioteket.
+Översikt, Komma igång och kodmetoder i [!DNL Audience Manager DIL] kodbiblioteket.
 
 >[!IMPORTANT]
 >
->Från och med version 8.0 (släppt augusti 2018) är [!UICONTROL DIL] Adobe Experience Platform Identity Service [](https://docs.adobe.com/content/help/en/id-service/using/home.html), version 3.3 eller senare, beroende av varandra. Den förlitar sig på ID-tjänsten för att utlösa ID-synkroniseringar och URL-mål. Ett fel inträffar om ID-tjänsten saknas, är gammal eller inte har konfigurerats.
+>Från och med version 8.0 (släppt augusti 2018) är [!UICONTROL DIL] beroendet av [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html), version 3.3 eller senare. Den bygger på [!DNL ID Service] att ID-synk och URL-mål aktiveras. Ett fel uppstår om [!DNL ID Service] saknas, är gammal eller inte har konfigurerats.
 >
->Vi rekommenderar att du använder Adobe Experience Platform Launch för att implementera och hantera dina DIL- och Adobe Experience Platform Identity Service-bibliotek.
+>Vi rekommenderar att du använder [!DNL Adobe Experience Platform Launch] för att implementera och hantera dina [!DNL DIL] - och [!DNL Adobe Experience Platform Identity Service] bibliotek.
 
-Du kan även hämta de senaste Experience Cloud- och DIL-versionerna från vår GitHub-sida. Se nedladdningslänkar nedan:
+Du kan även hämta de senaste Experience Cloud och [!DNL DIL] releaserna från vår GitHub-sida. Se nedladdningslänkar nedan:
 
 * Ladda ned [Adobe Experience Platform Identity Service](https://github.com/Adobe-Marketing-Cloud/id-service/releases)
 * Hämta [DIL](https://github.com/Adobe-Marketing-Cloud/dil/releases)
 
 ## Syfte med DIL {#purpose-dil}
 
-[!UICONTROL DIL] är ett API-bibliotek. Du kan tänka dig det som en massa hjälpkod för [!DNL Adobe Audience Manager]. Du behöver inte använda det [!DNL Audience Manager], men metoderna och funktionerna [!UICONTROL DIL] innebär att du inte behöver utveckla egen kod för att skicka data till [!DNL Audience Manager]. Dessutom [!UICONTROL DIL] skiljer sig detta från det API som tillhandahålls av [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html). Tjänsten är avsedd att hantera besökaridentitet över olika [!DNL Experience Cloud] lösningar. Den [!UICONTROL DIL] är däremot utformad för att
+[!UICONTROL DIL] är ett API-bibliotek. Du kan tänka dig det som en massa hjälpkod för [!DNL Adobe Audience Manager]. Du behöver inte använda det [!DNL Audience Manager], men metoderna och funktionerna [!UICONTROL DIL] innebär att du inte behöver utveckla egen kod för att skicka data till [!DNL Audience Manager]. Dessutom [!UICONTROL DIL] skiljer sig detta från API:t som tillhandahålls av [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html). Tjänsten är avsedd att hantera besökaridentitet över olika [!DNL Experience Cloud] lösningar. Den [!UICONTROL DIL] är däremot utformad för att
 
 * Anropa händelser och skicka data till [datainsamlingsservern](../reference/system-components/components-data-collection.md).
 * Skicka data till [mål](../features/destinations/destinations.md).
 
 ## Hämta och implementera DIL-kod {#get-implement-dil-code}
 
-[!UICONTROL DIL] finns kod att ladda ned **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Observera att från och med version 8.0 (släppt augusti 2018)[!UICONTROL DIL]är det svårt beroende av[Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html), version 3.3 eller senare. Den förlitar sig på ID-tjänsten för att utlösa ID-synkroniseringar och URL-mål. Ett fel inträffar om ID-tjänsten saknas, är gammal eller inte har konfigurerats.
+[!UICONTROL DIL] finns kod att ladda ned **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Observera att från och med version 8.0 (släppt augusti 2018)[!UICONTROL DIL]är beroendet av[Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html), version 3.3 eller senare. Den bygger på[!DNL ID Service]att ID-synk och[!DNL URL destinations]. Ett fel uppstår om[!DNL ID Service]saknas, är gammal eller inte har konfigurerats.
 
-I stället för att arbeta med [!UICONTROL DIL] och konfigurera [!DNL Audience Manager] manuellt rekommenderar vi att du använder [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) i stället. [!DNL Adobe Experience Platform Launch] är det implementeringsverktyg som rekommenderas eftersom det förenklar koddistribution, placering och versionshantering. Läs mer om [Audience Manager-tillägget](https://docs.adobelaunch.com/extension-reference/web/adobe-audience-manager-extension) i Adobe Experience Platform Launch.
+I stället för att arbeta med [!UICONTROL DIL] och konfigurera [!DNL Audience Manager] manuellt rekommenderar vi att du använder [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) i stället. [!DNL Adobe Experience Platform Launch] är det implementeringsverktyg som rekommenderas eftersom det förenklar koddistribution, placering och versionshantering. Läs mer om tillägget [](https://docs.adobelaunch.com/extension-reference/web/adobe-audience-manager-extension) Audience Manager i [!DNL Adobe Experience Platform Launch].
 
-Adobe Experience Platform Launch är en efterföljare till [Adobe Dynamic Tag Manager](https://docs.adobe.com/content/help/en/dtm/using/c-overview.html) ([!DNL DTM]).
+[!DNL Adobe Experience Platform Launch] är efterträdare till [Adobe Dynamic Tag Manager](https://docs.adobe.com/content/help/en/dtm/using/c-overview.html) ([!DNL DTM]).
 
 ## Exempel på samtal {#sample-code}
 
