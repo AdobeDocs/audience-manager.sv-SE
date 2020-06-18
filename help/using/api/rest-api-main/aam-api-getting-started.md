@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Komma igång med REST API:er
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: e51a4302808958093342170d513701ac1547c275
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1791'
 ht-degree: 1%
 
 ---
@@ -16,77 +16,74 @@ ht-degree: 1%
 
 # Komma igång med REST API:er {#getting-started-with-rest-apis}
 
-Information om allmänna krav, autentisering, valfria frågeparametrar, begäran-URL:er och andra referenser.
+Information om allmänna krav, autentisering, valfria frågeparametrar, begäran [!DNL URLs]och andra referenser.
 
 <!-- c_rest_api_overview.xml -->
 
 ## Krav och rekommendationer för API {#api-requirements-recommendations}
 
-Saker som ni måste och bör göra när ni arbetar med Audience Manager [!DNL API]s.
+Saker du måste och bör göra när du arbetar med [!DNL Audience Manager] bilderna.. [!DNL API]s.
 
 <!-- aam-api-requirements.xml -->
 
 Observera följande när du arbetar med [Audience Manager API](https://bank.demdex.com/portal/swagger/index.html#/) -kod:
 
-* **Begäranparametrar:** Alla frågeparametrar är obligatoriska om inte annat anges.
-* **Begäranrubriker**: När du använder [Adobe I/O](https://www.adobe.io/) -tokens måste du ange `x-api-key` rubriken. Du kan hämta API-nyckeln genom att följa instruktionerna på sidan Integrering [av](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) tjänstkonto.
+* **Begäranparametrar:** Alla begäranparametrar är obligatoriska om inte annat anges.
+* **Begäranrubriker**: När du använder [Adobe I/O](https://www.adobe.io/) -tokens måste du ange `x-api-key` rubriken. Du kan hämta din [!DNL API] nyckel genom att följa instruktionerna på sidan [Tjänstkontointegrering](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) .
 * **[!DNL JSON]innehållstyp:**Ange`content-type: application/json`och **`accept: application/json`i koden.
-
 * **Förfrågningar och svar:** Skicka begäranden som ett korrekt formaterat [!DNL JSON] objekt. [!DNL Audience Manager] svarar med [!DNL JSON] formaterade data. Serversvar kan innehålla begärda data, en statuskod eller båda.
-
 * **Åtkomst:** Din [!DNL Audience Manager] konsult kommer att förse dig med ett klient-ID och en nyckel som gör att du kan göra [!DNL API] förfrågningar.
-
 * **Exempel på dokumentation och kod:** Text i *kursiv stil* representerar en variabel som du anger eller skickar in när du skapar eller tar emot [!DNL API] data. Ersätt *kursiv* text med egen kod, egna parametrar eller annan obligatorisk information.
 
 ## Autentisering {#authentication}
 
-Audience Manager REST API:er har stöd för två autentiseringsmetoder.
+Två autentiseringsmetoder stöds [!DNL Audience Manager][!DNL REST APIs] .
 
 * [JWT-autentisering](#jwt)(tjänstkonto). Detta är den rekommenderade autentiseringsmetoden.
-* [OAuth-autentisering (borttagen)](#oauth). Den här metoden är föråldrad, men kunder med befintliga OAuth-integreringar kan fortsätta använda den här metoden.
+* [OAuth-autentisering (borttagen)](#oauth). Den här metoden är föråldrad, men kunder med befintliga [!DNL OAuth] integreringar kan fortsätta använda den här metoden.
 
 >[!IMPORTANT]
 >
->Beroende på din autentiseringsmetod måste du justera URL:er för din begäran i enlighet med detta. Mer information om värdnamnen som du bör använda finns i avsnittet [Miljöer](#environments) .
+>Beroende på din autentiseringsmetod måste du justera din begäran [!DNL URLs] därefter. Mer information om värdnamnen som du bör använda finns i avsnittet [Miljöer](#environments) .
 
 ## JWT-autentisering (tjänstkonto) {#jwt}
 
 ### Förutsättningar {#prerequisites}
 
-Kontrollera att du har tillgång till [Adobe Developer Console](https://console.adobe.io/)innan du kan konfigurera JWT-autentisering. Kontakta din organisations administratör för åtkomstbegäranden.
+Innan du kan konfigurera [!DNL JWT] autentiseringen måste du se till att du har tillgång till [Adobe Developer Console](https://console.adobe.io/). Kontakta din organisations administratör för åtkomstbegäranden.
 
 ### Autentisering
 
-Följ stegen nedan för att konfigurera JWT-autentisering (tjänstkonto):
+Följ stegen nedan för att konfigurera [!DNL JWT (Service Account)] autentisering:
 
 1. Logga in på [Adobe Developer Console](https://console.adobe.io/).
 1. Följ stegen i Anslutning till [tjänstkonto](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
-   * Under [steg 2: Lägg till ett API i projektet med autentisering](https://www.adobe.io/authentication/auth-methods.html#step-2-add-an-api-to-your-project-using-service-account-authentication)av tjänstkonto och välj alternativet Audience Manager API.
-1. Testa anslutningen genom att göra ditt första API-anrop baserat på instruktionerna från [steg 3](https://www.adobe.io/authentication/auth-methods.html#step-3-try-it.).
+   * Under [steg 2: Lägg till ett API i projektet med autentisering](https://www.adobe.io/authentication/auth-methods.html#step-2-add-an-api-to-your-project-using-service-account-authentication)av tjänstkonto och välj [!DNL Audience Manager] [!DNL API] alternativet.
+1. Prova anslutningen genom att ringa ditt första [!DNL API] samtal baserat på instruktionerna från [steg 3](https://www.adobe.io/authentication/auth-methods.html#step-3-try-it.).
 
 >[!NOTE]
 >
->Om du vill konfigurera och arbeta med Audience Manager REST API:er på ett automatiserat sätt, kan du generera JWT-filen programmatiskt. Mer information finns i [JWT-autentisering](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) (tjänstkonto).
+>Om du vill konfigurera och arbeta med filen [!DNL Audience Manager] [!DNL REST APIs] automatiskt kan du generera den [!DNL JWT] automatiskt. Mer information finns i [JWT-autentisering](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) (tjänstkonto).
 
 ## OAuth-autentisering (inaktuell) {#oauth}
 
 >[!WARNING]
-> Audience Manager- [!UICONTROL REST API] tokenautentisering och förnyelse via [!DNL OAuth 2.0] är nu föråldrat.
+> [!DNL Audience Manager] [!UICONTROL REST API] tokenautentisering och förnyelse via [!DNL OAuth 2.0] är nu föråldrat.
 >
 > Använd [JWT-autentisering](#jwt-service-account-authentication-jwt) (tjänstkonto) i stället.
 
-Audience Manager [!UICONTROL REST API] följer [!DNL OAuth 2.0] standarderna för tokenautentisering och förnyelse. Avsnitten nedan beskriver hur du autentiserar och börjar arbeta med [!DNL API]dem.
+Följande [!DNL Audience Manager][!UICONTROL REST API] standarder [!DNL OAuth 2.0] gäller för tokenautentisering och förnyelse. Avsnitten nedan beskriver hur du autentiserar och börjar arbeta med [!DNL API]dem.
 
 ### Skapa en allmän API-användare {#requirements}
 
-Vi rekommenderar att du skapar ett separat, tekniskt användarkonto för att arbeta med Audience Manager [!DNL API]. Det här är ett generiskt konto som inte är kopplat till eller kopplat till en viss användare i organisationen. Den här typen av [!DNL API] användarkonto hjälper dig att uppnå två saker:
+Vi rekommenderar att du skapar ett separat, tekniskt användarkonto för att arbeta med [!DNL Audience Manager] [!DNL API]dem. Det här är ett generiskt konto som inte är kopplat till eller kopplat till en viss användare i organisationen. Den här typen av [!DNL API] användarkonto hjälper dig att uppnå två saker:
 
 * Identifiera vilken tjänst som anropar [!DNL API] (t.ex. samtal från appar som använder våra [!DNL API]eller andra verktyg som gör [!DNL API] förfrågningar).
 * Ge dig tillgång till [!DNL API]dina kunder utan avbrott. Ett konto som är knutet till en viss person kan tas bort när de lämnar företaget. Detta förhindrar dig från att arbeta med den tillgängliga [!DNL API] koden. Ett generiskt konto som inte är kopplat till en viss medarbetare hjälper dig att undvika det här problemet.
 
-Ett exempel eller ett användningsexempel för den här typen av konto är att du vill ändra många segment samtidigt med [grupphanteringsverktygen](../../reference/bulk-management-tools/bulk-management-intro.md). För att göra detta behöver ditt användarkonto [!DNL API] åtkomst. I stället för att lägga till behörigheter till en viss användare skapar du ett icke-specifikt, användarkonto som har rätt autentiseringsuppgifter, nyckel och hemlighet för att ringa [!DNL API] [!DNL API] samtal. Detta är också användbart om du utvecklar egna program som använder Audience Manager [!DNL API].
+Ett exempel eller ett användningsexempel för den här typen av konto är att du vill ändra många segment samtidigt med [grupphanteringsverktygen](../../reference/bulk-management-tools/bulk-management-intro.md). För att göra detta behöver ditt användarkonto [!DNL API] åtkomst. I stället för att lägga till behörigheter till en viss användare skapar du ett icke-specifikt, användarkonto som har rätt autentiseringsuppgifter, nyckel och hemlighet för att ringa [!DNL API] [!DNL API] samtal. Detta är också användbart om du utvecklar egna program som använder [!DNL Audience Manager] dessa [!DNL API]program.
 
-Samarbeta med er Audience Manager-konsult för att skapa ett generiskt, [!DNL API]enbart användarkonto.
+Samarbeta med din [!DNL Audience Manager] konsult för att skapa ett generiskt, [!DNL API]endast användarkonto.
 
 ### Lösenordsautentisering {#password-authentication-workflow}
 
@@ -167,7 +164,7 @@ Svaret [!DNL JSON] innehåller din nya åtkomsttoken. Svaret bör se ut så här
 
 ### Auktoriseringskod och implicit autentisering {#authentication-code-implicit}
 
-Audience Manager [!UICONTROL REST API] stöder auktoriseringskod och implicit autentisering. Om du vill använda dessa åtkomstmetoder måste användarna logga in för `https://api.demdex.com/oauth/authorize` att få åtkomst till och uppdatera tokens.
+Det [!DNL Audience Manager] finns [!UICONTROL REST API] stöd för auktoriseringskod och implicit autentisering. Om du vill använda dessa åtkomstmetoder måste användarna logga in för `https://api.demdex.com/oauth/authorize` att få åtkomst till och uppdatera tokens.
 
 ## Skapa autentiserade API-begäranden {#authenticated-api-requests}
 
@@ -191,14 +188,14 @@ Du kan använda dessa valfria parametrar med [!DNL API] metoder som returnerar *
 
 | Parameter | Beskrivning |
 |--- |--- |
-| page | Returnerar resultat per sidnummer. Numreringen börjar vid 0. |
-| pageSize | Anger antalet svarsresultat som returneras av begäran (10 är standard). |
-| sortBy | Sorterar och returnerar resultat enligt den angivna [!DNL JSON] egenskapen. |
-| fallande | Sorterar och returnerar resultat i fallande ordning. Stigande är standard. |
-| sök | Returnerar resultat baserat på den angivna strängen som du vill använda som sökparameter. Anta att du vill hitta resultat för alla modeller som har ordet &quot;Test&quot; i något av värdefälten för det objektet. Din exempelbegäran kan se ut så här:   `GET https://aam.adobe.io/v1/models/?search=Test`.  Du kan söka efter alla värden som returneras av en get all-metod. |
-| folderId | Returnerar alla ID:n för egenskaper i den angivna mappen. Inte tillgängligt för alla metoder. |
-| behörigheter | Returnerar en lista med segment baserat på den angivna behörigheten.  LÄS är standard. Behörigheterna är:<ul><li>`READ` : Returnera och visa information om ett segment.</li><li>`WRITE` : Används `PUT` för att uppdatera ett segment.</li><li>`CREATE` : Används `POST` för att skapa ett segment.</li><li>`DELETE` : Ta bort ett segment. Kräver åtkomst till eventuella underliggande egenskaper. Du måste till exempel ha behörighet att ta bort de egenskaper som tillhör ett segment om du vill ta bort det.</li></ul><br>Ange flera behörigheter med separata nyckelvärdepar. Om du till exempel vill returnera en lista med segment med endast `READ` och `WRITE` behörigheter skickar du `"permissions":"READ"`, `"permissions":"WRITE"` . |
-| includePermissions | (Boolean) Ange som true om du vill returnera dina behörigheter för segmentet. Standardvärdet är false. |
+| `page` | Returnerar resultat per sidnummer. Numreringen börjar vid 0. |
+| `pageSize` | Anger antalet svarsresultat som returneras av begäran (10 är standard). |
+| `sortBy` | Sorterar och returnerar resultat enligt den angivna [!DNL JSON] egenskapen. |
+| `descending` | Sorterar och returnerar resultat i fallande ordning. `ascending` är standard. |
+| `search` | Returnerar resultat baserat på den angivna strängen som du vill använda som sökparameter. Anta att du vill hitta resultat för alla modeller som har ordet &quot;Test&quot; i något av värdefälten för det objektet. Din exempelbegäran kan se ut så här:   `GET https://aam.adobe.io/v1/models/?search=Test`.  Du kan söka efter alla värden som returneras av en get all-metod. |
+| `folderId` | Returnerar alla ID:n för egenskaper i den angivna mappen. Inte tillgängligt för alla metoder. |
+| `permissions` | Returnerar en lista med segment baserat på den angivna behörigheten. `READ` är standard. Behörigheterna är:<ul><li>`READ` : Returnera och visa information om ett segment.</li><li>`WRITE` : Används `PUT` för att uppdatera ett segment.</li><li>`CREATE` : Används `POST` för att skapa ett segment.</li><li>`DELETE` : Ta bort ett segment. Kräver åtkomst till eventuella underliggande egenskaper. Du måste till exempel ha behörighet att ta bort de egenskaper som tillhör ett segment om du vill ta bort det.</li></ul><br>Ange flera behörigheter med separata nyckelvärdepar. Om du till exempel vill returnera en lista med segment med endast `READ` och `WRITE` behörigheter skickar du `"permissions":"READ"`, `"permissions":"WRITE"` . |
+| `includePermissions` | ([!DNL Boolean]) Ange `true` att du vill returnera dina behörigheter för segmentet. Standardvärdet är `false`. |
 
 ### En anteckning om sidalternativ
 
@@ -216,7 +213,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 ## Begär URL:er {#request-urls}
 
-I följande tabell visas URL:er för begäran som används för att skicka [!DNL API] begäranden per metod.
+I följande tabell visas den begäran [!DNL URLs] som används för att skicka [!DNL API] begäranden per metod.
 
 Beroende på vilken autentiseringsmetod du använder måste du justera URL:er för din begäran enligt tabellerna nedan.
 
@@ -224,72 +221,71 @@ Beroende på vilken autentiseringsmetod du använder måste du justera URL:er f�
 
 | [!DNL API] Metoder | Begäran [!DNL URL] |
 |--- |--- |
-| Algoritmisk modellering | `https://aam.adobe.io/v1/models/` |
-| Datakälla | `https://aam.adobe.io/v1/datasources/` |
-| Härledda signaler | `https://aam.adobe.io/v1/signals/derived/` |
-| Mål  | `https://aam.adobe.io/v1/destinations/` |
-| Domäner | `https://aam.adobe.io/v1/partner-sites/` |
-| Mappar | Traits:  `https://aam.adobe.io/v1/folders/traits /`<br>Segment:  `https://aam.adobe.io/v1/folders/segments /` |
-| Schema | `https://aam.adobe.io/v1/schemas/` |
-| Segment | `https://aam.adobe.io/v1/segments/` |
-| Traits | `https://aam.adobe.io/v1/traits/` |
-| Trait Types | `https://aam.adobe.io/v1/customer-trait-types` |
-| Taxonomi | `https://aam.adobe.io/v1/taxonomies/0/` |
+| [!DNL Algorithmic Modeling] | `https://aam.adobe.io/v1/models/` |
+| [!DNL Data Source] | `https://aam.adobe.io/v1/datasources/` |
+| [!DNL Derived Signals] | `https://aam.adobe.io/v1/signals/derived/` |
+| [!DNL Destinations] | `https://aam.adobe.io/v1/destinations/` |
+| [!DNL Domains] | `https://aam.adobe.io/v1/partner-sites/` |
+| [!DNL Folders] | Traits:  `https://aam.adobe.io/v1/folders/traits /`<br>Segment:  `https://aam.adobe.io/v1/folders/segments /` |
+| [!DNL Schema] | `https://aam.adobe.io/v1/schemas/` |
+| [!DNL Segments] | `https://aam.adobe.io/v1/segments/` |
+| [!DNL Traits] | `https://aam.adobe.io/v1/traits/` |
+| [!DNL Trait Types] | `https://aam.adobe.io/v1/customer-trait-types` |
+| [!DNL Taxonomy] | `https://aam.adobe.io/v1/taxonomies/0/` |
 
 ### Begär URL:er för OAuth-autentisering (inaktuell) {#request-urls-oauth}
 
 | [!DNL API] Metoder | Begäran [!DNL URL] |
 |--- |--- |
-| Algoritmisk modellering | `https://api.demdex.com/v1/models/` |
-| Datakälla | `https://api.demdex.com/v1/datasources/` |
-| Härledda signaler | `https://api.demdex.com/v1/signals/derived/` |
-| Mål  | `https://api.demdex.com/v1/destinations/` |
-| Domäner | `https://api.demdex.com/v1/partner-sites/` |
-| Mappar | Traits:  `https://api.demdex.com/v1/folders/traits /`<br>Segment:  `https://api.demdex.com/v1/folders/segments /` |
-| Schema | `https://api.demdex.com/v1/schemas/` |
-| Segment | `https://api.demdex.com/v1/segments/` |
-| Traits | `https://api.demdex.com/v1/traits/` |
-| Trait Types | `https://api.demdex.com/v1/customer-trait-types` |
-| Taxonomi | `https://api.demdex.com/v1/taxonomies/0/` |
+| [!DNL Algorithmic Modeling] | `https://api.demdex.com/v1/models/` |
+| [!DNL Data Source] | `https://api.demdex.com/v1/datasources/` |
+| [!DNL Derived Signals] | `https://api.demdex.com/v1/signals/derived/` |
+| [!DNL Destinations] | `https://api.demdex.com/v1/destinations/` |
+| [!DNL Domains] | `https://api.demdex.com/v1/partner-sites/` |
+| [!DNL Folders] | Traits:  `https://api.demdex.com/v1/folders/traits /`<br>Segment:  `https://api.demdex.com/v1/folders/segments /` |
+| [!DNL Schema] | `https://api.demdex.com/v1/schemas/` |
+| [!DNL Segments] | `https://api.demdex.com/v1/segments/` |
+| [!DNL Traits] | `https://api.demdex.com/v1/traits/` |
+| [!DNL Trait Types] | `https://api.demdex.com/v1/customer-trait-types` |
+| [!DNL Taxonomy] | `https://api.demdex.com/v1/taxonomies/0/` |
 
 ## Miljö {#environments}
 
 Via [!DNL Audience Manager] dessa får du [!DNL API]tillgång till olika arbetsmiljöer. Dessa miljöer hjälper dig att testa kod mot separata databaser utan att påverka livs- och produktionsdata. I följande tabell visas tillgängliga [!DNL API] miljöer och motsvarande resursvärdnamn.
 
-Beroende på vilken autentiseringsmetod du använder måste du justera URL:er för miljön enligt tabellen nedan.
+Beroende på vilken autentiseringsmetod du använder måste du justera miljön [!DNL URLs] enligt tabellen nedan.
 
-| Miljö | Värdnamn för JWT-autentisering | Värdnamn för OAuth-autentisering |
+| Miljö | Värdnamn för [!DNL JWT] autentisering | Värdnamn för [!DNL OAuth] autentisering |
 |---|---|---|
 | **Produktion** | `https://aam.adobe.io/...` | `https://api.demdex.com/...` |
 | **Beta** | `https://aam-beta.adobe.io/...` | `https://api-beta.demdex.com/...` |
 
-
 >[!NOTE]
 >
->Audience Manager beta-miljön är en mindre, fristående version av produktionsmiljön. Alla data som du vill testa måste anges och samlas in i den här miljön.
+>Betamiljön är en [!DNL Audience Manager] mindre, fristående version av produktionsmiljön. Alla data som du vill testa måste anges och samlas in i den här miljön.
 
 ## Versioner {#versions}
 
-Nya versioner av dessa [!DNL API]släpps regelbundet. En ny release ökar [!DNL API] versionsnumret. Versionsnumret refereras i den begärande URL:en `v<version number>` enligt följande exempel:
+Nya versioner av dessa [!DNL API]släpps regelbundet. En ny release ökar [!DNL API] versionsnumret. Versionsnumret refereras i begäran [!DNL URL] enligt `v<version number>` följande exempel:
 
 `https://<host>/v1/...`
 
 ## Definierade svarskoder {#response-codes-defined}
 
-`HTTP` statuskoder och svarstext som returneras av Audience Manager [!UICONTROL REST API].
+`HTTP` statuskoder och svarstext som returneras av [!DNL Audience Manager] [!UICONTROL REST API].
 
 <!-- r_api_http_response_codes.xml -->
 
 | Svarskod-ID | Svarstext | Definition |
 |---|---|---|
-| 200 | OK | Begäran har bearbetats. Returnerar förväntat innehåll eller data om det behövs. |
-| 201 | Skapad | Resursen skapades. Returnerar `PUT` och `POST` begär. |
-| 204 | Inget innehåll | Resursen har tagits bort. Svarstexten är tom. |
-| 400 | Felaktig begäran | Servern förstod inte begäran. Vanligtvis på grund av felaktig syntax. Kontrollera din begäran och försök igen. |
-| 403 | Förbjuden | Du har inte åtkomst till resursen. |
-| 404 | Hittades inte | Det gick inte att hitta resursen för den angivna sökvägen. |
-| 409 | Konflikt | Begäran kunde inte slutföras på grund av en konflikt med resursens tillstånd. |
-| 500 | Serverfel | Servern påträffade ett oväntat fel som gjorde att den inte kunde utföra begäran. |
+| 200 | `OK` | Begäran har bearbetats. Returnerar förväntat innehåll eller data om det behövs. |
+| 201 | `Created` | Resursen skapades. Returnerar `PUT` och `POST` begär. |
+| 204 | `No Content` | Resursen har tagits bort. Svarstexten är tom. |
+| 400 | `Bad Request` | Servern förstod inte begäran. Vanligtvis på grund av felaktig syntax. Kontrollera din begäran och försök igen. |
+| 403 | `Forbidden` | Du har inte åtkomst till resursen. |
+| 404 | `Not Found` | Det gick inte att hitta resursen för den angivna sökvägen. |
+| 409 | `Conflict` | Begäran kunde inte slutföras på grund av en konflikt med resursens tillstånd. |
+| 500 | `Server Error` | Servern påträffade ett oväntat fel som gjorde att den inte kunde utföra begäran. |
 
 >[!MORELIKETHIS]
 >
