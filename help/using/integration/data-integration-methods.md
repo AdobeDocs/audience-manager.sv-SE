@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Metoder för dataintegrering
 uuid: 17a4179a-e99b-49eb-8f45-f2946afbd27f
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: cdf567a816be60d0d966783e87f4ed02838be378
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -18,26 +18,26 @@ ht-degree: 0%
 
 En översikt på hög nivå över hur Audience Manager utbyter information med andra dataleverantörer och system.
 
-## Dataintegreringsmetoder som stöds: Realtid och server-till-server {#supported-methods}
+## Dataintegreringsmetoder som stöds: Realtid och [!DNL Server-to-Server] {#supported-methods}
 
 Vilken integreringsmetod som passar bäst beror på en kombination av affärskrav och den tekniska kapaciteten hos din datapartner. Audience Manager utbyter besökarinformation med andra dataleverantörer på något av följande sätt:
 
 * **Realtid:** Överför data direkt när en användare besöker webbplatsen. Den här metoden kallas även för en *`synchronous`* integrering.
-* **Grupp (server till server):** Överför data mellan servrar enligt ett angivet schema när en besökare har lämnat sidan. Den här metoden kallas även för en *`out-of-band`* eller *`asynchronous`* integration.
+* **Grupp ([!DNL Server-to-Server]):** Överför data mellan servrar enligt ett angivet schema när en besökare har lämnat sidan. Den här metoden kallas även för en *`out-of-band`* eller *`asynchronous`* integration.
 
 ## Förutsättningar: Skapa en egen taxonomi {#prereqs}
 
-Kom ihåg att [skapa egenskaper](../features/traits/create-onboarded-rule-based-traits.md) och en [mappstruktur](../features/traits/trait-storage.md#create-trait-storage-folder) i [!DNL Audience Manager] användargränssnittet innan integreringsprocessen börjar. Taxonomin innehåller alla egenskaper som är ordnade i en logisk hierarki.
+Kom ihåg att [skapa egenskaper](../features/traits/create-onboarded-rule-based-traits.md) och en [mappstruktur](../features/traits/trait-storage.md#create-trait-storage-folder) i [!DNL Audience Manager] användargränssnittet innan integreringsprocessen börjar. Taxonomin kommer att innehålla alla dina [!UICONTROL traits] ordnade i en logisk hierarki.
 
 ## Användningsexempel för integrering {#integration-use-cases}
 
 En sammanfattning av dataintegreringsmetoderna i Audience Manager samt för- och nackdelar med dem.
 
-### Integrering mellan server och server i realtid
+### Integrering i realtid [!DNL Server-to-Server]
 
 <!-- c_int_types_use_cases.xml -->
 
-Dataintegrering mellan servrar och servrar i realtid synkroniserar snabbt användardata mellan Audience Manager-servrar och ett annat målsystem. I de flesta fall sker datautbyte inom några sekunder eller minuter, beroende på målinriktningssystemets uppdateringsfrekvens. Observera dock att målsystemet avgör detta uppdateringsintervall, inte Audience Manager. Dessutom kan uppdateringsfrekvensen variera mellan olika system. En realtidsintegrering mellan servrar och servrar är den bästa integrationstypen för datautbyte. Audience Manager använder den här metoden när målpartners kan stödja den.
+Dataintegrering i realtid [!DNL server-to-server] synkroniserar snabbt användardata mellan Audience Manager-servrar och ett annat målinriktningssystem. I de flesta fall sker datautbyte inom några sekunder eller minuter, beroende på målinriktningssystemets uppdateringsfrekvens. Observera dock att målsystemet avgör detta uppdateringsintervall, inte Audience Manager. Dessutom kan uppdateringsfrekvensen variera mellan olika system. Integrering i realtid är den [!UICONTROL server-to-server] bästa integrationstypen för datautbyte. Audience Manager använder den här metoden när målpartners kan stödja den.
 
 <table id="simpletable_5307DEC378E5486CB92A354287F33AD8"> 
  <tr class="strow">
@@ -56,9 +56,9 @@ Dataintegrering mellan servrar och servrar i realtid synkroniserar snabbt använ
  </tr>
 </table>
 
-### Batchintegrering mellan servrar
+### [!DNL Server-to-Server] Gruppintegrering
 
-En server-till-server-batchintegrering paketerar data och skickar dem till andra system vid bestämda intervall i stället för i nära realtid. Dataöverföringsintervallen startar från 24 timmar. Vissa dataleverantörer stöder endast den här integrationstypen. Vi har dock sett en allmän trend från gruppintegreringar till realtidsintegreringsmetoder.
+En gruppintegrering [!DNL server-to-server] paketerar data och skickar dem till andra system vid bestämda intervall i stället för i nära realtid. Dataöverföringsintervallen startar från 24 timmar. Vissa dataleverantörer stöder endast den här integrationstypen. Vi har dock sett en allmän trend från gruppintegreringar till realtidsintegreringsmetoder.
 
 <table id="simpletable_6878241639114DE68E61A251486C6317"> 
  <tr class="strow">
@@ -77,7 +77,7 @@ En server-till-server-batchintegrering paketerar data och skickar dem till andra
 
 ### Realtidsanrop
 
-Realtidsanrop utbyter data med Audience Manager direkt när en användare besöker er webbplats eller vidtar åtgärder på sidan. Med den här metoden får målgruppssystem den senaste informationen om segmentkvalificering och kan ta hänsyn till den informationen vid beslut om innehåll eller annonsleverans. Den här processen fungerar även med utgivarannonsservrar där vi uppdaterar kvalificerade segment till en cookie som läses in i ett annonsanrop som nyckelvärdepar. För närvarande använder Audience Manager realtidsanrop för att integrera med [!DNL Target] och andra system för innehållshantering.
+Realtidsanrop utbyter data med Audience Manager direkt när en användare besöker er webbplats eller vidtar åtgärder på sidan. Med den här metoden får målgruppssystem den senaste informationen om segmentkvalificering och kan ta hänsyn till den informationen vid beslut om innehåll eller annonsleverans. Den här processen fungerar även med utgivarannonsservrar där vi uppdaterar kvalificerade segment till en cookie som läses in i ett annonsanrop som nyckelvärdepar. För närvarande använder Audience Manager realtidsanrop för att integrera med [!DNL Adobe Target] och andra system för innehållshantering.
 
 <table> 
  <tr>
@@ -151,7 +151,7 @@ En allmän översikt över hur Audience Manager utbyter data synkront (i realtid
 
 <!-- c_int_overview_async.xml -->
 
-Batchdataintegreringsprocessen (server-till-server) följer de flesta av de steg som beskrivs i dataöverföringsprocessen i realtid. I stället för att omedelbart returnera segment-ID:n sparas användarinformationen på våra servrar och synkroniseras med en tredjepartsleverantör med regelbundna intervall. Den asynkrona dataöverföringsprocessen är användbar när:
+Batchdataintegreringsprocessen ([!DNL server-to-server]) följer de flesta av de steg som beskrivs i dataöverföringsprocessen i realtid. I stället för att omedelbart returnera segment-ID:n sparas användarinformationen på våra servrar och synkroniseras med en tredjepartsleverantör med regelbundna intervall. Den asynkrona dataöverföringsprocessen är användbar när:
 
 * Omedelbara dataöverföringar krävs inte.
 * Samla in data för att skapa en stor grupp segmenterade användare.
@@ -166,4 +166,4 @@ Batchdataintegreringsprocessen (server-till-server) följer de flesta av de steg
 
 ![](assets/s2s_70.png)
 
-Information som beskriver tidsramarna när Audience Manager bearbetar inkommande och utgående Server-till-server-filöverföringar ([!UICONTROL S2S]) finns i Riktlinjer [för](../reference/reporting-file-transfer-timeframe.md)rapportering och filöverföring.
+Information som beskriver tidsramarna när Audience Manager bearbetar inkommande och utgående [!DNL Server-to-Server] ([!UICONTROL S2S]) filöverföringar finns i Riktlinjer för [rapportering och tidsram](../reference/reporting-file-transfer-timeframe.md)för filöverföring.
