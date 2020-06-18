@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Vanliga frågor om sekretess och datalagring
 uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 0%
 
 ---
 
@@ -25,11 +28,11 @@ Svar på vanliga sekretessfrågor och datarelaterade frågor eller frågor.
 
 **Hur använder Audience Manager cookies och vilka cookies används?**
 
-Se [Cookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html)för Audience Manager.
+Se [Audience Manager Cookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html).
 
-**Kan Audience Manager-kunder i USA rikta in sig på EU-resurser?**
+**Kan Audience Manager kunder i USA rikta in sig på EU:s fastigheter?**
 
-Ja. Audience Manager fungerar tillsammans med kunder som har internationella egenskaper och lager. EU har strikta integritetslagar, men Audience Manager har kunder som använder förstapartsdata för målgruppsanpassning i Europa. Audience Manager kan stödja målgruppsanpassning till EU-målgrupper, men det är ditt ansvar att följa lokala sekretessbestämmelser.
+Ja. Audience Manager samarbetar med kunder som har internationella tillgångar och inventarier. EU har strikta integritetslagar, men Audience Manager har kunder som använder förstahandsdata för målgruppsanpassning i Europa. Audience Manager kan stödja målgruppsanpassning till EU-målgrupper, men det är ditt ansvar att följa lokala sekretessbestämmelser.
 
 <!-- 
 
@@ -56,19 +59,19 @@ I följande tabell visas kvarhållningstiderna för olika datatyper och lagrings
   </tr> 
   <tr> 
    <td colname="col1"> <p>Edge-servrar </p> </td> 
-   <td colname="col2"> <p> 14 dagar. </p> <p>Audience Manager tar bort användardata från våra edge-servrar 14 dagar efter att en användare senast visats på Audience Manager-plattformen. Om <span class="keyword"> Audience Manager</span> registrerar användaraktivitet inom denna 14-dagarscykel sparar vi dessa data i ytterligare 14 dagar. Om användaren aktiveras igen efter 14-dagarsperioden kommer det att uppstå en fördröjning mellan den första nya sidvyn och när användaren blir åtgärdbar. Det tar 6-18 timmar att få ut hela profilen tillbaka till kantcentret efter mer än 14 dagars inaktivitet. </p> </td> 
+   <td colname="col2"> <p> 14 dagar. </p> <p>Audience Manager tar bort användardata från våra edge-servrar 14 dagar efter att en användare senast sågs på Audience Manager-plattformen. Om <span class="keyword"> Audience Manager</span> registrerar användaraktivitet inom denna 14-dagarscykel sparar vi dessa data i ytterligare 14 dagar. Om användaren aktiveras igen efter 14-dagarsperioden kommer det att uppstå en fördröjning mellan den första nya sidvyn och när användaren blir åtgärdbar. Det tar 6-18 timmar att få ut hela profilen tillbaka till kantcentret efter mer än 14 dagars inaktivitet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Råloggar </p> </td> 
-   <td colname="col2"> <p>180 dagar (tas bort efter 180 dagar utan aktivitet). </p> <p>Råloggar är data som tas emot av en edge-server via HTTP-anrop eller från onboardfiler som skickas in till <span class="keyword"> Audience Manager</span>. </p> </td> 
+   <td colname="col2"> <p>180 dagar (tas bort efter 180 dagar utan aktivitet). </p> <p>Raw-loggar är data som tas emot av en edge-server via HTTP-anrop eller från onboardfiler som skickas till <span class="keyword"> Audience Manager</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ad Server-loggar </p> </td> 
-   <td colname="col2"> <p><b>Rapportering</b> </p> <p>Loggfiler sparas för rapportering i upp till 30 dagar. Vi lagrar inte omatchade loggar (dvs. loggar för vilka det inte finns någon ID-synkronisering mellan en besökares annonsserver-ID och <span class="keyword"> Audience Manager</span> -ID) i vår serverdelslagring, och matchade loggar som lagras i <span class="keyword"> Amazon S3</span> sparas i upp till 30 dagar. </p> <p><b>Åtgärdsbara loggfiler</b> </p> <p>Både matchade och omatchade loggar sparas i upp till 30 dagar. </p> </td> 
+   <td colname="col2"> <p><b>Rapporter</b> </p> <p>Loggfiler sparas för rapportering i upp till 30 dagar. Vi lagrar inte omatchade loggar (dvs. loggar för vilka det inte finns någon ID-synkronisering mellan en besökares annons-server-ID och <span class="keyword"> Audience Manager</span> -ID) i vår backend-lagring, och matchade loggar som lagras i <span class="keyword"> Amazon S3</span> sparas i upp till 30 dagar. </p> <p><b>Åtgärdsbara loggfiler</b> </p> <p>Både matchade och omatchade loggar sparas i upp till 30 dagar. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>CRM-nivåprofiler (autentiserade profiler) </p> </td> 
-   <td colname="col2"> <p>Standardintervallet för TTL (time-to-live) för inaktiva CRM-nivåprofiler är 24 månader. Du kan dock använda gränssnittet i Audience Manager för att minska eller förlänga TTL-intervallet för inaktiva CRM-nivåprofiler mellan en månad och 5 år. Du kan uppnå detta när du skapar eller redigerar en datakälla för olika enheter.</p> <p>Mer information finns i Inställningar för datakälla i <a href="../features/profile-merge-rules/merge-rules-start.md#settings"> Skapa en datakälla för olika enheter </a>.</p> </td> 
+   <td colname="col2"> <p>Standardintervallet för TTL (time-to-live) för inaktiva CRM-nivåprofiler är 24 månader. Du kan emellertid använda användargränssnittet i Audience Manager för att minska eller förlänga TTL-intervallet för inaktiva CRM-nivåprofiler mellan en månad och 5 år. Du kan uppnå detta när du skapar eller redigerar en datakälla för olika enheter.</p> <p>Mer information finns i Inställningar för datakälla i <a href="../features/profile-merge-rules/merge-rules-start.md#settings"> Skapa en datakälla för olika enheter </a>.</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID för mobila enheter </p> </td> 
@@ -80,7 +83,7 @@ I följande tabell visas kvarhållningstiderna för olika datatyper och lagrings
   </tr> 
   <tr> 
    <td colname="col1"> <p>Mappningar mellan synkroniserade ID:n </p> </td> 
-   <td colname="col2"> <p>Livslängden för <a href="../features/administration/usage-limits.md#id-mapping-limits"> ID-mappningarna</a> mellan cookie-ID:n för Audience Manager (unika användar-ID:n för<a href="../reference/ids-in-aam.md">Audience Manager eller UUID:n</a>för AAM) och cookie-ID:n från tredje part är begränsad till 120 dagar. Livslängden för ID-mappningen återställs varje gång Audience Manager-cookien visas i Audience Manager-nätverket. Den senaste synkroniseringen av ID-mappning bevaras så länge det tillhörande <a href="../reference/ids-in-aam.md">Audience Manager-unika användar-ID:t (AAM UUID)</a>är giltigt.</p></td> 
+   <td colname="col2"> <p>Livslängden för <a href="../features/administration/usage-limits.md#id-mapping-limits"> ID-mappningar</a> mellan cookie-ID:n för Audience Manager (unika användar-ID:n för<a href="../reference/ids-in-aam.md">Audience Manager eller UUID:n</a>för AAM) och cookie-ID:n från tredje part är begränsad till 120 dagar. Livslängden för ID-mappningen återställs varje gång cookie-filen för Audience Manager visas i nätverket Audience Manager. Den senaste synkroniseringen av ID-mappning bevaras under hela den tid som det associerade <a href="../reference/ids-in-aam.md">Audience Manager-unika användar-ID:t (AAM UUID)</a>är giltigt.</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Inkommande data </p> </td> 
@@ -88,7 +91,7 @@ I följande tabell visas kvarhållningstiderna för olika datatyper och lagrings
   </tr> 
   <tr> 
    <td colname="col1"> <p>Utgående data </p> </td> 
-   <td colname="col2"> <p>Detta är batchdata som <span class="keyword"> Audience Manager</span> skickar till aktiveringspartners från tredje part. Kvarhållningsperioden är 8 dagar. Mer information om utgående data finns i <a href="../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md"> Utgående batchöverföringar</a>. </p> </td> 
+   <td colname="col2"> <p>Detta är batchdata som <span class="keyword"> Audience Manager</span> skickar till aktiveringspartners. Kvarhållningsperioden är 8 dagar. Mer information om utgående data finns i <a href="../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md"> Utgående batchöverföringar</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
