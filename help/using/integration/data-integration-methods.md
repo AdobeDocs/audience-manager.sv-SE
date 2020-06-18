@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Metoder för dataintegrering
 uuid: 17a4179a-e99b-49eb-8f45-f2946afbd27f
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '1095'
+ht-degree: 0%
 
 ---
 
@@ -28,13 +31,13 @@ Kom ihåg att [skapa egenskaper](../features/traits/create-onboarded-rule-based-
 
 ## Användningsexempel för integrering {#integration-use-cases}
 
-En sammanfattning av dataintegreringsmetoderna i Audience Manager och fördelarna och nackdelarna med dem.
+En sammanfattning av dataintegreringsmetoderna i Audience Manager samt för- och nackdelar med dem.
 
 ### Integrering mellan server och server i realtid
 
 <!-- c_int_types_use_cases.xml -->
 
-Dataintegrering mellan servrar och servrar i realtid synkroniserar snabbt användardata mellan Audience Manager-servrar och ett annat målsystem. I de flesta fall sker datautbyte inom några sekunder eller minuter, beroende på målinriktningssystemets uppdateringsfrekvens. Observera dock att målsystemet bestämmer det här uppdateringsintervallet, inte Audience Manager. Dessutom kan uppdateringsfrekvensen variera mellan olika system. En realtidsintegrering mellan servrar och servrar är den bästa integrationstypen för datautbyte. Audience Manager använder den här metoden när målgruppspartners kan stödja den.
+Dataintegrering mellan servrar och servrar i realtid synkroniserar snabbt användardata mellan Audience Manager-servrar och ett annat målsystem. I de flesta fall sker datautbyte inom några sekunder eller minuter, beroende på målinriktningssystemets uppdateringsfrekvens. Observera dock att målsystemet avgör detta uppdateringsintervall, inte Audience Manager. Dessutom kan uppdateringsfrekvensen variera mellan olika system. En realtidsintegrering mellan servrar och servrar är den bästa integrationstypen för datautbyte. Audience Manager använder den här metoden när målpartners kan stödja den.
 
 <table id="simpletable_5307DEC378E5486CB92A354287F33AD8"> 
  <tr class="strow">
@@ -74,7 +77,7 @@ En server-till-server-batchintegrering paketerar data och skickar dem till andra
 
 ### Realtidsanrop
 
-Realtidsanrop utbyter data med Audience Manager direkt när en användare besöker er webbplats eller vidtar åtgärder på sidan. Med den här metoden får målgruppssystem den senaste informationen om segmentkvalificering och kan ta hänsyn till den informationen vid beslut om innehåll eller annonsleverans. Den här processen fungerar även med utgivarannonsservrar där vi uppdaterar kvalificerade segment till en cookie som läses in i ett annonsanrop som nyckelvärdepar. För närvarande använder Audience Manager anrop i realtid för att integrera med [!DNL Target] och andra system för innehållshantering.
+Realtidsanrop utbyter data med Audience Manager direkt när en användare besöker er webbplats eller vidtar åtgärder på sidan. Med den här metoden får målgruppssystem den senaste informationen om segmentkvalificering och kan ta hänsyn till den informationen vid beslut om innehåll eller annonsleverans. Den här processen fungerar även med utgivarannonsservrar där vi uppdaterar kvalificerade segment till en cookie som läses in i ett annonsanrop som nyckelvärdepar. För närvarande använder Audience Manager realtidsanrop för att integrera med [!DNL Target] och andra system för innehållshantering.
 
 <table> 
  <tr>
@@ -83,7 +86,7 @@ Realtidsanrop utbyter data med Audience Manager direkt när en användare besök
  </tr> 
  <tr>
   <td> <p>Nackdelar: </p></td>
-  <td> <p>Lägger till ett anrop till Audience Manager från sidan.</p></td>
+  <td> <p>Lägger till ett samtal till Audience Manager från sidan.</p></td>
  </tr> 
 </table>
 
@@ -133,10 +136,10 @@ Dataöverföringar i realtid skickar och tar emot segment-ID:n när en användar
 Integreringen av data i realtid fungerar på följande sätt:
 
 1. En användare besöker en kunds webbplats som innehåller Audience Manager-kod.
-1. Audience Manager läser in en Iframe och anropar [!UICONTROL Data Collection Server] ([!UICONTROL DCS]).
-1. Servern [!UICONTROL DCS] anropar tredjepartsservern (i realtid) för att kontrollera om leverantören har någon segmentinformation om användaren.
+1. Audience Manager läser in en Iframe och anropar [!UICONTROL Data Collection Server] ([!DNL DCS]).
+1. Servern [!DNL DCS] anropar tredjepartsservern (i realtid) för att kontrollera om leverantören har någon segmentinformation om användaren.
 1. Den tredje parten returnerar segmentinformation om den användaren till Audience Manager.
-1. Audience Manager importerar segmentinformation och gör den tillgänglig för målinriktning.
+1. Audience Manager infogar segmentinformation och gör den tillgänglig för målinriktning.
 
 ![](assets/rt_reduce70.png)
 
@@ -158,9 +161,9 @@ Batchdataintegreringsprocessen (server-till-server) följer de flesta av de steg
 
 1. En användare besöker en kundwebbplats.
 1. Audience Manager och tredjepartsleverantören av data tilldelar besökaren ett unikt ID (vanligtvis med en cookie).
-1. Audience Manager anropar tredjeparts dataleverantör för att matcha besökar-ID:n.
-1. En schemalagd begäran utbyter vanligtvis data om besökarsegment dagligen mellan Audience Manager och din tredjepartsleverantör av data.
+1. Audience Manager anropar en tredjeparts dataleverantör för att matcha besökar-ID:n.
+1. En schemalagd begäran utbyter vanligtvis data om besökarsegment mellan Audience Manager och din tredjepartsleverantör.
 
 ![](assets/s2s_70.png)
 
-Information som beskriver tidsramarna när Audience Manager bearbetar inkommande och utgående filöverföringar från Server till server ([!UICONTROL S2S]) finns i Riktlinjer [för](../reference/reporting-file-transfer-timeframe.md)rapportering och filöverföring.
+Information som beskriver tidsramarna när Audience Manager bearbetar inkommande och utgående Server-till-server-filöverföringar ([!UICONTROL S2S]) finns i Riktlinjer [för](../reference/reporting-file-transfer-timeframe.md)rapportering och filöverföring.
