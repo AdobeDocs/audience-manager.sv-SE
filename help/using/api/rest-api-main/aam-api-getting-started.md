@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Komma igång med REST API:er
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: cdf567a816be60d0d966783e87f4ed02838be378
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1781'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Två autentiseringsmetoder stöds [!DNL Audience Manager][!DNL REST APIs] .
 >
 >Beroende på din autentiseringsmetod måste du justera din begäran [!DNL URLs] därefter. Mer information om värdnamnen som du bör använda finns i avsnittet [Miljöer](#environments) .
 
-## JWT-autentisering (tjänstkonto) {#jwt}
+## JWT-autentisering ([!DNL Service Account]) {#jwt}
 
 ### Förutsättningar {#prerequisites}
 
@@ -278,14 +278,14 @@ Nya versioner av dessa [!DNL API]släpps regelbundet. En ny release ökar [!DNL 
 
 | Svarskod-ID | Svarstext | Definition |
 |---|---|---|
-| 200 | `OK` | Begäran har bearbetats. Returnerar förväntat innehåll eller data om det behövs. |
-| 201 | `Created` | Resursen skapades. Returnerar `PUT` och `POST` begär. |
-| 204 | `No Content` | Resursen har tagits bort. Svarstexten är tom. |
-| 400 | `Bad Request` | Servern förstod inte begäran. Vanligtvis på grund av felaktig syntax. Kontrollera din begäran och försök igen. |
-| 403 | `Forbidden` | Du har inte åtkomst till resursen. |
-| 404 | `Not Found` | Det gick inte att hitta resursen för den angivna sökvägen. |
-| 409 | `Conflict` | Begäran kunde inte slutföras på grund av en konflikt med resursens tillstånd. |
-| 500 | `Server Error` | Servern påträffade ett oväntat fel som gjorde att den inte kunde utföra begäran. |
+| `200` | `OK` | Begäran har bearbetats. Returnerar förväntat innehåll eller data om det behövs. |
+| `201` | `Created` | Resursen skapades. Returnerar `PUT` och `POST` begär. |
+| `204` | `No Content` | Resursen har tagits bort. Svarstexten är tom. |
+| `400` | `Bad Request` | Servern förstod inte begäran. Vanligtvis på grund av felaktig syntax. Kontrollera din begäran och försök igen. |
+| `403` | `Forbidden` | Du har inte åtkomst till resursen. |
+| `404` | `Not Found` | Det gick inte att hitta resursen för den angivna sökvägen. |
+| `409` | `Conflict` | Begäran kunde inte slutföras på grund av en konflikt med resursens tillstånd. |
+| `500` | `Server Error` | Servern påträffade ett oväntat fel som gjorde att den inte kunde utföra begäran. |
 
 >[!MORELIKETHIS]
 >
