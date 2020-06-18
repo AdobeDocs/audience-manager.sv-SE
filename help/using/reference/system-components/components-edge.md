@@ -1,19 +1,22 @@
 ---
-description: Audience Manager använder distribuerade, avancerade datorlösningar för att uppfylla de krav som externa källor ställer på våra system.
-seo-description: Audience Manager använder distribuerade, avancerade datorlösningar för att uppfylla de krav som externa källor ställer på våra system.
+description: Audience Manager använder distribuerade, avancerade datorlösningar för att möta de krav som externa källor ställer på våra system.
+seo-description: Audience Manager använder distribuerade, avancerade datorlösningar för att möta de krav som externa källor ställer på våra system.
 seo-title: Förstå Edge Data Center
 solution: Audience Manager
 title: Förstå Edge Data Center
 uuid: 4177e666-99f4-453d-94dd-058c6182c8d2
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 0%
 
 ---
 
 
 # Förstå Edge Data Center{#understanding-the-edge-data-center}
 
-Audience Manager använder distribuerade, avancerade datorlösningar för att uppfylla de krav som externa källor ställer på våra system.
+Audience Manager använder distribuerade, avancerade datorlösningar för att möta de krav som externa källor ställer på våra system.
 
 ## Grunderna i Edge Data Center {#edge-data-center-basics}
 
@@ -29,14 +32,14 @@ I [!DNL Audience Manager] kantdatacentret ingår:
 
 * **Kärnservrar:** Det här är de viktigaste [!DNL Audience Manager] systemen. De uppdaterar och tillhandahåller data till edge-servrarna.
 
-* **Edge-servrar:** Vanligtvis är detta program- och/eller webbservrar. De sitter vid gränsen mellan [!DNL Audience Manager] och Internet. Edge-servrar, som [!UICONTROL DCS] eller Akamai-system, hanterar vanligtvis data och förfrågningar som flödar in i och ut [!DNL Audience Manager].
+* **Edge-servrar:** Vanligtvis är detta program- och/eller webbservrar. De sitter vid gränsen mellan [!DNL Audience Manager] och Internet. Edge-servrar, som [!DNL DCS] eller Akamai-system, hanterar vanligtvis data och förfrågningar som flödar in i och ut [!DNL Audience Manager].
 
 * **Belastningsutjämnare:** Hantera ojämna krav på datoranvändning och bearbetning i Internet-tillämpningar. Dessa balanserare förhindrar att serverkluster överbelastas medan andra förblir inaktiva.
 
-Följande diagram visar datacentermiljön i Audience Manager edge.
+I följande diagram visas datacentermiljön i Audience Manager.
 
 ![](assets/edge_data_center.png)
 
 ## Geografisk fördelning och belastningsfördelning {#geo-dist-balance}
 
-Se [!UICONTROL DCS] avsnittet i [Datainsamlingskomponenter](../../reference/system-components/components-data-collection.md).
+Se [!DNL DCS] avsnittet i [Datainsamlingskomponenter](../../reference/system-components/components-data-collection.md).
