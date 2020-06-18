@@ -5,7 +5,10 @@ seo-title: Direkt undertryckning av olika enheter
 title: Direkt undertryckning av olika enheter
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '829'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 De tekniska detaljerna om osegmentering i realtid beskrivs i detalj i [Profilkopplingsregler och Avsegmenteringsprocesser](merge-rule-unsegment.md)för enheter. Läs vidare för det praktiska genomförandet av de användningsfall som beskrivs ovan.
 
-## Använd inte som mål när du har konverterat {#do-not-target-once}
+## Gör inte Target när den har konverterats {#do-not-target-once}
 
 Kontrollera att dina användare som redan har konverterat (köpt en produkt, köpt en prenumeration osv.) kommer inte att se samma meddelande som före konverteringen. Du kan hämta detta med hjälp av [!UICONTROL AND NOT] logiken enligt följande.
 
@@ -34,7 +37,7 @@ Dina besökare är kvalificerade för segmentet så länge de inte har konverter
 
 ![](assets/and_not_use_case.png)
 
-## Använd inte mål efter x-exponeringar {#do-not-target-after-x}
+## Använd inte Target efter x-bilder {#do-not-target-after-x}
 
 Du kan se till att du inte översvämmar dina användare med samma kreativa funktioner genom att ställa in kontroller för senaste och frekvens. I det här scenariot skapar du ett segment med två egenskaper, vilket beskrivs i stegen nedan.
 
@@ -64,4 +67,4 @@ Tänk på följande när det gäller bearbetning:
 Tänk på följande när det gäller timing:
 
 * Ett segment kommer att lagras på [Edge](../../reference/system-components/components-edge.md) under samma tidsperiod som en enhetsprofil lagras på [!UICONTROL Edge], nämligen 14 dagar sedan den senaste realtidsinteraktionen. Läs mer om datalagring i Vanliga frågor om [datalagring](../../faq/faq-privacy.md#data-retention-faq).
-* Det tar cirka 24 timmar för den avsegmenterade åtgärden att sprida sig över olika [!UICONTROL DCS] regioner. Läs mer om våra [!UICONTROL DCS] regioner [här](../..//reference/system-components/components-data-collection.md) och [här](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
+* Det tar cirka 24 timmar för den avsegmenterade åtgärden att sprida sig över olika [!DNL DCS] regioner. Läs mer om våra [!DNL DCS] regioner [här](../..//reference/system-components/components-data-collection.md) och [här](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
