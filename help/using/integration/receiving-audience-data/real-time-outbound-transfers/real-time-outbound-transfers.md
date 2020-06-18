@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Utgående dataöverföringar i realtid
 uuid: 1895e818-7ab8-4569-a920-4b0a4c8b83d2
 translation-type: tm+mt
-source-git-commit: 05609645bef676bbd98aa08caf32a4ae2dcb6f00
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 0%
 
 ---
 
@@ -21,15 +24,15 @@ Den utgående dataöverföringsprocessen i realtid levererar användardata som e
 
 Om du vill använda den här metoden måste målplattformen uppfylla följande krav:
 
-* Den måste tillhandahålla en slutpunkt [!DNL URL] som kan skalas för att kunna ta emot ett stort antal meddelanden från Audience Manager.
+* Det måste tillhandahålla en slutpunkt [!DNL URL] som kan skalas för att kunna ta emot ett stort antal meddelanden från Audience Manager.
 * Den skall godta uppgifter i [!DNL JSON] formatet (`Content-type: application/json`).
 * Den måste acceptera säkra `HTTPS` dataöverföringar. [!DNL Audience Manager] skickar inte meddelanden via det osäkra `HTTP` protokollet.
 
-## Frekvens
+## Frequency
 
-Denna dataöverföringsmetod kan skicka data i nästan realtid när användarna kvalificerar sig för segment. Realtidsmeddelanden levereras endast när användaren är online och aktivt synlig för Audience Manager Edge-nätverket. Den här metoden kan också skicka batchar med offline- eller inbyggda data så ofta som var 24:e timme.
+This data transfer method can send data in near real-time as users qualify for segments. Real-time messages are only delivered while the user is online and actively visible to the Audience Manager Edge network. Den här metoden kan också skicka batchar med offline- eller inbyggda data så ofta som var 24:e timme.
 
-## Batchöverföringar
+## Batch Transfers
 
 Både realtids- och batchöverföringar skickas till samma slutpunkt och använder samma meddelandeformat. När batchöverföringar är aktiverade kommer målplattformen att se en ökning av meddelandevolymen medan batchmeddelandena levereras. Många av de segmentkvalifikationer som skickas via realtidsmeddelanden upprepas i gruppmeddelandena. Batchöverföringar omfattar endast de segmentkvalifikationer (eller icke-kvalifikationer) som har ändrats sedan den senaste batchen levererades.
 
@@ -77,7 +80,7 @@ I följande tabell definieras elementen i den datafil som du skickar till målet
   <tr valign="top"> 
    <td colname="col1"><code><i>AAM_Destination_ID</i></code> </td> 
    <td colname="col2"> <p>Heltal </p> </td> 
-   <td colname="col3"> <p>ID:t för Audience Manager "destination"-objektet. Detta ID kommer från Audience Manager.</p> </td> 
+   <td colname="col3"> <p>ID:t för Audience Manager-objektet "destination". Detta ID kommer från Audience Manager.</p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>User_count</i></code> </td> 
@@ -92,7 +95,7 @@ I följande tabell definieras elementen i den datafil som du skickar till målet
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_UUID</i></code> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>Audience Manager <span class="keyword"></span> UUID. </p> </td> 
+   <td colname="col3"> <p>UUID för <span class="keyword"> Audience Manager</span> . </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>User.DataPartner_UUID</i></code> </td> 
@@ -102,7 +105,7 @@ I följande tabell definieras elementen i den datafil som du skickar till målet
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_Regions</i></code> </td> 
    <td colname="col2"> Array </td> 
-   <td colname="col3"> Det <span class="keyword"> Audience Manager</span> -region-ID där vi har sett den här enheten. Om enheten till exempel har någon aktivitet i Paris (Europa) blir region-ID:t <code> 6</code>. Se <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> DCS-regions-ID, -platser och -värdnamn</a>. </td> 
+   <td colname="col3"> Det region-ID för <span class="keyword"> Audience Manager</span> där vi har sett den här enheten. Om enheten till exempel har någon aktivitet i Paris (Europa) blir region-ID:t <code> 6</code>. Se <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> DCS-regions-ID, -platser och -värdnamn</a>. </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segments</i></code> </td> 
