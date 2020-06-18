@@ -7,18 +7,21 @@ title: Attribut som stöds för DCS API-anrop
 keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tdpid_ic
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '809'
+ht-degree: 0%
 
 ---
 
 
 # Attribut som stöds för DCS API-anrop {#supported-attributes-for-dcs-api-calls}
 
-Visar och beskriver syntaxen och de attribut (eller nyckelvärdepar) som stöds och som du kan skicka till [!UICONTROL Data Collection Servers] ([!UICONTROL DCS]). Den här informationen kan hjälpa dig att formatera dina [!UICONTROL DCS] förfrågningar och förstå de parametrar som returneras av systemet.
+Visar och beskriver syntaxen och de attribut (eller nyckelvärdepar) som stöds och som du kan skicka till [!UICONTROL Data Collection Servers] ([!DNL DCS]). Den här informationen kan hjälpa dig att formatera dina [!DNL DCS] förfrågningar och förstå de parametrar som returneras av systemet.
 
 ## Attributprefix {#attribute-prefixes}
 
-De [!UICONTROL DCS] förlitar sig på specifika prefix som läggs till nycklarna i nyckelvärdepar för att klassificera den typ av data som du skickar in.
+De [!DNL DCS] förlitar sig på specifika prefix som läggs till nycklarna i nyckelvärdepar för att klassificera den typ av data som du skickar in.
 
 <table id="table_23B7E15EC13749E9A245DFB543822DB7"> 
  <thead> 
@@ -49,7 +52,7 @@ De [!UICONTROL DCS] förlitar sig på specifika prefix som läggs till nycklarna
 
 ## d_Attribut {#d-attributes}
 
-Alla dessa är valfria, såvida du inte vill ha ett svar från [!UICONTROL DCS]. Om du vill [!UICONTROL DCS] att användaren ska returnera ett svar `d_rtbd=json` måste du göra det.
+Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du vill [!DNL DCS] att användaren ska returnera ett svar `d_rtbd=json` måste du göra det.
 
 <table id="table_FCCE4F9D796648899772A191981EFDE6"> 
  <thead> 
@@ -69,7 +72,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!UICONTROL DCS].
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_cid</code> </p> </td> 
-   <td colname="col2"> <p>Innehåller ett eller flera par av ID:n (<code> DPID</code>) för dataleverantörer och användar-ID:n (<code> DPUUID</code>) för dataleverantörer som tilldelats av <span class="keyword"> Audience Manager</span>. Om du använder flera par med <code> DPID</code>s och <code> DPUUID</code>s separerar du varje par med tecknet som inte skrivs ut <code> %01</code>. Exempel: <code><i>DPID</i>%01<i>DPUUUID</i></code>. </p> <p><code> d_cid</code> ersätts <code> d_dpid</code> och <code> d_dpuuid</code>, som är borttagna men fortfarande stöds. Se <a href="../../../reference/cid.md"> CID ersätter DPID och DPUUID</a>. </p> </td>
+   <td colname="col2"> <p>Innehåller ett eller flera par med ID:n (<code> DPID</code>) för DataProvider och användar-ID:n (<code> DPUUID</code>) som tilldelats av <span class="keyword"> Audience Manager</span>. Om du använder flera par med <code> DPID</code>s och <code> DPUUID</code>s separerar du varje par med tecknet som inte skrivs ut <code> %01</code>. Exempel: <code><i>DPID</i>%01<i>DPUUUID</i></code>. </p> <p><code> d_cid</code> ersätts <code> d_dpid</code> och <code> d_dpuuid</code>, som är borttagna men fortfarande stöds. Se <a href="../../../reference/cid.md"> CID ersätter DPID och DPUUID</a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cid_ic</code> </p> </td> 
@@ -77,11 +80,11 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!UICONTROL DCS].
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Experience Platform Identity Service och beror på <code> idSyncDisable3rdPartySyncing</code> konfigurationen. Se <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/coppa.html" format="https" scope="external"> COPPA-stöd i Adobe Experience Platform Identity Service</a>. </p> </td>
+   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Adobe Experience Platform Identity Service och beror på <code> idSyncDisable3rdPartySyncing</code> konfigurationen. Se Stöd för <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/coppa.html" format="https" scope="external"> COPPA i Adobe Experience Platform Identity Service</a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
-   <td colname="col2"> <p>Valfritt. Aktiverad på kundens begäran. Kontakta din Adobe Audience Manager-konsult eller kundtjänst. </p> <p>Anger att egenskaper och segment ska returneras inuti <code> JSON</code> svaret. </p> <p> 
+   <td colname="col2"> <p>Valfritt. Aktiverad på kundens begäran. Kontakta Adobe Audience Manager eller kundtjänst. </p> <p>Anger att egenskaper och segment ska returneras inuti <code> JSON</code> svaret. </p> <p> 
      <ul id="ul_8B936ACB18724681B959783421ACF026"> 
       <li id="li_792A6248F49141C0B4B214C754D5F5C5"> <p><code> d_cts=1</code> returnerar <a href="../../../reference/ids-in-aam.md"> äldre segment-ID</a> för segmenten. </p> </li>
       <li id="li_F304CA651F3C444A9A24576726925D87"> <p><code> d_cts=2</code> returnerar segment-ID:n för segmenten. </p> </li>
@@ -119,7 +122,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!UICONTROL DCS].
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>Anger Experience Cloud ID-uppsättningen och som används av <span class="keyword"> Experience Cloud</span> ID-tjänsten. Mer information om ECID finns i <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud Identity Service</a>. </p> </td> 
+   <td colname="col2"> <p>Anger det Experience Cloud-ID som anges och används av tjänsten <span class="keyword"> Experience Cloud</span> -ID. Mer information om ECID finns i <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
@@ -137,7 +140,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!UICONTROL DCS].
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_rs</code> </p> </td> 
-   <td colname="col2"> <p>Föråldrat. <code> d_rs</code> är ett reserverat attribut som används i den äldre integreringen mellan <span class="keyword"> Adobe Analytics</span> och <span class="keyword"> Audience Manager</span>. </p> <p>Vi rekommenderar att du inte skapar egenskaper som använder reserverade attribut. Adobe kan när som helst ändra reserverade attribut. </p> </td> 
+   <td colname="col2"> <p>Föråldrat. <code> d_rs</code> är ett reserverat attribut som används i den äldre integrationen mellan <span class="keyword"> Adobe Analytics</span> och <span class="keyword"> Audience Manager</span>. </p> <p>Vi rekommenderar att du inte skapar egenskaper som använder reserverade attribut. Adobe kan när som helst ändra reserverade attribut. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_rtbd=json</code> </p> </td> 
