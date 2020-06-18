@@ -5,9 +5,9 @@ seo-title: Översikt över prediktiva målgrupper
 solution: Audience Manager
 title: Audience Manager prediktiva målgrupper
 translation-type: tm+mt
-source-git-commit: 4df2a7536155d42133c0873ed4e3376eb24cba1a
+source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1261'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Som marknadsförare vill jag förutsäga vilken kundresa som besökarna på min 
 
 Som medieföretag vill jag kategorisera min publik så att jag kan sälja min annonsutrymme till premiumpriser samtidigt som jag erbjuder våra besökare relevanta annonser.
 
-## Hur prediktiva målgruppsmodeller fungerar
+## Så här fungerar [!UICONTROL Predictive Audiences] modeller {#how-predictive-audiences-models-work}
 
 När du skapar en [!UICONTROL Predictive Audiences] modell går du igenom tre steg:
 
@@ -82,14 +82,14 @@ Du kan välja vilken som helst av dina egna egenskaper eller segment för att de
 
 På samma sätt som för en personlig markering bör du välja ett varumärke eller segment som definierar målgruppen på ett sådant sätt att den har realtidsanvändare med många uppsättningar egenskaper, för klassificering i rätt profil.
 
-### Förutsägande målgrupper Modellutbildningsfas {#model-training}
+### [!UICONTROL Predictive Audiences] Modellutbildningsfas {#model-training}
 
 Innan algoritmen kan klassificera er förstapartsmålgrupp i rätt profiler måste den utbilda sig på era data.
 
 För varje personlighet som du definierar analyserar algoritmen sin respektive målgrupp och utvärderar eventuell realtids- och/eller varumärkesaktivitet för användarna de senaste 30 dagarna.
 Det här steget utförs en gång var 24:e timme för att ta hänsyn till förändringar hos er förstapartsmålgrupp.
 
-### Klassificeringsfas för modell av prediktiv publik {#model-classification}
+### [!UICONTROL Predictive Audiences] Modellklassificeringsfas {#model-classification}
 
 När en besökare som är en del av målgruppen visas i realtid utvärderar modellen om besökaren är en del av den definierade personligheten. För varje besökare som inte tillhör någon av personerna tilldelar modellen ett personligt kvalificeringsmoment.
 
@@ -109,7 +109,7 @@ Tänk på följande när du konfigurerar dina [!UICONTROL Predictive Audiences] 
 * Data från andra och tredje part stöds för närvarande inte i [!UICONTROL Predictive Audiences].
 * Målgruppsklassificering görs endast för förstapartsmålgrupper i realtid. Integrerad klassificering av förstahandsanvändare kan stödjas i en framtida uppdatering.
    >[!IMPORTANT]
-   > För närvarande visas [!UICONTROL Total Segment Population] värdet för dina prediktiva segment som 0, och [grupputgående dataöverföringar](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) stöds inte för prediktiva målgrupper. Detta beteende ändras i en framtida uppdatering.
+   > För närvarande visas [!UICONTROL Total Segment Population] värdet för dina prediktiva segment som 0, och [grupputgående dataöverföringar](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) stöds inte för [!UICONTROL Predictive Audiences]. Detta beteende ändras i en framtida uppdatering.
 * [!UICONTROL Predictive Audiences] utför målgruppsklassificering baserat på era egenskaper hos första part, från alla era egna datakällor.
 * Segmentutvärdering för [!UICONTROL Predictive Audiences] använder den standard **[!UICONTROL Profile Merge Rule]** som du definierade i ditt konto. Mer information om [!UICONTROL Profile Merge Rules] finns i den dedikerade [dokumentationen](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-overview.html).
 * Vissa egenskaper och segment stöds inte som baslinjer eller målgrupper. [!UICONTROL Predictive Audiences] modeller kan inte sparas när du väljer något av följande som baslinjer eller målgrupper:
@@ -118,7 +118,7 @@ Tänk på följande när du konfigurerar dina [!UICONTROL Predictive Audiences] 
    * Algoritmiska egenskaper.
    * Andra och tredje parts egenskaper.
 
-## Dataexportkontroller{#dec}
+## [!UICONTROL Data Export Controls] {#dec}
 
 Prediktiva segment som skapas av [!UICONTROL Predictive Audiences] modeller ärver [dataexportkontrollerna](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html) från följande datakällor:
 
@@ -129,7 +129,7 @@ De nya prediktiva egenskaperna och segmenten kommer att ha samma integritetsbegr
 
 Fastigheter som har ytterligare begränsningar som inte ingår i [!UICONTROL Predictive Audiences] segmentets integritetsbegränsningar exkluderas från utbildningsfasen och kommer inte att påverka modellen.
 
-## Rollbaserade åtkomstkontroller{#rbac}
+## [!UICONTROL Role-Based Access Controls] {#rbac}
 
 Vilka egenskaper och segment du väljer för personifiering och målgruppsklassificering omfattas av [rollbaserade åtkomstkontroller](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/administration/administration-overview.html)för Audience Manager.
 
