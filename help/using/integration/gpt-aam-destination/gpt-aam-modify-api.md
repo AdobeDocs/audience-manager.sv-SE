@@ -1,27 +1,30 @@
 ---
-description: Lägg till en if-programsats för att kontrollera om det finns cookies i Audience Manager innan du anropar metoden .setTargeting för Google Publisher.
-seo-description: Lägg till en if-programsats för att kontrollera om det finns cookies i Audience Manager innan du anropar metoden .setTargeting för Google Publisher.
+description: Lägg till en if-programsats för att kontrollera om det finns Audience Manager-cookies innan du anropar Google Publisher-taggen .setTargeting-metoden.
+seo-description: Lägg till en if-programsats för att kontrollera om det finns Audience Manager-cookies innan du anropar Google Publisher-taggen .setTargeting-metoden.
 seo-title: Ändra GPT-API-anropet setTargeting
 solution: Audience Manager
 title: Ändra GPT-API-anropet setTargeting
 uuid: 0cd38f30-5d29-4511-a779-d32587f1dafb
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 0%
 
 ---
 
 
 # Ändra GPT- `setTargeting` API-anropet {#modify-the-gpt-settargeting-api-call}
 
-Lägg till en if-sats för att kontrollera om det finns cookies i Audience Manager innan du anropar [!DNL Google Publisher Tag]`.setTargeting` metoden.
+Lägg till en if-sats för att kontrollera om det finns Audience Manager-cookies innan du anropar [!DNL Google Publisher Tag]`.setTargeting` metoden.
 
-## Sök efter Cookies för Audience Manager med en `IF` programsats
+## Check for Audience Manager Cookies With an `IF` Statement
 
 Metoden hämtar data från målcookien för Audience Manager och den unika användar-ID-cookien ( `.setTargeting` `aam_uuid`). Om `.setTargeting` anropas innan dessa cookies [!UICONTROL DIL] skrivs, eller om cookies är tomma, kan du se fel när sidan läses in. Du kan undvika detta genom att omsluta metoden i en `.setTargeting` `if` programsats som söker efter dessa cookies. Om de inte är angivna förhindrar den här programsatsen `.setTargeting` att anropa `AamGpt` funktionen.
 
 ### `IF` Exempel på utdragskod
 
-I det här exemplet är målcookie-namnet för Audience Manager `Sample`. Du anger det här namnet när du skapar målcookien i gränssnittet för Audience Manager. [!UICONTROL DIL] anger cookie-filen och namnet kan inte ändras `aam_uuid` .
+I det här exemplet är målcookie-namnet för Audience Manager `Sample`. Du anger det här namnet när du skapar målcookien i användargränssnittet i Audience Manager. [!UICONTROL DIL] anger cookie-filen och namnet kan inte ändras `aam_uuid` .
 
 ```js
 if(typeof AamGpt.getCookie("Sample") != "undefined"){ 
@@ -67,7 +70,7 @@ Definierar de nyckelvariabler som används i `if` programsatsen .
   <tr> 
    <td colname="col1"> <p> <code> AamGpt.getCookie </code> </p> </td> 
    <td colname="col2"> <p>Int </p> </td> 
-   <td colname="col3"> <p>Returnerar användar-ID:t för Audience Manager, t.ex. <code> 12345 </code>. </p> </td> 
+   <td colname="col3"> <p>Returnerar användar-ID för Audience Manager, t.ex. <code> 12345 </code>. </p> </td> 
   </tr>
  </tbody>
 </table>
@@ -75,5 +78,5 @@ Definierar de nyckelvariabler som används i `if` programsatsen .
 >[!MORELIKETHIS]
 >
 >* [Skapa ett GPT-mål](../../integration/gpt-aam-destination/gpt-aam-create-destination.md)
->* [Audience Manager Code för Google Publisher-taggar](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
+>* [Audience Manager Code for Google Publisher Tags](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
 
