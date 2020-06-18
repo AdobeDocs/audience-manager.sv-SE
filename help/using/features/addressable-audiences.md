@@ -8,14 +8,17 @@ title: Adresserbara målgrupper
 topic: DIL API
 uuid: 3eb1335a-6949-452b-b77a-697c22856cb3
 translation-type: tm+mt
-source-git-commit: b213a1ecde4c85dc66dada24dec602ed1d9b0332
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '2059'
+ht-degree: 0%
 
 ---
 
 
 # Mottagande målgrupp {#addressable-audiences}
 
-En översikt över funktionen Addressable Audience och användningsexempel.
+En översikt över [!UICONTROL Addressable Audience] funktionen och användningsexempel.
 
 ## Vad är en adresserbar publik? {#addressable-audience-description}
 
@@ -32,11 +35,11 @@ Funktionen [!UICONTROL Addressable Audiences] visar överlappningen mellan de m�
  </thead>
  <tbody> 
     <tr> 
-   <td colname="col1"> <p> <b>Audience Manager's Addressable Audience for a Destination</b> </p> </td> 
+   <td colname="col1"> <p> <b>Audience Manager Addressable Audience for a Destination</b> </p> </td> 
    <td colname="col2"> <p>Antal enheter som har interagerat med alla Audience Manager-kunder på plattformsnivå under rapportens kontrollperiod och som kan matchas med det valda målet. </p> <p>Det här måttet är användbart eftersom det visar dig: </p> <p> 
      <ul id="ul_67A82A40C7A64457822272B45D2817FC"> 
-      <li id="li_DAEFB565CE774F68AA29274A021F1E5A"> Storleken på den totala adresserbara målgrupp som <span class="keyword"> Audience Manager</span> kan nå på ett visst målmål. </li> 
-      <li id="li_AF26F88068CA44F7B5C4C42DE5E21055">Hur stor <span class="keyword"> Audience Manager</span> -profilpoolen är för en målplattform och deras målgrupper. </li> 
+      <li id="li_DAEFB565CE774F68AA29274A021F1E5A"> Storleken på den totala adresserbara målgrupp som <span class="keyword"> Audience Manager</span> kan nå på ett visst mål. </li> 
+      <li id="li_AF26F88068CA44F7B5C4C42DE5E21055">Hur stor <span class="keyword"> profilpoolen för Audience Manager</span> är för en målinriktningsplattform och deras målgrupper. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -64,7 +67,7 @@ Funktionen [!UICONTROL Addressable Audiences] visar överlappningen mellan de m�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Segmentadresserbar publik</b> </p> </td> 
-   <td colname="col2"> <p>Antalet användare som har tillhört segmentet under rapportens summeringsperiod och som har en aktiv ID-synkronisering på webbplatsen. Segmenten kan innehålla egna data från första part och data från andra part och tredje part via egenskaper som förvärvats i <a href="../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md"> Audience Marketplace</a>. </p> <p> <p>Tips: När det används med 1-dagars summeringsperiod kan det här måttet hjälpa dig att förstå segmentens aktuella status. Detta beror på att <span class="wintitle"> segmentadresserbara målgruppsmått</span> representerar de användare som stannade i ett segment under föregående dag. Kombinera detta med det faktum att <span class="keyword"> Audience Manager</span> uppdaterar <span class="wintitle"> adresserbara målgrupper</span> dagligen, och kombinerar denna mätnings- och uppslagsperiod och ger den senaste ögonblicksbilden av era segment. </p> </p> </td> 
+   <td colname="col2"> <p>Antalet användare som har tillhört segmentet under rapportens summeringsperiod och som har en aktiv ID-synkronisering på webbplatsen. Segmenten kan innehålla egna data från första part samt data från andra part och tredje part via egenskaper som förvärvats i <a href="../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md"> Audience Marketplace</a>. </p> <p> <p>Tips: När det används med 1-dagars summeringsperiod kan det här måttet hjälpa dig att förstå segmentens aktuella status. Detta beror på att <span class="wintitle"> segmentadresserbara målgruppsmått</span> representerar de användare som stannade i ett segment under föregående dag. Kombinera detta med det faktum att <span class="keyword"> Audience Manager</span> uppdaterar <span class="wintitle"> adresserbara målgrupper</span> dagligen, och kombinerar denna mätperiod och uppslagsperiod, som ger den senaste ögonblicksbilden av era segment. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Matchningsfrekvens för segment</b> </p> </td> 
@@ -81,13 +84,13 @@ Funktionen omvandlar det här abstrakta konceptet till mätbara data [!UICONTROL
 
 ![](assets/addressable-audiences-landing.png)
 
-De tre mätvärdena som du kan se på landningssidan för adresserbara målgrupper representerar:
+De tre mätvärdena som visas på [!UICONTROL Addressable Audiences] landningssidan är:
 
 | Mått | Beskrivning |
 ---------|----------|
-| **Adresserbar publik (enheter)** | Detta mått representerar den kundadresserbara målgruppen (som beskrivs i tabellen ovan) *under de senaste 30 dagarna.* |
-| **Matcha frekvens** | Det här måttet representerar den adresserbara publikens matchningsfrekvens (som beskrivs i tabellen ovan) *under de senaste 30 dagarna*. |
-| **Livstid adresserbar publik (enheter)** | Antal enheter som har interagerat med alla Audience Manager-kunder på plattformsnivå under rapportens kontrollperiod och som kan matchas med den här destinationen. Mer information finns i [Plattformsnivåstatistik](/help/using/features/addressable-audiences.md#platform-level-metrics) . |
+| **[!UICONTROL Addressable Audience (Device)]** | Detta mått representerar [!UICONTROL Customer Addressable Audience] (beskrivs i tabellen ovan) *för de senaste 30 dagarna.* |
+| **[!UICONTROL Match Rate]** | Detta mått representerar [!UICONTROL Addressable Audience Match Rate] (beskrivs i tabellen ovan) *de senaste 30 dagarna*. |
+| **[!UICONTROL Lifetime Addressable Audience (Device)]** | Antal enheter som har interagerat med alla [!DNL Audience Manager] kunder på plattformsnivå under rapportens kontrollperiod och som kan matchas med den här destinationen. Mer information finns i [Platform-nivåstatistik](/help/using/features/addressable-audiences.md#platform-level-metrics) . |
 
 Klicka på namnet på en server-till-server-destination för att visa dina adresserbara målgruppsdata. Observera att den här funktionen endast returnerar data för server-till-server-mål och att åtkomst kräver administratörsbehörighet.
 
@@ -95,7 +98,7 @@ Klicka på namnet på en server-till-server-destination för att visa dina adres
 
 Genom att granska dessa data kan du
 
-* **Prognos och planering:** Med [!UICONTROL Segment Addressable Audience] data får ni större detaljrikedom i de segment ni planerar att skicka till en målgrupp för målgruppsanpassning och aktivering.
+* **Prognos och planering:** [!UICONTROL Segment Addressable Audience] data ger er större detaljrikedom i de segment ni planerar att skicka till en målgrupp för målgruppsanpassning och aktivering.
 
 * **Prestandagranskningar:** Funktionen är också ett felsökningsverktyg [!UICONTROL Addressable Audiences] . Ni kan granska kampanjens resultat, förstå kampanjens räckvidd och dubbelkontrollera med målgrupps-/aktiveringspartners om ni inte ser de resultat ni förväntar er.
 
@@ -196,7 +199,7 @@ Dessa värden returnerar data för segmentmedlemskap. De ger en mer detaljerad o
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Segmentadresserbar publik</b> </p> </td> 
-   <td colname="col2"> <p>Antalet användare som har tillhört segmentet under rapportens summeringsperiod och som har en aktiv ID-synkronisering på webbplatsen. Segmenten kan innehålla egna data från första part och data från andra part och tredje part via egenskaper som förvärvats i <a href="../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md"> Audience Marketplace</a>. </p> <p> <p>Tips: När det används med 1-dagars summeringsperiod kan det här måttet hjälpa dig att förstå segmentens aktuella status. Detta beror på att <span class="wintitle"> segmentadresserbara målgruppsmått</span> representerar de användare som stannade i ett segment under föregående dag. Kombinera detta med det faktum att <span class="keyword"> Audience Manager</span> uppdaterar <span class="wintitle"> adresserbara målgrupper</span> dagligen, och kombinerar denna mätnings- och uppslagsperiod och ger den senaste ögonblicksbilden av era segment. </p> </p> </td> 
+   <td colname="col2"> <p>Antalet användare som har tillhört segmentet under rapportens summeringsperiod och som har en aktiv ID-synkronisering på webbplatsen. Segmenten kan innehålla egna data från första part samt data från andra part och tredje part via egenskaper som förvärvats i <a href="../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md"> Audience Marketplace</a>. </p> <p> <p>Tips: När det används med 1-dagars summeringsperiod kan det här måttet hjälpa dig att förstå segmentens aktuella status. Detta beror på att <span class="wintitle"> segmentadresserbara målgruppsmått</span> representerar de användare som stannade i ett segment under föregående dag. Kombinera detta med det faktum att <span class="keyword"> Audience Manager</span> uppdaterar <span class="wintitle"> adresserbara målgrupper</span> dagligen, och kombinerar denna mätperiod och uppslagsperiod, som ger den senaste ögonblicksbilden av era segment. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Total segmentpopulation</b> </p> </td> 
@@ -209,9 +212,9 @@ Dessa värden returnerar data för segmentmedlemskap. De ger en mer detaljerad o
  </tbody> 
 </table>
 
-### Plattformsnivåstatistik {#platform-level-metrics}
+### Platform Level Metrics {#platform-level-metrics}
 
-Det här måttet returnerar data om aktiviteter som samlats in av alla Audience Manager-kunder. De kan ge en bredare bild av kundens målgrupp jämfört med de samlade Audience Manager-kunderna.
+Det här måttet returnerar data om aktiviteter som samlats in för alla [!DNL Audience Manager] kunder. De kan ge en bredare bild av kundens målgrupp jämfört med de samlade [!DNL Audience Manager] kunderna.
 
 <table id="table_B6654D9858FF46AF95B1C181D4608D26"> 
  <thead> 
@@ -222,11 +225,11 @@ Det här måttet returnerar data om aktiviteter som samlats in av alla Audience 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>Audience Manager's Addressable Audience</b> </p> </td> 
+   <td colname="col1"> <p> <b>Audience Manager Addressable Audience</b> </p> </td> 
    <td colname="col2"> <p>Antal enheter som har interagerat med alla Audience Manager-kunder på plattformsnivå under rapportens kontrollperiod och som kan matchas med det valda målet. </p> <p>Det här måttet är användbart eftersom det visar dig: </p> <p> 
      <ul id="ul_67A82A40C7A64457822272B45D2817FC"> 
-      <li id="li_DAEFB565CE774F68AA29274A021F1E5A"> Storleken på den totala adresserbara målgrupp som <span class="keyword"> Audience Manager</span> kan nå på ett visst målmål. </li> 
-      <li id="li_AF26F88068CA44F7B5C4C42DE5E21055">Hur stor <span class="keyword"> Audience Manager</span> -profilpoolen är för en målplattform och deras målgrupper. </li> 
+      <li id="li_DAEFB565CE774F68AA29274A021F1E5A"> Storleken på den totala adresserbara målgrupp som <span class="keyword"> Audience Manager</span> kan nå på ett visst mål. </li> 
+      <li id="li_AF26F88068CA44F7B5C4C42DE5E21055">Hur stor <span class="keyword"> profilpoolen för Audience Manager</span> är för en målinriktningsplattform och deras målgrupper. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -256,11 +259,11 @@ Vanliga element som ligger bakom låga [!UICONTROL Addressable Audience] matchni
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Mobiltrafik</b> </p> </td> 
-   <td colname="col2"> <p>De flesta server-till-server-integreringar är beroende av synkroniseringsprocesser som underlättas av cookies från tredje part. I mobilmiljöer används dock inte cookies från tredje part. Därför kan det verka som om era adresserbara målgrupper är låga jämfört med segmentstorleken. </p> <p>Från och med januari 2018 kan du aktivera mobila målgrupper i samma Google- och Adobe Advertising Cloud-destinationer som konfigurerats för cookie-baserade målgrupper. Detta innebär att du kan skicka segment med kombinerat medlemskap för cookie och mobilt ID till dina Google- och Advertising Cloud-mål, men tänk på att adresserbara målgrupper bara visar överlappningen mellan cookie-ID:n och destinationer. Audience Manager skickar 100 % av de mobila målgrupperna till destinationer, men de mobila målgrupperna mäts inte av det adresserbara målgruppsmåttet. </p> <p> <p><b>Obs</b>:  Ta till exempel ett segment med en befolkning på 1 000 000. Om du mappar det här segmentet till ett Google- eller Adobe Advertising Cloud-mål kanske du ser en adresserbar publik på 700 000 enheter och en matchningsfrekvens på 70 %. Medlemskapet på 700 000 består av cookie-ID:n som har en ID-synkronisering med målet. Din adresserbara publik kan faktiskt vara mycket högre, eftersom adresserbara mobil-ID:n inte visas i det här måttet. </p> </p> </td> 
+   <td colname="col2"> <p>De flesta server-till-server-integreringar är beroende av synkroniseringsprocesser som underlättas av cookies från tredje part. I mobilmiljöer används dock inte cookies från tredje part. Därför kan det verka som om era adresserbara målgrupper är låga jämfört med segmentstorleken. </p> <p>Från och med januari 2018 kan du aktivera mobila målgrupper på samma Google- och Adobe Advertising Cloud-destinationer som konfigurerats för cookie-baserade målgrupper. Detta innebär att du kan skicka segment med kombinerat medlemskap för cookie och mobilt ID till dina Google- och Advertising Cloud-destinationer, men tänk på att adressater bara visar överlappningen mellan cookie-ID:n och destinationer. Audience Manager skickar 100 % av de mobila målgrupperna till destinationer, men de mobila målgrupperna mäts inte av det adresserbara målgruppsmåttet. </p> <p> <p><b>Obs</b>:  Ta till exempel ett segment med en befolkning på 1 000 000. Om du mappar det här segmentet till ett Google- eller Adobe Advertising Cloud-mål kan du se en adresserbar publik på 700 000 enheter och en matchningsfrekvens på 70 %. Medlemskapet på 700 000 består av cookie-ID:n som har en ID-synkronisering med målet. Din adresserbara publik kan faktiskt vara mycket högre, eftersom adresserbara mobil-ID:n inte visas i det här måttet. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Safari-trafik</b> </p> </td> 
-   <td colname="col2"> <p>Safari blockerar cookies från tredje part. Detta förhindrar Audience Manager från att synkronisera ID:n med målet. I och med introduktionen av <a href="https://webkit.org/blog/8311/intelligent-tracking-prevention-2-0/" format="https" scope="external"> ITP 2.0</a>kan ni förvänta er att era adresserbara målgrupper inte inkluderar Safari-användare. </p> </td>
+   <td colname="col2"> <p>Safari blockerar cookies från tredje part. Detta förhindrar att Audience Manager synkroniserar ID:n med målet. I och med introduktionen av <a href="https://webkit.org/blog/8311/intelligent-tracking-prevention-2-0/" format="https" scope="external"> ITP 2.0</a>kan ni förvänta er att era adresserbara målgrupper inte inkluderar Safari-användare. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Spårade mediaexponeringar</b> </p> </td> 
@@ -275,4 +278,4 @@ Förutom att använda matchningsfrekvenser kan du även använda [!UICONTROL Add
 
 <!-- addressable-audiences-troubleshooting.xml -->
 
-Anta att du skickar ett segment till ett mål och att det visar låga rapporteringssiffror. Om du kontrollerar [!UICONTROL Addressable Audience] resultatet visas det om det är ett tekniskt problem eller om det bara är ett fall med låg matchningsfrekvens. En låg matchningsfrekvens visar att målplatsen inte är så bra för de valda segmenten. Men en skillnad i det totala antalet adresserbara målgruppsnummer mellan Audience Manager och destinationen tyder på ett integrerings-, synkroniserings- eller annat tekniskt problem. Kontakta i så fall din kontoansvarige.
+Anta att du skickar ett segment till ett mål och att det visar låga rapporteringssiffror. Om du kontrollerar [!UICONTROL Addressable Audience] resultatet visas det om det är ett tekniskt problem eller om det bara är ett fall med låg matchningsfrekvens. En låg matchningsfrekvens visar att målplatsen inte är så bra för de valda segmenten. En skillnad i det totala antalet adresserbara målgruppsnummer mellan [!DNL Audience Manager] och målet innebär emellertid ett integrerings-, synkroniserings- eller annat tekniskt problem. Kontakta i så fall din kontoansvarige.
