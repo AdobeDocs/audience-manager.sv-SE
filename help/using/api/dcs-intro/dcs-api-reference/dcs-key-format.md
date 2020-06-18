@@ -6,14 +6,17 @@ solution: Audience Manager
 title: Formatera nyckelvärdepar i DCS-anrop
 uuid: af02f2a1-4388-4074-ab4e-66ee82023f1c
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 0%
 
 ---
 
 
 # Formatera nyckelvärdepar i DCS-anrop {#formatting-key-value-pairs-in-dcs-calls}
 
-När användaren gör ett anrop tar [!UICONTROL DCS] användaren emot nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
+När användaren gör ett anrop tar [!DNL DCS] användaren emot nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
 
 ## Standardpar och serialiserade nyckelvärdepar {#standard-serialized}
 
@@ -28,7 +31,7 @@ När användaren gör ett anrop tar [!UICONTROL DCS] användaren emot nyckelvär
  <tbody> 
   <tr> 
    <td colname="col1"> <b>Standard</b> </td> 
-   <td colname="col2"> <p>Ett standardpar med nyckelvärden består av en enda nyckel och ett värde. I den här strukturen ordnas data i separata nyckelvärdepar. Varje nyckel anges explicit, även när den används igen för att definiera ett annat värde. Detta är det vanligaste sättet att skicka data till DCS. </p> </td>
+   <td colname="col2"> <p>Ett standardpar med nyckelvärden består av en enda nyckel och ett värde. I den här strukturen ordnas data i separata nyckelvärdepar. Varje nyckel anges uttryckligen, även när den används igen för att definiera ett annat värde. Detta är det vanligaste sättet att skicka data till DCS. </p> </td>
    <td colname="col3"> <code> key1=val1&amp;key2=val2&amp;key3=val3</code> </td>
   </tr>
   <tr> 
