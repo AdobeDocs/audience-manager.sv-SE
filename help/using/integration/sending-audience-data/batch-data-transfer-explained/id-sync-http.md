@@ -1,23 +1,26 @@
 ---
-description: Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan en leverantör och Audience Manager. ID-synkroniseringen kan börja när du har skickat din datataxonomi till Audience Manager.
-seo-description: Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan en leverantör och Audience Manager. ID-synkroniseringen kan börja när du har skickat din datataxonomi till Audience Manager.
+description: Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan en leverantör och Audience Manager. Synkronisering av ID kan påbörjas när du har skickat din datataxonomi till Audience Manager.
+seo-description: Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan en leverantör och Audience Manager. Synkronisering av ID kan påbörjas när du har skickat din datataxonomi till Audience Manager.
 seo-title: ID-synkronisering för inkommande dataöverföringar
 solution: Audience Manager
 title: ID-synkronisering för inkommande dataöverföringar
 uuid: 037e74a6-acfd-4cef-b693-16b7aaa8e976
 translation-type: tm+mt
-source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '480'
+ht-degree: 3%
 
 ---
 
 
 # ID-synkronisering för inkommande dataöverföringar{#id-synchronization-for-inbound-data-transfers}
 
-Beskriver syntaxen och parametrarna som används i det första `HTTP` anropet för att synkronisera användar-ID:n mellan en leverantör och Audience Manager. ID-synkroniseringen kan börja när du har skickat din datataxonomi till Audience Manager.
+Beskriver syntaxen och parametrarna som används i det första `HTTP` anropet för att synkronisera användar-ID mellan en leverantör och [!DNL Audience Manager]. ID-synkroniseringen kan börja när du har skickat din datataxonomi till [!DNL Audience Manager].
 
 <!-- c_id_sync_in.xml -->
 
-ID-synkronisering är det första steget i den inkommande, asynkrona dataöverföringsprocessen. I det här steget jämför Audience Manager och leverantören ID:n för sina respektive webbplatsbesökare. En kund kan till exempel känna en användare med ID 123. [!DNL Audience Manager] Din datapartner kan dock identifiera den här användaren med ID 456. Med synkroniseringsprocessen kan [!DNL Audience Manager] och en dataleverantör stämma av dessa olika ID:n och identifiera användare i sina respektive system. När allt är klart [!DNL Audience Manager] och din tredjepartspartner bör ha motsvarande ID:n för varje unik användare som visas i våra nätverk.
+ID-synkronisering är det första steget i den inkommande, asynkrona dataöverföringsprocessen. I det här steget jämför [!DNL Audience Manager] och leverantören ID:n för sina respektive webbplatsbesökare. En kund kan till exempel känna en användare med ID 123. [!DNL Audience Manager] Din datapartner kan dock identifiera den här användaren med ID 456. Med synkroniseringsprocessen kan [!DNL Audience Manager] och en dataleverantör stämma av dessa olika ID:n och identifiera användare i sina respektive system. När allt är klart [!DNL Audience Manager] och din tredjepartspartner bör ha motsvarande ID:n för varje unik användare som visas i våra nätverk.
 
 Du kan använda följande metoder för att hämta data till [!DNL Audience Manager]:
 
