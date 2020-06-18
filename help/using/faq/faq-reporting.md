@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Vanliga frågor om rapportering
 uuid: 78cd6c86-8a4a-4748-ab71-b6e8d6078c94
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 0%
 
 ---
 
@@ -80,13 +83,13 @@ Se [Trait and Segment Population Data in Segment Builder](../features/segments/s
 
 **Jag har inkommande en fil och mitt inkommande kvitto visar ett stort antal poster som har bearbetats, men rapporteringen visar ett mycket lägre antal. Varför?**
 
-I serverdelen kopplas inbäddade data endast till användare som fortfarande är aktiva i AAM (användaren måste ha haft senaste [!UICONTROL DCS] aktivitet under de senaste 120 dagarna). Om du lägger in data för användare som redan har gått ut i [!DNL Audience Manager]kan det därför [!UICONTROL Inbound] tala om för dig att ett visst antal användarposter har registrerats, men om dessa användare inte har haft någon aktivitet nyligen, kommer dessa data att tas bort när de når oss [!UICONTROL User Profile Store] och rapporteringen kommer att visa detta.
+I serverdelen kopplas inbäddade data endast till användare som fortfarande är aktiva i AAM (användaren måste ha haft senaste [!DNL DCS] aktivitet under de senaste 120 dagarna). Om du lägger in data för användare som redan har gått ut i [!DNL Audience Manager]kan det därför [!UICONTROL Inbound] tala om för dig att ett visst antal användarposter har registrerats, men om dessa användare inte har haft någon aktivitet nyligen, kommer dessa data att tas bort när de når oss [!UICONTROL User Profile Store] och rapporteringen kommer att visa detta.
 
 <br> 
 
-**Varför är de unika egenskaperna för min enhet-buren traits mycket högre än det totala antalet onboardposter?**
+**Varför är de unika egenskaperna för min typ av butik mycket högre än det totala antalet onboardposter?**
 
-Om du bäddar in en fil för en leverantör av data mellan olika enheter som har ett kund-ID, utförs en sökning i Audience Manager för att hämta alla enhets-ID:n som är kopplade till varje kund-ID. Audience Manager tilldelar sedan de ingående egenskaperna till det enhets-ID som är kopplat till kund-ID:t.
+Om du bäddar in en fil för en leverantör av data mellan olika enheter som är avstängd från kund-ID:t, utförs en sökning i Audience Manager för att hämta alla enhets-ID:n som är kopplade till varje kund-ID:n. Audience Manager tilldelar sedan de ingående egenskaperna till det enhets-ID som är kopplat till kund-ID:t.
 
 Anta att du har 100 poster ombord. För vart och ett av dessa kund-ID har AAM i genomsnitt kopplat tre enhets-ID. Det innebär att det varumärke som introducerades tilldelas 300 enhets-ID:n.
 
