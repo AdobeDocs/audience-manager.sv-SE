@@ -1,21 +1,24 @@
 ---
-description: På den här sidan beskrivs information som tillhandahålls direkt av våra partner, allt eftersom den blir tillgänglig, tillsammans med eventuella konsekvenser som rör din Audience Manager-praxis. De viktigaste konsekvenserna för partner som gör dessa uppdateringar är resultatet av GDPR (General Data Protection Regulation), som trädde i kraft den 25 maj 2018, och den nya IAB GDPR-ramen för öppenhet och samtycke (IAB Framework).
-seo-description: På den här sidan beskrivs information som tillhandahålls direkt av våra partner, allt eftersom den blir tillgänglig, tillsammans med eventuella konsekvenser som rör din Audience Manager-praxis. De viktigaste konsekvenserna för partner som gör dessa uppdateringar är resultatet av GDPR (General Data Protection Regulation), som trädde i kraft den 25 maj 2018, och den nya IAB GDPR-ramen för öppenhet och samtycke (IAB Framework).
+description: På den här sidan finns information som våra partners lämnar direkt, allt eftersom den blir tillgänglig, tillsammans med eventuella konsekvenser för er praxis i Audience Manager. De viktigaste konsekvenserna för partner som gör dessa uppdateringar är resultatet av GDPR (General Data Protection Regulation), som trädde i kraft den 25 maj 2018, och den nya IAB GDPR-ramen för öppenhet och samtycke (IAB Framework).
+seo-description: På den här sidan finns information som våra partners lämnar direkt, allt eftersom den blir tillgänglig, tillsammans med eventuella konsekvenser för er praxis i Audience Manager. De viktigaste konsekvenserna för partner som gör dessa uppdateringar är resultatet av GDPR (General Data Protection Regulation), som trädde i kraft den 25 maj 2018, och den nya IAB GDPR-ramen för öppenhet och samtycke (IAB Framework).
 seo-title: GDPR-överväganden för destinationer
 solution: Audience Manager
 title: GDPR-överväganden för destinationer
 uuid: e8a40060-086c-4f03-b48c-9c903acb7891
 translation-type: tm+mt
-source-git-commit: 48d2060df55a693a768e956f88a5a03414435ba9
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 0%
 
 ---
 
 
 # GDPR-överväganden för destinationer{#gdpr-considerations-for-destinations}
 
-På den här sidan beskrivs information som tillhandahålls direkt av våra partner, allt eftersom den blir tillgänglig, tillsammans med eventuella konsekvenser som rör din Audience Manager-praxis. De viktigaste konsekvenserna för partner som gör dessa uppdateringar är resultatet av GDPR (General Data Protection Regulation), som trädde i kraft den 25 maj 2018, och den nya IAB GDPR-ramen för öppenhet och samtycke (IAB Framework).
+På den här sidan finns information som våra partners lämnar direkt, allt eftersom den blir tillgänglig, tillsammans med eventuella konsekvenser för er praxis i Audience Manager. De viktigaste konsekvenserna för partner som gör dessa uppdateringar är resultatet av GDPR (General Data Protection Regulation), som trädde i kraft den 25 maj 2018, och den nya IAB GDPR-ramen för öppenhet och samtycke (IAB Framework).
 
-Adobe-partners äger sina affärsprocesser och kan besluta att uppdatera integrationskraven med Audience Manager då och då. Vi arbetar aktivt med vårt partnersystem i Audience Manager för att hålla kunderna informerade om förändringar.
+Adobe-partners äger sina affärsprocesser och kan besluta att uppdatera integrationskraven med Audience Manager då och då. Vi arbetar aktivt med vårt partnerekosystem i Audience Manager för att hålla våra kunder informerade om förändringar.
 
 <!-- ## Audience Manager Partner Updates - ID Syncs {#partner-updates-id-syncs}
 
@@ -53,7 +56,7 @@ Some partners, as listed in the table below, have changed their integration requ
  </tbody> 
 </table> -->
 
-## Gränssnittsuppdatering för Audience Manager - integrering av Yahoo/Oath/DataX {#ui-update}
+## Uppdatering av användargränssnittet i Audience Manager - integrering av Yahoo/Oath/DataX {#ui-update}
 
 Förutom uppdateringarna av IAB Framework som nämns ovan har Yahoo/Oath/DataX lagt till nya parametrar, **gdpr** och **gdpr_mode**, i sina API:er för taxonomi och Audience. Deras parametrar informerar Yahoo/Oath/DataX om att de har behörighet att bearbeta ett visst segment som en dataprocessor eller som en Data Controller. Därför måste Audience Manager-kunder som skickar segment till ett Yahoo/Oath/DataX-mål ange lämplig parameter (processor eller styrenhet) utifrån deras avtal med Oath.
 
