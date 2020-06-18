@@ -5,9 +5,9 @@ seo-title: Översikt över och användningsfall för personbaserade destinatione
 solution: Audience Manager
 title: Översikt och användningsexempel
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Ni kan använda [!DNL People-Based Destinations] för att segmentera och inrikta
 
 [!DNL People-Based Destinations] är en integrering av premiumprogram i Audience Manager. Kontakta din Adobe-representant för att få tillgång till denna premiumfunktion.
 
-## Varför ska du använda personbaserade mål? {#why-use}
+## Varför ska du använda [!UICONTROL People-Based Destinations] {#why-use}
 
 **Ge era kunder enhetliga flerkanalsupplevelser genom att hantera hela er målgruppssegmentering inifrån Audience Manager.**
 
