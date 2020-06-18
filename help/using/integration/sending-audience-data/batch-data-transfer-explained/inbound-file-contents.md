@@ -6,12 +6,15 @@ solution: Audience Manager
 title: Innehållssyntax för inkommande datafil, ogiltiga tecken, variabler och exempel
 uuid: 88699b29-1502-4183-a9a4-be70692a02bb
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '1245'
+ht-degree: 0%
 
 ---
 
 
-# Innehåll i inkommande datafil: Syntax, ogiltiga tecken, variabler och exempel{#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
+# Innehåll i inkommande datafil: Syntax, ogiltiga tecken, variabler och exempel {#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
 
 Obligatoriska fält, syntax och regler som du ska följa när du formaterar en inkommande trait-datafil.
 
@@ -29,7 +32,8 @@ Information om andra godkända filinnehållsformat finns i [Anpassade partnerint
 >
 >Vi har en gräns på 200 rader som vi kan behandla för varje användar-ID som skickas i den inkommande datafilen. Om du till exempel skickar 300 rader för ett användar-ID behålls de första 200 raderna och de ytterligare 100 raderna tas bort. I exemplet nedan är du bra eftersom du skickar tre rader vardera för användar-ID 1 och användar-ID 2. Vi har ingen begränsning för hur många traits- eller key-value-par du får med på en rad.
 >
->```
+>
+```
 ><user ID1><TAB><trait ID>,<trait ID>,<trait ID>
 ><user ID1><TAB><trait ID>,<trait ID>,<trait ID>
 ><user ID1><TAB><trait ID>,<trait ID>,<trait ID>
@@ -55,7 +59,7 @@ Tabellen listar och definierar de variabler som används i en korrekt formaterad
    <td colname="col2"> <p>Ett användar-ID kan vara: </p> <p> 
      <ul id="ul_25168355353545A9A049D0083403025E"> 
       <li id="li_23829FE2F6464E33859B3E388FCD106B">Ett unikt användar-ID som tilldelats av <span class="keyword"> Audience Manager </span> ( <a href="../../../reference/ids-in-aam.md"> Audience Manager UUID </a>). </li> 
-      <li id="li_76961F20DD3F4554AD2ADFB773F975DB">Ett unikt användar-ID som tilldelats i CRM-systemet ( <a href="../../../reference/ids-in-aam.md"> DPUUID i Audience Manager </a>). </li> 
+      <li id="li_76961F20DD3F4554AD2ADFB773F975DB">Ett unikt användar-ID som tilldelats i CRM-systemet ( <a href="../../../reference/ids-in-aam.md"> DPUUID, i Audience Manager </a>). </li> 
       <li id="li_52ABF6CCBCD147E2BD84D056F7461BA0">Ett mobilt Android- eller iOS-enhets-ID i dess ursprungliga oförändrade form som det visas i det mobila operativsystemet. </li> 
      </ul> </p> <p>För mobil-ID: </p> <p> 
      <ul id="ul_717A17E11565427E9E2D9D7554BB231B"> 
@@ -69,7 +73,7 @@ Tabellen listar och definierar de variabler som används i en korrekt formaterad
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>trait ID </i> </code> </p> </td> 
-   <td colname="col2"> <p>Audience Manager- <span class="keyword"></span> trait-ID. Vi ber dig att <i>endast inkludera anpassade egenskaper</i> i inkommande datafiler. Vi bearbetar inga andra typer av egenskaper vid inkommande dataöverföring. </p> <p> <p>Obs!  Du hittar ditt Trait ID med metoden GET som returnerar information om alla dina egenskaper. Mer information finns i <a href="../../../api/rest-api-main/api-traits.md"> Spåra API-metoder </a>. </p> </p> </td> 
+   <td colname="col2"> <p>ID för <span class="keyword"> Audience Manager- </span> trait. Vi ber dig att <i>endast inkludera anpassade egenskaper</i> i inkommande datafiler. Vi bearbetar inga andra typer av egenskaper vid inkommande dataöverföring. </p> <p> <p>Obs!  Du hittar ditt Trait ID med metoden GET som returnerar information om alla dina egenskaper. Mer information finns i <a href="../../../api/rest-api-main/api-traits.md"> Spåra API-metoder </a>. </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -88,11 +92,11 @@ I följande tabell beskrivs de prefix som identifierar trait-namn eller ID:n i e
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> d_sid= </code> </p> </td> 
-   <td colname="col2"> <p>Prefixet talar om för vårt system att ID:t är ett <code> d_sid </code> Audience Manager- <span class="keyword"> </span> trait-ID. Detta är samma ID som visas i användargränssnittet. Du kan också returnera trait ID:n med API- <code> GET </code> metoden. Se <a href="../../../api/rest-api-main/api-traits.md"> Programmeringsmetoder för AIR </a>. </p> </td>
+   <td colname="col2"> <p>Prefixet talar om för vårt system att ID:t är ett <code> d_sid </code> Audience Manager- <span class="keyword"> </span> ID. Detta är samma ID som visas i användargränssnittet. Du kan också returnera trait ID:n med API- <code> GET </code> metoden. Se <a href="../../../api/rest-api-main/api-traits.md"> Programmeringsmetoder för AIR </a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p> <code> d_unsid= </code> </p> </td> 
-   <td colname="col2"> <p>Data som har prefixats med <code> d_unsid </code> tar bort användare från den egenskapen. Prefixet <code> d_unsid </code> ignoreras i en <code> overwrite </code> fil. </p> <p>Prefixet talar om för vårt system att ID:t är ett <code> d_unsid= </code> Audience Manager- <span class="keyword"> </span> trait-ID. Detta är samma ID som visas i användargränssnittet. Du kan också returnera trait ID:n med API- <code> GET </code> metoden. Se <a href="../../../api/rest-api-main/api-traits.md"> Programmeringsmetoder för AIR </a>. </p> </td>
+   <td colname="col2"> <p>Data som har prefixats med <code> d_unsid </code> tar bort användare från den egenskapen. Prefixet <code> d_unsid </code> ignoreras i en <code> overwrite </code> fil. </p> <p>Prefixet talar om för vårt system att ID:t är ett <code> d_unsid= </code> Audience Manager- <span class="keyword"> </span> ID. Detta är samma ID som visas i användargränssnittet. Du kan också returnera trait ID:n med API- <code> GET </code> metoden. Se <a href="../../../api/rest-api-main/api-traits.md"> Programmeringsmetoder för AIR </a>. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ic= </code> </p> </td> 
@@ -279,7 +283,7 @@ I tabellen nedan visas exempel på hur du formaterar dina inkommande filer, bero
 
 ### Exempel 1 {#example-1}
 
-Använd trait ID:n för att skicka information om kvalificering för egenskaper för Audience Manager UUID:n.
+Använd trait ID:n för att skicka information om trait-kvalificering för [!DNL Audience Manager] [!DNL UUIDs].
 
 ```
 59767559181262060060278870901087098252 <TAB> d_sid=24, d_sid=26, d_sid=27
@@ -287,7 +291,7 @@ Använd trait ID:n för att skicka information om kvalificering för egenskaper 
 
 ### Exempel 2 {#example-2}
 
-Använd trait ID:n för att skicka information om kvalificeringsfel för Audience Manager UUID:n.
+Använd trait ID:n för att skicka information om diskvalificering av trait för [!DNL Audience Manager] [!DNL UUIDs].
 
 ```
 59767559181262060060278870901087098252 <TAB> d_unsid=24, d_unsid=26, d_unsid=27
@@ -307,7 +311,7 @@ eller
 
 ### Exempel 3 {#example-3}
 
-Skicka i nyckelvärdepar för att lägga till kvalificeringsinformation för Audience Manager UUID:n.
+Skicka i nyckelvärdepar för att lägga till information om trait-kvalificering för [!DNL Audience Manager] [!DNL UUIDs].
 
 ```
 59767559181262060060278870901087098252 <TAB> product = tablet, product = phone
@@ -321,7 +325,7 @@ eller
 
 ### Exempel 4 {#example-4}
 
-Använd prefixet ic för att skicka information om kvalificering för egenskaper för Audience Manager UUID:n.
+Använd prefixet ic för att skicka information om kvalificering för [!DNL Audience Manager][!DNL UUIDs].
 
 ```
 59767559181262060060278870901087098252 <TAB> 30608,50354,50338,50352,30626
@@ -335,7 +339,7 @@ eller
 
 ### Exempel 5 {#example-5}
 
-Använd trait ID:n för att skicka information om kvalificering för egenskaper för Android-enheter.
+Använd trait ID:n för att skicka information om kvalificering för [!DNL Android] enheter.
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -343,7 +347,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
 
 ### Exempel 6 {#example-6}
 
-Använd trait ID:n för att skicka information om kvalificeringsfel för Android-enheter.
+Använd trait ID:n för att skicka information om diskvalificering av trait för [!DNL Android] enheter.
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -363,7 +367,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 24:-1, 26:-1, 27:-1
 
 ### Exempel 7 {#example-7}
 
-Skicka i nyckelvärdepar för att lägga till kvalificeringsinformation för Android-enheter.
+Skicka i nyckelvärdepar för att lägga till information om kvalificering för [!DNL Android] enheter.
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> product = tablet, product = phone
@@ -377,7 +381,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> "product" = "tablet", "product" = "ph
 
 ### Exempel 8 {#example-8}
 
-Använd prefixet ic för att skicka information om kvalificering för egenskaper för Android-enheter.
+Använd prefixet ic för att skicka information om kvalificering för [!DNL Android] enheter.
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 30608,50354,50338,50352,30626
@@ -391,7 +395,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Exempel 9 {#example-9}
 
-Använd trait ID:n för att skicka information om kvalificering för iOS-enheter.
+Använd trait ID:n för att skicka information om kvalificering för [!DNL iOS] enheter.
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -399,7 +403,7 @@ Använd trait ID:n för att skicka information om kvalificering för iOS-enheter
 
 ### Exempel 10 {#example-10}
 
-Använd trait ID:n för att skicka information om kvalificeringsfel för iOS-enheter.
+Använd trait ID:n för att skicka information om diskvalificering av trait för [!DNL iOS] enheter.
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -417,9 +421,9 @@ eller
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> 24:-1, 26:-1, 27:-1
 ```
 
-### Exempel 10 {#example-11}
+### Exempel 11 {#example-11}
 
-Skicka i nyckelvärdepar för att lägga till kvalificeringsinformation för iOS-enheter.
+Skicka i nyckelvärdepar för att lägga till information om kvalificering för [!DNL iOS] enheter.
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> product = tablet, product = phone
@@ -433,7 +437,7 @@ eller
 
 ### Exempel 12 {#example-12}
 
-Använd prefixet ic för att skicka information om kvalificering för iOS-enheter.
+Använd prefixet ic för att skicka information om kvalificering för [!DNL iOS] enheter.
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> 30608,50354,50338,50352,30626
@@ -447,15 +451,15 @@ eller
 
 ### Exempel 13 {#example-13}
 
-Använd trait ID:n för att skicka information om kvalificering av egenskaper för DPUUID:n.
+Använd trait ID:n för att skicka information om [!DNL DPUUIDs]trait-kvalificering.
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
 ```
 
-### Exempel 14 {#example-14}
+### Exempel 15 {#example-14}
 
-Använd trait ID:n för att skicka information om kvalificeringsfel för DPUID:n.
+Använd trait ID:n för att skicka information om diskvalificering av trait för [!DNL DPUUIDs].
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -475,7 +479,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 24:-1, 26:-1, 27:-1
 
 ### Exempel 15 {#example-15}
 
-Skicka in nyckelvärdepar för att lägga till information om kvalificering för egenskaper för DPUID.
+Skicka i nyckelvärdepar för att lägga till information om trait-kvalificering för [!DNL DPUUIDs].
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> product = tablet, product = phone
@@ -489,7 +493,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> "product" = "tablet", "product" = 
 
 ### Exempel 16 {#example-16}
 
-Använd prefixet ic för att skicka information om kvalificering av egenskaper för DPUID:n.
+Använd prefixet för att skicka information om `ic` trait-kvalificering för [!DNL DPUUIDs].
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 30608,50354,50338,50352,30626
