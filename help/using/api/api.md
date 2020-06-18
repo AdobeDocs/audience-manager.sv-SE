@@ -7,14 +7,17 @@ solution: Audience Manager
 title: API och SDK-kod
 uuid: bf801e84-f914-4efd-8807-c4972474894a
 translation-type: tm+mt
-source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '79'
+ht-degree: 0%
 
 ---
 
 
 # API och SDK-kod {#api-and-sdk-code}
 
-[!DNL API]s och verktyg som gör att du kan arbeta programmatiskt med Audience Manager.
+[!DNL API]och verktyg som gör att du kan arbeta programmatiskt med [!DNL Audience Manager].
 
 >[!NOTE]
 >
