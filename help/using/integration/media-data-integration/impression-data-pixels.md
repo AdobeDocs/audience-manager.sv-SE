@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Samla in data för kampanjexponering via pixelanrop
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: b1d953837766f5822f5ba0246f7e10042c6f1072
+source-git-commit: aefd0a0798797b8bbe9cadc1af9f2e86e772bb4c
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 17%
@@ -26,7 +26,7 @@ Den här metoden kallas ofta&quot;pixelering av den kreativa&quot;. Dessa datapu
 >
 >Textformaten (`monospaced text`, *kursiv*, parenteser `[ ]` `( )` etc.) anger kodelement och alternativ. Mer information finns i [Formatkonventioner för kod- och textelement](../../reference/code-style-elements.md).
 
-Händelseanropet samlar in visnings- och konverteringsdata och skickar dem till [!DNL Audience Manager] [datainsamlingsservrarna](/help/using/reference/system-components/components-data-collection.md) ([!UICONTROL DCS]). Den här processen bygger på externa annonsservrar som placerar anropet i annonsmaterialet för att styra vilket innehåll som ska infogas i koden. De externa annonsservrarna (till exempel [!DNL DFA]) kan placera den här koden i alla annonsvisningar. Dessutom använder ett annonsanrop inte [!DNL JavaScript] eller s.k. frame bursting-teknik för att komma åt utgivardata utanför annonstaggen.
+Händelseanropet samlar in visnings- och konverteringsdata och skickar dem till [!DNL Audience Manager] [datainsamlingsservrarna](/help/using/reference/system-components/components-data-collection.md) ([!DNL DCS]). Den här processen bygger på externa annonsservrar som placerar anropet i annonsmaterialet för att styra vilket innehåll som ska infogas i koden. De externa annonsservrarna (till exempel [!DNL DFA]) kan placera den här koden i alla annonsvisningar. Dessutom använder ett annonsanrop inte [!DNL JavaScript] eller s.k. frame bursting-teknik för att komma åt utgivardata utanför annonstaggen.
 
 Händelseanrop består av nyckelvärdepar med följande syntax:
 
