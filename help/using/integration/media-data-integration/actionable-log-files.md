@@ -1,15 +1,15 @@
 ---
-description: Med hjälp av loggfiler som kan användas för att hämta mediesignaler från annonsserverns loggfiler för att skapa egenskaper i Audience Manager. Fånga visningar, klick och konverteringar från annonsservrar som egenskaper utan att behöva lägga till pixlar.
+description: Med loggfiler som kan användas kan du hämta mediesignaler från och serverloggfiler för att skapa egenskaper i Audience Manager. Fånga visningar, klick och konverteringar från annonsservrar som egenskaper utan att behöva lägga till pixlar.
 keywords: actionable logs, alf, ALF
-seo-description: Med hjälp av loggfiler som kan användas för att hämta mediesignaler från annonsserverns loggfiler för att skapa egenskaper i Audience Manager. Fånga visningar, klick och konverteringar från annonsservrar som egenskaper utan att behöva lägga till pixlar.
+seo-description: Med loggfiler som kan användas kan du hämta mediesignaler från och serverloggfiler för att skapa egenskaper i Audience Manager. Fånga visningar, klick och konverteringar från annonsservrar som egenskaper utan att behöva lägga till pixlar.
 seo-title: Åtgärdsbara loggfiler
 solution: Audience Manager
 title: Åtgärdsbara loggfiler
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 translation-type: tm+mt
-source-git-commit: 8f5dadb44ada3822b7336827c8863a7277b687c3
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1378'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Åtgärdsbara loggfiler {#actionable-log-files}
 
-[!UICONTROL Actionable Log Files] kan du hämta mediedata från annonsserverns loggfiler och använda data för att skapa egenskaper i Audience Manager. Fånga visningar, klick och konverteringar från annonsservrar som egenskaper utan att behöva lägga till [pixlar](../../integration/media-data-integration/impression-data-pixels.md).
+[!UICONTROL Actionable Log Files] gör att du kan hämta mediedata från annonsserverns loggfiler och använda data för att skapa egenskaper i Audience Manager. Fånga visningar, klick och konverteringar från annonsservrar som egenskaper utan att behöva lägga till [pixlar](../../integration/media-data-integration/impression-data-pixels.md).
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Om du redan importerar loggdata till [!DNL Audience Manager]ber du din [!DNL Aud
 
 Med [!UICONTROL Actionable Log Files]hjälp av annonsserverloggarna hämtas informationen på [!DNL Audience Manager] samma sätt som data från webbplatsinteraktioner i realtid. [!DNL Audience Manager] ansluter till annonsserverns logglagring, tolkar informationen från loggarna och skickar loggdata som användbara signaler till våra [datainsamlingsservrar](../../reference/system-components/components-data-collection.md#dcs-pcs).
 
-Du måste fortfarande ställa in regelbaserade egenskaper för att fånga upp de åtgärdbara signalerna. Se hur du ställer in regelbaserade egenskaper i [användargränssnittet](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) för Audience Manager eller med våra [grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-create.md). Bläddra ned till delen [Användbara signaler](../../integration/media-data-integration/actionable-log-files.md#actionable-signals) för att visa en lista över alla tangenter som du kan använda i regelbaserade egenskaper.
+Du måste fortfarande ställa in regelbaserade egenskaper för att fånga upp de åtgärdbara signalerna. Se hur du konfigurerar regelbaserade egenskaper i [Audience Manager-användargränssnittet](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) eller med våra [grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-create.md). Bläddra ned till delen [Användbara signaler](../../integration/media-data-integration/actionable-log-files.md#actionable-signals) för att visa en lista över alla tangenter som du kan använda i regelbaserade egenskaper.
 
 >[!IMPORTANT]
 >
@@ -97,7 +97,7 @@ I tabellen visas de användbara signalerna från [!DNL DCM] loggfiler:
   <tr> 
    <td colname="col1"> <p> <code>Advertiser Group ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_adsrc</code> </p> </td> 
-   <td colname="col3"><p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till datakällor för Audience Manager.</p> <p>Det här fältet mappar till Advertiser Group ID från DCM. </p> </td> 
+   <td colname="col3"><p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till datakällor i Audience Manager.</p> <p>Det här fältet mappar till Advertiser Group ID från DCM. </p> </td> 
    <td colname="col4"> <p> <code> 134243</code> </p> </td> 
   </tr> 
   <tr> 
@@ -196,7 +196,7 @@ Först måste ni lagra era annonsserverloggar i våra Amazon S3-butiker. Läs [d
   <tr> 
    <td colname="col1"> <p> <code>Advertiser-ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_adsrc</code> </p> </td> 
-   <td colname="col3"> <p>En integrationskod för annonsörens datakälla. Observera att det här fältet inte är relaterat till <a href="../../features/datasources-list-and-settings.md">datakällor för Audience Manager.</a></p></td> 
+   <td colname="col3"> <p>En integrationskod för annonsörens datakälla. Observera att detta fält inte är relaterat till datakällor i <a href="../../features/datasources-list-and-settings.md">Audience Manager.</a></p></td> 
    <td colname="col4"> <p> <code> 134243</code> </p> </td> 
   </tr> 
   <tr> 
@@ -249,7 +249,7 @@ Signalerna som beskrivs i tabellen fångas in [!DNL Audience Manager] som ett `H
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_activity=1234&d_creative=24122&d_placemebt=3442&d_bu=3983524&d_campaign=7321391&d_adsrc=11111
 ```
 
-## Arbeta med användbara signaler i användargränssnittet för Audience Manager {#actionable-signals-in-ui}
+## Arbeta med körbara signaler i användargränssnittet i Audience Manager {#actionable-signals-in-ui}
 
 Du kan visa dina inkommande åtgärdbara signaler i [signalsökningsgränssnittet](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md) .
 
@@ -292,7 +292,7 @@ En fördel med implementering [!UICONTROL Actionable Log Files] är möjligheten
 
    `d_event == conv AND d_conversion == 123`
 
-   När du skapar en egenskap i Audience Manager [!UICONTROL UI]väljer du [!UICONTROL Conversion] som [!UICONTROL Event Type].
+   När du skapar trait i Audience Manager [!UICONTROL UI]väljer du [!UICONTROL Conversion] som [!UICONTROL Event Type].
 
 2. När du har skapat egenskapen börjar konverteringen rapporteras i [!UICONTROL Audience Optimization Reports] och i [!UICONTROL Audience Lab].
 
