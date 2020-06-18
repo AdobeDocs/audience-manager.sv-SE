@@ -6,22 +6,25 @@ solution: Audience Manager
 title: Skicka data till DCS
 uuid: 024e307d-bfcb-46cf-ac3a-fc71df0248fe
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 0%
 
 ---
 
 
 # Skicka data till DCS {#send-data-to-the-dcs}
 
-Börja här om du vill ha information om hur du ringer `/event` till [!UICONTROL DCS]. Det här avsnittet innehåller information om anropssyntax, parametrar, formatering och ett exempel på en begäran.
+Börja här om du vill ha information om hur du ringer `/event` till [!DNL DCS]. Det här avsnittet innehåller information om anropssyntax, parametrar, formatering och ett exempel på en begäran.
 
 >[!NOTE]
 >
->I koden och exemplen representerar *kursiv* en variabelplatshållare. Ersätt ett reellt värde för platshållaren när du skickar data till [!UICONTROL DCS] med den här metoden.
+>I koden och exemplen representerar *kursiv* en variabelplatshållare. Ersätt ett reellt värde för platshållaren när du skickar data till [!DNL DCS] med den här metoden.
 
 ## Samtalssyntax {#dcs-call-syntax}
 
-En grundläggande `URL` sträng som skickar data till [!UICONTROL DCS] använder syntaxen som visas nedan.
+En grundläggande `URL` sträng som skickar data till [!DNL DCS] använder syntaxen som visas nedan.
 
 ```js
 https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_cb=callback
@@ -29,11 +32,11 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 
 >[!NOTE]
 >
->Du kan också skicka data till [!UICONTROL DCS] genom att använda `POST` metoden . Anropssyntaxen beskrivs i [DCS API-metoder](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md).
+>Du kan också skicka data till [!DNL DCS] genom att använda `POST` metoden . Anropssyntaxen beskrivs i [DCS API-metoder](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md).
 
 ## Samtalsparametrar {#dcs-call-parameters}
 
-Följande tabell definierar de grundläggande komponenterna i ett enkelt [!UICONTROL DCS] anrop.
+Följande tabell definierar de grundläggande komponenterna i ett enkelt [!DNL DCS] anrop.
 
 <table id="table_5F6A5B324EB848168543386516FBF384"> 
  <thead> 
@@ -85,7 +88,7 @@ Följande tabell definierar de grundläggande komponenterna i ett enkelt [!UICON
 
 ## Exempel på samtal {#dcs-sample-call}
 
-I det här exemplet visas det fiktiva företaget som [!DNL Acme, Inc.] skickar data till [!UICONTROL DCS] via ett [!DNL HTTP] samtal. Observera att det här anropet innehåller de valfria parametrarna `d_dst=1`, `d_rtbd=json`och `d_cb=callback`. Dessa indikerar att [!DNL Acme] vill få ett [!DNL JSON] svar från [!UICONTROL DCS] med en återanropsfunktion. Kom ihåg, detta är bara ett exempel. Klipp inte ut och klistra in koden.
+I det här exemplet visas det fiktiva företaget som [!DNL Acme, Inc.] skickar data till [!DNL DCS] via ett [!DNL HTTP] samtal. Observera att det här anropet innehåller de valfria parametrarna `d_dst=1`, `d_rtbd=json`och `d_cb=callback`. Dessa indikerar att [!DNL Acme] vill få ett [!DNL JSON] svar från [!DNL DCS] med en återanropsfunktion. Kom ihåg, detta är bara ett exempel. Klipp inte ut och klistra in koden.
 
 ```js
 https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_rtbd=json&d_cb=acme_callback
@@ -93,7 +96,7 @@ https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_r
 
 ## Nästa steg {#dcs-next-steps}
 
-Nu när du är van vid att skicka data till [!UICONTROL DCS]servern är det dags att titta på hur man hämtar in data och tolkar informationen. Se [Ta emot data från DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md).
+Nu när du är van vid att skicka data till [!DNL DCS]servern är det dags att titta på hur man hämtar in data och tolkar informationen. Se [Ta emot data från DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md).
 
 >[!MORELIKETHIS]
 >
