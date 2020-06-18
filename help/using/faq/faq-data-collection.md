@@ -7,7 +7,7 @@ title: Vanliga frågor om datainsamling och produktintegrering
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 translation-type: tm+mt
-source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 0%
@@ -27,9 +27,9 @@ faq_data_collection_integration.xml
 
  -->
 
-**Hur kan jag särskilja inkommande trafik från[!UICONTROL DCS]trafik i[!UICONTROL DCS]loggfilsexporter?**
+**Hur kan jag särskilja inkommande trafik från[!DNL DCS]trafik i[!DNL DCS]loggfilsexporter?**
 
-Trakter som introduceras via [!UICONTROL Inbound] fylls i på [!UICONTROL Inbound] samma sätt som de fylls av [!UICONTROL DCS]. Det finns olika sätt att se att trafiken kommer från [!UICONTROL Inbound]:
+Trakter som introduceras via [!UICONTROL Inbound] fylls i på [!UICONTROL Inbound] samma sätt som de fylls av [!DNL DCS]. Det finns olika sätt att se att trafiken kommer från [!UICONTROL Inbound]:
 
 * Fjärr-IP anges till 68.67.173.18
 * DomainID ställs in på 5325
@@ -85,7 +85,7 @@ Detta inträffar vanligtvis när:
 
 **Vilka versioner av[!DNL Analytics]fungerar med[!UICONTROL DIL]?**
 
-Du måste använda [!DNL Analytics] version 20.2 (eller senare) och biblioteksversion 3.5.2 (eller senare) för att arbeta med [!DNL Adobe AppMeasurement AS] [!UICONTROL DIL]. Om du inte känner till din [!DNL Analytics] eller [!DNL AppMeasurement] version kontrollerar du det [!DNL Analytics] samtal som görs från sidan. Versionsinformation visas nedan:
+Du måste använda [!DNL Analytics] version 20.2 (eller senare) och biblioteksversion 3.5.2 (eller senare) för att arbeta med [!DNL Adobe AppMeasurement AS] [!UICONTROL DIL]. Om du inte känner till din [!DNL Analytics] eller [!DNL AppMeasurement] version kan du kontrollera vilket [!DNL Analytics] samtal som görs från sidan. Versionsinformation visas nedan:
 
 Den här kunden använder [!DNL Analytics] version 24.4:
 
@@ -175,15 +175,15 @@ Nej, förlita dig inte på [!UICONTROL General Reports] och [!UICONTROL Trend Re
 
 Rapporterna beräknar populationer baserat på de oautentiserade profilposter (UUID) som vi ser i serverdelen när rapporterna skapas.
 
-Vid ett första anrop till [!UICONTROL DCS]servern är de deklarerade ID:na *inte* länkade till något UUID (dvs. det finns ingen [demdexcookie](hhttps://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html) på klientsidan). Användaren [!UICONTROL DCS] genererar ett UUID slumpmässigt och ställer in en [!DNL demdex] cookie och skickar den i svarsanropet, men den skickar inte UUID till serverdelen.
+Vid ett första anrop till [!DNL DCS]servern är de deklarerade ID:na *inte* länkade till något UUID (dvs. det finns ingen [demdexcookie](hhttps://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html) på klientsidan). Användaren [!DNL DCS] genererar ett UUID slumpmässigt och ställer in en [!DNL demdex] cookie och skickar den i svarsanropet, men den skickar inte UUID till serverdelen.
 
 >[!NOTE]
 >
 >Det genererade UUID:t materialiseras endast i vår datalagring i backend när enheten som cookien är inställd på utlöser ytterligare aktivitet.
 
-Av den anledningen återspeglar rapporterna inte de händelser som utlöses av de deklarerade ID:n i ditt anrop. Vi rekommenderar att du använder UUID, ECID (tidigare MID) eller mobil enhets-ID vid testanrop till [!UICONTROL DCS]. Sedan kan du verifiera trait- och segment-realisationerna i [!UICONTROL General Reports] och i [!UICONTROL Trend Reports].
+Av den anledningen återspeglar rapporterna inte de händelser som utlöses av de deklarerade ID:n i ditt anrop. Vi rekommenderar att du använder UUID, ECID (tidigare MID) eller mobil enhets-ID vid testanrop till [!DNL DCS]. Sedan kan du verifiera trait- och segment-realisationerna i [!UICONTROL General Reports] och i [!UICONTROL Trend Reports].
 
-Se även [Index för Audience Manager-ID:n](../reference/ids-in-aam.md).
+Se även [Index för Audience Manager ID](../reference/ids-in-aam.md).
 
 <br> 
 
