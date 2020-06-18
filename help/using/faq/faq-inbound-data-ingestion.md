@@ -7,7 +7,10 @@ solution: Audience Manager
 title: Vanliga frågor och svar om inkommande kunddata
 uuid: 491e9ec1-4731-46a8-86e7-d8c613e6cedc
 translation-type: tm+mt
-source-git-commit: 187874fb5d0c4363f771297766f3c4bc9d967c9b
+source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+workflow-type: tm+mt
+source-wordcount: '1355'
+ht-degree: 1%
 
 ---
 
@@ -55,10 +58,10 @@ Se [Filkomprimering för inkommande dataöverföringsfiler](../integration/sendi
 
 **Kan jag överföra en inkommande datafil (filen[!DNL .sync]eller[!DNL .overwrite]) innan jag driftsätter[!DNL Audience Manager]-koden i produktionen?**
 
-Ja. Så länge du använder en datakälla för olika enheter för att lagra de CRM-data som du överför lagrar Audience Manager alltid dessa data. I enlighet med förbättringarna av reglerna för profilsammanslagning som Audience Manager lanserade i oktober 2019, som gör att endast data kan användas offline, kan du överföra och utföra åtgärder på data utan att distribuera Audience Manager-kod till produktion alls. Se:
+Ja. Så länge du använder en [!UICONTROL cross-device data source] för att lagra de CRM-data som du överför lagrar Audience Manager alltid dessa data. Efter de förbättringar som Audience Manager lanserade i oktober 2019 och som gör det möjligt att använda endast offline, kan du överföra och agera på data utan att driftsätta Audience Manager-kod i produktionen alls. [!UICONTROL Profile Merge Rules] Se:
 
 * [Översikt över regelförbättringar för profilsammanslagning](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
-* Personbaserade mål - [personalisering baserad på data som bara är offline](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
+* [!UICONTROL People-based Destinations] - [Personalisering baserad på data som bara är offline](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
 
 <br> 
 
@@ -153,7 +156,7 @@ FTP-filer tas bort efter att de har bearbetats. [!DNL S3] filer tas bort efter 3
 
    >[!NOTE]
    >
-   >Filerna [!DNL .overwrite] skriver bara över [!DNL Audience Manager] profildata som är kopplade till den här DataProvider. Med andra ord förblir alla [!DNL Adobe Analytics] data som är kopplade till besökaren intakta efter att en [!DNL .overwrite] fil har bearbetats.
+   >Filerna [!DNL .overwrite] skriver bara över [!DNL Audience Manager] profildata som är kopplade till den här DataProvider. Med andra ord förblir alla [!DNL Audience Manager] data som är kopplade till besökaren intakta efter att en [!DNL .overwrite] fil har bearbetats.
 
 * **Inkrementell:** En inkrementell fil lägger till nya data i dina befintliga besökarprofiler. Inkrementella filer identifieras av taggen som läggs till efter filnamnet `.sync` . Att skicka en inkrementell fil raderar eller skriver inte över befintliga profiler.
 
@@ -184,7 +187,7 @@ Tidsstämplar används för loggning och registrering. De krävs av den syntax s
 
  
 
-**Vad är ett Data Provider ID (DPID) och hur får jag det?**
+**Vad är en[!DNL Data Provider ID (DPID)]och hur får jag den?**
 
 Din Adobe-konsult kommer att tilldela din datakälla ett tresiffrigt eller fyrsiffrigt [DPID (Data Provider ID)](../reference/ids-in-aam.md) . Detta ID är unikt och ändras inte.
 
@@ -207,7 +210,7 @@ Ja, se:
 
 **Den primära nyckeln i min datakälldatabas är en e-postadress. Betraktar det personligt identifierbar information?**
 
-Ja. [!DNL Audience Manager] sparar inte e-postadresser i databasen. Besökarna bör tilldelas ett slumpmässigt genererat ID eller en ensidig version av e-postadressen innan ID-synkroniseringen initieras.
+Ja. [!DNL Audience Manager] sparar inte e-postadresser i databasen. Besökarna bör tilldelas ett slumpmässigt genererat ID eller en ensidig version av e-postadressen innan ID-synkroniseringar initieras.
 
  
 
@@ -223,7 +226,7 @@ Vi rekommenderar [!DNL Amazon S3] eftersom processen är enklare. [!DNL Audience
 
 >[!WARNING]
 >
->Vi fasar ut stödet för FTP-konfigurationer. Inläsning av inkommande datafiler stöds fortfarande i befintliga FTP-integreringar, men vi rekommenderar starkt att du använder Amazon S3 för att lägga in offlinedata för nya integreringar. Mer information finns i [Krav för namn och filstorlek för Amazon S3 för inkommande datafiler](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) .
+>Vi fasar ut stödet för FTP-konfigurationer. Inläsning av inkommande datafiler stöds fortfarande i befintliga FTP-integreringar, men vi rekommenderar starkt att du använder [!DNL Amazon S3] för att integrera offlinedata för nya integreringar. Mer information finns i [Krav för namn och filstorlek för Amazon S3 för inkommande datafiler](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) .
 
  
 
