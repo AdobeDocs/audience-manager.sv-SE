@@ -7,7 +7,10 @@ title: Hantera abonnemang på dataflöden
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
 translation-type: tm+mt
-source-git-commit: aaf4e178cd6faf8fe18f54454277e4253a524130
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '2186'
+ht-degree: 0%
 
 ---
 
@@ -256,7 +259,7 @@ Som datainköpare ansvarar du för att ta bort egenskaperna i ett avbrutet flöd
 
 [Avbeställ den inaktiverade datafeeden](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#unsubscribe) när du har tagit bort alla återkallade egenskaper från ditt konto. Om detta är en tillfällig inaktivering kan du återprenumerera när dataprovidern har slutfört de ändringar som krävs och återaktiverar flödet. Precis som med de flesta andra saker kan bra kommunikation med dina partner (DataProvider och [!DNL Adobe]DataProvider) hjälpa dig att arbeta med den här processen.
 
-## Förstå sidan med avtalsinformation på Audience Marketplace {#marketplace-buyer-details}
+## Sidan med avtalsinformation i Audience Marketplace {#marketplace-buyer-details}
 
 När du klickar på namnet på en dataplan i [!UICONTROL Marketplace], [!DNL Audience Manager] innehåller information som kan hjälpa dig att göra välgrundade val när det gäller att prenumerera på en datafeed.
 
@@ -270,7 +273,7 @@ Den här sidan ger dig följande information:
    * Namn på datafeed. Som visas ovan är namnet på denna feed&quot;Exempeldatafeed&quot;.
    * Dataleverantörens namn.
    * ID för datafeed;
-   * Beskrivning.
+   * Beskrivning;
    * Antal egenskaper i flödet.
 
 1. Knappar för planinformation.
@@ -309,7 +312,7 @@ Med det här användningsexemplet kan du utvärdera leverantörens egenskaper mo
 
 ### Aktivering
 
-Med det här användningsexemplet kan du skicka data till ett [mål](../../../features/destinations/destinations.md). I [!UICONTROL Audience Manager]det här fallet är ett mål ett system från tredje part (annonsserver, [!DNL DSP], [!DNL DMP]utbyte, osv.) som du vill dela data med. Med ett [!UICONTROL Activation] användningsfall kan du dock inte köra överlappningsrapporter eller testa data i en algoritmisk modell.
+Med det här användningsexemplet kan du skicka data till ett [mål](../../../features/destinations/destinations.md). I [!DNL Audience Manager]det här fallet är ett mål ett system från tredje part (annonsserver, [!DNL DSP], [!DNL DMP]utbyte, osv.) som du vill dela data med. Med ett [!UICONTROL Activation] användningsfall kan du dock inte köra överlappningsrapporter eller testa data i en algoritmisk modell.
 
 >[!MORELIKETHIS]
 >
