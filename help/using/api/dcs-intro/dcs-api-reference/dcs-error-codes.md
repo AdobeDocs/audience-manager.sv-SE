@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Felkoder, meddelanden och exempel för DCS
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: ff245c2cca417e9b1fd51460ddbadd25d5696006
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 2%
+source-wordcount: '1509'
+ht-degree: 1%
 
 ---
 
@@ -22,76 +22,22 @@ I tabellerna nedan representerar kursiv *text* en variabelplatshållare.
 
 ## Systemfelskoder {#system-error-codes}
 
-<table id="table_43F4321BEA6A4D1BBDFE2E9FB4402914"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Kod-ID </th> 
-   <th colname="col2" class="entry"> Felmeddelande </th> 
-   <th colname="col3" class="entry"> Beskrivning </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>0 </p> </td> 
-   <td colname="col2"> <p>Ospecificerat fel </p> </td> 
-   <td colname="col3"> <p>Detta är ett catch-all-fel som hanterar händelser som inte täcks av de andra felhanterarna. Det är svårt att felsöka det här felet. Den kan orsakas av en mängd okända åtgärder eller händelser. </p> <p>Om du får det här felet kan du försöka med din <span class="wintitle"> DCS</span> -begäran igen. Kontakta din Adobe-representant om problemet kvarstår. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
-   <td colname="col2"> <p>Det gick inte att hitta konfigurationen för värdnamnet: <code><i>hostname</i></code> </p> </td> 
-   <td colname="col3"> <p>Värdnamnet som skickades i begäran har inte konfigurerats av vårt team för partneretablering. Kontakta din Adobe-representant om felmeddelandet visas. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>2 </p> </td> 
-   <td colname="col2"> <p>Ogiltigt <code> d_orgid</code> värde (det gick inte att hitta någon konfiguration för detta organisations-ID): <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Organisations-ID:t är felaktigt. </p> <p>Kontrollera ditt ID och försök igen. Om du inte känner till eller har ditt företags-ID kan du läsa avsnittet Administrationssida i <a href="https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external"> Organisationer och kontolänkning</a> för mer information om hur du hittar det. </p> </td> 
-  </tr>
- </tbody>
-</table>
+|Felkod|Felmeddelande|Beskrivning|
+|—|—|—|
+|0|Ospecificerat fel|Detta är ett catch-all-fel som hanterar händelser som inte täcks av de andra felhanterarna. Det är svårt att felsöka det här felet. Den kan orsakas av en mängd okända åtgärder eller händelser. Om du får det här felet kan du försöka med din [!DNL DCS] begäran igen. Kontakta din [!DNL Adobe] representant om problemet kvarstår.|
+|1|Det gick inte att hitta konfigurationen för värdnamnet: `hostname`|Värdnamnet som skickades i begäran har inte konfigurerats av vårt team för partneretablering. Kontakta din [!DNL Adobe] representant om felmeddelandet visas.|
+|2|Ogiltigt `d_orgid` värde (det gick inte att hitta någon konfiguration för det här organisation-ID:t): `ID`|Organisations-ID:t är felaktigt. Kontrollera ditt ID och försök igen. Om du inte känner till eller har ditt företags-ID kan du läsa avsnittet Administrationssida [Organisationer och kontolänkning](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html) för mer information om hur du hittar det.|
 
 ## Felkoder för integrering {#integration-error-codes}
 
-<table id="table_EFF06FB3D045459BA7802872AF22DF79"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Kod-ID </th> 
-   <th colname="col2" class="entry"> Meddelande </th> 
-   <th colname="col3" class="entry"> Beskrivning </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>100 </p> </td> 
-   <td colname="col2"> <p>Det gick inte att hämta värdnamnet för begäran </p> </td> 
-   <td colname="col3"> <p>Ett API-anrop skickade inte värdens HTTP-huvud i begäran. </p> <p>Lägg till värdhuvudet i samtalet och försök igen. Observera att de flesta webbläsare och API-klienter gör detta automatiskt. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>101 </p> </td> 
-   <td colname="col2"> <p>Ett ogiltigt Experience Cloud-ID skickades <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>DCS <span class="wintitle"> -anropet innehåller ett ogiltigt</span> Experience Cloud <span class="keyword"></span> -ID. </p> <p>Kontrollera nyckelvärdepar <code> d_mid=</code> i rubriksträngen. Kontrollera att du har angett rätt <span class="keyword"> Experience Cloud</span> -ID och försök igen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>102 </p> </td> 
-   <td colname="col2"> <p>Ogiltigt namn-ID skickades i begäran <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>DCS <span class="wintitle"> -anropet innehåller ett ogiltigt</span> Audience Manager <span class="keyword"></span> -ID. </p> <p>Kontrollera nyckelvärdepar <code> d_uuid=</code> i rubriksträngen. Kontrollera att du har angett rätt <span class="keyword"> Audience Manager</span> -ID och försök igen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>104 </p> </td> 
-   <td colname="col2"> <p>Alla kund-ID:n är ogiltiga </p> </td> 
-   <td colname="col3"> <p>Alla kund-ID:n i samtalet är ogiltiga. Kontrollera dina ID:n och försök igen. </p> </td> 
-  </tr>
-    <tr> 
-   <td colname="col1"> <p>109</p> </td> 
-   <td colname="col2"> <p>Referens <code>HTTP referer</code> tillåts inte för partner <code>Partner ID</code> </p> </td> 
-   <td colname="col3"> <p>Anropets huvud <code>HTTP referer</code> tillåts inte för partner-ID:t i samtalet. Kontrollera att <code>HTTP referer</code> sidhuvudet är rätt.</p> </td>
-  </tr>
-  <tr> 
-   <td colname="col1"> <p>111 </p> </td> 
-   <td colname="col2"> <p>Ogiltig <span class="wintitle"> IMS</span> -token har tagits emot </p> </td> 
-   <td colname="col3"> <p>Returneras för integreringar mellan Audience Manager och Adobe Target. Felet uppstår när ett anrop görs till DCS som innehåller en ogiltig IMS-token. Token kan ha fel format, ha upphört att gälla eller så har användaren inte behörighet att komma åt den nödvändiga resursen. </p> </td>
-  </tr>
- </tbody>
-</table>
+|Felkod|Felmeddelande|Beskrivning|
+|—|—|—|
+|100|Det gick inte att hämta värdnamnet för begäran|Ett [!DNL API] anrop skickade inte värdhuvudet [!DNL HTTP] i begäran. Lägg till värdhuvudet i samtalet och försök igen. De flesta webbläsare och [!DNL API] klienter gör detta automatiskt. |
+|101|Ogiltigt [!DNL Experience Cloud] ID har skickats `ID`|Anropet [!DNL DCS] innehåller ett ogiltigt [!DNL Experience Cloud] ID. Kontrollera nyckelvärdepar `d_mid=` i rubriksträngen. Kontrollera att du har angett rätt [!DNL Experience Cloud] ID och försök igen. |
+|102|Ogiltig [!DNL AAM ID] skickad begäran `ID`|Anropet [!DNL DCS] innehåller ett ogiltigt [!DNL Audience Manager] ID. Kontrollera nyckelvärdepar `d_uuid=` i rubriksträngen. Kontrollera att du har angett rätt [!DNL Audience Manager] ID och försök igen. |
+|104|Alla kund-ID:n är ogiltiga | Alla kund-ID:n i samtalet är ogiltiga. Kontrollera dina ID:n och försök igen.|
+|109|Referens `HTTP referer` tillåts inte för partner `Partner ID`|Anropets huvud `HTTP referer` tillåts inte för partner-ID:t i samtalet. Kontrollera att `HTTP referer` sidhuvudet är rätt.|
+|111|Ogiltig `IMS` token togs emot|Returnerad för [!DNL Audience Manager] - [!DNL Adobe Target] integreringar. Felet uppstår när ett anrop görs till [!DNL DCS]och innehåller en ogiltig [!DNL IMS] token. Token kan ha fel format, ha upphört att gälla eller så har användaren inte behörighet att komma åt den nödvändiga resursen.|
 
 ## Felkoder för avanmälan {#opt-out-error-codes}
 
