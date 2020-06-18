@@ -7,14 +7,17 @@ solution: Audience Manager
 title: Komma igång med masshantering
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
-source-git-commit: a4569127b748374b5707daedb0809c58bca74e9b
+source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 0%
 
 ---
 
 
 # Komma igång med masshantering{#getting-started-with-bulk-management}
 
-Med grupphanteringsverktygen kan du skapa och hantera flera objekt samtidigt med en enda åtgärd. Du kan använda grupphanteringsverktyg för att arbeta med datakällor, härledda signaler, destinationer, mappar, modeller, segment och egenskaper.
+Med den här funktionen kan du [!DNL Bulk Management Tools] skapa och hantera flera objekt samtidigt med en enda åtgärd. Du kan använda [!DNL Bulk Management Tools] för att arbeta med [!UICONTROL data sources], [!UICONTROL derived signals], [!UICONTROL destinations], [!UICONTROL folders], [!UICONTROL models], [!UICONTROL segments]och [!UICONTROL traits].
 
 <!-- 
 
@@ -28,7 +31,7 @@ c_bulk_start.xml
 
 ## Översikt {#overview}
 
-Den här funktionen använder ett Microsoft Excel-kalkylblad med makron som gör säkra, autentiserade anrop till [!DNL Audience Manager] API:erna. API:t innehåller metoder och tjänster som gör att du kan göra flera ändringar samtidigt. Du behöver inte veta hur du kodar eller arbetar med våra API:er för att kunna använda den. Kalkylbladet innehåller kolumnrubriker och flikar som utför specifika massändringsfunktioner. Om du vill göra satsvisa ändringar lägger du bara till de fördefinierade rubrikerna i specifika kalkylblad, anger den information som du vill ändra gruppvis och klickar på en åtgärdsknapp. Kalkylbladet och API:erna gör resten av arbetet åt dig.
+Den här funktionen använder ett [!DNL Microsoft Excel] kalkylblad med makron som gör säkra, autentiserade anrop till [!DNL Audience Manager] API:erna. API:t innehåller metoder och tjänster som gör att du kan göra flera ändringar samtidigt. Du behöver inte veta hur du kodar eller arbetar med våra API:er för att kunna använda den. Kalkylbladet innehåller kolumnrubriker och flikar som utför specifika massändringsfunktioner. Om du vill göra satsvisa ändringar lägger du bara till de fördefinierade rubrikerna i specifika kalkylblad, anger den information som du vill ändra gruppvis och klickar på en åtgärdsknapp. Kalkylbladet och API:erna gör resten av arbetet åt dig.
 
 ## Hämta {#download}
 
@@ -40,7 +43,7 @@ För att kunna använda [!DNL Bulk Management Tools]programmet behöver du följ
 
 * Din [!DNL Experience Cloud] inloggning. Som kund bör du redan ha dessa uppgifter.
 * Kalkylbladet [!DNL Bulk Management Tools] . [Hämta kalkylbladet](assets/BAAAM_V2_20200502.xlsm) för att hämta den senaste versionen.
-* Microsoft Excel körs på [!DNL macOS] eller 64-bitars [!DNL Microsoft Windows]. Vi rekommenderar att du använder den senaste versionen av Microsoft Excel.
+* [!DNL Microsoft Excel] som körs på [!DNL macOS] eller 64 bitar [!DNL Microsoft Windows]. Vi rekommenderar att du använder den senaste versionen av [!DNL Microsoft Excel].
 * När du öppnar kalkylbladet måste du **aktivera makron** för [!DNL Bulk Management Tools] att det ska fungera.
 
 ## Autentiseringskrav och alternativ {#auth-reqs}
@@ -49,9 +52,9 @@ Massändringar kräver autentisering. Innan du utför någon åtgärd måste du 
 
 **Krav för API-autentisering**
 
-Den andra versionen av grupphanteringsverktygen, som släpptes i oktober 2019, förenklar autentiseringsprocessen. Autentiseringsstegen i den här versionen beskrivs nedan:
+Den andra versionen av [!DNL Bulk Management Tools]som släpptes i oktober 2019 förenklar autentiseringsprocessen. Autentiseringsstegen i den här versionen beskrivs nedan:
 
-1. Öppna kalkylbladet och gå till **konfigurationsbladet** .
+1. Öppna kalkylbladet och navigera till **[!UICONTROL Config]** kalkylbladet.
 2. Följ stegen som beskrivs i kalkylbladet.
    ![](assets/baaam-authentication.png)
 3. När du har slutfört stegen får du göra större ändringar.
