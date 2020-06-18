@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Felkoder, meddelanden och exempel för DCS
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # Felkoder, meddelanden och exempel för DCS {#dcs-error-codes-messages-and-examples}
 
-Felkoder och meddelanden som genereras av [!UICONTROL Data Collection Servers] ([!UICONTROL DCS]) listas i numerisk ordning efter kod-ID.
+Felkoder och meddelanden som genereras av [!UICONTROL Data Collection Servers] ([!DNL DCS]) listas i numerisk ordning efter kod-ID.
 
 I tabellerna nedan representerar kursiv *text* en variabelplatshållare.
 
@@ -67,7 +67,7 @@ I tabellerna nedan representerar kursiv *text* en variabelplatshållare.
   </tr> 
   <tr> 
    <td colname="col1"> <p>101 </p> </td> 
-   <td colname="col2"> <p>Ogiltigt Experience Cloud-ID har skickats in <code><i>ID</i></code> </p> </td> 
+   <td colname="col2"> <p>Ett ogiltigt Experience Cloud-ID skickades <code><i>ID</i></code> </p> </td> 
    <td colname="col3"> <p>DCS <span class="wintitle"> -anropet innehåller ett ogiltigt</span> Experience Cloud <span class="keyword"></span> -ID. </p> <p>Kontrollera nyckelvärdepar <code> d_mid=</code> i rubriksträngen. Kontrollera att du har angett rätt <span class="keyword"> Experience Cloud</span> -ID och försök igen. </p> </td> 
   </tr> 
   <tr> 
@@ -88,7 +88,7 @@ I tabellerna nedan representerar kursiv *text* en variabelplatshållare.
   <tr> 
    <td colname="col1"> <p>111 </p> </td> 
    <td colname="col2"> <p>Ogiltig <span class="wintitle"> IMS</span> -token har tagits emot </p> </td> 
-   <td colname="col3"> <p>Returnerat för Audience Manager - Adobe Target-integreringar. Felet uppstår när ett anrop görs till DCS som innehåller en ogiltig IMS-token. Token kan ha fel format, ha upphört att gälla eller så har användaren inte behörighet att komma åt den nödvändiga resursen. </p> </td>
+   <td colname="col3"> <p>Returneras för integreringar mellan Audience Manager och Adobe Target. Felet uppstår när ett anrop görs till DCS som innehåller en ogiltig IMS-token. Token kan ha fel format, ha upphört att gälla eller så har användaren inte behörighet att komma åt den nödvändiga resursen. </p> </td>
   </tr>
  </tbody>
 </table>
@@ -247,7 +247,7 @@ I tabellerna nedan representerar kursiv *text* en variabelplatshållare.
   <tr> 
    <td colname="col1"> <p>312 </p> </td> 
    <td colname="col2"> <p>Begäran innehåller ett ogiltigt globalt enhets-ID </p> </td> 
-   <td colname="col3"> <p>DCS <span class="wintitle">-</span> koden returnerar den här felkoden när begäran innehåller ett ogiltigt globalt enhets-ID. DCS ignorerar det ogiltiga ID:t och genererar ett 312-fel tillsammans med de specifika felen för det ogiltiga ID:t. Se <a href="../../../features/global-data-sources.md" format="dita" scope="local">Global Data Sources</a> and <a href="../../../reference/ids-in-aam.md" format="dita" scope="local">Index of IDs in Audience Manager</a> för detaljerad information om rätt enhetsannons-ID-format och motsvarande globala datakällor.</p>
+   <td colname="col3"> <p>DCS <span class="wintitle">-</span> koden returnerar den här felkoden när begäran innehåller ett ogiltigt globalt enhets-ID. DCS ignorerar det ogiltiga ID:t och genererar ett 312-fel tillsammans med de specifika felen för det ogiltiga ID:t. Se <a href="../../../features/global-data-sources.md" format="dita" scope="local">Global Data Sources</a> and <a href="../../../reference/ids-in-aam.md" format="dita" scope="local">Index of IDs in Audience Manager</a> för detaljerad information om rätt format för enhets-ID och motsvarande globala datakällor.</p>
    <p>Exempel på ett felaktigt anrop: <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
    <p>Förklaring: En <span class="keyword">IDFA (DPID 20915)</span> måste vara ett versalt ID. ID:t som angavs i begäran är gemener.</p>
    </td>
@@ -255,18 +255,18 @@ I tabellerna nedan representerar kursiv *text* en variabelplatshållare.
    <tr> 
    <td colname="col1"> <p>313 </p> </td> 
    <td colname="col2"> <p>CMP ID finns inte i GCL</p> </td> 
-   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av ett CMP-ID som inte finns i Audience Managers cachelagrade version av den globala CMP-listan vid tidpunkten för utvärderingen, tar Audience Manager-pluginen för IAB TCF bort IAB TC-strängen och bearbetar begäran som vanligt. IAB TCF v2.0 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p>
+   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av ett CMP-ID som inte finns i den Audience Manager-cachelagrade versionen av den globala CMP-listan vid tidpunkten för utvärderingen, ignorerar plugin-programmet Audience Manager för IAB TCF IAB TC-strängen och bearbetar begäran som vanligt. IAB TCF v2.0 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p>
    </td>
   </tr>
    <tr> 
    <td colname="col1"> <p>314 </p> </td> 
    <td colname="col2"> <p>CMP ID har markerats som borttaget i GCL</p> </td> 
-   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av en CMP som är markerad som borttagen i vår cachelagrade version av Global CMP List, tar Audience Manager-pluginen för IAB TCF bort TC-strängen och bearbetar begäran som vanligt, om utvärderingstiden är förbi borttagningstiden i den globala CMP-listan. IAB TCF v2.0 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p></td>
+   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av en CMP som är markerad som borttagen i vår cachelagrade version av Global CMP List, ignorerar plugin-programmet Audience Manager för IAB TCF TC-strängen och bearbetar begäran som vanligt, om utvärderingstiden är längre än borttagningstiden i den globala CMP-listan. IAB TCF v2.0 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p></td>
   </tr>
    <tr> 
    <td colname="col1"> <p>315 </p> </td> 
    <td colname="col2"> <p>Godkännandesträngen anger inget samtycke</p> </td> 
-   <td colname="col3"> <p>Om inget samtycke ges, kommer Audience Manager-plugin-programmet för IAB TCF att stoppa användaren från ytterligare datainsamling, eller ta bort anropet helt om ingen partnerkontext hittas.</p>
+   <td colname="col3"> <p>Om du inte ger något samtycke väljer Audience Manager-plugin-programmet för IAB TCF att användaren inte ska samla in ytterligare data eller att samtalet ska tas bort helt om ingen partnerkontext hittas.</p>
    </td>
   </tr>
 
@@ -275,7 +275,7 @@ I tabellerna nedan representerar kursiv *text* en variabelplatshållare.
 
 ## Exempel på felkodmeddelanden {#sample-error-codes}
 
-Felkoderna och meddelandena [!UICONTROL DCS] returneras i ett [!DNL JSON] objekt eller i ett X-huvud i HTTP-svarssträngen.
+Felkoderna och meddelandena [!DNL DCS] returneras i ett [!DNL JSON] objekt eller i ett X-huvud i HTTP-svarssträngen.
 
 ### Exempel på DCS-felkod och -meddelande
 
