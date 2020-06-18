@@ -6,14 +6,17 @@ solution: Audience Manager
 title: Signaler, egenskaper och segment
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
 
 # Signaler, egenskaper och segment{#signals-traits-and-segments}
 
-Beskriver komponenterna i ett Audience Manager-segment, de uttryck som används för att ange kriterier för målgruppskvalifikation och hur data överförs i ett händelseanrop.
+Beskriver komponenterna i ett [!DNL Audience Manager] segment, de uttryck som används för att ange kriterier för målgruppskvalifikation och hur data överförs i ett händelseanrop.
 
 <!-- 
 
@@ -71,11 +74,9 @@ Kunderna hanterar egenskaper och segment med visuella verktyg och kodredigerare 
 
 **Händelseanrop Skicka data till Audience Manager**
 
-Ett eventsamtal skickar data från din webbplats till [!DNL Audience Manager]. Anropet innehåller signal-, trait- och segmentdata i en HTTP-begäran. Själva händelsen är allt efter `/event` delen av en URL-sträng. Som visas i exemplet nedan kräver den här processen endast ett enda händelseanrop för att skicka flera variabler till [!DNL Audience Manager].
+Ett eventsamtal skickar data från din webbplats till [!DNL Audience Manager]. Anropet innehåller signal-, egenskap- och segmentdata i en [!DNL HTTP] begäran. Själva händelsen är allt efter `/event` delen av en [!DNL URL] sträng. Som visas i exemplet nedan kräver den här processen endast ett enda händelseanrop för att skicka flera variabler till [!DNL Audience Manager].
 
-```
-https://<domain>/event?product=camera&price>100
-```
+`https://<domain>/event?product=camera&price>100`
 
 >[!MORELIKETHIS]
 >
