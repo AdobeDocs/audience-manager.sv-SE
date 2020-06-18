@@ -5,7 +5,10 @@ seo-title: Översikt över och användningsfall för personbaserade destinatione
 solution: Audience Manager
 title: Översikt och användningsexempel
 translation-type: tm+mt
-source-git-commit: d70b77b082078d4122f8b902b089d8c4a3fb923a
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '924'
+ht-degree: 0%
 
 ---
 
@@ -21,12 +24,12 @@ Används [!DNL People-Based Destinations] för att skicka förstahandssegment ti
 
 [!DNL People-Based Destinations] gör det möjligt att använda segmentering på online- och offlinedata för att skapa målgruppssegment baserat på [hashas-identifierare](people-based-destinations-prerequisites.md#hashing-requirements), som e-postadresser eller telefonnummer. Sedan kan ni skicka dessa segment till &quot;trädgårdar&quot;, t.ex. [!DNL Facebook]där ni kan inrikta er på publiken på de sociala plattformarna. [!DNL People-Based Destinations] kan hjälpa dig att:
 
-* Rikta er till målgrupper offline och online på plattformar som [!DNL Facebook]hash-baserade e-postadresser.
-* Komplettera befintliga målgruppsfunktioner för enheter och cookies i Audience Manager.
+* Target målgrupper både offline och online på plattformar som [!DNL Facebook]hash-baserade e-postadresser.
+* Komplettera Audience Manager befintliga målgruppsfunktioner för enheter och cookies.
 * Eliminera kostnaderna för lösningar för datainhämtning från tredje part.
 * Eliminera kostnader i samband med utveckling av anpassade arbetsflöden för datainhämtning.
-* Målgrupper i cookie-fria miljöer.
-* Rikta målgrupper genom att deduplicera hash-kodade e-postadresser som matchar kund-ID:n.
+* Target målgrupper i cookie-fria miljöer,
+* Target-målgrupper genom att deduplicera hashade e-postadresser som matchar kund-ID:n.
 
 Ni kan använda [!DNL People-Based Destinations] för att segmentera och inrikta er på värdefulla kunder som kanske inte besökt er webbplats, eller sluta inrikta er på dem som redan har konverterat offline. Dessutom kan ni utnyttja möjligheten [!DNL Profile Merge Rules] att kombinera era era egna offlinedata med era egna onlinedata, inklusive kunddata från andra Adobe Experience Cloud-lösningar, för att optimera era annonsinsatser i sociala medier.
 
@@ -34,13 +37,13 @@ Ni kan använda [!DNL People-Based Destinations] för att segmentera och inrikta
 
 ## Tillgänglighet {#availability}
 
-[!DNL People-Based Destinations] är en förstklassig integrering med Audience Manager. Kontakta din Adobe-representant för att få tillgång till denna premiumfunktion.
+[!DNL People-Based Destinations] är en integrering av premiumprogram i Audience Manager. Kontakta din Adobe-representant för att få tillgång till denna premiumfunktion.
 
 ## Varför ska du använda personbaserade mål? {#why-use}
 
 **Ge era kunder enhetliga flerkanalsupplevelser genom att hantera hela er målgruppssegmentering inifrån Audience Manager.**
 
-Att inte aktivera era målgruppssegment i personbaserade kanaler via Audience Manager leder till osammanhängande upplevelser mellan vad kunderna ser på er webbplats och vad de till exempel ser i sina [!DNL Facebook] flöden. En konsekvent målinriktning över alla kanaler kan öka annonsintäkterna samtidigt som ni optimerar annonsutgifterna.
+Att inte aktivera era målgruppssegment i personbaserade kanaler via Audience Manager leder till osammanhängande upplevelser mellan vad kunderna ser på er webbplats och vad de ser, till exempel, i sina [!DNL Facebook] flöden. En konsekvent målinriktning över alla kanaler kan öka annonsintäkterna samtidigt som ni optimerar annonsutgifterna.
 
 **Nå ut till era målgrupper i personbaserade kanaler utan att behöva en dedikerad lösning för datainhämtning eller anpassade arbetsflöden för att skicka ut målgrupper.**
 
@@ -48,13 +51,13 @@ Det mer&quot;traditionella&quot; sättet att rikta in er på målgrupper över o
 
 ![pbd-overview](assets/pbd-diagram.png)
 
-Via [!DNL People-Based Destinations]Audience Manager kan ni centralisera era kunddata, bygga målgruppssegment och aktivera dem i flera personbaserade kanaler. Du kan göra allt detta inifrån användargränssnittet i Audience Manager och slippa extraarbetet med att manuellt överföra data till varje plattform, vilket sparar värdefull tid i processen.
+Via [!DNL People-Based Destinations]Audience Manager kan ni centralisera era kunddata, bygga målgruppssegment och aktivera dem i flera personbaserade kanaler. Du kan göra allt detta inifrån användargränssnittet i Audience Manager, och slippa det extraarbete som med manuell överföring av data till varje plattform innebär, vilket sparar värdefull tid i processen.
 
 **Skapa och aktivera målgruppssegment utifrån helt offline-profiler.**
 
-[!DNL People-Based Destinations] lösa problemet som tidigare bara kunde aktivera målgruppssegment baserat på enhetsaktivitet. Med [!DNL People-Based Destinations]kan ni skapa segment utifrån helt offline-data från era egna [!DNL CRM]och aktivera dem på personbaserade plattformar. Dessutom kan ni korrelera offlinedata med enhetsdata som ni redan har i Audience Manager.
+[!DNL People-Based Destinations] lösa problemet som tidigare bara kunde aktivera målgruppssegment baserat på enhetsaktivitet. Med [!DNL People-Based Destinations]kan ni skapa segment utifrån helt offline-data från era egna [!DNL CRM]och aktivera dem på personbaserade plattformar. Dessutom kan du korrelera offlinedata med enhetsdata som du redan har i Audience Manager.
 
-**Använd Audience Managers datastyrning och sekretesskontroller för att hantera kunddata på ett säkert sätt.**
+**Använd Audience Manager datastyrning och sekretesskontroll för att hantera kunddata på ett säkert sätt.**
 
 [!DNL People-Based Destinations] kräver att du bara använder oåterkalleligt hash-kodade identifierare. Detta minskar riskerna med att manuellt överföra kunddata till respektive målplattform.
 
@@ -64,7 +67,7 @@ Titta på videon nedan för att få en översikt över dataflödet när du anvä
 
 ## Användningsexempel {#use-cases}
 
-För att ni bättre ska förstå hur och när ni bör använda [!DNL People-Based Destinations]finns det två exempel på användningsområden som Audience Manager-kunder kan lösa med den här funktionen.
+För att du bättre ska förstå hur och när du ska använda [!DNL People-Based Destinations]finns det två exempel på användningsområden som Audience Manager-kunder kan lösa med den här funktionen.
 
 ### Användningsfall 1 {#use-case-1}
 
@@ -74,6 +77,6 @@ En webbutik vill nå befintliga kunder via sociala plattformar och visa dem pers
 
 Ett flygbolag har olika kundnivåer (Bronze, Silver och Gold) och vill kunna erbjuda varje nivå personaliserade erbjudanden via sociala plattformar. Företaget använder Audience Manager för att analysera kundaktiviteter på webbplatsen. Alla kunder använder dock inte flygbolagets mobilapp, och vissa av dem har inte loggat in på företagets webbplats. De enda identifierare företaget har för dessa kunder är medlems-ID och e-postadresser.
 
-För att rikta in dem på sociala medier och liknande personbaserade kanaler kan de lägga in kunddata från sina kunder [!DNL CRM] i Audience Manager, med hjälp av de hash-kodade e-postadresserna som identifierare.
+För att rikta in dem på sociala medier och liknande personbaserade kanaler kan de lägga in kunddata från sina kunder [!DNL CRM] i Audience Manager med hjälp av de hash-kodade e-postadresserna som identifierare.
 
 Sedan kan de kombinera sina offlinedata med sina befintliga egenskaper för onlineaktiviteter för att skapa nya målgruppssegment som de kan inrikta sig på [!DNL People-Based Destinations].
