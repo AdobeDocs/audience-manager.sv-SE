@@ -8,7 +8,10 @@ title: Administration
 topic: DIL API
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
 translation-type: tm+mt
-source-git-commit: 1bde60711ca53682b6ab936a7297daf66a1bb336
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '1068'
+ht-degree: 0%
 
 ---
 
@@ -139,7 +142,7 @@ Nedan finns en beskrivning av vad varje jokerbehörighet betyder:
 
 ### Övervaka användaråtkomst {#monitoring-user-access}
 
-[!UICONTROL Role-Based Access Control] kan hjälpa dig att övervaka inloggningsstatus och ge dig en tydlig bild av vem som har tillgång till din Audience Manager-instans.
+[!UICONTROL Role-Based Access Control] kan hjälpa dig att övervaka inloggningsstatus och ge dig en tydlig bild av vem som har åtkomst till din Audience Manager-instans.
 
 Beroende på dina affärskrav kan du aktivera och inaktivera användarkonton efter behov.
 
