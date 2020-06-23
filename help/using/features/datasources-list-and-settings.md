@@ -6,41 +6,35 @@ solution: Audience Manager
 title: Lista över datakällor och inställningar
 uuid: 280a6acd-fef0-4737-a96d-9e22fbc8bfaf
 translation-type: tm+mt
-source-git-commit: 6b55441c2bdde6cf2333852fd59fbe87f4e531eb
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
 
 
-# Lista över datakällor och inställningar {#data-sources-list-and-settings}
+# [!UICONTROL Data Sources] Lista och inställningar {#data-sources-list-and-settings}
 
-Visa en lista över dina konfigurerade datakällor, lägg till nya datakällor och redigera befintliga källor.
+Visa en lista över din nuvarande konfiguration [!UICONTROL data sources], lägg till nya [!UICONTROL data sources]och redigera befintliga [!UICONTROL data sources].
 
-<!-- c_datasources.xml -->
+Du kan också hantera [!UICONTROL data sources] med [!DNL API] metoder. Mer information finns i API-metoder för [datakälla](../api/rest-api-main/aam-api-data-sources.md).
 
-Du kan också hantera datakällor med hjälp av [!DNL API] metoder. Mer information finns i API-metoder för [datakälla](../api/rest-api-main/aam-api-data-sources.md).
-
-## Listvy för datakällor {#list-view}
+## [!UICONTROL Data Sources] Listvy {#list-view}
 
 Kontrollpanelen är en central arbetsyta för hantering av datakällor [!UICONTROL Data Sources] .
 
-<!-- c_datasources_list.xml -->
-
 Kontrollpanelen ( [!UICONTROL Data Sources]**[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**) innehåller funktioner och verktyg som du kan använda för att:
 
-* Se alla era befintliga datakällor, inklusive varje datakällas beskrivning, status och om den är [!UICONTROL Inbound], [!UICONTROL Outbound], båda eller en [!UICONTROL Shared Provider].
-* Sök efter datakällor efter namn.
-* Skapa, redigera och ta bort datakällor.
+* Se alla era befintliga [!UICONTROL data sources]data, inklusive varje datakällas beskrivning, status och om det är [!UICONTROL Inbound], [!UICONTROL Outbound], båda eller en [!UICONTROL Shared Provider].
+* Sök efter [!UICONTROL data sources] namn.
+* Skapa, redigera och ta bort [!UICONTROL data sources].
 
-## Inställningar för datakälla och menyalternativ {#settings-menu-options}
+## [!DNL Data Source] Inställningar och menyalternativ {#settings-menu-options}
 
-Inställningarna i de olika delarna av [!UICONTROL Data Source] hanteringsgränssnittet identifierar din datakälla, avgör hur den används eller delas samt gör att du kan aktivera felrapportering för [!UICONTROL Onboarding Status Report].
+Inställningarna i de olika avsnitten i [!UICONTROL Data Source] hanteringsgränssnittet identifierar dina foton [!DNL data source], avgör hur de används eller delas samt gör att du kan aktivera felrapportering för [!UICONTROL Onboarding Status Report].
 
-## Information om datakälla {#details}
-
-<!-- datasource-settings-definitions.xml -->
+## [!DNL Data Source] Detaljer {#details}
 
 Förutom textfält innehåller avsnittet de kontroller och alternativ som anges nedan [!UICONTROL Data Source Details] .
 
@@ -67,22 +61,22 @@ Förutom textfält innehåller avsnittet de kontroller och alternativ som anges 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> ID-definition</span></b> </p> </td> 
-   <td colname="col2"> <p>Alternativen för <b><span class="uicontrol"> ID-definition</span></b> definierar den relation en datakälla har till ett <span class="keyword"> Audience Manager</span> -användar-ID (UID) och tillhörande enheter som är länkade av <span class="keyword"> Adobe Experience Cloud Device Co-op</span> eller ett annat enhetsdiagram från tredje part som är integrerat med <span class="keyword"> Audience Manager</span>. Alternativen är: </p> <p> 
+   <td colname="col2"> <p>Alternativen för <b><span class="uicontrol"> ID-definition</span></b> definierar relationen mellan en datakälla och ett UUID ( <span class="keyword"> Audience Manager</span> user ID) och tillhörande enheter som är länkade av <span class="keyword"> Adobe Experience Cloud Device Co-op</span> eller ett annat enhetsdiagram från tredje part som är integrerat med <span class="keyword"> Audience Manager</span>. Alternativen är: </p> <p> 
      <ul id="ul_718ADABF0C0C44E29643C85C69CE294F"> 
-      <li id="li_19936095319446698E9A577385CD2A80"> <b><span class="uicontrol"> Person:</span></b> Det ID som används för att definiera en person. Detta ID kan mappas till flera <span class="keyword"> Audience Manager</span> ID:n. </li> 
+      <li id="li_19936095319446698E9A577385CD2A80"> <b><span class="uicontrol"> Person:</span></b> Det ID som används för att definiera en person. Detta ID kan mappas till flera <span class="keyword"> Audience Manager</span> -ID:n. </li> 
       <li id="li_3D939AFF34654D618A05D2603F34462D"> <b><span class="uicontrol"> Hushåll:</span></b> Det ID som används för att definiera en grupp med personer. Detta ID kan mappas till flera Audience Manager ID:n. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Dataexportkontroller {#export-controls}
+## [!UICONTROL Data Export Controls] {#export-controls}
 
-[Dataexportkontroller](../features/data-export-controls.md) är valfria klassificeringsregler som du kan tillämpa på en datakälla och ett mål. De förhindrar dig från att skicka data till ett mål när den åtgärden bryter mot en datasekretess eller användaravtal. Hoppa över det här avsnittet om du inte använder det [!UICONTROL Data Export Controls].
+[Dataexportkontroller](../features/data-export-controls.md) är valfria klassificeringsregler som du kan tillämpa på en [!UICONTROL data source] och [!UICONTROL destination]. De förhindrar dig från att skicka data till en [!UICONTROL destination] när den åtgärden bryter mot en datasekretess eller användaravtal. Hoppa över det här avsnittet om du inte använder det [!UICONTROL Data Export Controls].
 
 >[!IMPORTANT]
 >
->Exportbegränsningar fungerar inte om du inte anger en matchande exportetikett för ett mål.
+>Exportbegränsningar fungerar inte om du inte anger en matchande exportetikett för en [!UICONTROL destination].
 
 Alternativen är:
 
@@ -92,17 +86,17 @@ Alternativen är:
 * **[!UICONTROL Cannot be used for off-site ad targeting]**
 * **[!UICONTROL Cannot be used for on-site personalization]**
 
-## Inställningar för datakälla {#data-source-settings}
+## [!UICONTROL Data Source] Inställningar {#data-source-settings}
 
 Den [!UICONTROL Data Source Settings] innehåller de kontroller och alternativ som listas nedan. Vissa av dessa inställningar har ytterligare underalternativ och menyalternativ som du kan välja för att ändra en datakälla.
 
-### Inställningar för inkommande datakälla
+### [!UICONTROL Inbound Data Source] Inställningar
 
 Markera kryssrutan **[!UICONTROL Inbound]** när datakällan är avsedd att ta emot inkommande data. Om du markerar **[!UICONTROL Inbound]** kryssrutan visas ytterligare två grupper av kontroller som beskrivs nedan.
 
 >[!NOTE]
 >
->Kryssrutan är bara avsedd att visa eller dölja de datakällkontroller som beskrivs nedan. **[!UICONTROL Inbound]** Om du avmarkerar alternativet påverkas inte dataanvändningen på något sätt. **[!UICONTROL Inbound]** Dina inbyggda data kommer att bearbetas oavsett vilket alternativ du markerar.
+>Kryssrutan är bara avsedd att visa eller dölja de **[!UICONTROL Inbound]** [!UICONTROL data source] kontroller som beskrivs nedan. Om du avmarkerar alternativet påverkas inte dataanvändningen på något sätt. **[!UICONTROL Inbound]** Dina inbyggda data kommer att bearbetas oavsett vilket alternativ du markerar.
 
 <table id="table_B2825B7BE0DB4665B47C589A3787CD93"> 
  <thead> 
@@ -118,7 +112,7 @@ Markera kryssrutan **[!UICONTROL Inbound]** när datakällan är avsedd att ta e
      <ul id="ul_3BC963CE378B4F6CB1861643A4541634"> 
       <li id="li_B86C5E7847424A2B9C094DF02741DDB8"> <b><span class="uicontrol"> Kund-ID</span></b>: Identifierar inkommande data med ett kund-ID. </li> 
       <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol"> Audience Manager-ID</span></b>: Identifierar inkommande data med ett <span class="keyword"> Audience Manager</span> -ID. </li> 
-      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud-ID</span></b>: Identifierar inkommande data med ett <span class="keyword"> Experience Cloud</span> ID. See <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </li> 
+      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud-ID</span></b>: Identifierar inkommande data med ett <span class="keyword"> Experience Cloud</span> -ID. See <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -128,7 +122,7 @@ Markera kryssrutan **[!UICONTROL Inbound]** när datakällan är avsedd att ta e
  </tbody> 
 </table>
 
-### Andra inställningar för datakälla
+### Andra [!UICONTROL Data Source] inställningar
 
 <table id="table_82FEFA8DC8294FA18FB4C17F02DF5152"> 
  <thead> 
@@ -152,14 +146,14 @@ Markera kryssrutan **[!UICONTROL Inbound]** när datakällan är avsedd att ta e
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> Använd som enhetsdiagram</span></b> </p> </td> 
-   <td colname="col2"> <p>Skapar en datakälla som ett enhetsdiagram som du kan förse andra <span class="keyword"> Audience Manager</span> -kunder med. Innan du väljer det här alternativet bör du tala med din <span class="keyword"> Audience Manager</span> -konsult om vilka kunder den här <span class="wintitle"> datakällan</span> ska delas med. Din konsult måste tillhandahålla dessa företag genom våra interna processer. </p> <p>Med det här alternativet visas ett textfält där du kan byta namn på datakällan med ett alias. Om du använder ett alias åsidosätter det nya namnet datakällans namn och visas i <span class="wintitle"> Enhetsalternativ</span> när du <a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule"> skapar en profilsammanfogningsregel</a>. </p> </td> 
+   <td colname="col2"> <p>Skapar en datakälla som ett enhetsdiagram som du kan förse andra <span class="keyword"> Audience Manager</span> -kunder med. Innan du väljer det här alternativet bör du informera din <span class="keyword"> Audience Manager</span> -konsult om vilka kunder den här <span class="wintitle"> datakällan</span> ska delas med. Din konsult måste tillhandahålla dessa företag genom våra interna processer. </p> <p>Med det här alternativet visas ett textfält där du kan byta namn på datakällan med ett alias. Om du använder ett alias åsidosätter det nya namnet datakällans namn och visas i <span class="wintitle"> Enhetsalternativ</span> när du <a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule"> skapar en profilsammanfogningsregel</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> Dela associerade besökar- eller enhets-ID:n med specifika kunder i Audience Manager</span></b> </p> </td> 
+   <td colname="col1"> <p> <b><span class="uicontrol"> Dela associerade besökar- eller enhets-ID:n med specifika Audience Manager-kunder</span></b> </p> </td> 
    <td colname="col2"> <p>Datakällan för olika enheter innehåller ID:n från ett enhetsdiagram. Ett enhetsdiagram är en samling ID:n som mappar till ett eller flera <span class="keyword"> Audience Manager</span> ID:n till ett kluster. Klustret representerar vanligtvis en person eller en större hushållsgrupp. Endast tillgängligt för konton som listas som"Data Provider". </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> Dela associerade besökar- eller enhets-ID:n via Audience Manager-plattformen</span></b> </p> </td> 
+   <td colname="col1"> <p> <b><span class="uicontrol"> Dela associerade besökar- eller enhets-ID:n över Audience Manager Platform</span></b> </p> </td> 
    <td colname="col2"> <p>Datakällan innehåller besökar- eller enhets-ID:n som kan delas med andra <span class="keyword"> Experience Cloud</span> -lösningar. </p> </td> 
   </tr>
   <tr> 
