@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Samla in data för kampanjklickningar via pixelanrop
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '652'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 # Samla in data för kampanjklickningar via pixelanrop {#capturing-campaign-click-data-via-pixel-calls}
 
-Klickspårning möjliggör mätning av besökarnas engagemang under hela kampanjen, eftersom klickbaserade aktiviteter registreras för tredjepartskreatörer. På samma sätt som vid [visningar](/help/using/integration/media-data-integration/impression-data-pixels.md)skickas ett händelseanrop till Audience Manager datainsamlingsservrar ([!DNL DCS]) för behandling. Besökaren omdirigeras sedan till den avsedda webbadressen.
+Klickspårning möjliggör mätning av besökarnas engagemang under hela kampanjen, eftersom klickbaserade aktiviteter registreras för tredjepartskreatörer. På samma sätt som vid [avtrycksinsamling](/help/using/integration/media-data-integration/impression-data-pixels.md)skickas ett händelseanrop till [!DNL Audience Manager] datainsamlingsservrarna ([!DNL DCS]) för bearbetning. Besökaren omdirigeras sedan till den avsedda webbadressen.
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ Baserat på ovanstående exempel omdirigeras webbläsaren till följande [!DNL U
 
 `https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`
 
-## Ytterligare funktionalitet - rapporter om målgruppsoptimering
+## Ytterligare funktioner - [!UICONTROL Audience Optimization Reports]
 
 Du kan använda pixelanrop för att styra [målgruppsoptimeringsrapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md). Se [Översikt och mappningar för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) om du vill använda pixlar som stöd för rapporterna.
 
