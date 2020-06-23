@@ -6,19 +6,17 @@ solution: Audience Manager
 title: ID-synkronisering för inkommande dataöverföringar
 uuid: 037e74a6-acfd-4cef-b693-16b7aaa8e976
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '478'
 ht-degree: 3%
 
 ---
 
 
-# ID-synkronisering för inkommande dataöverföringar{#id-synchronization-for-inbound-data-transfers}
+# ID-synkronisering för inkommande dataöverföringar {#id-synchronization-for-inbound-data-transfers}
 
 Beskriver syntaxen och parametrarna som används i det första `HTTP` anropet för att synkronisera användar-ID mellan en leverantör och [!DNL Audience Manager]. ID-synkroniseringen kan börja när du har skickat din datataxonomi till [!DNL Audience Manager].
-
-<!-- c_id_sync_in.xml -->
 
 ID-synkronisering är det första steget i den inkommande, asynkrona dataöverföringsprocessen. I det här steget jämför [!DNL Audience Manager] och leverantören ID:n för sina respektive webbplatsbesökare. En kund kan till exempel känna en användare med ID 123. [!DNL Audience Manager] Din datapartner kan dock identifiera den här användaren med ID 456. Med synkroniseringsprocessen kan [!DNL Audience Manager] och en dataleverantör stämma av dessa olika ID:n och identifiera användare i sina respektive system. När allt är klart [!DNL Audience Manager] och din tredjepartspartner bör ha motsvarande ID:n för varje unik användare som visas i våra nätverk.
 
@@ -73,7 +71,7 @@ Anropet [!DNL URL] för synkronisering av inkommande ID ska innehålla variabler
  </tbody> 
 </table>
 
-## Deklarerad ID-händelse {#declared-id-event}
+## [!UICONTROL Declared ID] Händelse {#declared-id-event}
 
 Mer information finns i [Deklarerade ID:n](../../../features/declared-ids.md).
 
