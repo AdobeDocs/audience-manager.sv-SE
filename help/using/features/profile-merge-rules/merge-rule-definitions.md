@@ -6,23 +6,23 @@ solution: Audience Manager
 title: Alternativ för profilkopplingsregel definierade
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
 
 
-# Alternativ för profilkopplingsregler definierade {#profile-merge-rule-options-defined}
+# [!UICONTROL Profile Merge Rules] Alternativ definierade {#profile-merge-rule-options-defined}
 
-Med alternativen för sammanfogningsregeln kan du styra vilken typ av data som [!DNL Audience Manager] används för segmentering. En sammanfogningsregel kan innehålla enhetsprofiler som har mappats av enhetsdiagrammet, [!UICONTROL Profile Link] enhetsdiagrammet [!UICONTROL Adobe Experience Cloud Device Co-op]och/eller andra tredjepartsdiagramleverantörer som är integrerade med [!DNL Audience Manager]. Du kan skapa maximalt 4 [!UICONTROL Profile Merge Rules]. Den fjärde [!UICONTROL Profile Merge Rule] är exklusivt tillgänglig för kunder som köpt [!UICONTROL People-Based Destinations] tillägget.
+Med [!UICONTROL profile merge rule] alternativen kan du styra vilken typ av data som [!DNL Audience Manager] används för segmentering. Ett [!UICONTROL profile merge rule] program kan innehålla enhetsprofiler som mappats av [!UICONTROL Profile Link] enhetsdiagrammet, [!UICONTROL Adobe Experience Cloud Device Co-op]och/eller andra tredjepartsdiagramleverantörer som är integrerade med [!DNL Audience Manager]. Du kan skapa maximalt 4 [!UICONTROL Profile Merge Rules]. Den fjärde [!UICONTROL Profile Merge Rule] är exklusivt tillgänglig för kunder som köpt [!UICONTROL People-Based Destinations] tillägget.
 
 Du skapar en [!UICONTROL Profile Merge Rule] genom att göra ett val bland alternativen som beskrivs nedan [!UICONTROL Profile Merge Rule Setup].
 
 ![profile-merge-rule-setup](assets/profile-merge-rule-setup.png)
 
-## Översikt över alternativ för sammanslagningsregel för profil {#overview}
+## [!UICONTROL Profile Merge Rule] Alternativöversikt {#overview}
 
 [!UICONTROL Profile Merge Rules] möjliggör ett antal kombinationer av regler, som var och en är inriktad på specifika användningsområden. Se tabellen nedan för mer ingående information om när varje regelkombination ska användas.
 
@@ -36,21 +36,21 @@ Du skapar en [!UICONTROL Profile Merge Rule] genom att göra ett val bland alter
 | [!UICONTROL Last Authenticated Profiles] | [!UICONTROL External Device Graph] (inkluderar [!UICONTROL Co-op Device Graph]) | Alla kunder | Realtid och batch | Nej | [Avancerad målgruppsanpassning mellan enheter](external-graph-use-cases.md#advanced-graph-expansion) |
 | [!UICONTROL All Cross-Device Profiles] | Ej tillämpligt | Endast för [personbaserade](../destinations/people-based-destinations-overview.md) destinationskunder | Endast batch | Nej | [Målgruppsanpassning för personbaserade destinationer](merge-rule-targeting-options.md#all-cross-device) |
 
-## Utvärdering av sammanslagningsregelsegment för profil {#segment-evaluation}
+## [!UICONTROL Profile Merge Rule] [!UICONTROL Segment] Utvärdering {#segment-evaluation}
 
-Beroende på din [!UICONTROL Profile Merge Rules] konfiguration [!DNL Audience Manager] kan utföra segmentutvärderingen i realtid, i batch eller både och.
+Beroende på din [!UICONTROL Profile Merge Rules] konfiguration [!DNL Audience Manager] kan utföra [!UICONTROL segment] utvärderingen i realtid, i batch eller både och.
 
-* Vid utvärdering av segment i realtid måste besökarna [!DNL DCS] se era digitala resurser i realtid för att kvalificera sig för segmentet.
-* Utvärdering av batchsegment görs mot tidigare kvalificerade egenskaper.
-* [!UICONTROL Profile Merge Rules] som stöder både utvärdering i realtid och gruppsegmentsutvärdering kombinerar besökaraktiviteten i realtid med tidigare kvalificerade egenskaper.
+* Vid [!UICONTROL segment] utvärdering i realtid måste besökarna [!DNL DCS] se era digitala resurser i realtid för att kvalificera sig för [!UICONTROL segment].
+* Batchutvärderingen [!UICONTROL segment] utförs mot tidigare kvalificerade [!UICONTROL traits].
+* [!UICONTROL Profile Merge Rules] som stöder både realtids- och batchutvärdering kombinerar besökaraktiviteten i realtid med tidigare kvalificerad [!UICONTROL segment] aktivitet [!UICONTROL traits].
 
-## Rapporteringsfördröjning för profilkopplingsregler {#reporting-latency}
+## [!UICONTROL Profile Merge Rules] Svarstid för rapportering {#reporting-latency}
 
-Utvärderingen av segment i realtid återspeglas direkt i [!UICONTROL Profile Merge Rules] rapporterna.
+Realtidsutvärderingen [!UICONTROL segment] återspeglas omedelbart i [!UICONTROL Profile Merge Rules] rapporterna.
 
-Det kan ta upp till 24 timmar att utvärdera batchsegment för att spegla dem i [profilkopplingsregelrapporter](profile-link-metrics.md).
+Det kan ta upp till 24 timmar att [!UICONTROL segment] utvärdera grupper för att spegla i [rapporter](profile-link-metrics.md)om regler för profilsammanslagning.
 
-## Alternativ för olika enheter {#auth-options}
+## [!UICONTROL Cross-Device Options] {#auth-options}
 
 Med [!UICONTROL Cross-Device Options] verktyget kan du välja autentiserade och oautentiserade användare och använda deras enhetsövergripande profil för segmentering. Dessa alternativ hjälper dig att identifiera och nå specifika användare på en delad enhet. Mer information om anonyma och autentiserade användare finns i Autentiseringstillstånd för [besökare i Audience Manager](../../reference/visitor-authentication-states.md).
 
@@ -76,18 +76,18 @@ Med [!UICONTROL Cross-Device Options] verktyget kan du välja autentiserade och 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> Alla enhetsövergripande profiler</span></b> </p> </td> 
-   <td colname="col2"> <p>Tells Audience Manager to read data from all cross-device profiles, regardless of the authentication state. Det här alternativet är endast tillgängligt för Audience Manager-kunder som har köpt tillägget Personer-baserade destinationer.</p> </td>
+   <td colname="col2"> <p>Uppmanar Audience Manager att läsa data från alla enhetsövergripande profiler, oavsett autentiseringsstatus. Det här alternativet är endast tillgängligt för Audience Manager-kunder som har köpt tillägget Personer-baserade destinationer.</p> </td>
   </tr>
  </tbody>
 </table>
 
-## Cross-Device Profile Options {#profile-options}
+## [!UICONTROL Cross-Device Profile Options] {#profile-options}
 
-I [!UICONTROL Cross-Device Profile Options] listan visas datakällor mellan olika enheter. Dessa alternativ använder de namn du angav när du skapade en datakälla för olika enheter (se [Skapa en datakälla](merge-rules-start.md#create-data-source)för olika enheter). Du kan välja upp till tre datakällor för olika enheter som ska användas med varje profilregel. De [!UICONTROL Authenticated Profile Options] är tillgängliga när du väljer **[!UICONTROL Current Authenticated Profiles]** eller **[!UICONTROL Last Authenticated Profiles]**.
+I [!UICONTROL Cross-Device Profile Options] listorna [!UICONTROL cross-device data sources]. Dessa alternativ använder de namn du angav när du skapade en [!UICONTROL cross-device] fil [!UICONTROL data source] (se [Skapa en datakälla](merge-rules-start.md#create-data-source)för olika enheter). Du kan välja upp till 3 [!UICONTROL cross-device data sources] för varje profilregel. De [!UICONTROL Authenticated Profile Options] är tillgängliga när du väljer **[!UICONTROL Current Authenticated Profiles]** eller **[!UICONTROL Last Authenticated Profiles]**.
 
-## Enhetsalternativ {#device-options}
+## [!UICONTROL Device Options] {#device-options}
 
-Med den här ikonen kan du [!UICONTROL Device Options] välja vilken typ av *`device profile`* som används av en [!UICONTROL Profile Merge Rule]. En enhetsprofil byggs utifrån egenskaper som samlats in från anonym surfningsaktivitet. En regel för profilsammanslagning innehåller åtminstone ett autentiserat alternativ och ett enhetsalternativ.
+Med den här ikonen kan du [!UICONTROL Device Options] välja vilken typ av *`device profile`* som används av en [!UICONTROL Profile Merge Rule]. En enhetsprofil har skapats utifrån [!UICONTROL traits] en anonym surfningsaktivitet. Som ett minimum [!UICONTROL profile merge rule] innehåller en [!UICONTROL authenticated option] och en [!UICONTROL device option].
 
 <table id="table_D373FB787D1A4E3485C02C4A76F03395"> 
  <thead> 
@@ -111,7 +111,7 @@ Med den här ikonen kan du [!UICONTROL Device Options] välja vilken typ av *`de
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> Co-op Device Graph</span></b> </p> </td> 
-   <td colname="col2"> <p>Uppmanar <span class="keyword"> Audience Manager</span> att läsa profilerna från den aktuella enheten och upp till 100 andra enheter med hjälp av länkarna från <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html" format="https" scope="external"> Experience Cloud Device Co-op</a>. </p> <p>Device Co-op <span class="keyword"></span> är ett digitalt samarbete där deltagande kunder delar information om enhetslänkar. Device Co-op <span class="keyword"> bearbetar dessa data i ett</span> enhetsdiagram <span class="term"></span>. Ett enhetsdiagram länkar samman enheter från enhetsgrupper. Länkarna bygger på <a href="https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/links.html" format="https" scope="external"> sannolikhetsdata och deterministiska data</a>. The clusters represent a group of devices used by an unknown person. Device Co-op <span class="keyword"></span> delar dessa kluster bland sina medlemmar, vilket hjälper dem att leverera värdefulla och enhetliga upplevelser på olika enheter till sina kunder. </p> <p> Mer information om Device Co-op <span class="wintitle"></span>finns i: </p> <p> 
+   <td colname="col2"> <p>Uppmanar <span class="keyword"> Audience Manager</span> att läsa profilerna från den aktuella enheten och upp till 100 andra enheter med hjälp av länkarna från <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html" format="https" scope="external"> Experience Cloud Device Co-op</a>. </p> <p>Device Co-op <span class="keyword"></span> är ett digitalt samarbete där deltagande kunder delar information om enhetslänkar. Device Co-op <span class="keyword"> bearbetar dessa data i ett</span> enhetsdiagram <span class="term"></span>. Ett enhetsdiagram länkar samman enheter från enhetsgrupper. Länkarna bygger på <a href="https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/links.html" format="https" scope="external"> sannolikhetsdata och deterministiska data</a>. Klustren representerar en grupp enheter som används av en okänd person. Device Co-op <span class="keyword"></span> delar dessa kluster bland sina medlemmar, vilket hjälper dem att leverera värdefulla och enhetliga upplevelser på olika enheter till sina kunder. </p> <p> Mer information om Device Co-op <span class="wintitle"></span>finns i: </p> <p> 
      <ul id="ul_8EDA7D092ECD444C8C19CDC7534D84DE"> 
       <li id="li_323BC5993D6A4BA3962169BF0ED37C55"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/home.html" format="https" scope="external"> Device Co-op - översikt</a> </li> 
       <li id="li_0BDB2144EC584002B3B9F1D64B6CD580"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/requirements.html" format="https" scope="external"> Krav för medlemskap</a> </li> 
@@ -122,16 +122,16 @@ Med den här ikonen kan du [!UICONTROL Device Options] välja vilken typ av *`de
    <td colname="col1"> <p><b>Alternativ</b> för tredjepartsdiagram (person och hushåll) </p> </td>
    <td colname="col2"> <p>Med dessa alternativ kan du skapa sammanfogningsregler som baseras på enhetsgraferingsteknik från en tredjepartsleverantör. Ett enhetsdiagram från tredje part innehåller: </p> <p> 
      <ul id="ul_5BA0D940BA15484FADF134A5A73815D5"> 
-      <li id="li_389ACEBBF79A47499B6119B0F9CB3B5D"> Probabilistic and/or deterministic data. </li> 
-      <li id="li_E8606D3871A145A68E87BDC3554AC4EF">Data at the person or household level. </li> 
-     </ul> </p> <p>To use these options, you must be a customer of a device graph provides who is already integrated with <span class="keyword"> Audience Manager</span>. Kontakta din kontoansvarige om du vill ha mer information eller vill komma igång. </p> </td>
+      <li id="li_389ACEBBF79A47499B6119B0F9CB3B5D"> Sannolikhetsdata och/eller deterministiska data. </li> 
+      <li id="li_E8606D3871A145A68E87BDC3554AC4EF">Uppgifter på individ- eller hushållsnivå. </li> 
+     </ul> </p> <p>Om du vill använda dessa alternativ måste du vara kund till en enhetsdiagram som redan är integrerad med <span class="keyword"> Audience Manager</span>. Kontakta din kontoansvarige om du vill ha mer information eller vill komma igång. </p> </td>
   </tr>
  </tbody>
 </table>
 
-## External Merge Policies {#external-merge-policies}
+## [!UICONTROL External Merge Policies] {#external-merge-policies}
 
-Audience segments that were automatically created from other Experience Cloud solutions, based on merge rules defined outside of [!DNL Audience Manager], are marked as using an [!UICONTROL External Merge Policy]. Se till exempel [Målgruppsdelning mellan Audience Manager och Adobe Experience Platform](../../integration/integration-aep/aam-aep-audience-sharing.md).
+Målgruppssegment som automatiskt skapats från andra [!DNL Experience Cloud] lösningar, baserat på sammanfogningsregler som definierats utanför [!DNL Audience Manager], markeras som om de använder en [!UICONTROL External Merge Policy]. Se till exempel [Målgruppsdelning mellan Audience Manager och Adobe Experience Platform](../../integration/integration-aep/aam-aep-audience-sharing.md).
 
 >[!MORELIKETHIS]
 >
