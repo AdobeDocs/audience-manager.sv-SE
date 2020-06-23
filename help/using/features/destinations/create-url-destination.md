@@ -5,36 +5,39 @@ seo-title: Konfigurera ett URL-mål
 solution: Audience Manager
 title: Konfigurera ett URL-mål
 translation-type: tm+mt
-source-git-commit: 6f13bc32f00c81a67026bcedd72badbf536311e1
+source-git-commit: d83b07a542dd337773d287f4eba0960c6e258504
+workflow-type: tm+mt
+source-wordcount: '513'
+ht-degree: 0%
 
 ---
 
 
 
-# Konfigurera ett URL-mål {#configure-url-destination}
+# Konfigurera en [!DNL URL Destination] {#configure-url-destination}
 
-Ett [!DNL URL] mål gör pixelanrop från en sida till målet. Följ de här instruktionerna för att skapa ett [!DNL URL] mål med [!UICONTROL Destination Builder].
+Ett [!DNL URL destination] pixelanrop görs från en sida till din [!DNL destination]. Följ de här instruktionerna för att skapa en [!DNL URL] med [!DNL destination] [!UICONTROL Destination Builder].
 
 <!-- create-url-destination.xml -->
 
-Om du vill skapa ett nytt [!DNL URL] mål går du till **[!UICONTROL Audience Data > Destinations > Create New Destination]** och slutför avsnitten enligt nedan.
+Om du vill skapa ett nytt [!DNL URL] fönster går du till [!DNL destination]**[!UICONTROL Audience Data > Destinations > Create New Destination]** och fyller i avsnitten som beskrivs nedan.
 
 ## Grundläggande information {#basic-info}
 
-Det här avsnittet innehåller fält och alternativ som startar processen för att skapa URL-mål. Så här slutför du det här avsnittet:
+Det här avsnittet innehåller fält och alternativ som startar [!DNL URL destination] skapandet. Så här slutför du det här avsnittet:
 
 1. Klicka **[!UICONTROL Basic Information]** för att visa kontrollerna.
-2. Namnge målet. Undvik förkortningar och specialtecken.
-3. *(Valfritt)* Beskriv målet. En kort beskrivning är ett effektivt sätt att definiera eller ange mer information om en destination.
+2. Namnge [!DNL destination]. Undvik förkortningar och specialtecken.
+3. *(Valfritt)* Beskriv [!DNL destination]. En kortfattad beskrivning är ett effektivt sätt att definiera eller tillhandahålla mer information om ett dokument [!DNL destination].
 4. In the **[!UICONTROL Category]** list, choose **[!UICONTROL Custom]**.
-5. I **[!UICONTROL Environment]** listan väljer du den miljö där URL-målet ska utlösas.
+5. I **[!UICONTROL Environment]** listan väljer du den miljö där [!DNL URL destination]utlösaren ska ske.
 6. Klicka på i **[!UICONTROL Type]** listan **[!UICONTROL URL]**.
 7. *(Valfritt)* Välj en **[!UICONTROL Auto-fill Destination Mapping]**. Alternativen är:
-   * **[!UICONTROL Segment ID]**: Lägger till och skickar automatiskt segment-ID:t till målet.
+   * **[!UICONTROL Segment ID]**: Lägger till och skickar automatiskt segment-ID:t till [!DNL destination].
    * **[!UICONTROL Integration Code Value]**: Lägger automatiskt till och skickar segmentintegreringskoden till målmappningen. Integrationskoden är en unik identifierare som skapas och används av kunden. Det får innehålla högst 255 tecken.
-8. Klicka **[!UICONTROL Next]** för att gå till [!UICONTROL Configuration] inställningarna eller klicka för **[!UICONTROL Data Export Labels]** att använda exportkontroller på målet.
+8. Klicka **[!UICONTROL Next]** för att gå till [!UICONTROL Configuration] inställningarna eller klicka **[!UICONTROL Data Export Labels]** för att använda exportkontroller på [!DNL destination].
 
-## Dataexportetiketter {#data-export-labels-dest}
+## [!UICONTROL Data Export Labels] {#data-export-labels-dest}
 
 Det här avsnittet innehåller alternativ som tillämpar [dataexportkontroller](../../features/data-export-controls.md) på ett [!DNL URL] mål. Hoppa över det här steget om du inte använder dataexportkontroller. Så här slutför du det här avsnittet:
 
@@ -48,23 +51,23 @@ Det här avsnittet innehåller alternativ som gör att du kan ange en bas [!DNL 
 
 1. Klicka **[!UICONTROL Configuration]** för att visa kontrollerna.
 1. *(Valfritt)* Markera **[!UICONTROL Serialize]** kryssrutan.
-På så sätt kan du skicka segment till en destination sekventiellt i stället för att göra separata anrop för varje segment. Serialisering hjälper till att effektivisera dataöverföringar. Om du markerar den här kryssrutan visas URL- och avgränsningsfälten. Mer information finns i [Standard- och Serial Key-Value-par](../../features/destinations/key-value-pairs.md).
+På så sätt kan du skicka segment till en [!DNL destination] sekventiell plats i stället för att göra separata anrop för varje segment. Serialisering hjälper till att effektivisera dataöverföringar. Om du markerar den här kryssrutan visas URL- och avgränsningsfälten. Mer information finns i [Standard- och Serial Key-Value-par](../../features/destinations/key-value-pairs.md).
 1. Om du väljer **[!UICONTROL Serialize]** det här alternativet måste du även konfigurera de URL- och avgränsningsfält som beskrivs nedan.
 
 | Fält | Beskrivning |
 |--- |--- |
-| Bas-URL | Basdelen av en standard `HTTP` [!DNL URL] som inte ändras. Du måste också placera `%ALIAS%` platshållarmakrot [](../../features/destinations/destination-macros.md#destination-macros-defined) i bas-URL:en. Exempel: `https://www.myCompany.com/%alias%...` |
-| Säker URL | Basdelen av en säker `HTTPS` del [!DNL URL] som inte ändras. Du måste också placera `%ALIAS%` platshållarmakrot [](../../features/destinations/destination-macros.md#destination-macros-defined) i bas-URL:en. Exempel: `https://www.myCompany.com/%alias%...` |
-| Avgränsare | Symbolen som avgränsar segmentvariablerna i [!DNL URL] strängen. Det här är vanligtvis ett komma eller semikolon. Hämta den här informationen från din målpartner. |
+| [!UICONTROL Base URL] | Basdelen av en standard `HTTP` [!DNL URL] som inte ändras. Du måste också placera `%ALIAS%` platshållarmakrot [](../../features/destinations/destination-macros.md#destination-macros-defined) i bas-URL:en. Exempel: `https://www.myCompany.com/%alias%...` |
+| [!UICONTROL Secure URL] | Basdelen av en säker `HTTPS` del [!DNL URL] som inte ändras. Du måste också placera `%ALIAS%` platshållarmakrot [](../../features/destinations/destination-macros.md#destination-macros-defined) i bas-URL:en. Exempel: `https://www.myCompany.com/%alias%...` |
+| [!UICONTROL Delimiter] | Symbolen som avgränsar segmentvariablerna i [!DNL URL] strängen. Det här är vanligtvis ett komma eller semikolon. Hämta den här informationen från din målpartner. |
 
-## Segmentmappningar {#segment-mappings}
+## [!UICONTROL Segment Mappings] {#segment-mappings}
 
-I det här avsnittet kan du söka efter och lägga till segment i målet. Så här slutför du det här avsnittet:
+I det här avsnittet kan du söka efter och lägga till segment [!UICONTROL destination]. Så här slutför du det här avsnittet:
 
 1. Klicka **[!UICONTROL Segment Mappings]** för att visa kontrollerna.
 1. I **[!UICONTROL Search and Add Segments]** rutan börjar du skriva namnet på ett segment eller klicka på **[!UICONTROL Browse All Segments]** bläddra i en lista över tillgängliga segment.
 1. Klicka **[!UICONTROL Add Selected Segments]** när du hittar det segment du vill använda. När du lägger till ett segment öppnas [!UICONTROL Edit Mapping] fönstret.
 1. I [!UICONTROL Edit Mapping]:
    * **[!UICONTROL Mappings]**: Ange nyckelvärdepar som används av segmentet.
-   * **[!UICONTROL Start Date]** och **[!UICONTROL End Date]**: Välj ett start- och slutdatum för målet. Om slutdatumet är tomt upphör målet aldrig att gälla.
+   * **[!UICONTROL Start Date]** och **[!UICONTROL End Date]**: Välj ett start- och slutdatum för [!DNL destination]klippet. Om slutdatumet är tomt går det [!DNL destination] aldrig ut.
 1. Klicka på **[!UICONTROL Done]**.
