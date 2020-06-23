@@ -6,17 +6,17 @@ solution: Audience Manager
 title: Krav för FTP-namn och filstorlek för inkommande datafiler
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '896'
 ht-degree: 2%
 
 ---
 
 
-# Krav för FTP-namn och filstorlek för inkommande datafiler{#ftp-name-and-file-size-requirements-for-inbound-data-files}
+# [!DNL FTP] Krav för namn och filstorlek för inkommande datafiler {#ftp-name-and-file-size-requirements-for-inbound-data-files}
 
-Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du måste följa när du skickar data till Audience Manager. Ange namn och storlek för filerna enligt dessa specifikationer när du skickar data till en Audience Manager- [!DNL FTP] katalog.
+Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du måste följa när du skickar data till [!DNL Audience Manager]. Ange namn och storlek för filerna enligt dessa specifikationer när du skickar data till en Audience Manager- [!DNL FTP] katalog.
 
 >[!WARNING]
 >
