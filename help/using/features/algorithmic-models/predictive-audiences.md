@@ -5,9 +5,9 @@ seo-title: Översikt över prediktiva målgrupper
 solution: Audience Manager
 title: Audience Manager prediktiva målgrupper
 translation-type: tm+mt
-source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+source-git-commit: f52321f3621d9eb6b9c5b643a3516f39f35466c2
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1251'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Du kan identifiera de prediktiva segment som skapas av modellen på [!UICONTROL 
 
 ## Användningsexempel {#use-cases}
 
-För att du bättre ska förstå hur och när du kan använda [!UICONTROL Predictive Audiences]finns det några exempel på hur Audience Manager-kunder kan lösa det med den här funktionen.
+För att ni bättre ska förstå hur och när ni kan använda [!UICONTROL Predictive Audiences]finns det några exempel som Audience Manager-kunder kan lösa med den här funktionen.
 
 ### Användningsfall 1
 
@@ -111,7 +111,7 @@ Tänk på följande när du konfigurerar dina [!UICONTROL Predictive Audiences] 
    >[!IMPORTANT]
    > För närvarande visas [!UICONTROL Total Segment Population] värdet för dina prediktiva segment som 0, och [grupputgående dataöverföringar](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) stöds inte för [!UICONTROL Predictive Audiences]. Detta beteende ändras i en framtida uppdatering.
 * [!UICONTROL Predictive Audiences] utför målgruppsklassificering baserat på era egenskaper hos första part, från alla era egna datakällor.
-* Segmentutvärdering för [!UICONTROL Predictive Audiences] använder den standard **[!UICONTROL Profile Merge Rule]** som du definierade i ditt konto. Mer information om [!UICONTROL Profile Merge Rules] finns i den dedikerade [dokumentationen](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-overview.html).
+* Segmentutvärdering för [!UICONTROL Predictive Audiences] använder den standard **[!UICONTROL Profile Merge Rule]** som du definierade i ditt konto. Mer information om [!UICONTROL Profile Merge Rules] finns i den dedikerade [dokumentationen](../profile-merge-rules/merge-rules-overview.md).
 * Vissa egenskaper och segment stöds inte som baslinjer eller målgrupper. [!UICONTROL Predictive Audiences] modeller kan inte sparas när du väljer något av följande som baslinjer eller målgrupper:
    * Prediktiva egenskaper och segment som skapats med prediktiva egenskaper.
    * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md) egenskaper eller segment,
