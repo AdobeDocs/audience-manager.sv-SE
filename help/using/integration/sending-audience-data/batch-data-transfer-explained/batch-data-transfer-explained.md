@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Beskriver batchdataöverföringsprocessen
 uuid: a9eee940-151c-44f8-9fe9-8ab47d8fa45c
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Gruppdataintegreringsprocessen sparar besökarinformation på våra servrar och 
 ## Dataintegreringssteg
 
 1. En användare besöker en kundwebbplats.
-1. Audience Manager och tredjepartsleverantören av data tilldelar besökaren ett unikt ID (vanligtvis med en cookie).
-1. Audience Manager anropar en tredjeparts dataleverantör för att matcha besökar-ID:n.
-1. En schemalagd begäran utbyter vanligtvis data om besökarsegment mellan Audience Manager och din tredjepartsleverantör.
+1. [!DNL Audience Manager] och tredjepartsleverantören av data tilldelar besökaren ett unikt ID (vanligtvis med en cookie).
+1. [!DNL Audience Manager] anropar tredjeparts dataleverantör för att matcha besökar-ID:n.
+1. En schemalagd begäran utbyter vanligtvis data om besökarsegment mellan [!DNL Audience Manager] och tredjepartsleverantör.
 1. När en inkommande [!UICONTROL Server-to-Server] fil bearbetas skickas ett kvitto via e-post till partnerlösningar och, om konfigurationen är konfigurerad, till partnern. Mer information finns i [Exempelmeddelande till partners efter inkommande bearbetning](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md).
