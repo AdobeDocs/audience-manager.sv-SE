@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Innehållssyntax för inkommande datafil, ogiltiga tecken, variabler och exempel
 uuid: 88699b29-1502-4183-a9a4-be70692a02bb
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
@@ -78,9 +78,9 @@ Tabellen listar och definierar de variabler som används i en korrekt formaterad
  </tbody> 
 </table>
 
-## ID för formateringsspår {#formatting-trait-ids}
+## Formatering [!UICONTROL Trait IDs] {#formatting-trait-ids}
 
-I följande tabell beskrivs de prefix som identifierar trait-namn eller ID:n i en inkommande datafil. Se [exempelfilerna](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#data-file-examples) för exempel.
+I följande tabell beskrivs de prefix som identifierar [!UICONTROL trait] namn eller ID:n i en inkommande datafil. Se [exempelfilerna](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#data-file-examples) för exempel.
 
 <table id="table_AD54B3E5487E47C481A4E5FD3A93FDA5"> 
  <thead> 
@@ -124,13 +124,13 @@ I följande tabell beskrivs de prefix som identifierar trait-namn eller ID:n i e
  </tbody>
 </table>
 
-## Ogiltiga tecken i trait-ID:n, användar-ID:n och nyckelvärdepar {#invalid-chars}
+## Ogiltiga tecken i [!UICONTROL Trait IDs]och [!UICONTROL User IDs] nyckelvärdepar {#invalid-chars}
 
-### Trait IDs
+### [!UICONTROL Trait IDs]
 
-Trait ID:n består endast av numeriska tecken. Vi ber dig att *endast inkludera anpassade egenskaper* i inkommande datafiler. Vi bearbetar inga andra typer av egenskaper vid inkommande dataöverföring.
+[!UICONTROL Trait IDs] består endast av numeriska tecken. Vi ber dig att *endast inkludera[!UICONTROL onboarded traits]*i inkommande datafiler. Vi bearbetar inga andra[!UICONTROL trait]typer i den inkommande dataöverföringen.
 
-### Användar-ID
+### [!UICONTROL User IDs]
 
 <table id="table_8C5C7271B813441EA2D45CA2FE2A6C59"> 
  <thead> 
@@ -237,7 +237,7 @@ Felaktigt formaterade värdenamn i nyckelvärdepar orsakar också problem. Följ
 
 ## Exempelmatris {#examples-matrix}
 
-I tabellen nedan visas exempel på hur du formaterar dina inkommande filer, beroende på [typ av ID](../../../reference/ids-in-aam.md) och vilken metod du vill använda för att lägga till egenskaper i profiler.
+I tabellen nedan visas exempel på hur du formaterar dina inkommande filer, beroende på [typ av ID](../../../reference/ids-in-aam.md) och vilken metod du vill lägga till [!UICONTROL traits] i profiler.
 
 <table id="table_FE6D97A1F5074E4A8EFC723AF0C5E707"> 
  <thead> 
@@ -283,7 +283,7 @@ I tabellen nedan visas exempel på hur du formaterar dina inkommande filer, bero
 
 ### Exempel 1 {#example-1}
 
-Använd trait ID:n för att skicka information om trait-kvalificering för [!DNL Audience Manager] [!DNL UUIDs].
+Använd [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL Audience Manager] [!DNL UUIDs].
 
 ```
 59767559181262060060278870901087098252 <TAB> d_sid=24, d_sid=26, d_sid=27
@@ -291,7 +291,7 @@ Använd trait ID:n för att skicka information om trait-kvalificering för [!DNL
 
 ### Exempel 2 {#example-2}
 
-Använd trait ID:n för att skicka information om diskvalificering av trait för [!DNL Audience Manager] [!DNL UUIDs].
+Används [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] diskvalificeringsinformation för [!DNL Audience Manager] [!DNL UUIDs].
 
 ```
 59767559181262060060278870901087098252 <TAB> d_unsid=24, d_unsid=26, d_unsid=27
@@ -311,7 +311,7 @@ eller
 
 ### Exempel 3 {#example-3}
 
-Skicka i nyckelvärdepar för att lägga till information om trait-kvalificering för [!DNL Audience Manager] [!DNL UUIDs].
+Skicka i nyckelvärdepar för att lägga till [!UICONTROL trait] kvalificeringsinformation för [!DNL Audience Manager] [!DNL UUIDs].
 
 ```
 59767559181262060060278870901087098252 <TAB> product = tablet, product = phone
@@ -325,7 +325,7 @@ eller
 
 ### Exempel 4 {#example-4}
 
-Använd prefixet ic för att skicka information om kvalificering för [!DNL Audience Manager][!DNL UUIDs].
+Använd prefixet `ic` för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL Audience Manager] [!DNL UUIDs].
 
 ```
 59767559181262060060278870901087098252 <TAB> 30608,50354,50338,50352,30626
@@ -339,7 +339,7 @@ eller
 
 ### Exempel 5 {#example-5}
 
-Använd trait ID:n för att skicka information om kvalificering för [!DNL Android] enheter.
+Används [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL Android] enheter.
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -347,7 +347,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
 
 ### Exempel 6 {#example-6}
 
-Använd trait ID:n för att skicka information om diskvalificering av trait för [!DNL Android] enheter.
+Används [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] diskvalificeringsinformation för [!DNL Android] enheter.
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -367,7 +367,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 24:-1, 26:-1, 27:-1
 
 ### Exempel 7 {#example-7}
 
-Skicka i nyckelvärdepar för att lägga till information om kvalificering för [!DNL Android] enheter.
+Skicka i nyckelvärdepar för att lägga till [!UICONTROL trait] kvalificeringsinformation för [!DNL Android] enheter.
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> product = tablet, product = phone
@@ -381,7 +381,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> "product" = "tablet", "product" = "ph
 
 ### Exempel 8 {#example-8}
 
-Använd prefixet ic för att skicka information om kvalificering för [!DNL Android] enheter.
+Använd prefixet `ic` för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL Android] enheter.
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 30608,50354,50338,50352,30626
@@ -395,7 +395,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Exempel 9 {#example-9}
 
-Använd trait ID:n för att skicka information om kvalificering för [!DNL iOS] enheter.
+Används [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL iOS] enheter.
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -403,7 +403,7 @@ Använd trait ID:n för att skicka information om kvalificering för [!DNL iOS] 
 
 ### Exempel 10 {#example-10}
 
-Använd trait ID:n för att skicka information om diskvalificering av trait för [!DNL iOS] enheter.
+Används [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] diskvalificeringsinformation för [!DNL iOS] enheter.
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -423,7 +423,7 @@ eller
 
 ### Exempel 11 {#example-11}
 
-Skicka i nyckelvärdepar för att lägga till information om kvalificering för [!DNL iOS] enheter.
+Skicka i nyckelvärdepar för att lägga till [!UICONTROL trait] kvalificeringsinformation för [!DNL iOS] enheter.
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> product = tablet, product = phone
@@ -437,7 +437,7 @@ eller
 
 ### Exempel 12 {#example-12}
 
-Använd prefixet ic för att skicka information om kvalificering för [!DNL iOS] enheter.
+Använd prefixet `ic` för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL iOS] enheter.
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> 30608,50354,50338,50352,30626
@@ -451,7 +451,7 @@ eller
 
 ### Exempel 13 {#example-13}
 
-Använd trait ID:n för att skicka information om [!DNL DPUUIDs]trait-kvalificering.
+Använd [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL DPUUIDs].
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -459,7 +459,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
 
 ### Exempel 15 {#example-14}
 
-Använd trait ID:n för att skicka information om diskvalificering av trait för [!DNL DPUUIDs].
+Används [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] diskvalificeringsinformation för [!DNL DPUUIDs].
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -479,7 +479,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 24:-1, 26:-1, 27:-1
 
 ### Exempel 15 {#example-15}
 
-Skicka i nyckelvärdepar för att lägga till information om trait-kvalificering för [!DNL DPUUIDs].
+Skicka i nyckelvärdepar för att lägga till [!UICONTROL trait] kvalificeringsinformation för [!DNL DPUUIDs].
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> product = tablet, product = phone
@@ -493,7 +493,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> "product" = "tablet", "product" = 
 
 ### Exempel 16 {#example-16}
 
-Använd prefixet för att skicka information om `ic` trait-kvalificering för [!DNL DPUUIDs].
+Använd prefixet `ic` för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL DPUUIDs].
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 30608,50354,50338,50352,30626
