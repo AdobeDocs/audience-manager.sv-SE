@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Översikt över dataintegritet
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ Dokumentationen om dataintegritet beskriver hur man [!DNL Audience Manager] inte
 
 I vårt fortsatta stöd för den här modellen är vi fast beslutna att ge er de verktyg som behövs för att ni ska kunna tillhandahålla transparens och kontroll till era kunder, samtidigt som ni levererar personaliserade annonser som är föremål för [!DNL Audience Manager] självreglerande principer [](https://www.iab.com/news/self-regulatory-principles-for-online-behavioral-advertising/)för onlineannonsering (OBA).
 
-## GDPR {#gdpr}
+## [!DNL GDPR] {#gdpr}
 
-I den [allmänna dataskyddsförordningen (GDPR)](https://eugdpr.org/) infördes flera nya integritetsrättigheter för EU-medlemmar, bland annat **rätten till tillgång** och **rätten att bli glömd**. Detta innebär att alla EU-medborgare vars personuppgifter har samlats in av ert företag när som helst kan begära att få tillgång till eller radera sina uppgifter. Om du inte uppfyller dessa krav kan det leda till böter på flera miljoner dollar för din organisation.
+I den [allmänna dataskyddsförordningen (GDPR)](https://eugdpr.org/) infördes flera nya integritetsrättigheter för EU-medlemmar, bland annat **rätten till tillgång** och **rätten att bli glömd**. Detta innebär att alla [!DNL EU] medborgare vars personuppgifter har samlats in av ditt företag när som helst kan begära åtkomst till eller radera sina uppgifter. Om du inte uppfyller dessa krav kan det leda till böter på flera miljoner dollar för din organisation.
 
 För att uppfylla detta [!DNL GDPR]stöder [!DNL Audience Manager] dataåtkomst och [borttagningsbegäranden](data-privacy-requests.md).
 
-## CCPA {#ccpa}
+## [!DNL CCPA] {#ccpa}
 
 I [California Consumer Privacy Act (CCPA)](https://www.caprivacy.org/about), som trädde i kraft den 1 januari 2020, ges personer bosatta i Kalifornien nya rättigheter när det gäller personuppgifter och åläggs dataskyddsansvar för vissa enheter som bedriver verksamhet i Kalifornien.
 
