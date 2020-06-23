@@ -7,12 +7,15 @@ solution: Audience Manager
 title: Skapa regelbaserade eller introduktionskunskaper
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 0869e016d7f80710cb194449c48675b82fdfa865
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 1%
 
 ---
 
 
-# Skapa regelbaserade eller introduktionskunskaper {#create-rules-based-or-onboarded-traits}
+# Skapa [!UICONTROL Rules-Based] eller [!UICONTROL Onboarded Traits] {#create-rules-based-or-onboarded-traits}
 
 Beskriver hur du konfigurerar steg och funktioner som är specifika för processen att skapa [!UICONTROL rules-based] - och [!UICONTROL onboarded] egenskaper.
 
@@ -20,7 +23,7 @@ Beskriver hur du konfigurerar steg och funktioner som är specifika för process
 
 ## Grundläggande information för Traits {#basics}
 
-I [!UICONTROL Trait Builder]kan du med [!UICONTROL Basic Information] inställningarna skapa nya eller redigera befintliga egenskaper. Inställningarna [!UICONTROL Basic Information] är desamma för regelbaserade, onboardbaserade och algoritmiska egenskaper. Ange ett namn (undvik specialtecken), en datakälla och välj en lagringsmapp om du vill skapa ett nytt varumärke. Andra [!UICONTROL Basic Information] fält är valfria.
+I [!UICONTROL Trait Builder]kan du med [!UICONTROL Basic Information] inställningarna skapa nya eller redigera befintliga [!UICONTROL traits]. Inställningarna [!UICONTROL Basic Information] är desamma för [!UICONTROL rules-based], [!UICONTROL onboarded] och [!UICONTROL algorithmic traits]. Om du vill skapa ett nytt [!UICONTROL trait]namn anger du ett namn (undvik specialtecken), ett [!UICONTROL data source]och väljer ett [!UICONTROL storage folder]. Andra [!UICONTROL Basic Information] fält är valfria.
 
 <!-- c_tb_basics.xml -->
 
@@ -53,11 +56,11 @@ I [!UICONTROL Trait Builder]kan du med [!UICONTROL Basic Information] inställni
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Datakälla</span></b> </td> 
-   <td colname="col2"> Associerar egenskapen med en viss DataProvider. Obligatoriskt. <p>Använd den första listrutan för att filtrera mellan datakällor i Audience Manager, rapportsviter i Adobe Analytics eller båda. Använd sedan den andra listrutan för att välja datakälla.</p><p> Om du inte använder rapportsviter från Adobe Analytics inaktiveras typväljaren för datakällan och används som standard endast för datakällor i Audience Manager.</p>  </td> 
+   <td colname="col2"> Associerar egenskapen med en viss DataProvider. Obligatoriskt. <p>Använd den första listrutan för att filtrera mellan datakällor i Audience Manager, Adobe Analytics eller båda. Använd sedan den andra listrutan för att välja datakälla.</p><p> Om du inte använder rapportsviter från Adobe Analytics inaktiveras typväljaren för datakällan och används som standard endast för datakällor från Audience Manager.</p>  </td> 
   </tr>
    <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Händelsetyp</span></b> </td> 
-   <td colname="col2"> Tilldelar egenskapen till en typ eller kategori, vanligtvis enligt funktion (t.ex. konvertering, besökare, partner, sidvy). Valfritt. <p> Mer information om hur du skapar konverteringsegenskaper finns i <a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">Skapa konverteringsegenskaper i videon</a>om Audience Manager. </p></td> 
+   <td colname="col2"> Tilldelar egenskapen till en typ eller kategori, vanligtvis enligt funktion (t.ex. konvertering, besökare, partner, sidvy). Valfritt. <p> Mer information om hur du skapar konverteringsegenskaper finns i videon <a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">Skapa konverteringsegenskaper i Audience Manager</a>. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Integrationskod</span></b> </td> 
@@ -78,15 +81,15 @@ I [!UICONTROL Trait Builder]kan du med [!UICONTROL Basic Information] inställni
  </tbody> 
 </table>
 
-## Ange ett förfallointervall för trait {#set-expiration-interval}
+## Ange ett [!UICONTROL Trait] förfallointervall {#set-expiration-interval}
 
-I [!UICONTROL Trait Builder]kan du [!UICONTROL Advanced Options] ange ett intervall för time-to-live ([!DNL TTL]) för en egenskap. [!DNL TTL] definierar hur många dagar en kvalificerad besökare stannar kvar i ett spår (120 dagar är standard). Om värdet är 0 upphör aldrig ditt medlemskap för varumärken.
+I [!UICONTROL Trait Builder]kan du [!UICONTROL Advanced Options] ange ett time-to-live-intervall ([!DNL TTL]) för ett [!UICONTROL trait]. [!DNL TTL] definierar hur många dagar en kvalificerad besökare stannar kvar på en [!UICONTROL trait] (120 dagar är standard). När värdet är 0 upphör aldrig medlemskapet att gälla [!UICONTROL trait] .
 
 <!-- t_tb_ttl.xml -->
 
-### Ange TTL-värde för ett tecken
+### Ange TTL för en [!UICONTROL trait]
 
-1. Expandera [!UICONTROL Advanced Options] avsnittet och ange ett tal för att ange ett [!DNL TTL] värde för egenskapen.
+1. Expandera [!UICONTROL Advanced Options] avsnittet och ange ett tal för att ange ett [!DNL TTL] värde för [!UICONTROL trait].
 1. Klicka på **[!UICONTROL Save]**.
 
    ![](assets/TTL.png)
