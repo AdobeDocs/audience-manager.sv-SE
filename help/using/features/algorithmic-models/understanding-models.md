@@ -7,19 +7,19 @@ solution: Audience Manager
 title: Om lookalike-modellering
 uuid: 39441e72-5316-453d-9aff-0e0b633aabcd
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
 
 
-# Understanding Look-Alike modeling {#about-algorithmic-models}
+# Förstå [!UICONTROL Look-Alike Modeling] {#about-algorithmic-models}
 
-## Hitta nya användare med lookalike-modellering {#find-new-users}
+## Hitta nya användare med [!UICONTROL Look-Alike Modeling] {#find-new-users}
 
-[!UICONTROL Look-Alike Modeling] hjälper er att identifiera nya, unika målgrupper genom automatiserad dataanalys. Processen startar när du väljer ett trait- eller segment, ett tidsintervall samt datakällor från första och tredje part. Dina val innehåller indata för den algoritmiska modellen. När analysprocessen körs letar programmet efter berättigade användare baserat på delade egenskaper från den valda populationen. När du är klar är dessa data tillgängliga i [Trait Builder](../../features/traits/about-trait-builder.md) där du kan använda dem för att skapa egenskaper baserat på [precision och räckvidd](../../features/traits/trait-accuracy-reach.md). Dessutom kan du skapa segment som kombinerar algoritmiska egenskaper med regelbaserade egenskaper och lägga till andra kvalificeringskrav med booleska uttryck och jämförelseoperatorer. [!UICONTROL Look-Alike Modeling] ger dig ett dynamiskt sätt att extrahera värde från alla tillgängliga trait-data.
+[!UICONTROL Look-Alike Modeling] hjälper er att identifiera nya, unika målgrupper genom automatiserad dataanalys. Processen startar när du väljer ett [!UICONTROL trait] eller [!UICONTROL segment]ett tidsintervall samt första och tredje part [!UICONTROL data sources]. Dina val innehåller indata för den algoritmiska modellen. När analysprocessen körs letar programmet efter berättigade användare baserat på delade egenskaper från den valda populationen. När du är klar är dessa data tillgängliga i [Trait Builder](../../features/traits/about-trait-builder.md) där du kan använda dem för att skapa egenskaper baserat på [precision och räckvidd](../../features/traits/trait-accuracy-reach.md). Dessutom kan du skapa segment som kombinerar algoritmiska egenskaper med [!UICONTROL rules-based traits] och lägga till andra kvalificeringskrav med [!DNL Boolean] uttryck och jämförelseoperatorer. [!UICONTROL Look-Alike Modeling] ger dig ett dynamiskt sätt att extrahera värde från alla tillgängliga trait-data.
 
 ## Fördelar {#advantages}
 
@@ -27,69 +27,65 @@ De största fördelarna med att använda [!UICONTROL Look-Alike Modeling] :
 
 * **Noggrannhet:** Algoritmen körs regelbundet, vilket bidrar till att hålla resultaten aktuella och relevanta.
 * **Automatisering:** Du behöver inte hantera en stor uppsättning statiska regler. Algoritmen hittar målgrupper åt er.
-* **Spara tid och minska arbetet:** Med vår modelleringsprocess behöver ni inte gissa vilka egenskaper/segment som kan fungera eller lägga tid på att identifiera nya målgrupper med kampanjer. Modellen kan göra detta åt dig.
+* **Spara tid och minska arbetet:** Med vår modelleringsprocess behöver ni inte gissa vad [!UICONTROL traits]/[!UICONTROL segments] kan fungera eller lägga tid på att identifiera nya målgrupper med kampanjer. Modellen kan göra detta åt dig.
 * **Tillförlitlighet:** Modellering fungerar med processer för identifiering och kvalificering på serversidan som utvärderar dina egna data och utvalda tredjepartsdata som du har tillgång till. Det innebär att du inte behöver se besökarna på din webbplats för att kvalificera dem för ett yrke.
 
 ## Arbetsflöde {#workflow}
 
 Du hanterar modeller i **[!UICONTROL Audience Data > Models]**. På en hög nivå omfattar arbetsflödesprocessen följande:
 
-* Markera de baslinjedata som du vill att algoritmen ska utvärdera. Detta omfattar egenskaper eller segment, tidsintervall och datakällor (egna data och tredjepartsdata som du redan har tillgång till via [!DNL Audience Manager]). När du skapar en modell kan du utesluta de egenskaper som du inte vill ska påverkas av modellen.
-* Spara modellen. När den har sparats körs den algoritmiska utvärderingsprocessen automatiskt. Observera att det kan ta upp till 7 dagar innan den här processen är klar. [!DNL Audience Manager] skickar ett e-postmeddelande till dig när algoritmen har slutförts och resultaten är tillgängliga för att skapa egenskaper.
-* Skapa algoritmiska egenskaper i [!UICONTROL Trait Builder].
-* Kombinera egenskaper i segment i [!UICONTROL Segment Builder].
-* Skapa och skicka segmentdata till ett mål.
+* Markera de baslinjedata som du vill att algoritmen ska utvärdera. Detta inkluderar ett [!UICONTROL trait] - eller [!UICONTROL segment], tidsintervall och [!UICONTROL data sources] (egna data och tredjepartsdata som du redan har tillgång till via [!DNL Audience Manager]). I arbetsflödet för att skapa modeller kan du utesluta [!UICONTROL traits] att du inte vill störa modellen.
+* Spara modellen. När den har sparats körs den algoritmiska utvärderingsprocessen automatiskt. Observera att det kan ta upp till 7 dagar innan den här processen är klar. [!DNL Audience Manager] skickar ett e-postmeddelande till dig när algoritmen har slutförts och resultaten är tillgängliga för [!UICONTROL trait] skapande.
+* Skapa algoritmisk [!UICONTROL traits] i [!UICONTROL Trait Builder].
+* Kombinera [!UICONTROL traits] in [!UICONTROL segments] i [!UICONTROL Segment Builder].
+* Skapa och skicka [!UICONTROL segment] data till en [!UICONTROL destination].
 
 ## Felsökning {#troubleshooting}
 
-Vi inaktiverar alla [!UICONTROL Look-Alike Model] som inte kan generera data för tre på varandra följande körningar. Observera att du inte kan ange status för modellen till aktiv i efterhand. Vi rekommenderar att du skapar modeller från datakällor med tillräckliga egenskaper för att kunna samla in data från dina modeller.
+Vi inaktiverar alla [!UICONTROL Look-Alike Model] som inte kan generera data för tre på varandra följande körningar. Observera att du inte kan ange status för modellen till aktiv i efterhand. Vi rekommenderar att du skapar modeller från datakällor som har tillräcklig kapacitet [!UICONTROL traits] att samla in data från för att dina modeller ska kunna generera data.
 
-## TraitWeight - introduktion {#understanding-traitweight}
+## Förstå [!UICONTROL TraitWeight] {#understanding-traitweight}
 
-[!UICONTROL TraitWeight] är en egen algoritm som utformats för att automatiskt upptäcka nya egenskaper. Den jämför spårade data från era nuvarande egenskaper och segment mot alla andra data från första och tredje part som ni har tillgång till via [!DNL Audience Manager]. I det här avsnittet finns en beskrivning av den algoritmiska [!UICONTROL TraitWeight] identifieringsprocessen.
-
-<!-- traitweight.xml -->
+[!UICONTROL TraitWeight] är en tillverkarspecifik algoritm som utformats för att identifiera nya [!UICONTROL traits] automatiskt. Den jämför [!UICONTROL trait] data från din nuvarande [!UICONTROL traits] och [!UICONTROL segments] alla andra data från första och tredje part som du har tillgång till via [!DNL Audience Manager]. I det här avsnittet finns en beskrivning av den algoritmiska [!UICONTROL TraitWeight] identifieringsprocessen.
 
 ![](assets/algo_model.png)
 
 Följande steg beskriver [!UICONTROL TraitWeight] utvärderingsprocessen.
 
-### Steg 1: Skapa en baslinje för Trait Comparison
+### Steg 1: Skapa en baslinje för [!UICONTROL Trait] jämförelsen
 
-Om du vill skapa en baslinje mäter [!UICONTROL TraitWeight] alla egenskaper som är kopplade till en målgrupp med 30, 60 eller 90 dagars intervall. Därefter rangordnas egenskaperna efter frekvens och korrelation. Frekvensantalet mäter gemensamma värden. Korrelation mäter sannolikheten för att en egenskap förekommer endast i den ursprungliga målgruppen. Särdrag som ofta verkar vara mycket gemensamma, vilket är en viktig egenskap som används för att ställa in ett viktat poängvärde när de kombineras med egenskaper som upptäcks i de valda datakällorna.
+Om du vill skapa en baslinje mäter [!UICONTROL TraitWeight] alla [!UICONTROL traits] som är associerade med en publik med ett intervall på 30, 60 eller 90 dagar. Därefter rangordnas den [!UICONTROL traits] efter frekvens och korrelation. Frekvensantalet mäter gemensamma värden. Korrelation mäter sannolikheten för att en viss person [!UICONTROL trait] förekommer endast i den ursprungliga målgruppen. [!UICONTROL Traits] som ofta ser ut att vara mycket gemensamma, vilket är en viktig egenskap som används för att ställa in ett viktat poängvärde när det kombineras med [!UICONTROL traits] det som du väljer [!UICONTROL data sources].
 
-### Steg 2: Hitta samma egenskaper i datakällan
+### Steg 2: Sök samma [!UICONTROL Traits] i [!UICONTROL Data Source]
 
-När en baslinje har skapats för jämförelse letar algoritmen efter identiska egenskaper i de valda datakällorna. I det här steget [!UICONTROL TraitWeight] utför ett frekvensantal för alla identifierade egenskaper och jämför dem med baslinjen. Till skillnad från baslinjen rangordnas dock ovanliga egenskaper högre än de som förekommer oftare. Sällsynta egenskaper sägs vara mycket specifika. [!UICONTROL TraitWeight] bedömer kombinationer av gemensamma grundläggande egenskaper och ovanliga (mycket specifika) egenskaper hos datakällan som mer inflytelserika eller önskvärda än egenskaper som är gemensamma för båda datauppsättningarna. Vår modell känner faktiskt igen dessa stora, vanliga egenskaper och tilldelar inte alltför hög prioritet till datauppsättningar med höga korrelationer. Sällsynta egenskaper får högre prioritet eftersom de troligtvis representerar nya, unika användare än vad som är fallet med en hög gemensam nivå över hela linjen.
+När en baslinje har skapats för jämförelse letar algoritmen efter identiska värden [!UICONTROL traits] i det valda [!UICONTROL data sources]. I det här steget [!UICONTROL TraitWeight] utför ett frekvensantal för alla identifierade [!UICONTROL traits] och jämför dem med baslinjen. Till skillnad från baslinjen [!UICONTROL traits] rangordnas mindre vanliga emellertid högre än de som förekommer oftare. Sällsynta [!UICONTROL traits] sägs vara mycket specifika. [!UICONTROL TraitWeight] utvärderar kombinationer av gemensamma baslinjer [!UICONTROL traits] och mindre vanliga (mycket specifika) [!UICONTROL data source] som [!UICONTROL traits] mer inflytelserika eller önskvärda än [!UICONTROL traits] gemensamma för båda datauppsättningarna. Vår modell känner faktiskt igen dessa stora, vanliga [!UICONTROL traits] och prioriterar inte datauppsättningar med höga korrelationer med högre prioritet. Sällsynta [!UICONTROL traits] får högre prioritet eftersom de troligtvis representerar nya, unika användare än [!UICONTROL traits] med hög gemensamma nämnare.
 
 ### Steg 3: Tilldela bredd
 
-I det här steget rangordnas [!UICONTROL TraitWeight] nyligen upptäckta egenskaper efter påverkan eller önskvärdhet. Viktskalan är ett procentvärde mellan 0 % och 100 %. Fällor rankade närmare 100 % innebär att de är mer som målgruppen i din baslinjepopulation. Dessutom är kraftigt viktade egenskaper värdefulla eftersom de representerar nya, unika användare som kan bete sig på samma sätt som er etablerade, grundläggande målgrupp. Tänk på att egenskaper med hög enhetlighet i baslinjen och hög specificitet i jämförda datakällor är mer värdefulla än egenskaper som är gemensamma för varje datauppsättning. [!UICONTROL TraitWeight]
+I det här steget [!UICONTROL TraitWeight] rankas nyligen upptäckta [!UICONTROL traits] i ordning av påverkan eller önskvärdhet. Viktskalan är ett procentvärde mellan 0 % och 100 %. [!UICONTROL Traits] rankas närmare 100 % betyder att de är mer som målgruppen i din baslinjepopulation. Dessutom [!UICONTROL traits] är kraftigt viktade eftersom de representerar nya, unika användare som kan bete sig på samma sätt som er etablerade, grundläggande målgrupp. Kom ihåg att [!UICONTROL TraitWeight] anser att [!UICONTROL traits] en hög grad av gemensamma baslinjevärden och hög specificitet i de jämförda datakällorna är mer värdefull än [!UICONTROL traits] vanligt i varje datauppsättning.
 
 ### Steg 4: Poänganvändare
 
-Varje användare i de valda datakällorna får ett poängvärde som är lika med summan av alla vikter för de inflytelserika egenskaperna för den användarens profil. Användarpoängen normaliseras sedan till mellan 0 och 100 %.
+Varje användare i den valda profilen [!UICONTROL data sources] får ett poängvärde som är lika med summan av alla vikter för den inflytelserika användaren [!UICONTROL traits] i den användarens profil. Användarpoängen normaliseras sedan till mellan 0 och 100 %.
 
 ### Steg 5: Visa och arbeta med resultat
 
-[!DNL Audience Manager] visar viktade modellresultat i [!UICONTROL Trait Builder]. När du vill skapa en algoritmisk egenskap [!UICONTROL Trait Builder] kan du skapa egenskaper baserat på den viktade poäng som genereras av algoritmen under en datakörning. Du kan välja en högre precision om du bara vill kvalificera användare som har mycket höga användarpoäng och därför är mycket lika den ursprungliga målgruppen, i stället för den övriga målgruppen. Om du vill nå en större publik (räckvidd) kan du minska noggrannheten.
+[!DNL Audience Manager] visar viktade modellresultat i [!UICONTROL Trait Builder]. När du vill skapa en [!UICONTROL algorithmic trait]kan [!UICONTROL Trait Builder] du skapa [!UICONTROL traits] baserat på den viktade poäng som genereras av algoritmen under en datakörning. Du kan välja en högre precision om du bara vill kvalificera användare som har mycket höga användarpoäng och därför är mycket lika den ursprungliga målgruppen, i stället för den övriga målgruppen. Om du vill nå en större publik (räckvidd) kan du minska noggrannheten.
 
-### Steg 6: Utvärdera vikten av ett tåg i olika bearbetningscykler
+### Steg 6: Utvärdera betydelsen av en [!UICONTROL Trait] bearbetning i flera bearbetningscykler
 
-Utvärderar regelbundet vikten av en egenskap baserat på storleken och förändringen i populationen av den egenskapen [!UICONTROL TraitWeight] . Detta inträffar när antalet användare som är kvalificerade för den egenskapen ökar eller minskar med tiden. Detta beteende syns tydligast i egenskaper som blir mycket stora. Anta till exempel att algoritmen använder trait A för modellering. När populationen av trait A ökar, utvärderas vikten av den egenskapen på nytt och kan tilldela en lägre poäng eller ignorera den. [!UICONTROL TraitWeight] I det här fallet är trait A för vanligt eller stort för att säga något om sin befolkning. När värdet för Trait A har [!UICONTROL TraitWeight] reducerats (eller ignorerats i modellen) minskar det algoritmiska traits population. Förteckningen över inflytelserika egenskaper återspeglar utvecklingen av baspopulationen. Använd listan över de inflytelserika egenskaperna för att förstå varför dessa förändringar inträffar.
+Utvärderar regelbundet [!UICONTROL TraitWeight] vikten av ett projekt [!UICONTROL trait] baserat på dess storlek och populationsförändring [!UICONTROL trait]. Detta inträffar när antalet användare som är kvalificerade för det [!UICONTROL trait] ökar eller minskar över tiden. Detta beteende syns tydligast i egenskaper som blir mycket stora. Anta till exempel att algoritmen använder [!UICONTROL trait A] för modellering. I takt med att populationen av [!UICONTROL trait A] ökar, [!UICONTROL TraitWeight] utvärderas vikten av den på nytt [!UICONTROL trait] och kan ge en lägre poäng eller ignorera den. I det här fallet är [!UICONTROL trait A] det för vanligt eller stort att säga något om befolkningen. När [!UICONTROL TraitWeight] minskar värdet för [!UICONTROL trait A] (eller ignorerar det i modellen) minskar populationen av den algoritmiska egenskapen. Förteckningen över faktorer som påverkar [!UICONTROL traits] utvecklingen av baslinjepopulationen. Använd listan över de inflytelserika för [!UICONTROL traits] att förstå varför dessa förändringar inträffar.
 
 Relaterade länkar:
 
 * [Model Builder](../../features/algorithmic-models/create-model.md)
 * [Noggrannhet och räckvidd](../../features/traits/trait-accuracy-reach.md)
 
-## Uppdatera schema för stilliknande modeller och egenskaper {#update-schedule}
+## Uppdatera schema för [!UICONTROL Look-Alike Models] och [!UICONTROL Traits] {#update-schedule}
 
-Skapa och uppdatera scheman för nya eller befintliga algoritmiska modeller och egenskaper.
+Skapa och uppdatera scheman för nya eller befintliga [!UICONTROL algorithmic models] och [!UICONTROL traits].
 
-<!-- c_model_update_schedule.xml -->
-
-### Skapa och uppdatera snygga modeller
+### [!UICONTROL Look-Alike Model] Schema för att skapa och uppdatera
 
 <table id="table_E75A2B334A7F47ED9DFFBD6DF8636641"> 
  <thead>
@@ -118,7 +114,7 @@ Skapa och uppdatera scheman för nya eller befintliga algoritmiska modeller och 
  </tbody>
 </table>
 
-### Skapa och uppdatera bilder som ser ut som om de vore anpassade
+### [!UICONTROL Look-Alike Trait] Schema för att skapa och uppdatera
 
 <table id="table_92A908818C4F4F2287EA56C786CD0BBD"> 
  <thead> 
@@ -143,20 +139,16 @@ Skapa och uppdatera scheman för nya eller befintliga algoritmiska modeller och 
 
 Listvyn är en central arbetsyta som du kan använda för att skapa, granska och hantera modeller.
 
-<!-- c_models_list_view.xml -->
-
-Listsidan Modeller innehåller funktioner och verktyg som hjälper dig att:
+Listsidan innehåller funktioner och verktyg som hjälper dig att: [!UICONTROL Models]
 
 * Skapa nya modeller.
 * Hantera befintliga modeller (redigera, pausa, ta bort eller klona).
 * Sök efter modeller efter namn.
-* Skapa algoritmiska egenskaper med valfri modell.
+* Skapa [!UICONTROL algorithmic traits] med valfri modell.
 
 ## Sammanfattningsvy för modeller {#models-summary-view}
 
-På sammanfattningssidan visas modellinformation som namn, räckvidd/precision, bearbetningshistorik och egenskaper som skapats från modellen. Sidan innehåller även inställningar som gör att du kan skapa och hantera modeller. Klicka på ett modellnamn i sammanfattningslistan för att se information om det.
-
-<!-- c_models_summary.xml -->
+På sammanfattningssidan visas modellinformation som namn, räckvidd/precision, bearbetningshistorik och [!UICONTROL traits] som har skapats från modellen. Sidan innehåller även inställningar som gör att du kan skapa och hantera modeller. Klicka på ett modellnamn i sammanfattningslistan för att se information om det.
 
 Modellsammanfattningssidan innehåller följande avsnitt.
 
@@ -185,13 +177,13 @@ Modellsammanfattningssidan innehåller följande avsnitt.
    <td colname="col2"> <p>The <span class="wintitle"> Influential Traits</span> table: </p> <p> 
      <ul id="ul_FB15A554CADC40D09F9AC6D384D54ECD"> 
       <li id="li_343E25E8B3584D38B1E2BCB211033DBF"> Visar de 50 mest inflytelserika egenskaperna som bäst representeras i modellens baslinjepopulation. </li> 
-      <li id="li_44957F46C0744A84A987D8F25D93E24E">Ranks each trait in order of its <span class="wintitle"> Relative Weight</span> rank. The <span class="wintitle"> Relative Weight</span> sorts newly discovered traits in order of influence or desirability. Viktskalan är ett procentvärde mellan 0 % och 100 %. Traits ranked closer to 100% means they're more like the audience in your baseline population. Se <a href="../../features/algorithmic-models/understanding-models.md#understanding-traitweight"> Förstå TraitWeight</a>. </li> 
+      <li id="li_44957F46C0744A84A987D8F25D93E24E">Rangordna varje egenskap efter dess <span class="wintitle"> relativa vikt</span> . Den <span class="wintitle"> relativa vikten</span> sorterar nyligen identifierade egenskaper i ordning av påverkan eller önskvärdhet. Viktskalan är ett procentvärde mellan 0 % och 100 %. Fällor rankade närmare 100 % innebär att de är mer som målgruppen i din baslinjepopulation. Se <a href="../../features/algorithmic-models/understanding-models.md#understanding-traitweight"> Förstå TraitWeight</a>. </li> 
       <li id="li_260151E23B1E484BA06C8494552A04F0">Visar en 30-dagars unix och den totala trait-populationen för varje egenskap. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> Traits Using Model</span> </p> </td>
-   <td colname="col2"> <p>Shows a list of the algorithmic traits based on the selected model. Klicka på ett trait-namn eller trait-ID om du vill ha mer information om trait. Välj <b><span class="uicontrol"> Skapa nytt spår med modell</span></b> för att gå till processen för att skapa algoritmiska egenskaper. </p> <p>Avsnittsetiketten ändras baserat på modellens namn. Anta att du skapar en modell och ger den namnet Modell A. När du läser in sammanfattningssidan ändras namnet på det här avsnittet till <span class="wintitle"> Traits Using Model A</span>. </p> </td>
+   <td colname="col2"> <p>Visar en lista över algoritmiska egenskaper baserat på den valda modellen. Klicka på ett trait-namn eller trait-ID om du vill ha mer information om trait. Välj <b><span class="uicontrol"> Skapa nytt spår med modell</span></b> för att gå till processen för att skapa algoritmiska egenskaper. </p> <p>Avsnittsetiketten ändras baserat på modellens namn. Anta att du skapar en modell och ger den namnet Modell A. När du läser in sammanfattningssidan ändras namnet på det här avsnittet till <span class="wintitle"> Traits Using Model A</span>. </p> </td>
   </tr>
  </tbody>
 </table>
