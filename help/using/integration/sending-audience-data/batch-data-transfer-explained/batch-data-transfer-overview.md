@@ -7,33 +7,31 @@ solution: Audience Manager
 title: Skicka batchdata till Audience Manager - översikt
 uuid: 472583b1-5057-4add-8e3c-5e50762c88e0
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
 
-# Skicka batchdata till Audience Manager - översikt {#send-batch-data-to-audience-manager-overview}
+# Skicka batchdata till [!DNL Audience Manager] översikt {#send-batch-data-to-audience-manager-overview}
 
 En översikt för tekniska och icke-tekniska kunder som vill hämta in data från andra system (offline) [!DNL Audience Manager].
 
 ## Fördelar
 
-<!-- c_offline_to_online.xml -->
-
 Du kan göra data från andra system tillgängliga i [!DNL Audience Manager]. Vårt system kan hjälpa er att låsa upp värde och utnyttja användardata som ni har samlat in tidigare. Detta inkluderar information om inköp, kundundersökningar, registreringsdata, [!DNL CRM] databaser etc. Även om varje integrering utgör en egen utmaning delar de alla dessa vanliga steg. Granska materialet för att minska arbetet med att göra offline-data tillgängliga online.
 
 ## Steg 1: Synkronisera användar-ID:n
 
-Under synkroniseringen [!DNL Audience Manager] tilldelar unika ID:n till klienter och deras användare. Dessa ID:n kallas [!UICONTROL Data Provider ID] ([!UICONTROL DPID]) respektive [!UICONTROL Unique User ID] ([!UICONTROL UUID]). [!DNL Audience Manager] använder [!UICONTROL DPID] och [!UICONTROL UUID] för att identifiera användare och kvalificera dem för egenskaper, segment, målgruppsgrupper och för rapportering. Dessutom söker vår datainsamlingskod ([!UICONTROL DIL]) efter dessa ID:n för att hämta besöksdata från din webbplats. När det här steget är klart [!DNL Audience Manager] och din offlinedatabas ska innehålla motsvarande ID:n för varje användarpost.
+Under synkroniseringen [!DNL Audience Manager] tilldelar unika ID:n till klienter och deras användare. Dessa ID:n kallas [!UICONTROL Data Provider ID] ([!UICONTROL DPID]) respektive [!UICONTROL Unique User ID] ([!UICONTROL UUID]). [!DNL Audience Manager] använder [!UICONTROL DPID] och [!UICONTROL UUID] för att identifiera användare och kvalificera dem för [!UICONTROL traits], [!UICONTROL segments], målgruppsgrupper och för rapportering. Dessutom söker vår datainsamlingskod ([!UICONTROL DIL]) efter dessa ID:n för att hämta besöksdata från din webbplats. När det här steget är klart [!DNL Audience Manager] och din offlinedatabas ska innehålla motsvarande ID:n för varje användarpost.
 
 Viktigt att tänka på:
 
 * **Placering av klient-ID:** [!DNL Audience Manager] behöver veta var ditt klient-ID finns på din webbplats (t.ex. lagras det i en cookie, en Analytics-variabel, i sidkod osv.).
 * **Exkludera[!DNL PII]:** Användar-ID:n får inte innehålla personligt identifierbar information ([!DNL PII]).
-* **Skiftläges- och innehållskänslighet:** Under en datasynkronisering i realtid måste användar-ID:n som hämtas från din webbplats [!DNL Audience Manager] motsvara ID:n som skickas från din offlinedatabas. Om offlineposter till exempel innehåller information om [!DNL User123]och din webbplats återger det ID:t [!DNL USER123]ser Audience Manager dessa som olika besökare. Därför kan inte onlineinformation för den här besökaren kopplas till motsvarande poster i offlinedatabasen. ID:n måste matcha exakt.
+* **Skiftläges- och innehållskänslighet:** Under en datasynkronisering i realtid måste användar-ID:n som hämtas från din webbplats [!DNL Audience Manager] motsvara ID:n som skickas från din offlinedatabas. Om offlineposter till exempel innehåller information om [!DNL User123], men din webbplats återger det ID:t som [!DNL USER123], [!DNL Audience Manager] ser dessa som olika besökare. Därför kan inte onlineinformation för den här besökaren kopplas till motsvarande poster i offlinedatabasen. ID:n måste matcha exakt.
 
 Se [ID-synkronisering för inkommande dataöverföringar](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md).
 
