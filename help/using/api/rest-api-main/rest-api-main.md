@@ -6,15 +6,15 @@ solution: Audience Manager
 title: REST API:er
 uuid: f575c8dd-7381-4b55-8228-26eb87fbef64
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '94'
 ht-degree: 0%
 
 ---
 
 
-# REST API:er {#rest-apis}
+# [!DNL REST APIs] {#rest-apis}
 
 [!UICONTROL RESTful APIs] kan du arbeta programmatiskt med [!DNL Audience Manager].
 
