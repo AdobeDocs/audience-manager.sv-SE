@@ -6,15 +6,15 @@ solution: Audience Manager
 title: Krav för Amazon S3-namn och filstorlek för inkommande datafiler
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1154'
 ht-degree: 1%
 
 ---
 
 
-# Krav för Amazon S3-namn och filstorlek för inkommande datafiler{#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
+# [!DNL Amazon S3] Krav för namn och filstorlek för inkommande datafiler {#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
 
 Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du måste följa när du skickar data till [!DNL Audience Manager]. Ange namn och storlek för filerna enligt dessa specifikationer när du skickar data till en [!DNL Audience Manager] / [!DNL Amazon S3] katalog.
 
