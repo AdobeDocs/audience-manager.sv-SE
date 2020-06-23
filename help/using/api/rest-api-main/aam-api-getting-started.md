@@ -6,15 +6,15 @@ solution: Audience Manager
 title: Komma igång med REST API:er
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: cdf567a816be60d0d966783e87f4ed02838be378
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1761'
 ht-degree: 1%
 
 ---
 
 
-# Komma igång med REST API:er {#getting-started-with-rest-apis}
+# Komma igång med [!DNL REST] [!DNL APIs] {#getting-started-with-rest-apis}
 
 Information om allmänna krav, autentisering, valfria frågeparametrar, begäran [!DNL URLs]och andra referenser.
 
@@ -46,7 +46,7 @@ Två autentiseringsmetoder stöds [!DNL Audience Manager][!DNL REST APIs] .
 >
 >Beroende på din autentiseringsmetod måste du justera din begäran [!DNL URLs] därefter. Mer information om värdnamnen som du bör använda finns i avsnittet [Miljöer](#environments) .
 
-## JWT-autentisering ([!DNL Service Account]) {#jwt}
+## [!DNL JWT] ([!DNL Service Account]) Autentisering {#jwt}
 
 ### Förutsättningar {#prerequisites}
 
@@ -65,7 +65,7 @@ Följ stegen nedan för att konfigurera [!DNL JWT (Service Account)] autentiseri
 >
 >Om du vill konfigurera och arbeta med filen [!DNL Audience Manager] [!DNL REST APIs] automatiskt kan du generera den [!DNL JWT] automatiskt. Mer information finns i [JWT-autentisering](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) (tjänstkonto).
 
-## OAuth-autentisering (inaktuell) {#oauth}
+## [!DNL OAuth] Autentisering (inaktuellt) {#oauth}
 
 >[!WARNING]
 > [!DNL Audience Manager] [!UICONTROL REST API] tokenautentisering och förnyelse via [!DNL OAuth 2.0] är nu föråldrat.
@@ -74,7 +74,7 @@ Följ stegen nedan för att konfigurera [!DNL JWT (Service Account)] autentiseri
 
 Följande [!DNL Audience Manager][!UICONTROL REST API] standarder [!DNL OAuth 2.0] gäller för tokenautentisering och förnyelse. Avsnitten nedan beskriver hur du autentiserar och börjar arbeta med [!DNL API]dem.
 
-### Skapa en allmän API-användare {#requirements}
+### Skapa en allmän [!DNL API] användare {#requirements}
 
 Vi rekommenderar att du skapar ett separat, tekniskt användarkonto för att arbeta med [!DNL Audience Manager] [!DNL API]dem. Det här är ett generiskt konto som inte är kopplat till eller kopplat till en viss användare i organisationen. Den här typen av [!DNL API] användarkonto hjälper dig att uppnå två saker:
 
@@ -87,15 +87,13 @@ Samarbeta med din [!DNL Audience Manager] konsult för att skapa ett generiskt, 
 
 ### Lösenordsautentisering {#password-authentication-workflow}
 
-<!-- oath-authentication.xml -->
-
 Lösenordsautentisering ger säker åtkomst till våra [!DNL REST API]. Stegen nedan visar arbetsflödet för lösenordsautentisering från en [!DNL JSON] klient i webbläsaren.
 
 >[!TIP]
 >
 >Kryptera åtkomst- och uppdateringstoken om du lagrar dem i en databas.
 
-#### Steg 1: Begär API-åtkomst
+#### Steg 1: Begär [!DNL API] åtkomst
 
 Kontakta din Partner Solutions Manager. De ger dig ett [!DNL API] klient-ID och en hemlighet. ID:t och hemligheten autentiserar dig för [!DNL API]användaren.
 
@@ -107,7 +105,7 @@ Skicka en tokenbegäran med den önskade [!DNL JSON] klienten. När du skapar be
 
 * Använd en `POST` anropsmetod `https://api.demdex.com/oauth/token`.
 * Konvertera ditt klient-ID och hemlighet till en base-64-kodad sträng. Separera ID:t och hemligheten med ett kolon under konverteringsprocessen. Inloggningsuppgifterna `testId : testSecret` konverteras till exempel till `dGVzdElkOnRlc3RTZWNyZXQ=`.
-* Skicka in [!DNL HTTP] rubrikerna `Authorization:Basic <base-64 clientID:clientSecret>` och `Content-Type: application/x-www-form-urlencoded` . Sidhuvudet kan till exempel se ut så här: <br/>`Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/>`Content-Type: application/x-www-form-urlencoded`
+* Skicka in [!DNL HTTP] och [!DNL headers] `Authorization:Basic <base-64 clientID:clientSecret>` `Content-Type: application/x-www-form-urlencoded` . Sidhuvudet kan till exempel se ut så här: <br/>`Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/>`Content-Type: application/x-www-form-urlencoded`
 * Ställ in begärandetexten enligt följande:
    <br/> `grant_type=password&username=<your-AudienceManager-user-name>&password=<your-AudienceManager-password>`
 
@@ -145,8 +143,8 @@ Skicka en begäran om en uppdateringstoken till den önskade [!DNL JSON] kliente
 
 * Använd en `POST` anropsmetod `https://api.demdex.com/oauth/token`.
 * Konvertera ditt klient-ID och hemlighet till en base-64-kodad sträng. Separera ID:t och hemligheten med ett kolon under konverteringsprocessen. Inloggningsuppgifterna `testId : testSecret` konverteras till exempel till `dGVzdElkOnRlc3RTZWNyZXQ=`.
-* Skicka HTTP-rubrikerna `Authorization:Basic <base-64 clientID:clientSecret>` och `Content-Type: application/x-www-form-urlencoded`. Sidhuvudet kan till exempel se ut så här: <br/> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/> `Content-Type: application/x-www-form-urlencoded`
-* I den begärande texten anger du `grant_type:refresh_token` och skickar den uppdateringstoken som du fick i din tidigare åtkomstbegäran. Begäran ska se ut så här: <br/> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
+* Skicka HTTP-rubrikerna `Authorization:Basic <base-64 clientID:clientSecret>` och `Content-Type: application/x-www-form-urlencoded`. Sidhuvudet kan till exempel se ut så här: <br> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br> `Content-Type: application/x-www-form-urlencoded`
+* I den begärande texten anger du `grant_type:refresh_token` och skickar den uppdateringstoken som du fick i din tidigare åtkomstbegäran. Begäran ska se ut så här: <br> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
 
 #### Steg 2: Ta emot den nya token
 
@@ -166,11 +164,9 @@ Svaret [!DNL JSON] innehåller din nya åtkomsttoken. Svaret bör se ut så här
 
 Det [!DNL Audience Manager] finns [!UICONTROL REST API] stöd för auktoriseringskod och implicit autentisering. Om du vill använda dessa åtkomstmetoder måste användarna logga in för `https://api.demdex.com/oauth/authorize` att få åtkomst till och uppdatera tokens.
 
-## Skapa autentiserade API-begäranden {#authenticated-api-requests}
+## Gör autentiserade [!DNL API] begäranden {#authenticated-api-requests}
 
 Krav för att anropa [!DNL API] metoder när du har fått en autentiseringstoken.
-
-<!-- c_oauth_call_methods.xml -->
 
 Så här anropar du de tillgängliga [!DNL API] metoderna:
 
@@ -178,11 +174,9 @@ Så här anropar du de tillgängliga [!DNL API] metoderna:
 * När du använder [JWT-autentisering](#jwt)(tjänstkonto) måste du ange `x-api-key` rubriken, som är densamma som din `client_id`. Du kan hämta dina `client_id` från [Adobes I/O-integreringssida](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) .
 * Anropa den önskade [!DNL API] metoden.
 
-## Ytterligare API-frågeparametrar {#optional-api-query-parameters}
+## Valfria [!DNL API] frågeparametrar {#optional-api-query-parameters}
 
 Ange de valfria parametrar som är tillgängliga för metoder som returnerar alla egenskaper för ett objekt.
-
-<!-- c_rest_api_optional.xml -->
 
 Du kan använda dessa valfria parametrar med [!DNL API] metoder som returnerar *alla* egenskaper för ett objekt. Ange dessa alternativ i begärandesträngen när du skickar frågan till [!DNL API].
 
@@ -192,8 +186,8 @@ Du kan använda dessa valfria parametrar med [!DNL API] metoder som returnerar *
 | `pageSize` | Anger antalet svarsresultat som returneras av begäran (10 är standard). |
 | `sortBy` | Sorterar och returnerar resultat enligt den angivna [!DNL JSON] egenskapen. |
 | `descending` | Sorterar och returnerar resultat i fallande ordning. `ascending` är standard. |
-| `search` | Returnerar resultat baserat på den angivna strängen som du vill använda som sökparameter. Anta att du vill hitta resultat för alla modeller som har ordet &quot;Test&quot; i något av värdefälten för det objektet. Din exempelbegäran kan se ut så här:   `GET https://aam.adobe.io/v1/models/?search=Test`.  Du kan söka efter alla värden som returneras av en get all-metod. |
-| `folderId` | Returnerar alla ID:n för egenskaper i den angivna mappen. Inte tillgängligt för alla metoder. |
+| `search` | Returnerar resultat baserat på den angivna strängen som du vill använda som sökparameter. Anta att du vill hitta resultat för alla modeller som har ordet &quot;Test&quot; i något av värdefälten för det objektet. Din exempelbegäran kan se ut så här:   `GET https://aam.adobe.io/v1/models/?search=Test`.  Du kan söka efter alla värden som returneras av en &quot;[!DNL get all]&quot;-metod. |
+| `folderId` | Returnerar alla ID:n för [!UICONTROL traits] inuti den angivna mappen. Inte tillgängligt för alla metoder. |
 | `permissions` | Returnerar en lista med segment baserat på den angivna behörigheten. `READ` är standard. Behörigheterna är:<ul><li>`READ` : Returnera och visa information om ett segment.</li><li>`WRITE` : Används `PUT` för att uppdatera ett segment.</li><li>`CREATE` : Används `POST` för att skapa ett segment.</li><li>`DELETE` : Ta bort ett segment. Kräver åtkomst till eventuella underliggande egenskaper. Du måste till exempel ha behörighet att ta bort de egenskaper som tillhör ett segment om du vill ta bort det.</li></ul><br>Ange flera behörigheter med separata nyckelvärdepar. Om du till exempel vill returnera en lista med segment med endast `READ` och `WRITE` behörigheter skickar du `"permissions":"READ"`, `"permissions":"WRITE"` . |
 | `includePermissions` | ([!DNL Boolean]) Ange `true` att du vill returnera dina behörigheter för segmentet. Standardvärdet är `false`. |
 
@@ -205,19 +199,17 @@ När sidinformation inte ** har angetts returnerar begäran oformaterade [!DNL J
 GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 ```
 
-## API-URL:er {#api-urls}
+## [!DNL API URLs] {#api-urls}
 
 [!DNL URLs] för förfrågningar, staging- och produktionsmiljöer samt versioner.
 
-<!-- r_rest_urls.xml -->
-
-## Begär URL:er {#request-urls}
+## Begäran [!DNL URLs] {#request-urls}
 
 I följande tabell visas den begäran [!DNL URLs] som används för att skicka [!DNL API] begäranden per metod.
 
-Beroende på vilken autentiseringsmetod du använder måste du justera URL:er för din begäran enligt tabellerna nedan.
+Beroende på vilken autentiseringsmetod du använder måste du justera din begäran [!DNL URLs] enligt tabellerna nedan.
 
-### Begär URL:er för JWT-autentisering {#request-urls-jwt}
+### Begäran [!DNL URLs] om [!DNL JWT] autentisering {#request-urls-jwt}
 
 | [!DNL API] Metoder | Begäran [!DNL URL] |
 |--- |--- |
@@ -233,7 +225,7 @@ Beroende på vilken autentiseringsmetod du använder måste du justera URL:er f�
 | [!DNL Trait Types] | `https://aam.adobe.io/v1/customer-trait-types` |
 | [!DNL Taxonomy] | `https://aam.adobe.io/v1/taxonomies/0/` |
 
-### Begär URL:er för OAuth-autentisering (inaktuell) {#request-urls-oauth}
+### Begäran [!DNL URLs] om [!DNL OAuth] autentisering (inaktuell) {#request-urls-oauth}
 
 | [!DNL API] Metoder | Begäran [!DNL URL] |
 |--- |--- |
@@ -273,8 +265,6 @@ Nya versioner av dessa [!DNL API]släpps regelbundet. En ny release ökar [!DNL 
 ## Definierade svarskoder {#response-codes-defined}
 
 `HTTP` statuskoder och svarstext som returneras av [!DNL Audience Manager] [!UICONTROL REST API].
-
-<!-- r_api_http_response_codes.xml -->
 
 | Svarskod-ID | Svarstext | Definition |
 |---|---|---|
