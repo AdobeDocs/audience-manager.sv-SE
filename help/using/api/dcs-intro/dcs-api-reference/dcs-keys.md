@@ -7,15 +7,15 @@ title: Attribut som stöds för DCS API-anrop
 keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tdpid_ic
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
 
 
-# Attribut som stöds för DCS API-anrop {#supported-attributes-for-dcs-api-calls}
+# Attribut som stöds för [!DNL DCS][!DNL API] anrop {#supported-attributes-for-dcs-api-calls}
 
 Visar och beskriver syntaxen och de attribut (eller nyckelvärdepar) som stöds och som du kan skicka till [!UICONTROL Data Collection Servers] ([!DNL DCS]). Den här informationen kan hjälpa dig att formatera dina [!DNL DCS] förfrågningar och förstå de parametrar som returneras av systemet.
 
@@ -50,7 +50,7 @@ De [!DNL DCS] förlitar sig på specifika prefix som läggs till nycklarna i nyc
  </tbody> 
 </table>
 
-## d_Attribut {#d-attributes}
+## [!DNL d_] Attribut {#d-attributes}
 
 Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du vill [!DNL DCS] att användaren ska returnera ett svar `d_rtbd=json` måste du göra det.
 
