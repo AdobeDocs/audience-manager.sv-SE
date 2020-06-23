@@ -6,14 +6,17 @@ seo-title: Traits Overview
 solution: Audience Manager
 title: Traits Overview
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: 0b173db313053bb9c1d90b681d00ad4bd6fb8b34
+workflow-type: tm+mt
+source-wordcount: '71'
+ht-degree: 0%
 
 ---
 
 
-# Traits Overview {#traits-overview}
+# [!UICONTROL Traits] Översikt {#traits-overview}
 
-Hantera datainsamling och målgruppsframtagning med regelbaserade, onboardbaserade, algoritmiska egenskaper eller mappegenskaper. Läs de länkade sidorna nedan för att komma igång:
+Hantera datainsamling och målgruppsframtagning med [!UICONTROL rules-based], [!UICONTROL onboarded]eller [!UICONTROL algorithmic] [!UICONTROL folder traits]. Läs de länkade sidorna nedan för att komma igång med [!UICONTROL traits]:
 
 * [Anpassa detaljsida](/help/using/features/traits/trait-details-page.md)
 * [Trait Builder](/help/using/features/traits/about-trait-builder.md)
