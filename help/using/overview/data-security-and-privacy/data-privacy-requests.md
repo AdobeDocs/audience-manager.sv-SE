@@ -7,9 +7,9 @@ keywords: GDPR UI, GDPR API, CCPA, privacy
 title: Begäranden om dataintegritet
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1471'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Du kan skicka enskilda förfrågningar om åtkomst till och radering av konsumen
 * Genom [Privacy Servicens gränssnitt](https://privacyui.cloud.adobe.io/). Se dokumentationen [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md).
 * Genom **[!DNL Privacy Service API]**. Se dokumentationen [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md) och [!DNL API] referensen [här](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml).
 
-När du skickar en begäran om personlig datasekretess kan du skicka eventuella Audience Manager-ID:n (ID:n), enligt beskrivningen i avsnittet **[Audience Manager-ID](data-privacy-ids.md)**, tillsammans med deras respektive namnområdes-ID:n (ID:n för datakällor).
+När du skickar individuella förfrågningar om dataintegritet kan du skicka alla identifierare (ID), enligt beskrivningen i avsnittet [!DNL Audience Manager] Audience Manager-identifierare **[](data-privacy-ids.md)**, tillsammans med deras respektive namnområdes-ID (ID för datakälla).
 
 Det finns två typer av förfrågningar i [Privacy Servicen](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) : förfrågningar om dataåtkomst och dataradering.
 
@@ -44,9 +44,9 @@ Om du vill se hur en giltig [!DNL JSON] fil ser ut kan du [hämta ett exempel p�
 
 Vi förstår att ni strävar efter att uppfylla era förfrågningar om dataintegritet inom den tidsperiod som fastställs i lagstiftningen.
 
-## Begäranden om borttagning av data{#delete-data}
+## Begäranden om borttagning av data {#delete-data}
 
-Du kan skicka begäranden om borttagning av data via [Privacy Servicens gränssnitt](https://privacyui.cloud.adobe.io/) (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)) eller genom att ringa till [!DNL Privacy Service API] (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) och API-referens [här](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)).
+Du kan skicka begäranden om borttagning av data via [Privacy Servicens gränssnitt](https://privacyui.cloud.adobe.io/) (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)) eller genom att ringa till [!DNL Privacy Service API] (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) och [!DNL API] referens [här](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)).
 
 Med [Privacy Servicens användargränssnitt](https://privacyui.cloud.adobe.io/) kan du skapa nya jobbbegäranden antingen genom att använda [!UICONTROL Request Builder] eller genom att överföra en [!DNL JSON] fil.
 
@@ -56,7 +56,7 @@ Adobe förstår att ni strävar efter att uppfylla era kundförfrågningar om da
 
 Som svar på dina förfrågningar om borttagning av konsumentdata tar bort egenskaper och segment som är kopplade till den identifierare som ingår i begäran [!DNL Audience Manager] [!DNL Audience Manager] . Dessutom kommer respektive [!DNL Audience Manager] identifierare för den person som avanmälde sig från ytterligare datainsamling av [!DNL Audience Manager] och respektive ID-mappningar att tas bort.
 
-När du skickar deklarerade ID:n, t.ex. [!DNL CRM] enhets-ID:n eller cookie-ID:n, i dataintegritetsbegäranden, [!DNL Audience Manager] utförs den nödvändiga borttagningen på alla länkade enheter (upp till 100 enheter per deklarerat ID).
+När du skickar deklarerade ID:n, t.ex. [!DNL CRM] enhets-ID:n eller [!DNL cookie] ID:n, i datasekretessbegäranden, [!DNL Audience Manager] utförs den nödvändiga borttagningen på alla länkade enheter (upp till 100 enheter per deklarerat ID).
 
 [!DNL Audience Manager] kommer att försöka meddela aktiveringspartners om raderingsbegäranden genom att skicka dem information om att dela upp segment för registrerade som begär att vissa uppgifter ska raderas. Vissa aktiveringspartners:
 
@@ -124,14 +124,14 @@ Efter en avanmälan på partnernivå med ett deklarerat ID-anrop:
 * Det sista enhets-ID ([Audience Manager-unikt användar-ID](../../reference/ids-in-aam.md)) som är länkat till [CRM-ID](../../reference/ids-in-aam.md) har avslagits från datainsamling.
 * [!DNL Audience Manager] kommer att upphöra med all datainsamling, segmentering eller aktivering som fortsätter för [!DNL CRM] ID:t och det sista enhets-ID:t som är länkat till [!DNL CRM] ID:t,
 * [!DNL Audience Manager] delar upp det avvalda [!DNL CRM] ID:t och det sista enhets-ID:t från alla segment,
-* Destinationspartners tar emot begäran om att dela upp segment för [!DNL CRM] -ID och det senaste enhets-ID:t. Osegmentering fungerar för både [realtids](data-privacy-requests.md#aam-partners-with-unsegmentation) - och batchdestinationer.
+* [!UICONTROL Destination] partners får en begäran om att dela upp segment för [!DNL CRM] -ID och det sista enhets-ID:t. Osegmentering fungerar för både [realtids](data-privacy-requests.md#aam-partners-with-unsegmentation) - och batchdestinationer.
 * Inga historiska data tas bort.
 
-När [!DNL Audience Manager] tar emot en avanmälningsbegäran på partnernivå innehåller den [!DNL JSON] som returneras av [!DNL DCS] felkoden 171 [med meddelandet](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md#opt-out-error-codes), i stället för [!UICONTROL "Encountered opt out tag"][!DNL Audience Manager] användar-ID:t.
+När [!DNL Audience Manager] tar emot en begäran om avanmälan på partnernivå innehåller den [!DNL JSON] som returneras av [!DNL DCS] felkoden 171 [med meddelandet](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md#opt-out-error-codes), i stället för [!UICONTROL "Encountered opt out tag"][!DNL Audience Manager] användar-ID:t.
 
-Du kan göra en deklarerad ID-avanmälan med `d_cid` - och `d_cid_ic` nyckelvärdepar. Gamla parametrar som `d_dpid` och `d_dpuuid` fungerar fortfarande, men anses vara föråldrade. Se [CID ersätter DPID och DPUUID](../../reference/cid.md). I exemplen *visar kursiv* en variabelplatshållare.
+Du kan göra en deklarerad ID-avanmälan med `d_cid` - och `d_cid_ic` nyckelvärdepar. Gamla parametrar som `d_dpid` och `d_dpuuid` fungerar fortfarande, men betraktas som inaktuella. Se [CID ersätter DPID och DPUUID](../../reference/cid.md). I exemplen *visar kursiv* en variabelplatshållare.
 
-#### Avanmäl dig med CID och CID_IC
+#### Avanmäl dig med [!DNL CID] och [!DNL CID_IC]
 
 En beskrivning och syntax finns i [URL-variabler och syntax för deklarerade ID:n](../../features/declared-ids.md#variables-and-syntax).
 
@@ -162,7 +162,7 @@ Efter en anmälan på partnernivå med ett enhets-ID-anrop:
 * Destinationspartners tar emot begäran om att dela upp segment för enhets-ID:t. Osegmentering fungerar för både [realtids](data-privacy-requests.md#aam-partners-with-unsegmentation) - och batchdestinationer.
 * Inga historiska data tas bort.
 
-## Audience Manager partners med osegmenteringsfunktioner {#aam-partners-with-unsegmentation}
+## [!DNL Audience Manager] Partners med osegmenteringsfunktioner {#aam-partners-with-unsegmentation}
 
 För att hjälpa er att automatisera era förfrågningar om sekretess för konsumentdata försöker ni meddela aktiveringspartners om förfrågningar om radering från registrerade genom att skicka dem information om att dela upp (eller ta bort) segment. [!DNL Audience Manager]
 
@@ -177,6 +177,6 @@ Se [listan över enhetsbaserade destinationer](/help/using/features/destinations
 
 ## Begäranden om datakorrigering {#correction}
 
-Eftersom [!DNL Audience Manager] inte är källan till data finns det en begränsad roll för datakorrigering i [!DNL Audience Manager]. Korrigeringen kan innebära att konsumenten har begärt att antingen bli diskvalificerad från en felaktig egenskap/ett felaktigt segment eller kvalificerad till önskad egenskap/segment.
+Eftersom [!DNL Audience Manager] inte är källan till data finns det en begränsad roll för datakorrigering i [!DNL Audience Manager]. Korrigeringen kan innebära att konsumenten har begärt att antingen bli diskvalificerad från ett felaktigt [!UICONTROL trait]/[!UICONTROL segment] eller kvalificerad till det önskade [!UICONTROL trait]/[!UICONTROL segment].
 
-[!DNL Audience Manager] kunderna kan välja att hämta relevanta signaler/egenskaper/segment mot användarprofiler och skicka informationen via [offlinedata](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) till [!DNL Audience Manager]. Observera att användaren fortsätter att kvalificera sig för den ursprungliga egenskapen och segmenten om de upprepar sitt beteende.
+[!DNL Audience Manager] kunderna kan välja att hämta relevanta signaler/egenskaper/segment mot användarprofiler och skicka informationen via [offlinedata](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) till [!DNL Audience Manager]. Observera att användaren fortsätter att kvalificera sig för originalet [!UICONTROL trait] och [!UICONTROL segments] om han/hon upprepar sitt beteende.
