@@ -6,7 +6,10 @@ solution: Audience Manager
 title: Trait and Segment Population Data in Segment Builder
 uuid: e1e59c0a-b4c7-4cad-8485-3667e0a95e83
 translation-type: tm+mt
-source-git-commit: 2add6b77e167203dab66b5fa7b87b7c5fbeb3d48
+source-git-commit: 63d89cac2f18538f56e2f6d0f64257ea9b5788bd
+workflow-type: tm+mt
+source-wordcount: '1294'
+ht-degree: 0%
 
 ---
 
@@ -40,9 +43,9 @@ Följande tabell definierar mått för trappopulationen
 
 ## Beräkna faktiska och beräknade segmentpopulationer {#calculating-real-estimated-populations}
 
-När du skapar ett nytt segment, eller ändrar ett befintligt segment, tar det upp till 24 timmar för Audience Manager att visa resultat för faktiska realtids- och totalsegmentpopulationer.
+När du skapar ett nytt segment, eller ändrar ett befintligt segment, tar det upp till 24 timmar för Audience Manager att visa resultat för faktiska realtids- och segmentpopulationer.
 
-Audience Manager kan dock omedelbart beräkna segmentets realtids- och totalpopulationsstorlek. Dessa uppskattningar baseras på historiska data som samlats in och på returresultat vid 95% konfidensintervall.
+Audience Manager kan dock omedelbart uppskatta segmentets totala populationsstorlek och realtidsstorlek. Dessa uppskattningar baseras på historiska data som samlats in och på returresultat vid 95% konfidensintervall.
 
 ![](assets/confidence-interval.png)
 
@@ -77,7 +80,7 @@ I följande tabell definieras de uppskattade populationsmåtten.
    <td colname="col2"> <p>Det uppskattade antalet unika besökare som har setts i realtid för det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av Audience Manager. </p> <p>I <span class="wintitle"> Segment Builder</span>kan de sista 30-dagarspopulationerna för traits (<span class="wintitle"> Total Trait Populations</span>) skilja sig åt för egenskaper och segment som utvärderas i realtid. </p> <p>
      <ul id="ul_CAE803D09913462CAD413A665D85C1A2"> 
       <li id="li_3E64330D6F5B4D2F8F3456730A86894F">För egenskaper är det senaste 30-dagars måttet antalet unika användare som kvalificerat sig för den egenskapen under de senaste 30 dagarna. </li>
-      <li id="li_FF3CACD0B6C742CDB94D66200D77CE06">För segment som utvärderas i realtid är det senaste 30-dagarsmätningen antalet användare som har kvalificerat sig för en egenskap (i det segmentet) någon gång tidigare och som har setts igen av Audience Manager under de senaste 30 dagarna. Anta att du har en användare som kvalificerat sig för ett tåg för 60 dagar sedan och som sågs igen för 10 dagar sedan. I dessa data kommer användaren inte att läggas till i antalet trait eftersom han/hon först kvalificerade sig för trait för mer än 30 dagar sedan. De kommer dock att ingå i det sista 30-dagarsantalet för de segment som utvärderas i realtid. Det beror på att de har kvalificerat sig för segmentet inom 30-dagarsintervallet. </li>
+      <li id="li_FF3CACD0B6C742CDB94D66200D77CE06">För segment som utvärderas i realtid är det senaste 30-dagarsmåttet det antal användare som har kvalificerat sig för en egenskap (i det segmentet) någon gång tidigare och som har setts igen av Audience Manager under de senaste 30 dagarna. Anta att du har en användare som kvalificerat sig för ett tåg för 60 dagar sedan och som sågs igen för 10 dagar sedan. I dessa data kommer användaren inte att läggas till i antalet trait eftersom han/hon först kvalificerade sig för trait för mer än 30 dagar sedan. De kommer dock att ingå i det sista 30-dagarsantalet för de segment som utvärderas i realtid. Det beror på att de har kvalificerat sig för segmentet inom 30-dagarsintervallet. </li>
      </ul> </p> <p> <p>Obs! Det <span class="wintitle"> beräknade realtidspopulationsmåttet</span> inkluderar inte enheter som har kvalificerats för ett segment baserat på anslutningar som tillhandahålls av en <span class="wintitle"> profilkopplingsregel</span> som använder ett <a href="../../features/profile-merge-rules/merge-rule-definitions.md#device-options"> enhetsdiagramalternativ</a>. </p> </p> </td> 
   </tr> 
   <tr> 
@@ -112,7 +115,7 @@ I följande tabell definieras faktiska realtids- och totalpopulationsvärden nä
    <td colname="col2"> <p>Det faktiska antalet unika besökare som har setts i realtid för det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av Audience Manager. </p> <p>I <span class="wintitle"> Segment Builder</span>kan de sista 30-dagarspopulationerna för egenskaper (<span class="wintitle"> Total Trait Populations</span>) vara olika för egenskaper och segment som utvärderas i realtid. </p> <p> 
      <ul id="ul_50D1528DDDF347858F17DA3C033B0E3F"> 
       <li id="li_ABA2BFE68FF4430DBB425C4661E1836A">För egenskaper är det senaste 30-dagars måttet antalet unika användare som kvalificerat sig för den egenskapen under de senaste 30 dagarna. </li> 
-      <li id="li_1519068CBB1445E893657D12E8FE42AC">För segment som utvärderas i realtid är det senaste 30-dagarsmätningen antalet användare som har kvalificerat sig för en egenskap (i det segmentet) någon gång tidigare och som har setts igen av Audience Manager under de senaste 30 dagarna. Anta att du har en användare som kvalificerat sig för ett tåg för 60 dagar sedan och som sågs igen för 10 dagar sedan. I dessa data kommer användaren inte att läggas till i antalet trait eftersom han/hon först kvalificerade sig för trait för mer än 30 dagar sedan. De kommer dock att ingå i det sista 30-dagarsantalet för de segment som utvärderas i realtid. Det beror på att de har kvalificerat sig för segmentet inom 30-dagarsintervallet. </li> 
+      <li id="li_1519068CBB1445E893657D12E8FE42AC">För segment som utvärderas i realtid är det senaste 30-dagarsmåttet det antal användare som har kvalificerat sig för en egenskap (i det segmentet) någon gång tidigare och som har setts igen av Audience Manager under de senaste 30 dagarna. Anta att du har en användare som kvalificerat sig för ett tåg för 60 dagar sedan och som sågs igen för 10 dagar sedan. I dessa data kommer användaren inte att läggas till i antalet trait eftersom han/hon först kvalificerade sig för trait för mer än 30 dagar sedan. De kommer dock att ingå i det sista 30-dagarsantalet för de segment som utvärderas i realtid. Det beror på att de har kvalificerat sig för segmentet inom 30-dagarsintervallet. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -136,7 +139,7 @@ I följande tabell definieras faktiska realtids- och totalpopulationsvärden nä
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> Realtidspopulation (befintlig)</span> </p> </td> 
-   <td colname="col2"> <p>Det faktiska antalet enheter som visas i realtid med aktuella profiler som, när de sammanfogas med upp till 100 andra enhetsprofiler som är kopplade till enhetsdiagrammet, innehåller egenskaperna som ska kvalificera sig för segmentet så fort det sågs av <span class="keyword"> Audience Manager</span>. </p> </td>
+   <td colname="col2"> <p>Det faktiska antalet enheter som visas i realtid med aktuella profiler som, när de sammanfogas med upp till 100 andra enhetsprofiler som är sammankopplade med enhetsdiagrammet, innehåller egenskaperna som ska kvalificera sig för segmentet så fort det sågs av <span class="keyword"> Audience Manager</span>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> Total population (befintlig)</span> </p> </td> 
@@ -156,5 +159,5 @@ För närvarande finns det en känd begränsning eftersom vår uppskattning av s
 >[!MORELIKETHIS]
 >
 >* [Vanliga frågor om regler för profilsammanslagning och enhetsdiagram](../../faq/faq-profile-merge.md)
->* [Profillänk](../../features/profile-merge-rules/merge-rules-overview.md)
+>* [Profillänk](../profile-merge-rules/merge-rules-overview.md)
 
