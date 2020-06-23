@@ -6,40 +6,31 @@ solution: Audience Manager
 title: Trait and Segment Population Data in Segment Builder
 uuid: e1e59c0a-b4c7-4cad-8485-3667e0a95e83
 translation-type: tm+mt
-source-git-commit: 63d89cac2f18538f56e2f6d0f64257ea9b5788bd
+source-git-commit: 4d4915b9a99ddcdf321d9f4970321f5f54e057ea
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
 
 
-# Trait and Segment Population Data in Segment Builder {#trait-and-segment-population-data-in-segment-builder}
+# [!UICONTROL Trait] och [!UICONTROL Segment] populationsdata i [!UICONTROL Segment Builder] {#trait-and-segment-population-data-in-segment-builder}
 
-Lägg till och ta bort egenskaper i för [!UICONTROL Segment Builder] att se faktiska trait-populationer tillsammans med faktiska och uppskattade segmentpopulationsdata. Den beräknade populationsstorleken hjälper er att bygga upp rätt segment för kampanjen.
+Lägg till och ta bort [!UICONTROL traits] i [!UICONTROL Segment Builder] för att se faktiska [!UICONTROL trait] populationer samt faktiska och uppskattade segmentpopulationsdata. Den beräknade populationsstorleken hjälper er att bygga upp rätt segment för kampanjen.
 
-## Trait-populationsdata {#trait-population-data}
+## [!UICONTROL Trait] Populationsdata {#trait-population-data}
 
-[!UICONTROL Segment Builder] visar dig [!UICONTROL Total Trait Population] för den sista dagen när du lägger till en egenskap i ett segment. Dessa data visas i det blå fältet runt den valda egenskapen i [!UICONTROL Basic View] avsnittet.
+[!UICONTROL Segment Builder] visar dig [!UICONTROL Total Trait Population] för den sista dagen när du lägger till ett [!UICONTROL trait] segment. Dessa data visas i det blå fältet runt det markerade området [!UICONTROL trait] i [!UICONTROL Basic View] avsnittet.
 
 ![](assets/trait-size.png)
 
-Följande tabell definierar mått för trappopulationen
+I följande tabell definieras mått för trait-populationen:
 
-<table id="table_9D837CF9ACA04D04BEE5925EC0B4A5D2"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Mått </th> 
-   <th colname="col2" class="entry"> Beskrivning </th>
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <span class="wintitle"> Population för totalt fack</span> </p> </td>
-   <td colname="col2"> <p>Antalet unika ID:n som har den valda egenskapen i sin profil. </p> </td>
-  </tr> 
- </tbody> 
-</table>
+
+| Mått | Beskrivning |
+---------|----------|
+| [!UICONTROL Total Trait Population] | Antalet unika ID:n som har den valda egenskapen i sin profil. |
+
 
 ## Beräkna faktiska och beräknade segmentpopulationer {#calculating-real-estimated-populations}
 
@@ -98,9 +89,9 @@ I följande tabell definieras de uppskattade populationsmåtten.
 
 [!UICONTROL Profile Merge Rules] påverkar det faktiska antalet populationer i realtid och totalt antal. Dessa summor varierar beroende på om ett segment tillhör använder ett enhetsdiagramalternativ eller inte. [!UICONTROL Profile Merge Rule] Se även Alternativ för [profilsammanfogningsregel definierade](../../features/profile-merge-rules/merge-rule-definitions.md).
 
-### Segmentpopulationsdata för sammanfogningsregler utan enhetsdiagramalternativ
+### Segmentpopulationsdata för [!UICONTROL Merge Rules] Utan [!UICONTROL Device Graph Option]
 
-I följande tabell definieras faktiska realtids- och totalpopulationsvärden när dina segment används av ett segment som [!UICONTROL Profile Merge Rule] skapats utan ett enhetsdiagramalternativ. Detta är inställningarna **[!UICONTROL No Device Options]** och **[!UICONTROL Current Device Proflie]**.
+I följande tabell definieras faktiska värden för populationen i realtid och totalt när dina segment används av ett segment som [!UICONTROL Profile Merge Rule] skapats utan ett [!UICONTROL device graph] alternativ. Detta är inställningarna **[!UICONTROL No Device Options]** och **[!UICONTROL Current Device Proflie]**.
 
 <table id="table_A18C973855DB46A0B39B81F32E0E7540"> 
  <thead> 
@@ -125,36 +116,23 @@ I följande tabell definieras faktiska realtids- och totalpopulationsvärden nä
  </tbody> 
 </table>
 
-### Segmentpopulationsdata för sammanfogningsregler med ett enhetsdiagramalternativ
+### Segmentera populationsdata för [!UICONTROL Merge Rules] med ett [!UICONTROL Device Graph] alternativ
 
-I följande tabell definieras faktiska realtids- och totalpopulationsvärden när dina segment används av ett enhetsdiagramalternativ som [!UICONTROL Profile Merge Rule] skapats med ett enhetsdiagram. Det här är de enhetsalternativ som är tillgängliga för [!UICONTROL Profile Link Device Graph]enheten, enhetsdiagrammet [!DNL Adobe] och andra tredjepartsdiagramalternativ.
+I följande tabell definieras faktiska värden för populationen i realtid och totalt när dina segment används av ett [!UICONTROL Profile Merge Rule] alternativ som skapats med ett [!DNL device graph] alternativ. Det här är de enhetsalternativ som är tillgängliga för [!UICONTROL Profile Link Device Graph], [!DNL Adobe] och andra [!DNL device graph][!DNL device graph] alternativ från tredje part.
 
-<table id="table_157EC6E5B5C44EB899854CA10B090F60"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Mått </th> 
-   <th colname="col2" class="entry"> Beskrivning </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <span class="wintitle"> Realtidspopulation (befintlig)</span> </p> </td> 
-   <td colname="col2"> <p>Det faktiska antalet enheter som visas i realtid med aktuella profiler som, när de sammanfogas med upp till 100 andra enhetsprofiler som är sammankopplade med enhetsdiagrammet, innehåller egenskaperna som ska kvalificera sig för segmentet så fort det sågs av <span class="keyword"> Audience Manager</span>. </p> </td>
-  </tr>
-  <tr> 
-   <td colname="col1"> <p> <span class="wintitle"> Total population (befintlig)</span> </p> </td> 
-   <td colname="col2"> <p>Det totala antalet enheter med profiler som, när de sammanfogades med upp till 100 andra enhetsprofiler som är kopplade till enhetsdiagrammet, alla var kvalificerade för segmentet. </p> </td>
-  </tr>
- </tbody>
-</table>
+
+| Kolumn A | Kolumn B |
+---------|----------|
+| [!UICONTROL Real-Time Population (Existing) ] | Det faktiska antalet enheter som visas i realtid med aktuella profiler som, när de sammanfogas med upp till 100 andra enhetsprofiler som är kopplade till enhetsdiagrammet, innehåller egenskaperna som ska kvalificera sig för segmentet så fort det sågs av Audience Manager. |
+| [!UICONTROL Total Population (Existing)] | Det totala antalet enheter med profiler som, när de sammanfogades med upp till 100 andra enhetsprofiler som är kopplade till enhetsdiagrammet, alla var kvalificerade för segmentet. |
 
 ### Begränsningar på grund av återanvändnings- och frekvensuttryck vid beräkning av segmentpopulationer
 
 [!UICONTROL Segment Builder] har stöd för uppskattningar av segmentstorlek för segmentregler som innehåller upp till fyra recency- och frekvensuttryck. Om du väljer mer än fyra recency- och frekvensuttryck när du skapar en segmentregel visas ett fel i segmentberäkningsverktyget när populationen beräknas.
 
-### Begränsningar på grund av sammanfogningsregler vid beräkning av segmentpopulationer
+### Begränsningar på grund av [!UICONTROL Merge Rules] vid beräkning av segmentpopulationer
 
-För närvarande finns det en känd begränsning eftersom vår uppskattning av segmentstorlek inte tar hänsyn till regler för profilsammanslagning. Titta till exempel på segment med **Ingen autentiserad profil +** sammanfogningsregel[för aktuell enhetsprofil](../../features/profile-merge-rules/merge-rule-definitions.md). På grund av det sätt på vilket vi för närvarande beräknar antalet segment kommer de uppskattade populationerna att inkludera autentiserade profiler. Befintliga segmentpopulationer kommer dock att ignorera autentiserade profiler korrekt.
+För närvarande finns det en känd begränsning eftersom vår uppskattning av segmentstorlek inte tar hänsyn till [!UICONTROL profile merge rules]. Titta till exempel på segment med **[!UICONTROL No Authenticated Profile + Current Device Profile]** sammanfogningsregeln[](../../features/profile-merge-rules/merge-rule-definitions.md). På grund av det sätt på vilket vi för närvarande beräknar antalet segment kommer de uppskattade populationerna att inkludera autentiserade profiler. Befintliga segmentpopulationer kommer dock att ignorera autentiserade profiler korrekt.
 
 >[!MORELIKETHIS]
 >
