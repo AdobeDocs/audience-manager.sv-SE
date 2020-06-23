@@ -1,12 +1,12 @@
 ---
 description: Konceptuell information, beskrivningar och definitioner för DCS API-kod, metoder och processer.
 seo-description: Konceptuell information, beskrivningar och definitioner för DCS API-kod, metoder och processer i Adobe Audience Manager (AAM).
-seo-title: DCS API Reference Overview i Adobe Audience Manager (AAM)
+seo-title: API-referens för DCS i Adobe Audience Manager (AAM)
 title: API-referens för DCS - översikt
 translation-type: tm+mt
-source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+source-git-commit: 0869e016d7f80710cb194449c48675b82fdfa865
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # API-referens för DCS - översikt
 
-Konceptuell information, beskrivningar och definitioner för DCS API-kod, metoder och processer.
+Konceptuell information, beskrivningar och definitioner för [!DNL DCS API] kod, metoder och processer.
 
 * [DCS API-metoder](/help/using/api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
 
-   Skicka data till DCS API med GET- eller POST-metoder.
+   Skicka data till [!DNL DCS API] med GET- eller POST-metoder.
 
 * [Felkoder, meddelanden och exempel för DCS](/help/using/api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
 
