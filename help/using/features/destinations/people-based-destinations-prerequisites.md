@@ -5,9 +5,9 @@ seo-title: Krav och överväganden för personbaserade destinationer
 solution: Audience Manager
 title: Förutsättningar och överväganden
 translation-type: tm+mt
-source-git-commit: 4d4915b9a99ddcdf321d9f4970321f5f54e057ea
+source-git-commit: 02bde5060d50ba581937c504331397dfbbcdc19f
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Kontakta din Adobe-representant för att få tillgång till denna premiumfunktio
 
 Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka förstahandspubliken [!UICONTROL segments] till [!DNL Facebook]måste du kontrollera att du uppfyller följande krav:
 
-1. Ditt [!DNL Facebook] användarkonto måste ha behörigheten **Hantera kampanjer** aktiverad för annonskontot som du tänker använda.
+1. Ditt [!DNL Facebook] användarkonto måste ha behörigheten **Hantera kampanjer** aktiverad för det annonskonto som du tänker använda.
 2. Lägg till **Adobe Experience Cloud** -företagskontot som annonspartner i ert [!DNL Facebook Ad Account]företag. Använd `business ID=206617933627973`. Mer information finns i [Lägg till partners i din Business Manager](https://www.facebook.com/business/help/1717412048538897) .
    >[!IMPORTANT]
    > När du konfigurerar behörigheter för Adobe Experience Cloud måste du aktivera behörigheten **Hantera kampanjer** . Detta krävs för [!UICONTROL People-Based Destinations] integreringen.
@@ -46,6 +46,8 @@ Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka fö
 Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka dina egna målgruppssegment till [!DNL LinkedIn], måste du se till att ditt [!DNL LinkedIn Campaign Manager] konto har den [!DNL Creative Manager] eller högre behörighetsnivån.
 
 Mer information om hur du redigerar [!DNL LinkedIn Campaign Manager] användarbehörigheter finns i [Lägg till, redigera och ta bort användarbehörigheter på annonskonton](https://www.linkedin.com/help/lms/answer/5753) i dokumentationen för LinkedIn.
+
+Videoinstruktioner finns i [Förstå och konfigurera LinkedIn People-Based Destination](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) .
 
 ## Datainhämtning {#data-onboarding}
 
