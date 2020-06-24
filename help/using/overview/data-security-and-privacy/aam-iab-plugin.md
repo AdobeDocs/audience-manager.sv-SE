@@ -5,15 +5,15 @@ seo-title: Plugin-programmet Audience Manager för IAB TCF
 solution: Audience Manager
 title: Plugin-programmet Audience Manager för IAB TCF
 translation-type: tm+mt
-source-git-commit: 1fb8ee6c229418e48fcaa412a8ea0f1ab5f00331
+source-git-commit: 3523cdb0d6d412c1a93694e4cbeab188154120f0
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2449'
 ht-degree: 0%
 
 ---
 
 
-# Plugin-programmet Audience Manager för IAB TCF {#aam-iab-plugin}
+# [!DNL Audience Manager Plug-in for IAB TCF] {#aam-iab-plugin}
 
 ## Översikt
 
@@ -43,6 +43,10 @@ För närvarande stöder inte Audience Manager:
 
 * Arbetsflöden för mobila enheter.
 * Lägger till samtycke till segmentexport.
+
+## Uppgraderar till [!DNL IAB TCF v2.0] {#upgrading}
+
+Kunder som uppgraderar sin [!DNL Audience Manager Plug-in for IAB TCF] implementering från [!DNL IAB TCF] v1.1 till [!DNL IAB TCF] v2.0, eller aktiverar [!DNL IAB TCF] v2.0 för första gången, bör alla följa samma riktlinjer för krav och implementering som beskrivs nedan.
 
 ## Förutsättningar {#prerequisites}
 
@@ -179,7 +183,7 @@ Mer information om målmakron som stöds finns i [Målmakron definierade](../../
 
 ## Hantering av enhetsövergripande samtycke
 
-Insticksprogrammet Audience Manager för IAB TCF väljer automatiskt ut de ID som finns på en begäran när besökarna på platsen inte har tillräcklig behörighet. Om begäran innehåller ett CRM-ID ( [cross-device ID)](../../reference/ids-in-aam.md), väljer Audience Manager ut ID:t tillsammans med den sista enheten som är länkad till det [korsenhets-ID:t (CRM ID)](../../reference/ids-in-aam.md).
+Insticksprogrammet Audience Manager för IAB TCF väljer automatiskt vilka ID:n som finns på en begäran när besökarna på platsen inte har tillräcklig behörighet. Om begäran innehåller ett CRM-ID ( [cross-device ID)](../../reference/ids-in-aam.md), väljer Audience Manager ut ID:t tillsammans med den sista enheten som är länkad till det [korsenhets-ID:t (CRM ID)](../../reference/ids-in-aam.md).
 
 ## Testa implementeringen av IAB {#test-iab-implementation}
 
@@ -193,7 +197,7 @@ Audience Manager behandlar avanmälningsförfrågningar i en [separat artikel i 
 
 >[!IMPORTANT]
 >
->Användare som har avanmält sig från all datainsamling efter att de avböjt sitt samtycke kan inte återinsättas.
+>Användare som har avanmält sig från alla datainsamlingar efter att de avböjt sitt samtycke kan inte återansluta.
 
 >[!NOTE]
 >
