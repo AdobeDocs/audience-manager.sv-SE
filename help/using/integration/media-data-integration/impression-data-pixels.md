@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Samla in data för kampanjexponering via pixelanrop
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: aefd0a0798797b8bbe9cadc1af9f2e86e772bb4c
+source-git-commit: 3523cdb0d6d412c1a93694e4cbeab188154120f0
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '735'
 ht-degree: 17%
 
 ---
@@ -98,7 +98,7 @@ Impression-händelseanrop accepterar data som har formats till nyckelvärdepar. 
   </tr> 
    <tr> 
    <td colname="col1"> <code>gdpr</code>  </td> 
-   <td colname="col2"> <p>Rör plugin-programmet <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF.</a></p> <p><code>gdpr</code> kan vara 0 (GDPR gäller inte) eller 1 (GDPR gäller).</p> <p>Standardvärdet är 0.</p><p>Valfritt.</p> </td> 
+   <td colname="col2"> <p>Rör plugin-programmet <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF.</a></p> <p><code>gdpr</code> kan vara 0 (GDPR gäller inte) eller 1 (GDPR gäller).</p> <p>Standardvärdet är 0.</p><p>Valfritt.</p><p>Om <code>gdpr=1</code>så är fallet ska <code>gdpr_consent</code> parametern innehålla IAB TC-medgivandeparametern för att kunna bearbeta data. Annars tas alla data bort.</p> </td> 
   </tr>
    <tr> 
    <td colname="col1"> <code>gdpr_consent</code> </td> 
