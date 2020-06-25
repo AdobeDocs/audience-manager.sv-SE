@@ -1,23 +1,27 @@
 ---
-description: Statusrapporten för introduktion kontrollerar om det går att bearbeta poster i dina inkommande datakällfiler och om de misslyckas. Den här rapporten visar data i ett interaktivt stapeldiagram och ger sammanfattningsvärden i tabellform. Dessutom innehåller det ett alternativ som samplar filer för ett fast tidsintervall och visar de vanligaste felen för varje feltyp. Den här rapporten finns i Analytics > Onboarding Status Report. Den här rapporten är också tillgänglig när du skapar en inkommande datakälla.
-seo-description: Statusrapporten för introduktion kontrollerar om det går att bearbeta poster i dina inkommande datakällfiler och om de misslyckas. Den här rapporten visar data i ett interaktivt stapeldiagram och ger sammanfattningsvärden i tabellform. Dessutom innehåller det ett alternativ som samplar filer för ett fast tidsintervall och visar de vanligaste felen för varje feltyp. Den här rapporten finns i Analytics > Onboarding Status Report. Den här rapporten är också tillgänglig när du skapar en inkommande datakälla.
-seo-title: Statusrapport om introduktion
+description: Statusrapporten för introduktion kontrollerar om det går att bearbeta poster i dina inkommande datakällfiler och om de misslyckas. Den här rapporten visar data i ett interaktivt stapeldiagram och ger sammanfattningsvärden i tabellform. Dessutom innehåller det ett alternativ som samplar filer för ett fast tidsintervall och visar de vanligaste felen för varje feltyp. Den här rapporten finns i Analytics > Statusrapport för introduktion. Den här rapporten är också tillgänglig när du skapar en inkommande datakälla.
+seo-description: Statusrapporten för introduktion kontrollerar om det går att bearbeta poster i dina inkommande datakällfiler och om de misslyckas. Den här rapporten visar data i ett interaktivt stapeldiagram och ger sammanfattningsvärden i tabellform. Dessutom innehåller det ett alternativ som samplar filer för ett fast tidsintervall och visar de vanligaste felen för varje feltyp. Den här rapporten finns i Analytics > Statusrapport för introduktion. Den här rapporten är också tillgänglig när du skapar en inkommande datakälla.
+seo-title: Statusrapport för introduktion
 solution: Audience Manager
-title: Statusrapport om introduktion
+title: Statusrapport för introduktion
 uuid: 6ca8a90a-436b-4fce-adf1-48f3b96b3ed2
+feature: inbound and outbound reports
 translation-type: tm+mt
-source-git-commit: dd5c3d28097251c58e1fb095aaf4076883d1c1a1
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '1498'
+ht-degree: 0%
 
 ---
 
 
 # Statusrapport för introduktion{#onboarding-status-report-about}
 
-Statusrapporten för introduktion kontrollerar om det går att bearbeta poster i dina inkommande datakällfiler och om de misslyckas. Den här rapporten visar data i ett interaktivt stapeldiagram och ger sammanfattningsvärden i tabellform. Dessutom innehåller det ett alternativ som samplar filer för ett fast tidsintervall och visar de vanligaste felen för varje feltyp. Den här rapporten finns i Analytics > Onboarding Status Report. Den här rapporten är också tillgänglig när du skapar en inkommande datakälla.
+Statusrapporten för introduktion kontrollerar om det går att bearbeta poster i dina inkommande datakällfiler och om de misslyckas. Den här rapporten visar data i ett interaktivt stapeldiagram och ger sammanfattningsvärden i tabellform. Dessutom innehåller det ett alternativ som samplar filer för ett fast tidsintervall och visar de vanligaste felen för varje feltyp. Den här rapporten finns i Analytics > Statusrapport för introduktion. Den här rapporten är också tillgänglig när du skapar en inkommande datakälla.
 
 >[!NOTE]
 >
->Endast användare med administratörsbehörighet kan se den här rapporten i gränssnittet för Audience Manager. Du kan låta användare som inte är administratörer informeras om status för de överförda inkommande filerna genom att lägga till deras e-postmeddelanden i rapporten. Se [Ta emot e-postmeddelanden](/help/using/reporting/onboarding-status-report.md#receive-email-notifications).
+>Endast användare med administratörsbehörighet kan se den här rapporten i användargränssnittet i Audience Manager. Du kan låta användare som inte är administratörer informeras om status för de överförda inkommande filerna genom att lägga till deras e-postmeddelanden i rapporten. Se [Ta emot e-postmeddelanden](/help/using/reporting/onboarding-status-report.md#receive-email-notifications).
 
 ## Statusrapport för introduktion: Om {#onboarding-status-about}
 
@@ -118,7 +122,7 @@ En referenshandbok för de etiketter och termer som används i den här rapporte
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Datasynkroniseringsfilnamn</b> </p> </td> 
-   <td colname="col2"> <p>Listar filer som <span class="keyword"> Audience Manager</span> har tagit emot och bearbetat från den valda inkommande datakällan. </p> <p>Filbearbetning misslyckas om filnamnet är felaktigt formaterat. Vilka filnamn som krävs varierar beroende på hur du skickar dessa data till <span class="keyword"> Audience Manager</span>. Leveransmetoderna är bland annat <span class="keyword"> Amazon S3</span> och FTP. Instruktioner om hur du namnger filer finns i: </p> <p> 
+   <td colname="col2"> <p>Visar filer som <span class="keyword"> Audience Manager</span> har tagit emot och bearbetat från den valda inkommande datakällan. </p> <p>Filbearbetning misslyckas om filnamnet är felaktigt formaterat. Vilka filnamn som krävs varierar beroende på hur du skickar dessa data till <span class="keyword"> Audience Manager</span>. Leveransmetoderna är bland annat <span class="keyword"> Amazon S3</span> och FTP. Instruktioner om hur du namnger filer finns i: </p> <p> 
      <ul id="ul_9A32906A14CA41C5AED0E13930DB31BA"> 
       <li id="li_A5A0E6ED711D4002B52092619F87C7D6"> <a href="../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md"> Amazon S3-namnkrav för inkommande datafiler </a> </li> 
      </ul> </p> </td> 
@@ -138,7 +142,7 @@ En referenshandbok för de etiketter och termer som används i den här rapporte
 
 <tr> 
    <td colname="col1"> <p> <b>Ogiltigt enhets-ID</b> </p> </td> 
-   <td colname="col2"> <p>Visar antalet felaktigt formaterade globala enhets-ID:n. Se <a href="../reference/ids-in-aam.md">Index för ID i Audience Manager</a> och <a href="../features/global-data-sources.md">Global Data Sources</a> för mer information om hur enhets-ID ska formateras och vilka globala datakällor du ska använda, baserat på enhetstyp.</p>
+   <td colname="col2"> <p>Visar antalet felaktigt formaterade globala enhets-ID:n. Se <a href="../reference/ids-in-aam.md">Index för ID:n i Audience Manager</a> och <a href="../features/global-data-sources.md">Global Data Sources</a> för mer information om hur enhets-ID ska formateras och vilka globala datakällor du ska använda, baserat på enhetstyp.</p>
   <p>Felsamplingsavsnittet i rapporten innehåller detaljerad information om ogiltiga enhets-ID, som:</p>
    <ul>
     <li>Datakällans ID som motsvarar det ogiltiga enhets-ID:t.</li>
@@ -151,7 +155,7 @@ En referenshandbok för de etiketter och termer som används i den här rapporte
 
 <tr> 
    <td colname="col1"> <p> <b>Inget matchande AAM-ID</b> </p> </td> 
-   <td colname="col2"> <p>Dessa inbyggda ID:n <span class="keyword"> Audience Manager</span> kan inte matcha ett befintligt ID. Inbyggda ID:n kan ha den här statusen när <span class="keyword"> Audience Manager</span> ännu inte har utfört någon ID-synkronisering eller den fortfarande inte kan matcha ID:t även efter en synkronisering. </p> <p>För oöverträffade mobil-ID:n <span class="keyword"> kommer Audience Manager</span> att: </p> 
+   <td colname="col2"> <p>Dessa ID:n <span class="keyword"> Audience Manager</span> kan inte matcha ett befintligt ID. Inbyggda ID:n kan ha den här statusen när <span class="keyword"> Audience Manager</span> ännu inte har utfört någon ID-synkronisering eller den fortfarande inte kan matcha ID:t även efter en synkronisering. </p> <p>För oöverträffade mobil-ID:n kommer <span class="keyword"> Audience Manager</span> att </p> 
     <ul id="ul_B0D6AF9EB27D4017B35E36824B403879"> 
      <li id="li_D141000A50D3463182CBA4571DCC5373">Fortsätt lagra och försök synkronisera detta ID. </li> 
      <li id="li_2EFCEE716F254ABCBC5FBF749B7564E6">Registrera det som en <span class="wintitle"> lagrad post</span> i rapporten om ID:t inte kan synkroniseras. </li> 
@@ -162,7 +166,7 @@ En referenshandbok för de etiketter och termer som används i den här rapporte
    <td colname="col2"> <p>Visar egenskaper som <span class="keyword"> Audience Manager</span> inte kan matcha mot en viss egenskap. Detta kan bero på följande: </p> 
     <ul id="ul_43619035AB6641B6949302FB50BDB5B1"> 
      <li id="li_D4C6306BF2B143198108702B309CE8CF">Felaktigt formaterade egenskaper i den inkommande datafilen. Mer information om hur du formaterar datafilen finns i Innehåll i <a href="../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md"> inkommande datafil: Syntax, Variables och Examples</a>. </li> 
-     <li id="li_A1C708A007D24EE09B7C629AFC6E43C3">Traits that have not been defined in Audience Manager <span class="keyword"></span>. </li> 
+     <li id="li_A1C708A007D24EE09B7C629AFC6E43C3">Fällor som ännu inte har definierats i <span class="keyword"> Audience Manager</span>. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
