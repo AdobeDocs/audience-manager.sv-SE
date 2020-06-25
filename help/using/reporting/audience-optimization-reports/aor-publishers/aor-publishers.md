@@ -5,8 +5,12 @@ seo-title: Målgruppsoptimering för utgivare
 solution: Audience Manager
 title: Målgruppsoptimering för utgivare
 uuid: 8425e237-ec52-4615-bb00-84ece4ebffe1
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 4%
 
 ---
 
