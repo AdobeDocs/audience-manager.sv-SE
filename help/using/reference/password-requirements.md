@@ -5,8 +5,12 @@ seo-title: Lösenordskrav, låsta konton och glömda lösenord
 solution: Audience Manager
 title: Lösenordskrav, låsta konton och glömda lösenord
 uuid: bca892eb-3577-4382-8110-131f78d23069
+feature: reference
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 0%
 
 ---
 
