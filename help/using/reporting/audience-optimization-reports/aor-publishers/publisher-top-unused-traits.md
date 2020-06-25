@@ -5,8 +5,12 @@ seo-title: De vanligaste oanvända traderna
 solution: Audience Manager
 title: De vanligaste oanvända traderna
 uuid: 90bcd333-41b8-416e-aa4e-a8661891df50
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 0%
 
 ---
 
