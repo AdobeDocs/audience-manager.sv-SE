@@ -5,8 +5,12 @@ seo-title: CID ersätter DPID och DPUUID
 solution: Audience Manager
 title: CID ersätter DPID och DPUUID
 uuid: 3641eac5-b19e-45d5-bc1c-35a23b4bab8c
+feature: reference
 translation-type: tm+mt
-source-git-commit: cb3819192c523f9c20e9a15ca5d43ef36c49e900
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 0%
 
 ---
 
@@ -71,7 +75,7 @@ Nyckelvärdepar för CID och CID_IC ersätter DPID och DPUID. De har samma funkt
   </tr> 
   <tr> 
    <td colname="col1"> <p>Kund-ID-integreringskod (CID_IC) </p> </td> 
-   <td colname="col2"> <p> <code>d_cid_ic=<i>integration code</i>%01<i>user ID</i></code> </p> <p> En <span class="term"> integrationskod</span> är ett alternativt ID som du kan använda i stället för datakällans ID, som tilldelas av <span class="keyword"> Audience Manager</span>. Se <a href="../features/manage-datasources.md#create-data-source"> Skapa en datakälla</a> om du behöver konfigurera en integreringskod. </p> </td> 
+   <td colname="col2"> <p> <code>d_cid_ic=<i>integration code</i>%01<i>user ID</i></code> </p> <p> En <span class="term"> integrationskod</span> är ett alternativt ID som du kan använda i stället för datakällans ID, som tilldelats av <span class="keyword"> Audience Manager</span>. Se <a href="../features/manage-datasources.md#create-data-source"> Skapa en datakälla</a> om du behöver konfigurera en integreringskod. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -114,7 +118,7 @@ Följande tabell innehåller exempel per händelsetyp.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Generera UUID för Audience Manager (ID) </p> </td> 
+   <td colname="col1"> <p>Generera Audience Manager UID (ID) </p> </td> 
    <td colname="col2"> 
     <ul id="ul_EAA764DCFF7244F69ABF67ACEE13E579"> 
      <li id="li_18467A531FAF454A881CBD157BBFD6D2">Nytt: <code> .../id?d_cid=123%01987...</code> </li> 
