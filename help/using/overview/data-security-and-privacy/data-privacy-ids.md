@@ -1,19 +1,23 @@
 ---
 description: Det här dokumentet innehåller de typer av Audience Manager-ID som du kan använda i dataintegritetsförfrågningar.
 seo-description: Det här dokumentet innehåller de typer av Audience Manager-ID som du kan använda i dataintegritetsförfrågningar.
-seo-title: Identifierare för Audience Manager (ID)
+seo-title: Audience Manager-ID
 solution: Audience Manager
 keywords: GDPR UI, GDPR API, CCPA, privacy, AAM ID
-title: Identifierare för Audience Manager (ID)
+title: Audience Manager-ID
+feature: data governance & privacy
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
 
 
-# Identifierare för Audience Manager (ID) {#aam-ids}
+# Audience Manager-ID {#aam-ids}
 
-När du skickar [dataintegritetsförfrågningar](data-privacy-requests.md) till Adobe Audience Manager måste du ta med en av de identifierare (ID) som listas nedan. Mer information om ID-format finns i vårt [index för Audience Manager ID](../../reference/ids-in-aam.md).
+När du skickar [dataintegritetsförfrågningar](data-privacy-requests.md) till Adobe Audience Manager måste du inkludera en av identifierarna (ID) som listas nedan. Mer information om ID-format finns i vårt [index över Audience Manager ID](../../reference/ids-in-aam.md).
 
 ## Unikt användar-ID för Adobe Audience Manager
 
@@ -183,7 +187,7 @@ Mer information finns i [Globala datakällor](../../features/global-data-sources
 
 >[!IMPORTANT]
 >
-> Om du använder mobilen [!DNL SDK]ska du också skicka Experience Cloud-ID (`MID`) tillsammans med mobil-ID:n för fullständiga åtkomstsvar och Ta bort-svar.
+> Om du använder mobilen [!DNL SDK]ska du också skicka Experience Cloud-ID (`MID`) tillsammans med mobil-ID:n för fullständiga Access- och Delete-svar.
 
 **JSON-exempel**:
 
