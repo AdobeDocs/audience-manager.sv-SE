@@ -6,8 +6,9 @@ seo-title: Komma igång med masshantering
 solution: Audience Manager
 title: Komma igång med masshantering
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
+feature: baaam
 translation-type: tm+mt
-source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 0%
@@ -57,7 +58,7 @@ Den andra versionen av [!DNL Bulk Management Tools]som släpptes i oktober 2019 
 1. Öppna kalkylbladet och navigera till **[!UICONTROL Config]** kalkylbladet.
 2. Följ stegen som beskrivs i kalkylbladet.
    ![](assets/baaam-authentication.png)
-3. När du har slutfört stegen får du göra större ändringar.
+3. När du är klar med stegen får du göra större ändringar.
 
 När du gör större ändringar måste du fortfarande bekräfta att du har behörighet att göra ändringarna, men API-autentiseringen är automatisk.
 
