@@ -5,8 +5,9 @@ seo-title: Ordlista
 solution: Audience Manager
 title: Ordlista
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
+feature: reference
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 0%
