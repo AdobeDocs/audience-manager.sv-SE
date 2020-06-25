@@ -5,8 +5,12 @@ seo-title: Skapa eller uppdatera dragregler och segmentregler
 solution: Audience Manager
 title: Skapa eller uppdatera dragregler och segmentregler
 uuid: bdd5f8f1-bb83-4844-b681-654e45ace3e1
+feature: baaam
 translation-type: tm+mt
-source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +31,7 @@ Kalkylbladen för att skapa och uppdatera accepterar ett traitRule-huvud som gö
 
 ## Arbeta med varumärkesregler {#trait-rules}
 
-I kalkylbladet returneras och accepteras regler som består av booleska uttryck, jämförelseoperatorer och reguljära uttryck. Du kan skapa regler med trait eller segment builder i [!DNL Audience Manager] och kopiera dem till ditt kalkylblad. Eller om du känner till regelsyntaxen kan du skriva uttryck direkt i kalkylbladen.
+I kalkylbladet returneras och accepteras regler som består av booleska uttryck, jämförelseoperatorer och reguljära uttryck. Du kan skapa regler med trait eller segment builder i [!DNL Audience Manager] och kopiera dem till kalkylbladet. Eller om du känner till regelsyntaxen kan du skriva uttryck direkt i kalkylbladen.
 
 ## Exempel på regelverktyg {#rule-builder-example}
 
