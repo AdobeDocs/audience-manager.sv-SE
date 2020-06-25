@@ -1,19 +1,23 @@
 ---
-description: Den här rapporten returnerar ett frekvensantal av all oanvänd information som samlats in i ert lager och skickats till Audience Manager.
-seo-description: Den här rapporten returnerar ett frekvensantal av all oanvänd information som samlats in i ert lager och skickats till Audience Manager.
+description: Den här rapporten returnerar ett frekvensantal av all oanvänd information som samlats in i ditt lager och skickats till Audience Manager.
+seo-description: Den här rapporten returnerar ett frekvensantal av all oanvänd information som samlats in i ditt lager och skickats till Audience Manager.
 seo-title: Rapport om oanvända signaler
 solution: Audience Manager
 title: Rapport om oanvända signaler
 uuid: 04334a5c-3e21-44db-b971-0b4457685e9a
+feature: overlap reports
 translation-type: tm+mt
-source-git-commit: dcc44161df89b44ca1a234070c4afbb0210dc723
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '613'
+ht-degree: 0%
 
 ---
 
 
 # Rapport om oanvända signaler{#unused-signals-report}
 
-Den här rapporten returnerar ett frekvensantal av all oanvänd information som samlats in i ert lager och skickats till Audience Manager. Navigera till **Analytics > Audience Reports > Other Reports > Unused Signals** för att komma åt den här rapporten.
+Den här rapporten returnerar ett frekvensantal av all oanvänd information som samlats in i ditt lager och skickats till Audience Manager. Du öppnar den här rapporten genom att gå till **Analytics > Målgruppsrapporter > Andra rapporter > Oanvända signaler**.
 
 >[!NOTE]
 >
