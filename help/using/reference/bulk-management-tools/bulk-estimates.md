@@ -5,8 +5,12 @@ seo-title: Massuppskattningar
 solution: Audience Manager
 title: Massuppskattningar
 uuid: 63b2f06a-8ba0-47a2-bd0b-8039b2d4c95d
+feature: baaam
 translation-type: tm+mt
-source-git-commit: 3051ca9f7c4039dafdfa01b89226c1fa8717e610
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 0%
 
 ---
 
