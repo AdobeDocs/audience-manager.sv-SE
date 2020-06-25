@@ -1,19 +1,23 @@
 ---
-description: Rapporten Överlappning mellan segment och annonsenhet visas som ett värmediagram som markerar höga och låga överlappningar mellan era annonsenheter och Audience Manager-segment.
-seo-description: Rapporten Överlappning mellan segment och annonsenhet visas som ett värmediagram som markerar höga och låga överlappningar mellan era annonsenheter och Audience Manager-segment.
+description: Rapporten Överlappning mellan segment och annonsenhet visas som ett värmediagram som markerar höga och låga överlappningar mellan annonsenheter och Audience Manager.
+seo-description: Rapporten Överlappning mellan segment och annonsenhet visas som ett värmediagram som markerar höga och låga överlappningar mellan annonsenheter och Audience Manager.
 seo-title: Överlappning mellan segment och annonsenhet
 solution: Audience Manager
 title: Överlappning mellan segment och annonsenhet
 uuid: aaa20163-58aa-42c9-8f72-a1dfb0d20e57
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 0%
 
 ---
 
 
 # Överlappning mellan segment och annonsenhet{#segment-to-ad-unit-overlap}
 
-Rapporten Överlappning mellan segment och annonsenhet visas som ett värmediagram som markerar höga och låga överlappningar mellan era annonsenheter och Audience Manager-segment.
+Rapporten Överlappning mellan segment och annonsenhet visas som ett värmediagram som markerar höga och låga överlappningar mellan annonsenheter och Audience Manager.
 
 ## Användningsfall {#use-cases}
 
