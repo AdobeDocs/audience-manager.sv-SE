@@ -5,8 +5,12 @@ seo-title: Unikt användarområde
 solution: Audience Manager
 title: Unikt användarområde
 uuid: 897245ab-af6e-42a0-b653-96703b65c764
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: ccff7a0337d59a2e2c65c91076a1ff38814a0dd1
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
