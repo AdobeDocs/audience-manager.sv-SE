@@ -5,8 +5,12 @@ seo-title: Filtrera rapportresultat med datareglagen
 solution: Audience Manager
 title: Filtrera rapportresultat med datareglagen
 uuid: ec486d97-d1d9-469b-b8df-5821f30d10ee
+feature: reporting reference
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '174'
+ht-degree: 0%
 
 ---
 
