@@ -6,8 +6,9 @@ solution: Audience Manager
 keywords: GDPR UI, GDPR API, CCPA, privacy
 title: Begäranden om dataintegritet
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
+feature: data governance & privacy
 translation-type: tm+mt
-source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 0%
@@ -127,9 +128,9 @@ Efter en avanmälan på partnernivå med ett deklarerat ID-anrop:
 * [!UICONTROL Destination] partners får en begäran om att dela upp segment för [!DNL CRM] -ID och det sista enhets-ID:t. Osegmentering fungerar för både [realtids](data-privacy-requests.md#aam-partners-with-unsegmentation) - och batchdestinationer.
 * Inga historiska data tas bort.
 
-När [!DNL Audience Manager] tar emot en begäran om avanmälan på partnernivå innehåller den [!DNL JSON] som returneras av [!DNL DCS] felkoden 171 [med meddelandet](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md#opt-out-error-codes), i stället för [!UICONTROL "Encountered opt out tag"][!DNL Audience Manager] användar-ID:t.
+När [!DNL Audience Manager] tar emot en avanmälningsbegäran på partnernivå innehåller den [!DNL JSON] som returneras av [!DNL DCS] felkoden 171 [med meddelandet](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md#opt-out-error-codes), i stället för [!UICONTROL "Encountered opt out tag"][!DNL Audience Manager] användar-ID:t.
 
-Du kan göra en deklarerad ID-avanmälan med `d_cid` - och `d_cid_ic` nyckelvärdepar. Gamla parametrar som `d_dpid` och `d_dpuuid` fungerar fortfarande, men betraktas som inaktuella. Se [CID ersätter DPID och DPUUID](../../reference/cid.md). I exemplen *visar kursiv* en variabelplatshållare.
+Du kan göra en deklarerad ID-avanmälan med `d_cid` - och `d_cid_ic` nyckelvärdepar. Gamla parametrar som `d_dpid` och `d_dpuuid` fungerar fortfarande, men anses vara föråldrade. Se [CID ersätter DPID och DPUUID](../../reference/cid.md). I exemplen *visar kursiv* en variabelplatshållare.
 
 #### Avanmäl dig med [!DNL CID] och [!DNL CID_IC]
 
