@@ -1,19 +1,23 @@
 ---
-description: Audience Manager tar emot enorma mängder data varje dag. Detta påverkar hur lång tid det tar att bearbeta dina data och generera rapportresultat. Innehållet i det här avsnittet beskriver hur dessa tidsintervall påverkar ditt Audience Manager-konto. Dessutom är de tidsramar och scheman som beskrivs här endast allmänna riktlinjer. Dessa scheman utgör inte serviceavtal (SLA) eller åtaganden som rör dataleverans. Adobe förbehåller sig rätten att när som helst ändra tidsramar och tidsplaner utan föregående meddelande.
-seo-description: Audience Manager tar emot enorma mängder data varje dag. Detta påverkar hur lång tid det tar att bearbeta dina data och generera rapportresultat. Innehållet i det här avsnittet beskriver hur dessa tidsintervall påverkar ditt Audience Manager-konto. Dessutom är de tidsramar och scheman som beskrivs här endast allmänna riktlinjer. Dessa scheman utgör inte serviceavtal (SLA) eller åtaganden som rör dataleverans. Adobe förbehåller sig rätten att när som helst ändra tidsramar och tidsplaner utan föregående meddelande.
+description: Audience Manager får enorma mängder data varje dag. Detta påverkar hur lång tid det tar att bearbeta dina data och generera rapportresultat. Innehållet i det här avsnittet beskriver hur dessa tidsintervall påverkar ditt Audience Manager-konto. Dessutom är de tidsramar och scheman som beskrivs här endast allmänna riktlinjer. Dessa scheman utgör inte serviceavtal (SLA) eller åtaganden som rör dataleverans. Adobe förbehåller sig rätten att när som helst ändra tidsramar och tidsplaner utan föregående meddelande.
+seo-description: Audience Manager får enorma mängder data varje dag. Detta påverkar hur lång tid det tar att bearbeta dina data och generera rapportresultat. Innehållet i det här avsnittet beskriver hur dessa tidsintervall påverkar ditt Audience Manager-konto. Dessutom är de tidsramar och scheman som beskrivs här endast allmänna riktlinjer. Dessa scheman utgör inte serviceavtal (SLA) eller åtaganden som rör dataleverans. Adobe förbehåller sig rätten att när som helst ändra tidsramar och tidsplaner utan föregående meddelande.
 seo-title: Hur dataleverans och bearbetningstider påverkar rapporter
 solution: Audience Manager
 title: Hur dataleverans och bearbetningstider påverkar rapporter
 uuid: 4b975512-f67e-4749-a7ef-168415597682
+feature: reference
 translation-type: tm+mt
-source-git-commit: 6bdf79b17ec96ed0d54ed97ab5d69fadb68763b5
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 0%
 
 ---
 
 
 # Hur dataleverans och bearbetningstider påverkar rapporter{#how-data-delivery-and-file-processing-times-affect-reports}
 
-Audience Manager tar emot enorma mängder data varje dag. Detta påverkar hur lång tid det tar att bearbeta dina data och generera rapportresultat. Innehållet i det här avsnittet beskriver hur dessa tidsintervall påverkar ditt Audience Manager-konto. Dessutom är de tidsramar och scheman som beskrivs här endast allmänna riktlinjer. Dessa scheman utgör inte serviceavtal (SLA) eller åtaganden som rör dataleverans. Adobe förbehåller sig rätten att när som helst ändra tidsramar och tidsplaner utan föregående meddelande.
+Audience Manager får enorma mängder data varje dag. Detta påverkar hur lång tid det tar att bearbeta dina data och generera rapportresultat. Innehållet i det här avsnittet beskriver hur dessa tidsintervall påverkar ditt Audience Manager-konto. Dessutom är de tidsramar och scheman som beskrivs här endast allmänna riktlinjer. Dessa scheman utgör inte serviceavtal (SLA) eller åtaganden som rör dataleverans. Adobe förbehåller sig rätten att när som helst ändra tidsramar och tidsplaner utan föregående meddelande.
 
 ## Rapporteringsnummer {#reporting-numbers}
 
@@ -37,9 +41,9 @@ I följande tabell visas och beskrivs tidsintervallen i våra allmänna rapporte
 
 | Filtyp | Beskrivning |
 |---|---|
-| Inkommande filinmatning (offlinedata) | Filbearbetning utförs två gånger per dag. Dessa procedurer importerar data och förbereder dem för leverans. Filleveranstiderna varierar eftersom de påverkas av den totala mängden kunddata som behöver bearbetas. Du kan förvänta dig en maximal fördröjning på 48 timmar mellan den tidpunkt då filen överförs i Audience Manager och tills data är tillgängliga för rapportering och aktivering. |
+| Inkommande filinmatning (offlinedata) | Filbearbetning utförs två gånger per dag. Dessa procedurer importerar data och förbereder dem för leverans. Filleveranstiderna varierar eftersom de påverkas av den totala mängden kunddata som behöver bearbetas. Du kan förvänta dig en maximal fördröjning på 48 timmar mellan den tidpunkt då filen överförs i Audience Manager och tills data finns tillgängliga för rapportering och aktivering. |
 | Utgående (export) filer | Filbearbetning och leverans sker en gång om dagen, kl. 14:00 UTC. Tänk på att bearbetningen och leveransen påverkas av det totala antalet filer och deras storlek. I vissa fall kan det dröja så länge som 24 timmar. När detta inträffar skickar Audience Manager två filer för en viss dag i stället för 1. Vi kommer att meddela våra kunder i de sällsynta fall där Audience Manager måste sluta bearbeta en fil helt och hållet. Med tanke på dessa förhållanden är det svårt att uppskatta leveranstider för utgående data. Om du vill ta reda på om du har fått en komplett uppsättning filer kontrollerar du tidsstämpeln och letar efter eventuella saknade dagar. Det här är en 13-siffrig UNIX UTC-tidsstämpel som registrerar tidpunkten när filen skapades. Se [Utgående dataöverföringar](../integration/receiving-audience-data/real-time-outbound-transfers/real-time-outbound-transfers.md)i realtid. |
-| Loggfiler för annonsserver | Filbearbetning utförs i nära realtid för att importera loggfilsposter när timfilerna är klara. Processen att förbereda filerna för rapportering utförs en gång om dagen. Filleveranstiderna varierar eftersom de påverkas av den totala mängden kunddata som behöver bearbetas. Du kan förvänta dig en maximal fördröjning på 48 timmar mellan den tidpunkt då du överför filen till Audience Manager och den tidpunkt då data är tillgängliga för rapportering och aktivering. |
+| Loggfiler för annonsserver | Filbearbetning utförs i nära realtid för att importera loggfilsposter när timfilerna är klara. Processen att förbereda filerna för rapportering utförs en gång om dagen. Filleveranstiderna varierar eftersom de påverkas av den totala mängden kunddata som behöver bearbetas. Du kan förvänta dig en maximal fördröjning på 48 timmar mellan den tidpunkt då du överför filen till Audience Manager och den tidpunkt då informationen är tillgänglig för rapportering och aktivering. |
 
 >[!MORELIKETHIS]
 >
