@@ -1,12 +1,16 @@
 ---
 description: En allmän rapport returnerar resultatdata för egenskaper, segment och mål.
-seo-description: En allmän rapport i Audience Manager returnerar prestandadata för egenskaper, segment och mål.
+seo-description: En allmän rapport i Audience Manager returnerar resultatdata för egenskaper, segment och destinationer.
 seo-title: Allmänna rapporter i Audience Manager
 solution: Audience Manager
 title: Allmänna rapporter
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
+feature: general & trend reports
 translation-type: tm+mt
-source-git-commit: 723c75e8946c42779b4c27727ff9e6398b5fc9b1
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 0%
 
 ---
 
@@ -126,11 +130,11 @@ Måtten nedan är tillgängliga när du kör en allmän rapport och väljer **[!
 
 ### Segmentpopulering i realtid
 
-Det här måttet visar det faktiska antalet unika besökare som har setts i realtid i det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av Audience Manager.
+Detta mått visar det faktiska antalet unika besökare som har setts i realtid i det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av Audience Manager.
 
 ### Total segmentpopulation
 
-Det här måttet representerar det totala antalet Audience Manager UUID:n som är kvalificerade för segmentet under den summeringsperiod som du valde. Den totala segmentpopulationen på en dag representerar den mest korrekta användarbasen för målinriktning.
+Det här måttet representerar det totala antalet Audience Manager-UID:n som är kvalificerade för segmentet inom den summeringsperiod som du har valt. Den totala segmentpopulationen på en dag representerar den mest korrekta användarbasen för målinriktning.
 
 >[!NOTE]
 >
@@ -146,11 +150,11 @@ Måtten nedan är tillgängliga när du kör en allmän rapport och väljer **[!
 
 **Segmentpopulering i realtid**
 
-Det här måttet visar det faktiska antalet unika besökare som har setts i realtid i det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av Audience Manager.
+Detta mått visar det faktiska antalet unika besökare som har setts i realtid i det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av Audience Manager.
 
 **Total segmentpopulation**
 
-Det här måttet representerar det totala antalet Audience Manager UUID som tillhör ett segment inom summeringsperioden och som skickades till ett mål.
+Det här måttet representerar det totala antalet Audience Manager UID som tillhör ett segment inom summeringsperioden och som skickades till ett mål.
 
 Bilden nedan visar resultatet av att köra en allmän rapport för rapporttypen Destinationer.
 
