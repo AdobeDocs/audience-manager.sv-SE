@@ -1,19 +1,23 @@
 ---
-description: Kartan innehåller de viktigaste Audience Manager-systemen. Det visar visuellt hur data flödar in i, ut ur och bland Audience Manager-komponenter.
-seo-description: Kartan innehåller de viktigaste Audience Manager-systemen. Det visar visuellt hur data flödar in i, ut ur och bland Audience Manager-komponenter.
-seo-title: Dataflödesschema för plattformsarkitektur
+description: Kartan innehåller de större Audience Manager-systemen. Det visar visuellt hur data flödar in i, ut ur och mellan Audience Manager-komponenter.
+seo-description: Kartan innehåller de större Audience Manager-systemen. Det visar visuellt hur data flödar in i, ut ur och mellan Audience Manager-komponenter.
+seo-title: Platform Architecture Data Flow Map
 solution: Audience Manager
-title: Dataflödesschema för plattformsarkitektur
+title: Platform Architecture Data Flow Map
 uuid: d845af1d-f448-4f4c-948e-b2c89f125086
+feature: system components
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 0%
 
 ---
 
 
-# Plattformsarkitektur: Dataflödesschema{#platform-architecture-data-flow-map}
+# Platform Architecture: Dataflödesschema{#platform-architecture-data-flow-map}
 
-Kartan innehåller de viktigaste Audience Manager-systemen. Det visar visuellt hur data flödar in i, ut ur och bland Audience Manager-komponenter.
+Kartan innehåller de större Audience Manager-systemen. Det visar visuellt hur data flödar in i, ut ur och mellan Audience Manager-komponenter.
 
 ## Så här läser du den här kartan {#compmap}
 
