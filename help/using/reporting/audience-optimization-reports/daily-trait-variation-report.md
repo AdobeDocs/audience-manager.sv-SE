@@ -5,8 +5,12 @@ seo-title: Rapport över variationer för daglig trait
 solution: Audience Manager
 title: Rapport över variationer för daglig trait
 uuid: 4e82bb17-d447-4ed1-a4fc-e15b0f1b47f0
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 8f2ec880cbbe2f516ebc240a712337dc09c4e7f7
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 0%
 
 ---
 
