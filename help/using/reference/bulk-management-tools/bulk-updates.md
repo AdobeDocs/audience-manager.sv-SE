@@ -6,8 +6,12 @@ seo-title: Massuppdateringar
 solution: Audience Manager
 title: Massuppdateringar
 uuid: 22f1badd-a274-4d3e-9957-a24bf8c1d0dc
+feature: baaam
 translation-type: tm+mt
-source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 0%
 
 ---
 
