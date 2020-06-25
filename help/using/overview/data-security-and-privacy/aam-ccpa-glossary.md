@@ -1,11 +1,15 @@
 ---
-description: I den här artikeln förklaras de begrepp och termer som används i California Consumer Privacy Act (CCPA) och hur Adobe Audience Manager hanterar olika CCPA-krav.
-seo-description: I den här artikeln förklaras de begrepp och termer som används i California Consumer Privacy Act (CCPA) och hur Adobe Audience Manager hanterar olika CCPA-krav.
+description: I den här artikeln förklaras de begrepp och termer som används i California Consumer Privacy Act (CCPA) och hur Adobe Audience Manager uppfyller olika CCPA-krav.
+seo-description: I den här artikeln förklaras de begrepp och termer som används i California Consumer Privacy Act (CCPA) och hur Adobe Audience Manager uppfyller olika CCPA-krav.
 seo-title: CCPA-ordlista
 solution: Audience Manager
 title: CCPA-ordlista
+feature: data governance & privacy
 translation-type: tm+mt
-source-git-commit: f8184dfccdb7b5cbc3ace67831d988dd8061ea38
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +22,7 @@ I den här artikeln förklaras de begrepp och termer som används i California C
 
 California Consumer Privacy Act (CCPA), som trädde i kraft den 1 januari 2020, är en annan möjlighet att göra integriteten till en integrerad del av kundupplevelsen. Audience Manager utnyttjar den befintliga integritetsinfrastrukturen för att hjälpa er att uppfylla era skyldigheter enligt CCPA när ni använder Audience Manager, så att ni kan vara redo för CCPA.
 
-Audience Manager ser fram emot att få samarbeta med er när ni fullgör nya skyldigheter genom att använda våra funktioner för datastyrning och sekretess efter design.
+Audience Manager ser fram emot att få samarbeta med dig när du fullgör nya skyldigheter genom att använda våra funktioner för datastyrning och sekretess efter design.
 
 ## CCPA-ordlista {#CCPA-glossary}
 
