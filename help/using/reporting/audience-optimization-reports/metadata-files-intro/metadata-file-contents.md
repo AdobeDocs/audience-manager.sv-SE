@@ -5,8 +5,12 @@ seo-title: Innehållsformat för metadatafiler
 solution: Audience Manager
 title: Innehållsformat för metadatafiler
 uuid: 9ba44738-3e17-40c7-9e8c-5abd8361e16d
+feature: log files
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +23,7 @@ Formatera innehållet i metadatafilen för målgruppsoptimering enligt dessa spe
 
 Följande syntax definierar strukturen för välformaterat innehåll i en metadatafil. Obs! *Kursiv* anger en variabelplatshållare.
 
-**Syntax:**  ID för *innehåll* | *namn* | *-1*
+**Syntax:**  *innehålls-ID* | *namn* | *-1*
 
 <!--In the contents syntax, you'll notice a parent ID variable. Don't confuse it with the parent ID used in the [metadata file name](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md). These 2 variables seem similar, but they represent different things. In the file name, the parent ID corresponds to a category like "campaign" (ID 1), "placement" (ID 3), or "tactic" (ID 9), etc. In the file body:-->
 
