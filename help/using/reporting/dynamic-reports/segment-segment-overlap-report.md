@@ -5,8 +5,9 @@ seo-title: Överlappningsrapport för segment-till-segment
 solution: Audience Manager
 title: Överlappningsrapport för segment-till-segment
 uuid: 0339eb6c-6355-44a3-9c46-f159485449d1
+feature: overlap reports
 translation-type: tm+mt
-source-git-commit: a35be513c2cec40257f2df0731eaccbb98e3a000
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -78,5 +79,5 @@ Popup-fönstret för [!UICONTROL Segment-to-Segment Overlap] rapporten innehåll
 >* [Former, färger och storlekar som används i interaktiva rapporter](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
 >* [Ikoner och verktyg för rapporter förklaras](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
 >* [Överlappningsrapporter: Uppdatera schema och minsta segmentstorlek](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
->* [Datainsamling och felfrekvens i valda rapporter för Audience Manager..](../../reporting/report-sampling.md)
+>* [Datainsamling och felfrekvens i rapporter från markerade Audience Manager..](../../reporting/report-sampling.md)
 >* [CSV-filer för överlappningsrapporter](../../reporting/dynamic-reports/overlap-csv-files.md)
