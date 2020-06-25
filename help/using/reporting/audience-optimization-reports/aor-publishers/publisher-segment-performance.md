@@ -5,8 +5,12 @@ seo-title: Resultatrapport för segment
 solution: Audience Manager
 title: Resultatrapport för segment
 uuid: c9a1e9ad-4f3f-4334-a3ff-0f241c7303c4
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 0%
 
 ---
 
@@ -82,7 +86,7 @@ Din [!UICONTROL Segment Performance] rapport kan se ut ungefär som den nedan. K
   </tr> 
   <tr> 
    <td colname="col1"> <p>Realtime-segmentpopulering </p> </td> 
-   <td colname="col2"> <p>Det faktiska antalet unika besökare som visas i realtid för det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av <span class="keyword"> Audience Manager</span>. </p> </td> 
+   <td colname="col2"> <p>Det faktiska antalet unika besökare som har setts i realtid för det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av <span class="keyword"> Audience Manager</span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
