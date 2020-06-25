@@ -1,25 +1,29 @@
 ---
-description: Vi använder inte Audience Manager, men vi ser Javascript-anrop till Audience Manager i Javascript-felsökaren - Varför?
-seo-description: Vi använder inte, men vi ser Javascript-anrop från Audience Manager i Javascript-felsökaren - Varför?
-seo-title: Vi använder inte Audience Manager, men vi ser Javascript-anrop till Audience Manager i Javascript-felsökaren - Varför?
+description: Vi använder inte Audience Manager, men vi ser Audience Manager Javascript-anrop i Javascript-felsökaren - varför?
+seo-description: Vi använder inte, men vi ser Audience Manager Javascript-anrop i Javascript-felsökaren - varför?
+seo-title: Vi använder inte Audience Manager, men vi ser Audience Manager Javascript-anrop i Javascript-felsökaren - varför?
 solution: Audience Manager
-title: Vi använder inte Audience Manager, men vi ser Javascript-anrop till Audience Manager i Javascript-felsökaren - Varför?
+title: Vi använder inte Audience Manager, men vi ser Audience Manager Javascript-anrop i Javascript-felsökaren - varför?
+feature: support
 translation-type: tm+mt
-source-git-commit: 1f5c1a91f0b5df5291d3143d297e25128b5bb716
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 0%
 
 ---
 
 
-# Vi är inte en Audience Manager-kund, men se Javascript-anropen för Audience Manager på vår webbplats
+# Vi är ingen Audience Manager-kund, men se Audience Manager Javascript-samtalen på vår webbplats
 
 ## Fråga
 
-Vi använder inte Adobe Audience Manager, men vi ser Javascript-anrop till Audience Manager i Javascript-felsökningsprogrammet.
+Vi använder inte Adobe Audience Manager, men vi ser Audience Manager Javascript-anrop i Javascript-felsökaren.
 
 Varför händer detta?
 
 ## Svar
 
-Det är troligt att du kör [Experience Cloud Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html) på din egendom. Om du är det refererar den här referensen för Audience Manager inte nödvändigtvis till egenskapen som kör Audience Manager. Det innebär i stället att Audience Manager driver den här tjänsten.
+Det är troligt att du kör [Experience Cloud Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html) på din egendom. Om du är det refererar den här Audience Manager-referensen inte nödvändigtvis till egenskapen som kör Audience Manager. Istället innebär det att Audience Manager driver denna tjänst.
 
-Audience Manager-serveranropet görs vanligtvis för att [synkronisera kund-ID:n](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/setcustomerids.html).
+Serveranropet till Audience Manager görs vanligtvis för att [synkronisera kund-ID](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/setcustomerids.html).
