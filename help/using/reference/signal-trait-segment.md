@@ -5,8 +5,9 @@ seo-title: Signaler, egenskaper och segment
 solution: Audience Manager
 title: Signaler, egenskaper och segment
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
+feature: reference
 translation-type: tm+mt
-source-git-commit: 620730ab1596d4777a768de4453b73538671279d
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%
