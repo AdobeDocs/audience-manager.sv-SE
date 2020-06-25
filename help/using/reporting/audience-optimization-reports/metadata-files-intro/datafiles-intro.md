@@ -5,15 +5,19 @@ seo-title: Datafiler för målgruppsoptimeringsrapporter och körbara loggfiler
 solution: Audience Manager
 title: Datafiler för målgruppsoptimeringsrapporter och körbara loggfiler
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
+feature: log files
 translation-type: tm+mt
-source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
 
 # Datafiler för målgruppsoptimeringsrapporter och körbara loggfiler {#data-files-for-audience-optimization-reports}
 
-En datafil innehåller indata för att visa, klicka eller konvertera. När dessa data är korrekt formaterade kan du importera dem till Audience Manager för att visa dem i [rapporter](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) om målgruppsoptimering och skapa egenskaper med hjälp av data via [körbara loggfiler](/help/using/integration/media-data-integration/actionable-log-files.md). Formatera datafilerna enligt dessa specifikationer i det här avsnittet.
+En datafil innehåller indata för att visa, klicka eller konvertera. När data är korrekt formaterade kan du importera dem till Audience Manager för att visa dem i [målgruppsoptimeringsrapporter](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) och skapa egenskaper med hjälp av data via [körbara loggfiler](/help/using/integration/media-data-integration/actionable-log-files.md). Formatera datafilerna enligt dessa specifikationer i det här avsnittet.
 
 ## Översikt {#overview}
 
@@ -143,7 +147,7 @@ Tabellen nedan listar och beskriver kolumnrubrikerna för datafilen. Sidhuvuden 
 
 >[!IMPORTANT]
 >
-> Kontakta din Audience Manager-konsult eller kundtjänst för att komma igång och konfigurera en [!DNL Amazon S3] katalog för dina datafiler.
+> Kontakta Audience Manager eller kundtjänst för att komma igång och konfigurera en [!DNL Amazon S3] katalog för dina datafiler.
 
 **Syntax och exempel för leveranssökväg**
 
@@ -167,7 +171,7 @@ I följande tabell definieras vart och ett av dessa element i en filleveranssök
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>pid=<i>AAM ID</i></code> </p> </td> 
-   <td colname="col2"> <p>Detta nyckelvärdepar innehåller ditt <span class="keyword"> Audience Manager</span> -kund-ID. </p> </td> 
+   <td colname="col2"> <p>Detta nyckelvärdepar innehåller ditt <span class="keyword"> Audience Manager</span> kund-ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>dpid=<i>d_src</i></code> </p> </td> 
