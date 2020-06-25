@@ -6,8 +6,12 @@ seo-title: Förklaring av nyckelvärdepar
 solution: Audience Manager
 title: Förklaring av nyckelvärdepar
 uuid: f1435742-81ca-4964-8370-accf2f1c47a5
+feature: reference
 translation-type: tm+mt
-source-git-commit: cb3819192c523f9c20e9a15ca5d43ef36c49e900
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 0%
 
 ---
 
