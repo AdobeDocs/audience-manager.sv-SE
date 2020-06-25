@@ -5,8 +5,9 @@ seo-title: Konvertering över flera kanaler
 solution: Audience Manager
 title: Konvertering över flera kanaler
 uuid: 0fecec23-e502-490b-b7dd-47a3753a3f75
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 6988c6750c98f382a3440a606677243646551ad1
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 3%
