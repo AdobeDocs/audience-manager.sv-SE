@@ -5,8 +5,12 @@ seo-title: Översikt och mappningar för metadatafiler
 solution: Audience Manager
 title: Översikt och mappningar för metadatafiler
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
+feature: log files
 translation-type: tm+mt
-source-git-commit: 13882a8f9300344e1bb0a3079666a67166945a83
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 0%
 
 ---
 
@@ -86,7 +90,7 @@ I följande tabell visas nyckelvärdepar som innehåller data som används av [!
    <td colname="col2"> <p> <code>d_io = <i>insertion order ID</i></code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Plattform </p> </td> 
+   <td colname="col1"> <p>Platform </p> </td> 
    <td colname="col2"> <p> <code>d_src = <i>data source ID</i></code> </p> <p>Detta är <a href="../../../features/datasources-list-and-settings.md#data-sources-list-and-settings"> datakällans</a> ID för plattformen som tillhandahåller metadatainformation (t.ex. DFA, Atlas, GBM, MediaMath). </p> </td> 
   </tr> 
   <tr> 
