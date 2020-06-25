@@ -5,8 +5,9 @@ seo-title: Datastyrning
 solution: Audience Manager
 keywords: GDPR UI, GDPR API, CCPA, privacy, consent, obfuscation, governance
 title: Datastyrning
+feature: data governance & privacy
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%
@@ -37,7 +38,7 @@ Se videon nedan för att förstå hur [!DNL IP] adressofuscation fungerar i Audi
 
 >[!VIDEO](https://video.tv.adobe.com/v/27218/)
 
-**Geografisk segmentering:** Om du aktiverar [!DNL IP] adressokation kan de återstående oktetterna i [!DNL IP] adressen fortfarande användas för geosegmentering och rapportering i Audience Manager. Om du inte aktiverar [!DNL IP] adressofficering använder Audience Manager den fullständiga [!DNL IP] adressen. Du kan använda funktionen Geografisk segmentering som gör att du kan identifiera en [!DNL IP] plats efter geografiskt område i båda fallen, men med en viss minskad precision när [!DNL IP] förvrängning används. Att få information på stadsnivå påverkas sannolikt avsevärt av att [!DNL IP] adressen döljs. Att få information på region- och landnivå bör endast få en liten inverkan. Geografiska segmenteringsdata är endast detaljerade för postnummer eller postnummernivå och inte för enskilda nivåer. Läs mer om [geoanpassning](../../features/traits/trait-geotarget-keys.md) och hur du ställer in egenskaper med geografiska variabler.
+**Geografisk segmentering:** Om du aktiverar [!DNL IP] adressokation kan de återstående oktetterna i [!DNL IP] adressen fortfarande användas för geosegmentering och rapportering i Audience Manager. Om du inte aktiverar [!DNL IP] adressofficering använder Audience Manager den fullständiga [!DNL IP] adressen. Du kan använda funktionen Geografisk segmentering som gör att du kan identifiera en [!DNL IP] plats efter geografiskt område i båda fallen, men med en viss minskad precision när [!DNL IP] förvrängning används. Att få information på stadsnivå påverkas sannolikt avsevärt av att [!DNL IP] adressen döljs. Att få information på region- och landnivå bör endast få en liten inverkan. Geografiska segmenteringsdata är endast detaljerade för postnummernivån eller postnivån och inte för den enskilda nivån. Läs mer om [geoanpassning](../../features/traits/trait-geotarget-keys.md) och hur du ställer in egenskaper med geografiska variabler.
 
 ## Datalagring i Audience Manager {#data-retention}
 
