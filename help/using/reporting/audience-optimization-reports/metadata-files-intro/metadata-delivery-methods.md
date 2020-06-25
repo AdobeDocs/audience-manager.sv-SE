@@ -5,8 +5,9 @@ seo-title: Leveransmetoder för metadatafiler
 solution: Audience Manager
 title: Leveransmetoder för metadatafiler
 uuid: 5199ee9b-920d-423d-8070-05a017ecd562
+feature: log files
 translation-type: tm+mt
-source-git-commit: 62147fc719a59d2b2c7b444bce853334b03816c6
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
@@ -20,7 +21,7 @@ Skicka eller uppdatera metadatafiler genom att skicka dem till en särskild [!DN
 
 >[!IMPORTANT]
 >
-> Kontakta Audience Manager-konsulten eller kundtjänst för att komma igång och konfigurera en [!DNL Amazon S3] katalog för dina metadatafiler.
+> Kontakta Audience Manager eller kundtjänst för att komma igång och konfigurera en [!DNL Amazon S3] katalog för dina metadatafiler.
 
 ## Leveranssökvägssyntax och exempel {#syntax}
 
@@ -46,7 +47,7 @@ I följande tabell definieras vart och ett av dessa element i en filleveranssök
 | Filparameter | Beskrivning |
 ---------|----------|
 | `.../log_ingestion/` | Detta är början på kataloglagringssökvägen. Du får den fullständiga sökvägen när allt är klart. |
-| `pid=<AAM ID>` | Detta nyckelvärdepar innehåller ditt kund-ID för Audience Manager. |
+| `pid=<AAM ID>` | Detta nyckelvärdepar innehåller ditt Audience Manager kund-ID. |
 | `dpid=<d_src>` | Detta nyckelvärdepar innehåller det datakälla-ID som skickades vid ett händelseanrop. Datakällans ID är det värde som kopplar allt innehåll i filen till de data som den hör till. </br> Exempel: du har en kreatör med ID 123 och namnet&quot;Advertiser Creative A&quot;. Som ett händelseanrop skickas bara ID:t du behöver inkludera&quot;Advertiser Creative A&quot; i metadatafilen. Kampanjen och den kreativa delen tillhör en datakälla. Datakällans ID är det som knyter samman dessa och gör att vi kan koppla filinnehåll till ett ID som skickas vid ett händelseanrop. Se [hur ID:n för händelsesamtal avgör filnamn, innehåll och leveransvägar](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md#how-ids-shape-file-names). |
 | `<yyyymmdd_0_child ID>` | Det här är filnamnet. Se [Namnkonventioner för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md). |
 
