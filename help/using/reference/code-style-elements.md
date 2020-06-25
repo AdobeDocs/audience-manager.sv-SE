@@ -5,8 +5,12 @@ seo-title: Formatkonventioner för kod- och textelement
 solution: Audience Manager
 title: Formatkonventioner för kod- och textelement
 uuid: 7605604d-bc76-4063-ba92-52c88bd69e3c
+feature: reference
 translation-type: tm+mt
-source-git-commit: 8e4afebaa2035fca6f8535314be5f072f26e0217
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 0%
 
 ---
 
