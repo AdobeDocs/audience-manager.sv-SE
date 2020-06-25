@@ -5,8 +5,12 @@ seo-title: Förbättra bearbetningstiden för loggfiler med uppslagstabeller
 solution: Audience Manager
 title: Förbättra bearbetningstiden för loggfiler med uppslagstabeller
 uuid: ffc77618-474b-455e-9c91-15b32fc151a5
+feature: reporting reference
 translation-type: tm+mt
-source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 8%
 
 ---
 
