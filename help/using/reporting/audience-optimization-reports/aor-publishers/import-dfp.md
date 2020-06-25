@@ -5,8 +5,12 @@ seo-title: Importera DFP-datafiler till Audience Manager
 solution: Audience Manager
 title: Importera DFP-datafiler till Audience Manager
 uuid: c685f34f-3e50-4c4b-99fa-d8bbafe0b268
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9f091fa765e937fb47b3328d8f5f2dab24a85040
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +23,7 @@ Innan Audience Manager kan aktivera målgruppsoptimering för utgivare måste du
 
 Observera att den process som beskrivs i det här avsnittet måste slutföras *innan* du går vidare till förutsättningarna för aktivering av inloggningsinformation.
 
-För att kunna använda DFP-loggfiler ( [!DNL DoubleClick For Publishers]) i [!DNL Audience Manager]måste du först ange [Audience Manager Unikt användar-ID (UUID)](../../../reference/ids-in-aam.md) i annonstagganropet. På så sätt inkluderas vårt ID i DFP-loggarna och vi kan matcha ID:n mellan DFP och [!DNL Audience Manager]. Använd [!DNL Audience Manager][!UICONTROL DIL] kod eller [!UICONTROL Audience Management Module] för att ange [!DNL Audience Manager] UID i en cookie för första part.
+Om du vill använda DFP-loggfiler ( [!DNL DoubleClick For Publishers]) i [!DNL Audience Manager]måste du först ange ditt UUID ( [Audience Manager Unique User ID)](../../../reference/ids-in-aam.md) i annonstagganropet. På så sätt inkluderas vårt ID i DFP-loggarna och vi kan matcha ID:n mellan DFP och [!DNL Audience Manager]. Använd [!DNL Audience Manager][!UICONTROL DIL] kod eller [!UICONTROL Audience Management Module] för att ange [!DNL Audience Manager] UID i en cookie för första part.
 
 Så här ställer du in [!DNL Audience Manager] ID:t i annonstagganropet, vilket förklaras i vår dokumentation:
 
@@ -46,7 +50,7 @@ Du måste ange ditt [!DNL Audience Manager] ID själv och kan arbeta med [!DNL A
   <tr> 
    <td colname="col1"> <p>Steg 1 </p> </td> 
    <td colname="col2"> <p>Bekräfta att stegen som krävs för att ställa in UUID för <span class="keyword"> Audience Manager</span> (se ovan) har slutförts innan du går till steg 2 </p> </td> 
-   <td colname="col3"> <p><span class="keyword"> Audience Manager</span> Customer Care or Consulting </p> </td> 
+   <td colname="col3"> <p><span class="keyword"> Audience Manager</span> kundtjänst eller konsulttjänster </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Steg 2 </p> </td> 
@@ -80,7 +84,7 @@ Du måste ange ditt [!DNL Audience Manager] ID själv och kan arbeta med [!DNL A
   <tr> 
    <td colname="col1"> <p>Steg 6 </p> </td> 
    <td colname="col2"> <p>Kompilera kraven i ett e-postmeddelande till AAM:s kundtjänst (aamsupport@adobe.com) för att komma igång med processen för att få tillgång till loggen. Skriv ut e-postmeddelandet med mallen i nästa avsnitt. </p> </td> 
-   <td colname="col3"> <p>Du eller <span class="keyword"> Audience Manager</span> Consulting för din räkning </p> </td> 
+   <td colname="col3"> <p>Du eller <span class="keyword"> Audience Manager</span> Consulting åt dig </p> </td> 
   </tr> 
  </tbody> 
 </table>
