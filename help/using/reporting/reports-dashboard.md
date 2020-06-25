@@ -5,8 +5,12 @@ seo-title: Kontrollpanel för rapporter
 solution: Audience Manager
 title: Kontrollpanel för rapporter
 uuid: 350eee2d-72f7-42a7-916b-60f9a362c5cf
+feature: reporting reference
 translation-type: tm+mt
-source-git-commit: ad4721cd2ff1f4b2b7cb814cbafdef1f59138a26
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '657'
+ht-degree: 0%
 
 ---
 
