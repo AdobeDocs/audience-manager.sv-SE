@@ -5,8 +5,12 @@ seo-title: Massbegäranden
 solution: Audience Manager
 title: Massbegäranden
 uuid: 0192d26a-4cea-4e12-9fea-388b92b382f1
+feature: baaam
 translation-type: tm+mt
-source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 0%
 
 ---
 
@@ -25,12 +29,12 @@ t_bulk_requests.xml
 >
 >[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
 
-Kalkylbladet har ingen egen uppsättning kolumnrubriker och du behöver inte kopiera ID:n till någon av kolumnerna. [!UICONTROL Request] I stället returneras data baserat på åtgärdsknappen som du klickar på i verktygsfältet. Och en valfri rapportfunktion returnerar en frekvens för pixelbränder och ett unikt antal användare för flera fasta tidsintervall.
+Kalkylbladet har ingen egen uppsättning kolumnrubriker och du behöver inte kopiera ID:n till någon av kolumnerna. [!UICONTROL Request] Instead, it returns data based on the action button you click in the toolbar. And, an optional reporting feature returns a frequency count for pixel fires and unique user count for several fixed time intervals.
 
-Om du vill göra en gruppbegäran öppnar du [!UICONTROL Bulk Management Tools] kalkylbladet och:
+To make bulk requests, open the [!UICONTROL Bulk Management Tools] worksheet and:
 
 1. Klicka på **[!UICONTROL Request]** fliken.
-2. Klicka på en begärandeknapp som motsvarar de data du vill arbeta med i verktygsfältet högst upp i kalkylbladet. Du kan begära:
+2. In the tool bar at the top of the worksheet, click a request button corresponding to the data you want to work with. You can request:
 
    * Algoritmiska modeller
    * Datakällor
