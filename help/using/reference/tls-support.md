@@ -5,8 +5,12 @@ seo-title: Borttagning av TLS 1.0 och 1.1
 solution: Audience Manager
 title: Borttagning av TLS 1.0 och 1.1
 uuid: 6a820e63-dd49-4689-9596-940aabba18ec
+feature: reference
 translation-type: tm+mt
-source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '606'
+ht-degree: 3%
 
 ---
 
@@ -15,9 +19,9 @@ source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
 
 TLS (Transport Layer Security) är ett kryptografiskt protokoll som används för att upprätta en säker kommunikationskanal mellan två system. Den används för att autentisera ett eller båda systemen och skydda sekretessen och integriteten för information som passerar mellan systemen. I maj 2018 användes tre versioner av TLS-protokollet: TLS 1.0, 1.1 och 1.2.
 
-I mars 2019 upphörde [!DNL Adobe] stödet för [!DNL TLS 1.0] protokollet. Funktionen Adobe Audience Manager fungerar inte för slutanvändare som använder webbläsare som bara stöder [!DNL TLS 1.0].
+I mars 2019 upphörde [!DNL Adobe] stödet för [!DNL TLS 1.0] protokollet. Adobe Audience Manager fungerar inte för slutanvändare som använder webbläsare som bara stöder [!DNL TLS 1.0].
 
-I mars 2020 upphör stödet [!DNL Adobe] för [!DNL TLS 1.1] protokollet. Funktionen Adobe Audience Manager kommer att sluta fungera för slutanvändare som använder webbläsare som bara stöder [!DNL TLS 1.1].
+I mars 2020 upphör stödet [!DNL Adobe] för [!DNL TLS 1.1] protokollet. Adobe Audience Manager-funktionaliteten kommer att sluta fungera för slutanvändare som bara har stöd för webbläsare [!DNL TLS 1.1].
 
 Vi rekommenderar starkt att du använder [!DNL TLS 1.2], dvs. den senaste versionen av protokollet när du skriver. Alla moderna webbläsare använder [!DNL TLS 1.2]. Vi har samlat in en lista över webbläsare, versioner och deras [!DNL TLS] support åt dig. Mer information finns på [den här Wikipedia-länken](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers).
 
@@ -26,7 +30,7 @@ Vi rekommenderar starkt att du använder [!DNL TLS 1.2], dvs. den senaste versio
   <tr> 
    <th colname="col1" class="entry"> <p>Webbläsare </p> </th> 
    <th colname="col2" class="entry"> <p>Version </p> </th> 
-   <th colname="col03" class="entry"> <p>Plattform </p> </th> 
+   <th colname="col03" class="entry"> <p>Platform </p> </th> 
    <th colname="col3" class="entry"> <p>TLS 1.0 </p> </th> 
    <th colname="col4" class="entry"> <p>TLS 1.1 </p> </th> 
    <th colname="col5" class="entry"> <p>TLS 1.2 </p> </th> 
@@ -68,7 +72,7 @@ Vi rekommenderar starkt att du använder [!DNL TLS 1.2], dvs. den senaste versio
   <tr> 
    <th colname="col1" class="entry"> <p>Webbläsare </p> </th> 
    <th colname="col2" class="entry"> <p>Version </p> </th> 
-   <th colname="col3" class="entry"> <p>Plattform </p> </th> 
+   <th colname="col3" class="entry"> <p>Platform </p> </th> 
    <th colname="col4" class="entry"> <p>TLS 1.0 </p> </th> 
    <th colname="col5" class="entry"> <p>TLS 1.1 </p> </th> 
    <th colname="col6" class="entry"> <p>TLS 1.2 </p> </th> 
@@ -103,7 +107,7 @@ Vi rekommenderar starkt att du använder [!DNL TLS 1.2], dvs. den senaste versio
   <tr> 
    <th colname="col1" class="entry"> <p>Webbläsare </p> </th> 
    <th colname="col2" class="entry"> <p>Version </p> </th> 
-   <th colname="col3" class="entry"> <p>Plattform </p> </th> 
+   <th colname="col3" class="entry"> <p>Platform </p> </th> 
    <th colname="col4" class="entry"> <p>TLS 1.0 </p> </th> 
    <th colname="col5" class="entry"> <p>TLS 1.1 </p> </th> 
    <th colname="col6" class="entry"> <p>TLS 1.2 </p> </th> 
@@ -156,7 +160,7 @@ Vi rekommenderar starkt att du använder [!DNL TLS 1.2], dvs. den senaste versio
   <tr> 
    <th colname="col1" class="entry"> <p>Webbläsare </p> </th> 
    <th colname="col2" class="entry"> <p>Version </p> </th> 
-   <th colname="col3" class="entry"> <p>Plattform </p> </th> 
+   <th colname="col3" class="entry"> <p>Platform </p> </th> 
    <th colname="col4" class="entry"> <p>TLS 1.0 </p> </th> 
    <th colname="col5" class="entry"> <p>TLS 1.1 </p> </th> 
    <th colname="col6" class="entry"> <p>TLS 1.2 </p> </th> 
@@ -228,7 +232,7 @@ Vi rekommenderar starkt att du använder [!DNL TLS 1.2], dvs. den senaste versio
   <tr> 
    <th colname="col1" class="entry"> <p>Webbläsare </p> </th> 
    <th colname="col2" class="entry"> <p>Version </p> </th> 
-   <th colname="col3" class="entry"> <p>Plattform </p> </th> 
+   <th colname="col3" class="entry"> <p>Platform </p> </th> 
    <th colname="col4" class="entry"> <p>TLS 1.0 </p> </th> 
    <th colname="col5" class="entry"> <p>TLS 1.1 </p> </th> 
    <th colname="col6" class="entry"> <p>TLS 1.2 </p> </th> 
@@ -265,7 +269,7 @@ Vi rekommenderar starkt att du använder [!DNL TLS 1.2], dvs. den senaste versio
   <tr> 
    <th colname="col1" class="entry"> <p>Webbläsare </p> </th> 
    <th colname="col2" class="entry"> <p>Version </p> </th> 
-   <th colname="col3" class="entry"> <p>Plattform </p> </th> 
+   <th colname="col3" class="entry"> <p>Platform </p> </th> 
    <th colname="col4" class="entry"> <p>TLS 1.0 </p> </th> 
    <th colname="col5" class="entry"> <p>TLS 1.1 </p> </th> 
    <th colname="col6" class="entry"> <p>TLS 1.2 </p> </th> 
@@ -294,7 +298,7 @@ Vi rekommenderar starkt att du använder [!DNL TLS 1.2], dvs. den senaste versio
   <tr> 
    <th colname="col1" class="entry"> <p>Webbläsare </p> </th> 
    <th colname="col2" class="entry"> <p>Version </p> </th> 
-   <th colname="col3" class="entry"> <p>Plattform </p> </th> 
+   <th colname="col3" class="entry"> <p>Platform </p> </th> 
    <th colname="col4" class="entry"> <p>TLS 1.0 </p> </th> 
    <th colname="col5" class="entry"> <p>TLS 1.1 </p> </th> 
    <th colname="col6" class="entry"> <p>TLS 1.2 </p> </th> 
@@ -364,7 +368,7 @@ Vi rekommenderar starkt att du använder [!DNL TLS 1.2], dvs. den senaste versio
   <tr> 
    <th colname="col1" class="entry"> <p>Webbläsare </p> </th> 
    <th colname="col2" class="entry"> <p>Version </p> </th> 
-   <th colname="col3" class="entry"> <p>Plattform </p> </th> 
+   <th colname="col3" class="entry"> <p>Platform </p> </th> 
    <th colname="col4" class="entry"> <p>TLS 1.0 </p> </th> 
    <th colname="col5" class="entry"> <p>TLS 1.1 </p> </th> 
    <th colname="col6" class="entry"> <p>TLS 1.2 </p> </th> 
@@ -398,7 +402,7 @@ Vi rekommenderar starkt att du använder [!DNL TLS 1.2], dvs. den senaste versio
   <tr> 
    <th colname="col1" class="entry"> <p>Webbläsare </p> </th> 
    <th colname="col2" class="entry"> <p>Version </p> </th> 
-   <th colname="col3" class="entry"> <p>Plattform </p> </th> 
+   <th colname="col3" class="entry"> <p>Platform </p> </th> 
    <th colname="col4" class="entry"> <p>TLS 1.0 </p> </th> 
    <th colname="col5" class="entry"> <p>TLS 1.1 </p> </th> 
    <th colname="col6" class="entry"> <p>TLS 1.2 </p> </th> 
