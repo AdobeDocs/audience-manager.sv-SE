@@ -5,8 +5,12 @@ seo-title: Skapa satsvis
 solution: Audience Manager
 title: Skapa satsvis
 uuid: 1e09bcfa-783e-4e9b-9ead-147f8d1381c8
+feature: baaam
 translation-type: tm+mt
-source-git-commit: 3051ca9f7c4039dafdfa01b89226c1fa8717e610
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 
