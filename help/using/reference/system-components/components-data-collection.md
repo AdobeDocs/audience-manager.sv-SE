@@ -5,8 +5,9 @@ seo-title: Datainsamlingskomponenter
 solution: Audience Manager
 title: Datainsamlingskomponenter
 uuid: 51bb1719-5ff2-4bc7-8eb1-98795e05d08f
+feature: system components
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
