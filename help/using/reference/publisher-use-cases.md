@@ -5,8 +5,12 @@ seo-title: Användningsexempel för utgivare
 solution: Audience Manager
 title: Användningsexempel för utgivare
 uuid: 5f571d60-d902-4958-b5d3-8d09ddda42c7
+feature: reference
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '630'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +37,7 @@ c_pub_use_case.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Skapa en enda målgruppsdatabas som ger dig en översikt över alla användare och datapunkter. Detta inkluderar information som webbplatsbeteende (eventuellt från Analytics), visningsvisningar, offlineregistreringsdatabaser, CRM-databaser, videokonsumtion, e-postinitiativ och kampanjer. </p> </td> 
+   <td colname="col1"> <p>Skapa en enda målgruppsdatabas som ger dig en översikt över alla användare och datapunkter. Detta inkluderar information som webbplatsbeteende (eventuellt från Analytics), visningar, offlineregistreringsdatabaser, CRM-databaser, videokonsumtion, e-postsatsningar och kampanjer. </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_FB6683152C7D4D65AF951BA55E123427"> 
       <li id="li_45C12198EDDE4107AE59947BBAA51A60">Identifiera målgrupper, kör smartare annonser eller säljkampanjer och hantera kundinsikter. </li> 
@@ -44,7 +48,7 @@ c_pub_use_case.xml
  </tbody> 
 </table>
 
-**Skapa annonssegment med analysdata från första part**
+**Skapa annonssegment med egna Analytics-data**
 
 <table id="table_EE77D9F5BAD1473C8E058EE778AF2C3F"> 
  <thead> 
@@ -85,12 +89,12 @@ c_pub_use_case.xml
       <li id="li_0714139FF2F5492DA32FB95456699E54">Öka segmentstorleken, sidvyerna och utseendena. </li> 
       <li id="li_2CA4DFF2836D4F71A137829074F46D17">Skapa en mer relevant upplevelse för besökaren. </li> 
      </ul> </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> Audience Managers</span>realtidsanalys hjälper till att förbättra målgruppsigenkänningen, vilket förbättrar upplevelsen på plats genom att leverera relevant, personaliserat innehåll. </p> <p>Detta ger er möjlighet att lägga till innehållspersonalisering som en radartikel i era premiummålsprodukter. </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Audience Manager</span>realtidsanalys hjälper till att förbättra målgruppsigenkänningen, vilket förbättrar upplevelsen på plats genom att leverera relevant, personaliserat innehåll. </p> <p>Detta ger er möjlighet att lägga till innehållspersonalisering som en radartikel i era premiummålsprodukter. </p> </td> 
    <td colname="col3"> <p> 
      <ul id="ul_EEED2DAD504C486F8C00992219C893F7"> 
-      <li id="li_E536F7C79824484DA3DC895809B849F4">Analyser ger förstahandsdata om målgruppens intresse för reseinnehåll. Skapa ett segment som kallas"Reseentusiaster" baserat på denna information. </li> 
+      <li id="li_E536F7C79824484DA3DC895809B849F4">Analytics tillhandahåller förstahandsdata om målgruppens intresse för reseinnehåll. Skapa ett segment som kallas"Reseentusiaster" baserat på denna information. </li> 
       <li id="li_DCB3A5F3772C4DCEB757A4AB6CABFBE3">Integrera <span class="keyword"> Audience Manager</span> med ett system som Adobe CQ för att hantera innehållspersonaliseringskampanjer. </li> 
-      <li id="li_A9BFB7EB7504492BA83F182BE5E8CEF8">Anpassa resesegmentet till en flygbolag, hotell eller gästannonsörer för att förbättra annonsintäkterna från ert lager. </li> 
+      <li id="li_A9BFB7EB7504492BA83F182BE5E8CEF8">Target resesegmentet till ett flygbolag, hotell eller en hotell annonsör för att förbättra annonsintäkterna från ert annonsmaterial. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -98,7 +102,7 @@ c_pub_use_case.xml
 
 **Förbättra räckvidden utanför webbplatsen**
 
-Det här användningsexemplet fungerar med analysdata från första part som skickas till en DSP (Demand-Side Platform).
+Det här användningsexemplet fungerar med data från Analytics som skickas till en DSP (Demand-Side Platform).
 
 <table id="table_F88329D45D9441F1A8EDB9D6140FD02D"> 
  <thead> 
@@ -115,7 +119,7 @@ Det här användningsexemplet fungerar med analysdata från första part som ski
    <td colname="col3"> <p> 
      <ul id="ul_EE7A86BFFE534A59A9F8C7CAF46A31E5"> 
       <li id="li_D399592D9D904865BD319DC3621B832B">Skapa ett segment med"Income Tax Researchers". </li> 
-      <li id="li_D28AC8BA5E194176BB8736B089B3C2F7">Justera annonskampanjer som sålts till Turbo Tax med en kampanj för räckvidd utanför webbplatsen via en DSP som Adobe Advertising Cloud. </li> 
+      <li id="li_D28AC8BA5E194176BB8736B089B3C2F7">Justera annonskampanjer som säljs till Turbo Tax med hjälp av en kampanj för att nå ut externt via en DSP som Adobe Advertising Cloud. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -149,7 +153,7 @@ Dokumentationen [för](../features/algorithmic-models/understanding-models.md) m
      <ul id="ul_51091241D6B94A849A383538045D797C"> 
       <li id="li_88798E58BA574FA196CFC02C9C55A293">Identifiera "Xbox-spelare" i kunddatabasen. </li> 
       <li id="li_1136BBC68C8242CE9F116F2C70A4C164">Kör en lookalike-modell för att hitta och identifiera de mest inflytelserika användarna i segmentet. </li> 
-      <li id="li_8BAED15DF7BA41B28B51BE8DC71DFDE8">Använd dessa segment för att optimera webbannonsering med Test&amp;Target. </li> 
+      <li id="li_8BAED15DF7BA41B28B51BE8DC71DFDE8">Target de segmenten för att optimera webbannonsering med Test&amp;Target. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
