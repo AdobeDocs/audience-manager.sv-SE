@@ -5,8 +5,9 @@ seo-title: Datasäkerhet i Audience Manager
 solution: Audience Manager
 title: Datasäkerhet i Audience Manager
 uuid: 33ad19ca-4690-4d97-853b-1882d7d4ac01
+feature: data governance & privacy
 translation-type: tm+mt
-source-git-commit: 0869e016d7f80710cb194449c48675b82fdfa865
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 0%
