@@ -5,8 +5,9 @@ seo-title: Målgruppsoptimeringsrapporter
 solution: Audience Manager
 title: Målgruppsoptimeringsrapporter
 uuid: b06efa28-f56a-4b72-978e-e0c067f54798
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 0869e016d7f80710cb194449c48675b82fdfa865
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
