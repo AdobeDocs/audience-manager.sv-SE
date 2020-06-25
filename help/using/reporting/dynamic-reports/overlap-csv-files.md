@@ -5,8 +5,12 @@ seo-title: CSV-filer för överlappningsrapporter
 solution: Audience Manager
 title: CSV-filer för överlappningsrapporter
 uuid: 047e440e-00c5-4d06-a809-51d776326cd6
+feature: overlap reports
 translation-type: tm+mt
-source-git-commit: d13b32999c5af4d20f33a92dfa805d7fe0babb2d
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 0%
 
 ---
 
@@ -207,7 +211,7 @@ En datafil för [segmentöverlappningsrapporten](segment-trait-overlap-report.md
 
 ## Rapportposter för fack till fack {#trait-trait-records}
 
-En datafil för [trait-to-Trait Overlap Report](trait-trait-overlap-report.md) innehåller följande poster.
+En datafil för [Trait-to-Trait Overlap Report](trait-trait-overlap-report.md) innehåller följande poster.
 
 <table id="table_603216E6AFE4439A87C91DDFF2989F53"> 
  <thead> 
