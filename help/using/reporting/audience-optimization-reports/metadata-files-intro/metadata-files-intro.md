@@ -5,8 +5,12 @@ seo-title: Loggdata och metadatafiler
 solution: Audience Manager
 title: Loggdata och metadatafiler
 uuid: 80aa4bc3-c660-4e65-8c22-2ddbb7bddd4f
+feature: log files
 translation-type: tm+mt
-source-git-commit: 5838eb61158cce10aa02b9286357a4f4abcbcce8
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 0%
 
 ---
 
