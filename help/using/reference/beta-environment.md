@@ -1,20 +1,24 @@
 ---
-description: Betamiljön används för att testa implementeringen av Audience Manager. Ändringar som görs i betaversionen påverkar inte produktionsdata. Kontakta en representant för Audience Manager Partner Solutions om du är intresserad av att använda betamiljön.
+description: Betamiljön används för att testa implementeringen av Audience Manager. Ändringar som görs i betaversionen påverkar inte produktionsdata. Kontakta din Audience Manager Partner Solutions-representant om du är intresserad av att använda betamiljön.
 keywords: sandbox
-seo-description: Betamiljön används för att testa implementeringen av Audience Manager. Ändringar som görs i betaversionen påverkar inte produktionsdata. Kontakta en representant för Audience Manager Partner Solutions om du är intresserad av att använda betamiljön.
-seo-title: Beta Environment
+seo-description: Betamiljön används för att testa implementeringen av Audience Manager. Ändringar som görs i betaversionen påverkar inte produktionsdata. Kontakta din Audience Manager Partner Solutions-representant om du är intresserad av att använda betamiljön.
+seo-title: Beta-miljö
 solution: Audience Manager
-title: Beta Environment
+title: Beta-miljö
 uuid: de4a1a46-cfa4-4f64-8569-48a7650fd8cf
+feature: reference
 translation-type: tm+mt
-source-git-commit: a1960a65058622c198bb07d7c20c1e21e2eaf00a
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 3%
 
 ---
 
 
-# Beta Environment {#beta-environment}
+# Beta-miljö {#beta-environment}
 
-Betamiljön används för att testa implementeringen av Audience Manager. Ändringar som görs i betaversionen påverkar inte produktionsdata. Kontakta en representant för Audience Manager Partner Solutions om du är intresserad av att använda betamiljön.
+Betamiljön används för att testa implementeringen av Audience Manager. Ändringar som görs i betaversionen påverkar inte produktionsdata. Kontakta din Audience Manager Partner Solutions-representant om du är intresserad av att använda betamiljön.
 
 ## Översikt
 
@@ -40,7 +44,7 @@ Added re: AAM-30826.
 
 | Tjänst | URL/värdnamn | Hur man får åtkomst |
 |--- |--- | --- |
-| S3 | Kontakta en representant för Audience Manager Partner Solutions eller Kundtjänst | Kontakta en representant för Audience Manager Partner Solutions eller Customer Care för att skapa en Amazon S3-bucket för din betainstans. Läs om [fördelarna med att använda Amazon S3](../reference/amazon-s3.md). |
+| S3 | Kontakta din Audience Manager Partner Solutions-representant eller kundtjänst | Kontakta din Audience Manager Partner Solutions-representant eller kundtjänst om du vill konfigurera en Amazon S3-bucket för din betainstans. Läs om [fördelarna med att använda Amazon S3](../reference/amazon-s3.md). |
 | DCS | `https://dcs-beta.demdex.net/...` | Se [Åtkomst till DCS i betamiljön](../reference/beta-environment.md#access-dcs-beta-environment). |
 | UI | `https://bank-beta.demdex.com` | Autentiseringsuppgifterna för produktionsmiljön gäller för betamiljön. |
 | API | `https://api-beta.demdex.com/...` | Autentiseringsuppgifterna för produktionsmiljön gäller för betamiljön. Vi rekommenderar att du skapar en allmän API-användare, [se informationen](../api/rest-api-main/aam-api-getting-started.md#requirements). |
