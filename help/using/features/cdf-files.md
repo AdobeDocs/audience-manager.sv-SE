@@ -247,7 +247,7 @@ I följande tabell visas och definieras elementen i ett [!UICONTROL CDF] filnamn
 
 ## [!UICONTROL Customer Data Feed] Filbearbetningsmeddelanden {#cdf-file-processing-notifications}
 
-[!DNL Audience Manager] skriver en `.info` fil till din [!DNL S3] katalog så att du vet när ( [!UICONTROL Customer Data File] )[!UICONTROL CDF]är klar för hämtning. Filen `.info` innehåller även [!DNL JSON] formaterade metadata om innehållet i dina [!UICONTROL CDF] filer. I det här avsnittet finns information om syntaxen och fälten som används i den här meddelandefilen.
+[!DNL Audience Manager] skriver en `.info` fil till din [!DNL S3] katalog så att du vet när ( [!UICONTROL Customer Data File] ) [!UICONTROL CDF]är klar för hämtning. Filen `.info` innehåller även [!DNL JSON] formaterade metadata om innehållet i dina [!UICONTROL CDF] filer. I det här avsnittet finns information om syntaxen och fälten som används i den här meddelandefilen.
 
 ## Exempelinformationsfil {#sample-info-file}
 
