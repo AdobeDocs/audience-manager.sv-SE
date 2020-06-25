@@ -1,19 +1,23 @@
 ---
-description: En titt på några vanliga annonsörsbehov som Adobe Audience Manager uppfyller.
-seo-description: En titt på några vanliga annonsörsbehov som Adobe Audience Manager uppfyller.
+description: En titt på några vanliga annonsörsbehov som Adobe Audience Manager tillgodoser.
+seo-description: En titt på några vanliga annonsörsbehov som Adobe Audience Manager tillgodoser.
 seo-title: Användningsexempel för annonsörer
 solution: Audience Manager
 title: Användningsexempel för annonsörer
 uuid: ceb06f86-1f9b-4e02-b179-116ec635ce5d
+feature: reference
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 0%
 
 ---
 
 
 # Användningsexempel för annonsörer {#advertiser-use-cases}
 
-En titt på några vanliga annonsörsbehov som Adobe Audience Manager uppfyller.
+En titt på några vanliga annonsörsbehov som Adobe Audience Manager tillgodoser.
 
 <!-- c_adv_use_case.xml -->
 
@@ -68,14 +72,14 @@ Dokumentationen för [modellerna](../features/algorithmic-models/understanding-m
     <ul id="ul_EB3707C4449E44F195EE5655B724A9B4"> 
      <li id="li_268E6A408C634E5EAF2D536930EE77C7">Identifiera kunder som gör dyra inköp. </li> 
      <li id="li_217F8D97449D40E798601C904D66FE5A">Kör en <span class="keyword"> Audience Manager</span> look-alike-modell för att identifiera de mest inflytelserika målgruppsmedlemmarna i segmentet. </li> 
-     <li id="li_FC9CF9B3FE554032AF66E1C3721C83C9">Anpassa dessa segment för att förbättra den aktuella webbannonseringen eller genom anpassning av webbplatser via Adobe Target. </li> 
+     <li id="li_FC9CF9B3FE554032AF66E1C3721C83C9">Target de segmenten för att förbättra den aktuella webbannonseringen eller genom anpassning av webbplatser via Adobe Target. </li> 
      <li id="li_14F94E368C5142718BF6707622D3D8DE">Inkludera nya data i framtida webbkampanjer via Adobe Target. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Återanvända data från första part via DSP (Demand-side Platform)
+## Återmarknadsför data från första part via DSP (Demand-side Platform)
 
 <table id="table_26697DC988BD4A6493B4867B903132D7"> 
  <thead> 
@@ -147,10 +151,10 @@ Dokumentationen för [modellerna](../features/algorithmic-models/understanding-m
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1">Integrera era separata datauppsättningar i <span class="keyword"> Audience Manager</span> för att hantera kunderbjudanden baserat på säsongsrelaterade eller andra köpbeteenden. </td> 
+   <td colname="col1">Integrera era olika datauppsättningar i <span class="keyword"> Audience Manager</span> för att hantera kunderbjudanden baserat på säsongsrelaterade eller andra köpbeteenden. </td> 
    <td colname="col2"> 
     <ul id="ul_CFE6F446C287464B9141C7B6E2581A84"> 
-     <li id="li_4308DD38DC014622A08CB0425A9E98F1">Utnyttja <span class="keyword"> Audience Managers</span>integreringsfunktioner för att stödja användningen av offlinedata. </li> 
+     <li id="li_4308DD38DC014622A08CB0425A9E98F1">Utnyttja <span class="keyword"> Audience Manager</span>integreringsfunktioner för att stödja användningen av offlinedata. </li> 
      <li id="li_B55C9849C43C483781DC5C3AEAA861F1">Öka konverteringsgraden och lojaliteten genom att erbjuda kunderna relevanta kreativa upplevelser. </li> 
     </ul> </td> 
    <td colname="col3"> 
@@ -175,17 +179,17 @@ Dokumentationen för [modellerna](../features/algorithmic-models/understanding-m
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Använd sökbeteendet i Analytics för att rikta in er på e-postmarknadsföringsmeddelanden. </td> 
+   <td colname="col1"> Använd Analytics sökbeteende för att rikta marknadsföringsmeddelanden. </td> 
    <td colname="col2"> 
     <ul id="ul_19D86C5CEE13479BA8C860438B82E943"> 
      <li id="li_D7E369BC066841AD80485A1FC7948E1D">Justera analysdata mot marknadsföringsinitiativ. </li> 
-     <li id="li_E905F43E93DD44AB9DB117AED9A4951A">Kombinera analysdata med kunddata. </li> 
+     <li id="li_E905F43E93DD44AB9DB117AED9A4951A">Kombinera Analytics-data med kunddata. </li> 
      <li id="li_02085338F74E4348981D538B5C060DAA">Förbättra samarbetet kring erbjudanden. </li> 
     </ul> </td> 
    <td colname="col3"> 
     <ul id="ul_018543C7DACD47849F303BC8C26A0A08"> 
      <li id="li_37AB19716B3D4C7BA4106C007A534689">Skapa ett segment av typen"Inköp av anbud - ingen konvertering". </li> 
-     <li id="li_DA5EA7CC922C47788D4D0AED5FEC5164">Rikta segmentet med e-post som hör ihop. </li> 
+     <li id="li_DA5EA7CC922C47788D4D0AED5FEC5164">Target som segmenterar med relaterade e-postmeddelanden. </li> 
      <li id="li_40085E5A5E2744EEBC38CD19F0F77076">Fortsätt att erbjuda innehåll på plats via Adobe Target. </li> 
     </ul> </td> 
   </tr> 
@@ -209,7 +213,7 @@ Dokumentationen för [modellerna](../features/algorithmic-models/understanding-m
    <td colname="col3"> 
     <ul id="ul_837B290D45DB412CA0CA3457EDCC4125"> 
      <li id="li_CA85D32FD7F54490859B92B1E4A2DACB">I <span class="keyword"> Audience Manager</span>kan man importera segmentdata från tredje part som riktar sig till småföretagsägare. </li> 
-     <li id="li_E8FDBD2D67724FE497A496E907EDC45A">Skapa en kampanj på plats i Adobe Target som ger småföretagsägare riktade meddelanden och erbjudanden. </li> 
+     <li id="li_E8FDBD2D67724FE497A496E907EDC45A">Skapa en kampanj på plats i Adobe Target som ger småföretagsägare riktade budskap och erbjudanden. </li> 
      <li id="li_B303975755D44E03A8C22832D8198564">Spåra prestanda med <span class="keyword"> Audience Manager</span> -rapporter. </li> 
     </ul> </td> 
   </tr> 
@@ -232,12 +236,12 @@ Dokumentationen för [modellerna](../features/algorithmic-models/understanding-m
    <td colname="col2"> 
     <ul id="ul_D2E2EAD1656E4AF09840C79694C5ABE3"> 
      <li id="li_6006974EC2EA467CACA914174FF59F4D">En enda hanteringspunkt för förstahandsdata. </li> 
-     <li id="li_C9B2F0BC1CA344CF9F461B144E8EAFB6">Justera analysdata mot målgruppssegment. </li> 
+     <li id="li_C9B2F0BC1CA344CF9F461B144E8EAFB6">Justera Analytics-data mot målgruppssegment. </li> 
     </ul> </td> 
    <td colname="col3"> 
     <ul id="ul_65D91F5E29D04750AB81682FC4E44E5F"> 
-     <li id="li_69832257582342C7A026B1474E1A4286">Arbeta med förstahandsdata i Analytics för att skapa ett segment för reseentusiaster. </li> 
-     <li id="li_FDFFA55B0B7D46398A5A640EB5E56788">Inrikta er på och tjäna pengar på segmentet på annan plats via efterfråge- och säljplattformar och handelsavdelningar. </li> 
+     <li id="li_69832257582342C7A026B1474E1A4286">Arbeta med förstahandsdata i Analytics för att skapa ett segment för resenärer. </li> 
+     <li id="li_FDFFA55B0B7D46398A5A640EB5E56788">Target och tjäna pengar på att segmentera på andra platser genom efterfrågnings- och säljplattformar och handelsavdelningar. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
