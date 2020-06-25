@@ -4,8 +4,9 @@ seo-description: Adobe ger er möjlighet att hantera och förmedla användarnas 
 seo-title: Plugin-programmet Audience Manager för IAB TCF
 solution: Audience Manager
 title: Plugin-programmet Audience Manager för IAB TCF
+feature: data governance & privacy
 translation-type: tm+mt
-source-git-commit: 40e30379f051398a5f6c8ee7db49b6c5c5e146cd
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '2449'
 ht-degree: 0%
@@ -197,7 +198,7 @@ Audience Manager behandlar avanmälningsförfrågningar i en [separat artikel i 
 
 >[!IMPORTANT]
 >
->Användare som har avanmält sig från alla datainsamlingar efter att de avböjt sitt samtycke kan inte återansluta.
+>Användare som har avanmält sig från all datainsamling efter att de avböjt sitt samtycke kan inte återinsättas.
 
 >[!NOTE]
 >
