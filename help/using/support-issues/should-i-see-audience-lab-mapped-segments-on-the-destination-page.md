@@ -4,8 +4,12 @@ seo-description: Därför visas inte mappade segment för Audience Lab på sidan
 seo-title: Därför visas inte mappade segment för Audience Lab på sidan med målinformation.
 solution: Audience Manager
 title: Ska jag visa mappade segment för Audience Lab på sidan med målinformation?
+feature: support
 translation-type: tm+mt
-source-git-commit: dd68edc816c1739ec49f3178e776087d7737863b
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 0%
 
 ---
 
