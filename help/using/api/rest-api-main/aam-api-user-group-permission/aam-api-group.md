@@ -5,8 +5,12 @@ seo-title: API-metoder för grupphantering
 solution: Audience Manager
 title: API-metoder för grupphantering
 uuid: fe042eb5-ea12-42fe-be98-d721f987a914
+feature: API
 translation-type: tm+mt
-source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 0%
 
 ---
 
@@ -206,4 +210,4 @@ En `PUT` metod för att uppdatera gruppbehörigheter. Den här metoden skriver �
 
 Exempelsvaret representerar den uppdaterade listan med behörighetsobjekt.
 
-Returnerar `200 OK` om det lyckas. Returnerar `400` om någon angiven behörighet är ogiltig. Kan också returneras `403` om objektet inte är tillgängligt för den inloggade användaren.
+Returnerar `200 OK` om det lyckas. Returnerar `400` om en given behörighet är ogiltig. Kan också returneras `403` om objektet inte är tillgängligt för den inloggade användaren.
