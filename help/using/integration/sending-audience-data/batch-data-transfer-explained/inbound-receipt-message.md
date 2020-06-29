@@ -5,8 +5,12 @@ seo-title: Exempelmeddelande till partners efter inkommande bearbetning
 solution: Audience Manager
 title: Exempelmeddelande till partners efter inkommande bearbetning
 uuid: 69e3a8b3-8465-4f4c-8005-8a9ff15ae19a
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 3fb90da3be8f50fe670c1193600f5e3a027be52c
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '661'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +26,7 @@ Följande exempel är ett exempel på ett e-postmeddelande. Tabellen under medde
 <table id="table_F579C2278A044213BFCEF97F3BEC2C0C"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>Från: aam-noreply@adobe.com </b> </p> <p> <b>Ämne: Bearbetningsresultat för Adobe Audience Manager Server-to-Server:</b> </p> <p> <b>Bästa Adobe-partner: (ID:7)</b><b></b> </p> <p> <b>Vi har tagit emot din filleverans från Adobe Audience Manager Server till server</b> </p> <p> <b>Filnamn:</b> <i></i> </p> <p> <b> s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806402.sync</b> </p> <p> <b> s3n://&lt;<i>bucket_name&gt;</i>/2018-05-16/ftp_dpm_7_901_1368655202.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784804.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806403.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784802.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784803.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806404.sync</b> </p> <p> <b>Mottagna poster: 40669900</b> </p> <p><b>Formatfel: 0</b> </p> <p> <b>Ogiltigt AAM-ID: 112 </b> </p> <p> <b>Inget matchande AAM-ID: 0 </b> </p> <p> <b>Inget fack realiserat: 26730823 </b> </p> <p> <b>Bearbetade poster: 40669900 </b> </p> <p> <b>Lagrade poster: 13938958 </b> </p> <p> <b>Totalt antal enheter: 21 </b> </p> <p> <b>Totalt antal signaler: 918878926 </b> </p> <p> <b>Totalt antal oanvända signaler: 660348376 </b> </p> <p> <b>Totalt antal realiserade egenskaper: 258086908 </b> </p> <p> <b>Totalt antal borttagna egenskaper: 0 </b> </p> <p> <b>Totalt antal traits misslyckades vid validering: 0 </b> </p> <p> <b>Totalt antal användare som har egenskaper som inte kunde valideras: 0 </b> </p> <p> <b>Jobbstarttid: 2018-05-17 18:07:49 </b> </p> <p> <b>Jobbsluttid: 2018-05-17 18:45:02</b> </p> </td> 
+   <td colname="col1"> <p> <b>Från: aam-noreply@adobe.com </b> </p> <p> <b>Ämne: Bearbetningsresultat från Adobe Audience Manager server till server:</b> </p> <p> <b>Bästa Adobe-partner: (ID:7)</b> <b></b> </p> <p> <b>Vi har tagit emot din Adobe Audience Manager Server-To-Server-filleverans</b> </p> <p> <b>Filnamn:</b> <i></i> </p> <p> <b> s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806402.sync</b> </p> <p> <b> s3n://&lt;<i>bucket_name&gt;</i>/2018-05-16/ftp_dpm_7_901_1368655202.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784804.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806403.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784802.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784803.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806404.sync</b> </p> <p> <b>Mottagna poster: 40669900</b> </p> <p><b>Formatfel: 0</b> </p> <p> <b>Ogiltigt AAM-ID: 112 </b> </p> <p> <b>Inget matchande AAM-ID: 0 </b> </p> <p> <b>Inget fack realiserat: 26730823 </b> </p> <p> <b>Bearbetade poster: 40669900 </b> </p> <p> <b>Lagrade poster: 13938958 </b> </p> <p> <b>Totalt antal enheter: 21 </b> </p> <p> <b>Totalt antal signaler: 918878926 </b> </p> <p> <b>Totalt antal oanvända signaler: 660348376 </b> </p> <p> <b>Totalt antal realiserade egenskaper: 258086908 </b> </p> <p> <b>Totalt antal borttagna egenskaper: 0 </b> </p> <p> <b>Totalt antal traits misslyckades vid validering: 0 </b> </p> <p> <b>Totalt antal användare som har egenskaper som inte kunde valideras: 0 </b> </p> <p> <b>Jobbstarttid: 2018-05-17 18:07:49 </b> </p> <p> <b>Jobbsluttid: 2018-05-17 18:45:02</b> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -51,19 +55,19 @@ Följande tabell innehåller rader som motsvarar rader i det mottagna e-postmedd
   </tr> 
   <tr> 
    <td colname="col1"> Ogiltigt AAM-ID </td> 
-   <td colname="col2"> <p>Antal Audience Manager UUID:n som inte matchar det förväntade 38-siffriga formatet. Eller så är Audience Manager UUID:n som skickas i filen inte siffror. </p> </td> 
+   <td colname="col2"> <p>Antal Audience Manager UID som inte matchade det förväntade 38-siffriga formatet. Eller så är Audience Manager UUID:n som skickas i filen inte siffror. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Inget matchande AAM-ID </td> 
-   <td colname="col2"> <p>Totalt antal användare för vilka Audience Manager inte kunde hitta ett matchande UUID. Dessa filer har inte synkroniserats med ID, så Audience Manager kan inte slå upp UUID. </p> </td> 
+   <td colname="col2"> <p>Totalt antal användare som Audience Manager inte kunde hitta ett matchande UUID. Dessa filer har inte synkroniserats med ID, så Audience Manager kan inte hitta UUID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Inget fack realiserat </td> 
-   <td colname="col2"> <p>Antal poster där ingen av signalerna på linjen kopplas till en Audience Manager-egenskap. </p> </td> 
+   <td colname="col2"> <p>Antal poster där ingen av signalerna på linjen är kopplad till ett Audience Manager-trait. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Bearbetade poster </td> 
-   <td colname="col2"> <p>Totalt antal poster Audience Manager har bearbetats. I de flesta fall bör det här numret vara samma som"Mottagna poster". </p> </td> 
+   <td colname="col2"> <p>Totalt antal poster som bearbetats av Audience Manager. I de flesta fall bör det här numret vara samma som"Mottagna poster". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Lagrade poster </td> 
@@ -79,7 +83,7 @@ Följande tabell innehåller rader som motsvarar rader i det mottagna e-postmedd
   </tr> 
   <tr> 
    <td colname="col1"> Totalt antal oanvända signaler </td> 
-   <td colname="col2"> <p>Totalt antal oanvända signaler för alla användare i alla inkommande filer (nyckel/värde-par som inte mappades till Audience Manager-egenskaper). I de flesta fall innebär det att Audience Manager inte har definierade regler för signalen. </p> </td> 
+   <td colname="col2"> <p>Totalt antal oanvända signaler för alla användare i alla inkommande filer (nyckel/värde-par som inte mappades till Audience Manager). I de flesta fall innebär detta att Audience Manager inte har några definierade regler för signalen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Totala realiserade egenskaper </td> 
