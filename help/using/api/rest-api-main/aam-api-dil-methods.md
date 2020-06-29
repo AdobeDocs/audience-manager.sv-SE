@@ -5,8 +5,12 @@ seo-title: API-metoder för dataintegreringsbibliotek
 solution: Audience Manager
 title: API-metoder för dataintegreringsbibliotek
 uuid: 507e7afd-3ae7-44de-98b0-589d699c453b
+feature: API
 translation-type: tm+mt
-source-git-commit: 5e08861f8bfe88559b089fae00bd14e576f2d0ac
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +21,7 @@ Metoder som gör att du kan arbeta programmatiskt med [!UICONTROL Data Integrati
 
 >[!IMPORTANT]
 >
->API:t för dataintegreringsbiblioteket har tagits bort. Detta API används för att generera DIL, som du nu kan ladda ned själv här: Hämta [DIL](https://github.com/Adobe-Marketing-Cloud/dil/releases).
+>API:t för dataintegreringsbiblioteket har tagits bort. Detta API används för att generera DIL, som du nu kan ladda ned själv här: [DIL-nedladdning](https://github.com/Adobe-Marketing-Cloud/dil/releases).
 
 <!-- c_data_integr_library_api.xml -->
 
