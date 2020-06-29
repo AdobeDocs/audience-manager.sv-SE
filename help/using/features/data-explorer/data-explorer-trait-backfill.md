@@ -4,8 +4,12 @@ seo-description: Återfyll implementeringar av trait-egenskaper för att fånga 
 seo-title: Realiseringar av bakåtfyllnad
 title: Realiseringar av bakåtfyllnad
 uuid: 8b0ef4e6-d16a-4d1d-94f1-b84eebffa9a5
+feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '451'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +20,7 @@ source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 >[!IMPORTANT]
 >
->[!UICONTROL Data Explorer Trait Backfill] är en premiumfunktion som förbättrar Audience Manager-upplevelsen genom att låsa upp ytterligare användningsfall. Backfill kräver extra processorkraft och är tillgänglig för alla Audience Manager-kunder till en tillkommande kostnad. Kontakta din Adobe-återförsäljare för mer information.
+>[!UICONTROL Data Explorer Trait Backfill] är en premiumfunktion som förbättrar Audience Manager genom att låsa upp ytterligare användningsfall. Bakgrundsfyllning kräver extra processorkraft och är tillgänglig för alla Audience Manager-kunder till en stegvis kostnad. Kontakta din Adobe-återförsäljare för mer information.
 
 När du skapar egenskaper utifrån oanvända signaler kan du välja att fylla i trait-implementeringarna igen under en viss tidsperiod. [!DNL Audience Manager] samlar in historiska data om målgrupper som kvalificerar sig för det nya varumärket och lagrar dem på motsvarande profil. Du kan se informationen **[!UICONTROL Backfill Options]** i [!UICONTROL Trait Expression] delen av **[Trait Builder](../../features/traits/about-trait-builder.md)**.
 
@@ -53,9 +57,9 @@ Titta på videon nedan om du vill se en videogenomgång av hur du fyller ut trai
 
 ## Svarstid för bakåtfyllnad av fack {#trait-backfilling-latency}
 
-Nyligen skapade egenskaper som börjar fånga målgrupper två till tre timmar efter att de skapats. På grund av den stora datavolym som dagligen [!DNL Audience Manager] utför återspeglas emellertid inte den efterfyllda populationen omedelbart i grafer [!UICONTROL Unique Trait Realizations] och [!UICONTROL Total Trait Population] diagram.
+Nyligen skapade egenskaper som börjar fånga målgrupper två till tre timmar efter att de skapats. På grund av den stora datavolym som dagligen [!DNL Audience Manager] utför återspeglas emellertid inte den efterfyllda populationen omedelbart i [!UICONTROL Unique Trait Realizations] och [!UICONTROL Total Trait Population] diagram.
 
-Audience Manager uppdaterar bilden [!UICONTROL Trait Graph] med den förifyllda populationen inom 48 timmar efter att trait har skapats.
+Audience Manager uppdaterar bilden [!UICONTROL Trait Graph] med den efterfyllda populationen inom 48 timmar efter att trait har skapats.
 
 ## Gräns för bakåtfyllnad av trait {#trait-backfilling-limit}
 
