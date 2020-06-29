@@ -5,8 +5,12 @@ seo-title: Mål-API-metoder
 solution: Audience Manager
 title: Mål-API-metoder
 uuid: 048bcdb9-2b31-46f4-8b80-4ba25bf06640
+feature: API
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +21,7 @@ Metoder som gör att du kan arbeta programmatiskt med målfunktioner.
 
 <!-- c_destinations_api.xml -->
 
-I Audience Manager är målet vilket annat system som helst (annonsserver, annonsnätverk, utbyte, egen cookie från första part osv.) [!DNL DSP] som du vill dela data med.
+I Audience Manager är en destination vilket annat system som helst (annonsserver, [!DNL DSP]annonsnätverk, utbyte, egen cookie från första part osv.) som du vill dela data med.
 
 ## Måltyper: URL och cookie {#destination-types}
 
