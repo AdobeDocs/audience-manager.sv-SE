@@ -4,8 +4,12 @@ seo-description: Filtrera resultaten av en signalsökning baserat på signaltype
 seo-title: Filtrera sökresultat
 title: Filtrera sökresultat
 uuid: 7b764a5d-f8ae-4f7b-83f5-7f6c40de639b
+feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: 12216ab5105fce80b4b47c31ee6be144ddfe8df9
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 0%
 
 ---
 
