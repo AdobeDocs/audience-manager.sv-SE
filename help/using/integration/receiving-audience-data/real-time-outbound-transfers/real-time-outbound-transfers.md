@@ -5,8 +5,9 @@ seo-title: Utgående dataöverföringar i realtid
 solution: Audience Manager
 title: Utgående dataöverföringar i realtid
 uuid: 1895e818-7ab8-4569-a920-4b0a4c8b83d2
+feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 0%
@@ -28,11 +29,11 @@ Om du vill använda den här metoden måste målplattformen uppfylla följande k
 * Den skall godta uppgifter i [!DNL JSON] formatet (`Content-type: application/json`).
 * Den måste acceptera säkra `HTTPS` dataöverföringar. [!DNL Audience Manager] skickar inte meddelanden via det osäkra `HTTP` protokollet.
 
-## Frequency
+## Frekvens
 
-This data transfer method can send data in near real-time as users qualify for segments. Real-time messages are only delivered while the user is online and actively visible to the Audience Manager Edge network. Den här metoden kan också skicka batchar med offline- eller inbyggda data så ofta som var 24:e timme.
+Denna dataöverföringsmetod kan skicka data i nästan realtid när användarna kvalificerar sig för segment. Realtidsmeddelanden levereras endast när användaren är online och aktivt synlig för Audience Manager Edge-nätverket. Den här metoden kan också skicka batchar med offline- eller inbyggda data så ofta som var 24:e timme.
 
-## Batch Transfers
+## Batchöverföringar
 
 Både realtids- och batchöverföringar skickas till samma slutpunkt och använder samma meddelandeformat. När batchöverföringar är aktiverade kommer målplattformen att se en ökning av meddelandevolymen medan batchmeddelandena levereras. Många av de segmentkvalifikationer som skickas via realtidsmeddelanden upprepas i gruppmeddelandena. Batchöverföringar omfattar endast de segmentkvalifikationer (eller icke-kvalifikationer) som har ändrats sedan den senaste batchen levererades.
 
