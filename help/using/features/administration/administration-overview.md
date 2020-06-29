@@ -7,8 +7,9 @@ solution: Audience Manager
 title: Administration
 topic: DIL API
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
+feature: Administration
 translation-type: tm+mt
-source-git-commit: 002429c74298ac34533225c105d5d71761ebf9c0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
