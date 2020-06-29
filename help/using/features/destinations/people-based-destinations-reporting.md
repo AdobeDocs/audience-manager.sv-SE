@@ -1,11 +1,15 @@
 ---
-description: 'Personbaserade mål introducerar begreppet Delningsbara målgrupper i Audience Manager. Detta mått hjälper dig att förstå hur många av de hash-kodade e-postadresserna Audience Manager kan dela med målplattformen. '
-seo-description: 'Personbaserade mål introducerar begreppet Delningsbara målgrupper i Audience Manager. Detta mått hjälper dig att förstå hur många av de hash-kodade e-postadresserna Audience Manager kan dela med målplattformen. '
+description: 'Folk-baserade destinationer introducerar begreppet delningsbara målgrupper för Audience Manager. Detta mått hjälper dig att förstå hur många av de hash-kodade e-postadresserna som Audience Manager kan dela med målplattformen. '
+seo-description: 'Folk-baserade destinationer introducerar begreppet delningsbara målgrupper för Audience Manager. Detta mått hjälper dig att förstå hur många av de hash-kodade e-postadresserna som Audience Manager kan dela med målplattformen. '
 seo-title: Delningsbara målgrupper
 solution: Audience Manager
 title: Delningsbara målgrupper
+feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +19,7 @@ source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 >[!IMPORTANT]
 >Den här artikeln innehåller produktdokumentation som ska hjälpa dig att konfigurera och använda den här funktionen. Ingenting i det här är juridisk rådgivning. Vänligen kontakta ditt eget juridiska ombud för att få juridisk rådgivning.
 
-[!DNL People-Based Destinations] ta med begreppet [!DNL Shareable Audiences] till Audience Manager. Detta mått hjälper dig att förstå hur många av de hash-kodade e-postadresserna Audience Manager kan dela med målplattformen.
+[!DNL People-Based Destinations] ta med begreppet om [!DNL Shareable Audiences] Audience Manager. Detta mått hjälper dig att förstå hur många av de hash-kodade e-postadresserna som Audience Manager kan dela med målplattformen.
 
 [!DNL Shareable Audiences] är ett mätresultat som hjälper er att tolka målgruppsdata i sitt sammanhang [!DNL People-Based Destinations]. Mätvärdena visas på [!UICONTROL Destinations] sidan och på [!UICONTROL Segment] sidan.
 
@@ -27,7 +31,7 @@ Det här måttet har en 1-dagars summeringsperiod. Detta hjälper er att först�
 
 ## Måldelbar målgrupp {#destination-shareable-audience}
 
-Mätvärdet på en personbaserad målsida anger det totala antalet hash-kodade e-postadresser från datakällan med matchande [!DNL Destination Shareable Audience] DPUID [](../../reference/ids-in-aam.md), som Audience Manager kan dela med målplattformen, från alla segment som är mappade till den destinationen.
+Måttet på en personbaserad målsida anger det totala antalet hash-kodade e-postadresser från datakällan med matchande [!DNL Destination Shareable Audience] DPUID:n [](../../reference/ids-in-aam.md)som Audience Manager kan dela med målplattformen, från alla segment som är mappade till den destinationen.
 
 ![delningsbara målgrupper](assets/dest-shareable-audiences.png)
 
@@ -35,7 +39,7 @@ Det här måttet har en livslång summeringsperiod. Detta hjälper er att först
 
 ## Exempel
 
-En Audience Manager-kund har en datakälla med 110 000 [DPUID](../../reference/ids-in-aam.md) (CRM ID). De importerade 100 000 e-postadresser till Audience Manager, för att använda dem med flera personbaserade mål och för att utföra en ID-synkronisering för de 100 000 hashade e-postadresserna mot CRM-ID:n. Kunden kan använda [!DNL All Cross-Device Profiles] sammanfogningsregeln för att skapa tre målgruppssegment:
+En Audience Manager-kund har en datakälla med 110 000 [DPUID](../../reference/ids-in-aam.md) (CRM ID). De importerade 100 000 e-postadresser till Audience Manager, för att använda dem med flera personbaserade mål och för att utföra en ID-synkronisering för de 100 000 streckade e-postadresserna mot CRM-ID:n. Kunden kan använda [!DNL All Cross-Device Profiles] sammanfogningsregeln för att skapa tre målgruppssegment:
 
 * Segment A med en befolkning på 10 000, mappad till mål A.
 * Segment B med en befolkning på 20 000, mappad till mål A.
