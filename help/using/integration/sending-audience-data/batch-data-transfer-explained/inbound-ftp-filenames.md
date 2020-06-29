@@ -5,8 +5,9 @@ seo-title: Krav för FTP-namn och filstorlek för inkommande datafiler
 solution: Audience Manager
 title: Krav för FTP-namn och filstorlek för inkommande datafiler
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 2%
