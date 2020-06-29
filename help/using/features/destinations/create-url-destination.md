@@ -4,8 +4,9 @@ seo-description: En URL-adress gör pixelanrop från en sida till målet. Följ 
 seo-title: Konfigurera ett URL-mål
 solution: Audience Manager
 title: Konfigurera ett URL-mål
+feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: d83b07a542dd337773d287f4eba0960c6e258504
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
