@@ -4,8 +4,12 @@ seo-description: Information som hjälper dig att kontakta Adobe och få en för
 seo-title: Kontakt och juridisk information
 solution: Audience Manager
 title: Kontakt och juridisk information
+feature: Support
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +25,7 @@ Adobe Experience Cloud Customer Care-teamet är här för att hjälpa er och til
 * [På hjälpsidorna för Experience Cloud finns råd, tips och vanliga frågor](https://helpx.adobe.com/support.ec.html)
 * [Ställ en snabb fråga på Twitter @AdobeExpCare](https://twitter.com/AdobeExpCare)
 * [Kontakta kundtjänstteamet direkt](https://helpx.adobe.com/se/contact/enterprise-support.ec.html)
-* [Kontrollera tillgänglighet och status för Experience Cloud-lösningar](https://status.adobe.com/)
+* [Kontrollera Experience Cloud Solutions tillgänglighet och status](https://status.adobe.com/)
 
 ## Service, kapacitet och fakturering {#billing}
 
