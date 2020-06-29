@@ -6,8 +6,12 @@ solution: Audience Manager
 title: Vanliga frågor om Audience Lab
 topic: DIL API
 uuid: b1daf99d-af60-4f65-987d-794a6d45d566
+feature: Audience Lab
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +40,7 @@ Ja, det är tillåtet. Tänk på ett fall av ett test med ett manligt segment so
 
 <br> 
 
-**Låt oss säga att en testgrupp använder en autentiserad profil för delning av testsegment. Den autentiserade profilen är länkad till fyra[Audience Manager UUID](../reference/ids-in-aam.md). När besökaren uppvisar en konverteringsegenskap från någon av de fyra UUID:n, räknas[!UICONTROL Audience Lab]detta som en eller fyra konverteringar?**
+**Låt oss säga att en testgrupp använder en autentiserad profil för delning av testsegment. Den autentiserade profilen är länkad till 4[Audience Manager-UUID](../reference/ids-in-aam.md). När besökaren uppvisar en konverteringsegenskap från någon av de fyra UUID:n, räknas[!UICONTROL Audience Lab]detta som en eller fyra konverteringar?**
 
 I det här fallet räknas [!UICONTROL Audience Lab] bara en konvertering.
 
