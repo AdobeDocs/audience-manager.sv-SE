@@ -5,8 +5,12 @@ seo-title: Pausade och borttagna segment
 solution: Audience Manager
 title: Pausade och borttagna segment
 uuid: 88efe4af-f9a4-4bce-920a-352bd4d505dd
+feature: Segments
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 
