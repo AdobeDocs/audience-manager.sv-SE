@@ -4,8 +4,12 @@ seo-description: En cookie-destination returnerar och skriver data till en cooki
 seo-title: Konfigurera ett cookie-mål
 solution: Audience Manager
 title: Konfigurera ett cookie-mål
+feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: 6e2b5842ad3ca52f7ed0fb72231deb6fa614b70b
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 0%
 
 ---
 
