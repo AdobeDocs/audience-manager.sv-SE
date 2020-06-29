@@ -1,19 +1,23 @@
 ---
-description: Konfigurera OpenX som mål och skicka data från Audience Manager-segment till den plattformen.
-seo-description: Konfigurera OpenX som mål och skicka data från Audience Manager-segment till den plattformen.
+description: Konfigurera OpenX som mål och skicka segmentdata från Audience Manager till den plattformen.
+seo-description: Konfigurera OpenX som mål och skicka segmentdata från Audience Manager till den plattformen.
 seo-title: OpenX som mål för Audience Manager
 solution: Audience Manager
 title: OpenX som mål för Audience Manager
 uuid: 5e86ba73-281c-403b-af06-64a1d427526a
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: 78a0a0e461ea3a74d0dbb0370a841db274a6f9be
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '695'
+ht-degree: 0%
 
 ---
 
 
 # OpenX som mål för Audience Manager{#openx-as-an-audience-manager-destination}
 
-Konfigurera [!DNL OpenX] som mål och skicka data från Audience Manager-segment till den plattformen.
+Konfigurera [!DNL OpenX] som mål och skicka segmentdata från Audience Manager till den plattformen.
 
 >[!NOTE]
 >
@@ -27,9 +31,9 @@ Standarder för kodplacering, nyckelvärdesformat som stöds, rapporter och vilk
 
 Granska följande innan du konfigurerar [!DNL OpenX] som mål för Audience Manager:
 
-* **[!UICONTROL DIL]:**Koden ska[!UICONTROL Data Integration Library]distribueras på din plats.[!UICONTROL DIL]hjälper till att eliminera behovet av att skriva särskild kod för datainsamling, integrering, läsning av cookie-värden och återställning av siddata.
+* **[!UICONTROL DIL]:**[!UICONTROL Data Integration Library]koden ska distribueras på din plats.[!UICONTROL DIL]hjälper till att eliminera behovet av att skriva särskild kod för datainsamling, integrering, läsning av cookie-värden och återställning av siddata.
 * **`get_aamCookie`Funktion:**Kod som hämtar användar-ID och cookie-data för Audience Manager. Placera[den här koden](../../features/destinations/get-aam-cookie-code.md)högst upp på sidan eller inuti`<head>`kodlåset.
-* **Skicka leveransloggar till Audience Manager:** Om du vill ha en segmentleveransrapport (valfritt) ska du förse Audience Manager med en daglig logg som innehåller leveransdata på visningsnivå. Data kan vara i Raw-format, men varje post måste innehålla Audience Manager `UUID`. Audience Manager kan hämta dessa via [!DNL FTP].
+* **Skicka leveransloggar till Audience Manager:** Om du vill ha en segmentleveransrapport (valfritt) ska du förse Audience Manager med en daglig logg som innehåller leveransdata på visningsnivå. Data kan vara i Raw-format, men varje post måste innehålla Audience Manager `UUID`. Audience Manager kan hämta eller få dessa via [!DNL FTP].
 
 ### Nyckelvärdedata: Formatkrav
 
@@ -42,15 +46,15 @@ Audience Manager skickar data i form av nyckelvärdepar. Skapa nyckelvärdepar e
 
 ### Endast kvalificerade segment skickas till OpenX
 
-Hur mycket data som skickas till [!DNL OpenX] beror på hur många segment en viss användare kvalificerar sig för. Exempel: du skapar 100 segment för Audience Manager. Om en besökare kvalificerar sig för fem av dem skickas endast dessa fem segment till [!DNL OpenX] (inte alla 100).
+Hur mycket data som skickas till [!DNL OpenX] beror på hur många segment en viss användare kvalificerar sig för. Exempel: du skapar 100 Audience Manager-segment. Om en besökare kvalificerar sig för fem av dem skickas endast dessa fem segment till [!DNL OpenX] (inte alla 100).
 
 ## Skapa ett OpenX-mål {#openx-destination}
 
-Skapa en cookie-destination för [!DNL OpenX] i Audience Manager.
+Skapa en cookie-destination för [!DNL OpenX] Audience Manager.
 
 <!-- aam-openx-destination.xml -->
 
-I Audience Manager är ett *mål* vilket annat system som helst (annonsserver, [!DNL DSP]annonsnätverk osv.) som du vill dela data med. [!UICONTROL Destination Builder] innehåller de verktyg som gör att du kan skapa och hantera dessa dataleveransprocesser. Målfunktionerna för Audience Manager finns i *Målgruppsdata > Destinationer*. Kom igång genom att klicka **[!UICONTROL Add New Destination]** och följa stegen nedan.
+I Audience Manager är en *destination* vilket annat system som helst (annonsserver, [!DNL DSP]annonsnätverk osv.) som du vill dela data med. [!UICONTROL Destination Builder] innehåller de verktyg som gör att du kan skapa och hantera dessa dataleveransprocesser. Målfunktionerna för Audience Manager finns i *Målgruppsdata > Destinationer*. Kom igång genom att klicka **[!UICONTROL Add New Destination]** och följa stegen nedan.
 
 ### Steg 1: Grundläggande information
 
@@ -82,7 +86,7 @@ Så här lägger du till ett segment i en cookie-destination:
 
 ## Inställningar för OpenX {#openx-code-setup}
 
-Ändra [!DNL OpenX] inställningarna så att de fungerar med segmentdata i Audience Manager.
+Ändra [!DNL OpenX] inställningarna så att de fungerar med segmentdata från Audience Manager.
 
 <!-- aam-openx-code.xml -->
 
