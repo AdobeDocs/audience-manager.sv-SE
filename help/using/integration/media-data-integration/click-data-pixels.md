@@ -5,8 +5,9 @@ seo-title: Samla in data för kampanjklickningar via pixelanrop
 solution: Audience Manager
 title: Samla in data för kampanjklickningar via pixelanrop
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
+feature: Integration with Campaign
 translation-type: tm+mt
-source-git-commit: 620730ab1596d4777a768de4453b73538671279d
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 5%
