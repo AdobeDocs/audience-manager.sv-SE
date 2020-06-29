@@ -5,8 +5,12 @@ seo-title: Användningsexempel för externt enhetsdiagram
 solution: Audience Manager
 title: Användningsexempel för externt enhetsdiagram
 uuid: f4bc822d-39d2-4680-90ed-7ee2ead6db6f
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '551'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +24,7 @@ Rekommendationer och användningsexempel för prospektering, återannonsering oc
 Överväg alternativen för enhetsdiagram [!DNL Experience Cloud Device Co-op] och tredjepartsdiagram för kampanjer som:
 
 * Har låg autentiseringsnivå över sina digitala resurser. Använd [!UICONTROL Profile Link Device Graph option] om du har ett stort antal autentiserade användare.
-* Rikta er till stora målgrupper. Enhetsdiagram [!DNL Experience Cloud Device Co-op] och tredjepartsdiagram innehåller autentiserade och icke-autentiserade data.
+* Target stora målgrupper. Enhetsdiagram [!DNL Experience Cloud Device Co-op] och tredjepartsdiagram innehåller autentiserade och icke-autentiserade data.
 * Segmentera autentiserade och/eller oautentiserade besökare på individ- och hushållsnivå.
 
 ![](assets/merge-rule-triangle1.png)
