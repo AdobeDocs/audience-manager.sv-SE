@@ -1,11 +1,15 @@
 ---
-description: 'Den här sidan innehåller stegvis vägledning om hur du kombinerar offline-CRM-data med beteendedata som redan finns i Audience Manager för att skapa nya målgruppssegment och sedan skickar dessa målgruppssegment till personbaserade destinationer.  '
-seo-description: 'Den här sidan innehåller stegvis vägledning om hur du kombinerar offline-CRM-data med beteendedata som redan finns i Audience Manager för att skapa nya målgruppssegment och sedan skickar dessa målgruppssegment till personbaserade destinationer.   '
+description: 'Den här sidan innehåller stegvis vägledning om hur du kombinerar offline-CRM-data med beteendedata som du redan har i Audience Manager för att skapa nya målgruppssegment och sedan skickar dessa målgruppssegment till personbaserade destinationer.  '
+seo-description: 'Den här sidan innehåller stegvis vägledning om hur du kombinerar offline-CRM-data med beteendedata som du redan har i Audience Manager för att skapa nya målgruppssegment och sedan skickar dessa målgruppssegment till personbaserade destinationer.   '
 seo-title: Arbetsflöde A - Personalisering baserad på all onlineaktivitet i kombination med offlinedata
 solution: Audience Manager
 title: Arbetsflöde A - Personalisering baserad på all onlineaktivitet i kombination med offlinedata
+feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1180'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +19,7 @@ source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
 >[!IMPORTANT]
 >Den här artikeln innehåller produktdokumentation som ska hjälpa dig att konfigurera och använda den här funktionen. Ingenting i det här är juridisk rådgivning. Vänligen kontakta ditt eget juridiska ombud för att få juridisk rådgivning.
 
-Den här sidan innehåller stegvis vägledning om hur du kombinerar offline- [!DNL CRM] data med beteendedata som redan finns i Audience Manager för att skapa nya målgruppssegment och sedan skickar dessa målgruppssegment till [!DNL People-Based Destinations].
+Den här sidan innehåller stegvis vägledning om hur du kombinerar offline- [!DNL CRM] data med beteendedata som du redan har i Audience Manager för att skapa nya målgruppssegment och sedan skickar dessa målgruppssegment till [!DNL People-Based Destinations].
 
 ## Steg 1 - Konfigurera inställningar för datakälla {#configure-data-source-settings}
 
@@ -64,7 +68,7 @@ I videon nedan finns en videosjälvstudiekurs om hur du skapar en datakälla fö
 
 >[!NOTE]
 >
-> Se [Data Onboarding](people-based-destinations-prerequisites.md#data-onboarding) för vanliga frågor om hur du ska överföra offlinedata till Audience Manager för personbaserade destinationer.
+> Se [Datainhämtning](people-based-destinations-prerequisites.md#data-onboarding) för vanliga frågor om hur du ska överföra offlinedata till Audience Manager för personbaserade destinationer.
 
 ## Steg 2 - Matcha DPUID:n med hashed-e-postadresser via filbaserad ID-synkronisering {#match-ids-emails}
 
@@ -132,9 +136,9 @@ Nästa steg är att skapa en ny kopplingsregel som hjälper dig att skapa målgr
 
 ## Steg 4 - Skapa målgruppssegment {#create-audience-segments}
 
-Om du vill skapa nya målgruppssegment använder du [Segment Builder](../segments/segment-builder.md). Om du har befintliga målgruppssegment som du vill skicka till [!DNL People-Based Destinations]går du vidare till [steg 5 - Konfigurera personbaserad plattformsautentisering](people-based-destinations-workflow-combined.md#configure-authentication).
+Om du vill skapa nya målgruppssegment använder du [Segment Builder](../segments/segment-builder.md). Om du har befintliga målgruppssegment som du vill skicka till [!DNL People-Based Destinations]går du vidare till [steg 5 - Konfigurera personbaserad Platform-autentisering](people-based-destinations-workflow-combined.md#configure-authentication).
 
-## Steg 5 - Konfigurera personbaserad plattformsautentisering {#configure-authentication}
+## Steg 5 - Konfigurera personbaserad Platform-autentisering {#configure-authentication}
 
 1. Logga in på ditt Audience Manager-konto och gå till **[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**. Om du har en tidigare konfigurerad integrering med en social plattform bör du se den här sidan. I annat fall är sidan tom.
    ![personbaserad integration](assets/pbd-config.png)
@@ -142,8 +146,8 @@ Om du vill skapa nya målgruppssegment använder du [Segment Builder](../segment
 1. Använd den **[!UICONTROL People-Based Platform]** nedrullningsbara menyn för att välja den plattform som du vill konfigurera integreringen med.
    ![personbaserad-plattform](assets/pbd-add.png)
 1. Klicka **[!UICONTROL Confirm]** för att omdirigeras till autentiseringssidan för den valda plattformen.
-1. När du har autentiserat dig för ditt konto för sociala plattformar omdirigeras du till Audience Manager där du bör se dina associerade annonskonton. Välj det annonserarkonto som du vill använda och klicka på **[!UICONTROL Confirm]**.
-1. Audience Manager visar ett meddelande högst upp på sidan för att tala om för dig om kontot har lagts till eller inte. I meddelandet kan du även lägga till en e-postadress för kontakt för att få meddelanden när autentiseringen för den sociala plattformen håller på att gå ut.
+1. När du har autentiserat dig på ditt konto för sociala plattformar omdirigeras du till Audience Manager där du ska se dina associerade annonskonton. Välj det annonserarkonto som du vill använda och klicka på **[!UICONTROL Confirm]**.
+1. Audience Manager visar ett meddelande högst upp på sidan för att tala om för dig om kontot har lagts till. I meddelandet kan du även lägga till en e-postadress för kontakt för att få meddelanden när autentiseringen för den sociala plattformen håller på att gå ut.
 
 >[!IMPORTANT]
 >
