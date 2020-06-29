@@ -5,8 +5,9 @@ seo-title: Hämta användar-ID och regioner från ett DCS-svar
 solution: Audience Manager
 title: Hämta användar-ID och regioner från ett DCS-svar
 uuid: 08036045-3b26-4d40-8e94-7d0884048683
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
