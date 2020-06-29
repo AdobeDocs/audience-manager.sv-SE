@@ -3,8 +3,12 @@ description: Översikt över hur du integrerar DFP med Google Publisher Tags (GP
 seo-description: Översikt över hur du integrerar DFP med Google Publisher Tags (GPT) i Adobe Audience Manager (AAM).
 seo-title: Integrera DFP med Google Publisher Tags (GPT) i Adobe Audience Manager (AAM)
 title: Integrera DFP med Google Publisher Tags (GPT)
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: a1960a65058622c198bb07d7c20c1e21e2eaf00a
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -23,8 +27,8 @@ I artiklarna nedan finns en översikt över hur du integrerar DFP med Google Pub
 
 * [Ändra GPT-API-anropet setTargeting](/help/using/integration/gpt-aam-destination/gpt-aam-modify-api.md)
 
-   Lägg till en if-programsats för att kontrollera om det finns cookies i Audience Manager innan du anropar metoden .setTargeting för Google Publisher.
+   Lägg till en if-programsats för att kontrollera om det finns Audience Manager-cookies innan du anropar Google Publisher-taggen .setTargeting-metoden.
 
-* [Audience Manager Code för Google Publisher-taggar](/help/using/integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
+* [Audience Manager Code for Google Publisher Tags](/help/using/integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
 
-   AamGpt är en JavaScript-funktion som läser Audience Manager-cookie-data och skickar informationen till Google Publisher-taggar.
+   AamGpt är en JavaScript-funktion som läser Audience Manager cookie-data och skickar informationen till Google Publisher-taggar.
