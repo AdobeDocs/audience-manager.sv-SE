@@ -5,8 +5,9 @@ seo-title: Regler för profilsammanslagning - översikt
 solution: Audience Manager
 title: Regler för profilsammanslagning - översikt
 uuid: 9e7988cc-9145-432b-840a-54fbd8657b3b
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: a077726fe4878aeb7722586654c27769e92e0665
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
