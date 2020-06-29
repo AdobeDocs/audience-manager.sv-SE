@@ -4,8 +4,9 @@ seo-description: Med prediktiva målgrupper kan ni klassificera okända målgrup
 seo-title: Översikt över prediktiva målgrupper
 solution: Audience Manager
 title: Audience Manager prediktiva målgrupper
+feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: f52321f3621d9eb6b9c5b643a3516f39f35466c2
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 0%
