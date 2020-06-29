@@ -1,24 +1,28 @@
 ---
-description: Audience Manager sätter en maxgräns för antalet egenskaper, segment, mål och algoritmiska modeller som du kan skapa för ett konto. Begränsningar gäller för dessa objekt oavsett om de har skapats i användargränssnittet eller programmatiskt via API-metoder. Användningsbegränsningar skyddar Audience Manager från automatiserade processer som kan äventyra våra API:er eller användargränssnittet.
-seo-description: Audience Manager sätter en maxgräns för antalet egenskaper, segment, mål och algoritmiska modeller som du kan skapa för ett konto. Begränsningar gäller för dessa objekt oavsett om de har skapats i användargränssnittet eller programmatiskt via API-metoder. Användningsbegränsningar skyddar Audience Manager från automatiserade processer som kan äventyra våra API:er eller användargränssnittet.
+description: Audience Manager sätter en maxgräns för antalet egenskaper, segment, mål och algoritmiska modeller som du kan skapa för ett konto. Begränsningar gäller för dessa objekt oavsett om de har skapats i användargränssnittet eller programmatiskt via API-metoder. Begränsningar av användningen hjälper till att skydda Audience Manager från automatiserade processer som kan äventyra våra API:er eller användargränssnittet.
+seo-description: Audience Manager sätter en maxgräns för antalet egenskaper, segment, mål och algoritmiska modeller som du kan skapa för ett konto. Begränsningar gäller för dessa objekt oavsett om de har skapats i användargränssnittet eller programmatiskt via API-metoder. Begränsningar av användningen hjälper till att skydda Audience Manager från automatiserade processer som kan äventyra våra API:er eller användargränssnittet.
 seo-title: Användningsgränser
 solution: Audience Manager
 title: Användningsgränser
 keywords: ID mapping, ID mappings, cookie mappings
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
+feature: Usage and Billing
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 3%
 
 ---
 
 
 # Användningsgränser {#usage-limits}
 
-Audience Manager sätter en maxgräns för antalet egenskaper, segment, mål och algoritmiska modeller som du kan skapa för ett konto. Begränsningar gäller för dessa objekt oavsett om de har skapats i användargränssnittet eller programmatiskt via [!DNL API] metoder. Användningsbegränsningar skyddar Audience Manager från automatiserade processer som kan äventyra våra [!DNL API]användargränssnitt.
+Audience Manager sätter en maxgräns för antalet egenskaper, segment, mål och algoritmiska modeller som du kan skapa för ett konto. Begränsningar gäller för dessa objekt oavsett om de har skapats i användargränssnittet eller programmatiskt via [!DNL API] metoder. Begränsningar av användningen hjälper till att skydda Audience Manager mot automatiserade processer som kan äventyra våra [!DNL API]användargränssnitt.
 
 ## Gränser för ID-mappning {#id-mapping-limits}
 
-Tabellen nedan visar gränserna för [ID-mappning](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) för enhets-ID:n. När ett ID når någon av gränserna nedan lägger Audience Manager till nya ID-mappningar som baseras på en [!DNL FIFO] (först in, först ut) logik genom att ta bort den äldsta lagrade ID-mappningen och lägga till den nya. Mer information om vilka ID:n som stöds av Audience Manager finns i [Index of ID](../../reference/ids-in-aam.md) i Audience Manager.
+Tabellen nedan visar gränserna för [ID-mappning](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) för enhets-ID:n. När ett ID når någon av gränserna nedan lägger Audience Manager till nya ID-mappningar som baseras på en [!DNL FIFO] (först in, först ut) logik genom att ta bort den äldsta lagrade ID-mappningen och lägga till den nya. Mer information om vilka ID:n som stöds av Audience Manager finns i [Index för ID:n](../../reference/ids-in-aam.md) i Audience Manager.
 
 | ID-mappning | Maximal gräns |
 |-----------|-------------- |
