@@ -5,8 +5,9 @@ seo-title: Dataöverföringsprocessen i realtid beskrivs
 solution: Audience Manager
 title: Dataöverföringsprocessen i realtid beskrivs
 uuid: b68781b3-0b7a-442d-8e34-2db2474849a4
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
