@@ -4,8 +4,12 @@ seo-description: 'Svar på vanliga frågor om personbaserade destinationer.  '
 seo-title: Vanliga frågor om personbaserade destinationer
 solution: Audience Manager
 title: Vanliga frågor om personbaserade destinationer
+feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1105'
+ht-degree: 0%
 
 ---
 
@@ -16,18 +20,18 @@ Svar på vanliga frågor om [!DNL People-Based Destinations].
 
 ## Tillgänglighet {#availability}
 
-**Jag kan inte se[!DNL People-Based Destinations]i mitt Audience Manager-konto. Vad behöver jag veta om tillgänglighet?**
+**Jag kan inte se[!DNL People-Based Destinations]på mitt Audience Manager-konto. Vad behöver jag veta om tillgänglighet?**
 
 [!DNL People-Based Destinations] är en premiumfunktion för Audience Manager som är tillgänglig vid köp. Kontakta din Adobe-återförsäljare för mer information om priser och tillgänglighet.
 
 ## Datainhämtning {#data-onboarding}
 
-**Hur kan jag lägga in e-postadresser till Audience Manager så att jag kan använda dem i[!DNL People-Based Destinations]?**
+**Hur lägger jag in e-postadresser i Audience Manager så att jag kan använda dem i[!DNL People-Based Destinations]?**
 
 Det finns två sätt att överföra offlinedata till Audience Manager för [!DNL People-Based Destinations].
 
 * **Använd filbaserad ID-synkronisering**. Mer information om hur ID-synkroniseringsfiler ska se ut finns i [Namn- och innehållskrav för ID-synkroniseringsfiler](../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) . När du använder den här metoden kan du ange alla hash-kodade e-postadresser från din [!DNL CRM] databas som mål.
-* **Använd deklarerade ID:n** för att deklarera hashade e-postadresser när autentiserade kund-ID skickas. När du använder den här metoden aktiverar Audience Manager bara de streckade e-postadresserna från användare som har autentiserat online. De e-postadresser som aktiveras via Facebook är bara de som finns i de deklarerade ID-händelseanropen. Andra e-postadresser som är kopplade till kund-ID aktiveras inte i realtid.
+* **Använd deklarerade ID:n** för att deklarera hashade e-postadresser när autentiserade kund-ID skickas. När du använder den här metoden aktiverar Audience Manager bara de hashade e-postadresserna från användare som har autentiserats online. De e-postadresser som aktiveras via Facebook är bara de som finns i de deklarerade ID-händelseanropen. Andra e-postadresser som är kopplade till kund-ID aktiveras inte i realtid.
 
 **Kan jag samla in hashade e-postadresser via ett webbformulär eller en mobilapp eller måste de gå igenom en gruppfil?**
 
@@ -39,12 +43,12 @@ Inmatning av offlinedata är utformat för att stödja användningsfall utan aut
 
 **Hur ofta kan jag skicka/uppdatera hashade e-postadresser?**
 
-* När du använder deklarerade ID:n skickar Audience Manager de streckade e-postadresserna till målet i realtid.
+* När du använder deklarerade ID:n skickar Audience Manager den streckade e-postadressen till målet i realtid.
 * När data hämtas via ID-synkroniseringsfiler bearbetar Audience Manager dem dagligen.
 
 **Hur vet jag om e-postadresshashningen är korrekt?**
 
-Audience Manager kan inte importera den obearbetade e-postadressen och vi kan inte verifiera att hash-konfigurationen har gjorts korrekt. Se [Förutsättningar och överväganden](../features/destinations/people-based-destinations-prerequisites.md) för mer information om hur du bör hash-koda data.
+Audience Manager kan inte importera den obearbetade e-postadressen och vi kan inte verifiera att hash-konfigurationen är korrekt. Se [Förutsättningar och överväganden](../features/destinations/people-based-destinations-prerequisites.md) för mer information om hur du bör hash-koda data.
 
 ## Regler för profilsammanslagning {#profile-merge-rules}
 
@@ -65,7 +69,7 @@ Om du planerar att aktivera nya offlinemålgrupper i personbaserade kanaler mås
 
 **Har ni[!DNL People-Based Destinations]insyn i matchningsfrekvenser eller adresserbara målgrupper?**
 
-Nej. När målgruppssegment skickas till [!DNL People-Based Destinations]sker målgruppsmatchning på partnersidan. Adobe har inte tillgång till dessa mätvärden. Audience Manager visar den maximala delningsbara målgruppen för varje mål och antalet personer som tillhör ett segment i realtid. Den här informationen kan hjälpa er med kampanjplanering och prognoser.
+Nej. När målgruppssegment skickas till [!DNL People-Based Destinations]sker målgruppsmatchning på partnersidan. Adobe har inte tillgång till dessa mätvärden. Audience Manager visar den största möjliga utdelningsbara målgruppen för varje mål och antalet personer som tillhör ett segment i realtid. Den här informationen kan hjälpa er med kampanjplanering och prognoser.
 
 **Hur skulle matcha frekvenser med hjälp av[!DNL People-Based Destinations]teoretiskt jämfört med andra metoder för att skicka målgrupper till målplattformar?**
 
@@ -73,7 +77,7 @@ Så länge e-postadressen är hash-kodad och korrekt inkapslad ska det inte finn
 
 **Jag samlar in e-postadresser till arbetet från mina kunder, som skiljer sig från de personliga e-postadresser som används i sociala nätverk. Hur matchar ni identiteter för flera e-postadresser?**
 
-Audience Manager kan samla in och skicka upp till 10 e-postmeddelanden per användare till målplattformar, men e-postadresserna måste hämtas via synkroniseringsfiler. När Audience Manager har skickat e-postadresserna till målplattformarna är det upp till plattformarna att matcha e-postadresserna mot sin egen användarbas. Vissa plattformar kan ha ytterligare e-postadressdiagram som matchar adresser som skickats från Audience Manager till användarprofiler.
+Audience Manager kan samla in och skicka upp till 10 e-postmeddelanden per användare till målplattformar, men e-postadresserna måste hämtas via synkroniseringsfiler. När Audience Manager har skickat e-postadresserna till målplattformarna är det upp till plattformarna att matcha e-postadresserna mot sin egen användarbas. Vissa plattformar kan ha ytterligare e-postadressdiagram som matchar adresser som skickas från Audience Manager till användarprofiler.
 
 ## Dataexportkontroller {#data-export-controls}
 
@@ -89,7 +93,7 @@ Audience Manager kan samla in och skicka upp till 10 e-postmeddelanden per anvä
 
 Innan du kan använda [!DNL People-Based Destinations] för att skicka målgruppssegment till [!DNL Facebook]måste du utföra följande konfigurationsuppgifter:
 
-1. Lägg till Adobe Experience Cloud-företagskontot som annonspartner i ert företag [!DNL Facebook Ad Account]. Använd `business ID=206617933627973`. Mer information finns i Lägg till partners i din Business Manager.
+1. Lägg till Adobe Experience Cloud-företagskontot som annonspartner i er [!DNL Facebook Ad Account]. Använd `business ID=206617933627973`. Mer information finns i Lägg till partners i din Business Manager.
 
    >[!IMPORTANT]
    >
@@ -105,6 +109,6 @@ Du kan använda [!DNL People-Based Destinations] i alla [!DNL Facebook]de appar 
 
 [!DNL People-Based Destinations] utnyttjar integreringen [!DNL Custom Audiences (CA)] med [!DNL Facebook]. Skillnaden mellan [!DNL WCA] och [!DNL CA] integreringar är nyckeln kunderna använder när de skickar målgrupper till [!DNL Facebook]. [!DNL WCA] använder [!DNL Facebook] pixeln (som skulle vara ett användar-ID för en webbplats) medan hash- [!DNL People-Based Destinations] e-postadresser används för integrering med [!DNL CA].
 
-Ni kan använda Audience Managers [!DNL Facebook] integrering [!DNL WCA] via [!DNL URL Destinations] funktionen utan extra kostnad.
+Du kan använda Audience Manager [!DNL Facebook] integrering [!DNL WCA] via [!DNL URL Destinations] funktionen utan extra kostnad.
 
 Dessa två integreringar kompletterar varandra. ni kan använda båda för att få bättre täckning. Som exempel kan [!DNL WCA] de användas för prospektering när ett företag söker efter besökare på en webbplats som inte har registrerat ett konto, medan [!DNL People-Based Destinations] kan hjälpa er att rikta er till befintliga kunder som har angett sin e-postadress men kanske inte besökt webbplatsen.
