@@ -6,8 +6,12 @@ solution: Audience Manager
 title: Användningsexempel för Audience Lab
 topic: DIL API
 uuid: 727bec8a-df9a-40cc-b8a7-e1980d146a84
+feature: Audience Lab
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +26,7 @@ Du kan använda flera olika typer och källor av modeller i [!DNL Audience Manag
 
 <!-- audience-lab-compare-models.xml -->
 
-I det här fallet jämför du olika modeller. Du kan antingen använda modeller som har skapats via ett internt datalager och importera dem i [!DNL Audience Manager] form av [onboardanpassade traits](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) eller använda funktionen [Algoritmiska modeller](../../features/algorithmic-models/understanding-models.md) i [!DNL Audience Manager].
+I det här fallet jämför du olika modeller. Du kan antingen använda modeller som har skapats via en intern data warehouse och importera dem i [!DNL Audience Manager] form av [onboarding-traits](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) eller använda funktionen [Algoritmiska modeller](../../features/algorithmic-models/understanding-models.md) i [!DNL Audience Manager].
 
 1. Skapa två modeller, antingen i [Model Builder](../../features/algorithmic-models/create-model.md)eller via en extern plattform.
 1. Skapa [algoritmiska egenskaper](../../features/traits/create-algorithmic-traits.md) utifrån den algoritmiska modellen eller importera dina egna modeller som anpassade egenskaper.
