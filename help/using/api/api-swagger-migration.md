@@ -5,8 +5,9 @@ seo-title: API-kodmigrering för Audience Manager
 solution: Audience Manager
 title: API-kodmigrering för Audience Manager
 uuid: 93cc28c4-4b91-4c79-93d5-ece9bb4cc9d5
+feature: API
 translation-type: tm+mt
-source-git-commit: 0869e016d7f80710cb194449c48675b82fdfa865
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
