@@ -1,19 +1,23 @@
 ---
-description: Beskriver metoder i namnutrymmet DIL.modules. Med dessa moduler kan ni programmässigt samla in data och arbeta med Audience Manager-objekt.
-seo-description: Beskriver metoder i namnutrymmet DIL.modules. Med dessa moduler kan ni programmässigt samla in data och arbeta med Audience Manager-objekt.
+description: Beskriver metoder i namnutrymmet DIL.modules. Med dessa moduler kan du programmässigt samla in data och arbeta med Audience Manager-objekt.
+seo-description: Beskriver metoder i namnutrymmet DIL.modules. Med dessa moduler kan du programmässigt samla in data och arbeta med Audience Manager-objekt.
 seo-title: DIL-moduler
 solution: Audience Manager
 title: DIL-moduler
 uuid: d4c0d8dd-79f8-448e-b17c-c935415dd449
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '716'
+ht-degree: 0%
 
 ---
 
 
 # DIL-moduler{#dil-modules}
 
-Beskriver metoder i `DIL.modules` namnutrymmet. Med dessa moduler kan ni programmässigt samla in data och arbeta med Audience Manager-objekt.
+Beskriver metoder i `DIL.modules` namnutrymmet. Med dessa moduler kan du programmässigt samla in data och arbeta med Audience Manager-objekt.
 
 <!-- 
 
@@ -51,7 +55,7 @@ r_dil_sc_init.xml
   <tr valign="top"> 
    <td colname="col1"> <code> names </code> </td> 
    <td colname="col2"> Sträng </td> 
-   <td colname="col3"> <p>En array med strängar som innehåller icke-uppräknade <span class="keyword"> analysvariabler som </span> , <code> pageName </code>, <code> channel </code>, <code> campaign </code><code> product </code>osv. </p> </td> 
+   <td colname="col3"> <p>En array med strängar som innehåller ouppräknade <span class="keyword"> Analytics- </span> variabler som <code> pageName </code>, <code> channel </code>, <code> campaign </code>, <code> product </code>osv. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> iteratedNames </code> </td> 
@@ -138,7 +142,7 @@ DIL.modules.siteCatalyst.init(s, scDil);
 
 ## GA.submitUniversalAnalytics {#ga-submit-universal-analytics}
 
-Funktionen skickar data från Googles `GA.submitUniversalAnalytics();` [!DNL Universal Analytics] till Audience Manager. Den här [!UICONTROL DIL] funktionen är utformad för att fungera med `analytics.js`, som är det senaste kodbiblioteket för Google [!DNL Universal Analytics].
+Funktionen skickar data från Googles data `GA.submitUniversalAnalytics();` [!DNL Universal Analytics] till Audience Manager. Den här [!UICONTROL DIL] funktionen är utformad för att fungera med `analytics.js`, som är det senaste kodbiblioteket för Google [!DNL Universal Analytics].
 
 <!-- 
 
@@ -173,7 +177,7 @@ Följande egenskaper accepteras för `GA.submitUniversalAnalytics();` funktionen
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> gaObject </code> </p> </td> 
-   <td colname="col2"> <p>Den globala variabeln för din instans av <span class="keyword"> Google Analytics </span>. Detta är vanligtvis <code> ga </code> som standard, såvida du inte har anpassat din <span class="keyword"> Google Analytics- </span> kod. </p> </td> 
+   <td colname="col2"> <p>Den globala variabeln för din instans av <span class="keyword"> Google Analytics </span>. Detta är vanligtvis <code> ga </code> standard, såvida du inte har anpassat din <span class="keyword"> Google Analytics- </span> kod. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> dilInstance </code> </p> </td> 
@@ -202,7 +206,7 @@ DIL.modules.GA.submitUniversalAnalytics(ga, dilInstance);
 
 ## GA.init {#ga-init}
 
-Funktionen skickar data från den gamla/ersatta versionen av `GA.init()` [!DNL Google Analytics] till Audience Manager.
+Funktionen `GA.init()` skickar data från den gamla/ersatta versionen av [!DNL Google Analytics] till Audience Manager.
 
 <!-- 
 
@@ -309,7 +313,7 @@ URL-händelseanropet till Audience Manager kan se ut ungefär så här:
 
 >[!MORELIKETHIS]
 >
->* [Google Analytics-spårningskod](https://developers.google.com/analytics/devguides/collection/gajs/methods/)
+>* [Google Analytics Tracking Code](https://developers.google.com/analytics/devguides/collection/gajs/methods/)
 >* [Fullständig webbuppgradering: ga.js/dc.js till analytics.js](https://developers.google.com/analytics/devguides/collection/upgrade/reference/gajs-analyticsjs)
 >* [Lägga till analytics.js på er webbplats](https://developers.google.com/analytics/devguides/collection/analyticsjs/)
 >* [ga-objektmetodreferens](https://developers.google.com/analytics/devguides/collection/analyticsjs/ga-object-methods-reference)
