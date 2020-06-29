@@ -1,19 +1,23 @@
 ---
-description: Filer med överföringskontroll (.info) innehåller metadatainformation om filöverföringar så att partners kan verifiera att Audience Manager hanterar filöverföringar korrekt.
-seo-description: Filer med överföringskontroll (.info) innehåller metadatainformation om filöverföringar så att partners kan verifiera att Audience Manager hanterar filöverföringar korrekt.
+description: Filer med överföringskontroll (.info) innehåller metadatainformation om filöverföringar så att partners kan verifiera att filöverföringar hanteras korrekt i Audience Manager.
+seo-description: Filer med överföringskontroll (.info) innehåller metadatainformation om filöverföringar så att partners kan verifiera att filöverföringar hanteras korrekt i Audience Manager.
 seo-title: Överföringskontrollfiler för loggfilsöverföringar
 solution: Audience Manager
 title: Överföringskontrollfiler för loggfilsöverföringar
 uuid: ef58213e-7b37-4c5a-8556-0de695706793
+feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 0%
 
 ---
 
 
 # Överföringskontrollfiler för loggfilsöverföringar {#transfer-control-files-for-log-file-transfers}
 
-Filer med överföringskontroll ([!DNL .info]) innehåller metadatainformation om filöverföringar så att partners kan verifiera att Audience Manager hanterar filöverföringar korrekt.
+Filer med överföringskontroll ([!DNL .info]) innehåller metadatainformation om filöverföringar så att partners kan verifiera att filöverföringar hanteras korrekt i Audience Manager.
 
 [!DNL Audience Manager] skickar en fil för överföringskontroll till en partner vid varje filöverföring. På grund av att utgivaren har flera trådar kan [!DNL FTP] överföringskontrollfilen skickas innan de faktiska filerna har överförts.
 
@@ -27,7 +31,7 @@ Med metadata i [!DNL .info] filen kan partners:
 
 Överföringskontrollfilen har samma namn som roten för gruppen/sekvensen med ett [!DNL .info] filtillägg.
 
-Om till exempel den första filen i sekvensen hade namn: kontrollfilen [!DNL ftp_12345_67890_full_1500727351632-1.sync]får då namnet [!DNL ftp_12345_67890_iter_1500727351632.info].
+Om till exempel den första filen i sekvensen hade namn: [!DNL ftp_12345_67890_full_1500727351632-1.sync], kommer kontrollfilen att få ett namn [!DNL ftp_12345_67890_iter_1500727351632.info].
 
 ## Filformat {#file-format}
 
