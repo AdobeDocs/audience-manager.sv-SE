@@ -1,20 +1,24 @@
 ---
-description: Trait-kvalificering, eller trait-implementering, behandlas annorlunda i Audience Manager beroende på trait-typ. Se tabellen nedan för detaljerad information om kvalificering av trait.
+description: Trait-kvalificering, eller trait-implementering, behandlas annorlunda i Audience Manager, beroende på trait-typ. Se tabellen nedan för detaljerad information om kvalificering av trait.
 keywords: trait qualification;trait realization;Unique Trait Realizations;UTR;Total Trait Population;TTP
-seo-description: Trait-kvalificering, eller trait-implementering, behandlas annorlunda i Audience Manager beroende på trait-typ. Se tabellen nedan för detaljerad information om kvalificering av trait.
+seo-description: Trait-kvalificering, eller trait-implementering, behandlas annorlunda i Audience Manager, beroende på trait-typ. Se tabellen nedan för detaljerad information om kvalificering av trait.
 seo-title: Referens för dragningskvalitet
 solution: Audience Manager
 title: Referens för dragningskvalitet
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 22780105bc356100af8b64b50e3c92137adeb83a
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 0%
 
 ---
 
 
 # Referens för egenskaper för trait och segment {#trait-qualification-reference}
 
-Trait-kvalificering, eller trait-implementering, behandlas annorlunda i Audience Manager beroende på trait-typ. Se [Trait Qualification by Trait Type](#trait-type) för mer information om kvalificering av trait-typ.
+Trait-kvalificering, eller trait-implementering, behandlas annorlunda i Audience Manager, beroende på trait-typ. Se [Trait Qualification by Trait Type](#trait-type) för mer information om kvalificering av trait-typ.
 
 Mer information om segmentkvalificering finns i Population i [realtidssegment och Population](#real-time-segment) i totalt segment.
 
@@ -28,7 +32,7 @@ Mer information om segmentkvalificering finns i Population i [realtidssegment oc
 | Onboardtåg | Trait-kvalificering inträffar efter att en inkommande fil har bearbetats, dvs. den inkommande filen [importeras till Audience Manager](../../faq/faq-inbound-data-ingestion.md) och det är när trait-kvalificeringen inträffar. Du bör vänta cirka 4 timmar efter att du har skapat en ny egenskap innan du överför en inkommande fil för bearbetning. För praktikanter är det högsta antalet kvalifikationer för en användarprofil 1. |
 | Algoritmiska egenskaper | För algoritmiska egenskaper är det högsta antalet kvalifikationer för en användarprofil 1. |
 | Mappegenskaper | En mappegenskap sammanfattar egenskaperna för de egenskaper den innehåller. Läser [mappegenskaper: Om](about-folder-traits.md) du vill ha mer information. |
-| Synkroniserade egenskaper för aktiv målgrupp och datakälla | En [!UICONTROL Active Audience] trait innehåller alla enheter som hanteras i ditt Audience Manager-konto. [!UICONTROL Data Source Synced Traits] spåra alla användare som är associerade med en datakälla. Läs mer om [Active Audience Traits och Synced Traits](client-activity-synced-audience-traits.md)för datakälla. |
+| Synkroniserade egenskaper för aktiv målgrupp och datakälla | En [!UICONTROL Active Audience] egenskap innehåller alla enheter som hanteras i ditt Audience Manager-konto. [!UICONTROL Data Source Synced Traits] spåra alla användare som är associerade med en datakälla. Läs mer om [Active Audience Traits och Synced Traits](client-activity-synced-audience-traits.md)för datakälla. |
 
 ## Unika Trait-realiteter och total Trait-population {#unique-trait-realizations}
 
