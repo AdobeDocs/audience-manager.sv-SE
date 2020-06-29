@@ -5,8 +5,12 @@ seo-title: Namn- och innehållskrav för ID-synkroniseringsfiler
 solution: Audience Manager
 title: Namn- och innehållskrav för ID-synkroniseringsfiler
 uuid: bfe42af9-9149-4da3-830e-f227c4e610c2
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 84c860ca918ae7daf2a5225716fd7db7143089d9
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '781'
+ht-degree: 3%
 
 ---
 
@@ -131,7 +135,7 @@ Steg 1: ID-synkroniseringsprocessen synkroniserar [!DNL DPUUID]sidorna från [!D
 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M | 2351382994 |
 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw | 4601584763 |
 
-Steg 2: De [!DNL DPUUID]som kommer från [!DNL DPID] 12345 har synkroniserats i steg 1 med Audience Manager- [!DNL UUID]funktionerna. Det som den här ID-synkroniseringen kommer att göra är att synkronisera [!DNL DPUUID]sidorna från [!DNL DPID] 67890 med Audience Manager [!DNL UUID]från steg 1.
+Steg 2: De [!DNL DPUUID]som kommer från [!DNL DPID] 12345 har synkroniserats i steg 1 med Audience Manager [!DNL UUID]. Det som den här ID-synkroniseringen gör är att synkronisera [!DNL DPUUID]sidorna från [!DNL DPID] 67890 med Audience Manager från [!DNL UUID]steg 1.
 
 <br/>
 
