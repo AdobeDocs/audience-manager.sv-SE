@@ -5,8 +5,12 @@ seo-title: Prefixkrav för nyckelvariabler
 solution: Audience Manager
 title: Prefixkrav för nyckelvariabler
 uuid: df2ef9c8-606a-45f9-a836-859f856a7d4b
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 2206b5e40f7024084953fed52bb02fcc46ea36f1
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +43,7 @@ I följande tabell definieras de vanliga prefix som används av [!UICONTROL Trai
   </tr> 
   <tr> 
    <td colname="col1"><code> d_</code> </td> 
-   <td colname="col2"> <p>På nivån <span class="keyword"> Audience Manager</span> . Dessa data är enhetliga i hela <span class="keyword"> Audience Manager</span> -ekosystemet. Se <a href="../../api/dcs-intro/dcs-api-reference/dcs-keys.md"> Attribut som stöds för DCS API-anrop</a> för en mer komplett lista. <p>Signaler som använder det här prefixet visas inte i <a href="../data-explorer/data-explorer-signals-search/data-explorer-signals-search.md">Signalsökning</a>.</p></p> </td> 
+   <td colname="col2"> <p>På <span class="keyword"> Audience Manager</span> -nivå. Dessa data är enhetliga över hela <span class="keyword"> Audience Manager</span> . Se <a href="../../api/dcs-intro/dcs-api-reference/dcs-keys.md"> Attribut som stöds för DCS API-anrop</a> för en mer komplett lista. <p>Signaler som använder det här prefixet visas inte i <a href="../data-explorer/data-explorer-signals-search/data-explorer-signals-search.md">Signalsökning</a>.</p></p> </td> 
   </tr>
   <tr> 
    <td colname="col1"><code> h_</code> </td> 
