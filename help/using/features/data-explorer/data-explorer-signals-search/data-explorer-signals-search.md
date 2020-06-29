@@ -3,8 +3,12 @@ description: Sök efter använda och oanvända signaler som tagits emot under en
 seo-description: Sök efter använda och oanvända signaler som tagits emot under en viss tidsperiod. Om du vill söka efter signaler går du till Målgruppsdata > Signaler > Sök.
 seo-title: Signalsökning
 title: Signalsökning
+feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: 64d0bdb8e7da43c2b467aef44cec2a185d1f79d7
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 0%
 
 ---
 
