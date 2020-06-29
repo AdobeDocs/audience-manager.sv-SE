@@ -5,8 +5,12 @@ seo-title: Allmänna användningsexempel för profilkopplingsregler
 solution: Audience Manager
 title: Allmänna användningsexempel för profilkopplingsregler
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '997'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +61,7 @@ Låt oss tänka på ett segment som består av hushåll med inkomster över 100 
 
 Audience Manager sammanfogar alla enheter + profilpar för olika enheter för att se om den sammanfogade uppsättningen egenskaper kvalificerar sig för segmentet. Eftersom Audience Manager utvärderar alla profiler som ingick i sammanslagningen kan både en enhetsprofil och en hushållsprofil segmenteras.
 
-Tack vare länken mellan enheten och hushållsprofilen kan Audience Manager kvalificera [!DNL Household 2] sig för segmentet, men inte [!DNL Household 1]. Endast [!DNL Household 2]kvalificerar [!DNL Device 3] för segmentet. Detta [!UICONTROL Profile Merge Rule] har gjort det möjligt för marknadsföraren att leverera ett konsekvent marknadsföringsbudskap till en enskild enhet ([!DNL Device 3]) och ett större hushåll ([!DNL Household 2]).
+Tack vare länken mellan enheten och hushållsprofilen kan Audience Manager kvalificera sig [!DNL Household 2] för segmentet, men inte [!DNL Household 1]. Endast [!DNL Household 2]kvalificerar [!DNL Device 3] för segmentet. Detta [!UICONTROL Profile Merge Rule] har gjort det möjligt för marknadsföraren att leverera ett konsekvent marknadsföringsbudskap till en enskild enhet ([!DNL Device 3]) och ett större hushåll ([!DNL Household 2]).
 
 ![hushållshantering](assets/household-management.png)
 
@@ -69,7 +73,7 @@ Tack vare länken mellan enheten och hushållsprofilen kan Audience Manager kval
 
 Detta målinriktningsscenario är endast tillgängligt för kunder som har köpt [!DNL People-Based Destinations] tillägget. Med den här regeln kan marknadsförarna nå kunder utifrån sina egna autentiserade data.
 
-En webbutik vill nå befintliga kunder via sociala plattformar och visa dem personaliserade erbjudanden baserat på deras tidigare order. Med [!UICONTROL People-Based Destinations]hjälp av kan de importera hashade e-postadresser från sina egna [!DNL CRM] till Audience Manager, skapa segment utifrån offlinedata och skicka dessa segment till de sociala plattformar de vill annonsera på, med hjälp av den hash-kodade identifieraren, vilket optimerar deras annonsutgifter.
+En webbutik vill nå befintliga kunder via sociala plattformar och visa dem personaliserade erbjudanden baserat på deras tidigare order. Med [!UICONTROL People-Based Destinations]kan de importera hashade e-postadresser från sina egna [!DNL CRM] till Audience Manager, skapa segment utifrån offlinedata och skicka dessa segment till de sociala plattformar som de vill annonsera på, med hjälp av den hash-kodade identifieraren, vilket optimerar annonsutgifterna.
 
 Mer information om det här alternativet finns i [Personbaserade mål](../destinations/people-based-destinations-overview.md).
 
@@ -103,7 +107,7 @@ Om du väljer ett [!UICONTROL device graph] alternativ för en [!UICONTROL Profi
       <li id="li_969A0755A9E34CBEB2F7331C137B9A26">Digitala egenskaper med låg nivå av kundautentisering. </li> 
       <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">Breda, heltäckande varumärkeskampanjer. </li> 
       <li id="li_14AEC54CE34440889A3A36324EC6F497">Användningsexempel där kunderna inte behöver vara i ett autentiserat tillstånd för att vara kvalificerade för segmentering. </li> 
-     </ul> </p> <p> <p>Tips: Device Co-op <span class="keyword"> är det bästa alternativet om du är en</span> Experience Cloud <span class="keyword"></span> -kund med låg autentisering och utan relation till någon enhetsdiagramleverantör. </p> </p> </td> 
+     </ul> </p> <p> <p>Tips: Device Co-op <span class="keyword"> är det bästa alternativet om du är en</span> Experience Cloud <span class="keyword"></span> -kund med låg autentisering och ingen relation till någon annan provider för enhetsdiagram. </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
