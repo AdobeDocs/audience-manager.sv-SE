@@ -5,8 +5,9 @@ keywords: trait; traits; trait overview
 seo-title: Traits Overview
 solution: Audience Manager
 title: Traits Overview
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 0b173db313053bb9c1d90b681d00ad4bd6fb8b34
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 0%
