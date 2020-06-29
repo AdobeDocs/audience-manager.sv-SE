@@ -4,8 +4,12 @@ seo-description: Använd Data Explorer för att dra nytta av historiska målgrup
 seo-title: Översikt, fördelar och användningsfall
 title: Översikt, fördelar och användningsfall
 uuid: 3bd32d4a-ade3-413d-837a-9edd14d415a5
+feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 0%
 
 ---
 
