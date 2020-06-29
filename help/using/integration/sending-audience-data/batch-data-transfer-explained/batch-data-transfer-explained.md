@@ -5,8 +5,9 @@ seo-title: Beskriver batchdataöverföringsprocessen
 solution: Audience Manager
 title: Beskriver batchdataöverföringsprocessen
 uuid: a9eee940-151c-44f8-9fe9-8ab47d8fa45c
+feature: null
 translation-type: tm+mt
-source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
