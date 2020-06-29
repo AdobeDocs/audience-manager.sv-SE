@@ -6,8 +6,9 @@ keywords: dil, dil, dil, dil, dil, dil, dil, dil, dil, dil, dil, dil, dil, dil, 
 solution: Audience Manager
 title: Understanding the Data Integration Library (DIL)
 uuid: 77b12f35-81e4-4639-ada6-bf982f27b36e
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
