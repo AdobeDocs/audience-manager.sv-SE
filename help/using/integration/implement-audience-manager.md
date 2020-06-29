@@ -1,30 +1,34 @@
 ---
-description: I det här avsnittet beskrivs de processer som är kopplade till att komma igång med datahanteringsplattformen Audience Manager (DMP). Det här avsnittet är utformat för att hjälpa affärsteam, projektledare och teknikchefer att förstå implementeringsprocessen för Audience Manager. Komma igång med Audience Manager kan ta cirka sex veckor till tre månader, beroende på dina datainsamlingsbehov.
-seo-description: I det här avsnittet beskrivs de processer som är kopplade till att komma igång med datahanteringsplattformen Audience Manager (DMP). Det här avsnittet är utformat för att hjälpa affärsteam, projektledare och teknikchefer att förstå implementeringsprocessen för Audience Manager. Komma igång med Audience Manager kan ta cirka sex veckor till tre månader, beroende på dina datainsamlingsbehov.
+description: I det här avsnittet beskrivs de processer som är kopplade till att komma igång med datahanteringsplattformen (DMP) i Audience Manager. Det här avsnittet är utformat för att hjälpa affärsteam, projektledare och teknikchefer att förstå implementeringsprocessen i Audience Manager. Det kan ta cirka sex veckor till tre månader att komma igång med Audience Manager, beroende på dina behov av datainsamling.
+seo-description: I det här avsnittet beskrivs de processer som är kopplade till att komma igång med datahanteringsplattformen (DMP) i Audience Manager. Det här avsnittet är utformat för att hjälpa affärsteam, projektledare och teknikchefer att förstå implementeringsprocessen i Audience Manager. Det kan ta cirka sex veckor till tre månader att komma igång med Audience Manager, beroende på dina behov av datainsamling.
 seo-title: Implementera Audience Manager
 solution: Audience Manager
 title: Implementera Audience Manager
 uuid: 89369224-3b21-45a9-a4ed-a0a977410520
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1111'
+ht-degree: 0%
 
 ---
 
 
 # Implementera Audience Manager {#implementing-audience-manager}
 
-I det här avsnittet beskrivs de processer som är kopplade till att komma igång med datahanteringsplattformen Audience Manager ([!DNL DMP]). Det här avsnittet är utformat för att hjälpa affärsteam, projektledare och teknikchefer att förstå implementeringsprocessen för Audience Manager. Komma igång med Audience Manager kan ta cirka sex veckor till tre månader, beroende på dina datainsamlingsbehov.
+I det här avsnittet beskrivs de processer som är kopplade till att komma igång med datahanteringsplattformen ([!DNL DMP]) för Audience Manager. Det här avsnittet är utformat för att hjälpa affärsteam, projektledare och teknikchefer att förstå implementeringsprocessen i Audience Manager. Det kan ta cirka sex veckor till tre månader att komma igång med Audience Manager, beroende på dina behov av datainsamling.
 
 Våra implementeringstekniker hjälper till att skapa ett rådgivande partnerskap med nya kunder. Den här processen är utformad för att:
 
 * Upptäck och förstå era affärskrav.
 * Utarbeta en åtgärdbar plan för att möta dessa krav.
 * Utveckla anpassade lösningar för att uppfylla unika krav eller fallstudier.
-* Se till att era egna data importeras och blir tillgängliga i Audience Manager.
+* Se till att era egna data importeras och görs tillgängliga i Audience Manager.
 
 Våra partnerlösningar och kontohanteringsteam samarbetar nära med er före, under och efter implementeringsprocessen.
 
-Audience Manager har en stegvis strategi för konfiguration och implementering.
+Audience Manager har en stegvis strategi för installation och implementering.
 
 ## Definiera fas {#define-phase}
 
@@ -133,7 +137,7 @@ I följande tabell beskrivs viktiga aktiviteter som äger rum under den här fas
 Produkterna för den här fasen kan inkludera:
 
 * En slutförd strategi för datainsamling från första part, andra part och tredje part.
-* En slutförd plan [!DNL CRM] för datalagerförtäring.
+* En slutförd plan [!DNL CRM] eller en plan för förtäring i data warehouse.
 * Definierade krav för målgruppssegmentering.
 * en slutförd datataxonomi,
 * En utvecklad integrationsplan för data från tredje part.
@@ -153,13 +157,13 @@ I följande tabell beskrivs viktiga aktiviteter som äger rum under den här fas
 | Förbered en strategi för datainsamling | Samarbeta med Adobes tekniska team för att ta fram en datainsamlingsplan som uppfyller era verksamhetskrav | Näringsliv och tekniska team |
 | Distribuera och testa kod | Testa den föreslagna lösningen i en testmiljö och utför testning i olika webbläsare | Tekniska team |
 | Verifiera funktioner och åtgärda fel | Granska och förmedla resultat, åtgärda buggar och testa igen | Tekniska team |
-| Utbildning | Undervisa och förstå funktioner, verktyg och rapporter i Audience Manager | Affärsteam |
+| Utbildning | Undervisa och förstå Audience Manager om funktioner, verktyg och rapporter | Affärsteam |
 
 Produkterna för den här fasen kan inkludera:
 
 * En slutförd och godkänd plan för datainsamling.
 * Totallösningar från början till slut [!DNL QA] ;
-* Grundläggande instruktioner om funktioner i användargränssnittet i Audience Manager.
+* Grundläggande anvisningar om Audience Manager användargränssnitt;
 * Godkännande och godkännande.
 
 ## Start-, support- och optimeringsfasen {#launch-support-optimize-phase}
@@ -201,7 +205,7 @@ I följande tabell beskrivs viktiga aktiviteter som äger rum under den här fas
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> Uppföljningsmeddelanden </td> 
-   <td colname="col2"> Regelbunden schemalagd kommunikation för att hålla dig à jour med användarupplevelsen med Audience Manager </td> 
+   <td colname="col2"> Regelbunden schemalagd kommunikation för att hålla dig à jour med användarupplevelsen på Audience Manager </td> 
    <td colname="col3"> Näringsliv och tekniska team </td> 
   </tr> 
  </tbody> 
@@ -213,7 +217,7 @@ Uppgifter för den här fasen kan vara:
 * Förstå anpassade rapporter
 * Så här får du produktsupport
 * svara på förfrågningar, buggrapporter och användarfeedback,
-* Bekanta dig med funktioner och rapporter i Audience Manager.
+* Bekanta dig med Audience Manager funktioner och rapporter.
 
 ## Kodimplementering {#code-implementation}
 
@@ -235,6 +239,6 @@ Våra samarbetssatsningar upphör inte med den slutliga driftsättningen. När i
 
 <!-- c_post_implement_support.xml -->
 
-Kontoansvariga tillhandahåller fortlöpande support och konsulttjänster när produktimplementeringen är klar. Du kan förvänta dig regelbundna möten med din kontoansvarige. Dessa möten ser till att du får ut maximalt av Audience Manager och får ut maximalt av det.
+Kontoansvariga tillhandahåller fortlöpande support och konsulttjänster när produktimplementeringen är klar. Du kan förvänta dig regelbundna möten med din kontoansvarige. Dessa möten ser till att du får ut så mycket som möjligt av Audience Manager.
 
-Kontakta oss [här](https://www.adobe.com/products/audiencemanager.html) om du vill ha mer information och komma igång med Audience Manager.
+Kontakta oss [här](https://www.adobe.com/products/audiencemanager.html) för mer information och för att komma igång med Audience Manager.
