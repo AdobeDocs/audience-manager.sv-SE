@@ -5,8 +5,9 @@ seo-title: Komma igång med profilkopplingsregler
 solution: Audience Manager
 title: Komma igång med profilkopplingsregler
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: 56a9626b1fa77926bdc31ef72b058d2aa9b58f43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 0%
@@ -102,18 +103,18 @@ Så här slutför du [!UICONTROL Proflie Merge Rule Setup] avsnittet:
    * **[!UICONTROL Device Co-op]**
 4. Klicka på **[!UICONTROL Save]**.
 
-### Överväganden för Adobe Campaign-destinationer som använder enhets-ID:n som användar-ID-nycklar {#considerations}
+### Överväganden för Adobe Campaign-mål som använder enhets-ID som användar-ID-nycklar {#considerations}
 
-I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profilsammanslagning för att förbättra exaktheten hos gruppfiler som genererats med hjälp av enhets-ID:n. Dessa förbättringar respekteras strikt i Audience Manager-instansen från och med måndagen den 16 mars 2020. Därför kommer segment som mappas till ett mål med hjälp av enhets-ID att sluta producera exporter i vissa konfigurationer av profilkopplingsregler.
+I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profilsammanslagning för att förbättra exaktheten hos gruppfiler som genererats med hjälp av enhets-ID:n. Dessa förbättringar respekteras strikt i din Audience Manager-instans från och med måndagen den 16 mars 2020. Därför kommer segment som mappas till ett mål med hjälp av enhets-ID att sluta producera exporter i vissa konfigurationer av profilkopplingsregler.
 
-För att säkerställa korrekt integrering mellan Audience Manager-instansen och destinationerna med olika enhets-ID:n, som Adobe Campaign, måste du uppfylla följande krav:
+Kontrollera att du uppfyller följande krav för att se till att Audience Manager-instansen och destinationerna är korrekt integrerade med ID:n för olika enheter, som Adobe Campaign:
 
-1. Granska den profilkopplingsregel som används av de segment som är mappade till ditt deklarerade ID-mål för Adobe Campaign. Regeln för profilsammanfogning måste använda [!UICONTROL Last Authenticated Profile] alternativet så att alla autentiserade profiler kan inkluderas i exporten. Om du använder ett annat alternativ för profilkopplingsregeln växlar du till [!UICONTROL Last Authenticated Profile].
-2. Välj datakällan för deklarerat ID i Adobe Campaign i inställningarna för profilkopplingsregel.
+1. Granska den profilkopplingsregel som används av de segment som är mappade till Adobe Campaign-deklarerade ID-mål. Regeln för profilsammanfogning måste använda [!UICONTROL Last Authenticated Profile] alternativet så att alla autentiserade profiler kan inkluderas i exporten. Om du använder ett annat alternativ för profilkopplingsregeln växlar du till [!UICONTROL Last Authenticated Profile].
+2. Markera datakällan för deklarerat ID i Adobe Campaign i inställningarna för profilkopplingsregel.
 
 >[!NOTE]
 >
-> Vi har ökat gränsen för profilsammanfogningsregel med 1 för kunder som befinner sig i den här situationen, så att du kan skapa en dedikerad profilsammanfogningsregel för de segment som mappas till det deklarerade ID-målet för Adobe Campaign, utan att ändra reglerna för profilsammanfogning för andra användningsfall.
+> Vi har ökat gränsen för profilsammanfogningsregel med 1 för kunder som befinner sig i den här situationen, så att du kan skapa en dedikerad profilsammanfogningsregel för de segment som är mappade till det deklarerade ID-målet för Adobe Campaign, utan att ändra reglerna för profilsammanfogning för andra användningsfall.
 
 ## Konfigurera kopplingsregelkod {#configure-merge-rule-code}
 
@@ -224,7 +225,7 @@ Kontrollera de metoder i koden [!DNL SDK] som gör att du kan skicka [!UICONTROL
  </tbody>
 </table>
 
-Se även [Audience Manager Methods for Android](hhttps://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html) and [Audience Manager Methods for iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html).
+Se även [Audience Manager-metoder för Android](hhttps://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html) och [Audience Manager-metoder för iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html).
 
 >[!MORELIKETHIS]
 >
