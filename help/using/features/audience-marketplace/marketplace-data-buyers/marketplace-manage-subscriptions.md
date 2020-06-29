@@ -6,8 +6,9 @@ solution: Audience Manager
 title: Hantera abonnemang på dataflöden
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
+feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '2186'
 ht-degree: 0%
