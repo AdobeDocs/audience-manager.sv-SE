@@ -4,8 +4,12 @@ seo-description: På den här sidan visas anpassade integreringar mellan Audienc
 seo-title: Anpassade partnerintegreringar
 solution: Audience Manager
 title: Anpassade partnerintegreringar
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: c069c901df6d8737f611d27ce7dffd4072e50adf
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +22,7 @@ På den här sidan visas anpassade integreringar mellan Audience Manager och dat
 
 ### Beskrivning
 
-Audience Manager importerar cookie- och mobil-ID-data från Oracle Data Cloud for Audience Marketplace via inkommande datafiler. Specifikationerna för anpassad integrering som beskrivs nedan avser endast inkommande datafiler som innehåller mobila ID:n (IDFA och Android Device ID).
+Audience Manager inhämtar cookie- och mobil-ID-data från Oracle Data Cloud för Audience Marketplace via inkommande datafiler. Specifikationerna för anpassad integrering som beskrivs nedan avser endast inkommande datafiler som innehåller mobila ID:n (IDFA och Android Device ID).
 
 ### Integrationsinformation
 
@@ -32,7 +36,7 @@ ODC-filnamn är strukturerade som:
 
 `ftp_dpm_`**`odc`**`_DPID[_DPID_TARGET_DATA_OWNER]_TIMESTAMP(.sync|.overwrite)[.SPLIT_NUMBER][.gz]`
 
-Filnamnselementet identifierar filen som importerad från Oracle Data Cloud och instruerar Audience Manager-filvalideraren att bearbeta den som sådan. `odc`
+Elementet `odc` för filnamn identifierar filen som importerad från Oracle Data Cloud och instruerar den inkommande filvalideraren i Audience Manager att bearbeta den som sådan.
 
 ### Filinnehåll
 
