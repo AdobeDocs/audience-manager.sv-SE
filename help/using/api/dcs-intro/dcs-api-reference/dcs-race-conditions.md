@@ -5,8 +5,9 @@ seo-title: Ansiktsvillkor och felhantering
 solution: Audience Manager
 title: Ansiktsvillkor och felhantering
 uuid: b0aac960-6732-4e96-87a5-40ba2755e02d
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 0%
