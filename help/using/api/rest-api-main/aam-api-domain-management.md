@@ -5,8 +5,12 @@ seo-title: API-metoder för domänhantering
 solution: Audience Manager
 title: API-metoder för domänhantering
 uuid: f2f08bc5-ea42-4171-9a43-0b20976f0cb0
+feature: API
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 0%
 
 ---
 
