@@ -3,9 +3,13 @@ description: Med prediktiva målgrupper kan ni klassificera okända målgrupper 
 seo-description: Med prediktiva målgrupper kan ni klassificera okända målgrupper i distinkta personligheter i realtid med datavetenskap.
 seo-title: Vanliga frågor om prediktiva målgrupper
 solution: Audience Manager
-title: Audience Manager Predictive Audience
+title: Audience Manager prediktiva målgrupper
+feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 8cf504fa811e4043f83d0b9f11754065efccf7bb
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +73,7 @@ Om modellen inte ger några resultat inom 24 timmar kan du kontakta din Adobe-re
 
 För att få relevanta resultat utvärderar algoritmen [!UICONTROL Predictive Audiences] trait- och segment-realisationer baserat på användaraktivitet i realtid som ses av DCS. Om du väljer nya basegenskaper och segment som ännu inte har tillräckligt många användare kan det ta några dagar innan algoritmen kan klassificera målgruppen.
 
-Följ de föreslagna riktlinjerna från [urvalskriterierna för personer](../features/algorithmic-models/predictive-audiences.md#selection-personas) och [urvalskriterierna för målpublik](../features/algorithmic-models/predictive-audiences.md#selection-audience)för att få optimala resultat.
+För att få bästa möjliga resultat bör du följa de föreslagna riktlinjerna från [urvalskriterier för personer](../features/algorithmic-models/predictive-audiences.md#selection-personas) och [urvalskriterier för Target-målgrupp](../features/algorithmic-models/predictive-audiences.md#selection-audience).
 
  
 
