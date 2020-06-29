@@ -5,8 +5,12 @@ seo-title: Syntax och exempel för utgående datafilnamn
 solution: Audience Manager
 title: Syntax och exempel för utgående datafilnamn
 uuid: effdcaf6-c37c-45f3-9d2f-a938a9da47a6
+feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: b32283a6cb3d001f0a1fc85f3e63fba651f32760
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '692'
+ht-degree: 3%
 
 ---
 
