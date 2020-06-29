@@ -5,8 +5,12 @@ seo-title: Avancerade funktioner i Audience Lab
 solution: Audience Manager
 title: Avancerade funktioner i Audience Lab
 uuid: 0f57d634-caa0-40da-81a2-c23fbd299bfd
+feature: Audience Lab
 translation-type: tm+mt
-source-git-commit: 6169e8aefc4c215c83d6229be7378f90453f19e9
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 0%
 
 ---
 
