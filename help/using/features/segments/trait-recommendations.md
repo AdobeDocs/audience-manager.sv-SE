@@ -4,9 +4,12 @@ seo-description: Få rekommendationer för Live-trait när ni bygger era segment
 seo-title: Trait Recommendations
 solution: Audience Manager
 title: Trait Recommendations
-uuid: null
+feature: Segments
 translation-type: tm+mt
-source-git-commit: 019396917482340f15b4eb23736b15322815bd84
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1573'
+ht-degree: 0%
 
 ---
 
@@ -27,10 +30,10 @@ I nästa video visas arbetsflödet för [!UICONTROL Marketplace Recommendations]
 
 ## Översikt
 
-[!UICONTROL Trait Recommendations], som drivs av [!DNL Adobe Sensei], för in datavetenskap i era dagliga arbetsflöden i Audience Manager.
+[!UICONTROL Trait Recommendations], som drivs av [!DNL Adobe Sensei], för in datavetenskap i era vardagliga arbetsflöden i Audience Manager.
 När du skapar [!UICONTROL Trait Recommendations]eller redigerar ett segment i [Segment Builder](segment-builder.md)får du rekommendationer om ytterligare egenskaper som du kan inkludera, som liknar egenskaperna i segmentregeln.
 
-Audience Manager visar era rekommendationer både från era egna egenskaper, i **[!UICONTROL Recommendations]** avsnittet och från **[!UICONTROL Audience Marketplace]**, i **[!UICONTROL Recommendations from Marketplace]** avsnittet.
+Audience Manager visar dina rekommendationer både från dina egna egenskaper, från **[!UICONTROL Recommendations]** avsnittet och från **[!UICONTROL Audience Marketplace]** i **[!UICONTROL Recommendations from Marketplace]** avsnittet.
 
 Lägg till de rekommenderade egenskaperna i ert segment för att öka er målgrupp.
 
@@ -38,11 +41,11 @@ Lägg till de rekommenderade egenskaperna i ert segment för att öka er målgru
 
 **I korthet:**
 
-* Audience Manager visar förstapartsdrag i [!UICONTROL Recommendations] sektionen. Marketplace-rekommendationer från offentliga och privata feeds som du inte prenumererar på visas i [!UICONTROL Recommendations from Marketplace] avsnittet. Klicka på feed-namnet för att gå till [!UICONTROL Audience Marketplace] och prenumerera.
-* Audience Manager visar högst femtio egenskaper som liknar de i segmentregeln.
+* Audience Manager visar egenskaper för första part i [!UICONTROL Recommendations] avsnittet. Marketplace-rekommendationer från offentliga och privata feeds som du inte prenumererar på visas i [!UICONTROL Recommendations from Marketplace] avsnittet. Klicka på feed-namnet för att gå till [!UICONTROL Audience Marketplace] och prenumerera.
+* Audience Manager visar högst femtio egenskaper som liknar den i segmentregeln.
 * Du kan filtrera bort de datakällor som du inte vill se några rekommendationer från.
-* Vid beräkning av likheter betraktar Audience Manager [UUID](../../reference/ids-in-aam.md) som kvalificerat sig för trait under de senaste 30 dagarna.
-* Om felmeddelandet&quot;Inga liknande egenskaper hittades. Trait(s) kan vara för nytt.&quot;, det betyder att det inte har funnits någon aktivitet för den egenskapen under de senaste 30 dagarna, eller att Audience Manager ännu inte har uppdaterat rekommendationerna för den egenskapen. Försök igen om 24 timmar.
+* Vid beräkning av likheter anser Audience Manager att [UUID](../../reference/ids-in-aam.md) som är kvalificerade för egenskapen under de senaste 30 dagarna.
+* Om felmeddelandet&quot;Inga liknande egenskaper hittades. Trait(s) kan vara för nytt.&quot;, vilket innebär att det inte har förekommit någon aktivitet för den egenskapen under de senaste 30 dagarna, eller att Audience Manager ännu inte har uppdaterat rekommendationerna för den egenskapen. Försök igen om 24 timmar.
 
 ## Användningsexempel
 
@@ -109,7 +112,7 @@ När du skapar eller redigerar ett segment i [Segment Builder](segment-builder.m
    >De utelämnade datakällorna visas alldeles ovanför listan med rekommenderade egenskaper. Klicka på **X** i den grå rutan om du vill ta bort undantagen och se resultaten från respektive datakälla igen.
 1. Om du vill lägga till rekommenderade egenskaper i segmentlinjen klickar du på **+** -symbolen.
 
-När du skapar eller redigerar ett segment och lägger till ett drag i segmentregeln, visas maximalt femtio rekommenderade egenskaper, liknande den som du har lagt till. Om segmentregeln innehåller mer än ett drag, använder Audience Manager en runda banderollmetod för att visa den bästa matchningen för varje egenskap, den näst bästa matchningen för varje egenskap och så vidare, för de största femtio egenskaperna per population, i segmentregeln.
+När du skapar eller redigerar ett segment och lägger till ett drag i segmentregeln, visas maximalt femtio rekommenderade egenskaper, liknande den som du har lagt till. Om segmentregeln innehåller mer än ett drag, använder Audience Manager en runda rader-metod för att visa den bästa matchningen för varje egenskap, den näst bästa matchningen för varje egenskap och så vidare, för de största femtio egenskaperna per population, i segmentregeln.
 
 ![Tre baslinjer](assets/three-base-traits.png)
 
@@ -139,7 +142,7 @@ När du klickar på ett spår från första part öppnas ett popup-fönster, vil
 
 ## Så här fungerar det
 
-För att kunna ta fram rekommendationer för egenskaper beräknar Audience Manager [Jaccard-likheterna](https://en.wikipedia.org/wiki/Jaccard_index) mellan målegenskapen och alla andra egenskaper som kontot har tillgång till, inklusive data från tredje part. Audience Manager visar sedan upp till femtio egenskaper med den största likheten.
+För att kunna ta fram rekommendationer för egenskaper beräknar Audience Manager [Jaccard-likheterna](https://en.wikipedia.org/wiki/Jaccard_index) mellan målegenskapen och alla andra egenskaper som ditt konto har tillgång till, inklusive data från tredje part. Audience Manager visar sedan upp till femtio egenskaper med den största likheten.
 
 ## Spåra likhetsresultat {#trait-similarity-score}
 
@@ -186,5 +189,5 @@ Läs mer om [!UICONTROL RBAC] kontroller [här](../administration/administration
 
 ## Begränsningar
 
-* Audience Manager visar för närvarande inte mappegenskaper som rekommenderade egenskaper. Läs mer om mappegenskaper [här](../traits/manage-folder-traits.md).
+* I Audience Manager visas för närvarande inte mappegenskaper som rekommenderade egenskaper. Läs mer om mappegenskaper [här](../traits/manage-folder-traits.md).
 * När Trait Recommendations visas tar Audience Manager inte hänsyn till [!DNL Boolean] operatorer ([!DNL AND], [!DNL OR], [!DNL NOT]) i segmentreglerna.
