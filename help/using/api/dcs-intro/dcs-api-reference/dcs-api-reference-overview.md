@@ -3,8 +3,9 @@ description: Konceptuell information, beskrivningar och definitioner för DCS AP
 seo-description: Konceptuell information, beskrivningar och definitioner för DCS API-kod, metoder och processer i Adobe Audience Manager (AAM).
 seo-title: API-referens för DCS i Adobe Audience Manager (AAM)
 title: API-referens för DCS - översikt
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 0869e016d7f80710cb194449c48675b82fdfa865
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
