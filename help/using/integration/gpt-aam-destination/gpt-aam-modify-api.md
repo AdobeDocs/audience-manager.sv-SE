@@ -5,8 +5,9 @@ seo-title: Ändra GPT-API-anropet setTargeting
 solution: Audience Manager
 title: Ändra GPT-API-anropet setTargeting
 uuid: 0cd38f30-5d29-4511-a779-d32587f1dafb
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 Lägg till en if-sats för att kontrollera om det finns Audience Manager-cookies innan du anropar [!DNL Google Publisher Tag]`.setTargeting` metoden.
 
-## Check for Audience Manager Cookies With an `IF` Statement
+## Sök efter Audience Manager Cookies med en `IF` programsats
 
 Metoden hämtar data från målcookien för Audience Manager och den unika användar-ID-cookien ( `.setTargeting` `aam_uuid`). Om `.setTargeting` anropas innan dessa cookies [!UICONTROL DIL] skrivs, eller om cookies är tomma, kan du se fel när sidan läses in. Du kan undvika detta genom att omsluta metoden i en `.setTargeting` `if` programsats som söker efter dessa cookies. Om de inte är angivna förhindrar den här programsatsen `.setTargeting` att anropa `AamGpt` funktionen.
 
