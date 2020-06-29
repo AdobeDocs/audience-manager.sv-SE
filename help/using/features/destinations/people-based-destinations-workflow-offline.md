@@ -4,8 +4,12 @@ seo-description: 'Den här sidan innehåller stegvisa anvisningar om hur du skap
 seo-title: Arbetsflöde B - Personalisering baserad på data som bara är offline
 solution: Audience Manager
 title: Arbetsflöde B - Personalisering baserad på data som bara är offline
+feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 4%
 
 ---
 
@@ -19,17 +23,17 @@ Den här sidan innehåller stegvisa anvisningar om hur du skapar målgruppssegme
 
 ## Steg 1 - Onboard Offline Traits {#step-1-onboard-traits}
 
-Det första steget för att skapa målgruppssegment i det här scenariot är att föra över era offlinekunddata till Audience Manager.
+Det första steget för att skapa målgruppssegment i det här scenariot är att föra in kunddata offline i Audience Manager.
 
 >[!IMPORTANT]
 >
-> Innan du fortsätter måste du se till att kundaktiviteten du är på väg att anställa redan har definierats i Audience Manager med motsvarande [introduktionsegenskaper](../traits/trait-and-segment-qualification-reference.md).
+> Innan du fortsätter måste du se till att kundaktiviteten som du är på väg att anställa redan är definierad i Audience Manager med motsvarande [kundegenskaper](../traits/trait-and-segment-qualification-reference.md).
 
-Oavsett om dina befintliga kund-ID:n för Audience Manager ([DPUID](../../reference/ids-in-aam.md)) är hashas-e-postmeddelanden eller inte, måste du utföra trait onboarding mot datakällan som innehåller dina [DPUID](../../reference/ids-in-aam.md).
+Oavsett om dina befintliga kund-ID:n för Audience Manager ([DPUID](../../reference/ids-in-aam.md)) är hash-kodade e-postmeddelanden eller inte, måste du utföra trait onboarding mot den datakälla som innehåller dina [DPUID](../../reference/ids-in-aam.md).
 
 ### Exempel
 
-Du vill kvalificera kund-ID:n från tabellen nedan för motsvarande anpassade ID:n. Låt oss tänka på att dina [DPUUID](../../reference/ids-in-aam.md) lagras i en datakälla med ID 999999, och att din Audience Manager Partner-ID är 123.
+Du vill kvalificera kund-ID:n från tabellen nedan för motsvarande anpassade ID:n. Låt oss tänka på att dina [DPUUID](../../reference/ids-in-aam.md) lagras i en datakälla med ID 999999, och att ditt Audience Manager partner-ID är 123.
 
 | Kund-ID (DPUID) | ID för introduktionstrafik |
 | -------------------------------------- | ------------------- |
@@ -71,7 +75,7 @@ I det här fallet måste du märka motsvarande datakälla som sådan:
 
 I det här fallet måste du skapa en ny datakälla för olika enheter som lagrar dina hashade e-postadresser. Så här gör du:
 
-1. Logga in på ditt Audience Manager-konto och gå till **[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]** och klicka **[!UICONTROL Add New]**.
+1. Logga in på ditt Audience Manager-konto, gå till **[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]** och klicka på **[!UICONTROL Add New]**.
 1. Ange en **[!UICONTROL Name]** och **[!UICONTROL Description]** en ny datakälla.
 1. In the **[!UICONTROL ID Type]** drop-down menu, select **[!UICONTROL Cross Device]**.
 1. Markera både **[!UICONTROL Data Source Settings]** och **[!UICONTROL Inbound]** alternativ i **[!UICONTROL Outbound]** avsnittet och aktivera **[!UICONTROL Share associated cross-device IDs in people-based destinations]** alternativet.
@@ -84,7 +88,7 @@ I det här fallet måste du skapa en ny datakälla för olika enheter som lagrar
 
    >[!NOTE]
    >
-   > Se [Data Onboarding](people-based-destinations-prerequisites.md#data-onboarding) för vanliga frågor om hur du ska överföra offlinedata till Audience Manager för personbaserade destinationer.
+   > Se [Datainhämtning](people-based-destinations-prerequisites.md#data-onboarding) för vanliga frågor om hur du ska överföra offlinedata till Audience Manager för personbaserade destinationer.
 
 I videon nedan finns en videosjälvstudiekurs om hur du skapar en datakälla för [!UICONTROL People-Based Destinations].
 
@@ -151,7 +155,7 @@ Nästa steg är att skapa en ny sammanfogningsregel som hjälper dig att skapa m
 
 Om du vill skapa nya segment från data som bara är offline använder du [Segment Builder](../segments/segment-builder.md) och ser till att du använder den nya profilsammanfogningsregeln som du skapade i föregående steg när du skapade segmentet.
 
-## Steg 6 - Konfigurera personbaserad plattformsautentisering {#configure-authentication}
+## Steg 6 - Konfigurera personbaserad Platform-autentisering {#configure-authentication}
 
 1. Logga in på ditt Audience Manager-konto och gå till **[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**. Om du har en tidigare konfigurerad integrering med en social plattform bör du se den här sidan. I annat fall är sidan tom.
    ![personbaserad integration](assets/pbd-config.png)
@@ -159,8 +163,8 @@ Om du vill skapa nya segment från data som bara är offline använder du [Segme
 1. Använd den **[!UICONTROL People-Based Platform]** nedrullningsbara menyn för att välja den plattform som du vill konfigurera integreringen med.
    ![personbaserad-plattform](assets/pbd-add.png)
 1. Klicka **[!UICONTROL Confirm]** för att omdirigeras till autentiseringssidan för den valda plattformen.
-1. När du har autentiserat dig för ditt konto för sociala plattformar omdirigeras du till Audience Manager där du bör se dina associerade annonskonton. Välj det annonserarkonto som du vill använda och klicka på **[!UICONTROL Confirm]**.
-1. Audience Manager visar ett meddelande högst upp på sidan för att tala om för dig om kontot har lagts till eller inte. I meddelandet kan du även lägga till en e-postadress för kontakt för att få meddelanden när autentiseringen för den sociala plattformen håller på att gå ut.
+1. När du har autentiserat dig på ditt konto för sociala plattformar omdirigeras du till Audience Manager där du ska se dina associerade annonskonton. Välj det annonserarkonto som du vill använda och klicka på **[!UICONTROL Confirm]**.
+1. Audience Manager visar ett meddelande högst upp på sidan för att tala om för dig om kontot har lagts till. I meddelandet kan du även lägga till en e-postadress för kontakt för att få meddelanden när autentiseringen för den sociala plattformen håller på att gå ut.
 
 >[!IMPORTANT]
 >
