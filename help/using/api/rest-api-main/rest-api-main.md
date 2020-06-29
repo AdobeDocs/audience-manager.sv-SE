@@ -5,8 +5,9 @@ seo-title: REST API:er
 solution: Audience Manager
 title: REST API:er
 uuid: f575c8dd-7381-4b55-8228-26eb87fbef64
+feature: API
 translation-type: tm+mt
-source-git-commit: 620730ab1596d4777a768de4453b73538671279d
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
