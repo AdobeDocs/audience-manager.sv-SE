@@ -1,20 +1,24 @@
 ---
-description: Med DIL-API:erna på instansnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
+description: Med DIL-API:erna på förekomstnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 keywords: create traits;create trait
-seo-description: Med DIL-API:erna på instansnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
+seo-description: Med DIL-API:erna på förekomstnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 seo-title: DIL-metoder på förekomstnivå
 solution: Audience Manager
 title: DIL-metoder på förekomstnivå
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1105'
+ht-degree: 0%
 
 ---
 
 
 # DIL-metoder på förekomstnivå{#instance-level-dil-methods}
 
-Med [!UICONTROL DIL] API:erna på instansnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
+Med [!UICONTROL DIL] API:erna på förekomstnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 
 ## Komma igång med DIL-metoder på förekomstnivå {#get-started-dil-methods}
 
@@ -26,7 +30,7 @@ c_api_overview.xml
 
 När du arbetar med [!UICONTROL DIL] API:er på förekomstnivå:
 
-* Åtkomst kräver ett partnernamn och ett behållarnamnområdes-ID (NSID). Kontakta din Audience Manager-kontohanterare för att få den här informationen.
+* Åtkomst kräver ett partnernamn och ett behållarnamnområdes-ID (NSID). Kontakta din kontoansvarige på Audience Manager för att få denna information.
 * Ersätt valfri *kursiv* text i API-dokumentationen med värde, ID eller annan variabel enligt den metod du arbetar med.
 
 <!-- 
@@ -721,6 +725,6 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >* [Prefixkrav för nyckelvariabler](../features/traits/trait-variable-prefixes.md)
 >* [Synkroniseringsfunktioner i Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
 >* [DIL skapa](../dil/dil-class-overview/dil-create.md#dil-create)
->* [Adobe Experience Platform Identity Service: AnvändCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
+>* [Identitetstjänst för Adobe Experience Platform: AnvändCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
 >* [CORS-stöd i Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
 
