@@ -4,8 +4,12 @@ seo-description: På landningssidan Mål visas alla dina URL-, cookie- och serve
 seo-title: Hantera mål
 solution: Audience Manager
 title: Hantera mål
+feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +26,7 @@ På [!UICONTROL Destination] landningssidan visas alla mål för din [!DNL URL]c
 Standardlandningssidan visar dina destinationer baserat på typ. Du kan filtrera destinationerna med hjälp av de fyra flikarna:
 
 * **Alla**: visar alla typer av destinationer.
-* **Adobe Experience Cloud**: visar mål som skickar data till andra Adobe Experience Cloud-lösningar. För närvarande är Adobe Analytics det enda alternativ som stöds. Se [Konfigurera ett analysmål](/help/using/features/destinations/create-analytics-destination.md).
+* **Adobe Experience Cloud**: visar mål som skickar data till andra Adobe Experience Cloud-lösningar. För närvarande är Adobe Analytics det enda alternativ som stöds. Se [Konfigurera ett Analytics-mål](/help/using/features/destinations/create-analytics-destination.md).
 * **Integrerade plattformar**: visar personbaserade och enhetsbaserade mål (även namngivna server-till-server-mål).
 * **Anpassad**: visar mål för cookie och URL.
 
