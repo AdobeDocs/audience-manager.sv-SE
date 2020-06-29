@@ -7,8 +7,9 @@ solution: Audience Manager
 title: Adresserbara målgrupper
 topic: DIL API
 uuid: 3eb1335a-6949-452b-b77a-697c22856cb3
+feature: Match Rates
 translation-type: tm+mt
-source-git-commit: 620730ab1596d4777a768de4453b73538671279d
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1824'
 ht-degree: 0%
