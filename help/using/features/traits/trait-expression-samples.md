@@ -5,8 +5,12 @@ seo-title: Exempeluttryck med booleska operatorer och jämförelseoperatorer
 solution: Audience Manager
 title: Exempeluttryck med booleska operatorer och jämförelseoperatorer
 uuid: ee74c376-2099-4816-8694-43f58845a0ac
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 92b75773d2bbe2f635d84bd5bffe625d2023b6cf
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 
