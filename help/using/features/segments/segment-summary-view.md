@@ -6,8 +6,9 @@ solution: Audience Manager
 title: Sidan Segmentinformation
 uuid: e844e423-9701-42d4-9ba5-d82f41358adc
 keywords: identity type breakdown, identity breakdown, audience identity reporting, cross-device, cross-device ID, device ID
+feature: Segments
 translation-type: tm+mt
-source-git-commit: 3b56d7ecdef4375bf3b007fa9b325618c701c174
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -27,7 +28,7 @@ Detaljsidan för ett enskilt segment innehåller en översikt över segmentinfor
 2. **[!UICONTROL Edit]**: Använd det här alternativet om du vill ändra konfigurationen för det aktuella segmentet.
 3. **[!UICONTROL Duplicate]**: Använd det här alternativet om du vill skapa en kopia av det aktuella segmentet.
 4. **[!UICONTROL Delete]**: Använd det här alternativet om du vill ta bort det aktuella segmentet från ditt Audience Manager-konto.
-5. **[!UICONTROL Marketplace Recommendations]**: Använd det här alternativet för att hitta liknande segment som den du visar, från [!UICONTROL Audience Marketplace] dataflöden som du inte prenumererar på. Se [Audience Marketplace for Data Buyers](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) om du vill veta hur du navigerar på Marketplace och hittar liknande segment.
+5. **[!UICONTROL Marketplace Recommendations]**: Använd det här alternativet för att hitta liknande segment som den du visar, från [!UICONTROL Audience Marketplace] dataflöden som du inte prenumererar på. Se [Audience Marketplace för datainköpare](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) om du vill veta hur du navigerar på Marketplace och hittar liknande segment.
 
 ![grundläggande segmentinformation](assets/basic-segment-information.png)
 
@@ -46,7 +47,7 @@ Under segmenthanteringsverktygen finns följande segmentinformation:
 
    >[!NOTE]
    >
-   >Audience Manager visar bara rapporten om du har ett enhets-ID som är kvalificerat för segmentet [!UICONTROL Identity Type Breakdown] .
+   >Audience Manager visar bara [!UICONTROL Identity Type Breakdown] rapporten om du har ett ID för olika enheter som är kvalificerat för segmentet.
 
    I videon nedan visas en översikt över [!UICONTROL Identity Type Breakdown].
    >[!VIDEO](https://video.tv.adobe.com/v/27977/)
