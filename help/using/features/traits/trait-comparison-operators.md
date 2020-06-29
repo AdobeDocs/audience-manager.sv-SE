@@ -5,8 +5,12 @@ seo-title: Arbeta med jämförelseoperatorer i Trait Builder
 solution: Audience Manager
 title: Arbeta med jämförelseoperatorer i Trait Builder
 uuid: 41bec3b3-e5df-4a6f-abb0-80ce4c75f5e7
+feature: Traits
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 0%
 
 ---
 
