@@ -6,8 +6,12 @@ seo-title: Skapa en algoritmisk modell
 solution: Audience Manager
 title: Skapa en algoritmisk modell
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
+feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +27,7 @@ Beskriver de obligatoriska och valfria stegen som du kan använda för att skapa
 >[!NOTE]
 >
 >* Modelleringsprocessen körs bara en gång om du skapar en modell och inte skapar några egenskaper med den.
->* Skapa modeller från datakällor som innehåller meningsfull information. Modeller med otillräckliga data kommer att köras, men returnerar inga resultat.
+>* Skapa modeller från datakällor som innehåller meningsfull information. Modeller med otillräckliga data kommer att köras, men de kommer inte att returnera några resultat.
 >* *Skapa inte* modeller med andra algoritmiska egenskaper eller segment.
 >* Det automatiska e-postmeddelandet skickas endast en gång (efter den första datakörningen).
 
