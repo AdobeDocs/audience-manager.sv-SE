@@ -5,8 +5,9 @@ seo-title: Felkoder, meddelanden och exempel för DCS
 solution: Audience Manager
 title: Felkoder, meddelanden och exempel för DCS
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
+feature: DCS
 translation-type: tm+mt
-source-git-commit: ff245c2cca417e9b1fd51460ddbadd25d5696006
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1509'
 ht-degree: 1%
