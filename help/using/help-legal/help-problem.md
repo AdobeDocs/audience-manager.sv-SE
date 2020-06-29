@@ -4,8 +4,12 @@ seo-description: Kundtjänst är redo att hjälpa dig att lösa eventuella probl
 seo-title: Om det finns ett problem
 solution: Audience Manager
 title: Om det finns ett problem
+feature: Support
 translation-type: tm+mt
-source-git-commit: 0b32a48e99b35990dc7ccdcc03fcc68ba769d93e
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 0%
 
 ---
 
@@ -49,12 +53,12 @@ Ha följande information till hands innan du kontaktar oss.
    <td colname="col2"> <p>Ange: </p> <p> 
      <ul id="ul_6ACF6EF2165C4041A891FF36D78BBA63"> 
       <li id="li_86573CAAE8454BE6BDF44F9A8281FF95">Företagsnamn. </li> 
-      <li id="li_8259BB738BA84A13982A8E84BCF56B2A"><span class="keyword"> Audience Manager</span> -underdomän (om den är känd). Underdomänen är URL:en till den domän som skickar datainsamlingshändelser till <span class="keyword"> Adobe</span> (t.ex. <code>https://<i>myCompany</i>.demdex.net</code>). </li> 
+      <li id="li_8259BB738BA84A13982A8E84BCF56B2A"><span class="keyword"> Audience Manager</span> subdomän (om känd). Underdomänen är URL:en till den domän som skickar datainsamlingshändelser till <span class="keyword"> Adobe</span> (t.ex. <code>https://<i>myCompany</i>.demdex.net</code>). </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Steg som ska återskapas</b> </p> </td> 
-   <td colname="col2"> <p>Inkludera så detaljerad information som möjligt, inklusive URL:er som behövs för att duplicera problemet samt det förväntade resultatet. Beskrivningen bör innehålla tillräckligt många detaljer för att någon som inte känner till <span class="keyword"> Audience Manager</span> ska kunna följa dina steg eller procedurer och återskapa problemet. </p> </td> 
+   <td colname="col2"> <p>Inkludera så detaljerad information som möjligt, inklusive URL:er som behövs för att duplicera problemet samt det förväntade resultatet. Beskrivningen bör innehålla så detaljerad information att någon som inte är bekant med <span class="keyword"> Audience Manager</span> kan följa dina steg eller procedurer och återskapa problemet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Prioritet</b> </p> </td> 
@@ -73,7 +77,7 @@ Ha följande information till hands innan du kontaktar oss.
 
 ## Vid ett utbrott {#outage}
 
-Om du misstänker ett driftstopp ska du först kontrollera [Experience Cloud System Status-sidan](https://status.adobe.com) ( [!DNL https://status.adobe.com]). Här finns en lista över alla driftavbrott, incidenter och underhåll för Experience Cloud Solutions, inklusive Audience Manager, samt de senaste uppdateringarna från vårt Tech Ops-team. Om du fortfarande behöver hjälp, se till att du vet följande, förutom den information som listas ovan, när du kontaktar Kundtjänst:
+Om du misstänker ett driftstopp ska du först kontrollera [Experience Cloud systemstatus-sidan](https://status.adobe.com) ( [!DNL https://status.adobe.com]). Här finns information om alla driftavbrott, incidenter och underhåll för Experience Cloud Solutions, inklusive Audience Manager, och senaste uppdateringar från vårt Tech Ops-team. Om du fortfarande behöver hjälp, se till att du vet följande, förutom den information som listas ovan, när du kontaktar Kundtjänst:
 
 * Tidsavbrott påbörjades
 * Förklaring av vad som händer
