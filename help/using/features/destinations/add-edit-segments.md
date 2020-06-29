@@ -1,11 +1,15 @@
 ---
 description: Dataexportetiketter fungerar med de exportkontroller du anger för en datakälla. Dataexportetiketter förhindrar att du lägger till begränsade egenskaper i ett segment och skickar segmentdata till ett mål. Du kan ange flera exportetiketter till en ny eller befintlig cookie eller URL-adress.
 seo-description: Dataexportetiketter fungerar med de exportkontroller du anger för en datakälla. Dataexportetiketter förhindrar att du lägger till begränsade egenskaper i ett segment och skickar segmentdata till ett mål. Du kan ange flera exportetiketter till en ny eller befintlig cookie eller URL-adress.
-seo-title: Lägg till dataexportkontroller till ett mål
+seo-title: Lägg till eller redigera segment för server-till-server-mål
 solution: Audience Manager
-title: Lägg till dataexportkontroller till ett mål
+title: Lägg till eller redigera segment för server-till-server-mål
+feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: 96bf2e5fe403a550a4c1cc290381d2705629dbd3
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 0%
 
 ---
 
