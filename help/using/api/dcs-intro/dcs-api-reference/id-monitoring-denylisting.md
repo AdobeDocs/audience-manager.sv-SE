@@ -6,8 +6,9 @@ seo-title: ID-övervakning och Neka-lista
 solution: Audience Manager
 title: ID-övervakning och Neka-lista
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
