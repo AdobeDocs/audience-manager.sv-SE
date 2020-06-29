@@ -4,8 +4,9 @@ seo-description: 'Nedan finns en översikt över de kundkrav du måste uppfylla 
 seo-title: Krav och överväganden för personbaserade destinationer
 solution: Audience Manager
 title: Förutsättningar och överväganden
+feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: 02bde5060d50ba581937c504331397dfbbcdc19f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 0%
