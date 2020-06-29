@@ -5,8 +5,12 @@ seo-title: Mappa segment till ett mål
 solution: Audience Manager
 title: Mappa segment till ett mål
 uuid: 35358ace-3082-4e86-a6eb-d77281af6d7e
+feature: API
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 0%
 
 ---
 
