@@ -5,8 +5,12 @@ seo-title: Regler för profilsammanslagning och icke-segmenteringsprocesser för
 solution: Audience Manager
 title: Regler för profilsammanslagning och icke-segmenteringsprocesser för enheter
 uuid: b61c6de3-5fe4-4892-a05a-96a4cb35af34
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '503'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +45,7 @@ Som en påminnelse [!UICONTROL Device Options] är de tillgängliga i avsnittet 
 >[!NOTE]
 >
 >**100-enhetsgräns för utvärdering och diskvalificering**av segment.
->Audience Manager sammanfogar upp till 100 enheter när segment utvärderas med en profilsammanfogningsregel som använder ett enhetsdiagram. Audience Manager utvärderar den aktuella enheten och upp till 99 enheter som är länkade till den aktuella enheten med en [autentiserad profil](../../reference/visitor-authentication-states.md) (enhets-ID). Om signalen för att dela upp segment skickas tas den aktuella enheten och ytterligare enheter bort från segmentet i målet.
+>Audience Manager sammanfogar upp till 100 enheter när segment utvärderas med en profilsammanfogningsregel som använder ett enhetsdiagram. Audience Manager utvärderar den aktuella enheten och upp till 99 enheter som är länkade till den aktuella enheten med en [autentiserad profil](../../reference/visitor-authentication-states.md) (ID för olika enheter). Om signalen för att dela upp segment skickas tas den aktuella enheten och ytterligare enheter bort från segmentet i målet.
 
 ![](assets/last-device-graph.png)
 
