@@ -5,8 +5,9 @@ seo-title: Målmakron definierade
 solution: Audience Manager
 title: Målmakron definierade
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
+feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: da0eb0244fc3ae158fa151727f4253625dcff2c4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 0%
@@ -44,12 +45,12 @@ När du skapar ett [!DNL URL] mål kan du infoga följande makron i [!DNL URL] s
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>%dpid_<i>data source id</i>%</code> </p> </td> 
-   <td colname="col2"> <p>ID:t för <i>datakällan</i> motsvarar identifieraren för en datakälla som skickas till makrot. </p> <p>Låt oss titta på hur detta fungerar i ett enkelt exempel. I det här fallet har vi en <span class="keyword"> Audience Manager</span> -partner med följande ID:n och villkor: </p> 
+   <td colname="col2"> <p>ID:t för <i>datakällan</i> motsvarar identifieraren för en datakälla som skickas till makrot. </p> <p>Låt oss titta på hur detta fungerar i ett enkelt exempel. I det här fallet har vi en <span class="keyword"> Audience Manager</span> partner med följande ID:n och villkor: </p> 
     <ul id="ul_697508B437EB4090B121AFA5D519AFBE"> 
      <li id="li_32D9F72A7D1543A892DC7E1529E98A96">Datakällans ID: <code> 1</code> </li> 
      <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">Ett internt kund-ID: <code> CustomerABC</code> </li> 
      <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">Deklarerat ID: Partnern vill skicka in dessa värden som deklarerat ID <code> 1:CustomerABC</code>. </li> 
-    </ul> <p>Om du vill göra det med <code>%dpid_<i>data source id</i>%</code>programmet formaterar <span class="keyword"> Audience Manager</span> -partnern makrot så här: </p> 
+    </ul> <p>För att göra detta med <code>%dpid_<i>data source id</i>%</code>makrot skulle <span class="keyword"> Audience Manager</span> -partnern formatera makrot så här: </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
     </ul> <p>Makrot ersätts <code> 1</code> med <code> CustomerABC</code>. </p> <p> 
@@ -59,11 +60,11 @@ När du skapar ett [!DNL URL] mål kan du infoga följande makron i [!DNL URL] s
   </tr> 
   <tr>
     <td><p><code>${GDPR}</code></p></td>
-    <td><p>Anger om GDPR-reglerna gäller för besökaren eller inte. Använd det här makrot för att inkludera samtycke i segment som skickas till URL-adresser som är integrerade med IAB. Mer information finns i Plugin-programmet <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF</a> .</p></td>
+    <td><p>Anger om GDPR-reglerna gäller för besökaren eller inte. Använd det här makrot för att inkludera samtycke i segment som skickas till URL-adresser som är integrerade med IAB. Mer information finns i <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager-plugin-programmet för IAB TCF</a> .</p></td>
   </tr>
    <tr>
     <td><code>${GDPR_CONSENT_XXXX}</code></p></td>
-    <td><p>Medgivandesträngen (inklusive IAB-leverantörs-ID) som samlas in när besökare ger eller nekar samtycke på din webbplats. Använd det här makrot för att inkludera medgivandesträngen i segment som skickas till URL-mål som är integrerade med IAB. Ersätt <code>XXXX</code> med målpartner-ID:t. Mer information finns i Plugin-programmet <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF</a> . </p></td>
+    <td><p>Medgivandesträngen (inklusive IAB-leverantörs-ID) som samlas in när besökare ger eller nekar samtycke på din webbplats. Använd det här makrot för att inkludera medgivandesträngen i segment som skickas till URL-mål som är integrerade med IAB. Ersätt <code>XXXX</code> med målpartner-ID:t. Mer information finns i <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager-plugin-programmet för IAB TCF</a> . </p></td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> %http_proto%</code> </p> </td> 
