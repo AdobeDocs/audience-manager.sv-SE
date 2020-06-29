@@ -5,8 +5,9 @@ seo-title: Innehållssyntax för inkommande datafil, ogiltiga tecken, variabler 
 solution: Audience Manager
 title: Innehållssyntax för inkommande datafil, ogiltiga tecken, variabler och exempel
 uuid: 88699b29-1502-4183-a9a4-be70692a02bb
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 620730ab1596d4777a768de4453b73538671279d
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 0%
@@ -457,7 +458,7 @@ Använd [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] kvalificerings
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
 ```
 
-### Exempel 15 {#example-14}
+### Exempel 14 {#example-14}
 
 Används [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] diskvalificeringsinformation för [!DNL DPUUIDs].
 
