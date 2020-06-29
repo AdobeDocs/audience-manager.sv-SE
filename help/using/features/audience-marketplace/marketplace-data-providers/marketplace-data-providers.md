@@ -2,18 +2,22 @@
 description: Översikt och arbetsflöde för dataleverantörer som vill sälja data inifrån Audience Manager.
 keywords: Google analytics
 seo-description: Översikt och arbetsflöde för dataleverantörer som vill sälja data inifrån Audience Manager.
-seo-title: Audience Marketplace for Data Providers
+seo-title: Audience Marketplace för dataleverantörer
 solution: Audience Manager
-title: Audience Marketplace for Data Providers
+title: Audience Marketplace för dataleverantörer
 topic: DIL API
 uuid: 80e60d33-63e7-496c-82c5-205ecf0ec03a
+feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
 
-# Audience Marketplace for Data Providers {#audience-marketplace-for-data-providers}
+# Audience Marketplace för dataleverantörer {#audience-marketplace-for-data-providers}
 
 Översikt och arbetsflöde för dataleverantörer som vill sälja data inifrån [!DNL Audience Manager].
 
