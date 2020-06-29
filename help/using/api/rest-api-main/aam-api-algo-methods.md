@@ -6,8 +6,12 @@ seo-title: Algoritmiska API-metoder
 solution: Audience Manager
 title: Algoritmiska API-metoder
 uuid: 8d5304d7-c1cf-42df-94e7-3f583944bd62
+feature: API
 translation-type: tm+mt
-source-git-commit: 0fea73016eeed5d6fb5c8614d543a0a21638b25e
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 0%
 
 ---
 
@@ -20,5 +24,5 @@ Metoder som gör att du kan arbeta programmatiskt med algoritmisk modellering.
 >
 >De algoritmiska modellmetoderna [!DNL API] har skrivits om med [!DNL Swagger] och migrerats. Se:
 >
->* [API-dokument för Adobe Audience Manager](https://bank.demdex.com/portal/swagger/index.html)
+>* [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html)
 >* [API-kodmigrering för Audience Manager](../../api/api-swagger-migration.md)
