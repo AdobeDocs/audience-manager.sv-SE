@@ -1,20 +1,24 @@
 ---
-description: Inköpare av data på Audience Marketplace samtycker till att rapportera alla annonsvisningar som betjänas med hjälp av egenskaper som ingår i dataflödet till ett pris per tusen reklamvisningar (CPM). CPM-användningen ska användas den 5:e dagen i varje kalendermånad och inkluderar data för föregående månad. Avgiftsbelagda abonnenter behöver inte rapportera användningen.
-seo-description: Inköpare av data på Audience Marketplace samtycker till att rapportera alla annonsvisningar som betjänas med hjälp av egenskaper som ingår i dataflödet till ett pris per tusen reklamvisningar (CPM). CPM-användningen ska användas den 5:e dagen i varje kalendermånad och inkluderar data för föregående månad. Avgiftsbelagda abonnenter behöver inte rapportera användningen.
+description: Inköpare av datauppgifter från Audience Marketplace går med på att rapportera alla annonsvisningar som gjorts med hjälp av egenskaper som ingår i dataflödet och som prissatts på basis av en kostnad per tusen annonsvisningar (CPM). CPM-användningen ska användas den 5:e dagen i varje kalendermånad och inkluderar data för föregående månad. Avgiftsbelagda abonnenter behöver inte rapportera användningen.
+seo-description: Inköpare av datauppgifter från Audience Marketplace går med på att rapportera alla annonsvisningar som gjorts med hjälp av egenskaper som ingår i dataflödet och som prissatts på basis av en kostnad per tusen annonsvisningar (CPM). CPM-användningen ska användas den 5:e dagen i varje kalendermånad och inkluderar data för föregående månad. Avgiftsbelagda abonnenter behöver inte rapportera användningen.
 seo-title: Fakturering för köpare av dataflöden
 solution: Audience Manager
 title: Fakturering för köpare av dataflöden
 keywords: Segment-level Reporting, segment-level, segment level
 uuid: d7236667-282b-4160-9909-579721af4016
+feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: a8320894c0efcf46bd3236494e1aa7b1eded24d1
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '2027'
+ht-degree: 0%
 
 ---
 
 
 # Fakturering för köpare av dataflöden {#billing-for-data-feed-buyers}
 
-Inköpare av data på Audience Marketplace går med på att rapportera alla annonsvisningar som betjänas med hjälp av egenskaper som ingår i dataflödet till ett pris per tusen annonsvisningar ([!DNL CPM]). [!DNL CPM] ska användas den 5:e dagen i varje kalendermånad och innehåller data för föregående månad. Avgiftsbelagda abonnenter behöver inte rapportera användningen.
+Inköpare av datauppgifter från Audience Marketplace går med på att rapportera alla annonsvisningar som betjänas med hjälp av egenskaper som ingår i dataflödet och som prissätts på tusen annonsvisningar ([!DNL CPM]). [!DNL CPM] ska användas den 5:e dagen i varje kalendermånad och innehåller data för föregående månad. Avgiftsbelagda abonnenter behöver inte rapportera användningen.
 
 <br> 
 
@@ -102,7 +106,7 @@ Så här uppdaterar du [!DNL CPM] satsanvändning:
 | Hittades inte | Det [!UICONTROL Segment Level Reporting]gick inte [!DNL Audience Manager] att identifiera kombinationen [!UICONTROL Segment ID] och [!UICONTROL Destination ID] . Det [!UICONTROL Feed Level Reporting]gick [!DNL Audience Manager] till exempel inte att identifiera kombinationen [!UICONTROL Data Provider Name], [!UICONTROL Feed Name]och [!UICONTROL Use Case] . | Du kan till [!UICONTROL Segment Level Reporting]exempel kontrollera giltigheten för [!UICONTROL Segment ID] och [!UICONTROL Destination ID] kombinationen. Kontrollera till [!UICONTROL Feed Level Reporting]exempel giltigheten för [!UICONTROL Data Provider Name], [!UICONTROL Feed Name]och [!UICONTROL Use Case] kombinationen. |
 | Dubblettposter hittades | [!DNL Audience Manager] har identifierat dubblettposter med olika visningsvärden. | Granska rapporten och se till att du inte rapporterar olika användningsvärden för samma datafeed eller segment. |
 | Värden som inte stöds | [!DNL Audience Manager] icke-numeriska värden har identifierats i [!DNL Audience Manager] kolumnen. | Granska rapporten och se till att du bara anger numeriska värden i [!DNL Audience Manager] kolumnen. |
-| Sidhuvuden för obligatoriska fält saknas | [!DNL Audience Manager] saknade tabellrubriker har identifierats för obligatoriska fält. De obligatoriska [!UICONTROL Segment Level Reporting]fälten är: [!UICONTROL Segment ID], [!UICONTROL Destination ID].. De obligatoriska [!UICONTROL Feed Level Reporting]fälten är: [!UICONTROL Data Provider Name], [!UICONTROL Data Feed Name], [!UICONTROL Use Case] | Granska rapporten och kontrollera att tabellrubrikerna inte har ändrats. |
+| Sidhuvuden för obligatoriska fält saknas | [!DNL Audience Manager] saknade tabellrubriker har identifierats för obligatoriska fält. De obligatoriska [!UICONTROL Segment Level Reporting]fälten är: [!UICONTROL Segment ID], [!UICONTROL Destination ID]. De obligatoriska [!UICONTROL Feed Level Reporting]fälten är: [!UICONTROL Data Provider Name], [!UICONTROL Data Feed Name],  [!UICONTROL Use Case] | Granska rapporten och kontrollera att tabellrubrikerna inte har ändrats. |
 
 >[!NOTE]
 >Att ta bort rader från [!DNL CSV] användningsrapporten påverkar inte den befintliga användningsrapporten. [!DNL Audience Manager] bearbetar bara de fält som ingår i rapporten.
@@ -122,7 +126,7 @@ Så här uppdaterar du [!DNL CPM] satsanvändning:
   <tr> 
    <td colname="col1"> <p><b>Rapportera alltid det totala antalet visningar</b> </p> </td> 
    <td colname="col2"> <p>För CPM-inställningssummor: </p>
-   <p> Rapportera det totala antalet visningar, utan decimaler. Audience Manager beräknar automatiskt CPM-värdet baserat på det totala antal som du rapporterar.</p><p>Om du behöver rapportera 1 234 567 visningar ska du rapportera exakt så. Du behöver inte dividera det totala antalet visningar med 1 000 för att beräkna CPM.</p><p>De egenskaper som används för att optimera webb- eller appinnehåll (innehållsoptimering) med verktyg som Adobe Target eller ett analysmål bidrar inte till användningssummorna för CPM-planer. Dataleverantörerna kompenseras normalt för optimering av innehåll med hjälp av rabattplaner.</p><p>Mer information finns i <a href="#cost-attribution">Kostnadsattribuering för CPM-datafeeds</a> . </p> </td>
+   <p> Rapportera det totala antalet visningar, utan decimaler. Audience Manager beräknar automatiskt CPM-värdet baserat på det totala antal som du rapporterar.</p><p>Om du behöver rapportera 1 234 567 visningar ska du rapportera exakt så. Du behöver inte dividera det totala antalet visningar med 1 000 för att beräkna CPM.</p><p>De egenskaper som används för att optimera webb- eller appinnehåll (innehållsoptimering) med verktyg som Adobe Target eller ett Analytics-mål bidrar inte till användningssummorna för CPM-planer. Dataleverantörerna kompenseras normalt för optimering av innehåll med hjälp av rabattplaner.</p><p>Mer information finns i <a href="#cost-attribution">Kostnadsattribuering för CPM-datafeeds</a> . </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>Använd månadsvis rapportering</b> </p> </td> 
@@ -166,7 +170,7 @@ Med [!UICONTROL Activation] användningsexemplet kan du använda egenskaper i mo
 När du [rapporterar CPM-användning på dataflödesnivå](#feed-level-report)måste du tilldela visningar proportionellt för varje datafeed, enligt de [!DNL Boolean] operatorer som används i reglerna för behörighet. I följande tabell visas hur du allokerar avbildningar efter boolesk regel eller trait-typ.
 
 >[!TIP]
->[Rapportera CPM-användning på segmentnivå](#segment-level-report) så att rapportering på dataflödesnivå görs automatiskt av Audience Manager.
+>[Rapportera CPM-användning på segmentnivå](#segment-level-report) om du vill att dataflödesrapporteringen ska utföras automatiskt av Audience Manager.
 
 <table id="table_BF00FE6740D2459DAFA62F2478492586"> 
  <thead> 
