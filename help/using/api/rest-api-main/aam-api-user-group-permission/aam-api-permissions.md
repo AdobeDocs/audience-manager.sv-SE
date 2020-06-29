@@ -5,8 +5,12 @@ seo-title: API-metoder för behörighetshantering
 solution: Audience Manager
 title: API-metoder för behörighetshantering
 uuid: 111d0f92-d92c-4d4b-b0d6-10dd3fa466ad
+feature: API
 translation-type: tm+mt
-source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '110'
+ht-degree: 0%
 
 ---
 
