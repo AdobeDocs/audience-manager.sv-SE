@@ -5,8 +5,12 @@ seo-description: Beskriver de algoritmiska modeller som finns i Audience Manager
 seo-title: Översikt över algoritmiska modeller
 solution: Audience Manager
 title: Översikt över algoritmiska modeller
+feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 82e649c93664b32d62123112802fed66bbf24ae4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +19,7 @@ source-git-commit: 82e649c93664b32d62123112802fed66bbf24ae4
 
 ## Vad är algoritmisk modellering?{#what-algo-modeling}
 
-Algoritmisk modellering i Audience Manager avser användning av datavetenskap för att antingen utöka era befintliga målgrupper eller klassificera dem som personaliserade.
+Algoritmisk modellering i Audience Manager avser användningen av datavetenskap för att antingen utöka era befintliga målgrupper eller klassificera dem som personaliserade.
 
 Detta görs med hjälp av två typer av algoritmer: [!UICONTROL Look-Alike Modeling] och [!UICONTROL Predictive Audiences].
 
@@ -35,6 +39,6 @@ Mer information [!UICONTROL Look-Alike Modeling]finns i [Understanding Look-Alik
 
 I ett marknadsföringssammanhang är en person ett målgruppssegment som definieras av besökare, användare eller potentiella köpare som delar en viss uppsättning egenskaper, som demografi, surfvanor, shoppinghistorik osv.
 
-[!UICONTROL Predictive Audiences] modeller tar detta koncept ett steg längre genom att använda Audience Managers maskininlärningsfunktioner för att automatiskt klassificera okända målgrupper i distinkta personligheter. Audience Manager uppnår detta genom att beräkna hur stor benägenheten är för en uppsättning kända målgrupper.
+[!UICONTROL Predictive Audiences] modeller tar detta koncept ett steg längre genom att använda Audience Manager maskininlärningsfunktioner för att automatiskt klassificera okända målgrupper i distinkta personligheter. Audience Manager uppnår detta genom att beräkna hur känslig din okända publik är för en uppsättning kända målgrupper.
 
 Mer information [!UICONTROL Predictive Audiences]finns i [Predictive Audiences Overview](predictive-audiences.md).
