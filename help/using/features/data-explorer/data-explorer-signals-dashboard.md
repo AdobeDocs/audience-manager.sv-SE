@@ -1,18 +1,22 @@
 ---
-description: Få en översikt över de oanvända signaler som Audience Manager tagit emot under de senaste 7 dagarna och identifiera potentiella nya egenskaper. Oanvända signaler når Audience Manager från era onlineegenskaper, men används inte i dina befintliga egenskaper. Gå till Målgruppsdata > Signaler om du vill visa kontrollpanelen för signaler. Kontrollpanelen Signals visar åtgärdbara insikter baserat på dina mest aktiva oanvända signaler.
-seo-description: Få en översikt över de oanvända signaler som Audience Manager tagit emot under de senaste 7 dagarna och identifiera potentiella nya egenskaper. Oanvända signaler når Audience Manager från era onlineegenskaper, men används inte i dina befintliga egenskaper. Gå till Målgruppsdata > Signaler om du vill visa kontrollpanelen för signaler. Kontrollpanelen Signals visar åtgärdbara insikter baserat på dina mest aktiva oanvända signaler.
+description: Få en översikt över oanvända signaler som Audience Manager tagit emot under de senaste 7 dagarna och identifiera potentiella nya egenskaper. Oanvända signaler når Audience Manager från dina online-egenskaper, men används inte i dina befintliga egenskaper. Gå till Målgruppsdata > Signaler om du vill visa kontrollpanelen för signaler. Kontrollpanelen Signals visar åtgärdbara insikter baserat på dina mest aktiva oanvända signaler.
+seo-description: Få en översikt över oanvända signaler som Audience Manager tagit emot under de senaste 7 dagarna och identifiera potentiella nya egenskaper. Oanvända signaler når Audience Manager från dina online-egenskaper, men används inte i dina befintliga egenskaper. Gå till Målgruppsdata > Signaler om du vill visa kontrollpanelen för signaler. Kontrollpanelen Signals visar åtgärdbara insikter baserat på dina mest aktiva oanvända signaler.
 seo-title: Kontrollpanel för signaler
 title: Kontrollpanel för signaler
 uuid: 26f39507-097f-427d-bf5b-ab6d035c1dd2
+feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 0%
 
 ---
 
 
 # Kontrollpanel för signaler {#signals-dashboard}
 
-Få en översikt över de oanvända signaler som Audience Manager tagit emot under de senaste 7 dagarna och identifiera potentiella nya egenskaper. Oanvända signaler når Audience Manager från era onlineegenskaper, men används inte i dina befintliga egenskaper. Om du vill visa [!UICONTROL Signals Dashboard]filen går du till [!UICONTROL Audience Data] > [!UICONTROL Signals]. Här [!UICONTROL Signals Dashboard] visas åtgärdbara insikter baserat på dina mest aktiva oanvända signaler.
+Få en översikt över oanvända signaler som Audience Manager tagit emot under de senaste 7 dagarna och identifiera potentiella nya egenskaper. Oanvända signaler når Audience Manager från dina online-egenskaper, men används inte i dina befintliga egenskaper. Om du vill visa [!UICONTROL Signals Dashboard]filen går du till [!UICONTROL Audience Data] > [!UICONTROL Signals]. Här [!UICONTROL Signals Dashboard] visas åtgärdbara insikter baserat på dina mest aktiva oanvända signaler.
 
 >[!IMPORTANT]
 >
