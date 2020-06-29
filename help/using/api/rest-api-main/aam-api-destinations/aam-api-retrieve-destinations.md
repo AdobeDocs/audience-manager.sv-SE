@@ -5,8 +5,12 @@ seo-title: Returnera ett mål med mål-ID
 solution: Audience Manager
 title: Returnera ett mål med mål-ID
 uuid: abce7426-55a5-4045-93a7-0487652a7189
+feature: API
 translation-type: tm+mt
-source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 0%
 
 ---
 
