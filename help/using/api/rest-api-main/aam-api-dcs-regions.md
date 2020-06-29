@@ -5,8 +5,9 @@ seo-title: API-metoder för DCS-region
 solution: Audience Manager
 title: API-metoder för DCS-region
 uuid: 00b70927-b3b7-46bb-8be1-37c6100ecf80
+feature: API
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
