@@ -5,8 +5,12 @@ seo-title: Skapa ett GPT-mål
 solution: Audience Manager
 title: Skapa ett GPT-mål
 uuid: e3bbf327-a7e0-48da-bc84-8f531b7f6750
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: 6169e8aefc4c215c83d6229be7378f90453f19e9
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 0%
 
 ---
 
