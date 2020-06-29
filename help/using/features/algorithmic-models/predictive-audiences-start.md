@@ -3,9 +3,13 @@ description: Med prediktiva målgrupper kan ni klassificera okända målgrupper 
 seo-description: Med prediktiva målgrupper kan ni klassificera okända målgrupper i distinkta personligheter i realtid med datavetenskap.
 seo-title: Hantera prediktiva målgrupper
 solution: Audience Manager
-title: Audience Manager Predictive Audience
+title: Audience Manager prediktiva målgrupper
+feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 8259f07c91efa0efd88e8f7c87cb1829ffadd77d
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 0%
 
 ---
 
