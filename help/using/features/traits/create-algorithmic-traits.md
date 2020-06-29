@@ -5,8 +5,9 @@ seo-title: Skapa algoritmiska egenskaper
 solution: Audience Manager
 title: Skapa algoritmiska egenskaper
 uuid: 50c2d2d1-f412-479b-bb70-4f139429c388
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 62147fc719a59d2b2c7b444bce853334b03816c6
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
