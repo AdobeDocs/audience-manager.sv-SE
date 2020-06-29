@@ -6,8 +6,9 @@ solution: Audience Manager
 title: Audience Marketplace för datainköpare
 topic: DIL API
 uuid: f505b5f4-4231-4e84-993a-cd64128b540f
+feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 0%
