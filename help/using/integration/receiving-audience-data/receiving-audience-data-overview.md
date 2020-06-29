@@ -1,10 +1,14 @@
 ---
 description: Ta emot målgruppsdata från Audience Manager.
 seo-description: Ta emot målgruppsdata från Adobe Audience Manager (AAM).
-seo-title: Ta emot målgruppsdata i Adobe Audience Manager (AAM)
+seo-title: Tar emot målgruppsdata i Adobe Audience Manager (AAM)
 title: Tar emot målgruppsdata
+feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: f287244b2198eb72287359e2105d9014dd960cfb
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +19,7 @@ Ta emot målgruppsdata från Audience Manager.
 
 * [ID-synkronisering för utgående dataöverföringar](id-sync-outbound.md)
 
-   Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta Adobe Audience Manager-konsulten innan du försöker synkronisera ditt första ID.
+   Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta din Adobe Audience Manager-konsult innan du försöker synkronisera ditt första ID.
 
 * [Utgående dataöverföringar i realtid](real-time-outbound-transfers/real-time-outbound-transfers.md)
 
@@ -23,4 +27,4 @@ Ta emot målgruppsdata från Audience Manager.
 
 * [Batchutgående dataöverföringar](batch-outbound-transfers/batch-outbound-overview.md)
 
-   Audience Manager skickar batchdata till tredjepartsleverantörer enligt dessa specifikationer.
+   Audience Manager skickar batchdata till tredjepartsleverantörer av innehåll enligt dessa specifikationer.
