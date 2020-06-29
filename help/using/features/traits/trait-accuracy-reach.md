@@ -5,8 +5,12 @@ seo-title: Noggrannhet och räckvidd
 solution: Audience Manager
 title: Noggrannhet och räckvidd
 uuid: d121e099-6642-4003-ad4f-507d21e478d8
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 44bb4d511215a7bbc8889cc9518b3b5ffcb79a2a
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
