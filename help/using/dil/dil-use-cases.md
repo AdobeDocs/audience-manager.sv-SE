@@ -5,8 +5,12 @@ seo-title: DIL-användningsexempel och kodexempel
 solution: Audience Manager
 title: DIL-användningsexempel och kodexempel
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +27,7 @@ c_dil_use_case.xml
 
 ## Skicka dataelement till Audience Manager med DIL {#send-data-elements-dil}
 
-Skapa en objektvariabel som skickar information om sidelement till Audience Manager. Detta är användbart för allmän datainsamling eller som ett alternativ till att samla in data med Analytics-variabler.
+Skapa en objektvariabel som skickar information om sidelement till Audience Manager. Detta är användbart för allmän datainsamling eller som ett alternativ till datainsamling med Analytics-variabler.
 
 <!-- 
 
@@ -33,7 +37,7 @@ c_dil_send_page_objects.xml
 
 **Beskrivning**
 
-Följande kod visar hur du samlar in siddata och skickar dem till Audience Manager med [!UICONTROL DIL]. I de här exemplen används en variabel för att lagra dataelement i en platt lista eller en array. Kom ihåg att skicka in variabler som [nyckelvärdepar](../reference/key-value-pairs-explained.md). Lägg också märke till prefixet `c_` före tangenten i nyckelvärdepar. Det här [nödvändiga prefixet](../features/traits/trait-variable-prefixes.md) identifierar information som användardefinierade data. I det första exemplet måste du manuellt lägga `c_` till nyckeln. I det andra exemplet gör [!UICONTROL DIL] detta automatiskt åt dig.
+I följande kod visas hur du samlar in siddata och skickar dem till Audience Manager med [!UICONTROL DIL]. I de här exemplen används en variabel för att lagra dataelement i en platt lista eller en array. Kom ihåg att skicka in variabler som [nyckelvärdepar](../reference/key-value-pairs-explained.md). Lägg också märke till prefixet `c_` före tangenten i nyckelvärdepar. Det här [nödvändiga prefixet](../features/traits/trait-variable-prefixes.md) identifierar information som användardefinierade data. I det första exemplet måste du manuellt lägga `c_` till nyckeln. I det andra exemplet gör [!UICONTROL DIL] detta automatiskt åt dig.
 
 **Behåll konsekventa värdeegenskaper**
 
@@ -41,7 +45,7 @@ Tänk på att värdeegenskaperna förblir desamma när du skickar data. Om du ti
 
 **Exempel 1: Skicka data som nyckelvärdepar**
 
-Det här grundläggande exemplet skickar färg- och prisdata till Audience Manager i form av nyckelvärdepar. Koden kan se ut ungefär så här:
+I det här grundläggande exemplet skickas färg- och prisdata till Audience Manager i form av nyckelvärdepar. Koden kan se ut ungefär så här:
 
 <pre class="&ldquo;java&rdquo;"><code>
 var sample_dil = DIL.create({partner:"<i>partner name</i>"}); 
@@ -192,7 +196,7 @@ c_dil_map_keys.xml
 
 I ett nyckelvärdepar identifierar det prefix som är bifogat till nyckeln signalen som kunddefinierade data `c_` . Kunddefinierade data används för målanpassning på den specifika webbplats som skickade data i ett händelseanrop. Ibland vill du dock att den här informationen ska vara tillgänglig för alla egenskaper på ditt Audience Manager-konto. Det gör du genom att mappa värdet i ett `c_` nyckelvärdepar till en plattformsnivånyckel. En nyckel på plattformsnivå har prefixet `d_` och gör signalen tillgänglig för målinriktning över alla egenskaper i ditt konto.
 
-Du kan till exempel samla in ZIP-koddata från en viss webbplats men vill rikta in dem på alla egenskaper i Audience Manager. För att ZIP-koden ska vara tillgänglig på plattformsnivå kan du mappa en kunddefinierad postnummernyckel (t.ex. `c_zip`) till en plattformsdefinierad nyckel enligt nedan.
+Du kan till exempel samla in ZIP-koddata från en viss plats men vill rikta dem till alla dina Audience Manager-egenskaper. För att ZIP-koden ska vara tillgänglig på plattformsnivå kan du mappa en kunddefinierad postnummernyckel (t.ex. `c_zip`) till en plattformsdefinierad nyckel enligt nedan.
 
 **Kodexempel**
 
@@ -220,7 +224,7 @@ t_dil_google_tagmanager.xml
 
  -->
 
-I den här proceduren förutsätts att du har ett [!DNL Google Tag Manager] konto, viss kunskap om produkten och Audience Manager- `dil.js` filen.
+I den här proceduren förutsätts att du har ett [!DNL Google Tag Manager] konto, viss kunskap om produkten och din Audience Manager- `dil.js` fil.
 
 Så här kör du `dil.js` filen i GTM:
 
