@@ -5,8 +5,9 @@ seo-title: Ta emot data från DCS
 solution: Audience Manager
 title: Ta emot data från DCS
 uuid: fbb77197-8530-48a8-b708-d785f7214494
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
