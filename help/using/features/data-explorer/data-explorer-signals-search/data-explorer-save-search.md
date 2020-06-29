@@ -4,8 +4,12 @@ seo-description: Optimera signalsökningarna genom att spara upp till 10 uppsät
 seo-title: Spara sökvillkor
 title: Spara sökvillkor
 uuid: c17b26e0-f489-47c9-b41b-bf895ca9d8a5
+feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '213'
+ht-degree: 0%
 
 ---
 
