@@ -6,8 +6,9 @@ seo-title: Kunddataflöden
 solution: Audience Manager
 title: Kunddataflöden
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
+feature: Customer Data Feeds
 translation-type: tm+mt
-source-git-commit: 620730ab1596d4777a768de4453b73538671279d
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1860'
 ht-degree: 0%
@@ -247,7 +248,7 @@ I följande tabell visas och definieras elementen i ett [!UICONTROL CDF] filnamn
 
 ## [!UICONTROL Customer Data Feed] Filbearbetningsmeddelanden {#cdf-file-processing-notifications}
 
-[!DNL Audience Manager] skriver en `.info` fil till din [!DNL S3] katalog så att du vet när ( [!UICONTROL Customer Data File] ) [!UICONTROL CDF]är klar för hämtning. Filen `.info` innehåller även [!DNL JSON] formaterade metadata om innehållet i dina [!UICONTROL CDF] filer. I det här avsnittet finns information om syntaxen och fälten som används i den här meddelandefilen.
+[!DNL Audience Manager] skriver en `.info` fil till din [!DNL S3] katalog så att du vet när ( [!UICONTROL Customer Data File] )[!UICONTROL CDF]är klar för hämtning. Filen `.info` innehåller även [!DNL JSON] formaterade metadata om innehållet i dina [!UICONTROL CDF] filer. I det här avsnittet finns information om syntaxen och fälten som används i den här meddelandefilen.
 
 ## Exempelinformationsfil {#sample-info-file}
 
