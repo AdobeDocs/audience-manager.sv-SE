@@ -1,16 +1,20 @@
 ---
-description: Vanliga frågor och problem med Audience Manager.
-seo-description: Vanliga frågor och problem med Audience Manager.
+description: Vanliga Audience Manager frågor och svar.
+seo-description: Vanliga Audience Manager frågor och svar.
 seo-title: Vanliga frågor om Audience Manager
 solution: Audience Manager
 title: Vanliga frågor om Audience Manager
+feature: Overview
 translation-type: tm+mt
-source-git-commit: b22302ebf16bc71c61a974e33dc399caafb96095
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '81'
+ht-degree: 0%
 
 ---
 
 
-# Vanliga frågor om Audience Manager - översikt {#audience-manager-faq}
+# Audience Manager FAQ Overview {#audience-manager-faq}
 
 I det här avsnittet sammanställs en lista med vanliga frågor och svar för olika funktioner i Audience Manager.
 
