@@ -6,8 +6,9 @@ solution: Audience Manager
 title: Audience Lab
 topic: DIL API
 uuid: aaee820c-1e78-4fd4-bd8f-2629085d78e9
+feature: Audience Lab
 translation-type: tm+mt
-source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
