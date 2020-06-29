@@ -5,8 +5,12 @@ seo-title: Förklara segment- och anpassningstid till livstid
 solution: Audience Manager
 title: Förklara segmenttiden till Live
 uuid: 5b2c6911-50b9-4b68-9dd4-21128d112eab
+feature: Traits
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +29,7 @@ Hur egenskapsintervall [!UICONTROL time-to-live] ([!DNL TTL]) påverkar segmentm
 
 När TTL-timern ställs in [!DNL TTL] på 1 dag startar den följande dagen efter att trait-implementeringen har slutförts, utan att antalet timmar som återstår på trait-implementeringsdagen räknas.
 
-Audience Manager beräknar [!DNL TTL] utgångsdatum för traits med 1 dag [!DNL TTL] baserat på följande formel:
+Audience Manager beräknar [!DNL TTL] utgångsdatum för egenskaper med 1 dag [!DNL TTL] baserat på följande formel:
 
 `24 + (24 - Hour of the day the trait was realized, in UTC)`
 
