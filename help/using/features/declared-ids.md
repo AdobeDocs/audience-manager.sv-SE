@@ -6,8 +6,9 @@ seo-title: Deklarerade ID:n
 solution: Audience Manager
 title: Deklarerade ID:n
 uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
+feature: ID Syncs
 translation-type: tm+mt
-source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1191'
 ht-degree: 0%
@@ -67,7 +68,7 @@ Mer information om att välja bort datainsamling finns i [Dataintegritet](../ove
 
 ## [!UICONTROL Declared ID] Exempel på avanmälan {#opt-out-examples}
 
-Du kan göra en [!UICONTROL declared ID] avanmälningsbegäran med `d_cid` - och `d_cid_ic` nyckelvärdepar. Gamla parametrar som `d_dpid` och `d_dpuuid` fungerar fortfarande, men betraktas som inaktuella. Se [CID ersätter DPID och DPUUID](../reference/cid.md). I exemplen *visar kursiv* en variabelplatshållare.
+Du kan göra en [!UICONTROL declared ID] avanmälningsbegäran med `d_cid` - och `d_cid_ic` nyckelvärdepar. Gamla parametrar som `d_dpid` och `d_dpuuid` fungerar fortfarande, men anses vara föråldrade. Se [CID ersätter DPID och DPUUID](../reference/cid.md). I exemplen *visar kursiv* en variabelplatshållare.
 
 ### Avanmäl dig med [!UICONTROL CID] och [!UICONTROL CID_IC]
 
