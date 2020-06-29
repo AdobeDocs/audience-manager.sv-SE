@@ -6,8 +6,9 @@ seo-title: Aktivitetsanvändningsrapportering
 solution: Audience Manager
 title: Aktivitetsanvändningsrapportering
 topic: Activity Usage Reporting
+feature: Usage and Billing
 translation-type: tm+mt
-source-git-commit: 0869e016d7f80710cb194449c48675b82fdfa865
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
