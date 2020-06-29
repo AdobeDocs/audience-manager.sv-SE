@@ -5,8 +5,12 @@ seo-title: Integrering av mediedata
 solution: Audience Manager
 title: Integrering av mediedata
 uuid: 6f6bbd03-084b-4226-8809-3b00b467606f
+feature: Integration with Campaign
 translation-type: tm+mt
-source-git-commit: f39c8fbb8f301c3068cd6fab47def9f8e3308cad
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '105'
+ht-degree: 0%
 
 ---
 
