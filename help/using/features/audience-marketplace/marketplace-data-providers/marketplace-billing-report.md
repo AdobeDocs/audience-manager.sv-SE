@@ -1,13 +1,17 @@
 ---
-description: Generera en faktureringsrapport för Audience Marketplace om du vill visa dataflödeanvändningen för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
-seo-description: Generera en faktureringsrapport för Audience Marketplace om du vill visa dataflödeanvändningen för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
+description: Generera en faktureringsrapport för Audience Marketplace för att visa dataflödesanvändningen för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
+seo-description: Generera en faktureringsrapport för Audience Marketplace för att visa dataflödesanvändningen för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
 seo-title: Fakturering för datautmatningsleverantörer
 solution: Audience Manager
 title: Fakturering för datautmatningsleverantörer
 topic: DIL API
 uuid: 4e11dbd2-91fd-4b59-a66d-86a92e0de655
+feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '453'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +41,7 @@ En faktureringsrapport innehåller följande information.
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Dataproviderns PID</span></b> </p> </td> 
-   <td colname="col2"> <p>Ditt ID för <span class="keyword"> Audience Manager</span> -dataleverantör. </p> </td> 
+   <td colname="col2"> <p>Ditt <span class="keyword"> Audience Manager</span> -ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Dataproviderns namn</span></b> </p> </td> 
