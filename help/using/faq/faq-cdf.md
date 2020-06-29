@@ -5,8 +5,12 @@ seo-title: Vanliga frågor om kunddataflöden
 solution: Audience Manager
 title: Vanliga frågor om kunddataflöden
 uuid: 7183b3e2-e999-4e1e-892f-2bab335c13b6
+feature: Customer Data Feeds
 translation-type: tm+mt
-source-git-commit: 7018705c130bf7c65f3a69da5e4bd9e0666423bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 0%
 
 ---
 
