@@ -4,8 +4,12 @@ seo-description: 'Den här sidan innehåller stegvis vägledning om hur du kombi
 seo-title: Arbetsflöde C - Personalisering baserad på autentiserad aktivitet i kombination med offlinedata
 solution: Audience Manager
 title: Arbetsflöde C - Personalisering baserad på autentiserad aktivitet i kombination med offlinedata
+feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '918'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +29,7 @@ Beroende på om dina [DPUUID](../../reference/ids-in-aam.md) är gemener, hash-k
 
 **Scenario 1: dina[DPUID](../../reference/ids-in-aam.md)är redan små, hash-kodade e-postadresser.**
 
-I så fall går du vidare till [steg 5 - Konfigurera personbaserad plattformsautentisering](#configure-authentication).
+I så fall går du vidare till [steg 5 - Konfigurera personbaserad Platform-autentisering](#configure-authentication).
 
  
 
@@ -33,7 +37,7 @@ I så fall går du vidare till [steg 5 - Konfigurera personbaserad plattformsaut
 
 I det här fallet måste du skapa en ny datakälla för olika enheter som lagrar dina hashade e-postadresser. Så här gör du:
 
-1. Logga in på ditt Audience Manager-konto och gå till **[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]** och klicka **[!UICONTROL Add New]**.
+1. Logga in på ditt Audience Manager-konto, gå till **[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]** och klicka på **[!UICONTROL Add New]**.
 1. Ange en **[!UICONTROL Name]** och **[!UICONTROL Description]** en ny datakälla.
 1. In the **[!UICONTROL ID Type]** drop-down menu, select **[!UICONTROL Cross Device]**.
 1. Markera både **[!UICONTROL Data Source Settings]** och **[!UICONTROL Inbound]** alternativ i **[!UICONTROL Outbound]** avsnittet och aktivera **[!UICONTROL Share associated cross-device IDs in people-based destinations]** alternativet.
@@ -46,7 +50,7 @@ I det här fallet måste du skapa en ny datakälla för olika enheter som lagrar
 
    >[!NOTE]
    >
-   > Se [Data Onboarding](people-based-destinations-prerequisites.md#data-onboarding) för vanliga frågor om hur du ska överföra offlinedata till Audience Manager för personbaserade destinationer.
+   > Se [Datainhämtning](people-based-destinations-prerequisites.md#data-onboarding) för vanliga frågor om hur du ska överföra offlinedata till Audience Manager för personbaserade destinationer.
 
 I videon nedan finns en videosjälvstudiekurs om hur du skapar en datakälla för [!UICONTROL People-Based Destinations].
 
@@ -102,9 +106,9 @@ Nästa steg är att skapa en ny sammanfogningsregel som hjälper dig att skapa m
 
 ## Steg 4 - Skapa målgruppssegment {#create-audience-segments}
 
-Om du vill skapa nya segment använder du [segmentverktyget](../segments/segment-builder.md). Om du har befintliga målgruppssegment som du vill skicka till [!DNL People-Based Destinations]går du vidare till [steg 5 - Konfigurera personbaserad plattformsautentisering](#configure-authentication).
+Om du vill skapa nya segment använder du [segmentverktyget](../segments/segment-builder.md). Om du har befintliga målgruppssegment som du vill skicka till [!DNL People-Based Destinations]går du vidare till [steg 5 - Konfigurera personbaserad Platform-autentisering](#configure-authentication).
 
-## Steg 5 - Konfigurera personbaserad plattformsautentisering {#configure-authentication}
+## Steg 5 - Konfigurera personbaserad Platform-autentisering {#configure-authentication}
 
 1. Logga in på ditt Audience Manager-konto och gå till **[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**. Om du har en tidigare konfigurerad integrering med en social plattform bör du se den här sidan. I annat fall är sidan tom.
    ![personbaserad integration](assets/pbd-config.png)
@@ -112,8 +116,8 @@ Om du vill skapa nya segment använder du [segmentverktyget](../segments/segment
 3. Använd den **[!UICONTROL People-Based Platform]** nedrullningsbara menyn för att välja den plattform som du vill konfigurera integreringen med.
    ![personbaserad-plattform](assets/pbd-add.png)
 4. Klicka **[!UICONTROL Confirm]** för att omdirigeras till autentiseringssidan för den valda plattformen.
-5. När du har autentiserat dig för ditt konto för sociala plattformar omdirigeras du till Audience Manager där du bör se dina associerade annonskonton. Välj det annonserarkonto som du vill använda och klicka på **[!UICONTROL Confirm]**.
-6. Audience Manager visar ett meddelande högst upp på sidan för att tala om för dig om kontot har lagts till eller inte. I meddelandet kan du även lägga till en e-postadress för kontakt för att få meddelanden när autentiseringen för den sociala plattformen håller på att gå ut.
+5. När du har autentiserat dig på ditt konto för sociala plattformar omdirigeras du till Audience Manager där du ska se dina associerade annonskonton. Välj det annonserarkonto som du vill använda och klicka på **[!UICONTROL Confirm]**.
+6. Audience Manager visar ett meddelande högst upp på sidan för att tala om för dig om kontot har lagts till. I meddelandet kan du även lägga till en e-postadress för kontakt för att få meddelanden när autentiseringen för den sociala plattformen håller på att gå ut.
 
 >[!IMPORTANT]
 >
