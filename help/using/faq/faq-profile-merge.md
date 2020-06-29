@@ -6,8 +6,9 @@ seo-title: Vanliga frågor om regler för profilsammanslagning och enhetsdiagram
 solution: Audience Manager
 title: Vanliga frågor om regler för profilsammanslagning och enhetsdiagram
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: 6876ca5ee0bc5f50c2aa1acd5c683b151a07fd59
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1548'
 ht-degree: 0%
@@ -73,7 +74,7 @@ För närvarande kan du skapa maximalt 4 [!UICONTROL Profile Merge Rules]. Den f
 
 **Hur många enhetsprofiler[!DNL Audience Manager]sammanfogas och läses när ett enhetsdiagram används i ett[!UICONTROL Profile Merge Rule]?**
 
-När du kvalificerar en enhet för ett segment med hjälp av en [!UICONTROL Profile Merge Rule], sammanfogar och läser Audience Manager den aktuella enhetsprofilen och maximalt 99 andra enhetsprofiler som är länkade med det valda alternativet för enhetsdiagram.
+När du kvalificerar en enhet för ett segment med ett [!UICONTROL Profile Merge Rule], sammanfogar och läser Audience Manager den aktuella enhetsprofilen och maximalt 99 andra enhetsprofiler som är länkade med det valda alternativet för enhetsdiagram.
 
  
 
@@ -93,7 +94,7 @@ Enheterna [!DNL Audience Manager] sammanfogas och läses av samma enheter som ä
 
 **Hur bryter du segmenteringen av en enhet när den inte längre är kvalificerad för ett segment med en[!DNL Audience Manager][!UICONTROL Profile Merge Rule]enhetsgraf?**
 
-Audience Manager sammanfogar upp till 100 enheter vid utvärdering av segment med en [!UICONTROL Profile Merge Rule] som använder ett enhetsdiagram. Om signalen för att dela upp segment utfärdas kommer den aktuella enheten och upp till 99 ytterligare enheter att tas bort från segmentet i målenheten. Mer information om icke-segmentering finns i [Profilsammanfogningsregler och Avsegmenteringsprocesser](../features/profile-merge-rules/merge-rule-unsegment.md)för enheter.
+Audience Manager sammanfogar upp till 100 enheter när segment utvärderas med ett enhetsdiagram [!UICONTROL Profile Merge Rule] . Om signalen för att dela upp segment utfärdas kommer den aktuella enheten och upp till 99 ytterligare enheter att tas bort från segmentet i målenheten. Mer information om icke-segmentering finns i [Profilsammanfogningsregler och Avsegmenteringsprocesser](../features/profile-merge-rules/merge-rule-unsegment.md)för enheter.
 
  
 
@@ -123,7 +124,7 @@ Ja.
 
 **Om ett segment använder en[!UICONTROL Profile Merge Rule]med[!UICONTROL No Cross-Device Profile]och de egenskaper som kvalificerar enheter för segmentet endast lagras i profilen för olika enheter, kommer segmentets totala population att vara 0?**
 
-Ja. Audience Manager räknar inte de egenskaper som lagras i profilen för olika enheter i segmentutvärderingen när profilkopplingsregeln är inställd på [!UICONTROL No Cross-Device Profile].
+Ja. Audience Manager räknar inte de egenskaper som lagras i profilen för olika enheter i segmentutvärderingen när profilsammanfogningsregeln är inställd på [!UICONTROL No Cross-Device Profile].
 
  
 
@@ -152,7 +153,7 @@ Tågfrekvensen definieras av summan av antalet kvalifikationer för en viss egen
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Åtgärder</b> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Audience Manager</span> läser och sammanfogar enhetsprofilerna för Device A och Device B. Här ser vi följande: </p> <p> 
+   <td colname="col2"> <p> <span class="keyword"> Audience Manager</span> läser och sammanfogar enhetsprofilerna för enhet A och enhet B. Här ser vi följande: </p> <p> 
      <ul id="ul_7AB307154C034695B4486E68D55CB084"> 
       <li id="li_5760BEE513C94152AA307AEE10894718">Enhet A har kvalificerat för Trait 1 tre gånger. Den har frekvensen 3 för Trait 1. </li> 
       <li id="li_E20BC24CCCEC407C820A8032D56BC3F0">Enhet B har kvalificerat för Trait 1 fem gånger. Den har frekvensen 5 för Trait 1. </li> 
@@ -261,16 +262,16 @@ Nej.
 
 **Varför ser jag ingen segmentpopulation för segmentexport till Adobe Campaign efter den 16 mars 2020?**
 
-I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profilsammanslagning för att förbättra exaktheten hos gruppfiler som genererats med hjälp av enhets-ID:n. Dessa förbättringar respekteras strikt i Audience Manager-instansen från och med måndagen den 16 mars 2020. Därför kommer segment som mappas till ett mål med hjälp av enhets-ID att sluta producera exporter i vissa konfigurationer av profilkopplingsregler.
+I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profilsammanslagning för att förbättra exaktheten hos gruppfiler som genererats med hjälp av enhets-ID:n. Dessa förbättringar respekteras strikt i din Audience Manager-instans från och med måndagen den 16 mars 2020. Därför kommer segment som mappas till ett mål med hjälp av enhets-ID att sluta producera exporter i vissa konfigurationer av profilkopplingsregler.
 
-För att säkerställa korrekt integrering mellan Audience Manager-instansen och destinationerna med olika enhets-ID:n, som Adobe Campaign, måste du uppfylla följande krav:
+Kontrollera att du uppfyller följande krav för att se till att Audience Manager-instansen och destinationerna är korrekt integrerade med ID:n för olika enheter, som Adobe Campaign:
 
-1. Granska den profilkopplingsregel som används av de segment som är mappade till ditt deklarerade ID-mål för Adobe Campaign. Regeln för profilsammanfogning måste använda [!UICONTROL Last Authenticated Profile] alternativet så att alla autentiserade profiler kan inkluderas i exporten. Om du använder ett annat alternativ för profilkopplingsregeln växlar du till [!UICONTROL Last Authenticated Profile].
-2. Välj datakällan för deklarerat ID i Adobe Campaign i inställningarna för profilkopplingsregel.
+1. Granska den profilkopplingsregel som används av de segment som är mappade till Adobe Campaign-deklarerade ID-mål. Regeln för profilsammanfogning måste använda [!UICONTROL Last Authenticated Profile] alternativet så att alla autentiserade profiler kan inkluderas i exporten. Om du använder ett annat alternativ för profilkopplingsregeln växlar du till [!UICONTROL Last Authenticated Profile].
+2. Markera datakällan för deklarerat ID i Adobe Campaign i inställningarna för profilkopplingsregel.
 
 >[!NOTE]
 >
-> Vi har ökat gränsen för profilsammanfogningsregel med 1 för kunder som befinner sig i den här situationen, så att du kan skapa en dedikerad profilsammanfogningsregel för de segment som mappas till det deklarerade ID-målet för Adobe Campaign, utan att ändra reglerna för profilsammanfogning för andra användningsfall.
+> Vi har ökat gränsen för profilsammanfogningsregel med 1 för kunder som befinner sig i den här situationen, så att du kan skapa en dedikerad profilsammanfogningsregel för de segment som är mappade till det deklarerade ID-målet för Adobe Campaign, utan att ändra reglerna för profilsammanfogning för andra användningsfall.
 
 >[!MORELIKETHIS]
 >
