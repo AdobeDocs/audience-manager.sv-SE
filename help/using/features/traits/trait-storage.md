@@ -5,8 +5,12 @@ seo-title: Trait Storage
 solution: Audience Manager
 title: Trait Storage
 uuid: e72685ee-0c64-44a4-a8e2-d6ee5c968ba0
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 92b75773d2bbe2f635d84bd5bffe625d2023b6cf
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '224'
+ht-degree: 3%
 
 ---
 
