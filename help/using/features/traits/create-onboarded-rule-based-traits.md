@@ -6,8 +6,9 @@ seo-title: Skapa regelbaserade eller introduktionskunskaper
 solution: Audience Manager
 title: Skapa regelbaserade eller introduktionskunskaper
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 0869e016d7f80710cb194449c48675b82fdfa865
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 1%
