@@ -5,8 +5,12 @@ seo-title: Instrumentpanel för egenskaper
 solution: Audience Manager
 title: Instrumentpanel för egenskaper
 uuid: 31b8f958-f67d-4af2-8d78-e37e2dfe810d
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 2a3a562d5bc516c338c113db08303cf36e832f47
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '133'
+ht-degree: 0%
 
 ---
 
