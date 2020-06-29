@@ -5,8 +5,9 @@ seo-title: Alternativ för profilkopplingsregel definierade
 solution: Audience Manager
 title: Alternativ för profilkopplingsregel definierade
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 0%
