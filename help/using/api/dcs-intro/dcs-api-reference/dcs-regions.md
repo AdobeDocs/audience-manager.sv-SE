@@ -3,10 +3,11 @@ description: Det regionala DCS-servervärdnamnet krävs för att anropa DCS. Det
 seo-description: Det regionala DCS-servervärdnamnet krävs för att anropa DCS. Detta beror på att DCS lagrar information i datacenter som ligger geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel DCS, men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en DCS-begäran måste du matcha region-ID:t med motsvarande regionalt värdnamn och skapa frågan med rätt värdnamn.
 seo-title: DCS-region-ID, -platser och -värdnamn
 solution: Audience Manager
-title: DCS-region-ID, -platser och -värdnamn
+title: ID för DCS-region, -platser och -värdnamn
 uuid: ad150ffe-4583-472b-ac8b-fb900a7966e4
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# DCS-region-ID, -platser och -värdnamn {#dcs-region-ids-locations-and-host-names}
+# ID för DCS-region, -platser och -värdnamn {#dcs-region-ids-locations-and-host-names}
 
 Det regionala [!DNL DCS] servervärdnamnet krävs för att anropa [!DNL DCS]. Detta beror på att informationen [!DNL DCS] lagras i datacenter som är geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel [!DNL DCS], men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en [!DNL DCS] begäran måste du matcha region-ID:t med dess motsvarande regionala värdnamn och skapa frågan med rätt värdnamn.
 
