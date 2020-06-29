@@ -5,8 +5,12 @@ seo-title: PGP-kryptering för inkommande datatyper
 solution: Audience Manager
 title: PGP-kryptering för inkommande datatyper
 uuid: 89caace1-0259-48fc-865b-d525ec7822f7
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: b2e0b560a944f2ad63a48476be647f1355712342
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +29,7 @@ Du kan kryptera datafiler med [!DNL PGP] kryptering när du skickar dem till Aud
 
 Följ stegen nedan för att kryptera inkommande datafiler.
 
-1. Ladda ned [Audience Managers offentliga nyckel](./assets/adobe_pgp.pub).
+1. Ladda ned den offentliga nyckeln [för](./assets/adobe_pgp.pub)Audience Manager.
 2. Importera den offentliga nyckeln till din betrodda butik.
 
    Om du till exempel använder [!DNL GPG]kommandot kan det se ut ungefär så här:
