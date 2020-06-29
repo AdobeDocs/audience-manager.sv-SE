@@ -1,27 +1,31 @@
 ---
 description: Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med enhetsrelaterade variabler i alla egenskaper i ditt Audience Manager-konto.
 seo-description: Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med enhetsrelaterade variabler i alla egenskaper i ditt Audience Manager-konto.
-seo-title: Målinriktning på enheter med plattformsnivå
+seo-title: Device Targeting with Platform-level Keys
 solution: Audience Manager
-title: Målinriktning på enheter med plattformsnivå
+title: Device Targeting with Platform-level Keys
 uuid: bc048cc5-3df1-49bc-ac78-0ea5d7edd9cc
+feature: Traits
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
 
-# Målinriktning på enheter med plattformsnivå {#device-targeting-with-platform-level-keys}
+# Device Targeting with Platform-level Keys {#device-targeting-with-platform-level-keys}
 
 Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med enhetsrelaterade variabler i alla egenskaper i ditt Audience Manager-konto.
 
-## Syfte med variabler på plattformsnivå {#platform-variables}
+## Syfte med variabler på Platform-nivå {#platform-variables}
 
 <!-- c_tb_device_targeting.xml -->
 
-Med plattformsnivåvariabler kan ni ta data som skickas från en viss webbplats och göra dem tillgängliga för målinriktning i alla egenskaper i ert [!DNL Audience Manager] konto. Variablerna formateras med [nyckelvärdepar](../../reference/key-value-pairs-explained.md) med nyckeln som prefixeras av `d_` enligt nedan.
+Med variabler på Platform-nivå kan ni ta data som skickas från en viss webbplats och göra dem tillgängliga för målinriktning för alla egenskaper i ert [!DNL Audience Manager] konto. Variablerna formateras med [nyckelvärdepar](../../reference/key-value-pairs-explained.md) med nyckeln som prefixeras av `d_` enligt nedan.
 
-## Tangenter på plattformsnivå definierade av användaragenten {#keys-user-agent}
+## Tangenter på Platform-nivå definierade av användaragent {#keys-user-agent}
 
 Extrahera värdena för dessa nycklar från [!UICONTROL Data Collection Servers] användaragenthuvudet [i](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43) `HTTP` begäranden. Värdena representerar information på enhetsnivå från [!UICONTROL Device Atlas] databasen. Signalerna i tabellen nedan är tillgängliga, som hämtats från användaragentexemplet. [Hämta en lista med de vanligaste nycklarna](assets/device_keys.csv)enligt [!UICONTROL Device Atlas] mått.
 
