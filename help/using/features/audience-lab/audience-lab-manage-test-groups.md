@@ -5,8 +5,12 @@ seo-title: Hantera testgrupper
 solution: Audience Manager
 title: Hantera testgrupper
 uuid: 2fadddeb-7574-4853-8c52-c58456582c62
+feature: Audience Lab
 translation-type: tm+mt
-source-git-commit: 96b353d4b35a72ea087f7c82910e9272bc457bdc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 0%
 
 ---
 
