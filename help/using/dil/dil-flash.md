@@ -1,19 +1,23 @@
 ---
-description: Samla in data som skickas från FLA-filer till Analytics och arbeta med den informationen i Audience Manager.
-seo-description: Samla in data som skickas från FLA-filer till Analytics och arbeta med den informationen i Audience Manager.
+description: Samla in data som skickas från FLA-filer till Analytics och arbeta med dessa data i Audience Manager.
+seo-description: Samla in data som skickas från FLA-filer till Analytics och arbeta med dessa data i Audience Manager.
 seo-title: Flash DIL
 solution: Audience Manager
 title: Flash DIL
 uuid: 65833cfd-768e-4b16-95c5-debd8411df38
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '638'
+ht-degree: 0%
 
 ---
 
 
 # Flash DIL{#flash-dil}
 
-Samla in data som skickas från FLA-filer till Analytics och arbeta med den informationen i Audience Manager.
+Samla in data som skickas från FLA-filer till Analytics och arbeta med dessa data i Audience Manager.
 
 <!-- 
 
@@ -21,7 +25,7 @@ c_flash_dil_toc.xml
 
  -->
 
-[!UICONTROL Flash DIL] är ett [!DNL ActionScript] kodbibliotek där du kan arbeta med videouppspelningsdata i Audience Manager. [!DNL Flash DIL] arbetar genom att hämta SWF-innehåll som Adobe- [!UICONTROL AppMeasurement] biblioteket skickar in till Analytics. [!DNL Flash DIL] skickar dessa data till den separata [!UICONTROL DIL] JavaScript-datainsamlingsmodulen, som skickar informationen till Audience Manager. Analysdata ( [!UICONTROL Props], [!UICONTROL eVars]händelser, etc.) som hämtats från [!DNL FLA] filen är tillgängliga i Audience Manager som traits eller oanvända signaler.
+[!UICONTROL Flash DIL] är ett [!DNL ActionScript] kodbibliotek där du kan arbeta med videouppspelningsdata i Audience Manager. [!DNL Flash DIL] arbetar genom att hämta SWF-innehåll som Adobe- [!UICONTROL AppMeasurement] biblioteket skickar in till Analytics. [!DNL Flash DIL] skickar dessa data till den separata [!UICONTROL DIL] JavaScript-datainsamlingsmodulen som skickar informationen till Audience Manager. Analytics-data ( [!UICONTROL Props], [!UICONTROL eVars]händelser, etc.) som hämtats från [!DNL FLA] filen finns i Audience Manager som traits eller oanvända signaler.
 
 ## Krav för Flash DIL-datainsamling {#requirements}
 
@@ -97,7 +101,7 @@ Data från dessa parametrar samlas in som standard:
 
 ## Flash DIL-data i Audience Manager {#flash-dil-data}
 
-Modulen omvandlar Adobe AppMeasurement-data till egenskaper för Audience Manager och oanvända signaler. [!UICONTROL Flash DIL]
+Modulen omvandlar data från Adobe AppMeasurement till Audience Manager-egenskaper och oanvända signaler. [!UICONTROL Flash DIL]
 
 <!-- 
 
@@ -105,23 +109,23 @@ c_flash_dil_in_aam.xml
 
  -->
 
-Analyser [!UICONTROL Props], [!UICONTROL eVars]händelser och händelser fungerar som egenskaper i Audience Manager. Fällor är nyckelvärdepar och används för att skapa segment. I en Analytics-propp som `c30=foo`är till exempel `c30` nyckeln (en konstant) och `foo` är värdet (en variabel).
+Analytics [!UICONTROL Props], [!UICONTROL eVars]och event fungerar som traits i Audience Manager. Fällor är nyckelvärdepar och används för att skapa segment. I en Analytics-egenskap `c30=foo`är till exempel `c30` tangenten (en konstant) och `foo` är värdet (en variabel).
 
-**Matcha Audience Manager-egenskaper mot analysvariabler**
+**Matcha Audience Manager-egenskaper mot Analytics-variabler**
 
-Om du vill använda de analysdata som skickas av [!UICONTROL Flash DIL]bör du skapa Audience Manager-egenskaper som har nyckelvärdet prefix med `c_`.
+Om du vill använda de Analytics-data som skickas av [!UICONTROL Flash DIL]måste du skapa Audience Manager-egenskaper med nyckelvärdet prefix `c_`.
 
 Se tabellen för exempel:
 
-| Analysdataelement | Analysexempel | Som Audience Manager Trait |
+| Analytics dataelement | Analytics-exempel | Som Audience Manager-trait |
 |---|---|---|
 | **prop** | `c30=foo` | `c_prop30=foo` |
 | **evar** | `v35=bar` | `c_evar35=bar` |
 | **händelser** | `events=event10` | `c_events=event10` |
 
-**DIL/Analytics-data som oanvända signaler**
+**DIL/Analytics Data as Unused Signals**
 
-Audience Manager accepterar analyser [!UICONTROL Props][!UICONTROL eVars]och händelser även utan någon motsvarande egenskap. I det här fallet är data inte tillgängliga för att skapa egenskaper och visas i rapporten [](../reporting/dynamic-reports/unused-signals.md) Oanvända signaler i stället. För att få ut så mycket som möjligt av informationen skapar du egenskaper i Audience Manager som matchar de analysdata som skickas av [!UICONTROL Flash DIL] biblioteket.
+Audience Manager godkänner Analytics [!UICONTROL Props], [!UICONTROL eVars]och händelser även utan någon motsvarande egenskap. I det här fallet är data inte tillgängliga för att skapa egenskaper och visas i rapporten [](../reporting/dynamic-reports/unused-signals.md) Oanvända signaler i stället. För att få ut så mycket som möjligt av den här informationen skapar du Audience Manager-egenskaper som matchar de Analytics-data som skickas från [!UICONTROL Flash DIL] biblioteket.
 
 ## Flash DIL ActionScript Library {#flash-dil-actionscript}
 
