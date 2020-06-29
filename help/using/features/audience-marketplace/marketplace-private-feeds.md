@@ -5,8 +5,12 @@ seo-title: Privata dataflöden
 solution: Audience Manager
 title: Privata dataflöden
 uuid: e4ca59ca-bbc9-4897-9374-8f3d54b2beee
+feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: 21b2505ac6cdf97b401bf0b0ac80bf1964f084b8
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1090'
+ht-degree: 1%
 
 ---
 
@@ -121,7 +125,7 @@ Det första steget i processen kräver medverkan av Adobe Consulting eller kundt
 
 Skapa en ny cookie-datakälla med:
 
-* **Audience Manager ID** som inkommande nyckel;
+* **Audience Manager ID** som inkommande nyckel,
 * Alternativet **Dela aktiverat** är markerat.
 
 ![](assets/create-datasource.png)
@@ -145,7 +149,7 @@ Skapa sedan en datafeed för att dela dina egenskaper med dataläsaren. Mer info
 
 >[!IMPORTANT]
 >
->Välj alternativet Privat i Inställningar. Om du anger det här fältet som Public (Offentlig) kan alla Audience Marketplace-kunder prenumerera på din feed.
+>Välj alternativet Privat i Inställningar. Om du anger det här fältet som Allmänt kan alla Audience Marketplace-kunder prenumerera på din feed.
 
 ![](assets/create-data-feed.png)
 
@@ -155,11 +159,11 @@ Gå till **Audience Marketplace > Marketplace**. Sök efter den datafeed som har
 
 ### Steg 6 - Dataprovider - Bevilja åtkomst
 
-Gå till **Audience Marketplace > My Shared Data** och sök efter den feed du skapade i steg 4. Klicka på den nya åtkomstbegäran och klicka på **Tillåt åtkomst** för att godkänna begäran. Se även [Granska, Godkänn eller Avvisa privata feedbegäranden](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests).
+Gå till **Audience Marketplace > Mina delade data** och sök efter den feed du skapade i steg 4. Klicka på den nya åtkomstbegäran och klicka på **Tillåt åtkomst** för att godkänna begäran. Se även [Granska, Godkänn eller Avvisa privata feedbegäranden](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests).
 
 ### Steg 7 - Datainköpare - Aktivera prenumeration
 
-När dataleverantören har gett åtkomst till dataflödet kan du se flödet på ditt konto på **Audience Marketplace > Marketplace**. Granska informationen, aktivera prenumerationsknappen och klicka på **Granska och prenumerera**. Mer information om var du kan hitta tredjepartsegenskaper finns i [Lagring för abonnerade datafeeds](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee) .
+När dataleverantören har gett åtkomst till dataflödet kan du se flödet på ditt konto i **Audience Marketplace > Marketplace**. Granska informationen, aktivera prenumerationsknappen och klicka på **Granska och prenumerera**. Mer information om var du kan hitta tredjepartsegenskaper finns i [Lagring för abonnerade datafeeds](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee) .
 
 Observera att dessa egenskaper bara kan redigeras i DataProvider-kontot.
 
