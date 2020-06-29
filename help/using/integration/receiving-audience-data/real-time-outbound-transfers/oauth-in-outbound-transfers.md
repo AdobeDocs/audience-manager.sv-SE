@@ -5,15 +5,19 @@ seo-title: OAuth 2.0-integrering för utgående överföringar i realtid
 solution: Audience Manager
 title: OAuth 2.0-integrering för utgående överföringar i realtid
 uuid: a39e370c-b3bd-4b06-a1af-60a024ee7ee4
+feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 1cc8afd25331528fd67922183b6550288b9939bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 0%
 
 ---
 
 
 # [!DNL OAuth 2.0] Integrering för utgående överföringar i realtid{#oauth-integration-for-real-time-outbound-transfers}
 
-När du publicerar segment till partnermålet via en realtidsintegration mellan server och server, kan Audience Manager konfigureras för autentisering med hjälp [!DNL OAuth 2.0] av när begäranden görs. Då kan du skicka autentiserade begäranden från Audience Manager till slutpunkten.
+När du publicerar segment till partnermålet via en realtidsintegration mellan server och server, kan Audience Manager ställas in för att autentisera med hjälp [!DNL OAuth 2.0] av när begäranden görs. Då kan du skicka autentiserade begäranden från Audience Manager till slutpunkten.
 
 ## Autentiseringsflöde {#auth-flow}
 
