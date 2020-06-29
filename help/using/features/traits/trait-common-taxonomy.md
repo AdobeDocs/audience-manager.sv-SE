@@ -6,8 +6,12 @@ seo-title: Klassificera egenskaper med en gemensam taxonomi
 solution: Audience Manager
 title: Klassificera egenskaper med en gemensam taxonomi
 uuid: 2e177344-07d9-40a7-8c99-c6c6518b9d97
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 44bb4d511215a7bbc8889cc9518b3b5ffcb79a2a
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '387'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +20,7 @@ source-git-commit: 44bb4d511215a7bbc8889cc9518b3b5ffcb79a2a
 
 I den här artikeln finns en allmän översikt över hur du klassificerar egenskaper med en gemensam taxonomi.
 
-## Audience Manager Taxonomy
+## Audience Manager taxonomi
 
 <!-- c_common_taxonomy_about.xml -->
 
