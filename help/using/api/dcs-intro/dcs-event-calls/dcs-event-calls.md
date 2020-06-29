@@ -5,8 +5,9 @@ seo-title: DCS Event Call API:er
 solution: Audience Manager
 title: DCS Event Call API:er
 uuid: 84754960-9ef0-454d-8f5c-33846e2494f6
+feature: DCS
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
