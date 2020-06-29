@@ -6,8 +6,9 @@ seo-title: Funktioner och funktioner Frågor och svar
 solution: Audience Manager
 title: Funktioner och funktioner Frågor och svar
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
+feature: Overview
 translation-type: tm+mt
-source-git-commit: 2b70b651a626c2b5667edb58c8c6068152a9d770
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 3%
@@ -33,7 +34,7 @@ Detta *`Organization ID`* är ett unikt ID som identifierar din organisation fö
 
 En *`Organization ID`* stil ser till exempel ut så här: `1FD6776A524453CC0A490D44@AdobeOrg`.
 
-Detta *`Organization ID`* används av Audience Managers [DIL](../dil/dil-overview.md) API, [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)och andra [!DNL Experience Cloud] lösningar. Användare med administratörsbehörighet kan hitta *`Organization ID`* på [!DNL Adobe Admin Console]. Se Vanliga frågor om [administration - Användarhantering](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Detta *`Organization ID`* används av Audience Manager [DIL](../dil/dil-overview.md) API, [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)och andra [!DNL Experience Cloud] lösningar. Användare med administratörsbehörighet kan hitta *`Organization ID`* på [!DNL Adobe Admin Console]. Se Vanliga frågor om [administration - Användarhantering](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
  
 
@@ -43,7 +44,7 @@ Ja. Se [Masshanteringsverktyg](../reference/bulk-management-tools/bulk-managemen
 
 >[!NOTE]
 >
->Verktygen [!UICONTROL Bulk Management Tools] stöds inte *av* [!DNL Audience Manager]. De tillhandahålls av praktiska skäl och endast för att vara artiga. För större förändringar rekommenderar vi att du arbetar med API:erna [för](../api/api.md) Audience Manager i stället.
+>Verktygen [!UICONTROL Bulk Management Tools] stöds inte *av* [!DNL Audience Manager]. De tillhandahålls av praktiska skäl och endast för att vara artiga. För större ändringar rekommenderar vi att du arbetar med API:erna [för](../api/api.md) Audience Manager i stället.
 
  
 
@@ -93,6 +94,6 @@ Du bör använda Trait Recommendations när:
 
  
 
-**Är det någon skillnad mellan Adobe Analytics- och Audience Manager-segmenten?**
+**Är det någon skillnad mellan Adobe Analytics och Audience Manager?**
 
-Ja, läs [Understanding Segments in Analytics and Audience Manager](https://docs.adobe.com/content/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) för en ingående beskrivning av skillnaderna.
+Ja, läs [Understanding Segments in Analytics and Audience Manager](https://docs.adobe.com/content/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) om du vill ha en detaljerad beskrivning av skillnaderna.
