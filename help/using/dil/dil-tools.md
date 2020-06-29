@@ -5,8 +5,12 @@ seo-title: DIL Tools
 solution: Audience Manager
 title: DIL Tools
 uuid: 2bc62ce2-16bd-4e80-b493-c816ba643b59
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: ac9e4f24a896ecae2ebf36dcf34a4ac8fab00cd8
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +47,7 @@ Funktionssignatur: `DIL.tools.getSearchReferrer(uri, initConfig)`
 
 `getSearchReferrer` godkänner:
 
-* *`{string}`*: *(Valfritt)* En sträng som innehåller sökwebbadressen (används `document.referrer` om det är odefinierat).
+* *`{string}`*: *(Valfritt)* En sträng som innehåller sök-URL:en (används `document.referrer` om det är odefinierat).
 * *`{object}`*: *(Valfritt)* Ett objekt som innehåller konfigurationen för `hostPattern`, `queryParam`eller `queryPattern`.
 
 Och returnerar:
