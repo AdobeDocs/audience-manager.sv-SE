@@ -1,19 +1,23 @@
 ---
-description: När Audience Manager skickar segmentinformation till en datapartör identifieras objekten med numeriska ID:n. När du som datapartner delar informationen med dina kunder (eller arbetar med den själv) ger ett faktiskt namn och en beskrivning en bättre upplevelse för kunderna i rapporter, instrumentpaneler eller andra användargränssnitt. Data partners kan göra dessa egna namn tillgängliga för sina kunder med antingen de manuella eller automatiserade metoder som beskrivs i detta avsnitt.
-seo-description: När Audience Manager skickar segmentinformation till en datapartör identifieras objekten med numeriska ID:n. När du som datapartner delar informationen med dina kunder (eller arbetar med den själv) ger ett faktiskt namn och en beskrivning en bättre upplevelse för kunderna i rapporter, instrumentpaneler eller andra användargränssnitt. Data partners kan göra dessa egna namn tillgängliga för sina kunder med antingen de manuella eller automatiserade metoder som beskrivs i detta avsnitt.
+description: När Audience Manager skickar segmentinformation till en datapartner identifieras dessa objekt med numeriska ID:n. När du som datapartner delar informationen med dina kunder (eller arbetar med den själv) ger ett faktiskt namn och en beskrivning en bättre upplevelse för kunderna i rapporter, instrumentpaneler eller andra användargränssnitt. Data partners kan göra dessa egna namn tillgängliga för sina kunder med antingen de manuella eller automatiserade metoder som beskrivs i detta avsnitt.
+seo-description: När Audience Manager skickar segmentinformation till en datapartner identifieras dessa objekt med numeriska ID:n. När du som datapartner delar informationen med dina kunder (eller arbetar med den själv) ger ett faktiskt namn och en beskrivning en bättre upplevelse för kunderna i rapporter, instrumentpaneler eller andra användargränssnitt. Data partners kan göra dessa egna namn tillgängliga för sina kunder med antingen de manuella eller automatiserade metoder som beskrivs i detta avsnitt.
 seo-title: Hämtar segmentmetadata
 solution: Audience Manager
 title: Hämtar segmentmetadata
 uuid: 719e2c41-8788-4e8a-967a-e367421f9f84
+feature: Segments
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '598'
+ht-degree: 0%
 
 ---
 
 
 # Hämtar segmentmetadata {#retrieving-segment-metadata}
 
-När Audience Manager skickar segmentinformation till en datapartör identifieras objekten med numeriska ID:n. När du som datapartner delar informationen med dina kunder (eller arbetar med den själv) ger ett faktiskt namn och en beskrivning en bättre upplevelse för kunderna i rapporter, instrumentpaneler eller andra användargränssnitt ([!DNL UI]). Data partners kan göra dessa egna namn tillgängliga för sina kunder med antingen de manuella eller automatiserade metoder som beskrivs i detta avsnitt.
+När Audience Manager skickar segmentinformation till en datapartner identifieras dessa objekt med numeriska ID:n. När du som datapartner delar informationen med dina kunder (eller arbetar med den själv) ger ett faktiskt namn och en beskrivning en bättre upplevelse för kunderna i rapporter, instrumentpaneler eller andra användargränssnitt ([!DNL UI]). Data partners kan göra dessa egna namn tillgängliga för sina kunder med antingen de manuella eller automatiserade metoder som beskrivs i detta avsnitt.
 
 ## Manuell metod {#manual-method}
 
@@ -23,7 +27,7 @@ Som datapartent är ni antagligen vana att hämta målgruppsmetadata från era k
 
 [!DNL Audience Manager] innehåller en uppsättning [REST-API:er](../../api/rest-api-main/rest-api-main.md) som gör att du kan hämta segmentmetadata automatiskt. Med [!DNL API]kan du skapa jobb som hämtar segmentmetadata vid schemalagda intervaller eller automatiskt när du bearbetar [!DNL Audience Manager] data och hittar ett nytt segment-ID. Se stegen nedan för mer information.
 
-### Steg 1: Granska Audience Manager-API:erna
+### Steg 1: Granska API:erna för Audience Manager
 
 Avsnittet [Komma igång med REST API:er](../../api/rest-api-main/aam-api-getting-started.md) innehåller information om allmänna krav, autentisering, tillgängliga metoder osv. Det här är en bra plats att börja på om du inte har arbetat med [!DNL Audience Manager] det [!DNL API] förut.
 
@@ -53,7 +57,7 @@ När du har slutfört de föregående stegen kan du använda en `GET` metod för
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> destinationMappingId</code> </p> </td> 
-   <td colname="col2"> <p>Segment-ID:t för <span class="keyword"> Audience Manager</span> . </p> </td> 
+   <td colname="col2"> <p>Segmentets-ID <span class="keyword"> Audience Manager</span> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> elementName</code> </p> </td> 
