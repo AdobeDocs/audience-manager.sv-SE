@@ -5,8 +5,9 @@ seo-title: Adobe Audience Manager Technology Partners
 keywords: activation; activation partners, destination, destinations
 solution: Audience Manager
 title: Adobe Audience Manager Technology Partners
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: da0eb0244fc3ae158fa151727f4253625dcff2c4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 11%
@@ -16,13 +17,13 @@ ht-degree: 11%
 
 # Audience Manager Activation Partners
 
-Den här sidan innehåller endast aktuella [server-till-server-integreringar](/help/using/features/destinations/add-edit-segments.md) för Audience Manager.  Mer information om en integrering finns i [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html) -listan (där den är tillgänglig) eller kontakta din Adobe-konsult eller kundtjänst.
+Den här sidan innehåller endast aktuella Audience Manager- [server-till-server-integreringar](/help/using/features/destinations/add-edit-segments.md) .  Mer information om en integrering finns i [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html) -listan (där den är tillgänglig) eller kontakta din Adobe-konsult eller kundtjänst.
 
 <br> 
 
 * **Uppdaterat** = Visar det senaste datumet när en uppdatering för den här aktiveringspartnern har gjorts.
-* **Dela upp segment** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från segment. Din möjlighet att ta bort en enhetsprofil från ett segment beror på vilket enhetsalternativ som används för att skapa en profilkopplingsregel. Avsegmentering används också i samband med GDPR-borttagningsbegäranden Läs [profilkopplingsregler och Osegmenteringsprocesser](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) för enheter och [Audience Manager-partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation). Audience Manager skickar information om att dela upp segment till de destinationer som är markerade med Ja nedan.
-* **Mottagande av IAB TCF-medgivandesignaler** = Plugin-programmet Audience Manager för IAB TCF gör att du kan vidarebefordra IAB TC-strängen till aktiveringspartners med respekt för användarnas sekretessval. Läs Plugin-programmet [Audience Manager för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
+* **Dela upp segment** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från segment. Din möjlighet att ta bort en enhetsprofil från ett segment beror på vilket enhetsalternativ som används för att skapa en profilkopplingsregel. Osegmentering används också i samband med GDPR-borttagningsbegäranden Läs [profilkopplingsregler och Osegmenteringsprocesser](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) för enheter och [Audience Manager-partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation). Audience Manager skickar information om att segmentera till de destinationer som är markerade med Ja nedan.
+* **Mottagande av IAB TCF-medgivandesignaler** = Audience Manager-pluginen för IAB TCF gör att du kan vidarebefordra IAB TC-strängen till aktiveringspartners med hänsyn till användarnas sekretessval. Plugin-programmet [Audience Manager för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
 * **ICDS** = Den här kolumnen listar de partners som stöder Instant Cross-Device Suppression. Läs [Direkt undertryckning av enheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
 * **ID för mobila enheter** = Den här kolumnen listar partners som kan ta emot ID:n för mobila enheter från Audience Manager.
 
@@ -60,7 +61,7 @@ Den här sidan innehåller endast aktuella [server-till-server-integreringar](/h
 | Centro | 27/02/2017 | Nej | Nej | Nej | Ja |
 | ChoiceStream | 27/02/2017 | Nej | Nej | Nej | Nej |
 | Clearstream.tv | 27/02/2017 | Ja | Nej | Nej | Nej |
-| Gemensam AMP-plattform | 27/02/2017 | Nej | Nej | Nej | Nej |
+| Kollektiv AMP Platform | 27/02/2017 | Nej | Nej | Nej | Nej |
 | Kriterium | 27/02/2017 | Nej | Ja | Nej | Ja |
 | Medsols | 27/02/2017 | Ja | Nej | Nej | Nej |
 | D.A.C. AudienceOne | 27/02/2017 | Ja | Nej | Nej | Nej |
@@ -116,7 +117,7 @@ Den här sidan innehåller endast aktuella [server-till-server-integreringar](/h
 | Opera Mediaworks | 13/02/2017 | Ja | Nej | Nej | Ja |
 | Utanför hjärnan | 03/04/2017 | Ja | Nej | Nej | Nej |
 | ÄgareIQ | 13/02/2017 | Ja | Nej | Ja | Nej |
-| Plattform 161 | 28/11/2018 | Ja | Nej | Nej | Ja |
+| Platform 161 | 28/11/2018 | Ja | Nej | Nej | Ja |
 | PocketMath | 22/02/2017 | Ja | Nej | Nej | Ja |
 | Powerlinks | 17/05/2017 | Ja | Nej | Nej | Nej |
 | Pubmatisk | 13/02/2017 | Ja | Nej | Nej | Nej |
