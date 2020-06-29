@@ -5,8 +5,12 @@ seo-title: Dataexportkontroller
 solution: Audience Manager
 title: Dataexportkontroller
 uuid: de7f3608-c0cb-4049-973a-8be54525c600
+feature: Data Export Controls
 translation-type: tm+mt
-source-git-commit: 22657113512e136296be5c4bcb8e092e65f45c06
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '905'
+ht-degree: 0%
 
 ---
 
