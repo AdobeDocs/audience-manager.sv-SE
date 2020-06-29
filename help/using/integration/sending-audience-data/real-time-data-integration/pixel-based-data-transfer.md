@@ -1,19 +1,23 @@
 ---
-description: Enkla pixlar (som kan användas för att kvalificera användare för egenskaper) utför dataöverföringar i realtid. Med Audience Manager-gränssnittet kan kunderna själva skapa valfritt antal pixlar. Pixelsträngar består av enkla ID:n eller nyckelvärdepar.
-seo-description: Enkla pixlar (som kan användas för att kvalificera användare för egenskaper) utför dataöverföringar i realtid. Med Audience Manager-gränssnittet kan kunderna själva skapa valfritt antal pixlar. Pixelsträngar består av enkla ID:n eller nyckelvärdepar.
+description: Enkla pixlar (som kan användas för att kvalificera användare för egenskaper) utför dataöverföringar i realtid. Med Audience Manager kan kunderna själva skapa valfritt antal pixlar. Pixelsträngar består av enkla ID:n eller nyckelvärdepar.
+seo-description: Enkla pixlar (som kan användas för att kvalificera användare för egenskaper) utför dataöverföringar i realtid. Med Audience Manager kan kunderna själva skapa valfritt antal pixlar. Pixelsträngar består av enkla ID:n eller nyckelvärdepar.
 seo-title: Pixelbaserade dataöverföringar
 solution: Audience Manager
 title: Pixelbaserade dataöverföringar
 uuid: 8773bfc0-6b8d-4a6a-a8b7-e043744486ab
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 3fb90da3be8f50fe670c1193600f5e3a027be52c
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 0%
 
 ---
 
 
 # Pixelbaserade dataöverföringar {#pixel-based-data-transfers}
 
-Enkla pixlar (som kan användas för att kvalificera användare för egenskaper) utför dataöverföringar i realtid. Med Audience Manager-gränssnittet kan kunderna själva skapa valfritt antal pixlar. Pixelsträngar består av enkla ID:n eller nyckelvärdepar.
+Enkla pixlar (som kan användas för att kvalificera användare för egenskaper) utför dataöverföringar i realtid. Med Audience Manager kan kunderna själva skapa valfritt antal pixlar. Pixelsträngar består av enkla ID:n eller nyckelvärdepar.
 
 <!-- c_rt_inbound_pixel_transfers.xml -->
 
