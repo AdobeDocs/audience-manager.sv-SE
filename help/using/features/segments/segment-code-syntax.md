@@ -5,8 +5,12 @@ seo-title: Kodsyntax som används i segmentuttrycksredigeraren
 solution: Audience Manager
 title: Kodsyntax som används i segmentuttrycksredigeraren
 uuid: 7b4b06ca-7879-4501-8ba7-b2b6467b8a3b
+feature: Segments
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
 
