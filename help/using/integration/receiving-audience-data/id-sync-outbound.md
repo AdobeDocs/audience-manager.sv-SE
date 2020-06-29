@@ -1,19 +1,23 @@
 ---
-description: Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta Adobe Audience Manager-konsulten innan du försöker synkronisera ditt första ID.
-seo-description: Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta Adobe Audience Manager-konsulten innan du försöker synkronisera ditt första ID.
+description: Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta din Adobe Audience Manager-konsult innan du försöker synkronisera ditt första ID.
+seo-description: Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta din Adobe Audience Manager-konsult innan du försöker synkronisera ditt första ID.
 seo-title: ID-synkronisering för utgående dataöverföringar
 solution: Audience Manager
 title: ID-synkronisering för utgående dataöverföringar
 uuid: f3849be8-1094-47db-9296-7482f020af18
+feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 3%
 
 ---
 
 
 # ID-synkronisering för utgående dataöverföringar{#id-synchronization-for-outbound-data-transfers}
 
-Beskriver syntaxen och parametrarna som används i det första `HTTP` anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta Adobe Audience Manager-konsulten innan du försöker synkronisera ditt första ID.
+Beskriver syntaxen och parametrarna som används i det första `HTTP` anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta din Adobe Audience Manager-konsult innan du försöker synkronisera ditt första ID.
 
 <!-- c_id_sync_out.xml -->
 
@@ -60,7 +64,7 @@ Anropet [!DNL URL] för synkronisering av inkommande ID ska innehålla variabler
     </tr> 
   <tr> 
    <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i> </code> </td> 
-   <td colname="col2"> <p><code>gdpr</code> kan vara 0 (GDPR gäller inte) eller 1 (GDPR gäller).</p><p><b>Obs!</b> <ul><li>Parametrarna <code>gdpr</code> och <code>gdpr_consent</code> parametrarna introduceras gradvis i URL:er för ID-synkronisering med aktiveringspartners. Se Aktiveringspartners som stöder IAB TCF i <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners">Audience Manager Plug-in för IAB TCF.</a></li><li>Den här parametern kan bara användas tillsammans med <code>gdpr_consent.</code></li></ul></p></td>
+   <td colname="col2"> <p><code>gdpr</code> kan vara 0 (GDPR gäller inte) eller 1 (GDPR gäller).</p><p><b>Obs!</b> <ul><li>Parametrarna <code>gdpr</code> och <code>gdpr_consent</code> parametrarna introduceras gradvis i URL:er för ID-synkronisering med aktiveringspartners. Se Aktiveringspartners som har stöd för IAB TCF i <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners">Audience Manager-plugin för IAB TCF.</a></li><li>Den här parametern kan bara användas tillsammans med <code>gdpr_consent.</code></li></ul></p></td>
   </tr> 
     </tr> 
   <tr valign="top"> 
