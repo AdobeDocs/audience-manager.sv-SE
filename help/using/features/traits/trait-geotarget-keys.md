@@ -1,12 +1,13 @@
 ---
 description: Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med geografiska variabler i alla egenskaper i ditt Audience Manager-konto.
 seo-description: Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med geografiska variabler i alla egenskaper i ditt Audience Manager-konto.
-seo-title: Geogeting med tangenter på plattformsnivå
+seo-title: Geogeting med tangenter på Platform-nivå
 solution: Audience Manager
-title: Geogeting med tangenter på plattformsnivå
+title: Geogeting med tangenter på Platform-nivå
 uuid: c7e4cbfe-e564-404e-a565-bbe5fd2fb519
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 8959e0023f7663d7a20080aaf130d469ed8a4313
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 1%
@@ -14,21 +15,21 @@ ht-degree: 1%
 ---
 
 
-# Geogeting med tangenter på plattformsnivå {#geotargeting-with-platform-level-keys}
+# Geogeting med tangenter på Platform-nivå {#geotargeting-with-platform-level-keys}
 
 Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med geografiska variabler i alla egenskaper i ditt Audience Manager-konto.
 
 <!-- c_tb_platform_vars.xml -->
 
-## Syfte med variabler på plattformsnivå {#platform-variables}
+## Syfte med variabler på Platform-nivå {#platform-variables}
 
-Med plattformsnivåvariabler kan ni ta data som skickas från en viss webbplats och göra dem tillgängliga för målinriktning i alla egenskaper i ert [!DNL Audience Manager] konto. Variablerna formateras med [nyckelvärdepar](../../reference/key-value-pairs-explained.md) med nyckeln som prefixeras av `d_` enligt nedan.
+Med variabler på Platform-nivå kan ni ta data som skickas från en viss webbplats och göra dem tillgängliga för målinriktning för alla egenskaper i ert [!DNL Audience Manager] konto. Variablerna formateras med [nyckelvärdepar](../../reference/key-value-pairs-explained.md) med nyckeln som prefixeras av `d_` enligt nedan.
 
-## Lägga till värden i plattformsnivånycklar {#adding-values}
+## Lägga till värden i Platform Level Keys {#adding-values}
 
 För vissa tangenter på plattformsnivå kan du ange värdet själv. Med andra kopplas nycklarna till motsvarande [!DNL IP] adresser som skickas i ett händelseanrop. I båda fallen måste du fortfarande ange värdet när du skapar egenskaper i [!UICONTROL Trait Builder].
 
-## Användardefinierade tangenter på plattformsnivå {#user-defined-keys}
+## Användardefinierade tangenter på Platform-nivå {#user-defined-keys}
 
 Du anger värdet när du skapar egenskaper med dessa nyckelvärdepar:
 
@@ -36,7 +37,7 @@ Du anger värdet när du skapar egenskaper med dessa nyckelvärdepar:
 |---|---|
 | `d_zx` | Postnummer (t.ex. `d_zx=10022`). |
 
-## Tangenter på plattformsnivå definierade av IP-adress {#keys-ip-address}
+## Platform-nivånycklar definierade av IP-adress {#keys-ip-address}
 
 Vi arbetar med [Digital Envoy](https://www.digitalenvoy.com/) för att få och uppdatera demografiska och geografiska data för nycklarna nedan. Värdena för de här nycklarna bestäms av matchande [!DNL IP] adresser till motsvarande geografiska och demografiska data. Du måste dock fortfarande ange parametern value när du skapar nyckelvärdepar i [!UICONTROL Trait Builder].
 
