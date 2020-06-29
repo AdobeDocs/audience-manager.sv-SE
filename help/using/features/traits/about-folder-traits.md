@@ -6,8 +6,12 @@ seo-title: Mappegenskaper om
 solution: Audience Manager
 title: Mappegenskaper om
 uuid: e561ce8f-6c90-44a7-b034-685533f29030
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 9fa5a558c839da89286b1abdf77e835a92747c87
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +26,7 @@ En [!UICONTROL folder trait] innehåller alla egenskaper i en överordnad mapp o
 
 `*` Elektronik (överordnad)
 
-    Bärbara`*` datorer (barn)
+    `*` Bärbara datorer (underordnade)
 
         `*` Varumärken (indirekt underordnade)
 
@@ -62,6 +66,6 @@ Lär dig hur du tilldelar [!UICONTROL RBAC] behörigheter i vår [administration
 | Objekt | Beskrivning |
 |---|---|
 | Trait-typ | [!UICONTROL Onboarded traits] och [!UICONTROL algorithmic traits] bidrar med högst 1 realisering till en [!UICONTROL folder trait]frekvens. |
-| Flytta egenskaper mellan mappar | Om du flyttar ett drag från en mapp till en annan diskvalificeras det attributet från det första mappfältet och kvalificerar det för det andra [!UICONTROL folder trait]. Det innebär att om du tar bort eller flyttar ett drag från mappen, kommer användarna i traits population att segmenteras från segmenten med hjälp av mappegenskapen som ett segmentuttryck. <br> När du mappar Adobe Analytics-segment eller rapportsviter till din Experience Cloud-organisation skapar Audience Manager automatiskt nya, motsvarande, skrivskyddade segment och egenskaper. Du kan inte redigera eller ändra lagringsplatsen för dessa egenskaper i Audience Manager. Alla ändringar som ni gör i era mappade Adobe Analytics-segment eller rapportsviter återspeglas i Audience Manager. |
+| Flytta egenskaper mellan mappar | Om du flyttar ett drag från en mapp till en annan diskvalificeras det attributet från det första mappfältet och kvalificerar det för det andra [!UICONTROL folder trait]. Det innebär att om du tar bort eller flyttar ett drag från mappen, kommer användarna i traits population att segmenteras från segmenten med hjälp av mappegenskapen som ett segmentuttryck. <br> När du mappar Adobe Analytics-segment eller rapportsviter till din Experience Cloud-organisation skapar Audience Manager automatiskt nya, motsvarande, skrivskyddade segment och egenskaper. Du kan inte redigera eller ändra lagringsplatsen för dessa egenskaper från Audience Manager. Alla ändringar du gör i Adobe Analytics-segmenten eller i rapporteringssviterna återspeglas i Audience Manager. |
 | Systemvariabler | [!UICONTROL Folder traits] kan inte realiseras i händelseanrop med hjälp av `d_sid` parametern. |
-| Rapportering | [!UICONTROL Folder traits] är egenskaper för autoberäkning och visas inte i **[!UICONTROL Overlap Reports]**. |
+| Rapporter | [!UICONTROL Folder traits] är egenskaper för autoberäkning och visas inte i **[!UICONTROL Overlap Reports]**. |
