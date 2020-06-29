@@ -1,19 +1,23 @@
 ---
 description: Konfigurera Open Ad Server som mål och skicka data från Audience Manager till den plattformen.
 seo-description: Konfigurera Open Ad Server som mål och skicka data från Audience Manager till den plattformen.
-seo-title: OAS som mål för målgruppshanteraren
+seo-title: OAS som mål för Audience Manager
 solution: Audience Manager
-title: OAS som mål för målgruppshanteraren
+title: OAS som mål för Audience Manager
 uuid: 5891a063-5a4b-4ea7-865f-b24e17ca735f
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 0%
 
 ---
 
 
-# OAS som mål för målgruppshanteraren {#oas-as-an-audience-manager-destination}
+# OAS som mål för Audience Manager {#oas-as-an-audience-manager-destination}
 
-Konfigurera [!DNL Open Ad Server] som mål och skicka data från Audience Manager till den plattformen.
+Konfigurera [!DNL Open Ad Server] som mål och skicka Audience Manager-data till den plattformen.
 
 ## Krav för OAS-destination {#oas-requirements}
 
@@ -23,9 +27,9 @@ Standarder för kodplacering, nyckelvärdesformat som stöds, rapporter och vilk
 
 Måltypen kräver följande:
 
-* **[!UICONTROL DIL]:**[!UICONTROL Data Integration Library]Koden ska distribueras i lagret.[!UICONTROL DIL]hjälper till att eliminera behovet av att skriva särskild kod för datainsamling, integrering, läsning av cookie-värden och återställning av siddata.
+* **[!UICONTROL DIL]:**[!UICONTROL Data Integration Library]koden ska distribueras på ditt lager.[!UICONTROL DIL]hjälper till att eliminera behovet av att skriva särskild kod för datainsamling, integrering, läsning av cookie-värden och återställning av siddata.
 * **`get_aamCookie`Funktion:**Kod som hämtar användar-ID och cookie-data för Audience Manager. Placera[den här koden](../../features/destinations/get-aam-cookie-code.md)högst upp på sidan eller inuti`<head>`kodlåset.
-* **Skicka leveransloggar till Audience Manager:** Om du vill ha en segmentleveransrapport (valfritt) ska du förse Audience Manager med en daglig logg som innehåller leveransdata på visningsnivå. Data kan vara i Raw-format, men varje post måste innehålla Audience Manager [!UICONTROL UUID]. Audience Manager kan hämta dessa via [!DNL FTP].
+* **Skicka leveransloggar till Audience Manager:** Om du vill ha en segmentleveransrapport (valfritt) ska du förse Audience Manager med en daglig logg som innehåller leveransdata på visningsnivå. Data kan vara i Raw-format, men varje post måste innehålla Audience Manager [!UICONTROL UUID]. Audience Manager kan hämta eller få dessa via [!DNL FTP].
 
 ### Cookie-format och nyckelvärdesdata
 
@@ -38,7 +42,7 @@ Audience Manager kan skicka segmentdata till en webbläsarcookie på följande s
 
 ### Endast kvalificerade segment skickas till OAS
 
-Hur mycket data som skickas till [!DNL OAS] beror på hur många segment en viss användare kvalificerar sig för. Exempel: du skapar 100 segment för Audience Manager. Om en besökare kvalificerar sig för fem av dem skickas endast dessa fem segment till OAS (inte alla 100).
+Hur mycket data som skickas till [!DNL OAS] beror på hur många segment en viss användare kvalificerar sig för. Exempel: du skapar 100 Audience Manager-segment. Om en besökare kvalificerar sig för fem av dem skickas endast dessa fem segment till OAS (inte alla 100).
 
 >[!MORELIKETHIS]
 >
@@ -48,11 +52,11 @@ Hur mycket data som skickas till [!DNL OAS] beror på hur många segment en viss
 
 ## Skapa ett OAS-mål {#oas-dest-setup}
 
-Skapa ett cookie-baserat mål för [!DNL OAS] i Audience Manager.
+Skapa en cookie-baserad destination för [!DNL OAS] i Audience Manager.
 
 <!-- aam-oas-destination-setup.xml -->
 
-I Audience Manager är ett *mål* vilket annat system som helst (annonsserver, [!DNL DSP]annonsnätverk osv.) som du vill dela data med. [!UICONTROL Destination Builder] innehåller de verktyg som gör att du kan skapa och hantera dessa dataleveransprocesser. Målfunktionerna för Audience Manager finns i *Målgruppsdata > Destinationer*. Kom igång genom att klicka **[!UICONTROL Add New Destination]** och följa stegen nedan.
+I Audience Manager är en *destination* vilket annat system som helst (annonsserver, [!DNL DSP]annonsnätverk osv.) som du vill dela data med. [!UICONTROL Destination Builder] innehåller de verktyg som gör att du kan skapa och hantera dessa dataleveransprocesser. Målfunktionerna för Audience Manager finns i *Målgruppsdata > Destinationer*. Kom igång genom att klicka **[!UICONTROL Add New Destination]** och följa stegen nedan.
 
 ### Steg 1: Grundläggande information
 
@@ -84,7 +88,7 @@ Så här lägger du till ett segment i en cookie-destination:
 
 ## OAS-inställningar {#oas-code-setup}
 
-Ändra [!DNL OAS] inställningarna så att de fungerar med segmentdata i Audience Manager.
+Ändra [!DNL OAS] inställningarna så att de fungerar med segmentdata från Audience Manager.
 
 <!-- aam-oas-code.xml -->
 
