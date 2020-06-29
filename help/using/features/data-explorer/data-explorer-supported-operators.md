@@ -4,8 +4,12 @@ seo-description: Använd logiska operatorer för att gruppera nyckelvärdepar oc
 seo-title: Logiska operatorer som stöds
 title: Logiska operatorer som stöds
 uuid: 645fcb6f-50ac-49bc-8df9-c699c749cf8f
+feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: 1f26460d746a93ddc36c375360fcfbd9feb06fbb
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 0%
 
 ---
 
