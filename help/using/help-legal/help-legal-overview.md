@@ -1,6 +1,6 @@
 ---
-description: Resurser för kundvård och juridiska frågor som rör användningen av denna produkt och dokumentation.
-seo-description: Resurser för kundvård och juridiska frågor som rör användningen av denna produkt och dokumentation.
+description: Resurser för kundtjänst och juridiska frågor som rör användningen av denna produkt och dokumentationen.
+seo-description: Resurser för kundtjänst och juridiska frågor som rör användningen av denna produkt och dokumentationen.
 seo-title: Hjälp och juridik
 solution: Audience Manager
 title: Hjälp och juridik
@@ -10,16 +10,18 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '121'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Hjälp och juridik{#help-and-legal}
+# Hjälp och juridik {#help-and-legal}
 
-Resurser för kundvård och juridiska frågor som rör användningen av denna produkt och dokumentation.
+Resurser för kundtjänst och juridiska frågor som rör användningen av denna produkt och dokumentationen.
 
-* [Om det finns ett problem](/help/using/help-legal/help-problem.md)kan kundtjänst hjälpa dig att lösa eventuella problem som kan uppstå. Ange så mycket av den här informationen du kan när du kontaktar kundtjänst. Detta hjälper teamet att förstå och lösa ditt problem.
+* [Om du har problem](/help/using/help-legal/help-problem.md)
+Kundtjänsten kan hjälpa dig att lösa eventuella problem som uppstår. Ange så mycket information som du kan när du kontaktar kundtjänst. Det hjälper teamet att förstå och lösa ditt problem.
 
 
-* [Kontakta Adobe och få information](/help/using/help-legal/help-legal-contact.md)om din rätt att kontakta Adobe och få information om hur du använder produkten och dokumentationen.
+* [Kontaktuppgifter och juridisk information](/help/using/help-legal/help-legal-contact.md)
+Information som hjälper dig att kontakta Adobe och juridisk information om användning av produkten och dokumentationen.
