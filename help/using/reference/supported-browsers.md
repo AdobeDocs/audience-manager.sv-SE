@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Webbläsare som stöds{#supported-browsers}
+# Webbläsare som stöds {#supported-browsers}
 
 På den här sidan visas de webbläsare som stöds av användargränssnittet i Audience Manager. Cookies och JavaScript måste vara aktiverade i alla webbläsare.
 
@@ -29,20 +29,20 @@ Adobe stöder den senaste större versionen av dessa webbläsare:
 
 * **Google Chrome**
 
-   Hämta den senaste Chrome-versionen från [http://www.google.com/chrome](http://www.google.com/chrome).
+   Hämta den senaste versionen av Chrome från [https://www.google.com/intl/sv/chrome/](https://www.google.com/intl/sv/chrome/).
 
 * **Microsoft Edge**
 
-   (Adobe upphör med stödet för Internet Explorer 11 i Audience Manager den 10 juli 2019. Växla till den senaste större versionen av Microsoft Edge eller en annan webbläsare som stöds så snart som möjligt.)
+   (Adobe upphörde med stödet för Internet Explorer 11 i Audience Manager den 10 juli 2019. Byt till den senaste större versionen av Microsoft Edge eller en annan webbläsare som stöds så snart som möjligt.)
 
-   Hämta den senaste Edge-versionen från [https://www.microsoft.com/windows/microsoft-edge](https://www.microsoft.com/windows/microsoft-edge).
+   Hämta den senaste versionen av Edge från [https://www.microsoft.com/sv-se/edge](https://www.microsoft.com/sv-se/edge).
 
 * **Mozilla Firefox**
 
-   Hämta den senaste Firefox-versionen från [http://www.mozilla.com/en-US/firefox](http://www.mozilla.com/en-US/firefox).
+   Hämta den senaste versionen av Firefox från [http://www.mozilla.com/sv-SE/firefox](http://www.mozilla.com/sv-SE/firefox).
 
 * **Safari**
 
-   Hämta den senaste Safari-versionen från [http://www.apple.com/safari/download](http://www.apple.com/safari/download).
+   Hämta den senaste versionen av Safari från [http://www.apple.com/se/safari](http://www.apple.com/se/safari).
 
-Andra webbläsare kan fungera, men stöds inte av våra tekniker och produktteam. Om du har problem med att arbeta med [!DNL Audience Manager]kontrollerar du att du använder en uppdaterad webbläsare som stöds.
+Andra webbläsare kan fungera, men stöds inte av våra tekniker och produktteam. Om du har problem med att arbeta med [!DNL Audience Manager] ska du kontrollera att du använder en uppdaterad webbläsare som stöds.
