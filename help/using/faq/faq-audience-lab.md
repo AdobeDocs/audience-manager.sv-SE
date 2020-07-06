@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Vanliga frågor om Audience Lab{#audience-lab-faq}
+# Vanliga frågor om Audience Lab {#audience-lab-faq}
 
 Frågor och svar om Audience Lab-funktionen.
 
@@ -30,32 +30,32 @@ audience-lab-faq.xml
 
 **Har testsegmenten som skapas i testgrupperna olika segment-ID? Hur mappar jag ID:n till olika destinationer?**
 
-Ja, testsegmenten har olika segment-ID. För destinationer med [!UICONTROL Auto-fill Destination Mapping] eller segment som skickas till [!DNL Google][!UICONTROL Audience Lab] hanteras mappningsvärdena på samma sätt som de mål som normalt används.
+Ja, testsegmenten har olika segment-ID. För destinationer med [!UICONTROL Auto-fill Destination Mapping] eller segment som skickas till [!DNL Google] hanteras mappningsvärdena i [!UICONTROL Audience Lab] på samma sätt som destinationerna gör i vanliga fall.
 
 <br> 
 
-**Kan samma konverteringsegenskap kopplas till flera testgrupper?**
+**Kan samma konverteringstrait kopplas till flera testgrupper?**
 
-Ja, det är tillåtet. Tänk på ett fall av ett test med ett manligt segment som är associerat med konvertering X och ett test med ett honsegment som är associerat med konvertering X. Det spelar ingen roll att båda testerna genererar konverteringar eftersom de testar två olika målgrupper.
-
-<br> 
-
-**Låt oss säga att en testgrupp använder en autentiserad profil för delning av testsegment. Den autentiserade profilen är länkad till 4[Audience Manager-UUID](../reference/ids-in-aam.md). När besökaren uppvisar en konverteringsegenskap från någon av de fyra UUID:n, räknas[!UICONTROL Audience Lab]detta som en eller fyra konverteringar?**
-
-I det här fallet räknas [!UICONTROL Audience Lab] bara en konvertering.
+Ja, det är tillåtet. Tänk dig ett test med ett manligt segment som är associerat med konvertering X och ett test med ett kvinnligt segment som är associerat med konvertering X. Det spelar ingen roll att båda testerna genererar konverteringar eftersom de testar två olika målgrupper.
 
 <br> 
 
-**Vad händer om besökaren från fallet ovan först uppvisar konverteringsegenskapen från en av de fyra UUID:n som är länkade till deras autentiserade profil och sedan också uppvisar konverteringsegenskapen från två andra UUID:n som är länkade till den autentiserade profilen? Räknas det här fallet som en eller tre konverteringar?**
+**Låt oss säga att en testgrupp använder en autentiserad profil för delning av testsegment. Den autentiserade profilen är länkad till fyra [Audience Manager UUID](../reference/ids-in-aam.md). När en besökare har ett konverteringstrait från någon av dessa fyra UUID:n, räknas det som en eller fyra konverteringar i [!UICONTROL Audience Lab]?**
 
-I det här fallet [!UICONTROL Audience Lab] räknas tre konverteringar, en för varje enhet som har visat verifieringsegenskapen.
+I det här fallet räknas det bara som en konvertering i [!UICONTROL Audience Lab].
 
 <br> 
 
-**Kan en användare ha[!UICONTROL Segment: Read-Only]åtkomst, men även åtkomst för att[!UICONTROL Audience Lab]testa att skapa segment?**
+**Vad händer om besökaren från exemplet ovan först har ett konverteringstrait från en av de fyra UUID:n som är länkade till hens autentiserade profil och sedan har ett konverteringstrait från två andra UUID:n som är länkade till den autentiserade profilen? Räknas det som en eller tre konverteringar?**
 
-Mer information om hur du använder [med](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups) behörigheter finns i [!UICONTROL Audience Lab] Skapa segmenttestgrupp [!UICONTROL RBAC] .
+I det här fallet räknas det som tre konverteringar i [!UICONTROL Audience Lab], en för varje enhet som har ett autentiserings-trait.
 
-**Kan jag använda[!UICONTROL Audience Lab]tillsammans med[!UICONTROL Profile Link Device Graph]och externa enhetsdiagram ([Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/home.html), Tapad Device Graph, Liveramp Device Graph)?**
+<br> 
 
-För närvarande [!UICONTROL Audience Lab] kan bara dela upp segmentpopulationer med enheter som är anslutna till en kvalificerande enhet när du använder [!UICONTROL Profile Link Device Graph]. Vi arbetar med att lägga till stöd i [!UICONTROL Audience Lab] för andra enhetsdiagram och kommer att meddela när vi gör det.
+**Kan en användare ha åtkomst till [!UICONTROL Segment: Read-Only] och samtidigt ha åtkomst för att skapa [!UICONTROL Audience Lab]-testsegment?**
+
+Mer information om hur du använder [!UICONTROL Audience Lab] med [!UICONTROL RBAC]- behörigheter finns i [Skapa testgrupp för segment](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups).
+
+**Kan jag använda [!UICONTROL Audience Lab] tillsammans med [!UICONTROL Profile Link Device Graph] och externa enhetsdiagram ([Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/sv-SE/device-co-op/using/home.html), Tapad Device Graph, Liveramp Device Graph)?**
+
+För närvarande kan [!UICONTROL Audience Lab] bara dela upp segmentpopulationer efter enheter som är anslutna till en kvalificerande enhet när du använder [!UICONTROL Profile Link Device Graph]. Vi arbetar med att lägga till stöd i [!UICONTROL Audience Lab] för andra enhetsdiagram och kommer att meddela när vi gör det.
