@@ -1,6 +1,6 @@
 ---
-description: Audience Manager hjälper er att samla in och hantera data från första part, andra part och tredje part.
-seo-description: Audience Manager hjälper er att samla in och hantera data från första part, andra part och tredje part.
+description: Med Audience Manager kan ni samla in och hantera data från första part, andra part och tredje part.
+seo-description: Med Audience Manager kan ni samla in och hantera data från första part, andra part och tredje part.
 seo-title: Typer av insamlade data
 solution: Audience Manager
 title: Typer av insamlade data
@@ -10,51 +10,51 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '867'
-ht-degree: 0%
+ht-degree: 73%
 
 ---
 
 
 # Typer av insamlade data {#types-of-data-collected}
 
-[!DNL Audience Manager] hjälper er att samla in och hantera data från första part, andra part och tredje part.
+[!DNL Audience Manager]Med kan ni samla in och hantera data från första part, andra part och tredje part.
 
-Att frigöra kundinformationsresurser som lagrats i flera lokaler är en av de största datamängderna som företag står inför idag. Från [!DNL CRM] databaser, registreringssystem, annonsservrar och så vidare, företag behöver verktyg som kan centralisera värdefulla data och hantera kund-/målgruppsinformation som en enda strategisk dataresurs. [!DNL Audience Manager] hjälper er att låsa upp isolerad kundinformation och hantera datainsamling från flera källor. Insamlade data kan hanteras baserat på dataelementets time-to-live-värden ([!DNL TTL]), vilket gör att utgivaren kan kontrollera förfallodatum för alla källor. [!DNL Audience Manager] har utformats för att hjälpa dig att hantera följande typer av data:
+Att frigöra informationstillgångar om kunder som lagrats på flera platser är en av de största utmaningarna som företag står inför idag. From [!DNL CRM] databases, to registration systems, to ad servers, and so forth, companies require tools that help centralize valuable data and manage customer/audience information as a single strategic data asset. [!DNL Audience Manager] hjälper er att låsa upp isolerad kundinformation och hantera datainsamling från flera källor. Collected data can be managed based on data element time-to-live ([!DNL TTL]) values, which helps the publisher control data expiration across all sources. [!DNL Audience Manager] är utformat för att hjälpa er att hantera följande typer av data:
 
-| Datatyp | Varifrån data kommer |
+| Datatyper | Datakälla |
 |---|---|
-| **Förste part** | Kunder. Data samlas in online (från konsumentinteraktioner på era webbplatser) eller offline. |
+| **Första part** | Kunder. Data samlas in online (från kundinteraktioner på era webbplatser) eller offline. |
 | **Andra part** | Strategiska partners och annonsörer. |
-| **Tredje part** | Dataleverantörer och/eller utbyten. Data kan innehålla information som återgivning, demografi, social/livsstil, psykografi och mycket annat. |
+| **Tredje part** | Dataleverantörer och/eller bytesplattformar. Data kan innehålla information som avsikt, demografi, socialt/livsstil, psykografi med mera. |
 
 ## Insamling av data från första part {#first-party-data}
 
-Första parts datainsamling är en [!DNL Audience Manager] huvudfunktion. Denna kärnkompetens tillgodoser behoven hos våra kunder (utgivare eller annonsörer) som vill använda egna data som hörnstenar i sina marknadsföringsprogram eller för målinriktning och modellering mot andra datakällor.
+First-party data collection is a main [!DNL Audience Manager] feature. Denna huvudfunktion tillgodoser behoven hos våra kunder (utgivare och annonsörer) som vill använda egna data som hörnstenar i marknadsföringsprogram eller för målinriktning och modellering mot andra datakällor.
 
-[!DNL Audience Manager] arbetar med kunderna för att förstå deras datastrategi och sedan mappar tillbaka den strategin till en anpassad datainsamlingsplan. Vårt Partner Solutions-team arbetar tillsammans med er för att utvärdera webbplatser, signaler för rådata och andra användarinteraktioner på era webbplatser. Med den här informationen kan vi hjälpa er att skapa en skräddarsydd datainsamlingsstrategi som hämtar datareddelanden på användarnivå från olika sidor i ert lager. Insamlade data lagras och mappas tillbaka till en fördefinierad taxonomi, som kan uppdateras när som helst när ditt företags behov förändras.
+[!DNL Audience Manager] hjälper kunderna att förstå sin datastrategi och mappar sedan den strategin i en anpassad datainsamlingsplan. Vårt Partner Solutions-team arbetar tillsammans med er för att utvärdera webbplatser, rådatasignaler och andra användarinteraktioner på era webbplatser. Med den här informationen kan vi hjälpa er att skapa en skräddarsydd datainsamlingsstrategi som hämtar datasignaler på användarnivå från olika sidor i ert lager. Insamlade data lagras och mappas tillbaka i en fördefinierad taxonomi som kan uppdateras när som helst när företagets behov förändras.
 
-Följande exempel visar hur potentiella dataelement kan hämtas från en exempelshoppingsida.
+Följande exempel visar hur potentiella dataelement kan hämtas från en shoppingsida.
 
 ![kundvagnsdata](assets/shopping-cart-data.png)
 
 | Objekt | Beskrivning |
 |---|---|
-| 1 | **Kön**. En köpares förnamn indikerar vanligtvis deras kön. I vårt exempel är köparens förnamn Mary, så vi vet att shopparen är en kvinna. Namn lagras aldrig av Audience Manager. |
-| 2 | **Intressen**. Artiklarna i kundvagnen kan visa olika intressen. I vårt exempel spenderar Mary mycket på friskvårdsutrustning. |
-| 3 | **Bostadstyp**. Baserat på frakt- och/eller faktureringsadresserna kan du ta reda på om Mary köper lämplig utrustning för sig själv eller för ett företag. |
+| 1 | **Kön**. En köpares förnamn indikerar vanligtvis kön. I vårt exempel är köparens förnamn Mary, så vi vet att köparen är en kvinna. Namn lagras aldrig av Audience Manager. |
+| 2 | **Intressen**. Artiklarna i kundvagnen kan visa olika intressen. I vårt exempel spenderar Mary mycket pengar på träningsutrustning. |
+| 3 | **Bostadstyp**. Baserat på frakt- och/eller faktureringsadress kan vi ta reda på om Mary köper träningsutrustning åt sig själv eller ett företag. |
 | 4 | **Plats**. [!DNL ZIP] koder är tillförlitligare än [!DNL IP] adresser när det gäller att identifiera en plats. |
-| 5 | **Kampanjnärhet**. Om en kund använder kampanjkoder eller presentkort är de förmodligen en köpare som letar efter de bästa erbjudandena. |
-| 6 | **Utnyttjar energi**. Prisdata som korreleras med [!DNL ZIP+4] koder visar att en viss plats förbrukar energi. |
+| 5 | **Prismedvetenhet**. Om en kund använder kampanjkoder eller presentkort är hen förmodligen en köpare som letar efter bra erbjudanden. |
+| 6 | **Köpkraft**. Price data correlated with [!DNL ZIP+4] codes indicate spending power of a given location. |
 
-När rådata har samlats in mappas de tillbaka till kunddefinierade egenskaper inom [!DNL Audience Manager] plattformen. Både taxonomin och datamappningar kan justeras när som helst utan att datainsamlingskoden ändras.
+After the raw data is collected, it gets mapped back to customer-defined traits within the [!DNL Audience Manager] platform. Både taxonomin och datamappningarna kan justeras när som helst utan att datainsamlingskoden ändras.
 
 ## Insamling av data från andra part {#second-party-data}
 
-Andra parts data kommer från en strategisk affärspartner (det är inte utgivardata). Den här informationen samlas in och hanteras precis som förstahandsdata.
+Andrapartsdata kommer från en strategisk affärspartner (det är inte utgivarens data). Den här informationen samlas in och hanteras precis som förstapartsdata.
 
-I ett datascenario från en annan part skickar annonsörer sina egna datatillgångar till utgivare så att de kan kombinera informationen med utgivarens data och sedan genomföra ett mer målinriktat annonsprogram. Dessutom kan utgivare utöka sin målgruppspool genom att samarbeta med sina annonsörer. I de flesta fall handlar dessa arrangemang om avtalsförhållanden som begränsas till att placera [!DNL Audience Manager] behållartaggen på partnerwebbplatsen för att underlätta datainsamling och delning.
+I ett scenario med andrapartsdata skickar annonsörer sina datatillgångar till utgivare så att de kan kombinera informationen med utgivarens data och genomföra ett målinriktat annonsprogram. Dessutom kan utgivare utöka sin målgruppspool genom att samarbeta med sina annonsörer. In most cases, these arrangements involve contractual relationships limited to putting the [!DNL Audience Manager] container tag on the partner site to facilitate data collection and sharing.
 
-Ett exempel på datainsamling och återmarknadsföring från andra leverantörer kan innebära att en klädåterförsäljare samlar in data om sina produkter och sedan delar denna information med viktiga partner. I det här fallet kan handlarna leverera olika annonser på en partnerwebbplats för kunder som väljer olika färger och storlekar för jackan. [!DNL Audience Manager]
+Ett exempel på andrapartsdatainsamling och återmarknadsföring kan vara en klädåterförsäljare som samlar in data om sina produkter och sedan delar informationen med viktiga partners. In this case, the retailed could serve different ads across an [!DNL Audience Manager] partner site for consumers who chose various jacket colors and sizes.
 
 ![](assets/shopping-cart-traits.png)
 
@@ -62,16 +62,16 @@ Ett exempel på datainsamling och återmarknadsföring från andra leverantörer
 
 Tredjepartsdata är information som samlas in och delas av leverantörer utanför [!DNL Audience Manager].
 
-Data från tredje part kan användas för att kvalificera befintliga data [!UICONTROL segments] (t.ex. ålder, hushållsinkomst o.s.v.), tillhandahålla data som är på begäran men inte på annat sätt tillgängliga eller användas i lookalike-modellering mot en känd användarbas från data från första part och andra part. [!DNL Audience Manager] arbetar med många tredjepartsleverantörer av data och hjälper er att förstå vilken typ av data dessa dataleverantörer samlar in så att ni kan göra rätt strategiska affärer med varje leverantör.
+Third-party data can be used to qualify existing data [!UICONTROL segments] (for example, age, household income, and so forth), provide data that is in demand but not otherwise available, or be used in lookalike modeling against a known user base from first-party and second-party data. [!DNL Audience Manager] fungerar med många tredjepartsleverantörer av data och hjälper er att förstå vilken typ av data som dessa dataleverantörer samlar in så att ni kan göra lämpliga strategiska affärer med varje leverantör.
 
 >[!NOTE]
 >
->En fullständig lista över tredjepartsleverantörer av data som stöds av [!DNL Audience Manager]finns i [Adobe Audience Finder](https://www.adobe-audience-finder.com/).
+>En fullständig lista över tredjepartsleverantörer av data som stöds av [!DNL Audience Manager] finns i [Adobe Audience Finder](https://www.adobe-audience-finder.com/).
 
-[!DNL Audience Manager] integreras med andra dataleverantörer baserat på deras tillgängliga [!DNL APIs] och datauppsättningar. Datainsamling fungerar i realtid när en användare surfar på webbplatsen, eller via out-of-band-metoder där ID:n synkroniseras mellan partner och data överförs mellan servrar när en användare har lämnat webbplatsen. I båda fallen får [!DNL Audience Manager] kunderna fördelen av att tredjepartsdata synkroniseras på vår plattform, vilket innebär att varje klient, eller domän, inte behöver utföra sin egen synkronisering. Detta ökar räckvidden och minskar antalet serveranrop från sidan.
+[!DNL Audience Manager] integreras med andra dataleverantörer baserat på deras tillgängliga [!DNL APIs] och datauppsättningar. Datainsamling fungerar i realtid när en användare surfar på webbplatsen eller via separata metoder där ID:n synkroniseras mellan partners och data överförs mellan servrar när en användare har lämnat webbplatsen. In either case, [!DNL Audience Manager] clients get the benefit of having third-party data synchronized on our platform, which means each client, or domain, does not have to perform its own synchronization. Det ökar räckvidden och minskar antalet serveranrop från sidan.
 
-## Matcha partners {#match-partners}
+## Matchningspartners {#match-partners}
 
-Många kunder väljer att arbeta med tredjeparts datamatchningspartners. Dessa enheter har relationer med webbplatser som har registreringskrav och kan bearbeta kunddatafiler genom att matcha dem (i realtid) baserat på deras registreringsnätverk.
+Många kunder väljer att samarbeta med tredjeparts datamatchningspartners. De har kontakter med webbplatser som kräver registrering och kan bearbeta kunddatafiler genom att matcha dem (i realtid) baserat på deras registreringsnätverk.
 
-![data-provider-match](assets/data-provider-match.png)
+![dataleverantörsmatchning](assets/data-provider-match.png)
