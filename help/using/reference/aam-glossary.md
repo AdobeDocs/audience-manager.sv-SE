@@ -1,6 +1,6 @@
 ---
-description: Definitioner och länkar till ytterligare läsning.
-seo-description: Definitioner och länkar till ytterligare läsning.
+description: Definitioner och länkar till mer läsning.
+seo-description: Definitioner och länkar till mer läsning.
 seo-title: Ordlista
 solution: Audience Manager
 title: Ordlista
@@ -10,20 +10,20 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '1186'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Ordlista{#glossary}
+# Ordlista {#glossary}
 
-Definitioner och länkar till ytterligare läsning.
+Definitioner och länkar till mer läsning.
 
-## A-B {#a-b}
+## A–B {#a-b}
 
-**Algoritmisk modellering**
+**Algoritmiska modeller**
 
-Använd [!UICONTROL Algorithmic Modeling] som ett sätt att nå ut utanför kärnan för de användare du har identifierat. Funktionen hjälper er att identifiera nya, unika målgrupper genom automatiserad dataanalys. Hantera ditt [!UICONTROL Algorithmic Models] i **[!UICONTROL Audience Data > Models]**.
+Använd [!UICONTROL Algorithmic Modeling] som ett sätt att nå ut utanför kärnan av de användare du har identifierat. Funktionen hjälper er att identifiera nya, unika målgrupper genom automatiserad dataanalys. Hantera [!UICONTROL Algorithmic Models] i **[!UICONTROL Audience Data > Models]**.
 
 Se [Förstå algoritmiska modeller](../features/algorithmic-models/algo-models-overview.md).
 
@@ -31,58 +31,58 @@ Se [Förstå algoritmiska modeller](../features/algorithmic-models/algo-models-o
 
 **BAAAM**
 
-[!UICONTROL Bulk Management Tools]. Inloggningen [!UICONTROL Bulk Management Tools] i [!DNL Audience Manager] är en Microsoft Excel-baserad uppsättning verktyg med vilka du kan skapa, ändra eller ta bort flera objekt samtidigt med en enda åtgärd. Du kan arbeta med datakällor, härledda signaler, mål, mappar, segment och egenskaper. Funktionen använder ett Microsoft Excel-kalkylblad med makron som gör säkra, autentiserade anrop till [!DNL Audience Manager] API:erna.
+[!UICONTROL Bulk Management Tools]. [!UICONTROL Bulk Management Tools] i [!DNL Audience Manager] är en Microsoft Excel-baserad uppsättning verktyg med vilka du kan skapa, ändra eller ta bort flera objekt samtidigt med en enda åtgärd. Du kan arbeta med datakällor, härledda signaler, destinationer, mappar, segment och traits. Funktionen använder ett Microsoft Excel-kalkylblad med makron som gör säkra, autentiserade anrop till [!DNL Audience Manager] API:erna.
 
-Se [Masshanteringsverktyg](../reference/bulk-management-tools/bulk-management-intro.md).
+Se [Verktyg för satsvis hantering](../reference/bulk-management-tools/bulk-management-intro.md).
 
-## C-D {#c-d}
+## C–D {#c-d}
 
 **CDF**
 
-[!UICONTROL Customer Data Feed]. En [!UICONTROL CDF] fil representerar en massnedladdning av data som samlats in av [!DNL Audience Manager] och gör att du kan arbeta med [!DNL Audience Manager] data utanför de gränser som gäller för användargränssnittet. En [!UICONTROL CDF] fil innehåller samma data som ett [!DNL Audience Manager] händelseanrop ( `/event`) skickar till våra servrar. Detta inkluderar data som användar-ID:n, trait-ID:n, segment-ID:n och alla andra parametrar som fångats in av ett händelseanrop.
+[!UICONTROL Customer Data Feed]. En [!UICONTROL CDF]-fil är en satsvis nedladdning av data som samlats in av [!DNL Audience Manager] och som gör att ni kan arbeta med [!DNL Audience Manager]-data utanför de gränser som gäller för användargränssnittet. En [!UICONTROL CDF]-fil innehåller samma data som ett [!DNL Audience Manager]-händelseanrop (`/event`) skickar till våra servrar. Det inkluderar data som användar-ID, trait-ID, segment-ID och alla andra parametrar som samlats in i ett händelseanrop.
 
-Se [Kunddatafeeds](../features/cdf-files.md).
+Se [Kunddataflöden](../features/cdf-files.md).
 
 <br> 
 
 **CRM-ID**
 
-CRM-ID är det ID med vilket kunderna identifierar användare i sina egna CRM-system. I stället för CRM ID använder vi termen DPUUID i Audience Manager.
+CRM-ID är det ID med vilket kunderna identifierar användare i sina egna CRM-system. I stället för CRM-ID använder vi termen DPUUID i Audience Manager.
 
-Se DPUID i [index för ID:n i Audience Manager](../reference/ids-in-aam.md).
+Se DPUUID i [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
 <br> 
 
-**Kundadresserbar publik**
+**Kundadresserbar målgrupp**
 
-I [adresserbar publik](/help/using/features/addressable-audiences.md)representerar detta mått enheter som:
-* Har fått antingen en regelbaserad eller en introducerad egenskap under backupfönstret
+I [Addressable Audience](/help/using/features/addressable-audiences.md) representerar detta mätvärde enheter som:
+* Har fått antingen ett regelbaserat eller registrerat trait under tillbakablicksperioden
    **OCH**
-* Ha en ID-synkronisering med det valda målet oavsett synkroniseringstidpunkten.
+* Har en ID-synkronisering med den valda destinationen oavsett synkroniseringstidpunkten.
 
 <br> 
 
 **Kundattribut**
 
-Se [Kundattribut](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) i [!DNL Experience Cloud Core Services] produktdokumentationen.
+Se [Kundattribut](https://docs.adobe.com/content/help/sv-SE/core-services/interface/customer-attributes/attributes.html) i [!DNL Experience Cloud Core Services] produktdokumentationen.
 
 <br> 
 
 **Kundmatchningsfrekvens**
 
-Kundadresserbar publik‡ Kundens totala publik uttryckt i %. Se [adresserbar publik](/help/using/features/addressable-audiences.md).
+Kundadresserbar målgrupp ÷ Kundens totala målgrupp uttryckt som %. Se [Addressable Audience](/help/using/features/addressable-audiences.md).
 
 <br> 
 
 **Kundens totala målgrupp**
 
-I [adresserbar publik](/help/using/features/addressable-audiences.md)representerar det här måttet antalet enheter som antingen har fått en regelbaserad egenskap på dina egenskaper eller en inbyggd egenskap från dina offlinefiler under kontrollfönstret.
+I [Addressable Audience](/help/using/features/addressable-audiences.md) representerar det här mätvärdet antalet enheter som antingen har fått ett regelbaserat trait på era webbplatser eller som har fått ett registrerat trait under tillbakablicksperioden.
 
 <br> 
 
 **demdex.net**
 
-Demdex.net är en äldre domän som styrs av [!DNL Adobe]. Den återspeglar [!DNL Audience Manager]det ursprungliga namnet ( [!DNL Demdex]) före förvärvet. [!DNL Adobe] förvärvades [!DNL Demdex] 2011 och omprofilerade företaget som [!DNL Audience Manager]. Alla HTTP-anrop till `demdex.net` domäner är anrop som skickas till [!DNL Adobe].
+Demdex.net är en äldre domän som drivs av [!DNL Adobe]. Den återspeglar det ursprungliga namnet på [!DNL Audience Manager] före förvärvet ( [!DNL Demdex]). [!DNL Adobe] förvärvades [!DNL Demdex] 2011 och företaget omprofilerades som [!DNL Audience Manager]. Alla HTTP-anrop till `demdex.net`-domäner är anrop som skickas till [!DNL Adobe].
 
 Se [Förstå anrop till Demdex-domänen](../reference/demdex-calls.md).
 
@@ -90,68 +90,68 @@ Se [Förstå anrop till Demdex-domänen](../reference/demdex-calls.md).
 
 **DAID**
 
-[!UICONTROL Device Advertising IDs] är unika enhetsidentifierare som används för att identifiera en mobil enhet. Dessa ID:n tilldelas av enhetstillverkaren, inte av Adobe. Vi har stöd för iOS och Android-enhets-ID i [!DNL Audience Manager].
+[!UICONTROL Device Advertising IDs] är unika enhetsidentifierare som används för att identifiera mobila enheter. Dessa ID:n tilldelas av enhetstillverkaren, inte av Adobe. Vi har stöd för iOS och Android-enhets-ID i [!DNL Audience Manager].
 
-Se [index för ID:n i Audience Manager](../reference/ids-in-aam.md).
+Se [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
 <br> 
 
-**Mål**
+**Destination**
 
-I [!DNL Audience Manager]är målet vilket annat system som helst (annonsserver, DSP, annonsnätverk osv.) som du vill dela data med. I användargränssnittet finns [!UICONTROL Destination Builder] de verktyg som du kan använda för att skapa och hantera dessa dataleveransprocesser. [!DNL Audience Manager] målfunktionerna finns i **[!UICONTROL Audience Data > Destinations]**.
+I [!DNL Audience Manager] är destinationen ett annat system (annonsserver, DSP, annonsnätverk osv.) som du vill dela data med. [!UICONTROL Destination Builder] i användargränssnittet innehåller de verktyg som du kan använda för att skapa och hantera sådana dataleveransprocesser. [!DNL Audience Manager]-destinationsfunktionerna finns i **[!UICONTROL Audience Data > Destinations]**.
 
 <br> 
 
 **DIL**
 
-Detta [!UICONTROL Data Integration Library] är ett API-bibliotek som används av [!DNL Audience Manager] för att samla in användarinteraktionsdata. Se API:t för [dataintegreringsbibliotek (DIL)](../dil/dil-overview.md).
+[!UICONTROL Data Integration Library] är ett API-bibliotek som används av [!DNL Audience Manager] för att samla in data om användarinteraktioner. Se [API för Data Integration Library (DIL)](../dil/dil-overview.md).
 
 <br> 
 
 **dpm**
 
-[!UICONTROL Data Provider Match]. Den talar om för interna [!DNL Adobe] system att ett anrop från [!DNL Audience Manager] eller ID-tjänsten skickas i kunddata för synkronisering eller begär ett ID. Se [Förstå anrop till Demdex-domänen](../reference/demdex-calls.md).
+[!UICONTROL Data Provider Match]. Talar om för interna [!DNL Adobe]-system att ett anrop från [!DNL Audience Manager] eller ID-tjänsten skickas i kunddata för synkronisering eller begäran om ID. Se [Förstå anrop till Demdex-domänen](../reference/demdex-calls.md).
 
-## E-F {#e-f}
+## E–F {#e-f}
 
 **Experience Cloud ID (ECID)**
 
-Tidigare kallat [!DNL Marketing Cloud] -ID (MID eller MCID). ID:t [!DNL Experience Cloud] är centralt för ID-tjänsten. Det är en unik och beständig identifierare för era webbplatsbesökare. Se Cookies och [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html).
+Tidigare kallat [!DNL Marketing Cloud] ID (MID eller MCID). [!DNL Experience Cloud]-ID är centralt för ID-tjänsten. Det är en unik och beständig identifierare för era webbplatsbesökare. Se Cookies och [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/sv-SE/id-service/using/intro/cookies.html).
 
 <br> 
 
-**Mappegenskaper**
+**Mapp-trait**
 
-Automatisk gruppering av egenskaper i mappens taxonomi. Varje mapp i din hierarki skapar automatiskt en egenskap som kan användas för att definiera segment.
+Automatisk gruppering av traits i mapp-taxonomin. Varje mapp i hierarkin skapar automatiskt ett trait som kan användas för att definiera segment.
 
-Se [Mappegenskaper: Om](../features/traits/about-folder-traits.md).
+Se [Mapp-traits: Om](../features/traits/about-folder-traits.md).
 
 <br> 
 
 **Frekvensbegränsning**
 
-En begränsning på ett antal gånger som en annonsörer vill visa en viss kreativ för en slutanvändare. Du kan konfigurera olika uttryck för frekvensbegränsning i [!UICONTROL Segment Builder].
+Ett begränsat antal gånger som en annonsör vill visa en viss kampanj för en slutanvändare. Du kan konfigurera olika värden för frekvensbegränsning i [!UICONTROL Segment Builder].
 
-Se [Nyhet och frekvens](../features/segments/recency-and-frequency.md).
+Se [Recency och frekvens](../features/segments/recency-and-frequency.md).
 
-## G-H {#g-h}
+## G–H {#g-h}
 
 **GAID**
 
-Google Advertising ID, det unika enhets-ID som Google tilldelar till maskinvaruenheter som kör Android-operativsystemet. Se [index för ID:n i Audience Manager](../reference/ids-in-aam.md).
+Google Advertising ID, det unika enhets-ID som Google tilldelar maskinvaruenheter som kör Android-operativsystemet. Se [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
 <br> 
 
 **GUID**
 
-En akronym för globalt unik identifierare. Vi använder inte termen GUID i [!DNL Audience Manager]. I vårt fall är GUID [!DNL Audience Manager] UUID.
-Se [Index för ID:n i Audience Manager](../reference/ids-in-aam.md).
+En akronym för global unik identifierare. Vi använder inte termen GUID i [!DNL Audience Manager]. I vårt fall är GUID detsamma som [!DNL Audience Manager] UUID.
+Se [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
-## I-J {#i-j}
+## I–J {#i-j}
 
 **IDFA**
 
-Identifierare för annonsörer, det unika enhets-ID som Apple tilldelar sina produkter. Se [index för ID:n i Audience Manager](../reference/ids-in-aam.md).
+Identifierare för annonsörer, det unika enhets-ID som Apple tilldelar sina produkter. Se [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
 <br> 
 
@@ -161,119 +161,119 @@ Den process som ni kan använda för att skicka målgruppsdata från andra käll
 
 <br> 
 
-**Integrationskod**
+**Integreringskod**
 
-När du arbetar med [!DNL Audience Manager] gränssnittet eller API:t kan du lägga till en integreringskod när du skapar egenskaper, segment eller datakällor. Integrationskoder har olika syften i dessa fall:
+När ni arbetar med [!DNL Audience Manager]-gränssnittet eller API:t kan ni lägga till en integreringskod när ni skapar traits, segment och datakällor. Integreringskoder har olika syften i dessa fall:
 
-* [!UICONTROL Traits]: en integrationskod är ett fält för ett ID, SKU eller annat värde som används av dina interna affärsprocesser. Valfritt.
-* [!UICONTROL Segments]: en integrationskod är ett fält för ett användardefinierat ID eller annan företagsspecifik information. Valfritt.
-* [!UICONTROL Data Sources]: integreringskoder krävs när du vill skapa datakällor för olika enheter, använda Adobe Experience Platform Identity Service eller arbeta med [!UICONTROL Profile Merge Rules]. Mer information finns i [Skapa en datakälla](../features/manage-datasources.md#create-data-source) .
+* [!UICONTROL Traits]: en integreringskod är ett fält för ett ID, en SKU eller annat värde som används av era interna affärsprocesser. Valfritt.
+* [!UICONTROL Segments]: en integreringskod är ett fält för ett användardefinierat ID eller annan företagsspecifik information. Valfritt.
+* [!UICONTROL Data Sources]: integreringskoder krävs när ni vill skapa enhetsövergripande datakällor, använda Adobe Experience Platform Identity Service eller arbeta med [!UICONTROL Profile Merge Rules]. Mer information finns i [Skapa en datakälla](../features/manage-datasources.md#create-data-source).
 
-## K-L {#k-l}
+## K–L {#k-l}
 
 **[!UICONTROL Look-alike modeling]**
 
-Se [Algoritmisk modellering](../reference/aam-glossary.md#a-b).
+Se [Algoritmiska modeller](../reference/aam-glossary.md#a-b).
 
-## M-N {#m-n}
+## M–N {#m-n}
 
 **MCID**, **MID**
 
-Se [Experience Cloud-ID](../reference/aam-glossary.md#e-f).
+Se [Experience Cloud ID](../reference/aam-glossary.md#e-f).
 
-## O-P {#o-p}
+## O–P {#o-p}
 
 **PCS**
 
-[!UICONTROL Profile Cache Server]. Det [!UICONTROL PCS] är en stor databas som körs på Apache Cassandra. Den lagrar data som tas emot för aktiva användare från server till server-överföringar och [!DNL DCS]. [!UICONTROL PCS] data består av enhets-ID, autentiserade profil-ID:n och tillhörande egenskaper.
+[!UICONTROL Profile Cache Server]. [!UICONTROL PCS] är en stor databas som körs på Apache Cassandra. Den lagrar data som tas emot för aktiva användare vid server till server-överföringar och [!DNL DCS]. [!UICONTROL PCS]-data består av enhets-ID, autentiserade profil-ID:n och tillhörande traits.
 
-Se [Datainsamlingskomponenter](../reference/system-components/components-data-collection.md).
+Se [Komponenter för datainsamling](../reference/system-components/components-data-collection.md).
 
 <br> 
 
 **Profillänk**
 
-Se [Alternativ för profilkopplingsregel definierade](../features/profile-merge-rules/merge-rule-definitions.md).
+Se [Beskrivning av alternativen för regler för profilsammanslagning](../features/profile-merge-rules/merge-rule-definitions.md).
 
 <br> 
 
 **Regler för profilsammanslagning**
 
-[!UICONTROL Profile Merge Rules] kan du styra vilken typ av data som [!DNL Audience Manager] används för segmentering.
+Med [!UICONTROL Profile Merge Rules] kan du styra vilken typ av data som används i [!DNL Audience Manager] för segmentering.
 
-Se [Alternativ för profilkopplingsregel definierade](../features/profile-merge-rules/merge-rule-definitions.md).
+Se [Beskrivning av alternativen för regler för profilsammanslagning](../features/profile-merge-rules/merge-rule-definitions.md).
 
-## Q-R {#q-r}
+## Q–R {#q-r}
 
 **Realisering**
 
-Den åtgärd som en besökare på platsen kvalificerar sig för. Du kan använda verktyget [Visitor Profile Viewer](../features/visitor-profile-viewer.md) för att få information om hur en viss användare implementerar egenskaper.
+Den åtgärd med vilken en besökare på er webbplats kvalificerar för ett trait. Ni kan använda verktyget [Visitor Profile Viewer](../features/visitor-profile-viewer.md) för att få information om hur traits realiseras för specifika användare.
 
-## S-T {#s-t}
+## S–T {#s-t}
 
 **Segment**
 
 Ett segment (eller en målgrupp) är en uppsättning användare som delar gemensamma attribut.
 
-Se [Segment: Syfte, Disposition och Regler](../features/segments/segments-purpose.md).
+Se [Segment: Syfte, sammansättning och regler](../features/segments/segments-purpose.md).
 
 <br> 
 
 **Segmentadresserbar publik**
 
-I [adresserbar publik](/help/using/features/addressable-audiences.md)representerar det här måttet antalet användare som har tillhört segmentet under rapportens kontrollperiod och har en aktiv ID-synkronisering på din webbplats. Segmenten kan innehålla egna data från första part samt data från andra part och tredje part via egenskaper som förvärvats i [Audience Marketplace](/help/using/features/audience-marketplace/audience-marketplace.md).
+I [Addressable Audience](/help/using/features/addressable-audiences.md) representerar det här mätvärdet antalet användare som har tillhört segmentet under rapportens tillbakablicksperiod och som har en aktiv ID-synkronisering på er webbplats. Segment kan innehålla era förstapartsdata samt andra- och tredjepartsdata via traits som registrerats på [Audience Marketplace](/help/using/features/audience-marketplace/audience-marketplace.md).
 
 <br> 
 
 **Segmentets totala population**
 
-I [adresserbar publik](/help/using/features/addressable-audiences.md)representerar det här måttet antalet enheter som var medlemmar i ditt segment under rapportens summeringsperiod.
+I [Addressable Audience](/help/using/features/addressable-audiences.md) representerar det här mätvärdet antalet enheter som var medlemmar i ert segment under rapportens tillbakablicksperiod.
 
 <br> 
 
 **Matchningsfrekvens för segment**
 
-Segmentadresserbar publik / Total segmentpopulation uttryckt i %. Se [adresserbar publik](/help/using/features/addressable-audiences.md).
+Segmentadresserbar publik ÷ Total segmentpopulation uttryckt i %. Se [Addressable Audience](/help/using/features/addressable-audiences.md).
 
 <br> 
 
 **Signal**
 
-Signaler är de minsta dataenheterna i [!DNL Audience Manager] och uttrycks som nyckelvärdepar.
+Signaler är de minsta dataenheterna i [!DNL Audience Manager] och uttrycks som nyckelvärdespar.
 
-Se [Signaler, Traits och Segments](../reference/signal-trait-segment.md).
+Se [Signaler, traits och segment](../reference/signal-trait-segment.md).
 
 <br> 
 
 **Trait**
 
-Ett drag är en kombination av en eller flera signaler. Se [Signaler, Traits och Segments](../reference/signal-trait-segment.md).
+Ett trait är en kombination av en eller flera signaler. Se [Signaler, traits och segment](../reference/signal-trait-segment.md).
 
 <br> 
 
-**Trait Population**
+**Trait-population**
 
-Se [Trait and Segment Population Data in Segment Builder](../features/segments/segment-builder-data.md).
+Se [Trait- och segmentpopulationsdata i Segment Builder](../features/segments/segment-builder-data.md).
 
 **TTL (Time-to-Live)**
 
-TTL definierar hur många dagar en kvalificerad besökare stannar i ett intryck. TTL anges för egenskaper och inte för segment. Besökare faller bort från ett segment om de inte ser någon kvalificerande egenskap före slutet av TTL-intervallet. Läs mer i [segmentering och Trait Time-to-Live (på engelska) Förklara](/help/using/features/traits/segment-ttl-explained.md).
+TTL definierar hur många dagar en kvalificerad besökare stannar i ett trait. TTL anges för traits och inte för segment. Besökare försvinner från ett segment om ett kvalificerande trait inte identifieras före slutet av TTL-intervallet. Läs mer i [Förklaring av segment and TTL (Time-to-Live) för traits](/help/using/features/traits/segment-ttl-explained.md).
 
 <br> 
 
-## U-V {#u-v}
+## U–V {#u-v}
 
 **UUID**
 
-[!DNL Audience Manager] Unikt användar-ID. Se [index för ID:n i Audience Manager](../reference/ids-in-aam.md).
+[!DNL Audience Manager] Unikt användar-ID. Se [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
 <br> 
 
 **Besökar-ID**
 
-ID- [!DNL Experience Cloud] tjänsten (tidigare besökar-ID) innehåller ett universellt, beständigt ID som identifierar besökarna i alla lösningar i [!DNL Experience Cloud].
+[!DNL Experience Cloud] ID-tjänsten (tidigare besökar-ID) tillhandahåller ett universellt, beständigt ID som identifierar era besökare i alla lösningar i [!DNL Experience Cloud].
 
-Se dokumentationen för [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html) .
+Se dokumentationen för [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html).
 
-## W-X-Y-Z {#w-z}
+## W–X–Y–Z {#w-z}
 
