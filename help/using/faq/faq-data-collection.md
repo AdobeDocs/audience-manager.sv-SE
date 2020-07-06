@@ -6,8 +6,9 @@ solution: Audience Manager
 title: Vanliga frågor om datainsamling och produktintegrering
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
+feature: Administration
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 27ce94084e35ffa770858027d12235ca9f1f8430
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 0%
@@ -37,13 +38,13 @@ Trakter som introduceras via [!UICONTROL Inbound] fylls i på [!UICONTROL Inboun
 
 <br> 
 
-**Kan du ge mig en lista över IP-adresser som jag kan lägga till i en Tillåt-lista för dpm.demdex.net?**
+**Kan du ge mig en lista över IP-adresser som jag kan lägga till i en tillåtelselista för dpm.demdex.net?**
 
 Tyvärr kan vi inte. Dessa IP-adresser tilldelas dynamiskt, per geografisk region, via [!DNL Amazon Web Services]. Detta innebär att [!DNL Audience Manager] inte kontrollerar vilket IP-intervall som kan tilldelas till den här adressen.
 
 <br> 
 
-**Kan du ge mig en IP-adress jag kan lägga till i en Tillåt-lista för din inkommande och utgående sFTP-server?**
+**Kan du ge mig en IP-adress som jag kan lägga till i en tillåtelselista för din inkommande och utgående sFTP-server?**
 
 Ja, se nedan.
 
