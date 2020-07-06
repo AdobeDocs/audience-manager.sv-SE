@@ -2,21 +2,21 @@
 description: Vanliga frågor och problem som rör produkter och funktioner.
 keywords: audience manager cookies
 seo-description: Vanliga frågor och problem som rör produkter och funktioner.
-seo-title: Funktioner och funktioner Frågor och svar
+seo-title: Vanliga frågor om produktfunktioner
 solution: Audience Manager
-title: Funktioner och funktioner Frågor och svar
+title: Vanliga frågor om produktfunktioner
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
 feature: Overview
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 3%
+ht-degree: 91%
 
 ---
 
 
-# Funktioner och funktioner Frågor och svar{#product-features-and-functions-faq}
+# Vanliga frågor om produktfunktioner {#product-features-and-functions-faq}
 
 Vanliga frågor och problem som rör produkter och funktioner.
 
@@ -30,21 +30,21 @@ faq_features_functions.xml
 
 **Vad är mitt organisations-ID och hur hittar jag det?**
 
-Detta *`Organization ID`* är ett unikt ID som identifierar din organisation för [!DNL Audience Manager] och [!DNL Adobe Experience Cloud]. Den består av en skiftlägeskänslig, 24-siffrig alfanumerisk sträng följt av [!UICONTROL @AdobeOrg].
+*`Organization ID`* är ett unikt ID som identifierar din organisation i [!DNL Audience Manager] och [!DNL Adobe Experience Cloud]. Det består av en skiftlägeskänslig, 24-siffrig alfanumerisk sträng följt av [!UICONTROL @AdobeOrg].
 
-En *`Organization ID`* stil ser till exempel ut så här: `1FD6776A524453CC0A490D44@AdobeOrg`.
+Ett *`Organization ID`* ser till exempel ut så här: `1FD6776A524453CC0A490D44@AdobeOrg`.
 
-Detta *`Organization ID`* används av Audience Manager [DIL](../dil/dil-overview.md) API, [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)och andra [!DNL Experience Cloud] lösningar. Användare med administratörsbehörighet kan hitta *`Organization ID`* på [!DNL Adobe Admin Console]. Se Vanliga frågor om [administration - Användarhantering](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Detta *`Organization ID`* används av Audience Managers [DIL](../dil/dil-overview.md) API, [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html) och andra [!DNL Experience Cloud]-lösningar. Användare med administratörsbehörighet kan hitta *`Organization ID`* på [!DNL Adobe Admin Console]. Se [Administration – Vanliga frågor om användarhantering](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
  
 
-**Kan jag skapa traits eller destination satsvis?**
+**Kan jag skapa traits eller destinationer satsvis?**
 
-Ja. Se [Masshanteringsverktyg](../reference/bulk-management-tools/bulk-management-intro.md).
+Ja. Se [Verktyg för satsvis hantering](../reference/bulk-management-tools/bulk-management-intro.md).
 
 >[!NOTE]
 >
->Verktygen [!UICONTROL Bulk Management Tools] stöds inte *av* [!DNL Audience Manager]. De tillhandahålls av praktiska skäl och endast för att vara artiga. För större ändringar rekommenderar vi att du arbetar med API:erna [för](../api/api.md) Audience Manager i stället.
+>[!UICONTROL Bulk Management Tools]-verktygen stöds *inte* av [!DNL Audience Manager]. De tillhandahålls endast av praktiska skäl. För satsvisa ändringar rekommenderar vi att du arbetar med [Audience Managers API:er](../api/api.md) i stället.
 
  
 
@@ -54,46 +54,46 @@ När ett enhets-ID ([AAM UUID](../reference/ids-in-aam.md)) länkas till flera C
 
  
 
-**Kan[!DNL Audience Manager]minska behovet av tredjepartstaggar eller pixlar och förbättra sidinläsningstiden?**
+**Kan [!DNL Audience Manager] minska behovet av tredjepartstaggar eller pixlar och förbättra sidinläsningstiderna?**
 
-Om [!DNL Audience Manager] är integrerat med din tredje parts datapartner kan du ersätta deras pixlar och taggar med ett server-till-server-ID-anrop till [!DNL Audience Manager]. I det här fallet [!DNL Audience Manager] utlöses ett enskilt ID-anrop första gången en användare visas och informationen synkroniseras med din tredjepartspartner. På så sätt elimineras behovet av att anropa flera pixlar från varje sida. Genom att minska antalet pixelanrop kan sidinläsningstiden förbättras.
-
- 
-
-**Jag har prenumererat på en datafeed. Var lagras dessa data?**
-
-Din datafeed och alla egenskaper som finns i feeden visas som undermappar och egenskaper i [!DNL Audience Manager]. Gå till **[!UICONTROL Audience Data > Traits]** och expandera [!UICONTROL 3rd-Party Data] mappen för att visa dina egenskaper eller skapa segment och modeller med dessa data.
+Om [!DNL Audience Manager] är integrerat med er tredjepartsdatapartner kan ni ersätta deras pixlar och taggar med ett server-till-server ID-anrop till [!DNL Audience Manager]. I sådana fall aktiverar [!DNL Audience Manager] ett enskilt ID-anrop första gången en användare avkänns och informationen synkroniseras med er tredjepartspartner. På så sätt elimineras behovet av flera pixelanrop från varje sida. Genom att minska antalet pixelanrop kan sidinläsningstiderna förbättras.
 
  
 
-**Vad är[!UICONTROL Tag Insertion Manager (TIM)]?**
+**Jag prenumererar på en datafeed. Var lagras dessa data?**
 
-Audience Manager använde [!UICONTROL Tag Insertion Manager] (TIM) för att skapa och hantera [!UICONTROL data collection code (DIL)]. Den här funktionen är föråldrad och har ersatts först av [!UICONTROL Dynamic Tag Manager (DTM)] och därefter av [!DNL Adobe Experience Platform Launch]. For more information, see [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) and [Dynamic Tag Management](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html).
+Din datafeed och alla traits som finns i flödet visas som undermappar och traits i [!DNL Audience Manager]. Gå till **[!UICONTROL Audience Data > Traits]** och expandera [!UICONTROL 3rd-Party Data]-mappen för att visa dina traits eller skapa segment och modeller med dessa data.
 
  
 
-**Vilka är skillnaderna mellan algoritmiska modeller och trait Recommendations? När ska jag använda var och en av dem?**
+**Vad är [!UICONTROL Tag Insertion Manager (TIM)]?**
+
+Audience Manager använde [!UICONTROL Tag Insertion Manager] (TIM) för att skapa och hantera [!UICONTROL data collection code (DIL)]. Den här funktionen är föråldrad och har ersatts först av [!UICONTROL Dynamic Tag Manager (DTM)] och därefter av [!DNL Adobe Experience Platform Launch]. Mer information finns i [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) och [Dynamic Tag Management](https://docs.adobe.com/content/help/sv-SE/dtm/using/dtm-home.html).
+
+ 
+
+**Vilka är skillnaderna mellan algoritmiska modeller och trait-rekommendationer? När ska jag använda dem?**
 
 **Algoritmiska modeller**
 
-Algoritmiska modeller hittar inte bara de mest inflytelserika egenskaperna, utan även användare baserat på dessa egenskaper och tilldelar varje användare en individuell poäng. Sedan skapar du algoritmiska egenskaper som riktar sig till användarna. Med precision och räckvidd i Trait Builder kan du ange vilka användare bland alla som har de inflytelserika egenskaper du vill ha som mål.
+Algoritmiska modeller hittar inte bara inflytelserika traits, de klassificerar även användare baserat på dessa traits och tilldelar varje användare en individuell poäng. Sedan skapar du algoritmiska traits som riktar sig till användarna. Med precisions- och räckviddsverktygen i Trait Builder kan du ange vilka användare som du vill nå bland alla de som har de traits du vill ha som mål.
 
-Med algoritmiska modeller kan du välja användare på olika noggrannhetsnivåer och testa i Audience Lab vilken grupp användare som konverterar bättre. Se det detaljerade användningsexemplet i [Jämför modeller i Audience Lab](../features/audience-lab/audience-lab-use-cases.md#compare-models).
+Med algoritmiska modeller kan du välja användare på olika precisionsnivåer och testa i Audience Lab vilken grupp användare som lättast konverteras. Se det detaljerade användningsexemplet i [Jämför modeller i Audience Lab](../features/audience-lab/audience-lab-use-cases.md#compare-models).
 
-I algoritmiska modeller körs modellen var 8:e dag och uppdaterar de användare som är kvalificerade för algoritmiska egenskaper.
+I algoritmiska modeller körs modellen var 8:e dag och uppdaterar de användare som kvalificerade för algoritmiska traits.
 
-**Trait Recommendations**
+**Trait-rekommendationer**
 
-Trait Recommendations är ett snabbt sätt att få insikter om andra egenskaper som liknar de du använder i ett segment.
+Trait-rekommendationer är ett snabbt sätt att få insikter om andra traits som liknar de du använder i ett segment.
 
-Du bör använda Trait Recommendations när:
+Du bör använda trait-rekommendationer när:
 
-* Ni behöver snabba insikter när ni skapar segment,
-* Ni använder segmenten för korta kampanjer eller när ni snabbt vill hindra målgrupper som konverterar;
-* Du försöker maximera räckvidden.
+* Ni behöver snabba insikter när ni skapar segment
+* Ni använder segmenten för korta kampanjer eller när ni snabbt vill exkludera målgrupper som konverterar
+* Ni försöker maximera räckvidden.
 
  
 
-**Är det någon skillnad mellan Adobe Analytics och Audience Manager?**
+**Är det någon skillnad mellan Adobe Analytics- och Audience Manager-segment?**
 
-Ja, läs [Understanding Segments in Analytics and Audience Manager](https://docs.adobe.com/content/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) om du vill ha en detaljerad beskrivning av skillnaderna.
+Ja, läs [Förstå segment i Analytics och Audience Manager](https://docs.adobe.com/content/help/sv-SE/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) för en ingående beskrivning av skillnaderna.
