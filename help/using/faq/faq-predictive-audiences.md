@@ -1,118 +1,118 @@
 ---
-description: Med prediktiva målgrupper kan ni klassificera okända målgrupper i distinkta personligheter i realtid med datavetenskap.
-seo-description: Med prediktiva målgrupper kan ni klassificera okända målgrupper i distinkta personligheter i realtid med datavetenskap.
-seo-title: Vanliga frågor om prediktiva målgrupper
+description: Med Predictive Audiences kan ni klassificera okända målgrupper i distinkta personas i realtid med datavetenskap.
+seo-description: Med Predictive Audiences kan ni klassificera okända målgrupper i distinkta personas i realtid med datavetenskap.
+seo-title: Vanliga frågor om Predictive Audiences
 solution: Audience Manager
-title: Audience Manager prediktiva målgrupper
+title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Vanliga frågor om prediktiva målgrupper
+# Vanliga frågor om Predictive Audiences
 
-Frågor och svar om [!UICONTROL Predictive Audiences].
+Vanliga frågor och svar om [!UICONTROL Predictive Audiences].
 
  
 
-**När ska jag använda[!UICONTROL Predictive Audiences]istället för[!UICONTROL Look-alike modeling]?**
+**När ska jag använda [!UICONTROL Predictive Audiences] i stället för [!UICONTROL Look-alike modeling]?**
 
 [!UICONTROL Predictive Audiences] och [!UICONTROL Look-alike modeling] kan användas på olika sätt. De viktigaste skillnaderna mellan de två algoritmerna är följande:
 
-1. [!UICONTROL Look-alike modeling] tar en liten publik som indata och utökar den. [!UICONTROL Predictive Audiences] tar en stor publik som indata och delar in den i mindre distinkta målgrupper, som definieras av era personligheter.
-1. Antalet bassegment är olika för varje algoritm. [!UICONTROL Predictive Audiences] kräver minst två baslinjer, medan en baslinje [!UICONTROL Look-alike modeling] används som mest.
-1. [!UICONTROL Predictive Audiences] utför segmentutvärdering i realtid, men [!UICONTROL Look-alike modeling] inte.
+1. [!UICONTROL Look-alike modeling] tar en liten målgrupp som indata och bygger vidare på den. [!UICONTROL Predictive Audiences] tar en stor målgrupp som indata och delar in den i mindre distinkta målgrupper som definieras av era personas.
+1. Antalet bassegment är olika för varje algoritm. [!UICONTROL Predictive Audiences] kräver minst två baslinjer, medan [!UICONTROL Look-alike modeling] använder högst en baslinje.
+1. [!UICONTROL Predictive Audiences] utvärderar segment i realtid, [!UICONTROL Look-alike modeling] gör det inte.
 
-Beroende på ditt sätt att arbeta bör du bestämma vilken modell som är mer relevant för dig.
+Beroende på ert användningsområde bör ni bestämma vilken modell som är mest relevant.
 
-Man kan tänka sig att bygga en [!UICONTROL Predictive Audiences] modell med ett antal baslinjer som motsvarar att bygga samma antal lookalike-modeller, endast utan realtidsutvärderingen, och med en mycket hög sannolikhet att besökare som tillhör flera olika personligheter istället för en enda distinkt persona.
-
- 
-
-**Hur många profiler/modeller får jag skapa?**
-
-Du kan skapa upp till 10 [!UICONTROL Predictive Audiences] modeller. För varje modell kan du definiera upp till 50 baslinjetrafik eller segment.
+Du kan tänka dig att en [!UICONTROL Predictive Audiences]-modell med ett antal baslinjer är ungefär som samma antal lookalike-modeller utan utvärdering i realtid och med en mycket hög sannolikhet att besökare tillhör flera olika personas i stället för en enda.
 
  
 
-**Hur skapar jag nya segment från ett[!UICONTROL Predictive Audiences]segment?**
+**Hur många personas/modeller kan jag skapa?**
 
-Gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Segments]** och klicka på **[!UICONTROL Predictive Audiences]** mappen. Hitta det önskade segmentet, duplicera det och redigera det efter behov.
+Du kan skapa upp till 10 [!UICONTROL Predictive Audiences]-modeller. För varje modell kan du definiera upp till 50 baslinje-traits eller segment.
 
  
 
-**Varför klassificeras några av mina ombord-besökare inte?**
+**Hur skapar jag nya segment från ett [!UICONTROL Predictive Audiences]-segment?**
 
-För närvarande fungerar målgruppsklassificering bara för realtidskvalifikationer, med undantag för autentiserade användare som definierats som en del av [!UICONTROL Profile Merge Rules].
+Gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Segments]** och klicka på **[!UICONTROL Predictive Audiences]**-mappen. Hitta det önskade segmentet, kopiera det och redigera det efter behov.
 
-Fullt stöd för inbyggda data kommer att läggas till i en framtida uppdatering.
+ 
+
+**Varför klassificeras inte vissa av mina registrerade besökare?**
+
+För närvarande fungerar målgruppsklassificering bara i realtid, med undantag för autentiserade användare som definierats som en del av [!UICONTROL Profile Merge Rules].
+
+Fullt stöd för registrerade data kommer att läggas till i en framtida uppdatering.
 
  
 
 **När kan jag se de första resultaten från min modell?**
 
-[!UICONTROL Predictive Audiences] modellresultaten är tillgängliga inom 24 timmar efter att modellen har skapats, om modellen fungerar som den ska.
+Resultat från [!UICONTROL Predictive Audiences]-modeller är tillgängliga inom 24 timmar efter att modellen har skapats, om modellen fungerar som den ska.
 
 Om modellen inte ger några resultat inom 24 timmar kan du kontakta din Adobe-representant.
 
  
 
-**Varför producerar min modell inga resultat eller visar varningsstatusen?**
+**Varför producerar min modell inga resultat eller varför visas varningsstatus?**
 
-[!UICONTROL Predictive Audiences] modeller kan inte ge resultat på grund av en rad orsaker:
+[!UICONTROL Predictive Audiences]-modeller kanske inte ger resultat på grund av en rad orsaker:
 
-1. Ingen av de valda egenskaperna/segmenten har tillräckligt många användarprofiler. Vi rekommenderar att du väljer egenskaper eller segment så att varje person har minst några hundra användarprofiler.
-1. Ingen av de valda egenskaperna/segmenten har tillräckligt med data i sina användarprofiler (inte tillräckligt med egenskaper för att analysera).
-1. Målgruppens trait/segment hade inga aktiva eller engagerade användare under de senaste 30 dagarna.
-1. De målgruppsanvändare som var aktiva eller introducerade under de senaste 30 dagarna har inte tillräckligt med data i sina användarprofiler (inte tillräckligt med egenskaper för att analysera).
+1. Inga av de traits/segment som valts för personan har tillräckligt många användarprofiler. Vi rekommenderar att du väljer traits eller segment så att varje persona har minst några hundra användarprofiler.
+1. Inga av de traits/segment som valts för personan har tillräckligt med data i användarprofilerna (inte tillräckligt med traits att analysera).
+1. Målgruppens traits/segment har inga aktiva eller registrerade användare under de senaste 30 dagarna.
+1. De målgruppsanvändare som varit aktiva eller registrerade under de senaste 30 dagarna har inte tillräckligt med data i sina användarprofiler (inte tillräckligt med traits att analysera).
 
-För att få relevanta resultat utvärderar algoritmen [!UICONTROL Predictive Audiences] trait- och segment-realisationer baserat på användaraktivitet i realtid som ses av DCS. Om du väljer nya basegenskaper och segment som ännu inte har tillräckligt många användare kan det ta några dagar innan algoritmen kan klassificera målgruppen.
+För att få relevanta resultat utvärderar [!UICONTROL Predictive Audiences]-algoritmen traits och segment baserade på användaraktivitet i realtid som identifieras av DCS. Om du väljer nya bas-traits och segment som ännu inte har tillräckligt många användare kan det ta några dagar innan algoritmen kan klassificera målgruppen.
 
-För att få bästa möjliga resultat bör du följa de föreslagna riktlinjerna från [urvalskriterier för personer](../features/algorithmic-models/predictive-audiences.md#selection-personas) och [urvalskriterier för Target-målgrupp](../features/algorithmic-models/predictive-audiences.md#selection-audience).
+Följ de föreslagna riktlinjerna i [Urvalskriterier för personas](../features/algorithmic-models/predictive-audiences.md#selection-personas) och [Urvalskriterier för målgrupp](../features/algorithmic-models/predictive-audiences.md#selection-audience) för att få optimala resultat.
 
  
 
-**Varför visas felstatusen i min modell?**
+**Varför visas felstatus för min modell?**
 
 Modellen kunde inte köras. Kontakta i så fall din Adobe-representant.
 
  
 
-**Hur ändrar jag profilkopplingsregeln för ett segment för prediktiva målgrupper?**
+**Hur ändrar jag regeln för profilsammanslagning för ett Predictive Audiences-segment?**
 
-Duplicera [!UICONTROL Predictive Audiences] segmentet och ändra [!UICONTROL Profile Merge Rule] för det duplicerade segmentet.
-
- 
-
-**Kan en användare från målgruppen som inte är en del av något persona trait/segment inte klassificeras?**
-
-Ja, om användaren inte har några egenskaper i profilen. I så fall får användaren matchningspoängen 0 för alla persona traits/segment, och kommer därför inte att klassificeras i något av de prediktiva segmenten.
+Duplicera [!UICONTROL Predictive Audiences]-segmentet och ändra [!UICONTROL Profile Merge Rule] för det duplicerade segmentet.
 
  
 
-**Kan en användare som klassificerats i ett av de prediktiva segmenten omklassificeras till ett annat[!UICONTROL Predictive Audiences]segment?**
+**Går det att klassificera en användare från målgruppen som inte är en del av något persona-trait/segment?**
 
-Ja. Eftersom algoritmen är utbildad dagligen tillämpas ändringarna för var och en av personerna i fråga om poängsättning för egenskaper. Om en användare som är en del av ett [!UICONTROL Predictive Audiences] segment är aktiv kan ändringarna i deras egen poäng ändra klassificeringen baserat på den senaste 30-dagarsaktiviteten.
-
- 
-
-**Kan jag se vilka egenskaper som ligger till grund för målgruppsklassificeringen?**
-
-Ja, du kan se alla inflytelserika egenskaper för alla baslinjer på modellrapporteringssidan. Se [Influentiella egenskaper](../features/algorithmic-models/predictive-audiences-reporting.md#influential-traits).
+Nej, användaren måste ha några traits i sin profil. Om inte får användaren matchningspoängen 0 för alla persona traits/segment och kommer därför inte att klassificeras i något av de prediktiva segmenten.
 
  
 
-**Vad händer med modellen om jag redigerar någon av dess baslinjetrafik eller segment?**
+**Kan en användare som klassificerats i ett av de prediktiva segmenten omklassificeras till ett annat [!UICONTROL Predictive Audiences]-segment?**
 
-Modellen utvärderar egenskaperna eller segmenten en en gång om dagen. Du bör se den uppdaterade klassificeringen dagen efter uppdateringen.
+Ja. Eftersom algoritmen tränas dagligen tillämpas ändringarna i varje persona när det gäller poängsättning för traits. Om en användare som är en del av ett [!UICONTROL Predictive Audiences]-segment är aktiv kan ändringar i deras trait-poäng ändra klassificeringen baserat på de senaste 30 dagarnas aktiviteter.
 
  
 
-**Kan jag välja de datakällor som modellen ska lära sig av?**
+**Kan jag se vilka traits som används för målgruppsklassificering?**
 
-Nej, val av datakällor stöds inte. Algoritmen lär sig av alla era egenskaper hos den första parten. [!UICONTROL Predictive Audiences]
+Ja, du kan se alla viktiga traits för alla baslinjer på modellrapporteringssidan. Se [Viktiga traits](../features/algorithmic-models/predictive-audiences-reporting.md#influential-traits).
+
+ 
+
+**Vad händer med modellen om jag redigerar ett baslinje-trait eller segment?**
+
+Modellen utvärderar traits eller segmenten en gång om dagen. Du bör se den uppdaterade klassificeringen dagen efter uppdateringen.
+
+ 
+
+**Kan jag välja de datakällor som modellen ska använda för inlärning?**
+
+Nej, val av datakällor stöds inte. [!UICONTROL Predictive Audiences]-algoritmen lär sig av alla era förstaparts-traits.
