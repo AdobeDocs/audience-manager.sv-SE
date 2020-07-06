@@ -1,6 +1,6 @@
 ---
-description: Information om Adobe Audience Manager historik, vilka typer av data som samlats in, segmentering, rapportering och mycket annat.
-seo-description: Information om Adobe Audience Manager historik, vilka typer av data som samlats in, segmentering, rapportering och mycket annat.
+description: Information om historiken bakom Adobe Audience Manager, vilka typer av data som samlas in, segmentering, rapportering med mera.
+seo-description: Information om historiken bakom Adobe Audience Manager, vilka typer av data som samlas in, segmentering, rapportering med mera.
 seo-title: Översikt över Audience Manager
 solution: Audience Manager
 title: Översikt över Audience Manager
@@ -10,45 +10,45 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Översikt över Audience Manager {#audience-manager-overview}
 
-Audience Manager hjälper er att samla ihop era målgruppsdata, vilket gör det enkelt att samla in kommersiellt relevant information om webbplatsbesökare, skapa marknadsföringsbara segment och leverera riktad reklam och innehåll till rätt målgrupp. Dessutom erbjuder Audience Manager enkel tagghantering med robust datainsamling, kontroll och skydd.
+Audience Manager hjälper er att samla in målgruppsdata, vilket gör det enkelt att samla in kommersiellt relevant information om webbplatsbesökare, skapa segment som kan marknadsföras och leverera riktad reklam och innehåll till rätt målgrupp. Dessutom erbjuder Audience Manager enkel taggetablering och -hantering med robust datainsamling, kontroll och skydd.
 
-Med Audience Manager är du inte knuten till någon dataförsäljare, utbytesplattform eller DSP (Demand-Side Platform). Dessutom är Audience Manager helt agnostiker när det gäller våra partners datatillgångar. Med tillgång till flera datakällor erbjuder Audience Manager digitala utgivare möjlighet att använda en mängd olika tredjepartsdata samt vår privata datautrustning. Tala med vårt Partner Solutions-team om hjälp med att fatta smarta och korrekta beslut om er målgrupp.
+Med Audience Manager är ni inte bundna till en dataleverantör, bytesplattform eller DSP (Demand-Side Platform). Dessutom är Audience Manager helt oberoende när det gäller våra partners datatillgångar. Med tillgång till flera datakällor erbjuder Audience Manager digitala utgivare möjlighet att använda en mängd olika tredjepartsdata samt vår privata datadelning. Tala med vårt Partner Solutions-team om du vill ha hjälp med att fatta smarta och korrekta beslut om målgrupper.
 
-## Tre funktioner i en Platform för datahantering (DMP) {#dmp-three-functions}
+## Tre funktioner i en plattform för datahantering (DMP) {#dmp-three-functions}
 
-Funktionerna hos en datahanterings-Platform (DMP) kan sammanfattas i tre kategorier, vilket visas nedan.
+Funktionerna i en plattform för datahantering (DMP) kan sammanfattas i tre kategorier som visas nedan.
 
 ![Bild av tre DMP-funktioner: Data in, målgruppsgenerering, data ut](/help/using/overview/assets/dmp-functions.png)
 
 **Data in**
 
-Audience Manager samlar in förstahandsdata från kanaler och enheter (webbanalys, CRM, enhetsdata, e-handel osv.).
+Audience Manager samlar in förstapartsdata från kanaler och enheter (webbanalys, CRM, enhetsdata, e-handel osv.).
 
 <br> 
 
 **Skapa målgrupper**
 
-Enhetliggör data i målgruppsprofiler, vilket ger en fullständig kundbild över olika enheter och kanaler. Skapa lookalike-modeller, bygg målgruppssegment och grupper av profiler, och komplettera med datakällor från andra leverantörer.
+Sammanför data i målgruppsprofiler, vilket ger en fullständig kundbild över olika enheter och kanaler. Skapa look-alike-modeller, bygg målgruppssegment och profilgrupper och komplettera med datakällor från andra- eller tredjepartsleverantörer.
 
 <br> 
 
 **Data ut**
 
-Aktiverar målgruppssegment genom att utpressa dem till DSP (Demand-Side Platforms), kampanjhanteringssystem och andra marknadsföringsplattformar.
+Aktiverar målgruppssegment genom att skicka dem till DSP (Demand-Side Platforms), kampanjhanteringssystem och andra marknadsföringsplattformar.
 
 ## Mer information {#more-information}
 
 Mer information finns i följande resurser:
-* [Audience Manager - översikt](https://www.adobe.com/analytics/audience-manager.html)
-* [Fördelar för Audience Manager](https://www.adobe.com/analytics/audience-manager/benefits.html)
-* [Audience Manager-funktioner](https://www.adobe.com/analytics/audience-manager/features.html)
+* [Översikt över Audience Manager](https://www.adobe.com/se/analytics/audience-manager.html)
+* [Fördelar med Audience Manager](https://www.adobe.com/analytics/audience-manager/benefits.html)
+* [Funktioner i Audience Manager](https://www.adobe.com/se/analytics/audience-manager/features.html)
 
 
 <!--
