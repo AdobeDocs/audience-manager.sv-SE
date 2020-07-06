@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Vanliga frågor om rapportering{#reporting-faq}
+# Vanliga frågor om rapportering {#reporting-faq}
 
 Vanliga frågor och problem som rör rapportering.
 
@@ -27,34 +27,34 @@ faq_reports.xml
 
  -->
 
-**Varför visas siffror som är lägre än förväntat eller 0 för nya[!UICONTROL Trait Graph]embed-egenskaper?**
+**Varför visas siffror som är lägre än förväntat eller 0 för nya registrerade traits i [!UICONTROL Trait Graph]?**
 
-När du har överfört egenskaper visas ibland [!UICONTROL Trait Graph] inga resultat eller siffror som är lägre än förväntat. Detta inträffar när datavolymen som vi får är så stor att det inkommande bearbetningsjobbet inte kan slutföra inmatningen av informationen förrän efter rapportdatumet för den dagen.
+När du har överfört traits visas ibland inga resultat eller värden som är lägre än förväntat i [!UICONTROL Trait Graph]. Det inträffar när datavolymen som vi får är så stor att det inkommande bearbetningsjobbet inte kan mata in informationen förrän efter tidsgränsen för rapportering den dagen.
 
-Därför skickas dessa data till rapporteringssystemet sent och visas inte i det rapportintervall på 1 dag som används för att rita upp [!UICONTROL Trait Graph]. Du kan dock visa dessa data i rapportintervallen 7, 14, 30 och 60 dagar i en [trend](../reporting/trend-reports.md#trend-report-overview) - eller [General Report](../reporting/general-reports.md#general-reports-overview) följande dag.
-
-<br> 
-
-**Vissa segment saknas i en[!UICONTROL Overlap]rapport. Var är de?**
-
-För att minska efterfrågan på data utelämnar dessa rapporter statistiskt obetydliga data från resultaten. Dina segment saknas inte, de tas bara bort eftersom de inte ger några meningsfulla resultat eller användbara grupper med användare som du kan rikta dig mot. Se även:
-
-* [Rapporter och datainsamlingsmetoder](../reporting/report-sampling.md)
-* [Räkna unika användare i Överlappning och Allmänna rapporter](../reporting/unique-user-counts.md).
+Dessa data skickas till rapporteringssystemet sent och visas inte i det rapportintervall på 1 dag som används för att beräkna [!UICONTROL Trait Graph]. Du kan visa dessa data i rapportintervallen för 7, 14, 30 och 60 dagar i en [trendrapport](../reporting/trend-reports.md#trend-report-overview) eller [allmän rapport](../reporting/general-reports.md#general-reports-overview) dagen därpå.
 
 <br> 
 
-**Om jag kör en e-postmarknadsföringskampanj, hur kan jag avgöra om omdirigerade användare kommer till min webbplats från den kampanjen eller från andra källor?**
+**Vissa segment saknas i en [!UICONTROL Overlap]-rapport. Var är de?**
 
-Lägg till en kampanjspecifik frågesträng i URL:en för det webbplatsavsnitt som du vill övervaka. Ställ sedan in en trait-regel för att hämta variabeln. Om URL:en till exempel skickar in ett kampanj-ID som detta `www.test123.com/electronics?campaign=123`skapar du en trait-regel som hämtar data från `h_referer` variabeln med en trait-regel som söker efter ett huvud som `h_referer = 'campaign=123'`).
+För att minska beräkningsbelastningen utelämnas statistiskt insignifikanta data från resultaten i dessa rapporter. Dina segment saknas inte, de utelämnas bara eftersom de inte ger några meningsfulla resultat eller användbara användargrupper som du kan rikta dig mot. Se även:
+
+* [Metoder för rapportering och datainsamling](../reporting/report-sampling.md)
+* [Räkna unika användare i överlappande och allmänna rapporter](../reporting/unique-user-counts.md).
 
 <br> 
 
-**Vad är skillnaden mellan antalet populationer i realtid och totalt antal segment?**
+**Om jag kör en e-postmarknadsföringskampanj, hur kan jag avgöra om omdirigerade användare kommer till min webbplats från den kampanjen eller andra källor?**
 
-* **Realtid:** Antalet unika användare som är en del av segmentet och som är aktiva på dina egenskaper under en angiven tidsperiod (d.v.s. måste ha registrerat aktivitet för den användaren för den specifika tidsperioden). [!DNL Audience Manager]
+Lägg till en kampanjspecifik frågesträng i webbadressen för det webbplatsavsnitt som du vill övervaka. Ställ sedan in en trait-regel som samlar in variabeln. Om till exempel webbadresen innehåller ett kampanj-ID som detta `www.test123.com/electronics?campaign=123`, kan du skapa en trait-regel som hämtar data från `h_referer`-variabeln med en trait-regel som söker efter ett sidhuvud som `h_referer = 'campaign=123'`).
 
-* **Totalt antal segment:** En sammanställning av alla användare som för närvarande klassificeras i det segmentet.
+<br> 
+
+**Vad är skillnaden mellan antalet segmentpopulationer i realtid och totalt?**
+
+* **Realtid:** Antalet unika användare som är en del av segmentet och som är aktiva på dina tillgångar under en angiven tidsperiod (d.v.s. [!DNL Audience Manager] måste registrera aktivitet för den användaren under den specifika tidsperioden).
+
+* **Total segmentpopulation:** En sammanställning av alla användare som för närvarande klassificeras i det segmentet.
 
 <!-- 
 
@@ -65,9 +65,9 @@ Lägg till en kampanjspecifik frågesträng i URL:en för det webbplatsavsnitt s
 
 <br> 
 
-**Jag har ett segment som består av bara ett drag. När jag tittar på Rapporteringsstatistik stämmer inte deras antal överens. Varför det?**
+**Jag har ett segment som bara består av ett trait. När jag tittar på rapportmätvärdena så stämmer inte antalen överens. Varför det?**
 
-Se [Trait and Segment Population Data in Segment Builder](../features/segments/segment-builder-data.md).
+Se [Trait- och segmentpopulationsdata i Segment Builder](../features/segments/segment-builder-data.md).
 
 <br> 
 
@@ -82,31 +82,31 @@ Se [Trait and Segment Population Data in Segment Builder](../features/segments/s
 
  -->
 
-**Jag har inkommande en fil och mitt inkommande kvitto visar ett stort antal poster som har bearbetats, men rapporteringen visar ett mycket lägre antal. Varför?**
+**Jag har en inkommande fil och mitt kvitto för inkommande visar ett stort antal poster som har bearbetats, men rapporterna visar ett mycket lägre antal. Varför?**
 
-I serverdelen kopplas inbäddade data endast till användare som fortfarande är aktiva i AAM (användaren måste ha haft senaste [!DNL DCS] aktivitet under de senaste 120 dagarna). Om du lägger in data för användare som redan har gått ut i [!DNL Audience Manager]kan det därför [!UICONTROL Inbound] tala om för dig att ett visst antal användarposter har registrerats, men om dessa användare inte har haft någon aktivitet nyligen, kommer dessa data att tas bort när de når oss [!UICONTROL User Profile Store] och rapporteringen kommer att visa detta.
-
-<br> 
-
-**Varför är de unika egenskaperna för min typ av butik mycket högre än det totala antalet onboardposter?**
-
-Om du bäddar in en fil för en leverantör av data mellan olika enheter som är avstängd från kund-ID:t, utförs en sökning i Audience Manager för att hämta alla enhets-ID:n som är kopplade till varje kund-ID:n. Audience Manager tilldelar sedan de ingående egenskaperna till det enhets-ID som är kopplat till kund-ID:t.
-
-Anta att du har 100 poster ombord. För vart och ett av dessa kund-ID har AAM i genomsnitt kopplat tre enhets-ID. Det innebär att det varumärke som introducerades tilldelas 300 enhets-ID:n.
-
-Det finns två orsaker till varför ett enskilt kund-ID mellan olika enheter kan kopplas till flera enhets-ID:
-
-* Användare loggar in på samma enhetskonto från flera datorer/webbläsare.
-* Användare rensar sina cookies. Obs! &quot;Övergivna&quot; cookies tas bort efter 120 dagars inaktivitet.
+I serverdelen kopplas registrerade data endast till användare som fortfarande är aktiva i AAM (användaren måste ha haft [!DNL DCS]-aktivitet under de senaste 120 dagarna). Om du lägger in data för användare som redan har gått ut i [!DNL Audience Manager] kan [!UICONTROL Inbound] meddela att ett visst antal användarposter har registrerats, men om dessa användare inte har haft någon aktivitet nyligen, kommer dessa data att tas bort när de når vår [!UICONTROL User Profile Store] och rapporteringen kommer att visa detta.
 
 <br> 
 
-**Varför är[!UICONTROL Total Trait Realizations]mina onboaröda egenskaper alltid 0?**
+**Varför är unika traits för registrerade enhetövergripande traits mycket högre än det totala antalet registrerade poster?**
 
-[!UICONTROL Total Trait Realizations] motsvarar sidinläsning. [!UICONTROL Total Trait Realizations] Ange hur många gånger den specifika egenskapen har utlösts i realtid. Det här talet beräknas endast för regelbaserade egenskaper. Inbyggda traktioner visas alltid [!UICONTROL Total Trait Realizations] som 0.
+Om du registrerar en fil för en enhetsövergripande dataleverantör som baseras på kund-ID, utförs en sökning i Audience Manager för att hämta alla enhets-ID:n som är kopplade till dessa kund-ID:n. Audience Manager tilldelar sedan registrerade traits till det enhets-ID som är kopplat till det kund-ID:t.
+
+Anta att du har 100 registrerade poster. För vart och ett av dessa kund-ID:n har AAM i genomsnitt kopplat tre enhets-ID:n. Det innebär att det trait som registrerades tilldelas 300 enhets-ID:n.
+
+Det finns två orsaker till varför ett enskilt enhetsövergripande kund-ID kan kopplas till flera enhets-ID:n:
+
+* Användare loggar in på samma enhetsövergripande konto från flera datorer/webbläsare.
+* Användare rensar sina cookies. Obs! Övergivna cookies tas bort efter 120 dagars inaktivitet.
 
 <br> 
 
-**Jag skapade en egenskap och den[!UICONTROL Trait Graph]visar ett större antal[!UICONTROL Unique Trait Realizations]än[!UICONTROL Total Trait Population]. Är det här normalt?**
+**Varför är mina registrerade traits alltid 0 i [!UICONTROL Total Trait Realizations]?**
 
-Du ser detta eftersom det [!UICONTROL Unique Trait Realizations] är realtidsstatistik, men de rapporteringsjobb vi gör för att beräkna [!UICONTROL Total Trait Population] är inte realtidsdata. De [!UICONTROL Total Trait Population] ska vara större än [!UICONTROL Unique Trait Realizations] inom några dagar.
+[!UICONTROL Total Trait Realizations] motsvarar sidinläsningar. [!UICONTROL Total Trait Realizations] anger hur många gånger ett specifikt trait har utlösts i realtid. Antalet beräknas bara för regelbaserade traits. Registrerade traits visas alltid som 0 i [!UICONTROL Total Trait Realizations].
+
+<br> 
+
+**Jag skapade ett trait och [!UICONTROL Trait Graph] visar ett större antal [!UICONTROL Unique Trait Realizations] än [!UICONTROL Total Trait Population]. Är det normalt?**
+
+Du ser detta eftersom det är realtidsstatistik i [!UICONTROL Unique Trait Realizations], men rapporteringsjobben som görs för att beräkna [!UICONTROL Total Trait Population] är inte i realtid. [!UICONTROL Total Trait Population] bör vara större än [!UICONTROL Unique Trait Realizations] inom några dagar.
