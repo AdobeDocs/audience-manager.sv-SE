@@ -2,21 +2,21 @@
 description: Med loggfiler som kan användas kan du hämta mediesignaler från och serverloggfiler för att skapa egenskaper i Audience Manager. Fånga visningar, klick och konverteringar från annonsservrar som egenskaper utan att behöva lägga till pixlar.
 keywords: actionable logs, alf, ALF
 seo-description: Med loggfiler som kan användas kan du hämta mediesignaler från och serverloggfiler för att skapa egenskaper i Audience Manager. Fånga visningar, klick och konverteringar från annonsservrar som egenskaper utan att behöva lägga till pixlar.
-seo-title: Åtgärdsbara loggfiler
+seo-title: Verkställbara loggfiler
 solution: Audience Manager
-title: Åtgärdsbara loggfiler
+title: Verkställbara loggfiler
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: d3fd387478ac00470537124110299cd264eac499
 workflow-type: tm+mt
-source-wordcount: '1378'
-ht-degree: 2%
+source-wordcount: '1376'
+ht-degree: 3%
 
 ---
 
 
-# Åtgärdsbara loggfiler {#actionable-log-files}
+# Verkställbara loggfiler {#actionable-log-files}
 
 [!UICONTROL Actionable Log Files] gör att du kan hämta mediedata från annonsserverns loggfiler och använda data för att skapa egenskaper i Audience Manager. Fånga visningar, klick och konverteringar från annonsservrar som egenskaper utan att behöva lägga till [pixlar](../../integration/media-data-integration/impression-data-pixels.md).
 
@@ -153,7 +153,11 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 För en genomsnittlig loggfil på 2 miljoner rader [!DNL DCM] realiseras alla egenskaper som skapats av användbara signaler inom ungefär en timme efter det att loggarna bearbetats.
 
->[!NOTE] {prioritet=&quot;high&quot;}
+<!--
+Removed  {importance="high"} for ExL
+-->
+
+>[!NOTE]
 >
 >Händelsens tidsstämpel som anges i [!DNL DCM] loggarna respekteras och skickas till [!UICONTROL Data Collection Servers].
 >
@@ -300,5 +304,5 @@ En fördel med implementering [!UICONTROL Actionable Log Files] är möjligheten
 >[!MORELIKETHIS]
 >
 >* [Importera DCM-datafiler till Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
->* [Målgruppsoptimeringsrapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md)
+>* [Audience Optimization-rapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md)
 
