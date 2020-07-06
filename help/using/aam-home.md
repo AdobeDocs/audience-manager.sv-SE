@@ -1,41 +1,41 @@
 ---
-description: Audience Manager tillhandahåller branschledande tjänster för datahantering online. Våra produkter och tjänster ger digitala annonsörer och utgivare de verktyg de behöver för att kontrollera och utnyttja sina datatillgångar och hjälpa till att öka försäljningen.
-seo-description: Teknisk dokumentation och självhjälp för Audience Manager (AAM). AAM tillhandahåller branschledande tjänster för datahantering online för målgrupper och ger digitala annonsörer och utgivare de verktyg de behöver för att kontrollera och utnyttja sina dataresurser för att öka försäljningen.
-seo-title: Adobe Audience Manager produkttekniska dokumentation
+description: Audience Manager tillhandahåller branschledande tjänster för datahantering av målgrupper online. Våra produkter och tjänster ger digitala annonsörer och utgivare de verktyg de behöver för att styra och utnyttja sina datatillgångar och hjälpa till att öka försäljningen.
+seo-description: Teknisk dokumentation och självhjälp för Audience Manager (AAM). AAM tillhandahåller branschledande tjänster för datahantering av målgrupper online och ger digitala annonsörer och utgivare de verktyg de behöver för att styra och utnyttja sina datatillgångar för att öka försäljningen.
+seo-title: Teknisk produktdokumentation för Adobe Audience Manager
 solution: Audience Manager
-title: Audience Manager produktdokumentation
+title: Audience Manager – produktdokumentation
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 feature: overview
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '667'
-ht-degree: 4%
+ht-degree: 98%
 
 ---
 
 
 
-# Audience Manager produktdokumentation {#audience-manager-product-documentation}
+# Audience Manager – produktdokumentation {#audience-manager-product-documentation}
 
-Den här tekniska handboken ger självhjälp för Audience Manager - en branschledande tjänst för datahantering online för målgrupper. Våra produkter och tjänster ger digitala annonsörer och utgivare de verktyg de behöver för att kontrollera och utnyttja sina datatillgångar och hjälpa till att öka försäljningen.
+Den här tekniska handboken innehåller självhjälp för Audience Manager, en branschledande tjänst för datahantering av målgrupper online. Våra produkter och tjänster ger digitala annonsörer och utgivare de verktyg de behöver för att styra och utnyttja sina datatillgångar och hjälpa till att öka försäljningen.
 
-## Använda den här produktdokumentationen
+## Använda produktdokumentationen
 
 * Utforska innehållet efter ämne och underämne i den **vänstra navigeringen**.
-* Använd **sökfältet** längst upp på sidan om du vet vad du letar efter.
-* Använd knappen **Logga ett problem** längst upp till höger på sidan för att signalera felaktig eller inaktuell dokumentation. Se [Samarbetshandboken](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) för mer information om hur du börjar bidra.
+* Använd **sökfältet** överst på sidan om du vet vad du letar efter.
+* Använd knappen **Logga ett problem** överst till höger på sidan för att rapportera felaktig eller inaktuell information. Se översikten i [Samarbetshandboken](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) för mer information om hur du kommer igång.
 
 ## Så här läser du den här sidan
 
-* Börja med att utforska avsnittets **Audience Manager huvudfunktioner** för att få en bild av de problem som Audience Manager kan hjälpa dig att lösa. Se även översikten [för](/help/using/overview/aam-overview.md) Audience Manager och gå sedan tillbaka till den här sidan.
-* Läs sedan **Kom igång med Audience Manager** för att bekanta dig med koncept från Audience Manager. Se också till att du läser riktlinjerna för affärs- och teknisk implementering.
-* Se den senaste versionsinformationen för Audience Manager och läs om de senaste funktionerna i **versionsinformationen och de senaste funktionerna**.
-* Slutligen kan du utforska fler Experience Cloud-resurser som forum, videokurser, personliga kurser och onlinekurser i **Learning Center - Recommended Audience Manager and Experience Cloud Resources**.
+* Börja med att utforska **huvudfunktionerna i Audience Manager** för att få en översikt över de problem som Audience Manager kan hjälpa er att lösa. Läs även [översikten över Audience Manager](/help/using/overview/aam-overview.md) och gå sedan tillbaka till den här sidan.
+* Läs därefter **Kom igång med Audience Manager** för att bekanta dig med begreppen i Audience Manager. Se också till att du läser riktlinjerna för affärs- och teknisk implementering.
+* Se den senaste versionsinformationen för Audience Manager och läs om de senaste funktionerna i avsnittet **Versionsinformation och nya funktioner**.
+* Till sist kan du utforska fler Experience Cloud-resurser som forum, videosjälvstudier, personliga kurser och onlinekurser i **Utbildningscentret – Rekommenderade Audience Manager- och Experience Cloud-resurser**.
 
 <br> 
 
-## Audience Manager huvudfunktioner
+## Huvudfunktioner i Audience Manager
 
 <table>
    <td>
@@ -44,7 +44,7 @@ Den här tekniska handboken ger självhjälp för Audience Manager - en branschl
          <b>Importera data</b>
       </div>
       <p>
-         <em><ul><li><a href="/help/using/api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md">Datainsamlingsservrar</a></li><li><a href="/help/using/integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md">Batchdatainmatning</a></li><li><a href="/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md">Loggintag</a></li><li><a href="/help/using/integration/integration-other-solutions/audience-management-module.md">Vidarebefordra Adobe Analytics-data till Audience Manager</a></li></ul></em>
+         <em><ul><li><a href="/help/using/api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md">Datainsamlingsservrar</a></li><li><a href="/help/using/integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md">Satsvis datainmatning</a></li><li><a href="/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md">Logginmatning</a></li><li><a href="/help/using/integration/integration-other-solutions/audience-management-module.md">Vidarebefordra Adobe Analytics-data till Audience Manager</a></li></ul></em>
       <p>
    </td>
    <td>
@@ -53,7 +53,7 @@ Den här tekniska handboken ger självhjälp för Audience Manager - en branschl
          <b>Förbättra och segmentera</b>
       </div>
       <p>
-       <em><ul><li><a href="/help/using/features/segments/segments-purpose.md">Segmentering</a></li><li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">Regler för profilsammanslagning</a></li><li><a href="/help/using/features/algorithmic-models/understanding-models.md">Algoritmisk modellering</a></li><li><a href="/help/using/overview/data-types-collected.md">Data från andra och tredje part</a></li></ul></em>
+       <em><ul><li><a href="/help/using/features/segments/segments-purpose.md">Segmentering</a></li><li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">Regler för profilsammanslagning</a></li><li><a href="/help/using/features/algorithmic-models/understanding-models.md">Algoritmiska modeller</a></li><li><a href="/help/using/overview/data-types-collected.md">Data från andra och tredje part</a></li></ul></em>
       <p>
    </td>
    <td>
@@ -64,7 +64,7 @@ Den här tekniska handboken ger självhjälp för Audience Manager - en branschl
       </div>
       <p>
       <p>
-         <em><ul><li><a href="/help/using/integration/receiving-audience-data/receiving-audience-data-overview.md">Batch- och realtidsdataexport</a></li><li><a href="/help/using/features/destinations/destinations.md">Destinationsöversikt</a></li><li><a href="/help/using/features/destinations/device-based-destinations-list.md">Enhetsbaserad mållista</a></li><li><a href="/help/using/features/destinations/people-based-destinations-overview.md">Målgrupper</a></li></ul></em> 
+         <em><ul><li><a href="/help/using/integration/receiving-audience-data/receiving-audience-data-overview.md">Dataexport satsvis och i realtid</a></li><li><a href="/help/using/features/destinations/destinations.md">Översikt över destinationer</a></li><li><a href="/help/using/features/destinations/device-based-destinations-list.md">Enhetsbaserad destinationslista</a></li><li><a href="/help/using/features/destinations/people-based-destinations-overview.md">Personbaserade destinationer</a></li></ul></em> 
       <p>
       <p>
    </td>
@@ -79,21 +79,21 @@ Den här tekniska handboken ger självhjälp för Audience Manager - en branschl
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Viktig konceptuell dokumentation</b></p>
-   <p>Läs sidorna nedan för att få en bättre förståelse för Audience Manager koncept: 
-   <ul><li><a href="/help/using/overview/aam-overview.md"> Översikt över Audience Manager</a></li><li><a href="/help/using/reference/signal-trait-segment.md">Signaler, egenskaper och segment</a></li><li><a href="/help/using/reference/aam-glossary.md"> Ordlista</a> </li><li><a href="/help/using/reference/ids-in-aam.md">Index för ID</a></li></ul></p>
+   <p>Läs sidorna nedan för att få en mer ingående förståelse för Audience Manager-begreppen: 
+   <ul><li><a href="/help/using/overview/aam-overview.md"> Översikt över Audience Manager</a></li><li><a href="/help/using/reference/signal-trait-segment.md">Signaler, traits och segment</a></li><li><a href="/help/using/reference/aam-glossary.md">Ordlista</a> </li><li><a href="/help/using/reference/ids-in-aam.md">Index över ID:n</a></li></ul></p>
    <br> 
    <p><b>Implementera Audience Manager</b></p>
-   <p> Kom igång med att implementera Audience Manager genom att läsa sidorna nedan:
+   <p> Kom igång med implementeringen av Audience Manager genom att läsa sidorna nedan:
      <ul>
      <li><a href="/help/using/integration/data-integration-methods.md">Metoder för dataintegrering</a></li>
      <li><a href="/help/using/integration/implement-audience-manager.md">Implementeringshandbok</a></li>
      </ul> </p>
      <br> 
-   <p> <b>Tekniska implementeringsguider</b> </p> <p>Kom igång med Audience Manager API:er och konfigurera Audience Manager i appen:</p> <p> 
+   <p> <b>Tekniska implementeringshandböcker</b> </p> <p>Kom igång med Audience Managers API:er och konfigurera Audience Manager i din app:</p> <p> 
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
-     <li><a href="/help/using/api/rest-api-main/aam-api-getting-started.md">Komma igång med REST API:er</a></li>
+     <li><a href="/help/using/api/rest-api-main/aam-api-getting-started.md">Kom igång med REST API:er</a></li>
      <li><a href="/help/using/api/dcs-intro/dcs-event-calls/dcs-event-calls.md">Kom igång med DCS API</a></li>
-     <li><a href="https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html">Lägg till tillägget Audience Manager i Adobe Experience Platform Launch</a></li>
+     <li><a href="https://docs.adobe.com/content/help/sv-SE/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html">Lägg till Audience Manager-tillägget i Adobe Experience Platform Launch</a></li>
     <li><a href="https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-audience-manager">Lägg till Audience Manager i din app</a></li>
      </ul> </p>
     </td>
@@ -150,20 +150,20 @@ Den här tekniska handboken ger självhjälp för Audience Manager - en branschl
 
 <br> 
 
-## Versionsinformation och de senaste funktionerna
+## Versionsinformation och nya funktioner
 
 <table> 
  <tbody> 
   <tr> 
    <td> <p> <b>Versionsinformation</b> </p> <p> 
-     Se den senaste <a href="https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html" format="https" scope="external"> versionsinformationen för Experience Cloud</a> angående nya funktioner och korrigeringar.</p> 
+     Se den senaste <a href="https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html" format="https" scope="external"> versionsinformationen för Experience Cloud</a> angående nya funktioner och korrigeringar.</p> 
      <br> 
-     <p> <b>Senaste funktioner</b> </p> <p> 
-     Läs om de senaste Audience Manager-funktionerna:</p>
-     <p><ul><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager plug-in för IAB TCF v2.0</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Prediktiva målgrupper</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">Aktivitetsanvändningsrapportering</a></li>
-     <li><a href="/help/using/overview/data-security-and-privacy/data-privacy.md">California Consumer Privacy Act (CCPA) Support and Privacy Documentation Overhaul</a></li>
-     <li><a href="/help/using/features/segments/trait-recommendations.md">Intelligent Recommendations for Audience Marketplace Data från Adobe Sensei</a></li>
-     <li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">Förbättringar av regler för profilsammanslagning</a></li></ul><p>
+     <p> <b>Nya funktioner</b> </p> <p> 
+     Läs om de senaste funktionerna i Audience Manager:</p>
+     <p><ul><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager plug-in för IAB TCF v2.0</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">Rapportera aktivitetsanvändning</a></li>
+     <li><a href="/help/using/overview/data-security-and-privacy/data-privacy.md">Stöd för California Consumer Privacy Act (CCPA) och omarbetning av sekretessdokumentation</a></li>
+     <li><a href="/help/using/features/segments/trait-recommendations.md">Intelligenta rekommendationer för Audience Marketplace-data från Adobe Sensei</a></li>
+     <li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">Förbättrade regler för profilsammanslagning</a></li></ul><p>
     </td>
   </tr> 
  </tbody> 
@@ -190,7 +190,7 @@ Read about the latest Audience Manager features:
 
 <br> 
 
-## Learning Center - Recommended Audience Manager and Experience Cloud Resources
+## Utbildningscenter – Rekommenderade Audience Manager- och Experience Cloud-resurser
 
 
 <table> 
@@ -198,18 +198,18 @@ Read about the latest Audience Manager features:
   <tr> 
    <td colname="col2"> 
      <p> <b>Experience Cloud-resurser </b> </p>
-     <p>Besök länkarna nedan för att få kontakt med andra Audience Manager-kunder i communityforumen, för att se genomgången självstudievideor om våra funktioner eller för att felsöka problem i utbildningscentret och supportcentret.</p>
+     <p>Besök länkarna nedan för att få kontakt med andra Audience Manager-kunder i våra communityforum, för att se självstudievideor om funktioner eller för att felsöka problem i utbildnings- och supportcentret.</p>
      <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
-      <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"><a href="https://forums.adobe.com/community/experience-cloud/analytics-cloud/audience-manager" format="https" scope="external"> Audience Manager Community Forums</a> </li>
+      <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"><a href="https://forums.adobe.com/community/experience-cloud/analytics-cloud/audience-manager" format="https" scope="external"> Community-forum för Audience Manager</a> </li>
       <li><a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html" format="http" scope="external"> Självstudiekurser för Audience Manager</a> </li> 
-      <li id="li_1737D63307024F26B1F967621613A5AC"><a href="https://www.adobe.com/privacy.html" format="http" scope="external"> Adobes sekretesscenter</a> </li>  
-      <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="https://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe Training and Certifications</a> </li> 
-      <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://helpx.adobe.com/support/experience-cloud.html" scope="external" format="https">Experience Cloud produktdokumentation - startsida</a> </li> 
-      <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/support/audience-manager.html" format="https" scope="external"> Audience Manager studiematerial och support</a> </li> 
+      <li id="li_1737D63307024F26B1F967621613A5AC"><a href="https://www.adobe.com/se/privacy.html" format="http" scope="external"> Adobes sekretesscenter</a> </li>  
+      <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="https://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe-utbildningar och certifikat</a> </li> 
+      <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://helpx.adobe.com/se/support/experience-cloud.html" scope="external" format="https">Produktdokumentation för Experience Cloud – startsida</a> </li> 
+      <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/se/support/audience-manager.html" format="https" scope="external"> Utbildning och support för Audience Manager</a> </li> 
      </ul> </p> 
      <br> 
-     <p>Se även 2020- <a href="https://docs.adobe.com/content/help/sv-SE/audience-manager/user-guide/documentation-updates/docs-2020.html"> dokumentationsuppdateringar</a>. </p> </td>
+     <p>Se även <a href="https://docs.adobe.com/content/help/sv-SE/audience-manager/user-guide/documentation-updates/docs-2020.html">Dokumentationsuppdateringar för 2020</a>. </p> </td>
   </tr> 
  </tbody> 
 </table>
