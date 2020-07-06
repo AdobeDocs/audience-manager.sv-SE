@@ -1,16 +1,16 @@
 ---
 description: Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du måste följa när du skickar data till Audience Manager. Ange namn och storlek för filerna enligt dessa specifikationer när du skickar data till en Audience Manager-/Amazon S3-katalog.
 seo-description: Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du måste följa när du skickar data till Audience Manager. Ange namn och storlek för filerna enligt dessa specifikationer när du skickar data till en Audience Manager-/Amazon S3-katalog.
-seo-title: Krav för Amazon S3-namn och filstorlek för inkommande datafiler
+seo-title: Krav på Amazon S3-namn och filstorlekar för inkommande datafiler
 solution: Audience Manager
-title: Krav för Amazon S3-namn och filstorlek för inkommande datafiler
+title: Krav på Amazon S3-namn och filstorlekar för inkommande datafiler
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: d3fd387478ac00470537124110299cd264eac499
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 1%
+source-wordcount: '1152'
+ht-degree: 4%
 
 ---
 
@@ -33,7 +33,11 @@ Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du 
 
 Information om andra godkända filnamnsformat finns i [Anpassade partnerintegreringar](/help/using/integration/sending-audience-data/custom-partner-integrations.md).
 
->[!NOTE] {prioritet=&quot;high&quot;}
+<!--
+Removed  {importance="high"} for ExL
+-->
+
+>[!NOTE]
 >
 >[!DNL Audience Manager] endast bearbetar [!DNL ASCII] och [!DNL UTF-8] kodade filer.
 
@@ -66,7 +70,7 @@ Tabellen definierar elementen i ett [!DNL S3] filnamn.
       <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID (GAID):</b> Använd ID 20914 i ett datafilnamn om det innehåller Android-ID. Till exempel anger <code>...ftp_dpm_20914_21_123456789.sync</code> att datafilen bara innehåller Android-ID:n för <span class="keyword"> Audience Manager</span> . Obs! ID 21 </li> 
       <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS-ID (IDFA):</b> Använd ID 20915 i ett datafilnamn om det innehåller iOS-ID:n. Till exempel anger <code>...ftp_dpm_20915_123456789.sync</code> <span class="keyword"> Audience Manager</span> att datafilen endast innehåller iOS-ID:n. </li> 
      </ul> 
-    </draft-comment> <p> <p>Obs!  Blanda inte ID-typer i datafilerna. Om ditt filnamn till exempel innehåller Android-identifieraren ska du inte ange iOS-ID eller dina egna ID:n i datafilen. </p> </p><p>Mer information finns i <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">Globala datakällor</a> .</p> <p>Se även <code><i>_DPID_TARGET_DATA_OWNER</i></code> posten nedan. </p> </td> 
+    </draft-comment> <p> <p>Obs!  Blanda inte ID-typer i datafilerna. Om ditt filnamn till exempel innehåller Android-identifieraren ska du inte ange iOS-ID eller dina egna ID:n i datafilen. </p> </p><p>Mer information finns i <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">Globala datakällor</a>.</p> <p>Se även <code><i>_DPID_TARGET_DATA_OWNER</i></code> posten nedan. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
@@ -106,7 +110,7 @@ Tabellen definierar elementen i ett [!DNL S3] filnamn.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [.gz]</code> </p> </td> 
-   <td colname="col2"> <p>När du skickar filer till Amazon S3 ska du bara använda gzip-komprimering. När filerna är komprimerade får de <code> .gz</code> filnamnstillägget. Använd inte ZIP-komprimering. </p> <p>Komprimerade filer måste vara 3 GB eller mindre. Om filerna är större kan du kontakta kundtjänst. Även om Audience Manager kan hantera stora filer kan vi hjälpa dig att minska filstorleken och effektivisera dataöverföringen. Se <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md"> Filkomprimering för inkommande dataöverföringsfiler</a>. </p> </td> 
+   <td colname="col2"> <p>När du skickar filer till Amazon S3 ska du bara använda gzip-komprimering. När filerna är komprimerade får de <code> .gz</code> filnamnstillägget. Använd inte ZIP-komprimering. </p> <p>Komprimerade filer måste vara 3 GB eller mindre. Om filerna är större kan du kontakta kundtjänst. Även om Audience Manager kan hantera stora filer kan vi hjälpa dig att minska filstorleken och effektivisera dataöverföringen. Se <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">Filkomprimering för inkommande dataöverföringsfiler</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
