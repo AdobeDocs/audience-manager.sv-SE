@@ -1,23 +1,23 @@
 ---
-description: Det här dokumentet innehåller de typer av Audience Manager-ID som du kan använda i dataintegritetsförfrågningar.
-seo-description: Det här dokumentet innehåller de typer av Audience Manager-ID som du kan använda i dataintegritetsförfrågningar.
-seo-title: Audience Manager-ID
+description: Det här dokumentet behandlar de typer av Audience Manager-ID som du kan använda i datasekretessförfrågningar.
+seo-description: Det här dokumentet behandlar de typer av Audience Manager-ID som du kan använda i datasekretessförfrågningar.
+seo-title: Identifierare för Audience Manager (ID)
 solution: Audience Manager
 keywords: GDPR UI, GDPR API, CCPA, privacy, AAM ID
-title: Audience Manager-ID
+title: Identifierare för Audience Manager (ID)
 feature: data governance & privacy
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Audience Manager-ID {#aam-ids}
+# Identifierare för Audience Manager (ID) {#aam-ids}
 
-När du skickar [dataintegritetsförfrågningar](data-privacy-requests.md) till Adobe Audience Manager måste du inkludera en av identifierarna (ID) som listas nedan. Mer information om ID-format finns i vårt [index över Audience Manager ID](../../reference/ids-in-aam.md).
+När du skickar [datasekretessförfrågningar](data-privacy-requests.md) till Adobe Audience Manager måste du inkludera en av de identifierare (ID) som anges nedan. Mer information om ID-format finns i vårt [index över Audience Manager ID:n](../../reference/ids-in-aam.md).
 
 ## Unikt användar-ID för Adobe Audience Manager
 
@@ -52,7 +52,7 @@ När du skickar [dataintegritetsförfrågningar](data-privacy-requests.md) till 
 
 >[!NOTE]
 >
->Du kan också använda [!DNL CORE] namnutrymmet.
+>Du kan också använda namnområdet [!DNL CORE].
 
 ```json
  "users": [
@@ -80,12 +80,12 @@ När du skickar [dataintegritetsförfrågningar](data-privacy-requests.md) till 
 ## Adobe Experience Cloud ID
 
 * **Användar-ID**: `mid`
-* **Definition**: [!DNL Adobe Experience Cloud ID], tidigare kallat [!DNL Visitor ID] eller [!DNL Marketing Cloud ID]
+* **Definition**: [!DNL Adobe Experience Cloud ID], kallades tidigare [!DNL Visitor ID] eller [!DNL Marketing Cloud ID]
 * **Namnområdes-ID**: 4
 
 >[!NOTE]
 >
->Du kan också använda [!DNL ECID] namnutrymmet. Se det andra [!DNL JSON] exemplet.
+>Du kan också använda namnområdet [!DNL ECID]. Se det andra [!DNL JSON]-exemplet.
 
 **JSON-exempel**:
 
@@ -139,9 +139,9 @@ När du skickar [dataintegritetsförfrågningar](data-privacy-requests.md) till 
 
 **Användar-ID**: `cid`
 
-**Definition**: Kund-ID, till exempel en cookie som du anger för anonyma webbplatsbesökare eller ett [!DNL CRM] -ID från ett offlinesystem eller ett hashas-användarnamn.
+**Definition**: Kund-ID, till exempel en cookie som du anger för anonyma webbplatsbesökare eller ett [!DNL CRM]-ID från ett offlinesystem eller ett hash-kodat användarnamn.
 
-**Namnområdes-ID**: Kundspecifikt. Du kan hitta den från din Audience Manager-instans.
+**Namnområdes-ID**: Kundspecifikt. Du hittar det i din Audience Manager-instans.
 
 **JSON-exempel**:
 
@@ -176,18 +176,18 @@ När du skickar [dataintegritetsförfrågningar](data-privacy-requests.md) till 
 
 **Användar-ID**: `d_cid`
 
-**Definition**: ID för mobilannonsering.
+**Definition**: ID:n för mobilreklam.
 
 **Namnområdes-ID**:
 
 * [!DNL IDFA:] 20915
 * [!DNL GAID:] 20914
 
-Mer information finns i [Globala datakällor](../../features/global-data-sources.md) .
+Mer information finns i [Globala datakällor](../../features/global-data-sources.md).
 
 >[!IMPORTANT]
 >
-> Om du använder mobilen [!DNL SDK]ska du också skicka Experience Cloud-ID (`MID`) tillsammans med mobil-ID:n för fullständiga Access- och Delete-svar.
+> Om du använder mobila [!DNL SDK] ska du också skicka Experience Cloud ID (`MID`) tillsammans med ID för mobilreklam för fullständiga svar om åtkomst och radering.
 
 **JSON-exempel**:
 
@@ -218,7 +218,7 @@ Mer information finns i [Globala datakällor](../../features/global-data-sources
 
 **Användar-ID**: `d_cid_ic`
 
-**Definition**: En integrationskod för datakällan. Detta kan användas i stället för datakällans ID/namnområdes-ID i den [!DNL API] begäran som ska [!DNL Adobe Experience Cloud Privacy Core Service].
+**Definition**: En integrationskod för datakällan. Den kan användas i stället för datakällans ID/namnområdes-ID i [!DNL API]-begäran till [!DNL Adobe Experience Cloud Privacy Core Service].
 
 **Namnområdes-ID**: Ej tillämpligt
 
