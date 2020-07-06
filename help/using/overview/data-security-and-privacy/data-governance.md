@@ -1,6 +1,6 @@
 ---
-description: I det här dokumentet förklaras hur kunddata styrs i Audience Manager.
-seo-description: I det här dokumentet förklaras hur kunddata styrs i Audience Manager.
+description: Det här dokumentet förklarar hur kunddata regleras i Audience Manager.
+seo-description: Det här dokumentet förklarar hur kunddata regleras i Audience Manager.
 seo-title: Datastyrning
 solution: Audience Manager
 keywords: GDPR UI, GDPR API, CCPA, privacy, consent, obfuscation, governance
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 0%
+ht-degree: 96%
 
 ---
 
@@ -19,31 +19,31 @@ ht-degree: 0%
 
 ## Översikt {#overview}
 
-Datastyrning i Audience Manager avser livscykeln för dina kunddata i Audience Manager, och omfattar [insamling och fakturering av IP-adresser](data-governance.md#collecting-ip-addresses), [datalagring](data-governance.md#data-retention)och [gränsöverskridande dataöverföringar](data-governance.md#data-transfers).
+Datastyrning i Audience Manager avser livscykeln för era kunddata i Audience Manager och omfattar [insamling och döljande av IP-adresser](data-governance.md#collecting-ip-addresses), [datalagring](data-governance.md#data-retention) och [gränsöverskridande dataöverföringar](data-governance.md#data-transfers).
 
-## Samlar in IP-adresser och IP-adressofficering {#collecting-ip-addresses}
+## Insamling och döljande av IP-adresser {#collecting-ip-addresses}
 
-Besökarens [!DNL IP] adress till kundens webbplats skickas till Adobe [!DNL Data Processing Center] ([!DNL DPC]) där [!DNL IP] adressen kan lagras. Beroende på vilken nätverkskonfiguration besökaren har kan det hända att [!DNL IP] adressen inte nödvändigtvis representerar [!DNL IP] adressen till besökarens dator. Adressen kan till exempel vara den externa [!DNL IP] adressen till en NAT-brandvägg (Network Address Translation), [!DNL IP] [!DNL HTTP] proxy eller Internet gateway.
+[!DNL IP]-adressen till en person som besöker kundens webbplats skickas till Adobe [!DNL Data Processing Center] ([!DNL DPC]) där [!DNL IP]-adressen kan lagras. Beroende på vilken nätverkskonfiguration besökaren har kan det hända att [!DNL IP]-adressen inte nödvändigtvis representerar [!DNL IP]-adressen till besökarens dator. Adressen kan till exempel vara den externa [!DNL IP]-adressen till en NAT-brandvägg (Network Address Translation) [!DNL IP], en [!DNL HTTP]-proxy eller en internetgateway.
 
-**IP-faktureringsmetod:** I enlighet med principerna om&quot;Integritet efter design&quot; tillåter Adobe Audience Manager kunderna att göra det möjligt för sina kunder att dölja [!DNL IP] informationen från användargränssnittet, antingen globalt i alla geografiska regioner eller för specifika länder. När du aktiverar den här inställningen ignoreras den sista oktetten (den sista delen) i [!DNL IP] adressen omedelbart när [!DNL IP] adressen hämtas till Audience Manager. Audience Manager tar bort den här delen av [!DNL IP] adressen före bearbetning (inklusive före eventuell geografisk sökning eller loggning av [!DNL IP] adressen). Exempel:
+**Metod för att dölja IP-adress:** I enlighet med principerna för Privacy By Design kan Adobe Audience Manager-kunder dölja [!DNL IP] i användargränssnittet, antingen globalt i alla geografiska regioner eller för specifika länder. När du aktiverar den här inställningen ignoreras den sista oktetten (den sista delen) i [!DNL IP]-adressen omedelbart när [!DNL IP]-adressen hämtas till Audience Manager. Audience Manager tar bort den här delen av [!DNL IP]-adressen innan den bearbetas (inklusive före valfri geografisk sökning eller loggning av [!DNL IP]-adressen). Exempel:
 
 * Före: `255.255.255.255`
 * Efter: `255.255.255.0`
 
 >[!NOTE]
 >
->Se [IP-adressofuscation](../../features/administration/ip-obfuscation.md) om du vill veta mer om hur du aktiverar [!DNL IP] adressofusk i användargränssnittet i Audience Manager.
+>See [IP Address Obfuscation](../../features/administration/ip-obfuscation.md) to learn how to enable [!DNL IP] address obfuscation in the Audience Manager user interface.
 
-Se videon nedan för att förstå hur [!DNL IP] adressofuscation fungerar i Audience Manager.
+Titta på videon nedan för att få veta mer om hur du döljer [!DNL IP]-adresser i Audience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27218/)
 
-**Geografisk segmentering:** Om du aktiverar [!DNL IP] adressokation kan de återstående oktetterna i [!DNL IP] adressen fortfarande användas för geosegmentering och rapportering i Audience Manager. Om du inte aktiverar [!DNL IP] adressofficering använder Audience Manager den fullständiga [!DNL IP] adressen. Du kan använda funktionen Geografisk segmentering som gör att du kan identifiera en [!DNL IP] plats efter geografiskt område i båda fallen, men med en viss minskad precision när [!DNL IP] förvrängning används. Att få information på stadsnivå påverkas sannolikt avsevärt av att [!DNL IP] adressen döljs. Att få information på region- och landnivå bör endast få en liten inverkan. Geografiska segmenteringsdata är endast detaljerade för postnummernivån eller postnivån och inte för den enskilda nivån. Läs mer om [geoanpassning](../../features/traits/trait-geotarget-keys.md) och hur du ställer in egenskaper med geografiska variabler.
+**Geografisk segmentering:** Om du aktiverar dolda [!DNL IP]-adresser kan de återstående oktetterna i [!DNL IP]-adressen fortfarande användas för geosegmentering och rapportering i Audience Manager. Om du inte aktiverar dolda [!DNL IP]-adresser använder Audience Manager den fullständiga [!DNL IP]-adressen. Du kan i båda fallen använda funktionen för geografisk segmentering när du vill identifiera en [!DNL IP]-plats efter geografiskt område, men med lite sämre precision när dolda [!DNL IP]-adresser används. Information på ortsnivå påverkas sannolikt mycket när [!DNL IP]-adresserna döljs. Information på regions- och landsnivå påverkas förmodligen bara en aning. Geografiska segmenteringsdata är bara granulära på orts- eller postnummernivå, inte på individnivå. Läs mer om [geografisk målanpassning](../../features/traits/trait-geotarget-keys.md) och hur du ställer in traits med geografiska variabler.
 
 ## Datalagring i Audience Manager {#data-retention}
 
-Att tillämpa lämpliga, säkra och lägliga regler för datalagring är en viktig del av att följa reglerna för datasekretess. Audience Manager-kunder kan ange anpassade kvarhållningsperioder för egenskaper och segment genom att definiera önskad TTL (time to live). Mer information om kvarhållningsperioder finns i Vanliga frågor om [datalagring](../../faq/faq-privacy.md) .
+Att tillämpa lämpliga, säkra och tidsanpassade principer för datalagring är en viktig del av att följa dataskyddsreglerna. Audience Manager-kunder kan ange anpassade lagringsperioder för traits och segment genom att definiera det TTL-värde (time to live) som krävs. Mer information om lagringsperioder finns i [vanliga frågor om datalagring](../../faq/faq-privacy.md).
 
 ## Gränsöverskridande dataöverföringar {#data-transfers}
 
-När Audience Manager överför personuppgifter från kunder över landsgränser gör Audience Manager det i enlighet med gällande lagstiftning. Läs mer på [Adobes sekretesscenter](https://www.adobe.com/privacy/eudatatransfers.html) .
+När Audience Manager överför personuppgifter från kunder över nationsgränser gör Audience Manager det i enlighet med tillämplig lag. Läs mer på [Adobes sekretesscenter](https://www.adobe.com/se/privacy/eudatatransfers.html).
