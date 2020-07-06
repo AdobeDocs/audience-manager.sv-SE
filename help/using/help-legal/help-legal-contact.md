@@ -1,42 +1,42 @@
 ---
-description: Information som hjälper dig att kontakta Adobe och få en förståelse för juridiska frågor rörande din användning av denna produkt och dokumentation.
-seo-description: Information som hjälper dig att kontakta Adobe och få en förståelse för juridiska frågor rörande din användning av denna produkt och dokumentation.
-seo-title: Kontakt och juridisk information
+description: Information som hjälper dig att kontakta Adobe och juridisk information om användning av produkten och dokumentationen.
+seo-description: Information som hjälper dig att kontakta Adobe och juridisk information om användning av produkten och dokumentationen.
+seo-title: Kontaktuppgifter och juridisk information
 solution: Audience Manager
-title: Kontakt och juridisk information
+title: Kontaktuppgifter och juridisk information
 feature: Support
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Kontakt och juridisk information {#legal-contact}
+# Kontaktuppgifter och juridisk information {#legal-contact}
 
-Information som hjälper dig att kontakta Adobe och få en förståelse för juridiska frågor rörande din användning av denna produkt och dokumentation.
+Information som hjälper dig att kontakta Adobe och juridisk information om användning av produkten och dokumentationen.
 
 ## Hjälp och teknisk support {#technical-support}
 
-Adobe Experience Cloud Customer Care-teamet är här för att hjälpa er och tillhandahåller ett antal mekanismer som de kan använda:
+Adobe Experience Cloud kundtjänstteamet finns här för att hjälpa er och ni kan kontakta dem på flera olika sätt:
 
-* [På hjälpsidorna för Experience Cloud finns råd, tips och vanliga frågor](https://helpx.adobe.com/support.ec.html)
+* [Läs hjälpsidorna för Experience Cloud där det finns råd, tips och svar på vanliga frågor](https://helpx.adobe.com/se/support.ec.html)
 * [Ställ en snabb fråga på Twitter @AdobeExpCare](https://twitter.com/AdobeExpCare)
 * [Kontakta kundtjänstteamet direkt](https://helpx.adobe.com/se/contact/enterprise-support.ec.html)
-* [Kontrollera Experience Cloud Solutions tillgänglighet och status](https://status.adobe.com/)
+* [Kontrollera tillgänglighet och status för Experience Cloud-lösningar](https://status.adobe.com/)
 
 ## Service, kapacitet och fakturering {#billing}
 
-Beroende på din lösningskonfiguration kanske vissa alternativ som beskrivs i den här dokumentationen inte är tillgängliga. Eftersom varje konto är unikt kan du hänvisa till ditt avtal för priser, förfallodatum, villkor och villkor. Om du vill lägga till eller på annat sätt ändra din servicenivå, eller om du har frågor om din nuvarande tjänst, kontaktar du din Account Manager.
+Beroende på er konfiguration av lösningen kan vissa alternativ som beskrivs i den här dokumentationen inte vara tillgängliga. Eftersom varje konto är unikt kan du läsa ert avtal för information om priser, förfallodatum och villkor. Om du vill lägga till eller på annat sätt ändra servicenivån eller om du har frågor om den nuvarande tjänsten kan du kontakta den som ansvarar för ert konto.
 
-## Juridik {#legal}
+## Juridiskt {#legal}
 
-Publicerat av Adobe Systems Incorporated.
+Published by Adobe Systems Incorporated.
 
-[Användarvillkor](https://www.adobe.com/legal/terms.html) | [Sekretesscenter](https://www.adobe.com/privacy.html)
+[Användningsvillkor](https://www.adobe.com/se/legal/terms.html) | [Sekretesscenter](https://www.adobe.com/se/privacy.html)
 
-Adobe och Adobes logotyp är antingen registrerade varumärken eller varumärken som tillhör Adobe Systems Incorporated i USA och/eller andra länder. Varumärkessymbol (®, ™ osv.) betecknar ett Adobe-varumärke.
+Adobe and the Adobe logo are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. A trademark symbol (®, ™, etc.) denotes an Adobe trademark.
 
-Alla varumärken tillhör sina respektive ägare. Updated Information/Additional Third Party Code Information available at [https://www.adobe.com/go/thirdparty](https://www.adobe.com/products/eula/third_party/).
+All third-party trademarks are the property of their respective owners. Updated Information/Additional Third Party Code Information available at [https://www.adobe.com/go/thirdparty](https://www.adobe.com/se/products/eula/third_party/).
