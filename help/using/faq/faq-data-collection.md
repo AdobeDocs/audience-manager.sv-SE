@@ -1,6 +1,6 @@
 ---
-description: Vanliga frågor om datainsamling och integrering.
-seo-description: Vanliga frågor om datainsamling och integrering.
+description: Vanliga frågor och problem som rör datainsamling och integrering.
+seo-description: Vanliga frågor och problem som rör datainsamling och integrering.
 seo-title: Vanliga frågor om datainsamling och produktintegrering
 solution: Audience Manager
 title: Vanliga frågor om datainsamling och produktintegrering
@@ -11,14 +11,14 @@ translation-type: tm+mt
 source-git-commit: 27ce94084e35ffa770858027d12235ca9f1f8430
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 0%
+ht-degree: 96%
 
 ---
 
 
-# Vanliga frågor om datainsamling och produktintegrering{#data-collection-and-product-integration-faq}
+# Vanliga frågor om datainsamling och produktintegrering {#data-collection-and-product-integration-faq}
 
-Vanliga frågor om datainsamling och integrering.
+Vanliga frågor och problem som rör datainsamling och integrering.
 
 <br> 
 
@@ -28,19 +28,19 @@ faq_data_collection_integration.xml
 
  -->
 
-**Hur kan jag särskilja inkommande trafik från[!DNL DCS]trafik i[!DNL DCS]loggfilsexporter?**
+**Hur kan jag särskilja inkommande trafik från [!DNL DCS]-trafik i exporterade [!DNL DCS]-loggfiler?**
 
-Trakter som introduceras via [!UICONTROL Inbound] fylls i på [!UICONTROL Inbound] samma sätt som de fylls av [!DNL DCS]. Det finns olika sätt att se att trafiken kommer från [!UICONTROL Inbound]:
+Traits som registreras via [!UICONTROL Inbound] fylls i av [!UICONTROL Inbound] på samma sätt som de fylls i av [!DNL DCS]. Det finns olika sätt att se var trafiken kommer från [!UICONTROL Inbound]:
 
-* Fjärr-IP anges till 68.67.173.18
+* Fjärr-IP ställs in på 68.67.173.18
 * DomainID ställs in på 5325
-* Regionen kommer att anges till 0
+* Region ställs in på 0
 
 <br> 
 
 **Kan du ge mig en lista över IP-adresser som jag kan lägga till i en tillåtelselista för dpm.demdex.net?**
 
-Tyvärr kan vi inte. Dessa IP-adresser tilldelas dynamiskt, per geografisk region, via [!DNL Amazon Web Services]. Detta innebär att [!DNL Audience Manager] inte kontrollerar vilket IP-intervall som kan tilldelas till den här adressen.
+Tyvärr inte. Dessa IP-adresser tilldelas dynamiskt efter geografisk region via [!DNL Amazon Web Services]. Det innebär att [!DNL Audience Manager] inte styr vilket IP-intervall som kan tilldelas till den här adressen.
 
 <br> 
 
@@ -55,46 +55,46 @@ Ja, se nedan.
 
 <br> 
 
-**Vilka är kraven för kodplacering och sidinläsning för en[!UICONTROL DIL]/[!DNL Analytics]dataintegrering?**
+**Vilka är kraven för kodplacering och sidinläsning för en [!UICONTROL DIL]/[!DNL Analytics]-dataintegrering?**
 
-Om du vill hämta [!DNL Analytics] data till [!DNL Audience Manager]läser du in [!UICONTROL DIL] efter `s_code` modulen men *före* `s.t()` funktionen. Du kan till exempel placera koden, eller se till att den läses in, i följande ordning:
+Om du vill hämta [!DNL Analytics]-data till [!DNL Audience Manager] läser du in [!UICONTROL DIL] efter `s_code`-modulen men *före* `s.t()`-funktionen. Du kan till exempel placera koden, eller se till att den läses in, i följande ordning:
 
 1. [!DNL Analytics] `s_code`
 
 2. [!DNL Audience Manager] [!UICONTROL DIL] modul
 
-3. [!DNL Analytics] `s.t()` function
+3. [!DNL Analytics] `s.t()` funktion
 
-Ett tips är att konfigurera din [!DNL Audience Manager]- [!DNL Analytics] integration med någon av dessa två metoder:
+Det bästa är att konfigurera [!DNL Audience Manager] - [!DNL Analytics]-integreringen med en av dessa två metoder:
 
 * Placera [!UICONTROL DIL] direkt i `s_code`.
 
-* Serveras [!UICONTROL DIL] och `s_code` genom [!DNL Adobe Experience Platform Launch] eller [!DNL Adobe DTM].
+* Tillämpa [!UICONTROL DIL] och `s_code` via [!DNL Adobe Experience Platform Launch] eller [!DNL Adobe DTM].
 
-Se API:t för [dataintegreringsbibliotek (DIL)](../dil/dil-overview.md).
+Se [API för Data Integration Library (DIL)](../dil/dil-overview.md).
 
 <br> 
 
-**Varför saknas mina[!DNL Analytics]variabler i ett[!DNL Audience Manager]eventsamtal?**
+**Varför saknas mina [!DNL Analytics]-variabler i ett [!DNL Audience Manager]-händelseanrop?**
 
 Detta inträffar vanligtvis när:
 
-* Du använder ett tagghanteringssystem [!UICONTROL DIL] som läser in det asynkront med andra kodelement på sidan.
-* Funktionen läses in `s.t()` tidigare [!UICONTROL DIL].
+* Du använder [!UICONTROL DIL] via ett tagghanteringssystem som läser in det asynkront med andra kodelement på sidan.
+* Funktionen `s.t()` läses in före [!UICONTROL DIL].
 
 <br> 
 
-**Vilka versioner av[!DNL Analytics]fungerar med[!UICONTROL DIL]?**
+**Vilka versioner av [!DNL Analytics] fungerar med [!UICONTROL DIL]?**
 
-Du måste använda [!DNL Analytics] version 20.2 (eller senare) och biblioteksversion 3.5.2 (eller senare) för att arbeta med [!DNL Adobe AppMeasurement AS] [!UICONTROL DIL]. Om du inte känner till din [!DNL Analytics] eller [!DNL AppMeasurement] version kan du kontrollera vilket [!DNL Analytics] samtal som görs från sidan. Versionsinformation visas nedan:
+Du måste använda [!DNL Analytics] version 20.2 (eller senare) och [!DNL Adobe AppMeasurement AS] biblioteksversion 3.5.2 (eller senare) för att arbeta med [!UICONTROL DIL]. Om du inte känner till din [!DNL Analytics]- eller [!DNL AppMeasurement]-version kontrollerar du [!DNL Analytics]-anropet från sidan. Versionsinformation visas nedan:
 
-Den här kunden använder [!DNL Analytics] version 24.4:
+Kunden använder [!DNL Analytics] version 24.4:
 
 ```
 https://112.2o7.net/b/ss/.../1/H.24.4/...
 ```
 
-Den här kunden använder [!DNL AppMeasurement] version 3.5.2:
+Kunden använder [!DNL AppMeasurement] version 3.5.2:
 
 ```
 https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
@@ -102,71 +102,71 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**Kan jag samla in siddata om jag inte är en[!DNL Analytics]kund?**
+**Kan jag samla in siddata även om jag inte är [!DNL Analytics]-kund?**
 
-Ja. Modulen [!UICONTROL DIL] hjälper dig att samla in siddata även om du inte använder [!DNL Analytics]. När konfigurationen är korrekt kan [!UICONTROL DIL] hämta in data från och om:
+Ja. Modulen [!UICONTROL DIL] hjälper dig att samla in siddata även om du inte använder [!DNL Analytics]. När konfigurationen är korrekt kan [!UICONTROL DIL] samla in data från och om:
 
 * Metataggar
-* URL-adresser och URL-rubriker
+* URL-adresser och URL-sidhuvuden
 * Sökmotortyper
 * Nyckelord
 
-Dessutom kan kunderna distribuera ett enkelt objekt på plats och fylla i det med nyckelvärdepar som ni vill samla in data om. [!UICONTROL DIL] På så sätt kan ni lägga till och ta bort specifika målgruppsdatapunkter på er webbplats utan att behöva [!DNL Audience Management] uppdatera dem. Samarbeta med din representant för Partner Solutions för att konfigurera och se till att [!DNL DIL] modulen refererar till sidobjektet korrekt.
+Dessutom kan en kund använda ett enkelt webbplatsobjekt och fylla det med nyckelvärdespar som ni vill att [!UICONTROL DIL] ska samla in data om. På så sätt kan ni lägga till och ta bort specifika målgruppsdatapunkter på webbplatsen utan att behöva uppdatera [!DNL Audience Management]. Samarbeta med er Partner Solutions-representant för att konfigurera detta och se till att [!DNL DIL]-modulen refererar till sidobjektet korrekt.
 
 <br> 
 
-**Kan[!UICONTROL DIL]samla in data från[!DNL Google Analytics]?**
+**Kan [!UICONTROL DIL] samla in data från [!DNL Google Analytics]?**
 
-Ja. [!UICONTROL DIL] kan samla in vissa [!DNL Google Analytics] (GA) element och skicka dessa data till [!DNL Audience Manager]. Se:
+Ja. [!UICONTROL DIL] kan samla in vissa [!DNL Google Analytics]-element (GA) och skicka dessa data till [!DNL Audience Manager]. Se:
 
 * [GA.submitUniversalAnalytics](../dil/dil-modules.md#ga-submit-universal-analytics)
 * [GA.init](../dil/dil-modules.md#ga-init)
 
 <br> 
 
-**Kan jag hämta rådata från[!DNL Audience Manager]och hur detaljerat är det?**
+**Kan jag hämta rådata från [!DNL Audience Manager] och hur granulära är dessa data?**
 
-Ja, [!DNL Audience Manager] kan ge dig data som samlats in för användare som vi har sett på din inventering. Detta omfattar följande:
+Ja, [!DNL Audience Manager] kan tillhandahålla data som samlats in för användare som identifierats i ert datalager. Det inkluderar:
 
 * Det unika användar-ID (UUID) som tilldelats av [!DNL Audience Manager]
-* Trait and segment IDs
+* Trait- och segment-ID
 * Oanvända signaler
-* Tidsstämplar
+* Tidstämplar
 * Sidadresser
 
 <br> 
 
-**Jag vill samla in data på en webbplats och för målanvändare via DFP på en annan webbplats. Måste jag distribuera kod på den andra egenskapen om jag inte vill samla in data från den platsen?**
+**Jag vill samla in data på en webbplats och rikta mig till användare på en annan webbplats via DFP. Måste jag använda kod på den andra webbplatsen om jag inte vill samla in data från den?**
 
-Nej. Om datainsamling på den andra platsen inte är ett krav behöver du inte distribuera DIL där. Så länge du har tillgång till lagret på den andra webbplatsen via DFP kan du använda datainsamlingen från den första webbplatsen och målet via DFP.
+Nej. Om data inte behöver samlas in på den andra webbplatsen behöver du inte distribuera DIL där. Så länge du har tillgång till datalagret på den andra webbplatsen via DFP kan du använda datainsamlingen från den första webbplatsen med målinriktning via DFP.
 
 <br> 
 
 **Vilken är den bästa tredjepartsleverantören av data?**
 
-Varje leverantör tillför något unikt till tabellen, så svaret beror på vad du letar efter. Vi kan aktivera överlappningsrapportering (utan kostnad) för att hjälpa dig förstå vilken leverantör som fungerar bäst för dig.
+Varje leverantör tillför något unikt, så det beror på vad du letar efter. Vi kan aktivera överlappande rapportering (utan extra kostnad) som hjälper dig att förstå vilken leverantör som fungerar bäst för dig.
 
 <br> 
 
-**Hur anger[!DNL Audience Manager]du cookies och skickar variabler till DFP?**
+**Hur ställs cookies in i [!DNL Audience Manager] och hur skickas variabler till DFP?**
 
-[!DNL Audience Manager] anger 2 cookies: Den ena skickar segmentvariabler till annonstaggen i DFP och den andra ställer in vårt unika användar-ID (UUID), som även läses av DFP. Genom att lägga till UUID i annonstaggen kan vi göra rapporter och målgruppsidentifiering på användarnivå.
-
-<br> 
-
-**Kan vi skicka en DSP-information om punkter i konverteringstratten som en användare uppnått?**
-
-Ja. Vi kan skicka trattdata, men DSP måste ha den tekniska förmågan att använda dem. En DSP måste bekräfta att de kan hantera flera segment. Om de inte kan det kan vi behöva skapa specifika segment för att få bort en användare från andra segment baserat på deras konverteringsförlopp (t.ex. slutfört steg 1 och 2 men inte steg 3). Du kanske vill skicka den här informationen till en DSP så att de kan dirigera om användare, dirigera dem till en viss landningssida eller visa specifika kreatörer.
+[!DNL Audience Manager] ställer in 2 cookies: Den ena skickar segmentvariabler till annonstaggen i DFP och den andra ställer in vårt unika användar-ID (UUID) som också läses in av DFP. Genom att lägga till UUID i annonstaggen kan vi skapa rapporter och målgruppsidentifiering på användarnivå.
 
 <br> 
 
-**Hur kan jag bekräfta att data som skickas via FTP har hämtats av[!DNL Audience Manager]?**
+**Kan vi skicka DSP-information om punkter i konverteringstratten som en användare nått?**
 
-En fil har hämtats när tillägget ändras från `.sync` till `.processed`. När det inträffar finns filen i kön för inläsning. Kontohanteraren kan också bekräfta när en fil har överförts.
+Ja. Vi kan skicka trattdata, men DSP måste ha de tekniska funktioner som behövs för att använda dem. Er DSP måste bekräfta att de kan hantera flera segment. Om de inte kan det kanske vi måste skapa specifika segment för att få bort användare från andra segment baserat på konverteringsförlopp (t.ex. slutfört steg 1 och 2 men inte steg 3). Du kanske vill skicka den här informationen till en DSP så att de kan återmarknadsföra till användare, dirigera dem till en viss startsida eller visa specifika kampanjer.
 
 <br> 
 
-**Jag vill testa funktionaliteten i[DCS API](../api/dcs-intro/dcs-event-calls/dcs-event-calls.md). Jag skickar eventsamtal som den som visas nedan. Samtalen innehåller[deklarerade ID:n](../features/declared-ids.md)och signaler, som bör förverkliga några egenskaper och segment som jag redan har konfigurerat. Kan jag använda[!UICONTROL General Reports]och[!UICONTROL Trend Reports]verifiera om egenskaperna och segmentpopulationerna ökar?**
+**Hur kan jag bekräfta att data som skickas via FTP har hämtats av [!DNL Audience Manager]?**
+
+En fil har hämtats när tillägget ändras från `.sync` till `.processed`. När det inträffar står filen i kön för inläsning. Er kontoansvariga kan också bekräfta när en fil har överförts.
+
+<br> 
+
+**Jag vill testa funktionaliteten i [DCS API](../api/dcs-intro/dcs-event-calls/dcs-event-calls.md). Jag skickar händelseanrop enligt nedan. Anropen innehåller [deklarerade ID:n](../features/declared-ids.md) och signaler som bör realisera vissa traits och segment som jag redan har konfigurerat. Kan jag använda [!UICONTROL General Reports] och [!UICONTROL Trend Reports] för att kontrollera om trait- och segmentpopulationerna ökar?**
 
 ```
 https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed-an-order
@@ -174,20 +174,20 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 Nej, förlita dig inte på [!UICONTROL General Reports] och [!UICONTROL Trend Reports] i det här fallet.
 
-Rapporterna beräknar populationer baserat på de oautentiserade profilposter (UUID) som vi ser i serverdelen när rapporterna skapas.
+Rapporterna beräknar populationer baserat på oautentiserade profilposter (UUID) i serverdelen när rapporterna skapas.
 
-Vid ett första anrop till [!DNL DCS]servern är de deklarerade ID:na *inte* länkade till något UUID (dvs. det finns ingen [demdexcookie](hhttps://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html) på klientsidan). Användaren [!DNL DCS] genererar ett UUID slumpmässigt och ställer in en [!DNL demdex] cookie och skickar den i svarsanropet, men den skickar inte UUID till serverdelen.
+Vid ett första anrop till [!DNL DCS] länkas deklarerade ID:n *inte* till ett UUID (dvs. det finns ingen [demdex-cookie](hhttps://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html) på klientsidan). [!DNL DCS] genererar ett UUID slumpmässigt och ställer in en [!DNL demdex]-cookie och skickar den i svarsanropet, men UUID skickas inte till serverdelen.
 
 >[!NOTE]
 >
->Det genererade UUID:t materialiseras endast i vår datalagring i backend när enheten som cookien är inställd på utlöser ytterligare aktivitet.
+>Det UUID som genereras materialiseras endast i serverdelens datalagring när ytterligare aktivitet inträffar på enheten som cookien finns på.
 
-Av den anledningen återspeglar rapporterna inte de händelser som utlöses av de deklarerade ID:n i ditt anrop. Vi rekommenderar att du använder UUID, ECID (tidigare MID) eller mobil enhets-ID vid testanrop till [!DNL DCS]. Sedan kan du verifiera trait- och segment-realisationerna i [!UICONTROL General Reports] och i [!UICONTROL Trend Reports].
+Därför återspeglar rapporterna inte händelser som utlöses av deklarerade ID:n i ditt anrop. Vi rekommenderar att ni använder UUID, ECID (tidigare MID) eller mobila enhets-ID när ni testar händelseanrop till [!DNL DCS]. Sedan kan ni kontrollera att traits och segment realiseras i [!UICONTROL General Reports] och [!UICONTROL Trend Reports].
 
-Se även [Index för Audience Manager ID](../reference/ids-in-aam.md).
+Se även [Index över Audience Manager-ID:n](../reference/ids-in-aam.md).
 
 <br> 
 
-**Hur lång tid tar det för användarprofiler att synkronisera mellan olika[regioner](../api/dcs-intro/dcs-api-reference/dcs-regions.md)?**
+**Hur lång tid tar det innan användarprofiler synkroniseras mellan olika [regioner](../api/dcs-intro/dcs-api-reference/dcs-regions.md)?**
 
-Det tar vanligtvis upp till 24 timmar för en användarprofil att synkronisera mellan regioner. I sällsynta fall kan dock processen ta upp till 48 timmar.
+Det tar vanligtvis upp till 24 timmar för en användarprofil att synkroniseras mellan regioner. I sällsynta fall kan processen ta upp till 48 timmar.
