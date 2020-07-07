@@ -1,23 +1,23 @@
 ---
-description: Du kan skicka kvalificerade segment till DFP antingen via en klient eller via en integration på serversidan. Krav och relaterad information om båda metoderna anges nedan.
-seo-description: Du kan skicka kvalificerade segment till DFP antingen via en klient eller via en integration på serversidan. Krav och relaterad information om båda metoderna anges nedan.
-seo-title: Krav och metoder för att skicka segment till DFP med Google Publisher-taggar (GPT)
+description: Du kan skicka kvalificerade segment till Google Ad Manager antingen via en klient eller via en integration på serversidan. Krav och relaterad information om båda metoderna anges nedan.
+seo-description: Du kan skicka kvalificerade segment till Google Ad Manager antingen via en klient eller via en integration på serversidan. Krav och relaterad information om båda metoderna anges nedan.
+seo-title: Krav och metoder för att skicka segment till Google Ad Manager med Google Publisher-taggar (GPT)
 solution: Audience Manager
-title: Krav och metoder för att skicka segment till DFP med Google Publisher-taggar (GPT)
+title: Krav och metoder för att skicka segment till Google Ad Manager med Google Publisher-taggar (GPT)
 uuid: 4b2ea81c-29bb-42d3-93d3-1d8e677790b6
 feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
 
 
-# Krav och metoder för att skicka segment till DFP med Google Publisher-taggar (GPT) {#requirements-and-methods-of-sending-segments-to-dfp-using-google-publisher-tags-gpt}
+# Krav och metoder för att skicka segment till Google Ad Manager med Google Publisher-taggar (GPT) {#requirements-and-methods-of-sending-segments-to-dfp-using-google-publisher-tags-gpt}
 
-Du kan skicka kvalificerade segment till [!DNL DFP] antingen via en klient eller via en integration på serversidan. Krav och relaterad information om båda metoderna anges nedan.
+Du kan skicka kvalificerade segment till [!DNL Google Ad Manager] (tidigare DFP) antingen via en klient eller via en integrering på serversidan. Krav och relaterad information om båda metoderna anges nedan.
 
 ## Integrering på klientsidan {#client-side-integration}
 
@@ -47,7 +47,7 @@ Mängden data som skickas till [!DNL GPT] beror på hur många segment en viss a
 
 ## Integrering på serversidan {#server-side-integration}
 
-Tala med din Audience Manager-konsult eller kundtjänst om du vill konfigurera en integration på serversidan med [!DNL DFP], med [!DNL GPT]. Du måste ange ditt nätverks-ID och Audience Link-ID för ditt [!DNL DFP] konto.
+Tala med din Audience Manager-konsult eller kundtjänst om du vill konfigurera en integration på serversidan med [!DNL Google Ad Manager], med [!DNL GPT]. Du måste ange ditt nätverks-ID och Audience Link-ID för ditt [!DNL Google Ad Manager] konto.
 
 >[!IMPORTANT]
 >
