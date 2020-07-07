@@ -1,25 +1,25 @@
 ---
-description: Du kan skicka kvalificerade segment till DFP via en integrering på klientsidan (webbläsarsidan) eller via en integrering på serversidan. Om du väljer integrering på klientsidan måste du skapa ett cookie-baserat mål för Google Publisher-taggar i Audience Manager.
-seo-description: Du kan skicka kvalificerade segment till DFP via en integrering på klientsidan (webbläsarsidan) eller via en integrering på serversidan. Om du väljer integrering på klientsidan måste du skapa ett cookie-baserat mål för Google Publisher-taggar i Audience Manager.
-seo-title: Skapa ett GPT-mål
+description: Du kan skicka kvalificerade segment till Google Ad Manager via en klientintegration (på webbläsarsidan) eller en integration på serversidan. Om du väljer integrering på klientsidan måste du skapa ett cookie-baserat mål för Google Publisher-taggar i Audience Manager.
+seo-description: Du kan skicka kvalificerade segment till Google Ad Manager via en klientintegration (på webbläsarsidan) eller en integration på serversidan. Om du väljer integrering på klientsidan måste du skapa ett cookie-baserat mål för Google Publisher-taggar i Audience Manager.
+seo-title: Skapa en GPT-destination
 solution: Audience Manager
-title: Skapa ett GPT-mål
+title: Skapa en GPT-destination
 uuid: e3bbf327-a7e0-48da-bc84-8f531b7f6750
 feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 0%
+source-wordcount: '323'
+ht-degree: 7%
 
 ---
 
 
-# Skapa ett GPT-mål {#create-a-gpt-destination}
+# Skapa en GPT-destination {#create-a-gpt-destination}
 
-Du kan skicka kvalificerade segment till [!DNL DFP] via en klientintegration (på webbläsarsidan) eller en integration på serversidan. Om du väljer integrering på klientsidan måste du skapa ett cookie-baserat mål för [!DNL Google Publisher Tags] i Audience Manager.
+Du kan skicka kvalificerade segment till [!DNL Google Ad Manager] via en klientintegration (på webbläsarsidan) eller en integration på serversidan. Om du väljer integrering på klientsidan måste du skapa ett cookie-baserat mål för [!DNL Google Publisher Tags] i Audience Manager.
 
-## Mål 
+## Destinationer 
 
 I Audience Manager *`destination`* är a vilket annat system som helst (annonsserver, [!DNL DSP]annonsnätverk etc.) som du vill dela data med. [!UICONTROL Destination Builder] innehåller de verktyg som gör att du kan skapa och hantera dessa dataleveransprocesser. Målfunktionerna för Audience Manager finns i *[!UICONTROL Audience Data]>[!UICONTROL Destinations]*. Kom igång genom att klicka **[!UICONTROL Add New Destination]**och följa stegen nedan.
 
