@@ -1,25 +1,25 @@
 ---
 description: Rapporten om annonsenhetsöverlappning visas som ett värmediagram som markerar höga och låga överlappningar mellan annonsenheter.
 seo-description: Rapporten om annonsenhetsöverlappning visas som ett värmediagram som markerar höga och låga överlappningar mellan annonsenheter.
-seo-title: Annonsväxling
+seo-title: Annonsenhetsöverlappning
 solution: Audience Manager
-title: Annonsväxling
+title: Annonsenhetsöverlappning
 uuid: e4467e81-acbf-474e-b501-89d57395651f
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 0%
+source-wordcount: '432'
+ht-degree: 3%
 
 ---
 
 
-# Annonsväxling{#ad-unit-overlap}
+# Annonsenhetsöverlappning{#ad-unit-overlap}
 
 Rapporten visas som ett **[!UICONTROL Ad Unit Overlap]** värmediagram som markerar höga och låga överlappningar mellan annonsenheter.
 
-## Användningsfall {#use-cases}
+## Användningsexempel {#use-cases}
 
 Med **[!UICONTROL Ad Unit Overlap]** rapporten får ni insikt i var era målgrupper överlappar era webbegenskaper. I rapporten behandlas dina 100 mest relaterade egenskaper och hur de överlappar varandra.
 
@@ -33,7 +33,7 @@ Använd kontrollerna **[!UICONTROL Base Ad Unit]** och **[!UICONTROL Overlap Ad 
 
 >[!IMPORTANT]
 >
->När du aktiverar [!UICONTROL Audience Optimization for Publishers]måste du inkludera beskrivande metadata för [!UICONTROL Ad Unit IDs], enligt beskrivningen i steg 3 i [Importera DFP-datafiler till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten anger webbegenskapen som [!UICONTROL Ad Unit] i stället för [!UICONTROL Ad Unit ID].
+>När du aktiverar [!UICONTROL Audience Optimization for Publishers]måste du inkludera beskrivande metadata för [!UICONTROL Ad Unit IDs], enligt beskrivningen i steg 3 i [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten anger webbegenskapen som [!UICONTROL Ad Unit] i stället för [!UICONTROL Ad Unit ID].
 
 ## Tolka resultaten {#interpreting-results}
 
@@ -59,11 +59,11 @@ Din [!UICONTROL Ad Unit Overlap] rapport kan se ut ungefär som den nedan. Håll
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> Antal överlappande annonsenheter</span> </p> </td> 
-   <td colname="col2"> <p>Antalet användare som har besökt annonsenheten 9-18. Den här informationen extraheras från DFP-loggarna. </p> </td> 
+   <td colname="col2"> <p>Antalet användare som har besökt annonsenheten 9-18. Den här informationen extraheras från Google Ad Manager-loggarna. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> Antal basannonsenheter</span> </p> </td> 
-   <td colname="col2"> <p>Antalet användare som har besökt annonsenhetsposterna 1-8. Den här informationen extraheras från DFP-loggarna. </p> </td> 
+   <td colname="col2"> <p>Antalet användare som har besökt annonsenhetsposterna 1-8. Den här informationen extraheras från Google Ad Manager-loggarna. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> Överlappa antal unika</span> </p> </td> 
