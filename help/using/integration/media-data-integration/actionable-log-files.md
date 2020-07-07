@@ -8,9 +8,9 @@ title: Verkställbara loggfiler
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 translation-type: tm+mt
-source-git-commit: d3fd387478ac00470537124110299cd264eac499
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1597'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 3%
 För att komma igång med [!UICONTROL Actionable Log Files]måste du importera loggdata till [!DNL Audience Manager]. Följande länkar hjälper dig att komma igång:
 
 * Mer [!UICONTROL Google DCM] information finns i [Importera DCM-datafiler till Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) *och* kontakta din [!DNL Audience Manager] konsult.
-* Mer [!UICONTROL Google DFP] information finns i [Importera DFP-datafiler till Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *och* kontakta din [!DNL Audience Manager] konsult.
+* Mer information [!UICONTROL Google Ad Manager] (tidigare Google DFP) om loggar finns i [Importera DFP-datafiler till Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *och* kontakta din [!DNL Audience Manager] konsult.
 * Andra annonsserverloggar finns i [Data- och metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) *och* kontakta din [!DNL Audience Manager] konsult.
 
 Om du redan importerar loggdata till [!DNL Audience Manager]ber du din [!DNL Audience Manager] konsult eller [kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html) att aktivera [!UICONTROL Actionable Log Files] för dig.
@@ -163,6 +163,35 @@ Removed  {importance="high"} for ExL
 >
 >* Om en tidsstämpel inte är tillgänglig för en datarad i [!DNL DCM] loggfilen använder vi tidpunkten för `HTTP` anropet som händelsetidsstämpel.
 >* Om dataraden i [!DNL DCM] loggfilen innehåller en felaktig tidsstämpel, ignoreras hela raden.
+
+
+<br> 
+
+### Användbara signaler från [!DNL Google Ad Manager] loggar {#ad-manager-logs-signals}
+
+I tabellen visas de användbara signalerna från [!DNL Google Ad Manager] loggfiler:
+
+
+| Rubriknamn i loggfil | Signal | Beskrivning |
+---------|----------|---------
+| `LineItemId` | `d_lineitem` | Det numeriska ID:t för det levererade radobjektet för annonshanteraren |
+| `OrderId` | `d_orderid` | Det numeriska ID:t för Ad Manager-ordern som innehöll det levererade radobjektet och det kreativa ID:t. |
+| `CreativeId` | `d_creative` | Det numeriska ID:t för den levererade annonshanterarens creative. |
+| `-` | `d_event` | Anger händelsetypen. Audience Manager läser händelsetypen från Ad Manager-loggfilens namn och omvandlar den till en användbar signal. Godkända värden är: <br> <ul><li>d_event = imp för visningar.</li><li>d_event = click for clicks.</li><li>d_event = conv för konverteringar och aktiviteter.</li></ul> |
+| `-` | `d_src` | ID:t för datakällan som du använder för att hämta Ad Manager-data. Se [Så här skapar du en datakälla](/help/using/features/manage-datasources.md). |
+
+Signalerna som beskrivs i tabellen fångas i Audience Manager som ett HTTP-anrop i realtid. Exempelanropet nedan innehåller information om en konverteringshändelse från Google Ad Manager. Samtal behöver inte nödvändigtvis innehålla alla signaler i exempelanropet.
+
+```
+https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_event=conv&d_lineitem=112&d_orderid=22223&d_creative=3983524
+```
+
+>[!NOTE]
+>
+>Händelsens tidsstämpel som anges i [!DNL Google Ad Manager] loggarna respekteras och skickas till [!UICONTROL Data Collection Servers].
+>
+>* Om en tidsstämpel inte är tillgänglig för en datarad i [!DNL Google Ad Manager] loggfilen använder vi tidpunkten för `HTTP` anropet som händelsetidsstämpel.
+>* Om dataraden i [!DNL Google Ad Manager] loggfilen innehåller en felaktig tidsstämpel, ignoreras hela raden.
 
 
 <br> 
