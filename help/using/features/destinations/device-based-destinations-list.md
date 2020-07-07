@@ -7,10 +7,10 @@ solution: Audience Manager
 title: Adobe Audience Manager server-till-server-mål
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
 source-wordcount: '1122'
-ht-degree: 20%
+ht-degree: 53%
 
 ---
 
@@ -24,7 +24,7 @@ Den här sidan innehåller endast aktuella [!DNL Audience Manager] enhetsbaserad
 * **Senast uppdaterad** = Visar det senaste datumet när det fanns en uppdatering för det här [!UICONTROL device-based destination].
 * **Uppdateringar** = Anger om data ska skickas i realtid eller i batch (1 xdag) till detta [!DNL Audience Manager] [!UICONTROL destination].
 * **Dela upp segment** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från [!UICONTROL segments]. Din möjlighet att ta bort en enhetsprofil från en [!UICONTROL segment] beror på vilket enhetsalternativ som används för att skapa en [!UICONTROL Profile Merge Rule]. Osegmentering används också i samband med [!DNL GDPR] borttagningsförfrågningar. Läs [profilkopplingsregler och osegmenteringsprocesser](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) för enheter och [Audience Manager-partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation). [!DNL Audience Manager] skickar information om att segmentera till den [!UICONTROL destinations] som är markerad med **Ja** nedan.
-* **Mottagande av[!DNL IAB TCF]medgivandesignaler** = [!DNL Audience Manager Plug-in for IAB TCF] gör det möjligt att vidarebefordra [!DNL IAB TC] strängen till aktiveringspartners med respekt för användarnas sekretessval. Plugin-programmet [Audience Manager för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
+* **Mottagande av[!DNL IAB TCF]medgivandesignaler** = [!DNL Audience Manager Plug-in for IAB TCF] gör det möjligt att vidarebefordra [!DNL IAB TC] strängen till aktiveringspartners med respekt för användarnas sekretessval. Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
 * **[!DNL ICDS]** = Den här kolumnen listar de partners som stöder [!UICONTROL Instant Cross-Device Suppression]. Läs om [direkt undertryckning](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)av olika enheter.
 * **ID för mobila enheter** = Den här kolumnen listar partners som kan ta emot ID:n för mobila enheter från [!DNL Audience Manager].
 
