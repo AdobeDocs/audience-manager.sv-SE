@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 1b31f10effa2780b5e4374516dd6c76d92a0123a
+source-git-commit: 5e8dfca8de0faeecbd44da1804b71bbe77bc89be
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 97%
+source-wordcount: '1754'
+ht-degree: 94%
 
 ---
 
@@ -188,7 +188,7 @@ ht-degree: 97%
          + [Konvertering över flera kanaler](reporting/audience-optimization-reports/aor-advertisers/cross-channel-conversion-reporting.md)
       + Audience Optimization för utgivare {#audience-optimization-publishers}
          + [Översikt över Audience Optimization för utgivare](reporting/audience-optimization-reports/aor-publishers/aor-publishers.md)
-         + [Importera DFP-datafiler till Audience Manager](reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
+         + [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
          + [Resultatrapport för segment](reporting/audience-optimization-reports/aor-publishers/publisher-segment-performance.md)
          + [Trendrapport för segment](reporting/audience-optimization-reports/aor-publishers/publisher-segment-trends.md)
          + [Vanligaste oanvända traits](reporting/audience-optimization-reports/aor-publishers/publisher-top-unused-traits.md)
@@ -284,9 +284,9 @@ ht-degree: 97%
 + Handböcker för implementering och integrering {#implementation-integration-guides}
    + [Handböcker för implementering och integrering](integration/implementation-and-integration.md)
    + [Metoder för dataintegrering](integration/data-integration-methods.md)
-   + Integrera DFP med Google Publisher Tags (GPT) {#integrate-dfp-using-gpt}
-      + [Översikt över integrering av DFP med GPT](integration/gpt-aam-destination/gpt-aam-overview.md)
-      + [Skicka segment till DFP med GPT](integration/gpt-aam-destination/gpt-aam-requirements.md)
+   + Integrera Google Ad Manager med Google Publisher Tags (GPT){#integrate-dfp-using-gpt}
+      + [Integrera Google Ad Manager med GPT-översikt](integration/gpt-aam-destination/gpt-aam-overview.md)
+      + [Skicka segment till Google Ad Manager med GPT](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [Skapa en GPT-destination](integration/gpt-aam-destination/gpt-aam-create-destination.md)
       + [Ändra API-anropet GPT setTargeting](integration/gpt-aam-destination/gpt-aam-modify-api.md)
       + [Audience Manager-kod för Google Publisher Tags](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
@@ -294,7 +294,7 @@ ht-degree: 97%
       + [Integrering med Facebook WCA](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
       + [OAS som Audience Manager-destination](integration/integrating-third-party/open-ad-server-destination.md)
       + [OpenX som Audience Manager-destination](integration/integrating-third-party/openx-destination.md)
-      + [DFP som Audience Manager-destination](integration/aam-dfp.md)
+      + [Google Ad Manager (tidigare DFP) som mål för Audience Manager](integration/aam-dfp.md)
       + [Skicka segment till en Google AdWords-lista för återmarknadsföring](integration/integrating-third-party/rlsa-integration.md)
    + [Implementera Audience Manager](integration/implement-audience-manager.md)
    + Integrering av mediedata {#media-data-integration}
