@@ -7,10 +7,10 @@ title: Trendrapport för segment
 uuid: f84e8d0a-74e5-430c-b61c-efb696faee93
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 0%
+source-wordcount: '609'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ Ett mappat segment är ett segment som du skapar och skickar till ett mål för 
 
 Jämför trender och volym för valda mätvärden för att få en bättre bild av hur era målgrupper beter sig över tid.
 
-## Användningsfall {#use-cases}
+## Användningsexempel {#use-cases}
 
 Använd rapporten för att validera ett segments prestanda över tiden och för att identifiera trender baserat på höga prestanda eller skalbarhet. [!UICONTROL Segment Trend]
 
@@ -45,7 +45,7 @@ Använd den **[!UICONTROL Segment]** nedrullningsbara rutan för att välja vilk
 
 >[!IMPORTANT]
 >
->När du aktiverar [!UICONTROL Audience Optimization for Publishers]måste du inkludera beskrivande metadata för [!UICONTROL Line Item] ID:n, enligt beskrivningen i steg 3 i [Importera DFP-datafiler till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten innehåller information om webbegenskapen som [!UICONTROL Line Item] i stället för [!UICONTROL Line Item] ID:t.
+>När du aktiverar [!UICONTROL Audience Optimization for Publishers]måste du inkludera beskrivande metadata för [!UICONTROL Line Item] ID:n, enligt beskrivningen i steg 3 i [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten innehåller information om webbegenskapen som [!UICONTROL Line Item] i stället för [!UICONTROL Line Item] ID:t.
 
 ## Tolka resultaten {#interpreting-results}
 
