@@ -1,21 +1,21 @@
 ---
 description: Lägg till en if-programsats för att kontrollera om det finns Audience Manager-cookies innan du anropar Google Publisher-taggen .setTargeting-metoden.
 seo-description: Lägg till en if-programsats för att kontrollera om det finns Audience Manager-cookies innan du anropar Google Publisher-taggen .setTargeting-metoden.
-seo-title: Ändra GPT-API-anropet setTargeting
+seo-title: Ändra API-anropet GPT setTargeting
 solution: Audience Manager
-title: Ändra GPT-API-anropet setTargeting
+title: Ändra API-anropet GPT setTargeting
 uuid: 0cd38f30-5d29-4511-a779-d32587f1dafb
 feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
 
-# Ändra GPT- `setTargeting` API-anropet {#modify-the-gpt-settargeting-api-call}
+# Modify the GPT `setTargeting` API Call {#modify-the-gpt-settargeting-api-call}
 
 Lägg till en if-sats för att kontrollera om det finns Audience Manager-cookies innan du anropar [!DNL Google Publisher Tag]`.setTargeting` metoden.
 
@@ -38,11 +38,11 @@ if(typeof AamGpt.getCookie("aam_uuid") != "undefined" ){
 
 >[!IMPORTANT]
 >
->Beroende på hur du vill integrera med [!DNL DFP]behöver du bara några av raderna i kodexemplet ovan:
+>Beroende på hur du vill integrera med [!DNL Google Ad Manager]behöver du bara några av raderna i kodexemplet ovan:
 >
 >* Integrering på klientsidan: använder endast raderna 1-3.
 >* Integrering på serversidan: ingen av raderna behövs.
->* Infoga [!DNL DFP] loggfiler för rapportering i [!DNL Audience Manager]: använder endast raderna 4-6. Den här koden infogar värdet för `aam_uuid` cookien i loggarna så att de kan importeras för rapportering.
+>* Infoga [!DNL Google Ad Manager] loggfiler för rapportering i [!DNL Audience Manager]: använder endast raderna 4-6. Den här koden infogar värdet för `aam_uuid` cookien i loggarna så att de kan importeras för rapportering.
 
 
 ### `AamGpt` Funktioner och datatyper
@@ -78,6 +78,6 @@ Definierar de nyckelvariabler som används i `if` programsatsen .
 
 >[!MORELIKETHIS]
 >
->* [Skapa ett GPT-mål](../../integration/gpt-aam-destination/gpt-aam-create-destination.md)
->* [Audience Manager Code for Google Publisher Tags](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
+>* [Skapa en GPT-destination](../../integration/gpt-aam-destination/gpt-aam-create-destination.md)
+>* [Audience Manager-kod för Google Publisher Tags](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
 
