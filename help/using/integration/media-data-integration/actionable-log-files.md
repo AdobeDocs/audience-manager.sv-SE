@@ -8,10 +8,10 @@ title: Verkställbara loggfiler
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: 86b328a186c5e864a080848cb022ecb1971595db
 workflow-type: tm+mt
-source-wordcount: '1597'
-ht-degree: 3%
+source-wordcount: '1574'
+ht-degree: 2%
 
 ---
 
@@ -33,14 +33,18 @@ ht-degree: 3%
 För att komma igång med [!UICONTROL Actionable Log Files]måste du importera loggdata till [!DNL Audience Manager]. Följande länkar hjälper dig att komma igång:
 
 * Mer [!UICONTROL Google DCM] information finns i [Importera DCM-datafiler till Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) *och* kontakta din [!DNL Audience Manager] konsult.
-* Mer information [!UICONTROL Google Ad Manager] (tidigare Google DFP) om loggar finns i [Importera DFP-datafiler till Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *och* kontakta din [!DNL Audience Manager] konsult.
+* Mer information [!UICONTROL Google Ad Manager] (tidigare Google DFP) om loggar finns i [Importera Google Ad Manager-datafiler till Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *och* kontakta din [!DNL Audience Manager] konsult.
 * Andra annonsserverloggar finns i [Data- och metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) *och* kontakta din [!DNL Audience Manager] konsult.
 
 Om du redan importerar loggdata till [!DNL Audience Manager]ber du din [!DNL Audience Manager] konsult eller [kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html) att aktivera [!UICONTROL Actionable Log Files] för dig.
 
+<!--
+
 >[!IMPORTANT]
 >
-> I slutet av 2019 började [!UICONTROL Actionable Log Files] tillgängligheten att nå nya annonsservrar. Be din [!DNL Audience Manager] konsult eller [kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html) att komma igång.
+> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
+
+-->
 
 ## Arbeta med körbara loggfiler {#working-with-actionable-log-files}
 
