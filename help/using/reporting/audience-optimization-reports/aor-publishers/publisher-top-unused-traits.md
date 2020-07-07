@@ -1,25 +1,25 @@
 ---
 description: De vanligaste oanvända egenskaperna representeras som ett punktdiagram över egenskaper som ännu inte är medlemmar i ett segment, baserat på spårtyp, datakälla och prestanda.
 seo-description: De vanligaste oanvända egenskaperna representeras som ett punktdiagram över egenskaper som ännu inte är medlemmar i ett segment, baserat på spårtyp, datakälla och prestanda.
-seo-title: De vanligaste oanvända traderna
+seo-title: Vanligaste oanvända traits
 solution: Audience Manager
-title: De vanligaste oanvända traderna
+title: Vanligaste oanvända traits
 uuid: 90bcd333-41b8-416e-aa4e-a8661891df50
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 0%
+source-wordcount: '647'
+ht-degree: 2%
 
 ---
 
 
-# De vanligaste oanvända traderna{#top-unused-traits}
+# Vanligaste oanvända traits{#top-unused-traits}
 
 De vanligaste oanvända egenskaperna representeras som ett punktdiagram över egenskaper som ännu inte är medlemmar i ett segment, baserat på spårtyp, datakälla och prestanda.
 
-## Användningsfall {#use-cases}
+## Användningsexempel {#use-cases}
 
 Med den här [!UICONTROL Top Unused Traits] rapporten kan du analysera och jämföra prestanda för första och tredje parts egenskaper som för närvarande inte är mappade till ett segment. Den här vyn visar de bästa egenskaperna som kan användas i ett målgruppssegment för antingen kampanjoptimering eller nya möjligheter.
 
@@ -39,7 +39,7 @@ Använd den **[!UICONTROL Traits]** nedrullningsbara rutan för att välja vilka
 
 >[!IMPORTANT]
 >
->När du aktiverar [!UICONTROL Audience Optimization for Publishers]måste du inkludera beskrivande metadata för [!UICONTROL Order IDs], enligt beskrivningen i steg 3 i [Importera DFP-datafiler till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten anger webbegenskapen som [!UICONTROL Order] i stället för [!UICONTROL Order ID].
+>När du aktiverar [!UICONTROL Audience Optimization for Publishers]måste du inkludera beskrivande metadata för [!UICONTROL Order IDs], enligt beskrivningen i steg 3 i [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten anger webbegenskapen som [!UICONTROL Order] i stället för [!UICONTROL Order ID].
 
 ## Tolka resultaten {#interpreting-results}
 
@@ -90,7 +90,7 @@ Se beskrivningarna för ytterligare information i tabellen nedan.
 
 Positionen för era egenskaper i en rapport kan berätta mycket om vilka egenskaper ni kan använda för att optimera befintliga målgruppssegment.
 
-De egenskaper som ligger högre upp på Impressions-axeln är de som du vill använda i dina kampanjer. För traits med ett lågt antal visningar är det osannolikt att ni når den här målgruppen på er webbegenskap baserat på era DFP-data.
+De egenskaper som ligger högre upp på Impressions-axeln är de som du vill använda i dina kampanjer. För traits med ett lågt antal visningar är det osannolikt att ni når den här målgruppen på er webbegenskap baserat på era [!DNL Google Ad Manager] data.
 
 Titta till vänster om [!UICONTROL Unique Trait Realizations] axeln för att få mycket exakta egenskaper och till höger för egenskaper som kan skapa skalor.
 
