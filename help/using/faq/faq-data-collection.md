@@ -8,10 +8,10 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 feature: Administration
 translation-type: tm+mt
-source-git-commit: 27ce94084e35ffa770858027d12235ca9f1f8430
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 96%
+source-wordcount: '1066'
+ht-degree: 93%
 
 ---
 
@@ -136,9 +136,9 @@ Ja, [!DNL Audience Manager] kan tillhandahålla data som samlats in för använd
 
 <br> 
 
-**Jag vill samla in data på en webbplats och rikta mig till användare på en annan webbplats via DFP. Måste jag använda kod på den andra webbplatsen om jag inte vill samla in data från den?**
+**[!DNL Google Ad Manager]Jag vill samla in data på en webbplats och rikta mig till användare på en annan webbplats via Måste jag använda kod på den andra webbplatsen om jag inte vill samla in data från den?**
 
-Nej. Om data inte behöver samlas in på den andra webbplatsen behöver du inte distribuera DIL där. Så länge du har tillgång till datalagret på den andra webbplatsen via DFP kan du använda datainsamlingen från den första webbplatsen med målinriktning via DFP.
+Nej. Om data inte behöver samlas in på den andra webbplatsen behöver du inte distribuera DIL där. As long as you have access to the inventory on the second site via [!DNL Google Ad Manager], you can use the data collection from the initial site and target via [!DNL Google Ad Manager].
 
 <br> 
 
@@ -148,9 +148,9 @@ Varje leverantör tillför något unikt, så det beror på vad du letar efter. V
 
 <br> 
 
-**Hur ställs cookies in i [!DNL Audience Manager] och hur skickas variabler till DFP?**
+**Hur ställs cookies in i [!DNL Audience Manager] och hur skickas variabler till[!DNL Google Ad Manager]?**
 
-[!DNL Audience Manager] ställer in 2 cookies: Den ena skickar segmentvariabler till annonstaggen i DFP och den andra ställer in vårt unika användar-ID (UUID) som också läses in av DFP. Genom att lägga till UUID i annonstaggen kan vi skapa rapporter och målgruppsidentifiering på användarnivå.
+[!DNL Audience Manager][!DNL Google Ad Manager] ställer in 2 cookies: Den ena skickar segmentvariabler till annonstaggen i och den andra ställer in vårt unika användar-ID (UUID) som också läses in av [!DNL Google Ad Manager]. Genom att lägga till UUID i annonstaggen kan vi skapa rapporter och målgruppsidentifiering på användarnivå.
 
 <br> 
 
