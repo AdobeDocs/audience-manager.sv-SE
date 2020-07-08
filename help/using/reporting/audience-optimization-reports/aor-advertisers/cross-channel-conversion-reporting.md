@@ -7,9 +7,9 @@ title: Konvertering över flera kanaler
 uuid: 0fecec23-e502-490b-b7dd-47a3753a3f75
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 97129b435ab8e13def14bc85dcaab8254b2c4bda
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '262'
 ht-degree: 3%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 3%
 
 Med alternativet Konvertering över flera kanaler i rapporten Audience Optimization kan du attribuera offlinekonverteringar till serverade onlinevisningar eller -klick.
 
-I [!UICONTROL Cross Channel Conversion] rapporterna kombineras resultat från [!DNL DoubleClick Campaign Manager] DCM-plattformen med [!DNL Audience Manager] konverteringsegenskaper. På så sätt kan du länka offlinekonverteringar till online-visningar eller -klick.
+I [!UICONTROL Cross Channel Conversion] rapporterna kombineras resultat från [!DNL Google Campaign Manager] plattformen med [!DNL Audience Manager] konverteringsegenskaper. På så sätt kan du länka offlinekonverteringar till online-visningar eller -klick.
 
 Du kan använda [!UICONTROL Cross Channel Conversion] för [Segmentprestanda](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md) - och [Optimal Frequency](../../../reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md) -rapporter.
 
-Om du vill visa [!UICONTROL Cross Channel Conversion] rapporter markerar du **[!UICONTROL AAM+DCM]** objektet i **[!UICONTROL Platform]** listrutan.
+Om du vill visa [!UICONTROL Cross Channel Conversion] rapporter markerar du **[!UICONTROL AAM + Ad Server Name]** objektet i **[!UICONTROL Platform]** listrutan.
 
 I följande tabell visas viktiga aspekter när du konfigurerar [!UICONTROL Cross Channel Conversion]:
 
@@ -41,7 +41,7 @@ I följande tabell visas viktiga aspekter när du konfigurerar [!UICONTROL Cross
   </tr>
   <tr> 
    <td> <p>Attributionsfönster </p> </td> 
-   <td> <p> <b><span class="uicontrol"> AAM+DCM</span></b> -attribueringsfönstret är 14 dagar, vilket innebär att endast konverteringsegenskaper som visats under de senaste två veckorna beaktas. </p> </td> 
+   <td> <p> <b><span class="uicontrol"> AAM+Google Campaign Manager</span></b> -attribueringsfönstret är 14 dagar, vilket innebär att endast konverteringsegenskaper som visats under de senaste två veckorna beaktas. </p> </td> 
   </tr> 
   <tr> 
    <td> <p>Senaste beröringsmetod </p> </td> 
