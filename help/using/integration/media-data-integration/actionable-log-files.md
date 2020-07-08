@@ -8,9 +8,9 @@ title: Verkställbara loggfiler
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 translation-type: tm+mt
-source-git-commit: 86b328a186c5e864a080848cb022ecb1971595db
+source-git-commit: a4d86fb0324a03002123f8713eb9786b5b74c38e
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1605'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 För att komma igång med [!UICONTROL Actionable Log Files]måste du importera loggdata till [!DNL Audience Manager]. Följande länkar hjälper dig att komma igång:
 
-* Mer [!UICONTROL Google DCM] information finns i [Importera DCM-datafiler till Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) *och* kontakta din [!DNL Audience Manager] konsult.
+* Mer [!UICONTROL Google Campaign Manager] information finns i [Importera Google Campaign Manager-datafiler till Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) *och* kontakta din [!DNL Audience Manager] konsult.
 * Mer information [!UICONTROL Google Ad Manager] (tidigare Google DFP) om loggar finns i [Importera Google Ad Manager-datafiler till Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *och* kontakta din [!DNL Audience Manager] konsult.
 * Andra annonsserverloggar finns i [Data- och metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) *och* kontakta din [!DNL Audience Manager] konsult.
 
@@ -62,9 +62,9 @@ Signaler är de [minsta dataenheterna](../../reference/signal-trait-segment.md) 
 
 Kom ihåg att om du vill använda den här informationen för att skapa och segmentera målgrupper måste du själv skapa regelbaserade egenskaper.
 
-### Användbara signaler från Google DCM-loggar {#dcm-logs-signals}
+### Användbara signaler från Google Campaign Manager-loggar {#dcm-logs-signals}
 
-I tabellen visas de användbara signalerna från [!DNL DCM] loggfiler:
+I tabellen visas de användbara signalerna från [!DNL Google Campaign Manager] loggfiler:
 
 <table id="table_A5A2A10D471C4C9D8DCD88F9C017040C"> 
  <thead> 
@@ -79,13 +79,13 @@ I tabellen visas de användbara signalerna från [!DNL DCM] loggfiler:
   <tr> 
    <td colname="col1"> <p> <code>Activity ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_conversion</code> </p> </td> 
-   <td colname="col3"> <p>Endast tillgängligt för konverteringshändelser. </p> <p>Representerar det numeriska ID:t för konverteringsaktiviteten i DCM. Det här fältet mappar till aktivitets-ID från DCM. </p> <p> <p>Tips: Du kan hämta flera eller specifika konverteringsaktiviteter från DCM. Skapa egenskaper med hjälp <code> d_conversion = activity ID</code> av varje konverteringsaktivitet från DCM. </p> </p> </td> 
+   <td colname="col3"> <p>Endast tillgängligt för konverteringshändelser. </p> <p>Representerar det numeriska ID:t för konverteringsaktiviteten i Google Campaign Manager. Det här fältet mappar till aktivitets-ID:t från Google Campaign Manager. </p> <p> <p>Tips: Du kan hämta flera eller specifika konverteringsaktiviteter från Google Campaign Manager. Skapa egenskaper med hjälp <code> d_conversion = activity ID</code> av Google Campaign Manager för varje konverteringsaktivitet. </p> </p> </td> 
    <td colname="col4"> <p> <code> 24122</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>Conversion ID</code> </p> </td> 
    <td colname="col2"> <p> <code>d_conversionType</code> </p> </td> 
-   <td colname="col3"> <p>Endast tillgängligt för konverteringshändelser. </p> <p>Det här fältet mappar till konverterings-ID:t i DCM. Anger aktiviteten före användarkonverteringen från DCM. </p> <p>Godkända värden är: </p> <p> 
+   <td colname="col3"> <p>Endast tillgängligt för konverteringshändelser. </p> <p>Det här fältet mappar till konverterings-ID:t i Google Campaign Manager. Anger aktiviteten som föregår användarkonverteringen från Google Campaign Manager. </p> <p>Godkända värden är: </p> <p> 
      <ul id="ul_2256294F1C6F448B9F269D00D4DFEE65"> 
       <li id="li_29D3FF8919B7404297E80BACA913117A"> <code> 1</code> för konverteringar efter klickning. </li> 
       <li id="li_B5250A63A2C1413FAF1FDC8272BFFB97"> <code> 2</code> för konverteringar efter exponering. </li> 
@@ -102,25 +102,25 @@ I tabellen visas de användbara signalerna från [!DNL DCM] loggfiler:
   <tr> 
    <td colname="col1"> <p> <code>Advertiser Group ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_adsrc</code> </p> </td> 
-   <td colname="col3"><p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till datakällor i Audience Manager.</p> <p>Det här fältet mappar till Advertiser Group ID från DCM. </p> </td> 
+   <td colname="col3"><p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till datakällor i Audience Manager.</p> <p>Det här fältet mappar till Advertiser Group ID från Google Campaign Manager. </p> </td> 
    <td colname="col4"> <p> <code> 134243</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>Advertiser ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_bu</code> </p> </td> 
-   <td colname="col3"> <p>Affärsenhets-ID. Det här fältet mappar till Advertiser ID från DCM. </p> </td> 
+   <td colname="col3"> <p>Affärsenhets-ID. Det här fältet mappar till annons-ID:t från Google Campaign Manager. </p> </td> 
    <td colname="col4"> <p> <code> 563332</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>Campaign ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_campaign</code> </p> </td> 
-   <td colname="col3"> <p>Kampanj-ID som tillhandahålls av DCM.</p> </td> 
+   <td colname="col3"> <p>Kampanj-ID som tillhandahålls av Google Campaign Manager.</p> </td> 
    <td colname="col4"> <p> <code> 7892520</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>Creative ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_creative</code> </p> </td> 
-   <td colname="col3"> <p>Det Creative ID som tillhandahålls av DCM. </p> </td> 
+   <td colname="col3"> <p>Det kreativa ID som tillhandahålls av Google Campaign Manager. </p> </td> 
    <td colname="col4"> <p> <code> 224221</code> </p> </td> 
   </tr> 
   <tr> 
@@ -132,7 +132,7 @@ I tabellen visas de användbara signalerna från [!DNL DCM] loggfiler:
     <tr> 
    <td colname="col1"> <p> <code>-</code> </p> </td> 
    <td colname="col2"> <p> <code> d_event</code> </p> </td> 
-   <td colname="col3"> <p>Anger händelsetypen. Audience Manager läser händelsetypen från DCM-loggfilens namn och omvandlar den till en användbar signal. </p> <p>Godkända värden är: </p> <p> 
+   <td colname="col3"> <p>Anger händelsetypen. Audience Manager läser händelsetypen från loggfilen för Google Campaign Manager och omvandlar den till en användbar signal. </p> <p>Godkända värden är: </p> <p> 
      <ul id="ul_58EB40E458844DA185ABAF160ADAF03E"> 
       <li id="li_71772CC106F74F4788E1784CC3D70BD3"> <code> d_event = imp</code> för intryck. </li> 
       <li id="li_33A629A32B87400F93269581154D566F"> <code> d_event = click</code> för klickningar. </li> 
@@ -143,19 +143,19 @@ I tabellen visas de användbara signalerna från [!DNL DCM] loggfiler:
   <tr> 
    <td colname="col1"> <p> <code>-</code> </p> </td> 
    <td colname="col2"> <p> <code> d_src</code> </p> </td> 
-   <td colname="col3"> <p>ID:t för datakällan som du använder för att hämta DCM-data. Se <a href="../../features/manage-datasources.md#create-data-source"> Så här skapar du en datakälla</a>. </p> </td> 
+   <td colname="col3"> <p>ID:t för datakällan som du använder för att hämta Google Campaign Manager-data. Se <a href="../../features/manage-datasources.md#create-data-source"> Så här skapar du en datakälla</a>. </p> </td> 
    <td colname="col4"> <p> <code> 743</code> </p> </td> 
   </tr>
  </tbody>
 </table>
 
-Signalerna som beskrivs i tabellen fångas in [!DNL Audience Manager] som ett `HTTP` realtidssamtal. Exempelanropet nedan innehåller information om en konverteringshändelse från [!DNL DCM]. Samtal behöver inte nödvändigtvis innehålla *alla* signaler i exempelanropet.
+Signalerna som beskrivs i tabellen fångas in [!DNL Audience Manager] som ett `HTTP` realtidssamtal. Exempelanropet nedan innehåller information om en konverteringshändelse från [!DNL Google Campaign Manager]. Samtal behöver inte nödvändigtvis innehålla *alla* signaler i exempelanropet.
 
 ```
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_event=conv&d_conversion=24122&d_conversionType=2&d_bu=3983524&d_campaign=7321391&d_adsrc=11111&d_creative=123456
 ```
 
-För en genomsnittlig loggfil på 2 miljoner rader [!DNL DCM] realiseras alla egenskaper som skapats av användbara signaler inom ungefär en timme efter det att loggarna bearbetats.
+För en genomsnittlig loggfil på 2 miljoner rader [!DNL Google Campaign Manager] realiseras alla egenskaper som skapats av användbara signaler inom ungefär en timme efter det att loggarna bearbetats.
 
 <!--
 Removed  {importance="high"} for ExL
@@ -163,10 +163,10 @@ Removed  {importance="high"} for ExL
 
 >[!NOTE]
 >
->Händelsens tidsstämpel som anges i [!DNL DCM] loggarna respekteras och skickas till [!UICONTROL Data Collection Servers].
+>Händelsens tidsstämpel som anges i [!DNL Google Campaign Manager] loggarna respekteras och skickas till [!UICONTROL Data Collection Servers].
 >
->* Om en tidsstämpel inte är tillgänglig för en datarad i [!DNL DCM] loggfilen använder vi tidpunkten för `HTTP` anropet som händelsetidsstämpel.
->* Om dataraden i [!DNL DCM] loggfilen innehåller en felaktig tidsstämpel, ignoreras hela raden.
+>* Om en tidsstämpel inte är tillgänglig för en datarad i [!DNL Google Campaign Manager] loggfilen använder vi tidpunkten för `HTTP` anropet som händelsetidsstämpel.
+>* Om dataraden i [!DNL Google Campaign Manager] loggfilen innehåller en felaktig tidsstämpel, ignoreras hela raden.
 
 
 <br> 
@@ -322,9 +322,9 @@ En fördel med implementering [!UICONTROL Actionable Log Files] är möjligheten
 
 4. Mappa segmentet [!DNL Retarget Users] till ett mål och målanvändare i målet med creative 456.
 
-### Använd DCM-flödesljusaktivitet i rapporter om målgruppsoptimering eller i Audience Lab
+### Använd Google Campaign Manager Floodlight Activity i rapporten om målgruppsoptimering eller i Audience Lab
 
-[Med flyttalstaggar](https://support.google.com/dcm/partner/answer/4293719?hl=en) kan annonsörer spåra användarkonverteringar. Med [!UICONTROL Actionable Log Files]kan du spåra konverteringarna [!DNL DCM] i [målgruppsoptimeringsrapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md) eller i [Audience Lab](../../features/audience-lab/audience-lab.md):
+[Med flyttalstaggar](https://support.google.com/dcm/partner/answer/4293719?hl=en) kan annonsörer spåra användarkonverteringar. Med [!UICONTROL Actionable Log Files]kan du spåra konverteringarna [!DNL Google Campaign Manager] i [målgruppsoptimeringsrapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md) eller i [Audience Lab](../../features/audience-lab/audience-lab.md):
 
 1. Skapa ett spår och använd följande trait-regel för att hämta en konvertering från annonsserverloggarna:
 
@@ -336,6 +336,6 @@ En fördel med implementering [!UICONTROL Actionable Log Files] är möjligheten
 
 >[!MORELIKETHIS]
 >
->* [Importera DCM-datafiler till Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+>* [Importera Google Campaign Manager-datafiler till Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
 >* [Audience Optimization-rapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md)
 
