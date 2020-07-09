@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Vanliga frågor om personbaserade destinationer
 feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 6e55d8bc5fe2c5cdcdd36107593215288d491331
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 100%
+source-wordcount: '1138'
+ht-degree: 97%
 
 ---
 
@@ -112,3 +112,7 @@ Du kan använda [!DNL People-Based Destinations] i alla [!DNL Facebook]-appar so
 Ni kan använda Audience Managers [!DNL Facebook]-integrering [!DNL WCA] via funktionen [!DNL URL Destinations] utan extra kostnad.
 
 Dessa två integreringar kompletterar varandra och ni kan använda båda för att få bättre målgruppstäckning. Som exempel kan [!DNL WCA] användas för prospektering när ett företag söker efter webbplatsbesökare som inte har registrerat ett konto, medan [!DNL People-Based Destinations] kan hjälpa er att rikta er till befintliga kunder som har angett sin e-postadress men kanske inte besökt webbplatsen.
+
+**Har integreringen med[!DNL People-Based Destinations][!DNL Facebook]stöd för att utesluta användare från en viss målgrupp när de inte längre är kvalificerade för det?**
+
+Ja, integreringen har stöd för att ta bort användare från [!DNL Facebook] målgrupper när de inte längre är kvalificerade för dem.
