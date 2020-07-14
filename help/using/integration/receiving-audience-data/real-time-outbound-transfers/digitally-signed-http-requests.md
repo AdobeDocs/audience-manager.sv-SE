@@ -7,9 +7,9 @@ title: Digitalt signerade HTTP(S)-begäranden
 uuid: 1183a70f-0c96-42cf-a4f5-37a83ffa1286
 feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 4877aa5391193ee2187609fdc9cb3740c91feb96
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -90,10 +90,7 @@ RFC för [!DNL HMAC] hash-implementeringen är [https://www.ietf.org/rfc/rfc2104
 
 ## Rotera den privata nyckeln {#rotate-private-key}
 
-Av säkerhetsskäl bör du regelbundet rotera den privata nyckeln. Det är upp till dig att bestämma den privata nyckeln och rotationsperioden. För att uppnå tangentrotationen utan driftstopp har [!UICONTROL IRIS] stöd för att lägga till flera signaturrubriker. En rubrik innehåller signaturen som skapades med den gamla nyckeln, en annan rubrik innehåller signaturen som genererats med den nya privata nyckeln. Se stegen nedan i detalj:
-
-1. Partnern kommunicerar den nya privata nyckeln till [!DNL Adobe Audience Manager].
-1. Den gamla nyckeln tas bort från [!DNL Audience Manager] och skickar [!UICONTROL IRIS] bara den nya signaturrubriken. Tangenterna har roterats.
+Om du vill rotera den privata nyckeln måste partners skicka den nya privata nyckeln till sin [!DNL Adobe Audience Manager] konsult. Den gamla nyckeln tas bort från [!DNL Audience Manager] och skickar [!UICONTROL IRIS] bara den nya signaturrubriken. Tangenterna har roterats.
 
 ## Data som används för signering {#data-signing}
 
