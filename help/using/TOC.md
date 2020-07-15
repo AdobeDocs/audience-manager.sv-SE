@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 5e8dfca8de0faeecbd44da1804b71bbe77bc89be
+source-git-commit: edeb7dba1cb83e19a910812d2d0a664a288b884a
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1756'
 ht-degree: 94%
 
 ---
@@ -179,7 +179,7 @@ ht-degree: 94%
       + [Audience Optimization-rapporter](reporting/audience-optimization-reports/audience-optimization-reports.md)
       + Audience Optimization för annonsörer {#audience-optimization-advertisers}
          + [Översikt över Audience Optimization för annonsörer](reporting/audience-optimization-reports/aor-advertisers/aor-advertisers.md)
-         + [Importera DCM-datafiler till Audience Manager](reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+         + [Importera Google Campaign Manager-datafiler till Audience Manager](reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
          + [Resultatrapport för segment](reporting/audience-optimization-reports/aor-advertisers/segment-performance.md)
          + [Trendanalys och volymanalysrapporter](reporting/audience-optimization-reports/aor-advertisers/trend-analysis-volume-analysis.md)
          + [Rapporten Optimal frekvens](reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md)
