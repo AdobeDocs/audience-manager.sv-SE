@@ -1,21 +1,21 @@
 ---
 description: Information om allmänna krav, autentisering, valfria frågeparametrar, begäran-URL:er och andra referenser.
 seo-description: Information om allmänna krav, autentisering, valfria frågeparametrar, begäran-URL:er och andra referenser.
-seo-title: Komma igång med REST API:er
+seo-title: Kom igång med REST API:er
 solution: Audience Manager
-title: Komma igång med REST API:er
+title: Kom igång med REST API:er
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 0fd2b2a58274199ecc2fd58738113165c804ceb8
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 1%
+source-wordcount: '1854'
+ht-degree: 2%
 
 ---
 
 
-# Komma igång med [!DNL REST] [!DNL APIs] {#getting-started-with-rest-apis}
+# Getting Started with [!DNL REST] [!DNL APIs] {#getting-started-with-rest-apis}
 
 Information om allmänna krav, autentisering, valfria frågeparametrar, begäran [!DNL URLs]och andra referenser.
 
@@ -40,22 +40,28 @@ Observera följande när du arbetar med [Audience Manager API](https://bank.demd
 
 Två autentiseringsmetoder stöds [!DNL Audience Manager][!DNL REST APIs] .
 
-* [JWT-autentisering](#jwt)(tjänstkonto). Detta är den rekommenderade autentiseringsmetoden.
+* [JWT-autentisering](#jwt) (tjänstkonto) med [Adobe I/O](https://www.adobe.io/). [!DNL Adobe I/O] är Adobes ekosystem för utvecklare och användargrupper. Det innehåller [Adobes I/O-utvecklingsverktyg samt API:er](https://www.adobe.io/apis/experienceplatform.html) och API: [er för alla Adobe-produkter](https://www.adobe.io/apis.html). Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
 * [OAuth-autentisering (borttagen)](#oauth). Den här metoden är föråldrad, men kunder med befintliga [!DNL OAuth] integreringar kan fortsätta använda den här metoden.
 
 >[!IMPORTANT]
 >
 >Beroende på din autentiseringsmetod måste du justera din begäran [!DNL URLs] därefter. Mer information om värdnamnen som du bör använda finns i avsnittet [Miljöer](#environments) .
 
-## [!DNL JWT] ([!DNL Service Account]) Autentisering {#jwt}
+## [!DNL JWT] ([!DNL Service Account]) Autentisering med Adobe I/O {#jwt}
+
+### Adobe I/O - översikt {#adobeio}
+
+[!DNL Adobe I/O] är Adobes ekosystem för utvecklare och användargrupper. Det innehåller [Adobes I/O-utvecklingsverktyg samt API:er](https://www.adobe.io/apis/experienceplatform.html) och API: [er för alla Adobe-produkter](https://www.adobe.io/apis.html).
+
+Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
 
 ### Förutsättningar {#prerequisites}
 
-Innan du kan konfigurera [!DNL JWT] autentiseringen måste du se till att du har tillgång till [Adobe Developer Console](https://console.adobe.io/). Kontakta din organisations administratör för åtkomstbegäranden.
+Innan du kan konfigurera [!DNL JWT] autentiseringen måste du se till att du har tillgång till [Adobe Developer Console](https://console.adobe.io/) i [Adobe I/O](https://www.adobe.io/). Kontakta din organisations administratör för åtkomstbegäranden.
 
 ### Autentisering
 
-Följ stegen nedan för att konfigurera [!DNL JWT (Service Account)] autentisering:
+Följ stegen nedan för att konfigurera [!DNL JWT (Service Account)] autentisering med [!DNL Adobe I/O]:
 
 1. Logga in på [Adobe Developer Console](https://console.adobe.io/).
 1. Följ stegen i Anslutning till [tjänstkonto](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
