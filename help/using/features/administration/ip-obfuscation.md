@@ -2,18 +2,18 @@
 description: Ditt företag kanske vill dölja IP-adressen i många länder på grund av globala sekretessbestämmelser. Med Audience Manager kan ni dölja IP-adresser för besökare globalt eller för varje land.
 seo-description: Ditt företag kanske vill dölja IP-adressen i många länder på grund av globala sekretessbestämmelser. Med Audience Manager kan ni dölja IP-adresser för besökare globalt eller för varje land.
 solution: Audience Manager
-title: IP-adressofuscation
+title: Dölja IP-adresser
 feature: Data Governance and Privacy
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '470'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# IP-adressofuscation {#ip-obfuscation}
+# Dölja IP-adresser {#ip-obfuscation}
 
 Använd den här funktionen för att dölja IP-adresser som samlats in i Audience Manager.
 
@@ -57,7 +57,7 @@ Om du vill inaktivera IP-adressofficering för specifika länder ska du leta red
 
 ## Relaterade begrepp {#related-concepts}
 
-* [Dataintegritet](/help/using/overview/data-security-and-privacy/data-privacy.md)
+* [Datasekretess](/help/using/overview/data-security-and-privacy/data-privacy.md)
 * Videodemonstration om IP-adressofuscation
 >[!VIDEO](https://video.tv.adobe.com/v/27218/)
 
