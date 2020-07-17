@@ -1,20 +1,20 @@
 ---
 description: Instant Cross-Device Suppression är möjligheten att undertrycka användare på flera enheter som är anslutna till dem när en viss upplevelse inträffar på någon av dessa enheter. Använd funktionen för direkt undertryckning mellan enheter för att leverera en enhetlig upplevelse på olika enheter till användarna. Den här upplevelsen blir möjlig tack vare segmenteringsfunktionerna i realtid i Audience Manager.
 seo-description: Instant Cross-Device Suppression är möjligheten att undertrycka användare på flera enheter som är anslutna till dem när en viss upplevelse inträffar på någon av dessa enheter. Använd funktionen för direkt undertryckning mellan enheter för att leverera en enhetlig upplevelse på olika enheter till användarna. Den här upplevelsen blir möjlig tack vare segmenteringsfunktionerna i realtid i Audience Manager.
-seo-title: Direkt undertryckning av olika enheter
-title: Direkt undertryckning av olika enheter
+seo-title: Omgående enhetsövergripande undertryckning
+title: Omgående enhetsövergripande undertryckning
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
 feature: Profile Merge Rules
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Direkt undertryckning av olika enheter {#instant-cross-device-suppression}
+# Omgående enhetsövergripande undertryckning {#instant-cross-device-suppression}
 
 [!UICONTROL Instant Cross-Device Suppression] är möjligheten att undertrycka användare på flera enheter som är anslutna till dem när en viss upplevelse inträffar på någon av dessa enheter. Använd funktionen för att leverera en enhetlig upplevelse på olika enheter till användarna. [!UICONTROL Instant Cross-Device Suppression] Den här upplevelsen blir möjlig tack vare segmenteringsfunktionerna i realtid i Audience Manager.
 
