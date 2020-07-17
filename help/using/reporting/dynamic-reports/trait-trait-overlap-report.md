@@ -1,21 +1,21 @@
 ---
 description: Returnerar data om antalet unika användare som delas av alla dina första och tredje parts egenskaper.
 seo-description: Returnerar data om antalet unika användare som delas av alla dina första och tredje parts egenskaper.
-seo-title: Överlappningsrapport för spår-till-trait
+seo-title: Överlappningsrapport för trait till trait
 solution: Audience Manager
-title: Överlappningsrapport för spår-till-trait
+title: Överlappningsrapport för trait till trait
 uuid: 7fb3fc9e-0e0b-492a-9c3a-04356afb19c7
 feature: overlap reports
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
 
-# Överlappningsrapport för spår-till-trait{#trait-to-trait-overlap-report}
+# Överlappningsrapport för trait till trait{#trait-to-trait-overlap-report}
 
 Returnerar data om antalet unika användare som delas av alla dina första och tredje parts egenskaper.
 
@@ -116,9 +116,9 @@ Popup-fönstret för [!UICONTROL Trait-to-Trait Overlap] rapporten innehåller m
 
 >[!MORELIKETHIS]
 >
->* [Filtrera rapportresultat med datareglagen](../../reporting/dynamic-reports/data-sliders.md)
+>* [Filtrera rapportresultat med datareglage](../../reporting/dynamic-reports/data-sliders.md)
 >* [Former, färger och storlekar som används i dynamiska rapporter](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
 >* [Ikoner och verktyg för rapporter förklaras](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
 >* [Överlappningsrapporter: Uppdatera schema och minsta segmentstorlek](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
->* [Datainsamling och felfrekvens i rapporter från markerade Audience Manager..](../../reporting/report-sampling.md)
+>* [Datainsamling och felfrekvens i valda rapporter för Audience Manager...](../../reporting/report-sampling.md)
 >* [CSV-filer för överlappningsrapporter](../../reporting/dynamic-reports/overlap-csv-files.md)
