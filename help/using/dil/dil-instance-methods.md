@@ -2,21 +2,21 @@
 description: Med DIL-API:erna på förekomstnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 keywords: create traits;create trait
 seo-description: Med DIL-API:erna på förekomstnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
-seo-title: DIL-metoder på förekomstnivå
+seo-title: DIL-metoder på instansnivå
 solution: Audience Manager
-title: DIL-metoder på förekomstnivå
+title: DIL-metoder på instansnivå
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
 feature: DIL Implementation
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1105'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# DIL-metoder på förekomstnivå{#instance-level-dil-methods}
+# DIL-metoder på instansnivå{#instance-level-dil-methods}
 
 Med [!UICONTROL DIL] API:erna på förekomstnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 
@@ -671,7 +671,7 @@ dil-use-cors-only.xml
 
 `useCORSOnly` är false som standard. Falskt innebär att webbläsaren kan utföra resurskontroller med CORS eller JSONP. Men försöker [!UICONTROL DIL] alltid begära resurser med CORS först. Den återgår till JSONP i äldre webbläsare som inte stöder CORS. Om du behöver tvinga webbläsaren att endast använda CORS, till exempel webbplatser som har höga säkerhetskrav, anges `useCORSOnly:true`.
 
-**Kodexempel**
+**Exempel på kod**
 
 <pre><code class="js">
 var dilInstance = DIL.create({ 
@@ -684,6 +684,7 @@ var dilInstance = DIL.create({
 >
 >* Vi rekommenderar att du anger `useCORSOnly: true` bara när du är säker på att webbplatsens besökare har webbläsare som stöder den här funktionen.
 >* När `useCORSOnly: true`detta inträffar [!UICONTROL DIL] inga ID-anrop från Internet Explorer version 9 eller tidigare.
+
 >
 
 
@@ -724,7 +725,7 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >* [Namnkrav för nyckelvariabler](../features/traits/trait-key-name-requirements.md)
 >* [Prefixkrav för nyckelvariabler](../features/traits/trait-variable-prefixes.md)
 >* [Synkroniseringsfunktioner i Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
->* [DIL skapa](../dil/dil-class-overview/dil-create.md#dil-create)
+>* [Skapa DIL](../dil/dil-class-overview/dil-create.md#dil-create)
 >* [Identitetstjänst för Adobe Experience Platform: AnvändCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
 >* [CORS-stöd i Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
 
