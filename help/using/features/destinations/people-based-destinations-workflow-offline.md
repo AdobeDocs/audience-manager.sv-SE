@@ -1,20 +1,20 @@
 ---
 description: 'Den här sidan innehåller stegvisa anvisningar om hur du skapar målgruppssegment utifrån kunddata som bara är offline och skickar dem till personbaserade destinationer.  '
 seo-description: 'Den här sidan innehåller stegvisa anvisningar om hur du skapar målgruppssegment utifrån kunddata som bara är offline och skickar dem till personbaserade destinationer.  '
-seo-title: Arbetsflöde B - Personalisering baserad på data som bara är offline
+seo-title: Arbetsflöde B – Personalisering endast baserad på offlinedata
 solution: Audience Manager
-title: Arbetsflöde B - Personalisering baserad på data som bara är offline
+title: Arbetsflöde B – Personalisering endast baserad på offlinedata
 feature: People-Based Destinations
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1170'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
 
-# Arbetsflöde B - Personalisering baserad på data som bara är offline {#workflow-b}
+# Arbetsflöde B – Personalisering endast baserad på offlinedata {#workflow-b}
 
 >[!IMPORTANT]
 >Den här artikeln innehåller produktdokumentation som ska hjälpa dig att konfigurera och använda den här funktionen. Ingenting i det här är juridisk rådgivning. Vänligen kontakta ditt eget juridiska ombud för att få juridisk rådgivning.
