@@ -1,20 +1,20 @@
 ---
 description: När du skapar eller redigerar ett segment i Segment Builder får du rekommendationer om vilka ytterligare egenskaper du kan inkludera, som liknar egenskaperna i segmentregeln. Lägg till de rekommenderade egenskaperna i ert segment för att öka er målgrupp.
 seo-description: Få rekommendationer för Live-trait när ni bygger era segment.
-seo-title: Trait Recommendations
+seo-title: Trait-rekommendationer
 solution: Audience Manager
-title: Trait Recommendations
+title: Trait-rekommendationer
 feature: Segments
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1573'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Trait Recommendations
+# Trait-rekommendationer
 
 Få rekommendationer i realtid när ni bygger era segment utifrån era egna egenskaper och [!UICONTROL Audience Marketplace] dataflöden.
 
@@ -60,21 +60,21 @@ Med [!UICONTROL Trait Recommendations]kan du förbättra dina arbetsflöden bero
 
 ### Algoritmiska modeller
 
-[!UICONTROL Algorithmic Models] inte bara hittar de mest inflytelserika egenskaperna, utan även poängsätter användare baserat på dessa egenskaper och tilldelar varje användare en individuell poäng. Sedan skapar du algoritmiska egenskaper som riktar sig till användarna. Med precision och räckvidd i [!UICONTROL Trait Builder]kan du ange vilka användare bland alla som har de inflytelserika egenskaper som du vill ha som mål.
+[!UICONTROL Algorithmic Models] inte bara hittar de mest inflytelserika egenskaperna, utan även poängsätter användare baserat på dessa egenskaper och tilldelar varje användare en individuell poäng. Sedan skapar du algoritmiska traits som riktar sig till användarna. With accuracy and reach controls in the [!UICONTROL Trait Builder], you can specify which users amongst all those who have the influential traits you want to target.
 
 [!UICONTROL Algorithmic Models] gör att du kan välja användare på olika noggrannhetsnivåer och testa i [!UICONTROL Audience Lab] vilken grupp användare som konverteras bättre. Se det detaljerade användningsexemplet i [Jämför modeller i Audience Lab](../../features/audience-lab/audience-lab-use-cases.md#compare-models).
 
-I [!UICONTROL Algorithmic Models]exemplet körs var 8:e dag och uppdaterar de användare som är kvalificerade för algoritmiska egenskaper.
+In [!UICONTROL Algorithmic Models], the model runs every 8 days and refreshes the users qualified for algorithmic traits.
 
-### Trait Recommendations
+### Trait-rekommendationer
 
 [!UICONTROL Trait Recommendations] är ett snabbt sätt att få insikter om andra egenskaper som liknar de du använder i ett segment.
 
 Du bör använda [!UICONTROL Trait Recommendations] när:
 
-* Ni behöver snabba insikter när ni skapar segment,
-* Ni använder segmenten för korta kampanjer eller när ni snabbt vill hindra målgrupper som konverterar;
-* Du försöker maximera räckvidden.
+* Ni behöver snabba insikter när ni skapar segment
+* Ni använder segmenten för korta kampanjer eller när ni snabbt vill exkludera målgrupper som konverterar
+* Ni försöker maximera räckvidden.
 
 ## Arbetsflöde
 
