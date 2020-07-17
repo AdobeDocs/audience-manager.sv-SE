@@ -2,18 +2,18 @@
 description: Ta emot målgruppsdata från Audience Manager.
 seo-description: Ta emot målgruppsdata från Adobe Audience Manager (AAM).
 seo-title: Tar emot målgruppsdata i Adobe Audience Manager (AAM)
-title: Tar emot målgruppsdata
+title: 'Ta emot målgruppsdata '
 feature: Outbound Data Transfers
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '117'
-ht-degree: 0%
+ht-degree: 17%
 
 ---
 
 
-# Tar emot målgruppsdata
+# Ta emot målgruppsdata 
 
 Ta emot målgruppsdata från Audience Manager.
 
@@ -25,6 +25,6 @@ Ta emot målgruppsdata från Audience Manager.
 
    Den utgående dataöverföringsprocessen i realtid returnerar användardata som en serie JSON-objekt som skickas in med en POST-metod.
 
-* [Batchutgående dataöverföringar](batch-outbound-transfers/batch-outbound-overview.md)
+* [Satsvisa utgående dataöverföringar ](batch-outbound-transfers/batch-outbound-overview.md)
 
    Audience Manager skickar batchdata till tredjepartsleverantörer av innehåll enligt dessa specifikationer.
