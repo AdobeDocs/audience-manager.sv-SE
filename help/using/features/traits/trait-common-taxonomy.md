@@ -2,21 +2,21 @@
 description: I den här artikeln finns en allmän översikt över hur du klassificerar egenskaper med en gemensam taxonomi.
 keywords: DIL
 seo-description: I den här artikeln finns en allmän översikt över hur du klassificerar egenskaper med en gemensam taxonomi.
-seo-title: Klassificera egenskaper med en gemensam taxonomi
+seo-title: Klassificera traits med en gemensam taxonomi
 solution: Audience Manager
-title: Klassificera egenskaper med en gemensam taxonomi
+title: Klassificera traits med en gemensam taxonomi
 uuid: 2e177344-07d9-40a7-8c99-c6c6518b9d97
 feature: Traits
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Klassificera egenskaper med en gemensam taxonomi {#classifying-traits-with-a-common-taxonomy}
+# Klassificera traits med en gemensam taxonomi {#classifying-traits-with-a-common-taxonomy}
 
 I den här artikeln finns en allmän översikt över hur du klassificerar egenskaper med en gemensam taxonomi.
 
