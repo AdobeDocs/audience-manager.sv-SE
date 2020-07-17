@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1118'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -113,7 +113,7 @@ Markera kryssrutan **[!UICONTROL Inbound]** när datakällan är avsedd att ta e
      <ul id="ul_3BC963CE378B4F6CB1861643A4541634"> 
       <li id="li_B86C5E7847424A2B9C094DF02741DDB8"> <b><span class="uicontrol"> Kund-ID</span></b>: Identifierar inkommande data med ett kund-ID. </li> 
       <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol"> Audience Manager-ID</span></b>: Identifierar inkommande data med ett <span class="keyword"> Audience Manager</span> -ID. </li> 
-      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud-ID</span></b>: Identifierar inkommande data med ett <span class="keyword"> Experience Cloud</span> -ID. See <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </li> 
+      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud-ID</span></b>: Identifierar inkommande data med ett <span class="keyword"> Experience Cloud</span> -ID. See <a href="https://docs.adobe.com/content/help/sv-SE/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
