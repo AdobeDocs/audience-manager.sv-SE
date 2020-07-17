@@ -1,20 +1,20 @@
 ---
 description: I den här artikeln beskrivs hur du konfigurerar nya enhetsbaserade mål från användargränssnittet i Audience Manager.
 seo-description: I den här artikeln beskrivs hur du konfigurerar nya enhetsbaserade mål från användargränssnittet i Audience Manager.
-seo-title: Lägg till nya enhetsbaserade mål
+seo-title: Lägga till nya enhetsbaserade destinationer
 solution: Audience Manager
-title: Lägg till nya enhetsbaserade mål
+title: Lägga till nya enhetsbaserade destinationer
 feature: Destination Basics
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '437'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Lägg till nya enhetsbaserade mål {#add-new-device-based-destinations}
+# Lägga till nya enhetsbaserade destinationer {#add-new-device-based-destinations}
 
 I den här artikeln beskrivs hur du konfigurerar nya enhetsbaserade mål från användargränssnittet i Audience Manager.
 
