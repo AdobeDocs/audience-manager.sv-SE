@@ -1,21 +1,21 @@
 ---
 description: Skräddarsy lagringsmappar och ordna egenskaper.
 seo-description: Skräddarsy lagringsmappar och ordna egenskaper.
-seo-title: Trait Storage
+seo-title: Lagra traits
 solution: Audience Manager
-title: Trait Storage
+title: Lagra traits
 uuid: e72685ee-0c64-44a4-a8e2-d6ee5c968ba0
 feature: Traits
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 
-# Trait Storage {#trait-storage}
+# Lagra traits {#trait-storage}
 
 Skräddarsy lagringsmappar och ordna egenskaper.
 
