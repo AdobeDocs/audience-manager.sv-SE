@@ -1,21 +1,21 @@
 ---
 description: En gruppbegäran returnerar data som du kan använda med de olika rubrikerna i kalkylbladen Uppdatera, Skapa, Beräkna och Ta bort.
 seo-description: En gruppbegäran returnerar data som du kan använda med de olika rubrikerna i kalkylbladen Uppdatera, Skapa, Beräkna och Ta bort.
-seo-title: Massbegäranden
+seo-title: Satsvisa förfrågningar
 solution: Audience Manager
-title: Massbegäranden
+title: Satsvisa förfrågningar
 uuid: 0192d26a-4cea-4e12-9fea-388b92b382f1
 feature: baaam
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Massbegäranden{#bulk-requests}
+# Satsvisa förfrågningar{#bulk-requests}
 
 En gruppbegäran returnerar data som du kan använda med de olika rubrikerna i kalkylbladen Uppdatera, Skapa, Beräkna och Ta bort.
 
@@ -29,20 +29,21 @@ t_bulk_requests.xml
 >
 >[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
 
-Kalkylbladet har ingen egen uppsättning kolumnrubriker och du behöver inte kopiera ID:n till någon av kolumnerna. [!UICONTROL Request] Instead, it returns data based on the action button you click in the toolbar. And, an optional reporting feature returns a frequency count for pixel fires and unique user count for several fixed time intervals.
+Kalkylbladet har ingen egen uppsättning kolumnrubriker och du behöver inte kopiera ID:n till någon av kolumnerna. [!UICONTROL Request] I stället returneras data baserat på åtgärdsknappen som du klickar på i verktygsfältet. Och en valfri rapportfunktion returnerar en frekvens för pixelbränder och ett unikt antal användare för flera fasta tidsintervall.
 
-To make bulk requests, open the [!UICONTROL Bulk Management Tools] worksheet and:
+Om du vill göra en gruppbegäran öppnar du [!UICONTROL Bulk Management Tools] kalkylbladet och:
 
 1. Klicka på **[!UICONTROL Request]** fliken.
-2. In the tool bar at the top of the worksheet, click a request button corresponding to the data you want to work with. You can request:
+2. Klicka på en begärandeknapp som motsvarar de data du vill arbeta med i verktygsfältet högst upp i kalkylbladet. Du kan begära:
 
    * Algoritmiska modeller
    * Datakällor
    * Härledda signaler
    * Målmappningar
    * Algoritmiska, regelbaserade och ombord-anpassade egenskaper
-   * Segment
+   * Segment 
    * ID för trait- och segmentmapp
+
    API:t [!DNL Audience Manager] skriver massdata tillbaka till [!UICONTROL Request] kalkylbladet.
 
 >[!NOTE]
