@@ -1,21 +1,21 @@
 ---
 description: Vad du ska göra när kalkylbladen returnerar ett fel eller när gruppbegäran misslyckas.
 seo-description: Vad du ska göra när kalkylbladen returnerar ett fel eller när gruppbegäran misslyckas.
-seo-title: Felsökningstips för verktygen för masshantering
+seo-title: Felsökningstips för verktygen för satsvis hantering
 solution: Audience Manager
-title: Felsökningstips för verktygen för masshantering
+title: Felsökningstips för verktygen för satsvis hantering
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 feature: baaam
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Felsökningstips för verktygen för masshantering{#troubleshooting-tips-for-bulk-management-tools}
+# Felsökningstips för verktygen för satsvis hantering{#troubleshooting-tips-for-bulk-management-tools}
 
 Vad du ska göra när kalkylbladen returnerar ett fel eller när gruppbegäran misslyckas.
 
