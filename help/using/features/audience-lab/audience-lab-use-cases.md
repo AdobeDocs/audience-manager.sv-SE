@@ -1,9 +1,9 @@
 ---
 description: Med Audience Lab kan du använda flera användningsfall genom att använda baslinjesegment för att skapa testgrupper. Du kan dela in testgrupper i flera ömsesidigt uteslutande testsegment, mappa dessa till olika destinationer och sedan avgöra vilka av segmenten som är mest effektiva vid konvertering.
 seo-description: Med Audience Lab kan du använda flera användningsfall genom att använda baslinjesegment för att skapa testgrupper. Du kan dela in testgrupper i flera ömsesidigt uteslutande testsegment, mappa dessa till olika destinationer och sedan avgöra vilka av segmenten som är mest effektiva vid konvertering.
-seo-title: Användningsexempel för Audience Lab
+seo-title: 'Användningsexempel för Audience Lab '
 solution: Audience Manager
-title: Användningsexempel för Audience Lab
+title: 'Användningsexempel för Audience Lab '
 topic: DIL API
 uuid: 727bec8a-df9a-40cc-b8a7-e1980d146a84
 feature: Audience Lab
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '623'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
