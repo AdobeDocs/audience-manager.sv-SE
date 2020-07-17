@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Dataöverföringsprocessen i realtid beskrivs{#real-time-data-transfer-process-described}
+# Real-Time Data Transfer Process Described{#real-time-data-transfer-process-described}
 
 En allmän översikt över hur Audience Manager utför dataöverföringar i realtid med en tredjepartsleverantör av innehåll.
 
