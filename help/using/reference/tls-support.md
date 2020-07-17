@@ -1,21 +1,21 @@
 ---
 description: TLS (Transport Layer Security) är ett kryptografiskt protokoll som används för att upprätta en säker kommunikationskanal mellan två system. Den används för att autentisera ett eller båda systemen och skydda sekretessen och integriteten för information som passerar mellan systemen. I maj 2018 användes TLS 1.0, 1.1 och 1.2 för tre versioner av TLS-protokollet.
 seo-description: TLS (Transport Layer Security) är ett kryptografiskt protokoll som används för att upprätta en säker kommunikationskanal mellan två system. Den används för att autentisera ett eller båda systemen och skydda sekretessen och integriteten för information som passerar mellan systemen. I maj 2018 användes TLS 1.0, 1.1 och 1.2 för tre versioner av TLS-protokollet.
-seo-title: Borttagning av TLS 1.0 och 1.1
+seo-title: TLS 1.0 och 1.1 tas bort
 solution: Audience Manager
-title: Borttagning av TLS 1.0 och 1.1
+title: TLS 1.0 och 1.1 tas bort
 uuid: 6a820e63-dd49-4689-9596-940aabba18ec
 feature: reference
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '606'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
 
-# Borttagning av TLS 1.0 och 1.1{#tls-deprecation}
+# TLS 1.0 och 1.1 tas bort{#tls-deprecation}
 
 TLS (Transport Layer Security) är ett kryptografiskt protokoll som används för att upprätta en säker kommunikationskanal mellan två system. Den används för att autentisera ett eller båda systemen och skydda sekretessen och integriteten för information som passerar mellan systemen. I maj 2018 användes tre versioner av TLS-protokollet: TLS 1.0, 1.1 och 1.2.
 
