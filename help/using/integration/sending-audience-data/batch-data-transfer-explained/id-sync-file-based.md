@@ -1,21 +1,21 @@
 ---
 description: Beskriver obligatoriska fält, syntax och namnkonventioner som används för filbaserad ID-synkronisering. Namnge och ordna filinnehållet enligt dessa specifikationer.
 seo-description: Beskriver obligatoriska fält, syntax och namnkonventioner som används för filbaserad ID-synkronisering. Namnge och ordna filinnehållet enligt dessa specifikationer.
-seo-title: Namn- och innehållskrav för ID-synkroniseringsfiler
+seo-title: Krav på namn och innehåll för ID-synkroniseringsfiler
 solution: Audience Manager
-title: Namn- och innehållskrav för ID-synkroniseringsfiler
+title: Krav på namn och innehåll för ID-synkroniseringsfiler
 uuid: bfe42af9-9149-4da3-830e-f227c4e610c2
 feature: Inbound Data Transfers
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
 
-# Namn- och innehållskrav för ID-synkroniseringsfiler {#name-and-content-requirements-for-id-synchronization-files}
+# Krav på namn och innehåll för ID-synkroniseringsfiler {#name-and-content-requirements-for-id-synchronization-files}
 
 Beskriver obligatoriska fält, syntax och namnkonventioner som används för filbaserad ID-synkronisering. Namnge och ordna filinnehållet enligt dessa specifikationer.
 
@@ -49,11 +49,11 @@ ID-filnamn innehåller följande obligatoriska och valfria element:
   </tr> 
   <tr> 
    <td colname="col1"><code><i>MASTERDPID</i></code> </td> 
-   <td colname="col2"> Huvuddataleverantörens ID är det överordnade ID:t för DPID:n i filnamnet. Det första användar-ID:t i datafilen motsvarar också huvud-ID:t. De efterföljande DPID:n är andra identifierare som tillhör mallen. Synkroniseringen mappar DPID:n i filnamnet till UUID:n i filen. </td> 
+   <td colname="col2"> Det överordnad dataleverantörs-ID:t är det överordnade ID:t för DPID:n i filnamnet. Dessutom motsvarar det första användar-ID:t i datafilen det överordnad ID:t. De efterföljande DPID:n är andra identifierare som tillhör den överordnad. Synkroniseringen mappar DPID:n i filnamnet till UUID:n i filen. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>DPID</i></code> </p> </td> 
-   <td colname="col2"> <p>DataProvider-ID. Dessa ID:n representerar enheter eller datakällor som är kopplade till huvud-DID:t. Synkroniseringen mappar DPID:n i filnamnet till UUID:n i filen. </p> <p>Antalet DPID i filnamnet måste matcha antalet UUID i datafilen. Exempel: ditt filnamn innehåller ett huvud-DPID och tre DPID. Datafilen måste innehålla fyra motsvarande UUID-kolumner, formaterade enligt beskrivningen i filinnehållsavsnittet nedan. </p> </td> 
+   <td colname="col2"> <p>DataProvider-ID. Dessa ID:n representerar enheter eller datakällor som är kopplade till det överordnad DPID:t. Synkroniseringen mappar DPID:n i filnamnet till UUID:n i filen. </p> <p>Antalet DPID i filnamnet måste matcha antalet UUID i datafilen. Exempel: ditt filnamn innehåller ett överordnad DPID och tre DPID. Datafilen måste innehålla fyra motsvarande UUID-kolumner, formaterade enligt beskrivningen i filinnehållsavsnittet nedan. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><code><i>timestamp</i></code> </td> 
@@ -102,7 +102,7 @@ abc123 def456 ghi789 xyz987
 
 ## Synkroniseringen matchar DPUID:n med UUID:n {#sync-matches-dpuuids-uuids}
 
-Syftet med en ID-synkroniseringsfil är att synkronisera [DPUUID](../../../reference/ids-in-aam.md) från dina egna datakällor med [!DNL Audience Manager] UID. Synkroniseringen mappar [!DNL DPUUID]sidorna från mallsidan [!DNL DPID] och dess relaterade [!DNL DPID]delar till [!DNL Audience Manager] [!DNL UUID]sidorna. Var du placerar ID:n i filnamnet och brödtexten avgör hur dessa ID:n mappas till varandra. Ta till exempel de två exempelfilerna som visas här:
+Syftet med en ID-synkroniseringsfil är att synkronisera [DPUUID](../../../reference/ids-in-aam.md) från dina egna datakällor med [!DNL Audience Manager] UID. Synkroniseringen mappar [!DNL DPUUID]objekt från överordnad [!DNL DPID] och relaterade [!DNL DPID]filer till [!DNL Audience Manager] [!DNL UUID]scenerna. Var du placerar ID:n i filnamnet och brödtexten avgör hur dessa ID:n mappas till varandra. Ta till exempel de två exempelfilerna som visas här:
 
 * **Fil 1:** `adobe_id_0_12345_1476312152.sync`
 
