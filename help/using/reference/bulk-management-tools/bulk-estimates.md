@@ -1,21 +1,21 @@
 ---
 description: En bulkuppskattning returnerar segmentstorleksdata baserat på segmentregler. Följ de här instruktionerna för att göra en gruppuppskattning.
 seo-description: En bulkuppskattning returnerar segmentstorleksdata baserat på segmentregler. Följ de här instruktionerna för att göra en gruppuppskattning.
-seo-title: Massuppskattningar
+seo-title: Satsvisa beräkningar
 solution: Audience Manager
-title: Massuppskattningar
+title: Satsvisa beräkningar
 uuid: 63b2f06a-8ba0-47a2-bd0b-8039b2d4c95d
 feature: baaam
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Massuppskattningar{#bulk-estimates}
+# Satsvisa beräkningar{#bulk-estimates}
 
 En bulkuppskattning returnerar segmentstorleksdata baserat på segmentregler. Följ de här instruktionerna för att göra en gruppuppskattning.
 
