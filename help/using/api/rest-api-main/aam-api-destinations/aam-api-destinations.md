@@ -1,21 +1,21 @@
 ---
 description: Metoder som gör att du kan arbeta programmatiskt med målfunktioner.
 seo-description: Metoder som gör att du kan arbeta programmatiskt med målfunktioner.
-seo-title: Mål-API-metoder
+seo-title: 'API-metoder för destinationer '
 solution: Audience Manager
-title: Mål-API-metoder
+title: 'API-metoder för destinationer '
 uuid: 048bcdb9-2b31-46f4-8b80-4ba25bf06640
 feature: API
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '101'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
 
-# Mål-API-metoder {#destination-api-methods}
+# API-metoder för destinationer {#destination-api-methods}
 
 Metoder som gör att du kan arbeta programmatiskt med målfunktioner.
 
