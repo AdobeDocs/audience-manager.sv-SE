@@ -1,21 +1,21 @@
 ---
 description: Beskriver hur du förhindrar konkurrensförhållanden och DCS-felhantering.
 seo-description: Beskriver hur du förhindrar konkurrensförhållanden och DCS-felhantering.
-seo-title: Ansiktsvillkor och felhantering
+seo-title: Överbelastning och felhantering
 solution: Audience Manager
-title: Ansiktsvillkor och felhantering
+title: Överbelastning och felhantering
 uuid: b0aac960-6732-4e96-87a5-40ba2755e02d
 feature: DCS
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 
-# Ansiktsvillkor och felhantering {#race-conditions-and-error-handling}
+# Överbelastning och felhantering {#race-conditions-and-error-handling}
 
 Beskriver hur du förhindrar tävlingsförhållanden och [!DNL DCS] felhantering.
 
@@ -34,4 +34,4 @@ Felhanteringen är begränsad för ogiltiga eller dåligt formade frågor. En og
 * Kommer från en ogiltig/omarkerad geografisk region.
 * Inaktiverar cookies för webbläsare (antingen alla eller tredje part).
 
-Se även [Felkoder, meddelanden och exempel](../../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)för DCS.
+See also, [DCS Error Codes, Messages, and Examples](../../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md).
