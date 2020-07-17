@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '666'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ Uppdatera koden så att den används `d_cid` eller `d_cid_ic` istället för `d_
 
 ## DPID och DPUID: En granskning {#dpid-dpuuid-review}
 
-DPID och DPUID är nyckelvärdepar som innehåller ett dataleverantörs-ID och ett användar-ID. Dessa nyckelvärdepar länkar leverantörs-ID:n till användar-ID:n. De skickar in data under händelseanrop, för inkommande synkroniseringshändelser och för ID-anrop. Utan dem, [!DNL Audience Manager]och andra tjänster eller funktioner, skulle det inte finnas något sätt att matcha och synkronisera ID:n. Dessa variabler uttrycks ibland med eller utan prefixet `d_` , vilket visas nedan. Observera att *kursiv* anger en variabelplatshållare i koden.
+DPID och DPUID är nyckelvärdepar som innehåller ett dataleverantörs-ID och ett användar-ID. Dessa nyckelvärdepar länkar leverantörs-ID:n till användar-ID:n. De skickar in data under händelseanrop, för inkommande synkroniseringshändelser och för ID-anrop. Utan dem, [!DNL Audience Manager]och andra tjänster eller funktioner, skulle det inte finnas något sätt att matcha och synkronisera ID:n. Dessa variabler uttrycks ibland med eller utan prefixet `d_` , vilket visas nedan. Note, in the code, *italics* indicates a variable placeholder.
 
 <table id="table_932B4416AE1E44E4A1E98D779D3B1ED5"> 
  <thead> 
@@ -59,7 +59,7 @@ Nyckelvärdepar för CID och CID_IC ersätter DPID och DPUID. De har samma funkt
 * Symbolen = skiljer nyckeln från dess relaterade värden.
 * ASCII-tecknet %01 som inte skrivs ut skiljer värdena åt.
 
-`d_cid` och `d_cid_ic` använd syntaxen nedan. Observera att *kursiv* anger en variabelplatshållare i koden.
+`d_cid` och `d_cid_ic` använd syntaxen nedan. Note, in the code, *italics* indicates a variable placeholder.
 
 <table id="table_0C8A4F8FDBC84416B4EB476F67BCFA8E"> 
  <thead> 
