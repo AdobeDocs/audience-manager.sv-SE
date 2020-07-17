@@ -1,21 +1,21 @@
 ---
 description: Konfigurera Open Ad Server som mål och skicka data från Audience Manager till den plattformen.
 seo-description: Konfigurera Open Ad Server som mål och skicka data från Audience Manager till den plattformen.
-seo-title: OAS som mål för Audience Manager
+seo-title: OAS som Audience Manager-destination
 solution: Audience Manager
-title: OAS som mål för Audience Manager
+title: OAS som Audience Manager-destination
 uuid: 5891a063-5a4b-4ea7-865f-b24e17ca735f
 feature: Third Party Integrations
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '656'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# OAS som mål för Audience Manager {#oas-as-an-audience-manager-destination}
+# OAS som Audience Manager-destination {#oas-as-an-audience-manager-destination}
 
 Konfigurera [!DNL Open Ad Server] som mål och skicka Audience Manager-data till den plattformen.
 
@@ -47,7 +47,7 @@ Hur mycket data som skickas till [!DNL OAS] beror på hur många segment en viss
 >[!MORELIKETHIS]
 >
 >* [get_aamCookie-kod](../../features/destinations/get-aam-cookie-code.md)
->* [Förklaring av nyckelvärdepar](../../reference/key-value-pairs-explained.md)
+>* [Förklaring av nyckelvärdespar](../../reference/key-value-pairs-explained.md)
 
 
 ## Skapa ett OAS-mål {#oas-dest-setup}
@@ -56,7 +56,7 @@ Skapa en cookie-baserad destination för [!DNL OAS] i Audience Manager.
 
 <!-- aam-oas-destination-setup.xml -->
 
-I Audience Manager är en *destination* vilket annat system som helst (annonsserver, [!DNL DSP]annonsnätverk osv.) som du vill dela data med. [!UICONTROL Destination Builder] innehåller de verktyg som gör att du kan skapa och hantera dessa dataleveransprocesser. Målfunktionerna för Audience Manager finns i *Målgruppsdata > Destinationer*. Kom igång genom att klicka **[!UICONTROL Add New Destination]** och följa stegen nedan.
+In Audience Manager, a *destination* is any other system (ad server, [!DNL DSP], ad network, etc.) som du vill dela data med. [!UICONTROL Destination Builder] innehåller de verktyg som gör att du kan skapa och hantera dessa dataleveransprocesser. Målfunktionerna för Audience Manager finns i *Målgruppsdata > Destinationer*. Kom igång genom att klicka **[!UICONTROL Add New Destination]** och följa stegen nedan.
 
 ### Steg 1: Grundläggande information
 
