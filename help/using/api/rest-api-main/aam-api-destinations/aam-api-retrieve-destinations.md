@@ -1,21 +1,21 @@
 ---
 description: En GET-metod som returnerar målet för angivet mål-ID.
 seo-description: En GET-metod som returnerar målet för angivet mål-ID.
-seo-title: Returnera ett mål med mål-ID
+seo-title: Returnera en destination med destinations-ID
 solution: Audience Manager
-title: Returnera ett mål med mål-ID
+title: Returnera en destination med destinations-ID
 uuid: abce7426-55a5-4045-93a7-0487652a7189
 feature: API
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Returnera ett mål med mål-ID {#return-a-destination-by-destination-id}
+# Returnera en destination med destinations-ID {#return-a-destination-by-destination-id}
 
 En `GET` metod som returnerar destinationen för den angivna `destinationId`.
 
