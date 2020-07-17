@@ -1,21 +1,21 @@
 ---
 description: Det här är speciella egenskaper som används av adresserbara målgrupper. Synkroniserade egenskaper för aktiv publik och datakälla finns i Målgruppsdata > Traits > Audience Traits.
 seo-description: Det här är speciella egenskaper som används av adresserbara målgrupper. Synkroniserade egenskaper för aktiv publik och datakälla finns i Målgruppsdata > Traits > Audience Traits.
-seo-title: Synkroniserade egenskaper för aktiv målgrupp och datakälla
+seo-title: Aktiva traits för målgrupp och traits som synkroniserats med datakälla
 solution: Audience Manager
-title: Synkroniserade egenskaper för aktiv målgrupp och datakälla
+title: Aktiva traits för målgrupp och traits som synkroniserats med datakälla
 uuid: b4f145ab-f343-4d71-86d1-5d03f7b03809
 feature: Traits
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Synkroniserade egenskaper för aktiv målgrupp och datakälla {#active-audience-traits-and-data-source-synced-traits}
+# Aktiva traits för målgrupp och traits som synkroniserats med datakälla {#active-audience-traits-and-data-source-synced-traits}
 
 Det här är speciella egenskaper som används av [!UICONTROL Addressable Audiences]. [!UICONTROL Active Audience] och [!UICONTROL Data Source Synced Traits] finns i [!UICONTROL Audience Data > Traits > Audience Traits].
 
