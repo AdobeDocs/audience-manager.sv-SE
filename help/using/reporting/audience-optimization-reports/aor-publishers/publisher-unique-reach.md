@@ -1,25 +1,25 @@
 ---
 description: Rapporten Unik användarräckvidd returnerar data i ett bubbeldiagram. Storleken på varje bubbla beror på antalet unika användare för de valda annonsenheterna. En större bubbla innebär större räckvidd än en mindre bubbla. Rapporten Unik användarräckvidd hjälper er att hitta den annonsenhet som ger er bredast räckvidd till era målanvändare.
 seo-description: Rapporten Unik användarräckvidd returnerar data i ett bubbeldiagram. Storleken på varje bubbla beror på antalet unika användare för de valda annonsenheterna. En större bubbla innebär större räckvidd än en mindre bubbla. Rapporten Unik användarräckvidd hjälper er att hitta den annonsenhet som ger er bredast räckvidd till era målanvändare.
-seo-title: Unikt användarområde
+seo-title: Unik användarräckvidd
 solution: Audience Manager
-title: Unikt användarområde
+title: Unik användarräckvidd
 uuid: 64e75fad-f4cb-4d47-a162-34e663f3966f
 feature: audience optimization reports
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Unikt användarområde{#unique-user-reach}
+# Unik användarräckvidd{#unique-user-reach}
 
 Rapporten Unik användarräckvidd returnerar data i ett bubbeldiagram. Storleken på varje bubbla beror på antalet unika användare för de valda annonsenheterna. En större bubbla innebär större räckvidd än en mindre bubbla. Rapporten Unik användarräckvidd hjälper er att hitta den annonsenhet som ger er bredast räckvidd till era målanvändare.
 
-## Användningsfall {#use-cases}
+## Användningsexempel {#use-cases}
 
 Med hjälp av [!UICONTROL Unique User Reach] rapporten kan du identifiera de egenskaper i portföljen som lockar ett stort antal unika användare.
 
