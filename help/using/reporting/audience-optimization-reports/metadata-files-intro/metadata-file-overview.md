@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '824'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -63,7 +63,7 @@ I följande tabell visas nyckelvärdepar som innehåller data som används av [!
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Annonsör </p> </td> 
-   <td colname="col2"> <p> <code>d_adsrc = <i>data source ID or integration code</i></code> </p> <p>Det här är annonsörens datakälla-ID eller integreringskod som anges när en datakälla skapas. Se <a href="../../../features/manage-datasources.md#create-data-source"> Skapa en datakälla</a>. </p> </td> 
+   <td colname="col2"> <p> <code>d_adsrc = <i>data source ID or integration code</i></code> </p> <p>Det här är annonsörens datakälla-ID eller integreringskod som anges när en datakälla skapas. See <a href="../../../features/manage-datasources.md#create-data-source"> Create a Data Source</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Affärsenhet (BU) </p> </td> 
@@ -126,7 +126,7 @@ I ett filnamn:
 
 ![](assets/metadata_file_name.png)
 
-Se [Namnkonventioner för metadatafiler](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md).
+See [Naming Conventions for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md).
 
 ### Filinnehåll
 
@@ -134,15 +134,15 @@ I det här exemplet återspeglar filinnehållet de kreativa ID:n och kampanj-ID:
 
 ![](assets/metadata_file_contents.png)
 
-Se [Innehållsformat för metadatafiler](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md).
+See [Content Format for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md).
 
 ### Filleverans
 
-När du har namngett och lagt till data i en fil skickar du den till en Amazon S3-lagringskatalog som tillhandahålls av [!DNL Audience Manager]. Se [Leveransmetoder för metadatafiler](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md).
+När du har namngett och lagt till data i en fil skickar du den till en Amazon S3-lagringskatalog som tillhandahålls av [!DNL Audience Manager]. See [Delivery Methods for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md).
 
 >[!MORELIKETHIS]
 >
 >* [Datafiler för målgruppsoptimeringsrapporter](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
->* [Samla in data för kampanjklickningar via pixelanrop](../../../integration/media-data-integration/click-data-pixels.md)
->* [Samla in data för kampanjexponering via pixelanrop](../../../integration/media-data-integration/impression-data-pixels.md)
+>* [Samla in klickdata för kampanjer med pixelanrop](../../../integration/media-data-integration/click-data-pixels.md)
+>* [Samla in annonsvisningsdata för kampanjer med pixelanrop](../../../integration/media-data-integration/impression-data-pixels.md)
 
