@@ -1,21 +1,21 @@
 ---
 description: Dataexportkontroller förhindrar att du skickar data till mål när den här åtgärden bryter mot datasekretess eller dataanvändningsavtal.
 seo-description: Dataexportkontroller förhindrar att du skickar data till mål när den här åtgärden bryter mot datasekretess eller dataanvändningsavtal.
-seo-title: Dataexportkontroller
+seo-title: Kontroller vid dataexport
 solution: Audience Manager
-title: Dataexportkontroller
+title: Kontroller vid dataexport
 uuid: de7f3608-c0cb-4049-973a-8be54525c600
 feature: Data Export Controls
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Dataexportkontroller {#data-export-controls}
+# Kontroller vid dataexport {#data-export-controls}
 
 [!UICONTROL Data Export Controls] hindra dig från att skicka data till mål när den här åtgärden bryter mot datasekretess eller dataanvändningsavtal.
 
