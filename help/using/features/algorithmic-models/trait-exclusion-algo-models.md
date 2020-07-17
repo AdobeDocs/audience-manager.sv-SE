@@ -14,7 +14,7 @@ ht-degree: 0%
 ---
 
 
-# Look-Alike Modeling: Uteslutning av trait {#algorithmic-models-trait-exclusion}
+# Look-alike-modellering: Utesluta traits {#algorithmic-models-trait-exclusion}
 
 [!UICONTROL Trait Exclusion] har ytterligare kontroller i modelleringsarbetsflödet, vilket gör att du kan lägga till nödvändiga skyddsspår till modellen, baserat på din domänexpertis och lagstadgade krav. Använd alternativet [!UICONTROL Exclusions] för att välja vilka egenskaper som ska ignoreras när du skapar modeller från en eller flera datakällor.
 
