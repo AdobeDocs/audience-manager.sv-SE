@@ -1,21 +1,21 @@
 ---
 description: Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med geografiska variabler i alla egenskaper i ditt Audience Manager-konto.
 seo-description: Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med geografiska variabler i alla egenskaper i ditt Audience Manager-konto.
-seo-title: Geogeting med tangenter på Platform-nivå
+seo-title: Geografisk målinriktning med nycklar på plattformsnivå
 solution: Audience Manager
-title: Geogeting med tangenter på Platform-nivå
+title: Geografisk målinriktning med nycklar på plattformsnivå
 uuid: c7e4cbfe-e564-404e-a565-bbe5fd2fb519
 feature: Traits
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 
-# Geogeting med tangenter på Platform-nivå {#geotargeting-with-platform-level-keys}
+# Geografisk målinriktning med nycklar på plattformsnivå {#geotargeting-with-platform-level-keys}
 
 Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med geografiska variabler i alla egenskaper i ditt Audience Manager-konto.
 
