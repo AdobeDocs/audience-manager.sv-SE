@@ -1,9 +1,9 @@
 ---
 description: Skapa ömsesidigt uteslutande testsegment i segmenttestgrupper för att jämföra och mäta effektiviteten för olika destinationer. Du kan avsätta en kontrollgrupp och dela upp segmentet i procent av en helhet för att testa effekten.
 seo-description: Skapa ömsesidigt uteslutande testsegment i segmenttestgrupper för att jämföra och mäta effektiviteten för olika destinationer. Du kan avsätta en kontrollgrupp och dela upp segmentet i procent av en helhet för att testa effekten.
-seo-title: Audience Lab
+seo-title: 'Audience Lab '
 solution: Audience Manager
-title: Audience Lab
+title: 'Audience Lab '
 topic: DIL API
 uuid: aaee820c-1e78-4fd4-bd8f-2629085d78e9
 feature: Audience Lab
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -27,7 +27,7 @@ Skapa ömsesidigt uteslutande testsegment i [!UICONTROL Segment Test Groups] fö
 I [!UICONTROL Audience Lab] standardvyn visas ett kort för varje testgrupp. Klicka på ett kort för att komma åt **[!UICONTROL Test Group]** vyn. Vyn innehåller följande information:
 
 * **[Information om testgrupp](../../features/audience-lab/audience-lab-information-view.md)**
-* **[Testgruppsrapportering](../../features/audience-lab/audience-lab-reporting-view.md)**
+* **[Testgruppsrapporter](../../features/audience-lab/audience-lab-reporting-view.md)**
 
 Du kan skapa **upp till 10 testgrupper**, där var och en har **upp till 15 testsegment**.
 
