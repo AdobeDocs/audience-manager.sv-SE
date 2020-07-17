@@ -1,21 +1,21 @@
 ---
 description: Metoder som gör att du kan visa den vanliga taxonomin för Audience Manager. Detta valfria klassificeringssystem organiserar egenskaper i branschstandardkategorier.
 seo-description: Metoder som gör att du kan visa den vanliga taxonomin för Audience Manager. Detta valfria klassificeringssystem organiserar egenskaper i branschstandardkategorier.
-seo-title: Metoder för taxonomiska API
+seo-title: Taxonomiska API-metoder
 solution: Audience Manager
-title: Metoder för taxonomiska API
+title: Taxonomiska API-metoder
 uuid: 4ee29ba5-e9ba-4498-a6ee-7343227dd7ba
 feature: API
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Metoder för taxonomiska API {#taxonomic-api-methods}
+# Taxonomiska API-metoder {#taxonomic-api-methods}
 
 Metoder som gör att du kan visa den vanliga taxonomin för Audience Manager. Detta valfria klassificeringssystem organiserar egenskaper i branschstandardkategorier.
 
