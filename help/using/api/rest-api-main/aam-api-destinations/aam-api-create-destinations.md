@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -412,7 +412,7 @@ En lyckad uppdatering returnerar svarskoden `201 created` och målet.
 
 >[!MORELIKETHIS]
 >
->* [Mål](../../../features/destinations/destinations.md)
+>* [Destinationer ](../../../features/destinations/destinations.md)
 >* [Målserialisering](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [Förklaring av nyckelvärdepar](../../../reference/key-value-pairs-explained.md)
+>* [Förklaring av nyckelvärdespar](../../../reference/key-value-pairs-explained.md)
 
