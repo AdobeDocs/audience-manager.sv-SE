@@ -1,21 +1,21 @@
 ---
 description: En datafil innehåller indata för att visa, klicka eller konvertera. När dessa data är korrekt formaterade kan du importera dem till Audience Manager och använda dem i rapporter om målgruppsoptimering och för körbara loggfiler. Formatera datafilerna enligt specifikationerna i det här avsnittet.
 seo-description: En datafil innehåller indata för att visa, klicka eller konvertera. När dessa data är korrekt formaterade kan du importera dem till Audience Manager och använda dem i rapporter om målgruppsoptimering och för körbara loggfiler. Formatera datafilerna enligt specifikationerna i det här avsnittet.
-seo-title: Datafiler för målgruppsoptimeringsrapporter och körbara loggfiler
+seo-title: Datafiler för Audience Optimization-rapporter och verkställbara loggfiler
 solution: Audience Manager
-title: Datafiler för målgruppsoptimeringsrapporter och körbara loggfiler
+title: Datafiler för Audience Optimization-rapporter och verkställbara loggfiler
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 feature: log files
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Datafiler för målgruppsoptimeringsrapporter och körbara loggfiler {#data-files-for-audience-optimization-reports}
+# Datafiler för Audience Optimization-rapporter och verkställbara loggfiler {#data-files-for-audience-optimization-reports}
 
 En datafil innehåller indata för att visa, klicka eller konvertera. När data är korrekt formaterade kan du importera dem till Audience Manager för att visa dem i [målgruppsoptimeringsrapporter](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) och skapa egenskaper med hjälp av data via [körbara loggfiler](/help/using/integration/media-data-integration/actionable-log-files.md). Formatera datafilerna enligt dessa specifikationer i det här avsnittet.
 
@@ -25,7 +25,7 @@ Med en korrekt namngiven och formaterad datafil kan du importera intryckt-, klic
 
 En datafil måste åtföljas av en metadatafil. Innehållet i metadatafilen matchar informationen i datafilen med relaterade, läsbara etiketter på rapportmenyerna. Mer information finns i [Översikt och mappningar för metadatafiler](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md).
 
-## Namnkonventioner för datafiler {#naming-conventions}
+## Naming Conventions for Data Files {#naming-conventions}
 
 Följande syntax definierar strukturen för ett välformaterat datafilnamn. Obs! *Kursiv* anger en variabel platshållare som ändras beroende på filinnehållet.
 
@@ -43,7 +43,7 @@ Med tanke på dessa krav bör du namnge dina datafiler baserat på deras innehå
 * Klicka på data: <pre>clicks_<i>yyymmdd</i>.gz</code></pre>
 * Konverteringsdata: <pre>conversions_<i>yyymmdd</i>.gz</code></pre>
 
-## Innehållsformat för datafiler {#content-format}
+## Content Format for Data Files {#content-format}
 
 Följande syntax definierar innehållsstrukturen i välformade datafiler. Observera att *kursiv* anger en variabelplatshållare och ersätts med en etikett i en faktisk datafil.
 
@@ -141,7 +141,7 @@ Tabellen nedan listar och beskriver kolumnrubrikerna för datafilen. Sidhuvuden 
  </tbody> 
 </table>
 
-## Leveransmetoder för datafiler {#delivery-methods}
+## Delivery Methods for Data Files {#delivery-methods}
 
 Överför ditt intryck, klicka eller konvertera datafiler till en Amazon S3-katalog för ditt [!DNL Audience Manager] konto. I det här avsnittet finns information om leverans-/katalogsökvägar, bearbetningstider och uppdateringar.
 
