@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '551'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -129,7 +129,7 @@ Genom att använda **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL 
 
 >[!MORELIKETHIS]
 >
->* [Användningsexempel för profillänkens enhetsdiagram](profile-link-use-case.md)
->* [Allmänna användningsexempel för profilkopplingsregler](merge-rule-targeting-options.md)
+>* [Användningsexempel för enhetsdiagram för profillänk](profile-link-use-case.md)
+>* [Allmänna användningsexempel för regler för profilsammanslagning](merge-rule-targeting-options.md)
 >* [Vanliga frågor om regler för profilsammanslagning](../../faq/faq-profile-merge.md)
 
