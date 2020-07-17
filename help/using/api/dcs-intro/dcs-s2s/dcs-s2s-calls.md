@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -50,12 +50,12 @@ Ett samplingsanrop ser ut ungefär som i följande exempel.
    <td colname="col2"> <p>Denna del av samtalet innehåller: </p> <p> 
      <ul id="ul_3EDA9C7BA6794D06BCB07A75A9BD2372"> 
       <li id="li_74624CA78D6F4536A8164AE1FA1DECB9">Ditt domänalias som tilldelats av <span class="keyword"> Audience Manager</span> (t.ex. <i><code> my_domain.demdex.net</code></i>). </li> 
-      <li id="li_08ABE91CA247403AA480B3FB4BEF83BA">Måldomänen, vilket alltid är <i><code> demdex.net</code></i>. Se <a href="../../../reference/demdex-calls.md"> Förstå anrop till Demdex-domänen</a>. </li> 
+      <li id="li_08ABE91CA247403AA480B3FB4BEF83BA">Måldomänen, vilket alltid är <i><code> demdex.net</code></i>. Se <a href="../../../reference/demdex-calls.md">Förstå anrop till Demdex-domänen</a>. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> <i>DCS host name</i>.demdex.net</code> </p> </td> 
-   <td colname="col2"> <p>Den http-huvudvärdparameter som visar namnet på den regionala <span class="wintitle"> DCS</span> -servern. Värdnamnet är kopplat till ett region-ID, vilket är orsaken till att du behöver det här innan du gör dessa typer av samtal. Se <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> DCS-regions-ID, -platser och -värdnamn</a>. </p> </td> 
+   <td colname="col2"> <p>Den http-huvudvärdparameter som visar namnet på den regionala <span class="wintitle"> DCS</span> -servern. Värdnamnet är kopplat till ett region-ID, vilket är orsaken till att du behöver det här innan du gör dessa typer av samtal. See <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> DCS Region IDs, Locations, and Host Names</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> /event?</code> </p> </td> 
@@ -87,4 +87,4 @@ Ett samplingsanrop ser ut ungefär som i följande exempel.
 
 ## Exempelsvar {#sample-response}
 
-Se [Ta emot data från DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md).
+See [Receive Data From the DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md).
