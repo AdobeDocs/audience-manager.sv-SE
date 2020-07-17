@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '692'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 
-# Namn på utgående datafil: Syntax och exempel{#outbound-data-file-name-syntax-and-examples}
+# Namn på utgående datafiler: Syntax och exempel{#outbound-data-file-name-syntax-and-examples}
 
 Beskriver obligatoriska fält, syntax och konventioner som används för att namnge en utgående datafil.
 
@@ -64,7 +64,7 @@ Tabellen definierar elementen i ett namn på en utgående datafil.
       <li id="li_94DAFA169380405981AFEF1B581997E6">2014 - <span class="keyword"> Google Advertiser ID </span> (raw, unhashed) </li> 
       <li id="li_DE74BE06331C49CF87606A192D815B96">2015 - Apple ID för <span class="keyword"> annonsörer </span> (raw, unhashed) </li> 
       <li id="li_E0A033FEC3174EF08E93EB7C65266337">Leverantörs-ID - Användar-ID:n från tredje part (webb/cookie) </li> 
-     </ul> </p> <p>Mer information finns i <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">Globala datakällor</a> .</p></td> 
+     </ul> </p> <p>Mer information finns i <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">Globala datakällor</a>.</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>PID_ALIAS </i></code> </p> </td> 
@@ -191,7 +191,7 @@ Tabellen innehåller variabler som definierar innehållet i en datafil.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>REMOVED_SEGMENT_N </i></code> </p> </td> 
-   <td colname="col2"> <p>Det segment-ID som användaren diskvalificerades från. Avgränsa flera segment med kommatecken. Med en fullständig synkronisering kan du ignorera de borttagna segmenten eftersom datafilen innehåller den fullständiga listan över aktuella segment för användaren. Vanligtvis vill du veta mer om segment som en användare tillhör i stället för de som de har tagits bort från. Se även <a href="../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md#outbound-data-file-name-syntax-and-examples"> Namn på utgående datafil: Syntax och exempel </a>. </p> </td> 
+   <td colname="col2"> <p>Det segment-ID som användaren diskvalificerades från. Avgränsa flera segment med kommatecken. Med en fullständig synkronisering kan du ignorera de borttagna segmenten eftersom datafilen innehåller den fullständiga listan över aktuella segment för användaren. Vanligtvis vill du veta mer om segment som en användare tillhör i stället för de som de har tagits bort från. See also <a href="../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md#outbound-data-file-name-syntax-and-examples"> Outbound Data File Name: Syntax and Examples </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
