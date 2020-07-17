@@ -2,21 +2,21 @@
 description: Skapa, redigera och ta bort mappegenskaper.
 keywords: Folder Trait;Folder Traits;folder traits;folder trait
 seo-description: Skapa, redigera och ta bort mappegenskaper.
-seo-title: Hantera mappegenskaper
+seo-title: Hantera mapp-traits
 solution: Audience Manager
-title: Hantera mappegenskaper
+title: Hantera mapp-traits
 uuid: 287ac280-bd58-4985-85bd-b6501eb64b7f
 feature: Traits
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
 
-# Hantera mappegenskaper {#manage-folder-traits}
+# Hantera mapp-traits {#manage-folder-traits}
 
 Skapa, redigera och ta bort mappegenskaper.
 
@@ -31,6 +31,7 @@ En mapp [!UICONTROL folder trait] skapas automatiskt när du skapar en ny mapp i
 
    * &quot;All Traits&quot; om du vill lägga till en ny rotnivåmapp.
    * En befintlig överordnad mapp som lägger till en ny underordnad mapp.
+
    ![](assets/folder_traits_create.PNG)
 
 1. Klicka på ikonen + för att skapa mappen. Tänk på att du kan skapa högst 2 000 mappar i taxonomin. Mer information finns i dokumentationen om [användningsbegränsningar](../../features/administration/usage-limits.md).
