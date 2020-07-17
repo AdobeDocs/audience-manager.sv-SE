@@ -1,21 +1,21 @@
 ---
 description: En sammanfattning av den provtagningsmetod som används för vissa rapporter, felfrekvenser vid provtagning och en lista över rapporter som returnerar information baserat på provdata.
 seo-description: En sammanfattning av den provtagningsmetod som används för vissa rapporter, felfrekvenser vid provtagning och en lista över rapporter som returnerar information baserat på provdata.
-seo-title: Datainsamling och felfrekvens i rapporter för markerade Audience Manager
+seo-title: Datainsamling och felfrekvens i valda rapporter för Audience Manager
 solution: Audience Manager
-title: Datainsamling och felfrekvens i rapporter för markerade Audience Manager
+title: Datainsamling och felfrekvens i valda rapporter för Audience Manager
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 feature: reporting reference
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '431'
-ht-degree: 1%
+ht-degree: 8%
 
 ---
 
 
-# Datainsamling och felfrekvens i rapporter för markerade Audience Manager{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
+# Datainsamling och felfrekvens i valda rapporter för Audience Manager{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
 
 En sammanfattning av den provtagningsmetod som används för vissa rapporter, felfrekvenser vid provtagning och en lista över rapporter som returnerar information baserat på provdata.
 
