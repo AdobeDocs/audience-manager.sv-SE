@@ -2,18 +2,18 @@
 description: Konceptuell information, beskrivningar och definitioner för DCS API-kod, metoder och processer.
 seo-description: Konceptuell information, beskrivningar och definitioner för DCS API-kod, metoder och processer i Adobe Audience Manager (AAM).
 seo-title: API-referens för DCS i Adobe Audience Manager (AAM)
-title: API-referens för DCS - översikt
+title: Översikt över API-referens för DCS
 feature: DCS
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
 
-# API-referens för DCS - översikt
+# Översikt över API-referens för DCS
 
 Konceptuell information, beskrivningar och definitioner för [!DNL DCS API] kod, metoder och processer.
 
@@ -25,19 +25,19 @@ Konceptuell information, beskrivningar och definitioner för [!DNL DCS API] kod,
 
    Felkoder och meddelanden som genereras av datainsamlingsservrarna (DCS) listas i numerisk ordning efter kod-ID.
 
-* [ID-övervakning och Neka-lista](/help/using/api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
+* [ID-övervakning och Blockeringslistning](/help/using/api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
 
-   DCS övervakar de ID som tas emot och lägger till de ID som skickas med ett ovanligt högt pris under en kort tidsperiod till en lista över nekade.
+   DCS övervakar ID:n som tas emot och lägger till ID:n som skickas med en ovanligt hög hastighet under en kort tidsperiod till blockeringslista.
 
-* [DCS-region-ID, -platser och -värdnamn](/help/using/api/dcs-intro/dcs-api-reference/dcs-regions.md)
+* [ID:n för DCS-regioner, -platser och -värdnamn](/help/using/api/dcs-intro/dcs-api-reference/dcs-regions.md)
 
    Det regionala DCS-servervärdnamnet krävs för att anropa DCS. Detta beror på att DCS lagrar information i datacenter som ligger geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel DCS, men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en DCS-begäran måste du matcha region-ID:t med motsvarande regionalt värdnamn och skapa frågan med rätt värdnamn.
 
-* [Formatera nyckelvärdepar i DCS-anrop](/help/using/api/dcs-intro/dcs-api-reference/dcs-key-format.md)
+* [Formatera nyckelvärdespar i DCS-anrop](/help/using/api/dcs-intro/dcs-api-reference/dcs-key-format.md)
 
    När DCS anropar tar det emot nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
 
-* [Ansiktsvillkor och felhantering](/help/using/api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
+* [Överbelastning och felhantering](/help/using/api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
 
    Beskriver hur du förhindrar konkurrensförhållanden och DCS-felhantering.
 
