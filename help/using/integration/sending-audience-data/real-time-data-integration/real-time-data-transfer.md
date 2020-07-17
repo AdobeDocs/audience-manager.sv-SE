@@ -1,21 +1,21 @@
 ---
 description: Processen för inkommande data i realtid använder en serie HTTP-begäranden från en användares webbläsare för att skicka data till Audience Manager.
 seo-description: Processen för inkommande data i realtid använder en serie HTTP-begäranden från en användares webbläsare för att skicka data till Audience Manager.
-seo-title: Ingående datainmatning i realtid
+seo-title: Inkommande datainmatning i realtid
 solution: Audience Manager
-title: Ingående datainmatning i realtid
+title: Inkommande datainmatning i realtid
 uuid: 43cb0ebc-6c36-4391-bbfb-6b203d63c69a
 feature: Inbound Data Transfers
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 
-# Ingående datainmatning i realtid {#real-time-inbound-data-ingestion}
+# Inkommande datainmatning i realtid {#real-time-inbound-data-ingestion}
 
 Processen för inkommande data i realtid använder en serie `HTTP` förfrågningar från en användares webbläsare för att skicka data till Audience Manager.
 
