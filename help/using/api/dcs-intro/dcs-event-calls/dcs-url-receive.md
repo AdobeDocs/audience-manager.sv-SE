@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -57,7 +57,7 @@ Tabellen nedan listar och definierar de vanligaste parametrarna som du kan se i 
 | `cv` | De värden som skickas till målet som definieras av parametern &quot;cn&quot;:&quot; målnamn&quot;. |
 | `dcs_region` | DCS-anrop [från server till server](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md). |
 | `dests` | Det här objektet innehåller information för alla URL-mål som är konfigurerade i användargränssnittet. Objektets lista är dynamisk baserat på användarens åtgärder. |
-| `dmn` | Det här är domänen som anges i cookie-domänfältet för en cookie-destination. Se [Valfria inställningar för cookie-mål](../../../features/destinations/cookie-destination-options.md).  För integreringar mellan servrar rekommenderar vi att du använder en domän som `aam-api.com`. |
+| `dmn` | Det här är domänen som anges i cookie-domänfältet för en cookie-destination. See [Optional Settings for Cookie Destinations](../../../features/destinations/cookie-destination-options.md).  För integreringar mellan servrar rekommenderar vi att du använder en domän som `aam-api.com`. |
 | `e` | Den säkra URL som har angetts i ett URL-mål. |
 | `stuff` | Det här objektet innehåller information för alla cookie-mål. Objektets lista är dynamisk baserat på användarens åtgärder. |
 | `tid` | Transaktions-ID, som är ett unikt 12-tecken-ID som används för felsökning. Varje /event-anrop till DCS får en tid som du kan referera till i supportfrågor för att få ett bättre och snabbare svar. |
