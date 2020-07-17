@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 0%
+ht-degree: 23%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 0%
 
 En datafil innehåller indata, klickningar eller konverteringsdata som du kan använda för:
 
-* [Åtgärdsbara loggfiler](/help/using/integration/media-data-integration/actionable-log-files.md)
-* [Målgruppsoptimeringsrapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
+* [Verkställbara loggfiler](/help/using/integration/media-data-integration/actionable-log-files.md)
+* [Audience Optimization-rapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
 
 En metadatafil innehåller läsbara namn som motsvarar olika rapportalternativ och menyalternativ. Formatera data och metadatafiler enligt specifikationerna i det här avsnittet.
 
@@ -28,7 +28,7 @@ En metadatafil innehåller läsbara namn som motsvarar olika rapportalternativ o
 >
 >Om du vill använda metadatafiler måste dina händelseanrop innehålla *alla* parametrar som anges i [översikten och mappningarna](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) .
 
-* [Datafiler för målgruppsoptimeringsrapporter och körbara loggfiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
+* [Datafiler för Audience Optimization-rapporter och verkställbara loggfiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
 * [Översikt och mappningar för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
 * [Namnkonventioner för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)
 * [Innehållsformat för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md)
