@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
@@ -23,7 +23,7 @@ Algoritmisk modellering i Audience Manager avser användningen av datavetenskap 
 
 Detta görs med hjälp av två typer av algoritmer: [!UICONTROL Look-Alike Modeling] och [!UICONTROL Predictive Audiences].
 
-## Utseendeliknande modellering{#lam}
+## Look-alike-modellering{#lam}
 
 [!UICONTROL Look-Alike Modeling] hjälper er att identifiera nya, unika målgrupper genom automatiserad dataanalys. Processen startar när du väljer ett trait- eller segment, ett tidsintervall samt datakällor från första och tredje part. Dina val innehåller indata för den algoritmiska modellen. När analysprocessen körs letar programmet efter berättigade användare baserat på delade egenskaper från den valda populationen.
 
@@ -33,11 +33,11 @@ När du är klar är dessa data tillgängliga i [Trait Builder](../../features/t
 
 Mer information [!UICONTROL Look-Alike Modeling]finns i [Understanding Look-Alike Modeling](understanding-models.md).
 
-## Prediktiva målgrupper{#predictive-audiences}
+## Predictive Audiences{#predictive-audiences}
 
 [!UICONTROL Predictive Audiences] hjälper er att klassificera en okänd publik i distinkta personligheter, i realtid, med avancerad datavetenskap.
 
-I ett marknadsföringssammanhang är en person ett målgruppssegment som definieras av besökare, användare eller potentiella köpare som delar en viss uppsättning egenskaper, som demografi, surfvanor, shoppinghistorik osv.
+I marknadsföringssammanhang är en persona ett målgruppssegment som definieras av besökare, användare eller potentiella köpare som delar en viss uppsättning traits som demografi, surfvanor, shoppinghistorik osv.
 
 [!UICONTROL Predictive Audiences] modeller tar detta koncept ett steg längre genom att använda Audience Manager maskininlärningsfunktioner för att automatiskt klassificera okända målgrupper i distinkta personligheter. Audience Manager uppnår detta genom att beräkna hur känslig din okända publik är för en uppsättning kända målgrupper.
 
