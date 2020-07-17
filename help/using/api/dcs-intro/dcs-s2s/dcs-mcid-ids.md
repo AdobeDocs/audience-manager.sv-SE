@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
@@ -21,10 +21,10 @@ ID-tjänstkunder bör läsa det här avsnittet för information om hur du läser
 
 ## Hämta användar-ID från ID-tjänstens cookie {#get-user-ids-from-service-cookie}
 
-Med [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html) får användare som kommer till din webbplats tillgång till besökar- och region-ID:n. Dessa ID:n identifierar användare i alla lösningar i [!DNL Experience Cloud] och de krävs om du vill ringa [!DNL DCS] samtal.
+Med [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html) får användare som kommer till din webbplats tillgång till besökar- och region-ID:n. Dessa ID:n identifierar användare i alla lösningar i [!DNL Experience Cloud] och de krävs om du vill ringa [!DNL DCS] samtal.
 
 * Informationen [!UICONTROL user ID] krävs för att identifiera och koppla data till en viss besökare.
-* Detta [!UICONTROL region ID] är obligatoriskt eftersom det är kopplat till ett regionalt servernamn som du måste skicka data till [!DNL DCS]. Informationen [!DNL DCS] lagras i datacenter som är geografiskt närmast besökarna. Se ID:n för [DCS-region, platser och värdnamn](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
+* Detta [!UICONTROL region ID] är obligatoriskt eftersom det är kopplat till ett regionalt servernamn som du måste skicka data till [!DNL DCS]. Informationen [!DNL DCS] lagras i datacenter som är geografiskt närmast besökarna. See [DCS Region IDs, Locations, and Host Names](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
 
 ID-tjänstkunder kan extrahera den här informationen från ID-tjänstens cookie eller genom att anropa en funktion. Tabellen nedan beskriver de uppgifter och steg som du behöver utföra för att komma igång.
 
@@ -48,7 +48,7 @@ Kod i *kursiv stil* representerar en variabel platshållare.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>3. Läs <span class="keyword"> ID-tjänstens</span> cookie</b> </p> </td> 
-   <td colname="col2"> <p>ID-tjänsten <span class="keyword"></span> lagrar användar-ID och region-ID i AMCV-cookien. Det fullständiga cookie-namnet är <code>AMCV_<i>###</i>@AdobeOrg</code>. Elementen är <code><i>###</i></code> platshållare för ditt företags-ID. Mer information finns i <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID</a> . </p> <p>Tolka AMCV-cookien för följande nyckelvärdepar: </p> <p> 
+   <td colname="col2"> <p>ID-tjänsten <span class="keyword"></span> lagrar användar-ID och region-ID i AMCV-cookien. Det fullständiga cookie-namnet är <code>AMCV_<i>###</i>@AdobeOrg</code>. Elementen är <code><i>###</i></code> platshållare för ditt företags-ID. Mer information finns i <a href="https://docs.adobe.com/content/help/sv-SE/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID</a> . </p> <p>Tolka AMCV-cookien för följande nyckelvärdepar: </p> <p> 
      <ul id="ul_502ECFCDDD084D448B5EDC4E5C0909C1"> 
       <li id="li_662FFA36AC854E699D50A183B161D654"> <code>mid=<i>user ID</i></code>: Detta nyckelvärdepar innehåller användar-ID:t för <span class="keyword"> Experience Cloud</span> . </li> 
       <li id="li_65422233187B4217B50DC52DBD58F404"> <code>aamlh=<i>region ID</i></code>: Detta nyckelvärdepar innehåller region-ID (kallas ibland för <span class="term"> platstips</span>) som är associerat med ett regionalt servernamn. </li> 
