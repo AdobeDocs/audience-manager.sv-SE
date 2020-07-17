@@ -1,16 +1,16 @@
 ---
 description: Beskriver komponenterna i ett Audience Manager-segment, de uttryck som används för att ange kriterier för målgruppskvalifikation och hur data överförs i ett händelseanrop.
 seo-description: Beskriver komponenterna i ett Audience Manager-segment, de uttryck som används för att ange kriterier för målgruppskvalifikation och hur data överförs i ett händelseanrop.
-seo-title: Signaler, egenskaper och segment
+seo-title: Signaler, traits och segment
 solution: Audience Manager
-title: Signaler, egenskaper och segment
+title: Signaler, traits och segment
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
 feature: reference
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -45,5 +45,5 @@ Ett eventsamtal skickar data från din webbplats till [!DNL Audience Manager]. S
 
 >[!MORELIKETHIS]
 >
->* [Segment: Syfte, komposition och regler](../features/segments/segments-purpose.md)
+>* [Segment: Syfte, sammansättning och regler](../features/segments/segments-purpose.md)
 
