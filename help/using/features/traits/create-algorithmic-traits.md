@@ -1,21 +1,21 @@
 ---
 description: Beskriver hur du konfigurerar steg och funktioner som är unika för processen att skapa algoritmiska egenskaper.
 seo-description: Beskriver hur du konfigurerar steg och funktioner som är unika för processen att skapa algoritmiska egenskaper.
-seo-title: Skapa algoritmiska egenskaper
+seo-title: Skapa algoritmiska traits
 solution: Audience Manager
-title: Skapa algoritmiska egenskaper
+title: Skapa algoritmiska traits
 uuid: 50c2d2d1-f412-479b-bb70-4f139429c388
 feature: Traits
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Skapa algoritmiska egenskaper {#create-algorithmic-traits}
+# Skapa algoritmiska traits {#create-algorithmic-traits}
 
 <!-- t_algo_trait_build.xml -->
 
@@ -40,7 +40,7 @@ I [!UICONTROL Trait Builder][!UICONTROL Configuration] avsnittet kan du associer
 
 <!-- r_algo_trait_config_section.xml -->
 
-* [Skapa en look-Alike-modell](../../features/algorithmic-models/create-model.md).
+* [Skapa en look-alike-modell](../../features/algorithmic-models/create-model.md).
 * Vänta på e-postmeddelandet som talar om för dig att körningen av modelldata har slutförts.
 * Fyll i de obligatoriska fälten i avsnittet [Grundläggande information](../../features/traits/create-onboarded-rule-based-traits.md) .
 
@@ -55,5 +55,5 @@ I [!UICONTROL Trait Builder][!UICONTROL Configuration] avsnittet kan du associer
 
 >[!MORELIKETHIS]
 >
->* [Noggrannhet och räckvidd](../../features/traits/trait-accuracy-reach.md)
+>* [Precision och räckvidd](../../features/traits/trait-accuracy-reach.md)
 
