@@ -1,21 +1,21 @@
 ---
 description: Returnerar data om antalet unika användare som delas mellan en viss egenskap och ett helt segment.
 seo-description: Returnerar data om antalet unika användare som delas mellan en viss egenskap och ett helt segment.
-seo-title: Överlappningsrapport för segment-till-trait
+seo-title: Överlappningsrapport för segment till trait
 solution: Audience Manager
-title: Överlappningsrapport för segment-till-trait
+title: Överlappningsrapport för segment till trait
 uuid: a6b3dd21-332e-449f-aa01-2beb47f1794e
 feature: overlap reports
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Överlappningsrapport för segment-till-trait{#segment-to-trait-overlap-report}
+# Överlappningsrapport för segment till trait{#segment-to-trait-overlap-report}
 
 Returnerar data om antalet unika användare som delas mellan en viss egenskap och ett helt segment.
 
@@ -73,7 +73,7 @@ Om du tittar på överlappningen mellan egenskaper och segment kan det hjälpa d
 <table id="table_5B211EF95216426299EB20253A5A9C1B"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Användningsfall </th> 
+   <th colname="col1" class="entry"> Användningsexempel </th> 
    <th colname="col2" class="entry"> Beskrivning </th> 
   </tr>
  </thead>
@@ -182,9 +182,9 @@ Popup-fönstret för [!UICONTROL Segment-to-Trait Overlap] rapporten innehåller
 
 >[!MORELIKETHIS]
 >
->* [Filtrera rapportresultat med datareglagen](../../reporting/dynamic-reports/data-sliders.md)
+>* [Filtrera rapportresultat med datareglage](../../reporting/dynamic-reports/data-sliders.md)
 >* [Former, färger och storlekar som används i interaktiva rapporter](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
 >* [Ikoner och verktyg för rapporter förklaras](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
 >* [Överlappningsrapporter: Uppdatera schema och minsta segmentstorlek](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
->* [Datainsamling och felfrekvens i rapporter från markerade Audience Manager..](../../reporting/report-sampling.md)
+>* [Datainsamling och felfrekvens i valda rapporter för Audience Manager...](../../reporting/report-sampling.md)
 >* [CSV-filer för överlappningsrapporter](../../reporting/dynamic-reports/overlap-csv-files.md)
