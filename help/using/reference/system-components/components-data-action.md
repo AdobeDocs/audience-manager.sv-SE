@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '680'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -27,13 +27,13 @@ c_compact.xml
 
 Åtgärdskomponenter är system och processer som gör att du kan flytta in och ut data [!DNL Audience Manager] och (utan en bättre fras) göra saker med dem. Dessa [!DNL Audience Manager] komponenter omfattar:
 
-## CDF (Customer Data Feeds) {#cdf}
+## Kunddataflöden (CDF) {#cdf}
 
 [!UICONTROL CDF] är filer som skickas varje timme till kunderna. Dessa innehåller användar-ID:n tillsammans med tillhörande segment-ID:n, trait-ID:n och andra data. Mer information finns i Översikt över [kunddataflöden](../../features/cdf-files.md).
 
 ## Datainsamlingsserver (DCS) {#dcs}
 
-Se [Datainsamlingskomponenter](../../reference/system-components/components-data-collection.md).
+Se [Komponenter för datainsamling](../../reference/system-components/components-data-collection.md).
 
 ## SFTP/S3 {#sftp-s3}
 
@@ -150,4 +150,4 @@ Följande exempel innehåller segmentdata i realtid från [!UICONTROL IRIS]. Tä
 
 ## PCS (Profile Cache Server) {#pcs}
 
-Se [Datainsamlingskomponenter](../../reference/system-components/components-data-collection.md).
+Se [Komponenter för datainsamling](../../reference/system-components/components-data-collection.md).
