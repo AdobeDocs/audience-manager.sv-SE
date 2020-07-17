@@ -1,21 +1,21 @@
 ---
 description: Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med enhetsrelaterade variabler i alla egenskaper i ditt Audience Manager-konto.
 seo-description: Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med enhetsrelaterade variabler i alla egenskaper i ditt Audience Manager-konto.
-seo-title: Device Targeting with Platform-level Keys
+seo-title: Enhetsmålinriktning med nycklar på plattformsnivå
 solution: Audience Manager
-title: Device Targeting with Platform-level Keys
+title: Enhetsmålinriktning med nycklar på plattformsnivå
 uuid: bc048cc5-3df1-49bc-ac78-0ea5d7edd9cc
 feature: Traits
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
 
-# Device Targeting with Platform-level Keys {#device-targeting-with-platform-level-keys}
+# Enhetsmålinriktning med nycklar på plattformsnivå {#device-targeting-with-platform-level-keys}
 
 Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med enhetsrelaterade variabler i alla egenskaper i ditt Audience Manager-konto.
 
