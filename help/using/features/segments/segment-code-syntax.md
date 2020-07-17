@@ -1,21 +1,21 @@
 ---
 description: Med Segment Builder kan du skapa regler för ett segment med hjälp av en kodredigerare. Klicka på fliken Segmentuttryck (kodvyn) på panelen Traits för att komma åt den här funktionen.
 seo-description: Med Segment Builder kan du skapa regler för ett segment med hjälp av en kodredigerare. Klicka på fliken Segmentuttryck (kodvyn) på panelen Traits för att komma åt den här funktionen.
-seo-title: Kodsyntax som används i segmentuttrycksredigeraren
+seo-title: Kodsyntax som används i Segment Expression Editor
 solution: Audience Manager
-title: Kodsyntax som används i segmentuttrycksredigeraren
+title: Kodsyntax som används i Segment Expression Editor
 uuid: 7b4b06ca-7879-4501-8ba7-b2b6467b8a3b
 feature: Segments
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
 
-# Kodsyntax som används i segmentuttrycksredigeraren {#code-syntax-used-in-the-segment-expression-editor}
+# Kodsyntax som används i Segment Expression Editor {#code-syntax-used-in-the-segment-expression-editor}
 
 [!UICONTROL Segment Builder] Med kan du skapa trait-regler för ett segment med hjälp av en kodredigerare. Klicka på **[!UICONTROL Segment Expressions (Code View)]** fliken på [!UICONTROL Traits] panelen för att komma åt den här funktionen.
 
@@ -79,8 +79,8 @@ Ange [intervall för senaste och frekvens](../../features/segments/recency-and-f
 
 >[!MORELIKETHIS]
 >
->* [Nyhet och frekvens](../../features/segments/recency-and-frequency.md)
->* [Booleska uttryck i Trait och Segment Builder](../../reference/boolean-expressions-tsb.md)
+>* [Recency och frekvens](../../features/segments/recency-and-frequency.md)
+>* [Booleska uttryck i traits och Segment Builder](../../reference/boolean-expressions-tsb.md)
 >* [Arbeta med jämförelseoperatorer i TraitBuilder](../../features/traits/trait-comparison-operators.md)
 >* [Åtgärdsordning i TraitBuilder-uttryck](../../features/traits/trait-operator-precedence.md)
 
