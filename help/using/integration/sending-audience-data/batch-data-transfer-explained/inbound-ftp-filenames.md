@@ -1,16 +1,16 @@
 ---
 description: Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du måste följa när du skickar data till Audience Manager. Ange namn och storlek för filerna enligt dessa specifikationer när du skickar data till en Audience Manager FTP-katalog.
 seo-description: Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du måste följa när du skickar data till Audience Manager. Ange namn och storlek för filerna enligt dessa specifikationer när du skickar data till en Audience Manager FTP-katalog.
-seo-title: Krav för FTP-namn och filstorlek för inkommande datafiler
+seo-title: Krav på FTP-namn och filstorlekar för inkommande datafiler
 solution: Audience Manager
-title: Krav för FTP-namn och filstorlek för inkommande datafiler
+title: Krav på FTP-namn och filstorlekar för inkommande datafiler
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 feature: Inbound Data Transfers
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
@@ -21,7 +21,7 @@ Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du 
 
 >[!WARNING]
 >
->Vi fasar ut stödet för [!DNL FTP] konfigurationer. Inläsning av inkommande datafiler stöds fortfarande i befintliga [!DNL FTP] integreringar, men vi rekommenderar starkt att du använder [!DNL Amazon S3] för att integrera offlinedata för nya integreringar. Mer information finns i [Krav för namn och filstorlek för Amazon S3 för inkommande datafiler](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) .
+>We are gradually phasing out support for [!DNL FTP] configurations. While inbound data file ingestion is still supported in existing [!DNL FTP] integrations, we strongly recommend using [!DNL Amazon S3] to onboard offline data for new integrations. Mer information finns i [Krav på Amazon S3-namn och filstorlekar för inkommande datafiler](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md).
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Tabellen definierar elementen i ett [!DNL FTP] filnamn.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [.gz]</code> </p> </td> 
-   <td colname="col2"> <p>Gzip är det tillåtna komprimeringsformatet för ett FTP-filnamn. Om du använder filkomprimering bör du kontrollera att filnamnet har rätt filtillägg. </p> <p>Komprimerade filer måste vara 3 GB eller mindre. Om filerna är större bör du kontakta kundtjänst. Även om Audience Manager kan hantera stora filer kan vi hjälpa dig att minska filstorleken och effektivisera dataöverföringen. Se <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md"> Filkomprimering för inkommande dataöverföringsfiler</a> . </p> </td> 
+   <td colname="col2"> <p>Gzip är det tillåtna komprimeringsformatet för ett FTP-filnamn. Om du använder filkomprimering bör du kontrollera att filnamnet har rätt filtillägg. </p> <p>Komprimerade filer måste vara 3 GB eller mindre. Om filerna är större bör du kontakta kundtjänst. Även om Audience Manager kan hantera stora filer kan vi hjälpa dig att minska filstorleken och effektivisera dataöverföringen. Se <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">Filkomprimering för inkommande dataöverföringsfiler</a> . </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -143,5 +143,5 @@ Titta på bilderna nedan om du snabbt/tidigast vill bearbeta dina filer och om d
 
 >[!MORELIKETHIS]
 >
->* [Amazon S3-namnkrav för inkommande datafiler](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+>* [Krav på Amazon S3-namn och filstorlekar för inkommande datafiler](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
