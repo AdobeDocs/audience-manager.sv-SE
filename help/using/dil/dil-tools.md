@@ -1,21 +1,21 @@
 ---
 description: Beskriver metoder i namnutrymmet DIL.tools. De här verktygen hjälper dig att utföra specifika uppgifter.
 seo-description: Beskriver metoder i namnutrymmet DIL.tools. De här verktygen hjälper dig att utföra specifika uppgifter.
-seo-title: DIL Tools
+seo-title: DIL-verktyg
 solution: Audience Manager
-title: DIL Tools
+title: DIL-verktyg
 uuid: 2bc62ce2-16bd-4e80-b493-c816ba643b59
 feature: DIL Implementation
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# DIL Tools
+# DIL-verktyg
 
 Beskriver metoder i `DIL.tools` namnutrymmet. De här verktygen hjälper dig att utföra specifika uppgifter.
 
@@ -61,7 +61,7 @@ Och returnerar:
   <tr> 
    <th> Söktyp </th> 
    <th> Beskrivning </th> 
-   <th> Kodexempel </th> 
+   <th> Exempel på kod </th> 
   </tr> 
  </thead>
  <tbody> 
