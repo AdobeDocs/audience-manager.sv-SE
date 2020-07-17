@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
@@ -32,5 +32,5 @@ Tala med din [!DNL Audience Manager] säljare för att komma igång. De kan akti
 
 
 * [Audience Marketplace för dataleverantörer](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
-* [Audience Marketplace för datainköpare](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)
+* [Audience Marketplace för dataköpare](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)
 * [Privata dataflöden](/help/using/features/audience-marketplace/marketplace-private-feeds.md)
