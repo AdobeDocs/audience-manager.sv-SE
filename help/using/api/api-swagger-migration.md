@@ -1,21 +1,21 @@
 ---
 description: Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitlig, korrekt API-dokumentation. Därför skriver vi om vårt API-innehåll i Swagger och flyttar det till en ny plats. Dessa ändringar är avsedda att förbättra din upplevelse av Audience Manager API-koden.
 seo-description: Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitlig, korrekt API-dokumentation. Därför skriver vi om vårt API-innehåll i Swagger och flyttar det till en ny plats. Dessa ändringar är avsedda att förbättra din upplevelse av Audience Manager API-koden.
-seo-title: API-kodmigrering för Audience Manager
+seo-title: Migrera API-kod för Audience Manager
 solution: Audience Manager
-title: API-kodmigrering för Audience Manager
+title: Migrera API-kod för Audience Manager
 uuid: 93cc28c4-4b91-4c79-93d5-ece9bb4cc9d5
 feature: API
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '446'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# API-kodmigrering för Audience Manager {#audience-manager-api-code-migration}
+# Migrera API-kod för Audience Manager {#audience-manager-api-code-migration}
 
 Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitlig och korrekt [!DNL API] dokumentation. Därför skriver vi om vårt [!DNL API] innehåll i [!DNL Swagger] och flyttar det till en ny plats. Ändringarna är utformade för att förbättra din upplevelse av Audience Manager- [!DNL API] koden.
 
@@ -95,5 +95,5 @@ Webbplatsen [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swa
 | **[!UICONTROL Data Sources]** | [Datakällor ](https://bank.demdex.com/portal/swagger/index.html#/Data_Source_API) |
 | **[!UICONTROL Folders]** | <ul><li>[Segmentmappar](https://bank.demdex.com/portal/swagger/index.html#/Segment_Folder_API)</li><li>[Trait Folders](https://bank.demdex.com/portal/swagger/index.html#/Trait%20Folder%20API)</li></ul> |
 | **[!UICONTROL Reporting]** | [Rapporter](https://bank.demdex.com/portal/swagger/index.html#/Reporting%20API) |
-| **[!UICONTROL Segments]** | <ul><li>[Segment](https://bank.demdex.com/portal/swagger/index.html#/Segments%20API)</li><li>[Segmenttestgrupper](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API)</li><li>[Utkast-API för segmenttestgrupp](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API/post_segment_test_groups_drafts)</li></ul> |
-| **[!UICONTROL Traits]** | [Traits](https://bank.demdex.com/portal/swagger/index.html#/Traits%20API) |
+| **[!UICONTROL Segments]** | <ul><li>[Segment ](https://bank.demdex.com/portal/swagger/index.html#/Segments%20API)</li><li>[Segmenttestgrupper](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API)</li><li>[Utkast-API för segmenttestgrupp](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API/post_segment_test_groups_drafts)</li></ul> |
+| **[!UICONTROL Traits]** | [Traits ](https://bank.demdex.com/portal/swagger/index.html#/Traits%20API) |
