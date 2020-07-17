@@ -2,9 +2,9 @@
 description: Med alternativen på menyn Administration kan du skapa Audience Manager-användare och tilldela dem till grupper. Du kan också visa gränser (egenskaper, segment, mål och modeller).
 keywords: rbac;RBAC;role based;role-based;role-based access controls
 seo-description: Med alternativen på menyn Administration kan du skapa Audience Manager-användare och tilldela dem till grupper. Du kan också visa gränser (egenskaper, segment, mål och modeller).
-seo-title: Administration
+seo-title: Administrering
 solution: Audience Manager
-title: Administration
+title: Administrering
 topic: DIL API
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
 feature: Administration
