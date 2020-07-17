@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -53,7 +53,7 @@ I följande tabell definieras elementen i den datafil som du skickar till målet
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
-   <th colname="col2" class="entry"> Datatyp </th> 
+   <th colname="col2" class="entry"> Datatyper </th> 
    <th colname="col3" class="entry"> Beskrivning </th> 
   </tr>
  </thead>
@@ -106,7 +106,7 @@ I följande tabell definieras elementen i den datafil som du skickar till målet
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_Regions</i></code> </td> 
    <td colname="col2"> Array </td> 
-   <td colname="col3"> Det region-ID för <span class="keyword"> Audience Manager</span> där vi har sett den här enheten. Om enheten till exempel har någon aktivitet i Paris (Europa) blir region-ID:t <code> 6</code>. Se <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> DCS-regions-ID, -platser och -värdnamn</a>. </td> 
+   <td colname="col3"> Det region-ID för <span class="keyword"> Audience Manager</span> där vi har sett den här enheten. Om enheten till exempel har någon aktivitet i Paris (Europa) blir region-ID:t <code> 6</code>. See <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> DCS Region IDs, Locations, and Host Names</a>. </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segments</i></code> </td> 
