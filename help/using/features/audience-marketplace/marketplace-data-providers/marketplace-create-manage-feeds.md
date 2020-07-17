@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -46,6 +46,7 @@ Så här skapar du en datafeed:
 1. Så här sparar och aktiverar du en datafeed:
    1. Flytta reglaget **[!UICONTROL Availability]** till **[!UICONTROL Active]**.
    1. Klicka på **[!UICONTROL Save]**.
+
    >[!NOTE]
    >
    >* Det går inte att ta bort sparade och aktiverade dataflöden.
