@@ -2,21 +2,21 @@
 description: Se det här dokumentet för en fullständig lista över Adobe Audience Manager-ID:n.
 keywords: DPID; DPUUID; CID; UUID; uuid; uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid
 seo-description: Se det här dokumentet för en fullständig lista över Adobe Audience Manager-ID:n.
-seo-title: Index för ID:n i Audience Manager
+seo-title: Index över ID:n i Audience Manager
 solution: Audience Manager
-title: Index för ID:n i Audience Manager
+title: Index över ID:n i Audience Manager
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
 feature: reference
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '944'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Index för ID:n i [!DNL Audience Manager] {#index-of-ids-in-audience-manager}
+# Index of IDs in [!DNL Audience Manager] {#index-of-ids-in-audience-manager}
 
 ## Översikt {#overview}
 
