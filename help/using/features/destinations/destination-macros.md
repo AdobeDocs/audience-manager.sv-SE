@@ -1,21 +1,21 @@
 ---
 description: Beskriver makrona som du kan lägga till i en mål-URL.
 seo-description: Beskriver makrona som du kan lägga till i en mål-URL.
-seo-title: Målmakron definierade
+seo-title: Beskrivning av destinationsmakron
 solution: Audience Manager
-title: Målmakron definierade
+title: Beskrivning av destinationsmakron
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 feature: Destination Basics
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Målmakron definierade {#destination-macros-defined}
+# Beskrivning av destinationsmakron {#destination-macros-defined}
 
 Beskriver makrona som du kan lägga till i ett mål [!DNL URL].
 
@@ -115,4 +115,4 @@ Båda makrona förhindrar cachelagring, men de `%rnd%` kan vara mer effektiva. O
 
 >[!MORELIKETHIS]
 >
->* [Målmakron definierade](../../features/destinations/destination-macros.md#destination-macros-defined)
+>* [Beskrivning av destinationsmakron](../../features/destinations/destination-macros.md#destination-macros-defined)
