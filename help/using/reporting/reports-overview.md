@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ I enskilda avsnitt beskrivs tillgängliga rapporter, deras syfte och typiska anv
 
 Information som beskriver tidsramarna när Audience Manager tar emot information för att fylla i rapporter finns i [Hur dataöverföringen och filbearbetningstiden påverkar rapporter](/help/using/reference/reporting-file-transfer-timeframe.md).
 
-* [Målgruppsoptimeringsrapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
+* [Audience Optimization-rapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
 
    I [!UICONTROL Audience Optimization] rapporterna används datavisualiseringsmetoder för att returnera information om destinationerna i ditt Audience Manager-konto. I varje rapport kan du klicka på nästan vilken datapunkt som helst för att returnera detaljerad information om objektet. Dessa målgruppsoptimeringsinsikter kan tillämpas på flera olika användningsområden i alla annonser och publiceringskanaler, men är inte tillgängliga som standard. Kontakta din Audience Manager-konsult för att komma igång.
 
@@ -27,7 +27,7 @@ Information som beskriver tidsramarna när Audience Manager tar emot information
 
    A [!UICONTROL General report] returnerar prestandadata på [!UICONTROL traits], [!UICONTROL segments]och [!UICONTROL destinations].
 
-* [Interaktiva rapporter och överlappande rapporter](/help/using/reporting/dynamic-reports/dynamic-reports.md)
+* [Interaktiva och överlappande rapporter](/help/using/reporting/dynamic-reports/dynamic-reports.md)
 
    Interaktiva rapporter visar prestanda och överlappar data för egenskaper och segment. I stället för att använda siffror ordnade i kolumner och rader, returnerar dessa rapporter data med olika former, färger och storlekar. Dessutom kan du välja enskilda eller grupper av datapunkter och gå ned i rapportresultaten för mer information. Dessa visualiseringstekniker och rapportinteraktivitet gör stora mängder numeriska data lättare att förstå.
 
@@ -43,7 +43,7 @@ Information som beskriver tidsramarna när Audience Manager tar emot information
 
    En [!UICONTROL Trend report] returnerar trenddata för [!UICONTROL traits] och [!UICONTROL segments].
 
-* [Räkna unika användare i överlappning och allmänna rapporter](/help/using/reporting/unique-user-counts.md)
+* [Räkna unika användare i överlappande och allmänna rapporter](/help/using/reporting/unique-user-counts.md)
 
    Beskriver variationen i unika användarsummor mellan rapporter för samma [!UICONTROL trait] period och tidsperiod.
 
@@ -51,7 +51,7 @@ Information som beskriver tidsramarna när Audience Manager tar emot information
 
    Använd Dashboard för att visa information om partners unika antal besökare uppdelat efter [!UICONTROL trait] typ och [!UICONTROL segments] under en angiven tidsram.
 
-* [Datainsamling och felfrekvens i rapporter för markerade Audience Manager](/help/using/reporting/report-sampling.md)
+* [Datainsamling och felfrekvens i valda rapporter för Audience Manager](/help/using/reporting/report-sampling.md)
 
    En sammanfattning av den provtagningsmetod som används för vissa rapporter, felfrekvenser vid provtagning och en lista över rapporter som returnerar information baserat på provdata.
 
