@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -56,7 +56,7 @@ Du kan skapa regler med följande namngivna operatorer:
 
 >[!MORELIKETHIS]
 >
->* [Booleska uttryck i Trait och Segment Builder](../../reference/boolean-expressions-tsb.md)
+>* [Booleska uttryck i traits och Segment Builder](../../reference/boolean-expressions-tsb.md)
 >* [Booleska uttryck i TraitBuilder](../../reference/boolean-expressions-tsb.md)
 >* [Åtgärdsordning i TraitBuilder-uttryck](../../features/traits/trait-operator-precedence.md)
 >* [Exempeluttryck med booleska operatorer och jämförelseoperatorer](../../features/traits/trait-expression-samples.md)
