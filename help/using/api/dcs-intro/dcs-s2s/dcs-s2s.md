@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
@@ -44,11 +44,11 @@ Handboken beskriver för närvarande hur du:
 
 Vi lägger till nya metoder när de blir tillgängliga. Gå till följande avsnitt för att komma igång.
 
-* [Hämta användar-ID och regioner från ett DCS-svar](dcs-aam-ids.md)
+* [Hämta användar-ID:n och regioner från ett DCS-svar](dcs-aam-ids.md)
 * [Hämta användar-ID:n och regioner via Experience Cloud-ID..](dcs-mcid-ids.md)
 * [Göra DCS API-anrop från server till server](dcs-s2s-calls.md)
 
 >[!MORELIKETHIS]
 >
->* [API-referens för DCS](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
+>* [API-referens för DCS ](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
 
