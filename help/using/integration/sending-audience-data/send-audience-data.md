@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
@@ -21,7 +21,7 @@ Skicka målgruppsdata från andra källor till Audience Manager.
 
    Information om integreringen av Real-Time Audience Manager.
 
-* [Beskriver batchdataöverföringsprocessen](/help/using/integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
+* [Beskrivning av satsvis överföring av data](/help/using/integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
 
    En allmän översikt över hur Audience Manager utför ett asynkront batchdatautbyte med en tredjepartsleverantör.
 
