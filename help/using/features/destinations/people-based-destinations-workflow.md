@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1379'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -78,8 +78,8 @@ Beroende på vilken typ av kund-ID du har i Audience Manager (se [3). Identifier
 
 **B) Skapa en ny datakälla**. Det här alternativet gäller det scenario där dina kund-ID:n ([DPUID](../../reference/ids-in-aam.md)) på Audience Manager inte är hashade e-postadresser. I det här fallet måste du skapa en ny datakälla för olika enheter och lägga in dina streckade e-postadresser mot den. Du kan göra detta på två sätt:
 
-* Använd filbaserad ID-synkronisering. Mer information om hur ID-synkroniseringsfiler ska se ut finns i [Namn- och innehållskrav för ID-synkroniseringsfiler](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) . När du använder den här metoden kan du ange alla dina hash-kodade e-postadresser som mål från din [!DNL CRM] databas.
-* Använd [deklarerade ID:n](../declared-ids.md) för att deklarera dina hashade e-postadresser när du skickar autentiserade kund-ID:n. När du använder den här metoden anger Audience Manager bara dina hash-kodade e-postadresser från användare som har autentiserats online. E-postadresserna som är avsedda för personbaserade kanaler är bara de som anges i de deklarerade ID-händelseanropen. Andra e-postadresser som är kopplade till kund-ID aktiveras inte i realtid.
+* Filbaserad ID-synkronisering. Mer information om hur filer för ID-synkronisering ska se ut finns i [Namn- och innehållskrav för ID-synkroniseringsfiler](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md). When using this method, you can target all of your hashed email addresses from your [!DNL CRM] database.
+* Use [declared IDs](../declared-ids.md) to declare your hashed email addresses when passing in authenticated customer IDs. När du använder den här metoden anger Audience Manager bara dina hash-kodade e-postadresser från användare som har autentiserats online. E-postadresserna som är avsedda för personbaserade kanaler är bara de som anges i de deklarerade ID-händelseanropen. Andra e-postadresser som är kopplade till kund-ID:n aktiveras inte i realtid.
 
 ## 6. Använd en profilkopplingsregel för segmentering {#use-profile-merge-rules}
 
