@@ -1,9 +1,9 @@
 ---
 description: Rapporteringsavsnittet för testgruppen returnerar information om konverteringar av testgrupper, vilket gör det enkelt att jämföra testsegmentets effekt. Det finns många filter och dimensioner för datavisualisering.
 seo-description: Rapporteringsavsnittet för testgruppen returnerar information om konverteringar av testgrupper, vilket gör det enkelt att jämföra testsegmentets effekt. Det finns många filter och dimensioner för datavisualisering.
-seo-title: Testgruppsrapportering
+seo-title: Testgruppsrapporter
 solution: Audience Manager
-title: Testgruppsrapportering
+title: Testgruppsrapporter
 topic: DIL API
 uuid: 21303c3e-4c05-4728-a759-96c2a1d99b69
 feature: Audience Lab
@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Testgruppsrapportering {#test-group-reporting}
+# Testgruppsrapporter {#test-group-reporting}
 
 Rapporteringsavsnittet för testgruppen returnerar information om konverteringar av testgrupper, vilket gör det enkelt att jämföra testsegmentets effekt. Det finns många filter och dimensioner för datavisualisering.
 
