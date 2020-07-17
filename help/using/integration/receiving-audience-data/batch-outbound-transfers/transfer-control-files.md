@@ -1,21 +1,21 @@
 ---
 description: Filer med överföringskontroll (.info) innehåller metadatainformation om filöverföringar så att partners kan verifiera att filöverföringar hanteras korrekt i Audience Manager.
 seo-description: Filer med överföringskontroll (.info) innehåller metadatainformation om filöverföringar så att partners kan verifiera att filöverföringar hanteras korrekt i Audience Manager.
-seo-title: Överföringskontrollfiler för loggfilsöverföringar
+seo-title: Kontrollfiler för loggfilsöverföringar
 solution: Audience Manager
-title: Överföringskontrollfiler för loggfilsöverföringar
+title: Kontrollfiler för loggfilsöverföringar
 uuid: ef58213e-7b37-4c5a-8556-0de695706793
 feature: Outbound Data Transfers
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '308'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Överföringskontrollfiler för loggfilsöverföringar {#transfer-control-files-for-log-file-transfers}
+# Kontrollfiler för loggfilsöverföringar {#transfer-control-files-for-log-file-transfers}
 
 Filer med överföringskontroll ([!DNL .info]) innehåller metadatainformation om filöverföringar så att partners kan verifiera att filöverföringar hanteras korrekt i Audience Manager.
 
