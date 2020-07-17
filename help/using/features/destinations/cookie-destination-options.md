@@ -1,20 +1,20 @@
 ---
 description: I Destination Builder innehåller konfigurationsavsnittet fälten Cookie-domän och Publicera data till. Med dessa kan du skapa regler som avgör om en destination ställer in en cookie eller returnerar en cookie. Cookie-domän och Publicera data för att fungera oberoende av varandra och är valfria. Du kan skapa en cookie-destination utan att använda någon av dem.
 seo-description: I Destination Builder innehåller konfigurationsavsnittet fälten Cookie-domän och Publicera data till. Med dessa kan du skapa regler som avgör om en destination ställer in en cookie eller returnerar en cookie. Cookie-domän och Publicera data för att fungera oberoende av varandra och är valfria. Du kan skapa en cookie-destination utan att använda någon av dem.
-seo-title: Valfria inställningar för cookie-mål
+seo-title: Valfria inställningar för cookie-destinationer
 solution: Audience Manager
-title: Valfria inställningar för cookie-mål
+title: Valfria inställningar för cookie-destinationer
 feature: Destination Basics
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Valfria inställningar för cookie-mål {#optional-settings-cookies}
+# Valfria inställningar för cookie-destinationer {#optional-settings-cookies}
 
 I [!UICONTROL Destination Builder]innehåller [!UICONTROL Configuration section] -fältet [!UICONTROL Cookie Domain] och - [!UICONTROL Publish Data To] . Med dessa kan du skapa regler som avgör om en destination ställer in en cookie eller returnerar en cookie. [!UICONTROL Cookie Domain] och [!UICONTROL Publish Data To] arbetar oberoende av varandra och är valfria. Du kan skapa en cookie-destination utan att använda någon av dem.
 
