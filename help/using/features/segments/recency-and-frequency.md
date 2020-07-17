@@ -1,21 +1,21 @@
 ---
 description: I Segment Builder kan du segmentera besökare utifrån åtgärder som inträffar eller upprepas under ett visst dagligt intervall.
 seo-description: I Segment Builder kan du segmentera besökare utifrån åtgärder som inträffar eller upprepas under ett visst dagligt intervall.
-seo-title: Nyhet och frekvens
+seo-title: Recency och frekvens
 solution: Audience Manager
-title: Nyhet och frekvens
+title: Recency och frekvens
 uuid: faadd18a-bf27-4b73-995e-9809f52f5350
 feature: Segments
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Nyhet och frekvens {#recency-and-frequency}
+# Recency och frekvens {#recency-and-frequency}
 
 I [!UICONTROL Segment Builder]kan du segmentera besökare med senaste och återkommande intervall baserat på åtgärder som inträffar eller upprepas under ett visst dagligt intervall.
 
@@ -85,7 +85,7 @@ Granska och förstå dessa gränser och regler när du vill använda senaste och
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Regler för profilsammanslagning</b> </p> </td> 
-   <td colname="col2"> <p>Se <a href="../../faq/faq-profile-merge.md#trait-freq-device-rules"> Tågfrekvens, Externa enhetsdiagram och regler</a>för profilsammanslagning. </p> </td> 
+   <td colname="col2"> <p>See <a href="../../faq/faq-profile-merge.md#trait-freq-device-rules"> Trait Frequency, External Device Graphs, and Profile Merge Rules</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -126,5 +126,5 @@ Uttryck med frekvenskappning omfattar alla användare vars antal [!UICONTROL tra
 >[!MORELIKETHIS]
 >
 >* [Segment Builder Controls: Traits Section](../../features/segments/segment-builder.md#segment-builder-controls-traits)
->* [Kodsyntax som används i segmentuttrycksredigeraren](../../features/segments/segment-code-syntax.md)
+>* [Kodsyntax som används i Segment Expression Editor](../../features/segments/segment-code-syntax.md)
 
