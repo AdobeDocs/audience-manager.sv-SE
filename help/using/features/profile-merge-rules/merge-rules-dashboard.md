@@ -10,18 +10,18 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
 
 # Kontrollpanel för regler för profilsammanslagning {#profile-merge-rules-dashboard}
 
-Skapa och hantera alla kopplingsregler från kontrollpanelen. Du kan skapa maximalt 4 [!UICONTROL Profile Merge Rules].
+Skapa och hantera alla kopplingsregler från kontrollpanelen. You can create a maximum of 4 [!UICONTROL Profile Merge Rules].
 
-Den fjärde profilkopplingsregeln ([!UICONTROL All Cross-Device Profiles]) är bara tillgänglig för kunder som köper [!UICONTROL People-Based Destinations] tillägget.
+Den fjärde regeln för profilsammanslagning ([!UICONTROL All Cross-Device Profiles]) är bara tillgänglig för kunder som köpt tillägget [!UICONTROL People-Based Destinations].
 
-På kontrollpanelen finns en [!UICONTROL Profile Merge Rules] enhetlig arbetsyta som du kan använda för att hantera dina [!UICONTROL Profile Merge Rules]. Kontrollpanelen finns på **[!UICONTROL Audience Data]** > **[!UICONTROL Profile Merge Rules]**. Kontrollpanelen för regler kan se ut ungefär som i exemplet nedan.
+Kontrollpanelen har en [!UICONTROL Profile Merge Rules] enhetlig arbetsyta som gör att du kan hantera dina foton [!UICONTROL Profile Merge Rules]. Kontrollpanelen finns på **[!UICONTROL Audience Data]** > **[!UICONTROL Profile Merge Rules]**. Kontrollpanelen för regler kan se ut ungefär som i exemplet nedan.
 
 ![](assets/profile-dashboard.png)
 
