@@ -1,20 +1,20 @@
 ---
 description: Signaler är den minsta informationsenheten inom Audience Manager. De representerar användarinteraktioner eller användaraktivitet i dina onlineegenskaper och skickas vidare till Audience Manager för att användas i varumärkesregler.
 seo-description: Signaler är den minsta informationsenheten inom Audience Manager. De representerar användarinteraktioner eller användaraktivitet i dina onlineegenskaper och skickas vidare till Audience Manager för att användas i varumärkesregler.
-seo-title: Signaler
-title: Signaler
+seo-title: Förstå signaler
+title: Förstå signaler
 uuid: 04a0554e-954e-484a-8838-9161ef416872
 feature: Data Explorer
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Signaler
+# Förstå signaler
 
 Signaler är den minsta informationsenheten inom Audience Manager. De representerar användarinteraktioner eller användaraktivitet i onlineegenskaperna och skickas vidare till Audience Manager för att användas i varumärkesregler.
 
@@ -46,4 +46,4 @@ På grund av den stora mängd data som Audience Manager dagligen behandlar, uppd
 
 ## Relaterade begrepp
 
-[Signaler, egenskaper och segment](/help/using/reference/signal-trait-segment.md)
+[Signaler, traits och segment](/help/using/reference/signal-trait-segment.md)
