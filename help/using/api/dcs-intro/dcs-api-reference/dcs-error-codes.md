@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1509'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -159,22 +159,22 @@ I tabellerna nedan representerar kursiv *text* en variabelplatshållare.
   <tr> 
    <td colname="col1"> <p>303 </p> </td> 
    <td colname="col2"> <p>Blockerat kund-ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Returneras när kund-ID:t har identifierats som skadligt och har lagts till i en denylist. </p> </td> 
+   <td colname="col3"> <p>Returneras när kund-ID:t har identifierats som skadligt och har lagts till i en blockeringslista. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>304 </p> </td> 
    <td colname="col2"> <p>ID för blockerad datakälla <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Returneras när datakällans ID har identifierats som skadligt och har lagts till i en denylist </p> </td> 
+   <td colname="col3"> <p>Returneras när datakällans ID har identifierats som skadligt och har lagts till i en blockeringslista </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>306 </p> </td> 
    <td colname="col2"> <p>Blockerat deklarerat enhets-ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Enhets-ID:t har identifierats som skadligt och har lagts till i en denylist Detta kan inträffa när vi på kort tid tar emot ett mycket stort antal <span class="wintitle"> DCS</span> -begäranden som innehåller detta enhets-ID. </p> </td>
+   <td colname="col3"> <p>Enhets-ID:t har identifierats som skadligt och har lagts till i en blockeringslista Det här kan hända om vi tar emot ett mycket stort antal <span class="wintitle"> DCS</span> -begäranden som innehåller detta enhets-ID på kort tid. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>307 </p> </td> 
    <td colname="col2"> <p>Spärrad profilåtgärd för <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>En läs-/skrivåtgärd har blockerats eftersom ett ID har identifierats som skadligt och har lagts till i en denylist Se felkod 306. </p> </td> 
+   <td colname="col3"> <p>En läs-/skrivåtgärd har blockerats eftersom ett ID har identifierats som skadligt och har lagts till i en blockeringslista Se felkod 306. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>309 </p> </td> 
@@ -245,4 +245,4 @@ Felkoderna och meddelandena [!DNL DCS] returneras i ett [!DNL JSON] objekt eller
 
 Felkoder som hämtas av X-header visas i URL-strängen så här, `X-Error: 101,102`.
 
-[Ansiktsvillkor och felhantering](../../../api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
+[Överbelastning och felhantering](../../../api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
