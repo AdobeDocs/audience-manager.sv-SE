@@ -1,15 +1,15 @@
 ---
 description: En URL-adress gör pixelanrop från en sida till målet. Följ de här instruktionerna för att skapa ett URL-mål med Destination Builder.
 seo-description: En URL-adress gör pixelanrop från en sida till målet. Följ de här instruktionerna för att skapa ett URL-mål med Destination Builder.
-seo-title: Konfigurera ett URL-mål
+seo-title: Konfigurera en URL-destination
 solution: Audience Manager
-title: Konfigurera ett URL-mål
+title: Konfigurera en URL-destination
 feature: Destination Basics
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -57,8 +57,8 @@ På så sätt kan du skicka segment till en [!DNL destination] sekventiell plats
 
 | Fält | Beskrivning |
 |--- |--- |
-| [!UICONTROL Base URL] | Basdelen av en standard `HTTP` [!DNL URL] som inte ändras. Du måste också placera `%ALIAS%` platshållarmakrot [](../../features/destinations/destination-macros.md#destination-macros-defined) i bas-URL:en. Exempel: `https://www.myCompany.com/%alias%...` |
-| [!UICONTROL Secure URL] | Basdelen av en säker `HTTPS` del [!DNL URL] som inte ändras. Du måste också placera `%ALIAS%` platshållarmakrot [](../../features/destinations/destination-macros.md#destination-macros-defined) i bas-URL:en. Exempel: `https://www.myCompany.com/%alias%...` |
+| [!UICONTROL Base URL] | Basdelen av en standard `HTTP` [!DNL URL] som inte ändras. Du måste också placera `%ALIAS%` platshållarmakrot [](../../features/destinations/destination-macros.md#destination-macros-defined) i bas-URL:en. Exempel på: `https://www.myCompany.com/%alias%...` |
+| [!UICONTROL Secure URL] | Basdelen av en säker `HTTPS` del [!DNL URL] som inte ändras. Du måste också placera `%ALIAS%` platshållarmakrot [](../../features/destinations/destination-macros.md#destination-macros-defined) i bas-URL:en. Exempel på: `https://www.myCompany.com/%alias%...` |
 | [!UICONTROL Delimiter] | Symbolen som avgränsar segmentvariablerna i [!DNL URL] strängen. Det här är vanligtvis ett komma eller semikolon. Hämta den här informationen från din målpartner. |
 
 ## [!UICONTROL Segment Mappings] {#segment-mappings}
