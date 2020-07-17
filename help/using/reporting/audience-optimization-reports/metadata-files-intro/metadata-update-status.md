@@ -92,11 +92,11 @@ I följande tabeller listas och definieras nycklarna i `Files` - och `Summary` -
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> MetadataType</code> </p> </td> 
-   <td colname="col2"> <p>Det läsbara namnet på den typ av data som filen innehåller. Det baseras på det underordnade ID:t i ditt filnamn. </p> <p>Se <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Namnkonventioner för metadatafiler</a>. </p> </td> 
+   <td colname="col2"> <p>Det läsbara namnet på den typ av data som filen innehåller. Det baseras på det underordnade ID:t i ditt filnamn. </p> <p>See <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Naming Conventions for Metadata Files</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Parent</code> </p> </td> 
-   <td colname="col2"> <p>Det läsbara namnet på den typ av data som filen innehåller. Det baseras på det överordnade ID:t i ditt filnamn. </p> <p>Se <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Namnkonventioner för metadatafiler</a>. </p> </td> 
+   <td colname="col2"> <p>Det läsbara namnet på den typ av data som filen innehåller. Det baseras på det överordnade ID:t i ditt filnamn. </p> <p>See <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Naming Conventions for Metadata Files</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Status</code> </p> </td> 
