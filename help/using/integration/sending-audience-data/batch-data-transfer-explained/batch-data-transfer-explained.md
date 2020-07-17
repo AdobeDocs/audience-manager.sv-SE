@@ -1,21 +1,21 @@
 ---
 description: En allmän översikt över hur Audience Manager utför ett asynkront batchdatautbyte med en tredjepartsleverantör.
 seo-description: En allmän översikt över hur Audience Manager utför ett asynkront batchdatautbyte med en tredjepartsleverantör.
-seo-title: Beskriver batchdataöverföringsprocessen
+seo-title: Beskrivning av satsvis överföring av data
 solution: Audience Manager
-title: Beskriver batchdataöverföringsprocessen
+title: Beskrivning av satsvis överföring av data
 uuid: a9eee940-151c-44f8-9fe9-8ab47d8fa45c
 feature: null
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 
-# Beskriver batchdataöverföringsprocessen {#batch-data-transfer-process-described}
+# Beskrivning av satsvis överföring av data {#batch-data-transfer-process-described}
 
 En allmän översikt över hur [!DNL Audience Manager] utför ett asynkront batchdatautbyte med en tredjepartsleverantör.
 
