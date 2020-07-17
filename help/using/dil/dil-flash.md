@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -158,8 +158,8 @@ s.loadModule(d);
 
 >[!MORELIKETHIS]
 >
->* [Traits](../features/traits/trait-details-page.md)
->* [Signaler, egenskaper och segment](../reference/signal-trait-segment.md)
->* [Förklaring av nyckelvärdepar](../reference/key-value-pairs-explained.md)
+>* [Traits ](../features/traits/trait-details-page.md)
+>* [Signaler, traits och segment](../reference/signal-trait-segment.md)
+>* [Förklaring av nyckelvärdespar](../reference/key-value-pairs-explained.md)
 >* [Prefixkrav för nyckelvariabler](../features/traits/trait-variable-prefixes.md)
 
