@@ -9,12 +9,12 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '496'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Data Explorer - Översikt, fördelar och användningsfall {#overview-benefits-and-use-cases}
+# Data Explorer – Översikt, fördelar och användningsexempel {#overview-benefits-and-use-cases}
 
 Använd för [!UICONTROL Data Explorer] att utnyttja historiska målgrupper genom att bygga upp egenskaper som bygger på använda och oanvända signaler och fylla dem med historiska data för att undvika potentiell förlust av relevanta målgrupper.
 
