@@ -1,23 +1,23 @@
 ---
 description: Med alternativen för sammanfogningsregeln kan du styra vilken typ av data Audience Manager använder för segmentering. En sammanfogningsregel kan innehålla enhetsprofiler som har mappats av enhetsdiagrammet Profile Link, Adobe Experience Cloud Device Co-op och/eller andra tredjepartsleverantörer av enhetsdiagram som är integrerade med Audience Manager. Du kan skapa maximalt fyra regler för profilsammanslagning.
 seo-description: Med alternativen för sammanfogningsregeln kan du styra vilken typ av data Audience Manager använder för segmentering. En sammanfogningsregel kan innehålla enhetsprofiler som har mappats av enhetsdiagrammet Profile Link, Adobe Experience Cloud Device Co-op och/eller andra tredjepartsleverantörer av enhetsdiagram som är integrerade med Audience Manager. Du kan skapa maximalt fyra regler för profilsammanslagning.
-seo-title: Alternativ för profilkopplingsregel definierade
+seo-title: Beskrivning av alternativen för regler för profilsammanslagning
 solution: Audience Manager
-title: Alternativ för profilkopplingsregel definierade
+title: Beskrivning av alternativen för regler för profilsammanslagning
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 feature: Profile Merge Rules
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
 # [!UICONTROL Profile Merge Rules] Alternativ definierade {#profile-merge-rule-options-defined}
 
-Med [!UICONTROL profile merge rule] alternativen kan du styra vilken typ av data som [!DNL Audience Manager] används för segmentering. Ett [!UICONTROL profile merge rule] program kan innehålla enhetsprofiler som mappats av [!UICONTROL Profile Link] enhetsdiagrammet, [!UICONTROL Adobe Experience Cloud Device Co-op]och/eller andra tredjepartsdiagramleverantörer som är integrerade med [!DNL Audience Manager]. Du kan skapa maximalt 4 [!UICONTROL Profile Merge Rules]. Den fjärde [!UICONTROL Profile Merge Rule] är exklusivt tillgänglig för kunder som köpt [!UICONTROL People-Based Destinations] tillägget.
+The [!UICONTROL profile merge rule] options let you control the type of data [!DNL Audience Manager] uses for segmentation. Ett [!UICONTROL profile merge rule] program kan innehålla enhetsprofiler som mappats av [!UICONTROL Profile Link] enhetsdiagrammet, [!UICONTROL Adobe Experience Cloud Device Co-op]och/eller andra tredjepartsdiagramleverantörer som är integrerade med [!DNL Audience Manager]. You can create a maximum of 4 [!UICONTROL Profile Merge Rules]. Den fjärde [!UICONTROL Profile Merge Rule] är exklusivt tillgänglig för kunder som köpt [!UICONTROL People-Based Destinations] tillägget.
 
 Du skapar en [!UICONTROL Profile Merge Rule] genom att göra ett val bland alternativen som beskrivs nedan [!UICONTROL Profile Merge Rule Setup].
 
@@ -108,13 +108,13 @@ Med den här ikonen kan du [!UICONTROL Device Options] välja vilken typ av *`de
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> Enhetsdiagram för profillänk</span></b> </p> </td> 
-   <td colname="col2"> <p>Uppmanar <span class="keyword"> Audience Manager</span> att läsa profilerna från den aktuella enheten och upp till 100 andra enheter som användaren har autentiserat från. Det här enhetsdiagrammet bygger på egna data från första part i <span class="keyword"> Audience Manager</span>. Det är idealiskt för kunder som har en hög autentiseringsnivå över sina digitala resurser. Enhetsdiagrammet <span class="wintitle"> Profile Link</span> uppdateras i realtid. Det här alternativet är tillgängligt när du väljer <b><span class="uicontrol"> Aktuell autentiserad profil</span></b> eller <b><span class="uicontrol"> Senaste autentiserade profil</span></b>. När du använder det här alternativet kan du bara välja en enda autentiserad profil (<span class="keyword"> Audience Manager</span> gråskalar automatiskt ut de andra). Se även, <a href="profile-link-use-case.md"> Profile Link Device Graph Use Case</a>. </p> </td>
+   <td colname="col2"> <p>Uppmanar <span class="keyword"> Audience Manager</span> att läsa profilerna från den aktuella enheten och upp till 100 andra enheter som användaren har autentiserat från. Det här enhetsdiagrammet bygger på egna data från första part i <span class="keyword"> Audience Manager</span>. Det är idealiskt för kunder som har en hög autentiseringsnivå över sina digitala resurser. Enhetsdiagrammet <span class="wintitle"> Profile Link</span> uppdateras i realtid. Det här alternativet är tillgängligt när du väljer <b><span class="uicontrol"> Aktuell autentiserad profil</span></b> eller <b><span class="uicontrol"> Senaste autentiserade profil</span></b>. När du använder det här alternativet kan du bara välja en enda autentiserad profil (<span class="keyword"> Audience Manager</span> gråskalar automatiskt ut de andra). See also, <a href="profile-link-use-case.md"> Profile Link Device Graph Use Cases</a>. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> Co-op Device Graph</span></b> </p> </td> 
    <td colname="col2"> <p>Uppmanar <span class="keyword"> Audience Manager</span> att läsa profilerna från den aktuella enheten och upp till 100 andra enheter med hjälp av länkarna från <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html" format="https" scope="external"> Experience Cloud Device Co-op</a>. </p> <p>Device Co-op <span class="keyword"></span> är ett digitalt samarbete där deltagande kunder delar information om enhetslänkar. Device Co-op <span class="keyword"> bearbetar dessa data i ett</span> enhetsdiagram <span class="term"></span>. Ett enhetsdiagram länkar samman enheter från enhetsgrupper. Länkarna bygger på <a href="https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/links.html" format="https" scope="external"> sannolikhetsdata och deterministiska data</a>. Klustren representerar en grupp enheter som används av en okänd person. Device Co-op <span class="keyword"></span> delar dessa kluster bland sina medlemmar, vilket hjälper dem att leverera värdefulla och enhetliga upplevelser på olika enheter till sina kunder. </p> <p> Mer information om Device Co-op <span class="wintitle"></span>finns i: </p> <p> 
      <ul id="ul_8EDA7D092ECD444C8C19CDC7534D84DE"> 
-      <li id="li_323BC5993D6A4BA3962169BF0ED37C55"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/home.html" format="https" scope="external"> Device Co-op - översikt</a> </li> 
+      <li id="li_323BC5993D6A4BA3962169BF0ED37C55"> <a href="https://docs.adobe.com/content/help/sv-SE/device-co-op/using/home.html" format="https" scope="external"> Device Co-op - översikt</a> </li> 
       <li id="li_0BDB2144EC584002B3B9F1D64B6CD580"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/requirements.html" format="https" scope="external"> Krav för medlemskap</a> </li> 
       <li id="li_632D1014909146758F07CFAC79B90CFE"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/device-graph-overview.html" format="https" scope="external"> Enhetsdiagram: Interna processer och utdata</a> </li>
      </ul> </p> </td>
@@ -132,7 +132,7 @@ Med den här ikonen kan du [!UICONTROL Device Options] välja vilken typ av *`de
 
 ## [!UICONTROL External Merge Policies] {#external-merge-policies}
 
-Målgruppssegment som automatiskt skapats från andra [!DNL Experience Cloud] lösningar, baserat på sammanfogningsregler som definierats utanför [!DNL Audience Manager], markeras som om de använder en [!UICONTROL External Merge Policy]. Se till exempel [Målgruppsdelning mellan Audience Manager och Adobe Experience Platform](../../integration/integration-aep/aam-aep-audience-sharing.md).
+Målgruppssegment som automatiskt skapats från andra [!DNL Experience Cloud] lösningar, baserat på sammanfogningsregler som definierats utanför [!DNL Audience Manager], markeras som om de använder en [!UICONTROL External Merge Policy]. For example, see [Audience Sharing Between Audience Manager and Adobe Experience Platform](../../integration/integration-aep/aam-aep-audience-sharing.md).
 
 >[!MORELIKETHIS]
 >
