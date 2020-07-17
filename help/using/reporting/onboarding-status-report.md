@@ -1,21 +1,21 @@
 ---
 description: Statusrapporten för introduktion kontrollerar om det går att bearbeta poster i dina inkommande datakällfiler och om de misslyckas. Den här rapporten visar data i ett interaktivt stapeldiagram och ger sammanfattningsvärden i tabellform. Dessutom innehåller det ett alternativ som samplar filer för ett fast tidsintervall och visar de vanligaste felen för varje feltyp. Den här rapporten finns i Analytics > Statusrapport för introduktion. Den här rapporten är också tillgänglig när du skapar en inkommande datakälla.
 seo-description: Statusrapporten för introduktion kontrollerar om det går att bearbeta poster i dina inkommande datakällfiler och om de misslyckas. Den här rapporten visar data i ett interaktivt stapeldiagram och ger sammanfattningsvärden i tabellform. Dessutom innehåller det ett alternativ som samplar filer för ett fast tidsintervall och visar de vanligaste felen för varje feltyp. Den här rapporten finns i Analytics > Statusrapport för introduktion. Den här rapporten är också tillgänglig när du skapar en inkommande datakälla.
-seo-title: Statusrapport för introduktion
+seo-title: Statusrapport för onboarding
 solution: Audience Manager
-title: Statusrapport för introduktion
+title: Statusrapport för onboarding
 uuid: 6ca8a90a-436b-4fce-adf1-48f3b96b3ed2
 feature: inbound and outbound reports
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '1498'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Statusrapport för introduktion{#onboarding-status-report-about}
+# Statusrapport för onboarding{#onboarding-status-report-about}
 
 Statusrapporten för introduktion kontrollerar om det går att bearbeta poster i dina inkommande datakällfiler och om de misslyckas. Den här rapporten visar data i ett interaktivt stapeldiagram och ger sammanfattningsvärden i tabellform. Dessutom innehåller det ett alternativ som samplar filer för ett fast tidsintervall och visar de vanligaste felen för varje feltyp. Den här rapporten finns i Analytics > Statusrapport för introduktion. Den här rapporten är också tillgänglig när du skapar en inkommande datakälla.
 
@@ -124,7 +124,7 @@ En referenshandbok för de etiketter och termer som används i den här rapporte
    <td colname="col1"> <p> <b>Datasynkroniseringsfilnamn</b> </p> </td> 
    <td colname="col2"> <p>Visar filer som <span class="keyword"> Audience Manager</span> har tagit emot och bearbetat från den valda inkommande datakällan. </p> <p>Filbearbetning misslyckas om filnamnet är felaktigt formaterat. Vilka filnamn som krävs varierar beroende på hur du skickar dessa data till <span class="keyword"> Audience Manager</span>. Leveransmetoderna är bland annat <span class="keyword"> Amazon S3</span> och FTP. Instruktioner om hur du namnger filer finns i: </p> <p> 
      <ul id="ul_9A32906A14CA41C5AED0E13930DB31BA"> 
-      <li id="li_A5A0E6ED711D4002B52092619F87C7D6"> <a href="../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md"> Amazon S3-namnkrav för inkommande datafiler </a> </li> 
+      <li id="li_A5A0E6ED711D4002B52092619F87C7D6"> <a href="../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md"> Krav på Amazon S3-namn och filstorlekar för inkommande datafiler </a> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
