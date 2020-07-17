@@ -1,21 +1,21 @@
 ---
 description: När Audience Manager skickar segmentinformation till en datapartner identifieras dessa objekt med numeriska ID:n. När du som datapartner delar informationen med dina kunder (eller arbetar med den själv) ger ett faktiskt namn och en beskrivning en bättre upplevelse för kunderna i rapporter, instrumentpaneler eller andra användargränssnitt. Data partners kan göra dessa egna namn tillgängliga för sina kunder med antingen de manuella eller automatiserade metoder som beskrivs i detta avsnitt.
 seo-description: När Audience Manager skickar segmentinformation till en datapartner identifieras dessa objekt med numeriska ID:n. När du som datapartner delar informationen med dina kunder (eller arbetar med den själv) ger ett faktiskt namn och en beskrivning en bättre upplevelse för kunderna i rapporter, instrumentpaneler eller andra användargränssnitt. Data partners kan göra dessa egna namn tillgängliga för sina kunder med antingen de manuella eller automatiserade metoder som beskrivs i detta avsnitt.
-seo-title: Hämtar segmentmetadata
+seo-title: Hämta segmentmetadata
 solution: Audience Manager
-title: Hämtar segmentmetadata
+title: Hämta segmentmetadata
 uuid: 719e2c41-8788-4e8a-967a-e367421f9f84
 feature: Segments
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Hämtar segmentmetadata {#retrieving-segment-metadata}
+# Hämta segmentmetadata {#retrieving-segment-metadata}
 
 När Audience Manager skickar segmentinformation till en datapartner identifieras dessa objekt med numeriska ID:n. När du som datapartner delar informationen med dina kunder (eller arbetar med den själv) ger ett faktiskt namn och en beskrivning en bättre upplevelse för kunderna i rapporter, instrumentpaneler eller andra användargränssnitt ([!DNL UI]). Data partners kan göra dessa egna namn tillgängliga för sina kunder med antingen de manuella eller automatiserade metoder som beskrivs i detta avsnitt.
 
