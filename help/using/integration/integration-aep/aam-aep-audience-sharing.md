@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1177'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -38,7 +38,7 @@ Dessutom delas era Experience Platform-segment med andra Experience Cloud-lösni
 
 Se tabellen nedan för en översikt över användningsfall för målgruppsdelning:
 
-| **Användningsfall** | **Adobe Experience Platform** | **Audience Manager** | **Centrala tjänster** |
+| **Användningsexempel** | **Adobe Experience Platform** | **Audience Manager** | **Centrala tjänster** |
 ---------|----------|---------|---------
 | **Målgruppsdelning** | <ul><li>Förbättra kundprofiler med data från Audience Manager</li><li>Använd data från Audience Manager i segmenteringen Experience Platform</li></ul> | <ul><li>Lägg till data från tredje part i segment</li><li>Algoritmisk modellering</li><li>Aktivering till ytterligare destinationer</li></ul> | Använd Experience Platform-segment i andra Experience Cloud-lösningar, som Adobe Target eller Analytics. |
 
