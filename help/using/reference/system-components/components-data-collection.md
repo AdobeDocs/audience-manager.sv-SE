@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -58,11 +58,11 @@ I ett händelseanrop hämtas geografisk plats i ett nyckelvärdepar som returner
 
 ![](assets/dcs-map.png)
 
-Som kund interagerar ni med det [!DNL DCS] indirekt via vår datainsamlingskod. Du kan också arbeta direkt med [!DNL DCS] via en uppsättning API:er. Se API-metoder och kod [för](../../api/dcs-intro/dcs-event-calls/dcs-event-calls.md)Data Collection Server (DCS).
+Som kund interagerar ni med det [!DNL DCS] indirekt via vår datainsamlingskod. Du kan också arbeta direkt med [!DNL DCS] via en uppsättning API:er. See [Data Collection Server (DCS) API Methods and Code](../../api/dcs-intro/dcs-event-calls/dcs-event-calls.md).
 
 **[!UICONTROL Profile Cache Servers (PCS)]**
 
-Det [!UICONTROL PCS] är en stor databas (i stort sett en stor cookie på serversidan). Den lagrar data som tas emot för aktiva användare från server till server-överföringar och [!DNL DCS]. [!UICONTROL PCS] data består av enhets-ID, autentiserade profil-ID:n och tillhörande egenskaper. När användaren [!DNL DCS] får ett realtidssamtal kontrolleras [!UICONTROL PCS] om användaren har andra egenskaper som han/hon kan tillhöra eller vara berättigad till. Och om en egenskap läggs till i ett segment vid ett senare tillfälle läggs dessa trait-ID:n till i [!UICONTROL PCS] och användarna kan kvalificera sig för det segmentet automatiskt, utan att besöka en viss webbplats eller app. Detta [!UICONTROL PCS] bidrar till att fördjupa [!DNL Audience Manager]förståelsen för era användare eftersom det kan matcha och segmentera användare i realtid eller bakom kulisserna med nya och historiska traits-data. Detta beteende ger en mer fullständig och korrekt bild av era användare än bara med realtidskvalifikationer.
+Det [!UICONTROL PCS] är en stor databas (i stort sett en stor cookie på serversidan). Den lagrar data som tas emot för aktiva användare vid server till server-överföringar och [!DNL DCS]. [!UICONTROL PCS]-data består av enhets-ID, autentiserade profil-ID:n och tillhörande traits. När användaren [!DNL DCS] får ett realtidssamtal kontrolleras [!UICONTROL PCS] om användaren har andra egenskaper som han/hon kan tillhöra eller vara berättigad till. Och om en egenskap läggs till i ett segment vid ett senare tillfälle läggs dessa trait-ID:n till i [!UICONTROL PCS] och användarna kan kvalificera sig för det segmentet automatiskt, utan att besöka en viss webbplats eller app. Detta [!UICONTROL PCS] bidrar till att fördjupa [!DNL Audience Manager]förståelsen för era användare eftersom det kan matcha och segmentera användare i realtid eller bakom kulisserna med nya och historiska traits-data. Detta beteende ger en mer fullständig och korrekt bild av era användare än bara med realtidskvalifikationer.
 
 Det finns inga gränssnittskontroller som gör att våra kunder kan arbeta direkt med [!UICONTROL PCS]. Kundåtkomst till [!UICONTROL PCS] är indirekt genom sin roll som datalager och dataöverföringar. De [!UICONTROL PCS] springer på Apache Cassandra.
 
@@ -83,9 +83,9 @@ Tömningarna [!UICONTROL PCS] går om de är inaktiva i 17 dagar. De här egensk
 
 **Andra[!UICONTROL DCS/PCS]processer: Avanmäl dig till sekretess**
 
-Dessa serversystem hanterar förfrågningar om sekretess och avanmälan av användare. Information om användarens cookie samlas inte in i loggfilen om en användare har avanmält sig från datainsamlingen. Mer information om vår sekretesspolicy finns i [Adobes sekretesscenter](https://www.adobe.com/privacy/advertising-services.html).
+Dessa serversystem hanterar förfrågningar om sekretess och avanmälan av användare. Information om användarens cookie samlas inte in i loggfilen om en användare har avanmält sig från datainsamlingen. Mer information om vår sekretesspolicy finns i [Adobes sekretesscenter](https://www.adobe.com/se/privacy/advertising-services.html).
 
-## Dataintegreringsbibliotek (DIL) {#dil}
+## Data Integration Library (DIL)  {#dil}
 
 [!UICONTROL DIL] är kod som du placerar på sidan för datainsamling. Mer information om tillgängliga tjänster och metoder finns i [DIL API](../../dil/dil-overview.md) .
 
@@ -99,5 +99,5 @@ Data [!UICONTROL PCS] skapas och skrivs till loggfilerna. Dessa skickas till and
 
 >[!MORELIKETHIS]
 >
->* [Adobes sekretesscenter](https://www.adobe.com/privacy.html)
+>* [Adobes sekretesscenter](https://www.adobe.com/se/privacy.html)
 
