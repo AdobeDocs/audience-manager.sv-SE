@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -22,4 +22,4 @@ Tredjepartsleverantörer av innehåll kan förvänta sig att de utbyter data med
 <!-- c_rt_realtime_intro.xml -->
 
 * [Pixelbaserade dataöverföringar](/help/using/integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)
-* [Ingående datainmatning i realtid](/help/using/integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)
+* [Inkommande datainmatning i realtid](/help/using/integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)
