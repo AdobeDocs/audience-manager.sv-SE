@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -108,7 +108,7 @@ c_dil_hrefer_over_https.xml
 >
 >Den här metoden fungerar bara när användare flyttar mellan sidor med liknande protokoll (HTTP eller HTTPS). Webbläsaren behåller till exempel en refererande URL när du navigerar från en säker plats till en annan säker plats. Webbläsare behåller inte den refererande URL:en när du förflyttar dig mellan säkra och osäkra webbplatser. Detta beteende är normal webbläsarfunktionalitet och kan inte kringgås av [!UICONTROL DIL].
 
-**Kodexempel**
+**Exempel på kod**
 
 Koden kan se ut ungefär så här:
 
@@ -198,7 +198,7 @@ I ett nyckelvärdepar identifierar det prefix som är bifogat till nyckeln signa
 
 Du kan till exempel samla in ZIP-koddata från en viss plats men vill rikta dem till alla dina Audience Manager-egenskaper. För att ZIP-koden ska vara tillgänglig på plattformsnivå kan du mappa en kunddefinierad postnummernyckel (t.ex. `c_zip`) till en plattformsdefinierad nyckel enligt nedan.
 
-**Kodexempel**
+**Exempel på kod**
 
 Koden kan se ut ungefär så här:
 
