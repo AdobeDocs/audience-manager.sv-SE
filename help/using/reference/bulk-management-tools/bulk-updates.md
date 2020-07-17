@@ -2,21 +2,21 @@
 description: Med en gruppuppdatering kan du redigera flera segment, egenskaper, modeller, datakällor samt segmentera eller anpassa mappelement i en enda åtgärd. Följ dessa anvisningar för att göra satsvisa uppdateringar.
 keywords: baaam
 seo-description: Med en gruppuppdatering kan du redigera flera segment, egenskaper, modeller, datakällor samt segmentera eller anpassa mappelement i en enda åtgärd. Följ dessa anvisningar för att göra satsvisa uppdateringar.
-seo-title: Massuppdateringar
+seo-title: Satsvisa uppdateringar
 solution: Audience Manager
-title: Massuppdateringar
+title: Satsvisa uppdateringar
 uuid: 22f1badd-a274-4d3e-9957-a24bf8c1d0dc
 feature: baaam
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Massuppdateringar{#bulk-updates}
+# Satsvisa uppdateringar{#bulk-updates}
 
 Med en gruppuppdatering kan du redigera flera segment, egenskaper, modeller, datakällor samt segmentera eller anpassa mappelement i en enda åtgärd. Följ dessa anvisningar för att göra satsvisa uppdateringar.
 
