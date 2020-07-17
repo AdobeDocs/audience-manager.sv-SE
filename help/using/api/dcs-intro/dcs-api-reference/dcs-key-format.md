@@ -1,25 +1,25 @@
 ---
 description: När DCS anropar tar det emot nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
 seo-description: När DCS anropar tar det emot nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
-seo-title: Formatera nyckelvärdepar i DCS-anrop
+seo-title: Formatera nyckelvärdespar i DCS-anrop
 solution: Audience Manager
-title: Formatera nyckelvärdepar i DCS-anrop
+title: Formatera nyckelvärdespar i DCS-anrop
 uuid: af02f2a1-4388-4074-ab4e-66ee82023f1c
 feature: DCS
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Formatera nyckelvärdepar i DCS-anrop {#formatting-key-value-pairs-in-dcs-calls}
+# Formatera nyckelvärdespar i DCS-anrop {#formatting-key-value-pairs-in-dcs-calls}
 
 När användaren gör ett anrop tar [!DNL DCS] användaren emot nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
 
-## Standardpar och serialiserade nyckelvärdepar {#standard-serialized}
+## Standard and Serialized Key-Value Pairs {#standard-serialized}
 
 <table id="table_A220F9B359F34C6EA7B83618FC22EE3A"> 
  <thead> 
@@ -32,7 +32,7 @@ När användaren gör ett anrop tar [!DNL DCS] användaren emot nyckelvärdesdat
  <tbody> 
   <tr> 
    <td colname="col1"> <b>Standard</b> </td> 
-   <td colname="col2"> <p>Ett standardpar med nyckelvärden består av en enda nyckel och ett värde. I den här strukturen ordnas data i separata nyckelvärdepar. Varje nyckel anges uttryckligen, även när den används igen för att definiera ett annat värde. Detta är det vanligaste sättet att skicka data till DCS. </p> </td>
+   <td colname="col2"> <p>Ett standardpar med nyckelvärden består av en enda nyckel och ett värde. I den här strukturen ordnas data i separata nyckelvärdepar. Varje nyckel anges explicit, även när den används igen för att definiera ett annat värde. Detta är det vanligaste sättet att skicka data till DCS. </p> </td>
    <td colname="col3"> <code> key1=val1&amp;key2=val2&amp;key3=val3</code> </td>
   </tr>
   <tr> 
@@ -73,5 +73,5 @@ Med serialiserade nyckelvärdepar måste du ange markörerna som avgränsar vär
 >
 >* [Skicka data till DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)
 >* [Nyckelvärdesprefix och variabler som stöds av DCS](../../../api/dcs-intro/dcs-api-reference/dcs-keys.md)
->* [Förklaring av nyckelvärdepar](../../../reference/key-value-pairs-explained.md)
+>* [Förklaring av nyckelvärdespar](../../../reference/key-value-pairs-explained.md)
 
