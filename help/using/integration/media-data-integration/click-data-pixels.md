@@ -1,21 +1,21 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: Samla in data för kampanjklickningar via pixelanrop
+seo-title: Samla in klickdata för kampanjer med pixelanrop
 solution: Audience Manager
-title: Samla in data för kampanjklickningar via pixelanrop
+title: Samla in klickdata för kampanjer med pixelanrop
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 feature: Integration with Campaign
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 5%
+ht-degree: 10%
 
 ---
 
 
-# Samla in data för kampanjklickningar via pixelanrop {#capturing-campaign-click-data-via-pixel-calls}
+# Samla in klickdata för kampanjer med pixelanrop {#capturing-campaign-click-data-via-pixel-calls}
 
 Klickspårning möjliggör mätning av besökarnas engagemang under hela kampanjen, eftersom klickbaserade aktiviteter registreras för tredjepartskreatörer. På samma sätt som vid [avtrycksinsamling](/help/using/integration/media-data-integration/impression-data-pixels.md)skickas ett händelseanrop till [!DNL Audience Manager] datainsamlingsservrarna ([!DNL DCS]) för bearbetning. Besökaren omdirigeras sedan till den avsedda webbadressen.
 
@@ -97,7 +97,7 @@ Klickhändelser stöder de makron som anges i följande tabell. Ett makro är en
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Experience Cloud</span> -ID (ECID). Mer information om ECID finns i <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID</a>. </p> <p>Valfritt. </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"></span> Experience Cloud ID (ECID). Mer information om ECID finns i <a href="https://docs.adobe.com/content/help/sv-SE/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID</a>. </p> <p>Valfritt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_placement</code> </p> </td> 
