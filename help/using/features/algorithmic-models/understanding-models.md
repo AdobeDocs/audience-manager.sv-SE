@@ -80,7 +80,7 @@ Utvärderar regelbundet [!UICONTROL TraitWeight] vikten av ett projekt [!UICONTR
 Relaterade länkar:
 
 * [Model Builder](../../features/algorithmic-models/create-model.md)
-* [Noggrannhet och räckvidd](../../features/traits/trait-accuracy-reach.md)
+* [Precision och räckvidd](../../features/traits/trait-accuracy-reach.md)
 
 ## Uppdatera schema för [!UICONTROL Look-Alike Models] och [!UICONTROL Traits] {#update-schedule}
 
@@ -102,7 +102,7 @@ Skapa och uppdatera scheman för nya eller befintliga [!UICONTROL algorithmic mo
      <ul id="ul_97333AC409AF4760A91D90A06050122B"> 
       <li id="li_3A43809F924341FCAC3A85E3825E0F61"> 17:00 EST (november - mars) </li> 
       <li id="li_C07D22AB192D4E0191D9EBF6426EC73D"> 6:00 EDT (mars - november) </li> 
-     </ul> </p> <p>Modeller som byggts eller klonats efter att tidsgränsen för skapandet har uppnåtts behandlas följande dag. </p> <p>Om den första körningen av en modell inte genererar några data kommer den att köras en andra gång nästa dag. Om det andra försöket inte genererar några data kommer det att göras ett tredje försök nästa dag. Modellen kommer att sluta köras om det tredje försöket inte genererar några data. I det här fallet inaktiverar vi modellen. Se mer i <a href="../../features/algorithmic-models/understanding-models.md#troubleshooting"> Felsöka stilliknande modeller</a>. </p> </td>
+     </ul> </p> <p>Modeller som byggts eller klonats efter att tidsgränsen för skapandet har uppnåtts behandlas följande dag. </p> <p>Om den första körningen av en modell inte genererar några data körs den en andra gång, nästa dag. Om det andra försöket inte genererar några data kommer det att göras ett tredje försök nästa dag. Modellen kommer att sluta köras om det tredje försöket inte genererar några data. I det här fallet inaktiverar vi modellen. Se mer i <a href="../../features/algorithmic-models/understanding-models.md#troubleshooting"> Felsöka stilliknande modeller</a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <b>Uppdatera en modell</b> </td> 
@@ -191,7 +191,7 @@ Modellsammanfattningssidan innehåller följande avsnitt.
 
 >[!MORELIKETHIS]
 >
->* [Mål](../../features/destinations/destinations.md)
->* [Traits](../../features/traits/trait-details-page.md)
->* [Segment](../../features/segments/segments-purpose.md)
+>* [Destinationer ](../../features/destinations/destinations.md)
+>* [Traits ](../../features/traits/trait-details-page.md)
+>* [Segment ](../../features/segments/segments-purpose.md)
 
