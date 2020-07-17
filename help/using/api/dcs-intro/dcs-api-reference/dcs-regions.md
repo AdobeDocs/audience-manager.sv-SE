@@ -1,21 +1,21 @@
 ---
 description: Det regionala DCS-servervärdnamnet krävs för att anropa DCS. Detta beror på att DCS lagrar information i datacenter som ligger geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel DCS, men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en DCS-begäran måste du matcha region-ID:t med motsvarande regionalt värdnamn och skapa frågan med rätt värdnamn.
 seo-description: Det regionala DCS-servervärdnamnet krävs för att anropa DCS. Detta beror på att DCS lagrar information i datacenter som ligger geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel DCS, men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en DCS-begäran måste du matcha region-ID:t med motsvarande regionalt värdnamn och skapa frågan med rätt värdnamn.
-seo-title: DCS-region-ID, -platser och -värdnamn
+seo-title: ID:n för DCS-regioner, -platser och -värdnamn
 solution: Audience Manager
-title: ID för DCS-region, -platser och -värdnamn
+title: ID:n för DCS-regioner, -platser och -värdnamn
 uuid: ad150ffe-4583-472b-ac8b-fb900a7966e4
 feature: DCS
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 
-# ID för DCS-region, -platser och -värdnamn {#dcs-region-ids-locations-and-host-names}
+# ID:n för DCS-regioner, -platser och -värdnamn {#dcs-region-ids-locations-and-host-names}
 
 Det regionala [!DNL DCS] servervärdnamnet krävs för att anropa [!DNL DCS]. Detta beror på att informationen [!DNL DCS] lagras i datacenter som är geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel [!DNL DCS], men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en [!DNL DCS] begäran måste du matcha region-ID:t med dess motsvarande regionala värdnamn och skapa frågan med rätt värdnamn.
 
@@ -71,4 +71,4 @@ Det regionala [!DNL DCS] servervärdnamnet krävs för att anropa [!DNL DCS]. De
  </tbody> 
 </table>
 
-Du kan också använda [!DNL API] metoder för att hämta en lista över tillgängliga [!DNL DCS] regioner. Se API-metoder för [DCS-regioner](../../../api/rest-api-main/aam-api-dcs-regions.md).
+Du kan också använda [!DNL API] metoder för att hämta en lista över tillgängliga [!DNL DCS] regioner. See [DCS Region API Methods](../../../api/rest-api-main/aam-api-dcs-regions.md).
