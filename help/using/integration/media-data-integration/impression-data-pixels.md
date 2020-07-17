@@ -1,21 +1,21 @@
 ---
 description: Ett tillvägagångssätt för att skicka mediedata till Audience Manager använder annonsservermakron för att skicka kampanjattribut till Audience Manager.
 seo-description: Ett tillvägagångssätt för att skicka mediedata till Audience Manager använder annonsservermakron för att skicka kampanjattribut till Audience Manager.
-seo-title: Samla in data för kampanjexponering via pixelanrop
+seo-title: Samla in annonsvisningsdata för kampanjer med pixelanrop
 solution: Audience Manager
-title: Samla in data för kampanjexponering via pixelanrop
+title: Samla in annonsvisningsdata för kampanjer med pixelanrop
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 feature: Integration with Campaign
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 17%
+ht-degree: 20%
 
 ---
 
 
-# Samla in data för kampanjexponering via pixelanrop{#capturing-campaign-impression-data-via-pixel-calls}
+# Samla in annonsvisningsdata för kampanjer med pixelanrop{#capturing-campaign-impression-data-via-pixel-calls}
 
 Ett tillvägagångssätt för att skicka mediedata till Audience Manager använder annonsservermakron för att skicka kampanjattribut till Audience Manager.
 
