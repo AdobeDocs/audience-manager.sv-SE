@@ -1,27 +1,27 @@
 ---
 description: Om du vill skapa en granskning av regler för profilsammanslagning och slutföra stegen i varje procedur som beskrivs i det här avsnittet.
 seo-description: Om du vill skapa en granskning av regler för profilsammanslagning och slutföra stegen i varje procedur som beskrivs i det här avsnittet.
-seo-title: Komma igång med profilkopplingsregler
+seo-title: Komma igång med regler för profilsammanslagning
 solution: Audience Manager
-title: Komma igång med profilkopplingsregler
+title: Komma igång med regler för profilsammanslagning
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 feature: Profile Merge Rules
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1327'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Komma igång med profilkopplingsregler {#getting-started-with-profile-merge-rules}
+# Komma igång med regler för profilsammanslagning {#getting-started-with-profile-merge-rules}
 
 Om du vill skapa, granska [!UICONTROL Profile Merge Rules]och slutföra stegen i varje procedur som beskrivs i det här avsnittet.
 
 <!-- merge-rules-start.xml -->
 
-## Skapa en datakälla för olika enheter {#create-data-source}
+## Create a Cross-Device Data Source {#create-data-source}
 
 Om du vill skapa en datakälla för olika enheter går du till **[!UICONTROL Audience Data > Data Sources > Add New]** och slutför stegen som beskrivs här. Administratörsbehörigheter krävs för att skapa eller redigera en datakälla för olika enheter.
 
@@ -43,7 +43,7 @@ Så här slutför du [!UICONTROL Data Source Details] avsnittet:
    * **[!UICONTROL Person]**: Ett ID som definierar en person. Detta ID kan mappas till flera [!DNL Audience Manager] ID:n.
    * **[!UICONTROL Household]**: Ett ID som definierar en grupp personer. Detta ID kan mappas till flera [!DNL Audience Manager] ID:n.
 
-## Dataexportkontroller {#export-controls}
+## Kontroller vid dataexport {#export-controls}
 
 [Dataexportkontroller](../data-export-controls.md) är valfria klassificeringsregler som du kan tillämpa på en datakälla och ett mål. De förhindrar dig från att skicka data till ett mål när den åtgärden bryter mot en datasekretess eller användaravtal. Hoppa över det här avsnittet om du inte använder det [!UICONTROL Data Export Controls].
 
@@ -69,7 +69,7 @@ Administratörsbehörighet krävs för att skapa, redigera eller ta bort en rege
 
 <!-- create-profile-merge-rule.xml -->
 
-**Förutsättningar:** Det krävs en datakälla för olika enheter för att skapa en [!UICONTROL Profile Merge Rule]. Se [Skapa en datakälla](../manage-datasources.md#create-data-source).
+**Förutsättningar:** Det krävs en datakälla för olika enheter för att skapa en [!UICONTROL Profile Merge Rule]. See [Create a Data Source](../manage-datasources.md#create-data-source).
 
 >[!TIP]
 >
@@ -83,7 +83,7 @@ Så här slutför du [!UICONTROL Basic Information] avsnittet:
 2. *(Valfritt)* Beskriv [!UICONTROL Profile Merge Rule]. En kortfattad beskrivning hjälper dig att definiera regelns roll eller syfte.
 3. *(Valfritt)* Välj **[!UICONTROL Set as default]** om du vill göra det här till standard [!UICONTROL Profile Merge Rule]. Nya segment kopplas automatiskt till standardregeln.
 
-## Dataexportkontroller {#data-export-controls}
+## Kontroller vid dataexport {#data-export-controls}
 
 [Dataexportkontroller](../data-export-controls.md) är valfria klassificeringsregler som du kan tillämpa på dina [!UICONTROL Profile Merge Rule]. De förhindrar dig från att skicka data till ett mål när den åtgärden bryter mot en datasekretess eller användaravtal. Hoppa över det här avsnittet om du inte använder det [!UICONTROL Data Export Controls].
 
@@ -167,7 +167,7 @@ var vDil = DIL.create({
 });
 ```
 
-I namnutrymmets nyckelvärdepar är `*`MCORG`*` -variabeln ditt [!DNL Experience Cloud] Organization ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration] avsnittet på [!DNL Experience Cloud] instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: Bastjänster](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
+I namnutrymmets nyckelvärdepar är `*`MCORG`*` -variabeln ditt [!DNL Experience Cloud] Organization ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration] avsnittet på [!DNL Experience Cloud] instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: Bastjänster](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 ### Konfigurera SDK:er
 
