@@ -236,7 +236,7 @@ ht-degree: 94%
          + [Översikt över API-referens för DCS](api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)
          + [DCS API-metoder](api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
          + [Felkoder, meddelanden och exempel för DCS](api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
-         + [ID-övervakning och Neka-lista](api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
+         + [ID-övervakning och Blockeringslistning](api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
          + [ID:n för DCS-regioner, -platser och -värdnamn](api/dcs-intro/dcs-api-reference/dcs-regions.md)
          + [Formatera nyckelvärdespar i DCS-anrop](api/dcs-intro/dcs-api-reference/dcs-key-format.md)
          + [Överbelastning och felhantering](api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
