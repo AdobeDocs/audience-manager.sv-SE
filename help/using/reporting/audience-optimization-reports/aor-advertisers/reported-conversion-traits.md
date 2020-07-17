@@ -1,9 +1,9 @@
 ---
 description: Rapporten Conversion Traits visar alla egenskaper som märkts som konverteringsegenskaper för en konverteringsgrupp vid ett visst datum. Konverteringsegenskaper för konverteringsgrupper kan ändras från rapportkörning till rapportkörning. Rapporten visar konverteringsegenskaper per konverteringsgrupp för det valda rapportdatumet.
 seo-description: Rapporten Conversion Traits visar alla egenskaper som märkts som konverteringsegenskaper för en konverteringsgrupp vid ett visst datum. Konverteringsegenskaper för konverteringsgrupper kan ändras från rapportkörning till rapportkörning. Rapporten visar konverteringsegenskaper per konverteringsgrupp för det valda rapportdatumet.
-seo-title: Rapporterade konverteringsegenskaper
+seo-title: Rapporterade konverterings-traits
 solution: Audience Manager
-title: Rapporterade konverteringsegenskaper
+title: Rapporterade konverterings-traits
 uuid: b4b5eb9c-d83e-4e7f-8661-f5d9c855258b
 feature: audience optimization reports
 translation-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 5%
 ---
 
 
-# Rapporterade konverteringsegenskaper{#reported-conversion-traits}
+# Rapporterade konverterings-traits{#reported-conversion-traits}
 
 Rapporten Conversion Traits visar alla egenskaper som märkts som konverteringsegenskaper för en konverteringsgrupp vid ett visst datum.
 
