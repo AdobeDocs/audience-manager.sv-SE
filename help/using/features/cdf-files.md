@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1860'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ Grundläggande information om [!UICONTROL Customer Data Feed] ([!UICONTROL CDF])
 
 ## Filinnehåll och syfte {#file-contents-purpose}
 
-En [!UICONTROL CDF] fil innehåller samma data som ett [!DNL Audience Manager] händelseanrop (`/event`) skickar till våra servrar. Detta inkluderar data som användar-ID:n, [!UICONTROL trait IDs][!UICONTROL segment IDs]och alla andra parametrar som fångats in av ett händelseanrop. I interna [!DNL Audience Manager] system bearbetas händelsedata i en [!UICONTROL CDF] fil med innehåll organiserat i fält som visas i en viss ordning. [!DNL Audience Manager] försöker generera [!UICONTROL CDF] filer varje timme och lagrar dem i en säker, kundspecifik bucket på en [!DNL Amazon S3] server. Vi tillhandahåller dessa filer så att du kan arbeta med [!DNL Audience Manager] data som ligger utanför de gränser som våra användargränssnitt har.
+En [!UICONTROL CDF]-fil innehåller samma data som ett [!DNL Audience Manager]-händelseanrop (`/event`) skickar till våra servrar. This includes data like user IDs, [!UICONTROL trait IDs], [!UICONTROL segment IDs], and all the other parameters captured by an event call. I interna [!DNL Audience Manager] system bearbetas händelsedata i en [!UICONTROL CDF] fil med innehåll organiserat i fält som visas i en viss ordning. [!DNL Audience Manager] försöker generera [!UICONTROL CDF] filer varje timme och lagrar dem i en säker, kundspecifik bucket på en [!DNL Amazon S3] server. Vi tillhandahåller dessa filer så att du kan arbeta med [!DNL Audience Manager] data som ligger utanför de gränser som våra användargränssnitt har.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Det finns ingen självbetjäningsprocess för att starta [!UICONTROL CDF] fillev
 * Konfigurera din [!DNL Amazon S3] lagringskucket.
 * Ange skrivskyddade autentiseringsuppgifter [!DNL S3] för din fillagringsbucket. Du kommer inte att kunna se eller komma åt kataloger och filer som tillhör andra kunder.
 
-Filmeddelanden och [!UICONTROL CDF] filer visas i din [!DNL S3] bucket när de är klara för nedladdning. Du ansvarar för att övervaka och hämta filer från din tilldelade [!DNL S3] katalog. Se [Meddelanden](#cdf-file-processing-notifications)om filbearbetning av kunddatafeed.
+Filmeddelanden och [!UICONTROL CDF] filer visas i din [!DNL S3] bucket när de är klara för nedladdning. Du ansvarar för att övervaka och hämta filer från din tilldelade [!DNL S3] katalog. Se [Bearbetningsmeddelanden för CDF-filer](#cdf-file-processing-notifications).
 
 ## Nästa steg {#next-steps}
 
@@ -53,7 +53,7 @@ En [!UICONTROL CDF] fil innehåller några eller alla fält som definieras nedan
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Fält </th> 
-   <th colname="col2" class="entry"> Datatyp </th> 
+   <th colname="col2" class="entry"> Datatyper </th> 
    <th colname="col3" class="entry"> Beskrivning </th> 
   </tr> 
  </thead>
@@ -63,14 +63,14 @@ En [!UICONTROL CDF] fil innehåller några eller alla fält som definieras nedan
    <td colname="col2"> <p>Tidsstämpel </p> </td> 
    <td colname="col3"> <p>Den tidpunkt då en CDF-fil bearbetades av DCS-servrarna ( <span class="wintitle"> Data Collection Servers</span> ). Tidsstämpeln använder formatet <i>åååå-mm-dd hh:mm:ss</i> och anges i UTC-tidszonen. </p> <p> <p>Obs! Händelsetiden <i>är inte</i>: <p> 
        <ul id="ul_41ABC813FAAC4659AC8DA13F4A6DD7EB"> 
-        <li id="li_0192D253EA4C49C4BF2E8BA62CEE028E">Tidpunkten för sidhändelsen eller själva händelsesammanropet, men den kan vara nära den tidpunkten. </li> 
+        <li id="li_0192D253EA4C49C4BF2E8BA62CEE028E">Tidpunkten för sidhändelsen eller själva händelsesammanropet, även om den kan vara nära den tidpunkten. </li> 
         <li id="li_271DF14395BC495FBF17186588A554A8">Relaterat till DCS-timmen i filnamnet. Se även <a href="#different-processing-times"> Kunddataflödets filnamn Times och File Content Times...</a>. </li> 
        </ul> </p> </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Device</code> </p> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>Detta är det <span class="wintitle"> unika användar-ID</span> (UUID), som är ett 38-siffrigt enhets-ID för besökaren på platsen. Se även <a href="../reference/ids-in-aam.md"> Index för ID:n i Audience Manager</a>. </p> </td> 
+   <td colname="col3"> <p>Detta är det <span class="wintitle"> unika användar-ID</span> (UUID), som är ett 38-siffrigt enhets-ID för besökaren på platsen. See also, <a href="../reference/ids-in-aam.md"> Index of IDs in Audience Manager</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Container ID</code> </p> </td> 
@@ -105,7 +105,7 @@ En [!UICONTROL CDF] fil innehåller några eller alla fält som definieras nedan
   <tr> 
    <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>Det <span class="keyword"> Experience Cloud</span> -ID (MID) som tilldelats webbplatsbesökaren. Se även <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Adobe Experience Platform Identity Service</a>. </p> </td> 
+   <td colname="col3"> <p>Det <span class="keyword"> Experience Cloud</span> -ID (MID) som tilldelats webbplatsbesökaren. Se även <a href="https://docs.adobe.com/content/help/sv-SE/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Adobe Experience Platform Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> All Segments</code> </p> </td> 
@@ -157,7 +157,7 @@ Visar och definierar datastrukturen för en [!UICONTROL CDF] fil. Detta inkluder
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">Begärandeparametrar </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referent </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP-adress </li> 
-      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud enhets-ID (eller MID). Se även <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> cookies och Adobe Experience Platform Identity Service</a> </li> 
+      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud enhets-ID (eller MID). See also, <a href="https://docs.adobe.com/content/help/sv-SE/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Adobe Experience Platform Identity Service</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595">Alla segment </li> 
       <li id="li_1B5A6F076A354BA0A931CB260E6D2675">Alla egenskaper </li> 
      </ol> </p> <p>Fältbeskrivningar finns i Innehåll för <a href="#cdf-defined"> kunddatafeed definierad</a>. </p> </td> 
@@ -248,7 +248,7 @@ I följande tabell visas och definieras elementen i ett [!UICONTROL CDF] filnamn
 
 ## [!UICONTROL Customer Data Feed] Filbearbetningsmeddelanden {#cdf-file-processing-notifications}
 
-[!DNL Audience Manager] skriver en `.info` fil till din [!DNL S3] katalog så att du vet när ( [!UICONTROL Customer Data File] ) [!UICONTROL CDF]är klar för hämtning. Filen `.info` innehåller även [!DNL JSON] formaterade metadata om innehållet i dina [!UICONTROL CDF] filer. I det här avsnittet finns information om syntaxen och fälten som används i den här meddelandefilen.
+[!DNL Audience Manager] skriver en `.info` fil till din [!DNL S3] katalog så att du vet när ( [!UICONTROL Customer Data File] )[!UICONTROL CDF]är klar för hämtning. Filen `.info` innehåller även [!DNL JSON] formaterade metadata om innehållet i dina [!UICONTROL CDF] filer. I det här avsnittet finns information om syntaxen och fälten som används i den här meddelandefilen.
 
 ## Exempelinformationsfil {#sample-info-file}
 
@@ -307,7 +307,7 @@ I följande tabeller listas och definieras elementen i en [!UICONTROL CDF] `.inf
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileName</code> </p> </td> 
-   <td colname="col2"> <p>Filnamnet. Se <a href="#cdf-naming-conventions"> Namngivningskonventioner</a>för kunddataflödesfiler. </p> </td> 
+   <td colname="col2"> <p>Filnamnet. See <a href="#cdf-naming-conventions"> Customer Data Feed File Naming Conventions</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileSequenceNumber</code> </p> </td> 
@@ -365,10 +365,10 @@ Följande tabell innehåller ytterligare information om tidsstämplar för dina 
 
 | Tidsstämpelplats | Beskrivning |
 |--- |--- |
-| Filnamn | Tidsstämpeln i ditt [!DNL CDF] filnamn anger den tidpunkt då [!DNL Audience Manager] filen förbereds för leverans. Den här tidsstämpeln anges i [!DNL UTC] tidszonen. Parametern används, med tiden `hour=` formaterad som en tvåsiffrig timme med 24 timmars notation. Den här tiden kan skilja sig från den händelsetid som spelas in i filinnehållet. När du arbetar med [!DNL CDF] filer kan det hända att du märker att din [!DNL S3] bucket är tom en viss timme. En tom bucket betyder något av följande:<ul><li>Det finns inga data för just den timmen. </li><li> Våra servrar är mycket belastade och kan inte bearbeta filer på en viss timme. När servern fångar upp placerar den de filer som borde ha gått in i en tidigare tidsmarkeringsfil i en hink med ett senare tidsvärde. Du kommer till exempel att se det här när en fil som borde ha varit inom timmen 17, visas inom timmen 18, (med `hour=18` filnamnet). I det här fallet började servern förmodligen bearbeta filen på timme 17, men kunde inte slutföra den inom det tidsintervallet. I stället skickas filen till nästa timtidsintervall.</li></ul><br>**Viktigt **: Använd inte filnamnets tidsstämpel för att gruppera händelser efter tid. Om du behöver gruppera efter tid använder du`EventTime`tidsstämpeln i filinnehållet. |
+| Filnamn | Tidsstämpeln i ditt [!DNL CDF] filnamn anger när [!DNL Audience Manager] du började förbereda filen för leverans. Den här tidsstämpeln anges i [!DNL UTC] tidszonen. Parametern används, med tiden `hour=` formaterad som en tvåsiffrig timme med 24 timmars notation. Den här tiden kan skilja sig från den händelsetid som spelas in i filinnehållet. När du arbetar med [!DNL CDF] filer kan det hända att du märker att din [!DNL S3] bucket är tom en viss timme. En tom bucket betyder något av följande:<ul><li>Det finns inga data för just den timmen. </li><li> Våra servrar är mycket belastade och kan inte bearbeta filer på en viss timme. När servern fångar upp placerar den de filer som borde ha gått in i en tidigare tidsmarkeringsfil i en hink med ett senare tidsvärde. Du kommer till exempel att se det här när en fil som borde ha varit inom timmen 17, visas inom timmen 18, (med `hour=18` filnamnet). I det här fallet började servern förmodligen bearbeta filen på timme 17, men kunde inte slutföra den inom det tidsintervallet. I stället skickas filen till nästa timtidsintervall.</li></ul><br>**Viktigt **: Använd inte filnamnets tidsstämpel för att gruppera händelser efter tid. Om du behöver gruppera efter tid använder du`EventTime`tidsstämpeln i filinnehållet. |
 | Filinnehåll | Tidsstämpeln i filens [!DNL CDF] innehåll markerar den tid då [!DNL Data Collection Servers] filen börjar bearbetas. Den här tidsstämpeln anges i [!DNL UTC] tidszonen. Det använder `EventTime` fältet, med tiden formaterad som *`yyyy-mm-dd hh:mm:ss`*. Den här tiden ligger nära den faktiska tiden för händelsen på sidan, men kan vara en annan än timindikatorn i filnamnet. <br> **Tips**: Till skillnad från tidsstämpeln i filnamnet kan du använda `hour=` `EventTime` för att gruppera data efter tid. |
 
 >[!MORELIKETHIS]
 >
->* [Vanliga frågor om kunddataflöden](../faq/faq-cdf.md)
+>* [Vanliga frågor om anpassade dataflöden](../faq/faq-cdf.md)
 
