@@ -1,20 +1,20 @@
 ---
 description: Dataexportetiketter fungerar med de exportkontroller du anger för en datakälla. Dataexportetiketter förhindrar att du lägger till begränsade egenskaper i ett segment och skickar segmentdata till ett mål. Du kan ange flera exportetiketter till en ny eller befintlig cookie eller URL-adress.
 seo-description: Dataexportetiketter fungerar med de exportkontroller du anger för en datakälla. Dataexportetiketter förhindrar att du lägger till begränsade egenskaper i ett segment och skickar segmentdata till ett mål. Du kan ange flera exportetiketter till en ny eller befintlig cookie eller URL-adress.
-seo-title: Lägg till eller redigera segment för server-till-server-mål
+seo-title: Lägga till eller redigera segment för server-till-server-destinationer
 solution: Audience Manager
-title: Lägg till eller redigera segment för server-till-server-mål
+title: Lägga till eller redigera segment för server-till-server-destinationer
 feature: Destination Basics
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
 
-# Lägg till eller redigera segment för server-till-server-mål {#add-edit-segments}
+# Lägga till eller redigera segment för server-till-server-destinationer {#add-edit-segments}
 
 Du kan bara lägga till eller redigera segment för ett server-till-server-mål ([!DNL S2S]). Du kan inte skapa [!DNL S2S] mål med [!UICONTROL [Destination Builder](/help/using/features/destinations/destination-builder.md)]. Kontakta din konsult för att konfigurera [!DNL S2S] destinationer. Följ dessa anvisningar när du vill lägga till eller redigera segment för ett [!DNL S2S] mål.
 
