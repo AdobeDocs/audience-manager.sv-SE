@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -135,7 +135,7 @@ I [!UICONTROL Segment Builder]det här [!UICONTROL Traits] avsnittet kan du hant
 | Sök | Hjälper dig att hitta [!UICONTROL traits] att lägga till i en [!UICONTROL segment]. |
 | Rekommendationer | Få live-rekommendationer för liknande [!UICONTROL traits]funktioner från den första parten [!UICONTROL traits] och de [!UICONTROL Audience Marketplace] dataflöden du prenumererar på. Lägg till de här rekommendationerna i [!UICONTROL segment] regeln för att utöka er målgrupp. Läs mer i [Trait Recommendations](trait-recommendations.md). |
 | **[!UICONTROL Marketplace Recommendations]** | Få live-rekommendationer för liknande [!UICONTROL traits]typer av [!UICONTROL Audience Marketplace] dataflöden som du inte prenumererar på. Läs mer i [Trait Recommendations](trait-recommendations.md). |
-| Reella och beräknade [!UICONTROL Segment] storleksdata | Se [Trait and Segment Population Data in Segment Builder](segment-builder-data.md). |
+| Reella och beräknade [!UICONTROL Segment] storleksdata | Se [Trait- och segmentpopulationsdata i Segment Builder](segment-builder-data.md). |
 
 ## Ta bort [!UICONTROL Traits] från en [!UICONTROL Segment] {#remove-traits}
 
