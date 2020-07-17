@@ -1,9 +1,9 @@
 ---
 description: Generera en faktureringsrapport för Audience Marketplace för att visa dataflödesanvändningen för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
 seo-description: Generera en faktureringsrapport för Audience Marketplace för att visa dataflödesanvändningen för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
-seo-title: Fakturering för datautmatningsleverantörer
+seo-title: Fakturering för dataflödesleverantörer
 solution: Audience Manager
-title: Fakturering för datautmatningsleverantörer
+title: Fakturering för dataflödesleverantörer
 topic: DIL API
 uuid: 4e11dbd2-91fd-4b59-a66d-86a92e0de655
 feature: Audience Marketplace
@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Fakturering för datautmatningsleverantörer {#billing-for-data-feed-providers}
+# Fakturering för dataflödesleverantörer {#billing-for-data-feed-providers}
 
 Generera en [!DNL Audience Marketplace] faktureringsrapport för att visa dataflödesanvändningen för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
 
