@@ -1,21 +1,21 @@
 ---
 description: Trait Builder utvärderar uttryck i den ordning som de anges nedan, från hög till låg prioritet. Trait-element som definieras av operatorer med hög prioritet utvärderas först, före andra prioritetsoperatorer. I det här avsnittet rangordnas varje operator efter prioritet, från hög till låg.
 seo-description: Trait Builder utvärderar uttryck i den ordning som de anges nedan, från hög till låg prioritet. Trait-element som definieras av operatorer med hög prioritet utvärderas först, före andra prioritetsoperatorer. I det här avsnittet rangordnas varje operator efter prioritet, från hög till låg.
-seo-title: Operationsordning i Trait Builder
+seo-title: Åtgärdssekvens i Trait Builder
 solution: Audience Manager
-title: Operationsordning i Trait Builder
+title: Åtgärdssekvens i Trait Builder
 uuid: df325047-af62-45ad-9ca1-046bfcbe5341
 feature: Traits
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
 
-# Operationsordning i Trait Builder {#order-of-operations-in-trait-builder}
+# Åtgärdssekvens i Trait Builder {#order-of-operations-in-trait-builder}
 
 [!UICONTROL Trait Builder] utvärderar uttryck i den ordning som anges nedan, från hög till låg prioritet. Trait-element som definieras av operatorer med hög prioritet utvärderas först, före andra prioritetsoperatorer. I det här avsnittet rangordnas varje operator efter prioritet, från hög till låg.
 
