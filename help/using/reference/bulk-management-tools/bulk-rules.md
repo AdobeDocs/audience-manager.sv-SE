@@ -1,21 +1,21 @@
 ---
 description: Kalkylbladen för att skapa och uppdatera accepterar ett traitRule-huvud som gör att du kan tillämpa flera regler i en enda åtgärd. Följ de här instruktionerna för att göra gruppregelförfrågningar.
 seo-description: Kalkylbladen för att skapa och uppdatera accepterar ett traitRule-huvud som gör att du kan tillämpa flera regler i en enda åtgärd. Följ de här instruktionerna för att göra gruppregelförfrågningar.
-seo-title: Skapa eller uppdatera dragregler och segmentregler
+seo-title: Skapa eller uppdatera trait-regler och segmentregler
 solution: Audience Manager
-title: Skapa eller uppdatera dragregler och segmentregler
+title: Skapa eller uppdatera trait-regler och segmentregler
 uuid: bdd5f8f1-bb83-4844-b681-654e45ace3e1
 feature: baaam
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Skapa eller uppdatera dragregler och segmentregler{#create-or-update-trait-rules-and-segment-rules}
+# Skapa eller uppdatera trait-regler och segmentregler{#create-or-update-trait-rules-and-segment-rules}
 
 Kalkylbladen för att skapa och uppdatera accepterar ett traitRule-huvud som gör att du kan tillämpa flera regler i en enda åtgärd. Följ de här instruktionerna för att göra gruppregelförfrågningar.
 
