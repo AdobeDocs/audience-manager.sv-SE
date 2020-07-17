@@ -74,6 +74,7 @@ To create a new [!UICONTROL Segment Test Group]:
    * Destinationer är nedtonade om de inte är tillgängliga för ett visst testsegment baserat på [dataexportkontroller](../../features/data-export-controls.md).
    * Användarna kan bara se de mål de har åtkomst till baserat på den [RBAC-användargrupp](../../features/administration/administration-overview.md) de tillhör.
    * Slutligen måste du välja ett startdatum för testgruppen. Det här datumet är början på den period då testgruppen kommer att publiceras till destinationer. Välj **Inget slutdatum** för en obestämd jämförelse av testsegmenten.
+
    >[!NOTE]
    >
    >[!UICONTROL Profile Merge Rules] med en autentiserad profil stöds bara i realtid. Om ett testsegment med en profilsammanfogningsregel i den konfigurationen skickas till ett filbaserat server-till-server-mål, kanske målgrupperna inte fylls i.
@@ -84,6 +85,7 @@ To create a new [!UICONTROL Segment Test Group]:
 
    * Granska informationen som du lade till i föregående steg och välj **[!UICONTROL Finalize Group]**.
    * Kom ihåg att när du är klar med en testgrupp kan den dupliceras eller tas bort, men inte redigeras.
+
    >[!NOTE]
    >* Du kan spara testgrupperna när som helst under skapandet och gå tillbaka till guiden vid ett senare tillfälle. Testgruppens status blir **[!UICONTROL Draft]** och testgruppen skickar inga data till destinationerna förrän du slutför segmentets testgrupp.
    >* För utkast av tester kan du gå tillbaka och redigera testgrupperna genom att klicka **[!UICONTROL Edit]** på testgruppskortet i [!UICONTROL Audience Lab] huvudvyn.
