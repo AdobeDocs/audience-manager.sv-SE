@@ -1,21 +1,21 @@
 ---
 description: Ett nyckelvärdepar består av relaterade element A-tangenten, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris) och ett värde, som är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). Destination Builder skickar data som är formaterade som nyckelvärdepar.
 seo-description: Ett nyckelvärdepar består av relaterade element A-tangenten, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris) och ett värde, som är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). Destination Builder skickar data som är formaterade som nyckelvärdepar.
-seo-title: Standard- och serienyckelpar
+seo-title: Standard och seriella nyckelvärdespar
 solution: Audience Manager
-title: Standard- och serienyckelpar
+title: Standard och seriella nyckelvärdespar
 uuid: 43789419-5b3f-4e62-b2e0-2722340bdd41
 feature: Destination Basics
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Standard- och serienyckelpar {#standard-and-serial-key-value-pairs}
+# Standard och seriella nyckelvärdespar {#standard-and-serial-key-value-pairs}
 
 Ett nyckelvärdepar består av relaterade element: En nyckel, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris) och ett värde, vilket är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). [!UICONTROL Destination Builder] skickar data som är formaterade som nyckelvärdepar.
 
@@ -27,7 +27,7 @@ En grundläggande uppsättning nyckelvärdepar kan se ut så här:
 * `color = green`
 * `price > 100`
 
-## Standard- och serienyckelpar {#standard-serial-key-value-pairs}
+## Standard och seriella nyckelvärdespar {#standard-serial-key-value-pairs}
 
 Destinationer tar emot nyckelvärdesdata i *`standard`* eller *`serialized`* format.
 
