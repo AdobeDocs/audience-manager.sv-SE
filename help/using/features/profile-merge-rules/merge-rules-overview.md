@@ -1,16 +1,16 @@
 ---
 description: Med reglerna för profilsammanslagning får du kontroll över de datauppsättningar som används för segmentering och kan rikta sig till en person exakt på flera enheter.
 seo-description: Med reglerna för profilsammanslagning får du kontroll över de datauppsättningar som används för segmentering och kan rikta sig till en person exakt på flera enheter.
-seo-title: Regler för profilsammanslagning - översikt
+seo-title: Översikt över regler för profilsammanslagning
 solution: Audience Manager
-title: Regler för profilsammanslagning - översikt
+title: Översikt över regler för profilsammanslagning
 uuid: 9e7988cc-9145-432b-840a-54fbd8657b3b
 feature: Profile Merge Rules
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
