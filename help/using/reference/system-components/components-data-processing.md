@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -47,7 +47,7 @@ Kunderna har inte direktåtkomst till dessa system. Men kunderna arbetar med dem
 
 Detta är inte på något sätt en heltäckande lista, men några vanliga kontrollpanelrapporter som [!UICONTROL Snowflake] ansvarar för är:
 
-* [Rapport över variationer för daglig trait](/help/using/reporting/audience-optimization-reports/daily-trait-variation-report.md)
+* [Daglig rapport över trait-variationer](/help/using/reporting/audience-optimization-reports/daily-trait-variation-report.md)
 * Alla överlappande rapporter (se avsnittet [Interaktiva rapporter](/help/using/reporting/dynamic-reports/dynamic-reports.md) för information om varje överlappningsrapport).
 * [Rapport om oanvända signaler](/help/using/reporting/dynamic-reports/unused-signals.md)
 
