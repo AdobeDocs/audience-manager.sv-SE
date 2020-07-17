@@ -9,14 +9,14 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '862'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
 # [!DNL Facebook WCA] Integrering {#facebook-wca-integration}
 
-På den här sidan illustreras processen att skapa [!DNL Facebook Website Custom Audiences] ([!DNL WCA]) pixlar för att skicka webbaserade [!DNL Audience Manager] målgruppssegment till [!DNL Facebook]webbannonsering med förbättrad transparens.
+Den här sidan visar processen att skapa [!DNL Facebook Website Custom Audiences] ([!DNL WCA]) pixlar för att skicka webbaserade [!DNL Audience Manager] målgruppssegment till [!DNL Facebook], för webbannonsering med förbättrad transparens.
 
 ## Översikt {#overview}
 
@@ -33,9 +33,9 @@ På den här sidan illustreras processen att skapa [!DNL Facebook Website Custom
 1. [!DNL Facebook Ad Account]
 2. [!DNL Audience Manager] segment, klara att tilldelas till din nya [!DNL Facebook] destination. Så här [skapar du ett segment](/help/using/features/segments/segment-builder.md) i [!DNL Audience Manager] användargränssnittet.
 3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID]) Version 4.1.0 eller senare. Ladda ned den senaste versionen **[här](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**.
-4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL]) version 9.0 eller senare, kan hämtas **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Om du använder[SSF (Server-Side Forwarding)](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)för att importera data till[!DNL Audience Manager]måste du använda AppMeasurement version 2.12 eller senare. Ladda ned[!DNL AppMeasurement]med[Analytics Code Manager](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html).
+4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL]) version 9.0 eller senare, kan hämtas **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Om du använder[SSF (Server-Side Forwarding)](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)för att importera data till[!DNL Audience Manager]måste du använda AppMeasurement version 2.12 eller senare. Download[!DNL AppMeasurement]using the[Analytics Code Manager](https://docs.adobe.com/content/help/sv-SE/analytics/admin/admin-tools/code-manager-admin.html).
 
-Vi rekommenderar att du installerar eller uppgraderar biblioteken i steg 3 och 4 med [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) eller [Adobe Dynamic Tag Management](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html).
+Vi rekommenderar att du installerar eller uppgraderar biblioteken i steg 3 och 4 med [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) eller [Adobe Dynamic Tag Management](https://docs.adobe.com/content/help/sv-SE/dtm/using/dtm-home.html).
 
 ## Steg 1 - Skapa en [!UICONTROL Facebook Destination] i [!DNL Audience Manager] {#step-1-create-facebook-destination}
 
