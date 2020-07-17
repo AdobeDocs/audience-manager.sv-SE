@@ -1,21 +1,21 @@
 ---
 description: DELETE och POST-metoder som gör att du kan ta bort mål- och segmentmappningar.
 seo-description: DELETE och POST-metoder som gör att du kan ta bort mål- och segmentmappningar.
-seo-title: Ta bort mål
+seo-title: Ta bort destinationer
 solution: Audience Manager
-title: Ta bort mål
+title: Ta bort destinationer
 uuid: 38fb2228-e564-49a3-9930-3139f8799a8f
 feature: API
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Ta bort mål {#delete-destinations}
+# Ta bort destinationer {#delete-destinations}
 
 `DELETE` och `POST` metoder som gör att du kan ta bort mål- och segmentmappningar.
 
