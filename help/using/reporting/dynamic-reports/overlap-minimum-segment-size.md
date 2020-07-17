@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -34,7 +34,7 @@ Om du inte ser ett segment i någon av [!UICONTROL Overlap] rapporterna kan det 
 <table id="table_BE2937C1FA314BBDBD1D026321D6E6B1"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Användningsfall </th> 
+   <th colname="col1" class="entry"> Användningsexempel </th> 
    <th colname="col2" class="entry"> Beskrivning </th> 
   </tr> 
  </thead>
@@ -52,7 +52,7 @@ Om du inte ser ett segment i någon av [!UICONTROL Overlap] rapporterna kan det 
 
 >[!MORELIKETHIS]
 >
->* [Överlappningsrapport för spår-till-trait](../../reporting/dynamic-reports/trait-trait-overlap-report.md#trait-to-trait-overlap-report)
->* [Överlappningsrapport för segment-till-trait](../../reporting/dynamic-reports/segment-trait-overlap-report.md)
->* [Överlappningsrapport för segment-till-segment](../../reporting/dynamic-reports/segment-segment-overlap-report.md)
+>* [Överlappningsrapport för trait till trait](../../reporting/dynamic-reports/trait-trait-overlap-report.md#trait-to-trait-overlap-report)
+>* [Överlappningsrapport för segment till trait](../../reporting/dynamic-reports/segment-trait-overlap-report.md)
+>* [Överlappningsrapport för segment till segment](../../reporting/dynamic-reports/segment-segment-overlap-report.md)
 
