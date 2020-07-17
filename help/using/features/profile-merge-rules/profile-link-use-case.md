@@ -1,21 +1,21 @@
 ---
 description: Rekommendationer och användningsexempel för återannonsering av segment och anpassade segmentkvalifikationer med enhetsdiagrammet Profile Link.
 seo-description: Rekommendationer och användningsexempel för återannonsering av segment och anpassade segmentkvalifikationer med enhetsdiagrammet Profile Link.
-seo-title: Användningsexempel för profillänkens enhetsdiagram
+seo-title: Användningsexempel för enhetsdiagram för profillänk
 solution: Audience Manager
-title: Användningsexempel för profillänkens enhetsdiagram
+title: Användningsexempel för enhetsdiagram för profillänk
 uuid: bd5567fd-fcd5-40ba-b6f1-035d2ddbcd3a
 feature: Profile Merge Rules
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 1%
+ht-degree: 9%
 
 ---
 
 
-# Användningsexempel för profillänkens enhetsdiagram {#profile-link-device-graph-use-cases}
+# Användningsexempel för enhetsdiagram för profillänk {#profile-link-device-graph-use-cases}
 
 Rekommendationer och användningsexempel för återannonsering av segment och personaliserade segmentkvalifikationer med [!UICONTROL Profile Link Device Graph].
 
@@ -50,6 +50,6 @@ Detta [!UICONTROL Profile Merge Rule] gör att marknadsförarna kan leverera en 
 >[!MORELIKETHIS]
 >
 >* [Användningsexempel för externt enhetsdiagram](external-graph-use-cases.md)
->* [Allmänna användningsexempel för profilkopplingsregler](merge-rule-targeting-options.md)
+>* [Allmänna användningsexempel för regler för profilsammanslagning](merge-rule-targeting-options.md)
 >* [Vanliga frågor om regler för profilsammanslagning](../../faq/faq-profile-merge.md)
 
