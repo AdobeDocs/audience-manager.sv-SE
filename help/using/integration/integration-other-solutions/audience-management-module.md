@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Så här vidarebefordrar du data från [!DNL Adobe Analytics] till [!DNL Audience Manager] {#implement-the-audience-management-module}
+# How to forward data from [!DNL Adobe Analytics] to [!DNL Audience Manager] {#implement-the-audience-management-module}
 
 Följ stegen i den här självstudiekursen för att vidarebefordra [!DNL Analytics] data till [!DNL Audience Manager] istället för att få [!DNL Audience Manager][!UICONTROL Data Integration Library] ([!DNL DIL])-koden att skicka en pixel från sidan.
 
@@ -28,7 +28,7 @@ Följ stegen i den här självstudiekursen för att vidarebefordra [!DNL Analyti
 
 Förutom att aktivera tilläggen eller implementera koden som beskrivs i det här dokumentet måste du också:
 
-* Implementera [identitetstjänsten](https://docs.adobe.com/content/help/en/id-service/using/home.html)Adobe Experience Platform.
+* Implement the [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html).
 * Aktivera vidarebefordran [på](https://docs.adobe.com/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) serversidan för rapportsviter i [!UICONTROL Adobe Analytics Admin Console].
 
 ## Implementering {#implementation}
@@ -51,9 +51,9 @@ Det finns två metoder för att implementera datavidarebefordran från [!DNL Ado
 >
 >[!DNL Adobe] planerar att upphöra [!DNL DTM] i slutet av 2020. Mer information och schemaläggning finns i Planer [!DNL DTM] för en solnedgång i [Adobes användarforum](https://forums.adobe.com/community/experience-cloud/platform/launch/blog/2018/10/05/dtm-plans-for-a-sunset).
 
-Så här implementerar du [!UICONTROL Audience Management Module] med [Adobe DTM](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html) eller någon annan tagghanteringslösning:
+Så här implementerar du [!UICONTROL Audience Management Module] med [Adobe DTM](https://docs.adobe.com/content/help/sv-SE/dtm/using/dtm-home.html) eller någon annan tagghanteringslösning:
 
-1. Hämta [!UICONTROL AppMeasurement] med [Analytics Code Manager](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html) (kräver version 1.5 eller senare).
+1. Hämta [!UICONTROL AppMeasurement] med [Analytics Code Manager](https://docs.adobe.com/content/help/sv-SE/analytics/admin/admin-tools/code-manager-admin.html) (kräver version 1.5 eller senare).
 1. Uppdatera din [!UICONTROL AppMeasurement] kod till den version som finns i den hämtade zip-filen.
 1. Kopiera all kod från `AppMeasurement_Module_AudienceManagement.js` zip-filen. Klistra in den i `appMeasurement.js` filen alldeles ovanför texten, `"DO NOT ALTER ANYTHING BELOW THIS LINE."`
 1. Lägg till koden, `s.loadModule("AudienceManagement");``AppMeasurement_Module_AudienceManagement.js` precis ovanför den kod som du nyss lade till i det föregående steget.
