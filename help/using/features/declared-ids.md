@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1191'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -38,7 +38,7 @@ Vissa webbläsare, och de flesta mobila enheter, accepterar inte tredjepartsprog
  <tbody> 
   <tr> 
    <td colname="col1"> <b>Händelseanrop</b> </td> 
-   <td colname="col2"> <p>För att fungera behöver du <span class="wintitle"> DIL </span> och <a href="https://docs.adobe.com/content/help/en/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service- </a> koden på sidan. <span class="wintitle"> DIL </span> hämtar <span class="wintitle"> deklarerade ID:n </span> från <code> setVisitorID </code> funktionen som tillhandahålls av <span class="keyword"> Adobe Experience Platform Identity Service </span> och skickar vidare dessa till <span class="keyword"> Audience Manager </span>. </p> </td> 
+   <td colname="col2"> <p>För att fungera behöver du <span class="wintitle"> DIL </span> och <a href="https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service- </a> koden på sidan. <span class="wintitle"> DIL </span> hämtar <span class="wintitle"> deklarerade ID:n </span> från <code> setVisitorID </code> funktionen som tillhandahålls av <span class="keyword"> Adobe Experience Platform Identity Service </span> och skickar vidare dessa till <span class="keyword"> Audience Manager </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Matcha ID</b> </td> 
@@ -59,7 +59,7 @@ För att komma igång måste du konfigurera [!DNL Experience Cloud] ID-tjänsten
 
 ## Avanmäl samtal {#opt-out-calls}
 
-Processen följer besökarnas preferenser för att avanmäla sig från [!UICONTROL declared ID] [!DNL Audience Manager] målgruppsanpassning på er webbplats. När [!DNL Audience Manager] tar emot en avanmälningsbegäran innehåller den [!DNL JSON] som returneras av [!DNL DCS] felkoden 171, med meddelandet `Encountered opt out tag`, i stället för [!DNL Audience Manager] användar-ID:t.
+Processen följer besökarnas preferenser för att avanmäla sig från [!UICONTROL declared ID] [!DNL Audience Manager] målgruppsanpassning på er webbplats. When [!DNL Audience Manager] receives an opt-out request, the [!DNL JSON] returned by the [!DNL DCS] contains the error code 171, with the message `Encountered opt out tag`, instead of the [!DNL Audience Manager] user ID.
 
 * [!DNL Audience Manager] kan skicka in en [!UICONTROL declared ID] avanmälan tillsammans med en [!DNL Audience Manager] i [!UICONTROL UUID] [!DNL URL].
 * Avanmälningen lagras [!UICONTROL declared ID] per partner i [!UICONTROL Profile Cache Server ([!UICONTROL PCS]). Det finns ingen avanmälan på plattformsnivå med [!UICONTROL declared IDs]. Dessutom [!DNL Audience Manager] avmarkerar användaren från den specifika regionen på kanten (avanmälan omfattar inte flera [!DNL DCS] regioner).
@@ -68,7 +68,7 @@ Mer information om att välja bort datainsamling finns i [Dataintegritet](../ove
 
 ## [!UICONTROL Declared ID] Exempel på avanmälan {#opt-out-examples}
 
-Du kan göra en [!UICONTROL declared ID] avanmälningsbegäran med `d_cid` - och `d_cid_ic` nyckelvärdepar. Gamla parametrar som `d_dpid` och `d_dpuuid` fungerar fortfarande, men anses vara föråldrade. Se [CID ersätter DPID och DPUUID](../reference/cid.md). I exemplen *visar kursiv* en variabelplatshållare.
+You can make a [!UICONTROL declared ID] opt-out requests with the `d_cid` and `d_cid_ic` key-value pairs. Gamla parametrar som `d_dpid` och `d_dpuuid` fungerar fortfarande, men betraktas som föråldrade. Se [CID ersätter DPID och DPUUID](../reference/cid.md). I exemplen visar *kursiv stil* platshållaren för en variabel.
 
 ### Avanmäl dig med [!UICONTROL CID] och [!UICONTROL CID_IC]
 
@@ -77,8 +77,8 @@ En beskrivning och syntax finns i [URL-variabler och syntax för deklarerade ID:
 <table id="table_159D92242D8F4FCBAC733295DE474CA6"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Avanmäl dig med </th> 
-   <th colname="col2" class="entry"> Kodexempel </th> 
+   <th colname="col1" class="entry"> Avanmälan med </th> 
+   <th colname="col2" class="entry"> Exempel på kod </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -87,7 +87,7 @@ En beskrivning och syntax finns i [URL-variabler och syntax för deklarerade ID:
    <td colname="col2"> <p> <code> https://<i>domain name</i>/demoptout.jpg?d_cid=123%01987... </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>En integrationskod och användar-ID. </p> </td> 
+   <td colname="col1"> <p>En integreringskod och användar-ID. </p> </td> 
    <td colname="col2"> <p> <code> https://<i>domain name</i>/demoptout?d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
   <tr> 
@@ -105,7 +105,7 @@ Dessa metoder fungerar fortfarande men anses vara föråldrade. Denna informatio
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Avanmäl dig (borttagen) </th> 
-   <th colname="col2" class="entry"> Kodexempel </th> 
+   <th colname="col2" class="entry"> Exempel på kod </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -143,11 +143,11 @@ I varje nyckelvärdepar:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> d_cid =<i>data provider ID</i> %01<i>user ID</i> </code> </p> </td> 
-   <td colname="col2"> <p>Innehåller ett DataProvider ID och ett associerat unikt användar-ID i ett enda nyckelvärdepar. <code> d_cid </code> ersätter <code> d_dpid </code> och <code> d_dpuuid </code>, som betraktas som inaktuella, men fortfarande stöds. Se <a href="../reference/cid.md"> CID ersätter DPID och DPUUID </a>. </p> </td> 
+   <td colname="col2"> <p>Innehåller ett DataProvider ID och ett associerat unikt användar-ID i ett enda nyckelvärdepar. <code> d_cid </code> ersätter <code> d_dpid </code> och <code> d_dpuuid </code>, som betraktas som inaktuella, men fortfarande stöds. Se <a href="../reference/cid.md">CID ersätter DPID och DPUUID </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_cid_ic =<i>integration code</i> %01<i>user ID</i> </code> </p> </td> 
-   <td colname="col2"> <p>Innehåller en integreringskod och ett associerat unikt användar-ID i ett enda nyckelvärdepar. <code> d_cid_ic </code> ersätts <code> d_dpid </code> och <code> d_dpuuid </code>, som är borttagna, men fortfarande stöds. Se <a href="../reference/cid.md"> CID ersätter DPID och DPUUID </a>. </p> </td> 
+   <td colname="col2"> <p>Innehåller en integreringskod och ett associerat unikt användar-ID i ett enda nyckelvärdepar. <code> d_cid_ic </code> ersätts <code> d_dpid </code> och <code> d_dpuuid </code>, som är borttagna, men fortfarande stöds. Se <a href="../reference/cid.md">CID ersätter DPID och DPUUID </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -160,7 +160,7 @@ Med tanke på dessa nyckelvärdepar och deras obligatoriska syntax gör du händ
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Evenemangsanropet innehåller </th> 
-   <th colname="col2" class="entry"> Kodexempel </th> 
+   <th colname="col2" class="entry"> Exempel på kod </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -169,7 +169,7 @@ Med tanke på dessa nyckelvärdepar och deras obligatoriska syntax gör du händ
    <td colname="col2"> <p> <code> https://<i>domain name</i>/event?d_cid=123%01987... </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>En integrationskod och användar-ID. </p> </td> 
+   <td colname="col1"> <p>En integreringskod och användar-ID. </p> </td> 
    <td colname="col2"> <p> <code> https://<i>domain name</i>/event?d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
   <tr> 
@@ -185,7 +185,7 @@ Beskriver de konfigurationsvariabler som används för att skicka [!UICONTROL de
 
 ## [!UICONTROL DIL] använder [!DNL Adobe Experience Platform Identity Service] till Pass [!UICONTROL Declared IDs] {#dil-id-service-pass-declared-ids}
 
-När du använder med [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)behöver du inte längre skicka in [!UICONTROL declared IDs] de borttagna `dpid` och `dpuuid` variablerna. I stället förlitar sig de aktuella versionerna på [!UICONTROL DIL] funktionen `visitorService` för att hämta [!UICONTROL declared IDs] från `setCustomerIDs` funktionen i [!UICONTROL Adobe Experience Platform Identity Service]. Mer information finns i [Kund-ID och autentiseringstillstånd](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html). Du ringer `visitorService` in `DIL.create` enligt nedan.
+När du använder med [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html)behöver du inte längre skicka in [!UICONTROL declared IDs] de borttagna `dpid` och `dpuuid` variablerna. I stället förlitar sig de aktuella versionerna på [!UICONTROL DIL] funktionen `visitorService` för att hämta [!UICONTROL declared IDs] från `setCustomerIDs` funktionen i [!UICONTROL Adobe Experience Platform Identity Service]. Mer information finns i [Kund-ID och autentiseringstillstånd](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html). Du ringer `visitorService` in `DIL.create` enligt nedan.
 
 ```js
 var vDil = DIL.create({
