@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -24,9 +24,9 @@ En boolesk konfiguration som avgör om DIL skickar (eller inte skickar) data til
 För att kunna använda `isCoopSafe` måste du:
 
 * Använd [!UICONTROL DIL] v6.11 eller senare.
-* Delta i [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/home.html). Medlemmar som arbetar med potentiella partners bör också granska denna dokumentation för att avgöra om `isCoopSafe` möjliga frågor om hur data används för att skapa enhetsgrafen tas upp.
+* Delta i [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/sv-SE/device-co-op/using/home.html). Medlemmar som arbetar med potentiella partners bör också granska denna dokumentation för att avgöra om `isCoopSafe` möjliga frågor om hur data används för att skapa enhetsgrafen tas upp.
 
-* Samarbeta med din [!DNL Adobe] konsult för att ange en allowlist- eller denylist-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningssökväg för att aktivera dessa flaggor.
+* Samarbeta med din [!DNL Adobe] konsult för att ange en tillåtelselista-flagga eller en blockeringslista-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningssökväg för att aktivera dessa flaggor.
 
 ## Användningsexempel {#use-cases}
 
@@ -35,7 +35,7 @@ För att kunna använda `isCoopSafe` måste du:
 <table id="table_A24C63D2A21F47EDBAC8FA5E7BE888D8"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Användningsfall </th> 
+   <th colname="col1" class="entry"> Användningsexempel </th> 
    <th colname="col2" class="entry"> Beskrivning </th> 
   </tr> 
  </thead>
@@ -65,7 +65,7 @@ De booleska alternativen avgör hur kunddata används eller inte används av Dev
 
 * `isCoopSafe: false`: Besöksdata som samlats in av en mobil SDK eller webbplats *kan inte* användas för att skapa enhetsgrafen.
 
-**Kodexempel**
+**Exempel på kod**
 
 Ange detta när DIL instansierar.
 
