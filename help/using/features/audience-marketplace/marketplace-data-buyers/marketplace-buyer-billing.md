@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '2027'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ Inköpare av datauppgifter från Audience Marketplace går med på att rapporter
 
 På fliken [!UICONTROL Segment Usage] kan du rapportera användning på segmentnivå och visa de segment som grupperats efter de mål som de är mappade till.
 
-När du har rapporterat [!DNL CPM] användning på segmentnivå tilldelas motsvarande dataflöden automatiskt rätt användning, baserat på [!UICONTROL Audience Marketplace] kostnadsattribuering för CPM-dataflöden [](#cost-attribution).
+När du har rapporterat [!DNL CPM] användning på segmentnivå tilldelas motsvarande dataflöden automatiskt rätt användning, baserat på [!UICONTROL Audience Marketplace] kostnadsattribuering för CPM-datafeeds [](#cost-attribution).
 
 Så här rapporterar du [!DNL CPM] användning på segmentnivå:
 
