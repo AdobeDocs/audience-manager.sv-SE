@@ -2,21 +2,21 @@
 description: Definierar och beskriver standard- och serialiserade nyckelvärdepar.
 keywords: integration code
 seo-description: Definierar och beskriver standard- och serialiserade nyckelvärdepar.
-seo-title: Förklaring av nyckelvärdepar
+seo-title: Förklaring av nyckelvärdespar
 solution: Audience Manager
-title: Förklaring av nyckelvärdepar
+title: Förklaring av nyckelvärdespar
 uuid: f1435742-81ca-4964-8370-accf2f1c47a5
 feature: reference
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Förklaring av nyckelvärdepar{#key-value-pairs-explained}
+# Förklaring av nyckelvärdespar{#key-value-pairs-explained}
 
 Definierar och beskriver standard- och serialiserade nyckelvärdepar.
 
@@ -32,7 +32,7 @@ Ett nyckelvärdepar består av två relaterade dataelement: En nyckel, som är e
 * `color = green`
 * `price > 100`
 
-## Standardpar och serialiserade nyckelvärdepar {#standard-serialized-pairs}
+## Standard and Serialized Key-Value Pairs {#standard-serialized-pairs}
 
 Destinationer tar emot nyckelvärdesdata i *`standard`* eller *`serialized`* format. Med standardformatering ordnas data i separata nyckelvärdepar. Varje nyckel anges explicit, även om den används igen för att definiera ett annat värde. Vid serialiserad formatering komprimeras däremot flera värden till en uppsättning som definieras av en enda tangent. I ett serialiserat par används dessutom en specialindikator för att separera värdena i nyckelvärdesmängden. Slutligen kan standardvärden och serialiserade nyckelvärden innehålla ett eller flera värden. Följande tabell innehåller exempel på standardformat och serienyckelformat.
 
