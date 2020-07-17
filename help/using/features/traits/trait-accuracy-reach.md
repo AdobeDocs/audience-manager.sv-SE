@@ -1,21 +1,21 @@
 ---
 description: Beskriver förhållandet mellan noggrannhet och räckvidd i algoritmiska egenskaper.
 seo-description: Beskriver förhållandet mellan noggrannhet och räckvidd i algoritmiska egenskaper.
-seo-title: Noggrannhet och räckvidd
+seo-title: Precision och räckvidd
 solution: Audience Manager
-title: Noggrannhet och räckvidd
+title: Precision och räckvidd
 uuid: d121e099-6642-4003-ad4f-507d21e478d8
 feature: Traits
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Noggrannhet och räckvidd {#accuracy-and-reach}
+# Precision och räckvidd {#accuracy-and-reach}
 
 Beskriver förhållandet mellan noggrannhet och räckvidd i algoritmiska egenskaper.
 
