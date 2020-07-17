@@ -1,20 +1,20 @@
 ---
 description: Återfyll implementeringar av trait-egenskaper för att fånga in historiska målgrupper och undvika förlust av relevanta data före datumet då trait skapades.
 seo-description: Återfyll implementeringar av trait-egenskaper för att fånga in historiska målgrupper och undvika förlust av relevanta data före datumet då trait skapades.
-seo-title: Realiseringar av bakåtfyllnad
-title: Realiseringar av bakåtfyllnad
+seo-title: Efteretablering av realiserade traits
+title: Efteretablering av realiserade traits
 uuid: 8b0ef4e6-d16a-4d1d-94f1-b84eebffa9a5
 feature: Data Explorer
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '451'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Realiseringar av bakåtfyllnad {#backfill-trait-realizations}
+# Efteretablering av realiserade traits {#backfill-trait-realizations}
 
 Återfyll implementeringar av trait-egenskaper för att fånga in historiska målgrupper och undvika förlust av relevanta data före datumet då trait skapades.
 
