@@ -1,21 +1,21 @@
 ---
 description: Den här proceduren kräver en AdWords-återmarknadsföringslista, pixelkod och ett Audience Manager URL-mål. Det kallas även en återmarknadsföringslista för integrering av sökannonser (RLSA). Gäller endast betald sökning.
 seo-description: Den här proceduren kräver en AdWords-återmarknadsföringslista, pixelkod och ett Audience Manager URL-mål. Det kallas även en återmarknadsföringslista för integrering av sökannonser (RLSA). Gäller endast betald sökning.
-seo-title: Skicka segment till en Google AdWords Remarketing-lista
+seo-title: Skicka segment till en Google AdWords-lista för återmarknadsföring
 solution: Audience Manager
-title: Skicka segment till en Google AdWords Remarketing-lista
+title: Skicka segment till en Google AdWords-lista för återmarknadsföring
 uuid: 5ad821c6-48b4-42c0-b912-1563331e93a2
 feature: Third Party Integrations
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 0%
+source-wordcount: '334'
+ht-degree: 5%
 
 ---
 
 
-# Skicka segment till en Google Ads Remarketing-lista {#send-segments-to-a-google-adwords-remarketing-list}
+# Send Segments to a Google Ads Remarketing List {#send-segments-to-a-google-adwords-remarketing-list}
 
 Den här proceduren kräver en [!DNL Google Ads] återmarknadsföringslista, pixelkod och ett Audience Manager [!DNL URL] [!DNL destination]. Det kallas även en återmarknadsföringslista för integrering av sökannonser ([!DNL RLSA]). Gäller endast betald sökning.
 
@@ -31,7 +31,7 @@ Så här ställer du in en [!DNL Google Ads] återmarknadsföringslista som en [
     //googleads.g.doubleclick.net/pagead/viewthroughconversion/xxxxxxxx/?value=0&guid=ON&script=0&data=%ALIAS%
    ```
 
-1. I Audience Manager [skapar du ett [!DNL URL-mål]](../../features/destinations/create-url-destination.md) eller redigerar ett befintligt [!DNL destination]. Använd följande inställningar när du skapar [!DNL destination]:
+1. I Audience Manager [skapar du en [!DNL URL destination]](../../features/destinations/create-url-destination.md) eller redigerar en befintlig [!DNL destination]. Använd följande inställningar när du skapar [!DNL destination]:
    * Typ: URL
    * Serialisera: Aktiverad
    * Avgränsare: Semikolon (;)
@@ -72,7 +72,7 @@ En slutförd mappning kan se ut ungefär så här:
 >[!MORELIKETHIS]
 >
 >* [[!DNL-mål]](../../features/destinations/destinations.md)
->* [Skapa ett [!DNL URL-mål]](../../features/destinations/create-url-destination.md)
+>* [Skapa en [!DNL URL Destination]](../../features/destinations/create-url-destination.md)
 >* [Om AdWords Remarketing Lists](https://support.google.com/adwords/answer/2472738)
 >* [Hur AdWords Remarketing fungerar](https://support.google.com/adwords/answer/2454000)
 
