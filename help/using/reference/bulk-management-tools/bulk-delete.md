@@ -1,21 +1,21 @@
 ---
 description: Med massborttagning kan du ta bort flera segment, egenskaper, mappar, härledda signaler, datakällor, modeller och mål med en enda åtgärd. Följ de här instruktionerna för att göra en begäran om massborttagning.
 seo-description: Med massborttagning kan du ta bort flera segment, egenskaper, mappar, härledda signaler, datakällor, modeller och mål med en enda åtgärd. Följ de här instruktionerna för att göra en begäran om massborttagning.
-seo-title: Massborttagning
+seo-title: Satsvis radering
 solution: Audience Manager
-title: Massborttagning
+title: Satsvis radering
 uuid: 679cde46-09fb-45c6-b84d-47e00e0e7c0a
 feature: baaam
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Massborttagning{#bulk-delete}
+# Satsvis radering{#bulk-delete}
 
 Med massborttagning kan du ta bort flera segment, egenskaper, mappar, härledda signaler, datakällor, modeller och mål med en enda åtgärd. Följ de här instruktionerna för att göra en begäran om massborttagning.
 
