@@ -1,20 +1,20 @@
 ---
-description: Med prediktiva målgrupper kan ni klassificera okända målgrupper i distinkta personligheter i realtid med datavetenskap.
-seo-description: Med prediktiva målgrupper kan ni klassificera okända målgrupper i distinkta personligheter i realtid med datavetenskap.
-seo-title: Rapportering om prediktiva målgrupper
+description: Med Predictive Audiences kan ni klassificera okända målgrupper i distinkta personas i realtid med datavetenskap.
+seo-description: Med Predictive Audiences kan ni klassificera okända målgrupper i distinkta personas i realtid med datavetenskap.
+seo-title: Rapportering i Predictive Audiences
 solution: Audience Manager
-title: Audience Manager prediktiva målgrupper
+title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 
-# Rapportering om prediktiva målgrupper
+# Rapportering i Predictive Audiences
 
 När du har sparat en [!UICONTROL Predictive Audiences] modell börjar Audience Manager utbilda den. Inom några timmar kommer den beräknade modellen att börja analysera målgrupper på [datainsamlingsservrarna](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs). Rapporteringen blir tillgänglig följande dag.
 
