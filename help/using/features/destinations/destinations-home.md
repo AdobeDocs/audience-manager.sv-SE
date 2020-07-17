@@ -9,13 +9,13 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 
-# Startsida för mål {#destinations-home}
+# Startsida för destinationer {#destinations-home}
 
 På [!UICONTROL Destination] landningssidan visas alla mål för din [!DNL URL]cookie och server-till-server. Det innehåller funktioner som gör att du kan skapa, redigera, söka efter och rapportera destinationer. Landningssidan finns i **[!UICONTROL Audience Data > Destinations]**.
 
@@ -26,7 +26,7 @@ På [!UICONTROL Destination] landningssidan visas alla mål för din [!DNL URL]c
 Standardlandningssidan visar dina destinationer baserat på typ. Du kan filtrera destinationerna med hjälp av de fyra flikarna:
 
 * **Alla**: visar alla typer av destinationer.
-* **Adobe Experience Cloud**: visar mål som skickar data till andra Adobe Experience Cloud-lösningar. För närvarande är Adobe Analytics det enda alternativ som stöds. Se [Konfigurera ett Analytics-mål](/help/using/features/destinations/create-analytics-destination.md).
+* **Adobe Experience Cloud**: visar mål som skickar data till andra Adobe Experience Cloud-lösningar. För närvarande är Adobe Analytics det enda alternativ som stöds. See [Configure an Analytics Destination](/help/using/features/destinations/create-analytics-destination.md).
 * **Integrerade plattformar**: visar personbaserade och enhetsbaserade mål (även namngivna server-till-server-mål).
 * **Anpassad**: visar mål för cookie och URL.
 
