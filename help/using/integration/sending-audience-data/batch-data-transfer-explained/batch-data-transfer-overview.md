@@ -2,21 +2,21 @@
 description: Översikt för tekniska och icke-tekniska kunder som vill hämta data från andra system (offline) till Audience Manager.
 keywords: inbound, batch, batch upload, batch data
 seo-description: Översikt för tekniska och icke-tekniska kunder som vill hämta data från andra system (offline) till Audience Manager. Om du vill göra det använder du alternativet för batchöverföring i Audience Manager.
-seo-title: Skicka batchdata till Audience Manager - översikt
+seo-title: Översikt över att skicka satsvisa data till Audience Manager
 solution: Audience Manager
-title: Skicka batchdata till Audience Manager - översikt
+title: Översikt över att skicka satsvisa data till Audience Manager
 uuid: 472583b1-5057-4add-8e3c-5e50762c88e0
 feature: Inbound Data Transfers
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '482'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Skicka batchdata till [!DNL Audience Manager] översikt {#send-batch-data-to-audience-manager-overview}
+# Send Batch Data to [!DNL Audience Manager] Overview {#send-batch-data-to-audience-manager-overview}
 
 En översikt för tekniska och icke-tekniska kunder som vill hämta in data från andra system (offline) [!DNL Audience Manager].
 
@@ -34,13 +34,13 @@ Viktigt att tänka på:
 * **Exkludera[!DNL PII]:** Användar-ID:n får inte innehålla personligt identifierbar information ([!DNL PII]).
 * **Skiftläges- och innehållskänslighet:** Under en datasynkronisering i realtid måste användar-ID:n som hämtas från din webbplats [!DNL Audience Manager] motsvara ID:n som skickas från din offlinedatabas. Om offlineposter till exempel innehåller information om [!DNL User123], men din webbplats återger det ID:t som [!DNL USER123], [!DNL Audience Manager] ser dessa som olika besökare. Därför kan inte onlineinformation för den här besökaren kopplas till motsvarande poster i offlinedatabasen. ID:n måste matcha exakt.
 
-Se [ID-synkronisering för inkommande dataöverföringar](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md).
+See [ID Synchronization for Inbound Data Transfers](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md).
 
 ## Steg 2: Datafilformat
 
 Filnamn och innehåll följer strikta riktlinjer. Du *måste* namnge och ordna datafiler enligt dessa specifikationer i den här handboken. Se:
 
-* [Amazon S3-namnkrav för inkommande datafiler](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+* [Krav på Amazon S3-namn och filstorlekar för inkommande datafiler](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 * [Innehåll i inkommande datafil: Syntax, variabler och exempel](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
 
 ## Onlinedata finns för offlinemarknadsföringsarbete
