@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -59,5 +59,5 @@ I följande tabell definieras de vanliga prefix som används av [!UICONTROL Trai
 >[!MORELIKETHIS]
 >
 >* [Översikt över grundläggande information](../../features/traits/create-onboarded-rule-based-traits.md)
->* [Hantering av trait-regler](../../features/traits/manage-trait-rules.md#managing-trait-rules)
+>* [Hantera trait-regler](../../features/traits/manage-trait-rules.md#managing-trait-rules)
 
