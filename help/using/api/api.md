@@ -1,17 +1,17 @@
 ---
 description: API:er och verktyg som gör att du kan arbeta programmatiskt med Audience Manager.
 seo-description: API:er och verktyg som gör att du kan arbeta programmatiskt med Audience Manager.
-seo-title: API och SDK-kod
+seo-title: 'API och SDK-kod '
 keywords: api, api, api, api, api, api, api, api, api, api
 solution: Audience Manager
-title: API och SDK-kod
+title: 'API och SDK-kod '
 uuid: bf801e84-f914-4efd-8807-c4972474894a
 feature: API
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '74'
-ht-degree: 0%
+ht-degree: 37%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 0%
 
 Information:
 
-* [API-kodmigrering för Audience Manager](api-swagger-migration.md)
-* [DCS Event Call API:er](dcs-intro/dcs-event-calls/dcs-event-calls.md)
+* [Migrera API-kod för Audience Manager](api-swagger-migration.md)
+* [API:er för DCS-händelseanrop](dcs-intro/dcs-event-calls/dcs-event-calls.md)
 * [DCS API:er för överföring av data från server till server](dcs-intro/dcs-s2s/dcs-s2s.md)
 * [DCS API-metoder](dcs-intro/dcs-api-reference/dcs-api-methods.md)
 * [SDK-kod](/help/using/api/aam-sdk.md)
