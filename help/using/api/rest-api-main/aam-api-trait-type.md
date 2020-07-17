@@ -1,21 +1,21 @@
 ---
 description: Valfria metoder som gör att du kan tilldela egenskaper till en användardefinierad typ eller kategori, vanligtvis efter funktion eller för dina egna interna rapporteringsprocesser.
 seo-description: Valfria metoder som gör att du kan tilldela egenskaper till en användardefinierad typ eller kategori, vanligtvis efter funktion eller för dina egna interna rapporteringsprocesser.
-seo-title: Trait Type-metoder
+seo-title: Metoder för traittyper
 solution: Audience Manager
-title: Trait Type-metoder
+title: Metoder för traittyper
 uuid: 082931d5-457b-4622-817b-86303f38c26a
 feature: API
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Trait Type-metoder {#trait-type-methods}
+# Metoder för traittyper {#trait-type-methods}
 
 Valfria metoder som gör att du kan tilldela egenskaper till en användardefinierad typ eller kategori, vanligtvis efter funktion eller för dina egna interna rapporteringsprocesser.
 
