@@ -1,20 +1,20 @@
 ---
 description: Med Audience Analytics kan ni skicka Audience Manager segment till Analytics. Om du vill använda den här funktionen skapar du ett Analytics-mål och mappar segment till det i Audience Manager.
 seo-description: Med Audience Analytics kan ni skicka Audience Manager segment till Analytics. Om du vill använda den här funktionen skapar du ett Analytics-mål och mappar segment till det i Audience Manager.
-seo-title: Konfigurera ett Analytics-mål
+seo-title: Konfigurera en Analytics-destination
 solution: Audience Manager
-title: Konfigurera ett Analytics-mål
+title: Konfigurera en Analytics-destination
 feature: Integration with Analytics
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Konfigurera ett Analytics-mål
+# Konfigurera en Analytics-destination
 
 ## Krav {#requirements}
 
