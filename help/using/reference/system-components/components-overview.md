@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
@@ -36,7 +36,7 @@ Den här guiden försöker hitta en balans mellan allmänna beskrivningar och en
 * [Dataåtgärdskomponenter](/help/using/reference/system-components/components-data-action.md)
 * [Datainsamlingskomponenter](/help/using/reference/system-components/components-data-collection.md)
 * [Databearbetningskomponenter](/help/using/reference/system-components/components-data-processing.md)
-* [Tagghanteringskomponenter](/help/using/reference/system-components/components-tag-management.md)
-* [Platform Architecture: Dataflödesschema](/help/using/reference/system-components/components-platform-architecture.md)
+* [Tag Management-komponenter](/help/using/reference/system-components/components-tag-management.md)
+* [Plattformsarkitektur: Dataflödesschema](/help/using/reference/system-components/components-platform-architecture.md)
 * [Förstå Edge Data Center](/help/using/reference/system-components/components-edge.md)
 
