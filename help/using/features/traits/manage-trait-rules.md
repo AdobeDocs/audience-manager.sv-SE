@@ -1,21 +1,21 @@
 ---
 description: I Trait Builder kan du med Expression Builder skapa och testa regler som fastställer krav för målgruppskvalifikation. Regler består av nyckelvärdepar som "color == blue" eller "price > 100". Jämförelseoperatorer upprättar relationen mellan nycklar och värden. Booleska uttryck bestämmer relationen mellan regelgrupper.
 seo-description: I Trait Builder kan du med Expression Builder skapa och testa regler som fastställer krav för målgruppskvalifikation. Regler består av nyckelvärdepar som "color == blue" eller "price > 100". Jämförelseoperatorer upprättar relationen mellan nycklar och värden. Booleska uttryck bestämmer relationen mellan regelgrupper.
-seo-title: Hantering av trait-regler
+seo-title: Hantera trait-regler
 solution: Audience Manager
-title: Hantering av trait-regler
+title: Hantera trait-regler
 uuid: 827d4567-2b6f-411e-bd5c-9735c916291a
 feature: Traits
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Hantering av trait-regler {#managing-trait-rules}
+# Hantera trait-regler {#managing-trait-rules}
 
 I [!UICONTROL Trait Builder]kan ni [!UICONTROL Expression Builder] skapa och testa regler som fastställer krav på målgruppskvalifikation. Regler består av nyckelvärdepar som `color == blue` eller `price > 100`. Jämförelseoperatorer upprättar relationen mellan nycklar och värden. [!DNL Boolean] uttryck bestämmer relationen mellan regelgrupper.
 
@@ -56,7 +56,7 @@ Fyll i de obligatoriska fälten i **[!UICONTROL Basic Information]** avsnittet *
    >Operatorn [!DNL Boolean][!UICONTROL OR] upprättar relationen mellan flera signaler *inom* en grupp och kan inte ändras.
 1. Klicka på **[!UICONTROL Add Rule]**. Den sparade regeln visas på arbetsytan för egenskaper ovanför datainmatningsfälten.
 
-### Exempel {#example-trait-rule}
+### Exempel på {#example-trait-rule}
 
 I exemplet nedan har en användare skapat en ny trait-regel baserat på produkt-ID:t. För att skapa den här regeln tillhandahöll användaren nyckeln `productkey` som är länkad med en likhetsoperator ( `==`) till värdet `2093`.
 ![](assets/tb_sample_rule1.png)
