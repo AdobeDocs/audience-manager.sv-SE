@@ -1,20 +1,20 @@
 ---
 description: 'Folk-baserade destinationer introducerar begreppet delningsbara målgrupper för Audience Manager. Detta mått hjälper dig att förstå hur många av de hash-kodade e-postadresserna som Audience Manager kan dela med målplattformen. '
 seo-description: 'Folk-baserade destinationer introducerar begreppet delningsbara målgrupper för Audience Manager. Detta mått hjälper dig att förstå hur många av de hash-kodade e-postadresserna som Audience Manager kan dela med målplattformen. '
-seo-title: Delningsbara målgrupper
+seo-title: Delbara målgrupper
 solution: Audience Manager
-title: Delningsbara målgrupper
+title: Delbara målgrupper
 feature: People-Based Destinations
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Delningsbara målgrupper {#shareable-audiences}
+# Delbara målgrupper {#shareable-audiences}
 
 >[!IMPORTANT]
 >Den här artikeln innehåller produktdokumentation som ska hjälpa dig att konfigurera och använda den här funktionen. Ingenting i det här är juridisk rådgivning. Vänligen kontakta ditt eget juridiska ombud för att få juridisk rådgivning.
@@ -35,7 +35,7 @@ Måttet på en personbaserad målsida anger det totala antalet hash-kodade e-pos
 
 ![delningsbara målgrupper](assets/dest-shareable-audiences.png)
 
-Det här måttet har en livslång summeringsperiod. Detta hjälper er att förstå hur stor målgrupp ni kan nå från datakällan för hash-kodade e-postadresser.
+Det här måttet har en livslång summeringsperiod. Detta hjälper er att förstå hur stor målgrupp ni kan nå utifrån datakällan för hash-kodade e-postadresser.
 
 ## Exempel
 
