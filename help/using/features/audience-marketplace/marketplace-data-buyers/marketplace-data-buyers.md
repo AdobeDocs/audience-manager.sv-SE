@@ -1,9 +1,9 @@
 ---
 description: Översikt och arbetsflöde för datainköpare som vill köpa data från tredje part inifrån Audience Manager
 seo-description: Översikt och arbetsflöde för datainköpare som vill köpa data från tredje part inifrån Audience Manager
-seo-title: Audience Marketplace för datainköpare
+seo-title: Audience Marketplace för dataköpare
 solution: Audience Manager
-title: Audience Marketplace för datainköpare
+title: Audience Marketplace för dataköpare
 topic: DIL API
 uuid: f505b5f4-4231-4e84-993a-cd64128b540f
 feature: Audience Marketplace
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
