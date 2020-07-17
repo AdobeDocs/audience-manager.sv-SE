@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -122,7 +122,7 @@ Beskriver tekniska och affärsmässiga orsaker till att skicka data via synkrona
 * **Tekniska överväganden:** Leverans av data är beroende av dataparameterns tekniska kapacitet. Audience Manager kan skicka/ta emot data i realtid från webbläsaren eller via batchuppdateringar via kommunikationsprocesser som är offline, från server till server.
 * **Business Considerations:** Vilka affärsorsaker du kan använda för att välja en leveransmetod eller en annan beror på den tekniska kapaciteten hos målpartnern och hur du vill använda dessa data. Vanligtvis är synkrona dataöverföringar användbara när du behöver vidta åtgärder mot användardata omedelbart. Asynkrona dataöverföringar kan vara användbara när det inte krävs någon omedelbar åtgärd och när du har tid att skapa djupare användarprofiler för senare bruk.
 
-## Dataöverföringsprocess i realtid {#real-time-data-transfer-process}
+## Real-Time Data Transfer Process {#real-time-data-transfer-process}
 
 En allmän översikt över hur Audience Manager utför ett synkront datautbyte med en tredjepartsleverantör.
 
@@ -144,7 +144,7 @@ Integreringen av data i realtid fungerar på följande sätt:
 
 ![](assets/rt_reduce70.png)
 
-## Batchdataöverföringsprocess {#batch-data-transfer-process}
+## Satsvis dataöverföringsprocess {#batch-data-transfer-process}
 
 En allmän översikt över hur Audience Manager utbyter data synkront (i realtid) med en tredjepartsleverantör.
 
