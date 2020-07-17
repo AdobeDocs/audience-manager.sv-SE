@@ -1,20 +1,20 @@
 ---
 description: Skapa nya egenskaper utifrån alla signaler, även sådana som redan används i egenskaper, och fånga framtida målgrupper som kvalificerar sig efter att ha skapat egenskaper.
-seo-description: Skapa nya egenskaper utifrån alla signaler, även sådana som redan används i egenskaper, och fånga framtida målgrupper som kvalificerar sig efter att ha skapat egenskaper.
-seo-title: Skapa egenskaper från signaler
-title: Skapa egenskaper från signaler
+seo-description: Skapa nya egenskaper utifrån alla signaler, även sådana som redan används i egenskaper, och fånga framtida målgrupper som kvalificerar sig efter att egenskaperna har skapats.
+seo-title: Skapa traits av signaler
+title: Skapa traits av signaler
 uuid: 4f324404-0c24-4e3b-96c1-7c1b28a4536d
 feature: Data Explorer
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '359'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Skapa egenskaper från signaler
+# Skapa traits av signaler
 
 Skapa nya egenskaper utifrån alla signaler, även sådana som redan används i egenskaper, och fånga framtida målgrupper som kvalificerar sig efter att ha skapat egenskaper. Se videon för en snabb demonstration eller läs vidare för mer information:
 
@@ -46,6 +46,7 @@ Sök efter specifika signaler och skapa regelbaserade eller anpassade egenskaper
 2. Identifiera de signaler som du vill använda i egenskapen i resultatlistan.
    * Om du vill skapa ett drag från en signal klickar du på motsvarande **[!UICONTROL Create Rule-Based Trait]** eller **[!UICONTROL Create Onboarded Trait]** länk.
    * Om du vill skapa en egenskap från flera signaler klickar du i motsvarande kryssruta för varje signal och klickar sedan på **[!UICONTROL Create Trait from Multiple Signals]**.
+
    >[!NOTE]
    >Du kan bara skapa egenskaper från signaler av samma typ. Du kan inte skapa en egenskap baserat på en kombination av en realtidssignal och en inbyggd signal.
    >
