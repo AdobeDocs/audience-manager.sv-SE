@@ -1,21 +1,21 @@
 ---
 description: Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från segment. Din möjlighet att ta bort en enhetsprofil från ett segment beror på vilket enhetsalternativ som används för att skapa en profilkopplingsregel.
 seo-description: Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från segment. Din möjlighet att ta bort en enhetsprofil från ett segment beror på vilket enhetsalternativ som används för att skapa en profilkopplingsregel.
-seo-title: Regler för profilsammanslagning och icke-segmenteringsprocesser för enheter
+seo-title: Regler för profilsammanslagning och avsegmenteringsprocesser för enheter
 solution: Audience Manager
-title: Regler för profilsammanslagning och icke-segmenteringsprocesser för enheter
+title: Regler för profilsammanslagning och avsegmenteringsprocesser för enheter
 uuid: b61c6de3-5fe4-4892-a05a-96a4cb35af34
 feature: Profile Merge Rules
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '503'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 
-# Regler för profilsammanslagning och icke-segmenteringsprocesser för enheter {#profile-merge-rules-and-device-un-segmentation-processes}
+# Regler för profilsammanslagning och avsegmenteringsprocesser för enheter {#profile-merge-rules-and-device-un-segmentation-processes}
 
 Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från segment. Din möjlighet att ta bort en enhetsprofil från ett segment beror på vilket enhetsalternativ som används för att skapa en [!UICONTROL Profile Merge Rule].
 
@@ -52,5 +52,5 @@ Som en påminnelse [!UICONTROL Device Options] är de tillgängliga i avsnittet 
 >[!MORELIKETHIS]
 >
 >* [Vanliga frågor om regler för profilsammanslagning och enhetsdiagram](../../faq/faq-profile-merge.md)
->* [Direkt undertryckning av olika enheter](instant-cross-device-suppression.md)
+>* [Omgående enhetsövergripande undertryckning](instant-cross-device-suppression.md)
 
