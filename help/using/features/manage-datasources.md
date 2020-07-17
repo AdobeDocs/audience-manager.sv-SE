@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Så här slutför du [!UICONTROL Data Source Details] avsnittet:
 1. Ange en [!UICONTROL integration code]. Vanligtvis är [!UICONTROL integration codes] de valfria. De krävs när du vill:
 
    * [Skapa en datakälla](../features/profile-merge-rules/merge-rules-start.md#create-data-source)för olika enheter.
-   * Använd [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html).
+   * Use the [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html).
    * Arbeta med [profilkopplingsregler](../features/profile-merge-rules/merge-rules-start.md).
 
 1. Välj en **[!UICONTROL ID Type]**. [!UICONTROL ID Type] bland annat:
