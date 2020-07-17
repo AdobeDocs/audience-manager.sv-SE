@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '922'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -70,11 +70,11 @@ Titta på videon nedan för att få en översikt över dataflödet när du anvä
 
 För att du bättre ska förstå hur och när du ska använda [!DNL People-Based Destinations]finns det två exempel på användningsområden som Audience Manager-kunder kan lösa med den här funktionen.
 
-### Användningsfall 1 {#use-case-1}
+### Use Case #1 {#use-case-1}
 
 En webbutik vill nå befintliga kunder via sociala plattformar och visa dem personaliserade erbjudanden baserat på deras tidigare order. Med [!DNL People-Based Destinations]onlinebutiken kan webbutiken importera hashas-e-postadresser från sin egen [!DNL CRM] till Audience Manager, bygga segment utifrån sina egna offlinedata och skicka dessa segment till de sociala plattformar som de vill annonsera på, vilket optimerar annonsutgifterna.
 
-### Användningsfall nr 2 {#use-case-2}
+### Use Case #2 {#use-case-2}
 
 Ett flygbolag har olika kundnivåer (Bronze, Silver och Gold) och vill kunna erbjuda varje nivå personaliserade erbjudanden via sociala plattformar. Företaget använder Audience Manager för att analysera kundaktiviteter på webbplatsen. Alla kunder använder dock inte flygbolagets mobilapp, och vissa av dem har inte loggat in på företagets webbplats. De enda identifierare företaget har för dessa kunder är medlems-ID och e-postadresser.
 
