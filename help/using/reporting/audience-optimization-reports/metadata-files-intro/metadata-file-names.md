@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -49,7 +49,7 @@ I metadatafilnamnet är det underordnade ID:t en identifierare som klassificerar
 1. Taktisk
 1. Affärsenhet eller varumärke
 
-## Exempel {#example}
+## Exempel på {#example}
 
 För en Creative-metadatafil kan filnamnet vara 20190115_0_2.
 
