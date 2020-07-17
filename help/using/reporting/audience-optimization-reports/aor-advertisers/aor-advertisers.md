@@ -1,16 +1,16 @@
 ---
 description: Målgruppsoptimering för annonsörer kan hjälpa er att identifiera potentiella prestationsmöjligheter för segment i Audience Manager i era betalmediekampanjer. Dessa rapporter kombinerar kampanjdata på loggnivå med Audience Manager segmentstatistik för att kunna skapa segmentbaserade optimeringar och en effektiv kanalmix.
 seo-description: Målgruppsoptimering för annonsörer kan hjälpa er att identifiera potentiella prestationsmöjligheter för segment i Audience Manager i era betalmediekampanjer. Dessa rapporter kombinerar kampanjdata på loggnivå med Audience Manager segmentstatistik för att kunna skapa segmentbaserade optimeringar och en effektiv kanalmix.
-seo-title: Målgruppsoptimering för annonsörer
+seo-title: Audience Optimization för annonsörer
 solution: Audience Manager
-title: Målgruppsoptimering för annonsörer
+title: Audience Optimization för annonsörer
 uuid: 852d550e-3c7f-4750-9abc-365c3a6f7883
 feature: audience optimization reports
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '451'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
