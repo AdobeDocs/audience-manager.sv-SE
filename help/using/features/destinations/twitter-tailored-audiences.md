@@ -1,15 +1,15 @@
 ---
 description: I den här artikeln beskrivs hur du konfigurerar Twitter-anpassade målgrupper för både nya och befintliga integreringar.
 seo-description: I den här artikeln beskrivs hur du konfigurerar Twitter-anpassade målgrupper för både nya och befintliga integreringar.
-seo-title: Konfigurera Twitter-anpassade målgrupper som självbetjäningsbaserade enhetsbaserade mål
+seo-title: Konfigurera Twitter-anpassade målgrupper som enhetsbaserade destinationer med självbetjäning
 solution: Audience Manager
-title: Konfigurera Twitter-anpassade målgrupper som självbetjäningsbaserade enhetsbaserade mål
+title: Konfigurera Twitter-anpassade målgrupper som enhetsbaserade destinationer med självbetjäning
 feature: People-Based Destinations
 translation-type: tm+mt
 source-git-commit: 8ff76decc1cbd7f7babd619dd1ce9fe047541337
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
