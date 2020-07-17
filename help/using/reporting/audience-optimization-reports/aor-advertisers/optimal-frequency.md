@@ -1,9 +1,9 @@
 ---
 description: Rapporten Optimal Frequency hjälper er att hitta den optimala balansen mellan antalet betjänade visningar och konverteringar. Det gör att du kan justera antalet visningar som du vill visa innan du börjar se en minskning av avkastningen.
 seo-description: Rapporten Optimal Frequency hjälper er att hitta den optimala balansen mellan antalet betjänade visningar och konverteringar. Det gör att du kan justera antalet visningar som du vill visa innan du börjar se en minskning av avkastningen.
-seo-title: 'Rapporten Optimal frekvens '
+seo-title: Rapporten Optimal frekvens
 solution: Audience Manager
-title: 'Rapporten Optimal frekvens '
+title: Rapporten Optimal frekvens
 uuid: 50459ce9-39ac-4401-93dd-7526937fc742
 feature: audience optimization reports
 translation-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 3%
 ---
 
 
-# Rapporten Optimal frekvens {#optimal-frequency-report}
+# Rapporten Optimal frekvens{#optimal-frequency-report}
 
 Rapporten Optimal Frequency hjälper er att hitta den optimala balansen mellan antalet betjänade visningar och konverteringar. Det gör att du kan justera antalet visningar som du vill visa innan du börjar se en minskning av avkastningen.
 
