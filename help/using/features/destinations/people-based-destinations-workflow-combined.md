@@ -1,20 +1,20 @@
 ---
 description: 'Den här sidan innehåller stegvis vägledning om hur du kombinerar offline-CRM-data med beteendedata som du redan har i Audience Manager för att skapa nya målgruppssegment och sedan skickar dessa målgruppssegment till personbaserade destinationer.  '
 seo-description: 'Den här sidan innehåller stegvis vägledning om hur du kombinerar offline-CRM-data med beteendedata som du redan har i Audience Manager för att skapa nya målgruppssegment och sedan skickar dessa målgruppssegment till personbaserade destinationer.   '
-seo-title: Arbetsflöde A - Personalisering baserad på all onlineaktivitet i kombination med offlinedata
+seo-title: Arbetsflöde A – Personalisering baserad på all onlineaktivitet i kombination med offlinedata
 solution: Audience Manager
-title: Arbetsflöde A - Personalisering baserad på all onlineaktivitet i kombination med offlinedata
+title: Arbetsflöde A – Personalisering baserad på all onlineaktivitet i kombination med offlinedata
 feature: People-Based Destinations
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1180'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 
-# Arbetsflöde A - Personalisering baserad på all onlineaktivitet i kombination med offlinedata {#workflow-a}
+# Arbetsflöde A – Personalisering baserad på all onlineaktivitet i kombination med offlinedata {#workflow-a}
 
 >[!IMPORTANT]
 >Den här artikeln innehåller produktdokumentation som ska hjälpa dig att konfigurera och använda den här funktionen. Ingenting i det här är juridisk rådgivning. Vänligen kontakta ditt eget juridiska ombud för att få juridisk rådgivning.
