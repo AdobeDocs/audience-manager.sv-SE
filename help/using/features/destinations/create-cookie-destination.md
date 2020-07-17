@@ -1,20 +1,20 @@
 ---
 description: En cookie-destination returnerar och skriver data till en cookie i användarens webbläsare. Cookien innehåller data som kan läsas av andra plattformar som har åtkomst till sidan. Följ de här instruktionerna för att skapa en cookie-destination med [!UICONTROL Destination Builder].
 seo-description: En cookie-destination returnerar och skriver data till en cookie i användarens webbläsare. Cookien innehåller data som kan läsas av andra plattformar som har åtkomst till sidan. Följ de här instruktionerna för att skapa en cookie-destination med [!UICONTROL Destination Builder].
-seo-title: Konfigurera ett cookie-mål
+seo-title: Konfigurera en cookie-destination
 solution: Audience Manager
-title: Konfigurera ett cookie-mål
+title: Konfigurera en cookie-destination
 feature: Destination Basics
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 0%
+source-wordcount: '608'
+ht-degree: 2%
 
 ---
 
 
-# Konfigurera ett cookie-mål {#create-cookie-destination}
+# Konfigurera en cookie-destination {#create-cookie-destination}
 
 En cookie-destination returnerar och skriver data till en cookie i användarens webbläsare. Cookien innehåller data som kan läsas av andra plattformar som har åtkomst till sidan. Följ de här instruktionerna för att skapa en cookie-destination med [!UICONTROL Destination Builder].
 
