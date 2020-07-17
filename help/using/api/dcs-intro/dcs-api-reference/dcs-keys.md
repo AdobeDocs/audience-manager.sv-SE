@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '806'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -73,11 +73,11 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_cid</code> </p> </td> 
-   <td colname="col2"> <p>Innehåller ett eller flera par med ID:n (<code> DPID</code>) för DataProvider och användar-ID:n (<code> DPUUID</code>) som tilldelats av <span class="keyword"> Audience Manager</span>. Om du använder flera par med <code> DPID</code>s och <code> DPUUID</code>s separerar du varje par med tecknet som inte skrivs ut <code> %01</code>. Exempel: <code><i>DPID</i>%01<i>DPUUUID</i></code>. </p> <p><code> d_cid</code> ersätts <code> d_dpid</code> och <code> d_dpuuid</code>, som är borttagna men fortfarande stöds. Se <a href="../../../reference/cid.md"> CID ersätter DPID och DPUUID</a>. </p> </td>
+   <td colname="col2"> <p>Innehåller ett eller flera par med ID:n (<code> DPID</code>) för DataProvider och användar-ID:n (<code> DPUUID</code>) som tilldelats av <span class="keyword"> Audience Manager</span>. Om du använder flera par med <code> DPID</code>s och <code> DPUUID</code>s separerar du varje par med tecknet som inte skrivs ut <code> %01</code>. Exempel: <code><i>DPID</i>%01<i>DPUUUID</i></code>. </p> <p><code> d_cid</code> ersätts <code> d_dpid</code> och <code> d_dpuuid</code>, som är borttagna men fortfarande stöds. Se <a href="../../../reference/cid.md">CID ersätter DPID och DPUUID</a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cid_ic</code> </p> </td> 
-   <td colname="col2"> <p>Innehåller en integreringskod och ett associerat unikt användar-ID i ett enda nyckelvärdepar. </p> <p><code> d_cid_ic</code> ersätts <code> d_dpid</code> och <code> d_dpuuid</code>, som är borttagna men fortfarande stöds. Se <a href="../../../reference/cid.md"> CID ersätter DPID och DPUUID</a>. </p> </td>
+   <td colname="col2"> <p>Innehåller en integreringskod och ett associerat unikt användar-ID i ett enda nyckelvärdepar. </p> <p><code> d_cid_ic</code> ersätts <code> d_dpid</code> och <code> d_dpuuid</code>, som är borttagna men fortfarande stöds. Se <a href="../../../reference/cid.md">CID ersätter DPID och DPUUID</a>. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
@@ -123,7 +123,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>Anger det Experience Cloud-ID som anges och används av tjänsten <span class="keyword"> Experience Cloud</span> -ID. Mer information om ECID finns i <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud Identity Service</a>. </p> </td> 
+   <td colname="col2"> <p>Anger det Experience Cloud-ID som anges och används av tjänsten <span class="keyword"> Experience Cloud</span> -ID. Mer information om ECID finns i <a href="https://docs.adobe.com/content/help/sv-SE/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
