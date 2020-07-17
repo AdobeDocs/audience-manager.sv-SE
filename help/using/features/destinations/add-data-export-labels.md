@@ -1,21 +1,21 @@
 ---
 description: Dataexportetiketter fungerar med de exportkontroller du anger för en datakälla. Dataexportetiketter förhindrar att du lägger till begränsade egenskaper i ett segment och skickar segmentdata till ett mål. Du kan ange flera exportetiketter till en ny eller befintlig cookie eller URL-adress.
 seo-description: Dataexportetiketter fungerar med de exportkontroller du anger för en datakälla. Dataexportetiketter förhindrar att du lägger till begränsade egenskaper i ett segment och skickar segmentdata till ett mål. Du kan ange flera exportetiketter till en ny eller befintlig cookie eller URL-adress.
-seo-title: Lägg till dataexportkontroller till ett mål
+seo-title: Lägga till dataexportkontroller för en destination
 solution: Audience Manager
-title: Lägg till dataexportkontroller till ett mål
+title: Lägga till dataexportkontroller för en destination
 feature: Data Export Controls
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 
 
-# Lägg till dataexportetiketter till ett mål {#add-data-export-labels}
+# Add Data Export Labels to a Destination {#add-data-export-labels}
 
 [!DNL Data Export Labels] arbeta med den [!DNL Export Controls] du anger för en datakälla. [!DNL Data Export Labels] förhindrar att du lägger till begränsade egenskaper i ett segment och inte skickar segmentdata till ett mål. Du kan ange flera exportetiketter till ett nytt eller befintligt [!DNL cookie] mål eller [!DNL URL] mål.
 
@@ -35,6 +35,7 @@ Så här lägger du till exportetiketter till ett mål:
    * **[!UICONTROL This destination may be used for on-site ad targeting]**
    * **[!UICONTROL This destination may be used for off-site ad targeting]**
    * **[!UICONTROL This destination may be used for on-site ad personalization]**
+
    >[!IMPORTANT]
    >
    >Exportbegränsningar fungerar inte om du inte anger en [matchande exportkontroll](../../features/data-export-controls.md) för en datakälla.
