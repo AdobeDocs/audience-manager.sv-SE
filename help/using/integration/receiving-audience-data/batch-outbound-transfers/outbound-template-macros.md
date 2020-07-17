@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -58,7 +58,7 @@ Tabellen visar och beskriver makrona som du kan använda i filnamnet och för at
   <tr> 
    <td colname="col1"> <p> <code> SPLITNUM </code> </p> </td> 
    <td colname="col2"> <p>Anger delning av utgående filer i flera delar. Ersätt delen SPLITNUM i filnamnet med artikelnumret föregånget av nollor, så att minst tre tecken för delen SPLITNUM anges.</p>
-   <p>SPLITNUM-makrot behöver inte omges av &lt;&gt; tecken.</p><p>Exempel: <code>&lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;SPLITNUM.csv</code>
+   <p>SPLITNUM-makrot behöver inte omges av &lt;&gt; tecken.</p><p>Exempel på: <code>&lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;SPLITNUM.csv</code>
 <p>s3_123456_9999_full_1566906141001.csv</p> 
 <p>s3_123456_9999_full_1566906141002.csv</p> 
 <p>s3_123456_9999_full_1566906141003.csv</p> 
@@ -115,7 +115,7 @@ Makron som används för att formatera innehållet i en datafil. Kodexempel finn
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DP_UUID_LIST </code> </p> </td> 
-   <td colname="col2"> <p>Returnerar en lista som innehåller flera ID:n för en datapartner. Detta är användbart om du har en stor organisation med flera indelningar eller andra organisationsgrupper som du kan dela data med. Detta makro returnerar en lista över ID:n för dessa underordnade grupper. </p> </td> 
+   <td colname="col2"> <p>Returnerar en lista som innehåller flera ID:n för en datapartner. Detta är användbart om du har en stor organisation med flera indelningar eller andra organisationsgrupper som du kan dela data med. Detta makro returnerar en lista över ID:n för de underordnade grupperna. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DPID </code> </p> </td> 
@@ -131,7 +131,7 @@ Makron som används för att formatera innehållet i en datafil. Kodexempel finn
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> MCID </code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Adobe Experience Cloud </span> ID. </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Adobe Experience Cloud ID.</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPEN_CURLY_BRACKET </code> </p> </td> 
