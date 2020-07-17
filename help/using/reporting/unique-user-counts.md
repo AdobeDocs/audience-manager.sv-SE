@@ -3,19 +3,19 @@ description: Beskriver variationen i unika användarsummor mellan rapporter för
 seo-description: Beskriver variationen i unika användarsummor mellan rapporter för samma egenskap och tidsperiod i Adobe Audience Manager
 seo-title: Räkna unika användare i överlappning och allmänna rapporter i AAM
 solution: Audience Manager
-title: Räkna unika användare i överlappning och allmänna rapporter
+title: Räkna unika användare i överlappande och allmänna rapporter
 uuid: 450f6a8c-f363-43de-b2d8-0a156f14ecae
 feature: reporting reference
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Räkna unika användare i överlappning och allmänna rapporter{#counting-unique-users-in-overlap-and-general-reports}
+# Räkna unika användare i överlappande och allmänna rapporter{#counting-unique-users-in-overlap-and-general-reports}
 
 Den här sidan beskriver variationen i unika användarsummor mellan rapporter för samma egenskap och tidsperiod.
 
