@@ -1,21 +1,21 @@
 ---
 description: Mappa segment till mål med dessa RESTful API-metoder.
 seo-description: Mappa segment till mål med dessa RESTful API-metoder.
-seo-title: Mappa segment till ett mål
+seo-title: Mappa segment till en destination
 solution: Audience Manager
-title: Mappa segment till ett mål
+title: Mappa segment till en destination
 uuid: 35358ace-3082-4e86-a6eb-d77281af6d7e
 feature: API
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Mappa segment till ett mål {#map-segments-to-a-destination}
+# Mappa segment till en destination {#map-segments-to-a-destination}
 
 Mappa segment till mål med dessa [!DNL RESTful API] metoder.
 
@@ -482,7 +482,7 @@ Returnerar en array med skapade mappningar.
 ]
 ```
 
-## Uppdatera ett mål med mål-ID {#update-dest-data-order}
+## Update a Destination by Destination ID {#update-dest-data-order}
 
 En `PUT` metod som gör att du kan uppdatera ett befintligt mål med `destinationId`.
 
@@ -584,7 +584,7 @@ Alla begärandavärden är obligatoriska om inget annat anges.
 
 >[!MORELIKETHIS]
 >
->* [Mål](../../../features/destinations/destinations.md)
+>* [Destinationer ](../../../features/destinations/destinations.md)
 >* [Målserialisering](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [Förklaring av nyckelvärdepar](../../../reference/key-value-pairs-explained.md)
+>* [Förklaring av nyckelvärdespar](../../../reference/key-value-pairs-explained.md)
 
