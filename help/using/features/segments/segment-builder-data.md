@@ -1,16 +1,16 @@
 ---
 description: Lägg till och ta bort egenskaper i Segment Builder för att visa faktiska trait-populationer tillsammans med faktiska och uppskattade segmentpopulationsdata. Den beräknade populationsstorleken hjälper er att bygga upp rätt segment för kampanjen.
 seo-description: Lägg till och ta bort egenskaper i Segment Builder för att visa faktiska trait-populationer tillsammans med faktiska och uppskattade segmentpopulationsdata. Den beräknade populationsstorleken hjälper er att bygga upp rätt segment för kampanjen.
-seo-title: Trait and Segment Population Data in Segment Builder
+seo-title: Trait- och segmentpopulationsdata i Segment Builder
 solution: Audience Manager
-title: Trait and Segment Population Data in Segment Builder
+title: Trait- och segmentpopulationsdata i Segment Builder
 uuid: e1e59c0a-b4c7-4cad-8485-3667e0a95e83
 feature: Segments
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1250'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -88,7 +88,7 @@ I följande tabell definieras de uppskattade populationsmåtten.
 
 ## Befintliga (faktiska) segmentpopulationsdata har definierats {#existing-segment-population}
 
-[!UICONTROL Profile Merge Rules] påverkar det faktiska antalet populationer i realtid och totalt antal. Dessa summor varierar beroende på om ett segment tillhör använder ett enhetsdiagramalternativ eller inte. [!UICONTROL Profile Merge Rule] Se även Alternativ för [profilsammanfogningsregel definierade](../../features/profile-merge-rules/merge-rule-definitions.md).
+[!UICONTROL Profile Merge Rules] påverkar det faktiska antalet populationer i realtid och totalt antal. Dessa summor varierar beroende på om ett segment tillhör använder ett enhetsdiagramalternativ eller inte. [!UICONTROL Profile Merge Rule] See also, [Profile Merge Rule Options Defined](../../features/profile-merge-rules/merge-rule-definitions.md).
 
 ### Segmentpopulationsdata för [!UICONTROL Merge Rules] Utan [!UICONTROL Device Graph Option]
 
