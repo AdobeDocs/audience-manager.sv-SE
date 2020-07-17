@@ -1,9 +1,9 @@
 ---
 description: På Marketplace går datainköpare till forskning och prenumererar på offentliga och privata dataflöden. Följ de här stegen för att prenumerera på en offentlig datafeed.
 seo-description: På Marketplace går datainköpare till forskning och prenumererar på offentliga och privata dataflöden. Följ de här stegen för att prenumerera på en offentlig datafeed.
-seo-title: Hantera abonnemang på dataflöden
+seo-title: Hantera prenumerationer på dataflöden
 solution: Audience Manager
-title: Hantera abonnemang på dataflöden
+title: Hantera prenumerationer på dataflöden
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
 feature: Audience Marketplace
@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '2186'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Hantera abonnemang på dataflöden {#manage-data-feed-subscriptions}
+# Hantera prenumerationer på dataflöden {#manage-data-feed-subscriptions}
 
 Det [!UICONTROL Marketplace] är här som datainköpare går till forskning och prenumererar på offentliga och privata dataflöden. Följ de här stegen för att prenumerera på en offentlig datafeed.
 
@@ -39,12 +39,14 @@ Så här prenumererar du på en allmän datafeed:
 1. Välj ett användningsfall i prenumerationstabellen och:
    * Flytta reglaget **[!UICONTROL Subscription]** till **[!UICONTROL On]**.
    * Klicka på **[!UICONTROL Review & Subscribe]**. Då öppnas [!UICONTROL Terms and Conditions] fönstret.
+
    ![prenumerera](assets/subscribe3.png)
 
 1. I [!UICONTROL Terms and Conditions] fönstret:
 
    * **Viktigt:** Låt kryssrutan vara **[!UICONTROL ID sync]** markerad. Den här inställningen hjälper till att förbättra matchningsfrekvensen hos din DataProvider.
    * Markera rutan Villkor och klicka sedan på **[!UICONTROL Accept]** för att slutföra prenumerationsprocessen.
+
    ![prenumerera](assets/subscribe4.png)
 
 ### Nästa steg
