@@ -1,20 +1,20 @@
 ---
 description: Sök efter en eller flera signaler baserat på deras respektive nyckelvärdepar.
 seo-description: Sök efter en eller flera signaler baserat på deras respektive nyckelvärdepar.
-seo-title: Söksignaler efter nyckelvärdepar
-title: Söksignaler efter nyckelvärdepar
+seo-title: Söka efter signaler med nyckelvärdespar
+title: Söka efter signaler med nyckelvärdespar
 uuid: 2a38d0d4-4a2e-4ca5-b9ec-af9d4963d876
 feature: Data Explorer
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Söksignaler efter nyckelvärdepar {#search-signals-by-key-value-pairs}
+# Söka efter signaler med nyckelvärdespar {#search-signals-by-key-value-pairs}
 
 Sök efter en eller flera signaler baserat på deras respektive nyckelvärdepar.
 Om du vill söka efter fler än en signal klickar du på knappen ![Lägg till](assets/icon_add.png) . Ange de nyckelvärdepar som du vill söka efter och använd sedan följande filter för att begränsa resultatet.
