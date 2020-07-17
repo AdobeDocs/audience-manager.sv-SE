@@ -1,15 +1,15 @@
 ---
-description: Med prediktiva målgrupper kan ni klassificera okända målgrupper i distinkta personligheter i realtid med datavetenskap.
-seo-description: Med prediktiva målgrupper kan ni klassificera okända målgrupper i distinkta personligheter i realtid med datavetenskap.
-seo-title: Översikt över prediktiva målgrupper
+description: Med Predictive Audiences kan ni klassificera okända målgrupper i distinkta personas i realtid med datavetenskap.
+seo-description: Med Predictive Audiences kan ni klassificera okända målgrupper i distinkta personas i realtid med datavetenskap.
+seo-title: Översikt över Predictive Audiences
 solution: Audience Manager
-title: Audience Manager prediktiva målgrupper
+title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1251'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 0%
 >[!IMPORTANT]
 >Den här artikeln innehåller produktdokumentation som ska hjälpa dig att konfigurera och använda den här funktionen. Ingenting i det här är juridisk rådgivning. Vänligen kontakta ditt eget juridiska ombud för att få juridisk rådgivning.
 
-I ett marknadsföringssammanhang är en person ett målgruppssegment som definieras av besökare, användare eller potentiella köpare som delar en viss uppsättning egenskaper, som demografi, surfvanor, shoppinghistorik osv.
+I marknadsföringssammanhang är en persona ett målgruppssegment som definieras av besökare, användare eller potentiella köpare som delar en viss uppsättning traits som demografi, surfvanor, shoppinghistorik osv.
 
-[!UICONTROL Predictive Audiences] modeller tar det här konceptet ett steg längre genom att du kan använda Audience Manager maskininlärningsfunktioner för att klassificera okända målgrupper i distinkta personligheter. Audience Manager hjälper er att uppnå detta genom att beräkna hur benägen era okända förstapartsmålgrupper är för en uppsättning kända förstapartsmålgrupper.
+[!UICONTROL Predictive Audiences]-modeller tar detta koncept ett steg längre genom att använda Audience Managers maskininlärningsfunktioner för att klassificera okända målgrupper i distinkta personas. Audience Manager hjälper er att uppnå detta genom att beräkna köpbenägenheten hos en okänd förstapartsmålgrupp i förhållande till en känd uppsättning förstapartsmålgrupper.
 
 När du skapar en [!UICONTROL Predictive Audiences] modell är det första steget att välja de baslinjeegenskaper eller segment som du vill att målgruppen ska klassificeras efter. Dessa egenskaper eller segment kommer att definiera er personlighet.
 
@@ -35,7 +35,7 @@ Du kan identifiera de prediktiva segment som skapas av modellen på [!UICONTROL 
 
 ## Användningsexempel {#use-cases}
 
-För att ni bättre ska förstå hur och när ni kan använda [!UICONTROL Predictive Audiences]finns det några exempel som Audience Manager-kunder kan lösa med den här funktionen.
+För att du bättre ska förstå hur och när du kan använda [!UICONTROL Predictive Audiences]finns det några exempel på hur Audience Manager-kunder kan lösa det med den här funktionen.
 
 ### Användningsfall 1
 
@@ -105,7 +105,7 @@ När du utvärderar förstapartsmålgrupper och tilldelar poäng används standa
 
 Tänk på följande när du konfigurerar dina [!UICONTROL Predictive Audiences] modeller:
 
-* Du kan skapa upp till 10 [!UICONTROL Predictive Audiences] modeller.
+* Du kan skapa upp till 10 [!UICONTROL Predictive Audiences]-modeller.
 * För varje modell kan du välja upp till 50 basegenskaper/segment.
 * Data från andra och tredje part stöds för närvarande inte i [!UICONTROL Predictive Audiences].
 * Målgruppsklassificering görs endast för förstapartsmålgrupper i realtid. Integrerad klassificering av förstahandsanvändare kan stödjas i en framtida uppdatering.
