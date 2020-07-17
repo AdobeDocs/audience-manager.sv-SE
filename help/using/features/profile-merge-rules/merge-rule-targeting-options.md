@@ -1,21 +1,21 @@
 ---
 description: Med alternativen för regler för profilsammanslagning kan ni utöka eller öka målgruppernas fokus på specifika målgrupper baserat på verksamhetens behov eller mål. De här allmänna användningsexemplen utforskar hur du använder tillgängliga alternativ och skapar kopplingsregler för målinriktning individuellt, för hushåll och på olika enheter.
 seo-description: Med alternativen för regler för profilsammanslagning kan ni utöka eller öka målgruppernas fokus på specifika målgrupper baserat på verksamhetens behov eller mål. De här allmänna användningsexemplen utforskar hur du använder tillgängliga alternativ och skapar kopplingsregler för målinriktning individuellt, för hushåll och på olika enheter.
-seo-title: Allmänna användningsexempel för profilkopplingsregler
+seo-title: Allmänna användningsexempel för regler för profilsammanslagning
 solution: Audience Manager
-title: Allmänna användningsexempel för profilkopplingsregler
+title: Allmänna användningsexempel för regler för profilsammanslagning
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 feature: Profile Merge Rules
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Allmänna användningsexempel för profilkopplingsregler {#general-use-cases-for-profile-merge-rules}
+# Allmänna användningsexempel för regler för profilsammanslagning {#general-use-cases-for-profile-merge-rules}
 
 [!UICONTROL Profile Merge Rules] kan ni utöka eller öka målgruppernas fokus på specifika målgrupper baserat på verksamhetens behov eller mål. De här allmänna användningsexemplen utforskar hur du använder tillgängliga alternativ och skapar kopplingsregler för målinriktning individuellt, för hushåll och på olika enheter. [!UICONTROL Profile Merge Rules] arbeta med realtids- och batchdestinationer.
 
@@ -81,7 +81,7 @@ Mer information om det här alternativet finns i [Personbaserade mål](../destin
 
 ## Alternativ för enhetsdiagram {#device-graph-options}
 
-Om du väljer ett [!UICONTROL device graph] alternativ för en [!UICONTROL Profile Merge] regel beror på förhållanden som är unika för era digitala egenskaper och affärsmål. Dessa allmänna riktlinjer kan hjälpa dig att förstå när du ska använda en typ av diagram jämfört med en annan. Observera att du måste vara medlem i [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/home.html) eller ha ett avtalsförhållande med ett externt enhetsdiagram för att kunna använda dessa alternativ. Se tabellen nedan för allmänna riktlinjer om när du ska välja ett alternativ för enhetsdiagram. Specifika användningsexempel finns i [Profile Link Device Graph Use Case](profile-link-use-case.md) och [External Device Graph Use Case](external-graph-use-cases.md).
+Om du väljer ett [!UICONTROL device graph] alternativ för en [!UICONTROL Profile Merge] regel beror på förhållanden som är unika för era digitala egenskaper och affärsmål. Dessa allmänna riktlinjer kan hjälpa dig att förstå när du ska använda en typ av diagram jämfört med en annan. Observera att du måste vara medlem i [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/sv-SE/device-co-op/using/home.html) eller ha ett avtalsförhållande med ett externt enhetsdiagram för att kunna använda dessa alternativ. Se tabellen nedan för allmänna riktlinjer om när du ska välja ett alternativ för enhetsdiagram. Specifika användningsexempel finns i [Profile Link Device Graph Use Case](profile-link-use-case.md) och [External Device Graph Use Case](external-graph-use-cases.md).
 
 <table id="table_66D9152D4FF040A186003272D456625D"> 
  <thead> 
@@ -118,7 +118,7 @@ I videon nedan visas en översikt över möjliga användningsfall för [!UICONTR
 
 >[!MORELIKETHIS]
 >
->* [Användningsexempel för profillänkens enhetsdiagram](profile-link-use-case.md)
+>* [Användningsexempel för enhetsdiagram för profillänk](profile-link-use-case.md)
 >* [Användningsexempel för externt enhetsdiagram](external-graph-use-cases.md)
 >* [Vanliga frågor om regler för profilsammanslagning](../../faq/faq-profile-merge.md)
 
