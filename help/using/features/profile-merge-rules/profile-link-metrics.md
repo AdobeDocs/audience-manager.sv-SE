@@ -1,21 +1,21 @@
 ---
 description: Mätvärden för Profile Link tillhandahåller data om personer och enheter som autentiserar din webbplats. Data och diagram i profillänken uppdateras dynamiskt när du skapar sammanfogningsregler eller när du klickar på en befintlig regel på kontrollpanelen Regler för profilsammanfogning. Dessa mått kan innehålla enhetsdiagram från Adobe Experience Cloud Device Co-op eller andra tredjepartskällor för enhetsdiagram.
 seo-description: Mätvärden för Profile Link tillhandahåller data om personer och enheter som autentiserar din webbplats. Data och diagram i profillänken uppdateras dynamiskt när du skapar sammanfogningsregler eller när du klickar på en befintlig regel på kontrollpanelen Regler för profilsammanfogning. Dessa mått kan innehålla enhetsdiagram från Adobe Experience Cloud Device Co-op eller andra tredjepartskällor för enhetsdiagram.
-seo-title: Rapportera mått för profilkopplingsregler
+seo-title: Rapportmätvärden för regler för profilsammanslagning
 solution: Audience Manager
-title: Rapportera mått för profilkopplingsregler
+title: Rapportmätvärden för regler för profilsammanslagning
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
 feature: Profile Merge Rules
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '833'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Rapportera mått för profilkopplingsregler {#report-metrics-for-profile-merge-rules}
+# Rapportmätvärden för regler för profilsammanslagning {#report-metrics-for-profile-merge-rules}
 
 [!UICONTROL Profile Merge Rule] mätvärden ger data om personer och enheter som autentiserar till er webbplats. Data och diagram i [!UICONTROL Profile Merge Rule Reports] uppdateras dynamiskt när du skapar en sammanfogningsregel eller när du klickar på en befintlig regel på [!UICONTROL Profile Merge Rules] kontrollpanelen. Dessa mått kan innehålla enhetsdiagram från [!DNL Adobe Experience Cloud Device Co-op] eller andra tredjepartsdiagramkällor.
 
