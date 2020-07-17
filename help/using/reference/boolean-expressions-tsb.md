@@ -1,21 +1,21 @@
 ---
 description: I den här artikeln beskrivs hur de booleska uttrycken AND, OR och NOT används i verktygen för Audience Manager.
 seo-description: I den här artikeln beskrivs hur de booleska uttrycken AND, OR och NOT används i verktygen för Audience Manager.
-seo-title: Booleska uttryck i Trait och Segment Builder
+seo-title: Booleska uttryck i traits och Segment Builder
 solution: Audience Manager
-title: Booleska uttryck i Trait och Segment Builder
+title: Booleska uttryck i traits och Segment Builder
 uuid: 14f02d3f-4c84-41fe-bc91-b34f0d49574a
 feature: reference
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Booleska uttryck i Trait och Segment Builder{#boolean-expressions-in-trait-and-segment-builder}
+# Booleska uttryck i traits och Segment Builder{#boolean-expressions-in-trait-and-segment-builder}
 
 I den här artikeln beskrivs hur de booleska uttrycken AND, OR och NOT används i verktygen för Audience Manager.
 
