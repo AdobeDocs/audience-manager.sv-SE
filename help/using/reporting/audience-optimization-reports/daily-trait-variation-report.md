@@ -1,21 +1,21 @@
 ---
 description: Den här rapporten returnerar en lista över egenskaper som har realiserats minst 10 000 gånger under de 30 dagarna före det valda datumet/datumen och som har en standardavvikelse som är större eller lika med 1,7 i båda riktningarna under samma tidsintervall. Rapporten hjälper er att utvärdera hur antalet visningar från unika användare i en egenskap varierar över tiden.
 seo-description: Den här rapporten returnerar en lista över egenskaper som har realiserats minst 10 000 gånger under de 30 dagarna före det valda datumet/datumen och som har en standardavvikelse som är större eller lika med 1,7 i båda riktningarna under samma tidsintervall. Rapporten hjälper er att utvärdera hur antalet visningar från unika användare i en egenskap varierar över tiden.
-seo-title: Rapport över variationer för daglig trait
+seo-title: Daglig rapport över trait-variationer
 solution: Audience Manager
-title: Rapport över variationer för daglig trait
+title: Daglig rapport över trait-variationer
 uuid: 4e82bb17-d447-4ed1-a4fc-e15b0f1b47f0
 feature: audience optimization reports
 translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Rapport över variationer för daglig trait {#daily-trait-variation-report}
+# Daglig rapport över trait-variationer {#daily-trait-variation-report}
 
 Den här rapporten returnerar en lista över egenskaper som har realiserats minst 10 000 gånger under de 30 dagarna före det valda datumet/datumen och som har en standardavvikelse som är större eller lika med 1,7 i båda riktningarna under samma tidsintervall. Rapporten hjälper er att utvärdera hur antalet visningar från unika användare i en egenskap varierar över tiden.
 
