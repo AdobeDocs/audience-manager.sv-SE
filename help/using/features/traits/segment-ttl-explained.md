@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# Förklara segment och egenskaper för time-to-Live {#segment-time-to-live-explained}
+# Förklaring av TTL (time-to-live) för segment och traits {#segment-time-to-live-explained}
 
 Hur egenskapsintervall [!UICONTROL time-to-live] ([!DNL TTL]) påverkar segmentmedlemskapet.
 
@@ -23,7 +23,7 @@ Hur egenskapsintervall [!UICONTROL time-to-live] ([!DNL TTL]) påverkar segmentm
 
 ## Live-tid
 
-[!DNL TTL] definierar hur länge en besökare stannar kvar i ett segment efter den senaste kvalificeringshändelsen. [!DNL TTL] är inställt på egenskaper och inte på segment. Besökare faller bort från ett segment om de inte är berättigade till en egenskap före [!DNL TTL] intervallets slut. Standardvärdet [!DNL TTL] för nya egenskaper är 120 dagar. Om värdet är 0 dagar förfaller egenskapen aldrig. [Ange TTL-värdet](../../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval) när du skapar eller redigerar en egenskap i delen [!UICONTROL Advanced Options] av gränssnittet där egenskaperna skapas.
+[!DNL TTL] definierar hur länge en besökare stannar kvar i ett segment efter den senaste kvalificeringshändelsen. [!DNL TTL] anges för traits och inte för segment. Visitors fall out of a segment if they do not qualify for a trait before the end of the [!DNL TTL] interval. Standardvärdet [!DNL TTL] för nya egenskaper är 120 dagar. Om värdet är 0 dagar förfaller egenskapen aldrig. [Ange TTL-värdet](../../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval) när du skapar eller redigerar en egenskap i delen [!UICONTROL Advanced Options] av gränssnittet där egenskaperna skapas.
 
 ### 1 dagars TTL förklarad
 
