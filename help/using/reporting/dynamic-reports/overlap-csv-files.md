@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '976'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ Du kan begära en CSV-fil för en överlappningsrapport när den rapporten når 
 
 ## Metadata för filnamn {#file-name-metadata}
 
-Följande tabell innehåller en beskrivning av de filnamnkonventioner och filtillägg som används i en CSV-fil som överlappar. I exemplen *visar kursiv* en variabelplatshållare.
+Följande tabell innehåller en beskrivning av de filnamnkonventioner och filtillägg som används i en CSV-fil som överlappar. I exemplen visar *kursiv stil* platshållaren för en variabel.
 
 <table id="table_C99FCABA365B4AB99620F27D4414E623"> 
  <thead> 
