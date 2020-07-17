@@ -1,20 +1,20 @@
 ---
 description: 'Den här sidan innehåller stegvis vägledning om hur du kombinerar offline-CRM-data med realtidsbeteendedata för autentiserade användare för att skapa målgruppssegment, och sedan skickar dessa målgruppssegment till personbaserade destinationer. '
 seo-description: 'Den här sidan innehåller stegvis vägledning om hur du kombinerar offline-CRM-data med realtidsbeteendedata för autentiserade användare för att skapa målgruppssegment, och sedan skickar dessa målgruppssegment till personbaserade destinationer.  '
-seo-title: Arbetsflöde C - Personalisering baserad på autentiserad aktivitet i kombination med offlinedata
+seo-title: Arbetsflöde C – Personalisering baserad på autentiserad aktivitet i kombination med offlinedata
 solution: Audience Manager
-title: Arbetsflöde C - Personalisering baserad på autentiserad aktivitet i kombination med offlinedata
+title: Arbetsflöde C – Personalisering baserad på autentiserad aktivitet i kombination med offlinedata
 feature: People-Based Destinations
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '918'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
 
-# Arbetsflöde C - Personalisering baserad på autentiserad aktivitet i kombination med offlinedata {#workflow-c}
+# Arbetsflöde C – Personalisering baserad på autentiserad aktivitet i kombination med offlinedata {#workflow-c}
 
 >[!IMPORTANT]
 >Den här artikeln innehåller produktdokumentation som ska hjälpa dig att konfigurera och använda den här funktionen. Ingenting i det här är juridisk rådgivning. Vänligen kontakta ditt eget juridiska ombud för att få juridisk rådgivning.
