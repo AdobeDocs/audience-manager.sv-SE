@@ -1,20 +1,20 @@
 ---
 description: Med Destination Builder kan du skapa cookie-baserade URL-mål eller DNL-URL-mål. Du kan inte skapa server-till-server-mål (S2S) med Destination Builder, men du kan hantera deras segmentmappningar. Kontakta din konsult för att konfigurera ett S2S-mål. Destination Builder finns i Målgruppsdata > Destinationer.
 seo-description: Med Destination Builder kan du skapa cookie-baserade URL-mål eller DNL-URL-mål. Du kan inte skapa server-till-server-mål (S2S) med Destination Builder, men du kan hantera deras segmentmappningar. Kontakta din konsult för att konfigurera ett S2S-mål. Destination Builder finns i Målgruppsdata > Destinationer.
-seo-title: Destinationsverktyget
+seo-title: Destination Builder
 solution: Audience Manager
-title: Destinationsverktyget
+title: Destination Builder
 feature: Destination Basics
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Destinationsverktyget {#destination-builder}
+# Destination Builder {#destination-builder}
 
 [!UICONTROL Destination Builder] gör att du kan skapa cookie-baserade mål eller [!DNL URL] mål. Du kan inte skapa server-till-server-mål ([!DNL S2S]) med [!UICONTROL Destination Builder], men du kan hantera deras segmentmappningar. Kontakta din konsult för att konfigurera en [!DNL S2S] destination. [!UICONTROL Destination Builder] finns i **[!UICONTROL Audience Data > Destinations]**.
 
