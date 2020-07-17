@@ -2,16 +2,16 @@
 description: Beskriver hur du konfigurerar steg och funktioner som är specifika för den regelbaserade processen att skapa anpassade egenskaper.
 keywords: create trait;create traits
 seo-description: Beskriver hur du konfigurerar steg och funktioner som är specifika för den regelbaserade processen att skapa anpassade egenskaper.
-seo-title: Skapa regelbaserade eller introduktionskunskaper
+seo-title: Skapa regelbaserade eller registrerade traits
 solution: Audience Manager
-title: Skapa regelbaserade eller introduktionskunskaper
+title: Skapa regelbaserade eller registrerade traits
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
 feature: Traits
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -64,7 +64,7 @@ I [!UICONTROL Trait Builder]kan du med [!UICONTROL Basic Information] inställni
    <td colname="col2"> Tilldelar egenskapen till en typ eller kategori, vanligtvis enligt funktion (t.ex. konvertering, besökare, partner, sidvy). Valfritt. <p> Mer information om hur du skapar konverteringsegenskaper finns i videon <a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">Skapa konverteringsegenskaper i Audience Manager</a>. </p></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b><span class="uicontrol"> Integrationskod</span></b> </td> 
+   <td colname="col1"> <b><span class="uicontrol"> Integreringskod</span></b> </td> 
    <td colname="col2"> Ett fält för ett ID, SKU eller annat värde som används av dina interna affärsprocesser. Valfritt. </td> 
   </tr> 
   <tr> 
