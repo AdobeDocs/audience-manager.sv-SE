@@ -1,21 +1,21 @@
 ---
 description: Kontrollpanelen för egenskaper är en central arbetsyta för att hantera egenskaper.
 seo-description: Kontrollpanelen för egenskaper är en central arbetsyta för att hantera egenskaper.
-seo-title: Instrumentpanel för egenskaper
+seo-title: Instrumentpanel för traits
 solution: Audience Manager
-title: Instrumentpanel för egenskaper
+title: Instrumentpanel för traits
 uuid: 31b8f958-f67d-4af2-8d78-e37e2dfe810d
 feature: Traits
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Instrumentpanel för egenskaper {#traits-dashboard}
+# Instrumentpanel för traits {#traits-dashboard}
 
 Kontrollpanelen för [egenskaper](https://bank.demdex.com/portal/Traits/Traits.ddx#show/list) är en central arbetsyta för att hantera egenskaper. Du kan se kontrollpanelen genom att gå till [!UICONTROL Traits] > **[!UICONTROL Audience Data]** **[!UICONTROL Traits]**.
 
