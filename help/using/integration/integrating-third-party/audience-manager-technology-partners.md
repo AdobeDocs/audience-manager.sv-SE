@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 11%
+ht-degree: 42%
 
 ---
 
@@ -23,8 +23,8 @@ Den här sidan innehåller endast aktuella Audience Manager- [server-till-server
 
 * **Uppdaterat** = Visar det senaste datumet när en uppdatering för den här aktiveringspartnern har gjorts.
 * **Dela upp segment** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från segment. Din möjlighet att ta bort en enhetsprofil från ett segment beror på vilket enhetsalternativ som används för att skapa en profilkopplingsregel. Osegmentering används också i samband med GDPR-borttagningsbegäranden Läs [profilkopplingsregler och Osegmenteringsprocesser](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) för enheter och [Audience Manager-partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation). Audience Manager skickar information om att segmentera till de destinationer som är markerade med Ja nedan.
-* **Mottagande av IAB TCF-medgivandesignaler** = Audience Manager-pluginen för IAB TCF gör att du kan vidarebefordra IAB TC-strängen till aktiveringspartners med hänsyn till användarnas sekretessval. Plugin-programmet [Audience Manager för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
-* **ICDS** = Den här kolumnen listar de partners som stöder Instant Cross-Device Suppression. Läs [Direkt undertryckning av enheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
+* **Mottagande av IAB TCF-medgivandesignaler** = Audience Manager-pluginen för IAB TCF gör att du kan vidarebefordra IAB TC-strängen till aktiveringspartners med hänsyn till användarnas sekretessval. Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
+* **ICDS** = Den här kolumnen listar de partners som stöder Instant Cross-Device Suppression. Read [Instant Cross-Device Suppression](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
 * **ID för mobila enheter** = Den här kolumnen listar partners som kan ta emot ID:n för mobila enheter från Audience Manager.
 
 <br> 
