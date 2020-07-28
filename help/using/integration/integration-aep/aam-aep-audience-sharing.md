@@ -7,10 +7,10 @@ title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 37b0cf4059b8b44329103eb69d611279c52e8236
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 3%
+source-wordcount: '1442'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Kontakta din Adobe-återförsäljare för att få tillgång till den här funktionen.
+> Kontakta din säljare på Adobe för att få tillgång till den här funktionen.
 
 ## Översikt {#overview}
 
@@ -56,9 +56,17 @@ Dina Audience Manager-egenskaper och -segment visas i Experience Platform som **
 
 ## Adobe Experience Platform segment i Audience Manager {#aep-segments-in-aam}
 
-Segment som du skapar i Experience Platform visas i Audience Manager som egenskaper och segment, med följande dispositionsregler:
+Segment som du skapar i Experience Platform visas i Audience Manager som signaler, egenskaper och segment, med följande dispositionsregler:
+
+* Signal: För varje Experience Platform-segment ska du se signalerna i formuläret `segID = segment ID`.
 * Fack: Regeln trait är Experience Platform-segmentets ID.
 * Segment: Segmentet består av den egenskap som beskrivs ovan.
+
+### Signaler {#aep-segments-as-aam-signals}
+
+Markera **[!UICONTROL Audience Data > Signals > General Online Data]** och sök efter `SegId` för att hitta signaler som kommer in från Experience Platform. Du kan använda den här skärmen i felsökningssyfte för att kontrollera om integreringen mellan Experience Platform och Audience Manager har konfigurerats korrekt.
+
+![Se Experience Platform signaler i Audience Manager på kontrollpanelen för signaler](/help/using/integration/integration-aep/assets/aep-signals-in-aam.png)
 
 ### Traits {#aep-segments-as-aam-traits}
 
@@ -133,10 +141,38 @@ Följande tabell visar hur specifika dataexportetiketter mappas till kända mark
 
 ## Förstå skillnaderna i segmentbefolkning mellan Audience Manager och Experience Platform
 
-Antalet segmentpopulationer kan variera mellan Audience Manager och Experience Platform. Segmentnummer för liknande eller identiska målgrupper bör vara nära, men skillnaderna i populationer kan bero på:
+Antalet segmentpopulationer kan variera mellan Audience Manager och Experience Platform. Segmentnummer för liknande eller identiska målgrupper bör vara nära, men skillnaderna i populationer kan bero på faktorer som listas nedan.
 
-* Körtider för segmenteringsjobb. Audience Manager kör ett segmenteringsjobb som uppdaterar siffrorna i gränssnittet en gång om dagen. Det här jobbet är sällan anpassat till segmenteringsjobben i Experience Platform.
-* [Regler](/help/using/features/profile-merge-rules/merge-rules-overview.md) för profilsammanslagning i Audience Manager och [sammanfogningsprinciper](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) i Experience Platform fungerar olika, och det identitetsdiagram som används för varje regel varierar. På grund av detta förväntas vissa skillnader mellan segmentpopulationerna.
+### Segmentutvärdering i Experience Platform
+
+Audience Manager uppdaterar rapportnummer i gränssnittet en gång om dagen.   Tidpunkten för den här uppdateringen justeras sällan mot tidpunkten för segmentutvärderingen i Experience Platform.
+
+### Skillnader mellan regler för profilsammanslagning och kopplingsprofiler
+
+[[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) i Audience Manager och [sammanfogningsprinciper](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) i Experience Platform fungerar olika, och det identitetsdiagram som används för varje profil varierar. På grund av detta förväntas vissa skillnader mellan segmentpopulationerna.
+
+### Segmentdisposition i Experience Platform
+
+Integrationen mellan Adobe Experience Platform och Audience Manager delar ett antal vanliga [identitetsnamnutrymmen](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types) för alla kunder: ECID, IDFA, GAID, hash-kodade e-postadresser (EMAIL_LC_SHA256), AdCloud ID osv. Om era Experience Platform-segment använder någon av dessa som primär identitet för de kvalificerade profilerna räknas profilerna i Audience Manager-egenskaper och segment.
+
+Dessutom kan Audience Manager registrera inkommande implementeringar för alla anpassade identitetsnamnutrymmen som du använder i Experience Platform-segment om du redan har en motsvarande datakälla i Audience Manager som är inaktiverad för den identifieraren.
+
+>[!NOTE]
+>
+> Målgrupper i Experience Platform med identiteter som är keyade på råa e-postmeddelanden visas aldrig i Audience Manager.
+
+Om du till exempel hade ett Experience Platform-segment,&quot;Alla mina kunder&quot;, och de kvalificerade profilerna skulle vara CRM-ID, ECID, IDFA, raw och hash-adresser, skulle motsvarande segment i Audience Manager endast innehålla profiler som är sparade av CRM-ID:n, ECID, IDFA och hash-kodade e-postadresser. Segmentpopulationen i Audience Manager skulle vara mindre än den i Experience Platform.
+
+![Segmentdelning mellan Experience Platform och Audience Manager - segmentdisposition](/help/using/integration/integration-aep/assets/AEP-to-AAM-profiles.png)
+
+<!--
+
+If you created a data source in Audience Manager for the CRM IDs in Experience Platform, then the qualified profiles keyed off those CRM IDs would appear in Audience Manager and the segment population in Audience Manager would increase.
+
+![AEP to AAM segment sharing - segment composition after creating a data source for CRM IDs in Audience Manager](/help/using/integration/integration-aep/assets/AEP-to-AAM-identities2.png)
+
+-->
+
 
 >[!MORELIKETHIS]
 >
