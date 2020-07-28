@@ -7,9 +7,9 @@ title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 37b0cf4059b8b44329103eb69d611279c52e8236
+source-git-commit: 4f76bbd6f7c2f1866954bbbf14e8987dc3384c47
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1441'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Översikt {#overview}
 
-Tack vare funktionen för målgruppsdelning mellan Audience Manager och Adobe Experience Platform kan ni dela med er av era Audience Manager och segment till Adobe Experience Platform och vice versa. Du behöver [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) för att kunna dela målgrupper mellan Audience Manager och Adobe Experience Platform.
+Tack vare funktionen för målgruppsdelning mellan Audience Manager och Adobe Experience Platform kan ni dela med er av era Audience Manager och segment till Adobe Experience Platform och vice versa. Du behöver [[!DNL Audience Manager Connector]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) för att kunna dela målgrupper mellan Audience Manager och Adobe Experience Platform.
 
 Ni kan använda Audience Manager-egenskaper och segment i Experience Platform för att lägga till Audience Manager-data i era kundprofiler och dra nytta av Experience Platform:s [segmenteringstjänst](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md).
 
@@ -149,7 +149,7 @@ Audience Manager uppdaterar rapportnummer i gränssnittet en gång om dagen.   T
 
 ### Skillnader mellan regler för profilsammanslagning och kopplingsprofiler
 
-[[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) i Audience Manager och [sammanfogningsprinciper](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) i Experience Platform fungerar olika, och det identitetsdiagram som används för varje profil varierar. På grund av detta förväntas vissa skillnader mellan segmentpopulationerna.
+[[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) i Audience Manager och [[!UICONTROL Merge Policies]](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) i Experience Platform fungerar olika, och identitetsdiagrammet som används för dem varierar. På grund av detta förväntas vissa skillnader mellan segmentpopulationerna.
 
 ### Segmentdisposition i Experience Platform
 
