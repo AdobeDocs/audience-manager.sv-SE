@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 29a2e0ec7859bec5658218fb5095b7bac74a3371
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 6%
