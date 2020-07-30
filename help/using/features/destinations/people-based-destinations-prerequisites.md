@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Förutsättningar och överväganden
 feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: f9e6aedb408db218c548f469330ece584db75853
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -81,7 +81,7 @@ Se videon nedan för att förstå hashkraven för [!UICONTROL People-Based Desti
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Med Adobe Experience Cloud får ni möjlighet att hash-koda kund-ID:n via [!DNL Adobe Experience Platform Identity Service (ECID)]. Se [SHA256 Hashing Support för setCustomerID](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) för mer information om hur man använder ECID för att hash-koda kund-ID:n.
+Adobe Experience Cloud ger dig möjlighet att hash-koda kund-ID:n via [!DNL Adobe Experience Platform Identity Service (ECID)]. Se [SHA256 Hashing Support för setCustomerID](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) för mer information om hur man använder ECID för att hash-koda kund-ID:n.
 
 ## Hämtar användarbehörighet {#obtaining-user-permission}
 
