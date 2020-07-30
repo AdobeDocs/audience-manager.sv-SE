@@ -8,9 +8,9 @@ keywords: ID mapping, ID mappings, cookie mappings
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 feature: Usage and Billing
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: aa583c0f2f8883249d7e8038b7bf2fb4c8951962
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '576'
 ht-degree: 5%
 
 ---
@@ -65,9 +65,11 @@ Tabellerna visar de aktuella gränserna per objekttyp. Du kan inte skapa nya ege
 
 | Objekt | Maximal gräns |
 | -------- | ----- |
-| Aktiva algoritmiska modeller | 20. Audience Manager räknar bara *aktiva* algoritmiska modeller mot gränsen. |
-| Maximal målgruppsstorlek för algoritmiska modeller | 25,000,000.  Observera att den här gränsen inte kan ökas. Du kan minska målgruppsstorleken genom att välja färre datakällor för modellen eller genom att välja ett kortare fönster för att titta tillbaka. |
-| Maximalt antal uteslutna egenskaper för en modell | 500. Se [Trait Exclusion i algoritmisk modellering](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md). |
+| Aktiv [!UICONTROL Look-Alike Models] | 20. Audience Manager räknar bara *aktiva* algoritmiska modeller mot gränsen. |
+| [!UICONTROL Look-Alike Models] maximal målgruppsstorlek | 25,000,000.  Observera att den här gränsen inte kan ökas. Du kan minska målgruppsstorleken genom att välja färre datakällor för modellen eller genom att välja ett kortare fönster för att titta tillbaka. |
+| Maximalt antal uteslutna egenskaper för en [!UICONTROL Look-Alike Model] | 500. Se [Trait Exclusion i algoritmisk modellering](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md). |
+| Naximum [!UICONTROL Predictive Audiences Models] | 10 |
+| Högsta antal baslinjepersona för [!UICONTROL Predictive Audiences] modeller | 50 |
 
 ### Mappbegränsningar
 
