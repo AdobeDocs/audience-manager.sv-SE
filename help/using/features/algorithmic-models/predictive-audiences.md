@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 1be20c2412a272e6374b8b84e6a5c1628da18497
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 9%
+source-wordcount: '1530'
+ht-degree: 7%
 
 ---
 
@@ -67,7 +67,7 @@ När du skapar en [!UICONTROL Predictive Audiences] modell går du igenom tre st
 
 1. Först väljer du minst två egenskaper eller två segment som definierar dina profiler.
 1. Sedan väljer du ett varumärke eller segment som definierar målgruppen som du vill klassificera.
-1. Slutligen väljer du ett namn för modellen och väljer en datakälla som ska lagra de prediktiva segmenten.
+1. Slutligen väljer du ett namn för modellen, en datakälla som lagrar de prediktiva segmenten och en [!UICONTROL Profile Merge Rule] för modellen.
 
 ### Urvalskriterier för personer {#selection-personas}
 
@@ -75,13 +75,17 @@ Du kan välja vilken som helst av dina egna egenskaper eller segment för att de
 
 * Välj dina personliga egenskaper eller segment så att varje person har minst ett fåtal hundra [enhets-ID](../../reference/ids-in-aam.md).
 * Om dina egenskaper baseras på [enhets-ID](../../reference/ids-in-aam.md)kan du kapsla in dem i segment med [profilkopplingsregler](../profile-merge-rules/merge-rules-overview.md) som använder [enhets-ID](../../reference/ids-in-aam.md), till exempel [!UICONTROL Device Graph]. Detta garanterar att det finns tillräckligt många [enhets-ID](../../reference/ids-in-aam.md) som algoritmen kan lära sig av.
-* Vi rekommenderar att du väljer egenskaper eller enkla segment för din person, som består av 1 till 3 egenskaper.
+* Vi rekommenderar att du väljer egenskaper eller enkla segment för dina profiler, som består av 1 till 3 egenskaper.
 * Välj baslinjetrafik eller segment med minimal överlappning.
 * Se till att ni fångar in detaljrikedom i alla era digitala resurser.
 
 ### Urvalskriterier för Target-målgrupp {#selection-audience}
 
-På samma sätt som för en personlig markering bör du välja ett varumärke eller segment som definierar målgruppen på ett sådant sätt att den har realtidsanvändare med många uppsättningar egenskaper, för klassificering i rätt profil.
+På samma sätt som för en personlig markering bör du välja målgrupp [!UICONTROL trait] eller [!UICONTROL segment] som definierar målgruppen på ett sådant sätt att den har realtidsanvändare med många uppsättningar [!UICONTROL traits]för klassificering i rätt profil.
+
+När du väljer målgrupp analyserar du ditt användningsfall och avgör vilka typer av ID du vill klassificera: [!UICONTROL device IDs] eller [!UICONTROL cross-device IDs]. Det [!UICONTROL Profile Merge Rule] som du väljer när du skapar modellen definierar de data som ska användas för att placera varje användare i prediktiva [!UICONTROL segments].
+
+Vi rekommenderar att du väljer en [!UICONTROL Profile Merge Rule] som har samma konfiguration som målgruppen [!UICONTROL Profile Merge Rule]eller en som innehåller profiltypen (enhetsprofil eller autentiserad profil) för målgruppen.
 
 ### [!UICONTROL Predictive Audiences] Modellutbildningsfas {#model-training}
 
@@ -110,9 +114,9 @@ Tänk på följande när du konfigurerar dina [!UICONTROL Predictive Audiences] 
 * Data från andra och tredje part stöds för närvarande inte i [!UICONTROL Predictive Audiences].
 * Målgruppsklassificering görs endast för förstapartsmålgrupper i realtid. Integrerad klassificering av förstahandsanvändare kan stödjas i en framtida uppdatering.
    >[!IMPORTANT]
-   > För närvarande visas [!UICONTROL Total Segment Population] värdet för dina prediktiva segment som 0, och [grupputgående dataöverföringar](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) stöds inte för [!UICONTROL Predictive Audiences]. Detta beteende ändras i en framtida uppdatering.
+   > För närvarande kan prediktiva segment bara aktiveras i realtidsdestinationer. Värdet [!UICONTROL Total Segment Population] och [!UICONTROL Addressable Audience] värdet för dina prediktiva segment visas som 0, och [grupputgående dataöverföringar](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) stöds inte för [!UICONTROL Predictive Audiences]. Detta beteende ändras i en framtida uppdatering.
 * [!UICONTROL Predictive Audiences] utför målgruppsklassificering baserat på era egenskaper hos första part, från alla era egna datakällor.
-* Segmentutvärdering för [!UICONTROL Predictive Audiences] använder den standard **[!UICONTROL Profile Merge Rule]** som du definierade i ditt konto. Mer information om [!UICONTROL Profile Merge Rules] finns i den dedikerade [dokumentationen](../profile-merge-rules/merge-rules-overview.md).
+* Segmentutvärdering för [!UICONTROL Predictive Audiences] använder **[!UICONTROL Profile Merge Rule]** det du väljer när du skapar en modell. Mer information om [!UICONTROL Profile Merge Rules] finns i den dedikerade [dokumentationen](../profile-merge-rules/merge-rules-overview.md).
 * Vissa egenskaper och segment stöds inte som baslinjer eller målgrupper. [!UICONTROL Predictive Audiences] modeller kan inte sparas när du väljer något av följande som baslinjer eller målgrupper:
    * Prediktiva egenskaper och segment som skapats med prediktiva egenskaper.
    * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md) egenskaper eller segment,
@@ -124,11 +128,23 @@ Tänk på följande när du konfigurerar dina [!UICONTROL Predictive Audiences] 
 Prediktiva segment som skapas av [!UICONTROL Predictive Audiences] modeller ärver [dataexportkontrollerna](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html) från följande datakällor:
 
 1. Den datakälla från första part som du väljer när du skapar modellen.
-1. Målgruppens första datakällor. Dataexportkontrollerna styr i synnerhet de egenskaper eller segment som utgör målgruppen.
+1. Målgruppens första datakällor. Det gäller särskilt dataexportkontrollerna för [!UICONTROL traits] eller [!UICONTROL segments] som utgör målgruppen.
+1. The [Data Export Controls](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html) of the [!UICONTROL Profile Merge Rule] that you selected for the model.
 
-De nya prediktiva egenskaperna och segmenten kommer att ha samma integritetsbegränsningar som kombinationen av förstahandsdatakällor som beskrivs ovan.
+Den nya prediktiva funktionen [!UICONTROL traits] och [!UICONTROL segments] den kommer att ha samma integritetsbegränsningar som kombinationen av förstahandsdatakällor som beskrivs ovan.
 
 Fastigheter som har ytterligare begränsningar som inte ingår i [!UICONTROL Predictive Audiences] segmentets integritetsbegränsningar exkluderas från utbildningsfasen och kommer inte att påverka modellen.
+
+## [!UICONTROL Profile Merge Rules] {#pmr}
+
+Alla prediktiva segment tilldelas den [!UICONTROL Profile Merge Rule] som du valde när du skapade modellen. Det [!UICONTROL Profile Merge Rule] du väljer är viktigt av följande skäl:
+
+* Den definierar vilka enheter och/eller autentiserade profiler som ska beaktas när modellen analyserar inflytelsen [!UICONTROL traits]när en användare klassificeras som prediktiv [!UICONTROL segment].
+* Det styr vilka [!UICONTROL trait] typer (enhetsnivå eller enhetsövergripande nivå) som ska användas under modellutbildningssteget och visas som inflytelserika [!UICONTROL traits]. Prediktiv [!UICONTROL segments] är delar av målgruppen.
+   * Om målgruppen är ett segment rekommenderar vi att du väljer samma [!UICONTROL Profile Merge Rule] för modellen som den som tilldelats målgruppen, eller en [!UICONTROL Profile Merge Rule] som innehåller målpublikens profiltyp.
+   * Om målgruppen är en målgrupp [!UICONTROL trait]rekommenderar vi att du väljer en [!UICONTROL Profile Merge Rule] som har åtkomst till samma typ av data som målgruppens trait (antingen enhetsprofildata eller profildata för olika enheter).
+
+Om du väljer en [!UICONTROL Profile Merge Rule] som använder både enhetsdata och data mellan olika enheter maximeras antalet [!UICONTROL traits] som kan användas för modellutbildning och användarklassificering i förutsägbarheten [!UICONTROL segments].
 
 ## [!UICONTROL Role-Based Access Controls] {#rbac}
 
