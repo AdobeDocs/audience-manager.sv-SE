@@ -9,8 +9,8 @@ feature: Integration with Platform
 translation-type: tm+mt
 source-git-commit: f9e6aedb408db218c548f469330ece584db75853
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1441'
+ht-degree: 2%
 
 ---
 
