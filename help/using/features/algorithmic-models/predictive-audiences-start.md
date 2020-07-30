@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 71e129a39cf85d5f07979ede8f3aa862f93b6512
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '492'
 ht-degree: 8%
 
 ---
@@ -39,9 +39,10 @@ När du vet vilken datakälla du ska använda följer du stegen nedan.
    ![smart-persona-select-audition](assets/predictive-audiences-audience.png)
 1. Klicka **[!UICONTROL Next]** när du har valt målgrupp.
 1. Fyll i modellinformationen:
-   1. **[!UICONTROL Model Name]**: Ange ett beskrivande namn för modellen, som hjälper dig att identifiera den senare. Namnen på segmenten som genereras av modellen börjar med modellens namn.
-   2. **[!UICONTROL Description]**: Ange en beskrivning av modellen som hjälper dig att identifiera dess användningsfall.
-   3. **[!UICONTROL Data Source]**: Välj den första parts datakälla som du vill att segmenten från den här modellen ska tilldelas till [!UICONTROL Predictive Audiences] .
+   * **[!UICONTROL Model Name]**: Ange ett beskrivande namn för modellen, som hjälper dig att identifiera den senare. Namnen på segmenten som genereras av modellen börjar med modellens namn.
+   * **[!UICONTROL Description]**: Ange en beskrivning av modellen som hjälper dig att identifiera dess användningsfall.
+   * **[!UICONTROL Data Source]**: Välj den första parts datakälla som du vill att segmenten från den här modellen ska tilldelas till [!UICONTROL Predictive Audiences] .
+   * **[!UICONTROL Profile Merge Rule]**: Välj den [!UICONTROL Profile Merge Rule] som ska tilldelas för alla prediktiva [!UICONTROL segments] som skapas av den här modellen. Om den valda målgruppen är en [!UICONTROL segment]målgrupp rekommenderar vi att du väljer samma målgrupp [!UICONTROL Profile Merge Rule] .
       ![prediktiv målgrupp-spara](assets/predictive-audiences-save.png)
 1. Klicka på **[!UICONTROL Save]**.
 
