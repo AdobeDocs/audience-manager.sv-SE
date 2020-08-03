@@ -8,9 +8,9 @@ title: Kunddataflöden
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 feature: Customer Data Feeds
 translation-type: tm+mt
-source-git-commit: 670356016a7d8256af2e475d0aef49e1156f82e6
+source-git-commit: 9b17925f9759a7f47629032182b367cf612bebbc
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1922'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ En [!UICONTROL CDF]-fil innehåller samma data som ett [!DNL Audience Manager]-h
 >
 >Observera följande begränsningar när du arbetar med CDF-filer:
 >
->* Innan du konfigurerar leveransen av CDF-filer bör du kontrollera att du har rätt behörighet från tredjepartsleverantörer för export av egenskaper från tredje part.
+>* Innan du konfigurerar leveransen av CDF-filer bör du kontrollera att du har rätt behörighet från tredjepartsleverantörer för export av egenskaper från tredje part. Audience Manager stöder för närvarande inte funktioner i användargränssnittet för att begära exporttillstånd för CDF-filer från tredjepartsleverantörer av data, så kontakta dem oberoende av varandra.
 >* Du bör inte använda [!UICONTROL CDF] filer som proxy för att övervaka sidtrafik, avstämning av rapportavvikelser eller för fakturering osv.
 
 
@@ -252,7 +252,7 @@ I följande tabell visas och definieras elementen i ett [!UICONTROL CDF] filnamn
 
 ## [!UICONTROL Customer Data Feed] Filbearbetningsmeddelanden {#cdf-file-processing-notifications}
 
-[!DNL Audience Manager] skriver en `.info` fil till din [!DNL S3] katalog så att du vet när ( [!UICONTROL Customer Data File] ) [!UICONTROL CDF]är klar för hämtning. Filen `.info` innehåller även [!DNL JSON] formaterade metadata om innehållet i dina [!UICONTROL CDF] filer. I det här avsnittet finns information om syntaxen och fälten som används i den här meddelandefilen.
+[!DNL Audience Manager] skriver en `.info` fil till din [!DNL S3] katalog så att du vet när ( [!UICONTROL Customer Data File] )[!UICONTROL CDF]är klar för hämtning. Filen `.info` innehåller även [!DNL JSON] formaterade metadata om innehållet i dina [!UICONTROL CDF] filer. I det här avsnittet finns information om syntaxen och fälten som används i den här meddelandefilen.
 
 ## Exempelinformationsfil {#sample-info-file}
 
@@ -369,7 +369,7 @@ Följande tabell innehåller ytterligare information om tidsstämplar för dina 
 
 | Tidsstämpelplats | Beskrivning |
 |--- |--- |
-| Filnamn | Tidsstämpeln i ditt [!DNL CDF] filnamn anger den tidpunkt då [!DNL Audience Manager] filen förbereds för leverans. Den här tidsstämpeln anges i [!DNL UTC] tidszonen. Parametern används, med tiden `hour=` formaterad som en tvåsiffrig timme med 24 timmars notation. Den här tiden kan skilja sig från den händelsetid som spelas in i filinnehållet. När du arbetar med [!DNL CDF] filer kan det hända att du märker att din [!DNL S3] bucket är tom en viss timme. En tom bucket betyder något av följande:<ul><li>Det finns inga data för just den timmen. </li><li> Våra servrar är mycket belastade och kan inte bearbeta filer på en viss timme. När servern fångar upp placerar den de filer som borde ha gått in i en tidigare tidsmarkeringsfil i en hink med ett senare tidsvärde. Du kommer till exempel att se det här när en fil som borde ha varit inom timmen 17, visas inom timmen 18, (med `hour=18` filnamnet). I det här fallet började servern förmodligen bearbeta filen på timme 17, men kunde inte slutföra den inom det tidsintervallet. I stället skickas filen till nästa timtidsintervall.</li></ul><br>**Viktigt **: Använd inte filnamnets tidsstämpel för att gruppera händelser efter tid. Om du behöver gruppera efter tid använder du`EventTime`tidsstämpeln i filinnehållet. |
+| Filnamn | Tidsstämpeln i ditt [!DNL CDF] filnamn anger när [!DNL Audience Manager] du började förbereda filen för leverans. Den här tidsstämpeln anges i [!DNL UTC] tidszonen. Parametern används, med tiden `hour=` formaterad som en tvåsiffrig timme med 24 timmars notation. Den här tiden kan skilja sig från den händelsetid som spelas in i filinnehållet. När du arbetar med [!DNL CDF] filer kan det hända att du märker att din [!DNL S3] bucket är tom en viss timme. En tom bucket betyder något av följande:<ul><li>Det finns inga data för just den timmen. </li><li> Våra servrar är mycket belastade och kan inte bearbeta filer på en viss timme. När servern fångar upp placerar den de filer som borde ha gått in i en tidigare tidsmarkeringsfil i en hink med ett senare tidsvärde. Du kommer till exempel att se det här när en fil som borde ha varit inom timmen 17, visas inom timmen 18, (med `hour=18` filnamnet). I det här fallet började servern förmodligen bearbeta filen på timme 17, men kunde inte slutföra den inom det tidsintervallet. I stället skickas filen till nästa timtidsintervall.</li></ul><br>**Viktigt **: Använd inte filnamnets tidsstämpel för att gruppera händelser efter tid. Om du behöver gruppera efter tid använder du`EventTime`tidsstämpeln i filinnehållet. |
 | Filinnehåll | Tidsstämpeln i filens [!DNL CDF] innehåll markerar den tid då [!DNL Data Collection Servers] filen börjar bearbetas. Den här tidsstämpeln anges i [!DNL UTC] tidszonen. Det använder `EventTime` fältet, med tiden formaterad som *`yyyy-mm-dd hh:mm:ss`*. Den här tiden ligger nära den faktiska tiden för händelsen på sidan, men kan vara en annan än timindikatorn i filnamnet. <br> **Tips**: Till skillnad från tidsstämpeln i filnamnet kan du använda `hour=` `EventTime` för att gruppera data efter tid. |
 
 >[!MORELIKETHIS]
