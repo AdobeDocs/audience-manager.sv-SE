@@ -1,15 +1,15 @@
 ---
-description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om integrering finns i Adobe Exchange-listan (där det är tillgängligt) eller kontakta din Adobe-konsult eller kundtjänst.
-seo-description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om integrering finns i Adobe Exchange-listan (där det är tillgängligt) eller kontakta din Adobe-konsult eller kundtjänst.
+description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
+seo-description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
 seo-title: Adobe Audience Manager server-till-server-mål
 keywords: activation; activation partners, destination, destinations
 solution: Audience Manager
 title: Adobe Audience Manager server-till-server-mål
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: 8d7935f69b496ec30a135df884756d370b44b7ed
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1116'
 ht-degree: 53%
 
 ---
@@ -84,7 +84,6 @@ Den här sidan innehåller endast aktuella [!DNL Audience Manager] enhetsbaserad
 | [!DNL FreakOut] | 03/03/2017 | 1xday | Ja | Nej | Nej | Nej |
 | [!DNL Freewheel] | 27/02/2017 | 1xday | Ja | Ja | Nej | Ja |
 | [!DNL Gamut Media] | 03/03/2017 | Realtid |  | Nej | Nej |  |
-| [!DNL Google AdsWords Display] | 02/08/2018 | Realtid | Ja | Ja | Nej | Ja |
 | [!DNL Google DoubleClick Bid Manager (DBM)] | 24/04/2017 | Realtid | Ja | Ja | Ja | Ja |
 | [!DNL Google DoubleClick Campaign Manager (DCM fka DFA)] | 24/04/2017 | Realtid | Ja | Ja | Ja | Ja |
 | [!DNL Google DoubleClick for Publishers (DFP, DFPP)] | 24/04/2017 | Realtid | Ja | Ja | Ja | Ja |
