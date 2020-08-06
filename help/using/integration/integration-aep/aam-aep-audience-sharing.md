@@ -7,7 +7,7 @@ title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: db4706673b72980652942e23d83ae5cf180972e9
+source-git-commit: b3ff5ca68022cc30632d6b647ffde507533b5ddf
 workflow-type: tm+mt
 source-wordcount: '1441'
 ht-degree: 2%
@@ -23,11 +23,11 @@ ht-degree: 2%
 
 ## Översikt {#overview}
 
-Tack vare funktionen för målgruppsdelning mellan Audience Manager och Adobe Experience Platform kan ni dela med er av era Audience Manager och segment till Adobe Experience Platform och vice versa. Du behöver [[!DNL Audience Manager Connector]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) för att kunna dela målgrupper mellan Audience Manager och Adobe Experience Platform.
+Tack vare funktionen för målgruppsdelning mellan Audience Manager och Adobe Experience Platform kan ni dela era Audience Manager-egenskaper och segment till Adobe Experience Platform och vice versa. Du behöver [[!DNL Audience Manager Connector]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) för att kunna dela målgrupper mellan Audience Manager och Adobe Experience Platform.
 
 Ni kan använda Audience Manager-egenskaper och segment i Experience Platform för att lägga till Audience Manager-data i era kundprofiler och dra nytta av Experience Platform:s [segmenteringstjänst](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md).
 
-I Audience Manager kan du använda Experience Platform-segment för datahantering i Platform-fall, till exempel:
+I Audience Manager kan du använda Experience Platform-segment för datahanteringsplattformens användningsfall, till exempel:
 * Lägg till [tredjepartsdata](/help/using/overview/data-types-collected.md#third-party-data) i era segment,
 * [Algoritmisk modellering](/help/using/features/algorithmic-models/understanding-models.md).
 * Aktivera dina segment för mål som ännu inte stöds i Experience Platform- [målkatalogen](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/destinations-catalog.html).
@@ -114,7 +114,9 @@ För att se till att dataanvändningen efterlevs i Experience Platform måste al
 
 I målgruppsdelningsprocessen mellan Audience Manager och Experience Platform översätts alla dataexportkontroller som har tillämpats på Audience Manager-segment till likvärdiga etiketter och marknadsföringsåtgärder som har godkänts av Experience Platform Data Governance, och vice versa.
 
->[!NOTE] Mer allmän information om dataexportkontroller finns i dokumentationen [för](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html)dataexportkontroller.
+>[!NOTE]
+>
+>Mer allmän information om dataexportkontroller finns i dokumentationen [för](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html)dataexportkontroller.
 Det här dokumentet innehåller en referens för hur specifika dataexportkontroller för Audience Manager mappas till dataanvändningsetiketter och marknadsföringsåtgärder i Platform.
 
 ### Dataexportkontroller till dataanvändningsetiketter
