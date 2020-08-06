@@ -7,9 +7,9 @@ title: Krav på FTP-namn och filstorlekar för inkommande datafiler
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: b3ff5ca68022cc30632d6b647ffde507533b5ddf
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '894'
 ht-degree: 7%
 
 ---
@@ -35,7 +35,7 @@ Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du 
 
 Information om andra godkända filnamnsformat finns i [Anpassade partnerintegreringar](/help/using/integration/sending-audience-data/custom-partner-integrations.md).
 
->[!NOTE] {prioritet=&quot;high&quot;}
+>[!NOTE]
 >
 >[!DNL Audience Manager] endast bearbetar [!DNL ASCII] och [!DNL UTF-8] kodade filer.
 
