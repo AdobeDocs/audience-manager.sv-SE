@@ -7,9 +7,9 @@ title: Kom igång med REST API:er
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
 translation-type: tm+mt
-source-git-commit: 0fd2b2a58274199ecc2fd58738113165c804ceb8
+source-git-commit: f7b9c30f120b24f9294afa4aa6727ce8c4236acf
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1860'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Saker du måste och bör göra när du arbetar med [!DNL Audience Manager] bilde
 Observera följande när du arbetar med [Audience Manager API](https://bank.demdex.com/portal/swagger/index.html#/) -kod:
 
 * **Begäranparametrar:** Alla begäranparametrar är obligatoriska om inte annat anges.
-* **Begäranrubriker**: När du använder [Adobe I/O](https://www.adobe.io/) -tokens måste du ange `x-api-key` rubriken. Du kan hämta din [!DNL API] nyckel genom att följa instruktionerna på sidan [Tjänstkontointegrering](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) .
+* **Begäranrubriker**: När du använder [Adobe I/O](https://www.adobe.io/) -token måste du ange `x-api-key` rubriken. Du kan hämta din [!DNL API] nyckel genom att följa instruktionerna på sidan [Tjänstkontointegrering](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) .
 * **[!DNL JSON]innehållstyp:**Ange`content-type: application/json`och **`accept: application/json`i koden.
 * **Förfrågningar och svar:** Skicka begäranden som ett korrekt formaterat [!DNL JSON] objekt. [!DNL Audience Manager] svarar med [!DNL JSON] formaterade data. Serversvar kan innehålla begärda data, en statuskod eller båda.
 * **Åtkomst:** Din [!DNL Audience Manager] konsult kommer att förse dig med ett klient-ID och en nyckel som gör att du kan göra [!DNL API] förfrågningar.
@@ -40,7 +40,7 @@ Observera följande när du arbetar med [Audience Manager API](https://bank.demd
 
 Två autentiseringsmetoder stöds [!DNL Audience Manager][!DNL REST APIs] .
 
-* [JWT-autentisering](#jwt) (tjänstkonto) med [Adobe I/O](https://www.adobe.io/). [!DNL Adobe I/O] är Adobes ekosystem för utvecklare och användargrupper. Det innehåller [Adobes I/O-utvecklingsverktyg samt API:er](https://www.adobe.io/apis/experienceplatform.html) och API: [er för alla Adobe-produkter](https://www.adobe.io/apis.html). Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
+* [JWT-autentisering](#jwt) (tjänstkonto) med [Adobe I/O](https://www.adobe.io/). [!DNL Adobe I/O] är Adobe utvecklares ekosystem och community. Det innehåller [I/O-utvecklingsverktyg och API:er](https://www.adobe.io/apis/experienceplatform.html) och API:er [för alla Adobe-produkter](https://www.adobe.io/apis.html). Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
 * [OAuth-autentisering (borttagen)](#oauth). Den här metoden är föråldrad, men kunder med befintliga [!DNL OAuth] integreringar kan fortsätta använda den här metoden.
 
 >[!IMPORTANT]
@@ -49,9 +49,9 @@ Två autentiseringsmetoder stöds [!DNL Audience Manager][!DNL REST APIs] .
 
 ## [!DNL JWT] ([!DNL Service Account]) Autentisering med Adobe I/O {#jwt}
 
-### Adobe I/O - översikt {#adobeio}
+### Adobe I/O-översikt {#adobeio}
 
-[!DNL Adobe I/O] är Adobes ekosystem för utvecklare och användargrupper. Det innehåller [Adobes I/O-utvecklingsverktyg samt API:er](https://www.adobe.io/apis/experienceplatform.html) och API: [er för alla Adobe-produkter](https://www.adobe.io/apis.html).
+[!DNL Adobe I/O] är Adobe utvecklares ekosystem och community. Det innehåller [I/O-utvecklingsverktyg och API:er](https://www.adobe.io/apis/experienceplatform.html) och API:er [för alla Adobe-produkter](https://www.adobe.io/apis.html).
 
 Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
 
@@ -65,8 +65,8 @@ Följ stegen nedan för att konfigurera [!DNL JWT (Service Account)] autentiseri
 
 1. Logga in på [Adobe Developer Console](https://console.adobe.io/).
 1. Följ stegen i Anslutning till [tjänstkonto](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
-   * Under [steg 2: Lägg till ett API i projektet med autentisering](https://www.adobe.io/authentication/auth-methods.html#step-2-add-an-api-to-your-project-using-service-account-authentication)av tjänstkonto och välj [!DNL Audience Manager] [!DNL API] alternativet.
-1. Prova anslutningen genom att ringa ditt första [!DNL API] samtal baserat på instruktionerna från [steg 3](https://www.adobe.io/authentication/auth-methods.html#step-3-try-it.).
+   * Under [steg 2: Lägg till ett API i projektet med autentisering](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)av tjänstkonto och välj [!DNL Audience Manager] [!DNL API] alternativet.
+1. Prova anslutningen genom att ringa ditt första [!DNL API] samtal baserat på instruktionerna från [steg 3](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
 
 >[!NOTE]
 >
@@ -178,7 +178,7 @@ Krav för att anropa [!DNL API] metoder när du har fått en autentiseringstoken
 Så här anropar du de tillgängliga [!DNL API] metoderna:
 
 * Ställ in i `HTTP` sidhuvudet `Authorization: Bearer <token>`.
-* När du använder [JWT-autentisering](#jwt)(tjänstkonto) måste du ange `x-api-key` rubriken, som är densamma som din `client_id`. Du kan hämta dina `client_id` från [Adobes I/O-integreringssida](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) .
+* När du använder [JWT-autentisering](#jwt)(tjänstkonto) måste du ange `x-api-key` rubriken, som är densamma som din `client_id`. Du kan hämta ditt `client_id` från [Adobe I/O-integrationssidan](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) .
 * Anropa den önskade [!DNL API] metoden.
 
 ## Valfria [!DNL API] frågeparametrar {#optional-api-query-parameters}
