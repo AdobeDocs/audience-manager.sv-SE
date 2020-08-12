@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Förutsättningar och överväganden
 feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: f9e6aedb408db218c548f469330ece584db75853
+source-git-commit: 2e32f9ebff487ae8dfb2088ec1bbfcea1daa00a1
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 4%
+source-wordcount: '1015'
+ht-degree: 3%
 
 ---
 
@@ -49,6 +49,14 @@ Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka din
 Mer information om hur du redigerar [!DNL LinkedIn Campaign Manager] användarbehörigheter finns i [Lägg till, redigera och ta bort användarbehörigheter på annonskonton](https://www.linkedin.com/help/lms/answer/5753) i dokumentationen för LinkedIn.
 
 Videoinstruktioner finns i [Förstå och konfigurera LinkedIn People-Based Destination](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) .
+
+### [!DNL Google Customer Match]
+
+Innan du kan använda för [!UICONTROL People-Based Destinations] att skicka egna målgruppssegment till en [!DNL Google Customer Match] destination är det obligatoriskt att lägga till [!DNL Google] dig i tillåtelselista.
+
+Kontakta din [!DNL Google] representant och följ instruktionerna i tillåtelselista som beskrivs i [Använd kundmatchningspartners för att ladda upp din](https://support.google.com/google-ads/answer/7361372?hl=en&amp;ref_topic=6296507) [!DNL Google] datadokumentation.
+
+När processen är klar kan du skapa [!UICONTROL People-Based Destination].
 
 ## Dataregistrering {#data-onboarding}
 
