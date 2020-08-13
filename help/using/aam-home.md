@@ -7,9 +7,9 @@ title: Audience Manager – produktdokumentation
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 feature: overview
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: d3184195d6a51ff013a3d1fc8526ca9afd3386c2
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '669'
 ht-degree: 98%
 
 ---
@@ -160,10 +160,10 @@ Den här tekniska handboken innehåller självhjälp för Audience Manager, en b
      <br> 
      <p> <b>Nya funktioner</b> </p> <p> 
      Läs om de senaste funktionerna i Audience Manager:</p>
-     <p><ul><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager plug-in för IAB TCF v2.0</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">Rapportera aktivitetsanvändning</a></li>
+     <p><ul><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">Google kundmatchning för personbaserade destinationer</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager plug-in för IAB TCF v2.0</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">Rapportera aktivitetsanvändning</a></li>
      <li><a href="/help/using/overview/data-security-and-privacy/data-privacy.md">Stöd för California Consumer Privacy Act (CCPA) och omarbetning av sekretessdokumentation</a></li>
      <li><a href="/help/using/features/segments/trait-recommendations.md">Intelligenta rekommendationer för Audience Marketplace-data från Adobe Sensei</a></li>
-     <li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">Förbättrade regler för profilsammanslagning</a></li></ul><p>
+     </ul><p>
     </td>
   </tr> 
  </tbody> 
