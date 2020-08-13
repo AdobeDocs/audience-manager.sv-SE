@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Förutsättningar och överväganden
 feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: 2e32f9ebff487ae8dfb2088ec1bbfcea1daa00a1
+source-git-commit: d3184195d6a51ff013a3d1fc8526ca9afd3386c2
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 3%
@@ -32,17 +32,17 @@ Kontakta din Adobe-representant för att få tillgång till denna premiumfunktio
 
 ## Partnerspecifika krav {#partner-prerequisites}
 
-### [!DNL Facebook]
+### [!DNL Facebook] {#facebook}
 
 Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka förstahandspubliken [!UICONTROL segments] till [!DNL Facebook]måste du kontrollera att du uppfyller följande krav:
 
-1. Ditt [!DNL Facebook] användarkonto måste ha behörigheten **Hantera kampanjer** aktiverad för det annonskonto som du tänker använda.
+1. Ditt [!DNL Facebook] användarkonto måste ha behörigheten **Hantera kampanjer** aktiverad för annonskontot som du tänker använda.
 2. Add the **Adobe Experience Cloud** business account as an advertising partner in your [!DNL Facebook Ad Account]. Använd `business ID=206617933627973`. See [Add Partners to Your Business Manager](https://www.facebook.com/business/help/1717412048538897) for details.
    >[!IMPORTANT]
    > When configuring the permissions for Adobe Experience Cloud, you must enable the **Manage campaigns** permission. Det krävs för [!UICONTROL People-Based Destinations]-integreringen.
 3. Läs och signera [!DNL Facebook Custom Audiences] användarvillkoren. Gör det genom att gå till `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`, där `accountID` är din [!DNL Facebook Ad Account ID].
 
-### [!DNL LinkedIn]
+### [!DNL LinkedIn] {#linkedin}
 
 Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka dina egna målgruppssegment till [!DNL LinkedIn], måste du se till att ditt [!DNL LinkedIn Campaign Manager] konto har den [!DNL Creative Manager] eller högre behörighetsnivån.
 
@@ -50,7 +50,7 @@ Mer information om hur du redigerar [!DNL LinkedIn Campaign Manager] användarbe
 
 Videoinstruktioner finns i [Förstå och konfigurera LinkedIn People-Based Destination](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) .
 
-### [!DNL Google Customer Match]
+### [!DNL Google Customer Match] {#gcm}
 
 Innan du kan använda för [!UICONTROL People-Based Destinations] att skicka egna målgruppssegment till en [!DNL Google Customer Match] destination är det obligatoriskt att lägga till [!DNL Google] dig i tillåtelselista.
 
