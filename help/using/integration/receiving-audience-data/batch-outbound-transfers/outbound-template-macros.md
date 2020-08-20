@@ -7,7 +7,7 @@ title: Utgående mallmakron
 uuid: dec082d3-306b-4ff5-afb2-418bd543d8d0
 feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 31366fb83fc9aaeffc6d4a078dc2e07a0fd727a4
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 2%
@@ -107,7 +107,7 @@ Makron som används för att formatera innehållet i en datafil. Kodexempel finn
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> CLOSE_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>Infogar ett avslutande klammerparentes }-tecken. </p> </td> 
+   <td colname="col2"> <p>Infogar en avslutande klammerparentes <code>}</code> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DP_UUID </code> </p> </td> 
@@ -135,7 +135,7 @@ Makron som används för att formatera innehållet i en datafil. Kodexempel finn
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPEN_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>Infogar en öppen klammerparentes {-tecken. </p> </td> 
+   <td colname="col2"> <p>Infogar en öppen klammerparentes <code>{</code> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPT_OUT </code> </p> </td> 
