@@ -3,9 +3,10 @@ product: audience-manager
 solution: Audience Manager
 audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
+user-guide-description: Audience Manager provides industry-leading services for online audience data management.
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: edeb7dba1cb83e19a910812d2d0a664a288b884a
+source-git-commit: 29708d5fc528ac9da08f4c5a7f2bcaa11b240d8b
 workflow-type: tm+mt
 source-wordcount: '1756'
 ht-degree: 94%
@@ -340,8 +341,8 @@ ht-degree: 94%
    + Integrering med andra Experience Cloud-lösningar {#integration-other-solutions}
       + [Integrera Audience Manager med Adobe Target](integration/integration-other-solutions/aam-target-integration.md)
       + [Skicka data från Adobe Analytics till Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [Publicera ett Adobe Analytics-segment på Experience Cloud (öppnar Adobe Analytics-dokumentationen)](https://docs.adobe.com/content/help/sv-SE/core-services/interface/audiences/t-publish-audience-segment.html)
-      + [Integrera Audience Manager med Adobe Campaign (öppnar dokumentationen för Adobe Campaign)](https://docs.adobe.com/content/help/en/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
+      + [Publicera ett Adobe Analytics-segment på Experience Cloud (öppnar Adobe Analytics-dokumentation)](https://docs.adobe.com/content/help/sv-SE/core-services/interface/audiences/t-publish-audience-segment.html)
+      + [Integrera Audience Manager med Adobe Campaign (öppnar Adobe Campaign-dokumentation)](https://docs.adobe.com/content/help/en/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
 + Referens {#reference}
    + [Referensöversikt](reference/reference.md)
    + [Amazon S3: Om](reference/amazon-s3.md)
