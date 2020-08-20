@@ -8,9 +8,9 @@ title: Deklarerade ID:n
 uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
 feature: ID Syncs
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 29708d5fc528ac9da08f4c5a7f2bcaa11b240d8b
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1187'
 ht-degree: 9%
 
 ---
@@ -38,7 +38,7 @@ Vissa webbläsare, och de flesta mobila enheter, accepterar inte tredjepartsprog
  <tbody> 
   <tr> 
    <td colname="col1"> <b>Händelseanrop</b> </td> 
-   <td colname="col2"> <p>För att fungera behöver du <span class="wintitle"> DIL </span> och <a href="https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service- </a> koden på sidan. <span class="wintitle"> DIL </span> hämtar <span class="wintitle"> deklarerade ID:n </span> från <code> setVisitorID </code> funktionen som tillhandahålls av <span class="keyword"> Adobe Experience Platform Identity Service </span> och skickar vidare dessa till <span class="keyword"> Audience Manager </span>. </p> </td> 
+   <td colname="col2"> <p>För att fungera behöver du <span class="wintitle"> DIL </span> och <a href="https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service- </a> koden på sidan. <span class="wintitle"> DIL </span> får <span class="wintitle"> deklarerade ID:n </span> från <code> setVisitorID </code> funktionen som tillhandahålls av <span class="keyword"> Adobe Experience Platform Identity Service </span> och skickar vidare dem till <span class="keyword"> Audience Manager </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Matcha ID</b> </td> 
@@ -55,14 +55,14 @@ Vissa webbläsare, och de flesta mobila enheter, accepterar inte tredjepartsprog
  </tbody>
 </table>
 
-För att komma igång måste du konfigurera [!DNL Experience Cloud] ID-tjänsten och [!UICONTROL DIL] de sidor på webbplatsen som du vill använda för datainsamling. Se [Skapa](../dil/dil-class-overview/dil-create.md#dil-create) och [deklarera ID-variabler](../features/declared-ids.md#declared-id-variables)med DIL.
+För att komma igång måste du konfigurera [!DNL Experience Cloud] ID-tjänsten och [!UICONTROL DIL] de sidor på webbplatsen som du vill använda för datainsamling. Se [Skapa](../dil/dil-class-overview/dil-create.md#dil-create) och [Deklarerade ID-variabler](../features/declared-ids.md#declared-id-variables)i DIL.
 
 ## Avanmäl samtal {#opt-out-calls}
 
 Processen följer besökarnas preferenser för att avanmäla sig från [!UICONTROL declared ID] [!DNL Audience Manager] målgruppsanpassning på er webbplats. When [!DNL Audience Manager] receives an opt-out request, the [!DNL JSON] returned by the [!DNL DCS] contains the error code 171, with the message `Encountered opt out tag`, instead of the [!DNL Audience Manager] user ID.
 
 * [!DNL Audience Manager] kan skicka in en [!UICONTROL declared ID] avanmälan tillsammans med en [!DNL Audience Manager] i [!UICONTROL UUID] [!DNL URL].
-* Avanmälningen lagras [!UICONTROL declared ID] per partner i [!UICONTROL Profile Cache Server ([!UICONTROL PCS]). Det finns ingen avanmälan på plattformsnivå med [!UICONTROL declared IDs]. Dessutom [!DNL Audience Manager] avmarkerar användaren från den specifika regionen på kanten (avanmälan omfattar inte flera [!DNL DCS] regioner).
+* Avanmälningen [!UICONTROL declared ID] lagras i [!UICONTROL Profile Cache Server] ([!UICONTROL PCS]) per partner. Det finns ingen avanmälan på plattformsnivå med [!UICONTROL declared IDs]. Dessutom [!DNL Audience Manager] avmarkerar användaren från den specifika regionen på kanten (avanmälan omfattar inte flera [!DNL DCS] regioner).
 
 Mer information om att välja bort datainsamling finns i [Dataintegritet](../overview/data-security-and-privacy/data-privacy.md) .
 
@@ -115,11 +115,11 @@ Dessa metoder fungerar fortfarande men anses vara föråldrade. Denna informatio
   </tr> 
   <tr> 
    <td colname="col1"> <p>Avanmälan på partnernivå </p> </td> 
-   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid= user ID&amp;d_dpid= data provider ID </code> </p> <p>En avanmälan på partnernivå lagras för den senaste mappningen av det här <code> dpid </code> +- <code> dpuuid </code> paret till ett AAM UUID. Om det inte finns någon befintlig mappning kontrollerar Audience Manager om begäran innehåller ett AAM UUID i cookien, och om så är fallet använder den för lagring av avanmälan. I annat fall genererar Audience Manager ett nytt AAM UUID och lagrar avanmälan under det. </p> </td> 
+   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid= user ID&amp;d_dpid= data provider ID </code> </p> <p>En avanmälan på partnernivå lagras för den senaste mappningen av det här <code> dpid </code> +- <code> dpuuid </code> paret till ett AAM UUID. Om det inte finns någon befintlig mappning kontrollerar Audience Manager om begäran innehåller en AAM UUID i cookien, och om den gör det använder den för lagring av avanmälan. I annat fall genererar Audience Manager ett nytt AAM UUID och lagrar avanmälan under det. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_dpuuid </code> + <code> d_dpid </code> och explicit <code> d_uuid </code> </p> </td> 
-   <td colname="col2"> <p> <code> https://<i>domain</i>/demoptout.jpg?d_uuid= user ID&amp;d_dpuuid= data provider's user ID&amp;<i>d_dpid=data provider ID</i> </code> </p> <p> <code> d_uuid </code> har alltid företräde. Om kombinationen <code> dpid </code> + <code> dpuuid </code> mappas till ett annat AAM UUID, lagras avanmälningen under det AAM UUID som skickas i begäran ( <code> d_uuid </code>). </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>domain</i>/demoptout.jpg?d_uuid= user ID&amp;d_dpuuid= data provider's user ID&amp;<i>d_dpid=data provider ID</i> </code> </p> <p> <code> d_uuid </code> har alltid företräde. Om kombinationen <code> dpid </code> + <code> dpuuid </code> mappas till ett annat AAM UUID, lagras avanmälan under det AAM UUID som skickas i begäran ( <code> d_uuid </code>). </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -275,7 +275,7 @@ myCallback({
 })
 ```
 
-## Ring inte Target och avanmäl dig {#do-not-target}
+## Anrop för inte mål och avanmäl {#do-not-target}
 
 Processen följer besökarnas preferenser för att avanmäla sig från [!UICONTROL declared ID] [!DNL Audience Manager] målgruppsanpassning på er webbplats. När [!DNL Audience Manager] tar emot en avanmälningsbegäran [!DNL DCS] returneras ett tomt [!DNL JSON] objekt i stället för [!DNL Audience Manager] användar-ID.
 
