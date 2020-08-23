@@ -111,7 +111,7 @@ Makron som används för att formatera innehållet i en datafil. Kodexempel finn
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DP_UUID </code> </p> </td> 
-   <td colname="col2"> <p> <span class="term"> Unik användaridentifierare för dataprovider </span>. </p> <p>Det här är ID:t för den datapartent som du skickar data till i en utgående fil. </p> </td> 
+   <td colname="col2"> <p> <span class="term"> Unik användaridentifierare för dataprovider </span>. </p> <p>Det här är ID:t för den datapartner som du skickar data till i en utgående fil. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DP_UUID_LIST </code> </p> </td> 
@@ -135,7 +135,7 @@ Makron som används för att formatera innehållet i en datafil. Kodexempel finn
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPEN_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>Infogar en öppen klammerparentes {-tecken. </p> </td> 
+   <td colname="col2"> <p>Infogar en öppen klammerparentes <code>{</code> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPT_OUT </code> </p> </td> 
