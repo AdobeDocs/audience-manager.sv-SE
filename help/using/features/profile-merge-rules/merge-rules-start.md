@@ -7,9 +7,9 @@ title: Komma igång med regler för profilsammanslagning
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: dc22ed98b51b5633532bab45a79a14ee14dba5f5
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1304'
 ht-degree: 3%
 
 ---
@@ -103,18 +103,18 @@ Så här slutför du [!UICONTROL Proflie Merge Rule Setup] avsnittet:
    * **[!UICONTROL Device Co-op]**
 4. Klicka på **[!UICONTROL Save]**.
 
-### Överväganden för Adobe Campaign-mål som använder enhets-ID som användar-ID-nycklar {#considerations}
+### Överväganden för Adobe Campaign-destinationer som använder enhets-ID som användar-ID {#considerations}
 
 I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profilsammanslagning för att förbättra exaktheten hos gruppfiler som genererats med hjälp av enhets-ID:n. Dessa förbättringar respekteras strikt i din Audience Manager-instans från och med måndagen den 16 mars 2020. Därför kommer segment som mappas till ett mål med hjälp av enhets-ID att sluta producera exporter i vissa konfigurationer av profilkopplingsregler.
 
-Kontrollera att du uppfyller följande krav för att se till att Audience Manager-instansen och destinationerna är korrekt integrerade med ID:n för olika enheter, som Adobe Campaign:
+Kontrollera att du uppfyller följande krav för att se till att Audience Manager-instansen och destinationerna är korrekt integrerade med olika enhets-ID, t.ex. Adobe Campaign:
 
-1. Granska den profilkopplingsregel som används av de segment som är mappade till Adobe Campaign-deklarerade ID-mål. Regeln för profilsammanfogning måste använda [!UICONTROL Last Authenticated Profile] alternativet så att alla autentiserade profiler kan inkluderas i exporten. Om du använder ett annat alternativ för profilkopplingsregeln växlar du till [!UICONTROL Last Authenticated Profile].
-2. Markera datakällan för deklarerat ID i Adobe Campaign i inställningarna för profilkopplingsregel.
+1. Granska den profilkopplingsregel som används av de segment som är mappade till ditt Adobe Campaign-deklarerade ID-mål. Regeln för profilsammanfogning måste använda [!UICONTROL Last Authenticated Profile] alternativet så att alla autentiserade profiler kan inkluderas i exporten. Om du använder ett annat alternativ för profilkopplingsregeln växlar du till [!UICONTROL Last Authenticated Profile].
+2. Markera datakällan för det deklarerade Adobe Campaign-ID:t i inställningarna för profilkopplingsregeln.
 
 >[!NOTE]
 >
-> Vi har ökat gränsen för profilsammanfogningsregel med 1 för kunder som befinner sig i den här situationen, så att du kan skapa en dedikerad profilsammanfogningsregel för de segment som är mappade till det deklarerade ID-målet för Adobe Campaign, utan att ändra reglerna för profilsammanfogning för andra användningsfall.
+> Om du har uppnått det maximala antalet [!UICONTROL Profile Merge Rules] och behöver hjälp med att konfigurera dem enligt instruktionerna ovan, kontakta kundtjänst.
 
 ## Konfigurera kopplingsregelkod {#configure-merge-rule-code}
 
