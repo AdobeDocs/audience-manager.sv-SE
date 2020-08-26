@@ -8,7 +8,7 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 feature: Administration
 translation-type: tm+mt
-source-git-commit: a1e95f421b725cc93fbedc4c001e34e4291bf828
+source-git-commit: a292f44a63aa1e627d75d37c9ff0c1489f160729
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 86%
@@ -64,7 +64,7 @@ Kontakta din [!DNL Audience Manager] konsult eller kundtjänst så konfigurerar 
 
  
 
-**Vilken autentiseringsmetod stöds för de nya SFTP-servrarna?**
+**Vilka autentiseringsmetoder stöds för de nya SFTP-servrarna?**
 
 De nya SFTP-servrarna (`ftp-in-gtw` och `ftp-out-gtw`) har stöd [!DNL OpenSSH Key-Based Authentication]. Vi kan generera [!DNL SSH] nycklarna åt dig eller så kan du ge oss en egen offentlig nyckel.
 
