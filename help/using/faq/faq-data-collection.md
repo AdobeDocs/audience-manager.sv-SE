@@ -8,10 +8,10 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 feature: Administration
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: a1e95f421b725cc93fbedc4c001e34e4291bf828
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 93%
+source-wordcount: '1151'
+ht-degree: 86%
 
 ---
 
@@ -21,12 +21,6 @@ ht-degree: 93%
 Vanliga frågor och problem som rör datainsamling och integrering.
 
 <br> 
-
-<!-- 
-
-faq_data_collection_integration.xml
-
- -->
 
 **Hur kan jag särskilja inkommande trafik från [!DNL DCS]-trafik i exporterade [!DNL DCS]-loggfiler?**
 
@@ -42,18 +36,39 @@ Traits som registreras via [!UICONTROL Inbound] fylls i av [!UICONTROL Inbound] 
 
 Tyvärr inte. Dessa IP-adresser tilldelas dynamiskt efter geografisk region via [!DNL Amazon Web Services]. Det innebär att [!DNL Audience Manager] inte styr vilket IP-intervall som kan tilldelas till den här adressen.
 
-<br> 
+ 
 
-**Kan du ge mig en IP-adress som jag kan lägga till i en tillåtelselista för din inkommande och utgående sFTP-server?**
+**Kan du ge mig en IP-adress jag kan lägga till i en tillåtelselista för din inkommande och utgående SFTP-server?**
 
 Ja, se nedan.
 
-| Objekt | Adress |
+| Server | IP-adresser |
+| ---------|----------|
+| ftp-in-gtw.demdex.com | 23.22.232.252; 18.211.109.184 |
+| ftp-out-gtw.demdex.com | 3.233.68.222; 52.3.74.119 |
+
+ 
+
+SFTP-servrarna nedan är föråldrade. Inga nya konton kommer att etableras med dessa servrar.
+
+| Server | IP-adress |
 ---------|----------|
 | ftp-in.demdex.com | 54.225.117.163 |
 | ftp-out.demdex.com | 23.23.188.76 |
 
-<br> 
+ 
+
+**Hur konfigurerar jag min Audience Manager-instans så att den använder de nya SFTP-servrarna?**
+
+Kontakta din [!DNL Audience Manager] konsult eller kundtjänst så konfigurerar de dina nya SFTP-konton.
+
+ 
+
+**Vilken autentiseringsmetod stöds för de nya SFTP-servrarna?**
+
+De nya SFTP-servrarna (`ftp-in-gtw` och `ftp-out-gtw`) har stöd [!DNL OpenSSH Key-Based Authentication]. Vi kan generera [!DNL SSH] nycklarna åt dig eller så kan du ge oss en egen offentlig nyckel.
+
+ 
 
 **Vilka är kraven för kodplacering och sidinläsning för en [!UICONTROL DIL]/[!DNL Analytics]-dataintegrering?**
 
@@ -73,7 +88,7 @@ Det bästa är att konfigurera [!DNL Audience Manager] - [!DNL Analytics]-integr
 
 Se [API för Data Integration Library (DIL)](../dil/dil-overview.md).
 
-<br> 
+ 
 
 **Varför saknas mina [!DNL Analytics]-variabler i ett [!DNL Audience Manager]-händelseanrop?**
 
@@ -82,7 +97,7 @@ Detta inträffar vanligtvis när:
 * Du använder [!UICONTROL DIL] via ett tagghanteringssystem som läser in det asynkront med andra kodelement på sidan.
 * Funktionen `s.t()` läses in före [!UICONTROL DIL].
 
-<br> 
+ 
 
 **Vilka versioner av [!DNL Analytics] fungerar med [!UICONTROL DIL]?**
 
