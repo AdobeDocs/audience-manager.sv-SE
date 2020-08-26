@@ -1,16 +1,16 @@
 ---
-description: Se det här dokumentet för en fullständig lista över Adobe Audience Manager-ID:n.
+description: Se det här dokumentet för en fullständig lista över Adobe Audience Manager ID:n.
 keywords: DPID; DPUUID; CID; UUID; uuid; uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid
-seo-description: Se det här dokumentet för en fullständig lista över Adobe Audience Manager-ID:n.
+seo-description: Se det här dokumentet för en fullständig lista över Adobe Audience Manager ID:n.
 seo-title: Index över ID:n i Audience Manager
 solution: Audience Manager
 title: Index över ID:n i Audience Manager
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
 feature: reference
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: b8b848ad04d1ec07c12e57d94e4f3c6e672dc102
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '943'
 ht-degree: 3%
 
 ---
@@ -56,5 +56,5 @@ Globala enhets-ID:n är enhets-ID:n som är unika för varje enhet och tillhanda
 | [!DNL GAID] | 20914 | [!DNL Google Advertising ID]Det är mobilenhetsidentifierare som tillhandahålls av Android-enhetstillverkare. Dessa ID:n representerar enheter som kör [!DNL Android] operativsystemet. | Formatet består strikt av 32 små hexadecimala siffror, som visas i fem grupper och avgränsas med bindestreck, i formatet 8-4-4-4-12, med totalt 36 tecken. <br>Exempel: `e4fe9bde-caa0-47b6-908d-ffba3fa184f2`. |
 | [!DNL RIDA] | 121963 | [!DNL Roku IDs for Advertising] representerar [!DNL Roku] direktuppspelningsenheter. | Formatet består strikt av 32 små hexadecimala siffror, som visas i fem grupper och avgränsas med bindestreck, i formatet 8-4-4-4-12, med totalt 36 tecken. <br>Exempel: `fcb2a29c-315a-5e6b-bcfd-d889ba19aada`. |
 | [!DNL MAID] | 389146 | [!DNL Microsoft Advertising ID]är enhetsidentifierare som genereras av [!DNL Windows 10] per enhet och användare. | [!DNL MAID]s formateras som alfanumeriska strängar. |
-| [!DNL DUID] | 404660 | [!DNL Samsung DUID]är enhetsidentifierare som tillhandahålls av [!DNL Samsung] smarta TV:er. | [!DNL Samsung] [!DNL DUID]s formateras som alfanumeriska strängar. |
+| [!DNL TIFA] | 963906 | [!DNL Samsung Tizen IDs for Advertising] är enhetsidentifierare från [!DNL Samsung] smarta TV:er. | [!DNL Samsung] [!DNL TIFA] ID:n formateras som alfanumeriska strängar. |
 | [!DNL Amazon Fire TV Advertising ID] | 488258 | Enhetsidentifierare som representerar enheter som kör [!DNL Fire OS] operativsystemet. | Formatet består strikt av 32 små hexadecimala siffror, som visas i fem grupper och avgränsas med bindestreck, i formatet 8-4-4-4-12, med totalt 36 tecken. <br>Exempel: `df07c7dc-cea7-4a89-b328-810ff5acb15d` |
