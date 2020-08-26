@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Lägga till eller redigera segment för server-till-server-destinationer
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 55925e803e16580e0d9357d973405cf39370a8fd
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '258'
 ht-degree: 8%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 # Lägga till eller redigera segment för server-till-server-destinationer {#add-edit-segments}
 
-Du kan bara lägga till eller redigera segment för ett server-till-server-mål ([!DNL S2S]). Du kan inte skapa [!DNL S2S] mål med [!UICONTROL [Destination Builder](/help/using/features/destinations/destination-builder.md)]. Kontakta din konsult för att konfigurera [!DNL S2S] destinationer. Följ dessa anvisningar när du vill lägga till eller redigera segment för ett [!DNL S2S] mål.
+Du kan bara lägga till eller redigera segment för ett server-till-server-mål ([!DNL S2S]). Du kan inte skapa [!DNL S2S] mål med [[!UICONTROL Destination Builder]](/help/using/features/destinations/destination-builder.md). Kontakta din konsult för att konfigurera [!DNL S2S] destinationer. Följ dessa anvisningar när du vill lägga till eller redigera segment för ett [!DNL S2S] mål.
 
 <!-- destination-s2s-edit.xml -->
 
