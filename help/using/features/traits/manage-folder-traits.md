@@ -8,9 +8,9 @@ title: Hantera mapp-traits
 uuid: 287ac280-bd58-4985-85bd-b6501eb64b7f
 feature: Traits
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 4ea5ba4ebd8cd4c13c99c8272f4b5733ab5fa125
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '362'
 ht-degree: 9%
 
 ---
@@ -36,7 +36,7 @@ En mapp [!UICONTROL folder trait] skapas automatiskt när du skapar en ny mapp i
 
 1. Klicka på ikonen + för att skapa mappen. Tänk på att du kan skapa högst 2 000 mappar i taxonomin. Mer information finns i dokumentationen om [användningsbegränsningar](../../features/administration/usage-limits.md).
 1. Namnge mappen och klicka på **Spara**. En mapp med namnet Electronics kommer till exempel att ha en mappegenskap med namnet &quot;Electronics Folder Trait&quot;. Du kan visa och välja den nya mappegenskapen på kontrollpanelen för egenskaper.
-1. Det nya mappfältet tilldelas automatiskt till den [!DNL Audience Manager] genererade datakällan. Dina användare med lämpliga [!UICONTROL Role-Based Access Control ([!DNL RBAC])]-behörigheter kan ändra datakällan i redigeringsmappens arbetsflöde. Se [Redigera en mappstruktur](../../features/traits/manage-folder-traits.md#edit-folder-trait).
+1. Det nya mappfältet tilldelas automatiskt till den [!DNL Audience Manager] genererade datakällan. Dina användare med rätt [!UICONTROL Role-Based Access Control] ([!DNL RBAC]) behörighet kan ändra datakällan i arbetsflödet för redigeringsmappens egenskaper. Se [Redigera en mappstruktur](../../features/traits/manage-folder-traits.md#edit-folder-trait).
 
 ## Redigera en mappegenskap {#edit-folder-trait}
 
