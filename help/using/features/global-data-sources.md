@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Globala datakällor
 feature: Data Sources
 translation-type: tm+mt
-source-git-commit: b8b848ad04d1ec07c12e57d94e4f3c6e672dc102
+source-git-commit: cb84f95d52c2e851cb0c016cb25f408f2d79d01b
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 3%
@@ -28,7 +28,7 @@ I följande tabell beskrivs de globala datakällor som stöds av Audience Manage
 | 20915 | **[!DNL Apple ID For Advertising]** - **[!DNL IDFA]** ID:n representerar enheter som kör [!DNL iOS] operativsystemet. |
 | 121963 | **[!DNL Roku ID for Advertising]** - **[!DNL RIDA]** ID:n representerar [!DNL Roku] direktuppspelningsenheter. |
 | 389146 | **[!DNL Microsoft Advertising ID]** - **[!DNL MAID]** ID:n representerar enheter som kör [!DNL Windows 10] operativsystemet. |
-| 404660 | **[!DNL Samsung Tizen IDs for Advertising]** - **[!DNL TIFA]** ID:n representerar [!DNL Samsung] smarta TV:er. |
+| 963906 | **[!DNL Samsung Tizen IDs for Advertising]** - **[!DNL TIFA]** ID:n representerar [!DNL Samsung] smarta TV:er. |
 | 488258 | **[!DNL Amazon Fire TV Advertising IDs]** representerar enheter som körs [!DNL Amazon Fire OS] |
 
 ## Importera data från globala datakällor
