@@ -7,10 +7,10 @@ title: Krav på Amazon S3-namn och filstorlekar för inkommande datafiler
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: d3fd387478ac00470537124110299cd264eac499
+source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 4%
+source-wordcount: '1006'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +27,7 @@ Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du 
 
 [!DNL S3] filnamn innehåller följande obligatoriska och valfria element:
 
-* **[!DNL S3]prefix:**`s3n://AWS_directory/partner_name/date=yyyy-mm-dd/`
+* **[!DNL S3]prefix:**   `s3n://AWS_directory/partner_name/date=yyyy-mm-dd/`
 
 * **Filnamnselement:**   `ftp_dpm_DPID[_DPID_TARGET_DATA_OWNER]_TIMESTAMP(.sync|.overwrite)[.SPLIT_NUMBER][.gz]`
 
@@ -64,13 +64,13 @@ Tabellen definierar elementen i ett [!DNL S3] filnamn.
   <tr> 
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
    <td colname="col2"> <p>Dataleverantörs-ID <span class="term"> (DPID) är en identifierare som talar om för</span> Audience Manager <span class="keyword"></span> om en datafil innehåller egna användar-ID:n, Android- eller iOS-ID:n. Följande alternativ godkänns: </p> <p> <b>Data Partner-ID</b> </p> <p>Detta är ett unikt ID som Audience Manager tilldelar ditt företag eller din organisation. Använd det här tilldelade ID:t i ett filnamn när du skickar in data som innehåller dina egna användar-ID:n. Till exempel anger <code>...ftp_dpm_21_123456789.sync</code> <span class="keyword"> Audience Manager</span> att en partner med ID 21 skickade filen och den innehåller användar-ID som tilldelats av den partnern. </p> <p> <b>Android-ID (GAID)</b> </p> <p> Använd ID 20914 som DPID i ett datafilnamn om filen innehåller Android-ID:n. När du använder ID 20914 som DPID måste du ändå identifiera ditt företag för <span class="keyword"> Audience Manager</span>. Det innebär att filnamnet måste använda parametern <code><i>_DPID_TARGET_DATA_OWNER</i></code> för ditt företags-ID. Exempel: du skickar filer med Android-id:n och ditt Data Provider-ID är 21. I det här fallet ser filnamnet ut så här <code>...ftp_dpm_20914_21_123456789.sync</code>. Detta anger för <span class="keyword"> Audience Manager</span> att filen innehåller Android-ID:n och kommer från en partner som identifieras med ID 21. </p> <p> <b>iOS-ID (IDFA)</b> </p> <p> Använd ID 20915 som DPID i ett datafilnamn om filen innehåller iOS-ID:n. När du använder ID 20915 som DPID måste du ändå identifiera ditt företag för <span class="keyword"> Audience Manager</span>. Det innebär att filnamnet måste använda parametern <code><i>_DPID_TARGET_DATA_OWNER</i></code> för ditt företags-ID. Exempel: du skickar filer med Android-id:n och ditt Data Provider-ID är 21. I det här fallet ser filnamnet ut så här <code>...ftp_dpm_20915_21_123456789.sync</code>. Detta anger för <span class="keyword"> Audience Manager</span> att filen innehåller iOS-ID:n och kommer från en partner som identifieras med ID 21. </p> 
-    <draft-comment> 
+    <!-- 
      <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-      <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>Data Partner-ID:</b> Detta är ett unikt ID som Audience Manager tilldelar ditt företag eller din organisation. Använd det här tilldelade ID:t i ett filnamn när du skickar in data som innehåller dina egna användar-ID:n. Till exempel anger <code>...ftp_dpm_21_123456789.sync</code> <span class="keyword"> Audience Manager</span> att en partner med ID 21 skickade filen och den innehåller användar-ID som tilldelats av den partnern. </li> 
-      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID (GAID):</b> Använd ID 20914 i ett datafilnamn om det innehåller Android-ID. Till exempel anger <code>...ftp_dpm_20914_21_123456789.sync</code> att datafilen bara innehåller Android-ID:n för <span class="keyword"> Audience Manager</span> . Obs! ID 21 </li> 
-      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS-ID (IDFA):</b> Använd ID 20915 i ett datafilnamn om det innehåller iOS-ID:n. Till exempel anger <code>...ftp_dpm_20915_123456789.sync</code> <span class="keyword"> Audience Manager</span> att datafilen endast innehåller iOS-ID:n. </li> 
+      <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>Data Partner ID:</b> This is a unique ID Audience Manager assigns to your company or organization. Use this assigned ID in a file name when sending in data that contains your own user IDs. For example, <code>...ftp_dpm_21_123456789.sync</code> tells <span class="keyword"> Audience Manager</span> that a partner with ID 21 sent the file and it contains user IDs assigned by that partner. </li> 
+      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android IDs (GAID):</b> Use ID 20914 in a data file name if it contains Android ID. For example, <code>...ftp_dpm_20914_21_123456789.sync</code> tells <span class="keyword"> Audience Manager</span> that the data file contains Android IDs only. Note, the ID 21 </li> 
+      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS IDs (IDFA):</b> Use ID 20915 in a data file name if it contains iOS IDs. For example, <code>...ftp_dpm_20915_123456789.sync</code> tells <span class="keyword"> Audience Manager</span> that the data file contains iOS IDs only. </li> 
      </ul> 
-    </draft-comment> <p> <p>Obs!  Blanda inte ID-typer i datafilerna. Om ditt filnamn till exempel innehåller Android-identifieraren ska du inte ange iOS-ID eller dina egna ID:n i datafilen. </p> </p><p>Mer information finns i <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">Globala datakällor</a>.</p> <p>Se även <code><i>_DPID_TARGET_DATA_OWNER</i></code> posten nedan. </p> </td> 
+    --> <p> <p>Obs!  Blanda inte ID-typer i datafilerna. Om ditt filnamn till exempel innehåller Android-identifieraren ska du inte ange iOS-ID eller dina egna ID:n i datafilen. </p> </p><p>Mer information finns i <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">Globala datakällor</a>.</p> <p>Se även <code><i>_DPID_TARGET_DATA_OWNER</i></code> posten nedan. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
@@ -88,9 +88,9 @@ Tabellen definierar elementen i ett [!DNL S3] filnamn.
   <tr> 
    <td colname="col1"> <p> <code> <i>TIMESTAMP</i> </code> </p> </td> 
    <td colname="col2"> <p>En 10-siffrig UTC UNIX-tidsstämpel i sekunder. Tidsstämpeln gör varje filnamn unikt. </p> 
-    <draft-comment> 
-     <p> <p>Obs!  Audience Manager använder inte tidsstämpeln vid bearbetning av inkommande filer. Tidsstämpeln i filnamnet har tagits bort i Audience Manager men krävs ändå för bakåtkompatibilitet. </p> </p> 
-    </draft-comment> </td> 
+    <!-- 
+     <p> <p>Note:  Audience Manager does not use the timestamp during processing of inbound files. The timestamp in the filename has been deprecated in Audience Manager but is still required for backwards compatibility. </p> </p> 
+    --> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> (.sync|.overwrite)</code> </p> </td> 
@@ -110,7 +110,7 @@ Tabellen definierar elementen i ett [!DNL S3] filnamn.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [.gz]</code> </p> </td> 
-   <td colname="col2"> <p>När du skickar filer till Amazon S3 ska du bara använda gzip-komprimering. När filerna är komprimerade får de <code> .gz</code> filnamnstillägget. Använd inte ZIP-komprimering. </p> <p>Komprimerade filer måste vara 3 GB eller mindre. Om filerna är större kan du kontakta kundtjänst. Även om Audience Manager kan hantera stora filer kan vi hjälpa dig att minska filstorleken och effektivisera dataöverföringen. Se <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">Filkomprimering för inkommande dataöverföringsfiler</a>. </p> </td> 
+   <td colname="col2"> <p>När du skickar filer till Amazon S3 bör du bara använda gzip-komprimering. När filerna är komprimerade får de <code> .gz</code> filnamnstillägget. Använd inte ZIP-komprimering. </p> <p>Komprimerade filer måste vara 3 GB eller mindre. Om filerna är större kan du kontakta kundtjänst. Även om Audience Manager kan hantera stora filer kan vi hjälpa dig att minska filstorleken och effektivisera dataöverföringen. Se <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">Filkomprimering för inkommande dataöverföringsfiler</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
