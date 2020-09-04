@@ -7,9 +7,9 @@ title: Ordlista för verktyg för satsvis hantering
 uuid: 4658a6bc-9515-4d31-9715-0084760b0cea
 feature: baaam
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '345'
 ht-degree: 3%
 
 ---
@@ -83,7 +83,7 @@ Kolumnrubriketiketter har definierats.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> startDate</span> </p> </td> 
-   <td colname="col2"> <p>Anger när ett segment kan börja skickas till ett mål. Använder <tt>formatet åååå-mm-dd</tt> . </p> </td> 
+   <td colname="col2"> <p>Anger när ett segment kan börja skickas till ett mål. Använder <code>yyyy-mm-dd</code> format. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> targetKey</span> </p> </td> 
@@ -99,7 +99,7 @@ Kolumnrubriketiketter har definierats.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitRule / segmentRule</span> </p> </td> 
-   <td colname="col2"> <p>Den faktiska egenskap eller segmentregel som används för att samla in data. En gruppbegäran returnerar reglerna som skapats i <span class="keyword"> Audience Manager</span> med <a href="../../features/traits/about-trait-builder.md"> trait-regelbyggaren</a> eller <a href="../../features/segments/segment-builder.md"> segmentregelbyggaren</a>. Du kan också använda de här verktygen för att skapa regler och tillämpa dem samtidigt när du uppdaterar ett segment eller en egenskap. </p> <p>See also, <a href="../../reference/bulk-management-tools/bulk-rules.md"> Create or Update Trait Rules and Segment Rules</a>. </p> </td> 
+   <td colname="col2"> <p>Den faktiska egenskap eller segmentregel som används för att samla in data. En massbegäran returnerar reglerna som skapats i <span class="keyword"> Audience Manager</span> med <a href="../../features/traits/about-trait-builder.md"> trait-regelbyggaren</a> eller <a href="../../features/segments/segment-builder.md"> segmentregelbyggaren</a>. Du kan också använda de här verktygen för att skapa regler och tillämpa dem samtidigt när du uppdaterar ett segment eller en egenskap. </p> <p>See also, <a href="../../reference/bulk-management-tools/bulk-rules.md"> Create or Update Trait Rules and Segment Rules</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitType</span> </p> </td> 
