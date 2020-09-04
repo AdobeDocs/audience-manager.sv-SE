@@ -7,9 +7,9 @@ title: Beskrivning av destinationsmakron
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 2%
 
 ---
@@ -54,9 +54,9 @@ När du skapar ett [!DNL URL] mål kan du infoga följande makron i [!DNL URL] s
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
     </ul> <p>Makrot ersätts <code> 1</code> med <code> CustomerABC</code>. </p> <p> 
-     <draft-comment>
-       Baserat på AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
-     </draft-comment> </p> </td> 
+     <!--
+       Based on AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
+     --> </p> </td> 
   </tr> 
   <tr>
     <td><p><code>${GDPR}</code></p></td>
@@ -102,7 +102,7 @@ Makrona `%rnd%` och `%timestamp%` infogar unika värden i en [!DNL URL] sträng 
 
 <!-- c_dest_cache_busting.xml -->
 
-Webbläsare cachelagrar (spara) ofta begärt innehåll i minnet. När en sida läses in kommer sparat innehåll att användas från cacheminnet i stället för från en fjärrserver. Den här processen hjälper dig att hålla effektiv nedladdningstid eftersom data används lokalt i stället för från en annan plats. Men eftersom cachelagring inte kräver något serveranrop kan det fördröja rapporteringen genom att artificiellt minska antalet unika begäranden.
+Webbläsare cachelagrar (spara) ofta begärt innehåll i minnet. När en sida läses in kommer sparat innehåll att användas från cacheminnet i stället för från en fjärrserver. Den här processen hjälper till att hålla effektiv nedladdningstid eftersom data används lokalt i stället för från en annan plats. Men eftersom cachelagring inte kräver något serveranrop kan det fördröja rapporteringen genom att artificiellt minska antalet unika begäranden.
 
 Cache-lagring förhindrar att webbläsare sparar och återanvänder innehåll. Den här tekniken använder kod som infogar ett slumpmässigt tal eller en tidsstämpel i en URL-sträng, vilket gör att koden ser unik ut i webbläsaren. Därför räknas varje `HTTP` anrop som en separat begäran till servern. Genom att tvinga fram ett nytt serveranrop för varje begäran kan du bibehålla rapporteringsnoggrannheten och minska diskrepanser. [!DNL Audience Manager] innehåller två makron för cachepublicering:
 
