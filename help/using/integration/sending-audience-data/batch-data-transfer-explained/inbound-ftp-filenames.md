@@ -7,10 +7,10 @@ title: Krav på FTP-namn och filstorlekar för inkommande datafiler
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 29708d5fc528ac9da08f4c5a7f2bcaa11b240d8b
+source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 7%
+source-wordcount: '863'
+ht-degree: 8%
 
 ---
 
@@ -92,9 +92,9 @@ Tabellen definierar elementen i ett [!DNL FTP] filnamn.
   <tr> 
    <td colname="col1"> <p> <code> <i>TIMESTAMP</i> </code> </p> </td> 
    <td colname="col2"> <p>En 10-siffrig UTC UNIX-tidsstämpel i sekunder. Tidsstämpeln gör varje filnamn unikt. </p> 
-    <draft-comment> 
-     <p> <p>Obs!  Audience Manager använder inte tidsstämpeln vid bearbetning av inkommande filer. Tidsstämpeln i filnamnet har tagits bort i Audience Manager men krävs ändå för bakåtkompatibilitet. </p> </p> 
-    </draft-comment> </td> 
+    <!-- 
+     <p> <p>Note:  Audience Manager does not use the timestamp during processing of inbound files. The timestamp in the filename has been deprecated in Audience Manager but is still required for backwards compatibility. </p> </p> 
+    --> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [.gz]</code> </p> </td> 
