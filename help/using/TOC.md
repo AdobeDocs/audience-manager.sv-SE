@@ -4,10 +4,11 @@ solution: Audience Manager
 audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 breadcrumb-title: Audience Manager Guide
+breadcrumb-url: /docs/audience-manager/user-guide/aam-home.html
 user-guide-description: Audience Manager provides industry-leading services for online audience data management.
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 8f99a7dad2cb8d90fe34ae7eb9fda6164010e443
+source-git-commit: cab5afd291b2b6ef3f458b4a86fc0c0f6c90d630
 workflow-type: tm+mt
 source-wordcount: '1756'
 ht-degree: 94%
