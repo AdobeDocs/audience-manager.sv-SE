@@ -7,7 +7,7 @@ title: Dataåtgärdskomponenter
 uuid: c4c4cc46-8c96-4ef5-8269-571cc5ac9276
 feature: system components
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 3%
@@ -60,7 +60,7 @@ Exempel på [!UICONTROL IRIS] tjänster och funktioner är:
 
 * Dataöverföringar mellan servrar och servrar gruppvis: Om du utbyter stora mängder data med [!DNL Audience Manager]är det [!UICONTROL IRIS] systemet som dina servrar använder för att överföra data.
 
-* Tillförlitlig infrastruktur som fungerar i stor skala och är feltolerant. Styrka system [!UICONTROL IRIS] är bland annat Amazon SQS, Amazon EC2 och Cassandra.
+* Tillförlitlig infrastruktur som fungerar i stor skala och är feltolerant. Kraftfulla system [!UICONTROL IRIS] är bland annat Amazon SQS, Amazon EC2 och Cassandra.
 
 **Regler för segmentmappning**
 
@@ -82,7 +82,7 @@ Om du vill optimera trafiken mellan [!UICONTROL IRIS] och segmentmål skickar se
 
 Följande exempel innehåller segmentdata i realtid från [!UICONTROL IRIS]. Tänk på att detta bara är exempeldata. Varje kund kan ha olika formateringskrav så att innehållet kan variera.
 
-```
+```json
 {
     "ProcessTime": "Tue Jul 21 19:12:45 UTC 2015",
     "Client_ID": "111111",
