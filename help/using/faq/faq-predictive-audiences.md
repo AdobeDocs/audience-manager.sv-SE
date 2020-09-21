@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 71e129a39cf85d5f07979ede8f3aa862f93b6512
+source-git-commit: 91ed0e755982375f41ed5eb484fa8e60bbe6f8e5
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 69%
+source-wordcount: '1024'
+ht-degree: 66%
 
 ---
 
@@ -115,6 +115,12 @@ Nej, användaren måste ha några traits i sin profil. Om inte får användaren 
 **Kan en användare som klassificerats i ett av de prediktiva segmenten omklassificeras till ett annat [!UICONTROL Predictive Audiences]-segment?**
 
 Ja. Eftersom algoritmen tränas dagligen tillämpas ändringarna i varje persona när det gäller poängsättning för traits. Om en användare som är en del av ett [!UICONTROL Predictive Audiences]-segment är aktiv kan ändringar i deras trait-poäng ändra klassificeringen baserat på de senaste 30 dagarnas aktiviteter.
+
+ 
+
+**Kan jag lägga till prediktiva egenskaper i vanliga segment?**
+
+När du lägger till en prediktiv egenskap i ett reguljärt segment blir segmentet ett prediktivt segment. Följaktligen är alla associerade profiler osegmenterade. Prediktiva segment kan bara skickas till mål i realtid.
 
  
 
