@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 1be20c2412a272e6374b8b84e6a5c1628da18497
+source-git-commit: 91ed0e755982375f41ed5eb484fa8e60bbe6f8e5
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1551'
 ht-degree: 7%
 
 ---
@@ -35,7 +35,7 @@ Du kan identifiera de prediktiva segment som skapas av modellen på [!UICONTROL 
 
 ## Användningsexempel {#use-cases}
 
-För att du bättre ska förstå hur och när du kan använda [!UICONTROL Predictive Audiences]finns det några exempel på hur Audience Manager-kunder kan lösa det med den här funktionen.
+För att ni bättre ska förstå hur och när ni kan använda [!UICONTROL Predictive Audiences]finns det några exempel som Audience Manager-kunder kan lösa med den här funktionen.
 
 ### Användningsfall 1
 
@@ -79,7 +79,7 @@ Du kan välja vilken som helst av dina egna egenskaper eller segment för att de
 * Välj baslinjetrafik eller segment med minimal överlappning.
 * Se till att ni fångar in detaljrikedom i alla era digitala resurser.
 
-### Urvalskriterier för Target-målgrupp {#selection-audience}
+### Urvalskriterier för målpublik {#selection-audience}
 
 På samma sätt som för en personlig markering bör du välja målgrupp [!UICONTROL trait] eller [!UICONTROL segment] som definierar målgruppen på ett sådant sätt att den har realtidsanvändare med många uppsättningar [!UICONTROL traits]för klassificering i rätt profil.
 
@@ -114,12 +114,15 @@ Tänk på följande när du konfigurerar dina [!UICONTROL Predictive Audiences] 
 * Data från andra och tredje part stöds för närvarande inte i [!UICONTROL Predictive Audiences].
 * Målgruppsklassificering görs endast för förstapartsmålgrupper i realtid. Integrerad klassificering av förstahandsanvändare kan stödjas i en framtida uppdatering.
    >[!IMPORTANT]
+   > Om du lägger till en prediktiv egenskap i ett reguljärt segment blir det ett prediktivt segment. Följaktligen är alla associerade profiler osegmenterade.
+
+   >[!IMPORTANT]
    > För närvarande kan prediktiva segment bara aktiveras i realtidsdestinationer. Värdet [!UICONTROL Total Segment Population] och [!UICONTROL Addressable Audience] värdet för dina prediktiva segment visas som 0, och [grupputgående dataöverföringar](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) stöds inte för [!UICONTROL Predictive Audiences]. Detta beteende ändras i en framtida uppdatering.
 * [!UICONTROL Predictive Audiences] utför målgruppsklassificering baserat på era egenskaper hos första part, från alla era egna datakällor.
 * Segmentutvärdering för [!UICONTROL Predictive Audiences] använder **[!UICONTROL Profile Merge Rule]** det du väljer när du skapar en modell. Mer information om [!UICONTROL Profile Merge Rules] finns i den dedikerade [dokumentationen](../profile-merge-rules/merge-rules-overview.md).
 * Vissa egenskaper och segment stöds inte som baslinjer eller målgrupper. [!UICONTROL Predictive Audiences] modeller kan inte sparas när du väljer något av följande som baslinjer eller målgrupper:
    * Prediktiva egenskaper och segment som skapats med prediktiva egenskaper.
-   * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md) egenskaper eller segment,
+   * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md) egenskaper eller segment.
    * Algoritmiska egenskaper.
    * Andra och tredje parts egenskaper.
 
