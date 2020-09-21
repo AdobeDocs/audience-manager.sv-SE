@@ -1,27 +1,27 @@
 ---
-description: En metadatafil länkar numeriska ID:n med namn som du kan läsa och förstå. Rapporterna om målgruppsoptimering visar läsbara namn på de olika rapportalternativmenyerna.
-seo-description: En metadatafil länkar numeriska ID:n med namn som du kan läsa och förstå. Rapporterna om målgruppsoptimering visar läsbara namn på de olika rapportalternativmenyerna.
+description: En metadatafil länkar numeriska ID:n med namn som du kan läsa och förstå. I Audience Optimization-rapporterna visas läsbara namn på de olika rapportalternativmenyerna.
+seo-description: En metadatafil länkar numeriska ID:n med namn som du kan läsa och förstå. I Audience Optimization-rapporterna visas läsbara namn på de olika rapportalternativmenyerna.
 seo-title: Översikt och mappningar för metadatafiler
 solution: Audience Manager
 title: Översikt och mappningar för metadatafiler
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
 feature: log files
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 4%
+source-wordcount: '836'
+ht-degree: 3%
 
 ---
 
 
 # Översikt och mappningar för metadatafiler{#overview-and-mappings-for-metadata-files}
 
-En metadatafil länkar numeriska ID:n med namn som du kan läsa och förstå. Rapporterna om målgruppsoptimering visar läsbara namn på de olika rapportalternativmenyerna.
+En metadatafil länkar numeriska ID:n med namn som du kan läsa och förstå. I Audience Optimization-rapporterna visas läsbara namn på de olika rapportalternativmenyerna.
 
 ## Översikt {#overview}
 
-En granskning av metadata och hur de används. En metadatafil måste åtföljas av en datafil. Innehållet i metadatafilen matchar informationen i datafilen med relaterade, läsbara etiketter på rapportmenyerna. Mer information finns i [Datafiler för målgruppsoptimeringsrapporter och åtgärdsloggfiler](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md).
+En granskning av metadata och hur de används. En metadatafil måste åtföljas av en datafil. Innehållet i metadatafilen matchar informationen i datafilen med relaterade, läsbara etiketter på rapportmenyerna. Mer information finns i [Datafiler för Audience Optimization-rapporter och åtgärdsloggfiler](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md).
 
 ### Metadatafiler innehåller data om andra data
 
@@ -39,7 +39,7 @@ En korrekt formaterad metadatafil kan dock knyta denna kreativitet till ett verk
 
 ### När behöver du en metadatafil
 
-Först krävs en metadatafil och alla parametrar som anges nedan i ett händelseanrop när du vill använda [måloptimeringsrapporter](../../../reporting/audience-optimization-reports/audience-optimization-reports.md).
+Först krävs en metadatafil och alla parametrar som anges nedan i ett händelseanrop när du vill använda [Audience Optimization-rapporter](../../../reporting/audience-optimization-reports/audience-optimization-reports.md).
 
 För det andra behöver ni en metadatafil om ni skickar egna data till [!DNL Audience Manager] eller om ni vill se data från andra leverantörer som vi inte är integrerade med. Exempel: [!DNL Audience Manager] har en integrering med Googles [dubbelklickade Campaign Manager](../../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) (DCM). På grund av den här relationen kan [!DNL Audience Manager] associera ID:n med namn och beskrivningar som används av rapportalternativen. Utan integrering kan vi fortfarande importera data, men rapportalternativen visar numeriska ID:n i stället för beskrivande namn.
 
@@ -90,7 +90,7 @@ I följande tabell visas nyckelvärdepar som innehåller data som används av [!
    <td colname="col2"> <p> <code>d_io = <i>insertion order ID</i></code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Platform </p> </td> 
+   <td colname="col1"> <p>Plattform </p> </td> 
    <td colname="col2"> <p> <code>d_src = <i>data source ID</i></code> </p> <p>Detta är <a href="../../../features/datasources-list-and-settings.md#data-sources-list-and-settings"> datakällans</a> ID för plattformen som tillhandahåller metadatainformation (t.ex. DFA, Atlas, GBM, MediaMath). </p> </td> 
   </tr> 
   <tr> 
@@ -104,7 +104,7 @@ I följande tabell visas nyckelvärdepar som innehåller data som används av [!
  </tbody> 
 </table>
 
-## Hur ID:n för händelsesamtal formfilnamn, innehåll och leveranssökvägar {#how-ids-shape-file-names}
+## Hur ID:n för händelsesamtal formar filnamn, innehåll och leveranssökvägar {#how-ids-shape-file-names}
 
 De ID:n som skickas av dessa nyckelvärdepar hjälper till att skapa metadatafilens namn och dess innehåll. I följande avsnitt och illustrationer visas hur det fungerar. De här exemplen skapar en fil som innehåller namnet på en kreatör i en kampanj, men andra kombinationer är möjliga.
 
@@ -112,7 +112,7 @@ De ID:n som skickas av dessa nyckelvärdepar hjälper till att skapa metadatafil
 
 I det här exemplet skapar vi en metadatafil som samlar in kreativa namn i en [!UICONTROL Audience Optimization] rapport. För att göra detta måste vi extrahera ID:n för skapande, kampanj och datakälla från ett eventsamtal.
 
-![](assets/metadata_file_event.png)
+![händelseschema för metadatafil](assets/metadata_file_event.png)
 
 ### Filnamn
 
@@ -124,7 +124,7 @@ I ett filnamn:
 
 * Kampanj-ID:n för kreativa projekt och kampanjer representerar en kategori i stället för en faktisk identifierare.
 
-![](assets/metadata_file_name.png)
+![schema för metadatafilnamn](assets/metadata_file_name.png)
 
 See [Naming Conventions for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md).
 
@@ -132,7 +132,7 @@ See [Naming Conventions for Metadata Files](../../../reporting/audience-optimiza
 
 I det här exemplet återspeglar filinnehållet de kreativa ID:n och kampanj-ID:n som skickades i eventsamtalet. Det nya elementet här är ett läsbart namn. När du har bearbetat filen visas namnet i den här filen som ett alternativ på menyn Creative i en [!UICONTROL Audience Optimization] rapport.
 
-![](assets/metadata_file_contents.png)
+![innehållsschema för metadatafil](assets/metadata_file_contents.png)
 
 See [Content Format for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md).
 
@@ -142,7 +142,7 @@ När du har namngett och lagt till data i en fil skickar du den till en Amazon S
 
 >[!MORELIKETHIS]
 >
->* [Datafiler för målgruppsoptimeringsrapporter](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
+>* [Datafiler för Audience Optimization-rapporter](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
 >* [Samla in klickdata för kampanjer med pixelanrop](../../../integration/media-data-integration/click-data-pixels.md)
 >* [Samla in annonsvisningsdata för kampanjer med pixelanrop](../../../integration/media-data-integration/impression-data-pixels.md)
 
