@@ -1,14 +1,14 @@
 ---
-description: Med DIL-API:erna på förekomstnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
+description: Med DIL API:erna på instansnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 keywords: create traits;create trait
-seo-description: Med DIL-API:erna på förekomstnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
+seo-description: Med DIL API:erna på instansnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 seo-title: DIL-metoder på instansnivå
 solution: Audience Manager
 title: DIL-metoder på instansnivå
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
 feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Med [!UICONTROL DIL] API:erna på förekomstnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 
-## Komma igång med DIL-metoder på förekomstnivå {#get-started-dil-methods}
+## Komma igång med DIL-metoder på instansnivå {#get-started-dil-methods}
 
 <!-- 
 
@@ -54,7 +54,7 @@ r_dil_signals.xml
 >[!NOTE]
 >
 >* Du kan kedja andra API-anrop till den här metoden.
->* Om Adobe Experience Cloud JavaScript-biblioteket finns på sidan väntar `submit()` på att molnet ska ange en cookie innan en begäran skickas.
+>* Om Adobe Experience Cloud JavaScript-biblioteket finns på sidan `submit()` väntar på att en cookie ska anges i molnet innan en begäran skickas.
 
 
 **Reserverade begärandenycklar**
@@ -82,10 +82,10 @@ Returnerar API-objektet för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-<pre><code>
+```js
 var dataLib = DIL.create({ 
-     partner: '<i>partnerName</i>' 
-     containerNSID: <i>containerNSID</i> 
+     partner: partnerName 
+     containerNSID: containerNSID 
 }); 
  
 // Method 1 
@@ -99,7 +99,7 @@ dataLib.api.signals({c_zdid: 54321}).submit();
 // Will send 'c_key=a&c_key=2&c_key=3' to Audience Manager 
 var obj = { key : ['a', 'b', 'c'] }; 
 dataLib.api.signals(obj, 'c_').submit(); 
-</code></pre>
+```
 
 ## traits {#traits}
 
@@ -129,13 +129,13 @@ Returnerar API-objektet för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-<pre><code>
+```js
 var partnerObject = DIL.create({ 
-     partner: '<i>partner name</i>', 
-     containerNSID: <i>NSID</i> 
+     partner: 'partner name', 
+     containerNSID: NSID
 }); 
-partnerObject.api.traits(<i>[123, 456, 789]</i>); 
-</code></pre>
+partnerObject.api.traits([123, 456, 789]); 
+```
 
 ## loggar {#logs}
 
@@ -155,16 +155,16 @@ Returnerar API-objektet för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-<pre><code>
+```js
 var partnerObject = DIL.create({ 
-     partner: '<i>partner</i>', 
-     containerNSID: <i>NSID</i> 
+     partner: partner, 
+     containerNSID: NSID
 }); 
 partnerObject.api.logs({ 
      file: 'dil.js', 
      message: 'This is the first request' 
 });
-</code></pre>
+```
 
 ## skicka {#submit}
 
@@ -188,21 +188,21 @@ Returnerar API-objektet för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-<pre><code>
+```js
 var dataLib = DIL.create({ 
-     partner: '<i>partnerName</i>', 
-     containerNSID: <i>containerNSID</i> 
+     partner: partnerName, 
+     containerNSID: containerNSID 
 }); 
  
 dataLib.api.traits([ 
-<i>123,456, 789</i>]).logs({ 
+123,456, 789]).logs({ 
      file: 'dil.js', 
      message: 'This is the first request' 
 }).signals({ 
-     c_zdid: <i>1111</i> 
-     d_dma: '<i>default</i>' 
+     c_zdid: 1111
+     d_dma: 'default' 
 }).submit();
-</code></pre>
+```
 
 ## afterResult {#afterresult}
 
@@ -232,19 +232,19 @@ Returnerar ett API-objekt för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-<pre><code>
+```js
 var dataLib = DIL.create({ 
-     partner: '<i>partnerName</i>', 
-     containerNSID: <i>containerNSID</i> 
+     partner: 'partnerName', 
+     containerNSID: containerNSID 
 }); 
  
 dataLib.api.signals({ 
-     c_zdid: <i>54321</i> 
-     d_dma: '<i>default</i>' 
+     c_zdid: 54321 
+     d_dma: 'default' 
 }).afterResult(function(json){ 
      //Do something with the JSON data returned from the server. 
 }).submit();
-</code></pre>
+```
 
 ## clearData {#cleardata}
 
@@ -268,23 +268,24 @@ Returnerar API-objektet för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-<pre><code>
+
+```js
 var dataLib = DIL.create({ 
-     partner: '<i>partnerName</i>', 
-     containerNSID: <i>containerNSID</i> 
+     partner: 'partnerName', 
+     containerNSID: containerNSID
 }); 
  
-dataLib.api.traits([<i>123,456, 789</i>]).logs({ 
+dataLib.api.traits([123,456, 789]).logs({ 
      file: 'dil.js' 
      message: 'This is the first request' 
 }).signals({ 
-     c_zdid: <i>1111</i> 
-     d_dma: '<i>default</i>' 
+     c_zdid: 1111 
+     d_dma: 'default' 
 }); 
  
 //Reset the pending data 
 dataLib.clearData();
-</code></pre>
+```
 
 ## customQueryParams {#customqueryparams}
 
@@ -319,16 +320,16 @@ Returnerar API-objektet för den aktuella DIL-instansen.
 
 **Exempelkod**
 
-<pre><code>
+```js
 var partnerObject = DIL.create({ 
-     partner: '<i>partner</i>', 
-     containerNSID: <i>NSID</i> 
+     partner: 'partner', 
+     containerNSID: NSID
 }); 
 partnerObject.api.customQueryParams({ 
      nid: 54231, 
      ntype: 'default' 
 }); 
-</code></pre>
+```
 
 ## getContainerNSID {#getcontainernsid}
 
@@ -344,15 +345,15 @@ r_dil_get_container_nsid.xml
 
 **Exempelkod**
 
-<pre><code>
+```js
 var dataLib = DIL.create({ 
-     partner: '<i>partnerName</i>', 
-     containerNSID: <i>containerNSID</i> 
+     partner: 'partnerName', 
+     containerNSID: containerNSID
 }); 
  
 //Verify the container NSID 
 var nsid = dataLib.api.getContainerNSID();
-</code></pre>
+```
 
 ## getEventLog {#geteventlog}
 
@@ -368,18 +369,18 @@ r_dil_get_event_log.xml
 
 **Exempelkod**
 
-<pre><code>
+```js
 var dataLib = DIL.create({ 
-     partner: '<i>partnerName</i>', 
-     containerNSID: <i>containerNSID</i> 
+     partner: 'partnerName', 
+     containerNSID: containerNSID
 }); 
  
-dataLib.api.traits([<i>123, 456, 789</i>]).logs({ 
+dataLib.api.traits([123, 456, 789]).logs({ 
      file: 'dil.js', 
      message: 'This is the first request' 
 });.signals({ 
-     c_zdid: <i>1111</i> 
-     d_dma: '<i>default</i>' 
+     c_zdid: 1111
+     d_dma: 'default' 
 });.submit(); 
  
 //Check log for messages 
@@ -389,7 +390,7 @@ if (log && log.length) {
 }else{ 
      alert('No log messages'); 
 }
-</code></pre>
+```
 
 ## getPartner {#getpartner}
 
@@ -405,15 +406,15 @@ r_dil_get_partner.xml
 
 **Exempelkod**
 
-<pre><code>
+```js
 var dataLib = DIL.create({ 
-     partner: '<i>partnerName</i>' 
-     containerNSID: <i>containerNSID</i> 
+     partner: 'partnerName' 
+     containerNSID: containerNSID
 }); 
  
 //Verify the partner name 
 var partner = dataLib.api.getPartner();
-</code></pre>
+```
 
 ## getState {#getstate}
 
@@ -429,25 +430,25 @@ r_dil_get_state.xml
 
 **Exempelkod**
 
-<pre><code>
+```js
 var dataLib = DIL.create({ 
-     partner: '<i>partnerName</i>', 
-     containerNSID: <i>containerNSID</i> 
+     partner: 'partnerName', 
+     containerNSID: containerNSID
 }); 
  
-dataLib.api.traits([<i>123, 456, 789</i>]).logs({ 
+dataLib.api.traits([123, 456, 789]).logs({ 
      file: 'dil.js', 
      message:'This is the first request' 
 });.signals({ 
-     c.zdid: <i>1111</i> 
-     d_dma: '<i>default</i>' 
+     c.zdid: 1111 
+     d_dma: 'default' 
 });.submit(); 
  
 var state = dataLib.api.getState(); 
  
 /*Object outline of state 
 state = { 
-     pendingRequest: {<i>pending data for call to server</i>}, 
+     pendingRequest: {pending data for call to server}, 
      otherRequestInfo:{ 
           firingQueue: [], 
           fired: [], 
@@ -483,7 +484,7 @@ state = {
      } 
 } 
 */
-</code></pre>
+```
 
 ## idSync {#idsync}
 
@@ -558,9 +559,9 @@ Fungerar med [!UICONTROL DIL] version 2.10 och 3.1 eller senare.
 
 `idSync` använder följande makron:
 
-* **`%TIMESTAMP%`:**Skapar en tidsstämpel (i millisekunder). Används för cachebusting.
-* **`%DID%`:**Infogar användarens Audience Manager-ID.
-* **`%HTTP_PROTO%`:**Anger sidprotokollet (`http`eller`https`).
+* **`%TIMESTAMP%`:** Skapar en tidsstämpel (i millisekunder). Används för cachebusting.
+* **`%DID%`:** Infogar användarens Audience Manager-ID.
+* **`%HTTP_PROTO%`:** Anger sidprotokollet ( `http` eller `https`).
 
 **Svar**
 
@@ -570,7 +571,7 @@ Båda funktionerna returneras `Successfully queued` om de lyckas. De returnerar 
 
 `dilInstance.api.idSync(initConfig)`
 
-<pre><code class="js">
+```js
 // Fires url with macros replaced 
 dilInstance.api.idSync({ 
  dpid: '23', // must be a string 
@@ -578,18 +579,18 @@ dilInstance.api.idSync({
 %2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D', 
  minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days)  
 });
-</code></pre>
+```
 
 `dilInstance.api.aamIdSync(initConfig)`
 
-<pre><code class="js">
+```js
 // Fires 'https:/https:' + '//dpm.demdex.net/ibs:dpid=&lt;dpid&gt;&dpuuid=&lt;dpuuid&gt;' 
 dilInstance.api.aamIdSync({ 
  dpid: '23', // must be a string 
  dpuuid: '98765', // must be a string 
  minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days)  
 });
-</code></pre>
+```
 
 ## resultat {#result}
 
@@ -621,16 +622,16 @@ Returnerar API-objektet för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-<pre><code>
+```js
 var dataLib = DIL.create({ 
-     partner: '<i>partnerName</i>', 
-     containerNSID: <i>containerNSID</i> 
+     partner: 'partnerName', 
+     containerNSID: containerNSID 
 }); 
  
-dataLib.api.traits([<i>123, 456, 789</i>]).result(function(json){ 
+dataLib.api.traits([123, 456, 789]).result(function(json){ 
      //Do something, possibly with the JSON data returned from the server. 
 });.submit();
-</code></pre>
+```
 
 ## secureDataCollection {#securedatacollection}
 
@@ -650,12 +651,12 @@ dil-secure-data-collection.xml
 >
 >Ange `secureDataCollection= false` om du använder visitorAPI.js och [!UICONTROL DIL] på samma sida. Se kodexemplet nedan.
 
-<pre><code class="js">
+```js
 var dilInstance = DIL.create({ 
      ... 
      secureDataCollection: false 
 });
-</code></pre>
+```
 
 ## useCORSOnly {#usecorsonly}
 
@@ -673,12 +674,12 @@ dil-use-cors-only.xml
 
 **Exempel på kod**
 
-<pre><code class="js">
+```js
 var dilInstance = DIL.create({ 
      ... 
      useCORSOnly: true 
 });
-</code></pre>
+```
 
 >[!IMPORTANT]
 >
@@ -711,21 +712,21 @@ Returnerar ett API-objekt för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-<pre><code>
+```js
 var dataLib = DIL.create({ 
-     partner:'<i>partnerName</i>', 
-     containerNSID: <i>containerNSID</i> 
+     partner:'partnerName', 
+     containerNSID: containerNSID
 }); 
  
-dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
-</code></pre>
+dataLib.api.traits([123, 456, 789]).useImageRequest().submit();
+```
 
 >[!MORELIKETHIS]
 >
 >* [Namnkrav för nyckelvariabler](../features/traits/trait-key-name-requirements.md)
 >* [Prefixkrav för nyckelvariabler](../features/traits/trait-variable-prefixes.md)
->* [Synkroniseringsfunktioner i Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
+>* [Synkroniseringsfunktioner i Adobe Experience Platform identitetstjänst](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
 >* [Skapa DIL](../dil/dil-class-overview/dil-create.md#dil-create)
->* [Identitetstjänst för Adobe Experience Platform: AnvändCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
+>* [Adobe Experience Platform identitetstjänst: AnvändCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
 >* [CORS-stöd i Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
 
