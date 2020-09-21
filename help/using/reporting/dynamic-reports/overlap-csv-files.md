@@ -7,7 +7,7 @@ title: CSV-filer för överlappningsrapporter
 uuid: 047e440e-00c5-4d06-a809-51d776326cd6
 feature: overlap reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 2%
@@ -78,9 +78,9 @@ I filen omges strängdata med citattecken. Se modelldata nedan. Detta har trunke
 
 ```js
 //File header
-"segment_id1","segment_name1","segment_id2","segment_name3,"range_id",...
+"segment_id1","segment_name1","segment_id2","segment_name3","range_id", ...
 //File body
-"123456","segmentA","654321","segmentB","30","yyyy-mm-dd","98765",...
+"123456","segmentA","654321","segmentB","30","yyyy-mm-dd","98765", ...
 ```
 
 ## Poster för segment-till-segment-rapporter {#segment-segment-records}
@@ -211,7 +211,7 @@ En datafil för [segmentöverlappningsrapporten](segment-trait-overlap-report.md
 
 ## Rapportposter för fack till fack {#trait-trait-records}
 
-En datafil för [Trait-to-Trait Overlap Report](trait-trait-overlap-report.md) innehåller följande poster.
+En datafil för [trait-to-Trait Overlap Report](trait-trait-overlap-report.md) innehåller följande poster.
 
 <table id="table_603216E6AFE4439A87C91DDFF2989F53"> 
  <thead> 
