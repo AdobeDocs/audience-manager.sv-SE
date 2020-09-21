@@ -1,13 +1,13 @@
 ---
-description: Kodexempel och beskrivningar för specifika DIL-användningsfall.
-seo-description: Kodexempel och beskrivningar för specifika DIL-användningsfall.
+description: Kodexempel och beskrivningar för specifika fall för användning i DIL.
+seo-description: Kodexempel och beskrivningar för specifika fall för användning i DIL.
 seo-title: DIL-användningsexempel och kodexempel
 solution: Audience Manager
 title: DIL-användningsexempel och kodexempel
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
 feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # DIL-användningsexempel och kodexempel{#dil-use-cases-and-code-samples}
 
-Kodexempel och beskrivningar för specifika DIL-användningsfall.
+Kodexempel och beskrivningar för specifika fall för användning i DIL.
 
 <!-- 
 
@@ -27,7 +27,7 @@ c_dil_use_case.xml
 
 ## Skicka dataelement till Audience Manager med DIL {#send-data-elements-dil}
 
-Skapa en objektvariabel som skickar information om sidelement till Audience Manager. Detta är användbart för allmän datainsamling eller som ett alternativ till datainsamling med Analytics-variabler.
+Skapa en objektvariabel som skickar information om sidelement till Audience Manager. Detta är användbart för allmän datainsamling eller som ett alternativ till att samla in data med Analytics-variabler.
 
 <!-- 
 
@@ -47,35 +47,35 @@ Tänk på att värdeegenskaperna förblir desamma när du skickar data. Om du ti
 
 I det här grundläggande exemplet skickas färg- och prisdata till Audience Manager i form av nyckelvärdepar. Koden kan se ut ungefär så här:
 
-<pre class="&ldquo;java&rdquo;"><code>
-var sample_dil = DIL.create({partner:"<i>partner name</i>"}); 
+```
+var sample_dil = DIL.create({partner:"partner name"}); 
 sample_dil.api.signals({ 
    c_color:"blue", 
    c_price:"900" 
 }); 
 sample_dil.api.submit();
-</code></pre>
+```
 
 **Exempel 2: Skicka data i ett objekt**
 
 I det här avancerade exemplet visas hur du skickar data i ett objekt till Audience Manager. När du arbetar med den här metoden [!UICONTROL DIL] kan du skicka ett objekt som en funktionsparameter till [!DNL signals()] metoden. [!UICONTROL DIL] Koden kan se ut ungefär så här:
 
-<pre class="java"><code>
+```js
 var my_object = { 
    color : "blue", 
    price : "900" 
 }; 
  
-var sample_dil = DIL.create({ partner : "<i>partner name</i>" }); 
+var sample_dil = DIL.create({ partner : "partner name" }); 
 //Load the object and append "c_" to all keys in the key-value pairs and send data to AudienceManager. 
 sample_dil.api.signals(my_object,"c_").submit();
-</code></pre>
+```
 
 **Exempel 3: Skicka siddata i en array**
 
 I det här fallet `my_object` använder variabeln en array för att lagra data. Det här exemplet bygger på den information som skickas med den rekommenderade metoden ovan, men lägger till ytterligare ett lager för en produkttyp och modell. Koden kan se ut ungefär så här:
 
-<pre class="java"><code>
+```js
 var my_objects = [{ 
    color : "blue", 
    price : "900" 
@@ -84,7 +84,7 @@ var my_objects = [{
    model : "tl" 
 }]; 
  
-var sample_dil = DIL.create({ partner : "<i>partner name</i>" }); 
+var sample_dil = DIL.create({ partner : "partner name" }); 
  
 for (var i = 0; i < my_objects.length; i++) 
 //Load the object and append "c_" to all the keys in the key-value pairs.  
@@ -92,7 +92,7 @@ for (var i = 0; i < my_objects.length; i++)
     sample_dil.api.signals(my_objects[i], "c_"); 
 } 
 sample_dil.api.submit();
-</code></pre>
+```
 
 ## Hämta referens-URL {#capture-referring-url}
 
@@ -112,10 +112,10 @@ c_dil_hrefer_over_https.xml
 
 Koden kan se ut ungefär så här:
 
-<pre class="java"><code>
-var adobe_dil = DIL.create({ partner : "<i>partner name</i>" }); 
+```js
+var adobe_dil = DIL.create({ partner : "partner name" }); 
 adobe_dil.api.signals({ d_referer : document.referrer }).submit();
-</code></pre>
+```
 
 ## Hämta sökmotortyper och sökvillkor för nyckelord {#capture-search-engine-types}
 
@@ -143,7 +143,7 @@ I följande kod visas hur du hämtar sökreferenten för någon av de sökmotore
 
 Grundläggande kod för att hämta sökreferenten (från `google.com`till exempel:
 
-```java
+```js
 var search_referrer = DIL.tools.getSearchReferrer();
 ```
 
@@ -151,8 +151,8 @@ var search_referrer = DIL.tools.getSearchReferrer();
 
 I det här fallet antar vi att en användare sökte efter termen&quot;hem&quot; från [!DNL Google] Kanada ( `www.google.ca`). Observera hur koden prefixerar den obligatoriska `c_` parametern för sökmotorn ( `c_se`) och söktermen ( `c_st`). `c_` är ett [obligatoriskt prefix](../features/traits/trait-variable-prefixes.md) som identifierar dessa som kunddefinierade variabler för Audience Manager.
 
-<pre class="java"><code>
-var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
+```js
+var adobe_dil = DIL.create({partner:"partner name"}); 
 var search_referrer = DIL.tools.getSearchReferrer(); 
  
 if (search_referrer && search_referrer.valid) { 
@@ -161,14 +161,14 @@ if (search_referrer && search_referrer.valid) {
     c_st : se.keywords 
   }).submit(); 
 }
-</code></pre>
+```
 
 **Kodexempel för ej listad sökmotor**
 
 I det här fallet antar vi att en användare sökte efter termen &quot;hem&quot; från `dogpile.com`. Eftersom [!DNL Dogpile] inte stöds som standard kan du konfigurera DIL så att sökmotorn känns igen och returnera söktermerna till Audience Manager. Koden kan se ut ungefär så här:
 
-<pre class="java"><code>
-var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
+```js
+var adobe_dil = DIL.create({partner:"partner name"}); 
 var search_referrer = DIL.tools.getSearchReferrer(document.referrer, {  
     hostPattern:/dogpile\./, 
     queryParam:"q" 
@@ -180,7 +180,7 @@ if (search_referrer && search_referrer.valid) {
     c_st : se.keywords 
   }).submit(); 
 }
-</code></pre>
+```
 
 ## Mappa nyckelvärden till andra nycklar {#map-key-values}
 
@@ -202,7 +202,7 @@ Du kan till exempel samla in ZIP-koddata från en viss plats men vill rikta dem 
 
 Koden kan se ut ungefär så här:
 
-```java
+```js
 var adobe_dil = DIL.create({ 
     partner : "adobe", 
     mappings : { 
@@ -214,9 +214,9 @@ adobe_dil.api.signals({c_zip : '10010'}).submit();
 // Request will look like /event?c_zip=10010&d_zip=10010
 ```
 
-## Trafik-DIL i Google Tag Manager (GTM) {#traffic-dil-gtm}
+## Traffic DIL i Google Tag Manager (GTM) {#traffic-dil-gtm}
 
-Konfigurera och leverera DIL med en GTM-tagg.
+Konfigurera och serva DIL med en GTM-tagg.
 
 <!-- 
 
