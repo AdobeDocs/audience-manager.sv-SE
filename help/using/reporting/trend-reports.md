@@ -7,9 +7,9 @@ title: Trendrapporter
 uuid: bedbe7d4-7cbb-4403-9104-312f9230aea1
 feature: general & trend reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: d1edc392c2017f4625f0494d50463c395248918f
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '640'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ Nollor anger att uppgifterna inte [!DNL Audience Manager] samlades in för den d
 
 Titta på videon nedan för att få en detaljerad bild av hur enhetsövergripande mätvärden fungerar.
 
->[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://video.tv.adobe.com/v/33445/?quality=12)
 
 ## Trendrapportresultat för segment {#segment-report-results-traits}
 
