@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 91ed0e755982375f41ed5eb484fa8e60bbe6f8e5
+source-git-commit: 04c638289878ff79070487d7d8cbb5c9454d93d6
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1023'
 ht-degree: 66%
 
 ---
@@ -106,6 +106,8 @@ Om du väljer en enhet som endast är [!UICONTROL Profile Merge Rule] baserad p�
 
 Analysera användningsexemplen noggrant och bestäm vilka [!UICONTROL trait] typer du vill att modellen ska lära sig av och vilken typ av data du vill att modellen ska använda för klassificering.
 
+ 
+
 **Går det att klassificera en användare från målgruppen som inte är en del av något persona-trait/segment?**
 
 Nej, användaren måste ha några traits i sin profil. Om inte får användaren matchningspoängen 0 för alla persona traits/segment och kommer därför inte att klassificeras i något av de prediktiva segmenten.
@@ -120,7 +122,7 @@ Ja. Eftersom algoritmen tränas dagligen tillämpas ändringarna i varje persona
 
 **Kan jag lägga till prediktiva egenskaper i vanliga segment?**
 
-När du lägger till en prediktiv egenskap i ett reguljärt segment blir segmentet ett prediktivt segment. Följaktligen är alla associerade profiler osegmenterade. Prediktiva segment kan bara skickas till mål i realtid.
+När du lägger till en prediktiv egenskap i ett reguljärt segment blir det ett prediktivt segment. Följaktligen är alla associerade profiler osegmenterade. Prediktiva segment kan bara skickas till mål i realtid.
 
  
 
