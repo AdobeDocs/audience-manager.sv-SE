@@ -1,15 +1,15 @@
 ---
-description: En datafil innehåller indata för att visa, klicka eller konvertera. När dessa data är korrekt formaterade kan du importera dem till Audience Manager och använda dem i rapporter om målgruppsoptimering och för körbara loggfiler. Formatera datafilerna enligt specifikationerna i det här avsnittet.
-seo-description: En datafil innehåller indata för att visa, klicka eller konvertera. När dessa data är korrekt formaterade kan du importera dem till Audience Manager och använda dem i rapporter om målgruppsoptimering och för körbara loggfiler. Formatera datafilerna enligt specifikationerna i det här avsnittet.
+description: En datafil innehåller indata för att visa, klicka eller konvertera. När informationen är korrekt formaterad kan du importera den till Audience Manager och använda den i Audience Optimization-rapporterna och för loggfiler som kan användas. Formatera datafilerna enligt specifikationerna i det här avsnittet.
+seo-description: En datafil innehåller indata för att visa, klicka eller konvertera. När informationen är korrekt formaterad kan du importera den till Audience Manager och använda den i Audience Optimization-rapporterna och för loggfiler som kan användas. Formatera datafilerna enligt specifikationerna i det här avsnittet.
 seo-title: Datafiler för Audience Optimization-rapporter och verkställbara loggfiler
 solution: Audience Manager
 title: Datafiler för Audience Optimization-rapporter och verkställbara loggfiler
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 feature: log files
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1010'
 ht-degree: 3%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 3%
 
 # Datafiler för Audience Optimization-rapporter och verkställbara loggfiler {#data-files-for-audience-optimization-reports}
 
-En datafil innehåller indata för att visa, klicka eller konvertera. När data är korrekt formaterade kan du importera dem till Audience Manager för att visa dem i [målgruppsoptimeringsrapporter](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) och skapa egenskaper med hjälp av data via [körbara loggfiler](/help/using/integration/media-data-integration/actionable-log-files.md). Formatera datafilerna enligt dessa specifikationer i det här avsnittet.
+En datafil innehåller indata för att visa, klicka eller konvertera. När dessa data är korrekt formaterade kan du importera dem till Audience Manager för att visa dem i [Audience Optimization-rapporterna](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) och skapa egenskaper med hjälp av [loggfilerna](/help/using/integration/media-data-integration/actionable-log-files.md). Formatera datafilerna enligt dessa specifikationer i det här avsnittet.
 
 ## Översikt {#overview}
 
-Med en korrekt namngiven och formaterad datafil kan du importera intryckt-, klicknings- eller konverteringsdata till [målgruppsoptimeringsrapporter](../../../reporting/audience-optimization-reports/audience-optimization-reports.md). Detta är användbart när du arbetar med en partner som inte är integrerad med [!DNL Audience Manager] och du vill arbeta med deras data i den rapportsviten. Den här processen kräver separata filer för bild-, klicknings- och konverteringsdata. Blanda inte dessa händelser i en enda fil.
+Med en korrekt namngiven och formaterad datafil kan du importera, klicka och konvertera data till [Audience Optimization-rapporter](../../../reporting/audience-optimization-reports/audience-optimization-reports.md). Detta är användbart när du arbetar med en partner som inte är integrerad med [!DNL Audience Manager] och du vill arbeta med deras data i den rapportsviten. Den här processen kräver separata filer för bild-, klicknings- och konverteringsdata. Blanda inte dessa händelser i en enda fil.
 
 En datafil måste åtföljas av en metadatafil. Innehållet i metadatafilen matchar informationen i datafilen med relaterade, läsbara etiketter på rapportmenyerna. Mer information finns i [Översikt och mappningar för metadatafiler](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md).
 
@@ -29,7 +29,7 @@ En datafil måste åtföljas av en metadatafil. Innehållet i metadatafilen matc
 
 Följande syntax definierar strukturen för ett välformaterat datafilnamn. Obs! *Kursiv* anger en variabel platshållare som ändras beroende på filinnehållet.
 
-**Syntax:** <pre><i>händelsetyp</i>_<i>åååmmdd</i></code></pre>
+**Syntax:** `event type_yyyymmdd`
 
 I ett filnamn:
 
@@ -39,15 +39,15 @@ I ett filnamn:
 
 Med tanke på dessa krav bör du namnge dina datafiler baserat på deras innehåll så här:
 
-* Impressionsdata: <pre>imponsions_<i>yyymmdd</i>.gz</code></pre>
-* Klicka på data: <pre>clicks_<i>yyymmdd</i>.gz</code></pre>
-* Konverteringsdata: <pre>conversions_<i>yyymmdd</i>.gz</code></pre>
+* Impressionsdata: `impressions_yyyymmdd.gz`
+* Klicka på data: `clicks_yyyymmdd.gz`
+* Konverteringsdata: `conversions_yyyymmdd.gz`
 
 ## Content Format for Data Files {#content-format}
 
 Följande syntax definierar innehållsstrukturen i välformade datafiler. Observera att *kursiv* anger en variabelplatshållare och ersätts med en etikett i en faktisk datafil.
 
-**Syntax:** <pre><i>rubriketikett 1</i> | <i>rubriketikett 2</i> ... <i>rubriketikett n</i> | <i>version</i></code></pre>
+**Syntax:** `header label 1 | header label 2 ... header label n | version`
 
 I filinnehållet:
 
@@ -143,7 +143,7 @@ Tabellen nedan listar och beskriver kolumnrubrikerna för datafilen. Sidhuvuden 
 
 ## Delivery Methods for Data Files {#delivery-methods}
 
-Överför ditt intryck, klicka eller konvertera datafiler till en Amazon S3-katalog för ditt [!DNL Audience Manager] konto. I det här avsnittet finns information om leverans-/katalogsökvägar, bearbetningstider och uppdateringar.
+Ladda upp dina intryckta, klickningar eller konverteringsdatafiler till en Amazon S3-katalog för ditt [!DNL Audience Manager] konto. I det här avsnittet finns information om leverans-/katalogsökvägar, bearbetningstider och uppdateringar.
 
 >[!IMPORTANT]
 >
@@ -153,7 +153,7 @@ Tabellen nedan listar och beskriver kolumnrubrikerna för datafilen. Sidhuvuden 
 
 Data lagras i ett separat namnutrymme för varje kund i en [!DNL Amazon S3] katalog. Filsökvägen följer den syntax som visas nedan. Obs! *Kursiv* anger en variabelplatshållare. Andra element är konstanter eller nycklar och ändras inte.
 
-**Syntax:** <pre>.../log_inghit/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/ <i>filtyp</i>_<i>yyymmdd</i></code></pre>
+**Syntax:** `.../log_ingestion/pid=AAM ID/dpid=d_src/logs/file type_yyyymmdd`
 
 I följande tabell definieras vart och ett av dessa element i en filleveranssökväg.
 
