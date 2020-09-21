@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Plugin-program för Audience Manager för IAB TCF
 feature: data governance & privacy
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
 workflow-type: tm+mt
 source-wordcount: '2449'
-ht-degree: 40%
+ht-degree: 39%
 
 ---
 
@@ -70,7 +70,7 @@ Du måste uppfylla följande krav för att kunna använda plugin-programmet Audi
 
 >[!WARNING]
 >
->Om du använder en CMP (Consent Management Platform) som inte har stöd för IAB TCF v.2.0, skickar Audience Manager automatiskt parametern `gdpr=0` i ID-synk, även om besökarna befinner sig i EU. För att avgöra om din GDPR-validering är aktiv rekommenderar vi att du med din CMP (Consent Management Platform) bekräftar att de har stöd för IAB TCF v2.0.
+>Om du använder en plattform för hantering av samtycke (CMP) som inte har stöd för IAB TCF v.2.0, skickar Audience Manager automatiskt parametern `gdpr=0` i ID-synk, även om besökarna befinner sig i EU. För att avgöra om din GDPR-validering är aktiv rekommenderar vi att du bekräftar med din CMP (Consent Management Platform) att de stöder IAB TCF v2.0.
 
 ## Rekommendationer och implementering {#recommendations}
 
@@ -118,7 +118,7 @@ Audience Manager fungerar på olika sätt beroende på om IAB TC-strängen inneh
 
 Vi kontrollerar också om du har gett ditt samtycke till alla destinationer du arbetar med i Audience Manager, så länge dessa destinationer är registrerade med IAB TCF.
 
-| När användaren *ger sitt medgivande* kommer Audience Manager: | När användaren *inte ger sitt medgivande* kommer Audience Manager: |
+| When your user *provides* consent, Audience Manager: | När användaren *inte ger sitt medgivande* kommer Audience Manager: |
 |---|---|
 | <ul><li>Utföra alla de Audience Manager-funktioner som ni har begärt.</li><li>Conveys consent to third parties in ID syncs (by passing `gdpr = 1` and the consent string as `gdpr_consent` on ID sync calls).</li><li>Utvärdera och respektera medgivanden som skickas från annonsserverns pixlar.</li><li>Respektera partnerinitierade ID-synkroniseringar.</li></ul> | <ul><li>Inga nya användardata lagras i er instans. Detta inkluderar partner-ID, signaler, traits och pixeldata.</li><li>ID-synkronisering initieras inte med tredje part.</li><li>Partnerinitierade ID-synkroniseringar respekteras inte.</li><li>Användaren kan inte hämta in ytterligare data.</li></ul> |
 
@@ -184,7 +184,7 @@ Mer information om målmakron som stöds finns i [Målmakron definierade](../../
 
 ## Hantering av enhetsövergripande samtycke
 
-Insticksprogrammet Audience Manager för IAB TCF väljer automatiskt ut de ID som finns på en begäran när besökarna på platsen inte har tillräcklig behörighet. Om begäran innehåller ett CRM-ID ( [cross-device ID)](../../reference/ids-in-aam.md), väljer Audience Manager ut ID:t tillsammans med den sista enheten som är länkad till det [korsenhets-ID:t (CRM ID)](../../reference/ids-in-aam.md).
+Insticksprogrammet Audience Manager för IAB TCF väljer automatiskt vilka ID:n som finns på en begäran när besökarna på platsen inte har tillräcklig behörighet. Om begäran innehåller ett CRM-ID ( [cross-device ID)](../../reference/ids-in-aam.md), väljer Audience Manager ut ID:t tillsammans med den sista enheten som är länkad till det [korsenhets-ID:t (CRM ID)](../../reference/ids-in-aam.md).
 
 ## Testa implementeringen av IAB {#test-iab-implementation}
 
