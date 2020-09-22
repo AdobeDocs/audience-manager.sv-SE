@@ -7,9 +7,9 @@ title: Krav på FTP-namn och filstorlekar för inkommande datafiler
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
+source-git-commit: d6d15ed68cd70fd7da1037a7cb397a00d252e4dd
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '868'
 ht-degree: 8%
 
 ---
@@ -57,9 +57,9 @@ Tabellen definierar elementen i ett [!DNL FTP] filnamn.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
-   <td colname="col2"> <p>Ett ID som talar om för <span class="keyword"> Audience Manager</span> om en datafil innehåller egna användar-ID:n, Android- eller iOS-ID:n. Följande alternativ godkänns: </p> 
+   <td colname="col2"> <p>Ett ID som talar om för <span class="keyword"> Audience Manager</span> om en datafil innehåller egna användar-ID:n, Android- eller iOS-ID:n. Följande alternativ godkänns:</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>Data Partner-ID:</b> Detta är ett unikt ID som Audience Manager tilldelar ditt företag eller din organisation. Använd det här tilldelade ID:t i ett filnamn när du skickar in data som innehåller dina egna användar-ID:n. Till exempel anger <code>...ftp_dpm_21_123456789.sync</code> <span class="keyword"> Audience Manager</span> att en partner med ID 21 skickade filen och den innehåller användar-ID som tilldelats av den partnern. </li> 
+     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>Dataproviderns ID (kallas även datakällans ID):</b> Detta är ett unikt ID som Audience Manager tilldelar en DataProvider. Använd det här tilldelade ID:t i ett filnamn när du skickar in data som innehåller dina egna användar-ID:n. Till exempel anger <code>...ftp_dpm_21_123456789.sync</code> <span class="keyword"> Audience Manager</span> att en partner med ID 21 skickade filen och den innehåller användar-ID som tilldelats av den partnern. </li> 
      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID (GAID):</b> Använd ID 20914 i ett datafilnamn om det innehåller Android-ID. Till exempel anger <code>...ftp_dpm_20914_123456789.sync</code> att datafilen bara innehåller Android-ID:n för <span class="keyword"> Audience Manager</span> . </li> 
      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS-ID (IDFA):</b> Använd ID 20915 i ett datafilnamn om det innehåller iOS-ID:n. Till exempel anger <code>...ftp_dpm_20915_123456789.sync</code> <span class="keyword"> Audience Manager</span> att datafilen endast innehåller iOS-ID:n. </li> 
     </ul> <p> <p>Obs!  Blanda inte ID-typer i datafilerna. Om ditt filnamn till exempel innehåller Android-identifieraren ska du inte ange iOS-ID eller dina egna ID:n i datafilen. </p> </p> </td> 
