@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Tillgänglighet i Audience Manager
 feature: overview
 translation-type: tm+mt
-source-git-commit: 032e01f2483543271680093ae3286bcf3b3b3740
+source-git-commit: 20ec64ba3c934d60f8758777e226344c8586efa3
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ För att göra det [!DNL Audience Manager] enklare för alla har vi utvecklat st
 
    ![tillgänglighet - framhävning](assets/accesibility-highlight.png)
 
-* Med tangenterna `Return` och `Space` aktiverar du det markerade objektet.
+* Tangenterna `Return` (`Enter`) och `Space` aktiverar det markerade objektet.
 
 ## Tillgänglig tabellsortering {#table-sorting}
 
@@ -62,6 +62,4 @@ Inläsningsskärmar kan till exempel innehålla en inläsande snurra inuti en vi
 
 [!DNL Audience Manager] strävar efter att ge en allt större grad av tillgänglighet, vilket gör produkten enkel att använda för alla.
 
-Mer information om våra tillgänglighetsförbättringar och kompatibilitetsstatus finns i rapporten om tillgänglighetskonformning.
-
-Dessutom bör du använda formuläret [](https://www.adobe.com/accessibility/feedback.html) Adobe för tillgänglighetsfeedback för att skicka förslag på förbättringar och tillgänglighetsproblem som du stöter på. Vi tar gärna hänsyn till dina synpunkter och förbättrar dem [!DNL Audience Manager].
+Vi rekommenderar att du använder formuläret [](https://www.adobe.com/accessibility/feedback.html) Adobe för tillgänglighetsfeedback för att skicka förslag på förbättringar och tillgänglighetsproblem som du stöter på. Vi tar gärna hänsyn till dina synpunkter och förbättrar dem [!DNL Audience Manager].
