@@ -7,7 +7,7 @@ title: Översikt och mappningar för metadatafiler
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
 feature: log files
 translation-type: tm+mt
-source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
+source-git-commit: e075bbfc3c2316518838ad428577eae191e45eda
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 3%
@@ -43,7 +43,7 @@ Först krävs en metadatafil och alla parametrar som anges nedan i ett händelse
 
 För det andra behöver ni en metadatafil om ni skickar egna data till [!DNL Audience Manager] eller om ni vill se data från andra leverantörer som vi inte är integrerade med. Exempel: [!DNL Audience Manager] har en integrering med Googles [dubbelklickade Campaign Manager](../../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) (DCM). På grund av den här relationen kan [!DNL Audience Manager] associera ID:n med namn och beskrivningar som används av rapportalternativen. Utan integrering kan vi fortfarande importera data, men rapportalternativen visar numeriska ID:n i stället för beskrivande namn.
 
-![](assets/metadata_menu.png)
+![](assets/metadata-menu.png)
 
 ## Filmappningar {#file-mappings}
 
@@ -112,7 +112,7 @@ De ID:n som skickas av dessa nyckelvärdepar hjälper till att skapa metadatafil
 
 I det här exemplet skapar vi en metadatafil som samlar in kreativa namn i en [!UICONTROL Audience Optimization] rapport. För att göra detta måste vi extrahera ID:n för skapande, kampanj och datakälla från ett eventsamtal.
 
-![händelseschema för metadatafil](assets/metadata_file_event.png)
+![händelseschema för metadatafil](assets/metadata-file-event.png)
 
 ### Filnamn
 
@@ -124,7 +124,7 @@ I ett filnamn:
 
 * Kampanj-ID:n för kreativa projekt och kampanjer representerar en kategori i stället för en faktisk identifierare.
 
-![schema för metadatafilnamn](assets/metadata_file_name.png)
+![schema för metadatafilnamn](assets/metadata-file-name.png)
 
 See [Naming Conventions for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md).
 
@@ -132,7 +132,7 @@ See [Naming Conventions for Metadata Files](../../../reporting/audience-optimiza
 
 I det här exemplet återspeglar filinnehållet de kreativa ID:n och kampanj-ID:n som skickades i eventsamtalet. Det nya elementet här är ett läsbart namn. När du har bearbetat filen visas namnet i den här filen som ett alternativ på menyn Creative i en [!UICONTROL Audience Optimization] rapport.
 
-![innehållsschema för metadatafil](assets/metadata_file_contents.png)
+![innehållsschema för metadatafil](assets/metadata-file-contents.png)
 
 See [Content Format for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md).
 
