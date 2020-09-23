@@ -8,9 +8,9 @@ title: Skapa en algoritmisk modell
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: bff108115e7ebd4375d81c1c32ec9bb7d1a207c1
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Beskriver de obligatoriska och valfria stegen som du kan använda för att skapa
 >[!NOTE]
 >
 >* Modelleringsprocessen körs bara en gång om du skapar en modell och inte skapar några egenskaper med den.
->* Skapa modeller från datakällor som innehåller meningsfull information. Modeller med otillräckliga data kommer att köras, men returnerar inga resultat.
+>* Skapa modeller från datakällor som innehåller meningsfull information. Modeller med otillräckliga data kommer att köras, men de kommer inte att returnera några resultat.
 >* *Skapa inte* modeller med andra algoritmiska egenskaper eller segment.
 >* Det automatiska e-postmeddelandet skickas endast en gång (efter den första datakörningen).
 
@@ -54,7 +54,7 @@ Följ stegen nedan för att skapa en [!UICONTROL Look-Alike Model]:
 
 Titta på videon nedan för att få en detaljerad bild av hur enhetsövergripande mätvärden fungerar.
 
->[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://video.tv.adobe.com/v/33445/)
 
 ## Grundläggande information för algoritmiska modeller {#basic-information}
 
