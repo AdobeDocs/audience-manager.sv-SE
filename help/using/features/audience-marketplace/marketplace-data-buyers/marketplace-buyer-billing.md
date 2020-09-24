@@ -8,7 +8,7 @@ keywords: Segment-level Reporting, segment-level, segment level
 uuid: d7236667-282b-4160-9909-579721af4016
 feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: dac08e9a31cb80b048013d95b7a617e4fb68e2fe
 workflow-type: tm+mt
 source-wordcount: '2027'
 ht-degree: 1%
@@ -118,7 +118,7 @@ Så här uppdaterar du [!DNL CPM] satsanvändning:
 <table id="table_E68FA2130D1C495FAB8982DFB6A31FD9"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Rekommendationer </th> 
+   <th colname="col1" class="entry"> Recommendations </th> 
    <th colname="col2" class="entry"> Beskrivning </th> 
   </tr>
  </thead>
@@ -126,7 +126,7 @@ Så här uppdaterar du [!DNL CPM] satsanvändning:
   <tr> 
    <td colname="col1"> <p><b>Rapportera alltid det totala antalet visningar</b> </p> </td> 
    <td colname="col2"> <p>För CPM-inställningssummor: </p>
-   <p> Rapportera det totala antalet visningar, utan decimaler. Audience Manager beräknar automatiskt CPM-värdet baserat på det totala antal som du rapporterar.</p><p>Om du behöver rapportera 1 234 567 visningar ska du rapportera exakt så. Du behöver inte dividera det totala antalet visningar med 1 000 för att beräkna CPM.</p><p>De egenskaper som används för att optimera webb- eller appinnehåll (innehållsoptimering) med verktyg som Adobe Target eller ett Analytics-mål bidrar inte till användningssummorna för CPM-planer. Dataleverantörerna kompenseras normalt för optimering av innehåll med hjälp av rabattplaner.</p><p>Mer information finns i <a href="#cost-attribution">Kostnadsattribuering för CPM-datafeeds</a> . </p> </td>
+   <p> Rapportera det totala antalet visningar, utan decimaler. Audience Manager beräknar automatiskt CPM-värdet baserat på det totala antal som du rapporterar.</p><p>Om du behöver rapportera 1 234 567 visningar ska du rapportera exakt så. Du behöver inte dividera det totala antalet visningar med 1 000 för att beräkna CPM.</p><p>De egenskaper som används för att optimera webb- eller appinnehåll (innehållsoptimering) med verktyg som Adobe Target eller ett analysmål bidrar inte till användningssummorna för CPM-planer. Dataleverantörerna kompenseras normalt för optimering av innehåll med hjälp av rabattplaner.</p><p>Mer information finns i <a href="#cost-attribution">Kostnadsattribuering för CPM-datafeeds</a> . </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>Använd månadsvis rapportering</b> </p> </td> 
@@ -165,12 +165,13 @@ När du har rapporterat [!DNL CPM] numret för föregående kalendermånad [!DNL
 
 ## Tilldela Impressions på matningsnivå baserat på regler för kvalificering av trait {#assign-impressions}
 
-Med [!UICONTROL Activation] användningsexemplet kan du använda egenskaper i motsvarande datafeed för att skapa segment i [Segment Builder](../../../features/segments/segment-builder.md) och mappa dessa segment till ett mål. Operatorerna Boolean [!UICONTROL AND]och [!UICONTROL OR][!UICONTROL NOT] gör att du kan ange villkoren för egenskaperna och segmenten.
+Med [!UICONTROL Activation] användningsexemplet kan du använda egenskaper i motsvarande datafeed för att skapa segment i [Segment Builder](../../../features/segments/segment-builder.md) och mappa dessa segment till ett mål. De booleska operatorerna [!UICONTROL AND]och [!UICONTROL OR][!UICONTROL NOT] gör att du kan ange villkoren för egenskaperna och segmenten.
 
 När du [rapporterar CPM-användning på dataflödesnivå](#feed-level-report)måste du tilldela visningar proportionellt för varje datafeed, enligt de [!DNL Boolean] operatorer som används i reglerna för behörighet. I följande tabell visas hur du allokerar avbildningar efter boolesk regel eller trait-typ.
 
 >[!TIP]
->[Rapportera CPM-användning på segmentnivå](#segment-level-report) om du vill att dataflödesrapporteringen ska utföras automatiskt av Audience Manager.
+>
+> [Rapportera CPM-användning på segmentnivå](#segment-level-report) om du vill att dataflödesrapporteringen ska utföras automatiskt av Audience Manager.
 
 <table id="table_BF00FE6740D2459DAFA62F2478492586"> 
  <thead> 
@@ -257,7 +258,7 @@ Av dessa 1 000 000 visningar:
 På dataflödesnivå är det sätt som avbildningarna fördelas på:
 
 * Data Feed A får 600 000 visningar från trait T2 (som bygger på egenskaper från Data Feed A och Data Feed B, så båda får intrycken) och 400 000 visningar från trait T1 (som är ett drag från Data Feed A), totalt 1 000 000 visningar.
-* Data Feed B får 600 000 visningar från trait T2 (se förklaringen ovan) och 0 avtryck från trait T1.
+* Datafeed B får 600 000 visningar från trait T2 (se förklaringen ovan) och 0 avtryck från trait T1.
 
 Den snabba uppdelningen per datafeed och användningsfall är följande:
 
@@ -267,6 +268,6 @@ Den snabba uppdelningen per datafeed och användningsfall är följande:
 
 ## Fakturering och Impression-allokering för statiska avgiftsdatafeeds {#billing-flat-fee}
 
-Med ett dataflöde med fast avgift debiteras ett fast belopp varje månad, oavsett när prenumerationen börjar eller hur många visningar du använder. Avgifterna fördelas inte på partiell månadsanvändning eller delintervall. Precis som med CPM-fakturering kommer Adobe att generera en faktura och fakturera dig till den månadsavgift som gäller för dina prenumererade dataflöden.
+Med ett dataflöde med fast avgift debiteras ett fast belopp varje månad, oavsett när prenumerationen börjar eller hur många visningar du använder. Avgifterna fördelas inte på partiell månadsanvändning eller delintervall. Precis som med CPM-fakturering kommer Adobe att generera en faktura och fakturera dig med den månatliga, fasta avgiften för dina prenumererade dataflöden.
 
 Anta till exempel att du bestämde dig för att aktivera vissa egenskaper i ett flöde mitt i månaden. Du faktureras fortfarande till den fullständiga månadskostnaden oavsett när du påbörjade prenumerationen eller aktiverade specifika egenskaper.
