@@ -7,9 +7,9 @@ title: Namnkrav för nyckelvariabler
 uuid: fa72e732-895d-4cf6-bea0-66b404c2b059
 feature: Traits
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 4bf32099e964c421d943d9925c74dd0d4d6ee576
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '125'
 ht-degree: 12%
 
 ---
@@ -29,6 +29,6 @@ I [!UICONTROL Expression Builder]kan namnet på en nyckelvariabel i ett nyckelv�
 
 * Ogiltiga nyckelnamn: `123`, `price!123`.
 
-## Prefix Key Variables with `c_`
+## Prefix Key Variables with c_
 
 Prefixet `c_` är *alltid* obligatoriskt om parametrarna som skickar in data på en URL för ett händelseanrop använder den syntaxen.
