@@ -7,9 +7,9 @@ title: Segment Builder
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
 feature: Segments
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 4bf32099e964c421d943d9925c74dd0d4d6ee576
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1082'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Börja med att titta på videon [](https://images-tv.adobe.com/avp/vr/b7f88801-e
 
    * Namnge [!UICONTROL segment]. Ett [!UICONTROL segment] namn får innehålla högst 255 tecken.
    * Ange [!UICONTROL segment] status (aktiv är standard).
-   * Välj en [!UICONTROL data source]. Använd den första listrutan för att filtrera mellan Audience Manager [!UICONTROL data sources], Adobe Analytics eller båda. Välj sedan den andra listrutan [!UICONTROL data source]. Om du inte använder rapportsviter från Adobe Analytics inaktiveras [!UICONTROL data source] typväljaren och standardinställningen används endast för datakällor i Audience Manager.
+   * Välj en [!UICONTROL data source]. Använd den första listrutan för att filtrera mellan Audience Manager [!UICONTROL data sources], Adobe Analytics rapporteringsprogram eller båda. Välj sedan den andra listrutan [!UICONTROL data source]. Om du inte använder Adobe Analytics rapportprogramsviter är typväljaren inaktiverad och standardinställningen är endast för datakällor i Audience Manager. [!UICONTROL data source]
    * Välj en [!UICONTROL profile merge rule] som ska användas för [!UICONTROL segment] kvalificering.
    * Tilldela [!UICONTROL segment] till en lagringsmapp.
 
@@ -59,7 +59,7 @@ Börja med att titta på videon [](https://images-tv.adobe.com/avp/vr/b7f88801-e
 
 Titta på videon nedan för att få en detaljerad bild av hur enhetsövergripande mätvärden fungerar.
 
->[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://video.tv.adobe.com/v/33445/)
 
 ## [!UICONTROL Segment Builder] Kontroller: [!UICONTROL Basic Information] Avsnitt {#segment-builder-controls-basics}
 
@@ -115,7 +115,7 @@ I [!UICONTROL Segment Builder]kan du [!UICONTROL the Basic Information] skapa ny
 | **[!UICONTROL Name]** | Ge segmentet ett kort logiskt namn som beskriver dess funktion eller syfte. Undvik förkortningar och specialtecken. Segmentnamnet får innehålla högst 255 tecken. |
 | **[!UICONTROL Description]** | Ett fält för ytterligare beskrivande information om segmentet. |
 | **[!UICONTROL Integration Code]** | Ett fält för ett användardefinierat ID eller annan företagsspecifik information. |
-| **[!UICONTROL Data Source]** | Associerar segmentet med en viss DataProvider. <br> Använd den första listrutan för att filtrera mellan datakällor i Audience Manager, Adobe Analytics eller båda. Använd sedan den andra listrutan för att välja datakälla. <br> Om du inte använder rapportsviter från Adobe Analytics inaktiveras typväljaren för datakällan och används som standard endast för datakällor från Audience Manager. |
+| **[!UICONTROL Data Source]** | Associerar segmentet med en viss DataProvider. <br> Använd den första listrutan för att filtrera mellan Audience Manager och datakällor, Adobe Analytics rapportsviter eller båda. Använd sedan den andra listrutan för att välja datakälla. <br> Om du inte använder Adobe Analytics rapportprogramsviter är datakälltypväljaren inaktiverad och standardinställningen är endast Audience Manager datakällor. |
 | **[!UICONTROL Profile Merge Rule]** | Väljer den profilkopplingsregel som ska användas för segmentkvalificering. |
 | **[!UICONTROL Status]** | Aktiverar eller inaktiverar segmentet (aktivt som standard). |
 | **Mapplagring** | Avgör vilken lagringsmapp som segmentet tillhör. |
@@ -133,7 +133,7 @@ I [!UICONTROL Segment Builder]det här [!UICONTROL Traits] avsnittet kan du hant
 | **[!UICONTROL Basic View]** | I det här avsnittet finns visuella kontroller som du kan använda för att: <ul><li>Bygg nya och hantera befintliga [!UICONTROL segments]versioner.</li><li>Ta bort [!UICONTROL traits] från en [!UICONTROL segment].</li><li>Lägg till upp till 50 (maximalt) [!UICONTROL traits] i en [!UICONTROL segment].</li><li>Dra och släpp [!UICONTROL traits] för att skapa nya grupper.</li><li>Visa [!UICONTROL traits] och [!UICONTROL trait] grupper i en [!UICONTROL segment].</li><li>Ange kvalificeringskriterier med booleska uttryck, jämförelseoperatorer och inställningar för senaste frekvens/frekvens.</li></ul> |
 | **[!UICONTROL Code View]** | Öppnar en utvecklingsmiljö där du kan skapa och hantera [!UICONTROL traits], grupper och kvalificeringskrav med kod i stället för med det visuella gränssnittet. Kodvyn är användbar om du [!UICONTROL segments]: <ul><li>Innehåller mer än 50 [!UICONTROL traits] i en individ [!UICONTROL segment]. Obs! [!UICONTROL Segments] begränsas till 5000 [!UICONTROL traits] (max).</li><li>Innehåller många [!UICONTROL trait] grupper.</li><li>ha komplexa kvalifikationskrav.</li></ul> |
 | Sök | Hjälper dig att hitta [!UICONTROL traits] att lägga till i en [!UICONTROL segment]. |
-| Rekommendationer | Få live-rekommendationer för liknande [!UICONTROL traits]funktioner från den första parten [!UICONTROL traits] och de [!UICONTROL Audience Marketplace] dataflöden du prenumererar på. Lägg till de här rekommendationerna i [!UICONTROL segment] regeln för att utöka er målgrupp. Läs mer i [Trait Recommendations](trait-recommendations.md). |
+| Recommendations | Få live-rekommendationer för liknande [!UICONTROL traits]funktioner från den första parten [!UICONTROL traits] och de [!UICONTROL Audience Marketplace] dataflöden du prenumererar på. Lägg till de här rekommendationerna i [!UICONTROL segment] regeln för att utöka er målgrupp. Läs mer i [Trait Recommendations](trait-recommendations.md). |
 | **[!UICONTROL Marketplace Recommendations]** | Få live-rekommendationer för liknande [!UICONTROL traits]typer av [!UICONTROL Audience Marketplace] dataflöden som du inte prenumererar på. Läs mer i [Trait Recommendations](trait-recommendations.md). |
 | Reella och beräknade [!UICONTROL Segment] storleksdata | Se [Trait- och segmentpopulationsdata i Segment Builder](segment-builder-data.md). |
 
