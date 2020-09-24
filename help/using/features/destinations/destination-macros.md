@@ -7,9 +7,9 @@ title: Beskrivning av destinationsmakron
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
+source-git-commit: 4bf32099e964c421d943d9925c74dd0d4d6ee576
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '671'
 ht-degree: 2%
 
 ---
@@ -98,7 +98,7 @@ När du skapar ett [!DNL URL] mål kan du infoga följande makron i [!DNL URL] s
 
 Makrona `%rnd%` och `%timestamp%` infogar unika värden i en [!DNL URL] sträng för att förhindra webbläsarcachelagring.
 
-## Cache Busting med `%rnd%` och `%timestamp%` {#dest-cache-busting}
+## Cache Busting med %rnd% och %timestamp% {#dest-cache-busting}
 
 <!-- c_dest_cache_busting.xml -->
 
@@ -109,7 +109,7 @@ Cache-lagring förhindrar att webbläsare sparar och återanvänder innehåll. D
 * `%rnd%`: Infogar ett slumpmässigt tal i en URL.
 * `%timestamp%`: Infogar Unix-datum/tid i en URL.
 
-## Jämföra `%rnd%` och `%timestamp%` {#compare-rnd-timestamp}
+## Jämför %rnd% och %timestamp% {#compare-rnd-timestamp}
 
 Båda makrona förhindrar cachelagring, men de `%rnd%` kan vara mer effektiva. Om flera användare till exempel `%timestamp%`visar en sida samtidigt får de samma datum/tid-värde. Resultatet blir att [!DNL URL] anropet inte är unikt och flera anrop räknas bara en gång. Men `%rnd%` genererar ett unikt numeriskt värde för varje anrop (även när användarna ser samma sida samtidigt). Det innebär att [!DNL URL] strängen innehåller olika värden och räknas som unik.
 
