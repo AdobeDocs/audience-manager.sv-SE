@@ -1,24 +1,24 @@
 ---
-description: I Audience Manager är en destination ett tredjepartssystem (annonsserver, DSP, annonsnätverk osv.) som du vill dela data med. Destination Builder är det verktyg du använde för att skapa och hantera mål för cookies, URL eller server-to-server.
+description: I Audience Manager är en destination ett tredjepartssystem (annonsserver, DSP, annonsnätverk osv.) som du vill dela data med. Använd verktyget Destination Builder för att skapa och hantera cookie-filer, URL-adresser eller server-till-server-mål.
 keywords: integration code, destination, destination overview, destination, destination, destination, destination, destination, destination, destination, destination, destination, destination, destination
-seo-description: I Audience Manager är en destination ett tredjepartssystem (annonsserver, DSP, annonsnätverk osv.) som du vill dela data med. Destination Builder är det verktyg du använde för att skapa och hantera mål för cookies, URL eller server-to-server.
+seo-description: I Audience Manager är en destination ett tredjepartssystem (annonsserver, DSP, annonsnätverk osv.) som du vill dela data med. Destination Builder är det verktyg du använder för att skapa och hantera mål för cookies, URL eller server-to-server.
 seo-title: 'Destinationer '
 solution: Audience Manager
 title: 'Destinationer '
 uuid: 5c7dbdec-f73f-46fe-9f12-7685e8d7334f
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 8027f278aa2b879b6cb277f44caf4b62dc75e2c3
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # [!UICONTROL Destinations] Översikt {#destinations}
 
-I Audience Manager [!UICONTROL destination] är ett tredjepartssystem (annonsserver, [!DNL DSP]annonsnätverk etc.) som du vill dela data med. [!UICONTROL Destination Builder] är det verktyg som du använde för att skapa och hantera [!UICONTROL cookie], [!DNL URL]eller [!UICONTROL server-to-server destinations].
+I Audience Manager [!UICONTROL destination] är ett tredjepartssystem (annonsserver, [!DNL DSP]annonsnätverk etc.) som du vill dela data med. [!UICONTROL Destination Builder] är det verktyg som du använder för att skapa och hantera [!UICONTROL cookie], [!DNL URL]eller [!UICONTROL server-to-server destinations].
 
 ## Syfte och fördelar {#purposes}
 
@@ -26,7 +26,7 @@ I Audience Manager [!UICONTROL destination] är ett tredjepartssystem (annonsser
 
 [!UICONTROL Destinations] och [!UICONTROL Destination Builder] låter dig skapa [!UICONTROL destinations] och skicka information om segmenterade användare till din datapartner. Detta hjälper dig att:
 
-* **Skydda datavärde:** I stället för att skicka alla användardata till en [!UICONTROL destination]användare [!UICONTROL Destination Builder] kan du bara dela specifik information om kvalificerade användare.
+* **Protect datavärde:** I stället för att skicka alla användardata till en [!UICONTROL destination]användare [!UICONTROL Destination Builder] kan du bara dela specifik information om kvalificerade användare.
 * **Vidta åtgärder för dina data:** Genom att skicka data till en [!UICONTROL destination] partner kan de snabbt utveckla och inrikta sig på kvalificerade målgruppssegment.
 * **Minska den tekniska overheadkostnaden:** Affärsanvändare kan konfigurera [!UICONTROL destinations] säkert i [!UICONTROL Destination Builder] gränssnittet. Detta minskar tiden som krävs för testning före driftsättning. Med [!UICONTROL Destination Builder]kan du skapa, hantera och ta bort allt [!UICONTROL destinations] eftersom företagets behov förändras, utan att behöva arbeta under en lång utvecklingscykel.
 
@@ -34,7 +34,7 @@ I Audience Manager [!UICONTROL destination] är ett tredjepartssystem (annonsser
 
 <!-- destination-delivery-methods.xml -->
 
-Leveransen av data beror på hur din datapartent vill eller kan ta emot [!UICONTROL destination] information. Tekniska eller tekniska begränsningar kan hindra en [!UICONTROL destination] från att ta emot data via [!DNL URL], [!UICONTROL cookie]eller [!UICONTROL server-to-server] processer. Samarbeta med din tredjepartspartner för att avgöra vilken metod de kan använda.
+Leveransen av data beror på hur din datapartner vill eller kan ta emot [!UICONTROL destination] information. Tekniska eller tekniska begränsningar kan hindra en [!UICONTROL destination] från att ta emot data via [!DNL URL], [!UICONTROL cookie]eller [!UICONTROL server-to-server] processer. Samarbeta med din tredjepartspartner för att avgöra vilken metod de kan använda.
 
 ## Fundera på verksamheten {#business-considerations}
 
