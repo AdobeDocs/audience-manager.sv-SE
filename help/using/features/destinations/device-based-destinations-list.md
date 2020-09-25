@@ -1,15 +1,15 @@
 ---
 description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
 seo-description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
-seo-title: Adobe Audience Manager server-till-server-mål
+seo-title: Adobe Audience Manager Server-till-server-mål
 keywords: activation; activation partners, destination, destinations
 solution: Audience Manager
-title: Adobe Audience Manager server-till-server-mål
+title: Adobe Audience Manager Server-till-server-mål
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: 8d7935f69b496ec30a135df884756d370b44b7ed
+source-git-commit: f37464671b9000b0d6c1ae492fc4f35dd327d59d
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1128'
 ht-degree: 53%
 
 ---
@@ -51,6 +51,7 @@ Den här sidan innehåller endast aktuella [!DNL Audience Manager] enhetsbaserad
 | [!DNL AOL ONE] | 02/03/2017 | Realtid | Ja | Nej | Nej | Ja |
 | [!DNL AppNexus] | 02/03/2017 | Realtid | Ja | Nej | Ja | Nej |
 | [!DNL AppNexus Yieldex] | 10/08/2017 | 1xday | Ja | Nej | Nej | Nej |
+| [!DNL Artsai (formerly Adxcel)] | 27/01/2020 | 1xday | Nej | Nej | Nej | Nej |
 | [!DNL Atedra]/[!DNL AdStanding] | 02/03/2017 | Realtid | Ja | Nej | Ja | Nej |
 | [!DNL Avocet] | 06/12/2017 | 1xday | Nej | Nej | Nej | Nej |
 | [!DNL Bidtellect] | 03/03/2017 | Realtid | Ja | Nej | Nej | Nej |
@@ -81,6 +82,7 @@ Den här sidan innehåller endast aktuella [!DNL Audience Manager] enhetsbaserad
 | [!DNL EyeView Digital] | 14/06/2018 | 1xday | Ja | Nej | Nej | Ja |
 | [!DNL Fiksu] | 03/03/2017 | 1xday | Ja | Nej | Nej | Ja |
 | [!DNL Flashtalking] | 02/03/2017 | 1xday | Nej | Nej | Nej | Nej |
+| [!DNL Flybits] | 31/07/2020 | Realtid | Ja | Nej | Ja | Ja |
 | [!DNL FreakOut] | 03/03/2017 | 1xday | Ja | Nej | Nej | Nej |
 | [!DNL Freewheel] | 27/02/2017 | 1xday | Ja | Ja | Nej | Ja |
 | [!DNL Gamut Media] | 03/03/2017 | Realtid |  | Nej | Nej |  |
