@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Vanliga frågor och svar om Audience Manager
 feature: Overview
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 1df6e8a76e5eae85483820926474ebc8633d5591
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 100%
