@@ -7,10 +7,10 @@ title: Krav på Amazon S3-namn och filstorlekar för inkommande datafiler
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e8eb1c1c7a235c0c9dd32182e522ad0b6e965c61
+source-git-commit: f037a12af641da44ed67e62a249c41487da7ac07
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 5%
+source-wordcount: '1029'
+ht-degree: 4%
 
 ---
 
@@ -66,18 +66,19 @@ Tabellen definierar elementen i ett [!DNL S3] filnamn.
    <td colname="col2"> <p>Ett ID som talar om för <span class="keyword"> Audience Manager</span> om en datafil innehåller egna användar-ID:n, Android-ID:n, iOS-ID:n eller andra ID:n som tillhör <a href="/help/using/features/global-data-sources.md"> globala datakällor</a>. Följande alternativ godkänns:</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
      <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>ID för datakälla (även kallat Data Provider ID):</b> Detta är ett unikt ID som Audience Manager tilldelar en datakälla (se Audience Manager <a href="/help/using/reference/ids-in-aam.md"> index för ID:n </a>). Använd det här tilldelade ID:t i ett filnamn när du skickar in data som innehåller dina egna användar-ID:n. Till exempel instruerar <code>...ftp_dpm_21_123456789.sync</code> <span class="keyword"> Audience Manager</span> att lägga in data i ID:n som tillhör datakällan 21. </li> 
-     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID (GAID):</b> Använd ID 20914 i ett datafilnamn om det innehåller Android-ID:n. Till exempel anger <code>...ftp_dpm_20914_123456789.sync</code> att datafilen bara innehåller Android-ID:n för <span class="keyword"> Audience Manager</span> . </li> 
-     <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS-ID (IDFA):</b> Använd ID 20915 i ett datafilnamn om det innehåller iOS-ID:n. Till exempel anger <code>...ftp_dpm_20915_123456789.sync</code> <span class="keyword"> Audience Manager</span> att datafilen endast innehåller iOS-ID:n. </li>
+     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID (GAID):</b> Använd ID 20914 i ett datafilnamn om det innehåller Android-ID:n. Du måste använda fältet <code><i>_DPID_TARGET_DATA_OWNER</i></code> när du använder Android-id:n. Till exempel anger <code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code> <span class="keyword"> Audience Manager</span> att datafilen bara innehåller Android-id:n och att ID:n ska kvalificera sig för de egenskaper som tillhör <code><i>_DPID_TARGET_DATA_OWNER</i></code> datakällan.</li> 
+     <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS-ID (IDFA):</b> Använd ID 20915 i ett datafilnamn om det innehåller iOS-ID:n. Du måste använda fältet <code><i>_DPID_TARGET_DATA_OWNER</i></code> när du använder iOS-ID:n. Till exempel anger <code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code> <span class="keyword"> Audience Manager</span> att datafilen endast innehåller iOS-ID:n och att ID:n ska kvalificera sig för de egenskaper som tillhör <code><i>_DPID_TARGET_DATA_OWNER</i></code> datakällan.</li>
      <li> <b>ID som tillhör andra globala datakällor</b>: Du kan lägga in Roku ID:n för Advertising (RIDA), Microsoft Advertising ID:n (MAID) och andra ID:n. Använd det ID som motsvarar varje datakälla, enligt beskrivningen i artikeln <a href="/help/using/features/global-data-sources.md"> om</a>globala datakällor.</li> 
     </ul> <p> <p>Obs!  Blanda inte ID-typer i datafilerna. Om ditt filnamn till exempel innehåller Android-identifieraren ska du inte ange iOS-ID eller dina egna ID:n i datafilen. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
-   <td colname="col2"> <p>En platshållare för ett ID. Du kan till exempel ange det som ditt <span class="keyword"> Audience Manager</span> -ID om du ställer in DPID på ett datakälla-ID eller ett Android- eller iOS-ID. På så sätt kan <span class="keyword"> Audience Manager</span> länka fildata tillbaka till din organisation. </p> <p>Exempel: </p> 
-    <ul id="ul_55EBBCB11F2B4A858AEFBFA1CD99E286"> 
-     <li id="li_3404428F4E3D49A5AB6EDF56310D923F"> <code>...ftp_dpm_33_21_1234567890.sync</code> visar att en partner med ID 21 har skickat in data från en datakälla som använder ID 33. </li> 
-     <li id="li_CF8D5AF678764E9984A088FD5D7BBFB6"> <code>...ftp_dpm_20914_21_1234567890.sync</code> visar att en partner med ID 21 har skickat in data som innehåller Android-ID:n. </li> 
-     <li id="li_3D73168391D7443BADDF27153090274D"> <code>...ftp_dpm_20915_21_1234567890.sync</code> visar att en partner med ID 21 har skickat in data som innehåller iOS-ID:n. </li> 
+   <td colname="col2"> <p>Det här fältet anger för Audience Manager vilken datakälla data ska sparas i. Det här fältet är obligatoriskt om du ställer in DPID på ett Android-id, iOS-ID eller ett annat ID som tillhör globala datakällor. På så sätt kan <span class="keyword"> Audience Manager</span> länka fildata tillbaka till din organisation. </p> <p>Exempel: </p> 
+    <ul> 
+     <li> <code>...ftp_dpm_33_21_1234567890.sync</code> anger för Audience Manager att du kvalificerar kund-ID:n som tillhör datakällan 33 för egenskaper eller signaler som tillhör datakällan 21. </li> 
+     <li> <b>Android ID (GAID):</b> <code>...ftp_dpm_20914_21_1234567890.sync</code> anger för <span class="keyword"> Audience Manager</span> att datafilen endast innehåller Android ID:n och att ID:n ska kvalificera sig för de egenskaper som tillhör datakällan 21.</li> 
+     <li> <b>iOS-ID (IDFA):</b> <code>...ftp_dpm_20915_21_1234567890.sync</code> anger för <span class="keyword"> Audience Manager</span> att datafilen endast innehåller iOS-ID:n och att ID:n ska kvalificera sig för de egenskaper som tillhör datakällan 21.</li>
+     <li> <b>ID som tillhör andra globala datakällor</b>: <code>...ftp_dpm_121963_21_1234567890.sync</code> anger för <span class="keyword"> Audience Manager</span> att datafilen endast innehåller Roku ID:n och att ID:n ska kvalificera sig för de egenskaper som tillhör datakällan 21. Använd det ID som motsvarar varje datakälla, enligt beskrivningen i artikeln <a href="/help/using/features/global-data-sources.md"> om</a>globala datakällor.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
