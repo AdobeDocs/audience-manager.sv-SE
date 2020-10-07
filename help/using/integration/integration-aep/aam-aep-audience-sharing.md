@@ -7,7 +7,7 @@ title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: b3ff5ca68022cc30632d6b647ffde507533b5ddf
+source-git-commit: 74f23fbe753b8efc70b89ccace4a4d2c30067ccc
 workflow-type: tm+mt
 source-wordcount: '1441'
 ht-degree: 2%
@@ -59,7 +59,7 @@ Dina Audience Manager-egenskaper och -segment visas i Experience Platform som **
 Segment som du skapar i Experience Platform visas i Audience Manager som signaler, egenskaper och segment, med följande dispositionsregler:
 
 * Signal: För varje Experience Platform-segment ska du se signalerna i formuläret `segID = segment ID`.
-* Fack: Regeln trait är Experience Platform-segmentets ID.
+* Fack: Värdet för trait-regeln är ID:t för Experience Platform-segmentet.
 * Segment: Segmentet består av den egenskap som beskrivs ovan.
 
 ### Signaler {#aep-segments-as-aam-signals}
@@ -110,14 +110,15 @@ Ett exempel på ett segment som skapats automatiskt från ett Experience Platfor
 
 ## Stöd för dataexportkontroll i Audience Manager i Experience Platform {#aam-data-export-control-in-aep}
 
-För att se till att dataanvändningen efterlevs i Experience Platform måste alla tillämpliga datauppsättningar och fält förses med lämpliga [dataanvändningsetiketter](https://docs.adobe.com/content/help/en/experience-platform/data-governance/labels/overview.html). Dessutom måste [dataanvändningsprinciper](https://docs.adobe.com/content/help/en/experience-platform/data-governance/policies/overview.html) aktiveras för specifika marknadsföringsåtgärder mot dessa etiketter, enligt riktlinjerna i [ramverket](https://docs.adobe.com/content/help/en/experience-platform/data-governance/home.html#dule-framework)för märkning och verkställighet av dataanvändning (DULE).
+För att säkerställa att dataanvändningen efterlevs i Experience Platform måste alla tillämpliga datauppsättningar och fält förses med lämpliga [dataanvändningsetiketter](https://docs.adobe.com/content/help/en/experience-platform/data-governance/labels/overview.html). Dessutom måste [dataanvändningsprinciper](https://docs.adobe.com/content/help/en/experience-platform/data-governance/policies/overview.html) aktiveras för specifika marknadsföringsåtgärder mot dessa etiketter, enligt riktlinjerna i [ramverket](https://docs.adobe.com/content/help/en/experience-platform/data-governance/home.html#dule-framework)för märkning och verkställighet av dataanvändning (DULE).
 
 I målgruppsdelningsprocessen mellan Audience Manager och Experience Platform översätts alla dataexportkontroller som har tillämpats på Audience Manager-segment till likvärdiga etiketter och marknadsföringsåtgärder som har godkänts av Experience Platform Data Governance, och vice versa.
 
 >[!NOTE]
 >
 >Mer allmän information om dataexportkontroller finns i dokumentationen [för](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html)dataexportkontroller.
-Det här dokumentet innehåller en referens för hur specifika dataexportkontroller för Audience Manager mappas till dataanvändningsetiketter och marknadsföringsåtgärder i Platform.
+>
+>Det här dokumentet innehåller en referens för hur specifika dataexportkontroller för Audience Manager mappas till dataanvändningsetiketter och marknadsföringsåtgärder i Platform.
 
 ### Dataexportkontroller till dataanvändningsetiketter
 
@@ -161,7 +162,7 @@ Dessutom kan Audience Manager registrera inkommande implementeringar för alla a
 
 >[!NOTE]
 >
-> Målgrupper i Experience Platform med identiteter som är keyade på råa e-postmeddelanden visas aldrig i Audience Manager.
+> Målgrupper i Experience Platform med identiteter som är märkta med råa e-postmeddelanden visas aldrig i Audience Manager.
 
 Om du till exempel hade ett Experience Platform-segment,&quot;Alla mina kunder&quot;, och de kvalificerade profilerna skulle vara CRM-ID, ECID, IDFA, raw och hash-adresser, skulle motsvarande segment i Audience Manager endast innehålla profiler som är sparade av CRM-ID:n, ECID, IDFA och hash-kodade e-postadresser. Segmentpopulationen i Audience Manager skulle vara mindre än den i Experience Platform.
 
