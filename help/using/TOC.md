@@ -5,13 +5,13 @@ audience: end-user
 user-guide-title: Audience Manager Guide
 breadcrumb-title: Audience Manager Guide
 breadcrumb-url: /docs/audience-manager/user-guide/aam-home.html
-user-guide-description: Audience Manager provides industry-leading services for online audience data management.
+user-guide-description: Audience Manager tillhandahåller branschledande tjänster för datahantering av målgrupper online.
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: e90e60a7a88fb4dfc9df3dae610d650625293dec
+source-git-commit: 59eda3fa250fa33ef283f09b0027845431e9517b
 workflow-type: tm+mt
-source-wordcount: '1757'
-ht-degree: 93%
+source-wordcount: '1773'
+ht-degree: 92%
 
 ---
 
@@ -340,7 +340,7 @@ ht-degree: 93%
          + [Exempelmeddelande till partners efter inkommande bearbetning](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
       + [Anpassade partnerintegreringar](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + Integrering med Adobe Experience Platform {#integration-experience-platform}
-      + [Målgruppsdelning mellan Audience Manager och Adobe Experience Platform](integration/integration-aep/aam-aep-audience-sharing.md)
+      + [Experience Platform segmentdelning med Audience Manager och andra Experience Cloud-lösningar](integration/integration-aep/aam-aep-audience-sharing.md)
    + Integrering med andra Experience Cloud-lösningar {#integration-other-solutions}
       + [Integrera Audience Manager med Adobe Target](integration/integration-other-solutions/aam-target-integration.md)
       + [Skicka data från Adobe Analytics till Audience Manager](integration/integration-other-solutions/audience-management-module.md)
