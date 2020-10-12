@@ -7,15 +7,15 @@ title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 74f23fbe753b8efc70b89ccace4a4d2c30067ccc
+source-git-commit: 59eda3fa250fa33ef283f09b0027845431e9517b
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1485'
 ht-degree: 2%
 
 ---
 
 
-# Målgruppsdelning mellan Audience Manager och Adobe Experience Platform {#aam-aep-audience-sharing}
+# Experience Platform segmentdelning med Audience Manager och andra Experience Cloud-lösningar {#aam-aep-audience-sharing}
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Översikt {#overview}
 
-Tack vare funktionen för målgruppsdelning mellan Audience Manager och Adobe Experience Platform kan ni dela era Audience Manager-egenskaper och segment till Adobe Experience Platform och vice versa. Du behöver [[!DNL Audience Manager Connector]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) för att kunna dela målgrupper mellan Audience Manager och Adobe Experience Platform.
+Tack vare funktionen för målgruppsdelning mellan Audience Manager och Adobe Experience Platform kan ni dela era Audience Manager-egenskaper och segment till Adobe Experience Platform och vice versa. Ni behöver [[!DNL Audience Manager Connector]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) möjlighet att dela målgrupper mellan Audience Manager och Adobe Experience Platform.
 
 Ni kan använda Audience Manager-egenskaper och segment i Experience Platform för att lägga till Audience Manager-data i era kundprofiler och dra nytta av Experience Platform:s [segmenteringstjänst](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md).
 
@@ -33,6 +33,12 @@ I Audience Manager kan du använda Experience Platform-segment för datahanterin
 * Aktivera dina segment för mål som ännu inte stöds i Experience Platform- [målkatalogen](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/destinations-catalog.html).
 
 Dessutom delas era Experience Platform-segment med andra Experience Cloud-lösningar via [bastjänsterna](https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html).
+
+>[!IMPORTANT]
+>
+> * Du behöver en Audience Manager-licens för att kunna aktivera de datahanteringsplattformar som nämns ovan.
+> * Du behöver ** ingen Audience Manager-licens för att dela Experience Platform-segment med Adobe Ad Cloud, Adobe Target och andra Experience Cloud-lösningar via integreringen av bastjänsterna.
+
 
 <br> 
 
