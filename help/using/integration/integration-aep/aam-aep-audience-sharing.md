@@ -7,7 +7,7 @@ title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 6a9a48aa6d3a7a5d871ea9aabbca2c2ec1229c0e
+source-git-commit: 4bac89ab732f225bd82aceaf9707fda98e796945
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 2%
@@ -29,7 +29,7 @@ Ni kan använda Audience Manager-egenskaper och segment i Experience Platform f�
 
 I Audience Manager kan du använda Experience Platform-segment för datahanteringsplattformens användningsfall, till exempel:
 * Lägg till [tredjepartsdata](/help/using/overview/data-types-collected.md#third-party-data) i era segment,
-* [Algorithmic modeling](/help/using/features/algorithmic-models/understanding-models.md);
+* [Algoritmisk modellering](/help/using/features/algorithmic-models/understanding-models.md).
 * Aktivera dina segment för mål som ännu inte stöds i Experience Platform- [målkatalogen](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/destinations-catalog.html).
 
 Dessutom delas era Experience Platform-segment med andra Experience Cloud-lösningar via [bastjänsterna](https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html).
@@ -37,7 +37,7 @@ Dessutom delas era Experience Platform-segment med andra Experience Cloud-lösni
 >[!IMPORTANT]
 >
 > * Du behöver en Audience Manager-licens för att kunna aktivera de datahanteringsplattformar som nämns ovan.
-> * Du behöver ** ingen Audience Manager-licens för att dela Experience Platform-segment med Adobe Ad Cloud, Adobe Target, Marketo och andra Experience Cloud-lösningar via integreringen med bastjänsterna.
+> * Du behöver ** ingen Audience Manager-licens för att dela Experience Platform-segment med Adobe Advertising Cloud, Adobe Target, Marketo och andra Experience Cloud-lösningar via integreringen med bastjänsterna.
 
 
 <br> 
@@ -46,7 +46,7 @@ Se tabellen nedan för en översikt över användningsfall för målgruppsdelnin
 
 | **Användningsexempel** | **Adobe Experience Platform** | **Audience Manager** | **Centrala tjänster** |
 ---------|----------|---------|---------
-| **Målgruppsdelning** | <ul><li>Förbättra kundprofiler med data från Audience Manager</li><li>Använd data från Audience Manager i segmenteringen Experience Platform</li></ul> | <ul><li>Lägg till data från tredje part i segment</li><li>Algoritmisk modellering</li><li>Aktivering till ytterligare destinationer</li></ul> | Använd Experience Platform-segment i andra Experience Cloud-lösningar, som Adobe Target, Ad Cloud eller Marketo. |
+| **Målgruppsdelning** | <ul><li>Förbättra kundprofiler med data från Audience Manager</li><li>Använd data från Audience Manager i segmenteringen Experience Platform</li></ul> | <ul><li>Lägg till data från tredje part i segment</li><li>Algoritmisk modellering</li><li>Aktivering till ytterligare destinationer</li></ul> | Använd Experience Platform-segment i andra Experience Cloud-lösningar, som Adobe Target, Advertising Cloud eller Marketo. |
 
 <br> 
 
