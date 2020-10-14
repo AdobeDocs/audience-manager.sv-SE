@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 71e129a39cf85d5f07979ede8f3aa862f93b6512
+source-git-commit: 48bf17a2899fd06c525ba6b4fddb9ec805efb5c3
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 8%
+source-wordcount: '571'
+ht-degree: 7%
 
 ---
 
@@ -46,9 +46,19 @@ När du vet vilken datakälla du ska använda följer du stegen nedan.
       ![prediktiv målgrupp-spara](assets/predictive-audiences-save.png)
 1. Klicka på **[!UICONTROL Save]**.
 
-## Redigera prediktiva målgrupper {#edit-predictive-audiences}
+## Kloning och redigering - prediktiva målgruppsmodeller {#clone-predictive-audiences}
 
-Audience Manager stöder inte redigering av befintliga [!UICONTROL Predictive Audiences] modeller. Om du vill ändra en modells konfiguration måste du skapa en ny modell. Om du har nått gränsen på 10 [!UICONTROL Predictive Audiences] modeller och behöver redigera någon av modellerna, måste du ta bort en modell och skapa en ny.
+Audience Manager stöder inte redigering av befintliga [!UICONTROL Predictive Audiences] modeller. Om du vill ändra en modells konfiguration kan du skapa en klon av en befintlig modell och redigera den. Så här kan du göra:
+
+1. Gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Models]**.
+2. Klicka på namnet på den [!UICONTROL Predictive Audiences] modell som du vill klona.
+3. Klicka på **[!UICONTROL Clone]** knappen i skärmens övre vänstra hörn.
+   ![prediktiv-audiences-clone](assets/predictive-audiences-clone.png)
+4. När du har klonat modellen tas du till [!DNL Save & Configure] sidan med den klonade modellen. På den här sidan kan du ändra modellens utseende [!UICONTROL data source] och tilldelade[!UICONTROL Profile Merge Rule] format. Om du vill redigera personerna och målgruppen för den klonade modellen använder du knapparna [!UICONTROL Back] och [!UICONTROL Next] för att navigera mellan de tre flikarna, eller klickar på de tre fliknamnen
+
+   ![prediktiv-audiences-clone-navigate](assets/predictive-audiences-clone-navigate.png)
+
+5. När du är klar med redigeringen av en modell klickar du på **[!UICONTROL Save]**.
 
 ## Ta bort prediktiva målgrupper {#delete-predictive-audiences}
 
