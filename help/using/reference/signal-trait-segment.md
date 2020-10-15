@@ -9,8 +9,8 @@ feature: reference
 translation-type: tm+mt
 source-git-commit: 8027f278aa2b879b6cb277f44caf4b62dc75e2c3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '374'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ Använd diagrammet nedan om du vill behålla en mentalanteckning om relationen m
 
 ![](assets/signals-traits-segments.png)
 
-**Bygg[!UICONTROL Traits]och[!UICONTROL Segment]regler med visuella verktyg och kodredigerare**
+**Bygg [!UICONTROL Traits] och [!UICONTROL Segment] regler med visuella verktyg och kodredigerare**
 
 Kunderna hanterar [!UICONTROL traits] och [!UICONTROL segments] med visuella verktyg och kodredigerare i [!DNL Audience Manager] användargränssnittet. Med de visuella verktygen kan du skapa regler med hjälp av sökfunktioner, popup-alternativ, nedrullningsbara menyer samt dra och släpp-funktioner. Kodredigerarna ger avancerade användare möjlighet att programmässigt utveckla målgruppssegmenteringskriterier.
 
