@@ -31,7 +31,7 @@ Observera följande när du arbetar med [Audience Manager API](https://bank.demd
 
 * **Begäranparametrar:** Alla begäranparametrar är obligatoriska om inte annat anges.
 * **Begäranrubriker**: När du använder [Adobe I/O](https://www.adobe.io/) -token måste du ange `x-api-key` rubriken. Du kan hämta din [!DNL API] nyckel genom att följa instruktionerna på sidan [Tjänstkontointegrering](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) .
-* **[!DNL JSON]innehållstyp:**Ange`content-type: application/json`och **`accept: application/json`i koden.
+* **[!DNL JSON]innehållstyp:** Ange `content-type: application/json` och ** `accept: application/json` i koden.
 * **Förfrågningar och svar:** Skicka begäranden som ett korrekt formaterat [!DNL JSON] objekt. [!DNL Audience Manager] svarar med [!DNL JSON] formaterade data. Serversvar kan innehålla begärda data, en statuskod eller båda.
 * **Åtkomst:** Din [!DNL Audience Manager] konsult kommer att förse dig med ett klient-ID och en nyckel som gör att du kan göra [!DNL API] förfrågningar.
 * **Exempel på dokumentation och kod:** Text i *kursiv stil* representerar en variabel som du anger eller skickar in när du skapar eller tar emot [!DNL API] data. Ersätt *kursiv* text med egen kod, egna parametrar eller annan obligatorisk information.
@@ -40,7 +40,7 @@ Observera följande när du arbetar med [Audience Manager API](https://bank.demd
 
 Två autentiseringsmetoder stöds [!DNL Audience Manager][!DNL REST APIs] .
 
-* [JWT-autentisering](#jwt) (tjänstkonto) med [Adobe I/O](https://www.adobe.io/). [!DNL Adobe I/O] är Adobe utvecklares ekosystem och community. Det innehåller [I/O-utvecklingsverktyg och API:er](https://www.adobe.io/apis/experienceplatform.html) och API:er [för alla Adobe-produkter](https://www.adobe.io/apis.html). Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
+* [JWT-autentisering](#jwt) (tjänstkonto) med [Adobe I/O](https://www.adobe.io/). [!DNL Adobe I/O] är Adobe utvecklares ekosystem och community. Det innehåller [Adobe I/O-utvecklingsverktyg och API:er](https://www.adobe.io/apis/experienceplatform.html) och API: [er för alla Adobe-produkter](https://www.adobe.io/apis.html). Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
 * [OAuth-autentisering (borttagen)](#oauth). Den här metoden är föråldrad, men kunder med befintliga [!DNL OAuth] integreringar kan fortsätta använda den här metoden.
 
 >[!IMPORTANT]
@@ -51,7 +51,7 @@ Två autentiseringsmetoder stöds [!DNL Audience Manager][!DNL REST APIs] .
 
 ### Adobe I/O-översikt {#adobeio}
 
-[!DNL Adobe I/O] är Adobe utvecklares ekosystem och community. Det innehåller [I/O-utvecklingsverktyg och API:er](https://www.adobe.io/apis/experienceplatform.html) och API:er [för alla Adobe-produkter](https://www.adobe.io/apis.html).
+[!DNL Adobe I/O] är Adobe utvecklares ekosystem och community. Det innehåller [Adobe I/O-utvecklingsverktyg och API:er](https://www.adobe.io/apis/experienceplatform.html) och API: [er för alla Adobe-produkter](https://www.adobe.io/apis.html).
 
 Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
 
