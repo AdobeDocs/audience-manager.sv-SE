@@ -7,7 +7,7 @@ title: Kom igång med REST API:er
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
 translation-type: tm+mt
-source-git-commit: f7b9c30f120b24f9294afa4aa6727ce8c4236acf
+source-git-commit: ab8745a8ba24154793201893a39a039b5a098833
 workflow-type: tm+mt
 source-wordcount: '1860'
 ht-degree: 2%
@@ -59,7 +59,7 @@ Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [
 
 Innan du kan konfigurera [!DNL JWT] autentiseringen måste du se till att du har tillgång till [Adobe Developer Console](https://console.adobe.io/) i [Adobe I/O](https://www.adobe.io/). Kontakta din organisations administratör för åtkomstbegäranden.
 
-### Autentisering
+### Autentisering {#auth}
 
 Följ stegen nedan för att konfigurera [!DNL JWT (Service Account)] autentisering med [!DNL Adobe I/O]:
 
