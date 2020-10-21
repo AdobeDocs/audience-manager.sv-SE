@@ -7,9 +7,9 @@ title: Datafiler för Audience Optimization-rapporter och verkställbara loggfil
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 feature: log files
 translation-type: tm+mt
-source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1042'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ En datafil måste åtföljas av en metadatafil. Innehållet i metadatafilen matc
 
 Följande syntax definierar strukturen för ett välformaterat datafilnamn. Obs! *Kursiv* anger en variabel platshållare som ändras beroende på filinnehållet.
 
-**Syntax:** `event type_yyyymmdd`
+**Syntax:** <pre><i>händelsetyp</i>_<i>åååmmdd</i></code></pre>
 
 I ett filnamn:
 
@@ -39,15 +39,15 @@ I ett filnamn:
 
 Med tanke på dessa krav bör du namnge dina datafiler baserat på deras innehåll så här:
 
-* Impressionsdata: `impressions_yyyymmdd.gz`
-* Klicka på data: `clicks_yyyymmdd.gz`
-* Konverteringsdata: `conversions_yyyymmdd.gz`
+* Impressionsdata: <pre>imponsions_<i>yyymmdd</i>.gz</code></pre>
+* Klicka på data: <pre>clicks_<i>yyymmdd</i>.gz</code></pre>
+* Konverteringsdata: <pre>conversions_<i>yyymmdd</i>.gz</code></pre>
 
 ## Content Format for Data Files {#content-format}
 
 Följande syntax definierar innehållsstrukturen i välformade datafiler. Observera att *kursiv* anger en variabelplatshållare och ersätts med en etikett i en faktisk datafil.
 
-**Syntax:** `header label 1 | header label 2 ... header label n | version`
+**Syntax:** <pre><i>rubriketikett 1</i> | <i>rubriketikett 2</i> ... <i>rubriketikett n</i> | <i>version</i></code></pre>
 
 I filinnehållet:
 
@@ -153,7 +153,7 @@ Ladda upp dina intryckta, klickningar eller konverteringsdatafiler till en Amazo
 
 Data lagras i ett separat namnutrymme för varje kund i en [!DNL Amazon S3] katalog. Filsökvägen följer den syntax som visas nedan. Obs! *Kursiv* anger en variabelplatshållare. Andra element är konstanter eller nycklar och ändras inte.
 
-**Syntax:** `.../log_ingestion/pid=AAM ID/dpid=d_src/logs/file type_yyyymmdd`
+**Syntax:** <pre>.../log_inghit/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/ <i>filtyp</i>_<i>yyymdd</i></code></pre>
 
 I följande tabell definieras vart och ett av dessa element i en filleveranssökväg.
 
