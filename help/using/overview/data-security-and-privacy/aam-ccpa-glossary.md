@@ -6,7 +6,7 @@ solution: Audience Manager
 title: CCPA-ordlista
 feature: data governance & privacy
 translation-type: tm+mt
-source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 100%
@@ -55,3 +55,4 @@ Bekanta dig med nyckeltermer som används för CCPA. Vi har markerat några av d
 >[!MORELIKETHIS]
 >
 >[Översikt över datasekretess](/help/using/overview/data-security-and-privacy/data-privacy.md)
+
