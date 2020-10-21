@@ -7,9 +7,9 @@ title: Segment Builder
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
 feature: Segments
 translation-type: tm+mt
-source-git-commit: 4bf32099e964c421d943d9925c74dd0d4d6ee576
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1092'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Börja med att titta på videon [](https://images-tv.adobe.com/avp/vr/b7f88801-e
 
 Titta på videon nedan för att få en detaljerad bild av hur enhetsövergripande mätvärden fungerar.
 
->[!VIDEO](https://video.tv.adobe.com/v/33445/)
+>[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## [!UICONTROL Segment Builder] Kontroller: [!UICONTROL Basic Information] Avsnitt {#segment-builder-controls-basics}
 
