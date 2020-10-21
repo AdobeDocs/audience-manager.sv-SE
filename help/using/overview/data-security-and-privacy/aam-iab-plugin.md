@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Plugin-program för Audience Manager för IAB TCF
 feature: data governance & privacy
 translation-type: tm+mt
-source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '2449'
-ht-degree: 39%
+ht-degree: 40%
 
 ---
 
@@ -118,7 +118,7 @@ Audience Manager fungerar på olika sätt beroende på om IAB TC-strängen inneh
 
 Vi kontrollerar också om du har gett ditt samtycke till alla destinationer du arbetar med i Audience Manager, så länge dessa destinationer är registrerade med IAB TCF.
 
-| When your user *provides* consent, Audience Manager: | När användaren *inte ger sitt medgivande* kommer Audience Manager: |
+| När användaren *ger sitt medgivande* kommer Audience Manager: | När användaren *inte ger sitt medgivande* kommer Audience Manager: |
 |---|---|
 | <ul><li>Utföra alla de Audience Manager-funktioner som ni har begärt.</li><li>Conveys consent to third parties in ID syncs (by passing `gdpr = 1` and the consent string as `gdpr_consent` on ID sync calls).</li><li>Utvärdera och respektera medgivanden som skickas från annonsserverns pixlar.</li><li>Respektera partnerinitierade ID-synkroniseringar.</li></ul> | <ul><li>Inga nya användardata lagras i er instans. Detta inkluderar partner-ID, signaler, traits och pixeldata.</li><li>ID-synkronisering initieras inte med tredje part.</li><li>Partnerinitierade ID-synkroniseringar respekteras inte.</li><li>Användaren kan inte hämta in ytterligare data.</li></ul> |
 
