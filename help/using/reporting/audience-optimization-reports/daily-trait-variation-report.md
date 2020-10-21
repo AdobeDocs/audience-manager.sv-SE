@@ -7,9 +7,9 @@ title: Daglig rapport över trait-variationer
 uuid: 4e82bb17-d447-4ed1-a4fc-e15b0f1b47f0
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '773'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Den här rapporten returnerar en lista över egenskaper som har realiserats mins
 
 Standardavvikelsen mäter mängden variation eller spridning från medelvärdet (eller genomsnittligt/förväntat värde). En låg standardavvikelse indikerar att datapunkterna tenderar att vara mycket nära medelvärdet. En hög standardavvikelse anger att datapunkterna är spridda över ett stort värdeintervall.
 
-![rapport om variation i skärmbild per dag](assets/daily_trait_variation.png)
+![](assets/daily_trait_variation.png)
 
 Använd [!UICONTROL Date] listan för att välja ett eller flera datum för rapporten. Ett färgkodat stapeldiagram visas längst ned i listan som ger en visuell representation av intervallet för standardavvikelsen för alla egenskaper för alla valda datum. Den svarta lodräta linjen anger medelvärdet.
 
@@ -56,8 +56,8 @@ På grund av en omkonfiguration av din butik delar du upp smarttelefonsidan i fl
 
 En månad senare kör du rapporten och märker en stor negativ avvikelse på [!UICONTROL Daily Trait Variation] `productPage == "smartphones"` kundens beteende, även om besökarnumret har ökat enligt webbplatsanalysen. Baserat på den här informationen inser du att du inte har uppdaterat egenskaperna [!DNL Audience Manager] för dina nya produktsidor, så du vet att du behöver skapa följande egenskaper:
 
-* `productPage == "samsung"`
-* `productPage == "apple"`
-* `productPage == "huawei"`
+* productPage == &quot;samsung&quot;
+* productPage == &quot;apple&quot;
+* productPage == &quot;huawei&quot;
 
 När du gjort det ser du att din målgrupp är berättigad till de nya egenskaperna.
