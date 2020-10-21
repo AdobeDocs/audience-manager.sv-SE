@@ -8,7 +8,7 @@ keywords: Segment-level Reporting, segment-level, segment level
 uuid: d7236667-282b-4160-9909-579721af4016
 feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: dac08e9a31cb80b048013d95b7a617e4fb68e2fe
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '2027'
 ht-degree: 1%
@@ -170,8 +170,7 @@ Med [!UICONTROL Activation] användningsexemplet kan du använda egenskaper i mo
 När du [rapporterar CPM-användning på dataflödesnivå](#feed-level-report)måste du tilldela visningar proportionellt för varje datafeed, enligt de [!DNL Boolean] operatorer som används i reglerna för behörighet. I följande tabell visas hur du allokerar avbildningar efter boolesk regel eller trait-typ.
 
 >[!TIP]
->
-> [Rapportera CPM-användning på segmentnivå](#segment-level-report) om du vill att dataflödesrapporteringen ska utföras automatiskt av Audience Manager.
+>[Rapportera CPM-användning på segmentnivå](#segment-level-report) om du vill att dataflödesrapporteringen ska utföras automatiskt av Audience Manager.
 
 <table id="table_BF00FE6740D2459DAFA62F2478492586"> 
  <thead> 
