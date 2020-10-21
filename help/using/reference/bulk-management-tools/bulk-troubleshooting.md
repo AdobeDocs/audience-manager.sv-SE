@@ -7,7 +7,7 @@ title: Felsökningstips för verktygen för satsvis hantering
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 feature: baaam
 translation-type: tm+mt
-source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 4%
@@ -78,5 +78,5 @@ I följande tabell visas några vanliga problem som du kan stöta på när du g�
 
 ## Felmeddelanden
 
-Ibland kan du få felmeddelanden när du gör gruppändringar. Mer information om hur du tolkar felmeddelandet finns i [Svarskoder definierade](/help/using/api/rest-api-main/aam-api-getting-started.md#response-codes-defined) i API-dokumentationen.
+Ibland kan du få felmeddelanden när du gör gruppändringar. Mer information om hur du tolkar felmeddelandet finns i [Svarskoder definierade](/help/using/api/rest-api-main/aam-api-getting-started.md) i API-dokumentationen.
 
