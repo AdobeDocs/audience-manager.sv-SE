@@ -7,7 +7,7 @@ title: Statusuppdateringar för metadatafiler
 uuid: 56a1e88a-41da-4d51-a21e-2be98cca7fa2
 feature: log files
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
