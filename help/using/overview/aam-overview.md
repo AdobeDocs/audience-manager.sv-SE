@@ -1,5 +1,5 @@
 ---
-description: Information om huvudfunktionerna i en datahanteringsplattform - datainsamling, målgruppsgenerering och aktivering.
+description: Information om historiken bakom Adobe Audience Manager, vilka typer av data som samlas in, segmentering, rapportering med mera.
 seo-description: Information om historiken bakom Adobe Audience Manager, vilka typer av data som samlas in, segmentering, rapportering med mera.
 seo-title: Översikt över Audience Manager
 solution: Audience Manager
@@ -7,10 +7,10 @@ title: Översikt över Audience Manager
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 feature: overview
 translation-type: tm+mt
-source-git-commit: 8027f278aa2b879b6cb277f44caf4b62dc75e2c3
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 94%
+source-wordcount: '309'
+ht-degree: 100%
 
 ---
 
