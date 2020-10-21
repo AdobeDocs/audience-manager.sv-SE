@@ -8,7 +8,7 @@ title: DIL-metoder på instansnivå
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
 feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 2%
@@ -82,10 +82,10 @@ Returnerar API-objektet för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-```js
+<pre><code>
 var dataLib = DIL.create({ 
-     partner: partnerName 
-     containerNSID: containerNSID 
+     partner: '<i>partnerName</i>' 
+     containerNSID: <i>containerNSID</i> 
 }); 
  
 // Method 1 
@@ -99,7 +99,7 @@ dataLib.api.signals({c_zdid: 54321}).submit();
 // Will send 'c_key=a&c_key=2&c_key=3' to Audience Manager 
 var obj = { key : ['a', 'b', 'c'] }; 
 dataLib.api.signals(obj, 'c_').submit(); 
-```
+</code></pre>
 
 ## traits {#traits}
 
@@ -129,13 +129,13 @@ Returnerar API-objektet för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-```js
+<pre><code>
 var partnerObject = DIL.create({ 
-     partner: 'partner name', 
-     containerNSID: NSID
+     partner: '<i>partner name</i>', 
+     containerNSID: <i>NSID</i> 
 }); 
-partnerObject.api.traits([123, 456, 789]); 
-```
+partnerObject.api.traits(<i>[123, 456, 789]</i>); 
+</code></pre>
 
 ## loggar {#logs}
 
@@ -155,16 +155,16 @@ Returnerar API-objektet för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-```js
+<pre><code>
 var partnerObject = DIL.create({ 
-     partner: partner, 
-     containerNSID: NSID
+     partner: '<i>partner</i>', 
+     containerNSID: <i>NSID</i> 
 }); 
 partnerObject.api.logs({ 
      file: 'dil.js', 
      message: 'This is the first request' 
 });
-```
+</code></pre>
 
 ## skicka {#submit}
 
@@ -188,21 +188,21 @@ Returnerar API-objektet för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-```js
+<pre><code>
 var dataLib = DIL.create({ 
-     partner: partnerName, 
-     containerNSID: containerNSID 
+     partner: '<i>partnerName</i>', 
+     containerNSID: <i>containerNSID</i> 
 }); 
  
 dataLib.api.traits([ 
-123,456, 789]).logs({ 
+<i>123,456, 789</i>]).logs({ 
      file: 'dil.js', 
      message: 'This is the first request' 
 }).signals({ 
-     c_zdid: 1111
-     d_dma: 'default' 
+     c_zdid: <i>1111</i> 
+     d_dma: '<i>default</i>' 
 }).submit();
-```
+</code></pre>
 
 ## afterResult {#afterresult}
 
@@ -232,19 +232,19 @@ Returnerar ett API-objekt för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-```js
+<pre><code>
 var dataLib = DIL.create({ 
-     partner: 'partnerName', 
-     containerNSID: containerNSID 
+     partner: '<i>partnerName</i>', 
+     containerNSID: <i>containerNSID</i> 
 }); 
  
 dataLib.api.signals({ 
-     c_zdid: 54321 
-     d_dma: 'default' 
+     c_zdid: <i>54321</i> 
+     d_dma: '<i>default</i>' 
 }).afterResult(function(json){ 
      //Do something with the JSON data returned from the server. 
 }).submit();
-```
+</code></pre>
 
 ## clearData {#cleardata}
 
@@ -268,24 +268,23 @@ Returnerar API-objektet för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-
-```js
+<pre><code>
 var dataLib = DIL.create({ 
-     partner: 'partnerName', 
-     containerNSID: containerNSID
+     partner: '<i>partnerName</i>', 
+     containerNSID: <i>containerNSID</i> 
 }); 
  
-dataLib.api.traits([123,456, 789]).logs({ 
+dataLib.api.traits([<i>123,456, 789</i>]).logs({ 
      file: 'dil.js' 
      message: 'This is the first request' 
 }).signals({ 
-     c_zdid: 1111 
-     d_dma: 'default' 
+     c_zdid: <i>1111</i> 
+     d_dma: '<i>default</i>' 
 }); 
  
 //Reset the pending data 
 dataLib.clearData();
-```
+</code></pre>
 
 ## customQueryParams {#customqueryparams}
 
@@ -320,16 +319,16 @@ Returnerar API-objektet för den aktuella DIL-instansen.
 
 **Exempelkod**
 
-```js
+<pre><code>
 var partnerObject = DIL.create({ 
-     partner: 'partner', 
-     containerNSID: NSID
+     partner: '<i>partner</i>', 
+     containerNSID: <i>NSID</i> 
 }); 
 partnerObject.api.customQueryParams({ 
      nid: 54231, 
      ntype: 'default' 
 }); 
-```
+</code></pre>
 
 ## getContainerNSID {#getcontainernsid}
 
@@ -345,15 +344,15 @@ r_dil_get_container_nsid.xml
 
 **Exempelkod**
 
-```js
+<pre><code>
 var dataLib = DIL.create({ 
-     partner: 'partnerName', 
-     containerNSID: containerNSID
+     partner: '<i>partnerName</i>', 
+     containerNSID: <i>containerNSID</i> 
 }); 
  
 //Verify the container NSID 
 var nsid = dataLib.api.getContainerNSID();
-```
+</code></pre>
 
 ## getEventLog {#geteventlog}
 
@@ -369,18 +368,18 @@ r_dil_get_event_log.xml
 
 **Exempelkod**
 
-```js
+<pre><code>
 var dataLib = DIL.create({ 
-     partner: 'partnerName', 
-     containerNSID: containerNSID
+     partner: '<i>partnerName</i>', 
+     containerNSID: <i>containerNSID</i> 
 }); 
  
-dataLib.api.traits([123, 456, 789]).logs({ 
+dataLib.api.traits([<i>123, 456, 789</i>]).logs({ 
      file: 'dil.js', 
      message: 'This is the first request' 
 });.signals({ 
-     c_zdid: 1111
-     d_dma: 'default' 
+     c_zdid: <i>1111</i> 
+     d_dma: '<i>default</i>' 
 });.submit(); 
  
 //Check log for messages 
@@ -390,7 +389,7 @@ if (log && log.length) {
 }else{ 
      alert('No log messages'); 
 }
-```
+</code></pre>
 
 ## getPartner {#getpartner}
 
@@ -406,15 +405,15 @@ r_dil_get_partner.xml
 
 **Exempelkod**
 
-```js
+<pre><code>
 var dataLib = DIL.create({ 
-     partner: 'partnerName' 
-     containerNSID: containerNSID
+     partner: '<i>partnerName</i>' 
+     containerNSID: <i>containerNSID</i> 
 }); 
  
 //Verify the partner name 
 var partner = dataLib.api.getPartner();
-```
+</code></pre>
 
 ## getState {#getstate}
 
@@ -430,25 +429,25 @@ r_dil_get_state.xml
 
 **Exempelkod**
 
-```js
+<pre><code>
 var dataLib = DIL.create({ 
-     partner: 'partnerName', 
-     containerNSID: containerNSID
+     partner: '<i>partnerName</i>', 
+     containerNSID: <i>containerNSID</i> 
 }); 
  
-dataLib.api.traits([123, 456, 789]).logs({ 
+dataLib.api.traits([<i>123, 456, 789</i>]).logs({ 
      file: 'dil.js', 
      message:'This is the first request' 
 });.signals({ 
-     c.zdid: 1111 
-     d_dma: 'default' 
+     c.zdid: <i>1111</i> 
+     d_dma: '<i>default</i>' 
 });.submit(); 
  
 var state = dataLib.api.getState(); 
  
 /*Object outline of state 
 state = { 
-     pendingRequest: {pending data for call to server}, 
+     pendingRequest: {<i>pending data for call to server</i>}, 
      otherRequestInfo:{ 
           firingQueue: [], 
           fired: [], 
@@ -484,7 +483,7 @@ state = {
      } 
 } 
 */
-```
+</code></pre>
 
 ## idSync {#idsync}
 
@@ -571,7 +570,7 @@ Båda funktionerna returneras `Successfully queued` om de lyckas. De returnerar 
 
 `dilInstance.api.idSync(initConfig)`
 
-```js
+<pre><code class="js">
 // Fires url with macros replaced 
 dilInstance.api.idSync({ 
  dpid: '23', // must be a string 
@@ -579,18 +578,18 @@ dilInstance.api.idSync({
 %2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D', 
  minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days)  
 });
-```
+</code></pre>
 
 `dilInstance.api.aamIdSync(initConfig)`
 
-```js
+<pre><code class="js">
 // Fires 'https:/https:' + '//dpm.demdex.net/ibs:dpid=&lt;dpid&gt;&dpuuid=&lt;dpuuid&gt;' 
 dilInstance.api.aamIdSync({ 
  dpid: '23', // must be a string 
  dpuuid: '98765', // must be a string 
  minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days)  
 });
-```
+</code></pre>
 
 ## resultat {#result}
 
@@ -622,16 +621,16 @@ Returnerar API-objektet för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-```js
+<pre><code>
 var dataLib = DIL.create({ 
-     partner: 'partnerName', 
-     containerNSID: containerNSID 
+     partner: '<i>partnerName</i>', 
+     containerNSID: <i>containerNSID</i> 
 }); 
  
-dataLib.api.traits([123, 456, 789]).result(function(json){ 
+dataLib.api.traits([<i>123, 456, 789</i>]).result(function(json){ 
      //Do something, possibly with the JSON data returned from the server. 
 });.submit();
-```
+</code></pre>
 
 ## secureDataCollection {#securedatacollection}
 
@@ -651,12 +650,12 @@ dil-secure-data-collection.xml
 >
 >Ange `secureDataCollection= false` om du använder visitorAPI.js och [!UICONTROL DIL] på samma sida. Se kodexemplet nedan.
 
-```js
+<pre><code class="js">
 var dilInstance = DIL.create({ 
      ... 
      secureDataCollection: false 
 });
-```
+</code></pre>
 
 ## useCORSOnly {#usecorsonly}
 
@@ -674,12 +673,12 @@ dil-use-cors-only.xml
 
 **Exempel på kod**
 
-```js
+<pre><code class="js">
 var dilInstance = DIL.create({ 
      ... 
      useCORSOnly: true 
 });
-```
+</code></pre>
 
 >[!IMPORTANT]
 >
@@ -712,14 +711,14 @@ Returnerar ett API-objekt för den aktuella [!UICONTROL DIL] instansen.
 
 **Exempelkod**
 
-```js
+<pre><code>
 var dataLib = DIL.create({ 
-     partner:'partnerName', 
-     containerNSID: containerNSID
+     partner:'<i>partnerName</i>', 
+     containerNSID: <i>containerNSID</i> 
 }); 
  
-dataLib.api.traits([123, 456, 789]).useImageRequest().submit();
-```
+dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
+</code></pre>
 
 >[!MORELIKETHIS]
 >
