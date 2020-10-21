@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Vanliga frågor och svar om Audience Manager
 feature: Overview
 translation-type: tm+mt
-source-git-commit: 1df6e8a76e5eae85483820926474ebc8633d5591
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '84'
 ht-degree: 100%
 
 ---
@@ -27,5 +27,6 @@ I det här avsnittet finns en lista över kategorierna med vanliga frågor och s
 * [Vanliga frågor om personbaserade destinationer](faq-people-based-destinations.md)
 * [Vanliga frågor om produktfunktioner](faq-features.md)
 * [Vanliga frågor om regler för profilsammanslagning och enhetsdiagram](faq-profile-merge.md)
+* [Vanliga frågor om Predictive Audiences](faq-predictive-audiences.md)
 * [Vanliga frågor om målgruppsanpassning](faq-targeting.md)
 * [Vanliga frågor om rapportering](faq-reporting.md)
