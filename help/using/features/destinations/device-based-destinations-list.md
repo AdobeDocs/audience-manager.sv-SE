@@ -7,9 +7,9 @@ solution: Audience Manager
 title: Adobe Audience Manager Server-till-server-mål
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: f37464671b9000b0d6c1ae492fc4f35dd327d59d
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1116'
 ht-degree: 53%
 
 ---
@@ -24,7 +24,7 @@ Den här sidan innehåller endast aktuella [!DNL Audience Manager] enhetsbaserad
 * **Senast uppdaterad** = Visar det senaste datumet när det fanns en uppdatering för det här [!UICONTROL device-based destination].
 * **Uppdateringar** = Anger om data ska skickas i realtid eller i batch (1 xdag) till detta [!DNL Audience Manager] [!UICONTROL destination].
 * **Dela upp segment** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från [!UICONTROL segments]. Din möjlighet att ta bort en enhetsprofil från en [!UICONTROL segment] beror på vilket enhetsalternativ som används för att skapa en [!UICONTROL Profile Merge Rule]. Osegmentering används också i samband med [!DNL GDPR] borttagningsförfrågningar. Läs [profilkopplingsregler och osegmenteringsprocesser](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) för enheter och [Audience Manager-partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation). [!DNL Audience Manager] skickar information om att segmentera till den [!UICONTROL destinations] som är markerad med **Ja** nedan.
-* **Mottagande av[!DNL IAB TCF]medgivandesignaler** = [!DNL Audience Manager Plug-in for IAB TCF] gör det möjligt att vidarebefordra [!DNL IAB TC] strängen till aktiveringspartners med respekt för användarnas sekretessval. Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
+* **Mottagande av [!DNL IAB TCF] medgivandesignaler** = [!DNL Audience Manager Plug-in for IAB TCF] gör det möjligt att vidarebefordra [!DNL IAB TC] strängen till aktiveringspartners med respekt för användarnas sekretessval. Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
 * **[!DNL ICDS]** = Den här kolumnen listar de partners som stöder [!UICONTROL Instant Cross-Device Suppression]. Läs om [direkt undertryckning](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)av olika enheter.
 * **ID för mobila enheter** = Den här kolumnen listar partners som kan ta emot ID:n för mobila enheter från [!DNL Audience Manager].
 
@@ -51,7 +51,6 @@ Den här sidan innehåller endast aktuella [!DNL Audience Manager] enhetsbaserad
 | [!DNL AOL ONE] | 02/03/2017 | Realtid | Ja | Nej | Nej | Ja |
 | [!DNL AppNexus] | 02/03/2017 | Realtid | Ja | Nej | Ja | Nej |
 | [!DNL AppNexus Yieldex] | 10/08/2017 | 1xday | Ja | Nej | Nej | Nej |
-| [!DNL Artsai (formerly Adxcel)] | 27/01/2020 | 1xday | Nej | Nej | Nej | Nej |
 | [!DNL Atedra]/[!DNL AdStanding] | 02/03/2017 | Realtid | Ja | Nej | Ja | Nej |
 | [!DNL Avocet] | 06/12/2017 | 1xday | Nej | Nej | Nej | Nej |
 | [!DNL Bidtellect] | 03/03/2017 | Realtid | Ja | Nej | Nej | Nej |
@@ -82,7 +81,6 @@ Den här sidan innehåller endast aktuella [!DNL Audience Manager] enhetsbaserad
 | [!DNL EyeView Digital] | 14/06/2018 | 1xday | Ja | Nej | Nej | Ja |
 | [!DNL Fiksu] | 03/03/2017 | 1xday | Ja | Nej | Nej | Ja |
 | [!DNL Flashtalking] | 02/03/2017 | 1xday | Nej | Nej | Nej | Nej |
-| [!DNL Flybits] | 31/07/2020 | Realtid | Ja | Nej | Ja | Ja |
 | [!DNL FreakOut] | 03/03/2017 | 1xday | Ja | Nej | Nej | Nej |
 | [!DNL Freewheel] | 27/02/2017 | 1xday | Ja | Ja | Nej | Ja |
 | [!DNL Gamut Media] | 03/03/2017 | Realtid |  | Nej | Nej |  |
