@@ -1,13 +1,13 @@
 ---
-description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om integrering finns i Adobe Exchange-listan (där det är tillgängligt) eller kontakta din Adobe-konsult eller kundtjänst.
-seo-description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om integrering finns i Adobe Exchange-listan (där det är tillgängligt) eller kontakta din Adobe-konsult eller kundtjänst.
+description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
+seo-description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
 seo-title: Adobe Audience Manager Technology Partners
 keywords: activation; activation partners, destination, destinations
 solution: Audience Manager
 title: Adobe Audience Manager Technology Partners
 feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 42%
@@ -17,7 +17,7 @@ ht-degree: 42%
 
 # Audience Manager Activation Partners
 
-Den här sidan innehåller endast aktuella Audience Manager- [server-till-server-integreringar](/help/using/features/destinations/add-edit-segments.md) .  Mer information om en integrering finns i [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html) -listan (där den är tillgänglig) eller kontakta din Adobe-konsult eller kundtjänst.
+Den här sidan innehåller endast aktuella Audience Manager- [server-till-server-integreringar](/help/using/features/destinations/add-edit-segments.md) .  Mer information om en integrering finns i [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html) -listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
 
 <br> 
 
@@ -61,7 +61,7 @@ Den här sidan innehåller endast aktuella Audience Manager- [server-till-server
 | Centro | 27/02/2017 | Nej | Nej | Nej | Ja |
 | ChoiceStream | 27/02/2017 | Nej | Nej | Nej | Nej |
 | Clearstream.tv | 27/02/2017 | Ja | Nej | Nej | Nej |
-| Kollektiv AMP Platform | 27/02/2017 | Nej | Nej | Nej | Nej |
+| Gemensam AMP-plattform | 27/02/2017 | Nej | Nej | Nej | Nej |
 | Kriterium | 27/02/2017 | Nej | Ja | Nej | Ja |
 | Medsols | 27/02/2017 | Ja | Nej | Nej | Nej |
 | D.A.C. AudienceOne | 27/02/2017 | Ja | Nej | Nej | Nej |
@@ -74,7 +74,7 @@ Den här sidan innehåller endast aktuella Audience Manager- [server-till-server
 | Epsilon Conversant | 03/03/2017 | Nej | Nej | Nej | Nej |
 | Exponentiell | 27/02/2017 | Ja | Nej | Ja | Nej |
 | Eyereturn Marketing | 11/04/2017 | Ja | Nej | Nej | Nej |
-| EyeView Digital | 14/06/2018 | Ja | Nej | Nej | Ja |
+| EyeView Digital | 14/06/2018 | Yes | Nej | Nej | Ja |
 | Fiksu | 03/03/2017 | Ja | Nej | Nej | Ja |
 | Flashtalk | 02/03/2017 | Nej | Nej | Nej | Nej |
 | FreakOut | 03/03/2017 | Ja | Nej | Nej | Nej |
@@ -115,9 +115,9 @@ Den här sidan innehåller endast aktuella Audience Manager- [server-till-server
 | OneSpot | 19/06/2017 | Ja | Nej | Nej | Ja |
 | OpenX | 26/07/2018 | Ja | Nej | Nej | Ja |
 | Opera Mediaworks | 13/02/2017 | Ja | Nej | Nej | Ja |
-| Utanför hjärnan | 03/04/2017 | Ja | Nej | Nej | Nej |
+| Utanför | 03/04/2017 | Ja | Nej | Nej | Nej |
 | ÄgareIQ | 13/02/2017 | Ja | Nej | Ja | Nej |
-| Platform 161 | 28/11/2018 | Ja | Nej | Nej | Ja |
+| Plattform 161 | 28/11/2018 | Ja | Nej | Nej | Ja |
 | PocketMath | 22/02/2017 | Ja | Nej | Nej | Ja |
 | Powerlinks | 17/05/2017 | Ja | Nej | Nej | Nej |
 | Pubmatisk | 13/02/2017 | Ja | Nej | Nej | Nej |
