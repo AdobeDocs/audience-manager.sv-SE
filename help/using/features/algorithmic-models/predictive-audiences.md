@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 1df6e8a76e5eae85483820926474ebc8633d5591
+source-git-commit: 3c39ef38d2833d5d706641f70649251d79b2ee6f
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 7%
+source-wordcount: '1511'
+ht-degree: 8%
 
 ---
 
@@ -81,7 +81,7 @@ Du kan välja vilken som helst av dina egna egenskaper eller segment för att de
 
 ### Urvalskriterier för målpublik {#selection-audience}
 
-På samma sätt som för en personlig markering bör du välja målgrupp [!UICONTROL trait] eller [!UICONTROL segment] som definierar målgruppen på ett sådant sätt att den har realtidsanvändare med många uppsättningar [!UICONTROL traits]för klassificering i rätt profil.
+Beroende på ditt sätt att arbeta kan du välja om du vill klassificera användare i realtid, gruppvis eller både och, och välja en målgrupp ([!UICONTROL trait] eller [!UICONTROL segment]) som har en betydande realtids- och/eller totalpopulation. Ungefär som när du väljer en egen målgrupp rekommenderar vi att du målgruppen [!UICONTROL trait] eller [!UICONTROL segment] har användare med avancerade profiler (många uppsättningar [!UICONTROL traits]).
 
 När du väljer målgrupp analyserar du ditt användningsfall och avgör vilka typer av ID du vill klassificera: [!UICONTROL device IDs] eller [!UICONTROL cross-device IDs]. Det [!UICONTROL Profile Merge Rule] som du väljer när du skapar modellen definierar de data som ska användas för att placera varje användare i prediktiva [!UICONTROL segments].
 
@@ -96,7 +96,7 @@ Det här steget utförs en gång var 24:e timme för att ta hänsyn till förän
 
 ### [!UICONTROL Predictive Audiences] Modellklassificeringsfas {#model-classification}
 
-När en besökare som är en del av målgruppen visas i realtid utvärderar modellen om besökaren är en del av den definierade personligheten. För varje besökare som inte tillhör någon av personerna tilldelar modellen ett personligt kvalificeringsmoment.
+För att klassificera målgrupper i realtid och i batch kontrollerar modellen först om en användare tillhör målgruppen. Om användaren kvalificerar sig för målgruppen och inte tillhör någon av personerna tilldelas de ett personligt kvalifikationspoäng av modellen.
 
 När du utvärderar förstapartsmålgrupper och tilldelar poäng används standardvärdet som **[!UICONTROL Profile Merge Rule]** definierats i ditt konto. Slutligen klassificeras besökaren i den personlighet för vilken de fick högsta poäng.
 
@@ -112,12 +112,6 @@ Tänk på följande när du konfigurerar dina [!UICONTROL Predictive Audiences] 
 * Du kan skapa upp till 10 [!UICONTROL Predictive Audiences]-modeller.
 * För varje modell kan du välja upp till 50 basegenskaper/segment.
 * Data från andra och tredje part stöds för närvarande inte i [!UICONTROL Predictive Audiences].
-* Målgruppsklassificering görs endast för förstapartsmålgrupper i realtid. Integrerad klassificering av förstahandsanvändare kan stödjas i en framtida uppdatering.
-   >[!IMPORTANT]
-   > Om du lägger till en prediktiv egenskap i ett reguljärt segment blir det ett prediktivt segment. Följaktligen är alla associerade profiler osegmenterade.
-
-   >[!IMPORTANT]
-   > För närvarande kan prediktiva segment bara aktiveras i realtidsdestinationer. Värdet [!UICONTROL Total Segment Population] och [!UICONTROL Addressable Audience] värdet för dina prediktiva segment visas som 0, och [grupputgående dataöverföringar](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) stöds inte för [!UICONTROL Predictive Audiences]. Detta beteende ändras i en framtida uppdatering.
 * [!UICONTROL Predictive Audiences] utför målgruppsklassificering baserat på era egenskaper hos första part, från alla era egna datakällor.
 * Segmentutvärdering för [!UICONTROL Predictive Audiences] använder **[!UICONTROL Profile Merge Rule]** det du väljer när du skapar en modell. Mer information om [!UICONTROL Profile Merge Rules] finns i den dedikerade [dokumentationen](../profile-merge-rules/merge-rules-overview.md).
 * Vissa egenskaper och segment stöds inte som baslinjer eller målgrupper. [!UICONTROL Predictive Audiences] modeller kan inte sparas när du väljer något av följande som baslinjer eller målgrupper:
@@ -125,6 +119,7 @@ Tänk på följande när du konfigurerar dina [!UICONTROL Predictive Audiences] 
    * [Adobe Experience Platform](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md) egenskaper eller segment.
    * Algoritmiska egenskaper.
    * Andra och tredje parts egenskaper.
+* [!UICONTROL Predictive Audience] [!UICONTROL segments] kan inte användas i [!UICONTROL Audience Lab].
 
 ## [!UICONTROL Data Export Controls] {#dec}
 
@@ -146,6 +141,7 @@ Alla prediktiva segment tilldelas den [!UICONTROL Profile Merge Rule] som du val
 * Det styr vilka [!UICONTROL trait] typer (enhetsnivå eller enhetsövergripande nivå) som ska användas under modellutbildningssteget och visas som inflytelserika [!UICONTROL traits]. Prediktiv [!UICONTROL segments] är delar av målgruppen.
    * Om målgruppen är ett segment rekommenderar vi att du väljer samma [!UICONTROL Profile Merge Rule] för modellen som den som tilldelats målgruppen, eller en [!UICONTROL Profile Merge Rule] som innehåller målpublikens profiltyp.
    * Om målgruppen är en målgrupp [!UICONTROL trait]rekommenderar vi att du väljer en [!UICONTROL Profile Merge Rule] som har åtkomst till samma typ av data som målgruppens trait (antingen enhetsprofildata eller profildata för olika enheter).
+* [!UICONTROL Profile Merge Rules] att använda alternativen [!UICONTROL Current Authenticated Profiles] och [!UICONTROL No Device Profile] stöds endast för målgruppsklassificering i realtid. Mer information finns i [Alternativ för profilsammanfogningsregler definierade](../profile-merge-rules/merge-rule-definitions.md).
 
 Om du väljer en [!UICONTROL Profile Merge Rule] som använder både enhetsdata och data mellan olika enheter maximeras antalet [!UICONTROL traits] som kan användas för modellutbildning och användarklassificering i förutsägbarheten [!UICONTROL segments].
 
