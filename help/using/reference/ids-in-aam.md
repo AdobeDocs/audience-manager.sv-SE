@@ -8,7 +8,7 @@ title: Index över ID:n i Audience Manager
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
 feature: reference
 translation-type: tm+mt
-source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 3%
@@ -31,7 +31,7 @@ Mer information om de prefix som används i följande exempel finns i [Attribut 
 ## [!DNL Audience Manager] Lista med ID:n {#id-list}
 
 | ID | Namn och beskrivning | Användning och exempel | Plats för användargränssnitt |
-|---|-----------|---|------------|
+|---|---|---|---|
 | [!DNL AAM UUID] | [!DNL Adobe Audience Manager Unique User ID], kallas även [!UICONTROL Device ID]. Ett numeriskt 38-siffrigt enhets-ID som associeras med varje enhet som det interagerar med. [!DNL Audience Manager] Tänk på det här ID:t när du ser ett omnämnande av unika användare i [!DNL Audience Manager] användargränssnittet. Audience Manager sparar det här ID:t som en [!DNL cookie] i domänen för `demdex.net` tredje part. | I [!DNL DCS] anrop `uuid` föregås av `d_` prefixet . <br>Exempel: `d_uuid = 07955261652886032950143702505894272138` | Du kan filtrera [!DNL traits] efter [!UICONTROL Device ID] när du skapar [stilfulla modeller](../features/algorithmic-models/create-model.md)och [skapar segment](../features/segments/segment-builder.md). Du kan också filtrera resultaten efter [!UICONTROL Device ID] när du kör [allmänna rapporter för Traits](../reporting/general-reports.md) och [Trend Reports for Traits](../reporting/trend-reports.md). |
 | [!DNL ImsOrgId] | [!DNL Organization ID]. Detta är det ID som ett företag får när det registrerar sig för ett [!DNL Experience Cloud] konto. | `5DC5123F5245B1D20A490D46@AdobeOrg` | Visas inte i [!DNL Audience Manager] användargränssnittet. Om du vill veta mer om hur du kan hitta ditt företags [!DNL Organization ID]information läser du [Hitta ditt företags-ID](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255). |
 | [!DNL PID] | [!DNL Partner ID]. Det [!DNL PID] är ett företags-ID i [!DNL Audience Manager]. Audience Manager associerar en [!DNL imsOrgId] till en [!DNL PID]. | `1352` | Visas inte i [!DNL Audience Manager] användargränssnittet. |
