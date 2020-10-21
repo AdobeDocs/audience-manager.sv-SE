@@ -7,10 +7,10 @@ title: Skapa algoritmiska traits
 uuid: 50c2d2d1-f412-479b-bb70-4f139429c388
 feature: Traits
 translation-type: tm+mt
-source-git-commit: aeaf8b14e901b4a39486ba3740f0582c9cf34559
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 4%
+source-wordcount: '322'
+ht-degree: 5%
 
 ---
 
@@ -29,12 +29,7 @@ Om du vill skapa en algoritmisk egenskap går du till [!UICONTROL Traits] och f�
 1. Expandera [!UICONTROL Configuration] rutan och klicka **[!UICONTROL Browse All Models]**.
 Då öppnas ett nytt fönster där du kan välja den modell som du vill använda med egenskapen.
 1. Markera en modell och klicka på **[!UICONTROL Add Selected Model to Trait]**.
-
-   >[!NOTE]
-   > 
-   > Du kan inte ersätta valda modeller för befintliga algoritmiska egenskaper. Om du vill använda en annan modell måste du skapa en ny algoritmisk egenskap.
-
-   När du lägger till modellen visas inställningarna för räckvidd och precision.
+När du lägger till modellen visas inställningarna för räckvidd och precision.
 1. Välj räckvidd eller precision som mål och välj ett värde i respektive listruta. Klicka **[!UICONTROL Save]** när du är klar.
 
 ## Konfigurationsinställningar för algoritmiska egenskaper {#configure-settings}
