@@ -2,23 +2,21 @@
 product: audience-manager
 solution: Audience Manager
 audience: end-user
-user-guide-title: Audience Manager Guide
-breadcrumb-title: Audience Manager Guide
-breadcrumb-url: /docs/audience-manager/user-guide/aam-home.html
+user-guide-title: Användarhandbok för Audience Manager
 user-guide-description: Audience Manager tillhandahåller branschledande tjänster för datahantering av målgrupper online.
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 59eda3fa250fa33ef283f09b0027845431e9517b
+source-git-commit: 7b58619a5208f7a48002d65d7bcbf0af602ba908
 workflow-type: tm+mt
-source-wordcount: '1773'
-ht-degree: 92%
+source-wordcount: '1769'
+ht-degree: 93%
 
 ---
 
 
-# Audience Manager Guide {#user-guide}
+# Användarhandbok för Audience Manager {#user-guide}
 
-+ [Audience Manager Guide](aam-home.md)
++ [Audience Manager – produktdokumentation](aam-home.md)
 + Översikt {#overview}
    + [Översikt över Audience Manager](overview/aam-overview.md)
    + [Typer av insamlade data](overview/data-types-collected.md)
@@ -36,7 +34,6 @@ ht-degree: 92%
          + [Hantering av samtycke](overview/data-security-and-privacy/data-privacy-consent.md)
          + [Plugin-program för Audience Manager för IAB TCF](overview/data-security-and-privacy/aam-iab-plugin.md)
    + [Datastyrning](overview/data-security-and-privacy/data-governance.md)
-   + [Tillgänglighet i Audience Manager](overview/accessibility-in-aam.md)
 + Funktioner {#features}
    + [Adresserbara målgrupper](features/addressable-audiences.md)
    + Administrering {#administration}
@@ -78,8 +75,8 @@ ht-degree: 92%
       + [Data Explorer – Översikt, fördelar och användningsexempel](features/data-explorer/data-explorer-overview.md)
       + [Förstå signaler](features/data-explorer/data-explorer-understanding-signals.md)
       + [Kontrollpanel för signaler](features/data-explorer/data-explorer-signals-dashboard.md)
-      + Signalsökning{#signal-search}
-         + [Signalsökning - översikt](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
+      + Signalsökning {#signals-search}
+         + [Översikt över signalsökning](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
          + [Söka efter signaler med nyckelvärdespar](features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)
          + [Söka efter signaler med filter](features/data-explorer/data-explorer-signals-search/data-explorer-search-filters.md)
          + [Avancerad sökning i Adobe Analytics](features/data-explorer/data-explorer-signals-search/data-explorer-search-analytics.md)
