@@ -1,15 +1,15 @@
 ---
-description: 'null'
-seo-description: 'null'
+description: Klickspårning möjliggör mätning av besökarnas engagemang under hela kampanjen, eftersom klickbaserade aktiviteter registreras för tredjepartskreatörer.
+seo-description: Klickspårning möjliggör mätning av besökarnas engagemang under hela kampanjen, eftersom klickbaserade aktiviteter registreras för tredjepartskreatörer.
 seo-title: Samla in klickdata för kampanjer med pixelanrop
 solution: Audience Manager
 title: Samla in klickdata för kampanjer med pixelanrop
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 feature: Integration with Campaign
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 231d8e537cf5b4f29b1c4f284fe1b3ffe6d187a9
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '686'
 ht-degree: 10%
 
 ---
@@ -48,7 +48,7 @@ Baserat på ovanstående exempel omdirigeras webbläsaren till följande [!DNL U
 
 ## Makron som stöds
 
-Klickhändelser stöder de makron som anges i följande tabell. Ett makro är en liten enhet med självständig kod som aktiveras när annonstaggen läses in för kampanj- och användarspårning. Makrona skickas tillsammans med målet [!DNL URL]om de är markerade med följande format: `%macro%`. Vissa nycklar har inga makron och accepterar i stället ett hårdkodat ID-värde. Tangenter som accepterar hårdkodade värden krävs om du vill analysera data i [målgruppsoptimeringsrapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md).
+Klickhändelser stöder de makron som anges i följande tabell. Ett makro är en liten enhet med egen kod som aktiveras när annonstaggen läses in för kampanj- och användarspårning. Makrona skickas tillsammans med målet [!DNL URL]om de är markerade med följande format: `%macro%`. Vissa nycklar har inga makron och accepterar i stället ett hårdkodat ID-värde. Tangenter som accepterar hårdkodade värden krävs om du vill analysera data i [Audience Optimization-rapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md).
 
 <table id="table_6EB65C3B7D0E49C59AA6C932549E33FC"> 
  <thead> 
@@ -67,17 +67,17 @@ Klickhändelser stöder de makron som anges i följande tabell. Ett makro är en
   <tr> 
    <td colname="col1"> <p> <code> d_adsrc</code> </p> </td> 
    <td colname="col02"> <p>Inget makro. </p> <p>Accepterar ett hårdkodat ID-värde. </p> </td> 
-   <td colname="col2"> <p>Advertiser-ID.</p> <p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till datakällor i Audience Manager.</p> <p> Krävs för <span class="wintitle"> målgruppsoptimeringsrapporter</span> . </p> </td> 
+   <td colname="col2"> <p>Advertiser-ID.</p> <p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till datakällor i Audience Manager.</p> <p> Krävs för <span class="wintitle"> Audience Optimization</span> -rapporter. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bu</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_bu%</code> </p> </td> 
-   <td colname="col2"> <p>Numeriskt ID för affärsenheten. </p> <p> Krävs för <span class="wintitle"> målgruppsoptimeringsrapporter</span> . </p> </td> 
+   <td colname="col2"> <p>Numeriskt ID för affärsenheten. </p> <p> Krävs för <span class="wintitle"> Audience Optimization</span> -rapporter. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_campaign</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_campaign%</code> </p> </td> 
-   <td colname="col2"> <p>Numeriskt kampanj-ID från annonsservern. </p> <p> Krävs för <span class="wintitle"> målgruppsoptimeringsrapporter</span> . </p> </td> 
+   <td colname="col2"> <p>Numeriskt kampanj-ID från annonsservern. </p> <p> Krävs för <span class="wintitle"> Audience Optimization</span> -rapporter. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_creative</code> </p> </td> 
@@ -169,10 +169,10 @@ Baserat på ovanstående exempel omdirigeras webbläsaren till följande [!DNL U
 
 ## Ytterligare funktioner - [!UICONTROL Audience Optimization Reports]
 
-Du kan använda pixelanrop för att styra [målgruppsoptimeringsrapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md). Se [Översikt och mappningar för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) om du vill använda pixlar som stöd för rapporterna.
+Du kan använda pixelanrop för att styra [Audience Optimization-rapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md). Se [Översikt och mappningar för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) om du vill använda pixlar som stöd för rapporterna.
 
 
 >[!MORELIKETHIS]
 >
->* [Data- och metadatafiler för målgruppsoptimeringsrapporter](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
+>* [Data- och metadatafiler för Audience Optimization-rapporter](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
 
