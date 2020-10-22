@@ -8,9 +8,9 @@ keywords: ID mapping, ID mappings, cookie mappings
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 feature: Usage and Billing
 translation-type: tm+mt
-source-git-commit: 7d2f4b45ac3e45c9b4fcaffa4b5c5324ff03e683
+source-git-commit: fc13643681eebec17a95607482f2864e81b95820
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '576'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ Audience Manager sätter en maxgräns för antalet egenskaper, segment, mål och
 
 ## Gränser för ID-mappning {#id-mapping-limits}
 
-Tabellen nedan visar gränserna för [ID-mappning](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) för enhets-ID:n. När ett ID når någon av gränserna nedan lägger Audience Manager till nya ID-mappningar som baseras på en [!DNL FIFO] (först in, först ut) logik genom att ta bort den äldsta lagrade ID-mappningen och lägga till den nya. Mer information om vilka ID:n som stöds av Audience Manager finns i [Index för ID:n](../../reference/ids-in-aam.md) i Audience Manager.
+Tabellen nedan visar gränserna för [ID-mappning](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) för enhets-ID:n. När ett ID når någon av gränserna nedan lägger Audience Manager till nya ID-mappningar som baseras på en FIFO-logik (först in, först ut) genom att ta bort den äldsta lagrade ID-mappningen och lägga till den nya. Mer information om vilka ID:n som stöds av Audience Manager finns i [Index för ID:n](../../reference/ids-in-aam.md) i Audience Manager.
 
 | ID-mappning | Maximal gräns |
 |-----------|-------------- |
