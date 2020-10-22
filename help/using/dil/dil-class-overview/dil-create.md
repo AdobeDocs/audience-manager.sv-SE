@@ -7,9 +7,9 @@ title: Skapa DIL
 uuid: 6e054600-703c-4a97-af2a-8207c50013db
 feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fc13643681eebec17a95607482f2864e81b95820
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '825'
 ht-degree: 3%
 
 ---
@@ -60,9 +60,7 @@ r_dil_create.xml
    <td colname="col1"> <p> <code> declaredId </code> </p> </td> 
    <td colname="col2"> <p>Objekt </p> </td> 
    <td colname="col3"> 
-    <draft-comment> 
-     <p>Skickar <a href="../../features/declared-ids.md"> deklarerade ID-variabler </a> för varje händelseanrop till <span class="keyword"> Audience Manager </span>. </p> 
-    </draft-comment> <p> <code> delcaredId </code> används för att skicka in </p> 
+    <p> <code> declaredId </code> används för att skicka in </p> 
     <ul id="ul_75E64D7DDBD14670BB0BC7819F72036C"> 
      <li id="li_43C7F0EAC5B24F07BBF4ADAB4B0142B7"> <code> dpid </code>: Datapartnerns ID har tilldelats dig av <span class="keyword"> Audience Manager </span>. </li> 
      <li id="li_3BD52ADEA1E24B41B51AFA95D71DD1FC"> <code> dpuuid </code>: Ditt unika ID för en användare. </li> 
