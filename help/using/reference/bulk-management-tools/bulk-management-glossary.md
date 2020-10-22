@@ -7,7 +7,7 @@ title: Ordlista för verktyg för satsvis hantering
 uuid: 4658a6bc-9515-4d31-9715-0084760b0cea
 feature: baaam
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fc13643681eebec17a95607482f2864e81b95820
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 3%
@@ -83,7 +83,7 @@ Kolumnrubriketiketter har definierats.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> startDate</span> </p> </td> 
-   <td colname="col2"> <p>Anger när ett segment kan börja skickas till ett mål. Använder <tt>formatet åååå-mm-dd</tt> . </p> </td> 
+   <td colname="col2"> <p>Anger när ett segment kan börja skickas till ett mål. Använder <i>formatet åååå-mm-dd</i> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> targetKey</span> </p> </td> 
