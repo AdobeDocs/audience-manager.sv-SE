@@ -5,9 +5,9 @@ seo-title: Beskrivning av satsvis överföring av data
 solution: Audience Manager
 title: Beskrivning av satsvis överföring av data
 uuid: a9eee940-151c-44f8-9fe9-8ab47d8fa45c
-feature: null
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 231d8e537cf5b4f29b1c4f284fe1b3ffe6d187a9
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 7%
@@ -36,5 +36,5 @@ Gruppdataintegreringsprocessen sparar besökarinformation på våra servrar och 
 1. En användare besöker en kundwebbplats.
 1. [!DNL Audience Manager] och tredjepartsleverantören av data tilldelar besökaren ett unikt ID (vanligtvis med en cookie).
 1. [!DNL Audience Manager] anropar tredjeparts dataleverantör för att matcha besökar-ID:n.
-1. En schemalagd begäran utbyter vanligtvis data om besökarsegment mellan [!DNL Audience Manager] och tredjepartsleverantör.
+1. En schemalagd begäran utbyter vanligtvis data om besökarsegment mellan [!DNL Audience Manager] och din tredjepartsleverantör.
 1. När en inkommande [!UICONTROL Server-to-Server] fil bearbetas skickas ett kvitto via e-post till partnerlösningar och, om konfigurationen är konfigurerad, till partnern. Mer information finns i [Exempelmeddelande till partners efter inkommande bearbetning](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md).
