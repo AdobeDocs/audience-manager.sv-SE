@@ -7,9 +7,9 @@ title: Beskrivning av destinationsmakron
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fc13643681eebec17a95607482f2864e81b95820
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 2%
 
 ---
@@ -53,10 +53,7 @@ När du skapar ett [!DNL URL] mål kan du infoga följande makron i [!DNL URL] s
     </ul> <p>För att göra detta med <code>%dpid_<i>data source id</i>%</code>makrot skulle <span class="keyword"> Audience Manager</span> -partnern formatera makrot så här: </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
-    </ul> <p>Makrot ersätts <code> 1</code> med <code> CustomerABC</code>. </p> <p> 
-     <draft-comment>
-       Baserat på AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
-     </draft-comment> </p> </td> 
+    </ul> <p>Makrot ersätts <code> 1</code> med <code> CustomerABC</code>. </p> </td> 
   </tr> 
   <tr>
     <td><p><code>${GDPR}</code></p></td>
