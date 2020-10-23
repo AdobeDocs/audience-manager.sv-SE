@@ -7,9 +7,9 @@ title: Datainsamling och felfrekvens i valda rapporter för Audience Manager
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 feature: reporting reference
 translation-type: tm+mt
-source-git-commit: 33d844578c5cd620f9d4c33ec931ae0778aabb07
+source-git-commit: 397be3f44bf865633140bb45630a78be0a0d2219
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '467'
 ht-degree: 7%
 
 ---
@@ -60,7 +60,7 @@ Observera att våra tester och modeller visar att felfrekvensen *minskar* i en o
 
 ## Använda metoden för Minhash-provtagning {#minhash}
 
-Baserat på metoden för [Minhash](https://en.wikipedia.org/wiki/MinHash) -provtagning använder Audience Manager en ny metod för att beräkna trait- och segment-uppskattare ovanpå en enpermutation-hash-skiss. Den här nya metoden ger en lägre varians än standarduppskattaren för Jaccard-likhetsberäkning. Se avsnittet nedan för de rapporter som använder denna metod.
+Baserat på metoden för [Minhash](https://en.wikipedia.org/wiki/MinHash) -provtagning använder Audience Manager en ny metod för att beräkna trait- och segment-uppskattare ovanpå en enpermutation-hash-skiss. Den här nya metoden ger en lägre varians än standarduppskattaren för Jaccard-likhet. Se avsnittet nedan för de rapporter som använder denna metod.
 
 <!--
 
