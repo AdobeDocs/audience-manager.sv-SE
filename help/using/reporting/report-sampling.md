@@ -7,10 +7,10 @@ title: Datainsamling och felfrekvens i valda rapporter för Audience Manager
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 feature: reporting reference
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 33d844578c5cd620f9d4c33ec931ae0778aabb07
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 8%
+source-wordcount: '468'
+ht-degree: 7%
 
 ---
 
@@ -19,16 +19,26 @@ ht-degree: 8%
 
 En sammanfattning av den provtagningsmetod som används för vissa rapporter, felfrekvenser vid provtagning och en lista över rapporter som returnerar information baserat på provdata.
 
-## Samplingsfrekvens för data och minimikrav {#data-sampling-ratio}
+## Samplingsförhållande för data {#data-sampling-ratio}
 
 I vissa [!DNL Audience Manager] rapporter visas resultat som baseras på en uppsättning av den totala mängden tillgängliga data. Samplade data-förhållandet är 1:54. För rapporter där exempeldata används innebär detta att resultaten baseras på 1 post av varje uppsättning med 54 poster.
 
-Dessa rapporter använder exempeldata eftersom de behöver en enorm mängd datorkraft för att generera resultat. Sampling hjälper till att hitta en balans mellan minskade datorkrav, bibehållna systemprestanda och ge korrekta resultat.
+Dessa rapporter använder statistiska provdata eftersom de behöver en enorm mängd datorkraft för att generera resultat. Sampling hjälper till att hitta en balans mellan minskade datorkrav, bibehållna systemprestanda och ge korrekta resultat.
 
-Rapporter som använder sampling utesluter egenskaper och segment när de inte uppfyller minimikraven för unika besökare. Dessa minimikrav är följande:
+<!--
 
-* Traits: 28 000 [unika](/help/using/features/traits/trait-and-segment-qualification-reference.md#unique-trait-realizations) intäktsgenereringar under en 14-dagarsperiod.
-* Segment: 70 000 användare i realtid under en 14-dagarsperiod.
+## Minimum Requirements {#minimum-requirements}
+
+>[!NOTE]
+>
+>The minimum requirements listed below apply to Overlap reports only.
+
+Overlap reports ([trait-to-trait](/help/using/reporting/dynamic-reports/trait-trait-overlap-report.md), [segment-to-trait](/help/using/reporting/dynamic-reports/segment-trait-overlap-report.md), and [segment-to-segment](/help/using/reporting/dynamic-reports/segment-segment-overlap-report.md)) exclude traits and segments when they do not meet the minimum unique visitor requirements. These minimum requirements are as follows:
+
+* Traits: 28,000 [unique trait realizations](/help/using/features/traits/trait-and-segment-qualification-reference).
+* Segments: 70,000 real-time users over a 14-day period.
+
+-->
 
 ## Felfrekvens {#error-rates}
 
@@ -48,11 +58,35 @@ Observera att våra tester och modeller visar att felfrekvensen *minskar* i en o
 | 100,000 | 95 % har en felfrekvens på 4 %. |
 | 500 000 (eller fler) | 95 % har en felfrekvens på 2 %. |
 
+## Använda metoden för Minhash-provtagning {#minhash}
+
+Baserat på metoden för [Minhash](https://en.wikipedia.org/wiki/MinHash) -provtagning använder Audience Manager en ny metod för att beräkna trait- och segment-uppskattare ovanpå en enpermutation-hash-skiss. Den här nya metoden ger en lägre varians än standarduppskattaren för Jaccard-likhetsberäkning. Se avsnittet nedan för de rapporter som använder denna metod.
+
+<!--
+
+Some Audience Manager reports use the minhash sampling methodology to compute trait and segment overlaps and similarity scores. Audience Manager calculates the [!UICONTROL Trait Similarity Score] between two traits by computing the intersection and union in terms of the number of [!UICONTROL Unique User IDs] (UUIDs) and then divides the two. For two traits A and B, the calculation looks like this:
+
+![jaccard-similarity](/help/using/features/segments/assets/jaccard_similarity.png)
+
+-->
+
 ## Rapporter som använder provdata {#reports-using-sampled-data}
 
-De [!DNL Audience Manager] rapporter där exempeldata används är bland annat:
+De [!DNL Audience Manager] rapporter som använder statistiska provdata och metoden för Minhash-provtagning omfattar följande:
 
-* [Överlappningsrapporter](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) (trait-to-trait, segment-to-trait och segment-to-segment).
-* [Adresserbara](../features/addressable-audiences.md) målgruppsdata (data på kund- och segmentnivå).
-* Måttet [för totala enheter](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) för en [!UICONTROL Profile Merge Rule].
-* [Data Explorer](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md) använder exempeldata på [!UICONTROL Search] fliken och alla andra [!UICONTROL Saved Searches].
+<!--
+
+* [Overlap reports](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) (trait-to-trait, segment-to-trait, and segment-to-segment).
+* [Addressable Audience](../features/addressable-audiences.md) data (customer- and segment-level data). 
+* The [Total Devices](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) metric for a [!UICONTROL Profile Merge Rule].
+* [Data Explorer](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md) uses sampled data in the [!UICONTROL Search] tab and any [!UICONTROL Saved Searches].
+
+Reports that use Minhash sampling methodology:
+
+-->
+
+| Statistisk sampling | Provtagningsmetod för minhash |
+|--- |--- |
+| [Adresserbara målgruppsdata](../features/addressable-audiences.md) (data på kund- och segmentnivå). | [Överlappningsrapporter](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) (trait-to-trait, segment-to-trait och segment-to-segment) |
+| Måttet [för totala enheter](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) för en [!UICONTROL Profile Merge Rule]. | [Trait-rekommendationer](/help/using/features/segments/trait-recommendations.md) |
+| [Datan Explorer](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md) använder exempeldata på [!UICONTROL Search] fliken och alla [!UICONTROL Saved Searches] | [Audience Marketplace Recommendations](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |
