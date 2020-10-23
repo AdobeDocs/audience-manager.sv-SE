@@ -7,9 +7,9 @@ title: Uppdateringsschema för överlappningsrapporter och minsta segmentstorlek
 uuid: 35c1cb39-e28d-4d20-88c9-5ff4fe154e9e
 feature: overlap reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 33d844578c5cd620f9d4c33ec931ae0778aabb07
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '353'
 ht-degree: 5%
 
 ---
@@ -17,13 +17,14 @@ ht-degree: 5%
 
 # Överlappningsrapporter: Uppdatera schema och minsta segmentstorlek{#overlap-reports-update-schedule-and-minimum-segment-size}
 
-Beskriver kraven på segmentstorlek och skapandetid som krävs för uppdateringsprocessen för överlappningsrapporten.
+Beskriver kraven på egenskaper, segmentstorlek och skapandetid som krävs för uppdateringsprocessen för överlappningsrapporten.
 
 ## Uppdatera schema och krav {#update-schedule}
 
 [!UICONTROL Overlap] som uppdateras varje vecka på söndag. Förbearbetningen av rapporten börjar på lördag. Detta påverkar hur nya eller befintliga segment visas i en överlappningsrapport på måndag. Ska inkluderas i en överlappningsrapport:
 
-* Ett segment måste innehålla minst 70 000 användare i realtid under de senaste 14 dagarna. Läs mer om [Minsta unika besökarkrav för traits och Segments](../../reporting/report-sampling.md#data-sampling-ratio).
+* Ett segment måste innehålla minst 70 000 användare i realtid under de senaste 14 dagarna.
+* Ett varumärke måste innehålla 28 000 [unika](/help/using/features/traits/trait-and-segment-qualification-reference.md) trait-implementeringar under de senaste 14 dagarna.
 * Ett segment måste ha skapats före torsdag kl. 12.00 UTC (2 hela dagar innan uppdateringsprocessen för överlappningsrapporten varje vecka börjar).
 * Företaget måste vara en fullständig [!DNL Audience Manager] kund. Kontakta din [!DNL Audience Manager] konsult eller kundtjänst för mer information.
 
