@@ -3,24 +3,24 @@ description: Audience Manager tillhandahåller branschledande tjänster för dat
 seo-description: Teknisk dokumentation och självhjälp för Audience Manager (AAM). AAM tillhandahåller branschledande tjänster för datahantering av målgrupper online och ger digitala annonsörer och utgivare de verktyg de behöver för att styra och utnyttja sina datatillgångar för att öka försäljningen.
 seo-title: Teknisk produktdokumentation för Adobe Audience Manager
 solution: Audience Manager
-title: Audience Manager – produktdokumentation
+title: Audience Manager Guide
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 feature: overview
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: 389ffae8d216a4f295a5fe198a27c4d9d48586c6
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 98%
+source-wordcount: '665'
+ht-degree: 96%
 
 ---
 
 
 
-# Audience Manager – produktdokumentation {#audience-manager-product-documentation}
+# Audience Manager Guide {#audience-manager-product-documentation}
 
 Den här tekniska handboken innehåller självhjälp för Audience Manager, en branschledande tjänst för datahantering av målgrupper online. Våra produkter och tjänster ger digitala annonsörer och utgivare de verktyg de behöver för att styra och utnyttja sina datatillgångar och hjälpa till att öka försäljningen.
 
-## Använda produktdokumentationen
+## Använda den här guiden
 
 * Utforska innehållet efter ämne och underämne i den **vänstra navigeringen**.
 * Använd **sökfältet** överst på sidan om du vet vad du letar efter.
