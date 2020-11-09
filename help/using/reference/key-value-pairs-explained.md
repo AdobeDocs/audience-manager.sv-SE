@@ -1,16 +1,16 @@
 ---
-description: Definierar och beskriver standard- och serialiserade nyckelvärdepar.
+description: Definierar och beskriver standardpar och serialiserade nyckelvärdepar.
 keywords: integration code
-seo-description: Definierar och beskriver standard- och serialiserade nyckelvärdepar.
+seo-description: Definierar och beskriver standardpar och serialiserade nyckelvärdepar.
 seo-title: Förklaring av nyckelvärdespar
 solution: Audience Manager
 title: Förklaring av nyckelvärdespar
 uuid: f1435742-81ca-4964-8370-accf2f1c47a5
 feature: reference
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 5d6983f5308f1dfd4560ee1b38bcaee3ca6e422f
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '276'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 # Förklaring av nyckelvärdespar{#key-value-pairs-explained}
 
-Definierar och beskriver standard- och serialiserade nyckelvärdepar.
+Definierar och beskriver standardpar och serialiserade nyckelvärdepar.
 
 <!-- 
 
@@ -49,49 +49,15 @@ När du arbetar med serialiserade data måste du ange tecknen som avgränsar vä
 
 * **Nyckel:** En unik identifierare i nyckelvärdepar.
 * **Värdeavgränsare:** Separerar enskilda nyckelvärdepar.
-* **Nyckelvärdesavgränsare:** Separerar en nyckel från värdena i ett nyckelvärdepar.
+* **Avgränsare för nyckelvärde:** Separerar en nyckel från värdena i ett nyckelvärdepar.
 * **Serieavgränsare:** Separerar enskilda värden inom serialiserade nyckelvärdepar.
 
 ## Standard- och serialiserade nyckelvärdeselement {#standard-serialized-key-value-elements}
 
-<table id="table_62B0498441034A719C9DB57276777D40"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Typ </th> 
-   <th colname="col2" class="entry"> Exempel </th> 
-   <th colname="col3" class="entry"> Nyckel </th> 
-   <th colname="col4" class="entry"> Avgränsare för nyckelvärde </th> 
-   <th colname="col5" class="entry"> Avgränsare för nyckelvärde </th> 
-   <th colname="col6" class="entry"> Serieavgränsare </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <b>Enkel tangent</b> <p>(standard) </p> </td> 
-   <td colname="col2"> <code> x=1&amp;x=2 </code> </td> 
-   <td colname="col3"> x </td> 
-   <td colname="col4" morerows="3"> = </td> 
-   <td colname="col5" morerows="1"> &amp; </td> 
-   <td colname="col6" morerows="1"> n/a </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <b>Nyckelvärdepar</b> <p>(standard) </p> </td> 
-   <td colname="col2"> <code> x=1&amp;x=2&amp;y=3&amp;y=4 </code> </td> 
-   <td colname="col3"> x, y </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <b>Enkel tangent</b> <p>(seriell) </p> </td> 
-   <td colname="col2"> <code> x=1;2;3 </code> </td> 
-   <td colname="col3"> x </td> 
-   <td colname="col5"> n/a </td> 
-   <td colname="col6" morerows="1"> ; </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <b>Nyckelvärdepar</b> (seriella) </td> 
-   <td colname="col2"> <code> x=1;2&amp;y=3;4 </code> </td> 
-   <td colname="col3"> x, y </td> 
-   <td colname="col5"> &amp; </td> 
-  </tr> 
- </tbody> 
-</table>
 
+| Typ | Exempel | Nyckel | Avgränsare för nyckelvärde | Avgränsare för nyckelvärde | Serieavgränsare |
+---------|----------|---------|---------|----------|---------
+| **Enkel tangent** (standard) | `x=1&x=2` | `x` | `=` | `&` | n/a |
+| **Nyckelvärdepar** (standard) | `x=1&x=2&y=3&y=4` | `x,y` | `=` | `&` | n/a |
+| **En nyckel** (seriell) | `x=1;2;3` | `x` | `=` | n/a | `;` |
+| **Nyckelvärdepar** (seriella) | `x=1;2&y=3;4` | `x,y` | `=` | `&` | `;` |
