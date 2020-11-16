@@ -7,9 +7,9 @@ title: Prefixkrav för nyckelvariabler
 uuid: df2ef9c8-606a-45f9-a836-859f856a7d4b
 feature: Traits
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 1c0d40082cd0753a9b4326aae764eb74aefb8be4
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '345'
 ht-degree: 5%
 
 ---
@@ -43,7 +43,7 @@ I följande tabell definieras de vanliga prefix som används av [!UICONTROL Trai
   </tr> 
   <tr> 
    <td colname="col1"><code> d_</code> </td> 
-   <td colname="col2"> <p>På <span class="keyword"> Audience Manager</span> -nivå. Dessa data är enhetliga över hela <span class="keyword"> Audience Manager</span> . Se <a href="../../api/dcs-intro/dcs-api-reference/dcs-keys.md"> Attribut som stöds för DCS API-anrop</a> för en mer komplett lista. <p>Signaler som använder det här prefixet visas inte i <a href="../data-explorer/data-explorer-signals-search/data-explorer-signals-search.md">Signalsökning</a>.</p></p> </td> 
+   <td colname="col2"> <p>På <span class="keyword"> Audience Manager</span> -nivå. Dessa data är enhetliga över hela <span class="keyword"> Audience Manager</span> . Se <a href="../../api/dcs-intro/dcs-api-reference/dcs-keys.md"> Attribut som stöds för DCS API-anrop</a> för en mer komplett lista.</p> </td> 
   </tr>
   <tr> 
    <td colname="col1"><code> h_</code> </td> 
