@@ -17,13 +17,13 @@ ht-degree: 4%
 
 # Migrera API-kod för Audience Manager {#audience-manager-api-code-migration}
 
-Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitlig och korrekt [!DNL API] dokumentation. Därför skriver vi om vårt [!DNL API] innehåll i [!DNL Swagger] och flyttar det till en ny plats. Ändringarna är utformade för att förbättra din upplevelse av Audience Manager- [!DNL API] koden.
+Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitlig [!DNL API]-dokumentation. Därför skriver vi om vårt [!DNL API]-innehåll i [!DNL Swagger] och flyttar det till en ny plats. Ändringarna är avsedda att förbättra din upplevelse av Audience Manager [!DNL API]-koden.
 
-## Flytta uppåt {#code-migration-details}
+## Flyttar uppåt {#code-migration-details}
 
 <!-- api-swagger-migration.xml -->
 
-Webbplatsen [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html) är det nya hemmet för vårt reviderade [!DNL API] innehåll. Vi ska försöka skriva om och flytta några uppsättningar [!DNL API] metoder med varje release. Det innebär att du måste checka in både den nya platsen och [REST API](../api/rest-api-main/rest-api-main.md) -dokumentationen för att hitta alla tillgängliga metoder. Till slut kommer alla allmänheten att [!DNL API]finnas på [!DNL Audience Manager][!DNL API] dokumentsajten. I följande tabell visas ändrade och migrerade [!DNL API]filer.
+Webbplatsen [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html) är det nya hemmet för vårt reviderade [!DNL API]-innehåll. Vi försöker skriva om och flytta några uppsättningar [!DNL API]-metoder med varje release. Det innebär att du måste checka in både den nya platsen och dokumentationen för [REST API](../api/rest-api-main/rest-api-main.md) för att hitta alla tillgängliga metoder. Till slut kommer alla publika [!DNL API]s att finnas på webbplatsen [!DNL Audience Manager] [!DNL API] docs. I följande tabell visas de ändrade och migrerade [!DNL API]s.
 
 <!--
 
