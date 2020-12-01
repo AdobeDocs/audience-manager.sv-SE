@@ -21,11 +21,11 @@ Metoder som gör att du kan arbeta programmatiskt med målfunktioner.
 
 <!-- c_destinations_api.xml -->
 
-I Audience Manager är en destination vilket annat system som helst (annonsserver, [!DNL DSP]annonsnätverk, utbyte, egen cookie från första part osv.) som du vill dela data med.
+I Audience Manager är en destination vilket annat system som helst (annonsserver, [!DNL DSP], annonsnätverk, utbyte, egen cookie från första part osv.) som du vill dela data med.
 
 ## Måltyper: URL och cookie {#destination-types}
 
-Visar de variabler som används av `destinationType` parametern. Ange `push` eller `ADS` arbeta med en [!UICONTROL URL] eller [!UICONTROL cookie destination]. Du kan inte skapa [!UICONTROL server-to-server destinations] med de tillgängliga [!DNL API] målmetoderna.
+Visar de variabler som används av parametern `destinationType`. Ange `push` eller `ADS` om du vill arbeta med en [!UICONTROL URL] eller [!UICONTROL cookie destination]. Du kan inte skapa [!UICONTROL server-to-server destinations] med de tillgängliga målmetoderna [!DNL API].
 
 <!-- r_destination_types.xml -->
 
