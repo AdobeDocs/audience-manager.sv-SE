@@ -17,16 +17,16 @@ ht-degree: 11%
 
 # Hämta användar-ID:n och regioner från ett DCS-svar {#get-user-ids-and-regions-from-a-dcs-response}
 
-I det här avsnittet beskrivs hur du tolkar ett [!DNL DCS] svar för att hämta de besökar- och region-ID som krävs för att göra realtidsanrop till [!DNL DCS].
+I det här avsnittet beskrivs hur du tolkar ett [!DNL DCS]-svar för att hämta de besökar- och region-ID som krävs för att göra realtidsanrop till [!DNL DCS].
 
-## Användar- och regions-ID {#user-region-ids}
+## Användar- och region-ID {#user-region-ids}
 
-Ett [!DNL DCS] svar innehåller data om webbplatsens besökare. Du behöver besökar-ID:t och region-ID:t innan du kan göra server-till-server-anrop till [!DNL DCS].
+Ett [!DNL DCS]-svar innehåller data om webbplatsens besökare. Du behöver besökar-ID:t och region-ID:t innan du kan göra server-till-server-anrop till [!DNL DCS].
 
 * Användar-ID krävs för att identifiera och koppla data till en viss besökare.
-* Regionens ID är obligatoriskt eftersom det är kopplat till ett regionalt servernamn som du måste skicka data till [!DNL DCS]. Informationen [!DNL DCS] lagras i datacenter som är geografiskt närmast besökarna. See [DCS Region IDs, Locations, and Host Names](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
+* Regionens ID krävs eftersom det är kopplat till ett regionalt servernamn som du måste skicka data till [!DNL DCS]. I [!DNL DCS] lagras information i datacenter som är geografiskt närmast webbplatsbesökarna. Se [ID för DCS-region, platser och värdnamn](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
 
-Dessa parametrar beskrivs nedan. Kod i *kursiv stil* representerar en variabel platshållare.
+Dessa parametrar beskrivs nedan. Kod i *kursiv* representerar en variabelplatshållare.
 
 <table id="table_822C02D5978348DCB7153001882D397C"> 
  <thead> 
@@ -50,9 +50,9 @@ Dessa parametrar beskrivs nedan. Kod i *kursiv stil* representerar en variabel p
  </tbody> 
 </table>
 
-## Exempelsvar {#sample-response}
+## Samplingssvar {#sample-response}
 
-Det här enkla svaret visar regionen `UUID` och regionen `ID`. Observera att detta endast är exempeldata. Dina loggfiler kan vara längre och mer komplexa.
+Det här enkla svaret visar `UUID` och regionen `ID`. Observera att detta endast är exempeldata. Dina loggfiler kan vara längre och mer komplexa.
 
 ```js
 {
@@ -65,4 +65,4 @@ Det här enkla svaret visar regionen `UUID` och regionen `ID`. Observera att det
 
 ## Nästa steg {#next-steps}
 
-När du har användar-ID och det regionala servernamnet kan du börja skicka och ta emot [!DNL DCS] data. Se [Göra DCS API-anrop](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md).
+När du har användar-ID och det regionala servernamnet kan du börja skicka och ta emot [!DNL DCS]-data. Se [Göra DCS API-anrop](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md).
