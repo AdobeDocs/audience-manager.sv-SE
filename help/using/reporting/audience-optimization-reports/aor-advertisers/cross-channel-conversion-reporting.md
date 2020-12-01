@@ -1,6 +1,6 @@
 ---
-description: Med alternativet Konvertering över flera kanaler i rapporten Audience Optimization kan du attribuera offlinekonverteringar till serverade onlinevisningar eller -klick.
-seo-description: Med alternativet Konvertering över flera kanaler i rapporten Audience Optimization kan du attribuera offlinekonverteringar till serverade onlinevisningar eller -klick.
+description: Med alternativet Konvertering mellan kanaler i Audience Optimization-rapporterna kan du attribuera offlinekonverteringar till serverade onlinevisningar eller -klick.
+seo-description: Med alternativet Konvertering mellan kanaler i Audience Optimization-rapporterna kan du attribuera offlinekonverteringar till serverade onlinevisningar eller -klick.
 seo-title: Konvertering över flera kanaler
 solution: Audience Manager
 title: Konvertering över flera kanaler
@@ -17,13 +17,13 @@ ht-degree: 3%
 
 # Konvertering över flera kanaler{#cross-channel-conversion}
 
-Med alternativet Konvertering över flera kanaler i rapporten Audience Optimization kan du attribuera offlinekonverteringar till serverade onlinevisningar eller -klick.
+Med alternativet Konvertering mellan kanaler i Audience Optimization-rapporterna kan du attribuera offlinekonverteringar till serverade onlinevisningar eller -klick.
 
-I [!UICONTROL Cross Channel Conversion] rapporterna kombineras resultat från [!DNL Google Campaign Manager] plattformen med [!DNL Audience Manager] konverteringsegenskaper. På så sätt kan du länka offlinekonverteringar till online-visningar eller -klick.
+[!UICONTROL Cross Channel Conversion]-rapporterna kombinerar resultat från [!DNL Google Campaign Manager]-plattformen med [!DNL Audience Manager] konverteringsegenskaper. På så sätt kan du länka offlinekonverteringar till online-visningar eller -klick.
 
-Du kan använda [!UICONTROL Cross Channel Conversion] för [Segmentprestanda](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md) - och [Optimal Frequency](../../../reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md) -rapporter.
+Du kan använda [!UICONTROL Cross Channel Conversion] för rapporterna [Segmentprestanda](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md) och [Optimal Frequency](../../../reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md).
 
-Om du vill visa [!UICONTROL Cross Channel Conversion] rapporter markerar du **[!UICONTROL AAM + Ad Server Name]** objektet i **[!UICONTROL Platform]** listrutan.
+Om du vill visa [!UICONTROL Cross Channel Conversion]-rapporterna väljer du **[!UICONTROL AAM + Ad Server Name]**-objektet i listrutan **[!UICONTROL Platform]**.
 
 I följande tabell visas viktiga aspekter när du konfigurerar [!UICONTROL Cross Channel Conversion]:
 
@@ -37,11 +37,11 @@ I följande tabell visas viktiga aspekter när du konfigurerar [!UICONTROL Cross
  <tbody> 
   <tr> 
    <td colname="col01"> <p>Minsta antal konverteringsegenskaper </p> </td> 
-   <td colname="col1"> <p>Minst en konverteringsegenskap måste tilldelas till en datakälla för att rapporterna för <span class="wintitle"> kanalkonvertering</span> ska kunna köras. Mer information om egenskaper finns i <a href="../../../features/traits/create-onboarded-rule-based-traits.md"> Grundläggande information om traits</a> . </p> </td> 
+   <td colname="col1"> <p>Minst en konverteringsegenskap måste tilldelas till en datakälla för att rapporterna <span class="wintitle"> Cross Channel Conversion</span> ska kunna köras. Mer information om egenskaper finns i <a href="../../../features/traits/create-onboarded-rule-based-traits.md"> Grundläggande information om traits</a>. </p> </td> 
   </tr>
   <tr> 
    <td> <p>Attributionsfönster </p> </td> 
-   <td> <p> <b><span class="uicontrol"> AAM+Google Campaign Manager</span></b> -attribueringsfönstret är 14 dagar, vilket innebär att endast konverteringsegenskaper som visats under de senaste två veckorna beaktas. </p> </td> 
+   <td> <p> <b><span class="uicontrol"> AAM+Google Campaign </span></b> Managerattribution är 14 dagar, vilket innebär att endast konverteringsegenskaper som visats under de senaste två veckorna beaktas. </p> </td> 
   </tr> 
   <tr> 
    <td> <p>Senaste beröringsmetod </p> </td> 
