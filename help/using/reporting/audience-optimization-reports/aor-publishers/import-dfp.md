@@ -1,6 +1,6 @@
 ---
-description: Innan Audience Manager kan aktivera målgruppsoptimering för utgivare måste du se till att alla krav som beskrivs i den här artikeln uppfylls. Kontakta kundtjänst när du har kontrollerat alla krav.
-seo-description: Innan Audience Manager kan aktivera målgruppsoptimering för utgivare måste du se till att alla krav som beskrivs i den här artikeln uppfylls. Kontakta kundtjänst när du har kontrollerat alla krav.
+description: Innan Audience Manager kan aktivera Audience Optimization för utgivare måste du se till att alla krav som beskrivs i den här artikeln uppfylls. Kontakta kundtjänst när du har kontrollerat alla krav.
+seo-description: Innan Audience Manager kan aktivera Audience Optimization för utgivare måste du se till att alla krav som beskrivs i den här artikeln uppfylls. Kontakta kundtjänst när du har kontrollerat alla krav.
 seo-title: Importera Google Ad Manager-datafiler till Audience Manager
 solution: Audience Manager
 title: Importera Google Ad Manager-datafiler till Audience Manager
@@ -17,26 +17,26 @@ ht-degree: 0%
 
 # Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager{#import-dfp-data-files-into-audience-manager}
 
-Innan Audience Manager kan aktivera målgruppsoptimering för utgivare måste du se till att alla krav som beskrivs i den här artikeln uppfylls. Kontakta kundtjänst när du har kontrollerat alla krav.
+Innan Audience Manager kan aktivera Audience Optimization för utgivare måste du se till att alla krav som beskrivs i den här artikeln uppfylls. Kontakta kundtjänst när du har kontrollerat alla krav.
 
 ## Krav för Google Ad Manager-logginmatning {#prereqs-dfp-ingestion}
 
-Observera att den process som beskrivs i det här avsnittet måste slutföras *innan* du går vidare till förutsättningarna för aktivering av inloggningsinformation.
+Observera att den process som beskrivs i det här avsnittet måste slutföras *innan du går vidare till förutsättningarna för aktivering av inloggningsinformation.*
 
-För att kunna använda [!DNL Google Ad Manager] loggfiler (tidigare Google DFP) i [!DNL Audience Manager]måste du först ange [Audience Manager Unikt användar-ID (UUID)](../../../reference/ids-in-aam.md) i annonstagganropet. På så sätt inkluderas vårt ID i [!DNL Google Ad Manager] loggarna och vi kan matcha ID:n mellan [!DNL Google Ad Manager] och [!DNL Audience Manager]. Använd [!DNL Audience Manager][!UICONTROL DIL] kod eller [!UICONTROL Audience Management Module] för att ange [!DNL Audience Manager] UID i en cookie för första part.
+Om du vill använda [!DNL Google Ad Manager]-loggfiler (tidigare Google DFP) i [!DNL Audience Manager] måste du först ange ditt [UUID (Audience Manager Unique User ID)](../../../reference/ids-in-aam.md) i annonstagganropet. Då inkluderas vårt ID i [!DNL Google Ad Manager]-loggarna och vi kan matcha ID mellan [!DNL Google Ad Manager] och [!DNL Audience Manager]. Använd [!DNL Audience Manager] [!UICONTROL DIL]-koden eller [!UICONTROL Audience Management Module] för att ange UID:t för [!DNL Audience Manager] i en cookie för första parten.
 
-Så här ställer du in [!DNL Audience Manager] ID:t i annonstagganropet, vilket förklaras i vår dokumentation:
+Så här anger du [!DNL Audience Manager]-ID:t i annonstagganropet, vilket förklaras i vår dokumentation:
 
 * [Via Google Publisher Tag (GPT)](../../../integration/gpt-aam-destination/gpt-aam-modify-api.md)
 * [Via ett cookie-mål](../../../integration/gpt-aam-destination/gpt-aam-create-destination.md)
 
-Du måste ange ditt [!DNL Audience Manager] ID själv och kan arbeta med [!DNL Audience Manager] rådgivning för att kontrollera om allt fungerar. Du har angett rätt [!DNL Audience Manager] ID om:
+Du måste ställa in [!DNL Audience Manager]-ID själv och kan arbeta med [!DNL Audience Manager]-konsulttjänster för att kontrollera om allt fungerar. Du har angett [!DNL Audience Manager]-ID korrekt om:
 
 * `'aamid'` är nyckeln som används som identifierare.
 * Värdet för användar-ID är korrekt formaterat som [!DNL Audience Manager] UUID, vilket beskrivs i vårt [index för ID i Audience Manager](../../../reference/ids-in-aam.md).
-* Du har inkluderat [!DNL Audience Manager] UUID i ett definierat fält i dina [!DNL Google Ad Manager] loggar (t.ex. CustomTargeting).
+* Du har inkluderat [!DNL Audience Manager] UUID i ett definierat fält i dina [!DNL Google Ad Manager]-loggar (t.ex. CustomTargeting).
 
-## Krav för aktivering av logginmatning {#prereqs-ingestion-enablement}
+## Krav för aktivering av loggmatning {#prereqs-ingestion-enablement}
 
 <table id="table_C980A9F9B0FB4157B4908A64768B1571"> 
  <thead> 
@@ -49,8 +49,8 @@ Du måste ange ditt [!DNL Audience Manager] ID själv och kan arbeta med [!DNL A
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Steg 1 </p> </td> 
-   <td colname="col2"> <p>Bekräfta att stegen som krävs för att ställa in UUID för <span class="keyword"> Audience Manager</span> (se ovan) har slutförts innan du går till steg 2 </p> </td> 
-   <td colname="col3"> <p><span class="keyword"> Audience Manager</span> kundtjänst eller konsulttjänster </p> </td> 
+   <td colname="col2"> <p>Bekräfta att de steg som krävs för att ställa in UUID för <span class="keyword"> Audience Manager</span> (se ovan) har slutförts innan du går till steg 2 </p> </td> 
+   <td colname="col3"> <p><span class="keyword"> Audience </span> ManagerCustomer Care or Consulting </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Steg 2 </p> </td> 
@@ -83,12 +83,12 @@ Du måste ange ditt [!DNL Audience Manager] ID själv och kan arbeta med [!DNL A
   </tr> 
   <tr> 
    <td colname="col1"> <p>Steg 6 </p> </td> 
-   <td colname="col2"> <p>Kompilera kraven i ett e-postmeddelande till AAM:s kundtjänst (aamsupport@adobe.com) för att komma igång med processen för att få tillgång till loggen. Skriv ut e-postmeddelandet med mallen i nästa avsnitt. </p> </td> 
-   <td colname="col3"> <p>Du eller <span class="keyword"> Audience Manager</span> Consulting åt dig </p> </td> 
+   <td colname="col2"> <p>Kompilera kraven i ett e-postmeddelande till AAM kundtjänst (aamsupport@adobe.com) för att starta processen för att få tillgång till loggen. Skriv ut e-postmeddelandet med mallen i nästa avsnitt. </p> </td> 
+   <td colname="col3"> <p>Du eller <span class="keyword"> Audience Manager</span> Samråd å dina vägnar </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## E-postmall {#email-template}
 
-Skicka ett e-postmeddelande till aamsupport@adobe.com om du vill slutföra aktiveringen av inloggning. Använd den [bifogade e-postmallen](assets/enable_dfp_ingestion.txt).
+Skicka ett e-postmeddelande till aamsupport@adobe.com om du vill slutföra aktiveringen av inloggning. Använd den bifogade [e-postmallen](assets/enable_dfp_ingestion.txt).
