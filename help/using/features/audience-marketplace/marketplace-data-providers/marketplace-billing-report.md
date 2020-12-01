@@ -20,7 +20,7 @@ ht-degree: 3%
 
 Generera en [!DNL Audience Marketplace] faktureringsrapport för att visa dataflödesanvändningen för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
 
-## Ladda ned en faktureringsrapport {#download-billing-report}
+## Hämta en faktureringsrapport {#download-billing-report}
 
 Så här hämtar du en rapport:
 
@@ -41,7 +41,7 @@ En faktureringsrapport innehåller följande information.
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Dataproviderns PID</span></b> </p> </td> 
-   <td colname="col2"> <p>Ditt <span class="keyword"> Audience Manager</span> -ID. </p> </td> 
+   <td colname="col2"> <p>Ditt <span class="keyword"> Audience Manager</span>-dataleverantörs-ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Dataproviderns namn</span></b> </p> </td> 
@@ -70,7 +70,7 @@ En faktureringsrapport innehåller följande information.
      <li id="li_3400C6475F6D43D7AF54D9A0ED9C09E0">Segment och överlappning </li> 
      <li id="li_65DFEF1EA6C341ACB5B72FF629F10AFC">Modeling </li> 
      <li id="li_B84935B93ADE4D299732CE7E099DF7B3">Aktivering </li> 
-    </ul> <p>Se Planera typer <a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#plan-types"> för dataflöden</a>. </p> </td> 
+    </ul> <p>Se <a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#plan-types"> Plantyper för datafeeds</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Måttenhet</span></b> </p> </td> 
@@ -82,7 +82,7 @@ En faktureringsrapport innehåller följande information.
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Rabatterat pris</span></b> </p> </td> 
-   <td colname="col2"> <p>Prenumerationsavgiften för en diskonterad datafeed. Se <a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#discounts"> Rabatter för Data Providers</a>. </p> </td> 
+   <td colname="col2"> <p>Prenumerationsavgiften för en diskonterad datafeed. Se <a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#discounts"> Rabatter för dataleverantörer</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Enheter</span></b> </p> </td> 
@@ -114,7 +114,7 @@ En faktureringsrapport innehåller följande information.
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Flagga</span></b> </p> </td> 
-   <td colname="col2"> <p> <i>Endast</i>för CPM-flöden. Flaggalternativen är: </p> 
+   <td colname="col2"> <p> <i>Endast</i> för CPM-flöden. Flaggalternativen är: </p> 
     <ul id="ul_509BC73B754A43299F8D719AB0805ABD"> 
      <li id="li_AB35E33B68EC49A187495DF6B9D86563">0: Anger att en prenumerant har rapporterat användningsinformation till <span class="keyword"> Audience Manager</span>. </li> 
      <li id="li_2E4871B127A84EC586A9F3659F52D67E">1: Anger att en prenumerant inte har rapporterat användningsinformation till <span class="keyword"> Audience Manager</span>. </li> 
