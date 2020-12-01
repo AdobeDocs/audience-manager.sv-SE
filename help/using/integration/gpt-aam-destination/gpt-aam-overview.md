@@ -13,7 +13,7 @@ ht-degree: 6%
 ---
 
 
-# Integrate [!DNL Google Ad Manager] (formerly DFP) using Google Publisher Tags (GPT)
+# Integrera [!DNL Google Ad Manager] (tidigare DFP) med Google Publisher Tags (GPT)
 
 I artiklarna nedan finns en översikt över hur du integrerar [!DNL Google Ad Manager] med Google Publisher Tags (GPT). Du kan använda en integration på serversidan eller konfigurera GPT som ett mål för att skicka segmentdata från Audience Manager till [!DNL Google Ad Manager]. Du får också lära dig hur du importerar [!DNL Google Ad Manager] loggfiler för rapportering i Audience Manager.
 
@@ -23,7 +23,7 @@ I artiklarna nedan finns en översikt över hur du integrerar [!DNL Google Ad Ma
 
 * [Skapa en GPT-destination](/help/using/integration/gpt-aam-destination/gpt-aam-create-destination.md)
 
-   Du kan skicka kvalificerade segment till [!DNL Google Ad Manager] via en klientintegration (på webbläsarsidan) eller en integration på serversidan. Om du väljer integrering på klientsidan måste du skapa ett cookie-baserat mål för Google Publisher-taggar i Audience Manager.
+   Du kan skicka kvalificerade segment till [!DNL Google Ad Manager] via en integrering på klientsidan (webbläsarsidan) eller en integrering på serversidan. Om du väljer integrering på klientsidan måste du skapa ett cookie-baserat mål för Google Publisher-taggar i Audience Manager.
 
 * [Ändra API-anropet GPT setTargeting](/help/using/integration/gpt-aam-destination/gpt-aam-modify-api.md)
 
