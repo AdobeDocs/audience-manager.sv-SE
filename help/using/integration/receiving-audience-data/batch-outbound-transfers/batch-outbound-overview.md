@@ -1,6 +1,6 @@
 ---
 description: Audience Manager skickar batchdata till tredjepartsleverantörer av innehåll enligt dessa specifikationer.
-seo-description: Adobe Audience Manager (AAM) skickar batchdata till tredjepartsleverantörer av innehåll enligt dessa specifikationer.
+seo-description: Adobe Audience Manager (AAM) skickar batchdata till tredjepartsleverantörer enligt dessa specifikationer.
 seo-title: Utgående batchdataöverföringar i Adobe Audience Manager (AAM)
 title: 'Satsvisa utgående dataöverföringar '
 feature: Outbound Data Transfers
