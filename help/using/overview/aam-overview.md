@@ -31,7 +31,7 @@ Funktionerna i en plattform för datahantering (DMP) kan sammanfattas i tre kate
 
 Audience Manager samlar in förstapartsdata från kanaler och enheter (webbanalys, CRM, enhetsdata, e-handel osv.).
 
-<br> 
+<br>
 
 **Skapa målgrupper**
 
