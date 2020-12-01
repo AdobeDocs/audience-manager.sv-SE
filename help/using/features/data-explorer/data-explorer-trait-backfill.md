@@ -20,9 +20,9 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->[!UICONTROL Data Explorer Trait Backfill] är en premiumfunktion som förbättrar Audience Manager genom att låsa upp ytterligare användningsfall. Bakgrundsfyllning kräver extra processorkraft och är tillgänglig för alla Audience Manager-kunder till en stegvis kostnad. Kontakta din Adobe-återförsäljare för mer information.
+>[!UICONTROL Data Explorer Trait Backfill] är en premiumfunktion som förbättrar Audience Manager genom att låsa upp ytterligare användningsfall. Bakgrundsfyllning kräver extra processorkraft och är tillgänglig för alla Audience Manager-kunder till en stegvis kostnad. Kontakta din säljare på Adobe för mer information.
 
-När du skapar egenskaper utifrån oanvända signaler kan du välja att fylla i trait-implementeringarna igen under en viss tidsperiod. [!DNL Audience Manager] samlar in historiska data om målgrupper som kvalificerar sig för det nya varumärket och lagrar dem på motsvarande profil. Du kan se informationen **[!UICONTROL Backfill Options]** i [!UICONTROL Trait Expression] delen av **[Trait Builder](../../features/traits/about-trait-builder.md)**.
+När du skapar egenskaper utifrån oanvända signaler kan du välja att fylla i trait-implementeringarna igen under en viss tidsperiod. [!DNL Audience Manager] samlar in historiska data om målgrupper som kvalificerar sig för det nya varumärket och lagrar dem på motsvarande profil. Du kan se **[!UICONTROL Backfill Options]** i [!UICONTROL Trait Expression]-avsnittet i **[Trait Builder](../../features/traits/about-trait-builder.md)**.
 
 >[!NOTE]
 >
@@ -30,13 +30,13 @@ När du skapar egenskaper utifrån oanvända signaler kan du välja att fylla i 
 
 Så här fyller du i trait-implementeringar baklänges:
 
-1. Gå till [!UICONTROL Audience Data > Signals > Search] och kör en signalsökning eller använd [signalkontrollpanelen](../../features/data-explorer/data-explorer-signals-dashboard.md) för att identifiera de signaler som ska användas i det nya traktet.
+1. Gå till [!UICONTROL Audience Data > Signals > Search] och kör en signalsökning eller använd kontrollpanelen [Signaler](../../features/data-explorer/data-explorer-signals-dashboard.md) för att identifiera de signaler som ska användas i det nya tradet.
 1. Skapa ett nytt spår baserat på de önskade signalerna.
-1. Använd **[!UICONTROL Backfill Options]** i **[!UICONTROL Trait Expression]** avsnittet för att välja det tidsintervall för vilket du vill återfylla trait-realisationer. Fördefinierade intervall för bakgrundsfyllning omfattar 1, 7, 14 och 30 dagar. Du kan också välja ett anpassat datumintervall på upp till 30 dagar.
+1. Använd **[!UICONTROL Backfill Options]** i **[!UICONTROL Trait Expression]**-avsnittet för att välja det tidsintervall för vilket du vill återfylla trait-realisationer. Fördefinierade intervall för bakgrundsfyllning omfattar 1, 7, 14 och 30 dagar. Du kan också välja ett anpassat datumintervall på upp till 30 dagar.
 
    ![trait-backfill](assets/signals-trait-backfill.png)
 
-1. (Valfritt) Klicka **[!UICONTROL Estimate Realizations]** i **[!UICONTROL Estimated Trait Realizations]** avsnittet för att se beräknade [!UICONTROL Unique Trait Realizations] värden och [!UICONTROL Total Trait Population] värden för den efterfyllda egenskapen under de senaste 7 dagarna.
+1. (Valfritt) Klicka på **[!UICONTROL Estimate Realizations]** i **[!UICONTROL Estimated Trait Realizations]**-avsnittet för att se de uppskattade [!UICONTROL Unique Trait Realizations]- och [!UICONTROL Total Trait Population]-värdena för den efterfyllda egenskapen under de senaste 7 dagarna.
 
    ![estimat-trait-realizations](assets/estimate-trait-realizations.png)
 
@@ -55,13 +55,13 @@ Titta på videon nedan om du vill se en videogenomgång av hur du fyller ut trai
 
 >[!VIDEO](https://video.tv.adobe.com/v/25169/)
 
-## Svarstid för bakåtfyllnad av fack {#trait-backfilling-latency}
+## Svarstid för traits-vikning {#trait-backfilling-latency}
 
-Nyligen skapade egenskaper som börjar fånga målgrupper två till tre timmar efter att de skapats. På grund av den stora datavolym som dagligen [!DNL Audience Manager] utför återspeglas emellertid inte den efterfyllda populationen omedelbart i [!UICONTROL Unique Trait Realizations] och [!UICONTROL Total Trait Population] diagram.
+Nyligen skapade egenskaper som börjar fånga målgrupper två till tre timmar efter att de skapats. På grund av den stora datavolym som [!DNL Audience Manager] utför dagligen reflekteras emellertid inte den efterfyllda populationen omedelbart i diagrammen [!UICONTROL Unique Trait Realizations] och [!UICONTROL Total Trait Population].
 
-Audience Manager uppdaterar bilden [!UICONTROL Trait Graph] med den efterfyllda populationen inom 48 timmar efter att trait har skapats.
+Audience Manager uppdaterar [!UICONTROL Trait Graph] med den efterfyllda populationen inom 48 timmar efter att egenskaperna har skapats.
 
-## Gräns för bakåtfyllnad av trait {#trait-backfilling-limit}
+## Anpassa gräns för påfyllnad {#trait-backfilling-limit}
 
 [!UICONTROL Data Explorer] Med kan du fylla upp till 50 traits per månad med backfill-räknaren återställd den 1 dagen i varje månad.
 
@@ -71,6 +71,6 @@ Audience Manager uppdaterar bilden [!UICONTROL Trait Graph] med den efterfyllda 
 
 ## Inverkan på rapportering {#reporting-impact}
 
-Omvända implementeringar av egenskaper återspeglas i värdena [!UICONTROL Unique Trait Realizations] och [!UICONTROL Total Trait Population] , vilket [!DNL Audience Manager] omvandlar historiska signaler till implementering av egenskaper.
+Omvända implementeringar av egenskaper återspeglas i [!UICONTROL Unique Trait Realizations]- och [!UICONTROL Total Trait Population]-mätvärdena, eftersom [!DNL Audience Manager] förvandlar historiska signaler till trait-realiseringar.
 
-Men [!UICONTROL Trait Graph], [!UICONTROL General Reports]och [!UICONTROL Trend Reports] uppdateras inte retroaktivt med historisk statistik som fyllts i före datumet då trait skapades.
+[!UICONTROL Trait Graph], [!UICONTROL General Reports] och [!UICONTROL Trend Reports] uppdateras dock inte retroaktivt med historiska värden som är förifyllda innan värdet skapades.
