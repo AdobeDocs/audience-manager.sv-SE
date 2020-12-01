@@ -21,7 +21,7 @@ En sammanfattning av den provtagningsmetod som används för vissa rapporter, fe
 
 ## Samplingsförhållande för data {#data-sampling-ratio}
 
-I vissa [!DNL Audience Manager] rapporter visas resultat som baseras på en uppsättning av den totala mängden tillgängliga data. Samplade data-förhållandet är 1:54. För rapporter där exempeldata används innebär detta att resultaten baseras på 1 post av varje uppsättning med 54 poster.
+Vissa [!DNL Audience Manager]-rapporter visar resultat som baseras på en provuppsättning av den totala mängden tillgängliga data. Samplade data-förhållandet är 1:54. För rapporter där exempeldata används innebär detta att resultaten baseras på 1 post av varje uppsättning med 54 poster.
 
 Dessa rapporter använder statistiska provdata eftersom de behöver en enorm mängd datorkraft för att generera resultat. Sampling hjälper till att hitta en balans mellan minskade datorkrav, bibehållna systemprestanda och ge korrekta resultat.
 
@@ -51,16 +51,16 @@ Observera att våra tester och modeller visar att felfrekvensen *minskar* i en o
 
 | Antal poster | Felfrekvens |
 |--- |--- |
-| 500 - 1,000 | 95 % har en felfrekvens på 42 %. |
-| 1,000 - 1,500 | 95 % har en felfrekvens på 34 %. |
-| 10,000 - 50,000 | 95 % har en felfrekvens på 14 %. |
-| 50,000 | 95 % har en felfrekvens på 6 %. |
-| 100,000 | 95 % har en felfrekvens på 4 %. |
+| 500 - 1 000 | 95 % har en felfrekvens på 42 %. |
+| 1 000 - 1 500 | 95 % har en felfrekvens på 34 %. |
+| 10 000 - 50 000 | 95 % har en felfrekvens på 14 %. |
+| 50 000 | 95 % har en felfrekvens på 6 %. |
+| 100 000 | 95 % har en felfrekvens på 4 %. |
 | 500 000 (eller fler) | 95 % har en felfrekvens på 2 %. |
 
-## Använda metoden för Minhash-provtagning {#minhash}
+## Använda metoden Minhash-prov {#minhash}
 
-Baserat på metoden för [Minhash](https://en.wikipedia.org/wiki/MinHash) -provtagning använder Audience Manager en ny metod för att beräkna trait- och segment-uppskattare ovanpå en enpermutation-hash-skiss. Den här nya metoden ger en lägre varians än standarduppskattaren för Jaccard-likhet. Se avsnittet nedan för de rapporter som använder denna metod.
+Baserat på provtagningsmetoden [Minhash](https://en.wikipedia.org/wiki/MinHash) använder Audience Manager en ny metod för att beräkna trait- och segmentuppskattare ovanpå en dataskiss med en permutation som ger hackande data. Den här nya metoden ger en lägre varians än standarduppskattaren för Jaccard-likhet. Se avsnittet nedan för de rapporter som använder denna metod.
 
 <!--
 
@@ -70,9 +70,9 @@ Some Audience Manager reports use the minhash sampling methodology to compute tr
 
 -->
 
-## Rapporter som använder provdata {#reports-using-sampled-data}
+## Rapporter som använder exempeldata {#reports-using-sampled-data}
 
-De [!DNL Audience Manager] rapporter som använder statistiska provdata och metoden för Minhash-provtagning omfattar följande:
+I [!DNL Audience Manager]-rapporterna som använder statistiska provdata och metoden för Minhash-provtagning ingår:
 
 <!--
 
@@ -87,6 +87,6 @@ Reports that use Minhash sampling methodology:
 
 | Statistisk sampling | Provtagningsmetod för minhash |
 |--- |--- |
-| [Adresserbara målgruppsdata](../features/addressable-audiences.md) (data på kund- och segmentnivå). | [Överlappningsrapporter](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) (trait-to-trait, segment-to-trait och segment-to-segment) |
-| Måttet [för totala enheter](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) för en [!UICONTROL Profile Merge Rule]. | [Trait-rekommendationer](/help/using/features/segments/trait-recommendations.md) |
-| [Datan Explorer](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md) använder exempeldata på [!UICONTROL Search] fliken och alla [!UICONTROL Saved Searches] | [Audience Marketplace Recommendations](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |
+| [Adresserbara ](../features/addressable-audiences.md) Audiencedata (data på kund- och segmentnivå). | [Överlappningsrapporter](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports)  (trait-to-trait, segment-to-trait och segment-to-segment) |
+| Måttet [Totalt antal enheter](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) för en [!UICONTROL Profile Merge Rule]. | [Trait-rekommendationer](/help/using/features/segments/trait-recommendations.md) |
+| [Data ](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md) Exploreranvänder samplade data på  [!UICONTROL Search] fliken och alla  [!UICONTROL Saved Searches] | [Audience Marketplace Recommendations](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |
