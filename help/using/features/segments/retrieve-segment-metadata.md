@@ -21,19 +21,19 @@ När Audience Manager skickar segmentinformation till en datapartner identifiera
 
 ## Manuell metod {#manual-method}
 
-Som datapartent är ni antagligen vana att hämta målgruppsmetadata från era kunder via manuella processer. Detta kan omfatta filer som bifogats e-postmeddelanden eller från kunder som lägger till dessa data via ett program som [!DNL UI] du har skapat och underhållet för detta ändamål. Dessa processer fungerar, men de är ofta krångliga och tidskrävande och kan kräva manuell datainmatning. Dessa metoder används ofta för att snabbt få igång en integrering, men de ger inte den bästa kundupplevelsen i längden. Du kan också använda alternativet för [!DNL Audience Manager] [!DNL API] att hämta segmentmetadata automatiskt.
+Som datapartent är ni antagligen vana att hämta målgruppsmetadata från era kunder via manuella processer. Detta kan inkludera filer som är kopplade till e-postmeddelanden eller från kunder som lägger till dessa data via en [!DNL UI] som du har skapat och underhållet för detta ändamål. Dessa processer fungerar, men de är ofta krångliga och tidskrävande och kan kräva manuell datainmatning. Dessa metoder används ofta för att snabbt få igång en integrering, men de ger inte den bästa kundupplevelsen i längden. Du kan också använda [!DNL Audience Manager] [!DNL API] för att hämta segmentmetadata automatiskt.
 
-## Automatiserad metod {#automated-method}
+## Automatisk metod {#automated-method}
 
-[!DNL Audience Manager] innehåller en uppsättning [REST-API:er](../../api/rest-api-main/rest-api-main.md) som gör att du kan hämta segmentmetadata automatiskt. Med [!DNL API]kan du skapa jobb som hämtar segmentmetadata vid schemalagda intervaller eller automatiskt när du bearbetar [!DNL Audience Manager] data och hittar ett nytt segment-ID. Se stegen nedan för mer information.
+[!DNL Audience Manager] innehåller en uppsättning  [REST-API:](../../api/rest-api-main/rest-api-main.md) er som gör att du kan hämta segmentmetadata automatiskt. Med [!DNL API] kan du skapa jobb som hämtar segmentmetadata vid schemalagda intervaller eller automatiskt när du bearbetar [!DNL Audience Manager]-data och hittar ett nytt segment-ID. Se stegen nedan för mer information.
 
 ### Steg 1: Granska API:erna för Audience Manager
 
-Avsnittet [Komma igång med REST API:er](../../api/rest-api-main/aam-api-getting-started.md) innehåller information om allmänna krav, autentisering, tillgängliga metoder osv. Det här är en bra plats att börja på om du inte har arbetat med [!DNL Audience Manager] det [!DNL API] förut.
+Avsnittet [Komma igång med REST API:er](../../api/rest-api-main/aam-api-getting-started.md) innehåller information om allmänna krav, autentisering, tillgängliga metoder osv. Det här är en bra plats att börja på om du inte har arbetat med [!DNL Audience Manager] [!DNL API] tidigare.
 
-### Steg 2: Begär autentiseringsuppgifter för OAuth2-åtkomst
+### Steg 2: Begär OAuth2-autentiseringsuppgifter
 
-Du behöver ett klient-ID och en hemlighet för att ringa [!DNL API] samtal. Du kan få ett klient-ID och en hemlighet från din integreringsspecialist under konfigurationsprocessen. Du kan även skicka en e-postförfrågan till [!UICONTROL Audience Manager Customer Care] på [!DNL amsupport@adobe.com].
+Du behöver ett klient-ID och en hemlighet för att kunna ringa [!DNL API]. Du kan få ett klient-ID och en hemlighet från din integreringsspecialist under konfigurationsprocessen. Du kan också skicka en e-postbegäran till [!UICONTROL Audience Manager Customer Care] på [!DNL amsupport@adobe.com].
 
 ### Steg 3: Samla in kundspecifik information från varje integrerad kund
 
@@ -45,7 +45,7 @@ Begär följande från varje integrerad kund:
 
 ### Steg 4: Hämta segmentmetadata med ett API-anrop
 
-När du har slutfört de föregående stegen kan du använda en `GET` metod för att hämta segmentmetadata. Ett exempel på begäran och svar finns i [Returmålsmappningar](../../api/rest-api-main/aam-api-destinations/aam-api-retrieve-destinations.md#return-dest-mappings). Det här anropet returnerar segmentdata som är formaterade som nyckelvärdepar i ett [!DNL JSON] objekt. Vissa viktiga segmentattribut som returneras i svaret visas i följande tabell.
+När du har slutfört de föregående stegen kan du använda en `GET`-metod för att hämta segmentmetadata. Ett exempel på begäran och svar finns i [Returmålmappningar](../../api/rest-api-main/aam-api-destinations/aam-api-retrieve-destinations.md#return-dest-mappings). Det här anropet returnerar segmentdata som är formaterade som nyckelvärdepar i ett [!DNL JSON]-objekt. Vissa viktiga segmentattribut som returneras i svaret visas i följande tabell.
 
 <table id="table_446384AE9A36408A9C570CB7DB72C3D6"> 
  <thead> 
@@ -57,7 +57,7 @@ När du har slutfört de föregående stegen kan du använda en `GET` metod för
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> destinationMappingId</code> </p> </td> 
-   <td colname="col2"> <p>Segmentets-ID <span class="keyword"> Audience Manager</span> . </p> </td> 
+   <td colname="col2"> <p>Segment-ID:t för <span class="keyword"> Audience Manager</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> elementName</code> </p> </td> 
