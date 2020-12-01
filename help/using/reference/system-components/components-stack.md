@@ -25,7 +25,7 @@ c_compstack.xml
 
  -->
 
-Följande bild visar de viktigaste komponenterna och den underliggande tekniken (maskinvara och programvara) som används [!DNL Audience Manager]. Även om vissa processer utför specifika funktioner och andra har roller med flera syften, fungerar alla system tillsammans för att hjälpa dig att hantera taggar, samla in data, analysera prestanda, synkronisera information med andra system och vidta åtgärder för den informationen.
+Följande bild visar huvudkomponenterna och den underliggande tekniken (maskinvara och programvara) som stöder [!DNL Audience Manager]. Även om vissa processer utför specifika funktioner och andra har roller med flera syften, fungerar alla system tillsammans för att hjälpa dig att hantera taggar, samla in data, analysera prestanda, synkronisera information med andra system och vidta åtgärder för den informationen.
 
 ![](assets/components.png)
 
