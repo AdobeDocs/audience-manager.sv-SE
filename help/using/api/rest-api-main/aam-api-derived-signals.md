@@ -25,7 +25,7 @@ Mer information om härledda signaler finns i [Härledda signaler](../../feature
 
 >[!IMPORTANT]
 >
->De härledda signalmetoderna [!DNL API] har skrivits om med [!DNL Swagger] och migrerats. Se:
+>De härledda signalerna [!DNL API]-metoderna har skrivits om med [!DNL Swagger] och migrerats. Se:
 >
 >* [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html)
 >* [Migrera API-kod för Audience Manager](../../api/api-swagger-migration.md)
