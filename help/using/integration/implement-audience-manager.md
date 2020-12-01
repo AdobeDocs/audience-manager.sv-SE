@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Implementera Audience Manager {#implementing-audience-manager}
 
-I det här avsnittet beskrivs de processer som är kopplade till att komma igång med datahanteringsplattformen ([!DNL DMP]) för Audience Manager. Det här avsnittet är utformat för att hjälpa affärsteam, projektledare och teknikchefer att förstå implementeringsprocessen i Audience Manager. Det kan ta cirka sex veckor till tre månader att komma igång med Audience Manager, beroende på dina behov av datainsamling.
+I det här avsnittet beskrivs de processer som är kopplade till att komma igång med datahanteringsplattformen Audience Manager ([!DNL DMP]). Det här avsnittet är utformat för att hjälpa affärsteam, projektledare och teknikchefer att förstå implementeringsprocessen i Audience Manager. Det kan ta cirka sex veckor till tre månader att komma igång med Audience Manager, beroende på dina behov av datainsamling.
 
 Våra implementeringstekniker hjälper till att skapa ett rådgivande partnerskap med nya kunder. Den här processen är utformad för att:
 
@@ -137,7 +137,7 @@ I följande tabell beskrivs viktiga aktiviteter som äger rum under den här fas
 Produkterna för den här fasen kan inkludera:
 
 * En slutförd strategi för datainsamling från första part, andra part och tredje part.
-* En slutförd plan [!DNL CRM] eller en plan för förtäring i data warehouse.
+* En slutförd [!DNL CRM]- eller data warehouse-ingressplan;
 * Definierade krav för målgruppssegmentering.
 * en slutförd datataxonomi,
 * En utvecklad integrationsplan för data från tredje part.
@@ -148,13 +148,13 @@ Under konstruktions-, test- och tågfasen kommer du att granska datainsamlingsst
 
 <!-- c_build_test_train.xml -->
 
-Strategin för datainsamling genomgår kompletta [!DNL QA] tester. Partnerlösningar spårar identifierade fel och koordinerar problemlösningar med våra systemtekniker. Kundutbildningen kan börja parallellt med dessa andra satsningar.
+Din datainsamlingsstrategi kommer att testas från början till slut. [!DNL QA] Partnerlösningar spårar identifierade fel och koordinerar problemlösningar med våra systemtekniker. Kundutbildningen kan börja parallellt med dessa andra satsningar.
 
 I följande tabell beskrivs viktiga aktiviteter som äger rum under den här fasen:
 
 | Aktivitet | Syfte/beskrivning | Deltagare |
 |---|---|---|
-| Förbered en strategi för datainsamling | Samarbeta med Adobes tekniska team för att ta fram en datainsamlingsplan som uppfyller era verksamhetskrav | Näringsliv och tekniska team |
+| Förbered en strategi för datainsamling | Samarbeta med Adobe tekniska team för att ta fram en datainsamlingsplan som uppfyller era verksamhetskrav | Näringsliv och tekniska team |
 | Distribuera och testa kod | Testa den föreslagna lösningen i en testmiljö och utför testning i olika webbläsare | Tekniska team |
 | Verifiera funktioner och åtgärda fel | Granska och förmedla resultat, åtgärda buggar och testa igen | Tekniska team |
 | Utbildning | Undervisa och förstå Audience Manager om funktioner, verktyg och rapporter | Affärsteam |
@@ -162,13 +162,13 @@ I följande tabell beskrivs viktiga aktiviteter som äger rum under den här fas
 Produkterna för den här fasen kan inkludera:
 
 * En slutförd och godkänd plan för datainsamling.
-* Totallösningar från början till slut [!DNL QA] ;
-* Grundläggande anvisningar om Audience Manager användargränssnitt;
+* Totallösning för [!DNL QA]-testning;
+* Grundläggande instruktioner om Audience Manager användargränssnitt;
 * Godkännande och godkännande.
 
 ## Start-, support- och optimeringsfasen {#launch-support-optimize-phase}
 
-Under start-, support- och optimeringsfasen går datainsamlingen och den prototypbaserade implementeringen från utveckling till en aktiv produktionsmiljö. Vi kommer att fortsätta att utbilda oss i produktbekanta och strategier som kan bidra till att öka er [!DNL ROI] genom datadriven optimering.
+Under start-, support- och optimeringsfasen går datainsamlingen och den prototypbaserade implementeringen från utveckling till en aktiv produktionsmiljö. Vi kommer att fortsätta att utbilda oss i produktbekanta och strategier som kan bidra till att öka din [!DNL ROI] genom datadriven optimering.
 
 <!-- c_launch_support_optimize.xml -->
 
@@ -221,7 +221,7 @@ Uppgifter för den här fasen kan vara:
 
 ## Kodimplementering {#code-implementation}
 
-Även om distributionsprocessen kan verka komplicerad är kodimplementeringen lika enkel som att lägga till några rader bredvid den avslutande [!DNL JavaScript] `</body>` taggen på webbplatsen.
+Även om distributionsprocessen kan verka komplicerad är kodimplementeringen lika enkel som att lägga till några rader med [!DNL JavaScript] bredvid den avslutande `</body>`-taggen för webbplatsen.
 
 <!-- c_code.xml -->
 
@@ -233,7 +233,7 @@ Kodfragmentet Audience Manager anropar [!DNL Akamai] för att hämta de affärsr
 
 Partnerlösningar kan arbeta direkt med era tekniska team för att driftsätta kod, ta itu med sista problemet och uppfylla andra krav.
 
-## Stöd efter implementering {#post-implementation-support}
+## Support efter implementering {#post-implementation-support}
 
 Våra samarbetssatsningar upphör inte med den slutliga driftsättningen. När implementeringen är klar tar vårt kontohanteringsteam över sig.
 
