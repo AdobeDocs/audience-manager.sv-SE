@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Vanliga frågor och problem som rör målinriktning.
 
-<br> 
+<br>
 
 <!-- 
 
