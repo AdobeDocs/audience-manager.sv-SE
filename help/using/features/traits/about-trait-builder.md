@@ -21,11 +21,11 @@ ht-degree: 5%
 
 <!-- c_tb_about.xml -->
 
-Jämfört med pixlar, som aktiveras som svar på enkla&quot;ja&quot;- eller&quot;true&quot;-förhållanden, [!UICONTROL Trait Builder] kan du:
+Jämfört med pixlar, som utlöses som svar på enkla&quot;ja&quot;- eller&quot;true&quot;-förhållanden, kan du med [!UICONTROL Trait Builder]:
 
 * Samla in *alla* siddata så att du kan använda dem senare för att skapa relevanta, användbara egenskaper.
-* Skapa egenskaper baserat på [nyckelvärdepar](../../reference/key-value-pairs-explained.md) som skickas vid datainsamling.
+* Skapa egenskaper baserat på [nyckelvärdepar](../../reference/key-value-pairs-explained.md) som skickades vid datainsamling.
 * Utvärdera komplexa dataförhållanden med regler på serversidan som fungerar med [booleska uttryck](../../reference/boolean-expressions-tsb.md) och [jämförelseoperatorer](../../features/traits/trait-comparison-operators.md).
 
 * Minska eller eliminera behovet av att behålla pixlar för datainsamling i lagret.
-* Övervaka prestanda med [!DNL Audience Manager] rapporter.
+* Övervaka prestanda med [!DNL Audience Manager]-rapporter.
