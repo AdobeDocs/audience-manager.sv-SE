@@ -17,33 +17,33 @@ ht-degree: 2%
 
 # [!DNL OAuth 2.0] Integrering för utgående överföringar i realtid{#oauth-integration-for-real-time-outbound-transfers}
 
-När du publicerar segment till partnermålet via en realtidsintegration mellan server och server, kan Audience Manager ställas in för att autentisera med hjälp [!DNL OAuth 2.0] av när begäranden görs. Då kan du skicka autentiserade begäranden från Audience Manager till slutpunkten.
+När du publicerar segment till partnermålet via en realtidsintegration mellan server och server, kan Audience Manager ställas in för att autentisera med [!DNL OAuth 2.0] när du gör förfrågningar. Då kan du skicka autentiserade begäranden från Audience Manager till slutpunkten.
 
 ## Autentiseringsflöde {#auth-flow}
 
-Implementeringen av [!DNL Adobe Audience Manager] OAuth 2.0 [](https://tools.ietf.org/html/rfc6749#section-4.4) -autentisering baseras på bidragsflödet för klientautentiseringsuppgifter och följer dessa steg:
+Autentiseringsimplementeringen [!DNL Adobe Audience Manager] [OAuth 2.0](https://tools.ietf.org/html/rfc6749#section-4.4) är baserad på processen för beviljande av klientautentiseringsuppgifter och följer dessa steg:
 
 1. Du måste ge oss följande:
    * Slutpunkten [!DNL OAuth 2.0] som genererar autentiseringstoken.
    * De autentiseringsuppgifter som används för att generera en token.
-1. En [!DNL Audience Manager] konsult ställer in [destinationen](../../../features/destinations/destinations.md) med hjälp av den information du angett.
-1. När ett segment har mappats till den här destinationen gör vårt dataöverföringssystem i realtid, [IRIS](../../../reference/system-components/components-data-action.md#iris), en `POST` begäran till tokenslutpunkten om att utbyta autentiseringsuppgifterna för en innehavartoken.
-1. För varje segmentpubliceringsbegäran till partnerslutpunkten [!UICONTROL IRIS] används bearer-token för autentisering.
+1. En [!DNL Audience Manager]-konsult ställer in [målet](../../../features/destinations/destinations.md) med hjälp av den angivna informationen.
+1. När ett segment har mappats till det här målet gör vårt dataöverföringssystem i realtid, [IRIS](../../../reference/system-components/components-data-action.md#iris), en `POST`-begäran till tokenslutpunkten för att utbyta autentiseringsuppgifterna för en innehavartoken.
+1. För varje segmentpubliceringsbegäran till partnerslutpunkten använder [!UICONTROL IRIS] innehavartoken för att autentisera.
 
 ![](assets/oauth2-iris.png)
 
 ## Krav {#auth-requirements}
 
-Som [!DNL Audience Manager] partner krävs följande slutpunkter för att kunna ta emot autentiserade begäranden:
+Som [!DNL Audience Manager]-partner krävs följande slutpunkter för att ta emot autentiserade begäranden:
 
 ### Slutpunkt 1 som används av IRIS för att erhålla en innehavartoken
 
 Den här slutpunkten godkänner inloggningsuppgifterna som anges i steg 1 och genererar en innehavartoken som kommer att användas för efterföljande begäranden.
 
-* Slutpunkten måste acceptera `HTTP POST` begäranden.
-* Slutpunkten måste acceptera och titta på [!DNL Authorization] rubriken. Värdet för den här rubriken är: `Basic <credentials_provided_by_partner>`.
-* Slutpunkten måste granska rubriken och verifiera att dess värde är [!DNL Content-type] `application/x-www-form-urlencoded ; charset=UTF-8`.
-* Begärandetexten blir `grant_type=client_credentials`.
+* Slutpunkten måste acceptera `HTTP POST`-begäranden.
+* Slutpunkten måste acceptera och titta på rubriken [!DNL Authorization]. Värdet för den här rubriken är: `Basic <credentials_provided_by_partner>`.
+* Slutpunkten måste granska rubriken [!DNL Content-type] och verifiera att dess värde är `application/x-www-form-urlencoded ; charset=UTF-8`.
+* Innehållet i begäran blir `grant_type=client_credentials`.
 
 ### Exempelbegäran från Audience Manager till partnerslutpunkten för att erhålla en innehavartoken
 
@@ -76,7 +76,7 @@ Content-Length: 121
 
 [!DNL Audience Manager] skickar data till den här slutpunkten i nära realtid när användarna kvalificerar sig för segment. Dessutom kan den här metoden skicka batchar med offline- eller inbyggda data så ofta som var 24:e timme.
 
-Bearer-token som genereras av slutpunkt 1 används för att skicka begäranden till den här slutpunkten. Dataöverföringssystemet i [!DNL Audience Manager] realtid, [IRIS](../../../reference/system-components/components-data-action.md#iris), konstruerar en normal HTTPS-begäran och innehåller en auktoriseringsrubrik. Värdet för den här rubriken är: Bearer `<bearer token from step 1>`.
+Bearer-token som genereras av slutpunkt 1 används för att skicka begäranden till den här slutpunkten. [!DNL Audience Manager]-systemet för dataöverföring i realtid, [IRIS](../../../reference/system-components/components-data-action.md#iris), konstruerar en normal HTTPS-begäran och innehåller en auktoriseringsrubrik. Värdet för den här rubriken är: Bearer `<bearer token from step 1>`.
 
 ### Exempelsvar från partnerslutpunkten
 
@@ -115,7 +115,7 @@ Accept-Encoding: gzip
 
 ### Tokens är lösenord
 
-De autentiseringsuppgifter som partnern anger och de tokens som erhålls vid [!DNL Audience Manager] autentiseringen med hjälp av [!DNL OAuth 2.0] flödet är känslig information och får inte delas med tredje part.
+De autentiseringsuppgifter som anges av partnern och de tokens som hämtas av [!DNL Audience Manager] vid autentisering med [!DNL OAuth 2.0]-flödet är känslig information och får inte delas med tredje parter.
 
 ### [!DNL SSL] krävs
 
