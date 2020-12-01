@@ -16,9 +16,9 @@ ht-degree: 6%
 
 # Rapportering i Predictive Audiences
 
-När du har sparat en [!UICONTROL Predictive Audiences] modell börjar Audience Manager utbilda den. Inom några timmar kommer den beräknade modellen att börja analysera målgrupper på [datainsamlingsservrarna](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs). Rapporteringen blir tillgänglig följande dag.
+När du har sparat en [!UICONTROL Predictive Audiences]-modell börjar Audience Manager utbilda den. Inom några timmar kommer den beräknade modellen att börja analysera målgrupper på [datainsamlingsservrarna](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs). Rapporteringen blir tillgänglig följande dag.
 
-Om du vill se resultatet av din [!UICONTROL Predictive Audiences] klassificering går du till **[!UICONTROL Audience Data]** > **[!UICONTROL Models]** och klickar på modellen i listan.
+Om du vill visa resultatet av din [!UICONTROL Predictive Audiences]-klassificering går du till **[!UICONTROL Audience Data]** > **[!UICONTROL Models]** och klickar på modellen i listan.
 
 Använd filteralternativen till vänster för att söka efter modellnamnet eller filtrera resultaten baserat på modelltyp.
 
@@ -29,7 +29,7 @@ I modelltabellen visas följande information:
 * **[!UICONTROL ID]**: Modell-ID som unikt identifierar varje modell i ditt Audience Manager-konto.
 * **[!UICONTROL Name]**: namnet som du angav i steget för att skapa modellen,
 * **[!UICONTROL Description]**: Den beskrivning som du angav i steget för att skapa modellen.
-* **[!UICONTROL Model Type]**: Typ av modell ([!UICONTROL Look-Alike Modeling] eller [!UICONTROL Predictive Audiences]).
+* **[!UICONTROL Model Type]**: Typ av modell ([!UICONTROL Look-Alike Modeling] eller  [!UICONTROL Predictive Audiences]).
 * **[!UICONTROL Status]**: Status för varje modell:
    * **[!UICONTROL Pending]**: Modellen initieras och börjar producera resultat inom kort.
    * **[!UICONTROL Active]**: Modellen fungerar bra och ger resultat.
@@ -38,23 +38,23 @@ I modelltabellen visas följande information:
 
 ## Modellöversiktsrapport{#model-report}
 
-När du har valt en modell läses rapportsidan in. Högst upp på sidan ser du de fem största prediktiva segmenten, baserat på 1 dagars realtidsrealisering, som modellen har klassificerat målgruppen efter. I **[!UICONTROL Other]** kategorin ingår resten av personerna, som inte ingick i de fem största prediktiva segmenten.
+När du har valt en modell läses rapportsidan in. Högst upp på sidan ser du de fem största prediktiva segmenten, baserat på 1 dagars realtidsrealisering, som modellen har klassificerat målgruppen efter. Kategorin **[!UICONTROL Other]** innehåller resten av personerna, som inte ingick i de fem största prediktiva segmenten.
 
-I Audience Manager visas både ett färgkodat ritdiagram och ett tidslinjediagram för ditt [!UICONTROL Predictive Audiences].
+I Audience Manager visas både ett färgkodat ritdiagram och ett tidslinjediagram för din [!UICONTROL Predictive Audiences].
 
 Om du klickar på personflikarna högst upp på sidan läggs de till eller tas bort från diagrammet och diagrammet.
 
 Diagrammet visar en personbaserad uppdelning av målgruppen, medan diagrammet visar en dagars populationstrend för era prediktiva segment under de senaste sex dagarna.
 
-Om modellstatusen är [!UICONTROL Pending], [!UICONTROL Warning]eller [!UICONTROL Error]visas modellstatusen i stället för diagrammen.
+Om modellstatusen är [!UICONTROL Pending], [!UICONTROL Warning] eller [!UICONTROL Error] visas modellstatusen i stället för graferna.
 
 ![smart-persona-rapport](assets/predictive-audiences-report.png)
 
-I rapporttabellen visas följande information för varje [!UICONTROL Predictive Audiences] segment.
+I rapporttabellen visas följande information för varje [!UICONTROL Predictive Audiences]-segment.
 
 1. **[!UICONTROL SEGMENT ID]**: Segmentets-ID för det automatiskt skapade segment som är kopplat till varje person.
 1. **[!UICONTROL NAME]**: personnamnet,
-1. **[!UICONTROL STATUS]**: Status för [!UICONTROL Predictive Audiences] segmentet:
+1. **[!UICONTROL STATUS]**: Status för  [!UICONTROL Predictive Audiences] segmentet:
    * **[!UICONTROL Succeeded]**: användarna klassificeras i detta segment,
    * **[!UICONTROL Pending]**: segmentet fortfarande initieras,
    * **[!UICONTROL Insufficient Training Data]**: på grund av otillräckliga data delas användarna inte in i det här segmentet. Den totala baslinjepopulationen är för låg och ger inte tillräckligt med data för att lära sig av den.
@@ -63,13 +63,13 @@ I rapporttabellen visas följande information för varje [!UICONTROL Predictive 
 
 ## Influentiella egenskaper{#influential-traits}
 
-[!UICONTROL Influential Traits] är egenskaper som algoritmen har visat sig vara de starkaste prediktorerna för att fastställa en besökares personklassificering. [!UICONTROL Predictive Audiences]
+[!UICONTROL Influential Traits] är egenskaper som  [!UICONTROL Predictive Audiences] algoritmen har visat sig vara de starkaste prediktorerna för att fastställa en besökares personklassificering.
 
 Deras tecken anger om närvaron av egenskapen ökar (+) eller minskar (-) sannolikheten för användaren som tillhör den valda personen.
 
 Om du vill visa de inflytelserika egenskaperna för alla dina profiler klickar du på [!UICONTROL View All Influential Traits].
 
-I [!UICONTROL Influential Traits] fönstret visas följande information för varje profil i den valda modellen:
+Fönstret [!UICONTROL Influential Traits] visar följande information för varje person i den valda modellen:
 
 ![influential-traits](assets/predictive-audiences-influential-traits.png)
 
