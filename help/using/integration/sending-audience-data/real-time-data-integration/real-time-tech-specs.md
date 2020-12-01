@@ -1,6 +1,6 @@
 ---
-description: Tredjepartsleverantörer av innehåll kan förvänta sig att de utbyter data med Audience Manager i enlighet med dessa tekniska specifikationer. Med en synkron integrering i realtid överförs data i nästan realtid när en användare besöker eller vidtar åtgärder på webbplatsen. Tekniker, ingenjörer och utvecklingsgrupper bör använda detta material för att upprätta dataöverföringar i realtid med Audience Manager.
-seo-description: Tredjepartsleverantörer av innehåll kan förvänta sig att de utbyter data med Audience Manager i enlighet med dessa tekniska specifikationer. Med en synkron integrering i realtid överförs data i nästan realtid när en användare besöker eller vidtar åtgärder på webbplatsen. Tekniker, ingenjörer och utvecklingsgrupper bör använda detta material för att upprätta dataöverföringar i realtid med Audience Manager.
+description: Tredjepartsleverantörer av innehåll kan förvänta sig att de utbyter data med Audience Manager i enlighet med dessa tekniska specifikationer. Med en realtidsintegrering (synkron) överförs data i nästan realtid när en användare besöker eller vidtar åtgärder på webbplatsen. Tekniker, ingenjörer och utvecklingsgrupper bör använda detta material för att upprätta dataöverföringar i realtid med Audience Manager.
+seo-description: Tredjepartsleverantörer av innehåll kan förvänta sig att de utbyter data med Audience Manager i enlighet med dessa tekniska specifikationer. Med en realtidsintegrering (synkron) överförs data i nästan realtid när en användare besöker eller vidtar åtgärder på webbplatsen. Tekniker, ingenjörer och utvecklingsgrupper bör använda detta material för att upprätta dataöverföringar i realtid med Audience Manager.
 seo-title: Tekniska specifikationer för inkommande dataöverföringar i realtid
 solution: Audience Manager
 title: Tekniska specifikationer för inkommande dataöverföringar i realtid
@@ -17,7 +17,7 @@ ht-degree: 14%
 
 # Tekniska specifikationer för inkommande dataöverföringar i realtid{#technical-specifications-for-inbound-real-time-data-transfers}
 
-Tredjepartsleverantörer av innehåll kan förvänta sig att de utbyter data med Audience Manager i enlighet med dessa tekniska specifikationer. Med en synkron integrering i realtid överförs data i nästan realtid när en användare besöker eller vidtar åtgärder på webbplatsen. Tekniker, ingenjörer och utvecklingsgrupper bör använda detta material för att upprätta dataöverföringar i realtid med Audience Manager.
+Tredjepartsleverantörer av innehåll kan förvänta sig att de utbyter data med Audience Manager i enlighet med dessa tekniska specifikationer. Med en realtidsintegrering (synkron) överförs data i nästan realtid när en användare besöker eller vidtar åtgärder på webbplatsen. Tekniker, ingenjörer och utvecklingsgrupper bör använda detta material för att upprätta dataöverföringar i realtid med Audience Manager.
 
 <!-- c_rt_realtime_intro.xml -->
 
