@@ -19,4 +19,4 @@ ht-degree: 14%
 
 Audience Manager använder UTC (Coordinated Universal Time) i hela användargränssnittet.
 
-Om inget annat anges kan alla datum och datumintervall som du kan välja i [!DNL Adobe] gränssnittet vara UTC ( [!DNL Audience Manager] Coordinated Universal Time) [](https://www.timeanddate.com/worldclock/timezone/utc). I flödet [Skapa mål](../features/destinations/create-cookie-destination.md#segments-mapping) är till exempel start- och slutdatumet som du väljer midnatt UTC när du mappar segment till målet. Samma sak gäller för alla datum i [!DNL Audience Manager].
+Om inget annat anges kan du välja alla datum- och datumintervall i [!DNL Adobe] [!DNL Audience Manager]-gränssnittet [UTC (Coordinated Universal Time)](https://www.timeanddate.com/worldclock/timezone/utc). I flödet [Skapa mål](../features/destinations/create-cookie-destination.md#segments-mapping) är start- och slutdatumet som du väljer midnatt UTC när du mappar segment till målet. Samma sak gäller för alla datum i [!DNL Audience Manager].
