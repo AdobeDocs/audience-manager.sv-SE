@@ -18,9 +18,9 @@ ht-degree: 1%
 
 # Fakturering för köpare av dataflöden {#billing-for-data-feed-buyers}
 
-Inköpare av datauppgifter från Audience Marketplace går med på att rapportera alla annonsvisningar som betjänas med hjälp av egenskaper som ingår i dataflödet och som prissätts på tusen annonsvisningar ([!DNL CPM]). [!DNL CPM] ska användas den 5:e dagen i varje kalendermånad och innehåller data för föregående månad. Avgiftsbelagda abonnenter behöver inte rapportera användningen.
+Datainköpare i Audience Marketplace går med på att rapportera alla annonsvisningar som betjänas med hjälp av egenskaper som ingår i dataflödet och som prissätts till ett pris per tusen annonsvisningar ([!DNL CPM]). [!DNL CPM] ska användas den 5:e dagen i varje kalendermånad och innehåller data för föregående månad. Avgiftsbelagda abonnenter behöver inte rapportera användningen.
 
-<br> 
+<br>
 
 ## Rapportera CPM-användning {#report-cpm-usage}
 
@@ -28,27 +28,27 @@ Inköpare av datauppgifter från Audience Marketplace går med på att rapporter
 
 [!UICONTROL Audience Marketplace] Datainköparna går med på att rapportera alla annonsvisningar som levereras med hjälp av egenskaper som ingår i dataflödet och som prissätts till ett pris per tusen annonsvisningar ([!DNL CPM]). [!DNL CPM] ska användas den 5 dagen i varje kalendermånad och innehåller data för föregående månad. Avgiftsbelagda abonnenter behöver inte rapportera användningen.
 
-[!UICONTROL Audience Marketplace] har två sätt att rapportera [!DNL CPM] användning:
+[!UICONTROL Audience Marketplace] erbjuder två sätt att rapportera  [!DNL CPM] användning:
 
-* **Rapportering** på segmentnivå: det här är den rekommenderade [!DNL CPM] användningsrapporteringsmetoden. När du rapporterar [!DNL CPM] användning på segmentnivå fylls rapportavsnittet på dataflödesnivå automatiskt i med motsvarande användningsbelopp, baserat på de algoritmer som beskrivs i [Kostnadsattribuering för CPM-datafeeds](#cost-attribution).
-* **Rapportering** på dataflödesnivå: Den här metoden kräver att du rapporterar [!DNL CPM] användningen för varje datafeed individuellt, baserat på de algoritmer som beskrivs i [Kostnadsattribuering för CPM-datafeeds](#cost-attribution). Den här metoden är dock mer krävande och felbenägen än rapportering på segmentnivå.
+* **Rapportering** på segmentnivå: det här är den rekommenderade  [!DNL CPM] användningsrapporteringsmetoden. När du rapporterar [!DNL CPM]-användning på segmentnivå fylls rapportavsnittet på datautflödesnivå automatiskt i med motsvarande användningsbelopp, baserat på de algoritmer som beskrivs i [Kostnadsattribuering för CPM-datafeeds](#cost-attribution).
+* **Rapportering** på dataflödesnivå: den här metoden kräver att du rapporterar  [!DNL CPM] användningen för varje datafeed individuellt, baserat på de algoritmer som beskrivs i  [kostnadsattribuering för CPM-datafeeds](#cost-attribution). Den här metoden är dock mer krävande och felbenägen än rapportering på segmentnivå.
 
 <br> 
 
 ## Rapportera CPM-användning på segmentnivå {#segment-level-report}
 
-På fliken [!UICONTROL Segment Usage] kan du rapportera användning på segmentnivå och visa de segment som grupperats efter de mål som de är mappade till.
+På fliken [!UICONTROL Segment Usage] kan du rapportera användning på segmentnivå, samtidigt som du visar de segment som grupperats efter de mål som de är mappade till.
 
-När du har rapporterat [!DNL CPM] användning på segmentnivå tilldelas motsvarande dataflöden automatiskt rätt användning, baserat på [!UICONTROL Audience Marketplace] kostnadsattribuering för CPM-datafeeds [](#cost-attribution).
+När [!DNL CPM]-användningen på segmentnivå har rapporterats tilldelar [!UICONTROL Audience Marketplace] automatiskt motsvarande dataflöden korrekt användning, baserat på [kostnadsattribuering för CPM-datafeeds](#cost-attribution).
 
-Så här rapporterar du [!DNL CPM] användning på segmentnivå:
+Så här rapporterar du [!DNL CPM]-användning på segmentnivå:
 
 1. Gå till **[!UICONTROL Audience Marketplace > Payables]**.
-1. Klicka på **[!UICONTROL Segment Usage]** fliken.
-1. Fyll i användningen för era segment. Du kan använda [!UICONTROL Search] rutan för att filtrera segmenten om du bara behöver rapportera användningen för vissa av dem.
+1. Välj fliken **[!UICONTROL Segment Usage]**.
+1. Fyll i användningen för era segment. Du kan använda rutan [!UICONTROL Search] för att filtrera segmenten om du bara behöver rapportera användningen för vissa av dem.
 1. Klicka på **[!UICONTROL Edit Segments Usage]**.
-1. Ange [!DNL CPM] användningsmängden i [!UICONTROL Usage] kolumnen.
-1. Klicka **[!UICONTROL Save]** när du är klar och granska bekräftelsedialogrutan.
+1. Ange [!DNL CPM]-användningsbeloppet i kolumnen [!UICONTROL Usage].
+1. Klicka på **[!UICONTROL Save]** när du är klar och granska bekräftelsedialogrutan.
 
    ![confirm-segment-usage](assets/confirm-segment-usage.png)
 
@@ -62,16 +62,16 @@ Se även vår videodemonstration av hur du kan rapportera användning på segmen
 
 ## Rapportera CPM-användning på dataflödesnivå {#feed-level-report}
 
-Rapportering på dataflödesnivå är en mer tidsödande process med risk för fel, eftersom du måste beräkna [!DNL CPM] användningen individuellt för varje datafeed. Vi rekommenderar att du [rapporterar CPM-användning på segmentnivå](#segment-level-report) i stället.
+Rapportering på dataflödesnivå är en mer tidsödande process med risk för fel, eftersom du måste beräkna [!DNL CPM]-användningen individuellt för varje datafeed. Vi rekommenderar att du [rapporterar CPM-användning på segmentnivå](#segment-level-report) i stället.
 
-Så här rapporterar du [!DNL CPM] användning på segmentnivå:
+Så här rapporterar du [!DNL CPM]-användning på segmentnivå:
 
 1. Gå till **[!UICONTROL Audience Marketplace > Payables]**.
-2. Klicka på **[!UICONTROL Feed Usage]** fliken.
-3. Använd [!UICONTROL Search] rutan för att filtrera dataflödena och identifiera de som du behöver rapportera användningen för.
+2. Välj fliken **[!UICONTROL Feed Usage]**.
+3. Använd rutan [!UICONTROL Search] för att filtrera dataflödena och identifiera de som du behöver rapportera användningen för.
 4. Klicka på **[!UICONTROL Edit Feeds Usage]**.
-5. Beräkna [!DNL CPM] användningen för varje datafeed baserat på [kostnadsattribuering för CPM-dataflöden](#cost-attribution)och ange den i [!UICONTROL Usage] kolumnen.
-6. Klicka **[!UICONTROL Save]** när du är klar och granska bekräftelsedialogrutan.
+5. Beräkna [!DNL CPM]-användningen för varje datafeed baserat på [kostnadsattribuering för CPM-datafeeds](#cost-attribution) och ange den i kolumnen [!UICONTROL Usage].
+6. Klicka på **[!UICONTROL Save]** när du är klar och granska bekräftelsedialogrutan.
 
    ![bekräfta-feed-användning](assets/confirm-feed-usage.png)
 
@@ -81,16 +81,16 @@ Så här rapporterar du [!DNL CPM] användning på segmentnivå:
 
 ## Massrapportering
 
-Om du vill minska antalet fel och förluster när du rapporterar [!DNL CPM] användningen kan du använda alternativet för massrapportering för att hämta en [!DNL CSV] fil som innehåller dataflödena och datasegmenten, fylla i användningen och överföra den tillbaka till [!DNL Audience Manager]. Du kan använda massrapportering för att rapportera både feed- och segmentanvändning.
+Om du vill minska antalet fel och overheadkostnader när du rapporterar [!DNL CPM]-användning kan du använda grupprapporteringsalternativet för att hämta en [!DNL CSV]-fil som innehåller dataflödena och segmenten, fylla i användningen och överföra den tillbaka till [!DNL Audience Manager]. Du kan använda massrapportering för att rapportera både feed- och segmentanvändning.
 
-Så här uppdaterar du [!DNL CPM] satsanvändning:
+Så här uppdaterar du [!DNL CPM]-användningen i bulk:
 
 1. Gå till **[!UICONTROL Audience Marketplace > Payables]**.
-1. Välj **[!UICONTROL Feed Usage]** fliken eller **[!UICONTROL Segment Usage]** fliken, beroende på vilken typ av rapportering du vill uppdatera.
+1. Välj fliken **[!UICONTROL Feed Usage]** eller **[!UICONTROL Segment Usage]**, beroende på vilken typ av rapportering du vill uppdatera.
 1. Klicka på **[!UICONTROL Edit Feeds Usage]** eller **[!UICONTROL Edit Segments Usage]**.
-1. Klicka **[!UICONTROL download the current usage]** för att kontrollera att du använder en giltig CSV-fil.
+1. Klicka på **[!UICONTROL download the current usage]** för att kontrollera att du använder en giltig CSV-fil.
 1. Öppna filen på datorn och fyll i användningsrapporten.
-1. Klicka **[!UICONTROL Choose a CSV file]** för att överföra den uppdaterade användningsrapporten.
+1. Klicka på **[!UICONTROL Choose a CSV file]** för att överföra den uppdaterade användningsrapporten.
 
    ![usage-report-csv](assets/usage-report-csv.png)
 
@@ -102,14 +102,14 @@ Så här uppdaterar du [!DNL CPM] satsanvändning:
 
 | Felmeddelande | Beskrivning | Korrigera |
 | ------------- | -------------| -----|
-| Ogiltiga indata | [!DNL Audience Manager] upptäckte en ändring i [!DNL CSV] filschemat, t.ex. saknade kolumner eller ändringar i kolumnrubriker. | Undvik att ändra tabellstrukturen. |
-| Hittades inte | Det [!UICONTROL Segment Level Reporting]gick inte [!DNL Audience Manager] att identifiera kombinationen [!UICONTROL Segment ID] och [!UICONTROL Destination ID] . Det [!UICONTROL Feed Level Reporting]gick [!DNL Audience Manager] till exempel inte att identifiera kombinationen [!UICONTROL Data Provider Name], [!UICONTROL Feed Name]och [!UICONTROL Use Case] . | Du kan till [!UICONTROL Segment Level Reporting]exempel kontrollera giltigheten för [!UICONTROL Segment ID] och [!UICONTROL Destination ID] kombinationen. Kontrollera till [!UICONTROL Feed Level Reporting]exempel giltigheten för [!UICONTROL Data Provider Name], [!UICONTROL Feed Name]och [!UICONTROL Use Case] kombinationen. |
+| Ogiltiga indata | [!DNL Audience Manager] upptäckte en ändring i  [!DNL CSV] filschemat, t.ex. saknade kolumner eller ändringar i kolumnrubriker. | Undvik att ändra tabellstrukturen. |
+| Hittades inte | För [!UICONTROL Segment Level Reporting] kunde [!DNL Audience Manager] inte identifiera kombinationen [!UICONTROL Segment ID] och [!UICONTROL Destination ID]. För [!UICONTROL Feed Level Reporting] kunde [!DNL Audience Manager] inte identifiera kombinationen [!UICONTROL Data Provider Name], [!UICONTROL Feed Name] och [!UICONTROL Use Case]. | För [!UICONTROL Segment Level Reporting] kontrollerar du giltigheten för kombinationen [!UICONTROL Segment ID] och [!UICONTROL Destination ID]. För [!UICONTROL Feed Level Reporting] kontrollerar du giltigheten för kombinationen [!UICONTROL Data Provider Name], [!UICONTROL Feed Name] och [!UICONTROL Use Case]. |
 | Dubblettposter hittades | [!DNL Audience Manager] har identifierat dubblettposter med olika visningsvärden. | Granska rapporten och se till att du inte rapporterar olika användningsvärden för samma datafeed eller segment. |
-| Värden som inte stöds | [!DNL Audience Manager] icke-numeriska värden har identifierats i [!DNL Audience Manager] kolumnen. | Granska rapporten och se till att du bara anger numeriska värden i [!DNL Audience Manager] kolumnen. |
-| Sidhuvuden för obligatoriska fält saknas | [!DNL Audience Manager] saknade tabellrubriker har identifierats för obligatoriska fält. De obligatoriska [!UICONTROL Segment Level Reporting]fälten är: [!UICONTROL Segment ID], [!UICONTROL Destination ID]. De obligatoriska [!UICONTROL Feed Level Reporting]fälten är: [!UICONTROL Data Provider Name], [!UICONTROL Data Feed Name],  [!UICONTROL Use Case] | Granska rapporten och kontrollera att tabellrubrikerna inte har ändrats. |
+| Värden som inte stöds | [!DNL Audience Manager] icke-numeriska värden har identifierats i  [!DNL Audience Manager] kolumnen. | Granska rapporten och se till att du bara anger numeriska värden i kolumnen [!DNL Audience Manager]. |
+| Sidhuvuden för obligatoriska fält saknas | [!DNL Audience Manager] saknade tabellrubriker har identifierats för obligatoriska fält. För [!UICONTROL Segment Level Reporting] är de obligatoriska fälten: [!UICONTROL Segment ID], [!UICONTROL Destination ID]. För [!UICONTROL Feed Level Reporting] är de obligatoriska fälten: [!UICONTROL Data Provider Name], [!UICONTROL Data Feed Name], [!UICONTROL Use Case] | Granska rapporten och kontrollera att tabellrubrikerna inte har ändrats. |
 
 >[!NOTE]
->Att ta bort rader från [!DNL CSV] användningsrapporten påverkar inte den befintliga användningsrapporten. [!DNL Audience Manager] bearbetar bara de fält som ingår i rapporten.
+>Att ta bort rader från [!DNL CSV]-användningsrapporten påverkar inte den befintliga användningsrapporten. [!DNL Audience Manager] bearbetar bara de fält som ingår i rapporten.
 
 <br> 
 
@@ -126,7 +126,7 @@ Så här uppdaterar du [!DNL CPM] satsanvändning:
   <tr> 
    <td colname="col1"> <p><b>Rapportera alltid det totala antalet visningar</b> </p> </td> 
    <td colname="col2"> <p>För CPM-inställningssummor: </p>
-   <p> Rapportera det totala antalet visningar, utan decimaler. Audience Manager beräknar automatiskt CPM-värdet baserat på det totala antal som du rapporterar.</p><p>Om du behöver rapportera 1 234 567 visningar ska du rapportera exakt så. Du behöver inte dividera det totala antalet visningar med 1 000 för att beräkna CPM.</p><p>De egenskaper som används för att optimera webb- eller appinnehåll (innehållsoptimering) med verktyg som Adobe Target eller ett analysmål bidrar inte till användningssummorna för CPM-planer. Dataleverantörerna kompenseras normalt för optimering av innehåll med hjälp av rabattplaner.</p><p>Mer information finns i <a href="#cost-attribution">Kostnadsattribuering för CPM-datafeeds</a> . </p> </td>
+   <p> Rapportera det totala antalet visningar, utan decimaler. Audience Manager beräknar automatiskt CPM-värdet baserat på det totala antal som du rapporterar.</p><p>Om du behöver rapportera 1 234 567 visningar ska du rapportera exakt så. Du behöver inte dividera det totala antalet visningar med 1 000 för att beräkna CPM.</p><p>De egenskaper som används för att optimera webb- eller appinnehåll (innehållsoptimering) med verktyg som Adobe Target eller ett analysmål bidrar inte till användningssummorna för CPM-planer. Dataleverantörerna kompenseras normalt för optimering av innehåll med hjälp av rabattplaner.</p><p>Mer information finns i <a href="#cost-attribution">Kostnadsattribuering för CPM-datafeeds</a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>Använd månadsvis rapportering</b> </p> </td> 
@@ -139,23 +139,23 @@ Så här uppdaterar du [!DNL CPM] satsanvändning:
 
 ## Kostnadsattribuering för CPM-datafeeds {#cost-attribution}
 
-I [!UICONTROL Audience Marketplace] det måste ni rapportera själv hur mycket det blir varje månad, för vart och ett av era segment. Vi rekommenderar att du rapporterar [!DNL CPM] användning på segmentnivå så att kostnadsattribuering sker automatiskt.
+I [!UICONTROL Audience Marketplace] måste du själv rapportera visningsbelopp varje månad för varje segment. Vi rekommenderar att du rapporterar [!DNL CPM]-användning på segmentnivå så att kostnadsattribuering sker automatiskt.
 
 <!-- marketplace_cpm_billing.xml -->
 
 ### Faktureringssammanfattning {#billing-summary}
 
-Du måste skicka in visningsbelopp för [!DNL CPM] dataflöden mellan den 1 och 5 i varje kalendermånad. Om du vill göra det på rätt sätt rekommenderar vi att du [rapporterar CPM-användning på segmentnivå](#segment-level-report).
+Du måste skicka in [!DNL CPM] datautvisningsbelopp mellan den 1 och 5 i varje kalendermånad. Om du vill göra det på rätt sätt rekommenderar vi att du [rapporterar CPM-användning på segmentnivå](#segment-level-report).
 
 >[!TIP]
->När du rapporterar [!DNL CPM] användning på segmentnivå fylls rapportavsnittet automatiskt i med motsvarande användningsbelopp.
+>När du rapporterar [!DNL CPM]-användning på segmentnivå fylls rapporteringsavsnittet på dataflödesnivå automatiskt i med motsvarande användningsbelopp.
 
-Om du behöver [!UICONTROL Report CPM Usage at Data Feed Level]det måste du sammanställa alla avtryck som levererats för varje flöde under den föregående kalendermånaden separat och rapportera dem enligt den faktureringsallokering som beskrivs i den här artikeln.
+Om du behöver [!UICONTROL Report CPM Usage at Data Feed Level] måste du individuellt kompilera alla avtryck som levererats för varje flöde under den föregående kalendermånaden och rapportera dem enligt den faktureringsallokering som beskrivs i den här artikeln.
 
-När du har rapporterat [!DNL CPM] numret för föregående kalendermånad [!DNL Adobe] gör du följande:
+När du har rapporterat [!DNL CPM]-numret för föregående kalendermånad gör [!DNL Adobe] följande:
 
-* Skapa en faktura och fakturera dig baserat på [!DNL CPM] taxan för varje abonnerad datafeed.
-* Betala avgifter för leverantörer (säljare) baserat på din rapporterade [!DNL CPM] användning.
+* Skapa en faktura och fakturering baserat på [!DNL CPM]-priset för varje prenumererad datafeed.
+* Betala dataleverantörernas (säljarnas) avgifter baserat på din rapporterade [!DNL CPM]-användning.
 
 >[!IMPORTANT]
 >
@@ -163,11 +163,11 @@ När du har rapporterat [!DNL CPM] numret för föregående kalendermånad [!DNL
 
 <br> 
 
-## Tilldela Impressions på matningsnivå baserat på regler för kvalificering av trait {#assign-impressions}
+## Tilldela Impressions på matningsnivå baserat på regler för behörighet {#assign-impressions}
 
-Med [!UICONTROL Activation] användningsexemplet kan du använda egenskaper i motsvarande datafeed för att skapa segment i [Segment Builder](../../../features/segments/segment-builder.md) och mappa dessa segment till ett mål. De booleska operatorerna [!UICONTROL AND]och [!UICONTROL OR][!UICONTROL NOT] gör att du kan ange villkoren för egenskaperna och segmenten.
+Med [!UICONTROL Activation]-användningsexemplet kan du använda egenskaper i motsvarande datafeed för att skapa segment i [Segment Builder](../../../features/segments/segment-builder.md) och mappa dessa segment till ett mål. Med de booleska operatorerna [!UICONTROL AND], [!UICONTROL OR] och [!UICONTROL NOT] kan du ange villkoren för egenskaper och segmentkvalificering.
 
-När du [rapporterar CPM-användning på dataflödesnivå](#feed-level-report)måste du tilldela visningar proportionellt för varje datafeed, enligt de [!DNL Boolean] operatorer som används i reglerna för behörighet. I följande tabell visas hur du allokerar avbildningar efter boolesk regel eller trait-typ.
+När du [Rapporterar CPM-användning på datamarkeringsnivå](#feed-level-report), måste du allokera visningar proportionellt för varje datafeed, enligt de [!DNL Boolean]-operatorer som används i reglerna för behörighet. I följande tabell visas hur du allokerar avbildningar efter boolesk regel eller trait-typ.
 
 >[!TIP]
 >[Rapportera CPM-användning på segmentnivå](#segment-level-report) om du vill att dataflödesrapporteringen ska utföras automatiskt av Audience Manager.
@@ -182,7 +182,7 @@ När du [rapporterar CPM-användning på dataflödesnivå](#feed-level-report)m�
  <tbody> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> OCH</span> </p> </td> 
-   <td colname="col2"> <p>Använd 100 % av det levererade intrycket på alla leverantörsegenskaper i ett regelbaserat segment som använder ett booleskt <span class="wintitle"> AND</span> -villkor. </p> </td> 
+   <td colname="col2"> <p>Använd 100 % av det levererade intrycket på alla leverantörsegenskaper i ett regelbaserat segment som använder ett booleskt <span class="wintitle"> AND</span>-villkor. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> ELLER</span> </p> </td> 
@@ -190,7 +190,7 @@ När du [rapporterar CPM-användning på dataflödesnivå](#feed-level-report)m�
   </tr>
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> NOT</span> </p> </td> 
-   <td colname="col2"> <p>Använd 100 % av det levererade intrycket på alla leverantörsegenskaper i ett regelbaserat segment som använder ett booleskt <span class="wintitle"> NOT</span> -villkor. </p> </td> 
+   <td colname="col2"> <p>Använd 100 % av det levererade intrycket på alla leverantörsegenskaper i ett regelbaserat segment som använder ett booleskt <span class="wintitle"> NOT</span>-villkor. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Algoritmiska segment </p> </td> 
@@ -203,10 +203,10 @@ När du [rapporterar CPM-användning på dataflödesnivå](#feed-level-report)m�
 
 ## Faktureringsexempel {#billing-examples}
 
-Exemplen nedan är avsedda att illustrera hur [!DNL CPM] användarallokering görs på dataflödesnivå.
+Exemplen nedan är avsedda att illustrera hur [!DNL CPM] användningsallokering görs på dataflödesnivå.
 
 >[!IMPORTANT]
->Vi rekommenderar att du [rapporterar CPM-användning på segmentnivå](#segment-level-report) i stället, så att processen utförs automatiskt.
+>Vi rekommenderar att du [rapporterar CPM-användning på segmentnivå](#segment-level-report) i stället, om du vill att den här processen ska utföras automatiskt.
 
 Låt oss titta på följande scenario:
 
@@ -216,21 +216,21 @@ Låt oss titta på följande scenario:
 
 ### Fall 1: Segment med och kvalificeringsregler
 
-Det här segmentet innehåller tre egenskaper från separata dataleverantörer. Eftersom kvalificeringen av segment baseras på ett [!UICONTROL AND] villkor måste besökarna inse egenskaperna hos alla tre flödena för att kvalificera sig för segmentet.
+Det här segmentet innehåller tre egenskaper från separata dataleverantörer. Eftersom segmentkvalificeringen baseras på ett [!UICONTROL AND]-villkor måste besökarna inse egenskaperna hos alla tre flödena för att kvalificera sig för segmentet.
 
 ![](assets/billing-segment-and.png)
 
-Med ett [!UICONTROL AND] villkor måste du tilldela alla tre dataleverantörerna 100 % av de visningar som tas emot under månaden. I det här [!UICONTROL Audience Marketplace > Payables] avsnittet krediterar du varje leverantör med 1 000 000 exponeringar.
+Med ett [!UICONTROL AND]-villkor måste du tilldela alla tre dataleverantörerna 100 % av de visningar som tas emot under månaden. I [!UICONTROL Audience Marketplace > Payables]-avsnittet krediterar du varje leverantör med 1 000 000 visningar.
 
-Det här exemplet gäller segment som använder [!DNL Boolean] [!UICONTROL NOT] operatorer eller för segment som innehåller algoritmiska egenskaper.
+Det här exemplet gäller segment som använder [!DNL Boolean] [!UICONTROL NOT]-operatorer eller för segment som innehåller algoritmiska egenskaper.
 
 <br> 
 
 ### Fall 2: Segment med eller kvalificeringsregler
 
-Det här segmentet innehåller tre egenskaper från separata dataleverantörer. Eftersom kvalificeringen av segment baseras på ett [!UICONTROL OR] villkor måste besökarna uppnå minst en av de tre egenskaperna för att kvalificera sig för segmentet.
+Det här segmentet innehåller tre egenskaper från separata dataleverantörer. Eftersom segmentkvalificeringen baseras på ett [!UICONTROL OR]-villkor måste besökarna uppnå minst en av de tre egenskaperna för att kvalificera sig för segmentet.
 
-Vi kan inte avgöra vilken egenskap som är ansvarig för ett intryck eftersom kvalificeringen baseras på ett [!UICONTROL OR] villkor. I det här avsnittet krediterar du därför varje leverantör med en viktad fördelning av de totala avdragen baserat på den totala intäktspopulationen. [!UICONTROL Audience Marketplace > Payables]
+Vi kan inte avgöra vilken egenskap som är ansvarig för ett intryck eftersom kvalificeringen baseras på ett [!UICONTROL OR]-villkor. I [!UICONTROL Audience Marketplace > Payables]-avsnittet krediterar du därför varje leverantör med en viktad allokering av det totala antalet avtryck, baserat på antalet egenskaper.
 
 ![faktureringssegment-eller](assets/billing-segment-or.png)
 
@@ -247,7 +247,7 @@ I tabellen nedan innehåller segment X två egenskaper, T1 och T2, med segmentre
 * T1 är en egenskap från datafeed A,
 * T2 är en algoritmisk egenskap som bygger på egenskaper från datafeed A och datafeed B från tredje part.
 
-Segmentet mappas till en destination och 1 000 000 visningar anges för det här segmentet under en månad med hjälp av rapportering [på](#segment-level-report)segmentnivå.
+Segmentet mappas till ett mål och 1 000 000 visningar anges för det här segmentet på en månad med [Segmentnivårapportering](#segment-level-report).
 
 Av dessa 1 000 000 visningar:
 
