@@ -17,21 +17,21 @@ ht-degree: 11%
 
 # Kontrollpanel för regler för profilsammanslagning {#profile-merge-rules-dashboard}
 
-Skapa och hantera alla kopplingsregler från kontrollpanelen. You can create a maximum of 4 [!UICONTROL Profile Merge Rules].
+Skapa och hantera alla kopplingsregler från kontrollpanelen. Du kan skapa maximalt 4 [!UICONTROL Profile Merge Rules].
 
 Den fjärde regeln för profilsammanslagning ([!UICONTROL All Cross-Device Profiles]) är bara tillgänglig för kunder som köpt tillägget [!UICONTROL People-Based Destinations].
 
-Kontrollpanelen har en [!UICONTROL Profile Merge Rules] enhetlig arbetsyta som gör att du kan hantera dina foton [!UICONTROL Profile Merge Rules]. Kontrollpanelen finns på **[!UICONTROL Audience Data]** > **[!UICONTROL Profile Merge Rules]**. Kontrollpanelen för regler kan se ut ungefär som i exemplet nedan.
+Kontrollpanelen [!UICONTROL Profile Merge Rules] erbjuder en enhetlig arbetsyta där du kan hantera din [!UICONTROL Profile Merge Rules]. Kontrollpanelen finns på **[!UICONTROL Audience Data]** > **[!UICONTROL Profile Merge Rules]**. Kontrollpanelen för regler kan se ut ungefär som i exemplet nedan.
 
 ![](assets/profile-dashboard.png)
 
-När du arbetar med [!UICONTROL Profile Merge Rules]kan du:
+När du arbetar med [!UICONTROL Profile Merge Rules] kan du:
 
-* Skapa maximalt fyra [!UICONTROL Profile Merge Rules] från datakällor på olika enheter. Se [Skapa en datakälla](merge-rules-start.md#create-data-source)för olika enheter.
-* Ange en standardkopplingsregel. [I Segment Builder](../segments/segment-builder.md) används automatiskt standardregeln för alla nya segment som du skapar.
-* Använd [dataexportkontroller](../data-export-controls.md) på en sammanfogningsregel. [!UICONTROL Data Export Controls] hindra dig från att skicka data till destinationer när detta skulle strida mot datasekretess eller användaravtal.
+* Skapa maximalt 4 [!UICONTROL Profile Merge Rules] från datakällor mellan olika enheter. Se [Skapa en datakälla för olika enheter](merge-rules-start.md#create-data-source).
+* Ange en standardkopplingsregel. [I Segment ](../segments/segment-builder.md) Builder används automatiskt standardregeln för alla nya segment som du skapar.
+* Använd [Dataexportkontroller](../data-export-controls.md) på en sammanfogningsregel. [!UICONTROL Data Export Controls] hindra dig från att skicka data till destinationer när detta skulle strida mot datasekretess eller användaravtal.
 * Spåra det genomsnittliga antalet enheter för varje användare.
-* Arbeta med grundläggande kontroller för att skapa, redigera och ta bort regler. Endast administratörer kan hantera regler, men andra användare kan visa och tillämpa dem på segment. Se Alternativ för [profilsammanfogningsregel definierade](merge-rule-definitions.md) och [Använd fall för sammanfogningsregler](merge-rule-targeting-options.md).
+* Arbeta med grundläggande kontroller för att skapa, redigera och ta bort regler. Endast administratörer kan hantera regler, men andra användare kan visa och tillämpa dem på segment. Se [Alternativ för profilkopplingsregel definierade](merge-rule-definitions.md) och [Använd fall för kopplingsregler](merge-rule-targeting-options.md).
 
 >[!MORELIKETHIS]
 >
