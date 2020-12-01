@@ -260,18 +260,18 @@ Ja. Segmentets totala populationsmått omfattar andra enheter som har kvalificer
 
 Nej.
 
-**Varför ser jag ingen segmentpopulation för segmentexport till Adobe Campaign efter den 16 mars 2020?**
+**Varför ser jag en nollsegmentspopulation för segmentexport till Adobe Campaign efter den 16 mars 2020?**
 
 I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profilsammanslagning för att förbättra exaktheten hos gruppfiler som genererats med hjälp av enhets-ID:n. Dessa förbättringar respekteras strikt i din Audience Manager-instans från och med måndagen den 16 mars 2020. Därför kommer segment som mappas till ett mål med hjälp av enhets-ID att sluta producera exporter i vissa konfigurationer av profilkopplingsregler.
 
-Kontrollera att du uppfyller följande krav för att se till att Audience Manager-instansen och destinationerna är korrekt integrerade med ID:n för olika enheter, som Adobe Campaign:
+Kontrollera att du uppfyller följande krav för att se till att Audience Manager-instansen och destinationerna är korrekt integrerade med olika enhets-ID, t.ex. Adobe Campaign:
 
-1. Granska den profilkopplingsregel som används av de segment som är mappade till Adobe Campaign-deklarerade ID-mål. Regeln för profilsammanfogning måste använda [!UICONTROL Last Authenticated Profile] alternativet så att alla autentiserade profiler kan inkluderas i exporten. Om du använder ett annat alternativ för profilkopplingsregeln växlar du till [!UICONTROL Last Authenticated Profile].
-2. Markera datakällan för deklarerat ID i Adobe Campaign i inställningarna för profilkopplingsregel.
+1. Granska den profilkopplingsregel som används av de segment som är mappade till ditt Adobe Campaign-deklarerade ID-mål. Regeln för profilsammanslagning måste använda alternativet [!UICONTROL Last Authenticated Profile], så alla autentiserade profiler kan inkluderas i exporten. Om din profilkopplingsregel använder ett annat alternativ växlar du till [!UICONTROL Last Authenticated Profile].
+2. Markera datakällan för det deklarerade Adobe Campaign-ID:t i inställningarna för profilkopplingsregeln.
 
 >[!NOTE]
 >
-> Vi har ökat gränsen för profilsammanfogningsregel med 1 för kunder som befinner sig i den här situationen, så att du kan skapa en dedikerad profilsammanfogningsregel för de segment som är mappade till det deklarerade ID-målet för Adobe Campaign, utan att ändra reglerna för profilsammanfogning för andra användningsfall.
+> Vi har ökat gränsen för profilsammanfogningsregel med 1 för kunder som befinner sig i den här situationen, så att du kan skapa en dedikerad profilsammanfogningsregel för de segment som är mappade till Adobe Campaign deklarerade ID-mål, utan att ändra reglerna för profilsammanfogning för andra användningsfall.
 
 >[!MORELIKETHIS]
 >
