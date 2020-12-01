@@ -27,19 +27,19 @@ c_tb_boolean.xml
 
 **Booleska uttryck**
 
-Boolesk logik är en förgrening av algebra som använder några grundläggande uttryck (eller operatorer) för att avgöra om en -programsats är true eller false. De vanligaste operatorerna är [!UICONTROL AND], [!UICONTROL OR]och [!UICONTROL NOT]. Kombinationer av dessa uttryck hjälper er att skapa regler för fokuserade egenskaper eller segmentkvalifikationer som är unika för era datakrav. Följande bild visar hur grundläggande booleska uttryck fungerar.
+Boolesk logik är en förgrening av algebra som använder några grundläggande uttryck (eller operatorer) för att avgöra om en -programsats är true eller false. De vanligaste operatorerna är [!UICONTROL AND], [!UICONTROL OR] och [!UICONTROL NOT]. Kombinationer av dessa uttryck hjälper er att skapa regler för fokuserade egenskaper eller segmentkvalifikationer som är unika för era datakrav. Följande bild visar hur grundläggande booleska uttryck fungerar.
 
-<br> 
+<br>
 
 ![](assets/BooleanOverview_small.png)
 
 >[!NOTE]
 >
->Operatorn [!UICONTROL NOT] använder ett underförstått &quot;och&quot;-villkor och skrivs ibland som [!UICONTROL AND NOT].
+>Operatorn [!UICONTROL NOT] använder ett implicit &quot;and&quot;-villkor och skrivs ibland som [!UICONTROL AND NOT].
 
 **Så här använder du booleska uttryck i Trait och Segment Builder**
 
-Du bygger upp regler för egenskaper och segmentkvalifikationer med booleska uttryck. Tabellen nedan beskriver allmänna bästa metoder för att skapa kvalificeringskriterier med [!UICONTROL AND], [!UICONTROL OR]och [!UICONTROL NOT].
+Du bygger upp regler för egenskaper och segmentkvalifikationer med booleska uttryck. Tabellen nedan beskriver allmän bästa praxis för att skapa kvalificeringskriterier med [!UICONTROL AND], [!UICONTROL OR] och [!UICONTROL NOT].
 
 <table id="table_C762872C98F54C4A86A2F1C840A86657"> 
  <thead> 
@@ -53,7 +53,7 @@ Du bygger upp regler för egenskaper och segmentkvalifikationer med booleska utt
   <tr> 
    <td colname="col1"> <p><b><span class="wintitle"> OCH</span></b> </p> </td> 
    <td colname="col2"> <p>Små, fokuserade krav på mottagningskvalifikation. </p> </td> 
-   <td colname="col3"> <p>Användarna <i>måste</i> tillhöra alla angivna egenskaper eller segment. </p> </td> 
+   <td colname="col3"> <p>Användare <i>måste</i> tillhöra alla angivna egenskaper eller segment. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="wintitle"> ELLER</span></b> </p> </td> 
@@ -63,22 +63,22 @@ Du bygger upp regler för egenskaper och segmentkvalifikationer med booleska utt
   <tr> 
    <td colname="col1"> <p><b><span class="wintitle"> NOT</span></b> </p> </td> 
    <td colname="col2"> <p>Små, fokuserade krav på mottagningskvalifikation. </p> <p>Användbar när det finns flera villkor som gör det svårt eller ineffektivt att definiera krav på målgruppskvalifikation. Ibland är det enklare att validera mot krav som exkluderar i stället för inkluderar. </p> </td> 
-   <td colname="col3"> <p>Användare <i>får inte</i> tillhöra en uteslutits egenskap eller ett uteslutit segment. </p> </td> 
+   <td colname="col3"> <p>Användare <i>får inte</i> tillhöra en utesluten egenskap eller ett utelämnat segment. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**[!UICONTROL AND]Exempel på användningsfall **
+**[!UICONTROL AND]Exempel på användningsfall**
 
-Operatorn [!UICONTROL AND] är användbar när du enkelt har angett kraven för trait-medlemskap. Anta till exempel att du måste skapa en publik av&quot;dyra kameramarkare&quot;. Med en pixelmodell måste du skapa och placera pixlar för kameror och ett numeriskt prisvärde på sidan. Med sina egenskaper kan du däremot använda booleska operatorer för att hantera båda villkoren ( [!UICONTROL AND] kamerapris). Resultatet är effektiv datainsamling med färre HTTP-anrop, vilket i sin tur hjälper till att bevara användarupplevelsen på webbplatsen.
+Operatorn [!UICONTROL AND] är användbar när du enkelt har uppräknat kraven för trait-medlemskap. Anta till exempel att du måste skapa en publik av&quot;dyra kameramarkare&quot;. Med en pixelmodell måste du skapa och placera pixlar för kameror och ett numeriskt prisvärde på sidan. Med egenskaper kan du däremot använda booleska operatorer för att hantera båda villkoren (kameror [!UICONTROL AND] pris). Resultatet är effektiv datainsamling med färre HTTP-anrop, vilket i sin tur hjälper till att bevara användarupplevelsen på webbplatsen.
 
-**[!UICONTROL OR]Exempel på användningsfall **
+**[!UICONTROL OR]Exempel på användningsfall**
 
-Operatorn [!UICONTROL OR] är användbar när du vill skapa signaler med breda krav på mottagningskvalifikationer. Om du har flera krav på egenskaper eller segment utvärderas [!UICONTROL OR] operatorn till true när webbplatsbesökarna uppvisar *någon* av dessa egenskaper. [!UICONTROL OR] kan vara mest användbart när du snabbt vill skapa en bred publik med kvalificerade webbplatsbesökare.
+Operatorn [!UICONTROL OR] är användbar när du vill skapa signaler med breda krav på målgruppskvalifikation. Om du har flera krav på egenskaper eller segment utvärderas [!UICONTROL OR]-operatorn till true när webbplatsbesökarna visar *någon* av dessa egenskaper. [!UICONTROL OR] kan vara mest användbart när du snabbt vill skapa en bred publik med kvalificerade webbplatsbesökare.
 
-**[!UICONTROL AND NOT]Exempel på användningsfall **
+**[!UICONTROL AND NOT]Exempel på användningsfall**
 
-Operatorn [!UICONTROL AND NOT] är användbar när det är enklare att definiera en målgrupp genom *uteslutning* i stället för *inkludering*. Anta till exempel att du har en försäljning och vill segmentera besökare i kunder som bara tittar på fullprisartiklar. I stället för att skapa en lista med signaler för alla kvalificerade fullpris- eller försäljningspriser kan det vara lättare att kvalificera besökare om de *inte* har sett någon försäljningsprisartikel. Detta är administrativt effektivt eftersom du vanligtvis har färre försäljningspriser jämfört med de som erbjuds till fullt pris. Med en boolesk [!UICONTROL NOT]får besökarna inte ** visa försäljningssignalen för att kvalificera sig för fullprismedlemskap. Däremot [!UICONTROL AND NOT] är det motsatsen till [!UICONTROL AND] användningsfallet, som visade hur målgruppsmedlemskapet bestäms av inkludering (dvs. besökaren kvalificerades utifrån två uttryckligen angivna signaler).
+Operatorn [!UICONTROL AND NOT] är användbar när det är enklare att definiera en målgrupp med *exclude* i stället för *include*. Anta till exempel att du har en försäljning och vill segmentera besökare i kunder som bara tittar på fullprisartiklar. I stället för att skapa en lista med signaler för alla kvalificerade fullpris- eller försäljningspriser kan det vara lättare att kvalificera besökare om de har *inte* sett ett försäljningsprisobjekt. Detta är administrativt effektivt eftersom du vanligtvis har färre försäljningspriser jämfört med de som erbjuds till fullt pris. Med ett booleskt [!UICONTROL NOT]-tecken får besökare *inte* visa försäljningssignalen för att vara berättigade till fullprismedlemskap för målgruppen. Däremot är [!UICONTROL AND NOT] motsatsen till [!UICONTROL AND]-användningsexemplet, som visade hur målgruppsmedlemskapet bestäms av inkludering (dvs. besökaren kvalificerades utifrån två explicit angivna signaler).
 
 >[!MORELIKETHIS]
 >
