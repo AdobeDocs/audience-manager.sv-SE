@@ -1,6 +1,6 @@
 ---
-description: Rekommendationer och användningsexempel för återannonsering av segment och anpassade segmentkvalifikationer med enhetsdiagrammet Profile Link.
-seo-description: Rekommendationer och användningsexempel för återannonsering av segment och anpassade segmentkvalifikationer med enhetsdiagrammet Profile Link.
+description: Recommendations och användningsexempel för återmarknadsföring av segment och anpassade segmentkvalifikationer med enhetsdiagrammet Profile Link.
+seo-description: Recommendations och användningsexempel för återmarknadsföring av segment och anpassade segmentkvalifikationer med enhetsdiagrammet Profile Link.
 seo-title: Användningsexempel för enhetsdiagram för profillänk
 solution: Audience Manager
 title: Användningsexempel för enhetsdiagram för profillänk
@@ -17,33 +17,33 @@ ht-degree: 9%
 
 # Användningsexempel för enhetsdiagram för profillänk {#profile-link-device-graph-use-cases}
 
-Rekommendationer och användningsexempel för återannonsering av segment och personaliserade segmentkvalifikationer med [!UICONTROL Profile Link Device Graph].
+Recommendations och användningsexempel för återmarknadsföring av segment och anpassade segmentkvalifikationer med [!UICONTROL Profile Link Device Graph].
 
-## Rekommendationer {#recommendations}
+## Recommendations {#recommendations}
 
-Ta en titt på [!UICONTROL Profile Link] enhetsgrafen för kampanjer som:
+Ta en titt på enhetsdiagrammet [!UICONTROL Profile Link] för kampanjer som:
 
-* Ha en hög autentiseringsnivå över alla digitala resurser. Använd ett [externt diagramalternativ](merge-rule-definitions.md#device-options) om du har ett litet antal autentiserade användare.
-* Kräv korrekt målinriktning av kända målgrupper. Den [!UICONTROL Profile Link Device Graph] byggs med autentiserade data från första part.
-* Target kända målgrupper i autentiserade och oautentiserade lägen i realtid.
+* Ha en hög autentiseringsnivå över alla digitala resurser. Använd ett [alternativ för externt enhetsdiagram](merge-rule-definitions.md#device-options) om du har ett litet antal autentiserade användare.
+* Kräv korrekt målinriktning av kända målgrupper. [!UICONTROL Profile Link Device Graph] byggs med autentiserade data från första part.
+* Rikta in er till kända målgrupper i autentiserade och oautentiserade lägen i realtid.
 
 ![](assets/merge-rule-triangle2.png)
 
-## Målinriktning mellan olika enheter {#cross-device-personalization}
+## Målinriktning mellan enheter {#cross-device-personalization}
 
-Låt oss säga att John äger tre enheter som han regelbundet använder för att söka efter semestererbjudanden: hans bärbara dator ([!DNL Device 1]), hans smartphone ([!DNL Device 2]) och hans surfplatta ([!DNL Device 3]). John använder dock sina enheter för att söka efter olika objekt i paketerbjudandena:
+Låt oss säga att John äger tre enheter som han regelbundet använder för att söka efter semestererbjudanden: den här bärbara datorn ([!DNL Device 1]), hans smarttelefon ([!DNL Device 2]) och hans surfplatta ([!DNL Device 3]). John använder dock sina enheter för att söka efter olika objekt i paketerbjudandena:
 
 * Han använder sin bärbara dator för att söka efter flyg,
 * Han använder sin smarttelefon för att söka efter hotell,
 * Han använder sin surfplatta för att söka efter guidade turer.
 
-Även om John inte är autentiserad på alla tre av de enheter som nämns ovan, genom att använda **[!UICONTROL Last Authenticated Profiles]** +- **[!UICONTROL Profile Link Device Graph]** regeln, kan en semesterpaketleverantör koppla dessa enheter till Johns autentiserade profil, under förutsättning att han var den sista personen att autentisera på alla tre enheterna.
+Även om John inte autentiseras på alla tre av de enheter som nämns ovan kan en semesterpaketleverantör associera dessa enheter med Johns autentiserade profil genom att använda regeln **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]**, förutsatt att han var den sista personen som autentiserades på alla tre enheterna.
 
 ![last-device-graph](assets/last-device-graph.png)
 
-Eftersom Audience Manager kvalificerar alla enhetsprofiler som ingår i profilsammanfogningen för ett segment segmenteras alla tre enhetsprofilerna. Med [!UICONTROL Profile Link Device Graph] den kan Audience Manager titta på beteendet på alla tre enheter och kvalificera alla enheter för ett segment som ingen enskild enhetsprofil kvalificerar sig för.
+Eftersom Audience Manager kvalificerar alla enhetsprofiler som ingår i profilsammanfogningen för ett segment segmenteras alla tre enhetsprofilerna. Med [!UICONTROL Profile Link Device Graph] kan Audience Manager titta på beteendet på alla tre enheterna och kvalificera alla enheter för ett segment som ingen enskild enhetsprofil kvalificerar sig för.
 
-Detta [!UICONTROL Profile Merge Rule] gör att marknadsförarna kan leverera en enhetlig upplevelse till alla enheter som ägs av en person, baserat på användaraktiviteten i stället för den enskilda enhetsaktiviteten.
+Med denna [!UICONTROL Profile Merge Rule] kan marknadsförare leverera en enhetlig upplevelse till alla enheter som ägs av en person, baserat på användaraktiviteten i stället för den enskilda enhetsaktiviteten.
 
 ![personalisering på olika enheter](assets/cross-device-personalization.png)
 
