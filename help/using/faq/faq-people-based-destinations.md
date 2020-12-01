@@ -113,6 +113,6 @@ Ni kan använda Audience Managers [!DNL Facebook]-integrering [!DNL WCA] via fun
 
 Dessa två integreringar kompletterar varandra och ni kan använda båda för att få bättre målgruppstäckning. Som exempel kan [!DNL WCA] användas för prospektering när ett företag söker efter webbplatsbesökare som inte har registrerat ett konto, medan [!DNL People-Based Destinations] kan hjälpa er att rikta er till befintliga kunder som har angett sin e-postadress men kanske inte besökt webbplatsen.
 
-**Har integreringen med[!DNL People-Based Destinations][!DNL Facebook]stöd för att utesluta användare från en viss målgrupp när de inte längre är kvalificerade för det?**
+**Är  [!DNL People-Based Destinations] integreringen med  [!DNL Facebook] support ett sätt att hindra användare från att nå en viss målgrupp när de inte längre är kvalificerade för det?**
 
-Ja, integreringen har stöd för att ta bort användare från [!DNL Facebook] målgrupper när de inte längre är kvalificerade för dem.
+Ja, integreringen har stöd för att ta bort användare från [!DNL Facebook]-målgrupper när de inte längre är kvalificerade för dem.
