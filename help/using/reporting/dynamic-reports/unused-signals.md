@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Rapport om oanvända signaler{#unused-signals-report}
 
-Den här rapporten returnerar ett frekvensantal av all oanvänd information som samlats in i ditt lager och skickats till Audience Manager. Du öppnar den här rapporten genom att gå till **Analytics > Målgruppsrapporter > Andra rapporter > Oanvända signaler**.
+Den här rapporten returnerar ett frekvensantal av all oanvänd information som samlats in i ditt lager och skickats till Audience Manager. Navigera till **Analytics > Audience Reports > Other Reports > Unused Signals** för att komma åt den här rapporten.
 
 >[!NOTE]
 >
@@ -27,9 +27,9 @@ Den här rapporten returnerar ett frekvensantal av all oanvänd information som 
 
 ## Översikt
 
-En signal är information från din webbplats som skickas in [!DNL Audience Manager] i form av [nyckelvärdepar](../../reference/key-value-pairs-explained.md) (t.ex. `color=blue, price>100, gender=female`).
+En signal är information från din webbplats som skickas till [!DNL Audience Manager] i form av [nyckelvärdepar](../../reference/key-value-pairs-explained.md) (t.ex. `color=blue, price>100, gender=female`).
 
-Oanvända signaler består av data som du samlar in men som inte har mappats till ett drag. Rapporten visar data i en tabell utifrån datum, nyckel, värde och frekvens. [!UICONTROL Unused Signals] Alla omappade signaler som skickas in till [!DNL Audience Manager] minst 100 gånger per dag kvalificerar sig för [!UICONTROL Unused Signals] rapporten.
+Oanvända signaler består av data som du samlar in men som inte har mappats till ett drag. Rapporten [!UICONTROL Unused Signals] visar data i en tabell utifrån datum, nyckel, värde och frekvens. Alla omappade signaler som skickas till [!DNL Audience Manager] minst 100 gånger per dag kvalificerar sig för [!UICONTROL Unused Signals]-rapporten.
 
 Läs den här rapporten för att identifiera överblivna signaler som kan mappas till nya eller befintliga egenskaper.
 
@@ -57,14 +57,14 @@ Läs den här rapporten för att identifiera överblivna signaler som kan mappas
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Sök efter omappade värden</b> </p> </td> 
-   <td colname="col2"> <p>Granska rapporten för nummer 1. Numret 1 i en <span class="wintitle"> rapport om oanvända signaler</span> representerar ett null-värde. Det här är inte nödvändigtvis dåligt. Det betyder helt enkelt att en viss nyckel inte har någon associerad värdemappning. När du ser många 1-värden för en viktig variabel bör du kontrollera med webbplatsteamet att alla sidor är rätt taggade. </p> </td> 
+   <td colname="col2"> <p>Granska rapporten för nummer 1. Numret 1 i en <span class="wintitle">-rapport om oanvända signaler</span> representerar ett null-värde. Det här är inte nödvändigtvis dåligt. Det betyder helt enkelt att en viss nyckel inte har någon associerad värdemappning. När du ser många 1-värden för en viktig variabel bör du kontrollera med webbplatsteamet att alla sidor är rätt taggade. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Bästa praxis
 
-Kör och kontrollera [!UICONTROL Unused Signals] rapporten:
+Kör och kontrollera [!UICONTROL Unused Signals]-rapporten:
 
 * När du har skapat ett spår eller uppdaterat trait-regler. Detta bidrar till att säkerställa att era egenskaper och regler är korrekt konfigurerade. Resultat nummer 1 visar att ett nytt spår kanske inte är korrekt konfigurerat.
 * Varje vecka eller månad. Med schemalagda granskningar kan du säkerställa att alla kundanpassade mappningar är aktuella.
@@ -75,9 +75,9 @@ Kör och kontrollera [!UICONTROL Unused Signals] rapporten:
 
 * T(v=1 [!UICONTROL AND NOT] (a=23))
 * T(v=1 [!UICONTROL AND] (a)=23))
-* Båda exemplen visar ett trait som innehåller två nyckelvärdepar v och a. Det första uttrycket översätts till: trait innehåller nyckel v med värdet 1 [!UICONTROL AND NOT] för tangenten a med värdet 23. Det andra uttrycket innehåller nyckel v med värdet 1 [!UICONTROL AND] för tangenten a med värdet [!UICONTROL NOT EQUAL] 23.
-* Med tanke på de två olika uttrycken ovan kan vi säga att du söker i [!UICONTROL Unused Signals Report] efter värden som skickas på nyckel a med ett annat värde än 23, så får du bara resultat i det första fallet eftersom värden för nyckel inte skickades på ALLA. I det andra fallet skickades värden som inte är 23 så att nyckel a inte används.
+* Båda exemplen visar ett trait som innehåller två nyckelvärdepar v och a. Det första uttrycket översätts till: trait innehåller nyckel v med värdet 1 [!UICONTROL AND NOT] tangenten a med värdet 23. Det andra uttrycket innehåller nyckel v med värdet 1 [!UICONTROL AND] tangenten a med värdet [!UICONTROL NOT EQUAL] 23.
+* Med tanke på de två olika uttrycken ovan kan vi säga att du i [!UICONTROL Unused Signals Report] söker efter de värden som skickas på nyckel a med ett annat värde än 23, så får du bara resultat i det första fallet eftersom värden för nyckel inte skickades till AT ALL. I det andra fallet skickades värden som inte är 23 så att nyckel a inte används.
 
 ## Skapa massfack
 
-Kontakta din representant för Partner Solutions om du behöver skapa många egenskaper baserat på data från [!UICONTROL Unused Signals] rapporten.
+Kontakta din representant för Partner Solutions om du behöver skapa många egenskaper baserat på data från [!UICONTROL Unused Signals]-rapporten.
