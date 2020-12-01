@@ -23,7 +23,7 @@ Beskriver obligatoriska fält, syntax och konventioner som används för att nam
 
 >[!NOTE]
 >
->Formatelement (`monospaced text`, *kursiv*, hakparenteser `[ ]` `( )`osv.) i det här dokumentet anger kodelement och alternativ. Mer information finns i [Formatkonventioner för kod- och textelement](../../../reference/code-style-elements.md).
+>Formatelement (`monospaced text`, *kursiv*, hakparenteser `[ ]` `( )` osv.) i det här dokumentet anger kodelement och alternativ. Mer information finns i [Formatkonventioner för kod- och textelement](../../../reference/code-style-elements.md).
 
 ## Syntax- och filnamnselement {#syntax-file-name}
 
@@ -50,19 +50,19 @@ Tabellen definierar elementen i ett namn på en utgående datafil.
    <td colname="col2"> <p>Hänvisar till dataöverföringsmetoderna. Överföringsmetoderna omfattar: </p> 
     <ul id="ul_4E0CFC7A34E04E2FA216A07E3654D6EE"> 
      <li id="li_0066B99222A64BE9975AE2E91511FB77">FTP - Överföring med SFTP </li> 
-     <li id="li_646767FE8AD247B88D0DD5461349F019"> <span class="keyword"> Amazon S3 </span> - överföring till <span class="keyword"> Amazon AWS </span> </li> 
+     <li id="li_646767FE8AD247B88D0DD5461349F019"> <span class="keyword"> Amazon S3  </span> - Överför till  <span class="keyword"> Amazon AWS  </span> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>DID </i></code> </p> </td> 
-   <td colname="col2"> <p>Mål-ID. </p> <p>I <span class="keyword"> Audience Manager </span>är ett mål den instans av integreringen där du kan mappa dina målsegment. Kunderna kan ha flera destinationer beroende på verksamhetens behov. </p> </td> 
+   <td colname="col2"> <p>Mål-ID. </p> <p>I <span class="keyword"> Audience Manager </span> är ett mål den instans av integreringen där du kan mappa dina målsegment. Kunderna kan ha flera destinationer beroende på verksamhetens behov. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>MASTER_DPID </i></code> </p> </td> 
-   <td colname="col2"> <p>Data-provider eller ID för datakälla. Detta ID identifierar typen av användar-ID som finns i filinnehållet. De vanligaste användar-ID-nycklarna är: </p> <p> 
+   <td colname="col2"> <p>Data-provider eller datakälla-ID. Detta ID identifierar typen av användar-ID som finns i filinnehållet. De vanligaste användar-ID-nycklarna är: </p> <p> 
      <ul id="ul_CC22D019ECED4B17A7695708001F2C1B"> 
-      <li id="li_94DAFA169380405981AFEF1B581997E6">2014 - <span class="keyword"> Google Advertiser ID </span> (raw, unhashed) </li> 
-      <li id="li_DE74BE06331C49CF87606A192D815B96">2015 - Apple ID för <span class="keyword"> annonsörer </span> (raw, unhashed) </li> 
+      <li id="li_94DAFA169380405981AFEF1B581997E6">20914 - <span class="keyword"> Google Advertiser ID </span> (raw, unhashed) </li> 
+      <li id="li_DE74BE06331C49CF87606A192D815B96">20915 - <span class="keyword"> Apple ID för annonsörer </span> (raw, unhashed) </li> 
       <li id="li_E0A033FEC3174EF08E93EB7C65266337">Leverantörs-ID - Användar-ID:n från tredje part (webb/cookie) </li> 
      </ul> </p> <p>Mer information finns i <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">Globala datakällor</a>.</p></td> 
   </tr> 
@@ -97,7 +97,7 @@ Tabellen definierar elementen i ett namn på en utgående datafil.
 
 ### Scenario 1
 
-Filer som skickas till en [!DNL Amazon S3] plats med *`PID_ALIAS="XYZCustomer"`* och [!DNL Google Advertiser IDs] i filinnehållet.
+Filer som skickas till en [!DNL Amazon S3]-plats, med *`PID_ALIAS="XYZCustomer"`* och med [!DNL Google Advertiser IDs] i filinnehållet.
 
 Exempel: inkrementella filer:
 
@@ -116,7 +116,7 @@ Exempel: fullständiga filer:
 
 ### Scenario 2
 
-Filer som skickas till [!DNL FTP] platsen, utan *`PID_ALIAS`* och med [!DNL Apple Advertiser IDs] i filinnehållet:
+Filer som skickas till platsen [!DNL FTP], utan *`PID_ALIAS`* och med [!DNL Apple Advertiser IDs] i filinnehållet:
 
 Exempel: inkrementella filer:
 
@@ -132,7 +132,7 @@ Exempel: fullständiga filer:
  <li> <code> ftp_1234_20915_full_1486140843000001.sync.gz </code> </li> 
 </ul>
 
-**Scenario 3**: Filer som skickas till [!DNL FTP] platsen, med användar-ID *`PID_ALIAS="XYZCustomer"`* och med användar-ID från tredje part i filinnehållet ( *`Vendor ID=45454`*):
+**Scenario 3**: Filer som skickas till  [!DNL FTP] platsen, med användar-ID  *`PID_ALIAS="XYZCustomer"`* och med användar-ID från tredje part i filinnehållet (  *`Vendor ID=45454`*):
 
 Exempel: inkrementella filer:
 
@@ -157,7 +157,7 @@ Beskriver obligatoriska fält, syntax och konventioner som används för att org
 
 >[!NOTE]
 >
->Formatelement (`monospaced text`, *kursiv*, hakparenteser `[ ]` `( )`osv.) i det här dokumentet anger kodelement och alternativ. Mer information finns i [Formatkonventioner för kod- och textelement](../../../reference/code-style-elements.md).
+>Formatelement (`monospaced text`, *kursiv*, hakparenteser `[ ]` `( )` osv.) i det här dokumentet anger kodelement och alternativ. Mer information finns i [Formatkonventioner för kod- och textelement](../../../reference/code-style-elements.md).
 
 ### Syntax
 
@@ -191,14 +191,14 @@ Tabellen innehåller variabler som definierar innehållet i en datafil.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>REMOVED_SEGMENT_N </i></code> </p> </td> 
-   <td colname="col2"> <p>Det segment-ID som användaren diskvalificerades från. Avgränsa flera segment med kommatecken. Med en fullständig synkronisering kan du ignorera de borttagna segmenten eftersom datafilen innehåller den fullständiga listan över aktuella segment för användaren. Vanligtvis vill du veta mer om segment som en användare tillhör i stället för de som de har tagits bort från. See also <a href="../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md#outbound-data-file-name-syntax-and-examples"> Outbound Data File Name: Syntax and Examples </a>. </p> </td> 
+   <td colname="col2"> <p>Det segment-ID som användaren diskvalificerades från. Avgränsa flera segment med kommatecken. Med en fullständig synkronisering kan du ignorera de borttagna segmenten eftersom datafilen innehåller den fullständiga listan över aktuella segment för användaren. Vanligtvis vill du veta mer om segment som en användare tillhör i stället för de som de har tagits bort från. Se även <a href="../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md#outbound-data-file-name-syntax-and-examples"> Namn på utgående datafil: Syntax och exempel </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Exempel: Grundläggande filformat
 
-En korrekt formaterad datafil kan se ut som i följande exempel. Den här filposten anger att en användare kvalificerar sig för segmenten 24, 26 och 27. Om det behövs avgränsar ett blanksteg ID:n för `UUID` och segment. Ett annat utrymme avgränsar uppsättningarna med segment-ID:n. I det här exemplet tillhör en användare segmenten 24, 26 och 27. De har tagits bort från segmenten 25 och 28.
+En korrekt formaterad datafil kan se ut som i följande exempel. Den här filposten anger att en användare kvalificerar sig för segmenten 24, 26 och 27. Om det behövs avgränsar ett blanksteg `UUID`- och segment-ID:n. Ett annat utrymme avgränsar uppsättningarna med segment-ID:n. I det här exemplet tillhör en användare segmenten 24, 26 och 27. De har tagits bort från segmenten 25 och 28.
 
 ```
 59767559181262060060278870901087098252  24,26,27  25,28
