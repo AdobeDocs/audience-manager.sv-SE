@@ -23,12 +23,12 @@ I den här artikeln beskrivs de namnkonventioner som används av nyckelvariabeln
 
 <!-- c_tb_key_name_requirements.xml -->
 
-I [!UICONTROL Expression Builder]kan namnet på en nyckelvariabel i ett nyckelvärdepar bestå av ett valfritt antal siffror följt av 1 (eller flera) bokstäver, ett bindestreck, ett understreck och ytterligare siffror.
+I [!UICONTROL Expression Builder] kan namnet på en nyckelvariabel i ett nyckel/värde-par bestå av valfritt antal siffror följt av 1 (eller flera) bokstäver, ett bindestreck, ett understreck och ytterligare siffror.
 
 * Giltiga nyckelnamn: `price123`, `123price`, `price-123`, `c_price123`.
 
 * Ogiltiga nyckelnamn: `123`, `price!123`.
 
-## Prefix Key Variables with `c_`
+## Prefixnyckelvariabler med `c_`
 
-Prefixet `c_` är *alltid* obligatoriskt om parametrarna som skickar in data på en URL för ett händelseanrop använder den syntaxen.
+`c_`-prefixet är *alltid* obligatoriskt om parametrarna som skickar data på en URL för ett händelsanrop använder den syntaxen.
