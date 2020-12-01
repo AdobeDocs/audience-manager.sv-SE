@@ -15,24 +15,24 @@ ht-degree: 1%
 ---
 
 
-# [!DNL Audience Lab] Avancerade funktioner {#audience-lab-advanced-functionality}
+# [!DNL Audience Lab] Avancerade funktioner  {#audience-lab-advanced-functionality}
 
-I den här artikeln beskrivs två funktioner som innehåller avancerade funktioner för [!DNL Audience Lab]: [!DNL Duplicate Allocation Template] och [!DNL Segment Holdout].
+I den här artikeln beskrivs två funktioner som tillhandahåller avancerade funktioner för [!DNL Audience Lab]: [!DNL Duplicate Allocation Template] och [!DNL Segment Holdout].
 
-## Duplicera allokeringsmall {#duplicate-allocation-template}
+## Duplicerad allokeringsmall {#duplicate-allocation-template}
 
 <!-- 
 <p>The <b>Allocation Template</b> represents how you split a test group into test segments and the way the test segments are mapped to destinations. </p>
  -->
 
-I [!DNL Audience Lab]visas de olika [!DNL Allocation Template] val du gör när du skapar en testgrupp:
+I [!DNL Audience Lab] representerar [!DNL Allocation Template] de olika val du gör när du skapar en testgrupp:
 
 * Enheternas fördelning mellan testsegmenten.
 * Mappning av testsegment till destinationer.
 * Den eller de konverteringsegenskaper som du använder för en testgrupp;
 * Datumintervallet som testgruppen publicerar på de valda målen.
 
-Genom att duplicera en allokeringsmall kan du återanvända samma fördelning av testsegment och mål för ett annat bassegment i en ny testgrupp. Ett exempel på en allokeringsmall visas nedan. Bilden tas från [!UICONTROL Summary & Finalize] steget i arbetsflödet **Skapa testgrupp** .
+Genom att duplicera en allokeringsmall kan du återanvända samma fördelning av testsegment och mål för ett annat bassegment i en ny testgrupp. Ett exempel på en allokeringsmall visas nedan. Bilden hämtas från steget [!UICONTROL Summary & Finalize] i arbetsflödet **Skapa testgrupp**.
 
 ![](assets/allocation_template_3.png)
 
@@ -44,11 +44,11 @@ With the option to duplicate allocation templates, you can increase your product
 
 Skapa en inledande testgrupp och välj sedan **[!UICONTROL Duplicate Allocation Template]** för att återanvända samma inställningar i flera testgrupper. Du kan till exempel använda den här funktionen om du kör ett test där du vill avgöra effekten av flera mål för flera segment.
 
-1. I huvudvyn för Audience Lab söker du efter den testgrupp vars allokeringsmall du vill återge i en ny testgrupp. In the drop-down box, select **[!UICONTROL Duplicate Allocation Template]**.
+1. I huvudvyn för Audience Lab söker du efter den testgrupp vars allokeringsmall du vill återge i en ny testgrupp. Välj **[!UICONTROL Duplicate Allocation Template]** i listrutan.
 
    ![](assets/duplicate-allocation-template.png)
 
-2. I [!UICONTROL Create Test Group] guiden kan du ange ett bassegment och byta namn på testsegmenten om du vill.
+2. I guiden [!UICONTROL Create Test Group] kan du ange ett bassegment och byta namn på testsegmenten om du vill.
 3. Du *kan inte* ändra:
 
    * Enheternas fördelning mellan testsegmenten.
@@ -58,11 +58,11 @@ Skapa en inledande testgrupp och välj sedan **[!UICONTROL Duplicate Allocation 
 
 4. Granska informationen som du lade till i föregående steg och välj **[!UICONTROL Finalize Group]**.
 
-## Testa segmenthållout {#test-segment-holdout}
+## Testa segmenthållpunkt {#test-segment-holdout}
 
 >[!NOTE]
 >
->[!UICONTROL Test Segment Holdout] är en avancerad funktion som aktiveras på kundens begäran. Kontakta [!DNL Customer Care] eller [!DNL Adobe Consulting] aktivera den här funktionen.
+>[!UICONTROL Test Segment Holdout] är en avancerad funktion som aktiveras på kundens begäran. Kontakta [!DNL Customer Care] eller [!DNL Adobe Consulting] för att aktivera den här funktionen.
 
 Använd den här funktionen för att hindra en del av publiken från att tas med i testet. Procentandelen som du väljer tas inte med i testet. På så sätt kan du mäta och jämföra antalet konverteringar från målgrupper (aktiverade på destinationer) och icke-målgrupper (utelämningsgrupper).
 
@@ -72,8 +72,8 @@ Använd den här funktionen för att hindra en del av publiken från att tas med
 
 ### Använda testsegmentets hållpunkt
 
-1. Skapa en ny testgrupp med hjälp av [!UICONTROL Create Test Group] guiden.
-1. I **[!UICONTROL Allocate Test Segment]** steget kan du välja vilken del av publiken som inte ska testas.
+1. Skapa en ny testgrupp med hjälp av guiden [!UICONTROL Create Test Group].
+1. I **[!UICONTROL Allocate Test Segment]**-steget kan du välja en del av målgruppen som inte ska testas.
 
    ![Listobjekt](assets/test-segment-holdout.png)
 
@@ -81,4 +81,4 @@ Använd den här funktionen för att hindra en del av publiken från att tas med
 
    ![](assets/test-segment-holdout-selected.png)
 
-1. Gå igenom resten av stegen i **[!UICONTROL Create Test Group]** arbetsflödet och välj **[!UICONTROL Finalize Group]** när du är nöjd med ditt val. Nu har du en testgrupp där en del av publiken inte kan testas.
+1. Gå igenom resten av stegen i **[!UICONTROL Create Test Group]**-arbetsflödet och välj **[!UICONTROL Finalize Group]** när du är nöjd med ditt val. Nu har du en testgrupp där en del av publiken inte kan testas.
