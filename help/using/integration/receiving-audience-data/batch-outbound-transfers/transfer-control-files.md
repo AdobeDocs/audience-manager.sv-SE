@@ -17,21 +17,21 @@ ht-degree: 5%
 
 # Kontrollfiler för loggfilsöverföringar {#transfer-control-files-for-log-file-transfers}
 
-Filer med överföringskontroll ([!DNL .info]) innehåller metadatainformation om filöverföringar så att partners kan verifiera att filöverföringar hanteras korrekt i Audience Manager.
+Filer med överföringskontroll ([!DNL .info]) innehåller metadatainformation om filöverföringar, så att partners kan verifiera att filöverföringar hanteras på rätt sätt i Audience Manager.
 
-[!DNL Audience Manager] skickar en fil för överföringskontroll till en partner vid varje filöverföring. På grund av att utgivaren har flera trådar kan [!DNL FTP] överföringskontrollfilen skickas innan de faktiska filerna har överförts.
+[!DNL Audience Manager] skickar en fil för överföringskontroll till en partner vid varje filöverföring. På grund av flertrådskaraktären hos [!DNL FTP]-utgivaren kan överföringskontrollfilen skickas innan de faktiska filerna har överförts.
 
-Med metadata i [!DNL .info] filen kan partners:
+Med metadata i [!DNL .info]-filen kan partners:
 
 * Fastställa när en fullständig överföringscykel är slutförd (det totala antalet filer i sekvensen har levererats).
 * Fastställ om en viss fil i sekvensen är fullständig/korrekt (genom att undersöka filens storlek i byte och det totala antalet rader).
 * Validera antalet rader i Raw-filer mot antalet rader efter att filerna har lästs in i databasen i den mottagande änden (filens storlek i rader).
 
-## Namngivningskonventioner {#file-naming-conventions}
+## Namngivningskonventioner för filer {#file-naming-conventions}
 
-Överföringskontrollfilen har samma namn som roten för gruppen/sekvensen med ett [!DNL .info] filtillägg.
+Överföringskontrollfilen har samma namn som roten för gruppen/sekvensen med filtillägget [!DNL .info].
 
-Om till exempel den första filen i sekvensen hade namn: [!DNL ftp_12345_67890_full_1500727351632-1.sync], kommer kontrollfilen att få ett namn [!DNL ftp_12345_67890_iter_1500727351632.info].
+Om till exempel den första filen i sekvensen hade namn: [!DNL ftp_12345_67890_full_1500727351632-1.sync], skulle kontrollfilen ha namnet [!DNL ftp_12345_67890_iter_1500727351632.info].
 
 ## Filformat {#file-format}
 
@@ -78,7 +78,7 @@ Om till exempel den första filen i sekvensen hade namn: [!DNL ftp_12345_67890_f
 
 >[!NOTE]
 >
-> Batchens totala nummer är exklusive själva [!DNL .info] filen. Det innebär att summorna inte omfattar [!DNL .info] filen, dess bytestorlek eller antalet rader.
+> Batchens totala tal är exklusive själva [!DNL .info]-filen. Det innebär att summorna inte innehåller filen [!DNL .info], dess bytestorlek eller antalet rader.
 >
 > Filernas bytestorlekar och antalet rader är inkluderande alla rader/rader för huvud och distans (tomma). Ta bort rubriker för att få antalet faktiska datarader/rader.
 >
