@@ -30,7 +30,7 @@ c_unique_user_counts.xml
 Överlappningsrapporterna räknas användare som unika när de kvalificerar sig för en egenskap:
 
 * Under rapportens valda tidsintervall.
-* Det har ett [time-to-live](../features/traits/segment-ttl-explained.md) -värde som är längre än det valda tidsintervallet för rapporten.
+* Det har ett [time-to-live](../features/traits/segment-ttl-explained.md)-värde som är längre än det valda tidsintervallet för rapporten.
 * Om de betraktas som aktiva i vårt system (dvs. är kvalificerade för andra egenskaper, har en ID-synkronisering osv.) under de senaste 60 dagarna.
 
 ## Allmän rapport: Unikt användarantal
