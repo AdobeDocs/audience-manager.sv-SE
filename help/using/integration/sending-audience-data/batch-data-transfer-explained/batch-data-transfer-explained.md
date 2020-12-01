@@ -27,7 +27,7 @@ Gruppdataintegreringsprocessen sparar besökarinformation på våra servrar och 
 
 * Omedelbara dataöverföringar krävs inte.
 * Samla in data för att skapa en stor grupp segmenterade användare.
-* Du vill minska datameddelanden och `HTTP` samtal från webbläsaren.
+* Du vill minska datameddelanden och `HTTP` anrop från webbläsaren.
 
 ![](assets/s2s_70.png)
 
@@ -36,5 +36,5 @@ Gruppdataintegreringsprocessen sparar besökarinformation på våra servrar och 
 1. En användare besöker en kundwebbplats.
 1. [!DNL Audience Manager] och tredjepartsleverantören av data tilldelar besökaren ett unikt ID (vanligtvis med en cookie).
 1. [!DNL Audience Manager] anropar tredjeparts dataleverantör för att matcha besökar-ID:n.
-1. En schemalagd begäran utbyter vanligtvis data om besökarsegment mellan [!DNL Audience Manager] och din tredjepartsleverantör.
-1. När en inkommande [!UICONTROL Server-to-Server] fil bearbetas skickas ett kvitto via e-post till partnerlösningar och, om konfigurationen är konfigurerad, till partnern. Mer information finns i [Exempelmeddelande till partners efter inkommande bearbetning](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md).
+1. En schemalagd begäran utbyter vanligtvis data om besökarsegment mellan [!DNL Audience Manager] och din tredjepartsleverantör av data.
+1. När en inkommande [!UICONTROL Server-to-Server]-fil bearbetas, skickas ett kvitto via e-post till partnerlösningar och, om den är konfigurerad, till partnern. Mer information finns i [Exempelmeddelande till partners efter inkommande bearbetning](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md).
