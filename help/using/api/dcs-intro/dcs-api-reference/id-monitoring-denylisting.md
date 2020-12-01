@@ -18,38 +18,38 @@ ht-degree: 0%
 
 # ID-övervakning och Blockeringslistning
 
-Kontrollerar de ID:n som [!DNL DCS] tas emot och lägger till dem som skickas med ett ovanligt högt pris till ett blockeringslista under en kort tidsperiod.
+[!DNL DCS] övervakar de ID som tas emot och lägger till de som skickas med ett ovanligt högt pris under en kort tidsperiod till ett blockeringslista.
 
 ## Översikt
 
-För att skydda Audience Manager-infrastrukturen mot skadlig aktivitet [!DNL DCS] använder man en avancerad algoritm för att övervaka de ID som den tar emot. Dessa kan vara [!UICONTROL Data Provider Unique User ID]s ([!UICONTROL CRM ID]s), [!UICONTROL Audience Manager Unique User ID]s ([!UICONTROL AAM UUID]s) eller [!UICONTROL Experience Cloud ID]s ([!UICONTROL ECID]s). Se [Index med ID:n i Audience Manager](../../../reference/ids-in-aam.md) för detaljerade förklaringar av de ID:n som stöds av Audience Manager.
+För att skydda Audience Manager-infrastrukturen mot skadlig aktivitet använder [!DNL DCS] en avancerad algoritm för att övervaka de ID som den tar emot. Dessa kan vara [!UICONTROL Data Provider Unique User ID]s ([!UICONTROL CRM ID]s), [!UICONTROL Audience Manager Unique User ID]s ([!UICONTROL AAM UUID]s) eller [!UICONTROL Experience Cloud ID]s ([!UICONTROL ECID]s). Mer information om vilka ID:n som stöds av Audience Manager finns i [Index för ID:n i Audience Manager](../../../reference/ids-in-aam.md).
 
-Den övervakar hur ofta den tar emot dessa ID:n för att upptäcka eventuell skadlig aktivitet. [!DNL DCS] När ett ovanligt stort antal [!DNL DCS] [!DNL DCS] begäranden för ett visst ID upptäcks på kort tid, läggs detta ID till i blockeringslista.
+[!DNL DCS] övervakar hur ofta de tar emot dessa ID:n för att upptäcka eventuell skadlig aktivitet. När [!DNL DCS] upptäcker ett ovanligt stort antal [!DNL DCS]-begäranden för ett givet ID på kort tid, läggs detta ID till i blockeringslista.
 
 ## Felkoder
 
-Du kan identifiera ID:n som läggs till i ett blockeringslista med hjälp av de felkoder som tas emot från [!DNL DCS]. Följande felkoder kan tas emot:
+Du kan identifiera ID:n som läggs till i en blockeringslista med hjälp av felkoderna som tas emot från [!DNL DCS]. Följande felkoder kan tas emot:
 
 * 303: Blockerat kund-ID;
 * 306: Blockerat deklarerat enhets-ID;
 * 307: Spärrad profilåtgärd för ID.
 
-Mer information om felkoder som du kan få finns i [Felkoder, meddelanden och exempel](dcs-error-codes.md) för DCS.
+Se [Felkoder, meddelanden och exempel](dcs-error-codes.md) för mer information om felkoder som du kan få.
 
 ## Tar bort ID:n från blockeringslista
 
-ID:n som har lagts till i blockeringslista bör inte användas i framtida förfrågningar eftersom de leder till felaktig rapportering av data. Det går [!DNL DCS] inte att ta bort ID:n från blockeringslista.
+ID:n som har lagts till i blockeringslista bör inte användas i framtida förfrågningar eftersom de leder till felaktig rapportering av data. [!DNL DCS] stöder inte borttagning av ID:n från blockeringslista.
 
 ## Påverkan på ID-synkronisering
 
 [!DNL DCS] anrop kan innehålla en eller flera typer av ID:n. Samtal som innehåller ett enda ID ignoreras fullständigt om det ID:t läggs till i blockeringslista och ingen ID-synkronisering görs i den här situationen.
 
-När ett anrop med flera ID även innehåller ett blocklist ID:n, ignoreras det [!DNL DCS] och endast de återstående, tillåtna ID:n används för synkronisering.
+När ett anrop med flera ID även innehåller ett blocklist ID:n, ignorerar [!DNL DCS] det nekade ID:t och använder endast de återstående, tillåtna ID:n för synkronisering.
 
 ## Orsaker och korrigeringar för ID-Blockeringslistning
 
-Den vanligaste orsaken till att ID:n läggs till i blockeringslista är den felaktiga integreringen mellan kundinfrastrukturen och Audience Manager. När du identifierar ett blocklist ID måste du noga granska dina Audience Manager-integreringar. Se **Implementerings- och integreringsguider** för detaljerade förklaringar av hur du bör konfigurera Audience Manager för att arbeta med andra Experience Cloud-lösningar eller externa system.
+Den vanligaste orsaken till att ID:n läggs till i blockeringslista är den felaktiga integreringen mellan kundinfrastrukturen och Audience Manager. När du identifierar ett blocklist ID måste du noga granska dina Audience Manager-integreringar. I **Handböcker om implementering och integrering** finns detaljerade förklaringar om hur du bör konfigurera Audience Manager så att det fungerar med andra Experience Cloud-lösningar eller externa system.
 
-En annan vanlig orsak till att ID:n läggs till i blockeringslista är indexering av botar (web crawlers), som vanligtvis leder till ökad trafik, vilket leder till att samma ID:n skickas till [!DNL DCS] flera gånger. Om du identifierar att indexeringsobjekt är orsaken till att ID:n läggs till i blockeringslista bör du begränsa båda åtkomsten till webbplatsen.
+En annan vanlig orsak till att ID:n läggs till i blockeringslista är indexering av botar (web crawlers), som vanligtvis orsakar ökad trafik, vilket leder till att samma ID:n skickas till [!DNL DCS] flera gånger. Om du identifierar att indexeringsobjekt är orsaken till att ID:n läggs till i blockeringslista bör du begränsa båda åtkomsten till webbplatsen.
 
-Om du har svårt att identifiera integreringsproblem kan du kontakta kundsupport. Innan du öppnar en supportförfrågan måste du se till att `.har` webbläsarens `HTTP` arkiv är klart. Detta arkiv hjälper supportteamet att identifiera varför ID:t lades till i en blockeringslista.
+Om du har svårt att identifiera integreringsproblem kan du kontakta kundsupport. Innan du öppnar en supportförfrågan måste du se till att din webbläsares `.har` `HTTP`-arkiv är klart. Detta arkiv hjälper supportteamet att identifiera varför ID:t lades till i en blockeringslista.
