@@ -21,7 +21,7 @@ Returnerar data om hur många unika användare som delas mellan era segment.
 
 >[!NOTE]
 >
->Överlappningsrapporterna i Audience Manager följer RBAC-principerna. Du kan bara se segment från datakällor som du har åtkomst till baserat på den [RBAC-användargrupp](/help/using/features/administration/administration-overview.md) som du tillhör.
+>Överlappningsrapporterna i Audience Manager följer RBAC-principerna. Du kan bara se segment från datakällor som du har åtkomst till baserat på [RBAC-användargruppen](/help/using/features/administration/administration-overview.md) som du tillhör.
 
 <!-- 
 
@@ -31,18 +31,18 @@ c_segment_segment_overlap.xml
 
 ## Översikt
 
-Rapporten kan vara till hjälp för dig [!UICONTROL Segment-to-Segment Overlap] :
+[!UICONTROL Segment-to-Segment Overlap]-rapporten kan hjälpa dig:
 
 * Identifiera segment med hög eller låg överlappning, beroende på dina behov. Med hög överlappning får ni en målgrupp, men färre unika besökare. Fällor med låg överlappning kan vara användbara för att nå en större, unik besökaruppsättning.
 * Hitta oväntad överlappning och använd den informationen för att skapa nya högpresterande segment.
 
 ## Exempelrapport
 
-Följande bild ger en översikt över [!UICONTROL Segment-to-Segment Overlap] rapporten på hög nivå.
+Följande bild ger en översikt på hög nivå över [!UICONTROL Segment-to-Segment Overlap]-rapporten.
 
 >[!NOTE]
 >
->Rapporten returnerar ett tomt fält när den jämför samma segment med sig själv. [!UICONTROL Segment-to-Segment Overlap]
+>Rapporten [!UICONTROL Segment-to-Segment Overlap] returnerar ett tomt fält när den jämför samma segment med sig själv.
 
 ![](assets/segment-to-segment-overlap.png)
 
@@ -50,7 +50,7 @@ Följande bild ger en översikt över [!UICONTROL Segment-to-Segment Overlap] ra
 
 Markera en enskild punkt om du vill visa datainformation i ett popup-fönster. Dina klickåtgärder uppdaterar automatiskt data som visas i rapporten.
 
-## Segment-till-segment överlappar definierade data-popup-fält {#fields-defined}
+## Segment-till-segment överlappar datapanelfält definierade {#fields-defined}
 
 <!-- 
 
@@ -58,7 +58,7 @@ r_s2s_data_pop.xml
 
  -->
 
-Popup-fönstret för [!UICONTROL Segment-to-Segment Overlap] rapporten innehåller måtten nedan. Observera att tabellens unika mätvärden representerar *realtidsanvändare*.
+Popup-fönstret för [!UICONTROL Segment-to-Segment Overlap]-rapporten innehåller måtten nedan. Observera att tabellens unika mått representerar dina *realtidsanvändare*.
 
 | Mått | Beskrivning |
 |---|---|
