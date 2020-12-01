@@ -21,7 +21,7 @@ Metoder som gör att du kan arbeta programmatiskt med segment.
 
 >[!IMPORTANT]
 >
->Segmentmetoderna [!DNL API] har skrivits om med [!DNL Swagger] och migrerats. Se:
+>Metoderna [!DNL API] för segmentet har skrivits om med [!DNL Swagger] och migrerats. Se:
 >
 >* [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html)
 >* [Migrera API-kod för Audience Manager](../../api/api-swagger-migration.md)
