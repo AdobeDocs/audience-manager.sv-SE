@@ -21,31 +21,31 @@ De vanligaste oanvända egenskaperna representeras som ett punktdiagram över eg
 
 ## Användningsexempel {#use-cases}
 
-Med den här [!UICONTROL Top Unused Traits] rapporten kan du analysera och jämföra prestanda för första och tredje parts egenskaper som för närvarande inte är mappade till ett segment. Den här vyn visar de bästa egenskaperna som kan användas i ett målgruppssegment för antingen kampanjoptimering eller nya möjligheter.
+Med [!UICONTROL Top Unused Traits]-rapporten kan du analysera och jämföra prestanda för första och tredje parts egenskaper som för närvarande inte är mappade till ett segment. Den här vyn visar de bästa egenskaperna som kan användas i ett målgruppssegment för antingen kampanjoptimering eller nya möjligheter.
 
-## Använda rapporten Oanvända vanligaste egenskaper {#using-the-report}
+## Använda rapporten Oanvända överkanter {#using-the-report}
 
-Använd **[!UICONTROL Data Provider Type]** kontrollerna för att växla mellan egenskaper hos första part och tredje part. Välj **[!UICONTROL All]** att returnera egenskaper för första och tredje part i rapporten.
+Använd **[!UICONTROL Data Provider Type]**-kontrollerna för att växla mellan egenskaper för första part och tredje part. Välj **[!UICONTROL All]** om du vill returnera egenskaper för första och tredje part i rapporten.
 
-Med **[!UICONTROL Impressions]** skjutreglaget kan du välja ett lägsta och högsta värde för returnerade visningar. Eventuella egenskaper som ligger bakom mindre eller mer än de angivna gränserna visas inte i rapporten.
+Med reglaget **[!UICONTROL Impressions]** kan du välja ett lägsta och högsta värde för returnerade visningar. Eventuella egenskaper som ligger bakom mindre eller mer än de angivna gränserna visas inte i rapporten.
 
-Använd **[!UICONTROL Day Range]** och **[!UICONTROL Date Through]** kontroller för att justera backupintervallet. Observera att endast 30 dagars summeringsperiod är tillgänglig för den här rapporten.
+Använd kontrollerna **[!UICONTROL Day Range]** och **[!UICONTROL Date Through]** för att justera uppslagsintervallet. Observera att endast 30 dagars summeringsperiod är tillgänglig för den här rapporten.
 
-Använd den **[!UICONTROL Order]** nedrullningsbara rutan för att välja de webbegenskaper i portföljen som du vill returnera information för.
+Använd listrutan **[!UICONTROL Order]** för att välja de webbegenskaper i portföljen som du vill returnera information för.
 
-I den **[!UICONTROL Data Provider]** nedrullningsbara rutan markerar du datakällorna som innehåller de egenskaper som du vill se i rapporten.
+I listrutan **[!UICONTROL Data Provider]** markerar du datakällorna som innehåller de egenskaper som du vill se i rapporten.
 
-Använd den **[!UICONTROL Traits]** nedrullningsbara rutan för att välja vilka egenskaper du vill se i rapporten.
+Använd listrutan **[!UICONTROL Traits]** för att välja vilka egenskaper du vill se i rapporten.
 
 >[!IMPORTANT]
 >
->När du aktiverar [!UICONTROL Audience Optimization for Publishers]måste du inkludera beskrivande metadata för [!UICONTROL Order IDs], enligt beskrivningen i steg 3 i [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten anger webbegenskapen som [!UICONTROL Order] i stället för [!UICONTROL Order ID].
+>När du aktiverar [!UICONTROL Audience Optimization for Publishers] måste du inkludera beskrivande metadata för [!UICONTROL Order IDs], enligt beskrivningen i steg 3 av [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten anger webbegenskapen som [!UICONTROL Order] i stället för [!UICONTROL Order ID].
 
 ## Tolka resultaten {#interpreting-results}
 
 **Exempelrapport**
 
-Din [!UICONTROL Top Unused Traits] rapport kan se ut ungefär som den nedan. Klicka på en bubbla i rapporten för att visa underliggande data.
+Din [!UICONTROL Top Unused Traits]-rapport kan se ut ungefär som den nedan. Klicka på en bubbla i rapporten för att visa underliggande data.
 
 Se beskrivningarna för ytterligare information i tabellen nedan.
 
@@ -90,9 +90,9 @@ Se beskrivningarna för ytterligare information i tabellen nedan.
 
 Positionen för era egenskaper i en rapport kan berätta mycket om vilka egenskaper ni kan använda för att optimera befintliga målgruppssegment.
 
-De egenskaper som ligger högre upp på Impressions-axeln är de som du vill använda i dina kampanjer. För traits med ett lågt antal visningar är det osannolikt att ni når den här målgruppen på er webbegenskap baserat på era [!DNL Google Ad Manager] data.
+De egenskaper som ligger högre upp på Impressions-axeln är de som du vill använda i dina kampanjer. För traits med ett lågt antal visningar är det osannolikt att du når den här målgruppen på din webbegenskap baserat på dina [!DNL Google Ad Manager]-data.
 
-Titta till vänster om [!UICONTROL Unique Trait Realizations] axeln för att få mycket exakta egenskaper och till höger för egenskaper som kan skapa skalor.
+Titta till vänster om [!UICONTROL Unique Trait Realizations]-axeln för att få mycket exakta egenskaper och till höger för egenskaper som kan skapa skalor.
 
 <table id="table_A29253B30DFA4CD7B3B7C320DE0BDEA4"> 
  <thead> 
