@@ -39,15 +39,15 @@ Klientportalen är det primära användargränssnittet för tagg- och datahanter
 
 ## DIL/TIM-behållare {#dil-tim}
 
-Behållaren [!UICONTROL DIL] hjälper dig att distribuera [!DNL Audience Manager] datainsamlingskod till din webbplats. [!UICONTROL TIM] är den borttagna taggiginfogningshanteraren. Den används inte längre av [!DNL Audience Manager]. I stället använder du [Dynamic Tag Management](https://docs.adobe.com/content/help/sv-SE/dtm/using/dtm-home.html) eller [!DNL Audience Manager] tillägget i [Adobe Experience Platform Launch](https://docs.adobelaunch.com/extension-reference/web/adobe-audience-manager-extension) för att konfigurera och generera behållarkod som du placerar på sidor i lagret. Behållaren fungerar [!UICONTROL DTM] med [!UICONTROL Data Information Library (DIL)] för att samla in data från din webbplats och skicka den till [!DNL Audience Manager].
+Med [!UICONTROL DIL]-behållaren kan du distribuera [!DNL Audience Manager] datainsamlingskod till din webbplats. [!UICONTROL TIM] är den borttagna taggiginfogningshanteraren. Den används inte längre av [!DNL Audience Manager]. Använd i stället [Dynamisk tagghantering](https://docs.adobe.com/content/help/sv-SE/dtm/using/dtm-home.html) eller tillägget [!DNL Audience Manager] i [Adobe Experience Platform Launch](https://docs.adobelaunch.com/extension-reference/web/adobe-audience-manager-extension) för att konfigurera och generera behållarkod som du placerar på sidor i lagret. Behållaren [!UICONTROL DTM] fungerar med [!UICONTROL Data Information Library (DIL)] för att samla in data från din plats och skicka den till [!DNL Audience Manager].
 
 ## Data Integration Library (DIL)  {#dil}
 
-DIL ( [Data Information Library](../../dil/dil-overview.md) ) är en självständig API-modul som samlar in data från din webbplats. [!UICONTROL DIL] hjälper till att eliminera behovet av att skriva särskild kod för datainsamling, integrering, läsning av cookie-värden och återställning av siddata. [!UICONTROL DIL] utför dessa åtgärder automatiskt. Dessutom [!UICONTROL DIL] är komprimerad. Det är ett självständigt kodbibliotek som minskar mängden kod som krävs för att samla in information. Äntligen [!UICONTROL DIL] kan du integrera [!DNL Audience Manager] med andra produkter i [!DNL Adobe] Experience Cloud.
+[Datainformationsbiblioteket](../../dil/dil-overview.md) (DIL) är en självständig API-modul som samlar in data från din webbplats. [!UICONTROL DIL] hjälper till att eliminera behovet av att skriva särskild kod för datainsamling, integrering, läsning av cookie-värden och återställning av siddata. [!UICONTROL DIL] utför dessa åtgärder automatiskt. Dessutom är [!UICONTROL DIL] kompakt. Det är ett självständigt kodbibliotek som minskar mängden kod som krävs för att samla in information. [!UICONTROL DIL] hjälper dig att integrera [!DNL Audience Manager] med andra produkter i [!DNL Adobe]-Experience Cloud.
 
 ## Akamai {#akamai}
 
-[!DNL Audience Manager] använder [Akamai](https://www.akamai.com/html/about/index.html) för att hantera och leverera behållarkod från vår egen tagghanteringsplattform, som kallas [!UICONTROL TIM (Tag Insertion Manager)]. Koddistributionen med [!UICONTROL TIM] har fasats ut till förmån för [!DNL Adobe Dynamic Tag Management] och [!DNL Adobe Experience Platform Launch].
+[!DNL Audience Manager] använder  [](https://www.akamai.com/html/about/index.html) Akamaito som värd och levererar behållarkod från vår egen tagghanteringsplattform, som kallas  [!UICONTROL TIM (Tag Insertion Manager)]. Koddistributionen med [!UICONTROL TIM] har fasats ut till förmån för [!DNL Adobe Dynamic Tag Management] och [!DNL Adobe Experience Platform Launch].
 
 ## Kontrolldatabas {#control-database}
 
