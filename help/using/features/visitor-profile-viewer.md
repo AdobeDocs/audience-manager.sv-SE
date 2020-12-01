@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Visningsprogram för besökarprofiler {#visitor-profile-viewer}
 
-Använd för [!UICONTROL Visitor Profile Viewer] att visa det aktuella läget för en användarprofil för den aktuella webbläsaren, inklusive dess egenskaper och segment. För varje egenskap kan du visa dess [!UICONTROL SID]namn, detaljer om hur besökaregenskaper realiserades (första eller tredje part), realiseringstidpunkten och frekvensen för realiseringar. För varje segment kan du visa dess [!UICONTROL SID]namn och datum för segmentmedlemskapet. Du kan även visa besökarprofilen för ett annat profils-ID ([!UICONTROL UUID]) för Audience Manager. Den [!UICONTROL Visitor Profile Viewer] är användbar i felsökningssyfte.
+Använd [!UICONTROL Visitor Profile Viewer] för att visa det aktuella läget för en användarprofil för den aktuella webbläsaren, inklusive dess egenskaper och segment. För varje egenskap kan du visa dess [!UICONTROL SID]-namn, information om hur besökaregenskaper realiserades (första eller tredje part), realiseringsdatum och hur ofta realiseringar utfördes. För varje segment kan du visa dess [!UICONTROL SID], namn och datum för segmentmedlemskapet. Du kan också visa besökarprofilen för ett annat Audience Manager-profil-ID ([!UICONTROL UUID]). [!UICONTROL Visitor Profile Viewer] är användbart i felsökningssyfte.
 
 >[!NOTE]
 >
@@ -33,12 +33,12 @@ Traits that are not part of a segment will not appear in the
 
 1. Klicka på **[!UICONTROL Tools]** > **[!UICONTROL Visitor Profile Viewer]**.
 
-1. *(Valfritt)* Klicka på trait name för att visa trait i [!UICONTROL Trait Builder].
+1. *(Valfritt)* Klicka på trait name för att visa trait i  [!UICONTROL Trait Builder].
 
-   Mer information finns i [Fällor](../features/traits/trait-details-page.md).
+   Mer information finns i [Traits](../features/traits/trait-details-page.md).
 
-1. *(Valfritt)* Klicka på segmentnamnet för att visa segmentet i [!UICONTROL Segment Builder].
+1. *(Valfritt)* Klicka på segmentnamnet för att visa segmentet i  [!UICONTROL Segment Builder].
 
    Mer information finns i [Segment](../features/segments/segments-purpose.md).
 
-1. *(Villkorligt)* I **[!UICONTROL UUID]** rutan anger du ett annat profil-ID för Audience Manager och klickar sedan på **[!UICONTROL Refresh]** för att visa användarens egenskaper och segment.
+1. *(Villkorligt)* I  **[!UICONTROL UUID]** rutan anger du ett annat profil-ID för Audience Manager och klickar sedan på  **[!UICONTROL Refresh]** för att visa användarens egenskaper och segment.
