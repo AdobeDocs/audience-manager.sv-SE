@@ -28,5 +28,5 @@ Du kan hämta in data från mediekampanjer med pixelanrop till Audience Manager 
 Läs följande artiklar om du vill konfigurera loggöverföring:
 
 * [Importera Google Campaign Manager-datafiler till Audience Manager](/help/using/reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
-* [Importera Google Ad Manager-datafiler till Audience Manager ](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
-* [Loggdata och metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) för att konfigurera logginmatning för generiska loggfiler
+* [Importera Google Ad Manager-datafiler till Audience Manager  ](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
+* [Loggdata och metadatafiler ](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) för att konfigurera logginmatning för generiska loggfiler
