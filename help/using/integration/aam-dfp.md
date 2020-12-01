@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Google Ad Manager (tidigare DFP) som mål för Audience Manager {#dfp-as-an-audience-manager-destination}
 
-Konfigurera [!DNL Google Ad Manager] som mål och skicka segmentdata från Audience Manager till den plattformen.
+Ange [!DNL Google Ad Manager] som mål och skicka Audience Manager segmentdata till den plattformen.
 
-Dokumentationen i det här avsnittet beskriver den gamla metoden att integrera med [!DNL Google Ad Manager] och har tagits bort. För [!DNL Google Ad Manager] integreringar, se [Integrera Google Ad Manager med Google Publisher Tags (GPT)](../integration/gpt-aam-destination/gpt-aam-requirements.md).
+Dokumentationen i det här avsnittet beskriver den gamla metoden att integrera med [!DNL Google Ad Manager] och har tagits bort. Information om [!DNL Google Ad Manager]-integreringar finns i [Integrera Google Ad Manager med Google Publisher Tags (GPT)](../integration/gpt-aam-destination/gpt-aam-requirements.md).
