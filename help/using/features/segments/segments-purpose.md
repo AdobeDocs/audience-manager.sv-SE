@@ -17,11 +17,11 @@ ht-degree: 5%
 
 # Segment: Syfte, sammansättning och regler {#segments-purpose-composition-and-rules}
 
-Beskriver [!UICONTROL segments]och deras beståndsdelar samt skapar regler med [!UICONTROL Segment Builder].
+Beskriver [!UICONTROL segments], deras beståndsdelar och hur regler skapas med [!UICONTROL Segment Builder].
 
 ## Syfte med [!UICONTROL Segments]
 
-A *`segment`* (or an *`audience`*) is a set of users who share common attributes. I Audience Manager skapar du [!UICONTROL segments] med regler på serversidan. Med dessa regler kan ni skapa målgruppsgrupper baserat på webbplatsens besökarattribut, till exempel:
+En *`segment`* (eller en *`audience`*) är en uppsättning användare som delar gemensamma attribut. I Audience Manager skapar du [!UICONTROL segments] med regler på serversidan. Med dessa regler kan ni skapa målgruppsgrupper baserat på webbplatsens besökarattribut, till exempel:
 
 * Beteende
 * Demografi (ålder, kön, inkomst osv.);
@@ -29,19 +29,19 @@ A *`segment`* (or an *`audience`*) is a set of users who share common attributes
 
 ## [!UICONTROL Segment] Disposition
 
-En Audience Manager [!UICONTROL segment] är en regel på serversidan som består av enskilda egenskaper eller grupper av egenskaper. Traits består av dataelement som kallas nyckelvärdepar. Förutom regler som du anger på [!UICONTROL segment] nivå innehåller dessa nyckelvärdepar de kriterier som kvalificerar besökare för rätt och [!UICONTROL segment] medlemskap.
+En Audience Manager [!UICONTROL segment] är en regel på serversidan som består av enskilda egenskaper eller grupper av egenskaper. Traits består av dataelement som kallas nyckelvärdepar. Förutom regler som du anger på [!UICONTROL segment]-nivån innehåller dessa nyckelvärdepar de kriterier som kvalificerar besökare för trait och [!UICONTROL segment]-medlemskap.
 
-## Att tänka på vid [!UICONTROL Adobe Analytics][!UICONTROL Segment] mappning
+## Överväganden för [!UICONTROL Adobe Analytics] [!UICONTROL Segment]-mappning
 
-När du mappar Adobe Analytics [!UICONTROL segments] eller rapportsviter till din Experience Cloud-organisation skapar Audience Manager automatiskt nya, motsvarande, skrivskyddade [!UICONTROL segments] och anpassade egenskaper. Du kan inte redigera eller ändra lagringsplatsen för dessa [!UICONTROL segments] från Audience Manager. Alla ändringar du gör i Adobe Analytics [!UICONTROL segments] eller rapportsviterna återspeglas i Audience Manager.
+När du mappar Adobe Analytics [!UICONTROL segments] eller rapporterar programsviter till din Experience Cloud-organisation skapar Audience Manager automatiskt nya, motsvarande skrivskyddade [!UICONTROL segments]-egenskaper. Du kan inte redigera eller ändra lagringsplatsen för dessa [!UICONTROL segments] från Audience Manager. Alla ändringar du gör i dina mappade Adobe Analytics [!UICONTROL segments] eller rapportsviter visas i Audience Manager.
 
 >[!TIP]
 >
->Audience Manager [!UICONTROL segments] skiljer sig från [!DNL Adobe Analytics] [!UICONTROL segments]. Read [Understanding Segments in Analytics and Audience Manager](https://docs.adobe.com/content/help/sv-SE/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) for an in-depth description of the differences.
+>Audience Manager [!UICONTROL segments] skiljer sig från [!DNL Adobe Analytics] [!UICONTROL segments]. Läs [Förstå segment i analys och Audience Manager](https://docs.adobe.com/content/help/sv-SE/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) om du vill ha en detaljerad beskrivning av skillnaderna.
 
-## Skapa regelbaserade [!UICONTROL Segments] med [!UICONTROL Segment Builder]
+## Skapa regelbaserad [!UICONTROL Segments] med [!UICONTROL Segment Builder]
 
-Till skillnad från traditionella pixlar som aktiveras som svar på enkla ja/nej-villkor, [!UICONTROL Segment Builder] kan du skapa komplexa [!UICONTROL segment] krav. Som [!UICONTROL traits]exempel kan du [!UICONTROL segments] utvärdera data med [!DNL Boolean] uttryck ([!DNL AND], [!DNL OR], [!DNL NOT]), jämförelseoperatorer (större än, mindre än, lika med, osv.) och kriterier för senaste/frekvens. Dessa funktioner hjälper er att skapa fokuserade målgrupper [!UICONTROL segments] som är relevanta för era affärsbehov.
+Till skillnad från traditionella pixlar som utlöses som svar på enkla ja/nej-villkor kan du med [!UICONTROL Segment Builder] skapa komplexa [!UICONTROL segment]-krav. Precis som [!UICONTROL traits] utvärderar [!UICONTROL segments] data med [!DNL Boolean]-uttryck ([!DNL AND], [!DNL OR], [!DNL NOT]), jämförelseoperatorer (större än, mindre än, lika med, osv.) och kriterier för senaste/frekvens. Dessa funktioner hjälper er att skapa en målgrupp [!UICONTROL segments] som är anpassad efter era affärsbehov.
 
 ## Fördelar
 
@@ -49,7 +49,7 @@ Till skillnad från traditionella pixlar som aktiveras som svar på enkla ja/nej
 
 * Bygg relevanta, användbara [!UICONTROL segments] med egenskaper från första och tredje part.
 * Skapa sofistikerade och komplexa segmenteringsregler med booleska operatorer, jämförelseuttryck och kriterier för senaste/frekvens.
-* Skicka [!UICONTROL segment] data till en målpartner.
+* Skicka [!UICONTROL segment]-data till en målpartner.
 * Övervaka prestanda med rapporter från Audience Manager.
 
 >[!MORELIKETHIS]
