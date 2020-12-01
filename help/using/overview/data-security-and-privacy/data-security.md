@@ -74,7 +74,7 @@ Båda metoderna är utformade med hänsyn till kundens och partnerns säkerhet n
 
 **SFTP:** För alternativet SFTP väljer de flesta kunder att leverera filer via SFTP-protokollet (Secure FTP), som använder SSH-protokollet (Secure Shell). Med den här metoden krypteras filerna när de överförs mellan kundens system och Adobes system. För varje kund skapar vi en skyddad inkorg på våra SFTP-servrar som är kopplad till ett användarkonto i det systemet. Det är bara kundens inloggade och behöriga interna systemanvändare som har åtkomst till den skyddade inkorgen. Den skyddade platsen är inte tillgänglig för andra kunder.
 
-**[!UICONTROL Amazon Web Services S3]via HTTPS:**För leveransalternativet S3 rekommenderar vi att alla kunder konfigurerar sina S3-klienter så att de använder HTTPS-krypteringsmetoden för filöverföringar (den är inte standard så den måste konfigureras manuellt). Alternativet HTTPS stöds både av kommandoradsverktyget s3cmd och de S3-bibliotek som finns i alla större programmeringsspråk. När det här HTTPS-alternativet är aktiverat krypteras kundens data när de överförs till våra system. För varje kund skapar vi en separat S3-bucket underkatalog som bara kan nås med kundens och våra interna systemanvändares autentiseringsuppgifter.
+**[!UICONTROL Amazon Web Services S3]via HTTPS:** För leveransalternativet S3 rekommenderar vi att alla kunder konfigurerar sina S3-klienter så att de använder HTTPS-krypteringsmetoden för filöverföringar (den är inte standard så den måste konfigureras manuellt). Alternativet HTTPS stöds både av kommandoradsverktyget s3cmd och de S3-bibliotek som finns i alla större programmeringsspråk. När det här HTTPS-alternativet är aktiverat krypteras kundens data när de överförs till våra system. För varje kund skapar vi en separat S3-bucket underkatalog som bara kan nås med kundens och våra interna systemanvändares autentiseringsuppgifter.
 
 Information om hur du lägger till PGP-kryptering i datafiler finns i [PGP-filkryptering för inkommande datatyper](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md).
 
@@ -92,6 +92,6 @@ Principen förbättrar datasäkerheten mellan klienter och Adobe [Edge](../../re
 
 ### Exempel på {#hsts-example}
 
-Let&#39;s say the `yourcompany.demdex.com` domain sends traffic to the [!DNL DCS] via [!DNL HTTP]. [!DNL HSTS] uppgraderar anropen till [!DNL HTTPS] och alla efterföljande [!DNL DCS]-anrop som kommer från `yourcompany.demdex.com` använder [!DNL HTTPS] i stället för [!DNL HTTP].
+Låt oss säga att `yourcompany.demdex.com`-domänen skickar trafik till [!DNL DCS] via [!DNL HTTP]. [!DNL HSTS] uppgraderar anropen till [!DNL HTTPS] och alla efterföljande [!DNL DCS]-anrop som kommer från `yourcompany.demdex.com` använder [!DNL HTTPS] i stället för [!DNL HTTP].
 
 Mer information om HSTS finns i [HTTP Strict Transport Security – Wikipedia](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security).
