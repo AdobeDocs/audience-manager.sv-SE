@@ -58,43 +58,43 @@ Om modellen inte ger några resultat inom 24 timmar kan du kontakta din Adobe-re
 
 [!UICONTROL Predictive Audiences]-modeller kanske inte ger resultat på grund av en rad orsaker:
 
-1. None of the selected persona [!UICONTROL traits] / [!UICONTROL segments] have enough user profiles. We recommend choosing your [!UICONTROL traits] or [!UICONTROL segments] so that each persona has at least a few hundred user profiles.
-1. None of the selected persona [!UICONTROL traits] / [!UICONTROL segments] have enough data in their user profiles (not enough traits to analyze).
+1. Ingen av de markerade persona [!UICONTROL traits] / [!UICONTROL segments] har tillräckligt många användarprofiler. Vi rekommenderar att du väljer din [!UICONTROL traits] eller [!UICONTROL segments] så att varje person har minst några hundra användarprofiler.
+1. Ingen av de markerade persona [!UICONTROL traits] / [!UICONTROL segments] har tillräckligt med data i sina användarprofiler (inte tillräckligt med egenskaper för att analysera).
 1. Målgruppens trait/segment har inga aktiva eller onboardade användare.
 1. De målgruppsanvändare som varit aktiva eller registrerade under de senaste 30 dagarna har inte tillräckligt med data i sina användarprofiler (inte tillräckligt med traits att analysera).
 1. Målgruppssegmentet använder en annan [!UICONTROL Profile Merge Rule] än den som du valde för modellen.
-1. Datakällan för målpublikens egenskaper kanske inte inkluderas i den [!UICONTROL Profile Merge Rule] som du valde för modellen.
+1. Datakällan för målpublikens egenskaper kanske inte inkluderas i [!UICONTROL Profile Merge Rule] som du valde för modellen.
 
 Följ de föreslagna riktlinjerna i [Urvalskriterier för personas](../features/algorithmic-models/predictive-audiences.md#selection-personas) och [Urvalskriterier för målgrupp](../features/algorithmic-models/predictive-audiences.md#selection-audience) för att få optimala resultat.
 
  
 
-**Varför visar min modell [!UICONTROL Error] status?**
+**Varför visar min modell  [!UICONTROL Error] status?**
 
-Modellen kunde inte köras. In such cases, please reach out to your [!DNL Adobe] representative.
+Modellen kunde inte köras. Kontakta i så fall din [!DNL Adobe]-representant.
 
  
 
-**Hur kan jag byta plats [!UICONTROL Profile Merge Rule] för en [!UICONTROL Predictive Audiences][!UICONTROL segment]?**
+**Hur kan jag ändra  [!UICONTROL Profile Merge Rule] för en  [!UICONTROL Predictive Audiences] [!UICONTROL segment]?**
 
-Skapa en ny modell genom att välja samma personer och målgrupp som din tidigare modell. Tilldela en annan modell när en modell skapas [!UICONTROL Profile Merge Rule].
+Skapa en ny modell genom att välja samma personer och målgrupp som din tidigare modell. Tilldela en annan [!UICONTROL Profile Merge Rule] när en modell skapas.
 
 >[!WARNING]
-> Du kan också använda [Segment Builder](../features/segments/segment-builder.md) för att manuellt skapa en [!UICONTROL segment] med en befintlig prediktiv [!UICONTROL trait] och tilldela den ett [!UICONTROL Profile Merge Rule] alternativ.
+> Du kan också använda [Segment Builder](../features/segments/segment-builder.md) för att manuellt skapa en [!UICONTROL segment] med en befintlig prediktiv [!UICONTROL trait] och tilldela den en [!UICONTROL Profile Merge Rule] som du väljer.
 > 
-> Vi rekommenderar dock inte den här metoden, eftersom prediktiv [!UICONTROL traits] automatiskt ärver [!UICONTROL Profile Merge Rule] av modellen som de tillhör och de byggs utifrån inflytelserik [!UICONTROL traits] som uppfyller [!UICONTROL Profile Merge Rule] modellens krav.
+> Vi rekommenderar dock inte den här metoden eftersom prediktiv [!UICONTROL traits] automatiskt ärver [!UICONTROL Profile Merge Rule] för modellen de tillhör och de byggs från inflytelserik [!UICONTROL traits] som uppfyller [!UICONTROL Profile Merge Rule] för modellen.
 
  
 
-**Vad [!UICONTROL Profile Merge Rule] ska jag välja?**
+**Vad  [!UICONTROL Profile Merge Rule] ska jag välja?**
 
-När du väljer [!UICONTROL Profile Merge Rule] en modell ska du noggrant analysera hur den används.
+När du väljer [!UICONTROL Profile Merge Rule] för modellen bör du noggrant analysera ditt användningsfall.
 
-Anta att målgruppen [!UICONTROL segment] använder en [!UICONTROL Profile Merge Rule] baserad profil + [!DNL Device Graph] profiler och att ni väljer samma [!UICONTROL Profile Merge Rule] för prediktiva [!UICONTROL segments]profiler. I det här fallet [!UICONTROL traits] kommer både enhetsnivå och enhetsnivå att användas för att utbilda modellen och användarens placering i en prediktiv [!UICONTROL segment].
+Låt oss säga att målgruppen [!UICONTROL segment] använder en [!UICONTROL Profile Merge Rule] som baseras på autentiserade profiler + [!DNL Device Graph] profiler, och du väljer samma [!UICONTROL Profile Merge Rule] för prediktiva [!UICONTROL segments]. I det här fallet används både enhetsnivå och enhetsövergripande nivå [!UICONTROL traits] för att utbilda modellen och för att placera användaren i en prediktiv [!UICONTROL segment].
 
-Om du väljer en enhet som endast är [!UICONTROL Profile Merge Rule] baserad på enhetsprofiler [!UICONTROL traits] blir ingen av dina enheter inflytelserik och bidrar inte till att användarna placeras i ett prediktivt perspektiv [!UICONTROL segment]. Detta kan påverka modellens noggrannhet och räckvidd negativt.
+Om du väljer en [!UICONTROL Profile Merge Rule] som enbart baseras på enhetsprofiler kommer ingen av dina [!UICONTROL traits]-korsningar att bli inflytelserik och kommer inte att bidra till att användarna placeras i ett prediktivt [!UICONTROL segment]-objekt. Detta kan påverka modellens noggrannhet och räckvidd negativt.
 
-Analysera användningsexemplen noggrant och bestäm vilka [!UICONTROL trait] typer du vill att modellen ska lära sig av och vilken typ av data du vill att modellen ska använda för klassificering.
+Analysera användningsexemplet noggrant och bestäm vilka [!UICONTROL trait] typer du vill att modellen ska lära sig av och vilken typ av data du vill att modellen ska använda för klassificering.
 
 **Går det att klassificera en användare från målgruppen som inte är en del av något persona-trait/segment?**
 
