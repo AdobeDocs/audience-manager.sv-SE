@@ -47,11 +47,11 @@ Added re: AAM-30826.
 | S3 | Kontakta din Audience Manager Partner Solutions-representant eller kundtjänst | Kontakta din Audience Manager Partner Solutions-representant eller kundtjänst om du vill konfigurera en Amazon S3-bucket för din betainstans. Läs om [fördelarna med att använda Amazon S3](../reference/amazon-s3.md). |
 | DCS | `https://dcs-beta.demdex.net/...` | Se [Åtkomst till DCS i betamiljön](../reference/beta-environment.md#access-dcs-beta-environment). |
 | UI | `https://bank-beta.demdex.com` | Autentiseringsuppgifterna för produktionsmiljön gäller för betamiljön. |
-| API | `https://api-beta.demdex.com/...` | Autentiseringsuppgifterna för produktionsmiljön gäller för betamiljön. Vi rekommenderar att du skapar en allmän API-användare, [se informationen](../api/rest-api-main/aam-api-getting-started.md#requirements). |
+| API | `https://api-beta.demdex.com/...` | Autentiseringsuppgifterna för produktionsmiljön gäller för betamiljön. Vi rekommenderar att du skapar en allmän API-användare, [se information](../api/rest-api-main/aam-api-getting-started.md#requirements). |
 
 ## Åtkomst till DCS i betamiljön {#access-dcs-beta-environment}
 
-1. Gör ett DCS-anrop med [kommandot](https://curl.haxx.se/docs/manpage.html)curl. Curl är ett verktyg som du kan använda för att överföra data från eller till en server med hjälp av ett av många protokoll som stöds.
+1. Gör ett DCS-anrop med kommandot [](https://curl.haxx.se/docs/manpage.html). Curl är ett verktyg som du kan använda för att överföra data från eller till en server med hjälp av ett av många protokoll som stöds.
 
    Exempel:
 
