@@ -28,18 +28,18 @@ Använd följande logiska operatorer som stöds för att söka efter nyckelvärd
 |---|---|
 | **==** | Lika med |
 | **>** | Större än |
-| **&lt;** | Mindre än |
+| **&lt;>** | Mindre än |
 | **=>** | Större än/lika med |
-| **&lt;=** | Mindre än/lika med |
+| **&lt;>** | Mindre än/lika med |
 
 ### Namngivna operatorer
 
 | Operator | Utvärderar till [!DNL True] När |
 |---|---|
-| **[!UICONTROL Contains]** | Värdet i ett nyckelvärdepar *innehåller* tecken som anges av den här operatorn. |
+| **[!UICONTROL Contains]** | Värdet i nyckelvärdepar *innehåller* tecken som anges av den här operatorn. |
 | **[!UICONTROL Startswith]** | Värdet i ett nyckelvärdepar *börjar med* tecken som anges av den här operatorn. |
-| **[!UICONTROL Endswith]** | Värdet i ett nyckelvärdepar *avslutas med* de tecken som anges av operatorn. |
+| **[!UICONTROL Endswith]** | Värdet i ett nyckelvärdepar *avslutas med* de tecken som anges av den här operatorn. |
 
-## Operatorer som stöds för trait Backfilling and Estimation {#supported-operators-backfilling}
+## Operatorer som stöds för trait Backfilling och Estimation {#supported-operators-backfilling}
 
-Du kan bakåtfylla egenskaper som innehåller uttryck som innehåller någon av de operatorer som stöds av [!UICONTROL Signal Search]. Förutom dessa operatorer stöder även bakåtfyllnad och uppskattning av trait-egenskaper operatorerna [!UICONTROL AND], [!UICONTROL OR]och [!UICONTROL AND NOT] logical, som används för att kombinera nyckelvärdepar inom uttryck för det omvända trait-uttrycket.
+Du kan återfylla egenskaper som innehåller uttryck som innehåller någon av de operatorer som stöds av [!UICONTROL Signal Search]. Förutom dessa operatorer stöder även bakåtfyllnad och uppskattning av trait-egenskaper de logiska operatorerna [!UICONTROL AND], [!UICONTROL OR] och [!UICONTROL AND NOT] som används för att kombinera nyckelvärdepar i uttryck för bakåtifyllda egenskaper.
