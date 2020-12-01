@@ -27,7 +27,7 @@ Metoder som gör att du kan visa den vanliga taxonomin för Audience Manager. De
 
 ## Returnera en specifik taxonomi {#return-specific-taxonomy}
 
-En `GET` metod som returnerar information om den angivna taxonomiska kategorin.
+En `GET`-metod som returnerar information om den angivna taxonomiska kategorin.
 
 <!-- r_rest_api_taxonomy.xml -->
 
@@ -37,7 +37,7 @@ En `GET` metod som returnerar information om den angivna taxonomiska kategorin.
 
 ### Svar
 
-Ett lyckat svar returnerar `200 OK` och kategorin för det angivna ID:t. En misslyckad begäran returnerar `404 No Content` om ID:t inte finns.
+Ett svar returnerar `200 OK` och kategorin för det angivna ID:t. En misslyckad begäran returnerar `404 No Content` om ID:t inte finns.
 
 ```
 {
@@ -52,7 +52,7 @@ Ett lyckat svar returnerar `200 OK` och kategorin för det angivna ID:t. En miss
 
 ## Returnera alla taxonomiska kategorier {#return-all-taxonomy-categories}
 
-En `GET` metod som returnerar en lista över kategorierna på den översta nivån i en array.
+En `GET`-metod som returnerar en lista över kategorierna på den översta nivån i en array.
 
 <!-- r_rest_api_taxonomies.xml -->
 
@@ -93,9 +93,9 @@ Trunkerad för att vara snabb.
 ]
 ```
 
-## Returtaxonomiska underkategorier {#return-taxonomy-sub-categories}
+## Returnera taxonomiska underkategorier {#return-taxonomy-sub-categories}
 
-En `GET` metod som returnerar underkategorier för den angivna överordnade kategorin i en array.
+En `GET`-metod som returnerar underkategorier för den angivna överordnade kategorin i en array.
 
 <!-- r_rest_api_taxonomy_sub.xml -->
 
@@ -105,7 +105,7 @@ En `GET` metod som returnerar underkategorier för den angivna överordnade kate
 
 ### Svar
 
-Ett lyckat svar returnerar `200 OK` och kategorin för det angivna ID:t. En misslyckad begäran returnerar `404 No Content` om ID:t inte finns. Trunkerad för att vara snabb.
+Ett svar returnerar `200 OK` och kategorin för det angivna ID:t. En misslyckad begäran returnerar `404 No Content` om ID:t inte finns. Trunkerad för att vara snabb.
 
 ```
 [
