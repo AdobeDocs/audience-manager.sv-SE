@@ -17,17 +17,17 @@ ht-degree: 2%
 
 # Skapa destinationer {#create-destinations}
 
-Skapa destinationer med dessa [!UICONTROL RESTful API] metoder.
+Skapa mål med dessa [!UICONTROL RESTful API]-metoder.
 
 <!-- c_create_destinations.xml -->
 
 ## Måltyper som stöds: Endast URL och cookie
 
-Med de tillgängliga `POST` metoderna kan du skapa [!UICONTROL URL] och [!UICONTROL cookie destinations] bara. För närvarande kan du inte skapa [!UICONTROL server-to-server destinations] med dessa [!DNL REST API] metoder. Med de relaterade `GET` målmetoderna kan du emellertid hämta information om [!UICONTROL server-to-server destinations] som har skapats i användargränssnittet.
+Med de tillgängliga `POST`-metoderna kan du bara skapa [!UICONTROL URL] och [!UICONTROL cookie destinations]. För närvarande kan du inte skapa [!UICONTROL server-to-server destinations] med dessa [!DNL REST API]-metoder. Med de relaterade målmetoderna `GET` kan du hämta information om [!UICONTROL server-to-server destinations] som skapats i användargränssnittet.
 
 ## Skapa ett icke-seriellt URL-mål {#create-nonserial-dest}
 
-En `POST` metod som gör att du kan skapa ett mål som accepterar segment som består av nyckelvärdepar (t.ex. `gender=male` eller `gender=female`).
+En `POST`-metod som gör att du kan skapa ett mål som accepterar segment som består av nyckelvärdepar (t.ex. `gender=male` eller `gender=female`).
 
 <!-- r_create_nonserial_destination.xml -->
 
@@ -50,7 +50,7 @@ Denna begäran skapar ett enda mål. Alla begärandavärden är obligatoriska om
 
 ### Svar
 
-En lyckad begäran returnerar `201 created` och målet.
+En slutförd begäran returnerar `201 created` och målet.
 
 ```
 { 
@@ -80,7 +80,7 @@ En lyckad begäran returnerar `201 created` och målet.
 
 ## Skapa ett serialiserat URL-mål {#create-serial-url-dest}
 
-En `POST` metod som gör att du kan skapa ett mål som accepterar flera värden som är kopplade till en enskild nyckel (t.ex. `color=blue, red, green`).
+En `POST`-metod som gör att du kan skapa ett mål som accepterar flera värden som är kopplade till en enskild nyckel (t.ex. `color=blue, red, green`).
 
 <!-- r_create_serial_url_destination.xml -->
 
@@ -90,7 +90,7 @@ En `POST` metod som gör att du kan skapa ett mål som accepterar flera värden 
 
 ### Exempelbegäran
 
-Ange secure [!DNL URL] och delimiter för det nyckel/värde-par som skickas till målet. Alla begärandavärden är obligatoriska om inget annat anges.
+Ange säker [!DNL URL] och avgränsare för nyckelvärdepar som skickas till målet. Alla begärandavärden är obligatoriska om inget annat anges.
 
 ```
 { 
@@ -106,7 +106,7 @@ Ange secure [!DNL URL] och delimiter för det nyckel/värde-par som skickas till
 
 ### Svar
 
-En lyckad uppdatering returnerar svarskoden `201 created` och målet.
+En uppdatering returnerar svarskoden `201 created` och målet.
 
 ```
 { 
@@ -136,7 +136,7 @@ En lyckad uppdatering returnerar svarskoden `201 created` och målet.
 
 ## Skapa ett cookie-mål: Enkelnyckel, ej serialiserad {#create-cookie-dest-single}
 
-En `POST` metod som gör att du kan skapa en [!UICONTROL cookie destination] som accepterar segment som består av nyckelvärdepar (t.ex. `gender=male` eller `gender=female`).
+En `POST`-metod som gör att du kan skapa en [!UICONTROL cookie destination] som accepterar segment som består av nyckelvärdepar (t.ex. `gender=male` eller `gender=female`).
 
 <!-- r_cookie_destination_singlekey_noserial.xml -->
 
@@ -171,7 +171,7 @@ Alla begärandavärden är obligatoriska om inget annat anges.
 
 ### Svar
 
-En lyckad uppdatering returnerar svarskoden `201 created` och målet.
+En uppdatering returnerar svarskoden `201 created` och målet.
 
 ```
 { 
@@ -205,7 +205,7 @@ En lyckad uppdatering returnerar svarskoden `201 created` och målet.
 
 ## Skapa ett cookie-mål: En nyckel, serialiserad {#create-cookie-dest-single-serial}
 
-En `POST` metod som gör att du kan skapa ett mål som accepterar flera värden som är kopplade till en enskild nyckel (t.ex. `color=blue, red, green`).
+En `POST`-metod som gör att du kan skapa ett mål som accepterar flera värden som är kopplade till en enskild nyckel (t.ex. `color=blue, red, green`).
 
 <!-- r_cookie_destination_singlekey_serial.xml -->
 
@@ -241,7 +241,7 @@ Alla begärandavärden är obligatoriska om inget annat anges.
 
 ### Svar
 
-En lyckad uppdatering returnerar svarskoden `201 created` och målet.
+En uppdatering returnerar svarskoden `201 created` och målet.
 
 ```
 { 
@@ -274,9 +274,9 @@ En lyckad uppdatering returnerar svarskoden `201 created` och målet.
 }
 ```
 
-## Skapa ett cookie-mål: Flera nycklar, ej serialiserade {#create-cookie-dest-multi}
+## Skapa ett cookie-mål: Multinyckel, ej serialiserad {#create-cookie-dest-multi}
 
-En `POST` metod som gör att du kan skapa ett mål som accepterar segment som innehåller flera nycklar med olika värden (t.ex. `gender=male; gender=female; color=blue; color=red`).
+En `POST`-metod som gör att du kan skapa ett mål som accepterar segment som innehåller flera nycklar med olika värden (t.ex. `gender=male; gender=female; color=blue; color=red`).
 
 <!-- r_create_cookie_multikey_noserial.xml -->
 
@@ -310,7 +310,7 @@ Alla begärandavärden är obligatoriska om inget annat anges.
 
 ### Svar
 
-En lyckad uppdatering returnerar svarskoden `201 created` och målet.
+En uppdatering returnerar svarskoden `201 created` och målet.
 
 ```
 { 
@@ -341,9 +341,9 @@ En lyckad uppdatering returnerar svarskoden `201 created` och målet.
 }
 ```
 
-## Skapa ett cookie-mål: Serialiserad flernyckel {#create-cookie-dest-multi-serial}
+## Skapa ett cookie-mål: Multinyckel, serialiserad {#create-cookie-dest-multi-serial}
 
-En `POST` metod som gör att du kan skapa ett mål som accepterar segment som innehåller flera nycklar och värden (t.ex. `gender=male, female; color=blue, red, green`).
+En `POST`-metod som gör att du kan skapa ett mål som accepterar segment som innehåller flera nycklar och värden (t.ex. `gender=male, female; color=blue, red, green`).
 
 <!-- r_cookie_destination_multikey_serial.xml -->
 
@@ -378,7 +378,7 @@ Alla begärandavärden är obligatoriska om inget annat anges.
 
 ### Svar
 
-En lyckad uppdatering returnerar svarskoden `201 created` och målet.
+En uppdatering returnerar svarskoden `201 created` och målet.
 
 ```
 { 
