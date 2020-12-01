@@ -30,13 +30,13 @@ ht-degree: 2%
 
 ## Komma igång {#getting-started}
 
-För att komma igång med [!UICONTROL Actionable Log Files]måste du importera loggdata till [!DNL Audience Manager]. Följande länkar hjälper dig att komma igång:
+Om du vill komma igång med [!UICONTROL Actionable Log Files] måste du importera loggdata till [!DNL Audience Manager]. Följande länkar hjälper dig att komma igång:
 
-* Mer [!UICONTROL Google Campaign Manager] information finns i [Importera Google Campaign Manager-datafiler till Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) *och* kontakta din [!DNL Audience Manager] konsult.
-* Mer information [!UICONTROL Google Ad Manager] (tidigare Google DFP) om loggar finns i [Importera Google Ad Manager-datafiler till Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *och* kontakta din [!DNL Audience Manager] konsult.
-* Andra annonsserverloggar finns i [Data- och metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) *och* kontakta din [!DNL Audience Manager] konsult.
+* Mer information om [!UICONTROL Google Campaign Manager]-loggar finns i [Importera Google Campaign Manager-datafiler till Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) *och* kontakta din [!DNL Audience Manager]-konsult.
+* Mer information om [!UICONTROL Google Ad Manager]-loggar (tidigare Google DFP) finns i [Importera Google Ad Manager-datafiler till Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *och* kontakta din [!DNL Audience Manager]-konsult.
+* Andra annonsserverloggar finns i [Data- och metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) *och* kontakta din [!DNL Audience Manager]-konsult.
 
-Om du redan importerar loggdata till [!DNL Audience Manager]ber du din [!DNL Audience Manager] konsult eller [kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html) att aktivera [!UICONTROL Actionable Log Files] för dig.
+Om du redan importerar loggdata till [!DNL Audience Manager] ber du din [!DNL Audience Manager]-konsult eller [kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html) att aktivera [!UICONTROL Actionable Log Files] åt dig.
 
 <!--
 
@@ -48,23 +48,23 @@ Om du redan importerar loggdata till [!DNL Audience Manager]ber du din [!DNL Aud
 
 ## Arbeta med körbara loggfiler {#working-with-actionable-log-files}
 
-Med [!UICONTROL Actionable Log Files]hjälp av annonsserverloggarna hämtas informationen på [!DNL Audience Manager] samma sätt som data från webbplatsinteraktioner i realtid. [!DNL Audience Manager] ansluter till annonsserverns logglagring, tolkar informationen från loggarna och skickar loggdata som användbara signaler till våra [datainsamlingsservrar](../../reference/system-components/components-data-collection.md#dcs-pcs).
+Med [!UICONTROL Actionable Log Files] hämtas informationen från annonsserverloggar på [!DNL Audience Manager] på samma sätt som du hämtar data från webbplatsinteraktioner i realtid. [!DNL Audience Manager] ansluter till annonsserverns logglagring, tolkar informationen från loggarna och skickar loggdata som användbara signaler till våra  [datainsamlingsservrar](../../reference/system-components/components-data-collection.md#dcs-pcs).
 
-Du måste fortfarande ställa in regelbaserade egenskaper för att fånga upp de åtgärdbara signalerna. Se hur du konfigurerar regelbaserade egenskaper i [Audience Manager-användargränssnittet](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) eller med våra [grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-create.md). Bläddra ned till delen [Användbara signaler](../../integration/media-data-integration/actionable-log-files.md#actionable-signals) för att visa en lista över alla tangenter som du kan använda i regelbaserade egenskaper.
+Du måste fortfarande ställa in regelbaserade egenskaper för att fånga upp de åtgärdbara signalerna. Se hur du konfigurerar regelbaserade egenskaper i [användargränssnittet](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) i Audience Manager eller med våra [grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-create.md). Bläddra nedåt till [Funktionsbara signaler](../../integration/media-data-integration/actionable-log-files.md#actionable-signals)-avsnittet för en lista över alla tangenter som du kan använda i regelbaserade egenskaper.
 
 >[!IMPORTANT]
 >
->Vi rekommenderar implementering [!UICONTROL Actionable Log Files] i stället *för* [Pixelanrop](../../integration/media-data-integration/impression-data-pixels.md). Vi avråder från att använda båda alternativen eftersom det leder till att antalet frekvenser ökar för egenskaperna.
+>Vi rekommenderar att du implementerar [!UICONTROL Actionable Log Files] *i stället för* [Pixelanrop](../../integration/media-data-integration/impression-data-pixels.md). Vi avråder från att använda båda alternativen eftersom det leder till att antalet frekvenser ökar för egenskaperna.
 
 ## Användbara signaler {#actionable-signals}
 
-Signaler är de [minsta dataenheterna](../../reference/signal-trait-segment.md) i [!DNL Audience Manager]. [!UICONTROL Actionable Log Files] kan ni samla in annonsörs-, affärsenhet-, kreativitets- och kampanjvärden i tryckhändelser, klickhändelser och konverteringshändelser som signaler från annonsserverloggar.
+Signalerna är [de minsta dataenheterna](../../reference/signal-trait-segment.md) i [!DNL Audience Manager]. [!UICONTROL Actionable Log Files] kan ni samla in annonsörs-, affärsenhet-, kreativitets- och kampanjvärden i tryckhändelser, klickhändelser och konverteringshändelser som signaler från annonsserverloggar.
 
 Kom ihåg att om du vill använda den här informationen för att skapa och segmentera målgrupper måste du själv skapa regelbaserade egenskaper.
 
 ### Användbara signaler från Google Campaign Manager-loggar {#dcm-logs-signals}
 
-I tabellen visas de användbara signalerna från [!DNL Google Campaign Manager] loggfiler:
+I tabellen visas de åtgärdbara signalerna från [!DNL Google Campaign Manager]-loggfiler:
 
 <table id="table_A5A2A10D471C4C9D8DCD88F9C017040C"> 
  <thead> 
@@ -79,7 +79,7 @@ I tabellen visas de användbara signalerna från [!DNL Google Campaign Manager] 
   <tr> 
    <td colname="col1"> <p> <code>Activity ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_conversion</code> </p> </td> 
-   <td colname="col3"> <p>Endast tillgängligt för konverteringshändelser. </p> <p>Representerar det numeriska ID:t för konverteringsaktiviteten i Google Campaign Manager. Det här fältet mappar till aktivitets-ID:t från Google Campaign Manager. </p> <p> <p>Tips: Du kan hämta flera eller specifika konverteringsaktiviteter från Google Campaign Manager. Skapa egenskaper med hjälp <code> d_conversion = activity ID</code> av Google Campaign Manager för varje konverteringsaktivitet. </p> </p> </td> 
+   <td colname="col3"> <p>Endast tillgängligt för konverteringshändelser. </p> <p>Representerar det numeriska ID:t för konverteringsaktiviteten i Google Campaign Manager. Det här fältet mappar till aktivitets-ID:t från Google Campaign Manager. </p> <p> <p>Tips: Du kan hämta flera eller specifika konverteringsaktiviteter från Google Campaign Manager. Skapa egenskaper med <code> d_conversion = activity ID</code> för varje konverteringsaktivitet från Google Campaign Manager. </p> </p> </td> 
    <td colname="col4"> <p> <code> 24122</code> </p> </td> 
   </tr> 
   <tr> 
@@ -149,13 +149,13 @@ I tabellen visas de användbara signalerna från [!DNL Google Campaign Manager] 
  </tbody>
 </table>
 
-Signalerna som beskrivs i tabellen fångas in [!DNL Audience Manager] som ett `HTTP` realtidssamtal. Exempelanropet nedan innehåller information om en konverteringshändelse från [!DNL Google Campaign Manager]. Samtal behöver inte nödvändigtvis innehålla *alla* signaler i exempelanropet.
+Signalerna som beskrivs i tabellen hämtas i [!DNL Audience Manager] som ett `HTTP`-anrop i realtid. Exempelanropet nedan innehåller information om en konverteringshändelse från [!DNL Google Campaign Manager]. Samtal behöver inte nödvändigtvis innehålla *alla* signaler i exempelanropet.
 
 ```
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_event=conv&d_conversion=24122&d_conversionType=2&d_bu=3983524&d_campaign=7321391&d_adsrc=11111&d_creative=123456
 ```
 
-För en genomsnittlig loggfil på 2 miljoner rader [!DNL Google Campaign Manager] realiseras alla egenskaper som skapats av användbara signaler inom ungefär en timme efter det att loggarna bearbetats.
+För en genomsnittlig loggfil på [!DNL Google Campaign Manager] på 2 miljoner rader realiseras alla egenskaper som skapats från användbara signaler inom ungefär en timme efter det att loggarna bearbetats.
 
 <!--
 Removed  {importance="high"} for ExL
@@ -163,17 +163,17 @@ Removed  {importance="high"} for ExL
 
 >[!NOTE]
 >
->Händelsens tidsstämpel som anges i [!DNL Google Campaign Manager] loggarna respekteras och skickas till [!UICONTROL Data Collection Servers].
+>Händelsens tidsstämpel som anges i [!DNL Google Campaign Manager]-loggarna respekteras och skickas till [!UICONTROL Data Collection Servers].
 >
->* Om en tidsstämpel inte är tillgänglig för en datarad i [!DNL Google Campaign Manager] loggfilen använder vi tidpunkten för `HTTP` anropet som händelsetidsstämpel.
->* Om dataraden i [!DNL Google Campaign Manager] loggfilen innehåller en felaktig tidsstämpel, ignoreras hela raden.
+>* Om det inte finns någon tidsstämpel tillgänglig för en datarad i [!DNL Google Campaign Manager]-loggfilen använder vi tidpunkten för `HTTP`-anropet som händelsetidsstämpel.
+>* Om dataraden i [!DNL Google Campaign Manager]-loggfilen innehåller en felformaterad tidsstämpel, ignoreras hela raden.
 
 
-<br> 
+<br>
 
 ### Användbara signaler från [!DNL Google Ad Manager] loggar {#ad-manager-logs-signals}
 
-I tabellen visas de användbara signalerna från [!DNL Google Ad Manager] loggfiler:
+I tabellen visas de åtgärdbara signalerna från [!DNL Google Ad Manager]-loggfiler:
 
 
 | Rubriknamn i loggfil | Signal | Beskrivning |
@@ -192,17 +192,17 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 >[!NOTE]
 >
->Händelsens tidsstämpel som anges i [!DNL Google Ad Manager] loggarna respekteras och skickas till [!UICONTROL Data Collection Servers].
+>Händelsens tidsstämpel som anges i [!DNL Google Ad Manager]-loggarna respekteras och skickas till [!UICONTROL Data Collection Servers].
 >
->* Om en tidsstämpel inte är tillgänglig för en datarad i [!DNL Google Ad Manager] loggfilen använder vi tidpunkten för `HTTP` anropet som händelsetidsstämpel.
->* Om dataraden i [!DNL Google Ad Manager] loggfilen innehåller en felaktig tidsstämpel, ignoreras hela raden.
+>* Om det inte finns någon tidsstämpel tillgänglig för en datarad i [!DNL Google Ad Manager]-loggfilen använder vi tidpunkten för `HTTP`-anropet som händelsetidsstämpel.
+>* Om dataraden i [!DNL Google Ad Manager]-loggfilen innehåller en felformaterad tidsstämpel, ignoreras hela raden.
 
 
 <br> 
 
 ### Användbara signaler från allmänna annonsserverloggar {#generic-logs-signals}
 
-Först måste ni lagra era annonsserverloggar i våra Amazon S3-butiker. Läs [datafiler för målgruppsoptimeringsrapporter och åtgärdsloggfiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md) *och* kontakta din [!DNL Audience Manager] konsult. I tabellen visas de åtgärdbara signalerna från allmänna loggfiler:
+Först måste ni lagra era annonsserverloggar i våra Amazon S3-bucket. Läs [Datafiler för Audience Optimization-rapporter och körbara loggfiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md) *och* kontakta din [!DNL Audience Manager]-konsult för att uppnå detta. I tabellen visas de åtgärdbara signalerna från allmänna loggfiler:
 
 <table id="table_A5A2A10D471C4C9D8DCD88F9C017040C"> 
  <thead> 
@@ -228,13 +228,13 @@ Först måste ni lagra era annonsserverloggar i våra Amazon S3-butiker. Läs [d
   <tr> 
    <td colname="col1"> <p> <code>Time-Stamp</code> </p> </td> 
    <td colname="col2"> <p> <code> d_time</code> </p> </td> 
-   <td colname="col3"> <p> Ett UTC-datum och en UTC-tid för intrycket, klickningen eller konverteringshändelsen. Använd <code>yyyy-MM-dd HH:mm:ss</code> formatet. </p></td> 
+   <td colname="col3"> <p> Ett UTC-datum och en UTC-tid för intrycket, klickningen eller konverteringshändelsen. Använd formatet <code>yyyy-MM-dd HH:mm:ss</code>. </p></td> 
    <td colname="col4"> <p> <code>2019-03-26 11:23:10</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>Advertiser-ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_adsrc</code> </p> </td> 
-   <td colname="col3"> <p>En integrationskod för annonsörens datakälla. Observera att detta fält inte är relaterat till datakällor i <a href="../../features/datasources-list-and-settings.md">Audience Manager.</a></p></td> 
+   <td colname="col3"> <p>En integrationskod för annonsörens datakälla. Observera att det här fältet inte är relaterat till <a href="../../features/datasources-list-and-settings.md">Audience Manager-datakällor.</a></p></td> 
    <td colname="col4"> <p> <code> 134243</code> </p> </td> 
   </tr> 
   <tr> 
@@ -264,7 +264,7 @@ Först måste ni lagra era annonsserverloggar i våra Amazon S3-butiker. Läs [d
     <tr> 
    <td colname="col1"> <p> <code>-</code> </p> </td> 
    <td colname="col2"> <p> <code> d_event</code> </p> </td> 
-   <td colname="col3"> <p>Anger händelsetypen. Audience Manager läser händelsetypen från loggfilens namn och omvandlar den till en användbar signal. Se namnkonventioner för <a href="../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md#naming-conventions">loggfiler</a>. </p> <p>Godkända värden är: </p> <p> 
+   <td colname="col3"> <p>Anger händelsetypen. Audience Manager läser händelsetypen från loggfilens namn och omvandlar den till en användbar signal. Se <a href="../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md#naming-conventions">namnkonventioner för loggfiler</a>. </p> <p>Godkända värden är: </p> <p> 
      <ul id="ul_58EB40E458844DA185ABAF160ADAF03E"> 
       <li id="li_71772CC106F74F4788E1784CC3D70BD3"> <code> d_event = imp</code> för intryck. </li> 
       <li id="li_33A629A32B87400F93269581154D566F"> <code> d_event = click</code> för klickningar. </li> 
@@ -281,34 +281,34 @@ Först måste ni lagra era annonsserverloggar i våra Amazon S3-butiker. Läs [d
  </tbody>
 </table>
 
-Signalerna som beskrivs i tabellen fångas in [!DNL Audience Manager] som ett `HTTP` realtidssamtal. Samtal behöver inte nödvändigtvis innehålla *alla* signaler i exempelanropet.
+Signalerna som beskrivs i tabellen hämtas i [!DNL Audience Manager] som ett `HTTP`-anrop i realtid. Samtal behöver inte nödvändigtvis innehålla *alla* signaler i exempelanropet.
 
 ```
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_activity=1234&d_creative=24122&d_placemebt=3442&d_bu=3983524&d_campaign=7321391&d_adsrc=11111
 ```
 
-## Arbeta med körbara signaler i användargränssnittet i Audience Manager {#actionable-signals-in-ui}
+## Arbeta med körbara signaler i användargränssnittet för Audience Manager {#actionable-signals-in-ui}
 
-Du kan visa dina inkommande åtgärdbara signaler i [signalsökningsgränssnittet](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md) .
+Du kan visa dina inkommande åtgärdbara signaler i gränssnittet [Signals Search](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md).
 
 Gå till **Målgruppsdata** (1) > **Signaler** (2) > **Sök** (3) och välj filtret **Åtgärdsbara loggfiler** (4).
 
 ![Användbara signaler i användargränssnittet](/help/using/integration/assets/alf-in-signals.png)
 
-Om du vill skapa regelbaserade egenskaper med hjälp av dina åtgärdbara signaler väljer du **Åtgärdsbara loggfiler** (1), väljer de åtgärdbara signaler som du vill använda som spårningsregler (2) och trycker på **Skapa trait från markerade signaler** (3).
+Om du vill skapa regelbaserade egenskaper med hjälp av dina åtgärdbara signaler väljer du **Åtgärdsbara loggfiler** (1), markerar de åtgärdbara signaler som du vill använda som spårningsregler (2) och trycker på **Skapa trait från markerade signaler** (3).
 
 ![Skapa egenskaper från signaler](/help/using/integration/assets/alf-create-trait.png)
 
 
-## Användningsexempel {#use-cases}
+## Använd fall {#use-cases}
 
-En fördel med implementering [!UICONTROL Actionable Log Files] är möjligheten att använda [kontroller för senaste frekvens och frekvens](../../features/segments/recency-and-frequency.md) på alla [regelbaserade egenskaper](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) som innehåller åtgärdbara signaler. Detta gör att du till exempel kan ange antalet gånger som en användare visas som en viss kreativ i en mediekampanj. Läs [Direktundertryckning](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md) av enheter för att lära dig hur man gör detta. Andra användningsområden:
+En fördel med att implementera [!UICONTROL Actionable Log Files] är att du kan använda [kontroller för senaste och frekvens](../../features/segments/recency-and-frequency.md) på alla [regelbaserade egenskaper](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) som innehåller åtgärdbara signaler. Detta gör att du till exempel kan ange antalet gånger som en användare visas som en viss kreativ i en mediekampanj. Läs [Instant Cross-Device Suppression](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md) om du vill veta hur du gör detta. Andra användningsområden:
 
 ### Återmarknadsföringsanvändare
 
 Återmarknadsför användare som såg creative 123 men som inte klickade eller konverterade och visade dem creative 456. Gör så här:
 
-1. Skapa ett varumärke för att fånga användare som såg den kreativa sidan. Säg att du döper trait [!DNL Creative Trait 123]. Använd trait-regeln:
+1. Skapa ett varumärke för att fånga användare som såg den kreativa sidan. Säg att du namnger trait [!DNL Creative Trait 123]. Använd trait-regeln:
 
    `d_creative == 123 AND d_event == imp`
 
@@ -316,21 +316,21 @@ En fördel med implementering [!UICONTROL Actionable Log Files] är möjligheten
 
    `d_event == click OR d_event=conv`
 
-3. Skapa ett segment för användare som såg creative 123 men inte klickade eller konverterade. Ge den ett namn [!DNL Retarget Users] och använd segmentregeln:
+3. Skapa ett segment för användare som såg creative 123 men inte klickade eller konverterade. Ge den namnet [!DNL Retarget Users] och använd segmentregeln:
 
    `Creative Trait 123 AND NOT Click and Converter`
 
 4. Mappa segmentet [!DNL Retarget Users] till ett mål och målanvändare i målet med creative 456.
 
-### Använd Google Campaign Manager Floodlight Activity i rapporten om målgruppsoptimering eller i Audience Lab
+### Använd Google Campaign Manager Floodlight-aktivitet i Audience Optimization-rapporter eller i Audience Lab
 
-[Med flyttalstaggar](https://support.google.com/dcm/partner/answer/4293719?hl=en) kan annonsörer spåra användarkonverteringar. Med [!UICONTROL Actionable Log Files]kan du spåra konverteringarna [!DNL Google Campaign Manager] i [målgruppsoptimeringsrapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md) eller i [Audience Lab](../../features/audience-lab/audience-lab.md):
+[Sväva ut ](https://support.google.com/dcm/partner/answer/4293719?hl=en) taggigerbara annonsörer för att spåra användarkonverteringar. Med [!UICONTROL Actionable Log Files] kan du spåra [!DNL Google Campaign Manager]-konverteringar i [Audience Optimization-rapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md) eller i [Audience Lab](../../features/audience-lab/audience-lab.md):
 
 1. Skapa ett spår och använd följande trait-regel för att hämta en konvertering från annonsserverloggarna:
 
    `d_event == conv AND d_conversion == 123`
 
-   När du skapar trait i Audience Manager [!UICONTROL UI]väljer du [!UICONTROL Conversion] som [!UICONTROL Event Type].
+   När du skapar ett spår i Audience Manager [!UICONTROL UI] väljer du [!UICONTROL Conversion] som [!UICONTROL Event Type].
 
 2. När du har skapat egenskapen börjar konverteringen rapporteras i [!UICONTROL Audience Optimization Reports] och i [!UICONTROL Audience Lab].
 
