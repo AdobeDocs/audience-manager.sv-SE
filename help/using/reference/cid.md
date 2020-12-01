@@ -17,11 +17,11 @@ ht-degree: 2%
 
 # CID ersätter DPID och DPUUID{#cid-replaces-dpid-and-dpuuid}
 
-Uppdatera koden så att den används `d_cid` eller `d_cid_ic` istället för `d_dpid` och `d_dpuuid`. DPID- och DPUID-variablerna fortsätter att fungera, men du bör tänka på att de är inaktuella. Detta inkluderar DPID- och DPUID-varianter utan `d_ prefix`.
+Uppdatera koden så att den använder `d_cid` eller `d_cid_ic` i stället för `d_dpid` och `d_dpuuid`. DPID- och DPUID-variablerna fortsätter att fungera, men du bör tänka på att de är inaktuella. Detta inkluderar DPID- och DPUID-varianter utan `d_ prefix`.
 
 ## DPID och DPUID: En granskning {#dpid-dpuuid-review}
 
-DPID och DPUID är nyckelvärdepar som innehåller ett dataleverantörs-ID och ett användar-ID. Dessa nyckelvärdepar länkar leverantörs-ID:n till användar-ID:n. De skickar in data under händelseanrop, för inkommande synkroniseringshändelser och för ID-anrop. Utan dem, [!DNL Audience Manager]och andra tjänster eller funktioner, skulle det inte finnas något sätt att matcha och synkronisera ID:n. Dessa variabler uttrycks ibland med eller utan prefixet `d_` , vilket visas nedan. Note, in the code, *italics* indicates a variable placeholder.
+DPID och DPUID är nyckelvärdepar som innehåller ett dataleverantörs-ID och ett användar-ID. Dessa nyckelvärdepar länkar leverantörs-ID:n till användar-ID:n. De skickar in data under händelseanrop, för inkommande synkroniseringshändelser och för ID-anrop. Utan dem skulle [!DNL Audience Manager] och andra tjänster eller funktioner inte ha något sätt att matcha och synkronisera ID:n. Dessa variabler uttrycks ibland med eller utan `d_`-prefixet enligt nedan. Observera att *kursiv* är en variabelplatshållare i koden.
 
 <table id="table_932B4416AE1E44E4A1E98D779D3B1ED5"> 
  <thead> 
@@ -59,7 +59,7 @@ Nyckelvärdepar för CID och CID_IC ersätter DPID och DPUID. De har samma funkt
 * Symbolen = skiljer nyckeln från dess relaterade värden.
 * ASCII-tecknet %01 som inte skrivs ut skiljer värdena åt.
 
-`d_cid` och `d_cid_ic` använd syntaxen nedan. Note, in the code, *italics* indicates a variable placeholder.
+`d_cid` och  `d_cid_ic` använd syntaxen nedan. Observera att *kursiv* är en variabelplatshållare i koden.
 
 <table id="table_0C8A4F8FDBC84416B4EB476F67BCFA8E"> 
  <thead> 
@@ -75,16 +75,16 @@ Nyckelvärdepar för CID och CID_IC ersätter DPID och DPUID. De har samma funkt
   </tr> 
   <tr> 
    <td colname="col1"> <p>Kund-ID-integreringskod (CID_IC) </p> </td> 
-   <td colname="col2"> <p> <code>d_cid_ic=<i>integration code</i>%01<i>user ID</i></code> </p> <p> En <span class="term"> integrationskod</span> är ett alternativt ID som du kan använda i stället för datakällans ID, som tilldelats av <span class="keyword"> Audience Manager</span>. Se <a href="../features/manage-datasources.md#create-data-source"> Skapa en datakälla</a> om du behöver konfigurera en integreringskod. </p> </td> 
+   <td colname="col2"> <p> <code>d_cid_ic=<i>integration code</i>%01<i>user ID</i></code> </p> <p> En <span class="term">-integrationskod</span> är ett alternativt ID som du kan använda i stället för datakällans ID, som tilldelas av <span class="keyword"> Audience Manager</span>. Se <a href="../features/manage-datasources.md#create-data-source"> Skapa en datakälla</a> om du behöver konfigurera en integreringskod. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Se även [URL-variabler och syntax för deklarerade ID:n](../features/declared-ids.md#variables-and-syntax).
+Se även [URL-variabler och -syntax för deklarerade ID:n](../features/declared-ids.md#variables-and-syntax).
 
 >[!NOTE]
 >
->Du kan använda integrationskoder för dina egna datakällor och för globala [delade datakällor](../features/datasources-list-and-settings.md#settings-menu-options)som du har tillgång till. Du kan till exempel använda integreringskoder när du arbetar med datakällor för mobila identifierare. Använd följande integrationskoder, exakt som anges nedan:
+>Du kan använda integrationskoder för dina egna datakällor och för globala [delade datakällor](../features/datasources-list-and-settings.md#settings-menu-options) som du har tillgång till. Du kan till exempel använda integreringskoder när du arbetar med datakällor för mobila identifierare. Använd följande integrationskoder, exakt som anges nedan:
 
 * **DSID_20914** för GAID, som representerar enheter som kör Android-operativsystemet.
 * **DSID_20915** för IDFA, som representerar enheter som kör operativsystemet iOS.
@@ -128,7 +128,7 @@ Följande tabell innehåller exempel per händelsetyp.
  </tbody> 
 </table>
 
-Varje anrop kan även innehålla flera `d_cid` - och `d_cid_ic` nyckelvärdepar enligt följande:
+Varje anrop kan även innehålla flera nyckelvärdepar för `d_cid` och `d_cid_ic` enligt följande:
 
 ```
 ...?d_cid=123%01456&d_cid=123%01789&d_cid_ic=543%01333...
@@ -150,11 +150,11 @@ Varje anrop kan även innehålla flera `d_cid` - och `d_cid_ic` nyckelvärdepar 
      <ul id="ul_66DCB63C60914057B2BE21F49D9A36CA"> 
       <li id="li_6D82B4DB40BB4BB0B8FAF5841577FAAC"><code> user ID</code> <code> (dpuuid)</code> </li> 
       <li id="li_D2F94B07B0D84B09A5CDFA48518DDD62"><code> integration code</code> </li> 
-     </ul> </p> <p> <p>Obs! Du måste URL-koda användar-ID:t och integrationskoden <i>innan</i> du sammanfogar dem i en sträng. Detta beror på att ASCII-tecknet %01 som avgränsar de två variablerna inte får fångas in i URL-kodningen. </p> </p> <p>Med URL-kodning säkerställs att dina användar-ID:n och integreringskoder som innehåller reserverade eller osäkra tecken som, men inte begränsade till, + eller = överförs korrekt till våra servrar. </p> <p>Använd ASCII- <a href="https://www.w3schools.com/tags/ref_urlencode.asp" format="https" scope="external"> kodningstabellen</a> som referens. </p> </td> 
+     </ul> </p> <p> <p>Obs! Du måste URL-koda användar-ID:t och integrationskoden <i>innan</i> sammanfogar dem till en sträng. Detta beror på att ASCII-tecknet %01 som avgränsar de två variablerna inte får fångas in i URL-kodningen. </p> </p> <p>Med URL-kodning säkerställs att dina användar-ID:n och integreringskoder som innehåller reserverade eller osäkra tecken som, men inte begränsade till, + eller = överförs korrekt till våra servrar. </p> <p>Använd ASCII-kodningstabellen <a href="https://www.w3schools.com/tags/ref_urlencode.asp" format="https" scope="external"></a> som referens. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Använda integreringskoder för globala delade datakällor </p> </td> 
-   <td colname="col2"> <p>Du kan använda integrationskoder för dina egna datakällor och för globala <a href="../features/datasources-list-and-settings.md#settings-menu-options"> delade datakällor</a>som du har tillgång till. Du kan till exempel använda integreringskoder när du arbetar med datakällor för mobila identifierare. Använd följande integrationskoder, exakt som anges nedan: </p> <p> 
+   <td colname="col2"> <p>Du kan använda integrationskoder för dina egna datakällor och för globala <a href="../features/datasources-list-and-settings.md#settings-menu-options"> delade datakällor</a> som du har tillgång till. Du kan till exempel använda integreringskoder när du arbetar med datakällor för mobila identifierare. Använd följande integrationskoder, exakt som anges nedan: </p> <p> 
      <ul id="ul_B306EE96A3BD4CE982E113D5E23826CF"> 
       <li id="li_3340C7AFA9AB4105A2CCF3E476EC7552"> <b>DSID_20914</b> för GAID, som representerar enheter som kör Android-operativsystemet. </li> 
       <li id="li_779D9F08021043FCB233A0ABF5160C76"> <b>DSID_20915</b> för IDFA, som representerar enheter som kör operativsystemet iOS. </li> 
