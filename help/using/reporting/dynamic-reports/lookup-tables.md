@@ -27,11 +27,11 @@ c_lookup_tables.xml
 
 ## Loggfilens metadata ökar filstorleken och bearbetningstiden
 
-En vanlig loggfil som används av rapporten innehåller vanligtvis tusentals rader och dussintals kolumner. [!UICONTROL Delivery Performance] Det består av numeriska ID:n och läsbar information, t.ex. namn för kreatörer, annonsörer, infogningsorder osv.
+En vanlig loggfil som används av [!UICONTROL Delivery Performance]-rapporten innehåller vanligtvis tusentals rader och dussintals kolumner. Det består av numeriska ID:n och läsbar information, t.ex. namn för kreatörer, annonsörer, infogningsorder osv.
 
 Denna icke-ID-information kallas *`metadata`* (dvs. information om annan information) och skrivs i varje rad i loggfilen.
 
-Däremot fungerar rapporten huvudsakligen med ID:n i loggfilen [!UICONTROL Delivery Performance] . Metadata är användbara, men repetitiva. Det ökar filstorleken och tar längre tid att hämta data.
+Däremot fungerar [!UICONTROL Delivery Performance]-rapporten huvudsakligen med ID:n i loggfilen. Metadata är användbara, men repetitiva. Det ökar filstorleken och tar längre tid att hämta data.
 
 ## Minska filstorleken och förkorta behandlingstiden med indextabeller
 
@@ -49,7 +49,7 @@ Säg att du har en datafil som ser ut ungefär som den nedan.
 | 4 | 222 | Sot B | 789 | Vattna | 14 | Företag B |
 | 5 | 222 | Sot B | 789 | Vattna | 14 | Företag B |
 
-<br> 
+<br>
 
 Här är samma loggfil med metadata borttagna. Filen är mindre och enklare att bearbeta om den bara består av ID:n.
 
@@ -57,7 +57,7 @@ Här är samma loggfil med metadata borttagna. Filen är mindre och enklare att 
 |---|---|---|---|
 | 1 | 111 | 456 | 27 |
 | 2 | 111 | 456 | 27 |
-| 3 | 111 | 456 | 27 |
+| 1 | 111 | 456 | 27 |
 | 4 | 222 | 789 | 14 |
 | 5 | 222 | 789 | 14 |
 
