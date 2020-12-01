@@ -22,7 +22,7 @@ Innan du kan skicka batchdata till tredjepartsleverantörer av innehåll måste 
 
 Om du arbetar med en Adobe-konsult tar de hand om konfigurationsprocessen åt dig.
 
-## Begär assistentkonfiguration via Adobes kundsupport {#config-support}
+## Begär assistentkonfiguration via Adobe kundsupport {#config-support}
 
 Om du inte arbetar med någon Adobe-konsult kan du fortfarande få batchöverföringsintegrering konfigurerad av kundsupport. Kontakta kundsupport om du vill ha mer information.
 
