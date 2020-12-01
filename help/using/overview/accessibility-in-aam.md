@@ -24,7 +24,7 @@ Adobe är branschledande inom tillgänglighet och stöder skapandet av enaståen
 
 De vanligaste hjälpmedelsfunktionerna i programprodukterna är: tangentbordsnavigering, semantisk struktur, tillräcklig kontrast mellan förgrundselement och bakgrundselement, stöd för hjälpmedelsteknik, etiketter för tydliga element osv.
 
-För att göra det [!DNL Audience Manager] enklare för alla har vi utvecklat stöd för flera tillgänglighetsfunktioner.
+För att göra [!DNL Audience Manager] enklare att använda för alla har vi utvecklat stöd för flera tillgänglighetsfunktioner.
 
 ## Tangentbordsnavigering {#keyboard-navigation}
 
@@ -38,13 +38,13 @@ För att göra det [!DNL Audience Manager] enklare för alla har vi utvecklat st
 
 ## Tillgänglig tabellsortering {#table-sorting}
 
-Tabellrubriker kan markeras när du navigerar med `Tab` tangenten och du kan ändra sorteringsordningen genom att trycka på `Space`.
+Tabellrubriker kan markeras när du navigerar med `Tab`-tangenten, och du kan ändra sorteringsordningen genom att trycka på `Space`.
 
 ![accessibility-table-headers](assets/accessibility-table-headers.png)
 
 ## Stöd för hjälpfunktioner {#assistive-technologies}
 
-Genom att använda semantisk kod och [ARIA](https://www.w3.org/WAI/standards-guidelines/aria/)innehåller interaktiva element i [!DNL Audience Manager] användargränssnittet motsvarande etiketter, hjälpmedelsnamn och roller som identifierar både deras syfte och deras aktuella tillstånd.
+Genom att använda semantisk kod och [ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) innehåller interaktiva element i [!DNL Audience Manager]-användargränssnittet motsvarande etiketter, hjälpmedelsnamn och roller som identifierar både deras syfte och deras aktuella tillstånd.
 
 Detta garanterar att hjälpmedelstekniker, som skärmläsare, kan läsa upp etiketter och annan information för användarna så att de enkelt kan interagera med programkontrollerna.
 
@@ -52,7 +52,7 @@ Alla interaktiva element i användargränssnittet i Audience Manager innehåller
 
 ## Färger och kontrast {#colors-contrast}
 
-Användargränssnittet [!DNL Audience Manager] strävar efter att ge tillräcklig kontrast i programmet för att ge en lättillgänglig visningsupplevelse för användare med nedsatt syn eller färgbrist.
+[!DNL Audience Manager]-användargränssnittet strävar efter att ge tillräckligt med kontrast i programmet för att ge en lättillgänglig visningsupplevelse för användare med nedsatt syn eller färgbrister.
 
 Inläsningsskärmar kan till exempel innehålla en inläsande snurra inuti en vit modal ruta, allt ovanpå en mörkgrå övertäckning.
 
@@ -62,4 +62,4 @@ Inläsningsskärmar kan till exempel innehålla en inläsande snurra inuti en vi
 
 [!DNL Audience Manager] strävar efter att ge en allt större grad av tillgänglighet, vilket gör produkten enkel att använda för alla.
 
-Vi rekommenderar att du använder formuläret [](https://www.adobe.com/accessibility/feedback.html) Adobe för tillgänglighetsfeedback för att skicka förslag på förbättringar och tillgänglighetsproblem som du stöter på. Vi tar gärna hänsyn till dina synpunkter och förbättrar dem [!DNL Audience Manager].
+Vi rekommenderar att du använder [Adobe-formuläret för tillgänglighetsfeedback](https://www.adobe.com/accessibility/feedback.html) för att skicka förbättringsförslag och tillgänglighetsproblem som du stöter på. Vi tar gärna hänsyn till dina synpunkter och förbättrar [!DNL Audience Manager].
