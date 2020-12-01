@@ -15,17 +15,17 @@ ht-degree: 8%
 ---
 
 
-# Modify the GPT `setTargeting` API Call {#modify-the-gpt-settargeting-api-call}
+# Ändra GPT-API-anropet `setTargeting` {#modify-the-gpt-settargeting-api-call}
 
-Lägg till en if-sats för att kontrollera om det finns Audience Manager-cookies innan du anropar [!DNL Google Publisher Tag]`.setTargeting` metoden.
+Lägg till en if-programsats för att kontrollera om det finns Audience Manager-cookies innan du anropar [!DNL Google Publisher Tag] `.setTargeting`-metoden.
 
-## Sök efter Audience Manager Cookies med en `IF` programsats
+## Sök efter Audience Manager Cookies med en `IF`-sats
 
-Metoden hämtar data från målcookien för Audience Manager och den unika användar-ID-cookien ( `.setTargeting` `aam_uuid`). Om `.setTargeting` anropas innan dessa cookies [!UICONTROL DIL] skrivs, eller om cookies är tomma, kan du se fel när sidan läses in. Du kan undvika detta genom att omsluta metoden i en `.setTargeting` `if` programsats som söker efter dessa cookies. Om de inte är angivna förhindrar den här programsatsen `.setTargeting` att anropa `AamGpt` funktionen.
+Metoden `.setTargeting` hämtar data från målcookien för Audience Manager och den unika cookien för användar-ID ( `aam_uuid`). Om `.setTargeting` anropas innan [!UICONTROL DIL] skriver dessa cookies, eller om cookies är tomma, kan det uppstå fel när sidan läses in. Du kan undvika detta genom att omsluta metoden `.setTargeting` i en `if`-sats som söker efter dessa cookies. Om de inte anges förhindrar den här programsatsen `.setTargeting` från att anropa funktionen `AamGpt`.
 
 ### `IF` Exempel på utdragskod
 
-I det här exemplet är målcookie-namnet för Audience Manager `Sample`. Du anger det här namnet när du skapar målcookien i användargränssnittet i Audience Manager. [!UICONTROL DIL] anger cookie-filen och namnet kan inte ändras `aam_uuid` .
+I det här exemplet är målcookie-namnet för Audience Manager `Sample`. Du anger det här namnet när du skapar målcookien i användargränssnittet i Audience Manager. [!UICONTROL DIL] anger  `aam_uuid` cookien och namnet kan inte ändras.
 
 ```js
 if(typeof AamGpt.getCookie("Sample") != "undefined"){ 
@@ -38,16 +38,16 @@ if(typeof AamGpt.getCookie("aam_uuid") != "undefined" ){
 
 >[!IMPORTANT]
 >
->Beroende på hur du vill integrera med [!DNL Google Ad Manager]behöver du bara några av raderna i kodexemplet ovan:
+>Beroende på hur du vill integrera med [!DNL Google Ad Manager] behöver du bara några av raderna i kodexemplet ovan:
 >
 >* Integrering på klientsidan: använder endast raderna 1-3.
 >* Integrering på serversidan: ingen av raderna behövs.
->* Infoga [!DNL Google Ad Manager] loggfiler för rapportering i [!DNL Audience Manager]: använder endast raderna 4-6. Den här koden infogar värdet för `aam_uuid` cookien i loggarna så att de kan importeras för rapportering.
+>* Infoga [!DNL Google Ad Manager]-loggfiler för rapportering i [!DNL Audience Manager]: använder endast raderna 4-6. Den här koden infogar värdet för `aam_uuid`-cookien i loggarna så att de kan importeras för rapportering.
 
 
 ### `AamGpt` Funktioner och datatyper
 
-Definierar de nyckelvariabler som används i `if` programsatsen .
+Definierar de nyckelvariabler som används i `if`-satsen.
 
 <table id="table_881391C9BDDF4FACAFC37A47B14B31A1"> 
  <thead> 
@@ -61,7 +61,7 @@ Definierar de nyckelvariabler som används i `if` programsatsen .
   <tr> 
    <td colname="col1"> <p> <code> AamGpt.getKey </code> </p> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>Returnerar nyckeln i nyckelvärdessegmentparet. Om nyckelvärdepar till exempel består av <code> color=blue </code>, returneras <code> color </code>. </p> </td> 
+   <td colname="col3"> <p>Returnerar nyckeln i nyckelvärdessegmentparet. Om nyckelvärdepar till exempel bestod av <code> color=blue </code> returneras <code> color </code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> AamGpt.getValues </code> </p> </td> 
