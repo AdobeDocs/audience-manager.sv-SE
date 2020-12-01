@@ -16,7 +16,7 @@ ht-degree: 25%
 
 # Implementering och integrering - översikt
 
-Arbeta med data från [!DNL Experience Cloud] lösningar eller andra externa system i [!DNL Audience Manager].
+Arbeta med data från [!DNL Experience Cloud]-lösningar eller andra externa system i [!DNL Audience Manager].
 
 * [Metoder för dataintegrering](data-integration-methods.md)
 * [Implementera Audience Manager](implement-audience-manager.md)
