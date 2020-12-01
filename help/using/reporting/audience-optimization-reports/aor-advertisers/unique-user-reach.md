@@ -25,7 +25,7 @@ Med rapporten Unique User Reach (Unikt användarområde) kan ni hitta annonsöre
 >
 >Kom ihåg att:
 >
->* I [!UICONTROL Unique User Reach] rapporten visas endast information för användare med [!UICONTROL Admin] behörighetsnivåer. Din [!DNL Audience Manager] konsult eller kundtjänst kan ge ditt konto [!UICONTROL Admin] tillstånd.
+>* Rapporten [!UICONTROL Unique User Reach] visar endast information för användare med behörigheten [!UICONTROL Admin]. Din [!DNL Audience Manager]-konsult eller kundtjänst kan ge ditt konto [!UICONTROL Admin] behörighet.
    >
    >
 * 7-dagars och 30-dagars summeringsperioder är endast tillgängliga för söndag.
@@ -33,6 +33,6 @@ Med rapporten Unique User Reach (Unikt användarområde) kan ni hitta annonsöre
 
 ## Exempelrapport
 
-Din [!UICONTROL Unique User Reach] rapport kan se ut ungefär som den nedan. Klicka på en bubbla i rapporten för att visa underliggande data.
+Din [!UICONTROL Unique User Reach]-rapport kan se ut ungefär som den nedan. Klicka på en bubbla i rapporten för att visa underliggande data.
 
 ![](assets/unique-user-reach.png)
