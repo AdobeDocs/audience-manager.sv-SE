@@ -17,7 +17,7 @@ ht-degree: 4%
 # Söka efter signaler med nyckelvärdespar {#search-signals-by-key-value-pairs}
 
 Sök efter en eller flera signaler baserat på deras respektive nyckelvärdepar.
-Om du vill söka efter fler än en signal klickar du på knappen ![Lägg till](assets/icon_add.png) . Ange de nyckelvärdepar som du vill söka efter och använd sedan följande filter för att begränsa resultatet.
+Om du vill söka efter fler än en signal klickar du på knappen ![Lägg till](assets/icon_add.png). Ange de nyckelvärdepar som du vill söka efter och använd sedan följande filter för att begränsa resultatet.
 
 * **Signalstatus**: söka efter signaler som finns i traits, oanvända signaler eller både och.
 * **Visa poster för**: Ange tidsintervallet för sökning efter mottagna signaler.
@@ -25,9 +25,9 @@ Om du vill söka efter fler än en signal klickar du på knappen ![Lägg till](a
 
 >[!IMPORTANT]
 >
->För en smidig användarupplevelse baseras sökresultaten för nyckelvärdepar på datainsamling. Se [Datainsamling och Felfrekvens](/help/using/reporting/report-sampling.md) för mer ingående information om hur datainsamling [!DNL Audience Manager] används och varför små resultatvariationer kan visas när nyckelvärdessökning jämförs med allmänna sökningar.
+>För en smidig användarupplevelse baseras sökresultaten för nyckelvärdepar på datainsamling. Se [Datainsamling och Felfrekvens](/help/using/reporting/report-sampling.md) för mer information om hur [!DNL Audience Manager] använder datainsamling och varför små resultatvariationer kan visas när nyckelvärdessökning jämförs med allmänna sökningar.
 
-När du söker efter signaler med hjälp av flera nyckelvärdepar, [!DNL Audience Manager] länkar paren med den logiska **operatorn AND** . Anta att du gör en sökning med följande nyckelvärdepar:
+När du söker efter signaler med flera nyckelvärdepar länkar [!DNL Audience Manager] paren med den logiska operatorn **AND**. Anta att du gör en sökning med följande nyckelvärdepar:
 
 * [!DNL c_creative == "12345"]
 * [!DNL c_product == "smartphone"]
@@ -39,7 +39,7 @@ Sökningen returnerar endast resultat som uppfyller villkoren för alla tre filt
 
 ## Signaler som inte ingår i den signala sökningen {#excluded-signals}
 
-Nyckelvariabler som används av Audience Manager och som prefixas av `d_` och `h_` prefix visas inte av [!UICONTROL Signals Search]. Mer information finns i [Prefixkrav för nyckelvariabler](../../traits/trait-variable-prefixes.md) .
+Nyckelvariabler som används av Audience Manager och som föregås av prefixen `d_` och `h_` visas inte av [!UICONTROL Signals Search]. Mer information finns i [Prefixkrav för nyckelvariabler](../../traits/trait-variable-prefixes.md).
 
 ## Skiftlägesokänslighet och automatisk sökning {#case-insensitivity}
 
@@ -47,14 +47,14 @@ Nyckel- och värdesökfälten är skiftlägeskänsliga. Nyckelsökfältet inneh�
 
 ![](assets/signal-search-suggestions.png)
 
-Låt oss säga [!DNL Audience Manager] att vi har fått följande signaler:
+[!DNL Audience Manager] fick följande signaler:
 
 * `productCategory == smartphone`
 * `newProduct == iPhone`
 * `PRODUCT == phone`
 * `product == PHONE`
 
-När du anger `product` i nyckelsökfältet får du automatiska förslag för `productCategory`, `newProduct`, `PRODUCT`och `product`.
+När du anger `product` i nyckelsökfältet får du automatiskt ifyllda förslag för `productCategory`, `newProduct`, `PRODUCT` och `product`.
 
-När du söker efter `product == phone`returneras [!UICONTROL Data Explorer] resultat för både `PRODUCT == phone` och `product == PHONE`.
-Omfattande implementeringar av egenskaper är inte skiftlägeskänsliga. Ett drag som innehåller signalen med nyckelvärdepar `PRODUCT == SMARTPHONE` kvalificerar också signalen med nyckel/värde-paret `product == smartphone`.
+När du söker efter `product == phone` returnerar [!UICONTROL Data Explorer] resultat för både `PRODUCT == phone` och `product == PHONE`.
+Omfattande implementeringar av egenskaper är inte skiftlägeskänsliga. Ett drag som innehåller signalen med nyckel/värde-paret `PRODUCT == SMARTPHONE` kvalificerar även signalen med nyckel/värde-paret `product == smartphone`.
