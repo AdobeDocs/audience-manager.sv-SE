@@ -32,9 +32,9 @@ Ett nyckelvärdepar består av två relaterade dataelement: En nyckel, som är e
 * `color = green`
 * `price > 100`
 
-## Standard and Serialized Key-Value Pairs {#standard-serialized-pairs}
+## Standardpar och serialiserade nyckelvärdepar {#standard-serialized-pairs}
 
-Destinationer tar emot nyckelvärdesdata i *`standard`* eller *`serialized`* format. Med standardformatering ordnas data i separata nyckelvärdepar. Varje nyckel anges explicit, även om den används igen för att definiera ett annat värde. Vid serialiserad formatering komprimeras däremot flera värden till en uppsättning som definieras av en enda tangent. I ett serialiserat par används dessutom en specialindikator för att separera värdena i nyckelvärdesmängden. Slutligen kan standardvärden och serialiserade nyckelvärden innehålla ett eller flera värden. Följande tabell innehåller exempel på standardformat och serienyckelformat.
+Målen accepterar nyckelvärdesdata i *`standard`*- eller *`serialized`*-format. Med standardformatering ordnas data i separata nyckelvärdepar. Varje nyckel anges explicit, även om den används igen för att definiera ett annat värde. Vid serialiserad formatering komprimeras däremot flera värden till en uppsättning som definieras av en enda tangent. I ett serialiserat par används dessutom en specialindikator för att separera värdena i nyckelvärdesmängden. Slutligen kan standardvärden och serialiserade nyckelvärden innehålla ett eller flera värden. Följande tabell innehåller exempel på standardformat och serienyckelformat.
 
 | Formatering | Enkel nyckel | Nyckelvärdepar |
 |---|---|---|
@@ -45,19 +45,19 @@ Destinationer tar emot nyckelvärdesdata i *`standard`* eller *`serialized`* for
 
 ## Tangenter, avgränsare och avgränsare {#keys-delimiters-separators}
 
-När du arbetar med serialiserade data måste du ange tecknen som avgränsar värden *inom* och *mellan* nyckelvärdepar. Element i nyckelvärdepar definieras enligt följande:
+När du arbetar med serialiserade data måste du ange tecknen som avgränsar värdena *inom* och *mellan* nyckelvärdepar. Element i nyckelvärdepar definieras enligt följande:
 
 * **Nyckel:** En unik identifierare i nyckelvärdepar.
 * **Värdeavgränsare:** Separerar enskilda nyckelvärdepar.
-* **Avgränsare för nyckelvärde:** Separerar en nyckel från värdena i ett nyckelvärdepar.
+* **Tangentvärdesavgränsare:** Avgränsar en tangent från värdena i ett nyckel/värde-par.
 * **Serieavgränsare:** Separerar enskilda värden inom serialiserade nyckelvärdepar.
 
-## Standard- och serialiserade nyckelvärdeselement {#standard-serialized-key-value-elements}
+## Standard- och serialiserade nyckelvärdelement {#standard-serialized-key-value-elements}
 
 
 | Typ | Exempel | Nyckel | Avgränsare för nyckelvärde | Avgränsare för nyckelvärde | Serieavgränsare |
 ---------|----------|---------|---------|----------|---------
-| **Enkel tangent** (standard) | `x=1&x=2` | `x` | `=` | `&` | n/a |
-| **Nyckelvärdepar** (standard) | `x=1&x=2&y=3&y=4` | `x,y` | `=` | `&` | n/a |
-| **En nyckel** (seriell) | `x=1;2;3` | `x` | `=` | n/a | `;` |
-| **Nyckelvärdepar** (seriella) | `x=1;2&y=3;4` | `x,y` | `=` | `&` | `;` |
+| **Enkel tangent**  (standard) | `x=1&x=2` | `x` | `=` | `&` | n/a |
+| **Nyckelvärdepar**  (standard) | `x=1&x=2&y=3&y=4` | `x,y` | `=` | `&` | n/a |
+| **En nyckel**  (seriell) | `x=1;2;3` | `x` | `=` | n/a | `;` |
+| **Nyckelvärdepar**  (seriella) | `x=1;2&y=3;4` | `x,y` | `=` | `&` | `;` |
