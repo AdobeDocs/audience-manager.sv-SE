@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # DIL-moduler{#dil-modules}
 
-Beskriver metoder i `DIL.modules` namnutrymmet. Med dessa moduler kan du programmässigt samla in data och arbeta med Audience Manager-objekt.
+Beskriver metoder i namnutrymmet `DIL.modules`. Med dessa moduler kan du programmässigt samla in data och arbeta med Audience Manager-objekt.
 
 <!-- 
 
@@ -27,13 +27,13 @@ c_dil_mods.xml
 
 ## siteCatalyst.init {#sitecat-init}
 
-Fungerar med [!UICONTROL DIL] att skicka [!DNL Analytics] taggelement (variabler, utkast, eVars osv.) till Audience Manager. Returnerar data i en kommaavgränsad lista. Finns i version 2.6.
+Fungerar med [!UICONTROL DIL] för att skicka [!DNL Analytics]-taggelement (variabler, props, eVars osv.) till Audience Manager. Returnerar data i en kommaavgränsad lista. Finns i version 2.6.
 
 **Funktionssignatur:** `DIL.modules.siteCatalyst.init(siteCatalystReportingSuite, dilInstance, trackVars, options)`
 
 >[!NOTE]
 >
->Du måste placera den här koden på sidan *före* `s.t();` funktionen.
+>Du måste placera den här koden på sidan *före* funktionen `s.t();`.
 
 <!-- 
 
@@ -55,12 +55,12 @@ r_dil_sc_init.xml
   <tr valign="top"> 
    <td colname="col1"> <code> names </code> </td> 
    <td colname="col2"> Sträng </td> 
-   <td colname="col3"> <p>En array med strängar som innehåller ouppräknade <span class="keyword"> Analytics- </span> variabler som <code> pageName </code>, <code> channel </code>, <code> campaign </code>, <code> product </code>osv. </p> </td> 
+   <td colname="col3"> <p>En matris med strängar som innehåller onumrerade <span class="keyword">-analysvariabler som </span>-variabler som <code> pageName </code>, <code> channel </code>, <code> campaign </code>, <code> product </code> osv. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> iteratedNames </code> </td> 
    <td colname="col2"> Objekt </td> 
-   <td colname="col3"> <p>En array med objekt som innehåller uppräknade <span class="keyword"> Analytics- </span> variabler som props och evar (t.ex. <code> prop1 </code>, <code> prop2 </code>, <code> evar3 </code>, <code> evar4 </code>). </p> </td> 
+   <td colname="col3"> <p>En array med objekt som innehåller uppräknade <span class="keyword"> Analytics </span>-variabler som props och evar (t.ex. <code> prop1 </code>, <code> prop2 </code>, <code> evar3 </code>, <code> evar4 </code>). </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> maxIndex </code> </td> 
@@ -70,7 +70,7 @@ r_dil_sc_init.xml
   <tr valign="top"> 
    <td colname="col1"> <code> siteCatalystReportingSuite </code> </td> 
    <td colname="col2"> Objekt </td> 
-   <td colname="col3"> <p>Ett objekt som representerar <span class="keyword"> Analytics- </span> objektet. </p> </td> 
+   <td colname="col3"> <p>Ett objekt som representerar objektet <span class="keyword"> Analytics </span>. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> dilInstance </code> </td> 
@@ -82,8 +82,8 @@ r_dil_sc_init.xml
    <td colname="col2"> Objekt </td> 
    <td colname="col3"> <p>Ytterligare alternativ: </p> 
     <ul id="ul_F4DFA5351BB5427B8CBF600A0A4A21A9"> 
-     <li id="li_659ECE5E63834A21A2D9698A1444FCA6"> <p> <code> replaceContextDataPeriodsWith </code> </p> <p>Om du inte anger något annat ersätts punkter med standardunderstrecket ( _ ). </p> <p>Resultatet <code> s.contextData = {abc.def = '123'} </code>skulle till exempel bli <code> c_contextData_abc_def=123 </code> i frågesträngen för händelsanrop. </p> <p>Det här alternativet är endast tillgängligt i <span class="wintitle"> DIL </span> version 5.0 eller senare. </p> </li> 
-     <li id="li_1C969DD8FC2F43A0A9281D9810A70C3A"> <p> <code> filterFromContextVariables </code> </p> <p>Detta kan till exempel <code> filterFromContextVariables: ['email', 'zip', 'accountNumber'] </code> leda till att strängarrayen filtreras från datainsamlingen av kontextdata. Detta alternativ utesluter PII (Personally Identiitable Information). </p> </li> 
+     <li id="li_659ECE5E63834A21A2D9698A1444FCA6"> <p> <code> replaceContextDataPeriodsWith </code> </p> <p>Om du inte anger något annat ersätts punkter med standardunderstrecket ( _ ). </p> <p><code> s.contextData = {abc.def = '123'} </code>skulle till exempel resultera i <code> c_contextData_abc_def=123 </code> i frågesträngen för händelsanropet. </p> <p>Det här alternativet är endast tillgängligt i <span class="wintitle"> DIL </span> version 5.0 eller senare. </p> </li> 
+     <li id="li_1C969DD8FC2F43A0A9281D9810A70C3A"> <p> <code> filterFromContextVariables </code> </p> <p><code> filterFromContextVariables: ['email', 'zip', 'accountNumber'] </code> skulle till exempel resultera i att strängarrayen filtreras från datainsamlingen för kontextdata. Detta alternativ utesluter PII (Personally Identiitable Information). </p> </li> 
     </ul> <p> </p> </td> 
   </tr> 
  </tbody> 
@@ -91,7 +91,7 @@ r_dil_sc_init.xml
 
 **Data som samlats in av siteCatalyst.init**
 
-Den här funktionen returnerar information om följande [!DNL Analytics] egenskaper:
+Den här funktionen returnerar information om följande [!DNL Analytics]-egenskaper:
 
 * `pageName`
 * `channel`
@@ -99,7 +99,7 @@ Den här funktionen returnerar information om följande [!DNL Analytics] egenska
 * `products`
 * `events`
 * `eVar` (1 - 250)
-* `prop` (1 - 75)
+* `prop` (1-75)
 * `pe`
 * `pev1`
 * `pev2`
@@ -107,7 +107,7 @@ Den här funktionen returnerar information om följande [!DNL Analytics] egenska
 
 **Exempelkod**
 
-Den här koden skapar en kommaavgränsad lista med händelser ( [!DNL Analytics] props, eVars osv.) om det finns värden för dem.
+Den här koden skapar en kommaavgränsad lista med [!DNL Analytics] händelser (props, eVars osv.) om det finns värden för dem.
 
 ```
 // Get the Site Catalyst object instance: 
@@ -134,7 +134,7 @@ DIL.modules.siteCatalyst.init(s, scDil, {
 });
 ```
 
-Om du vill spåra alla övervakade [!DNL Analytics] datapunkter utan den ytterligare funktion som visas ovan, anropar du `siteCatalyst.init` själv så här:
+Om du vill spåra alla övervakade [!DNL Analytics]-datapunkter utan den tilläggsfunktion som visas ovan, anropar du `siteCatalyst.init` separat så här:
 
 ```
 DIL.modules.siteCatalyst.init(s, scDil);
@@ -142,7 +142,7 @@ DIL.modules.siteCatalyst.init(s, scDil);
 
 ## GA.submitUniversalAnalytics {#ga-submit-universal-analytics}
 
-Funktionen skickar data från Googles data `GA.submitUniversalAnalytics();` [!DNL Universal Analytics] till Audience Manager. Den här [!UICONTROL DIL] funktionen är utformad för att fungera med `analytics.js`, som är det senaste kodbiblioteket för Google [!DNL Universal Analytics].
+Funktionen `GA.submitUniversalAnalytics();` skickar data från Googles [!DNL Universal Analytics] till Audience Manager. Den här [!UICONTROL DIL]-funktionen är utformad för att fungera med `analytics.js`, som är det senaste kodbiblioteket för Google [!DNL Universal Analytics].
 
 <!-- 
 
@@ -153,10 +153,10 @@ dil-google-universal-analytics.xml
 >[!IMPORTANT]
 >
 >
->* [!DNL Audience Manager] har ingen insikt i eller kontroll över Googles `analytics.js` kodbibliotek. Du bör verifiera att datainsamlingen fortfarande fungerar om eller när Google släpper nya versioner av [!UICONTROL DIL] `analytics.js`.
+>* [!DNL Audience Manager] har ingen insikt i eller kontroll över Googles  `analytics.js` kodbibliotek. Du bör verifiera att datainsamlingen [!UICONTROL DIL] fortfarande fungerar om eller när Google släpper nya versioner av `analytics.js`.
    >
    >
-* Du kan inte använda `GA.submitUniversalAnalytics();` om du fortfarande arbetar med Googles äldre analytiska spårningskod (t.ex. `ga.js` eller `dc.js`). Se [GA.init](../dil/dil-modules.md#ga-init) istället.
+* Du kan inte använda `GA.submitUniversalAnalytics();` om du fortfarande arbetar med Googles äldre analytiska spårningskod (t.ex. `ga.js` eller `dc.js`). Se [GA.init](../dil/dil-modules.md#ga-init) i stället.
 
 >
 
@@ -166,7 +166,7 @@ dil-google-universal-analytics.xml
 
 **Egenskaper**
 
-Följande egenskaper accepteras för `GA.submitUniversalAnalytics();` funktionen.
+Funktionen `GA.submitUniversalAnalytics();` accepterar följande egenskaper.
 
 <table id="table_8E0C1E4B17D541259E72B88F02BE4503"> 
  <thead> 
@@ -178,7 +178,7 @@ Följande egenskaper accepteras för `GA.submitUniversalAnalytics();` funktionen
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> gaObject </code> </p> </td> 
-   <td colname="col2"> <p>Den globala variabeln för din instans av <span class="keyword"> Google Analytics </span>. Detta är vanligtvis <code> ga </code> standard, såvida du inte har anpassat din <span class="keyword"> Google Analytics- </span> kod. </p> </td> 
+   <td colname="col2"> <p>Den globala variabeln för din instans av <span class="keyword"> Google Analytics </span>. Detta är vanligtvis <code> ga </code> som standard, såvida du inte har anpassat din <span class="keyword"> Google Analytics </span>-kod. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> dilInstance </code> </p> </td> 
@@ -186,14 +186,14 @@ Följande egenskaper accepteras för `GA.submitUniversalAnalytics();` funktionen
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> internalPropertyName </code> </p> </td> 
-   <td colname="col2"> <p> <i>(Valfritt)</i> I <code> analytics.js </code> biblioteket är egenskapen internal den minified variabeln <code> 'b' </code>. Den här variabeln innehåller <span class="keyword"> Google Analytics- </span> data. </p> <p>Den här egenskapen är valfri eftersom du inte behöver ange den om inte Google ändrar namnet på sin interna variabel. Om den här minifierade variabeln exempelvis ändras till <code> 'a' </code>, skulle du anropa <code> GA.submitUniversalAnalytics(); </code> så här: </p> <p> <code> DIL.modules.GAsubmitUniversalAnalytics(ga, DilInstance, 'a'); </code> </p> </td> 
+   <td colname="col2"> <p> <i>(Valfritt) </i> I  <code> analytics.js </code> biblioteket är egenskapen internal den minified variabeln  <code> 'b' </code>. Den här variabeln innehåller <span class="keyword"> Google Analytics </span>-data. </p> <p>Den här egenskapen är valfri eftersom du inte behöver ange den om inte Google ändrar namnet på sin interna variabel. Om den här minifierade variabeln exempelvis ändras till <code> 'a' </code> anropar du <code> GA.submitUniversalAnalytics(); </code> så här: </p> <p> <code> DIL.modules.GAsubmitUniversalAnalytics(ga, DilInstance, 'a'); </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Exempel**
 
-Kom ihåg att definiera [!DNL Google Analytics] objektet först, innan du anropar `ga` och [!UICONTROL DIL] `GA.submitUniversalAnalytics();`. Koden kan se ut ungefär så här:
+Kom ihåg att definiera [!DNL Google Analytics] `ga`-objektet först, innan du anropar [!UICONTROL DIL] och `GA.submitUniversalAnalytics();`. Koden kan se ut ungefär så här:
 
 ```js
 //Instantiate DIL 
@@ -217,7 +217,7 @@ r_dil_ga_init.xml
 
 >[!IMPORTANT]
 >
->`GA.init()` fungerar bara med Googles gamla kod för analysspårning, `ga.js` eller `dc.js`. Du kan inte anropa den här [!UICONTROL DIL] funktionen om du använder `analytics.js`, som är det senaste kodbiblioteket för Google [!DNL Universal Analytics]. [!DNL Audience Manager] kunder som använder [!UICONTROL DIL] och [!DNL Universal Analytics] bör se [GA.submitUniversalAnalytics](../dil/dil-modules.md#ga-submit-universal-analytics).
+>`GA.init()` fungerar bara med Googles gamla kod för spårning av analyser,  `ga.js` eller  `dc.js`. Du kan inte anropa den här [!UICONTROL DIL]-funktionen om du använder `analytics.js`, som är det senaste kodbiblioteket för Google [!DNL Universal Analytics]. [!DNL Audience Manager] kunder som använder  [!UICONTROL DIL] och  [!DNL Universal Analytics] bör se  [GA.submitUniversalAnalytics](../dil/dil-modules.md#ga-submit-universal-analytics).
 
 **Funktionssignatur:** `DIL.modules.GA.init(_gaq, dilInstance, trackVars);`
 
@@ -227,7 +227,7 @@ r_dil_ga_init.xml
 |---|---|---|
 | `_gaq` | Array | En array som innehåller GA-kommandon. |
 | `dilInstance` | Objekt | Ett objekt som innehåller DIL-instansen. |
-| `trackVars` | Objekt | *(Valfritt)* Ett objekt som består av `names` egenskapen. Den här egenskapen är en array med GA-kommandonamn som du vill spåra. |
+| `trackVars` | Objekt | *(Valfritt)* Ett objekt som består av  `names` egenskapen. Den här egenskapen är en array med GA-kommandonamn som du vill spåra. |
 
 **GA-funktionsanrop som stöds**
 
@@ -241,7 +241,7 @@ Som standard hämtar `GA.init` data från följande funktioner:
 
 **DIL skapar nycklar för GA-data**
 
-Audience Manager accepterar data i form av nyckelvärdepar medan GA arbetar med objekt i en array. För att arbeta med GA-data skapar [!UICONTROL DIL] automatiskt ett nyckelvärdepar och bildar en nyckel som den här: `c_ <key name>`. Dessutom visas objekt i GA-arrayer i en viss ordning. Därför måste du ange alla parametrar i den ordningen, även om de inte innehåller några data. [!UICONTROL DIL] mappar nycklar för följande GA-metoder:
+Audience Manager accepterar data i form av nyckelvärdepar medan GA arbetar med objekt i en array. Om du vill arbeta med GA-data skapar [!UICONTROL DIL] automatiskt ett nyckelvärdepar och bildar en nyckel som denna: `c_ <key name>`. Dessutom visas objekt i GA-arrayer i en viss ordning. Därför måste du ange alla parametrar i den ordningen, även om de inte innehåller några data. [!UICONTROL DIL] mappar nycklar för följande GA-metoder:
 
 ```js
 // Tracking Social Interactions 
@@ -302,7 +302,7 @@ _gaq.push([
 ]); 
 ```
 
-Om du vill spåra alla övervakade GA-mått utan den ytterligare funktion som visas ovan, anropar du `GA.init` själv så här:
+Om du vill spåra alla övervakade GA-mått utan den ytterligare funktion som visas ovan, anropar du `GA.init` separat så här:
 
 `DIL.modules.GA.init(_gaq, dilInstance).submit();`
 
@@ -314,7 +314,7 @@ URL-händelseanropet till Audience Manager kan se ut ungefär så här:
 
 >[!MORELIKETHIS]
 >
->* [Google Analytics Tracking Code](https://developers.google.com/analytics/devguides/collection/gajs/methods/)
+>* [Spårningskod för Google Analytics](https://developers.google.com/analytics/devguides/collection/gajs/methods/)
 >* [Fullständig webbuppgradering: ga.js/dc.js till analytics.js](https://developers.google.com/analytics/devguides/collection/upgrade/reference/gajs-analyticsjs)
 >* [Lägga till analytics.js på er webbplats](https://developers.google.com/analytics/devguides/collection/analyticsjs/)
 >* [ga-objektmetodreferens](https://developers.google.com/analytics/devguides/collection/analyticsjs/ga-object-methods-reference)
