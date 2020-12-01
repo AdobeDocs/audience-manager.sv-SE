@@ -29,11 +29,11 @@ Hämtar en partnerspecifik DIL-instans.
 | Namn | Typ | Beskrivning |
 |---|---|---|
 | `partner` | Sträng | Partnernamnet som ska sökas efter. |
-| `containerNSID` | Heltal | Standardvärdena är `0`. NSID för behållaren som du söker efter. Valfritt. |
+| `containerNSID` | Heltal | Standardvärdet är `0`. NSID för behållaren som du söker efter. Valfritt. |
 
 ## Svar
 
-En lyckad partner- och behållar-NSID-matchning returnerar en partnerspecifik [!UICONTROL DIL] instans. Om det inte finns någon matchning returnerar API:t (utlöser inte) ett fel med meddelandet &quot; `The DIL instance with partner <name> and containerNSID <ID> was not found.`&quot;
+En partner- och behållar-NSID-matchning returnerar en partnerspecifik [!UICONTROL DIL]-instans. Om det inte finns någon matchning returnerar API:t (utlöser inte ett fel) med meddelandet &quot; `The DIL instance with partner <name> and containerNSID <ID> was not found.`&quot;
 
 ## Exempelkod
 
