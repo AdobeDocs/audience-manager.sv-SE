@@ -15,13 +15,13 @@ ht-degree: 6%
 ---
 
 
-# [!DNL FTP] Krav för namn och filstorlek för inkommande datafiler {#ftp-name-and-file-size-requirements-for-inbound-data-files}
+# [!DNL FTP] Krav för namn och filstorlek för inkommande datafiler  {#ftp-name-and-file-size-requirements-for-inbound-data-files}
 
-Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du måste följa när du skickar data till [!DNL Audience Manager]. Ange namn och storlek för filerna enligt dessa specifikationer när du skickar data till en Audience Manager- [!DNL FTP] katalog.
+Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du måste följa när du skickar data till [!DNL Audience Manager]. Ange namn och storlek för filerna enligt dessa specifikationer när du skickar data till en Audience Manager [!DNL FTP]-katalog.
 
 >[!WARNING]
 >
->We are gradually phasing out support for [!DNL FTP] configurations. While inbound data file ingestion is still supported in existing [!DNL FTP] integrations, we strongly recommend using [!DNL Amazon S3] to onboard offline data for new integrations. Mer information finns i [Krav på Amazon S3-namn och filstorlekar för inkommande datafiler](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md).
+>Vi fasar ut stödet för [!DNL FTP]-konfigurationer. Inläsning av inkommande datafiler stöds fortfarande i befintliga [!DNL FTP]-integreringar, men vi rekommenderar starkt att du använder [!DNL Amazon S3] för att integrera offlinedata för nya integreringar. Mer information finns i [Krav på Amazon S3-namn och filstorlekar för inkommande datafiler](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md).
 
 >[!NOTE]
 >
@@ -37,11 +37,11 @@ Information om andra godkända filnamnsformat finns i [Anpassade partnerintegrer
 
 >[!NOTE]
 >
->[!DNL Audience Manager] endast bearbetar [!DNL ASCII] och [!DNL UTF-8] kodade filer.
+>[!DNL Audience Manager] endast bearbetar  [!DNL ASCII] och  [!DNL UTF-8] kodade filer.
 
 ### Namnge element
 
-Tabellen definierar elementen i ett [!DNL FTP] filnamn.
+Tabellen definierar elementen i ett [!DNL FTP]-filnamn.
 
 <table id="table_1EA97D75004148CE85F702427DB7E97A"> 
  <thead> 
@@ -53,26 +53,26 @@ Tabellen definierar elementen i ett [!DNL FTP] filnamn.
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> ftp_dpm_</code> </p> </td> 
-   <td colname="col2"> <p>Sökvägen till och namnet på FTP-katalogen i <span class="keyword"> Audience Manager</span> . Kontakta kontohanteraren för att få information om FTP-katalogen och autentiseringsuppgifter. </p> </td> 
+   <td colname="col2"> <p>Sökvägen till och namnet på FTP-katalogen <span class="keyword"> Audience Manager</span>. Kontakta kontohanteraren för att få information om FTP-katalogen och autentiseringsuppgifter. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
-   <td colname="col2"> <p>Ett ID som talar om för <span class="keyword"> Audience Manager</span> om en datafil innehåller egna användar-ID:n, Android-ID:n, iOS-ID:n eller andra ID:n som tillhör <a href="/help/using/features/global-data-sources.md"> globala datakällor</a>. Följande alternativ godkänns:</p> 
+   <td colname="col2"> <p>Ett ID som anger <span class="keyword"> Audience Manager</span> om en datafil innehåller egna användar-ID:n, Android-ID:n, iOS-ID:n eller andra ID:n som tillhör globala datakällor<a href="/help/using/features/global-data-sources.md">. </a> Följande alternativ godkänns:</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>ID för datakälla (även kallat Data Provider ID):</b> Detta är ett unikt ID som Audience Manager tilldelar en datakälla (se Audience Manager <a href="/help/using/reference/ids-in-aam.md"> index för ID:n </a>). Använd det här tilldelade ID:t i ett filnamn när du skickar in data som innehåller dina egna användar-ID:n. Till exempel instruerar <code>...ftp_dpm_21_123456789.sync</code> <span class="keyword"> Audience Manager</span> att lägga in data i ID:n som tillhör datakällan 21. </li> 
-     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID (GAID):</b> Använd ID 20914 i ett datafilnamn om det innehåller Android-ID:n. Du måste använda fältet <code><i>_DPID_TARGET_DATA_OWNER</i></code> när du använder Android-id:n. Till exempel anger <code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code> <span class="keyword"> Audience Manager</span> att datafilen bara innehåller Android-id:n och att ID:n ska kvalificera sig för de egenskaper som tillhör <code><i>_DPID_TARGET_DATA_OWNER</i></code> datakällan.</li> 
-     <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS-ID (IDFA):</b> Använd ID 20915 i ett datafilnamn om det innehåller iOS-ID:n. Du måste använda fältet <code><i>_DPID_TARGET_DATA_OWNER</i></code> när du använder iOS-ID:n. Till exempel anger <code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code> <span class="keyword"> Audience Manager</span> att datafilen endast innehåller iOS-ID:n och att ID:n ska kvalificera sig för de egenskaper som tillhör <code><i>_DPID_TARGET_DATA_OWNER</i></code> datakällan.</li>
-     <li> <b>ID som tillhör andra globala datakällor</b>: Du kan lägga in Roku ID:n för Advertising (RIDA), Microsoft Advertising ID:n (MAID) och andra ID:n. Använd det ID som motsvarar varje datakälla, enligt beskrivningen i artikeln <a href="/help/using/features/global-data-sources.md"> om</a>globala datakällor.</li> 
+     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>ID för datakälla (även kallat Data Provider ID):</b> Detta är ett unikt ID som Audience Manager tilldelar en datakälla (se Audience Manager  <a href="/help/using/reference/ids-in-aam.md"> index för ID:n  </a>). Använd det här tilldelade ID:t i ett filnamn när du skickar in data som innehåller dina egna användar-ID:n. Till exempel instruerar <code>...ftp_dpm_21_123456789.sync</code> <span class="keyword"> Audience Manager</span> att lägga in data i ID:n som tillhör datakällan 21. </li> 
+     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID (GAID):</b> Använd ID 2014 i ett datafilnamn om det innehåller Android ID:n. Du måste använda fältet <code><i>_DPID_TARGET_DATA_OWNER</i></code> när du använder Android-id:n. <code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code> säger till exempel att <span class="keyword"> Audience Manager</span> innehåller endast Android-ID:n och ID:n ska kvalificera sig för de egenskaper som tillhör datakällan <code><i>_DPID_TARGET_DATA_OWNER</i></code>.</li> 
+     <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS-ID (IDFA):</b> Använd ID 2015 i ett datafilnamn om det innehåller iOS-ID:n. Du måste använda fältet <code><i>_DPID_TARGET_DATA_OWNER</i></code> när du använder iOS-ID:n. <code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code> säger till exempel att <span class="keyword"> Audience Manager</span> innehåller endast iOS-ID:n och ID:n ska kvalificera sig för de egenskaper som tillhör datakällan <code><i>_DPID_TARGET_DATA_OWNER</i></code>.</li>
+     <li> <b>ID som tillhör andra globala datakällor</b>: Du kan lägga in Roku ID:n för Advertising (RIDA), Microsoft Advertising ID:n (MAID) och andra ID:n. Använd det ID som motsvarar varje datakälla, enligt beskrivningen i <a href="/help/using/features/global-data-sources.md"> globala datakällsartikeln</a>.</li> 
     </ul> <p> <p>Obs!  Blanda inte ID-typer i datafilerna. Om ditt filnamn till exempel innehåller Android-identifieraren ska du inte ange iOS-ID eller dina egna ID:n i datafilen. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
-   <td colname="col2"> <p>Det här fältet anger för Audience Manager vilken datakälla data ska sparas i. Det här fältet är obligatoriskt om du ställer in DPID på ett Android-id, iOS-ID eller ett annat ID som tillhör globala datakällor. På så sätt kan <span class="keyword"> Audience Manager</span> länka fildata tillbaka till din organisation. </p> <p>Exempel: </p> 
+   <td colname="col2"> <p>Det här fältet anger för Audience Manager vilken datakälla data ska sparas i. Det här fältet är obligatoriskt om du ställer in DPID på ett Android-id, iOS-ID eller ett annat ID som tillhör globala datakällor. Detta gör att <span class="keyword"> Audience Manager</span> kan länka fildata tillbaka till din organisation. </p> <p>Exempel: </p> 
     <ul> 
      <li> <code>...ftp_dpm_33_21_1234567890.sync</code> anger för Audience Manager att du kvalificerar kund-ID:n som tillhör datakällan 33 för egenskaper eller signaler som tillhör datakällan 21. </li> 
-     <li> <b>Android ID (GAID):</b> <code>...ftp_dpm_20914_21_1234567890.sync</code> anger för <span class="keyword"> Audience Manager</span> att datafilen endast innehåller Android ID:n och att ID:n ska kvalificera sig för de egenskaper som tillhör datakällan 21.</li> 
-     <li> <b>iOS-ID (IDFA):</b> <code>...ftp_dpm_20915_21_1234567890.sync</code> anger för <span class="keyword"> Audience Manager</span> att datafilen endast innehåller iOS-ID:n och att ID:n ska kvalificera sig för de egenskaper som tillhör datakällan 21.</li>
-     <li> <b>ID som tillhör andra globala datakällor</b>: <code>...ftp_dpm_121963_21_1234567890.sync</code> anger för <span class="keyword"> Audience Manager</span> att datafilen endast innehåller Roku ID:n och att ID:n ska kvalificera sig för de egenskaper som tillhör datakällan 21. Använd det ID som motsvarar varje datakälla, enligt beskrivningen i artikeln <a href="/help/using/features/global-data-sources.md"> om</a>globala datakällor.</li> 
+     <li> <b>Android ID (GAID):</b> <code>...ftp_dpm_20914_21_1234567890.sync</code> talar om för  <span class="keyword"> Audience </span> Manager att datafilen endast innehåller Android ID:n och att ID:n ska vara kvalificerade för de egenskaper som tillhör datakällan 21.</li> 
+     <li> <b>iOS ID:n (IDFA):</b> <code>...ftp_dpm_20915_21_1234567890.sync</code> talar om för  <span class="keyword"> Audience </span> Manager att datafilen endast innehåller iOS ID:n och att ID:n ska vara kvalificerade för de egenskaper som tillhör datakällan 21.</li>
+     <li> <b>ID som tillhör andra globala datakällor</b>:  <code>...ftp_dpm_121963_21_1234567890.sync</code> anger för  <span class="keyword"> Audience </span> Manager att datafilen endast innehåller Roku ID:n och att ID:n ska kvalificera sig för de egenskaper som tillhör datakällan 21. Använd det ID som motsvarar varje datakälla, enligt beskrivningen i <a href="/help/using/features/global-data-sources.md"> globala datakällsartikeln</a>.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -89,7 +89,7 @@ Tabellen definierar elementen i ett [!DNL FTP] filnamn.
     <ul id="ul_E9446C5CA42649658093904D49D4369C"> 
      <li id="li_B275708DFE3F49E29EFAE6B838429E39">Okomprimerad: 1 GB </li> 
      <li id="li_A9638EB46ED14E0680B6575D5457E32F">Komprimerad: 200-300 MB </li> 
-    </ul> <p>Se de två första <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md#file-name-examples"> filnamnsexemplen</a> nedan. </p> </td> 
+    </ul> <p>Se de två första <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md#file-name-examples"> exemplen på filnamn</a> nedan. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>TIMESTAMP</i> </code> </p> </td> 
@@ -115,11 +115,11 @@ I följande exempel visas korrekt formaterade filnamn. Filnamnen kan se likadana
  <li> <code> ftp_dpm_478_1366545717.overwrite</code> </li> 
 </ul>
 
-[Hämta](assets/ftp_dpm_1234_1445374061.overwrite) exempelfilen om du behöver fler exempel. Den här filen sparas med `.overwrite` filtillägget. Öppna med en enkel textredigerare.
+[Hämta ](assets/ftp_dpm_1234_1445374061.overwrite) exempelfilen om du behöver fler exempel. Den här filen sparas med filtillägget `.overwrite`. Öppna med en enkel textredigerare.
 
 ## Godkända filstorlekar {#accepted-file-sizes}
 
-Titta på bilderna nedan om du snabbt/tidigast vill bearbeta dina filer och om du vill ha filstorleksbegränsningar när du skickar data till en [!DNL Audience Manager] / [!DNL FTP] katalog.
+Titta på bilderna nedan om du snabbt/tidigast vill behandla dina filer och om du vill ha filstorleksbegränsningar när du skickar data till en [!DNL Audience Manager] / [!DNL FTP]-katalog.
 
 <table id="table_59FCC63806684DF8BE54A1EAF224A234"> 
  <thead> 
