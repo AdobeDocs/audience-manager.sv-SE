@@ -15,27 +15,27 @@ ht-degree: 5%
 ---
 
 
-# [!UICONTROL Trend Analysis] och [!UICONTROL Volume Analysis] rapporter{#trend-analysis-and-volume-analysis-reports}
+# [!UICONTROL Trend Analysis] och  [!UICONTROL Volume Analysis] rapporter{#trend-analysis-and-volume-analysis-reports}
 
 Dessa rapporter returnerar data om visningar, klickfrekvens och konverteringar för ett brett urval av annonsdimensioner. Jämför trender och volym för valda mätvärden för att få en bättre bild av hur kampanjen fungerar över tid.
 
-## Exempelrapport [!UICONTROL Trend Analysis] {#sample-trend-analysis}
+## Exempel [!UICONTROL Trend Analysis] Rapport {#sample-trend-analysis}
 
-Rapporten returnerar endast data i ett linjediagram för ett 14-dagarsintervall [!UICONTROL Trend Analysis] . I det här exemplet visar rapporten trender för intryck, klickfrekvens och konvertering för en uppsättning mappade segment.
+Rapporten [!UICONTROL Trend Analysis] returnerar data i ett linjediagram endast för 14-dagarsintervall. I det här exemplet visar rapporten trender för intryck, klickfrekvens och konvertering för en uppsättning mappade segment.
 
 ![](assets/trend-analysis.png)
 
-## Exempelrapport [!UICONTROL Volume Analysis] {#sample-volume-analysis}
+## Exempel [!UICONTROL Volume Analysis] Rapport {#sample-volume-analysis}
 
-Rapporten returnerar data i ett stapeldiagram för det valda datumintervallet. [!UICONTROL Volume Analysis] I det här exemplet visar rapporten intryck, klickfrekvens och konverteringar per volym för en uppsättning mappade segment.
+Rapporten [!UICONTROL Volume Analysis] returnerar data i ett stapeldiagram för det valda datumintervallet. I det här exemplet visar rapporten intryck, klickfrekvens och konverteringar per volym för en uppsättning mappade segment.
 
 >[!NOTE]
 >
->7-dagars och 30-dagars summeringsperioder är bara tillgängliga för söndagsdatum. **[!UICONTROL Date Through]**
+>7-dagars och 30-dagars summeringsperioder är bara tillgängliga för söndag **[!UICONTROL Date Through]**-datum.
 
 ![](assets/volume-analysis.png)
 
 >[!TIP]
 >
->Mer information om mappade och omappade segment finns i dokumentationen till [rapporten](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md) om segmentprestanda.
+>Mer information om mappade och omappade segment finns i [rapporten om segmentprestanda](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md)-dokumentationen.
 
