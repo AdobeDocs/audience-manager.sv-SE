@@ -29,7 +29,7 @@ Vad du ska göra när kalkylbladen returnerar ett fel eller när gruppbegäran m
 
 >[!NOTE]
 >
->[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter ](../../features/administration/administration-overview.md) som tilldelats i  [!DNL Audience Manager] användargränssnittet respekteras i  [!UICONTROL Bulk Management Tools].
 
 Faktorer som hög nätverkstrafik, serveranvändning och stora datauppsättningar kan göra att en gruppbegäran misslyckas eller tar slut. Om ett problem uppstår slutar kalkylbladet att skriva data och ett felmeddelande visas. När detta händer bör du:
 
@@ -78,5 +78,5 @@ I följande tabell visas några vanliga problem som du kan stöta på när du g�
 
 ## Felmeddelanden
 
-Ibland kan du få felmeddelanden när du gör gruppändringar. Mer information om hur du tolkar felmeddelandet finns i [Svarskoder definierade](/help/using/api/rest-api-main/aam-api-getting-started.md) i API-dokumentationen.
+Ibland kan du få felmeddelanden när du gör gruppändringar. Information om hur du tolkar felmeddelandet finns i [Svarskoder definierade](/help/using/api/rest-api-main/aam-api-getting-started.md) i API-dokumentationen.
 
