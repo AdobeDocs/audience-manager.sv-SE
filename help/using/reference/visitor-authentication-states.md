@@ -20,7 +20,7 @@ ht-degree: 5%
 
 Statusen för besöksautentisering i Audience Manager avgör om den nya trait-informationen skrivs till besökarens autentiserade profil eller till enhetsprofilen, där data samlades in från. Audience Manager hanterar autentiseringsstatusarna för besökar-ID UNKNOWN och LOGGED_OUT i händelseanrop på samma sätt.
 
-Från och med [!DNL Experience Cloud] ID-tjänsten v1.5+ innehåller metoden det valfria `setCustomerID` `AuthState` objektet. `AuthState` identifierar besökare utifrån deras [autentiseringsstatus](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html). [!DNL Audience Manager] hanterar de realiserade egenskaperna på olika sätt, beroende på vilken autentiseringsstatus som skickas i anropet och vilken [profilkopplingsregel](../features/profile-merge-rules/merge-rules-dashboard.md) du använder för segmentering.
+Från och med [!DNL Experience Cloud] ID-tjänst v1.5+ inkluderar metoden `setCustomerID` det valfria `AuthState`-objektet. `AuthState` identifierar besökare utifrån deras  [autentiseringsstatus](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html). [!DNL Audience Manager] hanterar de realiserade egenskaperna på olika sätt, beroende på vilken autentiseringsstatus som skickas i anropet och vilken  [profilkopplingsregel ](../features/profile-merge-rules/merge-rules-dashboard.md) du använder för segmentering.
 
 ## Autentiseringsstatus: OKÄND {#auth-status-unknown}
 
@@ -28,8 +28,8 @@ Från och med [!DNL Experience Cloud] ID-tjänsten v1.5+ innehåller metoden det
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> <p>Begäranvärde </p> </th> 
-   <th colname="col2" class="entry"> <p> <b>Läs</b> information från den autentiserade profilen </p> </th> 
-   <th colname="col3" class="entry"> <p> <b>Skriv</b> nya egenskaper i den autentiserade profilen </p> </th> 
+   <th colname="col2" class="entry"> <p> <b>Läsinformation </b> från den autentiserade profilen </p> </th> 
+   <th colname="col3" class="entry"> <p> <b>Skriv </b> egenskaper till den autentiserade profilen </p> </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -54,8 +54,8 @@ Exempelanrop (det begärandevärde som motsvarar autentiseringsstatusen markeras
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> <p>Begäranvärde </p> </th> 
-   <th colname="col2" class="entry"> <p> <b>Läs</b> information från den autentiserade profilen </p> </th> 
-   <th colname="col3" class="entry"> <p> <b>Skriv</b> nya egenskaper i den autentiserade profilen </p> </th> 
+   <th colname="col2" class="entry"> <p> <b>Läsinformation </b> från den autentiserade profilen </p> </th> 
+   <th colname="col3" class="entry"> <p> <b>Skriv </b> egenskaper till den autentiserade profilen </p> </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -80,8 +80,8 @@ Exempelanrop (det begärandevärde som motsvarar autentiseringsstatusen markeras
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> <p>Begäranvärde </p> </th> 
-   <th colname="col2" class="entry"> <p> <b>Läs</b> information från den autentiserade profilen </p> </th> 
-   <th colname="col3" class="entry"> <p> <b>Skriv</b> nya egenskaper i den autentiserade profilen </p> </th> 
+   <th colname="col2" class="entry"> <p> <b>Läsinformation </b> från den autentiserade profilen </p> </th> 
+   <th colname="col3" class="entry"> <p> <b>Skriv </b> egenskaper till den autentiserade profilen </p> </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -102,7 +102,7 @@ Exempelanrop (det begärandevärde som motsvarar autentiseringsstatusen markeras
 
 >[!NOTE]
 >
->[!DNL Audience Manager] utför en ID-synkronisering mellan [CID och UUID](../reference/ids-in-aam.md) i alla tre fallen.
+>[!DNL Audience Manager] utför en ID-synkronisering mellan  [CID och ](../reference/ids-in-aam.md) UID i alla tre fallen.
 
 >[!MORELIKETHIS]
 >
