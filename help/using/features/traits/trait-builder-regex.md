@@ -17,6 +17,6 @@ ht-degree: 9%
 
 # Använda reguljära uttryck i Trait Builder {#using-regular-expressions-in-trait-builder}
 
-Du kan skapa egna trait-regler med [!UICONTROL Trait Builder] kodredigeraren. Hitta kodredigeraren i [!UICONTROL Traits > Add New > Rule-based > Trait Expression] och växla till [!UICONTROL Code View]. Audience Manager stöder alla tillgängliga konstruktioner för reguljära uttryck som refereras i [!DNL Java Regular Expression Class Pattern]. Du kan validera alla reguljära uttryck direkt i [!DNL Expression Builder].
+Du kan skapa egna anpassade regler med kodredigeraren [!UICONTROL Trait Builder]. Hitta kodredigeraren i [!UICONTROL Traits > Add New > Rule-based > Trait Expression] och växla till [!UICONTROL Code View]. Audience Manager stöder alla tillgängliga konstruktioner för reguljära uttryck som refereras i [!DNL Java Regular Expression Class Pattern]. Du kan validera alla reguljära uttryck direkt i [!DNL Expression Builder].
 
 Se även [Java Regular Expression Class Patterns](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html).
