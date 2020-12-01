@@ -37,11 +37,11 @@ c_dil_send_page_objects.xml
 
 **Beskrivning**
 
-I följande kod visas hur du samlar in siddata och skickar dem till Audience Manager med [!UICONTROL DIL]. I de här exemplen används en variabel för att lagra dataelement i en platt lista eller en array. Kom ihåg att skicka in variabler som [nyckelvärdepar](../reference/key-value-pairs-explained.md). Lägg också märke till prefixet `c_` före tangenten i nyckelvärdepar. Det här [nödvändiga prefixet](../features/traits/trait-variable-prefixes.md) identifierar information som användardefinierade data. I det första exemplet måste du manuellt lägga `c_` till nyckeln. I det andra exemplet gör [!UICONTROL DIL] detta automatiskt åt dig.
+Följande kod visar hur du samlar in siddata och skickar dem till Audience Manager med [!UICONTROL DIL]. I de här exemplen används en variabel för att lagra dataelement i en platt lista eller en array. Kom ihåg att skicka in variabler som [nyckelvärdepar](../reference/key-value-pairs-explained.md). Observera också `c_`-prefixet före tangenten i nyckelvärdepar. Detta [obligatoriska prefix](../features/traits/trait-variable-prefixes.md) identifierar information som användardefinierade data. I det första exemplet måste du lägga till `c_` manuellt till nyckeln. I det andra exemplet gör [!UICONTROL DIL] detta automatiskt åt dig.
 
 **Behåll konsekventa värdeegenskaper**
 
-Tänk på att värdeegenskaperna förblir desamma när du skickar data. Om du till exempel har två identiska nycklar med olika värden, prioriteras värdet för det sista nyckel/värde-paret framför de föregående värdeobjekten. Om du till exempel skickar `color:blue` och `color:red` anger det returnerade värdet som rött (skriver över blått).
+Tänk på att värdeegenskaperna förblir desamma när du skickar data. Om du till exempel har två identiska nycklar med olika värden, prioriteras värdet för det sista nyckel/värde-paret framför de föregående värdeobjekten. Om du till exempel skickar `color:blue` och `color:red` anges det returnerade värdet som rött (blått skrivs över).
 
 **Exempel 1: Skicka data som nyckelvärdepar**
 
@@ -58,7 +58,7 @@ sample_dil.api.submit();
 
 **Exempel 2: Skicka data i ett objekt**
 
-I det här avancerade exemplet visas hur du skickar data i ett objekt till Audience Manager. När du arbetar med den här metoden [!UICONTROL DIL] kan du skicka ett objekt som en funktionsparameter till [!DNL signals()] metoden. [!UICONTROL DIL] Koden kan se ut ungefär så här:
+I det här avancerade exemplet visas hur du skickar data i ett objekt till Audience Manager. När du arbetar med den här metoden kan du med [!UICONTROL DIL] skicka ett objekt som en funktionsparameter till metoden [!DNL signals()]. [!UICONTROL DIL] Koden kan se ut ungefär så här:
 
 <pre class="java"><code>
 var my_object = { 
@@ -73,7 +73,7 @@ sample_dil.api.signals(my_object,"c_").submit();
 
 **Exempel 3: Skicka siddata i en array**
 
-I det här fallet `my_object` använder variabeln en array för att lagra data. Det här exemplet bygger på den information som skickas med den rekommenderade metoden ovan, men lägger till ytterligare ett lager för en produkttyp och modell. Koden kan se ut ungefär så här:
+I det här fallet använder variabeln `my_object` en array för att lagra data. Det här exemplet bygger på den information som skickas med den rekommenderade metoden ovan, men lägger till ytterligare ett lager för en produkttyp och modell. Koden kan se ut ungefär så här:
 
 <pre class="java"><code>
 var my_objects = [{ 
@@ -94,7 +94,7 @@ for (var i = 0; i < my_objects.length; i++)
 sample_dil.api.submit();
 </code></pre>
 
-## Hämta referens-URL {#capture-referring-url}
+## Hämta refererande URL {#capture-referring-url}
 
 Hämta och skicka en refererande URL till Audience Manager.
 
@@ -141,7 +141,7 @@ I följande kod visas hur du hämtar sökreferenten för någon av de sökmotore
 
 **Grundläggande kod**
 
-Grundläggande kod för att hämta sökreferenten (från `google.com`till exempel:
+Grundläggande kod för att hämta sökreferenten (från till exempel `google.com`) ser ut så här:
 
 ```java
 var search_referrer = DIL.tools.getSearchReferrer();
@@ -149,7 +149,7 @@ var search_referrer = DIL.tools.getSearchReferrer();
 
 **Kodexempel för listad sökmotor**
 
-I det här fallet antar vi att en användare sökte efter termen&quot;hem&quot; från [!DNL Google] Kanada ( `www.google.ca`). Observera hur koden prefixerar den obligatoriska `c_` parametern för sökmotorn ( `c_se`) och söktermen ( `c_st`). `c_` är ett [obligatoriskt prefix](../features/traits/trait-variable-prefixes.md) som identifierar dessa som kunddefinierade variabler för Audience Manager.
+I det här fallet antar vi att en användare sökte efter termen &quot;hem&quot; från [!DNL Google] Kanada ( `www.google.ca`). Observera hur koden prefixerar den obligatoriska `c_`-parametern för sökmotorn ( `c_se`) och söktermen ( `c_st`). `c_` är ett  [obligatoriskt ](../features/traits/trait-variable-prefixes.md) prefix som identifierar dessa som kunddefinierade variabler för Audience Manager.
 
 <pre class="java"><code>
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
@@ -165,7 +165,7 @@ if (search_referrer && search_referrer.valid) {
 
 **Kodexempel för ej listad sökmotor**
 
-I det här fallet antar vi att en användare sökte efter termen &quot;hem&quot; från `dogpile.com`. Eftersom [!DNL Dogpile] inte stöds som standard kan du konfigurera DIL så att sökmotorn känns igen och returnera söktermerna till Audience Manager. Koden kan se ut ungefär så här:
+I det här fallet antar vi att en användare sökte efter termen &quot;hem&quot; från `dogpile.com`. Eftersom [!DNL Dogpile] inte stöds som standard kan du konfigurera DIL så att sökmotorn identifieras och söktermerna returneras till Audience Manager. Koden kan se ut ungefär så här:
 
 <pre class="java"><code>
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
@@ -194,7 +194,7 @@ c_dil_map_keys.xml
 
 **Beskrivning**
 
-I ett nyckelvärdepar identifierar det prefix som är bifogat till nyckeln signalen som kunddefinierade data `c_` . Kunddefinierade data används för målanpassning på den specifika webbplats som skickade data i ett händelseanrop. Ibland vill du dock att den här informationen ska vara tillgänglig för alla egenskaper på ditt Audience Manager-konto. Det gör du genom att mappa värdet i ett `c_` nyckelvärdepar till en plattformsnivånyckel. En nyckel på plattformsnivå har prefixet `d_` och gör signalen tillgänglig för målinriktning över alla egenskaper i ditt konto.
+I ett nyckelvärdepar identifierar `c_`-prefixet som läggs till nyckeln signalen som kunddefinierade data. Kunddefinierade data används för målanpassning på den specifika webbplats som skickade data i ett händelseanrop. Ibland vill du dock att den här informationen ska vara tillgänglig för alla egenskaper på ditt Audience Manager-konto. Det gör du genom att mappa värdet i ett `c_`-nyckelvärdepar till en plattformsnivånyckel. En plattformsnivånyckel har prefixet `d_` och gör signalen tillgänglig för målinriktning över alla egenskaper i ditt konto.
 
 Du kan till exempel samla in ZIP-koddata från en viss plats men vill rikta dem till alla dina Audience Manager-egenskaper. För att ZIP-koden ska vara tillgänglig på plattformsnivå kan du mappa en kunddefinierad postnummernyckel (t.ex. `c_zip`) till en plattformsdefinierad nyckel enligt nedan.
 
@@ -224,17 +224,17 @@ t_dil_google_tagmanager.xml
 
  -->
 
-I den här proceduren förutsätts att du har ett [!DNL Google Tag Manager] konto, viss kunskap om produkten och din Audience Manager- `dil.js` fil.
+För den här proceduren förutsätts att du har ett [!DNL Google Tag Manager]-konto, viss kunskap om produkten och din Audience Manager `dil.js`-fil.
 
-Så här kör du `dil.js` filen i GTM:
+Så här kör du filen `dil.js` i GTM:
 
 1. Skapa en ny behållare eller öppna en befintlig behållare.
 1. Lägg till en ny tagg i behållaren.
 1. Öppna taggen för att redigera den och:
 
    * Ge taggen ett namn.
-   * Välj **[!UICONTROL Custom HTML Tag]** i **[!UICONTROL Tag Type]** listrutan.
-   * Placera koden (bibliotek + den anpassade koden) i skripttaggar i fältet HTML [!UICONTROL DIL] `<script>DIL code</script>`.
+   * Välj **[!UICONTROL Custom HTML Tag]** i listrutan **[!UICONTROL Tag Type]**.
+   * Placera [!UICONTROL DIL]-koden (bibliotek + den anpassade koden) i skripttaggar `<script>DIL code</script>` i HTML-fältet.
    * Klicka på **[!UICONTROL Save]**.
 
 1. Publicera behållaren.
