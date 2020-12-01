@@ -17,11 +17,11 @@ ht-degree: 2%
 
 # Rapportmätvärden för regler för profilsammanslagning {#report-metrics-for-profile-merge-rules}
 
-[!UICONTROL Profile Merge Rule] mätvärden ger data om personer och enheter som autentiserar till er webbplats. Data och diagram i [!UICONTROL Profile Merge Rule Reports] uppdateras dynamiskt när du skapar en sammanfogningsregel eller när du klickar på en befintlig regel på [!UICONTROL Profile Merge Rules] kontrollpanelen. Dessa mått kan innehålla enhetsdiagram från [!DNL Adobe Experience Cloud Device Co-op] eller andra tredjepartsdiagramkällor.
+[!UICONTROL Profile Merge Rule] mätvärden ger data om personer och enheter som autentiserar till er webbplats. Data och diagram i [!UICONTROL Profile Merge Rule Reports] uppdateras dynamiskt när du skapar en sammanfogningsregel eller när du klickar på en befintlig regel från kontrollpanelen [!UICONTROL Profile Merge Rules]. Dessa mått kan innehålla enhetsdiagram från [!DNL Adobe Experience Cloud Device Co-op] eller andra tredjepartskällor för enhetsdiagram.
 
 ## Sammanfoga regelmått {#merge-rule-metrics}
 
-Rapporter returnerar data i liggande diagram sida vid sida när dina kopplingsregler använder data från [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html) eller andra enhetsdiagram från tredje part som du har tillgång till i [!DNL Audience Manager]. På så sätt kan du jämföra autentiserade förstahandsdata med enhetsövergripande data från enhetsdiagram [!UICONTROL Experience Cloud Device Co-op] eller andra tredjepartsdiagram. Mer information om data som returneras av [!UICONTROL Device Co-op]finns [i Enhetsdiagram: Interna processer och utdata](https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/device-graph-overview.html). Dessa data uppdateras dagligen.
+Rapporterar returnerade data i liggande diagram sida vid sida när sammanfogningsreglerna använder data från [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html) eller andra enhetsdiagram från tredje part som du har tillgång till i [!DNL Audience Manager]. Detta gör att du kan jämföra autentiserade förstahandsdata med enhetsövergripande data från [!UICONTROL Experience Cloud Device Co-op] eller ett annat enhetsdiagram från tredje part. Mer information om data som returneras av [!UICONTROL Device Co-op] finns i [Enhetsdiagram: Interna processer och utdata](https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/device-graph-overview.html). Dessa data uppdateras dagligen.
 
 <table id="table_A7FB2F9804F84AC8A6DD05C0E6EE7555"> 
  <thead> 
@@ -36,9 +36,9 @@ Rapporter returnerar data i liggande diagram sida vid sida när dina kopplingsre
    <td colname="col2"> <p>Visar: </p> 
     <ul id="ul_7F7373919A4A49028EF4BF7B28D9F8E9"> 
      <li id="li_FE2F93C496D64ED8928B3E522C9585EA"> <span class="wintitle"> Aktiva personer</span>: Antalet personer som har autentiserats på din webbplats de senaste 60 dagarna. </li> 
-     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle"> Enhetsövergripande</span>: Det totala antalet <a href="merge-rules-start.md#create-data-source"> enhets-ID:n</a> som lagras i <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html"> datakällan</a> för den valda <a href="merge-rule-definitions.md"> autentiserade profilen</a> under den tid som datakällan har funnits. </li> 
-     <li id="li_F2F07B6A326C4A18B79A0CF2C47D9677"> <span class="wintitle"> % aktiva personer</span>: Visar <span class="wintitle"> aktiva personer</span> som %. </li> 
-    </ul> <p> <span class="wintitle"> Med autentiserad aktivitet</span> kan du jämföra datakällor efter aktivitet, volym och procent. Det kan hjälpa er att hitta en datakälla som har många personer och en hög andel aktiva användare. Eller så kanske ni tycker att det är värdefullt att jämföra datakällor med en hög andel aktiva användare jämfört med den totala målgruppsstorleken. Ibland kan en datakälla med låga totala livstidsvärden och hög aktivitet vara mer värdefull än den med höga livstidsresultat och låga aktivitetsvärden. </p> <p> <p>Obs! Mätvärdena för <span class="wintitle"> autentiserad aktivitet</span> innehåller endast <span class="wintitle"> Profile Link</span> -data. Den här rapporten innehåller inte data för <span class="wintitle"> Device Graph</span> . </p> </p> </td> 
+     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle"> Enhetsövergripande</span>: Det totala antalet  <a href="merge-rules-start.md#create-data-source"> korsenhets-</a> ID:n som lagras i  <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html"> datakällan </a> för den valda  <a href="merge-rule-definitions.md"> autentiserade </a> profilen under den tid som datakällan har funnits. </li> 
+     <li id="li_F2F07B6A326C4A18B79A0CF2C47D9677"> <span class="wintitle"> % aktiva personer</span>: Visar  <span class="wintitle"> aktiva </span> personer som %. </li> 
+    </ul> <p> <span class="wintitle"> Autentiserad </span> aktivering gör att du kan jämföra datakällor efter aktivitet, volym och procent. Det kan hjälpa er att hitta en datakälla som har många personer och en hög andel aktiva användare. Eller så kanske ni tycker att det är värdefullt att jämföra datakällor med en hög andel aktiva användare jämfört med den totala målgruppsstorleken. Ibland kan en datakälla med låga totala livstidsvärden och hög aktivitet vara mer värdefull än den med höga livstidsresultat och låga aktivitetsvärden. </p> <p> <p>Obs! Måtten för <span class="wintitle"> autentiserad aktivitet</span> innehåller endast <span class="wintitle"> Profile Link</span>-data. Den här rapporten innehåller inte <span class="wintitle"> enhetsdiagramdata</span>. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="wintitle"> Genomsnittliga enheter per person</span></b> </p> </td> 
@@ -57,7 +57,7 @@ Rapporter returnerar data i liggande diagram sida vid sida när dina kopplingsre
 
 ## Mått för enhetsdiagram {#device-graph-metrics}
 
-I [!UICONTROL Merge Rules] rapporterna visas också data om det totala antalet personer och enheter som har besökt webbplatsen för den valda datakällan och enhetsdiagrammet. Dessa mått returnerar data baserat på förinställda tidsintervall (summeringsperioden) som varierar beroende på vilket enhetsalternativ du väljer när du skapar en regel. I följande tabell visas de här rapportintervallen för alla alternativ för enhetsdiagram.
+I [!UICONTROL Merge Rules]-rapporterna visas även data om det totala antalet personer och enheter som har besökt din plats för den valda datakällan och enhetsdiagrammet. Dessa mått returnerar data baserat på förinställda tidsintervall (summeringsperioden) som varierar beroende på vilket enhetsalternativ du väljer när du skapar en regel. I följande tabell visas de här rapportintervallen för alla alternativ för enhetsdiagram.
 
 <table id="table_038983EBC71F4A55BBCA99212AC5DEE6"> 
  <thead> 
@@ -106,19 +106,19 @@ I [!UICONTROL Merge Rules] rapporterna visas också data om det totala antalet p
 
 ### Länkrapport för standardprofil
 
-En standardrapport [!UICONTROL Profile Link] ser ut som i följande exempel. Sammanfogningsregler som använder flera datakällor (upp till 3, maximalt) visar diagram på olika flikar för varje datakälla. Den här sammanfogningsregeln innehåller inte [!UICONTROL Device Co-op] data.
+En [!UICONTROL Profile Link]-standardrapport ser ut som i följande exempel. Sammanfogningsregler som använder flera datakällor (upp till 3, maximalt) visar diagram på olika flikar för varje datakälla. Den här sammanfogningsregeln innehåller inte [!UICONTROL Device Co-op]-data.
 
 ![](assets/profile-link-metrics.png)
 
 ### Profillänksrapport med enhetsdiagramdata
 
-En [!UICONTROL Profile Link Device Graph] rapport som innehåller enhetsdiagramdata från enheten [!UICONTROL Adobe Experience Cloud Device Co-op] eller ett enhetsdiagram från tredje part visar [!UICONTROL Profile Link] och visar enhetsdiagramdata med liggande liggande diagram sida vid sida. Genom att placera dessa diagram bredvid varandra kan du utvärdera fördelarna med att använda dem [!UICONTROL Experience Cloud Device Co-op] jämfört med [!UICONTROL Profile Link] dem separat. Sammanfogningsregler som använder flera datakällor (upp till 3, maximalt) visar diagram på olika flikar för varje datakälla. Som en påminnelse returnerar inte diagrammet och måtten data från enhetsdiagrammet eller andra enhetsdiagram från [!UICONTROL Authenticated Activity] tredje part som du har tillgång till i [!DNL Adobe] [!DNL Audience Manager].
+En [!UICONTROL Profile Link Device Graph]-rapport som innehåller enhetsdiagramdata från [!UICONTROL Adobe Experience Cloud Device Co-op] eller ett enhetsdiagram från en annan tillverkare visar [!UICONTROL Profile Link] och enhetsdiagramdata med liggande stapeldiagram sida vid sida. Om du placerar dessa diagram bredvid varandra kan du utvärdera fördelarna med att använda [!UICONTROL Experience Cloud Device Co-op] jämfört med [!UICONTROL Profile Link] separat. Sammanfogningsregler som använder flera datakällor (upp till 3, maximalt) visar diagram på olika flikar för varje datakälla. Som en påminnelse returnerar inte [!UICONTROL Authenticated Activity]-diagrammet och måtten data från enhetsdiagrammet [!DNL Adobe] eller andra enhetsdiagram från tredje part som du har tillgång till i [!DNL Audience Manager].
 
 ![](assets/profile-link-graph.png)
 
-## Trend-diagram för profillänkar {#profile-link-trend}
+## Trenddiagram för profillänk {#profile-link-trend}
 
-Förutom andra datavisualiseringar innehåller rapporterna [!UICONTROL Profile Link] ett linjediagram. Linjediagrammet är utformat för att visa trender över tid för dina profilregler. Trenddiagram (och andra rapporter) är tillgängliga när du klickar på en regel från [!UICONTROL Profile Merge Rules] landningssidan ( **[!UICONTROL Audience Data > Profile Merge Rules]**). Dessa diagram innehåller enhetsdiagramdata om du är medlem i [!UICONTROL Device Co-op] eller andra enhetsdiagram från tredje part som du kan ha tillgång till i [!DNL Audience Manager]. Klicka på en trendlinje för att se underliggande data.
+Förutom andra datavisualiseringar innehåller [!UICONTROL Profile Link]-rapporter ett linjediagram. Linjediagrammet är utformat för att visa trender över tid för dina profilregler. Trenddiagram (och andra rapporter) är tillgängliga när du klickar på en regel från startsidan för [!UICONTROL Profile Merge Rules] ( **[!UICONTROL Audience Data > Profile Merge Rules]**). Dessa diagram innehåller enhetsdiagramdata om du är medlem i [!UICONTROL Device Co-op] eller andra enhetsdiagram från tredje part som du kan ha tillgång till i [!DNL Audience Manager]. Klicka på en trendlinje för att se underliggande data.
 
 >[!MORELIKETHIS]
 >
