@@ -26,7 +26,7 @@ audience-lab-faq.xml
 
  -->
 
-<br> 
+<br>
 
 **Har testsegmenten som skapas i testgrupperna olika segment-ID? Hur mappar jag ID:n till olika destinationer?**
 
