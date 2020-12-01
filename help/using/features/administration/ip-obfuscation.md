@@ -23,29 +23,29 @@ Ditt företag kanske vill dölja IP-adressen i många länder på grund av globa
 
 ### IP-faktureringsmetod
 
-Enligt principerna för&quot;Integritet efter design&quot; tillåter Adobe Audience Manager kunder att aktivera immaterialrättsliga hinder från användargränssnittet, antingen globalt i alla geografiska regioner eller för specifika länder. När du aktiverar den här inställningen ignoreras den sista oktetten (den sista delen) i IP-adressen omedelbart när IP-adressen hämtas till Audience Manager. Audience Manager ignorerar den här delen av IP-adressen före bearbetning (inklusive före eventuell geografisk sökning eller loggning av IP-adressen). Exempel:
+I enlighet med principerna för&quot;Integritet via design&quot; tillåter Adobe Audience Manager kunderna att aktivera IP-förfalskning från användargränssnittet, antingen globalt i alla geografiska regioner eller för specifika länder. När du aktiverar den här inställningen ignoreras den sista oktetten (den sista delen) i IP-adressen omedelbart när IP-adressen hämtas till Audience Manager. Audience Manager ignorerar den här delen av IP-adressen före bearbetning (inklusive före eventuell geografisk sökning eller loggning av IP-adressen). Exempel:
 
 * Före obfuskering: `255.255.255.255`
 * Efter obfuktion: `255.255.255.0`
 
-Se även Samla in IP-adresser och IP-adressofficering i avsnittet [](/help/using/overview/data-security-and-privacy/data-privacy.md)Dataintegritet.
+Se även Samla in IP-adresser och IP-adressofficering i [avsnittet Dataintegritet](/help/using/overview/data-security-and-privacy/data-privacy.md).
 
 ## Krav för IP-adressofficering {#ip-obfuscation-requirements}
 
-IP-adressofficering är bara tillgängligt för administratörskonton i Audience Manager. Mer information om hur du tilldelar administratörsbehörighet för en användare finns i [Skapa användare](/help/using/features/administration/administration-overview.md#create-users) .
+IP-adressofficering är bara tillgängligt för administratörskonton i Audience Manager. Se [Skapa användare](/help/using/features/administration/administration-overview.md#create-users) om du vill veta mer om hur du tilldelar administratörsbehörighet för en användare.
 
 >[!NOTE]
 >
 > På grund av den stora datamängden som bearbetas av Audience Manager kan det ta upp till 4 timmar innan ändringar av IP-döljning börjar gälla, från det att du uppdaterar inställningarna.
 
-## Konfigurera IP-adressofuscation {#configure-ip-obfuscation}
+## Konfigurera IP-adressofficering {#configure-ip-obfuscation}
 
 Följ stegen nedan för att konfigurera IP-adressofficering.
 
 1. Logga in på Audience Manager med ett administratörskonto och gå till **Administration > Sekretess**.
 2. Välj den typ av IP-förfalskning som du vill använda.
-   1. **Obfuscera alla IP-adresser:** Markera det här alternativet om du vill att Audience Manager ska dölja den sista oktetten för alla IP-adresser för besökare, oavsett varifrån de kommer.
-   2. **Obfuscera IP-adresser för specifika länder:** Markera det här alternativet om du vill att Audience Manager ska dölja den sista oktetten med IP-adresser för besökare för specifika länder. Använd **Listan över länder** eller motsvarande **sökfält** för att hitta de länder där IP-förfalskning ska aktiveras och klicka på ikonen + för att lägga till dem i listan **Valda för** förfalskning. När du har lagt till alla de länder som krävs i listan **Valda för** förfalskning klickar du på **Spara**.
+   1. **Begränsa alla IP-adresser:** välj det här alternativet om du vill att Audience Manager ska dölja den sista oktetten för alla IP-adresser för besökare, oavsett varifrån de kommer.
+   2. **Begränsa IP-adresser för specifika länder:** välj det här alternativet om du vill att Audience Manager ska dölja den sista oktetten med IP-adresser för besökare för specifika länder. Använd fältet **Lista över länder** eller motsvarande **Sök** för att hitta de länder som IP-förfalskning ska aktiveras för och klicka på ikonen + för att lägga till dem i listan **Markerad för falering**. När du har lagt till alla nödvändiga länder i listan **Vald för Obfuscation** klickar du på **Spara**.
 
 ![](assets/ip-obfuscation.png)
 
@@ -53,7 +53,7 @@ Följ stegen nedan för att konfigurera IP-adressofficering.
 
 Om du vill inaktivera IP-adressförfalskning globalt går du till **Administration > Sekretess**, väljer **Begränsa inte IP-adresser** och klickar på **Spara**.
 
-Om du vill inaktivera IP-adressofficering för specifika länder ska du leta reda på länderna i listan **Vald för** förfalskning och sedan klicka på motsvarande **X** -ikon. Klicka på **Spara** när du är klar.
+Om du vill inaktivera IP-adressofficering för specifika länder ska du leta reda på länderna i listan **Markerad för faltning** och sedan klicka på motsvarande **X**-ikon. Klicka på **Spara** när du är klar.
 
 ## Relaterade begrepp {#related-concepts}
 
