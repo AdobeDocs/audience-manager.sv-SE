@@ -20,7 +20,7 @@ ht-degree: 86%
 
 Vanliga frågor och problem som rör datainsamling och integrering.
 
-<br> 
+<br>
 
 **Hur kan jag särskilja inkommande trafik från [!DNL DCS]-trafik i exporterade [!DNL DCS]-loggfiler?**
 
@@ -60,13 +60,13 @@ SFTP-servrarna nedan är föråldrade. Inga nya konton kommer att etableras med 
 
 **Hur konfigurerar jag min Audience Manager-instans så att den använder de nya SFTP-servrarna?**
 
-Kontakta din [!DNL Audience Manager] konsult eller kundtjänst så konfigurerar de dina nya SFTP-konton.
+Kontakta din [!DNL Audience Manager]-konsult eller kundtjänst så konfigurerar de dina nya SFTP-konton.
 
  
 
 **Vilka autentiseringsmetoder stöds för de nya SFTP-servrarna?**
 
-De nya SFTP-servrarna (`ftp-in-gtw` och `ftp-out-gtw`) har stöd [!DNL OpenSSH Key-Based Authentication]. Vi kan generera [!DNL SSH] nycklarna åt dig eller så kan du ge oss en egen offentlig nyckel.
+De nya SFTP-servrarna (`ftp-in-gtw` och `ftp-out-gtw`) stöder [!DNL OpenSSH Key-Based Authentication]. Vi kan generera [!DNL SSH]-nycklarna åt dig eller så kan du ge oss en egen offentlig nyckel.
 
  
 
@@ -153,7 +153,7 @@ Ja, [!DNL Audience Manager] kan tillhandahålla data som samlats in för använd
 
 **[!DNL Google Ad Manager]Jag vill samla in data på en webbplats och rikta mig till användare på en annan webbplats via Måste jag använda kod på den andra webbplatsen om jag inte vill samla in data från den?**
 
-Nej. Om data inte behöver samlas in på den andra webbplatsen behöver du inte distribuera DIL där. As long as you have access to the inventory on the second site via [!DNL Google Ad Manager], you can use the data collection from the initial site and target via [!DNL Google Ad Manager].
+Nej. Om data inte behöver samlas in på den andra webbplatsen behöver du inte distribuera DIL där. Så länge du har åtkomst till lagret på den andra webbplatsen via [!DNL Google Ad Manager] kan du använda datainsamlingen från den första platsen och målet via [!DNL Google Ad Manager].
 
 <br> 
 
