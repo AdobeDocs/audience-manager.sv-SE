@@ -25,31 +25,31 @@ Jämför trender och volym för valda mätvärden för att få en bättre bild a
 
 ## Användningsexempel {#use-cases}
 
-Använd rapporten för att validera ett segments prestanda över tiden och för att identifiera trender baserat på höga prestanda eller skalbarhet. [!UICONTROL Segment Trend]
+Använd [!UICONTROL Segment Trend]-rapporten för att validera ett segments prestanda över tid och för att identifiera trender baserat på höga prestanda eller skalbarhet.
 
-Med den här rapporten kan du förstå vilka av dina webbegenskaper som visar en ökning av antalet fel och felsökning efter behov. Den här rapporten är nästa steg efter att ni har identifierat er målgrupp i [!UICONTROL Segment Performance] rapporten, för att säkerställa att de starka eller dåliga resultat ni såg på [!UICONTROL Segment Performance] fliken är konsekventa över tiden.
+Med den här rapporten kan du förstå vilka av dina webbegenskaper som visar en ökning av antalet fel och felsökning efter behov. Den här rapporten är nästa steg efter att du har identifierat en viss målgrupp i [!UICONTROL Segment Performance]-rapporten, för att säkerställa att de starka eller dåliga prestanda du såg på fliken [!UICONTROL Segment Performance] är konsekventa över tiden.
 
 ## Använda segmenttrendrapporten {#using-the-report}
 
-Växla mellan **[!UICONTROL Mapped]** och **[!UICONTROL Unmapped]** markera segment som är mappade till ett mål eller inte. Välj **[!UICONTROL All]** om du vill inkludera alla dina segment i rapporten.
+Växla mellan **[!UICONTROL Mapped]** och **[!UICONTROL Unmapped]** för att markera segment som är mappade till ett mål eller inte. Välj **[!UICONTROL All]** om du vill inkludera alla dina segment i rapporten.
 
-Justera bakåtfönstret med **[!UICONTROL Date Through]** skjutreglaget.
+Justera bakåtfönstret med reglaget **[!UICONTROL Date Through]**.
 
-Klicka på något av segmenten under **[!UICONTROL Date Through]** skjutreglaget för att visa alternativet att bara behålla det segmentet i rapporten eller exkludera det.
+Klicka på något av segmenten under reglaget **[!UICONTROL Date Through]** för att visa alternativet att bara behålla det segmentet i rapporten eller exkludera det.
 
-Använd den **[!UICONTROL Line Item]** nedrullningsbara rutan för att välja de egenskaper i portföljen för vilka du vill returnera information.
+Använd listrutan **[!UICONTROL Line Item]** för att välja de egenskaper i portföljen som du vill returnera information för.
 
-I den **[!UICONTROL Segment Data Source]** nedrullningsbara rutan markerar du datakällorna som innehåller de segment som du vill se i rapporten.
+I listrutan **[!UICONTROL Segment Data Source]** markerar du datakällorna som innehåller de segment som du vill se i rapporten.
 
-Använd den **[!UICONTROL Segment]** nedrullningsbara rutan för att välja vilka segment som ska visas i rapporten.
+Använd listrutan **[!UICONTROL Segment]** för att välja vilka segment du vill se i rapporten.
 
 >[!IMPORTANT]
 >
->När du aktiverar [!UICONTROL Audience Optimization for Publishers]måste du inkludera beskrivande metadata för [!UICONTROL Line Item] ID:n, enligt beskrivningen i steg 3 i [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten innehåller information om webbegenskapen som [!UICONTROL Line Item] i stället för [!UICONTROL Line Item] ID:t.
+>När du aktiverar [!UICONTROL Audience Optimization for Publishers] måste du inkludera beskrivande metadata för [!UICONTROL Line Item] ID:n, enligt beskrivningen i steg 3 av [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten anger webbegenskapen som [!UICONTROL Line Item] i stället för [!UICONTROL Line Item]-ID:t.
 
 ## Tolka resultaten {#interpreting-results}
 
-Rapporten returnerar endast data i ett linjediagram för ett 14-dagarsintervall [!UICONTROL Segment Trend] . I det här exemplet visar rapporten intrycks- och klickningstrender för en uppsättning mappade och omappade segment.
+Rapporten [!UICONTROL Segment Trend] returnerar data i ett linjediagram endast för 14-dagarsintervall. I det här exemplet visar rapporten intrycks- och klickningstrender för en uppsättning mappade och omappade segment.
 
 Håll pekaren över en linje för att få mer information om den aktuella segmenttrenden. Se beskrivningarna för ytterligare information i tabellen nedan.
 
