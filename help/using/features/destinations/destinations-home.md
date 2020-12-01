@@ -17,23 +17,23 @@ ht-degree: 1%
 
 # Startsida för destinationer {#destinations-home}
 
-På [!UICONTROL Destination] landningssidan visas alla mål för din [!DNL URL]cookie och server-till-server. Det innehåller funktioner som gör att du kan skapa, redigera, söka efter och rapportera destinationer. Landningssidan finns i **[!UICONTROL Audience Data > Destinations]**.
+På startsidan för [!UICONTROL Destination] visas alla dina [!DNL URL]-, cookie- och server-till-server-mål. Det innehåller funktioner som gör att du kan skapa, redigera, söka efter och rapportera destinationer. Landningssidan finns i **[!UICONTROL Audience Data > Destinations]**.
 
-## Standardlandningssida {#default-landing-page}
+## Standardstartsida {#default-landing-page}
 
 <!-- destinations-home.xml -->
 
 Standardlandningssidan visar dina destinationer baserat på typ. Du kan filtrera destinationerna med hjälp av de fyra flikarna:
 
 * **Alla**: visar alla typer av destinationer.
-* **Adobe Experience Cloud**: visar mål som skickar data till andra Adobe Experience Cloud-lösningar. För närvarande är Adobe Analytics det enda alternativ som stöds. See [Configure an Analytics Destination](/help/using/features/destinations/create-analytics-destination.md).
+* **Adobe Experience Cloud**: visar mål som skickar data till andra Adobe Experience Cloud-lösningar. För närvarande är Adobe Analytics det enda alternativ som stöds. Se [Konfigurera ett analysmål](/help/using/features/destinations/create-analytics-destination.md).
 * **Integrerade plattformar**: visar personbaserade och enhetsbaserade mål (även namngivna server-till-server-mål).
 * **Anpassad**: visar mål för cookie och URL.
 
 
 ![](assets/destinations-landing.png)
 
-## Landningssida för adresserbara målgrupper {#audiences-landing-page}
+## Startsida för adresserbara målgrupper {#audiences-landing-page}
 
 Om du vill visa målgruppsdata och matchningsfrekvenser för server-till-server-målet väljer du **[!UICONTROL Integrated Platforms > Device-Based]**.
 
