@@ -27,29 +27,29 @@ Kalkylbladen för att skapa och uppdatera accepterar ett traitRule-huvud som gö
 
 >[!NOTE]
 >
->[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter ](../../features/administration/administration-overview.md) som tilldelats i  [!DNL Audience Manager] användargränssnittet respekteras i  [!UICONTROL Bulk Management Tools].
 
-## Arbeta med varumärkesregler {#trait-rules}
+## Arbeta med traits-regler {#trait-rules}
 
-I kalkylbladet returneras och accepteras regler som består av booleska uttryck, jämförelseoperatorer och reguljära uttryck. Du kan skapa regler med trait eller segment builder i [!DNL Audience Manager] och kopiera dem till kalkylbladet. Eller om du känner till regelsyntaxen kan du skriva uttryck direkt i kalkylbladen.
+I kalkylbladet returneras och accepteras regler som består av booleska uttryck, jämförelseoperatorer och reguljära uttryck. Du kan skapa regler med trait eller segment builder i [!DNL Audience Manager] och kopiera dem till ditt kalkylblad. Eller om du känner till regelsyntaxen kan du skriva uttryck direkt i kalkylbladen.
 
-## Exempel på regelverktyg {#rule-builder-example}
+## Exempel på regelbyggare {#rule-builder-example}
 
-Låt oss titta på ett exempel som visar hur du kan använda [!UICONTROL Segment Builder] för att skapa en regel som du kan använda i arbetsbladet. Det här är dock inte en uppsättning stegvisa instruktioner för dessa verktyg. Istället ska vi börja med en enkel regel som redan har skapats. Instruktioner om hur du använder regelbyggare finns i [Segment Builder](../../features/segments/segment-builder.md) och [Trait Builder](../../features/traits/about-trait-builder.md).
+Låt oss ta en titt på ett exempel som visar hur du använder [!UICONTROL Segment Builder] för att skapa en regel som du kan använda i bulkkalkylbladet. Det här är dock inte en uppsättning stegvisa instruktioner för dessa verktyg. Istället ska vi börja med en enkel regel som redan har skapats. Instruktioner om hur du använder regelbyggaren finns i [Segment Builder](../../features/segments/segment-builder.md) och [Trait Builder](../../features/traits/about-trait-builder.md).
 
-Med det visuella regelverktyget har vi skapat en segmentregel med tre egenskaper och en boolesk [!UICONTROL AND] operator.
+Med det visuella regelverktyget har vi skapat en segmentregel med 3 egenskaper och en boolesk [!UICONTROL AND]-operator.
 
 ![](assets/visualrule.png)
 
-Klicka **[!UICONTROL Code View]** för att hämta textversionen av den här regeln.
+Klicka på **[!UICONTROL Code View]** för att hämta textversionen av den här regeln.
 
 >[!TIP]
 >
->Klicka **[!UICONTROL Validate Expression]** för att kontrollera regellogiken. Detta förhindrar att du överför en ogiltig regel.
+>Klicka på **[!UICONTROL Validate Expression]** för att kontrollera regellogiken. Detta förhindrar att du överför en ogiltig regel.
 
 ![](assets/coderule.png)
 
-Klistra in regeln i [!UICONTROL Bulk Management Tools] kalkylbladet och implementera ändringarna för att uppdatera segmentreglerna samtidigt.
+Klistra in regeln i [!UICONTROL Bulk Management Tools]-kalkylbladet och implementera ändringarna för att uppdatera segmentreglerna samtidigt.
 
 ![](assets/segmentrule.png)
 
