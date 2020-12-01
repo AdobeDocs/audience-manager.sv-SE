@@ -27,7 +27,7 @@ Kolumnrubriketiketter har definierats.
 
 >[!NOTE]
 >
->[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter ](../../features/administration/administration-overview.md) som tilldelats i  [!DNL Audience Manager] användargränssnittet respekteras i  [!UICONTROL Bulk Management Tools].
 
 <table id="table_2C2BC2FB3EFC443C9A5AE18EFC6FABFD"> 
  <thead> 
@@ -39,11 +39,11 @@ Kolumnrubriketiketter har definierats.
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> dataSourceId</span> </p> </td> 
-   <td colname="col2"> <p>ID:t för en <a href="../../features/datasources-list-and-settings.md#data-sources-list-and-settings"> datakälla</a> som du vill returnera eller tilldela gruppvis. </p> </td> 
+   <td colname="col2"> <p>ID:t för en <a href="../../features/datasources-list-and-settings.md#data-sources-list-and-settings">-datakälla</a> som du vill returnera eller tilldela gruppvis. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> derivedSignalId</span> </p> </td> 
-   <td colname="col2"> <p>Ett <a href="../../features/derived-signals.md"> härlett signal</a> -ID. </p> </td> 
+   <td colname="col2"> <p>Ett <a href="../../features/derived-signals.md"> härlett signal</a>-ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> description</span> </p> </td> 
@@ -79,11 +79,11 @@ Kolumnrubriketiketter har definierats.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceValue</span> </p> </td> 
-   <td colname="col2"> <p>Källvärdet är en variabel som skickas som en del av ett nyckelvärdepar <a href="../../reference/key-value-pairs-explained.md"></a>. </p> </td> 
+   <td colname="col2"> <p>Källvärdet är en variabel som skickas som en del av ett <a href="../../reference/key-value-pairs-explained.md">-nyckelvärdepar</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> startDate</span> </p> </td> 
-   <td colname="col2"> <p>Anger när ett segment kan börja skickas till ett mål. Använder <i>formatet åååå-mm-dd</i> . </p> </td> 
+   <td colname="col2"> <p>Anger när ett segment kan börja skickas till ett mål. Använder <i>ååå-mm-dd</i>-format. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> targetKey</span> </p> </td> 
@@ -95,11 +95,11 @@ Kolumnrubriketiketter har definierats.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitAlias</span> </p> </td> 
-   <td colname="col2"> <p>Ett ID skickades till ett icke-cookie-baserat mål. För en cookie-baserad destination är detta nyckeln i ett <a href="../../reference/key-value-pairs-explained.md"> nyckelvärdepar</a>. </p> </td> 
+   <td colname="col2"> <p>Ett ID skickades till ett icke-cookie-baserat mål. För ett cookie-baserat mål är det här nyckeln i ett <a href="../../reference/key-value-pairs-explained.md"> nyckelvärdepar</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitRule / segmentRule</span> </p> </td> 
-   <td colname="col2"> <p>Den faktiska egenskap eller segmentregel som används för att samla in data. En massbegäran returnerar reglerna som skapats i <span class="keyword"> Audience Manager</span> med <a href="../../features/traits/about-trait-builder.md"> trait-regelbyggaren</a> eller <a href="../../features/segments/segment-builder.md"> segmentregelbyggaren</a>. Du kan också använda de här verktygen för att skapa regler och tillämpa dem samtidigt när du uppdaterar ett segment eller en egenskap. </p> <p>See also, <a href="../../reference/bulk-management-tools/bulk-rules.md"> Create or Update Trait Rules and Segment Rules</a>. </p> </td> 
+   <td colname="col2"> <p>Den faktiska egenskap eller segmentregel som används för att samla in data. En gruppbegäran returnerar reglerna som skapats i <span class="keyword"> Audience Manager</span> med <a href="../../features/traits/about-trait-builder.md"> trait rule builder</a> eller segmentregelbyggaren <a href="../../features/segments/segment-builder.md">. </a> Du kan också använda de här verktygen för att skapa regler och tillämpa dem samtidigt när du uppdaterar ett segment eller en egenskap. </p> <p>Se även <a href="../../reference/bulk-management-tools/bulk-rules.md"> Skapa eller uppdatera dragregler och segmentregler</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitType</span> </p> </td> 
