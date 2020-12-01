@@ -25,7 +25,7 @@ Vanliga frågor och svar om CDF-filer (Customer Data Feed).
 
 CDF-filen lagras i `aam-cdf`-rotkatalogen på en [!DNL Amazon S3]-server. Denna standardbucket hanteras av [!DNL Audience Manager]. Se även [Namngivningskonventioner för CDF-filer](../features/cdf-files.md#cdf-naming-conventions).
 
-<br> 
+<br>
 
 **Är min lagringsbucket säker?**
 
