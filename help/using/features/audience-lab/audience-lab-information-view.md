@@ -22,16 +22,16 @@ I det här avsnittet visas allmän information om testgruppen och de testsegment
 
 Du kan också se information om baslinjesegmentet som du använde för testgruppen och hur testsegmenten är uppdelade.
 
-De **[!UICONTROL Test Segments]** fylls i slumpmässigt med användare från det baslinjesegment som du använde för testgruppen. I översikten visas procentsatserna för de användare som du tilldelade varje testsegment.
+**[!UICONTROL Test Segments]** fylls i slumpmässigt med användare från det baslinjesegment som du använde för testgruppen. I översikten visas procentsatserna för de användare som du tilldelade varje testsegment.
 
-Rapporteringen för testgrupperna **[!UICONTROL Conversion Traits]** körs. Om du vill ange en egenskap som en konvertering väljer du [!UICONTROL Trait Builder]Konvertering **som** Händelsetyp **[när du skapar eller redigerar egenskaper i](../../features/traits/create-onboarded-rule-based-traits.md).**
+**[!UICONTROL Conversion Traits]** styr rapporteringen för testgrupperna. Välj **Konvertering** som **[Händelsetyp](../../features/traits/create-onboarded-rule-based-traits.md) när du skapar eller redigerar egenskaper i [!UICONTROL Trait Builder].**.
 
-Kortet är **[!UICONTROL Destinations]** komprimerbart. Tryck på pilarna för att öppna eller stänga enskilda mål och få följande information för testsegment, grupperade efter de mål som de är mappade till:
+**[!UICONTROL Destinations]**-kortet är komprimerbart. Tryck på pilarna för att öppna eller stänga enskilda mål och få följande information för testsegment, grupperade efter de mål som de är mappade till:
 
 * antalet enheter från bassegmentets totala population som tilldelats varje mål.
 * kartnyckel,
 * Mappningsvärde.
-* [!DNL URL] och säkra [!DNL URL] för [!DNL URL] destinationer.
+* [!DNL URL] och säkra  [!DNL URL] för  [!DNL URL] destinationer.
 
 >[!NOTE]
 >
