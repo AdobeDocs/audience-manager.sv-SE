@@ -17,13 +17,13 @@ ht-degree: 10%
 
 # API-metoder för behörighetshantering {#permissions-management-api-methods}
 
-Restmetoder [!DNL API] för att hantera behörigheter för objekt och grupper.
+Återställ [!DNL API]-metoder för att hantera behörigheter för objekt och grupper.
 
 <!-- c_rest_api_perm_man.xml -->
 
-## Visa tillgängliga objekttyper {#list-object-types}
+## Lista tillgängliga objekttyper {#list-object-types}
 
-En `GET` metod för att lista tillgängliga objekttyper som rollbaserade åtkomstkontroller kan ställas in på.
+En `GET`-metod för att lista tillgängliga objekttyper som rollbaserade åtkomstkontroller kan ställas in på.
 
 <!-- r_rest_api_perm_list.xml -->
 
@@ -39,7 +39,7 @@ En `GET` metod för att lista tillgängliga objekttyper som rollbaserade åtkoms
 
 ## Visa tillgängliga behörigheter för en objekttyp {#list-permissions-object-type}
 
-En `GET` metod för att visa tillgängliga behörigheter för en objekttyp.
+En `GET`-metod för att visa tillgängliga behörigheter för en objekttyp.
 
 <!-- r_rest_api_perm_list_perms.xml -->
 
