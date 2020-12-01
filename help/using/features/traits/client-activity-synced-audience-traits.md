@@ -17,27 +17,27 @@ ht-degree: 10%
 
 # Aktiva traits för målgrupp och traits som synkroniserats med datakälla {#active-audience-traits-and-data-source-synced-traits}
 
-Det här är speciella egenskaper som används av [!UICONTROL Addressable Audiences]. [!UICONTROL Active Audience] och [!UICONTROL Data Source Synced Traits] finns i [!UICONTROL Audience Data > Traits > Audience Traits].
+Det här är speciella egenskaper som används av [!UICONTROL Addressable Audiences]. [!UICONTROL Active Audience] och  [!UICONTROL Data Source Synced Traits] finns i  [!UICONTROL Audience Data > Traits > Audience Traits].
 
 >[!NOTE]
 >
 >Åtkomst kräver administratörsbehörighet.
 
-## Aktiva målgruppsegenskaper {#active-audience-traits}
+## Aktiva målgruppsprofiler {#active-audience-traits}
 
-En [!UICONTROL Active Audience] egenskap innehåller alla enheter som hanteras i ditt [!DNL Audience Manager] konto. Du kan använda en [!UICONTROL Active Audience Trait] liknande egenskap när du skapar eller redigerar segment. Dessutom kräver [adresserbara målgrupper](../../features/addressable-audiences.md) det här värdet för att generera överlappningsdata. Alla konton har som standard en [!UICONTROL Active Audience] egenskap. Det går inte att ta bort den här egenskapen.
+En [!UICONTROL Active Audience]-trait innehåller alla enheter som hanteras i ditt [!DNL Audience Manager]-konto. Du kan använda en [!UICONTROL Active Audience Trait]-egenskap som andra egenskaper när du skapar eller redigerar segment. Dessutom kräver [adresserbara målgrupper](../../features/addressable-audiences.md) det här felet för att generera överlappningsdata. Alla konton har som standard egenskapen [!UICONTROL Active Audience]. Det går inte att ta bort den här egenskapen.
 
 ## Synkroniserade egenskaper för datakälla {#data-source-synced-traits}
 
-[!UICONTROL Data Source Synced Traits] visas i [!UICONTROL Audience Traits] mappen när du [skapar eller redigerar en datakälla](../../features/manage-datasources.md#create-data-source) och tillämpar någon av dessa inställningar:
+[!UICONTROL Data Source Synced Traits] visas i  [!UICONTROL Audience Traits] mappen när du  [skapar eller redigerar en ](../../features/manage-datasources.md#create-data-source) datakälla och tillämpar någon av dessa inställningar:
 
 ![](assets/datasource_synced.png)
 
-[!UICONTROL Data Source Synced Traits] spåra alla användare som är associerade med en datakälla. Du kan använda en [!UICONTROL Data Source Synched Trait] liknande egenskap när du skapar eller redigerar segment. När du skapar en [!UICONTROL Data Source Synced Trait]sträng matchar trait-namnet det namn som används av datakällan. Redigera datakällan om du vill ändra namnet på egenskapen. Dessa egenskaper kan inte tas bort.
+[!UICONTROL Data Source Synced Traits] spåra alla användare som är associerade med en datakälla. Du kan använda en [!UICONTROL Data Source Synched Trait]-egenskap som andra egenskaper när du skapar eller redigerar segment. När du skapar en [!UICONTROL Data Source Synced Trait] matchar trait-namnet det namn som används av datakällan. Redigera datakällan om du vill ändra namnet på egenskapen. Dessa egenskaper kan inte tas bort.
 
 >[!TIP]
 >
->[!UICONTROL Data Source Synced Traits] är användbara vid felsökning. Klicka på ett trait-namn om du vill kontrollera måtten på sidan trait summary. Om den valda egenskapen returnerar data, indikerar det att ID-synkroniseringsprocessen är korrekt konfigurerad och data skickas till [!DNL Audience Manager].
+>[!UICONTROL Data Source Synced Traits] är användbara vid felsökning. Klicka på ett trait-namn om du vill kontrollera måtten på sidan trait summary. Om den valda egenskapen returnerar data, indikerar det att ID-synkroniseringsprocessen är korrekt inställd och data flyttas till [!DNL Audience Manager].
 
 >[!MORELIKETHIS]
 >
