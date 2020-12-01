@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # DIL-verktyg
 
-Beskriver metoder i `DIL.tools` namnutrymmet. De här verktygen hjälper dig att utföra specifika uppgifter.
+Beskriver metoder i namnutrymmet `DIL.tools`. De här verktygen hjälper dig att utföra specifika uppgifter.
 
 <!-- 
 
@@ -37,7 +37,7 @@ r_dil_get_search_referrer.xml
 
 ### Syfte med `getSearchReferrer`
 
-I DIL `getSearchReferrer` returneras sökresultat (namn och nyckelord) som används för att nå din webbplats. Du kan skicka specifika söktermer till den här funktionen eller låta den söka efter de sökmotorer som stöds ( [!DNL AOL], [!DNL Ask], [!DNL Bing], [!DNL Google]och [!DNL Yahoo]) `document.referrer` som standard.
+I DIL returnerar `getSearchReferrer` sökresultat (namn och nyckelord) som används för att nå din webbplats. Du kan skicka specifika söktermer till den här funktionen eller låta den söka efter de sökmotorer som stöds ( [!DNL AOL], [!DNL Ask], [!DNL Bing], [!DNL Google] och [!DNL Yahoo]) mot `document.referrer` som standard.
 
 ### Funktionssignatur
 
@@ -47,8 +47,8 @@ Funktionssignatur: `DIL.tools.getSearchReferrer(uri, initConfig)`
 
 `getSearchReferrer` godkänner:
 
-* *`{string}`*: *(Valfritt)* En sträng som innehåller sök-URL:en (används `document.referrer` om det är odefinierat).
-* *`{object}`*: *(Valfritt)* Ett objekt som innehåller konfigurationen för `hostPattern`, `queryParam`eller `queryPattern`.
+* *`{string}`*:  *(Valfritt)* En sträng som innehåller sök-URL:en (används  `document.referrer` om det är odefinierat).
+* *`{object}`*:  *(Valfritt)* Ett objekt som innehåller konfigurationen för  `hostPattern`,  `queryParam`eller  `queryPattern`.
 
 Och returnerar:
 
@@ -114,7 +114,7 @@ Och returnerar:
 
 ## decomposeURI
 
-Disassemblerar en Uniform Resource Identifier ( [!DNL URI]) till dess beståndsdelar: `hash`, `host`, `href`, `pathname`, `protocol`, `search`och `[!DNL uriParams]`.
+Disassemblerar en Uniform Resource Identifier ( [!DNL URI]) till dess beståndsdelar: `hash`, `host`, `href`, `pathname`, `protocol`, `search` och `[!DNL uriParams]`.
 
 <!-- 
 
@@ -128,7 +128,7 @@ Funktionssignatur: `DIL.tools.decomposeURI`
 
 `decomposeURI` godkänner:
 
-* *`uri {string}`*: *(Valfritt)* En sträng som innehåller URI:n. Standardvärdet är `document.location.href` om inget anges.
+* *`uri {string}`*:  *(Valfritt)* En sträng som innehåller URI:n. Standardvärdet är `document.location.href` om inget anges.
 
 Och returnerar:
 
