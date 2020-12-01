@@ -1,6 +1,6 @@
 ---
-description: En datafil innehåller de intrycks-, klicknings- eller konverteringsdata som du kan använda i målgruppsoptimeringsrapporter och för körbara loggfiler. En metadatafil innehåller läsbara namn som motsvarar olika rapportalternativ och menyalternativ. Formatera data och metadatafiler enligt specifikationerna i det här avsnittet.
-seo-description: En datafil innehåller de intrycks-, klicknings- eller konverteringsdata som du kan använda i målgruppsoptimeringsrapporter och för körbara loggfiler. En metadatafil innehåller läsbara namn som motsvarar olika rapportalternativ och menyalternativ. Formatera data och metadatafiler enligt specifikationerna i det här avsnittet.
+description: En datafil innehåller indata som du kan använda i Audience Optimization-rapporter och för körbara loggfiler. En metadatafil innehåller läsbara namn som motsvarar olika rapportalternativ och menyalternativ. Formatera data och metadatafiler enligt specifikationerna i det här avsnittet.
+seo-description: En datafil innehåller indata som du kan använda i Audience Optimization-rapporter och för körbara loggfiler. En metadatafil innehåller läsbara namn som motsvarar olika rapportalternativ och menyalternativ. Formatera data och metadatafiler enligt specifikationerna i det här avsnittet.
 seo-title: Loggdata och metadatafiler
 solution: Audience Manager
 title: Loggdata och metadatafiler
@@ -26,7 +26,7 @@ En metadatafil innehåller läsbara namn som motsvarar olika rapportalternativ o
 
 >[!IMPORTANT]
 >
->Om du vill använda metadatafiler måste dina händelseanrop innehålla *alla* parametrar som anges i [översikten och mappningarna](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) .
+>Om du vill använda metadatafiler måste dina händelseanrop innehålla *alla* parametrar som anges i [översikten och mappningar](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md).
 
 * [Datafiler för Audience Optimization-rapporter och verkställbara loggfiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
 * [Översikt och mappningar för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
