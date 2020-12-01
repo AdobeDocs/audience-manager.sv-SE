@@ -17,9 +17,9 @@ ht-degree: 10%
 
 # Formatera nyckelvärdespar i DCS-anrop {#formatting-key-value-pairs-in-dcs-calls}
 
-När användaren gör ett anrop tar [!DNL DCS] användaren emot nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
+När ett anrop görs accepterar [!DNL DCS] nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
 
-## Standard and Serialized Key-Value Pairs {#standard-serialized}
+## Standardpar och serialiserade nyckelvärdepar {#standard-serialized}
 
 <table id="table_A220F9B359F34C6EA7B83618FC22EE3A"> 
  <thead> 
