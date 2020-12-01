@@ -19,15 +19,15 @@ ht-degree: 9%
 
 Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med enhetsrelaterade variabler i alla egenskaper i ditt Audience Manager-konto.
 
-## Syfte med variabler på Platform-nivå {#platform-variables}
+## Syfte med variabler på plattformsnivå {#platform-variables}
 
 <!-- c_tb_device_targeting.xml -->
 
-Med variabler på Platform-nivå kan ni ta data som skickas från en viss webbplats och göra dem tillgängliga för målinriktning för alla egenskaper i ert [!DNL Audience Manager] konto. Variablerna formateras med [nyckelvärdepar](../../reference/key-value-pairs-explained.md) med nyckeln som prefixeras av `d_` enligt nedan.
+Med plattformsnivåvariabler kan du ta data som skickas från en viss webbplats och göra dem tillgängliga för målinriktning för alla egenskaper i ditt [!DNL Audience Manager]-konto. Dessa variabler formas av [nyckelvärdepar](../../reference/key-value-pairs-explained.md) med nyckeln prefixad av `d_` enligt nedan.
 
-## Tangenter på Platform-nivå definierade av användaragent {#keys-user-agent}
+## Tangenter på plattformsnivå definierade av användaragenten {#keys-user-agent}
 
-Extrahera värdena för dessa nycklar från [!UICONTROL Data Collection Servers] användaragenthuvudet [i](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43) `HTTP` begäranden. Värdena representerar information på enhetsnivå från [!UICONTROL Device Atlas] databasen. Signalerna i tabellen nedan är tillgängliga, som hämtats från användaragentexemplet. [Hämta en lista med de vanligaste nycklarna](assets/device_keys.csv)enligt [!UICONTROL Device Atlas] mått.
+[!UICONTROL Data Collection Servers] extraherar värdena för de här nycklarna från [användaragenthuvudet](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43) i `HTTP`-begäranden. Värdena representerar information på enhetsnivå från [!UICONTROL Device Atlas]-databasen. Signalerna i tabellen nedan är tillgängliga, som hämtats från användaragentexemplet. [Hämta en lista med de vanligaste tangenterna](assets/device_keys.csv) enligt  [!UICONTROL Device Atlas] mått.
 
 | [!DNL Signal] | [!DNL Type] | [!DNL Example] |
 |---|---|---|
@@ -45,7 +45,7 @@ Extrahera värdena för dessa nycklar från [!UICONTROL Data Collection Servers]
 
 >[!NOTE]
 >
->Även om en eller flera signaler inte kan hämtas från användaragentens huvud, kommer de andra signalerna fortfarande att skickas till [!UICONTROL Data Collection Servers].
+>Även om en eller flera signaler inte kan hämtas från användaragenthuvudet, skickas de andra signalerna ändå till [!UICONTROL Data Collection Servers].
 
 >[!MORELIKETHIS]
 >
