@@ -27,7 +27,7 @@ c_report_technology.xml
 
 ## Interaktiva rapporter använder tabellösningsteknik
 
-[!DNL Audience Manager] använder [programmet Tableau](https://www.tableausoftware.com/) för att visa data i de interaktiva rapporterna. Med [!DNL Tableau]hjälp av [!UICONTROL Delivery and Overlap] rapporterna används visuella tecken och symboler som hjälper dig att:
+[!DNL Audience Manager] använder  [](https://www.tableausoftware.com/) Tableu för att visa data i de interaktiva rapporterna. Med [!DNL Tableau] använder [!UICONTROL Delivery and Overlap]-rapporterna visuella tecken och symboler som hjälper dig att:
 
 * Hitta egenskaper med höga och låga prestanda.
 * Dekordrag och segment med låg och hög unik besökaröverlappning.
@@ -83,6 +83,6 @@ Följande tabell definierar de former, storlekar och färger som används i de d
  </tbody> 
 </table>
 
-## Dokumentation för surfplatta {#tableau-documentation}
+## Dokumentation till tabelldokument {#tableau-documentation}
 
 Mer information om flikkontroller som du kan se i våra interaktiva rapporter finns i den officiella dokumentationen för [Tableau Server i Linux 2018.2](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm)
