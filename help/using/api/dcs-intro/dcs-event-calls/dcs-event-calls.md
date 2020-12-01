@@ -17,18 +17,18 @@ ht-degree: 8%
 
 # API:er för DCS-händelseanrop {#dcs-event-call-apis}
 
-Händelseanrop skickar information till [!DNL DCS] i en [!DNL URL] sträng. I en typisk Audience Manager-distribution använder kunderna vår [!DNL JavaScript] datainsamlingskod ([!UICONTROL DIL]) för att skicka data till [!DNL DCS]. Men ibland kan kunderna inte lägga ut vår [!DNL JavaScript] kod på sina sidor. Om företagspolicyer eller andra tekniska problem hindrar dig från att placera din [!DNL JavaScript] kod på dina sidor, kan du fortfarande arbeta med Audience Manager för att skicka och returnera data [!DNL DCS] med dessa [!DNL API]eventsamtal.
+Händelseanrop skickar information till [!DNL DCS] i en [!DNL URL]-sträng. I en typisk Audience Manager-distribution använder kunderna vår [!DNL JavaScript] datainsamlingskod ([!UICONTROL DIL]) för att skicka data till [!DNL DCS]. Men ibland kan kunderna inte lägga in vår [!DNL JavaScript]-kod på sina sidor. Om företagspolicyer eller andra tekniska problem hindrar dig från att placera din [!DNL JavaScript]-kod på dina sidor, kan du fortfarande arbeta med Audience Manager för att skicka och returnera data från [!DNL DCS] med dessa event call [!DNL API]s.
 
 ## Komma igång {#dcs-getting-started}
 
 Det här avsnittet innehåller information och relaterade referenser som visar hur du:
 
-* Ring till [!DNL DCS]honom.
-* Receive data from the [!DNL DCS].
+* Ring [!DNL DCS].
+* Ta emot data från [!DNL DCS].
 * Formatera dataelement i samtal.
 * Förstå parametrarna som returneras av [!DNL DCS].
 
-Se avsnitten nedan för att komma igång. Börja med [Skicka data till DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md). Efter det går du vidare till [Ta emot data från DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md).
+Se avsnitten nedan för att komma igång. Börja med [Skicka data till DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md). Gå sedan vidare till [Ta emot data från DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md).
 
 * [Skicka data till DCS](dcs-url-send.md)
 * [Ta emot data från DCS](dcs-url-receive.md)
