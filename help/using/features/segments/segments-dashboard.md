@@ -17,11 +17,11 @@ ht-degree: 9%
 
 # Vy över segmentlista {#segments-list-view}
 
-Kontrollpanelen för [segment](https://bank.demdex.com/portal/Segments/SegmentBuilder.ddx#list) är en central arbetsyta för att hantera målgruppssegment. Du kan se kontrollpanelen genom att gå till [!UICONTROL Segments] > **[!UICONTROL Audience Data]** **[!UICONTROL Segments]**.
+Kontrollpanelen [Segment](https://bank.demdex.com/portal/Segments/SegmentBuilder.ddx#list) är en central arbetsyta för att hantera målgruppssegment. Du kan se kontrollpanelen [!UICONTROL Segments] genom att gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**.
 
 ![segment-dashboard](assets/segments-dashboard.png)
 
-Sidan innehåller [!UICONTROL Segments] funktioner och verktyg som hjälper dig att:
+Sidan [!UICONTROL Segments] innehåller funktioner och verktyg som du kan använda för att:
 
 * Skapa nya segment,
 * Redigera och ta bort segment,
