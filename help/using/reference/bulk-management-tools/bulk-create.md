@@ -27,24 +27,24 @@ t_bulk_create.xml
 
 >[!NOTE]
 >
->[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter ](../../features/administration/administration-overview.md) som tilldelats i  [!DNL Audience Manager] användargränssnittet respekteras i  [!UICONTROL Bulk Management Tools].
 
 >[!CAUTION]
 >
 >Blanda inte objekttyper i en gruppskapandebegäran. Rubrikerna för varje objekt är unika och kan inte kombineras. Rensa kalkylbladet och gör en separat begäran för olika objekt.
 
-Om du vill skapa flera objekt samtidigt öppnar du [!UICONTROL Bulk Management Tools] kalkylbladet och:
+Om du vill skapa flera objekt samtidigt öppnar du kalkylbladet [!UICONTROL Bulk Management Tools] och:
 
-1. Klicka på **[!UICONTROL Headers]** fliken och kopiera de nya rubrikerna för objektet som du vill lägga till.
-2. Klicka på **[!UICONTROL Create]** fliken.
+1. Klicka på fliken **[!UICONTROL Headers]** och kopiera rubrikerna för objektet som du vill lägga till.
+2. Klicka på fliken **[!UICONTROL Create]**.
 3. Klistra in de skapade rubrikerna på den första raden i uppdateringskalkylbladet.
 4. Klistra in eller skriv in data som du vill ändra i en motsvarande kolumn baserat på rubriketiketten.
-5. Klicka i verktygsfältet för kalkylblad på knappen Skapa som matchar det objekt du uppdaterar.
-Den här åtgärden öppnar [!UICONTROL Account Information] dialogrutan.
+5. Klicka på knappen Skapa som matchar det objekt du uppdaterar i verktygsfältet för kalkylblad.
+Den här åtgärden öppnar dialogrutan [!UICONTROL Account Information].
 6. Ange nödvändig [inloggningsinformation](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) och klicka på **[!UICONTROL Submit]**.
 
-Kalkylbladet skapar en [!UICONTROL Results] kolumn. Kolumnen returnerar JSON-svaret för en slutförd åtgärd. [!UICONTROL Results] Se exempel på [REST API](../../api/rest-api-main/rest-api-main.md) . Innan du anger data bör kalkylbladet som du skapar gruppvis se ut som i följande exempel. Observera att alla olika skapandealternativ inte visas här. Här finns information som hjälper dig förstå hur ett ifyllt kalkylblad kan se ut.
+Kalkylbladet skapar en [!UICONTROL Results]-kolumn. Kolumnen [!UICONTROL Results] returnerar JSON-svaret för en slutförd åtgärd. Se [REST API:er](../../api/rest-api-main/rest-api-main.md) för exempel. Innan du anger data bör kalkylbladet som du skapar gruppvis se ut som i följande exempel. Observera att alla olika skapandealternativ inte visas här. Här finns information som hjälper dig förstå hur ett ifyllt kalkylblad kan se ut.
 
 ![](assets/cretetraits.png)
 
-Om en satsvis uppdatering returnerar ett fel eller misslyckas, se [Felsökning för grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-troubleshooting.md).
+Om gruppuppdateringen returnerar ett fel eller misslyckas, se [Felsökning för grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-troubleshooting.md).
