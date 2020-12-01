@@ -32,7 +32,7 @@ Datastyrning i Audience Manager avser livscykeln för era kunddata i Audience Ma
 
 >[!NOTE]
 >
->See [IP Address Obfuscation](../../features/administration/ip-obfuscation.md) to learn how to enable [!DNL IP] address obfuscation in the Audience Manager user interface.
+>Se [IP-adressofuscation](../../features/administration/ip-obfuscation.md) om du vill veta hur du aktiverar [!DNL IP]-adressofusk i användargränssnittet i Audience Manager.
 
 Titta på videon nedan för att få veta mer om hur du döljer [!DNL IP]-adresser i Audience Manager.
 
