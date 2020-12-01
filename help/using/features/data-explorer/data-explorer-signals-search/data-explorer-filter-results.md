@@ -18,12 +18,12 @@ ht-degree: 6%
 
 Filtrera resultaten av en signalsökning baserat på signaltypen.
 
-1. Gå till [!UICONTROL Audience Data > Signals > Search] och kör en [!UICONTROL Signals Search] med önskade nyckelvärdepar, eller en bredare sökning, med hjälp av filtren.
-1. Använd **[!UICONTROL Filter by Signal Type]** avsnittet för att filtrera resultaten baserat på följande kategorier:
+1. Gå till [!UICONTROL Audience Data > Signals > Search] och kör en [!UICONTROL Signals Search] med önskade nyckelvärdepar, eller en bredare sökning med hjälp av filtren.
+1. Använd **[!UICONTROL Filter by Signal Type]**-avsnittet för att filtrera resultaten baserat på följande kategorier:
 
-   * **[!UICONTROL Actionable log files]**: signaler som tas emot via [!DNL Google] [!DNL DCM] loggfiler,
-   * **[!DNL Adobe Analytics]**: signaler som tas emot från ditt [!DNL Adobe Analytics] konto. Använd den **[!UICONTROL Filter by report suites]** nedrullningsbara menyn för att välja rapportsviten för att visa signaler från.
-   * **[!UICONTROL General online data]**: realtidsdata som genererats av besökarna och som inte ingår i loggfiler och [!DNL Adobe Analytics];
-   * **[!UICONTROL Onboarded records]**: data som tagits emot via batchdataöverföringar. Använd den **[!UICONTROL Filter by data source]** nedrullningsbara menyn för att välja datakälla att visa signaler från.
+   * **[!UICONTROL Actionable log files]**: signaler som tas emot via  [!DNL Google] [!DNL DCM] loggfiler,
+   * **[!DNL Adobe Analytics]**: signaler som tas emot från ditt  [!DNL Adobe Analytics] konto. Använd listrutan **[!UICONTROL Filter by report suites]** för att välja rapportsviten för att visa signaler från.
+   * **[!UICONTROL General online data]**: realtidsdata som genererats av besökarna och som inte ingår i loggfiler och  [!DNL Adobe Analytics];
+   * **[!UICONTROL Onboarded records]**: data som tagits emot via batchdataöverföringar. Använd den nedrullningsbara menyn **[!UICONTROL Filter by data source]** för att välja datakälla att visa signaler från.
 
-1. Du kan också [spara sökvillkor](../../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md) för framtida bruk.
+1. Du kan även [spara sökvillkor](../../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md) för framtida bruk.
