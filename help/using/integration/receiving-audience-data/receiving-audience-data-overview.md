@@ -1,7 +1,7 @@
 ---
 description: Ta emot målgruppsdata från Audience Manager.
 seo-description: Ta emot målgruppsdata från Adobe Audience Manager (AAM).
-seo-title: Tar emot målgruppsdata i Adobe Audience Manager (AAM)
+seo-title: Ta emot målgruppsdata i Adobe Audience Manager (AAM)
 title: 'Ta emot målgruppsdata '
 feature: Outbound Data Transfers
 translation-type: tm+mt
@@ -19,7 +19,7 @@ Ta emot målgruppsdata från Audience Manager.
 
 * [ID-synkronisering för utgående dataöverföringar](id-sync-outbound.md)
 
-   Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta din Adobe Audience Manager-konsult innan du försöker synkronisera ditt första ID.
+   Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta Adobe Audience Manager-konsulten innan du försöker synkronisera ditt första ID.
 
 * [Utgående dataöverföringar i realtid](real-time-outbound-transfers/real-time-outbound-transfers.md)
 
