@@ -17,21 +17,21 @@ ht-degree: 7%
 
 # Överbelastning och felhantering {#race-conditions-and-error-handling}
 
-Beskriver hur du förhindrar tävlingsförhållanden och [!DNL DCS] felhantering.
+Beskriver hur du förhindrar konkurrensförhållanden och [!DNL DCS] felhantering.
 
-## Förhindra utrymmesvillkor {#prevent-race-conditions}
+## Förhindrar att ansiktsvillkor {#prevent-race-conditions}
 
-Ett tävlingsvillkor kan uppstå om du skickar flera anrop samtidigt (eller i snabb följd) till användaren [!DNL DCS] innan den slutar svara på de första frågorna och skriver data till användarens cookie. Ett konkurrensvillkor är inte önskvärt eftersom det kan vara skadat eller felaktigt skriva över cookie-data. Som en god vana bör du tänka på följande metoder för att undvika det här problemet:
+Ett tävlingsvillkor kan uppstå om du skickar flera anrop samtidigt (eller i snabb följd) till [!DNL DCS] innan det slutar svara på de initiala frågorna och skriver data till användarens cookie. Ett konkurrensvillkor är inte önskvärt eftersom det kan vara skadat eller felaktigt skriva över cookie-data. Som en god vana bör du tänka på följande metoder för att undvika det här problemet:
 
-* Ring inte samtidiga samtal, eller samtal i snabb följd, till [!DNL DCS] användaren.
+* Ring inte samtidiga samtal eller samtal i snabb följd till [!DNL DCS] från samma användare.
 * Vänta tills varje svar har kommit tillbaka innan du gör efterföljande anrop.
 
 ## Felhantering {#error-handling}
 
-Felhanteringen är begränsad för ogiltiga eller dåligt formade frågor. En ogiltig begäran returnerar ett `HTTP 200 OK` svar och inga data. Dessutom [!DNL DCS] avbryts bearbetningen av en begäran, trait-data ignoreras och ett `HTTP 200 OK` svar returneras när en användare:
+Felhanteringen är begränsad för ogiltiga eller dåligt formade frågor. En ogiltig begäran returnerar ett `HTTP 200 OK`-svar och inga data. Dessutom avbryter [!DNL DCS] bearbetningen av en begäran, tar bort trait-data och returnerar ett `HTTP 200 OK`-svar när en användare:
 
 * Spårning på Audience Manager- eller partnernivå är inte längre tillgängligt.
 * Kommer från en ogiltig/omarkerad geografisk region.
 * Inaktiverar cookies för webbläsare (antingen alla eller tredje part).
 
-See also, [DCS Error Codes, Messages, and Examples](../../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md).
+Se även [DCS-felkoder, meddelanden och exempel](../../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md).
