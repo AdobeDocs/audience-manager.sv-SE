@@ -86,13 +86,13 @@ I följande exempel visas korrekt formaterade filnamn. Filnamnen kan se likadana
 </ul>
 
 >[!NOTE]
-> Information om namngivning av filer för ID-synkronisering (c2c-prefix) för personbaserade mål finns i [Arbetsflöde A - Personalisering baserad på all onlineaktivitet i kombination med offlinedata](../../../features/destinations/people-based-destinations-workflow-combined.md) eller [arbetsflöde B - Personalisering baserad på data](../../../features/destinations/people-based-destinations-workflow-offline.md)som endast är offline.
+> Information om namngivning av filer för ID-synkronisering (c2c-prefix) för personbaserade mål finns i [Arbetsflöde A - Personalisering baserad på all onlineaktivitet i kombination med offlinedata](../../../features/destinations/people-based-destinations-workflow-combined.md) eller [Arbetsflöde B - Personalisering baserad på data som endast är offline](../../../features/destinations/people-based-destinations-workflow-offline.md).
 
-## Syntax för filinnehåll och exempel {#file-content-syntax}
+## Filinnehållssyntax och exempel {#file-content-syntax}
 
 Innehållet i en ID-fil innehåller följande element:
 
-*`UUID`* `<tab>`*`UUID`* `<tab>`*`UUID`*`<tab>` *`UUID`*
+*`UUID`* `<tab>`*`UUID`*`<tab>`*`UUID`*`<tab>`*`UUID`*
 
 Filen innehåller användar-ID ([!DNL UUID]). Separera ID:n på varje rad med en flik. I följande exempel visas en korrekt formaterad ID-fil. Innehållet kan se likadant ut.
 
@@ -102,7 +102,7 @@ abc123 def456 ghi789 xyz987
 
 ## Synkroniseringen matchar DPUID:n med UUID:n {#sync-matches-dpuuids-uuids}
 
-Syftet med en ID-synkroniseringsfil är att synkronisera [DPUUID](../../../reference/ids-in-aam.md) från dina egna datakällor med [!DNL Audience Manager] UID. Synkroniseringen mappar [!DNL DPUUID]objekt från överordnad [!DNL DPID] och relaterade [!DNL DPID]filer till [!DNL Audience Manager] [!DNL UUID]scenerna. Var du placerar ID:n i filnamnet och brödtexten avgör hur dessa ID:n mappas till varandra. Ta till exempel de två exempelfilerna som visas här:
+Syftet med en ID-synkroniseringsfil är att synkronisera [DPUID:n](../../../reference/ids-in-aam.md) från dina egna datakällor med [!DNL Audience Manager] UUID:n. Synkroniseringen mappar [!DNL DPUUID]s från överordnad [!DNL DPID] och dess relaterade [!DNL DPID]s till [!DNL Audience Manager] [!DNL UUID]s. Var du placerar ID:n i filnamnet och brödtexten avgör hur dessa ID:n mappas till varandra. Ta till exempel de två exempelfilerna som visas här:
 
 * **Fil 1:** `adobe_id_0_12345_1476312152.sync`
 
@@ -117,12 +117,12 @@ Utifrån exempelnamnet och innehållet mappas ID:n ihop så här:
 | DPID 0 = Adobe Audience Manager UUID | DPID 12345 |
 |---|---|
 | 68079982765673198504052656074456196039 | XYZ3017D_2kzkTOXkFYIAgwbajoqWRcqkXl-Trj6E4njaMR.38 |
-| 67412682083411995725538770443620307584 | XYZ3017BBR4DAFJWfM6D4Gb4lN_T5jk_f7rdEcqNs9wfnA7h70 |
-| 89159024796760343733111707646026765593 | XYZ3017PryPID8tzfhkEE-gE034LI-53Jde0utCYcIwd0A2OlM |
+| 6741268208341199572538770443620307584 | XYZ3017BBR4DAFJWfM6D4Gb4lN_T5jk_f7rdEcqNs9wfnA7h70 |
+| 891590247967603437311707646026765593 | XYZ3017PryPID8tzfhkEE-gE034LI-53Jde0utCYcIwd0A2OlM |
 | 66552757407517449462805881945288602094 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M |
-| 66184778222667870903738139438735041506 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw |
+| 6618477822667870903738139438735041506 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw |
 
-Steg 1: ID-synkroniseringsprocessen synkroniserar [!DNL DPUUID]sidorna från [!DNL DPID] 12345 med [!DNL Audience Manager] sidorna [!DNL UUID]i den vänstra kolumnen. Observera att [!DNL DPID] &quot;0&quot; i filnamnet representerar [!DNL Audience Manager][!DNL UUID]s.
+Steg 1: ID-synkroniseringsprocessen synkroniserar [!DNL DPUUID]s från [!DNL DPID] 12345 med [!DNL Audience Manager] [!DNL UUID]s i den vänstra kolumnen. Observera att [!DNL DPID] &quot;0&quot; i filnamnet representerar [!DNL Audience Manager] [!DNL UUID]s.
 <br/>
 
 **Fil 2** ( [Ladda ned exempelfil](assets/adobe_id_12345_67890_1477846458.sync))
@@ -135,7 +135,7 @@ Steg 1: ID-synkroniseringsprocessen synkroniserar [!DNL DPUUID]sidorna från [!D
 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M | 2351382994 |
 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw | 4601584763 |
 
-Steg 2: De [!DNL DPUUID]som kommer från [!DNL DPID] 12345 har synkroniserats i steg 1 med Audience Manager [!DNL UUID]. Det som den här ID-synkroniseringen gör är att synkronisera [!DNL DPUUID]sidorna från [!DNL DPID] 67890 med Audience Manager från [!DNL UUID]steg 1.
+Steg 2: [!DNL DPUUID]s från [!DNL DPID] 12345 har synkroniserats i steg 1 med Audience Manager [!DNL UUID]s. Det som den här ID-synkroniseringen kommer att göra är att synkronisera [!DNL DPUUID]s från [!DNL DPID] 67890 med Audience Manager [!DNL UUID]s från steg 1.
 
 <br/>
 
@@ -145,6 +145,6 @@ Användar-ID:n kan inte:
 
 * Ha flikar i själva ID:t. Flikar används bara för att avgränsa enskilda ID:n i datafilen.
 * Innehåller personligt identifierbar information ([!UICONTROL PII]).
-* Använd [!DNL URL] kodning. Skicka bara in okodade ID:n.
+* Använd [!DNL URL]-kodning. Skicka bara in okodade ID:n.
 
 Rader som slutar med tabbar eller mellanslag bearbetas eller realiseras inte. Se i regel till att du inte tar bort radslut.
