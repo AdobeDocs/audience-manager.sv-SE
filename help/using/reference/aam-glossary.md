@@ -27,7 +27,7 @@ Använd [!UICONTROL Algorithmic Modeling] som ett sätt att nå ut utanför kär
 
 Se [Förstå algoritmiska modeller](../features/algorithmic-models/algo-models-overview.md).
 
-<br> 
+<br>
 
 **BAAAM**
 
