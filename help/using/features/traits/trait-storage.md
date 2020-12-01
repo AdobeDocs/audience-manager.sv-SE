@@ -23,33 +23,33 @@ Skräddarsy lagringsmappar och ordna egenskaper.
 
 ## Syfte med Trait Storage-mappar
 
-I [!UICONTROL Trait Builder]är trait-lagringsmappar kataloger som håller och organiserar egenskaper i logiska grupper som du skapar. Få åtkomst till lagringsmapparna från [!UICONTROL Traits] kontrollpanelen eller när du skapar ett nytt varumärke. Kom ihåg att du inte kan skapa ett nytt drag utan att tilldela det till en lagringsmapp.
+I [!UICONTROL Trait Builder] är trait-lagringsmappar kataloger som håller och organiserar egenskaper i logiska grupper som du skapar. Få åtkomst till lagringsmapparna från kontrollpanelen [!UICONTROL Traits] eller när du skapar en ny egenskap. Kom ihåg att du inte kan skapa ett nytt drag utan att tilldela det till en lagringsmapp.
 
 ![](assets/tb_storage.png)
 
-## Skapa en anpassad lagringsmapp {#create-trait-storage-folder}
+## Skapa en lagringsmapp för Trait {#create-trait-storage-folder}
 
 I den här proceduren beskrivs hur du skapar en lagringsmapp för dina egenskaper.
 
 <!-- t_tb_create_storage.xml -->
 
-Du kan skapa en ny lagringsmapp i avsnittet när du skapar en ny egenskap [!UICONTROL Basic Information] . Du kan även skapa mappar i [!UICONTROL Trait Storage] avsnittet på [!UICONTROL Traits] huvudlistinstrumentpanelen.
+Du kan skapa en ny lagringsmapp i [!UICONTROL Basic Information]-avsnittet när du ställer in en ny egenskap. Du kan även skapa mappar i [!UICONTROL Trait Storage]-delen av huvudkontrollpanelen för [!UICONTROL Traits]-listan.
 
 Så här skapar du en ny lagringsmapp:
 
-1. Håll markören över i [!UICONTROL Trait Storage] fönstret:
+1. Håll muspekaren över i fönstret [!UICONTROL Trait Storage]:
    * **[!UICONTROL All Traits]** om du vill lägga till en ny rotnivåmapp.
    * En befintlig överordnad mapp som lägger till en ny underordnad mapp.
 1. Klicka på ikonen + för att skapa mappen.
 1. Namnge mappen och klicka på **[!UICONTROL Save]**.
 
-## Byta namn på eller ta bort en anpassad lagringsmapp {#rename-delete-trait-storage-folder}
+## Byt namn på eller ta bort en Trait Storage-mapp {#rename-delete-trait-storage-folder}
 
 I den här proceduren beskrivs hur du byter namn på eller tar bort en lagringsmapp.
 
 <!-- t_tb_rename_delete_storage.xml -->
 
-Du kan byta namn på eller ta bort lagringsmappar från [!UICONTROL Trait Storage] avsnittet på [!UICONTROL Traits] huvudlistinstrumentpanelen.
+Du kan byta namn på eller ta bort lagringsmappar från [!UICONTROL Trait Storage]-avsnittet på huvudkontrollpanelen för [!UICONTROL Traits]-listan.
 
 * Byt namn på en mapp genom att hålla markören över den och klicka på pennikonen.
-* Ta bort en mapp genom att hålla markören över den och klicka på **X** -ikonen.
+* Ta bort en mapp genom att hålla markören över den och klicka på ikonen **X**.
