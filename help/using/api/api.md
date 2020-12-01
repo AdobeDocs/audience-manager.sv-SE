@@ -16,16 +16,16 @@ ht-degree: 37%
 ---
 
 
-# [!DNL API] och [!DNL SDK] kod {#api-and-sdk-code}
+# [!DNL API] och  [!DNL SDK] kod  {#api-and-sdk-code}
 
-[!DNL API]och verktyg som gör att du kan arbeta programmatiskt med [!DNL Audience Manager].
+[!DNL API]och verktyg som gör att du kan arbeta programmatiskt med  [!DNL Audience Manager].
 
 >[!NOTE]
 >
->De här funktionerna stöds inte av våra [!DNL API]funktioner:
+>Dessa funktioner stöds inte av våra [!DNL API]s:
 >
->* [!UICONTROL General], [!UICONTROL Trend]och [!UICONTROL Interactive] rapporter.
->* Inaktuell [!DNL Tag Insertion Manager] ([!DNL TIM]) funktion.
+>* [!UICONTROL General],  [!UICONTROL Trend]och  [!UICONTROL Interactive] rapporter.
+>* Inaktuell [!DNL Tag Insertion Manager] ([!DNL TIM])-funktion.
 
 
 Information:
