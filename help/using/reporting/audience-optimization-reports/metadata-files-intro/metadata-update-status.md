@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Statusuppdateringar för metadatafiler{#status-updates-for-metadata-files}
 
-S3-statuskatalogen innehåller en `.info` fil med information om slutförda och misslyckade överföringar. Filen innehåller JSON-formaterade data med statusresultat i en array.
+S3-statuskatalogen innehåller en `.info`-fil med information om slutförda och misslyckade överföringar. Filen innehåller JSON-formaterade data med statusresultat i en array.
 
-Innehållet i din `.info` fil ser ut ungefär som i det här exemplet.
+Innehållet i `.info`-filen ser ut ungefär som i det här exemplet.
 
 ```js
 //sample file path
@@ -60,9 +60,9 @@ Innehållet i din `.info` fil ser ut ungefär som i det här exemplet.
 }
 ```
 
-## Tangentvärdepar för metadata definierade {#key-value-pairs}
+## Nyckelvärdepar för metadata definierade {#key-value-pairs}
 
-I följande tabeller listas och definieras nycklarna i `Files` - och `Summary` -avsnitten i en metadatastatusfil.
+I följande tabeller listas och definieras nycklarna i avsnitten `Files` och `Summary` i en metadatastatusfil.
 
 **Tangenter i filarrayen**
 
@@ -84,19 +84,19 @@ I följande tabeller listas och definieras nycklarna i `Files` - och `Summary` -
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileChecksumMD5</code> </p> </td> 
-   <td colname="col2"> <p>MD 5-kontrollsumman för metadatafilen som överförts till din <code> meta</code> katalog. </p> </td> 
+   <td colname="col2"> <p>MD 5-kontrollsumman för metadatafilen som har överförts till din <code> meta</code>-katalog. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileName</code> </p> </td> 
-   <td colname="col2"> <p>Namnet på den metadatafil som överförts till din <code> meta</code> katalog. </p> </td> 
+   <td colname="col2"> <p>Namnet på den metadatafil som överförts till din <code> meta</code>-katalog. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> MetadataType</code> </p> </td> 
-   <td colname="col2"> <p>Det läsbara namnet på den typ av data som filen innehåller. Det baseras på det underordnade ID:t i ditt filnamn. </p> <p>See <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Naming Conventions for Metadata Files</a>. </p> </td> 
+   <td colname="col2"> <p>Det läsbara namnet på den typ av data som filen innehåller. Det baseras på det underordnade ID:t i ditt filnamn. </p> <p>Se <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Namngivningskonventioner för metadatafiler</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Parent</code> </p> </td> 
-   <td colname="col2"> <p>Det läsbara namnet på den typ av data som filen innehåller. Det baseras på det överordnade ID:t i ditt filnamn. </p> <p>See <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Naming Conventions for Metadata Files</a>. </p> </td> 
+   <td colname="col2"> <p>Det läsbara namnet på den typ av data som filen innehåller. Det baseras på det överordnade ID:t i ditt filnamn. </p> <p>Se <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Namngivningskonventioner för metadatafiler</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Status</code> </p> </td> 
@@ -121,7 +121,7 @@ I följande tabeller listas och definieras nycklarna i `Files` - och `Summary` -
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> Day</code> </p> </td> 
-   <td colname="col2"> <p>Filbearbetningsdatum i <code><i>yyyy-mm-dd</i></code> format. </p> </td> 
+   <td colname="col2"> <p>Filbearbetningsdatum i <code><i>yyyy-mm-dd</i></code>-format. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> GlobalStatus</code> </p> </td> 
