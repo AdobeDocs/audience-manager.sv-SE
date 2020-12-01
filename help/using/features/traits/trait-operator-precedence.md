@@ -37,7 +37,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td colname="col1"> Jämförelseoperatorer </td> 
-   <td colname="col2"> &lt; &gt; &lt;= &gt;= </td> 
+   <td colname="col2"> &lt;&gt; &lt;&gt;= </td> 
    <td colname="col3"> Härnäst utvärderas mindre än, större än, mindre än/lika med, större än/lika med. </td> 
   </tr> 
   <tr> 
@@ -51,7 +51,7 @@ ht-degree: 9%
    <td colname="col3" morerows="1"> n/a </td> 
   </tr> 
   <tr> 
-   <td colname="col1">Boolean <span class="wintitle"> OR</span> </td> 
+   <td colname="col1">Boolean <span class="wintitle"> ELLER</span> </td> 
    <td colname="col2"><span class="wintitle"> ELLER</span> </td> 
    <td colname="col3" morerows="1"> n/a </td> 
   </tr> 
