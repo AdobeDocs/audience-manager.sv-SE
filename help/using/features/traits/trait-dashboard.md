@@ -17,16 +17,16 @@ ht-degree: 4%
 
 # Instrumentpanel för traits {#traits-dashboard}
 
-Kontrollpanelen för [egenskaper](https://bank.demdex.com/portal/Traits/Traits.ddx#show/list) är en central arbetsyta för att hantera egenskaper. Du kan se kontrollpanelen genom att gå till [!UICONTROL Traits] > **[!UICONTROL Audience Data]** **[!UICONTROL Traits]**.
+Kontrollpanelen [Traits](https://bank.demdex.com/portal/Traits/Traits.ddx#show/list) är en centraliserad arbetsyta för att hantera egenskaper. Du kan se kontrollpanelen [!UICONTROL Traits] genom att gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Traits]**.
 
 ![](assets/traits-dashboard.png)
 
 <!-- c_tb_dashboard.xml -->
 
-Kontrollpanelen innehåller funktioner och verktyg som hjälper dig att: [!UICONTROL Traits]
+Kontrollpanelen [!UICONTROL Traits] innehåller funktioner och verktyg som hjälper dig att:
 
 1. Se alla egenskaper och relaterade detaljer i en tabell med kolumner som du kan sortera.
-2. Granska och arbeta med [Active Audience Traits och Synced Traits](../../features/traits/client-activity-synced-audience-traits.md)för datakälla.
+2. Granska och arbeta med [Active Audience Traits and Data Source Synced Traits](../../features/traits/client-activity-synced-audience-traits.md).
 3. Skapa, redigera och ta bort egenskaper.
 4. Visa och hantera lagringsmappar för trait.
 5. Sök efter egenskaper efter namn, ID, beskrivning eller datakälla. Klicka på en mapp medan du söker för att begränsa resultatet till den mappen och dess undermappar.
