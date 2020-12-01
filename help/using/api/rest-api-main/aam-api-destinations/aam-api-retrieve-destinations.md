@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # Returnera en destination med destinations-ID {#return-a-destination-by-destination-id}
 
-En `GET` metod som returnerar destinationen för den angivna `destinationId`.
+En `GET`-metod som returnerar målet för den angivna `destinationId`.
 
 <!-- r_get_all_destinations_order_id.xml -->
 
@@ -27,7 +27,7 @@ En `GET` metod som returnerar destinationen för den angivna `destinationId`.
 
 >[!NOTE]
 >
->Fylla i `mappings` fältet genom att skicka `includeMappings=true` i URL:en.
+>Om du vill fylla i fältet `mappings` skickar du `includeMappings=true` i URL:en.
 
 ## Svar
 
@@ -59,7 +59,7 @@ En `GET` metod som returnerar destinationen för den angivna `destinationId`.
 
 ## Returnera alla mål {#return-all-destinations}
 
-En `GET` metod som returnerar alla mål för den angivna partnern.
+En `GET`-metod som returnerar alla mål för den angivna partnern.
 
 <!-- r_get_all_destinations.xml -->
 
@@ -69,7 +69,7 @@ En `GET` metod som returnerar alla mål för den angivna partnern.
 
 >[!NOTE]
 >
->* *(Valfritt)* Skicka in `containsSegment=<sid>` för att returnera en array med alla mål som är mappade till det angivna segmentet. Frågan kan till exempel se ut ungefär så här: `GET .../destinations/?containsSegment=4321`.
+>* *(Valfritt)* Skicka in  `containsSegment=<sid>` för att returnera en array med alla mål som är mappade till det angivna segmentet. Frågan kan till exempel se ut ungefär så här: `GET .../destinations/?containsSegment=4321`.
    >
    >
 * Returnerar inte det fullständiga målobjektet. Hämta målet efter dataordning om du behöver ett fullständigt ifyllt objekt.
@@ -77,7 +77,7 @@ En `GET` metod som returnerar alla mål för den angivna partnern.
 
 ### Valfria frågeparametrar
 
-Du kan använda dessa valfria parametrar med API-metoder som returnerar *alla* egenskaper för ett objekt. Ange dessa alternativ i begärandesträngen när du skickar frågan till [!DNL API]. Se [Valfria parametrar](../../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters).
+Du kan använda dessa valfria parametrar med API-metoder som returnerar *alla*-egenskaper för ett objekt. Ange dessa alternativ i begärandesträngen när du skickar frågan till [!DNL API]. Se [Valfria parametrar](../../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters).
 
 <table id="table_B05A8EE22C9A4C72B84A8479E1AB7D0A"> 
  <thead> 
@@ -97,7 +97,7 @@ Du kan använda dessa valfria parametrar med API-metoder som returnerar *alla* e
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> sortBy</code> </td>
-   <td colname="col2">Sorterar och returnerar resultat enligt den angivna <span class="keyword"> JSON</span> -egenskapen. </td>
+   <td colname="col2">Sorterar och returnerar resultat enligt den angivna egenskapen <span class="keyword"> JSON</span>. </td>
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> descending</code> </td>
@@ -144,7 +144,7 @@ Du kan använda dessa valfria parametrar med API-metoder som returnerar *alla* e
 
 ## Returnera en målmappning med mappnings-ID {#return-dest-mapping-id}
 
-En `GET` metod som returnerar en enskild målmappning baserad på `mappingId`.
+En `GET`-metod som returnerar en individuell målmappning baserad på `mappingId`.
 
 <!-- r_get_destination_trait_data_order.xml -->
 
@@ -181,7 +181,7 @@ En `GET` metod som returnerar en enskild målmappning baserad på `mappingId`.
 
 ## Returmålsmappningar {#return-dest-mappings}
 
-En `GET` metod som returnerar mappningarna för ett mål.
+En `GET`-metod som returnerar mappningarna för ett mål.
 
 <!-- r_get_destination_mappings.xml -->
 
@@ -255,7 +255,7 @@ En `GET` metod som returnerar mappningarna för ett mål.
 
 ## Returnera alla tillgängliga målplattformar {#return-dest-platforms}
 
-En `GET` metod som returnerar alla tillgängliga enhetsplattformar för destinationer.
+En `GET`-metod som returnerar alla tillgängliga enhetsplattformar för mål.
 
 <!-- r_get_dest_platforms.xml -->
 
@@ -271,9 +271,9 @@ BROWSER, ANDROID, iOS, ALL
 ]
 ```
 
-## Returnera jobbhistorik för S2S- och S2S-måljobb {#return-job-history}
+## Returnera historik för S2S- och S2S-måljobb {#return-job-history}
 
-En `GET` metod som returnerar historikinformation för utgående jobb [!UICONTROL Server-to-Server] ( [!UICONTROL S2S]) och [!UICONTROL S2S] bulkdestinationsjobb.
+En `GET`-metod som returnerar historikinformation för utgående [!UICONTROL Server-to-Server] ( [!UICONTROL S2S]) och bulk [!UICONTROL S2S]-måljobb.
 
 <!-- r_get_job_history.xml -->
 
