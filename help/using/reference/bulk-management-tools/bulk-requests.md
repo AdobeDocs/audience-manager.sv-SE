@@ -27,13 +27,13 @@ t_bulk_requests.xml
 
 >[!NOTE]
 >
->[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter ](../../features/administration/administration-overview.md) som tilldelats i  [!DNL Audience Manager] användargränssnittet respekteras i  [!UICONTROL Bulk Management Tools].
 
-Kalkylbladet har ingen egen uppsättning kolumnrubriker och du behöver inte kopiera ID:n till någon av kolumnerna. [!UICONTROL Request] I stället returneras data baserat på åtgärdsknappen som du klickar på i verktygsfältet. Och en valfri rapportfunktion returnerar en frekvens för pixelbränder och ett unikt antal användare för flera fasta tidsintervall.
+Kalkylbladet [!UICONTROL Request] har ingen egen uppsättning kolumnrubriker och du behöver inte kopiera ID:n till någon av kolumnerna. I stället returneras data baserat på åtgärdsknappen som du klickar på i verktygsfältet. Och en valfri rapportfunktion returnerar en frekvens för pixelbränder och ett unikt antal användare för flera fasta tidsintervall.
 
-Om du vill göra en gruppbegäran öppnar du [!UICONTROL Bulk Management Tools] kalkylbladet och:
+Om du vill göra gruppförfrågningar öppnar du [!UICONTROL Bulk Management Tools]-kalkylbladet och:
 
-1. Klicka på **[!UICONTROL Request]** fliken.
+1. Klicka på fliken **[!UICONTROL Request]**.
 2. Klicka på en begärandeknapp som motsvarar de data du vill arbeta med i verktygsfältet högst upp i kalkylbladet. Du kan begära:
 
    * Algoritmiska modeller
@@ -44,10 +44,10 @@ Om du vill göra en gruppbegäran öppnar du [!UICONTROL Bulk Management Tools] 
    * Segment 
    * ID för trait- och segmentmapp
 
-   API:t [!DNL Audience Manager] skriver massdata tillbaka till [!UICONTROL Request] kalkylbladet.
+   API:t [!DNL Audience Manager] skriver massdata tillbaka till kalkylbladet [!UICONTROL Request].
 
 >[!NOTE]
 >
->Resultatet blir att kolumnerna `createTime` och `updateTime` kolumnerna returnerar data med exponentiell notation. De underliggande datum-/tidsstämplarna registreras i UNIX UTC-tid. För närvarande kan kalkylbladet inte returnera datum-/tidsstämplar i läsbart format.
+>I resultatet returnerar kolumnerna `createTime` och `updateTime` data i exponentiell notation. De underliggande datum-/tidsstämplarna registreras i UNIX UTC-tid. För närvarande kan kalkylbladet inte returnera datum-/tidsstämplar i läsbart format.
 
-Om en satsvis uppdatering returnerar ett fel eller misslyckas, se [Felsökning för grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-troubleshooting.md).
+Om gruppuppdateringen returnerar ett fel eller misslyckas, se [Felsökning för grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-troubleshooting.md).
