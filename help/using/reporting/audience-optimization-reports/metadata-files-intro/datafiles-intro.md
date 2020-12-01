@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Datafiler för Audience Optimization-rapporter och verkställbara loggfiler {#data-files-for-audience-optimization-reports}
 
-En datafil innehåller indata för att visa, klicka eller konvertera. När dessa data är korrekt formaterade kan du importera dem till Audience Manager för att visa dem i [Audience Optimization-rapporterna](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) och skapa egenskaper med hjälp av [loggfilerna](/help/using/integration/media-data-integration/actionable-log-files.md). Formatera datafilerna enligt dessa specifikationer i det här avsnittet.
+En datafil innehåller indata för att visa, klicka eller konvertera. När dessa data är korrekt formaterade kan du importera dem till Audience Manager för att visa dem i [Audience Optimization Reports](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) och skapa egenskaper med hjälp av data via [loggfiler som kan användas](/help/using/integration/media-data-integration/actionable-log-files.md). Formatera datafilerna enligt dessa specifikationer i det här avsnittet.
 
 ## Översikt {#overview}
 
@@ -25,9 +25,9 @@ Med en korrekt namngiven och formaterad datafil kan du importera, klicka och kon
 
 En datafil måste åtföljas av en metadatafil. Innehållet i metadatafilen matchar informationen i datafilen med relaterade, läsbara etiketter på rapportmenyerna. Mer information finns i [Översikt och mappningar för metadatafiler](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md).
 
-## Naming Conventions for Data Files {#naming-conventions}
+## Namngivningskonventioner för datafiler {#naming-conventions}
 
-Följande syntax definierar strukturen för ett välformaterat datafilnamn. Obs! *Kursiv* anger en variabel platshållare som ändras beroende på filinnehållet.
+Följande syntax definierar strukturen för ett välformaterat datafilnamn. Obs! *kursiv* anger en variabelplatshållare som ändras beroende på filinnehållet.
 
 **Syntax:** <pre><i>händelsetyp</i>_<i>åååmmdd</i></code></pre>
 
@@ -35,27 +35,27 @@ I ett filnamn:
 
 * Händelsetypen anger att filen innehåller avbildningar, klickningar eller konverteringar. Skapa en separat fil för varje händelsetyp.
 * Ett understreck skiljer händelsetypen och en tidsstämpel för årsdatum.
-* Innan du överför filerna ska du komprimera dem med gzip och spara dem med `.gz` filtillägget.
+* Innan du överför filer komprimerar du dem med gzip och sparar dem med filtillägget `.gz`.
 
 Med tanke på dessa krav bör du namnge dina datafiler baserat på deras innehåll så här:
 
-* Impressionsdata: <pre>imponsions_<i>yyymmdd</i>.gz</code></pre>
-* Klicka på data: <pre>clicks_<i>yyymmdd</i>.gz</code></pre>
-* Konverteringsdata: <pre>conversions_<i>yyymmdd</i>.gz</code></pre>
+* Impressionsdata: <pre>imponeringar_<i>åååmmdd</i>.gz</code></pre>
+* Klicka på data: <pre>klickningar_<i>åååmmdd</i>.gz</code></pre>
+* Konverteringsdata: <pre>conversions_<i>åååmmdd</i>.gz</code></pre>
 
-## Content Format for Data Files {#content-format}
+## Innehållsformat för datafiler {#content-format}
 
-Följande syntax definierar innehållsstrukturen i välformade datafiler. Observera att *kursiv* anger en variabelplatshållare och ersätts med en etikett i en faktisk datafil.
+Följande syntax definierar innehållsstrukturen i välformade datafiler. Obs! *kursiv* anger en variabelplatshållare och ersätts med en etikett i en faktisk datafil.
 
-**Syntax:** <pre><i>rubriketikett 1</i> | <i>rubriketikett 2</i> ... <i>rubriketikett n</i> | <i>version</i></code></pre>
+**Syntax:** <pre><i>rubriketikett 1</i> |  <i>rubriketikett 2</i> ...  <i>rubriketikett n</i> |  <i>version</i></code></pre>
 
 I filinnehållet:
 
 * Rubriketiketterna måste finnas i den ordning som visas i tabellen nedan. Samma etiketter används för tryck och klick. Konverteringsfiler innehåller extra rubriker.
 * Om du inte har data för en viss kolumn fyller du i fältet med ett `-1`.
 
-* Filerna *måste* avslutas med ett versionsnummer. Den aktuella versionen är 1.1.
-* Avgränsa filhuvuden och -innehåll med icke-utskrivbara ASCII 001-tecken. Om du inte kan använda ASCII 001 ska du separera sidhuvuden och data med en tabbavgränsare. Eftersom det här är tecken som inte skrivs ut visas endast ett rör `"|"` för visning i syntaxexemplet ovan.
+* Filerna *måste* sluta med ett versionsnummer. Den aktuella versionen är 1.1.
+* Avgränsa filhuvuden och -innehåll med icke-utskrivbara ASCII 001-tecken. Om du inte kan använda ASCII 001 ska du separera sidhuvuden och data med en tabbavgränsare. Eftersom det här är tecken som inte skrivs ut visas i syntaxexemplet ovan ett rör `"|"` endast i visningssyfte.
 
 **Fältetiketter**
 
@@ -71,11 +71,11 @@ Tabellen nedan listar och beskriver kolumnrubrikerna för datafilen. Sidhuvuden 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Tidsstämpel </p> </td> 
-   <td colname="col2"> <p>Ett UTC-datum och en UTC-tid för intrycket, klickningen eller konverteringshändelsen. Använd <code> yyyy-MM-dd HH:mm:ss</code> formatet. </p> </td> 
+   <td colname="col2"> <p>Ett UTC-datum och en UTC-tid för intrycket, klickningen eller konverteringshändelsen. Använd formatet <code> yyyy-MM-dd HH:mm:ss</code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Användar-ID </p> </td> 
-   <td colname="col2"> <p>Ditt ID för en besökare på platsen, kallas också för <span class="term"> dataleverantörens unika användar-ID</span> eller DPUID. </p> </td> 
+   <td colname="col2"> <p>Ditt ID för en besökare på platsen, kallas även <span class="term">-dataleverantörens unika användar-ID</span> eller DPUID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Advertiser-ID </p> </td> 
@@ -141,19 +141,19 @@ Tabellen nedan listar och beskriver kolumnrubrikerna för datafilen. Sidhuvuden 
  </tbody> 
 </table>
 
-## Delivery Methods for Data Files {#delivery-methods}
+## Leveransmetoder för datafiler {#delivery-methods}
 
-Ladda upp dina intryckta, klickningar eller konverteringsdatafiler till en Amazon S3-katalog för ditt [!DNL Audience Manager] konto. I det här avsnittet finns information om leverans-/katalogsökvägar, bearbetningstider och uppdateringar.
+Ladda upp dina intryckta, klicka eller konvertera datafiler till en Amazon S3-katalog för ditt [!DNL Audience Manager]-konto. I det här avsnittet finns information om leverans-/katalogsökvägar, bearbetningstider och uppdateringar.
 
 >[!IMPORTANT]
 >
-> Kontakta Audience Manager eller kundtjänst för att komma igång och konfigurera en [!DNL Amazon S3] katalog för dina datafiler.
+> Kontakta din Audience Manager-konsult eller kundtjänst för att komma igång och konfigurera en [!DNL Amazon S3]-katalog för dina datafiler.
 
 **Syntax och exempel för leveranssökväg**
 
-Data lagras i ett separat namnutrymme för varje kund i en [!DNL Amazon S3] katalog. Filsökvägen följer den syntax som visas nedan. Obs! *Kursiv* anger en variabelplatshållare. Andra element är konstanter eller nycklar och ändras inte.
+Data lagras i ett separat namnutrymme för varje kund i en [!DNL Amazon S3]-katalog. Filsökvägen följer den syntax som visas nedan. Obs! *kursiv* anger en variabelplatshållare. Andra element är konstanter eller nycklar och ändras inte.
 
-**Syntax:** <pre>.../log_inghit/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/ <i>filtyp</i>_<i>yyymdd</i></code></pre>
+**Syntax:** <pre>.../log_inghit/pid= <i>AAM-ID<i>/dpid= <i>d_src</i>/logs/ <i>filtyp</i>_<i>åååmmdd</i></code></pre>
 
 I följande tabell definieras vart och ett av dessa element i en filleveranssökväg.
 
