@@ -17,25 +17,25 @@ ht-degree: 0%
 
 # Krav och metoder för att skicka segment till Google Ad Manager med Google Publisher-taggar (GPT) {#requirements-and-methods-of-sending-segments-to-dfp-using-google-publisher-tags-gpt}
 
-Du kan skicka kvalificerade segment till [!DNL Google Ad Manager] (tidigare DFP) antingen via en klient eller via en integrering på serversidan. Krav och relaterad information om båda metoderna anges nedan.
+Du kan skicka kvalificerade segment till [!DNL Google Ad Manager] (tidigare DFP) antingen via en klientsida eller via en integration på serversidan. Krav och relaterad information om båda metoderna anges nedan.
 
 ## Integrering på klientsidan {#client-side-integration}
 
-För en integrering på klientsidan måste du konfigurera ett [!DNL GPT] mål i Audience Manager. Tänk på följande punkter när du vill konfigurera [!DNL GPT] som mål för Audience Manager:
+För en integrering på klientsidan måste du konfigurera ett [!DNL GPT]-mål i Audience Manager. Tänk på följande punkter när du vill ställa in [!DNL GPT] som ett Audience Manager-mål:
 
-* **Lägg till[!UICONTROL DIL]:** Distribuera [!UICONTROL Data Integration Library (DIL)] kod på alla sidor som du vill ha som mål. [!UICONTROL DIL] skriver segmentdata och användar-ID:n för Audience Manager till cookies som används [!DNL GPT] för målinriktning.
+* **Lägg till  [!UICONTROL DIL]:** Distribuera  [!UICONTROL Data Integration Library (DIL)] kod på alla sidor som du vill ha som mål. [!UICONTROL DIL] skriver segmentdata och användar-ID:n för Audience Manager till cookies som används  [!DNL GPT] för målinriktning.
 
-* **Skapa en[!UICONTROL Cookie Destination]:** [!DNL GPT] måste ställas in som en cookie-baserad destination i Audience Manager.
+* **Skapa en  [!UICONTROL Cookie Destination]:** [!DNL GPT] måste ställas in som en cookie-baserad destination i Audience Manager.
 
-* **Implementera kod för cookie-kontroll:** Lägg in [!DNL GPT] API-metoden i den `.setTargeting` cookie-kontrollkod [](../../integration/gpt-aam-destination/gpt-aam-modify-api.md)som vi rekommenderar. Den här koden förebygger fel genom att söka efter giltiga AAM-cookies innan `.setTargeting` metoden anropas.
+* **Implementera kod för cookie-kontroll:** Lägg in  [!DNL GPT] `.setTargeting` API-metoden i den  [cookie-kontrollkod](../../integration/gpt-aam-destination/gpt-aam-modify-api.md) som rekommenderas. Den här koden förebygger fel genom att söka efter giltiga AAM cookies innan metoden `.setTargeting` anropas.
 
-* **Lägg till`AamGpt`funktionen:** Koden hämtar data från Audience Manager-cookies och skickar den till `AamGpt` [!DNL GPT]. Placera [Audience Manager-koden för Google Publisher-taggar](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md) ( `AamGpt`) högst upp på sidan eller inuti `<head>` kodblocket.
+* **Lägg till  `AamGpt` funktionen:** I  `AamGpt` koden hämtas data från Audience Manager-cookies och skickas till  [!DNL GPT]. Placera [Audience Manager-koden för Google Publisher-taggar](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md) ( `AamGpt`) högst upp på sidan eller inuti `<head>`-kodblocket.
 
    >[!NOTE]
    >
-   >Funktionen är inte nödvändig om du använder din egen kod för att läsa Audience Manager cookie-data. `AamGpt`
+   >Funktionen `AamGpt` krävs inte om du använder din egen kod för att läsa Audience Manager cookie-data.
 
-* **Skicka leveransloggar till Audience Manager:** Om du vill ha en segmentleveransrapport (valfritt) ska du förse Audience Manager med en daglig logg som innehåller leveransdata på visningsnivå. Data kan vara i Raw-format, men varje post måste innehålla Audience Manager `UUID`. Audience Manager kan hämta eller få dessa via [!DNL FTP].
+* **Skicka leveransloggar till Audience Manager:** Om du vill ha en segmentleveransrapport (valfritt) kan du förse Audience Manager med en daglig logg som innehåller leveransdata på visningsnivå. Data kan ha Raw-format, men varje post måste innehålla Audience Manager `UUID`. Audience Manager kan hämta eller ta emot dessa via [!DNL FTP].
 
 ### Endast kvalificerade segment skickas till GPT
 
@@ -43,15 +43,15 @@ Mängden data som skickas till [!DNL GPT] beror på hur många segment en viss a
 
 >[!NOTE]
 >
->Det finns inga gränser för hur många nyckelvärden som du kan skicka, men begäran [!DNL Google] [!DNL URL] har inte en gräns för hur många tecken som kan accepteras. Se [Ange mål och storlek med GPT](https://support.google.com/dfp_premium/bin/answer.py?hl=en&amp;answer=1697712).
+>Det finns inga gränser för hur många nyckelvärden du kan skicka, men [!DNL Google]-begäran [!DNL URL] har inte begränsningar för hur många tecken den kan acceptera. Se [Ange mål och storlek med GPT](https://support.google.com/dfp_premium/bin/answer.py?hl=en&amp;answer=1697712).
 
 ## Integrering på serversidan {#server-side-integration}
 
-Tala med din Audience Manager-konsult eller kundtjänst om du vill konfigurera en integration på serversidan med [!DNL Google Ad Manager], med [!DNL GPT]. Du måste ange ditt nätverks-ID och Audience Link-ID för ditt [!DNL Google Ad Manager] konto.
+Kontakta din Audience Manager-konsult eller kundtjänst om du vill konfigurera en integration på serversidan med [!DNL Google Ad Manager], med [!DNL GPT]. Du måste ange ditt [!DNL Google Ad Manager]-konto nätverks-ID och Audience Link-ID.
 
 >[!IMPORTANT]
 >
->Om dina webbsidor kör biblioteket [Accelerated Media Pages](https://www.ampproject.org/) ([!DNL AMP]) måste du använda integreringen på serversidan med Audience Manager. Om du är på [!DNL AMP] och har en klientintegration med [!DNL AMP]måste du migrera till integreringen på serversidan. Kontakta din Audience Manager-konsult eller kundtjänst för att diskutera migrering.
+>Om dina webbsidor kör biblioteket [Accelerated Media Pages](https://www.ampproject.org/) ([!DNL AMP]) måste du använda integreringen på serversidan med Audience Manager. Om du är på [!DNL AMP] och har en klientintegration med [!DNL AMP], måste du migrera till integreringen på serversidan. Kontakta din Audience Manager-konsult eller kundtjänst för att diskutera migrering.
 
 >[!MORELIKETHIS]
 >
