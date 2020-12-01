@@ -22,7 +22,7 @@ Metoder som gör att du kan arbeta programmatiskt med algoritmisk modellering.
 
 >[!IMPORTANT]
 >
->De algoritmiska modellmetoderna [!DNL API] har skrivits om med [!DNL Swagger] och migrerats. Se:
+>De algoritmiska modellerna [!DNL API] har skrivits om med [!DNL Swagger] och migrerats. Se:
 >
 >* [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html)
 >* [Migrera API-kod för Audience Manager](../../api/api-swagger-migration.md)
