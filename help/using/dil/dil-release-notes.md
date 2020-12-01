@@ -16,5 +16,5 @@ ht-degree: 22%
 
 # DIL versionsinformation
 
-På den här sidan finns information om de senaste DIL-versionerna. DIL finns som nedladdningsversion, med versionsinformation, på Adobes [Github-sida](https://github.com/Adobe-Marketing-Cloud/dil/releases).
+På den här sidan finns information om de senaste DIL-versionerna. DIL finns som nedladdningsversion, med versionsinformation, på Adobe [Github page](https://github.com/Adobe-Marketing-Cloud/dil/releases).
 
