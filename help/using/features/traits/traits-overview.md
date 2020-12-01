@@ -17,7 +17,7 @@ ht-degree: 39%
 
 # [!UICONTROL Traits] Översikt {#traits-overview}
 
-Hantera datainsamling och målgruppsframtagning med [!UICONTROL rules-based], [!UICONTROL onboarded]eller [!UICONTROL algorithmic] [!UICONTROL folder traits]. Läs de länkade sidorna nedan för att komma igång med [!UICONTROL traits]:
+Hantera datainsamling och målgruppsskapande med [!UICONTROL rules-based], [!UICONTROL onboarded], [!UICONTROL algorithmic] eller [!UICONTROL folder traits]. Läs de länkade sidorna nedan för att komma igång med [!UICONTROL traits]:
 
 * [Informationssida för traits](/help/using/features/traits/trait-details-page.md)
 * [Trait Builder ](/help/using/features/traits/about-trait-builder.md)
