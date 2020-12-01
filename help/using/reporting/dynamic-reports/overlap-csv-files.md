@@ -33,7 +33,7 @@ Följande tabell innehåller en beskrivning av de filnamnkonventioner och filtil
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Filtillägg </p> </td> 
-   <td colname="col2"> <p>Överlappande rapportfiler är gzip-komprimerade och har ett <code> .gz</code> filtillägg. Du måste lägga till filnamnstillägget i filen efter dekomprimeringen. <code> .csv</code> </p> </td> 
+   <td colname="col2"> <p>Överlappande rapportfiler är gzip-komprimerade och har filnamnstillägget <code> .gz</code>. Du måste lägga till tillägget <code> .csv</code> till filen efter dekomprimeringen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Filnamn </p> </td> 
@@ -83,9 +83,9 @@ I filen omges strängdata med citattecken. Se modelldata nedan. Detta har trunke
 "123456","segmentA","654321","segmentB","30","yyyy-mm-dd","98765",...
 ```
 
-## Poster för segment-till-segment-rapporter {#segment-segment-records}
+## Poster för segment-till-segment-rapport {#segment-segment-records}
 
-En datafil för [segmentöverlappningsrapporten](segment-segment-overlap-report.md) innehåller följande poster.
+En datafil för [segmentöverlappningsrapporten](segment-segment-overlap-report.md) för segment till segment innehåller följande poster.
 
 <table id="table_1BDC7019DF2543069D7AE229C5E2454E"> 
  <thead> 
@@ -113,7 +113,7 @@ En datafil för [segmentöverlappningsrapporten](segment-segment-overlap-report.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> rangeid</code> </p> </td> 
-   <td colname="col2"> <p>Du kan få rapporter för 7- och 30-dagars summeringsintervall. Den <code> rangeid</code> motsvarar de tidsintervall som visas nedan. </p> <p> 
+   <td colname="col2"> <p>Du kan få rapporter för 7- och 30-dagars summeringsintervall. <code> rangeid</code> motsvarar de tidsintervall som visas nedan. </p> <p> 
      <ul id="ul_129D6CB0EB6F48F28440D22DA257D1A4"> 
       <li id="li_5FC34516A437459F854C81B1CE353B89"> <code> 7</code>: 7 dagar </li> 
       <li id="li_2CECC5039DAF4796BCCF27DACC3754A3"> <code> 30</code>: 30 dagar </li> 
@@ -142,9 +142,9 @@ En datafil för [segmentöverlappningsrapporten](segment-segment-overlap-report.
  </tbody> 
 </table>
 
-## Rapportposter för segment-till-trait {#segment-trait-records}
+## Poster för segment-till-Trait-rapport {#segment-trait-records}
 
-En datafil för [segmentöverlappningsrapporten](segment-trait-overlap-report.md) innehåller följande poster.
+En datafil för din [segmenterings-till-Trait-överlappningsrapport](segment-trait-overlap-report.md) innehåller följande poster.
 
 <table id="table_45270B5D01014AD99921B320D3A32DB6"> 
  <thead> 
@@ -176,7 +176,7 @@ En datafil för [segmentöverlappningsrapporten](segment-trait-overlap-report.md
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> rangeid</code> </p> </td> 
-   <td colname="col2"> <p>Du kan få rapporter för 7- och 30-dagars summeringsintervall. Den <code> rangeid</code> motsvarar de tidsintervall som visas nedan. </p> <p> 
+   <td colname="col2"> <p>Du kan få rapporter för 7- och 30-dagars summeringsintervall. <code> rangeid</code> motsvarar de tidsintervall som visas nedan. </p> <p> 
      <ul id="ul_4B07DFF4A226428A930E22B5FF73E1D0"> 
       <li id="li_4BD0F8AE64C74D7BBE2298F19E2F5328"> <code> 7</code>: 7 dagar </li> 
       <li id="li_7C0C0D2CD9144C4CAF00EDEA90929104"> <code> 30</code>: 30 dagar </li> 
@@ -209,9 +209,9 @@ En datafil för [segmentöverlappningsrapporten](segment-trait-overlap-report.md
  </tbody> 
 </table>
 
-## Rapportposter för fack till fack {#trait-trait-records}
+## Rapportposter för spår till spår {#trait-trait-records}
 
-En datafil för [trait-to-Trait Overlap Report](trait-trait-overlap-report.md) innehåller följande poster.
+En datafil för [Trait-to-Trait Overlap Report](trait-trait-overlap-report.md) innehåller följande poster.
 
 <table id="table_603216E6AFE4439A87C91DDFF2989F53"> 
  <thead> 
@@ -251,7 +251,7 @@ En datafil för [trait-to-Trait Overlap Report](trait-trait-overlap-report.md) i
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> rangeid</code> </p> </td> 
-   <td colname="col2"> <p>Du kan få rapporter för 7- och 30-dagars summeringsintervall. Den <code> rangeid</code> motsvarar de tidsintervall som visas nedan. </p> <p> 
+   <td colname="col2"> <p>Du kan få rapporter för 7- och 30-dagars summeringsintervall. <code> rangeid</code> motsvarar de tidsintervall som visas nedan. </p> <p> 
      <ul id="ul_BC2C41B90F864522B075EFDED33537EC"> 
       <li id="li_929639F70A1A4039BA19332562B71845"> <code> 7</code>: 7 dagar </li> 
       <li id="li_1C489A4B755D4444AD5FAAF0B492F412"> <code> 30</code>: 30 dagar </li> 
