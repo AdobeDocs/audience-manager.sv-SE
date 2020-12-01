@@ -22,20 +22,20 @@ ht-degree: 1%
 
 ## Jämför modeller i Audience Lab {#compare-models}
 
-Du kan använda flera olika typer och källor av modeller i [!DNL Audience Manager]. [!UICONTROL Audience Lab] erbjuder ett enkelt sätt att jämföra kundernas konverteringsgrader i alla era aktiva modeller.
+Du kan använda flera olika typer och källor med modeller i [!DNL Audience Manager]. [!UICONTROL Audience Lab] erbjuder ett enkelt sätt att jämföra kundernas konverteringsgrader i alla era aktiva modeller.
 
 <!-- audience-lab-compare-models.xml -->
 
-I det här fallet jämför du olika modeller. Du kan antingen använda modeller som har skapats via en intern data warehouse och importera dem i [!DNL Audience Manager] form av [onboarding-traits](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) eller använda funktionen [Algoritmiska modeller](../../features/algorithmic-models/understanding-models.md) i [!DNL Audience Manager].
+I det här fallet jämför du olika modeller. Du kan antingen använda modeller som skapats via en intern data warehouse och importera dem i [!DNL Audience Manager] som [Onboarderade traits](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) eller använda funktionen [Algoritmiska modeller](../../features/algorithmic-models/understanding-models.md) i [!DNL Audience Manager].
 
-1. Skapa två modeller, antingen i [Model Builder](../../features/algorithmic-models/create-model.md)eller via en extern plattform.
-1. Skapa [algoritmiska egenskaper](../../features/traits/create-algorithmic-traits.md) utifrån den algoritmiska modellen eller importera dina egna modeller som anpassade egenskaper.
+1. Skapa två modeller, antingen i [Model Builder](../../features/algorithmic-models/create-model.md) eller via en extern plattform.
+1. Skapa [algoritmiska egenskaper](../../features/traits/create-algorithmic-traits.md) från den algoritmiska modellen eller importera dina egna modeller som anpassade egenskaper.
 1. Skapa segment som utesluter varandra så att användarna i båda modellerna inte överlappar varandra:
 
-   * Skapa ett *modell 1-segment* och ett *modell 2-segment*.
-   * Låt segmentregeln för *modell 1-segment* vara modell 1- [!DNL AND NOT] trait modell 2 och vice versa för *modell 2-segment*.
+   * Skapa ett *Model 1-segment* och ett *Model 2-segment*.
+   * Låt segmentregeln för *Modell 1-segment* vara modell 1-trait [!DNL AND NOT] modell 2-trait och vice versa för *Modell 2-segment*.
 
-1. [Skapa två segmenttestgrupper](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups) i [!UICONTROL Audience Lab], den ena med *modell 1-segment* som baslinje och den andra med *modell 2-segment* som baslinje.
+1. [Skapa två ](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups) segmenttestgrupper  [!UICONTROL Audience Lab], den ena med  *modell 1* Segmentsom baslinje, den andra med  *modell 2* Segmentering som baslinje.
 
    * Använd samma variabler för båda testgrupperna: samma mål, kreativa egenskaper, konverteringsegenskaper.
    * Se till att testsegmenten har liknande antal användare (1,6 miljoner och 1,8 miljoner är bra, 1,6 miljoner och 16 miljoner är inte det).
@@ -43,16 +43,16 @@ I det här fallet jämför du olika modeller. Du kan antingen använda modeller 
 
 1. Granska resultaten:
 
-   * I rapportvyn [i](../../features/audience-lab/audience-lab-reporting-view.md) Audience Lab visas antalet konverteringar som varje modell genererar. För konverteringsbaserade kampanjer kommer det testsegment som genererar flest konverteringar att beteckna den modell som fungerar bäst.
+   * I [Audience Lab-rapportvyn](../../features/audience-lab/audience-lab-reporting-view.md) visas antalet konverteringar som varje modell kör. För konverteringsbaserade kampanjer kommer det testsegment som genererar flest konverteringar att beteckna den modell som fungerar bäst.
    * Eftersom du har kontrollsegment kan du även utvärdera hur modellen fungerade jämfört med&quot;standardmålinriktning&quot;. Du testar inte bara en modell jämfört med en annan, utan testar frågan om &quot;Har den här modellen blivit bättre än normala rutiner?&quot;
 
 ## Testa kreativa på olika destinationer {#testing-creatives}
 
 <!-- audience-lab-creatives-across-destinations.xml -->
 
-Använd [!UICONTROL Audience Lab] för att mäta antalet konverteringar en kreatör kör mellan olika destinationer. I det här exemplet kan du även mäta konverteringarna av den kreativa bilden mot naturligt förekommande konverteringar.
+Använd [!UICONTROL Audience Lab] för att mäta antalet konverteringar en kreatör kör mellan olika mål. I det här exemplet kan du även mäta konverteringarna av den kreativa bilden mot naturligt förekommande konverteringar.
 
-1. [Skapa en segmenttestgrupp](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)och välj det segment som du vill testa den kreativa mot som baslinjesegment.
+1. [Skapa en segmenttestgrupp](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups) och välj det segment som du vill testa den kreativa mot som baslinjesegment.
 1. Dela baslinjesegmentet i testsegment och kontrollsegment.
 1. Mappa testsegmenten till de olika destinationer som du vill testa.
 1. Kontrollsegmentet kan behållas och inte mappas till någon destination. Kontrollsegmentet ska inte vara avsett av testets kreatör för att ange en resultatbaslinje för naturligt förekommande konverteringar.
