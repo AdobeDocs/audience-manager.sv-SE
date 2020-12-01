@@ -21,7 +21,7 @@ Beskriver effekterna för segmenterade användare, data och mål när du pausar 
 
 ## Åtkomst till kontrollerna Pausa och Ta bort
 
-Håll pekaren över ett segmentnamn i segmentlistan för att visa **[!UICONTROL pause]** - och **[!UICONTROL delete]** ikonerna (i [!UICONTROL Actions] kolumnen). Dessa funktioner påverkar segment enligt beskrivningen nedan.
+Håll pekaren över ett segmentnamn i segmentlistan för att visa ikonerna **[!UICONTROL pause]** och **[!UICONTROL delete]** (i kolumnen [!UICONTROL Actions]). Dessa funktioner påverkar segment enligt beskrivningen nedan.
 
 ## Pausad segmentfunktion
 
@@ -46,4 +46,4 @@ Ett borttaget segment:
 
 >[!NOTE]
 >
->Du kan också pausa och ta bort segment med en [!DNL API] metod. Mer information finns i [REST API](../../api/rest-api-main/rest-api-main.md).
+>Du kan också pausa och ta bort segment med en [!DNL API]-metod. Mer information finns i [REST API:er](../../api/rest-api-main/rest-api-main.md).
