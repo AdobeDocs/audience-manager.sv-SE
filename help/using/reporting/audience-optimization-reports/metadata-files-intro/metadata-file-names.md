@@ -1,6 +1,6 @@
 ---
-description: Namnge din målgruppsoptimeringsmetadatafil enligt dessa specifikationer.
-seo-description: Namnge din målgruppsoptimeringsmetadatafil enligt dessa specifikationer.
+description: Namnge metadatafilen för Audience Optimization enligt dessa specifikationer.
+seo-description: Namnge metadatafilen för Audience Optimization enligt dessa specifikationer.
 seo-title: Namnkonventioner för metadatafiler
 solution: Audience Manager
 title: Namnkonventioner för metadatafiler
@@ -17,24 +17,24 @@ ht-degree: 7%
 
 # Namnkonventioner för metadatafiler{#naming-conventions-for-metadata-files}
 
-Namnge din målgruppsoptimeringsmetadatafil enligt dessa specifikationer.
+Namnge metadatafilen för Audience Optimization enligt dessa specifikationer.
 
 ## Syntax- och ID-kategorier {#syntax}
 
-Följande syntax definierar strukturen för ett välformaterat metadatafilnamn. Obs! *Kursiv* anger en variabelplatshållare. De andra elementen är konstanter och ändras inte.
+Följande syntax definierar strukturen för ett välformaterat metadatafilnamn. Obs! *kursiv* anger en variabelplatshållare. De andra elementen är konstanter och ändras inte.
 
 **Syntax:** *`yyyymmdd_0_childID`*
 
 >[!NOTE]
 >
->*Använd inte* filtillägg i dina metadatafiler (.txt eller andra).
+>*Använd* inte filtillägg i dina metadatafiler (.txt eller andra).
 
 <!--In the name syntax, you'll notice a parent ID variable. Don't confuse it with the parent ID used in the [metadata file contents](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md). These 2 variables seem similar, but they represent different things:-->
 
-* Den mittersta komponenten **0** är tekniskt sett överordnat ID, som är ett äldre fält. Värdet ska alltid anges som **0**.
+* Mittkomponenten **0** är tekniskt sett överordnat ID, som är ett äldre fält. Värdet ska alltid anges som **0**.
 * Det underordnade ID:t kan ha ett värde mellan 1 och 10, beroende på dimensionen. Se nedan:
 
-## Dimensioner för underordnat ID {#child-dimension}
+## Underordnade ID-dimensioner {#child-dimension}
 
 I metadatafilnamnet är det underordnade ID:t en identifierare som klassificerar datatypen i en fil och placerar den i en hierarki. Du kan tagga det underordnade ID:t i filnamnet med följande kategori-ID:
 
