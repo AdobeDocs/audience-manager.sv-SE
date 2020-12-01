@@ -21,11 +21,11 @@ Exempel på hur några av de vanliga makrona används för att skapa utgående f
 
 >[!NOTE]
 >
->I tabellerna används **fet** stil för att identifiera varje makro med tillhörande utdata. För formatexemplen har symbolerna `<` `>` lagts till för att hjälpa till att visuellt separera varje makro.
+>I tabellerna identifierar typen **fet** varje makro med tillhörande utdata. För formatexemplen har `<` `>`-symbolerna lagts till för att hjälpa till att visuellt separera varje makro.
 
 ## Filnamnsmakron {#file-name-macros}
 
-En lista med tillgängliga makron och definitioner finns i [Utgående mallmakron](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md).
+En lista över tillgängliga makron och definitioner finns i [Utgående mallmakron](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md).
 
 <table id="table_B5073597219B470298EE614902DACAE8"> 
  <thead> 
@@ -73,7 +73,7 @@ En lista med tillgängliga makron och definitioner finns i [Utgående mallmakron
 
 ## Makron för rubrikrad {#header-macros}
 
-En lista med tillgängliga makron och definitioner finns i [Utgående mallmakron](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md).
+En lista över tillgängliga makron och definitioner finns i [Utgående mallmakron](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md).
 
 <table id="table_ABC31B3D660D47969E111EBC734D5BBC"> 
  <thead> 
@@ -92,7 +92,7 @@ En lista med tillgängliga makron och definitioner finns i [Utgående mallmakron
 
 ## Filinnehållsmakron {#file-content-macros}
 
-En lista med tillgängliga makron och definitioner finns i [Utgående mallmakron](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md).
+En lista över tillgängliga makron och definitioner finns i [Utgående mallmakron](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md).
 
 <table id="table_408C6DD2B9D54550B003EAC93562E64F"> 
  <thead> 
@@ -148,10 +148,10 @@ En lista med tillgängliga makron och definitioner finns i [Utgående mallmakron
 
 ### `DPUUID` Exempel
 
-För att du ska förstå hur makrot `DPUUID` genererar data kan vi anta att vi har två `DPID`som `DPUUID`är mappade enligt nedan:
+För att du ska förstå hur makrot `DPUUID` ger data kan vi anta att vi har 2 `DPID`s mappat till `DPUUID`s enligt nedan:
 
 * DPID `1111` mappar till DPUID `AAAA` (tidsstämpel = 1) och `BBBB` (tidsstämpel = 2).
-* DPID `2222` mappar till DPUUID `CCCC`.
+* DPID `2222` mappar till DPUID `CCCC`.
 
 Under dessa förhållanden räknar följande tabell upp några möjliga formatsträngar och deras utdata.
 
@@ -172,12 +172,12 @@ Under dessa förhållanden räknar följande tabell upp några möjliga formatst
   <tr> 
    <td colname="col1"> <p>Returnera maximalt 1 mappning för alla DPID </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=1111,2222|maxMappings=1|format=json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [["1111","BBBB"],["2222","CCCC"]] </code> </p> <p>För DPID <code> 1111 </code>mappas makrot till DPUID <code> BBBB </code> endast eftersom det ID:t har den större tidsstämpeln. </p> </td> 
+   <td colname="col3"> <p> <code> [["1111","BBBB"],["2222","CCCC"]] </code> </p> <p>För DPID <code> 1111 </code> mappas makrot till DPUID <code> BBBB </code> bara eftersom det ID:t har den större tidsstämpeln. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Returnera maximalt 2 mappningar för ett enskilt DPID </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=2222|maxMappings=2|format=json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [["2222","CCCC"]] </code> </p> <p>Trots <code> maxMappings=2 </code>det returnerar det här makrot endast 1 DPID till DPUID-mappning eftersom det angivna DPID bara har ett DPUID. </p> </td> 
+   <td colname="col3"> <p> <code> [["2222","CCCC"]] </code> </p> <p>Trots att <code> maxMappings=2 </code> returnerar det här makrot bara 1 DPID till DPUID-mappning eftersom det angivna DPID bara har ett DPUID. </p> </td> 
   </tr> 
  </tbody> 
 </table>
