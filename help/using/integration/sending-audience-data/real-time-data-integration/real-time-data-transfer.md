@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # Inkommande datainmatning i realtid {#real-time-inbound-data-ingestion}
 
-Processen för inkommande data i realtid använder en serie `HTTP` förfrågningar från en användares webbläsare för att skicka data till Audience Manager.
+Inkommande datainmatningsprocessen i realtid använder en serie `HTTP`-begäranden från en användares webbläsare för att skicka data till Audience Manager.
 
 <!-- c_rt_inbound_real_time.xml -->
 
@@ -25,7 +25,7 @@ Inkommande data ska formateras som nyckelvärdepar som kallas signaler. Vanligtv
 
 ## URL-strängparametrar och syntax {#url-string-syntax}
 
-Inkommande [!DNL URL] dataöverföring ska innehålla de variabler som beskrivs nedan. Kom ihåg att [skapa egenskaper](../../../features/traits/create-onboarded-rule-based-traits.md) och en [mappstruktur](../../../features/traits/trait-storage.md#create-trait-storage-folder) i [!DNL Audience Manager] användargränssnittet innan du konfigurerar dataöverföringar i realtid.
+[!DNL URL] för en inkommande dataöverföring ska innehålla de variabler som beskrivs nedan. Kom ihåg att [skapa egenskaper](../../../features/traits/create-onboarded-rule-based-traits.md) och en [mappstruktur](../../../features/traits/trait-storage.md#create-trait-storage-folder) i [!DNL Audience Manager]-gränssnittet innan du konfigurerar dataöverföringar i realtid.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Inkommande [!DNL URL] dataöverföring ska innehålla de variabler som beskrivs 
 
 ### URL-syntax
 
-Under en process för inkommande datainmatning i realtid använder en korrekt formaterad [!DNL URL] sträng följande syntax:
+Under en process för inkommande datainmatning i realtid använder en korrekt formaterad [!DNL URL]-sträng följande syntax:
 
 ```
 https://client.demdex.net/event?KEY1=VALA&KEY2=VALB&KEY3=VALC
