@@ -29,7 +29,7 @@ Dessa element identifierar kodalternativ och variabler som används i hjälpdoku
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> <i>variable</i> </code> </p> </td> 
-   <td colname="col2"> <p>Variabler visas i <i>kursiv stil</i>. Ersätt lämpligt värde för variabelnamnet. </p> <p>För visuell tydlighet visas ibland variabler och andra kodelement mellan &lt; &gt; hakparenteser. Du behöver inte använda dessa symboler i koden. </p> </td> 
+   <td colname="col2"> <p>Variabler visas i <i>kursiv</i>. Ersätt lämpligt värde för variabelnamnet. </p> <p>För visuell tydlighet visas ibland variabler och andra kodelement mellan &lt; &gt; hakparenteser. Du behöver inte använda dessa symboler i koden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [optional]</code> </p> </td> 
@@ -37,7 +37,7 @@ Dessa element identifierar kodalternativ och variabler som används i hjälpdoku
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> (this|that) </code> </p> </td> 
-   <td colname="col2"> <p>Objekt inom parentes indikerar ett booleskt <span class="wintitle"> ELLER</span> val. </p> </td> 
+   <td colname="col2"> <p>Objekt inom parentes indikerar ett booleskt <span class="wintitle"> OR</span>-val. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> literal</code> </p> </td> 
