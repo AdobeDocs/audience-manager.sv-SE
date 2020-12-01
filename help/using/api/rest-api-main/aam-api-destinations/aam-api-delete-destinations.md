@@ -1,6 +1,6 @@
 ---
-description: DELETE och POST-metoder som gör att du kan ta bort mål- och segmentmappningar.
-seo-description: DELETE och POST-metoder som gör att du kan ta bort mål- och segmentmappningar.
+description: DELETE och POST-metoder där du kan ta bort mål- och segmentmappningar.
+seo-description: DELETE och POST-metoder där du kan ta bort mål- och segmentmappningar.
 seo-title: Ta bort destinationer
 solution: Audience Manager
 title: Ta bort destinationer
@@ -17,13 +17,13 @@ ht-degree: 5%
 
 # Ta bort destinationer {#delete-destinations}
 
-`DELETE` och `POST` metoder som gör att du kan ta bort mål- och segmentmappningar.
+`DELETE` och  `POST` metoder som gör att du kan ta bort mål- och segmentmappningar.
 
 <!-- r_delete_destinations_all.xml -->
 
 ## Ta bort ett mål
 
-En `DELETE` metod som tar bort ett mål.
+En `DELETE`-metod som tar bort ett mål.
 
 >[!NOTE]
 >
@@ -34,14 +34,14 @@ En `DELETE` metod som tar bort ett mål.
 
 ## Ta bort mål gruppvis
 
-Ta bort flera mål med den här `POST` metoden. Skicka mål-ID:n ( `destinationId`) med en array i begärandetexten.
+Ta bort flera mål med den här `POST`-metoden. Skicka mål-ID:n ( `destinationId`) med en matris i begärandetexten.
 
 * Begäran: `POST https://api.demdex.com/v1/destinations/bulk-delete/`
 * Svar: Returnerar koden `204 No Content` om den lyckas.
 
 ## Ta bort målmappningar efter segmentmappnings-ID
 
-En `POST` metod som tar bort målmappningar enligt angivet segment-ID.
+En `POST`-metod som tar bort målmappningar enligt angivet segment-ID.
 
 * Begäran: `DELETE https://api.demdex.com/v1/destinations/` *`<destinationId>`*`/segments/`*`<mappingId>`*
 * Svar: Returnerar koden `204 No Content` om den lyckas.
