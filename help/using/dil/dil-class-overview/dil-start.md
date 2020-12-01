@@ -17,11 +17,11 @@ ht-degree: 15%
 
 # Komma igång med DIL API:er på klassnivå{#getting-started-with-class-level-dil-apis}
 
-Med DIL-API:erna på klassnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Klassnivå-API:erna fungerar med andra instansnivåfunktioner för att ange värden eller returnera data.
+Med DIL API:erna på klassnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Klassnivå-API:erna fungerar med andra instansnivåfunktioner för att ange värden eller returnera data.
 
 ## Komma igång med DIL API:er på klassnivå {#get-started}
 
-Beskriver autentiseringskrav och textformatering som används i [!UICONTROL DIL] dokumentationen på klassnivå.
+Beskriver autentiseringskrav och textformatering som används i dokumentationen på klassnivå [!UICONTROL DIL].
 
 <!-- 
 
@@ -29,9 +29,9 @@ c_class_start.xml
 
  -->
 
-När du arbetar med [!UICONTROL DIL] API:er på klassnivå:
+När du arbetar med API:er på klassnivå [!UICONTROL DIL]:
 
 * Åtkomst kräver ett partnernamn och ett behållarnamnområdes-ID (NSID). Kontakta din kontoansvarige på Audience Manager för att få denna information.
-* Ersätt valfri *kursiv* text i API-dokumentationen med värde, ID eller annan variabel enligt den metod du arbetar med.
+* Ersätt valfri *kursiv*-text i API-dokumentationen med värde, ID eller annan variabel enligt den metod du arbetar med.
 * [!UICONTROL DIL] skriver kodade data till en målcookie. Blanksteg kodas till exempel som `%20` och semikolon som `%3B`.
 
