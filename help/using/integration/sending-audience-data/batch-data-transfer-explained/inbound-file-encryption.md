@@ -17,22 +17,22 @@ ht-degree: 11%
 
 # PGP-filkryptering för inkommande datatyper{#file-pgp-encryption-for-inbound-data-types}
 
-Du kan kryptera datafiler med [!DNL PGP] kryptering när du skickar dem till Audience Manager.
+Du kan kryptera datafiler med [!DNL PGP]-kryptering när du skickar dem till Audience Manager.
 
 <!-- c_encryption.xml -->
 
 >[!IMPORTANT]
 >
->[!DNL PGP] -kryptering inkluderar filkomprimering. När du skickar [!DNL PGP] krypterade inkommande filer måste du se till att du inte [komprimerar](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) dem med gzip (`.gz`).
+>[!DNL PGP] -kryptering inkluderar filkomprimering. När du skickar [!DNL PGP] krypterade inkommande filer måste du inte [komprimera](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) dem med gzip (`.gz`).
 >
->[!DNL PGP] Krypterade inkommande filer som också är [komprimerade](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) är ogiltiga i Audience Manager.
+>[!DNL PGP] Krypterade inkommande filer som också är  [](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) komprimerade är ogiltiga i Audience Manager.
 
 Följ stegen nedan för att kryptera inkommande datafiler.
 
-1. Ladda ned den offentliga nyckeln [för](./assets/adobe_pgp.pub)Audience Manager.
+1. Hämta den offentliga [Audience Manager-nyckeln](./assets/adobe_pgp.pub).
 2. Importera den offentliga nyckeln till din betrodda butik.
 
-   Om du till exempel använder [!DNL GPG]kommandot kan det se ut ungefär så här:
+   Om du till exempel använder [!DNL GPG] kan kommandot vara som följer:
 
    `gpg --import adobe_pgp.pub`
 
@@ -56,4 +56,4 @@ Följ stegen nedan för att kryptera inkommande datafiler.
 
    >[!NOTE]
    >
-   >Audience Manager har bara stöd för [!DNL Advanced Encryption Standard (AES)] datakrypteringsalgoritmen. Audience Manager stöder alla nyckelstorlekar.
+   >Audience Manager stöder bara datakrypteringsalgoritmen [!DNL Advanced Encryption Standard (AES)]. Audience Manager stöder alla nyckelstorlekar.
