@@ -1,6 +1,6 @@
 ---
-description: Används för att meddela DIL att den har lästs in efter att fönstret har lästs in.
-seo-description: Används för att meddela DIL att den har lästs in efter att fönstret har lästs in.
+description: Används för att meddela DIL att det läses in efter att fönstret har lästs in.
+seo-description: Används för att meddela DIL att det läses in efter att fönstret har lästs in.
 seo-title: isAddedPostWindowLoad
 solution: Audience Manager
 title: isAddedPostWindowLoad
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # isAddedPostWindowLoad{#isaddedpostwindowload}
 
-Används för att meddela DIL att den har lästs in efter att fönstret har lästs in.
+Används för att meddela DIL att det läses in efter att fönstret har lästs in.
 
 **Funktionssignatur:** `isAddedPostWindowLoad: function()`
 
