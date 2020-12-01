@@ -15,21 +15,21 @@ ht-degree: 7%
 
 
 
-# Add Data Export Labels to a Destination {#add-data-export-labels}
+# Lägg till dataexportetiketter till ett mål {#add-data-export-labels}
 
-[!DNL Data Export Labels] arbeta med den [!DNL Export Controls] du anger för en datakälla. [!DNL Data Export Labels] förhindrar att du lägger till begränsade egenskaper i ett segment och inte skickar segmentdata till ett mål. Du kan ange flera exportetiketter till ett nytt eller befintligt [!DNL cookie] mål eller [!DNL URL] mål.
+[!DNL Data Export Labels] arbeta med den  [!DNL Export Controls] du anger för en datakälla. [!DNL Data Export Labels] förhindrar att du lägger till begränsade egenskaper i ett segment och inte skickar segmentdata till ett mål. Du kan ange flera exportetiketter till ett nytt eller befintligt [!DNL cookie]- eller [!DNL URL]-mål.
 
 >[!NOTE]
 >
->Om du vill lägga till en exportetikett måste du ha administratörsbehörighet *eller* tillräcklig behörighet för att skapa eller redigera ett mål.
+>Om du vill lägga till en exportetikett måste du ha administratörsbehörighet för *eller* för att skapa eller redigera ett mål.
 
 <!-- t_export_labels.xml -->
 
 Så här lägger du till exportetiketter till ett mål:
 
 1. Klicka på **[!UICONTROL Audience Data]**:
-   * För nya destinationer: Klicka **[!UICONTROL Create New Destination]**. Slutför [!UICONTROL Basic Information] avsnittet innan du väljer en dataexportetikett. Mer information finns i [Skapa ett cookie-mål](../../features/destinations/create-cookie-destination.md) eller [Skapa ett URL-mål](../../features/destinations/create-url-destination.md) .
-   * För befintliga destinationer: Använd [!DNL Search] rutan för att hitta målet eller bläddra igenom listan och klicka på målnamnet för att öppna den.
+   * För nya destinationer: Klicka på **[!UICONTROL Create New Destination]**. Fyll i avsnittet [!UICONTROL Basic Information] innan du väljer en dataexportetikett. Mer information finns i [Skapa ett cookie-mål](../../features/destinations/create-cookie-destination.md) eller [Skapa ett URL-mål](../../features/destinations/create-url-destination.md).
+   * För befintliga destinationer: Använd rutan [!DNL Search] för att hitta ditt mål eller bläddra igenom listan och klicka på målnamnet för att öppna det.
 1. Välj en [!DNL Data Export Label]. Lämna kryssrutorna tomma om du inte vill ange några exportbegränsningar. Exportetiketter innehåller följande alternativ:
    * **[!UICONTROL This destination may enable a combination with personally identifiable information (PII)]**
    * **[!UICONTROL This destination may be used for on-site ad targeting]**
