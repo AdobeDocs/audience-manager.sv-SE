@@ -23,32 +23,32 @@ Ett mappat segment är ett segment som du skapar och skickar till ett mål för 
 
 Genom att jämföra dessa olika segmenttyper inom och mellan rapporter kan ni optimera befintliga kampanjer och hitta förbisedda segment som ni kanske vill skicka till en målgrupp för målinriktning.
 
-## Användningsexempel {#use-cases}
+## Använd fall {#use-cases}
 
-Med [!UICONTROL Segment Performance] rapporten kan man
+Med [!UICONTROL Segment Performance]-rapporten kan du:
 
 * Identifiera mappade målgruppssegment som driver skala eller prestanda framåt.
 * Identifiera omappade segment som ska introduceras i framtida kampanjer, baserat på en målgrupps bidrag till tidigare resultat.
 
 ## Använda rapporten om segmentprestanda {#using-segment-performance-report}
 
-Växla mellan **[!UICONTROL Mapped]** och **[!UICONTROL Unmapped]** markera segment som är mappade till ett mål eller inte. Välj **[!UICONTROL All]** om du vill inkludera alla dina segment i rapporten.
+Växla mellan **[!UICONTROL Mapped]** och **[!UICONTROL Unmapped]** för att markera segment som är mappade till ett mål eller inte. Välj **[!UICONTROL All]** om du vill inkludera alla dina segment i rapporten.
 
-Använd kontrollerna **Dagintervall** och **Datum till och med** för att justera det önskade intervallet. Observera att 7-dagars och 30-dagars summeringsperioder endast är tillgängliga för söndagsdatum.
+Använd kontrollerna **Dagintervall** och **Datum till och med** för att justera backupintervallet. Observera att 7-dagars och 30-dagars summeringsperioder endast är tillgängliga för söndagsdatum.
 
-Använd den **[!UICONTROL Line Item]** nedrullningsbara rutan för att välja de webbegenskaper som du vill returnera information för.
+Använd listrutan **[!UICONTROL Line Item]** för att välja de webbegenskaper som du vill returnera information för.
 
-I den **[!UICONTROL Segment Data Source]** nedrullningsbara rutan markerar du datakällorna som innehåller de segment som du vill se i rapporten.
+I listrutan **[!UICONTROL Segment Data Source]** markerar du datakällorna som innehåller de segment som du vill se i rapporten.
 
-Använd den **[!UICONTROL Segment]** nedrullningsbara rutan för att välja vilka segment som ska visas i rapporten.
+Använd listrutan **[!UICONTROL Segment]** för att välja vilka segment du vill se i rapporten.
 
 >[!IMPORTANT]
 >
->När du aktiverar [!UICONTROL Audience Optimization for Publishers]måste du inkludera beskrivande metadata för [!UICONTROL Line Item IDs], enligt beskrivningen i steg 3 i [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten anger webbegenskapen som [!UICONTROL Line Item] i stället för [!UICONTROL Line Item ID].
+>När du aktiverar [!UICONTROL Audience Optimization for Publishers] måste du inkludera beskrivande metadata för [!UICONTROL Line Item IDs], enligt beskrivningen i steg 3 av [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten anger webbegenskapen som [!UICONTROL Line Item] i stället för [!UICONTROL Line Item ID].
 
 ## Tolka resultaten {#interpreting-results}
 
-Din [!UICONTROL Segment Performance] rapport kan se ut ungefär som den nedan. Klicka på en bubbla i rapporten för att visa underliggande data. Se beskrivningarna för ytterligare information i tabellen nedan.
+Din [!UICONTROL Segment Performance]-rapport kan se ut ungefär som den nedan. Klicka på en bubbla i rapporten för att visa underliggande data. Se beskrivningarna för ytterligare information i tabellen nedan.
 
 ![](assets/publisher_segment_performance.png)
 
@@ -86,7 +86,7 @@ Din [!UICONTROL Segment Performance] rapport kan se ut ungefär som den nedan. K
   </tr> 
   <tr> 
    <td colname="col1"> <p>Realtime-segmentpopulering </p> </td> 
-   <td colname="col2"> <p>Det faktiska antalet unika besökare som har setts i realtid för det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av <span class="keyword"> Audience Manager</span>. </p> </td> 
+   <td colname="col2"> <p>Det faktiska antalet unika besökare som visas i realtid för det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av <span class="keyword"> Audience Manager</span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -101,7 +101,7 @@ Om du vill läsa rapporten kan du dela upp resultaten i fyra avsnitt med imagin�
 
 ## Så här läser du omappade segmentresultat {#read-unmapped-segment}
 
-Att titta på omappade segment i en [!UICONTROL Segment Performance] rapport är ett bra sätt att hitta nya segment som du inte har tänkt dig som målinriktning. Vissa av dessa segment kanske överträffar dina mappade segment.
+Att titta på omappade segment i en [!UICONTROL Segment Performance]-rapport är ett bra sätt att hitta nya segment som du inte har tänkt dig som målinriktning. Vissa av dessa segment kanske överträffar dina mappade segment.
 
 Om du vill läsa den här rapporten kan du dela upp resultaten i fyra avsnitt med imaginära rader (i rött) och kategorier som visas i exempelrapporten nedan.
 
