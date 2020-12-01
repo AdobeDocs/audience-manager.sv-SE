@@ -27,20 +27,20 @@ t_bulk_estimates.xml
 
 >[!NOTE]
 >
->[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter ](../../features/administration/administration-overview.md) som tilldelats i  [!DNL Audience Manager] användargränssnittet respekteras i  [!UICONTROL Bulk Management Tools].
 
-Om du vill göra större uppdateringar öppnar du [!UICONTROL Bulk Management Tools] kalkylbladet och:
+Om du vill göra satsvisa uppdateringar öppnar du [!UICONTROL Bulk Management Tools]-kalkylbladet och:
 
-1. Klicka på **[!UICONTROL Headers]** fliken och kopiera [!UICONTROL Estimate Segment Size] rubriken.
-2. Klicka på **[!UICONTROL Estimate]** fliken.
+1. Klicka på fliken **[!UICONTROL Headers]** och kopiera rubriken [!UICONTROL Estimate Segment Size].
+2. Klicka på fliken **[!UICONTROL Estimate]**.
 3. Klistra in uppskattningsrubriken i den första raden i uppskattningskalkylbladet.
 4. Klistra in eller skriv in data som du vill ändra i en motsvarande kolumn baserat på rubriketiketten.
-5. Klicka i verktygsfältet för kalkylblad på knappen Skapa som matchar det objekt du uppdaterar.
-Den här åtgärden öppnar [!UICONTROL Account Information] dialogrutan.
+5. Klicka på knappen Skapa som matchar det objekt du uppdaterar i verktygsfältet för kalkylblad.
+Den här åtgärden öppnar dialogrutan [!UICONTROL Account Information].
 6. Ange nödvändig [inloggningsinformation](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) och klicka på **[!UICONTROL Submit]**.
 
-Den här åtgärden skapar en [!UICONTROL Response] kolumn i kalkylbladet som innehåller information om den uppskattade segmentstorleken. Innan du anger data bör kalkylbladet för bulkberäkning se ut ungefär så här:
+Den här åtgärden skapar en [!UICONTROL Response]-kolumn i kalkylbladet som innehåller beräknade segmentstorleksdata. Innan du anger data bör kalkylbladet för bulkberäkning se ut ungefär så här:
 
 ![](assets/estimate.png)
-Om en satsvis uppdatering returnerar ett fel eller misslyckas, se [Felsökning för grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-troubleshooting.md).
+Om en satsvis uppdatering returnerar ett fel eller misslyckas, se  [Felsökning för grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-troubleshooting.md).
 
