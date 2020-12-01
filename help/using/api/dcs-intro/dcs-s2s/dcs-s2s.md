@@ -17,18 +17,18 @@ ht-degree: 10%
 
 # DCS API:er för överföring av data från server till server{#dcs-apis-for-server-to-server-data-transfers}
 
-Server-till-server ([!UICONTROL S2S]) [!DNL API]innehåller kod och metoder som gör att du kan skicka och ta emot [!DNL DCS] användardata och arbeta med informationen i dina egna system eller program.
+Server-till-server ([!UICONTROL S2S]) [!DNL API]s innehåller kod och metoder som gör att du kan skicka och ta emot [!DNL DCS] användardata och arbeta med den här informationen i dina egna system eller program.
 
 ## Vanliga användningsfall {#common-use-cases}
 
 [!UICONTROL Server-to-server] överföringar kan hjälpa er att anpassa landningssidor eller andra interaktioner utifrån besökarnas intressen. Några vanliga användningsområden:
 
 * Personalisering på plats: Skräddarsy besökarens upplevelse på webbplatsen genom att dynamiskt lägga till relevant innehåll och uppmaningar till åtgärder baserat på de segment som de tillhör.
-* Förbättra kundservicen: Importera [!DNL Audience Manager] segment till ett [!DNL CRM] eller annat system via en server-till-server-dataöverföring. Dessa data kan tillhandahålla samtalstjänster eller onlinechattoperatorer med relevant, personlig information om en kund.
+* Förbättra kundservicen: Importera [!DNL Audience Manager]-segment till ett [!DNL CRM]-system eller andra system via en server-till-server-dataöverföring. Dessa data kan tillhandahålla samtalstjänster eller onlinechattoperatorer med relevant, personlig information om en kund.
 
 ## Krav: Användar-ID och regionala servernamn {#requirements}
 
-Användar-ID:n och region-ID:n [!UICONTROL DCS API] krävs för att validera och utföra dataförfrågningar.
+[!UICONTROL DCS API] kräver användar-ID:n och region-ID:n för att validera och göra dataförfrågningar.
 
 * Användar-ID krävs eftersom du måste koppla data till en viss besökare.
 * Regionens ID krävs för att koppla samtal tillbaka till ett servernamn och eftersom användardata lagras i datacenter som är geografiskt närmast webbplatsens besökare.
@@ -37,10 +37,10 @@ Användar-ID:n och region-ID:n [!UICONTROL DCS API] krävs för att validera och
 
 Handboken beskriver för närvarande hur du:
 
-* Hämta användar-ID:n och region-ID:n från de filer som du redan får som [!DNL DCS] [!DNL Audience Manager] kund.
+* Hämta användar- och region-ID:n från de [!DNL DCS]-filer som du redan får som [!DNL Audience Manager]-kund.
 
 * Hämta användar-ID:n och region-ID:n om du använder [!DNL Visitor ID Service].
-* Ring till [!DNL DCS] när du har användar- och region-ID:t.
+* Anropa [!DNL DCS] när du har användar-ID och region-ID.
 
 Vi lägger till nya metoder när de blir tillgängliga. Gå till följande avsnitt för att komma igång.
 
