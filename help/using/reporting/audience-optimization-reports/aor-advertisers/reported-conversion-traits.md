@@ -27,6 +27,6 @@ Om du vill veta mer om hur du skapar konverteringsegenskaper i Audience Manager 
 
 ## Exempelrapport
 
-Din [!UICONTROL Reported Conversion Traits] rapport kan se ut ungefär som den nedan:
+Din [!UICONTROL Reported Conversion Traits]-rapport kan se ut ungefär som den nedan:
 
 ![](assets/reported-conversion-traits.png)
