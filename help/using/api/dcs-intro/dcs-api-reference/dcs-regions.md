@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # ID:n för DCS-regioner, -platser och -värdnamn {#dcs-region-ids-locations-and-host-names}
 
-Det regionala [!DNL DCS] servervärdnamnet krävs för att anropa [!DNL DCS]. Detta beror på att informationen [!DNL DCS] lagras i datacenter som är geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel [!DNL DCS], men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en [!DNL DCS] begäran måste du matcha region-ID:t med dess motsvarande regionala värdnamn och skapa frågan med rätt värdnamn.
+Det regionala värdnamnet [!DNL DCS] krävs för att anropa [!DNL DCS]. Detta beror på att [!DNL DCS] lagrar information i datacenter som ligger geografiskt nära webbplatsbesökarna. Dina frågor fungerar om du skickar dem till fel [!DNL DCS], men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en [!DNL DCS]-begäran måste du matcha region-ID:t med motsvarande regionalt värdnamn och skapa frågan med rätt värdnamn.
 
 <table id="table_643212E4F9C64DFF9443904B01D89CB3"> 
  <thead> 
@@ -71,4 +71,4 @@ Det regionala [!DNL DCS] servervärdnamnet krävs för att anropa [!DNL DCS]. De
  </tbody> 
 </table>
 
-Du kan också använda [!DNL API] metoder för att hämta en lista över tillgängliga [!DNL DCS] regioner. See [DCS Region API Methods](../../../api/rest-api-main/aam-api-dcs-regions.md).
+Du kan också använda [!DNL API]-metoder för att hämta en lista över tillgängliga [!DNL DCS]-regioner. Se [API-metoder för DCS-region](../../../api/rest-api-main/aam-api-dcs-regions.md).
