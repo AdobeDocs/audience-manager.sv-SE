@@ -33,11 +33,11 @@ r_dil_get_dexqsvars.xml
 |---|---|---|
 | `variableName` | Sträng | Namnet på variabeln som du vill hämta ett värde för. |
 | `partner` | Sträng | Partnernamnet som ska sökas efter. |
-| `containerNSID` | Heltal | The [!DNL NSID] of the container you are searching for. Standardvärdena är `0`. |
+| `containerNSID` | Heltal | [!DNL NSID] för behållaren som du söker efter. Standardvärdet är `0`. |
 
 **Svar**
 
-Returnerar variabelvärdet för en [!UICONTROL DIL] instans.
+Returnerar variabelvärdet för en [!UICONTROL DIL]-instans.
 
 **Exempelkod**
 
