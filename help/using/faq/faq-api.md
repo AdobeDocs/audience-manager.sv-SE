@@ -27,7 +27,7 @@ faq_api.xml
 
 Dokumentationen för [REST API](../api/rest-api-main/rest-api-main.md) innehåller information om specifika metoder och kodexempel.
 
-<br> 
+<br>
 
 **Varför gör [!UICONTROL DIL] händelseanrop med metoderna [!UICONTROL GET] och [!UICONTROL POST]?**
 
