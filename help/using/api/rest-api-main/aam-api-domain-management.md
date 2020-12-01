@@ -23,7 +23,7 @@ Domänhanteringsmetoder som gör att du kan skapa och hantera domäner som du vi
 
 ## Skapa en ny domän {#create-new-domain}
 
-En `POST` metod som gör att du kan skapa en ny domän för (endast cookie-mål).
+En `POST`-metod som gör att du kan skapa en ny domän för (endast cookie-mål).
 
 <!-- r_post_new_partner_site.xml -->
 
@@ -53,7 +53,7 @@ Ett lyckat svar returnerar `201 created` och partnerwebbplatsen, inklusive dess 
 
 ## Ta bort en domän {#delete-domain}
 
-En `DELETE` metod som gör att du kan ta bort en domän (endast för cookie-mål).
+En `DELETE`-metod som gör att du kan ta bort en domän (endast för cookie-mål).
 
 <!-- r_delete_partner_site.xml -->
 
@@ -63,11 +63,11 @@ En `DELETE` metod som gör att du kan ta bort en domän (endast för cookie-mål
 
 ### Svar
 
-Ett lyckat svar returneras `204 no content`. Returnerar `404 not found` om partnerplatsen inte kan hittas.
+Ett svar returnerar `204 no content`. Returnerar `404 not found` om partnerplatsen inte kan hittas.
 
 ## Returnera egenskaper för en domän {#return-props-domain}
 
-En `GET` metod som returnerar information om den angivna domänen (endast för cookie-mål).
+En `GET`-metod som returnerar information om den angivna domänen (endast för cookie-mål).
 
 <!-- r_get_partner_site.xml -->
 
@@ -89,7 +89,7 @@ Ett lyckat svar returnerar `200 OK` och data enligt exemplet nedan. Returnerar `
 
 ## Returnera egenskaper för alla domäner {#return-props-all-domains}
 
-En `GET` metod som returnerar information om alla dina domäner (endast för cookie-mål).
+En `GET`-metod som returnerar information om alla dina domäner (endast för cookie-mål).
 
 <!-- r_get_partner_sites.xml -->
 
@@ -99,7 +99,7 @@ En `GET` metod som returnerar information om alla dina domäner (endast för coo
 
 ### Valfria frågeparametrar
 
-Du kan använda dessa valfria parametrar med [!DNL API] metoder som returnerar *alla* egenskaper för ett objekt. Ange dessa alternativ i begärandesträngen när du skickar frågan till [!DNL API]. Se [Valfria parametrar](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters).
+Du kan använda de här valfria parametrarna med [!DNL API]-metoder som returnerar *alla*-egenskaper för ett objekt. Ange dessa alternativ i begärandesträngen när du skickar frågan till [!DNL API]. Se [Valfria parametrar](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters).
 
 <table id="table_B05A8EE22C9A4C72B84A8479E1AB7D0A"> 
  <thead> 
