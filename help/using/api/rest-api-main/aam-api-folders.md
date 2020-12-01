@@ -23,6 +23,6 @@ Metoder som gör att du kan arbeta programmatiskt med trait- och segmentmappar. 
 
 >[!IMPORTANT]
 >
->Mappmetoderna [!DNL API] har skrivits om med [!DNL Swagger] och migrerats. Se:  >
+>Mappen [!DNL API]-metoder har skrivits om med [!DNL Swagger] och migrerats. Se:  >
 >* [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html)
 >* [Migrera API-kod för Audience Manager](../../api/api-swagger-migration.md)
