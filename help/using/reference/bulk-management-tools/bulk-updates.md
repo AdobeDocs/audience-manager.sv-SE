@@ -28,25 +28,25 @@ t_bulk_updates.xml
 
 >[!NOTE]
 >
->[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som tilldelats i [!DNL Audience Manager] användargränssnittet respekteras i [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter ](../../features/administration/administration-overview.md) som tilldelats i  [!DNL Audience Manager] användargränssnittet respekteras i  [!UICONTROL Bulk Management Tools].
 
-Om du vill göra större uppdateringar öppnar du [!UICONTROL Bulk Management Tools] kalkylbladet och:
+Om du vill göra satsvisa uppdateringar öppnar du [!UICONTROL Bulk Management Tools]-kalkylbladet och:
 
-1. Klicka på **[!UICONTROL Headers]** fliken och kopiera uppdateringshuvuden för objektet som du vill redigera.
-2. Klicka på **[!UICONTROL Update]** fliken.
+1. Klicka på fliken **[!UICONTROL Headers]** och kopiera uppdateringshuvuden för objektet som du vill redigera.
+2. Klicka på fliken **[!UICONTROL Update]**.
 3. Klistra in uppdateringshuvuden i den första raden i uppdateringskalkylbladet. Observera följande:
 
    * När du uppdaterar en mapp krävs alla sidhuvuden.
    * När du uppdaterar segment eller egenskaper behöver du bara segmentets ID (SID) och rubrikelementet som behöver ändras. Ta bort rubriker som inte används.
 
 4. Klistra in eller skriv in data som du vill ändra i en motsvarande kolumn baserat på rubriketiketten.
-5. Klicka på en uppdateringsknapp som matchar det objekt du uppdaterar i verktygsfältet för kalkylblad.
-Den här åtgärden öppnar [!UICONTROL Account Information] dialogrutan.
+5. Klicka på en uppdateringsknapp som matchar        objekt som du uppdaterar.
+Den här åtgärden öppnar dialogrutan [!UICONTROL Account Information].
 
 6. Ange nödvändig [inloggningsinformation](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) och klicka på **[!UICONTROL Submit]**.
 
-   Kalkylbladet skapar en [!UICONTROL Results] kolumn. Kolumnen returnerar JSON-svaret för en slutförd åtgärd. [!UICONTROL Results] Se exempel på [REST API](../../api/rest-api-main/rest-api-main.md) . Innan du anger data bör kalkylbladet för bulkuppdatering se ut ungefär så här:
+   Kalkylbladet skapar en [!UICONTROL Results]-kolumn. Kolumnen [!UICONTROL Results] returnerar JSON-svaret för en slutförd åtgärd. Se [REST API:er](../../api/rest-api-main/rest-api-main.md) för exempel. Innan du anger data bör kalkylbladet för bulkuppdatering se ut ungefär så här:
 
 ![](assets/update.png)
 
-Om en satsvis uppdatering returnerar ett fel eller misslyckas, se [Felsökning för grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-troubleshooting.md).
+Om gruppuppdateringen returnerar ett fel eller misslyckas, se [Felsökning för grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-troubleshooting.md).
