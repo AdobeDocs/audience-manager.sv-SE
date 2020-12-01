@@ -57,7 +57,7 @@ Some partners, as listed in the table below, have changed their integration requ
  </tbody> 
 </table> -->
 
-## Audience Manager User Interface Update - Yahoo/Oath/DataX Integration {#ui-update}
+## Uppdatering av användargränssnittet i Audience Manager - integrering av Yahoo/Oath/DataX {#ui-update}
 
 Förutom uppdateringarna av IAB Framework som nämns ovan har Yahoo/Oath/DataX lagt till nya parametrar, **gdpr** och **gdpr_mode**, i sina API:er för taxonomi och målgrupp. Dessa parametrar informerar Yahoo/Oath/DataX om att de har rätt att bearbeta ett visst segment som personuppgiftsbiträde eller personuppgiftsansvarig. Därför måste Audience Manager-kunder som skickar segment till en Yahoo/Oath/DataX-destination ange lämplig parameter (biträde eller ansvarig) beroende på kundens avtal med Oath.
 
