@@ -21,7 +21,7 @@ Returnerar data om antalet unika användare som delas av alla dina första och t
 
 >[!NOTE]
 >
->Överlappningsrapporterna i Audience Manager följer RBAC-principerna. Du kan bara se egenskaper från datakällor som du har åtkomst till baserat på den [RBAC-användargrupp](/help/using/features/administration/administration-overview.md) som du tillhör.
+>Överlappningsrapporterna i Audience Manager följer RBAC-principerna. Du kan bara se egenskaper från datakällor som du har åtkomst till baserat på [RBAC-användargruppen](/help/using/features/administration/administration-overview.md) som du tillhör.
 
 <!-- 
 
@@ -31,7 +31,7 @@ c_overlap_reports.xml
 
 ## Översikt
 
-Rapporten returnerar [!UICONTROL Trait-to-Trait Overlap] data för % av unika användare som delas mellan alla dina egna egenskaper och dina egenskaper hos tredje part. Den här rapporten är ett optimeringsverktyg som hjälper dig att:
+[!UICONTROL Trait-to-Trait Overlap]-rapporten returnerar data för % av unika användare som delas mellan alla dina egna egenskaper och dina egenskaper hos tredje part. Den här rapporten är ett optimeringsverktyg som hjälper dig att:
 
 * Skapa segment med hög eller låg överlappning, beroende på dina behov. Med hög överlappning får ni en målgrupp, men färre unika besökare. Fällor med låg överlappning kan vara användbara för att nå en större, unik besökaruppsättning.
 * Validera tredjeparts trait-data: En stark överlappning mellan liknande egenskaper från första och tredje part tyder på att datapartnerns egenskaper är korrekta och tillförlitliga. Omvänt kan låg överlappning indikera att en egenskap från tredje part kanske inte innehåller samma information som din egen, liknande egenskap från första part.
@@ -39,11 +39,11 @@ Rapporten returnerar [!UICONTROL Trait-to-Trait Overlap] data för % av unika an
 
 ## Exempelrapport
 
-Följande bild ger en översikt på hög nivå över elementen i [!UICONTROL Trait-to-Trait Overlap] rapporten.
+Följande bild ger en översikt på hög nivå över element i [!UICONTROL Trait-to-Trait Overlap]-rapporten.
 
 >[!NOTE]
 >
->Rapporten returnerar ett tomt fält när den jämför samma egenskap med sig själv. [!UICONTROL Trait-to-Trait Overlap]
+>Rapporten [!UICONTROL Trait-to-Trait Overlap] returnerar ett tomt fält när den jämför samma egenskap med sig själv.
 
 ![](assets/trait-to-trait-overlap.png)
 
@@ -51,7 +51,7 @@ Följande bild ger en översikt på hög nivå över elementen i [!UICONTROL Tra
 
 Markera en enskild punkt om du vill visa datainformation i ett popup-fönster. Dina klickåtgärder uppdaterar automatiskt data som visas i rapporten.
 
-## Överlappa datapanelfält som definierats mellan olika egenskaper {#field-definitions}
+## Trait-to-Trait överlappar dataportfält som definierats {#field-definitions}
 
 Beskriver de mått som visas i popup-fönstret när du klickar på en enskild datapunkt.
 
@@ -61,7 +61,7 @@ r_t2t_data_pop.xml
 
  -->
 
-Popup-fönstret för [!UICONTROL Trait-to-Trait Overlap] rapporten innehåller måtten nedan. Observera att tabellens unika mätvärden representerar *realtidsanvändare*.
+Popup-fönstret för [!UICONTROL Trait-to-Trait Overlap]-rapporten innehåller måtten nedan. Observera att tabellens unika mått representerar dina *realtidsanvändare*.
 
 <table id="table_A2A0CFC47C1A404994B82E6630E711A2"> 
  <thead> 
