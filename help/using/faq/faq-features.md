@@ -48,9 +48,9 @@ Ja. Se [Verktyg för satsvis hantering](../reference/bulk-management-tools/bulk-
 
  
 
-**Vissa kund-ID saknas när du exporterar satsvis-ID till ett mål. Varför händer det där?**
+**Vissa kund-ID saknas när du exporterar satsvis-ID till ett mål. Varför händer det?**
 
-När ett enhets-ID ([AAM UUID](../reference/ids-in-aam.md)) länkas till flera CRM-ID:n ([DPUUID](../reference/ids-in-aam.md)) exporteras endast den senaste mappningen. Det är därför du kan se ett lägre antal enhets-ID än förväntat som exporteras.
+När ett enhets-ID ([AAM UUID](../reference/ids-in-aam.md)) är länkat till flera CRM-ID ([DPUID](../reference/ids-in-aam.md)) exporteras endast den senaste mappningen. Det är därför du kan se ett lägre antal enhets-ID än förväntat som exporteras.
 
  
 
