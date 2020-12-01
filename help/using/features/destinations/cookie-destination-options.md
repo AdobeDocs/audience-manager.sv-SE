@@ -16,7 +16,7 @@ ht-degree: 4%
 
 # Valfria inställningar för cookie-destinationer {#optional-settings-cookies}
 
-I [!UICONTROL Destination Builder]innehåller [!UICONTROL Configuration section] -fältet [!UICONTROL Cookie Domain] och - [!UICONTROL Publish Data To] . Med dessa kan du skapa regler som avgör om en destination ställer in en cookie eller returnerar en cookie. [!UICONTROL Cookie Domain] och [!UICONTROL Publish Data To] arbetar oberoende av varandra och är valfria. Du kan skapa en cookie-destination utan att använda någon av dem.
+I [!UICONTROL Destination Builder] innehåller [!UICONTROL Configuration section] fälten [!UICONTROL Cookie Domain] och [!UICONTROL Publish Data To]. Med dessa kan du skapa regler som avgör om en destination ställer in en cookie eller returnerar en cookie. [!UICONTROL Cookie Domain] och  [!UICONTROL Publish Data To] arbetar oberoende av varandra och är valfria. Du kan skapa en cookie-destination utan att använda någon av dem.
 
 ## Cookie-domän: Syntax och exempel {#cookie-domain-syntax}
 
@@ -32,27 +32,27 @@ I [!UICONTROL Destination Builder]innehåller [!UICONTROL Configuration section]
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Syntax</b> </p> </td> 
-   <td colname="col2"> <p>I fältet <span class="wintitle"> Cookie-domän</span> kan du ange cookies för en angiven domän eller för alla domäner. När den här funktionen används: </p> <p> 
+   <td colname="col2"> <p>Fältet <span class="wintitle"> Cookie-domän</span> accepterar en enkel textsträng där du kan ange cookies på en angiven domän eller alla domäner. När den här funktionen används: </p> <p> 
      <ul id="ul_473CB59F2C0C4B358201BE5C8B27D73D"> 
-      <li id="li_4E7F4691C1B54415963F7D5AA1558C9A">Ange endast en domän för varje cookie-mål. Ange inte flera domäner i fältet <span class="wintitle"> Cookie-domän</span> . Skapa ett annat <span class="wintitle"> mål</span> istället. </li> 
+      <li id="li_4E7F4691C1B54415963F7D5AA1558C9A">Ange endast en domän för varje cookie-mål. Ange inte flera domäner i fältet <span class="wintitle"> Cookie-domän</span>. Skapa ett annat <span class="wintitle">-mål</span> i stället. </li> 
       <li id="li_AEBF5C5F3C264C5EA4A2A6063C3F377D">Använd inte jokertecken. </li> 
      </ul> </p> <p> Lämna fältet <span class="wintitle"> Cookie-domän</span> tomt om du vill ange en cookie för alla domäner. Det här är standardinställningen. </p> <p>Så här anger du cookies för en specifik domän och underdomäner: </p> <p> 
      <ul id="ul_F25BC0D8C40641A2A5CA338E5C258435"> 
-      <li id="li_E236D8DEE4F24F9BBA36074F7049C12C">Skriv namnet på domänen i fältet <span class="wintitle"> Cookie-domän</span> . </li> 
+      <li id="li_E236D8DEE4F24F9BBA36074F7049C12C">Skriv namnet på domänen i fältet <span class="wintitle"> Cookie-domän</span>. </li> 
       <li id="li_0471C198EE344DE5963A3C2F70B9E78B">Starta domännamnet med en punkt. Exempel, <code> .somedomain.com</code>. </li> 
-      <li id="li_73D06F2BEF45487280C2245E1F6B8ED0">Prefixet <code> https://www</code> är inte obligatoriskt. </li> 
+      <li id="li_73D06F2BEF45487280C2245E1F6B8ED0"><code> https://www</code>-prefixet krävs inte. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Exempel</b> </p> </td> 
-   <td colname="col2"> <p>Låt oss som ett enkelt exempel säga att vi har en fiktiv webbplats som kallas sport.com. Sports.com har domäner för golf, baseball och fotboll. Om du vill ange en cookie i alla sportdomäner skriver du den i rutan <span class="wintitle"> Cookie-domän</span> enligt nedan: </p> <p> <img src="assets/sports-domain.png" id="image_8883477BB3B543648C97A441AD34C6DE" /> </p> <p>Detta anger för <span class="keyword"> Audience Manager</span> att ange en cookie i alla domäner som innehåller mönstret <code><i>something</i></code>.sport.com. Nedan finns en mer komplex uppsättning exempel. </p> </td> 
+   <td colname="col2"> <p>Låt oss som ett enkelt exempel säga att vi har en fiktiv webbplats som kallas sport.com. Sports.com har domäner för golf, baseball och fotboll. Om du vill ange en cookie i alla sportdomäner skriver du den i rutan <span class="wintitle"> Cookie-domän</span> enligt nedan: </p> <p> <img src="assets/sports-domain.png" id="image_8883477BB3B543648C97A441AD34C6DE" /> </p> <p>Detta anger att <span class="keyword"> Audience Manager</span> ska ange en cookie i alla domäner som innehåller mönstret <code><i>something</i></code>.sport.com. Nedan finns en mer komplex uppsättning exempel. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Exempel på komplexa cookie-domäner
 
-De här exemplen visar om [!DNL Audience Manager] ställer in en cookie utifrån hur [!UICONTROL Cookie Domain] alternativet är konfigurerat.
+De här exemplen visar om [!DNL Audience Manager] kommer att ange en cookie utifrån hur alternativet [!UICONTROL Cookie Domain] är konfigurerat.
 
 <table id="table_3A7B9479CDA6493FA8104D8D9841E914"> 
  <thead> 
@@ -93,11 +93,11 @@ De här exemplen visar om [!DNL Audience Manager] ställer in en cookie utifrån
 
 ## Publicera data till {#publish-data-to}
 
-Inställningarna returnerar en cookie-fil om domänen uppfyller villkoren som anges i de alternativ du väljer. [!UICONTROL Publish Data To] Alternativen är:
+[!UICONTROL Publish Data To]-inställningarna returnerar en cookie om domänen uppfyller villkoren som anges av de alternativ du väljer. Alternativen är:
 
-* **[!UICONTROL All of our domains]**: (Standard) Returnerar ett värde [!DNL cookie] för valfri domän.
-* **[!UICONTROL Only the selected domains]**: Returnerar endast en cookie för de domäner som har valts i domänlistan.
-* **[!UICONTROL All of our domains except the selected domains]**: Förhindrar att markerade domäner tar emot en [!DNL cookie]fil. Alla andra domäner kan ta emot en [!DNL cookie].
+* **[!UICONTROL All of our domains]**: (Standard) Returnerar ett värde  [!DNL cookie] för valfri domän.
+* **[!UICONTROL Only the selected domains]**: Returnerar endast en cookie för de domäner som är markerade i domänlistan.
+* **[!UICONTROL All of our domains except the selected domains]**: Förhindrar att markerade domäner tar emot en  [!DNL cookie]fil. Alla andra domäner kan ta emot en [!DNL cookie].
 
 >[!MORELIKETHIS]
 >
