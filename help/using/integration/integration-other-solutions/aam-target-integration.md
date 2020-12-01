@@ -1,6 +1,6 @@
 ---
-description: Tack vare den här integreringen kan du skicka Audience Manager segment till Target.
-seo-description: Tack vare den här integreringen kan du skicka Audience Manager segment till Target.
+description: Tack vare den här integreringen kan du skicka Audience Manager-segment till Target.
+seo-description: Tack vare den här integreringen kan du skicka Audience Manager-segment till Target.
 seo-title: Integrera Audience Manager med Target
 solution: Audience Manager
 title: Integrera Audience Manager med Target
@@ -15,15 +15,15 @@ ht-degree: 11%
 ---
 
 
-# Integrate Audience Manager With [!DNL Target] {#integrate-audience-manager-with-target}
+# Integrera Audience Manager med [!DNL Target] {#integrate-audience-manager-with-target}
 
-Tack vare den här integreringen kan du skicka Audience Manager segment till Adobe [!DNL Target].
+Med den här integreringen kan du skicka Audience Manager-segment till Adobe [!DNL Target].
 
-Audience Manager - [!DNL Target] integrering kräver:
+Integrering med Audience Manager - [!DNL Target] kräver:
 
-* Tjänsten [](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html)Experience Cloud. Om du inte använder den här tjänsten läser du [implementeringsguiderna](https://docs.adobe.com/content/help/en/id-service/using/implementation/implementation-guides.html) för att komma igång.
-* [!DNL Profiles and Audiences]. Fyll i formuläret på [!DNL Profiles and Audiences]Experience Cloud Integrations-sidan [om du inte är etablerad](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) eller kontakta din konsult för att komma igång.
+* Tjänsten [Experience Cloud](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html). Om du inte använder den här tjänsten läser du [implementeringsguiderna](https://docs.adobe.com/content/help/en/id-service/using/implementation/implementation-guides.html) för att komma igång.
+* [!DNL Profiles and Audiences]. Om du inte har etablerat dig för [!DNL Profiles and Audiences] fyller du i formuläret på [Experience Cloud Integrations-sidan](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) eller kontaktar din konsult för att komma igång.
 
-Alla segment i Audience Manager visas inom [!DNL Target] kort efter att du har slutfört dessa steg i implementeringsprocessen. Titta in **[!UICONTROL Audiences > Audience List]** för att se era Audience Manager-segment i [!DNL Target]. Identifiera segment i Audience Manager efter Experience Cloud i **[!UICONTROL Source]** kolumnen och efter `aam-integration-user@adobe.com` i **[!UICONTROL Modified]** kolumnen.
+Alla dina Audience Manager-segment visas i [!DNL Target] kort efter att du slutfört de här stegen i implementeringsprocessen. Titta i **[!UICONTROL Audiences > Audience List]** om du vill visa dina Audience Manager-segment i [!DNL Target]. Identifiera segment i Audience Manager efter Experience Cloud i **[!UICONTROL Source]**-kolumnen och efter `aam-integration-user@adobe.com` i **[!UICONTROL Modified]**-kolumnen.
 
 ![](../assets/target.png)
