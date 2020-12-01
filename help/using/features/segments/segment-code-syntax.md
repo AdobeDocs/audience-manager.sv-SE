@@ -17,7 +17,7 @@ ht-degree: 11%
 
 # Kodsyntax som används i Segment Expression Editor {#code-syntax-used-in-the-segment-expression-editor}
 
-[!UICONTROL Segment Builder] Med kan du skapa trait-regler för ett segment med hjälp av en kodredigerare. Klicka på **[!UICONTROL Segment Expressions (Code View)]** fliken på [!UICONTROL Traits] panelen för att komma åt den här funktionen.
+[!UICONTROL Segment Builder] Med kan du skapa trait-regler för ett segment med hjälp av en kodredigerare. Klicka på fliken **[!UICONTROL Segment Expressions (Code View)]** på panelen [!UICONTROL Traits] för att komma åt den här funktionen.
 
 ## Syntax för Expression Builder-kod
 
@@ -30,11 +30,11 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
 
 >[!NOTE]
 >
->Som standard används [!DNL Boolean] [!UICONTROL OR] villkor för flera egenskaper *inom* ett uttryck.
+>Som standard gäller [!DNL Boolean] [!UICONTROL OR]-villkor för flera egenskaper *inom* ett uttryck.
 
 ### Förena segment med booleska operatorer
 
-Om du vill skapa grupper av segment omsluter du frekvensfunktionen inom parentes och anger relationen *mellan* varje uttryck med en [!DNL Boolean] operator ([!UICONTROL AND], [!UICONTROL OR]och [!UICONTROL NOT]).
+Om du vill skapa grupper av segment omsluter du frekvensfunktionen inom parentes och anger relationen *mellan* varje uttryck med en [!DNL Boolean]-operator ([!UICONTROL AND], [!UICONTROL OR] och [!UICONTROL NOT]).
 
 ### Parametrar
 
@@ -45,13 +45,13 @@ Om du vill skapa grupper av segment omsluter du frekvensfunktionen inom parentes
 | Namn eller variabel | Beskrivning |
 |---|---|
 | `FREQUENCY` | En litteral som måste föregå uttrycket. |
-| ` [`&lt;`traitID`>`T]` | En array med trait-ID:n följt av bokstaven `T`. Avgränsa flera egenskaper med kommatecken. Exempel, `[123T, 456T]`. |
-| ` <Recency Operator><Numeric Value>D` | *(Valfritt)* Anger regler för senaste intervall för egenskaper i segmentet. Bokstaven `D` anger senaste i dagar. |
+| ` [`&lt;>>`T]``traitID` | En array med trait-ID:n följt av bokstaven `T`. Avgränsa flera egenskaper med kommatecken. Exempel, `[123T, 456T]`. |
+| ` <Recency Operator><Numeric Value>D` | *(Valfritt)* Anger regler för senaste notation för egenskaper i segmentet. Bokstaven `D` anger att det är aktuellt i dagar. |
 | ` <Frequency Operator><Numeric Value>` | Anger frekvensregler för egenskaper i segmentet. |
 
 ### Tillåtna operatorer för senaste och frekvens
 
-Ange [intervall för senaste och frekvens](../../features/segments/recency-and-frequency.md) med en jämförelseoperator och ett heltal. [!UICONTROL Segment Builder] använder standarduttryck som &lt; (mindre än), > (större än), == (lika med) osv. Typerna av tillåtna operatorer varierar dock när du anger senaste eller frekvens. Tabellen nedan visar de tillåtna operatorerna för senaste/frekvens.
+Ange [intervall för senaste och frekvens](../../features/segments/recency-and-frequency.md) med en jämförelseoperator och ett heltal. [!UICONTROL Segment Builder] använder standarduttryck som  &lt;> (större än), == (lika) osv. Typerna av tillåtna operatorer varierar dock när du anger senaste eller frekvens. Tabellen nedan visar de tillåtna operatorerna för senaste/frekvens.
 
 <table id="table_2F92617CB472442BA5639E24DB4E43D3"> 
  <thead> 
@@ -65,12 +65,12 @@ Ange [intervall för senaste och frekvens](../../features/segments/recency-and-f
    <td colname="col1"> 
     <ul id="ul_66D11A34097648A997BA5C6CCC38503A"> 
      <li id="li_EA0B607E58834E62B427C0B7626C2BD1">&gt;= (större än/lika med) </li> 
-     <li id="li_CFE3D2DBEF424093A0497A70324D5B31">&lt;= (mindre än/lika med) </li> 
+     <li id="li_CFE3D2DBEF424093A0497A70324D5B31">&lt;&gt; </li> 
     </ul> </td> 
    <td colname="col2"> 
     <ul id="ul_A5A38BCD71B844F0B5FB28256069F87E"> 
      <li id="li_EA17C353214E4C2EA2B70169C94A2E53">&gt;= (större än/lika med) </li> 
-     <li id="li_87CE5CCC6B44446BB2FD0AAD47712368">&lt;= (mindre än/lika med) </li> 
+     <li id="li_87CE5CCC6B44446BB2FD0AAD47712368">&lt;&gt; </li> 
      <li id="li_7E922AEF3A524E78A18A9F6ECBF7460B">== (lika med) </li> 
     </ul> </td> 
   </tr> 
