@@ -23,7 +23,7 @@ I den här artikeln beskrivs de jämförelseoperatorer som används av [!UICONTR
 
 <!-- c_tb_comparison_operators.xml -->
 
-Jämförelseoperatorer (eller relationsoperatorer) används för att jämföra, testa eller utvärdera förhållandet mellan olika värden. I [!UICONTROL Trait Builder]och med jämförelseoperatorerna kan du testa relationen mellan olika nyckelvärdepar när du bygger signalregler. Du kan till exempel skapa en signalregel som definierar en målgrupp för dyra kameramarkare. I det här fallet kan du skapa ett nyckelvärdepar för kamera/pris och kvalificera en användare om de har letat efter en kamera med ett pris som är lika med eller större än ett angivet värde.
+Jämförelseoperatorer (eller relationsoperatorer) används för att jämföra, testa eller utvärdera förhållandet mellan olika värden. I [!UICONTROL Trait Builder] kan du med jämförelseoperatorer testa relationen mellan olika nyckelvärdepar när du skapar signalregler. Du kan t.ex. skapa en signalregel som definierar en målgrupp för dyra kamerakunder. I det här fallet kan du skapa ett nyckelvärdepar för kamera/pris och kvalificera en användare om de har letat efter en kamera med ett pris som är lika med eller större än ett angivet värde.
 
 ## Fördelar med jämförelseoperatorer
 
@@ -38,9 +38,9 @@ Du kan skapa regler med följande jämförelseoperatorer:
 | **==** | Lika med |
 | **!=** | Inte lika med |
 | **>** | Större än |
-| **&lt;** | Mindre än |
+| **&lt;>** | Mindre än |
 | **=>** | Större än/lika med |
-| **&lt;=** | Mindre än/lika med |
+| **&lt;>** | Mindre än/lika med |
 
 ## Namngivna operatorer
 
@@ -48,11 +48,11 @@ Du kan skapa regler med följande namngivna operatorer:
 
 | Operator | Utvärderar till [!DNL True] När |
 |---|---|
-| **[!UICONTROL Contains]** | Värdet i ett nyckelvärdepar *innehåller* tecken som anges av den här operatorn. |
-| **[!UICONTROL Matcheswords]** | Värdet i ett nyckelvärdepar *matchar* mönstret som anges av den här operatorn. |
+| **[!UICONTROL Contains]** | Värdet i nyckelvärdepar *innehåller* tecken som anges av den här operatorn. |
+| **[!UICONTROL Matcheswords]** | Värdet i nyckelvärdepar *matchar* mönstret som anges av den här operatorn. |
 | **[!UICONTROL Startswith]** | Värdet i ett nyckelvärdepar *börjar med* tecken som anges av den här operatorn. |
-| **[!UICONTROL Endswith]** | Värdet i ett nyckelvärdepar *avslutas med* de tecken som anges av operatorn. |
-| **[!UICONTROL Matchesregex]** | Värdet i ett nyckelvärdepar *matchar* mönstret som anges av ett reguljärt uttryck. [Läs mer](../../features/traits/trait-builder-regex.md) om hur du använder reguljära uttryck i [!UICONTROL Trait Builder]. |
+| **[!UICONTROL Endswith]** | Värdet i ett nyckelvärdepar *avslutas med* de tecken som anges av den här operatorn. |
+| **[!UICONTROL Matchesregex]** | Värdet i ett nyckelvärdepar *matchar* mönstret som anges i ett reguljärt uttryck. [Läs ](../../features/traits/trait-builder-regex.md) mer om hur du använder reguljära uttryck i  [!UICONTROL Trait Builder]. |
 
 >[!MORELIKETHIS]
 >
