@@ -33,7 +33,7 @@ Den här tekniska handboken innehåller självhjälp för Audience Manager, en b
 * Se den senaste versionsinformationen för Audience Manager och läs om de senaste funktionerna i avsnittet **Versionsinformation och nya funktioner**.
 * Till sist kan du utforska fler Experience Cloud-resurser som forum, videosjälvstudier, personliga kurser och onlinekurser i **Utbildningscentret – Rekommenderade Audience Manager- och Experience Cloud-resurser**.
 
-<br> 
+<br>
 
 ## Huvudfunktioner i Audience Manager
 
