@@ -13,17 +13,17 @@ ht-degree: 1%
 ## Innehåll
 
 + `TOC.md` i roten av användarhandboken innehåller information om hur du organiserar de ämnen som finns i handboken för den här lösningen.
-+ Varje användarhandbok har sin egen unika `TOC.md`struktur där du kan ordna alla sidor och ämnen efter behov.
++ Varje användarhandbok har sin egen unika `TOC.md`, där du kan ordna alla sidor/ämnen efter behov.
 + Den första sidan i alla användarhandböcker är `overview.md`.
 
 ## Användarhandbok
 
-+ Introduktionen till användarhandboken kallas `overview.md`
++ Introduktionen till användarhandboken heter `overview.md`
 + Varje avsnitt i användarhandboken har en egen separat katalog.
-   + Om det finns ett ämne i guiden som heter *Implementering*&#x200B;är motsvarande katalog `/implementation`
-+ Alla bildresurser lagras i `/assets` roten av användarhandboken.
-   + Alla bilder i `/assets` katalogen kommer att lokaliseras.
-   + Bilderna i `/no-localize` katalogen kommer inte att lokaliseras (det kommer ingen överraskning!). Detta kan användas för att i lokala versioner säkerställa att specifika resurser inte reproduceras i onödan.
+   + Om det finns ett avsnitt i guiden som heter *Implementering* är motsvarande katalog `/implementation`
++ Alla bildresurser lagras i `/assets` i roten av användarhandboken.
+   + Alla bilder i katalogen `/assets` kommer att lokaliseras.
+   + Bilder i katalogen `/no-localize` kommer inte att lokaliseras (det kommer en överraskning!). Detta kan användas för att i lokala versioner säkerställa att specifika resurser inte reproduceras i onödan.
 
 ## Metadata för användarhandboksnivå
 
