@@ -7,7 +7,7 @@ title: Hantera trait-regler
 uuid: 827d4567-2b6f-411e-bd5c-9735c916291a
 feature: Traits
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 14c5ac091a27d125c96d17ce750c6e25ad844856
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 1%
@@ -29,13 +29,17 @@ I [!UICONTROL Trait Builder] kan du med [!UICONTROL Expression Builder] skapa oc
 
 1. Med fälten och kontrollerna i det här avsnittet kan du skapa signaler från nyckelvärdepar och ange relationen mellan dem och en jämförelseoperator. Nyckel, operator och värde krävs.
 1. Med [!UICONTROL Data Explorer Options] kan du fylla i trait-realisationer bakåt för dina signaler.
+
    >[!NOTE]
    >
    >Det här alternativet är endast tillgängligt för [!UICONTROL Data Explorer]-kunder. Kontakta din Adobe-konsult för mer information.
+
 1. I det här avsnittet visas en uppskattning av trait-realisationer för de senaste 7 dagarna, för de signaler som definieras i [!UICONTROL Expression Builder], för bakåtfyllda och icke-bakåtfyllda egenskaper.
+
    >[!NOTE]
    >
    >Det här alternativet är endast tillgängligt för [!UICONTROL Data Explorer]-kunder. Kontakta din Adobe-konsult för mer information.
+
 1. Med testfälten kan du validera kombinationer av signalregler eller [!DNL URL]s som du vill använda när du skickar data till Audience Manager.
 
 ## Skapa en Trait-regel {#create-trait-rule}
@@ -47,18 +51,23 @@ Regler (eller uttryck) består av enskilda eller grupper av nyckelvärdepar. Jä
 Fyll i de obligatoriska fälten i **[!UICONTROL Basic Information]**-avsnittet *innan* skapar trait-regler.
 
 1. Expandera avsnittet **[!UICONTROL Trait Expression]** och ange ett nyckel- och värdenamn. Detta skapar en *`signal`*.
+
    >[!NOTE]
    >
    >Inkludera `c_`-prefixet (eller någon annan namnkonvention) för nyckelvariabeln om dina händelseanrop skickar data till [!DNL Audience Manager] med den syntaxen.
+
 1. Välj en [jämförelseoperator](../../features/traits/trait-comparison-operators.md) i listrutan **[!UICONTROL Operator]**. Jämförelseoperatorn utvärderar relationen mellan elementen i en signal.
+
    >[!NOTE]
    >
    >Operatorn [!DNL Boolean] [!UICONTROL OR] upprättar relationen mellan flera signaler *inom* en grupp och kan inte ändras.
+
 1. Klicka på **[!UICONTROL Add Rule]**. Den sparade regeln visas på arbetsytan för egenskaper ovanför datainmatningsfälten.
 
 ### Exempel på {#example-trait-rule}
 
 I exemplet nedan har en användare skapat en ny trait-regel baserat på produkt-ID:t. För att skapa den här regeln tillhandahöll användaren nyckeln `productkey` länkad med en likhetsoperator ( `==`) till värdet `2093`.
+
 ![](assets/tb_sample_rule1.png)
 
 Om du klickar på **[!UICONTROL Add Rule]** sparas och flyttas EGENSKAPEN till arbetsytan [!UICONTROL Expression Builder].
@@ -75,11 +84,14 @@ Ditt varumärke måste innehålla minst två regler innan du kan skapa en ny reg
 
 1. Flytta markören över den regel du vill flytta för att markera den.
 1. Hovra över den markerade regelkanten.
-Då separeras regeln automatiskt från den aktuella gruppen och flyttas till en ny grupp.
+
+   Då separeras regeln automatiskt från den aktuella gruppen och flyttas till en ny grupp.
+
    >[!NOTE]
    >
    >Dra tillbaka en regel till den ursprungliga gruppen om du vill flytta den oavsiktligt.
-1. Välj en [!DNL Boolean]-operator ( [!UICONTROL AND], [!UICONTROL OR], [!UICONTROL AND NOT]) i listrutan för att ange relationen mellan regelgrupperna.
+
+1. Välj en [!DNL Boolean]-operator ([!UICONTROL AND], [!UICONTROL OR], [!UICONTROL AND NOT]) i listrutan för att ange relationen mellan regelgrupperna.
 
 ## Flytta regler mellan grupper {#move-rules-between-groups}
 
