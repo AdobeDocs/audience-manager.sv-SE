@@ -7,7 +7,7 @@ title: Audience Manager-kod för Google Publisher Tags
 uuid: 24ff5d16-b360-46cc-a4c6-6db34d7fda75
 feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: c63467dec62ff08c3cd32f19ac2e4675c9ce18e3
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 18%
