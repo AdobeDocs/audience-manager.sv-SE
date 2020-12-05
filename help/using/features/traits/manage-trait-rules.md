@@ -1,6 +1,6 @@
 ---
-description: I Trait Builder kan du med Expression Builder skapa och testa regler som fastställer krav för målgruppskvalifikation. Regler består av nyckelvärdepar som "color == blue" eller "price > 100". Jämförelseoperatorer upprättar relationen mellan nycklar och värden. Booleska uttryck bestämmer relationen mellan regelgrupper.
-seo-description: I Trait Builder kan du med Expression Builder skapa och testa regler som fastställer krav för målgruppskvalifikation. Regler består av nyckelvärdepar som "color == blue" eller "price > 100". Jämförelseoperatorer upprättar relationen mellan nycklar och värden. Booleska uttryck bestämmer relationen mellan regelgrupper.
+description: I Trait Builder kan du med Expression Builder skapa och testa regler som fastställer krav för målgruppskvalifikation. Regler består av nyckelvärdepar, t.ex. "color == blue" eller "price &gt; 100 tum. Jämförelseoperatorer upprättar relationen mellan nycklar och värden. Booleska uttryck bestämmer relationen mellan regelgrupper.
+seo-description: I Trait Builder kan du med Expression Builder skapa och testa regler som fastställer krav för målgruppskvalifikation. Regler består av nyckelvärdepar, t.ex. "color == blue" eller "price &gt; 100 tum. Jämförelseoperatorer upprättar relationen mellan nycklar och värden. Booleska uttryck bestämmer relationen mellan regelgrupper.
 seo-title: Hantera trait-regler
 solution: Audience Manager
 title: Hantera trait-regler
@@ -9,7 +9,7 @@ feature: Traits
 translation-type: tm+mt
 source-git-commit: 14c5ac091a27d125c96d17ce750c6e25ad844856
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '727'
 ht-degree: 1%
 
 ---
