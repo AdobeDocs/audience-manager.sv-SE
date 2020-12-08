@@ -1,16 +1,12 @@
 ---
-source-git-commit: 84deeb062937c7bf46ee0f6f9516f9d49dbf4df6
+source-git-commit: 366e08e6db731d0ba49a961609688212f60832fd
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '517'
-ht-degree: 10%
+source-wordcount: '435'
+ht-degree: 11%
 
 ---
 # Contribute-artikel
-
-| EXL-PR | EXL | Förhandsgranska | Aktivera | Publicerad | Hjälp |
-|--- |--- |--- |--- |--- |--- |
-| [![Byggstatus](https://docs.ci.corp.adobe.com/view/exl-pr/job/audience-manager.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/audience-manager.en_pr-exl/lastBuild/) | [![Byggstatus](https://docs.ci.corp.adobe.com/view/exl-pr/job/audience-manager.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/audience-manager.en_exl/lastBuild/lastBuild) | [Förhandsgranska URL](https://experienceleague.corp.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live-URL](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=en) | [Redigeringshandbok](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Vi välkomnar bidrag från både vår community och från Adobe anställda utanför dokumentationsteamen.
 
@@ -26,7 +22,7 @@ Hur du bidrar beror på vem du är och vilken typ av ändringar du vill bidra me
 
 ### Mindre ändringar
 
-Om du bidrar med mindre uppdateringar av ditt hjärta kan du gå till artikeln och klicka på länken **Redigera** i artikeln som går till artikelns GitHub-källa. Använd sedan bara GitHub-gränssnittet för att göra uppdateringarna. Mer information finns i den allmänna [Adobe Docs Contributor-guiden](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) .
+Om du bidrar med mindre uppdateringar av ditt hjärta kan du gå till artikeln och klicka på länken **Redigera** i artikeln som går till artikelns GitHub-källa. Använd sedan bara GitHub-gränssnittet för att göra uppdateringarna. Mer information finns i den allmänna [Adobe Docs Contributor-guiden](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
 
 Mindre korrigeringar och förtydliganden som du lämnar in för dokumentation och kodexempel i den här rapporten omfattas av Adobe användarvillkoren.
 
@@ -46,7 +42,7 @@ Om du är teknikskribent, programchef eller utvecklare för en Adobe Experience 
 
 Deltagare i communityn kan använda GitHub-gränssnittet för grundläggande redigering eller förgrena rapporten för att göra större insatser.
 
-Mer information finns i [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) .
+Mer information finns i [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
 
 ## Så här använder du kod för att formatera ditt ämne
 
