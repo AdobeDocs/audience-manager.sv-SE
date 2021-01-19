@@ -7,15 +7,15 @@ title: Krav på Amazon S3-namn och filstorlekar för inkommande datafiler
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: f037a12af641da44ed67e62a249c41487da7ac07
+source-git-commit: d6856a54c649d701c3163c1408f84aea256ebdc1
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1051'
 ht-degree: 4%
 
 ---
 
 
-# [!DNL Amazon S3] Krav för namn och filstorlek för inkommande datafiler  {#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
+# [!DNL Amazon S3] krav på namn och filstorlek för inkommande datafiler  {#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
 
 Beskriver obligatoriska fält, syntax, namnkonventioner och filstorlekar som du måste följa när du skickar data till [!DNL Audience Manager]. Ange namn och storlek för filerna enligt dessa specifikationer när du skickar data till en [!DNL Audience Manager] / [!DNL Amazon S3]-katalog.
 
@@ -41,7 +41,7 @@ Removed  {importance="high"} for ExL
 >
 >[!DNL Audience Manager] endast bearbetar  [!DNL ASCII] och  [!DNL UTF-8] kodade filer.
 
-### Namnge element
+### Namnelement
 
 Tabellen definierar elementen i ett [!DNL S3]-filnamn.
 
@@ -155,9 +155,14 @@ Titta på bilderna nedan om du snabbt/tidigast vill behandla dina filer och om d
  </tbody> 
 </table>
 
+
 >[!NOTE]
 >
 >Den inkommande dataverifieringsprocessen kommer att markera tomma filer som ogiltiga och kommer inte att bearbeta dem.
+
+## Längdbegränsningar {#line-limits}
+
+Inkommande datafiler har en linjelängd på högst 102400 byte. Linjer som överskrider denna gräns tas inte med i överföringen.
 
 >[!MORELIKETHIS]
 >
