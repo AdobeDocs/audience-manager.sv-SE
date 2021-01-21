@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager Predictive Audiences
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: c2c392b1201b5de08a3f4d58bbb7be5ef31545d0
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 64%
+source-wordcount: '968'
+ht-degree: 59%
 
 ---
 
@@ -113,6 +113,15 @@ Ja. Eftersom algoritmen tränas dagligen tillämpas ändringarna i varje persona
 Ja, du kan se alla viktiga traits för alla baslinjer på modellrapporteringssidan. Se [Viktiga traits](../features/algorithmic-models/predictive-audiences-reporting.md#influential-traits).
 
  
+
+**Kan jag ändra tiden för att leva (TTL) för prediktiva egenskaper?**
+
+TTL för det prediktiva beteendet är inställt på 0 (livstid) och kan inte ändras. [!UICONTROL Predictive Audiences] kan endast dela upp användare från prediktiva segment när de kvalificerar sig för antingen bassegmentet eller omklassificeras till ett annat prediktivt segment.
+
+Vid behov kan du kringgå den här funktionen genom att skapa ett nytt segment som innehåller både ett prediktivt drag och ett aktivitetsdrag med en angiven TTL.
+
+ 
+
 
 **Vad händer med modellen om jag redigerar ett baslinje-trait eller segment?**
 
