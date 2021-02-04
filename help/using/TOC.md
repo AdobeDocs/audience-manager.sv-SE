@@ -6,10 +6,10 @@ user-guide-title: Användarhandbok för Audience Manager
 user-guide-description: Audience Manager tillhandahåller branschledande tjänster för datahantering av målgrupper online.
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 389ffae8d216a4f295a5fe198a27c4d9d48586c6
+source-git-commit: 55cb69bad1f369ed3b58bece54aebdca4b14f7a7
 workflow-type: tm+mt
-source-wordcount: '1772'
-ht-degree: 93%
+source-wordcount: '1779'
+ht-degree: 92%
 
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 93%
 + Funktioner {#features}
    + [Adresserbara målgrupper](features/addressable-audiences.md)
    + Administrering {#administration}
+      + [Migrering från Audience Manager till Admin Console](features/administration/admin-console-migration.md)
       + [Administrering](features/administration/administration-overview.md)
       + [Redigera kontoinställningar](features/administration/edit-account-settings.md)
       + [Dölja IP-adresser](features/administration/ip-obfuscation.md)
