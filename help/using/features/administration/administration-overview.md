@@ -1,6 +1,6 @@
 ---
 description: Med alternativen på menyn Administration kan du skapa Audience Manager-användare och tilldela dem till grupper. Du kan också visa gränser (egenskaper, segment, mål och modeller).
-keywords: rbac;RBAC;role based;role-based;role-based access controls
+keywords: rbac;RBAC;rollbaserad;rollbaserad;rollbaserad;rollbaserad åtkomstkontroll
 seo-description: Med alternativen på menyn Administration kan du skapa Audience Manager-användare och tilldela dem till grupper. Du kan också visa gränser (egenskaper, segment, mål och modeller).
 seo-title: Administrering
 solution: Audience Manager
@@ -9,10 +9,10 @@ topic: DIL API
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
 feature: Administration
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 55cb69bad1f369ed3b58bece54aebdca4b14f7a7
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 0%
+source-wordcount: '1203'
+ht-degree: 2%
 
 ---
 
@@ -20,6 +20,13 @@ ht-degree: 0%
 # [!UICONTROL Administration] (RBAC-kontroller)  {#administration}
 
 ![](assets/rbac-controls.png)
+
+>[!IMPORTANT]
+>
+> Hanteringen av användarkonton flyttas till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). För att starta migreringen av användare måste alla Audience Manager-kunder omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln: [Migrering av Audience Manager-användare till Admin Console](admin-console-migration.md).
+> 
+> När alla kunder har migrerat kommer användarhanteringsavsnitten i det här dokumentet att försvinna.
+
 
 Med alternativen på [!UICONTROL Administration]-menyn kan du skapa Audience Manager-användare och tilldela dem till grupper. Du kan också visa gränser (egenskaper, segment, mål och modeller).
 
@@ -30,6 +37,12 @@ Företagskunder som använder [!DNL Audience Manager] behöver en datahanterings
 ## Skapa användare {#create-users}
 
 <!-- t_create_users.xml -->
+
+>[!IMPORTANT]
+>
+> Hanteringen av användarkonton flyttas till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). För att starta migreringen av användare måste alla Audience Manager-kunder omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln: [Migrering av Audience Manager-användare till Admin Console](admin-console-migration.md).
+> 
+> När alla kunder har migrerat försvinner avsnittet för användarhantering i det här dokumentet.
 
 Skapa användare i [!DNL Audience Manager] och ange användarinformation, inloggningsstatus och tilldela användare till grupper.
 
@@ -54,6 +67,12 @@ Mer information om grupper och behörigheter finns i [Skapa en grupp](../../feat
 
 ## Skapa en [!UICONTROL Group] {#create-group}
 
+>[!IMPORTANT]
+>
+> Hanteringen av användarkonton flyttas till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Vi rekommenderar alla Audience Manager-kunder att omedelbart vidta de åtgärder som beskrivs i den här artikeln för att starta migreringen av användare: [Migrering av Audience Manager-användare till Admin Console](admin-console-migration.md).
+> 
+> När alla kunder har migrerat försvinner det här avsnittet.
+
 En *grupp* är en samling användare som delar åtkomsträttigheter till [!UICONTROL destination]-, [!UICONTROL segment]- och [!UICONTROL trait]-objekt. Du kan begränsa grupper till endast enskilda objekt eller ge dem bred åtkomst till kombinationer av olika objekt.
 
 <!-- t_create_groups.xml -->
@@ -61,18 +80,24 @@ En *grupp* är en samling användare som delar åtkomsträttigheter till [!UICON
 Så här skapar du en grupp:
 
 1. Klicka på **[!UICONTROL Administration]** > **[!UICONTROL Groups]**.
-1. Klicka på ![](assets/icon_add.png) för att öppna sidan [!UICONTROL Group Settings].
-1. I [!UICONTROL Group Details]:
+2. Klicka på ![](assets/icon_add.png) för att öppna sidan [!UICONTROL Group Settings].
+3. I [!UICONTROL Group Details]:
    * Ge gruppen ett namn.
    * Ange en kort gruppbeskrivning.
-1. I [!UICONTROL Group Members] klickar du på en användare bland **[!UICONTROL Add Users]**-alternativen för att lägga till dem i gruppen.
-1. I [!UICONTROL Group Permissions] väljer du [egenskap](../../features/traits/trait-details-page.md), [segment](../../features/segments/segments-purpose.md) eller [mål](../../features/destinations/destinations.md) från **[!UICONTROL Add Object]**.
+4. I [!UICONTROL Group Members] klickar du på en användare bland **[!UICONTROL Add Users]**-alternativen för att lägga till dem i gruppen.
+5. I [!UICONTROL Group Permissions] väljer du [egenskap](../../features/traits/trait-details-page.md), [segment](../../features/segments/segments-purpose.md) eller [mål](../../features/destinations/destinations.md) från **[!UICONTROL Add Object]**.
 Då öppnas ett behörighetsfönster för det markerade objektet.
-1. Markera kryssrutan för de behörigheter som du vill att gruppmedlemmar ska ha.
-1. *(Valfritt)* Tilldela  [tillstånd ](../../features/administration/administration-overview.md#wild-card-permissions) för jokertecken till gruppen.
-1. Klicka på **[!UICONTROL Save Group]**.
+6. Markera kryssrutan för de behörigheter som du vill att gruppmedlemmar ska ha.
+7. *(Valfritt)* Tilldela  [tillstånd ](../../features/administration/administration-overview.md#wild-card-permissions) för jokertecken till gruppen.
+8. Klicka på **[!UICONTROL Save Group]**.
 
 ## Om [!UICONTROL Wild Card Permissions] {#wild-card-permissions}
+
+>[!IMPORTANT]
+>
+> Hanteringen av användarkonton flyttas till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Vi rekommenderar alla Audience Manager-kunder att omedelbart vidta de åtgärder som beskrivs i den här artikeln för att starta migreringen av användare: [Migrering av Audience Manager-användare till Admin Console](admin-console-migration.md).
+> 
+> När alla kunder har migrerat försvinner det här avsnittet.
 
 Förenkla hanteringen av grupprättigheter med [!UICONTROL Wild Card Permissions].
 
