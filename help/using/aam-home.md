@@ -7,10 +7,10 @@ title: Audience Manager Guide
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 feature: overview
 translation-type: tm+mt
-source-git-commit: 389ffae8d216a4f295a5fe198a27c4d9d48586c6
+source-git-commit: 04504d4561414f9558a1f1f4db33cbcf535d54af
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 96%
+source-wordcount: '652'
+ht-degree: 95%
 
 ---
 
@@ -160,10 +160,8 @@ Den här tekniska handboken innehåller självhjälp för Audience Manager, en b
      <br> 
      <p> <b>Nya funktioner</b> </p> <p> 
      Läs om de senaste funktionerna i Audience Manager:</p>
-     <p><ul><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">Google kundmatchning för personbaserade destinationer</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager plug-in för IAB TCF v2.0</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">Rapportera aktivitetsanvändning</a></li>
-     <li><a href="/help/using/overview/data-security-and-privacy/data-privacy.md">Stöd för California Consumer Privacy Act (CCPA) och omarbetning av sekretessdokumentation</a></li>
-     <li><a href="/help/using/features/segments/trait-recommendations.md">Intelligenta rekommendationer för Audience Marketplace-data från Adobe Sensei</a></li>
-     </ul><p>
+     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">migrering från Audience Manager till Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">Google kundmatchning för personbaserade destinationer</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager plug-in för IAB TCF v2.0</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">Rapportera aktivitetsanvändning</a></li>
+     </ul></p>
     </td>
   </tr> 
  </tbody> 
@@ -209,7 +207,7 @@ Read about the latest Audience Manager features:
       <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/se/support/audience-manager.html" format="https" scope="external"> Utbildning och support för Audience Manager</a> </li> 
      </ul> </p> 
      <br> 
-     <p>Se även <a href="https://docs.adobe.com/content/help/sv-SE/audience-manager/user-guide/documentation-updates/docs-2020.html">Dokumentationsuppdateringar för 2020</a>. </p> </td>
+     <p>Se även <a href="https://docs.adobe.com/content/help/sv-SE/audience-manager/user-guide/documentation-updates/docs-2021.html">Dokumentationsuppdateringar för 2021</a>. </p> </td>
   </tr> 
  </tbody> 
 </table>
