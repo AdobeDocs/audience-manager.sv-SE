@@ -4,12 +4,12 @@ seo-description: I den här artikeln beskrivs hur målgrupper delas mellan Audie
 seo-title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
 solution: Audience Manager
 title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
-keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
+keywords: AEP-målgruppsdelning, AEP-segment, plattformssegment, segmentdelning, målgruppsdelning, dela segment
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 4bac89ab732f225bd82aceaf9707fda98e796945
+source-git-commit: 62938e95fa9eed3e747fa4dabf8695c5dbefde17
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1504'
 ht-degree: 2%
 
 ---
@@ -162,7 +162,7 @@ Audience Manager uppdaterar rapportnummer i gränssnittet en gång om dagen.   T
 
 ### Segmentdisposition i Experience Platform
 
-Integrationen mellan Adobe Experience Platform och Audience Manager delar ett antal [identitetsnamnutrymmen](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types) för alla kunder: ECID, IDFA, GAID, hash-kodade e-postadresser (EMAIL_LC_SHA256), AdCloud ID osv. Om era Experience Platform-segment använder någon av dessa som primär identitet för de kvalificerade profilerna räknas profilerna i Audience Manager-egenskaper och segment.
+Integrationen mellan Adobe Experience Platform och Audience Manager delar ett antal [identitetsnamnutrymmen](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types) för alla kunder: ECID, IDFA, GAID, hash-kodade e-postadresser (EMAIL_LC_SHA256), AdCloud ID. Om era Experience Platform-segment använder någon av dessa som primär identitet för de kvalificerade profilerna räknas profilerna i Audience Manager-egenskaper och segment.
 
 Dessutom kan Audience Manager registrera inkommande implementeringar för anpassade identitetsnamnutrymmen som du använder i Experience Platform-segment om:
 * identiteten markeras som primär *och*
