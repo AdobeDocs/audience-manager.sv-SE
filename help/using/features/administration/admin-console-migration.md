@@ -7,9 +7,9 @@ solution: Audience Manager
 title: Migrering från Audience Manager till Admin Console
 feature: Administration
 translation-type: tm+mt
-source-git-commit: 04504d4561414f9558a1f1f4db33cbcf535d54af
+source-git-commit: 2e01abab2616daccd7581cdaa18417650951d139
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '450'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Fördelarna med att använda [!DNL Admin Console] är:
 |---|---|
 | Samlad inloggning i olika lösningar | [!DNL Audience Manager] -användare kan logga in på  [!DNL Experience Cloud] och alla andra lösningar med sina  [!DNL Adobe ID] eller  [!DNL Enterprise ID]. Denna inloggning ger tillgång till integrerade lösningar och bastjänster i [!DNL Experience Cloud]. Efter migreringen omdirigeras användare som försöker logga in via äldre inloggningar (`bank.demdex.com`) till `experiencecloud.adobe.com`. |
 | Hantera användare och grupper | När migreringen är klar hanterar [!DNL Audience Manager]-administratörer endast användare och grupper i [[!DNL Admin Console]](http://adminconsole.adobe.com/enterprise/). |
-| Hantera produkter och tjänster | Från [[!DNL Admin Console]](http://adminconsole.adobe.com/enterprise/) kan administratörer: <ul><li>Skapa, uppdatera och ta bort användare</li><li>Ge åtkomst till lösningar och tjänster</li><li>Bevilja användarbehörigheter</li></ul> |
+| Hantera produkter och tjänster | Från [[!DNL Admin Console]](http://adminconsole.adobe.com/enterprise/) kan administratörer: <ul><li>Skapa, uppdatera och ta bort användare</li><li>Ge åtkomst till lösningar och tjänster</li></ul> |
 
 För att underlätta användarmigreringen ber vi alla [!DNL Audience Manager]-administratörer att börja migrera sina användarkonton till [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) så snart som möjligt genom att följa stegen som beskrivs i den här artikeln.
 
@@ -48,6 +48,6 @@ Administratörer för Audience Manager bör följa stegen nedan för att migrera
 
 Både användare och administratörer bör tänka på följande när det gäller migrering av Audience Manager-användare:
 
-* När nya användarkonton har skapats i Admin Console överförs automatiskt deras behörigheter från de äldre användarkontona. Administratörer behöver inte tilldela nya behörigheter i [!DNL Admin Console].
-* Administratörer behöver inte inaktivera äldre användarkonton. Gamla användarkonton sammanfogas automatiskt i de migrerade.
+* När nya användarkonton har skapats i Admin Console gäller fortfarande deras behörigheter från de äldre användarkontona.
 * Uppdateringar av användarbehörigheter hanteras fortfarande från [!DNL Audience Manager]. [!DNL Admin Console] omfattar endast användar- och grupphantering.
+* Administratörer behöver inte inaktivera äldre användarkonton. Gamla användarkonton sammanfogas automatiskt i de migrerade.
