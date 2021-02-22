@@ -4,11 +4,11 @@ seo-description: 'Den här sidan innehåller stegvis vägledning om hur du kombi
 seo-title: Arbetsflöde A – Personalisering baserad på all onlineaktivitet i kombination med offlinedata
 solution: Audience Manager
 title: Arbetsflöde A – Personalisering baserad på all onlineaktivitet i kombination med offlinedata
-feature: People-Based Destinations
+feature: Personbaserade destinationer
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 6e3a06da8149c91a9192b5b3ee582e46fbb1790c
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1181'
 ht-degree: 7%
 
 ---
@@ -86,7 +86,7 @@ Anta att du vill matcha dina befintliga [DPUID](../../reference/ids-in-aam.md) m
 
  
 
-Du kan länka upp till 10 hash-kodade e-postadresser till en enda [DPUID](../../reference/ids-in-aam.md). Om du vill göra det avgränsar du de streckade e-postadresserna med ett kommatecken i synkroniseringsfilen.
+Du kan länka upp till 10 hash-kodade e-postadresser till en enda [DPUID](../../reference/ids-in-aam.md). Om du vill göra det avgränsar du de streckade e-postadresserna med en `<TAB>` inuti synkroniseringsfilen.
 
 I vårt exempel har du nu två datakällor.
 
