@@ -1,17 +1,17 @@
 ---
 description: I Audience Manager är en destination ett tredjepartssystem (annonsserver, DSP, annonsnätverk osv.) som du vill dela data med. Destination Builder är det verktyg du använde för att skapa och hantera mål för cookies, URL eller server-to-server.
-keywords: integration code, destination, destination overview, destination, destination, destination, destination, destination, destination, destination, destination, destination, destination, destination
-landing-page-description: A destination is any third-party system, such as ad server or DSP, with which to share data. Use Destination Builder to create and manage cookie, URL, or server-to-server destinations.
+keywords: integrationskod, mål, målöversikt, mål, mål, mål, mål, mål, mål, mål, mål, mål, mål, mål, mål
+landing-page-description: En destination är ett tredjepartssystem, till exempel annonsserver eller DSP, som du kan dela data med. Använd Destination Builder för att skapa och hantera mål för cookies, URL eller server-to-server.
 seo-title: 'Destinationer '
 solution: Audience Manager
 title: 'Destinationer '
 uuid: 5c7dbdec-f73f-46fe-9f12-7685e8d7334f
-feature: Destination Basics
+feature: Grundläggande om mål
 translation-type: tm+mt
 source-git-commit: e6348c85e7df6428802d54b2c90385ce95f50e1a
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 4%
+source-wordcount: '541'
+ht-degree: 3%
 
 ---
 
