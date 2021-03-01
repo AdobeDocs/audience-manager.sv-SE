@@ -1,16 +1,16 @@
 ---
 description: Beskriver komponenterna i ett Audience Manager-segment, de uttryck som används för att ange kriterier för målgruppskvalifikation och hur data överförs i ett händelseanrop.
-landing-page-description: Describes components of a segment, expressions used to set audience qualification criteria, and how data is transmitted.
+landing-page-description: Beskriver komponenter i ett segment, uttryck som används för att ange kriterier för målgruppskvalifikation och hur data överförs.
 seo-title: Signaler, traits och segment
 solution: Audience Manager
 title: Signaler, traits och segment
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
-feature: reference
+feature: referens
 translation-type: tm+mt
 source-git-commit: e6348c85e7df6428802d54b2c90385ce95f50e1a
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 4%
+source-wordcount: '367'
+ht-degree: 3%
 
 ---
 
