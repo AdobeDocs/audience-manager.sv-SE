@@ -9,7 +9,7 @@ feature: API
 translation-type: tm+mt
 source-git-commit: ab8745a8ba24154793201893a39a039b5a098833
 workflow-type: tm+mt
-source-wordcount: '1860'
+source-wordcount: '1861'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ Observera följande när du arbetar med [Audience Manager API](https://bank.demd
 
 [!DNL Audience Manager] [!DNL REST APIs] stöder två autentiseringsmetoder.
 
-* [JWT-](#jwt) autentisering (tjänstkonto) med  [Adobe I/O](https://www.adobe.io/). [!DNL Adobe I/O] är Adobe utvecklares ekosystem och community. Den innehåller [Adobe I/O utvecklingsverktyg och API:er](https://www.adobe.io/apis/experienceplatform.html) och [API:er för alla Adobe-produkter](https://www.adobe.io/apis.html). Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
+* [JWT-](#jwt) autentisering (tjänstkonto) med  [Adobe I/O](https://www.adobe.io/). [!DNL Adobe I/O] är Adobe utvecklares ekosystem och community. Den innehåller [utvecklarverktygen för Adobe I/O och API:er](https://www.adobe.io/apis/experienceplatform.html) och [API:er för alla Adobe-produkter](https://www.adobe.io/apis.html). Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
 * [OAuth-autentisering (borttagen)](#oauth). Den här metoden är föråldrad, men kunder med befintliga [!DNL OAuth]-integreringar kan fortsätta använda den här metoden.
 
 >[!IMPORTANT]
@@ -49,9 +49,9 @@ Observera följande när du arbetar med [Audience Manager API](https://bank.demd
 
 ## [!DNL JWT] ([!DNL Service Account]) Autentisering med Adobe I/O  {#jwt}
 
-### Adobe I/O Overview {#adobeio}
+### Översikt över Adobe I/O {#adobeio}
 
-[!DNL Adobe I/O] är Adobe utvecklares ekosystem och community. Den innehåller [Adobe I/O utvecklingsverktyg och API:er](https://www.adobe.io/apis/experienceplatform.html) och [API:er för alla Adobe-produkter](https://www.adobe.io/apis.html).
+[!DNL Adobe I/O] är Adobe utvecklares ekosystem och community. Den innehåller [utvecklarverktygen för Adobe I/O och API:er](https://www.adobe.io/apis/experienceplatform.html) och [API:er för alla Adobe-produkter](https://www.adobe.io/apis.html).
 
 Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
 
@@ -178,7 +178,7 @@ Krav för att anropa [!DNL API]-metoder när du har fått en autentiseringstoken
 Så här anropar du de tillgängliga [!DNL API]-metoderna:
 
 * Ange `Authorization: Bearer <token>` i rubriken `HTTP`.
-* När du använder [JWT-autentisering (tjänstkonto)](#jwt) måste du ange rubriken `x-api-key`, som är densamma som din `client_id`. Du kan hämta din `client_id` från [Adobe I/O-integreringssidan](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
+* När du använder [JWT-autentisering (tjänstkonto)](#jwt) måste du ange rubriken `x-api-key`, som är densamma som din `client_id`. Du kan hämta din `client_id` från [Adobe I/O-integrationssidan](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
 * Anropa den obligatoriska [!DNL API]-metoden.
 
 ## Valfria [!DNL API]-frågeparametrar {#optional-api-query-parameters}
