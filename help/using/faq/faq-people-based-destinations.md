@@ -4,12 +4,12 @@ seo-description: 'Svar på vanliga frågor om personbaserade destinationer.  '
 seo-title: Vanliga frågor om personbaserade destinationer
 solution: Audience Manager
 title: Vanliga frågor om personbaserade destinationer
-feature: People-Based Destinations
+feature: Personbaserade destinationer
 translation-type: tm+mt
-source-git-commit: 6e55d8bc5fe2c5cdcdd36107593215288d491331
+source-git-commit: eb998042acb46fef2b0e407b3565d8ba4769f0bb
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 97%
+source-wordcount: '1171'
+ht-degree: 94%
 
 ---
 
@@ -78,6 +78,10 @@ Så länge e-postadressen är hash-kodad och korrekt inmatad bör det inte vara 
 **Jag samlar in e-postadresser till arbetet från mina kunder och de skiljer sig från de personliga e-postadresserna som används i sociala nätverk. Hur matchar ni identiteter för flera e-postadresser?**
 
 Audience Manager kan samla in och skicka upp till 10 e-postadresser per användare till destinationsplattformar, men e-postadresserna måste hämtas via synkroniseringsfiler. När Audience Manager har skickat e-postadresserna till destinationsplattformarna är det upp till plattformarna att matcha e-postadresserna mot sin egen användardatabas. Vissa plattformar kan ha ytterligare e-postadressdiagram som matchar adresser som skickas från Audience Manager med användarprofiler.
+
+**Kan jag använda  [!DNL People-Based Destinations] i  [!DNL Audience Lab]?**
+
+Nej. För närvarande är alla [!DNL People-Based Destinations]-mål uteslutna från [!DNL Audience Lab]. Eftersom [!DNL People-Based Destinations] och DSP (Demand-side platforms) använder olika ID:n kan du inte testa och mäta prestanda med målgrupper som är jämnt fördelade mellan dem.
 
 ## Kontroller vid dataexport {#data-export-controls}
 
