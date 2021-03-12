@@ -5,11 +5,11 @@ seo-title: Implementera Audience Manager
 solution: Audience Manager
 title: Implementera Audience Manager
 uuid: 89369224-3b21-45a9-a4ed-a0a977410520
-feature: Third Party Integrations
+feature: Integrering med tredje part
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: cf9266e8ae6e222dda3c055725d71f691575f8d0
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -163,7 +163,7 @@ Produkterna för den här fasen kan inkludera:
 
 * En slutförd och godkänd plan för datainsamling.
 * Totallösning för [!DNL QA]-testning;
-* Grundläggande instruktioner om Audience Manager användargränssnitt;
+* Grundläggande anvisningar om Audience Manager användargränssnitt;
 * Godkännande och godkännande.
 
 ## Start-, support- och optimeringsfasen {#launch-support-optimize-phase}
@@ -221,13 +221,9 @@ Uppgifter för den här fasen kan vara:
 
 ## Kodimplementering {#code-implementation}
 
-Även om distributionsprocessen kan verka komplicerad är kodimplementeringen lika enkel som att lägga till några rader med [!DNL JavaScript] bredvid den avslutande `</body>`-taggen för webbplatsen.
+Audience Manager använder Datan Integration Library ([!DNL DIL]) för att ta emot målgruppsdata.
 
-<!-- c_code.xml -->
-
-### Distribution
-
-Kodfragmentet Audience Manager anropar [!DNL Akamai] för att hämta de affärsregler som tidigare konfigurerats i användargränssnittet. Klientwebbläsarna cachelagrar dessutom den här informationen, vilket minskar belastningstiden för sidor och servrar. Vår metod för kod och datainsamling är utformad för att behålla användarupplevelsen i ert lager.
+Detaljerade instruktioner om hur du använder [!DNL DIL] finns i [Hämta och implementera DIL-kod](../dil/dil-overview.md).
 
 ### Deltagare
 
@@ -236,8 +232,6 @@ Partnerlösningar kan arbeta direkt med era tekniska team för att driftsätta k
 ## Support efter implementering {#post-implementation-support}
 
 Våra samarbetssatsningar upphör inte med den slutliga driftsättningen. När implementeringen är klar tar vårt kontohanteringsteam över sig.
-
-<!-- c_post_implement_support.xml -->
 
 Kontoansvariga tillhandahåller fortlöpande support och konsulttjänster när produktimplementeringen är klar. Du kan förvänta dig regelbundna möten med din kontoansvarige. Dessa möten ser till att du får ut så mycket som möjligt av Audience Manager.
 
