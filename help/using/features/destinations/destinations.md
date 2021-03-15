@@ -10,8 +10,8 @@ feature: Grundläggande om mål
 translation-type: tm+mt
 source-git-commit: e6348c85e7df6428802d54b2c90385ce95f50e1a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '541'
+ht-degree: 3%
 
 ---
 
