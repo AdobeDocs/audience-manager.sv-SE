@@ -4,11 +4,11 @@ seo-description: I den här artikeln beskrivs hur du konfigurerar Twitter-anpass
 seo-title: Konfigurera Twitter-anpassade målgrupper som enhetsbaserade destinationer med självbetjäning
 solution: Audience Manager
 title: Konfigurera Twitter-anpassade målgrupper som enhetsbaserade destinationer med självbetjäning
-feature: People-Based Destinations
+feature: Personbaserade destinationer
 translation-type: tm+mt
-source-git-commit: 8ff76decc1cbd7f7babd619dd1ce9fe047541337
+source-git-commit: 6716c871562cd0203239897fc096033160e2fc13
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '555'
 ht-degree: 4%
 
 ---
@@ -60,7 +60,7 @@ När du har länkat Audience Manager och din [!DNL Twitter Tailored Audiences] k
 När du mappar målgruppssegment till [!UICONTROL Twitter] måste du se till att följande krav för segmentnamngivning uppfylls:
 
 * Ge segmentmappningsnamn som kan läsas av människor. Vi rekommenderar att du använder samma namn som du använde för Audience Manager-segmenten.
-* Använd inte specialtecken (`,` `%` `:` `;` `@` `/` `=` `?` `$`) i namn på segment- och segmentmappningar. Om Audience Manager-segmentnamnet innehåller dessa tecken tar du bort dem innan du mappar segmentet till ett [!UICONTROL Twitter]-mål.
+* Använd inte specialtecken (`+` `&` `,` `%` `:` `;` `@` `/` `=` `?` `$`) i namn på segment och segmentmappningar. Om Audience Manager-segmentnamnet innehåller dessa tecken tar du bort dem innan du mappar segmentet till ett [!UICONTROL Twitter]-mål.
 
 ### Exempel
 
