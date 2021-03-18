@@ -7,9 +7,9 @@ title: Krav på namn och innehåll för ID-synkroniseringsfiler
 uuid: bfe42af9-9149-4da3-830e-f227c4e610c2
 feature: Inkommande dataöverföringar
 translation-type: tm+mt
-source-git-commit: 02c951f63d8ebeafaf107c4cb9213e9efdb1eafb
+source-git-commit: 67ba527ff8b06ca4f5515ffd1a9114acfabadecb
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '867'
 ht-degree: 6%
 
 ---
@@ -49,7 +49,7 @@ ID-filnamn innehåller följande obligatoriska och valfria element:
   </tr> 
   <tr> 
    <td colname="col1"><code><i>MASTERDPID</i></code> </td> 
-   <td colname="col2"> Det överordnad dataleverantörs-ID:t är det överordnade ID:t för DPID:n i filnamnet. Dessutom motsvarar det första användar-ID:t i datafilen det överordnad ID:t. De efterföljande DPID:n är andra identifierare som tillhör den överordnad. Synkroniseringen mappar DPID:n i filnamnet till UUID:n i filen. </td> 
+   <td colname="col2"> <p>Det överordnad dataleverantörs-ID:t är det överordnade ID:t för DPID:n i filnamnet. Dessutom motsvarar det första användar-ID:t i datafilen det överordnad ID:t. De efterföljande DPID:n är andra identifierare som tillhör den överordnad. Synkroniseringen mappar DPID:n i filnamnet till UUID:n i filen.</p> <p>Detta DPID får bara innehålla enhets-ID, t.ex. AAM UUID, GAID, IDFA osv. Den får inte innehålla DPUID. Om du gör det kan synkroniseringen bli felaktig.</p>  </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>DPID</i></code> </p> </td> 
