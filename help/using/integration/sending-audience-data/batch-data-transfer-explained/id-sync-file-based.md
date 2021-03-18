@@ -5,11 +5,11 @@ seo-title: Krav på namn och innehåll för ID-synkroniseringsfiler
 solution: Audience Manager
 title: Krav på namn och innehåll för ID-synkroniseringsfiler
 uuid: bfe42af9-9149-4da3-830e-f227c4e610c2
-feature: Inbound Data Transfers
+feature: Inkommande dataöverföringar
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 02c951f63d8ebeafaf107c4cb9213e9efdb1eafb
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '840'
 ht-degree: 6%
 
 ---
@@ -99,6 +99,14 @@ Filen innehåller användar-ID ([!DNL UUID]). Separera ID:n på varje rad med en
 ```
 abc123 def456 ghi789 xyz987
 ```
+
+### Fundera på filinnehåll {#considerations}
+
+När du skapar dina inkommande filer måste du se till att den första kolumnen bara är ifylld med enhets-ID:n, till exempel [!DNL AAM UUID], [!DNL GAID], [!DNL IDFA]. Se [Index för ID:n i Audience Manager](../../../reference/ids-in-aam.md) för en detaljerad förklaring av ID:n som stöds av Audience Manager.
+
+>[!IMPORTANT]
+>
+>Använd inte [DPUID](../../../reference/ids-in-aam.md) i den första kolumnen. Om du gör det kan synkroniseringen bli felaktig.
 
 ## Synkroniseringen matchar DPUID:n med UUID:n {#sync-matches-dpuuids-uuids}
 
