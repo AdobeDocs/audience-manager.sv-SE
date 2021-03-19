@@ -1,17 +1,17 @@
 ---
 description: Vanliga frågor och problem som rör produkter och funktioner.
-keywords: audience manager cookies
+keywords: cookies för målgruppshanterare
 seo-description: Vanliga frågor och problem som rör produkter och funktioner.
 seo-title: Vanliga frågor om produktfunktioner
 solution: Audience Manager
 title: Vanliga frågor om produktfunktioner
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
-feature: Overview
+feature: Översikt
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 91%
+source-wordcount: '627'
+ht-degree: 89%
 
 ---
 
@@ -68,7 +68,7 @@ Din datafeed och alla traits som finns i flödet visas som undermappar och trait
 
 **Vad är [!UICONTROL Tag Insertion Manager (TIM)]?**
 
-Audience Manager använde [!UICONTROL Tag Insertion Manager] (TIM) för att skapa och hantera [!UICONTROL data collection code (DIL)]. Den här funktionen är föråldrad och har ersatts först av [!UICONTROL Dynamic Tag Manager (DTM)] och därefter av [!DNL Adobe Experience Platform Launch]. Mer information finns i [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) och [Dynamic Tag Management](https://docs.adobe.com/content/help/sv-SE/dtm/using/dtm-home.html).
+Audience Manager använde [!UICONTROL Tag Insertion Manager] (TIM) för att skapa och hantera [!UICONTROL data collection code (DIL)]. Den här funktionen är föråldrad och har ersatts först av [!UICONTROL Dynamic Tag Manager (DTM)] och därefter av [!DNL Adobe Experience Platform Launch]. Mer information finns i [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) och [Dynamic Tag Management](https://docs.adobe.com/content/help/sv-SE/dtm/using/dtm-home.html).
 
  
 
