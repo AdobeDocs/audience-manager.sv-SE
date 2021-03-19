@@ -5,19 +5,19 @@ seo-title: Vy över segmentlista
 solution: Audience Manager
 title: Vy över segmentlista
 uuid: aa69877b-1d52-4b87-8734-b4bff39935a5
-feature: Segments
+feature: 'Segment '
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 9%
+source-wordcount: '87'
+ht-degree: 11%
 
 ---
 
 
 # Vy över segmentlista {#segments-list-view}
 
-Kontrollpanelen [Segment](https://bank.demdex.com/portal/Segments/SegmentBuilder.ddx#list) är en central arbetsyta för att hantera målgruppssegment. Du kan se kontrollpanelen [!UICONTROL Segments] genom att gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**.
+[!UICONTROL Segments dashboard] är en central arbetsyta för att hantera målgruppssegment. Du kan se kontrollpanelen [!UICONTROL Segments] genom att gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**.
 
 ![segment-dashboard](assets/segments-dashboard.png)
 
