@@ -4,11 +4,11 @@ seo-description: Den här sidan illustrerar processen att skapa WCA-pixlar (Cust
 seo-title: Integrering med Facebook WCA
 solution: Audience Manager
 title: Integrering med Facebook WCA
-feature: Third Party Integrations
+feature: Integrering med tredje part
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '869'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ Den här sidan visar processen att skapa [!DNL Facebook Website Custom Audiences
 3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID]) Version 4.1.0 eller senare. Ladda ned den senaste versionen **[här](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**.
 4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL]) version 9.0 eller senare, kan hämtas  **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Om du använder [SSF (Server-Side Forwarding)](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) för att importera data till [!DNL Audience Manager] måste du använda AppMeasurement version 2.12 eller senare. Hämta [!DNL AppMeasurement] med [Analytics Code Manager](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html).
 
-Vi rekommenderar att du installerar eller uppgraderar biblioteken i steg 3 och 4 med [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) eller [Adobe Dynamic Tag Management](https://docs.adobe.com/content/help/sv-SE/dtm/using/dtm-home.html).
+Vi rekommenderar att du installerar eller uppgraderar biblioteken i steg 3 och 4 med [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) eller [Adobe Dynamic Tag Management](https://docs.adobe.com/content/help/sv-SE/dtm/using/dtm-home.html).
 
 ## Steg 1 - Skapa en [!UICONTROL Facebook Destination] i [!DNL Audience Manager] {#step-1-create-facebook-destination}
 
@@ -94,7 +94,7 @@ Se [Skapa en anpassad målgrupp för en webbplats](https://www.facebook.com/busi
 | Objekt | Beskrivning |
 ---------|----------|
 | Webbplatstrafik | Anpassad kombination |
-| Inkludera | <ul><li>Välj **[!UICONTROL Event]** > Välj **[!UICONTROL Adobe-Audience-Manager-Segment]**. Detta var värdet på parametern `ev` i exempelpixeln i steg 1. Observera, att om pixeln ännu inte har startats kanske inte **[!UICONTROL Event]**-alternativet eller **[!UICONTROL Adobe-Audience-Manager-Segment]** visas i [!DNL Facebook]-användargränssnittet.</li><li>Lägg till en parameter: Välj `segID`.</li><li><p>Markera **innehåller**-operatorn.</p><p>Detta är viktigt eftersom besökare kan kvalificera sig för flera segment, kan det finnas flera [!UICONTROL segment IDs] i pixelparametern. Om du använder operatorn lika med (`=`) kanske inte dina besökare kvalificerar sig för målgruppen, och du kommer att märka en lägre volym.</p></li><li>Lägg till ett värde: Ange segment-ID:t för [!DNL Audience Manager].</li></ul> |
+| Inkludera | <ul><li>Välj **[!UICONTROL Event]** > Välj **[!UICONTROL Adobe-Audience-Manager-Segment]**. Detta var värdet på parametern `ev` i exempelpixeln i steg 1. Observera, att om pixeln ännu inte har startats kanske inte **[!UICONTROL Event]**-alternativet eller **[!UICONTROL Adobe-Audience-Manager-Segment]** visas i [!DNL Facebook]-användargränssnittet.</li><li>Lägg till en parameter: Välj `segID`.</li><li><p>Markera **innehåller**-operatorn.</p><p>Detta är viktigt eftersom besökare kan kvalificera sig för flera segment, kan det finnas flera [!UICONTROL segment IDs] i pixelparametern. Om du använder operatorn lika med (`=`) kanske inte dina besökare kvalificerar dig för målgruppen, och du kommer att märka en lägre volym.</p></li><li>Lägg till ett värde: Ange segment-ID:t för [!DNL Audience Manager].</li></ul> |
 | Lägg till nytt villkor | Valfri inställning. |
 | I slutet av | Valfri inställning. |
 | Målgruppsnamn | Vi rekommenderar att du använder samma [!DNL Audience Manager]-segmentnamn för att skapa en konsekvent upplevelse, såvida du inte lägger till ytterligare villkor till den här målgruppen. |
