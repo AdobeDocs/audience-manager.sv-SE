@@ -5,9 +5,9 @@ seo-title: DIL-moduler
 solution: Audience Manager
 title: DIL-moduler
 uuid: d4c0d8dd-79f8-448e-b17c-c935415dd449
-feature: DIL Implementation
+feature: Implementering av DIL
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 1%
@@ -315,7 +315,7 @@ URL-händelseanropet till Audience Manager kan se ut ungefär så här:
 >[!MORELIKETHIS]
 >
 >* [Spårningskod för Google Analytics](https://developers.google.com/analytics/devguides/collection/gajs/methods/)
->* [Fullständig webbuppgradering: ga.js/dc.js till analytics.js](https://developers.google.com/analytics/devguides/collection/upgrade/reference/gajs-analyticsjs)
+>* [Fullständig webbuppgradering: ga.js/dc.js till analytics.js](https://developers.google.com/analytics/devguides/collection/upgrade)
 >* [Lägga till analytics.js på er webbplats](https://developers.google.com/analytics/devguides/collection/analyticsjs/)
 >* [ga-objektmetodreferens](https://developers.google.com/analytics/devguides/collection/analyticsjs/ga-object-methods-reference)
 
