@@ -5,19 +5,19 @@ seo-title: Instrumentpanel för traits
 solution: Audience Manager
 title: Instrumentpanel för traits
 uuid: 31b8f958-f67d-4af2-8d78-e37e2dfe810d
-feature: Traits
+feature: 'Traits '
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 4%
+source-wordcount: '127'
+ht-degree: 5%
 
 ---
 
 
 # Instrumentpanel för traits {#traits-dashboard}
 
-Kontrollpanelen [Traits](https://bank.demdex.com/portal/Traits/Traits.ddx#show/list) är en centraliserad arbetsyta för att hantera egenskaper. Du kan se kontrollpanelen [!UICONTROL Traits] genom att gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Traits]**.
+Kontrollpanelen för egenskaper är en central arbetsyta för att hantera egenskaper. Du kan se kontrollpanelen [!UICONTROL Traits] genom att gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Traits]**.
 
 ![](assets/traits-dashboard.png)
 
