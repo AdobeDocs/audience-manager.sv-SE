@@ -5,12 +5,12 @@ seo-title: Översikt över datasekretess
 solution: Audience Manager
 title: Översikt över datasekretess
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
-feature: data governance & privacy
+feature: datahantering och sekretess
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 78%
+source-wordcount: '489'
+ht-degree: 77%
 
 ---
 
@@ -30,7 +30,7 @@ I vårt fortsatta stöd för den här modellen fortsätter [!DNL Audience Manage
 
 ## [!DNL GDPR] {#gdpr}
 
-I den [allmänna dataskyddsförordningen (GDPR)](https://eugdpr.org/) infördes flera nya rättigheter för EU-medlemmar, bland annat **rätten till åtkomst** och **rätten att raderas**. Det innebär att alla [!DNL EU]-medborgare vars personuppgifter har samlats in av ditt företag kan begära att få tillgång till eller ta bort sina uppgifter när som helst. Om ni inte uppfyller dessa krav kan det leda till böter på flera miljoner dollar för er organisation.
+I den [allmänna dataskyddsförordningen (GDPR)](https://gdpr.eu/data-privacy/) infördes flera nya rättigheter för EU-medlemmar, bland annat **rätten till åtkomst** och **rätten att raderas**. Det innebär att alla [!DNL EU]-medborgare vars personuppgifter har samlats in av ditt företag kan begära att få tillgång till eller ta bort sina uppgifter när som helst. Om ni inte uppfyller dessa krav kan det leda till böter på flera miljoner dollar för er organisation.
 
 [!DNL Audience Manager] stöder dataåtkomst och ta bort [begäranden](data-privacy-requests.md) för att uppfylla [!DNL GDPR].
 
