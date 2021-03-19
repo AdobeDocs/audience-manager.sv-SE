@@ -4,12 +4,12 @@ seo-description: Adobe ger er möjlighet att hantera och förmedla användarnas 
 seo-title: Plugin-program för Audience Manager för IAB TCF
 solution: Audience Manager
 title: Plugin-program för Audience Manager för IAB TCF
-feature: data governance & privacy
+feature: datahantering och sekretess
 translation-type: tm+mt
-source-git-commit: ab72f0875b132eaf333d1e5308322490ac035de3
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2441'
+ht-degree: 40%
 
 ---
 
@@ -100,7 +100,7 @@ Alla leverantörer som är registrerade i IAB TCF utvärderar IAB TC-strängen o
 
 ## Syfte som krävs av Audience Manager {#aam-standard-purposes}
 
-Audience Manager utvärderar användarens val som lagras i IAB TC-strängen för följande syften, som definieras i [IAB Europe Transparency &amp; Consent Framework Policies](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#A_Purposes). Du kan även hitta syftena i den globala listan [leverantörslistan](https://vendorlist.consensu.org/vendorlist.json).
+Audience Manager utvärderar användarens val som lagras i IAB TC-strängen för följande syften, som definieras i [IAB Europe Transparency &amp; Consent Framework Policies](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#Appendix_A_Purposes_and_Features_Definitions).
 
 * **Syfte 1**: Lagra och/eller få tillgång till information på en enhet.
 * **Syfte 10**: utveckla och förbättra produkter,
