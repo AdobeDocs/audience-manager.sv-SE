@@ -5,12 +5,12 @@ seo-title: Ordlista
 solution: Audience Manager
 title: Ordlista
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
-feature: reference
+feature: referens
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 348881dd2f880ca50140dbe5935cff138944003e
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 100%
+source-wordcount: '1187'
+ht-degree: 99%
 
 ---
 
@@ -27,8 +27,6 @@ Använd [!UICONTROL Algorithmic Modeling] som ett sätt att nå ut utanför kär
 
 Se [Förstå algoritmiska modeller](../features/algorithmic-models/algo-models-overview.md).
 
-<br>
-
 **BAAAM**
 
 [!UICONTROL Bulk Management Tools]. [!UICONTROL Bulk Management Tools] i [!DNL Audience Manager] är en Microsoft Excel-baserad uppsättning verktyg med vilka du kan skapa, ändra eller ta bort flera objekt samtidigt med en enda åtgärd. Du kan arbeta med datakällor, härledda signaler, destinationer, mappar, segment och traits. Funktionen använder ett Microsoft Excel-kalkylblad med makron som gör säkra, autentiserade anrop till [!DNL Audience Manager] API:erna.
@@ -43,15 +41,13 @@ Se [Verktyg för satsvis hantering](../reference/bulk-management-tools/bulk-mana
 
 Se [Kunddataflöden](../features/cdf-files.md).
 
-<br> 
-
 **CRM-ID**
 
 CRM-ID är det ID med vilket kunderna identifierar användare i sina egna CRM-system. I stället för CRM-ID använder vi termen DPUUID i Audience Manager.
 
 Se DPUUID i [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
-<br> 
+
 
 **Kundadresserbar målgrupp**
 
@@ -60,25 +56,25 @@ I [Addressable Audience](/help/using/features/addressable-audiences.md) represen
    **OCH**
 * Har en ID-synkronisering med den valda destinationen oavsett synkroniseringstidpunkten.
 
-<br> 
+
 
 **Kundattribut**
 
 Se [Kundattribut](https://docs.adobe.com/content/help/sv-SE/core-services/interface/customer-attributes/attributes.html) i [!DNL Experience Cloud Core Services] produktdokumentationen.
 
-<br> 
+
 
 **Kundmatchningsfrekvens**
 
 Kundadresserbar målgrupp ÷ Kundens totala målgrupp uttryckt som %. Se [Addressable Audience](/help/using/features/addressable-audiences.md).
 
-<br> 
+
 
 **Kundens totala målgrupp**
 
 I [Addressable Audience](/help/using/features/addressable-audiences.md) representerar det här mätvärdet antalet enheter som antingen har fått ett regelbaserat trait på era webbplatser eller som har fått ett registrerat trait under tillbakablicksperioden.
 
-<br> 
+
 
 **demdex.net**
 
@@ -86,7 +82,7 @@ Demdex.net är en äldre domän som drivs av [!DNL Adobe]. Den återspeglar det 
 
 Se [Förstå anrop till Demdex-domänen](../reference/demdex-calls.md).
 
-<br> 
+
 
 **DAID**
 
@@ -94,19 +90,19 @@ Se [Förstå anrop till Demdex-domänen](../reference/demdex-calls.md).
 
 Se [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
-<br> 
+
 
 **Destination**
 
 I [!DNL Audience Manager] är destinationen ett annat system (annonsserver, DSP, annonsnätverk osv.) som du vill dela data med. [!UICONTROL Destination Builder] i användargränssnittet innehåller de verktyg som du kan använda för att skapa och hantera sådana dataleveransprocesser. [!DNL Audience Manager]-destinationsfunktionerna finns i **[!UICONTROL Audience Data > Destinations]**.
 
-<br> 
+
 
 **DIL**
 
 [!UICONTROL Data Integration Library] är ett API-bibliotek som används av [!DNL Audience Manager] för att samla in data om användarinteraktioner. Se [API för Data Integration Library (DIL)](../dil/dil-overview.md).
 
-<br> 
+
 
 **dpm**
 
@@ -118,7 +114,7 @@ I [!DNL Audience Manager] är destinationen ett annat system (annonsserver, DSP,
 
 Tidigare kallat [!DNL Marketing Cloud] ID (MID eller MCID). [!DNL Experience Cloud]-ID är centralt för ID-tjänsten. Det är en unik och beständig identifierare för era webbplatsbesökare. Se Cookies och [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/sv-SE/id-service/using/intro/cookies.html).
 
-<br> 
+
 
 **Mapp-trait**
 
@@ -126,7 +122,7 @@ Automatisk gruppering av traits i mapp-taxonomin. Varje mapp i hierarkin skapar 
 
 Se [Mapp-traits: Om](../features/traits/about-folder-traits.md).
 
-<br> 
+
 
 **Frekvensbegränsning**
 
@@ -140,7 +136,7 @@ Se [Recency och frekvens](../features/segments/recency-and-frequency.md).
 
 Google Advertising ID, det unika enhets-ID som Google tilldelar maskinvaruenheter som kör Android-operativsystemet. Se [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
-<br> 
+
 
 **GUID**
 
@@ -153,13 +149,13 @@ Se [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
 Identifierare för annonsörer, det unika enhets-ID som Apple tilldelar sina produkter. Se [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
-<br> 
+
 
 **Inkommande**
 
 Den process som ni kan använda för att skicka målgruppsdata från andra källor till [!DNL Audience Manager]. Se [Skicka målgruppsdata](/help/using/integration/sending-audience-data/send-audience-data.md).
 
-<br> 
+
 
 **Integreringskod**
 
@@ -189,13 +185,13 @@ Se [Experience Cloud ID](../reference/aam-glossary.md#e-f).
 
 Se [Komponenter för datainsamling](../reference/system-components/components-data-collection.md).
 
-<br> 
+
 
 **Profillänk**
 
 Se [Beskrivning av alternativen för regler för profilsammanslagning](../features/profile-merge-rules/merge-rule-definitions.md).
 
-<br> 
+
 
 **Regler för profilsammanslagning**
 
@@ -217,25 +213,25 @@ Ett segment (eller en målgrupp) är en uppsättning användare som delar gemens
 
 Se [Segment: Syfte, sammansättning och regler](../features/segments/segments-purpose.md).
 
-<br> 
+
 
 **Segmentadresserbar publik**
 
 I [Addressable Audience](/help/using/features/addressable-audiences.md) representerar det här mätvärdet antalet användare som har tillhört segmentet under rapportens tillbakablicksperiod och som har en aktiv ID-synkronisering på er webbplats. Segment kan innehålla era förstapartsdata samt andra- och tredjepartsdata via traits som registrerats på [Audience Marketplace](/help/using/features/audience-marketplace/audience-marketplace.md).
 
-<br> 
+
 
 **Segmentets totala population**
 
 I [Addressable Audience](/help/using/features/addressable-audiences.md) representerar det här mätvärdet antalet enheter som var medlemmar i ert segment under rapportens tillbakablicksperiod.
 
-<br> 
+
 
 **Matchningsfrekvens för segment**
 
 Segmentadresserbar publik ÷ Total segmentpopulation uttryckt i %. Se [Addressable Audience](/help/using/features/addressable-audiences.md).
 
-<br> 
+
 
 **Signal**
 
@@ -243,13 +239,13 @@ Signaler är de minsta dataenheterna i [!DNL Audience Manager] och uttrycks som 
 
 Se [Signaler, traits och segment](../reference/signal-trait-segment.md).
 
-<br> 
+
 
 **Trait**
 
 Ett trait är en kombination av en eller flera signaler. Se [Signaler, traits och segment](../reference/signal-trait-segment.md).
 
-<br> 
+
 
 **Trait-population**
 
@@ -259,7 +255,7 @@ Se [Trait- och segmentpopulationsdata i Segment Builder](../features/segments/se
 
 TTL definierar hur många dagar en kvalificerad besökare stannar i ett trait. TTL anges för traits och inte för segment. Besökare försvinner från ett segment om ett kvalificerande trait inte identifieras före slutet av TTL-intervallet. Läs mer i [Förklaring av segment and TTL (Time-to-Live) för traits](/help/using/features/traits/segment-ttl-explained.md).
 
-<br> 
+
 
 ## U–V {#u-v}
 
@@ -267,7 +263,7 @@ TTL definierar hur många dagar en kvalificerad besökare stannar i ett trait. T
 
 [!DNL Audience Manager] Unikt användar-ID. Se [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
-<br> 
+
 
 **Besökar-ID**
 
