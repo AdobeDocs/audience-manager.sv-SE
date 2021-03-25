@@ -7,7 +7,7 @@ title: Översikt över Audience Manager
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 feature: översikt
 translation-type: tm+mt
-source-git-commit: e6348c85e7df6428802d54b2c90385ce95f50e1a
+source-git-commit: 348881dd2f880ca50140dbe5935cff138944003e
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 94%
@@ -31,13 +31,9 @@ Funktionerna i en plattform för datahantering (DMP) kan sammanfattas i tre kate
 
 Audience Manager samlar in förstapartsdata från kanaler och enheter (webbanalys, CRM, enhetsdata, e-handel osv.).
 
-<br>
-
 **Skapa målgrupper**
 
 Sammanför data i målgruppsprofiler, vilket ger en fullständig kundbild över olika enheter och kanaler. Skapa look-alike-modeller, bygg målgruppssegment och profilgrupper och komplettera med datakällor från andra- eller tredjepartsleverantörer.
-
-<br> 
 
 **Data ut**
 
