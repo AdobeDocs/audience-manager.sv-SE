@@ -1,16 +1,16 @@
 ---
 description: Med DIL API:erna på instansnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
-keywords: create traits;create trait
+keywords: skapa egenskaper;skapa egenskaper
 seo-description: Med DIL API:erna på instansnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 seo-title: DIL-metoder på instansnivå
 solution: Audience Manager
 title: DIL-metoder på instansnivå
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
-feature: DIL Implementation
+feature: Implementering av DIL
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: e40233ace5cb74743db7d0f9f90707fa596a7e79
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1111'
 ht-degree: 2%
 
 ---
@@ -644,7 +644,7 @@ dil-secure-data-collection.xml
 
 * När `secureDataCollection= true` (standard) gör [!UICONTROL DIL] alltid säkra HTTPS-anrop.
 
-* När `secureDataCollection= false` utförs antingen HTTP- eller HTTPS-anrop av &lt;a0/> enligt det säkerhetsprotokoll som angetts av sidan.[!UICONTROL DIL]
+* När `secureDataCollection= false` utförs antingen HTTP- eller HTTPS-anrop av [!UICONTROL DIL] enligt det säkerhetsprotokoll som angetts av sidan.
 
 >[!IMPORTANT]
 >
