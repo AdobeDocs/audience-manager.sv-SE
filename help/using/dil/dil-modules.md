@@ -7,7 +7,7 @@ title: DIL-moduler
 uuid: d4c0d8dd-79f8-448e-b17c-c935415dd449
 feature: Implementering av DIL
 translation-type: tm+mt
-source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
+source-git-commit: e40233ace5cb74743db7d0f9f90707fa596a7e79
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 1%
