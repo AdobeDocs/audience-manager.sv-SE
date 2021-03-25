@@ -7,9 +7,9 @@ title: DCS API:er för överföring av data från server till server
 uuid: 8c369166-c8a7-46b0-9913-4c027f5b1df9
 feature: DCS
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: e40233ace5cb74743db7d0f9f90707fa596a7e79
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '332'
 ht-degree: 10%
 
 ---
