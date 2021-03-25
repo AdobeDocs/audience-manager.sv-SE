@@ -5,11 +5,11 @@ seo-title: Teknisk produktdokumentation för Adobe Audience Manager
 solution: Audience Manager
 title: Audience Manager Guide
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
-feature: overview
+feature: översikt
 translation-type: tm+mt
-source-git-commit: 04504d4561414f9558a1f1f4db33cbcf535d54af
+source-git-commit: 348881dd2f880ca50140dbe5935cff138944003e
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '653'
 ht-degree: 95%
 
 ---
@@ -32,8 +32,6 @@ Den här tekniska handboken innehåller självhjälp för Audience Manager, en b
 * Läs därefter **Kom igång med Audience Manager** för att bekanta dig med begreppen i Audience Manager. Se också till att du läser riktlinjerna för affärs- och teknisk implementering.
 * Se den senaste versionsinformationen för Audience Manager och läs om de senaste funktionerna i avsnittet **Versionsinformation och nya funktioner**.
 * Till sist kan du utforska fler Experience Cloud-resurser som forum, videosjälvstudier, personliga kurser och onlinekurser i **Utbildningscentret – Rekommenderade Audience Manager- och Experience Cloud-resurser**.
-
-<br>
 
 ## Huvudfunktioner i Audience Manager
 
@@ -71,8 +69,6 @@ Den här tekniska handboken innehåller självhjälp för Audience Manager, en b
 </table>
 
 
-<br> 
-
 ## Kom igång med Audience Manager
 
 <table> 
@@ -81,7 +77,7 @@ Den här tekniska handboken innehåller självhjälp för Audience Manager, en b
    <td colname="col1"> <p><b>Viktig konceptuell dokumentation</b></p>
    <p>Läs sidorna nedan för att få en mer ingående förståelse för Audience Manager-begreppen: 
    <ul><li><a href="/help/using/overview/aam-overview.md"> Översikt över Audience Manager</a></li><li><a href="/help/using/reference/signal-trait-segment.md">Signaler, traits och segment</a></li><li><a href="/help/using/reference/aam-glossary.md">Ordlista</a> </li><li><a href="/help/using/reference/ids-in-aam.md">Index över ID:n</a></li></ul></p>
-   <br> 
+   <br>
    <p><b>Implementera Audience Manager</b></p>
    <p> Kom igång med implementeringen av Audience Manager genom att läsa sidorna nedan:
      <ul>
@@ -148,8 +144,6 @@ Den här tekniska handboken innehåller självhjälp för Audience Manager, en b
 
 -->
 
-<br> 
-
 ## Versionsinformation och nya funktioner
 
 <table> 
@@ -186,7 +180,6 @@ Read about the latest Audience Manager features:
 
 -->
 
-<br> 
 
 ## Utbildningscenter – Rekommenderade Audience Manager- och Experience Cloud-resurser
 
