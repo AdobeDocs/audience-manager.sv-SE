@@ -7,7 +7,7 @@ title: Audience Manager Guide
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 feature: översikt
 translation-type: tm+mt
-source-git-commit: 348881dd2f880ca50140dbe5935cff138944003e
+source-git-commit: 191e2b0c5d511853273d0ebf7d6f0a965c4fc3fc
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 95%
@@ -77,15 +77,15 @@ Den här tekniska handboken innehåller självhjälp för Audience Manager, en b
    <td colname="col1"> <p><b>Viktig konceptuell dokumentation</b></p>
    <p>Läs sidorna nedan för att få en mer ingående förståelse för Audience Manager-begreppen: 
    <ul><li><a href="/help/using/overview/aam-overview.md"> Översikt över Audience Manager</a></li><li><a href="/help/using/reference/signal-trait-segment.md">Signaler, traits och segment</a></li><li><a href="/help/using/reference/aam-glossary.md">Ordlista</a> </li><li><a href="/help/using/reference/ids-in-aam.md">Index över ID:n</a></li></ul></p>
-   <br>
-   <p><b>Implementera Audience Manager</b></p>
+
+<p><b>Implementera Audience Manager</b></p>
    <p> Kom igång med implementeringen av Audience Manager genom att läsa sidorna nedan:
      <ul>
      <li><a href="/help/using/integration/data-integration-methods.md">Metoder för dataintegrering</a></li>
      <li><a href="/help/using/integration/implement-audience-manager.md">Implementeringshandbok</a></li>
      </ul> </p>
-     <br> 
-   <p> <b>Tekniska implementeringshandböcker</b> </p> <p>Kom igång med Audience Managers API:er och konfigurera Audience Manager i din app:</p> <p> 
+
+<p> <b>Tekniska implementeringshandböcker</b> </p> <p>Kom igång med Audience Managers API:er och konfigurera Audience Manager i din app:</p> <p> 
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
      <li><a href="/help/using/api/rest-api-main/aam-api-getting-started.md">Kom igång med REST API:er</a></li>
      <li><a href="/help/using/api/dcs-intro/dcs-event-calls/dcs-event-calls.md">Kom igång med DCS API</a></li>
@@ -151,7 +151,6 @@ Den här tekniska handboken innehåller självhjälp för Audience Manager, en b
   <tr> 
    <td> <p> <b>Versionsinformation</b> </p> <p> 
      Se den senaste <a href="https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html" format="https" scope="external"> versionsinformationen för Experience Cloud</a> angående nya funktioner och korrigeringar.</p> 
-     <br> 
      <p> <b>Nya funktioner</b> </p> <p> 
      Läs om de senaste funktionerna i Audience Manager:</p>
      <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">migrering från Audience Manager till Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">Google kundmatchning för personbaserade destinationer</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager plug-in för IAB TCF v2.0</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">Rapportera aktivitetsanvändning</a></li>
@@ -199,7 +198,6 @@ Read about the latest Audience Manager features:
       <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://helpx.adobe.com/se/support/experience-cloud.html" scope="external" format="https">Produktdokumentation för Experience Cloud – startsida</a> </li> 
       <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/se/support/audience-manager.html" format="https" scope="external"> Utbildning och support för Audience Manager</a> </li> 
      </ul> </p> 
-     <br> 
      <p>Se även <a href="https://docs.adobe.com/content/help/sv-SE/audience-manager/user-guide/documentation-updates/docs-2021.html">Dokumentationsuppdateringar för 2021</a>. </p> </td>
   </tr> 
  </tbody> 
