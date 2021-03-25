@@ -8,9 +8,9 @@ title: Index över ID:n i Audience Manager
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
 feature: referens
 translation-type: tm+mt
-source-git-commit: 348881dd2f880ca50140dbe5935cff138944003e
+source-git-commit: 5abb131966e0b27e6c628ff992c4c30b89f65ae9
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '965'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,13 @@ Mer information om de prefix som används i följande exempel finns i [Attribut 
 | [!DNL CID],  [!DNL CID_IC] | [!UICONTROL Customer ID],  [!UICONTROL Customer ID Integration Code]. Nyckelvärdepar för [!DNL CID] och [!DNL CID_IC] ersätter [!DNL DPID] och [!DNL DPUUID]. De har samma funktioner som [!DNL DPID] och [!DNL DPUUID], men de är mer effektiva eftersom de innehåller data provider-ID och användar-ID (eller integreringskod) i ett enda nyckelvärdepar. | I [!DNL DCS]-anrop föregås dessa ID:n av prefixet `d_`. <br>Exempel: `d_cid_ic=39217_myIntegrationCode`. | Se `DPID` och `DPUUID`. |
 | [!DNL DAID] | [!UICONTROL Device Advertising ID]. Ett ID som är unikt för varje maskinvaruenhet och som ska användas i annonssyfte. Anges vanligtvis av tillverkaren av enhetens eller enhetens operativsystem. | Se [Globala enhets-ID](#global-device-ids). |  |
 
-{style=&quot;table-layout:auto&quot;}
+<!--
+
+Commenting out the table style. Fixed layout works better than auto layout for the index of IDs.
+
+{style="table-layout:auto"}
+
+-->
 
 ## [!DNL Global Device IDs] {#global-device-ids}
 
