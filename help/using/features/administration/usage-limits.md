@@ -4,13 +4,13 @@ seo-description: Audience Manager sätter en maxgräns för antalet egenskaper, 
 seo-title: Användningsgränser
 solution: Audience Manager
 title: Användningsgränser
-keywords: ID mapping, ID mappings, cookie mappings
+keywords: ID-mappning, ID-mappning, cookie-mappning
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
-feature: Usage and Billing
+feature: Användning och fakturering
 translation-type: tm+mt
-source-git-commit: fc13643681eebec17a95607482f2864e81b95820
+source-git-commit: c3c2f32dda7535b182ea3638a016fe245ed4894c
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '591'
 ht-degree: 5%
 
 ---
@@ -45,6 +45,8 @@ Tabellerna visar de aktuella gränserna per objekttyp. Du kan inte skapa nya ege
 | Anonboarding | 100 000 |
 | Mappegenskaper | 2 000 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ### Segmentgränser
 
 | Segmenttyp | Maximal gräns |
@@ -70,6 +72,8 @@ Tabellerna visar de aktuella gränserna per objekttyp. Du kan inte skapa nya ege
 | Maximalt antal uteslutna egenskaper för en [!UICONTROL Look-Alike Model] | 500. Se [Trait Exclusion in Algorithmic Modeling](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md). |
 | Maximalt [!UICONTROL Predictive Audiences Models] | 10 |
 | Högsta antal baslinjeprofiler för [!UICONTROL Predictive Audiences Models] | 50 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ### Mappbegränsningar
 
