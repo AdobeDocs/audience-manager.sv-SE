@@ -7,7 +7,7 @@ title: Audience Manager Guide
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 feature: översikt
 translation-type: tm+mt
-source-git-commit: 191e2b0c5d511853273d0ebf7d6f0a965c4fc3fc
+source-git-commit: ae5863882b5dec3a99edd1b7065229232296cc7b
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 95%
@@ -35,7 +35,7 @@ Den här tekniska handboken innehåller självhjälp för Audience Manager, en b
 
 ## Huvudfunktioner i Audience Manager
 
-<table>
+<table style="table-layout:fixed">
    <td>
       <img alt="Data in" src="/help/using/overview/assets/data-in.png"/>
       <div>
