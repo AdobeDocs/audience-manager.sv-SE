@@ -7,9 +7,9 @@ title: Krav på namn och innehåll för ID-synkroniseringsfiler
 uuid: bfe42af9-9149-4da3-830e-f227c4e610c2
 feature: Inkommande dataöverföringar
 translation-type: tm+mt
-source-git-commit: de1483763998027c4fc7694223c39dd7a37e87ab
+source-git-commit: a696bc03e430e25e2752d84905009645c625d762
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '867'
 ht-degree: 6%
 
 ---
@@ -130,8 +130,6 @@ Utifrån exempelnamnet och innehållet mappas ID:n ihop så här:
 | 66552757407517449462805881945288602094 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M |
 | 6618477822667870903738139438735041506 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw |
 
-{style=&quot;table-layout:auto&quot;}
-
 Steg 1: ID-synkroniseringsprocessen synkroniserar [!DNL DPUUID]s från [!DNL DPID] 12345 med [!DNL Audience Manager] [!DNL UUID]s i den vänstra kolumnen. Observera att [!DNL DPID] &quot;0&quot; i filnamnet representerar [!DNL Audience Manager] [!DNL UUID]s.
 <br/>
 
@@ -144,8 +142,6 @@ Steg 1: ID-synkroniseringsprocessen synkroniserar [!DNL DPUUID]s från [!DNL DPI
 | XYZ3017PryPID8tzfhkEE-gE034LI-53Jde0utCYcIwd0A2OlM | 4392434426 |
 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M | 2351382994 |
 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw | 4601584763 |
-
-{style=&quot;table-layout:auto&quot;}
 
 Steg 2: [!DNL DPUUID]s från [!DNL DPID] 12345 har synkroniserats i steg 1 med Audience Manager [!DNL UUID]s. Det som den här ID-synkroniseringen kommer att göra är att synkronisera [!DNL DPUUID]s från [!DNL DPID] 67890 med Audience Manager [!DNL UUID]s från steg 1.
 
