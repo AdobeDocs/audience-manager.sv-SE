@@ -8,9 +8,9 @@ keywords: ID-mappning, ID-mappning, cookie-mappning
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 feature: Användning och fakturering
 translation-type: tm+mt
-source-git-commit: c3c2f32dda7535b182ea3638a016fe245ed4894c
+source-git-commit: a696bc03e430e25e2752d84905009645c625d762
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '585'
 ht-degree: 5%
 
 ---
@@ -45,8 +45,6 @@ Tabellerna visar de aktuella gränserna per objekttyp. Du kan inte skapa nya ege
 | Anonboarding | 100 000 |
 | Mappegenskaper | 2 000 |
 
-{style=&quot;table-layout:auto&quot;}
-
 ### Segmentgränser
 
 | Segmenttyp | Maximal gräns |
@@ -71,9 +69,7 @@ Tabellerna visar de aktuella gränserna per objekttyp. Du kan inte skapa nya ege
 | [!UICONTROL Look-Alike Models] maximal målgruppsstorlek | 25 000 000.  Observera att den här gränsen inte kan ökas. Du kan minska målgruppsstorleken genom att välja färre datakällor för modellen eller genom att välja ett kortare fönster för att titta tillbaka. |
 | Maximalt antal uteslutna egenskaper för en [!UICONTROL Look-Alike Model] | 500. Se [Trait Exclusion in Algorithmic Modeling](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md). |
 | Maximalt [!UICONTROL Predictive Audiences Models] | 10 |
-| Högsta antal baslinjeprofiler för [!UICONTROL Predictive Audiences Models] | 50 |
-
-{style=&quot;table-layout:auto&quot;}
+| Maximalt antal baslinjeprofiler för [!UICONTROL Predictive Audiences Models] | 50 |
 
 ### Mappbegränsningar
 
