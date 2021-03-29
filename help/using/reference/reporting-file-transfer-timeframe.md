@@ -7,9 +7,9 @@ title: Hur dataleverans och filbearbetningstider påverkar rapporter
 uuid: 4b975512-f67e-4749-a7ef-168415597682
 feature: referens
 translation-type: tm+mt
-source-git-commit: c3c2f32dda7535b182ea3638a016fe245ed4894c
+source-git-commit: a696bc03e430e25e2752d84905009645c625d762
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '689'
 ht-degree: 5%
 
 ---
@@ -44,8 +44,6 @@ I följande tabell visas och beskrivs tidsintervallen i våra allmänna rapporte
 | Inkommande filinmatning (offlinedata) | Filbearbetning utförs två gånger per dag. Dessa procedurer importerar data och förbereder dem för leverans. Filleveranstiderna varierar eftersom de påverkas av den totala mängden kunddata som behöver bearbetas. Du kan förvänta dig en maximal fördröjning på 48 timmar mellan den tidpunkt då filen överförs i Audience Manager och tills data finns tillgängliga för rapportering och aktivering. |
 | Utgående (export) filer | Filbearbetning och leverans sker en gång om dagen, kl. 14:00 UTC. Tänk på att bearbetningen och leveransen påverkas av det totala antalet filer och deras storlek. I vissa fall kan det dröja så länge som 24 timmar. När detta inträffar skickar Audience Manager två filer för en viss dag i stället för 1. Vi kommer att meddela våra kunder i de sällsynta fall där Audience Manager måste sluta bearbeta en fil helt och hållet. Med tanke på dessa förhållanden är det svårt att uppskatta leveranstider för utgående data. Om du vill ta reda på om du har fått en komplett uppsättning filer kontrollerar du tidsstämpeln och letar efter eventuella saknade dagar. Det här är en 13-siffrig UNIX UTC-tidsstämpel som registrerar tidpunkten när filen skapades. Se [Utgående dataöverföringar i realtid](../integration/receiving-audience-data/real-time-outbound-transfers/real-time-outbound-transfers.md). |
 | Loggfiler för annonsserver | Filbearbetning utförs i nära realtid för att importera loggfilsposter när timfilerna är klara. Processen att förbereda filerna för rapportering utförs en gång om dagen. Filleveranstiderna varierar eftersom de påverkas av den totala mängden kunddata som behöver bearbetas. Du kan förvänta dig en maximal fördröjning på 48 timmar mellan den tidpunkt då du överför filen till Audience Manager och den tidpunkt då informationen är tillgänglig för rapportering och aktivering. |
-
-{style=&quot;table-layout:auto&quot;}
 
 >[!MORELIKETHIS]
 >
