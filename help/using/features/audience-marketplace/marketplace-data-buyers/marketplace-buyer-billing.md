@@ -4,17 +4,17 @@ seo-description: Inköpare av datauppgifter från Audience Marketplace går med 
 seo-title: Fakturering för köpare av dataflöden
 solution: Audience Manager
 title: Fakturering för köpare av dataflöden
-keywords: Segment-level Reporting, segment-level, segment level
+keywords: Rapportering på segmentnivå, segmentnivå, segmentnivå
 uuid: d7236667-282b-4160-9909-579721af4016
 feature: Audience Marketplace
+exl-id: 401cf3be-fa84-4654-936e-e2871fef0be9
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: 88ed0b28fdf5dc03c8a878529d65b4bc844ea6c9
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2064'
 ht-degree: 1%
 
 ---
-
 
 # Fakturering för köpare av dataflöden {#billing-for-data-feed-buyers}
 
@@ -257,11 +257,15 @@ Av dessa 1 000 000 visningar:
 På dataflödesnivå är det sätt som avbildningarna fördelas på:
 
 * Data Feed A får 600 000 visningar från trait T2 (som bygger på egenskaper från Data Feed A och Data Feed B, så båda får intrycken) och 400 000 visningar från trait T1 (som är ett drag från Data Feed A), totalt 1 000 000 visningar.
-* Datafeed B får 600 000 visningar från trait T2 (se förklaringen ovan) och 0 avtryck från trait T1.
+* Data Feed B får 600 000 visningar från trait T2 (se förklaringen ovan) och 0 avtryck från trait T1.
 
 Den snabba uppdelningen per datafeed och användningsfall är följande:
 
 ![nedbrytning av foder](assets/feed-breakdown-alt.png)
+
+>[!NOTE]
+>
+>För modelleringsanvändning bör du bara rapportera CPM-användning när du aktiverar. Om du bara kör en modell, men inte aktiverar den, behövs ingen användningsrapportering.
 
 <br> 
 
