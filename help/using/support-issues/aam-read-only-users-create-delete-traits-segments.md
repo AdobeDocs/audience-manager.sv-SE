@@ -1,18 +1,16 @@
 ---
-description: Varför visas inte mina traits eller segment på sidan Overlap Reports?
-seo-description: Varför visas inte mina traits eller segment på sidan Overlap Reports?
-seo-title: Varför visas inte mina traits eller segment på sidan Overlap Reports?
+description: Varför kan användare med skrivskydd skapa, redigera eller ta bort traits och segment?
 solution: Audience Manager
-title: Varför visas inte mina traits eller segment på sidan Overlap Reports?
+title: Varför kan användare med skrivskydd skapa, redigera eller ta bort traits och segment?
 feature: support
+exl-id: 3383d27e-9c12-4925-ace3-c3133727d9b9
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 100%
+source-wordcount: '89'
+ht-degree: 98%
 
 ---
-
 
 # Varför kan användare med skrivskydd skapa, redigera eller ta bort traits och segment?
 
