@@ -5,10 +5,11 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-description: Audience Manager tillhandahåller branschledande tjänster för datahantering av målgrupper online.
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
+feature-set: Audience Manager
 translation-type: tm+mt
-source-git-commit: 04504d4561414f9558a1f1f4db33cbcf535d54af
+source-git-commit: 9a1604b28f538a4f9595869345b385870419a6c3
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1789'
 ht-degree: 92%
 
 ---
@@ -146,7 +147,7 @@ ht-degree: 92%
       + [Kodsyntax som används i Segment Expression Editor](features/segments/segment-code-syntax.md)
       + [Trait- och segmentpopulationsdata i Segment Builder](features/segments/segment-builder-data.md)
       + [Trait-rekommendationer](features/segments/trait-recommendations.md)
-      + [Referens för kvalificering av traits och segment](features/traits/trait-and-segment-qualification-reference.md)
+      + [Referens för kvalificering av traits och segment](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html)
    + Traits {#traits}
       + [Översikt över traits](/help/using/features/traits/traits-overview.md)
       + [Informationssida för traits](features/traits/trait-details-page.md)
