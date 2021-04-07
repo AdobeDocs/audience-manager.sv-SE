@@ -3,17 +3,17 @@ description: I rapporten Segment Performance jämförs mappade och omappade segm
 seo-description: I rapporten Segment Performance jämförs mappade och omappade segment med visningar och Real-Time Segment Uniques. Ett mappat segment är ett segment som du skapar och skickar till ett mål för målanpassning. Ett omappat segment är ett segment som du har skapat men inte skickat till ett mål för målgruppsanpassning. Genom att jämföra dessa olika segmenttyper inom och mellan rapporter kan ni optimera befintliga kampanjer och hitta förbisedda segment som ni kanske vill skicka till en målgrupp för målinriktning.
 seo-title: Resultatrapport för segment
 solution: Audience Manager
-title: Resultatrapport för segment
+title: Resultatrapport för segment för utgivare
 uuid: c9a1e9ad-4f3f-4334-a3ff-0f241c7303c4
-feature: audience optimization reports
+feature: rapporter om målgruppsoptimering
+exl-id: 0cc10399-5737-4d82-a1f6-9561e024054d
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: f5efd2d5032cb6d9fcceaee72d849a9dedcce698
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '727'
 ht-degree: 1%
 
 ---
-
 
 # Resultatrapport för segment{#segment-performance-report}
 
