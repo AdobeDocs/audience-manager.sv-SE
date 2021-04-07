@@ -3,16 +3,16 @@ description: Med Predictive Audiences kan ni klassificera okända målgrupper i 
 seo-description: Med Predictive Audiences kan ni klassificera okända målgrupper i distinkta personas i realtid med datavetenskap.
 seo-title: Hantera prediktiva målgrupper
 solution: Audience Manager
-title: Audience Manager Predictive Audiences
-feature: Algorithmic Models
+title: Komma igång med Predictive Audiences
+feature: Algoritmiska modeller
+exl-id: beb314de-f679-4397-8e14-2dd6576243fd
 translation-type: tm+mt
-source-git-commit: 48bf17a2899fd06c525ba6b4fddb9ec805efb5c3
+source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '574'
 ht-degree: 7%
 
 ---
-
 
 # Komma igång med Predictive Audiences {#predictive-audiences-getting-started}
 
