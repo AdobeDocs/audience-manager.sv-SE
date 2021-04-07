@@ -3,17 +3,17 @@ description: Rapporten Unik användarräckvidd returnerar data i ett bubbeldiagr
 seo-description: Rapporten Unik användarräckvidd returnerar data i ett bubbeldiagram. Storleken på varje bubbla beror på antalet unika användare för de valda annonsenheterna. En större bubbla innebär större räckvidd än en mindre bubbla. Rapporten Unik användarräckvidd hjälper er att hitta den annonsenhet som ger er bredast räckvidd till era målanvändare.
 seo-title: Unik användarräckvidd
 solution: Audience Manager
-title: Unik användarräckvidd
+title: Unikt användarområde för utgivare
 uuid: 64e75fad-f4cb-4d47-a162-34e663f3966f
-feature: audience optimization reports
+feature: rapporter om målgruppsoptimering
+exl-id: 7f92547e-3bb0-4df1-953e-1c26e91b4e0c
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 3%
+source-wordcount: '352'
+ht-degree: 2%
 
 ---
-
 
 # Unik användarräckvidd{#unique-user-reach}
 
