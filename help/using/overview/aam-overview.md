@@ -6,14 +6,14 @@ solution: Audience Manager
 title: Översikt över Audience Manager
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 feature: översikt
+exl-id: e96d8c05-7082-4f17-936d-f1896e665c8e
 translation-type: tm+mt
-source-git-commit: 348881dd2f880ca50140dbe5935cff138944003e
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Översikt över Audience Manager {#audience-manager-overview}
 
