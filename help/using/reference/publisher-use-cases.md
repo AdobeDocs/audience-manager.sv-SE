@@ -5,15 +5,15 @@ seo-title: Användningsexempel för utgivare
 solution: Audience Manager
 title: Användningsexempel för utgivare
 uuid: 5f571d60-d902-4958-b5d3-8d09ddda42c7
-feature: reference
+feature: 'Referens '
+exl-id: 974652de-59c0-46db-ac64-ba701985e409
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '631'
 ht-degree: 100%
 
 ---
-
 
 # Användningsexempel för utgivare {#publisher-use-cases}
 
@@ -190,4 +190,3 @@ Det här användningsexemplet fungerar med förstahandsdata från Analytics som 
   </tr> 
  </tbody> 
 </table>
-
