@@ -5,15 +5,15 @@ seo-title: Metoder för dataintegrering
 solution: Audience Manager
 title: Metoder för dataintegrering
 uuid: 17a4179a-e99b-49eb-8f45-f2946afbd27f
-feature: Third Party Integrations
+feature: Tredjepartsintegrering
+exl-id: 26225461-c35c-4db1-9517-99e82ce163b9
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
-
 
 # Metoder för dataintegrering {#data-integration-methods}
 
