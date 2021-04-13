@@ -57,7 +57,7 @@ Här är samma loggfil med metadata borttagna. Filen är mindre och enklare att 
 |---|---|---|---|
 | 3 | 111 | 456 | 27 |
 | 2 | 111 | 456 | 27 |
-| 3 | 111 | 456 | 27 |
+| 1 | 111 | 456 | 27 |
 | 4 | 222 | 789 | 14 |
 | 5 | 222 | 789 | 14 |
 
