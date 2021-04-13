@@ -4,15 +4,15 @@ seo-description: Med Audience Analytics kan ni skicka Audience Manager-segment t
 seo-title: Konfigurera en Analytics-destination
 solution: Audience Manager
 title: Konfigurera en Analytics-destination
-feature: Integration with Analytics
+feature: Adobe Analytics Integration
+exl-id: f3ead057-04d1-40cd-8e3d-d0934d85cdb4
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '867'
 ht-degree: 1%
 
 ---
-
 
 # Konfigurera en Analytics-destination
 
