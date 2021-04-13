@@ -5,15 +5,15 @@ seo-title: Dataåtgärdskomponenter
 solution: Audience Manager
 title: Dataåtgärdskomponenter
 uuid: c4c4cc46-8c96-4ef5-8269-571cc5ac9276
-feature: system components
+feature: 'Systemkomponenter '
+exl-id: 8065c19f-1930-4164-a952-1686aa5cb622
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '682'
 ht-degree: 3%
 
 ---
-
 
 # Dataåtgärdskomponenter{#data-action-components}
 
@@ -68,7 +68,7 @@ Exempel på [!UICONTROL IRIS]-tjänster och funktioner är:
 
 1. **Ny segmentkvalificering**: när en enhet kvalificerar sig för ett nytt segment,  [!UICONTROL IRIS] skickar alla segment som är kopplade till den enheten till alla mål som är mappade till dessa segment.
 
-1. **Ny segmentdiskvalificering**: när en enhet inte längre kvalificerar sig för ett segment,  [!UICONTROL IRIS] skickar alla segmentkvalifikationer och diskvalificeringar som är kopplade till den enheten till alla destinationer som är mappade till dessa segment.
+1. **Ny segmentdiskvalificering**: när en enhet inte längre kvalificerar sig för ett segment,  [!UICONTROL IRIS] skickas alla segmentkvalifikationer och diskvalificeringar som är kopplade till den enheten till alla destinationer som är mappade till dessa segment.
 
 1. **Målmappningsuppdateringar**: När en målmappning uppdateras  [!UICONTROL IRIS] skickas alla segment som är kopplade till en enhet till alla mål som är mappade till dessa segment nästa gång Audience Manager ser enheten.
 
