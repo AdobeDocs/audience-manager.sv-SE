@@ -5,15 +5,15 @@ seo-title: Rapport om oanvända signaler
 solution: Audience Manager
 title: Rapport om oanvända signaler
 uuid: 04334a5c-3e21-44db-b971-0b4457685e9a
-feature: overlap reports
+feature: Överlappa rapporter
+exl-id: ab5cb5ad-4305-4463-8f56-237b5a2f1f9e
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '615'
 ht-degree: 1%
 
 ---
-
 
 # Rapport om oanvända signaler{#unused-signals-report}
 
