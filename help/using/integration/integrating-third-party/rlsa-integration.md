@@ -5,15 +5,15 @@ seo-title: Skicka segment till en Google AdWords-lista för återmarknadsföring
 solution: Audience Manager
 title: Skicka segment till en Google AdWords-lista för återmarknadsföring
 uuid: 5ad821c6-48b4-42c0-b912-1563331e93a2
-feature: Third Party Integrations
+feature: Tredjepartsintegrering
+exl-id: 76676eae-de4f-4fee-8774-ee215525306a
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '334'
 ht-degree: 5%
 
 ---
-
 
 # Skicka segment till en Google Ads Remarketing-lista {#send-segments-to-a-google-adwords-remarketing-list}
 
