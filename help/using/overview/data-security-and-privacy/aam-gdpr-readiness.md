@@ -4,15 +4,15 @@ seo-description: GDPR-vägledning för Audience Manager-kunder
 seo-title: GDPR-vägledning för Audience Manager-kunder
 solution: Audience Manager
 title: GDPR-vägledning för Audience Manager-kunder
-feature: data governance & privacy
+feature: Datastyrning och sekretess
+exl-id: 353b9035-20f3-41ff-819c-71f161e6b1e1
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
+source-wordcount: '478'
+ht-degree: 99%
 
 ---
-
 
 # GDPR-vägledning för Audience Manager-kunder (personuppgiftsansvarig) {#gdpr-readiness-guidance}
 
