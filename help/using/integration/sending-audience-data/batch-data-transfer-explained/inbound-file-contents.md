@@ -324,7 +324,7 @@ eller
 59767559181262060060278870901087098252 <TAB> "product" = "tablet", "product" = "phone"
 ```
 
-### Exempel 4 {#example-4}
+### Exempel 5 {#example-4}
 
 Använd prefixet `ic` för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL Audience Manager] [!DNL UUIDs].
 
