@@ -4,15 +4,15 @@ seo-description: 'Den här sidan innehåller stegvisa anvisningar om hur du skap
 seo-title: Arbetsflöde B – Personalisering endast baserad på offlinedata
 solution: Audience Manager
 title: Arbetsflöde B – Personalisering endast baserad på offlinedata
-feature: People-Based Destinations
+feature: Personbaserade mål
+exl-id: d980de26-3133-4ae3-80c2-8c3bf2480bbd
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1172'
 ht-degree: 6%
 
 ---
-
 
 # Arbetsflöde B – Personalisering endast baserad på offlinedata {#workflow-b}
 
