@@ -5,15 +5,15 @@ seo-title: Satsvisa beräkningar
 solution: Audience Manager
 title: Satsvisa beräkningar
 uuid: 63b2f06a-8ba0-47a2-bd0b-8039b2d4c95d
-feature: baaam
+feature: BAAAM
+exl-id: 8da0b48e-6fa4-43c9-a149-a39e465ac366
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '196'
 ht-degree: 3%
 
 ---
-
 
 # Satsvisa beräkningar{#bulk-estimates}
 
@@ -43,4 +43,3 @@ Den här åtgärden skapar en [!UICONTROL Response]-kolumn i kalkylbladet som in
 
 ![](assets/estimate.png)
 Om en satsvis uppdatering returnerar ett fel eller misslyckas, se  [Felsökning för grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-troubleshooting.md).
-
