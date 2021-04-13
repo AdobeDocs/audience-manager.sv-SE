@@ -5,15 +5,15 @@ seo-title: Resultatrapport för segment
 solution: Audience Manager
 title: Resultatrapport för segment
 uuid: 5156a4c7-831d-4a95-a1be-eb516f0d91b7
-feature: audience optimization reports
+feature: Audience Optimization-rapporter
+exl-id: 2cd54b18-6916-4d69-bd65-7b8c8846c446
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '646'
 ht-degree: 1%
 
 ---
-
 
 # Resultatrapport för segment{#segment-performance-report}
 
