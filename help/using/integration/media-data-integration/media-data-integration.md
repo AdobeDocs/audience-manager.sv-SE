@@ -5,15 +5,15 @@ seo-title: 'Integrering av mediedata '
 solution: Audience Manager
 title: 'Integrering av mediedata '
 uuid: 6f6bbd03-084b-4226-8809-3b00b467606f
-feature: Integration with Campaign
+feature: Adobe Campaign Integration
+exl-id: ca4906a7-0c39-49bc-9505-d76a61ec9eac
 translation-type: tm+mt
-source-git-commit: 3c70178dc1a020545793ea7facc70e34d23543fa
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '149'
 ht-degree: 17%
 
 ---
-
 
 # Integrering av mediedata {#media-data-integration}
 
