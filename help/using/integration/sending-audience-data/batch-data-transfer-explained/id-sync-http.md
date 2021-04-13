@@ -5,15 +5,15 @@ seo-title: ID-synkronisering för inkommande dataöverföringar
 solution: Audience Manager
 title: ID-synkronisering för inkommande dataöverföringar
 uuid: 037e74a6-acfd-4cef-b693-16b7aaa8e976
-feature: Inbound Data Transfers
+feature: Inkommande dataöverföringar
+exl-id: cd9be32f-f443-45bd-a906-ec4c8589f608
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '481'
 ht-degree: 7%
 
 ---
-
 
 # ID-synkronisering för inkommande dataöverföringar {#id-synchronization-for-inbound-data-transfers}
 
