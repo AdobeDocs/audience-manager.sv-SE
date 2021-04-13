@@ -5,17 +5,17 @@ seo-description: En översikt över funktionen Addressable Audience och användn
 seo-title: Adresserbara målgrupper
 solution: Audience Manager
 title: Adresserbara målgrupper
-topic: DIL API
+topic-edit: DIL API
 uuid: 3eb1335a-6949-452b-b77a-697c22856cb3
-feature: Match Rates
+feature: Matchningsfrekvenser
+exl-id: 2728e4a8-522c-423f-a6ef-e4dd624f69e5
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1827'
 ht-degree: 0%
 
 ---
-
 
 # [!UICONTROL Addressable Audiences] {#addressable-audiences}
 
@@ -62,7 +62,7 @@ Genom att granska dessa data kan du
 
 * **Prognoser och planering:** [!UICONTROL Segment Addressable Audience] data ger en större detaljrikedom i de segment som du planerar att skicka till en målgrupp för målgruppsanpassning och aktivering.
 
-* **Prestandagranskningar:**  [!UICONTROL Addressable Audiences] Funktionen är också ett felsökningsverktyg. Ni kan granska kampanjens resultat, förstå kampanjens räckvidd och dubbelkontrollera med partners för målinriktning/aktivering om ni inte ser de resultat ni förväntar er.
+* **Prestandagranskningar:**  [!UICONTROL Addressable Audiences] Funktionen är också ett felsökningsverktyg. Ni kan granska kampanjens resultat, förstå kampanjens räckvidd och dubbelkontrollera med målgrupps-/aktiveringspartners om ni inte ser de resultat ni förväntar er.
 
 ### Prospektera med data från tredje part och effekter för matchningsfrekvenser
 
