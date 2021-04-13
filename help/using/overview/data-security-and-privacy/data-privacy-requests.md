@@ -3,18 +3,18 @@ description: Det här dokumentet innehåller teknisk information som rör efterl
 seo-description: Det här dokumentet innehåller teknisk information som rör efterlevnad av datasekretesslagar i Audience Manager.
 seo-title: Förfrågningar om datasekretess
 solution: Audience Manager
-keywords: GDPR UI, GDPR API, CCPA, privacy
+keywords: GDPR-gränssnitt, GDPR API, CCPA, sekretess
 title: Förfrågningar om datasekretess
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
-feature: data governance & privacy
+feature: Datastyrning och sekretess
+exl-id: a1fc9c21-3417-4899-a585-92ad2cb25362
 translation-type: tm+mt
-source-git-commit: 231d8e537cf5b4f29b1c4f284fe1b3ffe6d187a9
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1486'
 ht-degree: 58%
 
 ---
-
 
 # Förfrågningar om datasekretess {#data-privacy-requests}
 
