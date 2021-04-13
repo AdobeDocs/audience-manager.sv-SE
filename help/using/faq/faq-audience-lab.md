@@ -4,12 +4,11 @@ seo-description: Frågor och svar om Audience Lab-funktionen.
 seo-title: Vanliga frågor om Audience Lab
 solution: Audience Manager
 title: Vanliga frågor om Audience Lab
-topic-edit: DIL API
 uuid: b1daf99d-af60-4f65-987d-794a6d45d566
 feature: 'Audience Lab '
 exl-id: 25bdabb5-2ba8-45d2-81ca-05c0590d7d96
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 100%
