@@ -5,15 +5,15 @@ seo-title: Audience Optimization för annonsörer
 solution: Audience Manager
 title: Audience Optimization för annonsörer
 uuid: 852d550e-3c7f-4750-9abc-365c3a6f7883
-feature: audience optimization reports
+feature: Audience Optimization-rapporter
+exl-id: 13595778-3d3a-4c83-a84f-4bc3af1ee367
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 1%
+source-wordcount: '454'
+ht-degree: 2%
 
 ---
-
 
 # [!UICONTROL Audience Optimization] för annonsörer{#audience-optimization-for-advertisers}
 
