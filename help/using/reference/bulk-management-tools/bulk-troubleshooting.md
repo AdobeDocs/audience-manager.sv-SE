@@ -5,15 +5,15 @@ seo-title: Felsökningstips för verktygen för satsvis hantering
 solution: Audience Manager
 title: Felsökningstips för verktygen för satsvis hantering
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
-feature: baaam
+feature: BAAAM
+exl-id: 4f1c501c-2e28-4ce5-829f-4d81d10cdccd
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '403'
 ht-degree: 4%
 
 ---
-
 
 # Felsökningstips för verktygen för satsvis hantering{#troubleshooting-tips-for-bulk-management-tools}
 
@@ -79,4 +79,3 @@ I följande tabell visas några vanliga problem som du kan stöta på när du g�
 ## Felmeddelanden
 
 Ibland kan du få felmeddelanden när du gör gruppändringar. Information om hur du tolkar felmeddelandet finns i [Svarskoder definierade](/help/using/api/rest-api-main/aam-api-getting-started.md) i API-dokumentationen.
-
