@@ -5,15 +5,15 @@ seo-title: Trendrapport för segment
 solution: Audience Manager
 title: Trendrapport för segment
 uuid: f84e8d0a-74e5-430c-b61c-efb696faee93
-feature: audience optimization reports
+feature: Audience Optimization-rapporter
+exl-id: 1fdca05a-b661-4875-88d7-b0893e2ca08f
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '612'
 ht-degree: 2%
 
 ---
-
 
 # Trendrapport för segment{#segment-trend-report}
 
