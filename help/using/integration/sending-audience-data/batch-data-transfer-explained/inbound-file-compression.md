@@ -5,15 +5,15 @@ seo-title: Filkomprimering för inkommande dataöverföringsfiler
 solution: Audience Manager
 title: Filkomprimering för inkommande dataöverföringsfiler
 uuid: 2a68f69c-60b0-4002-863b-302d2320e356
-feature: Inbound Data Transfers
+feature: Inkommande dataöverföringar
+exl-id: 9b3e3bef-2c93-4801-8f4f-04d9d42fd952
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '232'
 ht-degree: 9%
 
 ---
-
 
 # Filkomprimering för inkommande dataöverföringsfiler{#file-compression-for-inbound-data-transfer-files}
 
