@@ -5,15 +5,15 @@ seo-title: Översikt över regler för profilsammanslagning
 solution: Audience Manager
 title: Översikt över regler för profilsammanslagning
 uuid: 9e7988cc-9145-432b-840a-54fbd8657b3b
-feature: Profile Merge Rules
+feature: Sammanfoga profil
+exl-id: 5d1f5bea-0fca-4684-a2b4-585d9e38d9ef
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '364'
 ht-degree: 2%
 
 ---
-
 
 # [!UICONTROL Profile Merge Rules] Översikt {#profile-merge-rules-overview}
 
