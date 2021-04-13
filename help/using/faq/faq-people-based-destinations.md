@@ -4,15 +4,15 @@ seo-description: 'Svar på vanliga frågor om personbaserade destinationer.  '
 seo-title: Vanliga frågor om personbaserade destinationer
 solution: Audience Manager
 title: Vanliga frågor om personbaserade destinationer
-feature: Personbaserade destinationer
+feature: Personbaserade mål
+exl-id: 56506bf0-45f1-49df-81ac-10f57a2487eb
 translation-type: tm+mt
-source-git-commit: eb998042acb46fef2b0e407b3565d8ba4769f0bb
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 94%
 
 ---
-
 
 # Vanliga frågor om personbaserade destinationer {#people-based-destinations-faq}
 
