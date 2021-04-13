@@ -4,15 +4,15 @@ seo-description: Innehåller teknisk dokumentation om systemfunktioner, datainte
 seo-title: 'Referens '
 solution: Audience Manager
 title: 'Referens '
-feature: reference
+feature: 'Referens '
+exl-id: 5b1f94de-8228-434f-8725-cc5b25d4b857
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 32%
+source-wordcount: '65'
+ht-degree: 33%
 
 ---
-
 
 # Referens 
 
