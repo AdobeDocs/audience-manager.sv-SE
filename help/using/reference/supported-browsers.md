@@ -5,15 +5,15 @@ seo-title: Webbläsare som stöds
 solution: Audience Manager
 title: Webbläsare som stöds
 uuid: dffecdb5-d94d-4001-8f2a-9d1d77ce2213
-feature: reference
+feature: 'Referens '
+exl-id: 5fcb1a64-5e45-4973-9e20-7d4d07071cbf
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '198'
 ht-degree: 100%
 
 ---
-
 
 # Webbläsare som stöds {#supported-browsers}
 
