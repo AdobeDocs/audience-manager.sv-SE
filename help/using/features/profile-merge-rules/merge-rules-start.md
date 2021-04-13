@@ -5,15 +5,15 @@ seo-title: Komma igång med regler för profilsammanslagning
 solution: Audience Manager
 title: Komma igång med regler för profilsammanslagning
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
-feature: Profile Merge Rules
+feature: Sammanfoga profil
+exl-id: 11f397dd-1f23-4b14-be6f-60ce8b77ab12
 translation-type: tm+mt
-source-git-commit: dc22ed98b51b5633532bab45a79a14ee14dba5f5
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1306'
 ht-degree: 3%
 
 ---
-
 
 # Komma igång med regler för profilsammanslagning {#getting-started-with-profile-merge-rules}
 
@@ -175,7 +175,7 @@ Se avsnittet [Konfigurera SDK](#configure-sdks-legacy-dil) nedan.
 
 ## Äldre DIL {#legacy-dil}
 
-Om du inte använder [!DNL Adobe Experience Platform Identity Service] än så borde du verkligen göra det. Men vi förstår att en övergång till ny kod kräver noggranna genomgångar och tester. I så fall kontrollerar du din `DIL.create`-funktion för att kontrollera att den är korrekt konfigurerad enligt exemplet nedan.
+Om du inte använder [!DNL Adobe Experience Platform Identity Service] än så borde du verkligen göra det. Men vi förstår att en övergång till ny kod kräver noggranna genomgångar och tester. I dessa fall kontrollerar du din `DIL.create`-funktion för att kontrollera att den är korrekt konfigurerad enligt exemplet nedan.
 
 ```js
 DIL.create({
