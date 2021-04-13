@@ -3,15 +3,15 @@ description: Använd alternativen på Analytics-menyn för att visa kontrollpane
 seo-description: Använd alternativen på Analytics-menyn för att visa kontrollpanelen och olika rapporter i Adobe Audience Manager (AAM).
 seo-title: Rapportöversikt i Adobe Audience Manager (AAM)
 title: Rapportöversikt
-feature: reporting reference
+feature: Referens för rapportering
+exl-id: 8b0e34be-7a78-426c-a295-5e58a3462d64
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '415'
 ht-degree: 8%
 
 ---
-
 
 # Rapportöversikt
 
@@ -54,4 +54,3 @@ Information som beskriver tidsbildrutorna när Audience Manager tar emot informa
 * [Datainsamling och felfrekvens i valda rapporter för Audience Manager](/help/using/reporting/report-sampling.md)
 
    En sammanfattning av den provtagningsmetod som används för vissa rapporter, felfrekvenser vid provtagning och en lista över rapporter som returnerar information baserat på provdata.
-
