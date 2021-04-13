@@ -5,15 +5,15 @@ seo-title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platfo
 solution: Audience Manager
 title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
 keywords: AEP-målgruppsdelning, AEP-segment, plattformssegment, segmentdelning, målgruppsdelning, dela segment
-feature: Integration with Platform
+feature: Plattformsintegrering
+exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
 translation-type: tm+mt
-source-git-commit: 62938e95fa9eed3e747fa4dabf8695c5dbefde17
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1506'
 ht-degree: 2%
 
 ---
-
 
 # Experience Platform segmentdelning med Audience Manager och andra Experience Cloud-lösningar {#aam-aep-audience-sharing}
 
@@ -109,9 +109,9 @@ Ett exempel på ett segment som skapats automatiskt från ett Experience Platfor
 
 | Artikelnummer | Namn | Beskrivning |
 ---------|----------|---------
-| 1 | [!UICONTROL Integration Code] | Integrationskoden motsvarar segment-ID:t i Experience Platform. |
+| 3 | [!UICONTROL Integration Code] | Integrationskoden motsvarar segment-ID:t i Experience Platform. |
 | 2 | [!UICONTROL Data Source] | Automatiskt skapat. Alla egenskaper och segment som skapas automatiskt från Experience Platform-segment lagras i datakällan **[!DNL Adobe Experience Platform Audience Sharing]**. |
-| 3 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** anger att automatiskt skapade segment följer den sammanfogningsprincip som har konfigurerats i Experience Platform. |
+| 1 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** anger att automatiskt skapade segment följer den sammanfogningsprincip som har konfigurerats i Experience Platform. |
 | 4 | [!UICONTROL Segment Rule] | Segmentet består av det trait som beskrivs i [Traits-avsnittet](#aep-segments-as-aam-traits). |
 
 ## Stöd för dataexportkontroll i Audience Manager i Experience Platform {#aam-data-export-control-in-aep}
@@ -190,3 +190,4 @@ If you created a data source in Audience Manager for the CRM IDs in Experience P
 >* [Översikt över segmenteringstjänsten](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html#audiences)
 >* [Användarhandbok för Experience Platform Segment Builder](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html#audiences)
 >* [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
+
