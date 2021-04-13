@@ -5,15 +5,15 @@ seo-title: Användningsexempel för externt enhetsdiagram
 solution: Audience Manager
 title: Användningsexempel för externt enhetsdiagram
 uuid: f4bc822d-39d2-4680-90ed-7ee2ead6db6f
-feature: Profile Merge Rules
+feature: Sammanfoga profil
+exl-id: 657aecfd-7fa3-466e-8331-c49cc921e3a9
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '553'
 ht-degree: 5%
 
 ---
-
 
 # Användningsexempel för externt enhetsdiagram {#external-device-graph-use-cases}
 
