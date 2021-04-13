@@ -4,15 +4,15 @@ seo-description: I den här artikeln beskrivs hur du konfigurerar Twitter-anpass
 seo-title: Konfigurera Twitter-anpassade målgrupper som enhetsbaserade destinationer med självbetjäning
 solution: Audience Manager
 title: Konfigurera Twitter-anpassade målgrupper som enhetsbaserade destinationer med självbetjäning
-feature: Personbaserade destinationer
+feature: Personbaserade mål
+exl-id: 13b36469-3f61-47b1-9355-ca329de1fb24
 translation-type: tm+mt
-source-git-commit: 6716c871562cd0203239897fc096033160e2fc13
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 4%
 
 ---
-
 
 # Konfigurera [!DNL Twitter Tailored Audiences] som ett självbetjäningsenhetsbaserat mål {#configure-twitter}
 
