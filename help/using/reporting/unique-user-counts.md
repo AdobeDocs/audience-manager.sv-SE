@@ -5,12 +5,12 @@ seo-title: Räkna unika användare i överlappning och allmänna rapporter i AAM
 solution: Audience Manager
 title: Räkna unika användare i överlappande och allmänna rapporter
 uuid: 450f6a8c-f363-43de-b2d8-0a156f14ecae
-feature: Referens för rapportering
+feature: Rapporteringsreferens
 exl-id: 439e7e8e-0c2e-4d3e-8148-61b9d57bf4df
 translation-type: tm+mt
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '173'
 ht-degree: 10%
 
 ---
