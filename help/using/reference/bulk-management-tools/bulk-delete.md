@@ -5,15 +5,15 @@ seo-title: Satsvis radering
 solution: Audience Manager
 title: Satsvis radering
 uuid: 679cde46-09fb-45c6-b84d-47e00e0e7c0a
-feature: baaam
+feature: BAAAM
+exl-id: 3ff530dd-66d0-4dd3-a6e6-afe4a9cb5ba4
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '264'
 ht-degree: 2%
 
 ---
-
 
 # Satsvis radering{#bulk-delete}
 
