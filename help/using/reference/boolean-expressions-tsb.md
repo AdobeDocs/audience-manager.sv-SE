@@ -5,15 +5,15 @@ seo-title: Booleska uttryck i traits och Segment Builder
 solution: Audience Manager
 title: Booleska uttryck i traits och Segment Builder
 uuid: 14f02d3f-4c84-41fe-bc91-b34f0d49574a
-feature: reference
+feature: 'Referens '
+exl-id: 44bc0385-2cce-4173-9833-b9a30fb6edae
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 3%
+source-wordcount: '555'
+ht-degree: 4%
 
 ---
-
 
 # Booleska uttryck i traits och Segment Builder{#boolean-expressions-in-trait-and-segment-builder}
 
