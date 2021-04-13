@@ -5,15 +5,15 @@ seo-title: Ordlista för verktyg för satsvis hantering
 solution: Audience Manager
 title: Ordlista för verktyg för satsvis hantering
 uuid: 4658a6bc-9515-4d31-9715-0084760b0cea
-feature: baaam
+feature: BAAAM
+exl-id: 036d16c7-1546-4539-a318-455b98e10026
 translation-type: tm+mt
-source-git-commit: fc13643681eebec17a95607482f2864e81b95820
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 3%
+source-wordcount: '347'
+ht-degree: 4%
 
 ---
-
 
 # Ordlista för verktyg för satsvis hantering{#bulk-management-tools-glossary}
 
@@ -120,4 +120,3 @@ Kolumnrubriketiketter har definierats.
   </tr> 
  </tbody> 
 </table>
-
