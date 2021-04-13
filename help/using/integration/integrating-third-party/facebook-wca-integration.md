@@ -4,15 +4,15 @@ seo-description: Den här sidan illustrerar processen att skapa WCA-pixlar (Cust
 seo-title: Integrering med Facebook WCA
 solution: Audience Manager
 title: Integrering med Facebook WCA
-feature: Integrering med tredje part
+feature: Tredjepartsintegrering
+exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
 translation-type: tm+mt
-source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '868'
 ht-degree: 5%
 
 ---
-
 
 # [!DNL Facebook WCA] Integrering  {#facebook-wca-integration}
 
