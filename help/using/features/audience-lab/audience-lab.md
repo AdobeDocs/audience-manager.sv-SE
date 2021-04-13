@@ -4,12 +4,11 @@ seo-description: Skapa ömsesidigt uteslutande testsegment i segmenttestgrupper 
 seo-title: 'Audience Lab '
 solution: Audience Manager
 title: 'Audience Lab '
-topic-edit: DIL API
 uuid: aaee820c-1e78-4fd4-bd8f-2629085d78e9
 feature: 'Audience Lab '
 exl-id: b7fbeb03-52aa-4489-8fcb-45bc2d26621d
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 2%
