@@ -3,15 +3,15 @@ description: Skicka målgruppsdata från andra källor till Audience Manager.
 seo-description: Skicka målgruppsdata från andra källor till Adobe Audience Manager (AAM).
 seo-title: Skicka målgruppsdata i Adobe Audience Manager (AAM)
 title: Skicka målgruppsdata
-feature: Inbound Data Transfer
+feature: Inkommande dataöverföringar
+exl-id: 164a7bef-3cef-4b68-973f-6179149a68ef
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 20%
+source-wordcount: '93'
+ht-degree: 19%
 
 ---
-
 
 # Skicka målgruppsdata
 
