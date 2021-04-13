@@ -4,15 +4,15 @@ seo-description: 'Folk-baserade destinationer introducerar begreppet delningsbar
 seo-title: Delbara målgrupper
 solution: Audience Manager
 title: Delbara målgrupper
-feature: People-Based Destinations
+feature: Personbaserade mål
+exl-id: 2860c105-1091-4779-bf40-e66faa941af0
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '525'
 ht-degree: 1%
 
 ---
-
 
 # Delbara målgrupper {#shareable-audiences}
 
@@ -35,7 +35,7 @@ Måttet [!DNL Destination Shareable Audience] på en personbaserad målsida ange
 
 ![delningsbara målgrupper](assets/dest-shareable-audiences.png)
 
-Det här måttet har en livslång summeringsperiod. Detta hjälper er att förstå hur stor målgrupp ni kan nå utifrån datakällan för hash-kodade e-postadresser.
+Det här måttet har en livslång summeringsperiod. Detta hjälper er att förstå hur stor målgrupp ni kan nå från datakällan för hash-kodade e-postadresser.
 
 ## Exempel
 
