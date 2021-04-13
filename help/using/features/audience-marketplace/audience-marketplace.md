@@ -1,21 +1,21 @@
 ---
 description: Med Audience Marketplace kan dataleverantörer och köpare utföra dataaffärer på ett självbetjäningssätt med minsta möjliga ansträngning. Det gör man genom att erbjuda specialfunktioner som varierar beroende på din roll som datamedare eller dataförsäljare. Du kan till och med bli köpare och säljare samtidigt. Och om detta inte skulle bli bättre tar Audience Marketplace hand om kontrakt, fakturering och betalningar mellan dataproviders och säljare.
-keywords: Google analytics
+keywords: Google Analytics
 seo-description: Med Audience Marketplace kan dataleverantörer och köpare utföra dataaffärer på ett självbetjäningssätt med minsta möjliga ansträngning. Det gör man genom att erbjuda specialfunktioner som varierar beroende på din roll som datamedare eller dataförsäljare. Du kan till och med bli köpare och säljare samtidigt. Och om detta inte skulle bli bättre tar Audience Marketplace hand om kontrakt, fakturering och betalningar mellan dataproviders och säljare.
 seo-title: Audience Marketplace
 solution: Audience Manager
 title: Audience Marketplace
-topic: DIL API
+topic-edit: DIL API
 uuid: a94d2ee7-d854-4e68-bd6b-42827ca72f67
 feature: Audience Marketplace
+exl-id: ee608bcd-6827-4fac-be96-8e16ff390ec0
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 6%
+source-wordcount: '278'
+ht-degree: 7%
 
 ---
-
 
 # Audience Marketplace {#audience-marketplace}
 
