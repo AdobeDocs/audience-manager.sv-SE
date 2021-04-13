@@ -5,15 +5,15 @@ seo-title: OAS som Audience Manager-destination
 solution: Audience Manager
 title: OAS som Audience Manager-destination
 uuid: 5891a063-5a4b-4ea7-865f-b24e17ca735f
-feature: Third Party Integrations
+feature: Tredjepartsintegrering
+exl-id: cf919c27-691f-424b-be83-040f03e34455
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '658'
 ht-degree: 4%
 
 ---
-
 
 # OAS som Audience Manager-destination {#oas-as-an-audience-manager-destination}
 
