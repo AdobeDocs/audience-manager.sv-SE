@@ -5,15 +5,15 @@ seo-title: Tidszoner i Audience Manager
 solution: Audience Manager
 title: Tidszoner i Audience Manager
 uuid: ff4710a9-edee-470c-9ab0-85c1789a2837
-feature: reference
+feature: 'Referens '
+exl-id: bb89cf76-dd43-454b-aaa8-8e5415493ecc
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 14%
+source-wordcount: '105'
+ht-degree: 15%
 
 ---
-
 
 # Tidszoner i Audience Manager{#time-zones-in-audience-manager}
 
