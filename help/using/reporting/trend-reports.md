@@ -5,15 +5,15 @@ seo-title: Trendrapporter
 solution: Audience Manager
 title: Trendrapporter
 uuid: bedbe7d4-7cbb-4403-9104-312f9230aea1
-feature: general & trend reports
+feature: Allmänna rapporter och trendrapporter
+exl-id: 3373f413-cc8f-49c7-9b4e-34b39e0efc38
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
-
 
 # Trendrapporter{#trend-reports}
 
