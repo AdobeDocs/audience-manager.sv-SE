@@ -4,12 +4,11 @@ seo-description: Med Audience Lab kan du använda flera användningsfall genom a
 seo-title: 'Användningsexempel för Audience Lab '
 solution: Audience Manager
 title: 'Användningsexempel för Audience Lab '
-topic-edit: DIL API
 uuid: 727bec8a-df9a-40cc-b8a7-e1980d146a84
 feature: 'Audience Lab '
 exl-id: b68f48bd-0d5d-4b72-84f3-a6f3acea6c49
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 2%
