@@ -5,15 +5,15 @@ seo-title: Filtrera rapportresultat med datareglage
 solution: Audience Manager
 title: Filtrera rapportresultat med datareglage
 uuid: ec486d97-d1d9-469b-b8df-5821f30d10ee
-feature: reporting reference
+feature: Referens för rapportering
+exl-id: 876a01c2-e73e-4728-8890-e3f354ad1b86
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 12%
+source-wordcount: '177'
+ht-degree: 11%
 
 ---
-
 
 # Filtrera rapportresultat med datareglage{#filter-report-results-with-the-data-sliders}
 
