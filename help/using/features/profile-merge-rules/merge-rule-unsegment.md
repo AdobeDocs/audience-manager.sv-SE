@@ -5,15 +5,15 @@ seo-title: Regler för profilsammanslagning och avsegmenteringsprocesser för en
 solution: Audience Manager
 title: Regler för profilsammanslagning och avsegmenteringsprocesser för enheter
 uuid: b61c6de3-5fe4-4892-a05a-96a4cb35af34
-feature: Profile Merge Rules
+feature: Sammanfoga profil
+exl-id: ff3da607-5c25-45b2-ac27-071c22d518a0
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '505'
 ht-degree: 6%
 
 ---
-
 
 # Regler för profilsammanslagning och avsegmenteringsprocesser för enheter {#profile-merge-rules-and-device-un-segmentation-processes}
 
