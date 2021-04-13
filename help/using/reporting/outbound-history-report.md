@@ -5,15 +5,15 @@ seo-title: Historik för utgående filer
 solution: Audience Manager
 title: Historik för utgående filer
 uuid: 3621a59d-2bb5-4828-86f6-4c9bfa580764
-feature: inbound and outbound reports
+feature: Inkommande och utgående rapporter
+exl-id: 8072c44f-bc9a-4b40-99d9-8cb87bb58d98
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '172'
 ht-degree: 6%
 
 ---
-
 
 # Historik för utgående filer {#outbound-file-history}
 
