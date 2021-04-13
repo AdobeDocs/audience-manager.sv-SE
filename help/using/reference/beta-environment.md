@@ -1,20 +1,20 @@
 ---
 description: Betamiljön används för att testa implementeringen av Audience Manager. Ändringar som görs i betaversionen påverkar inte produktionsdata. Kontakta din Audience Manager Partner Solutions-representant om du är intresserad av att använda betamiljön.
-keywords: sandbox
+keywords: sandlåda
 seo-description: Betamiljön används för att testa implementeringen av Audience Manager. Ändringar som görs i betaversionen påverkar inte produktionsdata. Kontakta din Audience Manager Partner Solutions-representant om du är intresserad av att använda betamiljön.
 seo-title: Beta-miljö
 solution: Audience Manager
 title: Beta-miljö
 uuid: de4a1a46-cfa4-4f64-8569-48a7650fd8cf
-feature: reference
+feature: 'Referens '
+exl-id: a6a5e1c2-29a2-40bf-972c-87fb8716a394
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 4%
 
 ---
-
 
 # Beta-miljö {#beta-environment}
 
