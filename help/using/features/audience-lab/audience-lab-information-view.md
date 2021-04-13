@@ -4,17 +4,17 @@ seo-description: I det här avsnittet visas allmän information om testgruppen o
 seo-title: Information om testgrupp
 solution: Audience Manager
 title: Information om testgrupp
-topic: DIL API
+topic-edit: DIL API
 uuid: a49dfdb3-21e1-4c3d-b957-4d445f890124
-feature: Audience Lab
+feature: 'Audience Lab '
+exl-id: fb691c12-304d-4331-a395-a9005efa8bb0
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 3%
+source-wordcount: '266'
+ht-degree: 4%
 
 ---
-
 
 # Information om testgrupp {#test-group-information}
 
