@@ -5,15 +5,15 @@ seo-title: Rapportmätvärden för regler för profilsammanslagning
 solution: Audience Manager
 title: Rapportmätvärden för regler för profilsammanslagning
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
-feature: Profile Merge Rules
+feature: Sammanfoga profil
+exl-id: 2af59c60-2448-44af-90d2-eccc52f7ff02
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '835'
 ht-degree: 2%
 
 ---
-
 
 # Rapportmätvärden för regler för profilsammanslagning {#report-metrics-for-profile-merge-rules}
 
@@ -112,7 +112,7 @@ En [!UICONTROL Profile Link]-standardrapport ser ut som i följande exempel. Sam
 
 ### Profillänksrapport med enhetsdiagramdata
 
-En [!UICONTROL Profile Link Device Graph]-rapport som innehåller enhetsdiagramdata från [!UICONTROL Adobe Experience Cloud Device Co-op] eller ett enhetsdiagram från en annan tillverkare visar [!UICONTROL Profile Link] och enhetsdiagramdata med liggande stapeldiagram sida vid sida. Om du placerar dessa diagram bredvid varandra kan du utvärdera fördelarna med att använda [!UICONTROL Experience Cloud Device Co-op] jämfört med [!UICONTROL Profile Link] separat. Sammanfogningsregler som använder flera datakällor (upp till 3, maximalt) visar diagram på olika flikar för varje datakälla. Som en påminnelse returnerar inte [!UICONTROL Authenticated Activity]-diagrammet och måtten data från enhetsdiagrammet [!DNL Adobe] eller andra enhetsdiagram från tredje part som du har tillgång till i [!DNL Audience Manager].
+En [!UICONTROL Profile Link Device Graph]-rapport som innehåller enhetsdiagramdata från [!UICONTROL Adobe Experience Cloud Device Co-op] eller ett enhetsdiagram från en annan tillverkare visar [!UICONTROL Profile Link] och enhetsdiagramdata med liggande liggande stapeldiagram sida vid sida. Om du placerar dessa diagram bredvid varandra kan du utvärdera fördelarna med att använda [!UICONTROL Experience Cloud Device Co-op] jämfört med [!UICONTROL Profile Link] separat. Sammanfogningsregler som använder flera datakällor (upp till 3, maximalt) visar diagram på olika flikar för varje datakälla. Som en påminnelse returnerar inte [!UICONTROL Authenticated Activity]-diagrammet och måtten data från enhetsdiagrammet [!DNL Adobe] eller andra enhetsdiagram från tredje part som du har tillgång till i [!DNL Audience Manager].
 
 ![](assets/profile-link-graph.png)
 
