@@ -4,17 +4,17 @@ seo-description: På Marketplace går datainköpare till forskning och prenumere
 seo-title: Hantera prenumerationer på dataflöden
 solution: Audience Manager
 title: Hantera prenumerationer på dataflöden
-topic: DIL API
+topic-edit: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
 feature: Audience Marketplace
+exl-id: 171acbbc-88ab-496f-93ea-48956325d8fd
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2188'
 ht-degree: 1%
 
 ---
-
 
 # Hantera prenumerationer på dataflöden {#manage-data-feed-subscriptions}
 
@@ -194,7 +194,7 @@ Det kan vara förvirrande eller till och med upprörande om en feed du prenumere
 
 ## E-post för inaktivering {#deactivation-email}
 
-När en dataleverantör inaktiverar en av dina datafeeds skickar [!DNL Audience Manager] ett e-postmeddelande till de användare i företaget som har [!UICONTROL Administrator] behörighet. Ibland kan e-postfilter klassificera det här meddelandet som skräppost. Därför kanske du saknar det här viktiga meddelandet. Det här e-postmeddelandet innehåller följande element som kan hjälpa dig att identifiera inaktiveringsmeddelandet:
+När en dataleverantör inaktiverar en av dina datafeeds skickar [!DNL Audience Manager] ett e-postmeddelande till de användare i företaget som har [!UICONTROL Administrator] behörighet. Ibland kan e-postfilter klassificera det här meddelandet som skräppost. Därför kanske du saknar det här viktiga meddelandet. Det här e-postmeddelandet innehåller följande element som hjälper dig att identifiera inaktiveringsmeddelandet:
 
 * **Från:** E-postmeddelandet om inaktivering kommer från  `aam-noreply@adobe.com`. Proffstips: Svara inte på det här e-postmeddelandet.
 
