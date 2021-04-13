@@ -5,15 +5,15 @@ seo-title: Krav på Amazon S3-namn och filstorlekar för inkommande datafiler
 solution: Audience Manager
 title: Krav på Amazon S3-namn och filstorlekar för inkommande datafiler
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
-feature: Inbound Data Transfers
+feature: Inkommande dataöverföringar
+exl-id: 428acdb5-fff0-4b70-b15a-e384aed9cc2d
 translation-type: tm+mt
-source-git-commit: d6856a54c649d701c3163c1408f84aea256ebdc1
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1054'
 ht-degree: 4%
 
 ---
-
 
 # [!DNL Amazon S3] krav på namn och filstorlek för inkommande datafiler  {#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
 
