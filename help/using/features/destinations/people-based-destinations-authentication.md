@@ -4,15 +4,15 @@ seo-description: 'Den här sidan innehåller riktlinjer för hur du konfigurerar
 seo-title: Autentisering med personbaserade plattformar
 solution: Audience Manager
 title: Autentisering med personbaserade plattformar
-feature: People-Based Destinations
+feature: Personbaserade mål
+exl-id: d3e136d0-2b06-412a-9b9b-75b661c9aa14
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '550'
 ht-degree: 2%
 
 ---
-
 
 # Autentisering med personbaserade plattformar {#authentication-with-people-based-platforms}
 
