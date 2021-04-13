@@ -4,15 +4,15 @@ seo-description: 'Personbaserade mål erbjuder flera implementeringsstrategier, 
 seo-title: Implementeringsvägledning för personbaserade destinationer
 solution: Audience Manager
 title: Implementeringsvägledning
-feature: People-Based Destinations
+feature: Personbaserade mål
+exl-id: 224334d5-419c-4bb1-b76c-ce996a543b7a
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1381'
 ht-degree: 2%
 
 ---
-
 
 # Implementeringsvägledning {#implementation-guidance}
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 Konfigurationen av [!DNL People-Based Destinations] tar dig igenom flera sektioner i Audience Manager och kräver olika inställningar och metoder för att komma igång med data, beroende på vilken typ av kunddata du redan har i Audience Manager och vilken typ av målgruppsanpassning du vill utföra.
 
 >[!IMPORTANT]
-> Innan du konfigurerar [!DNL People-Based Destinations] måste du läsa den här artikeln noggrant och fullständigt. När du har läst den här guiden bör du ha en tydlig förståelse för det scenario som du aktiverar via [!DNL People-Based Destinations].
+> Innan du konfigurerar [!DNL People-Based Destinations] måste du läsa den här artikeln noggrant och fullständigt. När du har läst den här guiden bör du ha en tydlig förståelse för det scenario du aktiverar via [!DNL People-Based Destinations].
 
 Det finns sex implementeringsaspekter som du måste klargöra innan du använder [!DNL People-Based Destinations]. Den här artikeln hjälper dig att förstå vad din nuvarande konfiguration är så att du kan följa implementeringsstegen för ditt scenario korrekt.
 
