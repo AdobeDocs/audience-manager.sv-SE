@@ -5,15 +5,15 @@ seo-title: Datafiler för Audience Optimization-rapporter och verkställbara log
 solution: Audience Manager
 title: Datafiler för Audience Optimization-rapporter och verkställbara loggfiler
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
-feature: log files
+feature: Loggfiler
+exl-id: 0da2c1d3-5ff8-40dd-b831-21d8941688ce
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1044'
 ht-degree: 3%
 
 ---
-
 
 # Datafiler för Audience Optimization-rapporter och verkställbara loggfiler {#data-files-for-audience-optimization-reports}
 
