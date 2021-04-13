@@ -5,15 +5,15 @@ seo-title: Leveransmetoder för metadatafiler
 solution: Audience Manager
 title: Leveransmetoder för metadatafiler
 uuid: 5199ee9b-920d-423d-8070-05a017ecd562
-feature: log files
+feature: Loggfiler
+exl-id: 6ef2a80c-2574-4446-b755-28027818b5eb
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '391'
 ht-degree: 4%
 
 ---
-
 
 # Leveransmetoder för metadatafiler{#delivery-methods-for-metadata-files}
 
