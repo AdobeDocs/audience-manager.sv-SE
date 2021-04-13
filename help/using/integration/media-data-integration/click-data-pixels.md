@@ -5,15 +5,15 @@ seo-title: Samla in klickdata för kampanjer med pixelanrop
 solution: Audience Manager
 title: Samla in klickdata för kampanjer med pixelanrop
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
-feature: Integration with Campaign
+feature: Adobe Campaign Integration
+exl-id: 41b169bf-3727-4ed7-b74f-fea75244d2cb
 translation-type: tm+mt
-source-git-commit: 231d8e537cf5b4f29b1c4f284fe1b3ffe6d187a9
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '689'
 ht-degree: 10%
 
 ---
-
 
 # Samla in klickdata för kampanjer med pixelanrop {#capturing-campaign-click-data-via-pixel-calls}
 
