@@ -5,15 +5,15 @@ seo-title: Krav och metoder för att skicka segment till Google Ad Manager med G
 solution: Audience Manager
 title: Krav och metoder för att skicka segment till Google Ad Manager med Google Publisher-taggar (GPT)
 uuid: 4b2ea81c-29bb-42d3-93d3-1d8e677790b6
-feature: Third Party Integrations
+feature: Tredjepartsintegrering
+exl-id: 04bf6fb5-ce38-4de1-bf19-e130b7e47616
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
-
 
 # Krav och metoder för att skicka segment till Google Ad Manager med Google Publisher-taggar (GPT) {#requirements-and-methods-of-sending-segments-to-dfp-using-google-publisher-tags-gpt}
 
