@@ -5,15 +5,15 @@ seo-title: Kontrollpanel för regler för profilsammanslagning
 solution: Audience Manager
 title: Kontrollpanel för regler för profilsammanslagning
 uuid: d6725218-7b36-4653-9900-d67b5f7702a0
-feature: Profile Merge Rules
+feature: Sammanfoga profil
+exl-id: c6fcbe47-3010-4b7c-a70e-205bf69b4c54
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '222'
 ht-degree: 11%
 
 ---
-
 
 # Kontrollpanel för regler för profilsammanslagning {#profile-merge-rules-dashboard}
 
