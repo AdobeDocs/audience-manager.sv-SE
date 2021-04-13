@@ -1,20 +1,19 @@
 ---
 description: Rapportering om aktivitetsanvändning hjälper dig att visa och spåra aktivitetsanvändningen för din Audience Manager-instans, så att du kan jämföra den faktiska användningen med ditt avtalsenliga åtagande.
-keywords: activity, usage, reporting, commitment
+keywords: verksamhet, användning, rapportering, åtagande
 seo-description: Rapportering om aktivitetsanvändning hjälper dig att visa och spåra aktivitetsanvändningen för din Audience Manager-instans, så att du kan jämföra den faktiska användningen med ditt avtalsenliga åtagande.
 seo-title: Rapportera aktivitetsanvändning
 solution: Audience Manager
 title: Rapportera aktivitetsanvändning
-topic: Activity Usage Reporting
-feature: Usage and Billing
+feature: Användning och fakturering
+exl-id: 0c5f04c6-d008-4817-9c67-cd39350b3aaf
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '668'
 ht-degree: 5%
 
 ---
-
 
 # [!UICONTROL Activity Usage Reporting] {#activity-usage-reporting}
 
