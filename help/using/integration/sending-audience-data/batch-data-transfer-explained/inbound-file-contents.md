@@ -5,15 +5,15 @@ seo-title: Innehållssyntax för inkommande datafil, ogiltiga tecken, variabler 
 solution: Audience Manager
 title: Innehållssyntax för inkommande datafil, ogiltiga tecken, variabler och exempel
 uuid: 88699b29-1502-4183-a9a4-be70692a02bb
-feature: Inbound Data Transfers
+feature: Inkommande dataöverföringar
+exl-id: 894f1923-6c78-41d2-b6a2-eebf56eaa29e
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1196'
 ht-degree: 1%
 
 ---
-
 
 # Innehåll i inkommande datafil: Syntax, ogiltiga tecken, variabler och exempel {#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
 
