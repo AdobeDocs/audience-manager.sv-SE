@@ -5,15 +5,15 @@ seo-title: Google Ad Manager som mål för Audience Manager
 solution: Audience Manager
 title: Google Ad Manager som mål för Audience Manager
 uuid: 12d6c2ce-f0fa-4a2c-8b88-fdad634df435
-feature: Third Party Integrations
+feature: Tredjepartsintegrering
+exl-id: 54599948-1a32-421f-a37d-555f3807f746
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---
-
 
 # Google Ad Manager (tidigare DFP) som mål för Audience Manager {#dfp-as-an-audience-manager-destination}
 
