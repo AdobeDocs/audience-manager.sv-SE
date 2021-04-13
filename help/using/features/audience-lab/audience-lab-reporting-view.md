@@ -4,12 +4,11 @@ seo-description: Rapporteringsavsnittet för testgruppen returnerar information 
 seo-title: Testgruppsrapporter
 solution: Audience Manager
 title: Testgruppsrapporter
-topic-edit: DIL API
 uuid: 21303c3e-4c05-4728-a759-96c2a1d99b69
 feature: 'Audience Lab '
 exl-id: 5d959002-e904-44df-87e6-e4c85838b076
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 3%
