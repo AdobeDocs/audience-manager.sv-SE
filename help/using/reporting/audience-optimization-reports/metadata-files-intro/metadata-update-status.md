@@ -5,11 +5,11 @@ seo-title: Statusuppdateringar för metadatafiler
 solution: Audience Manager
 title: Statusuppdateringar för metadatafiler
 uuid: 56a1e88a-41da-4d51-a21e-2be98cca7fa2
-feature: log files
+feature: Loggfiler
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
