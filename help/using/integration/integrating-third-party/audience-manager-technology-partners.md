@@ -2,15 +2,15 @@
 description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
 seo-description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
 seo-title: Adobe Audience Manager Technology Partners
-keywords: activation; activation partners, destination, destinations
+keywords: aktivering, aktiveringspartner, destination, mål
 solution: Audience Manager
 title: Adobe Audience Manager Technology Partners
-feature: Third Party Integrations
+feature: Tredjepartsintegrering
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 42%
+source-wordcount: '1185'
+ht-degree: 41%
 
 ---
 
