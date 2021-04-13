@@ -5,15 +5,15 @@ seo-title: Namnkonventioner för metadatafiler
 solution: Audience Manager
 title: Namnkonventioner för metadatafiler
 uuid: cab55b2a-2e54-45f6-aeea-3735b911f821
-feature: log files
+feature: Loggfiler
+exl-id: 7a895c4f-1100-4ba1-947e-abb47307fb40
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '216'
 ht-degree: 7%
 
 ---
-
 
 # Namnkonventioner för metadatafiler{#naming-conventions-for-metadata-files}
 
