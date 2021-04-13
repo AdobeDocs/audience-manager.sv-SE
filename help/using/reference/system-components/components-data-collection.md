@@ -5,15 +5,15 @@ seo-title: Datainsamlingskomponenter
 solution: Audience Manager
 title: Datainsamlingskomponenter
 uuid: 51bb1719-5ff2-4bc7-8eb1-98795e05d08f
-feature: system components
+feature: 'Systemkomponenter '
+exl-id: 7ae407f1-f1e4-4545-baa2-bcca40aad76f
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '764'
 ht-degree: 6%
 
 ---
-
 
 # Datainsamlingskomponenter{#data-collection-components}
 
@@ -79,7 +79,7 @@ Removed /dpm calls from the bulleted list. /dpm calls have been deprecated.
 
  -->
 
-[!UICONTROL PCS] tömmer egenskaper om de är inaktiva i 17 dagar. De här egenskaperna går dock inte förlorade. De lagras i Hadoop. Om användaren visas igen vid ett senare tillfälle överför Hadoop alla sina egenskaper tillbaka till [!UICONTROL PCS], vanligtvis inom 24 timmar.
+[!UICONTROL PCS] tömmer egenskaper om de är inaktiva i 17 dagar. De här egenskaperna går dock inte förlorade. De är lagrade i Hadoop. Om användaren visas igen vid ett senare tillfälle kommer Hadoopet att överföra alla sina egenskaper tillbaka till [!UICONTROL PCS], vanligtvis inom en 24-timmarsperiod.
 
 **Andra  [!UICONTROL DCS/PCS] processer: Avanmäl dig till sekretess**
 
