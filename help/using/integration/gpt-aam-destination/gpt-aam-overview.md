@@ -3,15 +3,15 @@ description: Översikt över hur du integrerar Google Ad Manager med Google Publ
 seo-description: Översikt över hur du integrerar Google Ad Manager med Google Publisher Tags (GPT) i Adobe Audience Manager (AAM).
 seo-title: Integrera Google Ad Manager med Google Publisher Tags (GPT) i Adobe Audience Manager (AAM)
 title: Integrera Google Ad Manager med Google Publisher Tags (GPT)
-feature: Third Party Integrations
+feature: Tredjepartsintegrering
+exl-id: d383cb8a-ef41-4ce6-9e31-6145797a89fa
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 6%
 
 ---
-
 
 # Integrera [!DNL Google Ad Manager] (tidigare DFP) med Google Publisher Tags (GPT)
 
