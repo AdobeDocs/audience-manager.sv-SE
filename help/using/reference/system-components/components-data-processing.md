@@ -5,15 +5,15 @@ seo-title: Databearbetningskomponenter
 solution: Audience Manager
 title: Databearbetningskomponenter
 uuid: d458d869-7a23-4016-871d-0b994cf4af06
-feature: system components
+feature: 'Systemkomponenter '
+exl-id: 9ff2b82b-aad0-4d24-96e6-230763019311
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 3%
+source-wordcount: '411'
+ht-degree: 4%
 
 ---
-
 
 # Databearbetningskomponenter{#data-processing-components}
 
@@ -29,11 +29,11 @@ Audience Manager använder följande komponenter för att bearbeta data:
 
 ## Hadoop {#hadoop}
 
-I [!DNL Audience Manager] är Hadoop huvuddatabasen som innehåller allt [!DNL Audience Manager] vet om en användare. När till exempel [profilcacheservrarna](../../reference/system-components/components-data-collection.md) skapar loggfiler som innehåller data om dina användare, skickas dessa data till Hadoop för lagring. Andra viktiga Hadoop-element är:
+I [!DNL Audience Manager] är Hadoopet huvuddatabasen som innehåller allt [!DNL Audience Manager] vet om en användare. När till exempel [profilcacheservrarna](../../reference/system-components/components-data-collection.md) skapar loggfiler som innehåller data om dina användare, skickas dessa data till Hadoopet för lagring. Andra viktiga element inom Hadoopet är:
 
-* **Hive:** En data warehouse för Hadoop. Hive hanterar ad hoc-frågor till data som lagras i Hadoop.
+* **Hive:** En data warehouse för Hadoop. Hive hanterar ad hoc-frågor till data som lagras i Hadoopet.
 
-* **HBase:** En mycket stor Hadoop-databas. Den behandlar och hanterar inkommande och utgående data, varumärkesregler, algoritmisk modelleringsinformation och utför många andra funktioner som rör lagring och flyttning av data till olika system.
+* **HBase:** En mycket stor Hadoopen databas. Den behandlar och hanterar inkommande och utgående data, varumärkesregler, algoritmisk modelleringsinformation och utför många andra funktioner som rör lagring och flyttning av data till olika system.
 
 Kunderna har inte direktåtkomst till dessa system. Men kunderna arbetar med dem indirekt eftersom de här komponenterna lagrar viktiga data om webbplatsens besökare.
 
@@ -66,4 +66,3 @@ SOLR är en databas och ett serversystem med öppen källkod från Apache. Det g
 
 
 ![](assets/advertiser_analytics.png)
-
