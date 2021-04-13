@@ -5,15 +5,15 @@ seo-title: CID ersätter DPID och DPUUID
 solution: Audience Manager
 title: CID ersätter DPID och DPUUID
 uuid: 3641eac5-b19e-45d5-bc1c-35a23b4bab8c
-feature: reference
+feature: 'Referens '
+exl-id: 18e6b1db-fe51-4560-9458-8d65474d2506
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '667'
 ht-degree: 2%
 
 ---
-
 
 # CID ersätter DPID och DPUUID{#cid-replaces-dpid-and-dpuuid}
 
@@ -162,4 +162,3 @@ Varje anrop kan även innehålla flera nyckelvärdepar för `d_cid` och `d_cid_i
   </tr> 
  </tbody> 
 </table>
-
