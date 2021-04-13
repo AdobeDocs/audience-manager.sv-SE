@@ -4,15 +4,15 @@ seo-description: Vi använder inte programmet, men vi ser Javascript-anrop från
 seo-title: Vi använder inte Audience Manager, men vi ser Javascript-anrop till Audience Manager i Javascript-felsökaren – varför?
 solution: Audience Manager
 title: Vi använder inte Audience Manager, men vi ser Javascript-anrop till Audience Manager i Javascript-felsökaren – varför?
-feature: support
+feature: Support
+exl-id: f409e326-17b3-40ee-8570-8d99119fe337
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 100%
+source-wordcount: '189'
+ht-degree: 99%
 
 ---
-
 
 # Vi är inte Audience Manager-kund, men vi kan se Javascript-anropen för Audience Manager på vår webbplats
 
