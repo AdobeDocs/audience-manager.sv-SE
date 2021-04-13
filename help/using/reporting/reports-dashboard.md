@@ -5,15 +5,15 @@ seo-title: Kontrollpanel för rapporter
 solution: Audience Manager
 title: Kontrollpanel för rapporter
 uuid: 350eee2d-72f7-42a7-916b-60f9a362c5cf
-feature: reporting reference
+feature: Referens för rapportering
+exl-id: 1ca0280a-d67b-46f7-9c58-effc5be4e38f
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '660'
 ht-degree: 1%
 
 ---
-
 
 # Kontrollpanel för rapporter {#reports-dashboard}
 
@@ -121,4 +121,3 @@ Panelen innehåller följande flikar:
   </tr> 
  </tbody> 
 </table>
-
