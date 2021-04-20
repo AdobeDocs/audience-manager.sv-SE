@@ -5,7 +5,7 @@ seo-title: 'Användningsexempel för Audience Lab '
 solution: Audience Manager
 title: 'Användningsexempel för Audience Lab '
 uuid: 727bec8a-df9a-40cc-b8a7-e1980d146a84
-feature: 'Audience Lab '
+feature: Audience Lab
 exl-id: b68f48bd-0d5d-4b72-84f3-a6f3acea6c49
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

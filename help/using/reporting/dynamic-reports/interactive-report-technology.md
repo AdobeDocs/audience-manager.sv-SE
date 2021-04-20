@@ -5,7 +5,7 @@ seo-title: Rapportteknik
 solution: Audience Manager
 title: Rapportteknik
 uuid: 5f3d815b-e1e6-42f2-b848-ac035a5aa77d
-feature: Överlappa rapporter
+feature: Overlap Reports
 exl-id: 59d875d6-a630-4795-93a7-1d432860f0a1
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

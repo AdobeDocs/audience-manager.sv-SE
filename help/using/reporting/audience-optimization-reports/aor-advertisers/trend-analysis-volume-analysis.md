@@ -5,7 +5,7 @@ seo-title: Trendanalys och volymanalysrapporter
 solution: Audience Manager
 title: Trendanalys och volymanalysrapporter
 uuid: 5d124d80-5f54-4970-92cd-2c8eba42efca
-feature: Audience Optimization-rapporter
+feature: Audience Optimization Reports
 exl-id: f8e6c7a4-c4f8-465f-a32c-681a07e6e6f5
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

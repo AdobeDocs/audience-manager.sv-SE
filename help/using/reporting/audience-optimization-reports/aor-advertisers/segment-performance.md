@@ -5,7 +5,7 @@ seo-title: Resultatrapport för segment
 solution: Audience Manager
 title: Resultatrapport för segment
 uuid: 5156a4c7-831d-4a95-a1be-eb516f0d91b7
-feature: Audience Optimization-rapporter
+feature: Audience Optimization Reports
 exl-id: 2cd54b18-6916-4d69-bd65-7b8c8846c446
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

@@ -4,7 +4,7 @@ seo-description: I den här artikeln förklaras de begrepp och termer som använ
 seo-title: CCPA-ordlista
 solution: Audience Manager
 title: CCPA-ordlista
-feature: Datastyrning och sekretess
+feature: Data Governance & Privacy
 exl-id: b3e97e2b-81a4-4b32-9716-5b18c3f8362f
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

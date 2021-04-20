@@ -5,7 +5,7 @@ seo-title: Vanliga frågor om Audience Lab
 solution: Audience Manager
 title: Vanliga frågor om Audience Lab
 uuid: b1daf99d-af60-4f65-987d-794a6d45d566
-feature: 'Audience Lab '
+feature: Audience Lab
 exl-id: 25bdabb5-2ba8-45d2-81ca-05c0590d7d96
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

@@ -5,7 +5,7 @@ seo-title: Implementera Audience Manager
 solution: Audience Manager
 title: Implementera Audience Manager
 uuid: 89369224-3b21-45a9-a4ed-a0a977410520
-feature: Tredjepartsintegrering
+feature: Third-party Integration
 exl-id: 8f8a6881-d616-4d0e-aeaa-bf3bb3a172f9
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

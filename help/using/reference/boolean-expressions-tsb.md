@@ -5,7 +5,7 @@ seo-title: Booleska uttryck i traits och Segment Builder
 solution: Audience Manager
 title: Booleska uttryck i traits och Segment Builder
 uuid: 14f02d3f-4c84-41fe-bc91-b34f0d49574a
-feature: 'Referens '
+feature: Reference
 exl-id: 44bc0385-2cce-4173-9833-b9a30fb6edae
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

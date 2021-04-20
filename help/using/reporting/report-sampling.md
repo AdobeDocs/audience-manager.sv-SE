@@ -5,7 +5,7 @@ seo-title: Datainsamling och felfrekvens i valda rapporter för Audience Manager
 solution: Audience Manager
 title: Datainsamling och felfrekvens i valda rapporter för Audience Manager
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
-feature: Rapporteringsreferens
+feature: Reporting Reference
 exl-id: 0b7f9423-0859-4fa8-926b-e4858eed2294
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

@@ -5,7 +5,7 @@ seo-title: Komma igång med regler för profilsammanslagning
 solution: Audience Manager
 title: Komma igång med regler för profilsammanslagning
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
-feature: Sammanfoga profil
+feature: Profile Merge
 exl-id: 11f397dd-1f23-4b14-be6f-60ce8b77ab12
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

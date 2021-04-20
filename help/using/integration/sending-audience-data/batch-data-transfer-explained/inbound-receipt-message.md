@@ -5,7 +5,7 @@ seo-title: Exempelmeddelande till partners efter inkommande bearbetning
 solution: Audience Manager
 title: Exempelmeddelande till partners efter inkommande bearbetning
 uuid: 69e3a8b3-8465-4f4c-8005-8a9ff15ae19a
-feature: Inkommande dataöverföringar
+feature: Inbound Data Transfers
 exl-id: acfc788f-63e6-445f-a086-0a2cc6c8865b
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74

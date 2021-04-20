@@ -4,7 +4,7 @@ seo-description: 'Den här sidan innehåller riktlinjer för hur du konfigurerar
 seo-title: Autentisering med personbaserade plattformar
 solution: Audience Manager
 title: Autentisering med personbaserade plattformar
-feature: Personbaserade mål
+feature: People-based Destinations
 exl-id: d3e136d0-2b06-412a-9b9b-75b661c9aa14
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

@@ -5,7 +5,7 @@ seo-title: Rapporterade konverterings-traits
 solution: Audience Manager
 title: Rapporterade konverterings-traits
 uuid: b4b5eb9c-d83e-4e7f-8661-f5d9c855258b
-feature: Audience Optimization-rapporter
+feature: Audience Optimization Reports
 exl-id: 22335e8d-35cf-4014-803a-efdd35552ef2
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

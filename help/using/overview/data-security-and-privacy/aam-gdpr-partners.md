@@ -5,7 +5,7 @@ seo-title: GDPR-överväganden för destinationer
 solution: Audience Manager
 title: GDPR-överväganden för destinationer
 uuid: e8a40060-086c-4f03-b48c-9c903acb7891
-feature: Datastyrning och sekretess
+feature: Data Governance & Privacy
 exl-id: ff2aa030-94cd-45dc-a9a2-283b38ab5e46
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

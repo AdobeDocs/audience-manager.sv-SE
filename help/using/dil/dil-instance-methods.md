@@ -6,7 +6,7 @@ seo-title: DIL-metoder på instansnivå
 solution: Audience Manager
 title: DIL-metoder på instansnivå
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
-feature: Implementering av DIL
+feature: DIL Implementation
 translation-type: tm+mt
 source-git-commit: e40233ace5cb74743db7d0f9f90707fa596a7e79
 workflow-type: tm+mt

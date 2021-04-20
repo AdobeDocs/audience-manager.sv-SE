@@ -5,7 +5,7 @@ seo-title: Identifierare för Audience Manager (ID)
 solution: Audience Manager
 keywords: GDPR-gränssnitt, GDPR API, CCPA, sekretess, AAM-ID
 title: Identifierare för Audience Manager (ID)
-feature: Datastyrning och sekretess
+feature: Data Governance & Privacy
 exl-id: 5f18ed0a-c875-4596-a4d1-f9a7fe871d1b
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

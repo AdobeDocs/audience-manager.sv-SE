@@ -5,7 +5,7 @@ seo-title: Viktiga komponenter i Audience Manager-systemet
 solution: Audience Manager
 title: Viktiga komponenter i Audience Manager-systemet
 uuid: dedb15e6-b8dd-4eea-ab84-d99f160e4d34
-feature: 'Systemkomponenter '
+feature: System Components
 exl-id: a76f4d7d-5dd2-4b29-a97e-039c8f1d765f
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

@@ -4,7 +4,7 @@ seo-description: 'Använd personbaserade destinationer för att skicka förstaha
 seo-title: Översikt över och användningsfall för personbaserade destinationer
 solution: Audience Manager
 title: Översikt och användningsexempel
-feature: Personbaserade mål
+feature: People-based Destinations
 exl-id: 2edbda3b-e2a3-4a92-965b-206a21764cc8
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

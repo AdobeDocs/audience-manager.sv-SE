@@ -5,7 +5,7 @@ seo-title: Överlappning mellan segment och annonsenhet
 solution: Audience Manager
 title: Överlappning mellan segment och annonsenhet
 uuid: aaa20163-58aa-42c9-8f72-a1dfb0d20e57
-feature: Audience Optimization-rapporter
+feature: Audience Optimization Reports
 exl-id: 6c7cf2e6-8ed4-42de-92ee-0df90940f441
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

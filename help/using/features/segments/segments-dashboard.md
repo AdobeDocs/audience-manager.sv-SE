@@ -5,7 +5,7 @@ seo-title: Vy över segmentlista
 solution: Audience Manager
 title: Vy över segmentlista
 uuid: aa69877b-1d52-4b87-8734-b4bff39935a5
-feature: 'Segment '
+feature: Segments
 translation-type: tm+mt
 source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt

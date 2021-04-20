@@ -6,7 +6,7 @@ seo-title: Referens för dragningskvalitet
 solution: Audience Manager
 title: Referens för dragningskvalitet
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
-feature: 'Traits '
+feature: Traits
 exl-id: 223f5fc6-c939-4bc6-94a3-5d953abc601a,85c2d54f-b9d6-4c95-b4b5-466119effc2a,85c2d54f-b9d6-4c95-b4b5-466119effc2a,223f5fc6-c939-4bc6-94a3-5d953abc601a
 translation-type: tm+mt
 source-git-commit: e13f81df9b0d59cd958f4c2a615c31df00ce2cc5

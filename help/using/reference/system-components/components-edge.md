@@ -5,7 +5,7 @@ seo-title: Förstå Edge Data Center
 solution: Audience Manager
 title: Förstå Edge Data Center
 uuid: 4177e666-99f4-453d-94dd-058c6182c8d2
-feature: 'Systemkomponenter '
+feature: System Components
 exl-id: 28958b49-3075-4601-9271-ef2913721a66
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

@@ -4,7 +4,7 @@ seo-description: 'Den här sidan innehåller stegvis vägledning om hur man komb
 seo-title: Arbetsflöde C – Personalisering baserad på autentiserad aktivitet i kombination med offlinedata
 solution: Audience Manager
 title: Arbetsflöde C – Personalisering baserad på autentiserad aktivitet i kombination med offlinedata
-feature: Personbaserade mål
+feature: People-based Destinations
 exl-id: 24f877ce-089e-484c-9a70-8fce1a10a649
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

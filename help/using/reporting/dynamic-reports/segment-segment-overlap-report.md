@@ -5,7 +5,7 @@ seo-title: Överlappningsrapport för segment till segment
 solution: Audience Manager
 title: Överlappningsrapport för segment till segment
 uuid: 0339eb6c-6355-44a3-9c46-f159485449d1
-feature: Överlappa rapporter
+feature: Overlap Reports
 exl-id: 43a8ea20-3197-4623-a03a-bfe40e5049cd
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

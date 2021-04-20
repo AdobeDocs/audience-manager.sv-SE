@@ -6,7 +6,7 @@ solution: Audience Manager
 keywords: GDPR-gränssnitt, GDPR API, CCPA, sekretess
 title: Förfrågningar om datasekretess
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
-feature: Datastyrning och sekretess
+feature: Data Governance & Privacy
 exl-id: a1fc9c21-3417-4899-a585-92ad2cb25362
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

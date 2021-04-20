@@ -6,7 +6,7 @@ seo-title: Administrering
 solution: Audience Manager
 title: Administrering
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
-feature: Administrering
+feature: Administration
 exl-id: f23f4294-35d9-4128-bcda-64a3eccbb4e7
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

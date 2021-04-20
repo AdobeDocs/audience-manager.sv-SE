@@ -5,7 +5,7 @@ seo-title: Adobe Audience Manager Technology Partners
 keywords: aktivering, aktiveringspartner, destination, mål
 solution: Audience Manager
 title: Adobe Audience Manager Technology Partners
-feature: Tredjepartsintegrering
+feature: Third-party Integration
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt

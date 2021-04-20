@@ -6,7 +6,7 @@ seo-title: Vanliga frågor om produktfunktioner
 solution: Audience Manager
 title: Vanliga frågor om produktfunktioner
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
-feature: Översikt
+feature: Overview
 translation-type: tm+mt
 source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt

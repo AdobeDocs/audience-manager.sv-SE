@@ -6,7 +6,7 @@ seo-title: Adresserbara målgrupper
 solution: Audience Manager
 title: Adresserbara målgrupper
 uuid: 3eb1335a-6949-452b-b77a-697c22856cb3
-feature: Matchningsfrekvenser
+feature: Match Rates
 exl-id: 2728e4a8-522c-423f-a6ef-e4dd624f69e5
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

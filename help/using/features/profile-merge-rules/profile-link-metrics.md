@@ -5,7 +5,7 @@ seo-title: Rapportmätvärden för regler för profilsammanslagning
 solution: Audience Manager
 title: Rapportmätvärden för regler för profilsammanslagning
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
-feature: Sammanfoga profil
+feature: Profile Merge
 exl-id: 2af59c60-2448-44af-90d2-eccc52f7ff02
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

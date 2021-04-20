@@ -5,7 +5,7 @@ seo-title: Uppdateringsschema för överlappningsrapporter och minsta segmentsto
 solution: Audience Manager
 title: Uppdateringsschema för överlappningsrapporter och minsta segmentstorlek
 uuid: 35c1cb39-e28d-4d20-88c9-5ff4fe154e9e
-feature: Överlappa rapporter
+feature: Overlap Reports
 exl-id: 89fa9d92-8676-4706-9fab-22c35763b218
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

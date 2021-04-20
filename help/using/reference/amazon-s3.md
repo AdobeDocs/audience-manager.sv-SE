@@ -5,7 +5,7 @@ seo-title: Amazon S3 Om
 solution: Audience Manager
 title: Amazon S3 Om
 uuid: 8197ecdf-df8f-488d-bbc0-d8d4205b42b4
-feature: 'Referens '
+feature: Reference
 exl-id: 12c4f00d-2916-4224-b834-d3a9ea86314a
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

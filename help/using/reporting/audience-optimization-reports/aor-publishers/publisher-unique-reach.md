@@ -5,7 +5,7 @@ seo-title: Unik användarräckvidd
 solution: Audience Manager
 title: Unikt användarområde för utgivare
 uuid: 64e75fad-f4cb-4d47-a162-34e663f3966f
-feature: Audience Optimization-rapporter
+feature: Audience Optimization Reports
 exl-id: 7f92547e-3bb0-4df1-953e-1c26e91b4e0c
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

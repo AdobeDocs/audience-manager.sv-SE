@@ -5,7 +5,7 @@ seo-title: Information om testgrupp
 solution: Audience Manager
 title: Information om testgrupp
 uuid: a49dfdb3-21e1-4c3d-b957-4d445f890124
-feature: 'Audience Lab '
+feature: Audience Lab
 exl-id: fb691c12-304d-4331-a395-a9005efa8bb0
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

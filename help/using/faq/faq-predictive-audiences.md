@@ -4,7 +4,7 @@ seo-description: Med Predictive Audiences kan ni klassificera okända målgruppe
 seo-title: Vanliga frågor om Predictive Audiences
 solution: Audience Manager
 title: Vanliga frågor om Predictive Audiences
-feature: Algoritmiska modeller
+feature: Algorithmic Models
 exl-id: 21073970-8457-470b-89fc-724a118a18d2
 translation-type: tm+mt
 source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
