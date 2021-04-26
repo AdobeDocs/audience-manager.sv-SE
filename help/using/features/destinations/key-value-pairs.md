@@ -1,19 +1,17 @@
 ---
-description: Ett nyckelvärdepar består av relaterade element A-tangenten, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris) och ett värde, som är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). Destination Builder skickar data som är formaterade som nyckelvärdepar.
-seo-description: Ett nyckelvärdepar består av relaterade element A-tangenten, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris) och ett värde, som är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). Destination Builder skickar data som är formaterade som nyckelvärdepar.
-seo-title: Standard och seriella nyckelvärdespar
+description: A [!DNL key-value pair] består av relaterade element En nyckel, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris) och ett värde, som är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). Destination Builder skickar data som är formaterade som nyckelvärdepar.
 solution: Audience Manager
-title: Standard och seriella nyckelvärdespar
+title: Standard och seriell [!DNL Key-value pairs]
 uuid: 43789419-5b3f-4e62-b2e0-2722340bdd41
-feature: Destination Basics
+feature: Grundläggande om mål
+exl-id: b37c829b-66be-4c31-8198-bc032371279e
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: c895ec099ff92f94328ad29e6f2349e79b77d667
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 3%
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
-
 
 # Standard och seriella nyckelvärdespar {#standard-and-serial-key-value-pairs}
 
