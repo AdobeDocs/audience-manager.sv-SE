@@ -1,12 +1,12 @@
 ---
-description: A [!DNL key-value pair] består av relaterade element En nyckel, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris) och ett värde, som är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). Destination Builder skickar data som är formaterade som nyckelvärdepar.
+description: A [!DNL key-value pair] består av relaterade element. En nyckel, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris) och ett värde, vilket är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). Destination Builder skickar data som är formaterade som nyckelvärdepar.
 solution: Audience Manager
 title: Standard och seriell [!DNL Key-value pairs]
 uuid: 43789419-5b3f-4e62-b2e0-2722340bdd41
 feature: Grundläggande om mål
 exl-id: b37c829b-66be-4c31-8198-bc032371279e
 translation-type: tm+mt
-source-git-commit: c895ec099ff92f94328ad29e6f2349e79b77d667
+source-git-commit: f9f5cb5f83f095ad8cac01447ef0c360f0acd5fc
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 2%
