@@ -6,7 +6,7 @@ uuid: 43789419-5b3f-4e62-b2e0-2722340bdd41
 feature: Grundläggande om mål
 exl-id: b37c829b-66be-4c31-8198-bc032371279e
 translation-type: tm+mt
-source-git-commit: f9f5cb5f83f095ad8cac01447ef0c360f0acd5fc
+source-git-commit: fe6e2883e67e70b362d31e19b28df4b586de7b8a
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Standard och seriella nyckelvärdespar {#standard-and-serial-key-value-pairs}
 
-Ett nyckelvärdepar består av relaterade element: En nyckel, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris) och ett värde, vilket är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). [!UICONTROL Destination Builder] skickar data som är formaterade som nyckelvärdepar.
+Ett nyckelvärdepar består av relaterade element: En nyckel, som är en konstant som definierar datauppsättningen (t.ex.: kön, färg, pris) och ett värde, som är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). [!UICONTROL Destination Builder] skickar data som är formaterade som nyckelvärdepar.
 
 ## Grundläggande nyckelvärdepar {#basic-key-value-pairs}
 
