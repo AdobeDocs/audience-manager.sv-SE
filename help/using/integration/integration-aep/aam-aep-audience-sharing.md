@@ -5,12 +5,12 @@ seo-title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platfo
 solution: Audience Manager
 title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
 keywords: AEP-målgruppsdelning, AEP-segment, plattformssegment, segmentdelning, målgruppsdelning, dela segment
-feature: Platform Integration
+feature: Plattformsintegrering
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 8dabdc08a58ece28162c70aefb392ff36f5fbc89
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1465'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Dessutom delas dina Experience Platform-segment med andra Experience Cloud-lösn
 >[!IMPORTANT]
 >
 > * Du behöver en Audience Manager-licens för att kunna aktivera de datahanteringsplattformar som nämns ovan.
-> * Du *behöver ingen*-licens för att dela Experience Platform-segment med Adobe Advertising Cloud, Adobe Target, Marketo och andra Experience Cloud-lösningar via integreringen med bastjänsterna.
+> * Du *behöver ingen*-licens för att dela Experience Platform-segment med Adobe Advertising Cloud, Adobe Target, Marketo och andra Experience Cloud via integreringen med bastjänsterna.
 
 
 <br>
@@ -164,17 +164,13 @@ Audience Manager uppdaterar rapportnummer i gränssnittet en gång om dagen.   T
 
 Integrationen mellan Adobe Experience Platform och Audience Manager delar ett antal [identitetsnamnutrymmen](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types) för alla kunder: ECID, IDFA, GAID, hash-kodade e-postadresser (EMAIL_LC_SHA256), AdCloud ID. Om era Experience Platform-segment använder någon av dessa som primär identitet för de kvalificerade profilerna räknas profilerna i Audience Manager-egenskaper och segment.
 
-Dessutom kan Audience Manager registrera inkommande implementeringar för anpassade identitetsnamnutrymmen som du använder i Experience Platform-segment om:
-* identiteten markeras som primär *och*
-* du redan har en motsvarande datakälla för olika enheter i Audience Manager.
-
 >[!NOTE]
 >
 > Målgrupper i Experience Platform med identiteter som är märkta med råa e-postmeddelanden visas aldrig i Audience Manager.
 
-Om du till exempel hade ett Experience Platform-segment,&quot;Alla mina kunder&quot;, och de kvalificerade profilerna skulle vara CRM-ID, ECID, IDFA, raw och hash-adresser, skulle motsvarande segment i Audience Manager endast innehålla profiler som är sparade av CRM-ID:n, ECID, IDFA och hash-kodade e-postadresser. Segmentpopulationen i Audience Manager skulle vara mindre än den i Experience Platform.
+Om du till exempel hade ett Experience Platform-segment,&quot;Alla mina kunder&quot;, och de kvalificerade profilerna skulle vara CRM-ID, ECID, IDFA, raw och hash-adresser, skulle motsvarande segment i Audience Manager endast innehålla profiler som är avaktiverade från ECID, IDFA och hash-kodade e-postadresser. Segmentpopulationen i Audience Manager skulle vara mindre än den i Experience Platform.
 
-![Segmentdelning mellan Experience Platform och Audience Manager - segmentdisposition](/help/using/integration/integration-aep/assets/AEP-to-AAM-profiles.png)
+![Segmentdelning mellan Experience Platform och Audience Manager - segmentdisposition](assets/AEP-to-AAM-profiles.png)
 
 <!--
 
