@@ -6,13 +6,13 @@ seo-title: Autentiseringstillstånd för besökare i Audience Manager
 solution: Audience Manager
 title: Autentiseringstillstånd för besökare i Audience Manager
 uuid: d748c0c3-5833-4fb9-ab3e-793f5f252e47
-feature: Reference
+feature: 'Referens '
 exl-id: 55aec28d-02f6-4e6d-9be1-4ce40deb8dc3
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: c3c829ef1335d1e073b719f8252103fa578bb4e6
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 5%
+source-wordcount: '391'
+ht-degree: 6%
 
 ---
 
@@ -24,25 +24,9 @@ Från och med [!DNL Experience Cloud] ID-tjänst v1.5+ inkluderar metoden `setCu
 
 ## Autentiseringsstatus: OKÄND {#auth-status-unknown}
 
-<table id="table_E1EA51533FAE4BBFB338D6F6116BC1F9"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> <p>Begäranvärde </p> </th> 
-   <th colname="col2" class="entry"> <p> <b>Läsinformation </b> från den autentiserade profilen </p> </th> 
-   <th colname="col3" class="entry"> <p> <b>Skriv </b> egenskaper till den autentiserade profilen </p> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p> <code> 0 </code> </p> </td> 
-   <td colname="col2"> <p>Ja, om kopplingsregeln för autentiserade alternativ = "Senaste autentiserade profiler". </p> </td> 
-   <td colname="col3" morerows="1"> <p>Nej, trait-data läggs till i enhetsprofilen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <p>Nej, om kopplingsregeln för autentiserade alternativ = "Aktuella autentiserade profiler" eller "Ingen autentiserad profil". </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Begäranvärde | Läs information från den autentiserade profilen | Skriv nya egenskaper till den autentiserade profilen |
+|---|---|---|
+| 0 | <ul><li>Ja, om [!UICONTROL Authenticated Option Merge Rule] = [!UICONTROL Last Authenticated Profiles].</li><li>Nej, om [!UICONTROL Authenticated Option Merge Rule] = [!UICONTROL Current Authenticated Profiles] eller [!UICONTROL No Authenticated Profile].</li></ul> | Nej, trait-data läggs till i enhetsprofilen. |
 
 Exempelanrop (det begärandevärde som motsvarar autentiseringsstatusen markeras):
 
@@ -50,25 +34,9 @@ Exempelanrop (det begärandevärde som motsvarar autentiseringsstatusen markeras
 
 ## Autentiseringsstatus: AUTENTISERAD {#auth-status-authenticated}
 
-<table id="table_956ABF96024744308F7773E1F96482B7"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> <p>Begäranvärde </p> </th> 
-   <th colname="col2" class="entry"> <p> <b>Läsinformation </b> från den autentiserade profilen </p> </th> 
-   <th colname="col3" class="entry"> <p> <b>Skriv </b> egenskaper till den autentiserade profilen </p> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p> <code> 1 </code> </p> </td> 
-   <td colname="col2"> <p>Ja, om kopplingsregeln för autentiserade alternativ = "Aktuella autentiserade profiler" eller "Senaste autentiserade profiler". </p> </td> 
-   <td colname="col3" morerows="1"> <p>Ja, trait-data läggs till i den autentiserade profilen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <p>Nej, om kopplingsregeln för autentiserade alternativ = "Ingen autentiserad profil". </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Begäranvärde | Läs information från den autentiserade profilen | Skriv nya egenskaper till den autentiserade profilen |
+|---|---|---|
+| 1 | <ul><li>Ja, om [!UICONTROL Authenticated Option Merge Rule] = [!UICONTROL Current Authenticated Profiles] eller [!UICONTROL Last Authenticated Profiles].</li><li>Nej, om [!UICONTROL Authenticated Option Merge Rule] = [!UICONTROL No Authenticated Profile].</li></ul> | Ja, trait-data läggs till i den autentiserade profilen. |
 
 Exempelanrop (det begärandevärde som motsvarar autentiseringsstatusen markeras):
 
@@ -76,25 +44,9 @@ Exempelanrop (det begärandevärde som motsvarar autentiseringsstatusen markeras
 
 ## Autentiseringsstatus: LOGGED_OUT {#auth-status-logged-out}
 
-<table id="table_783F0CBB0431482AA49F41468FA65B19"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> <p>Begäranvärde </p> </th> 
-   <th colname="col2" class="entry"> <p> <b>Läsinformation </b> från den autentiserade profilen </p> </th> 
-   <th colname="col3" class="entry"> <p> <b>Skriv </b> egenskaper till den autentiserade profilen </p> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p> <code> 2 </code> </p> </td> 
-   <td colname="col2"> Ja, om kopplingsregeln för autentiserade alternativ = "Senaste autentiserade profiler" </td> 
-   <td colname="col3" morerows="1"> <p>Nej, trait-data skrivs till enhetsprofilen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> Nej, om kopplingsregeln för autentiserade alternativ = "Aktuella autentiserade profiler" eller "Ingen autentiserad profil" </td> 
-  </tr> 
- </tbody> 
-</table>
+| Begäranvärde | Läs information från den autentiserade profilen | Skriv nya egenskaper till den autentiserade profilen |
+|---|---|---|
+| 2 | <ul><li>Ja, om [!UICONTROL Authenticated Option Merge Rule] = [!UICONTROL Last Authenticated Profiles].</li><li>Nej, om [!UICONTROL Authenticated Option Merge Rule] = [!UICONTROL Current Authenticated Profiles] eller [!UICONTROL No Authenticated Profile].</li></ul> | Nej, trait-data skrivs till enhetsprofilen. |
 
 Exempelanrop (det begärandevärde som motsvarar autentiseringsstatusen markeras):
 
