@@ -6,7 +6,7 @@ seo-title: 'Destinationer '
 solution: Audience Manager
 title: 'Destinationer '
 uuid: 5c7dbdec-f73f-46fe-9f12-7685e8d7334f
-feature: Destination Basics
+feature: Grundläggande om mål
 exl-id: f880bb18-057a-494d-82bf-69fc9f34781f
 translation-type: tm+mt
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
@@ -50,6 +50,6 @@ Exemplen i följande tabell kan hjälpa dig att förstå när du ska använda en
 | [!UICONTROL Destination] Typ | Används vanligen vid | Exempel | Överväganden |
 |--- |--- |--- |--- |
 | **[!UICONTROL Adobe Experience Cloud Destinations]** | Ni måste skicka data till andra Adobe Experience Cloud-lösningar. | Skicka data till Adobe Analytics. |  |
-| **[!UICONTROL People-Based Destinations]** | Ni måste skicka målgruppssegment till personbaserade miljöer, som Facebook. | Leverera personaliserade erbjudanden till befintliga kunder utifrån deras inköpshistorik | Målgruppsanpassning görs med hjälp av hash-identifierare. Se [Personbaserade mål](people-based-destinations-overview.md). |
+| **[!UICONTROL People-Based Destinations]** | Ni måste skicka målgruppssegment till personbaserade miljöer som Facebook. | Leverera personaliserade erbjudanden till befintliga kunder utifrån deras inköpshistorik | Målgruppsanpassning görs med hjälp av hash-identifierare. Se [Personbaserade mål](people-based-destinations-overview.md). |
 | **[!UICONTROL Device-Based Destinations]** (**Server-till-server**) | <ul><li>Omedelbar dataöverföring krävs inte.</li><li>Samla in data för att bygga upp en stor målgruppspool med kvalificerade användare.</li></ul> | Samla in data över tid (timmar eller dagar) för att använda dem i en kampanj som ska köras vid ett senare datum. | <ul><li>Överför data om nya och tidigare webbplatsbesökare. </li><li>Besökarna behöver inte ses igen för att kvalificera sig för andra segment.</li></ul> |
 | **[!UICONTROL Custom Destinations]** (**** URL **eller** cookie) | Ni måste överföra data omedelbart så att en destination kan vidta åtgärder mot en kvalificerad användare direkt. | Skicka data från en biljettinköpsplats. Använd en [!UICONTROL URL] eller [!UICONTROL cookie destination] för att kvalificera användaren och omedelbart göra om målet. | <ul><li>Överför endast data om nya besökare. </li><li>Besökarna måste ses igen för att bli kvalificerade för segmentet.</li></ul> |
