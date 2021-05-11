@@ -6,15 +6,15 @@ seo-title: Vanliga frågor om produktfunktioner
 solution: Audience Manager
 title: Vanliga frågor om produktfunktioner
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
-feature: Overview
+feature: Översikt
+exl-id: b5884d26-0be1-4eaa-99a1-7247942bf6c9
 translation-type: tm+mt
-source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
+source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 89%
+source-wordcount: '615'
+ht-degree: 88%
 
 ---
-
 
 # Vanliga frågor om produktfunktioner {#product-features-and-functions-faq}
 
@@ -68,7 +68,7 @@ Din datafeed och alla traits som finns i flödet visas som undermappar och trait
 
 **Vad är [!UICONTROL Tag Insertion Manager (TIM)]?**
 
-Audience Manager använde [!UICONTROL Tag Insertion Manager] (TIM) för att skapa och hantera [!UICONTROL data collection code (DIL)]. Den här funktionen är föråldrad och har ersatts först av [!UICONTROL Dynamic Tag Manager (DTM)] och därefter av [!DNL Adobe Experience Platform Launch]. Mer information finns i [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) och [Dynamic Tag Management](https://docs.adobe.com/content/help/sv-SE/dtm/using/dtm-home.html).
+Audience Manager använde [!UICONTROL Tag Insertion Manager] (TIM) för att skapa och hantera [!UICONTROL data collection code (DIL)]. Den här funktionen är föråldrad och har ersatts först av [!UICONTROL Dynamic Tag Manager (DTM)] och därefter av [!DNL Adobe Experience Platform Launch]. Mer information finns i [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html).
 
  
 
