@@ -1,23 +1,23 @@
 ---
-description: Bland Audience Manager-tagghanteringskomponenterna finns klientportalen, Adobe Tag Manager (borttagen till förmån för Adobe Dynamic Tag Manager och Adobe Experience Platform Launch), DIL, Akamai och kontrolldatabasen.
-seo-description: Bland Audience Manager-tagghanteringskomponenterna finns klientportalen, Adobe Tag Manager (borttagen till förmån för Adobe Dynamic Tag Manager och Adobe Experience Platform Launch), DIL, Akamai och kontrolldatabasen.
+description: Bland Audience Manager-tagghanteringskomponenterna finns klientportalen, Adobe Tag Manager (ersatt till förmån för Adobe Experience Platform Launch), DIL, Akamai och kontrolldatabasen.
+seo-description: Bland Audience Manager-tagghanteringskomponenterna finns klientportalen, Adobe Tag Manager (ersatt till förmån för Adobe Experience Platform Launch), DIL, Akamai och kontrolldatabasen.
 seo-title: Tag Management-komponenter
 solution: Audience Manager
 title: Tag Management-komponenter
 uuid: e5059478-6ba7-4e1a-afec-e41ad7a27750
-feature: System Components
+feature: 'Systemkomponenter '
 exl-id: 064e3653-7658-422c-9dd5-2252806e8f09
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 6%
+source-wordcount: '349'
+ht-degree: 4%
 
 ---
 
 # Tag Management-komponenter{#tag-management-components}
 
-Bland Audience Manager-tagghanteringskomponenterna finns klientportalen, Adobe Tag Manager (borttagen till förmån för Adobe Dynamic Tag Manager och Adobe Experience Platform Launch), DIL, Akamai och kontrolldatabasen.
+Bland Audience Manager-tagghanteringskomponenterna finns klientportalen, Adobe Tag Manager (ersatt till förmån för Adobe Experience Platform Launch), DIL, Akamai och kontrolldatabasen.
 
 <!-- 
 
@@ -39,7 +39,7 @@ Klientportalen är det primära användargränssnittet för tagg- och datahanter
 
 ## DIL/TIM-behållare {#dil-tim}
 
-Med [!UICONTROL DIL]-behållaren kan du distribuera [!DNL Audience Manager] datainsamlingskod till din webbplats. [!UICONTROL TIM] är den borttagna taggiginfogningshanteraren. Den används inte längre av [!DNL Audience Manager]. Använd i stället [Dynamisk tagghantering](https://docs.adobe.com/content/help/sv-SE/dtm/using/dtm-home.html) eller tillägget [!DNL Audience Manager] i [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/audience-manager/overview.html) för att konfigurera och generera behållarkod som du placerar på sidor i lagret. Behållaren [!UICONTROL DTM] fungerar med [!UICONTROL Data Information Library (DIL)] för att samla in data från din plats och skicka den till [!DNL Audience Manager].
+Med [!UICONTROL DIL]-behållaren kan du distribuera [!DNL Audience Manager] datainsamlingskod till din webbplats. [!UICONTROL TIM] är den borttagna taggiginfogningshanteraren. Den används inte längre av [!DNL Audience Manager]. Använd i stället tillägget [!DNL Audience Manager] i [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/audience-manager/overview.html) för att konfigurera och generera behållarkod som du placerar på sidor i lagret.
 
 ## Data Integration Library (DIL)  {#dil}
 
@@ -47,7 +47,7 @@ Med [!UICONTROL DIL]-behållaren kan du distribuera [!DNL Audience Manager] data
 
 ## Akamai {#akamai}
 
-[!DNL Audience Manager] använder  [](https://www.akamai.com/us/en/about/) Akamaito som värd och levererar behållarkod från vår egen tagghanteringsplattform, som kallas  [!UICONTROL TIM (Tag Insertion Manager)]. Koddistributionen med [!UICONTROL TIM] har fasats ut till förmån för [!DNL Adobe Dynamic Tag Management] och [!DNL Adobe Experience Platform Launch].
+[!DNL Audience Manager] använder  [](https://www.akamai.com/us/en/about/) Akamaito som värd och levererar behållarkod från vår egen tagghanteringsplattform, som kallas  [!UICONTROL TIM (Tag Insertion Manager)]. Koddistributionen med [!UICONTROL TIM] har fasats ut till förmån för [!DNL Adobe Experience Platform Launch].
 
 ## Kontrolldatabas {#control-database}
 
