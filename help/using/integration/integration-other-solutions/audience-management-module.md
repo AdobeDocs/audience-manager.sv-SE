@@ -9,10 +9,10 @@ uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 feature: Adobe Analytics Integration
 exl-id: af2449cd-5fc8-454a-adce-0da7cae80548
 translation-type: tm+mt
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 4%
+source-wordcount: '540'
+ht-degree: 2%
 
 ---
 
@@ -44,38 +44,6 @@ Det finns två metoder för att implementera datavidarebefordran från [!DNL Ado
 >Om du installerar tillägget [!DNL Adobe Analytics] ska *du inte* installera även tillägget [!DNL Audience Manager]. Om du vidarebefordrar data från tillägget [!DNL Analytics] ersätts tilläggsfunktionen [!DNL Audience Manager].
 
 ![Så här aktiverar du datadelning från Adobe Analytics-tillägget till Audience Manager](/help/using/integration/assets/analytics-to-aam.png)
-
-### Implementering med [!DNL Adobe Digital Tag Management (DTM)] eller någon annan tagghanteringslösning
-
->[!WARNING]
->
->[!DNL Adobe] planerar att upphöra  [!DNL DTM] i slutet av 2020. Mer information och schemaläggning finns i [!DNL DTM] Planer för solnedgång i [Adobe användarforum](https://forums.adobe.com/community/experience-cloud/platform/launch/blog/2018/10/05/dtm-plans-for-a-sunset).
-
-Så här implementerar du [!UICONTROL Audience Management Module] med [Adobe DTM](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html) eller en annan tagghanteringslösning:
-
-1. Hämta [!UICONTROL AppMeasurement] med [Analytics Code Manager](https://docs.adobe.com/content/help/sv-SE/analytics/admin/admin-tools/code-manager-admin.html) (kräver version 1.5 eller senare).
-1. Uppdatera din [!UICONTROL AppMeasurement]-kod till den version som finns i den hämtade zip-filen.
-1. Kopiera all kod från `AppMeasurement_Module_AudienceManagement.js` från zip-filen. Klistra in den i `appMeasurement.js`-filen alldeles ovanför texten, `"DO NOT ALTER ANYTHING BELOW THIS LINE."`
-1. Lägg till koden `s.loadModule("AudienceManagement");`, precis ovanför den `AppMeasurement_Module_AudienceManagement.js`-kod som du nyss lade till i föregående steg.
-1. Uppdatera och kopiera koden nedan och lägg till den i funktionen `doPlugins` i din `AppMeasurement.js`-fil.
-
-```js
-s.AudienceManagement.setup({ 
-     "partner":"INSERT-YOUR-PARTNER-NAME-HERE", 
-     "containerNSID":0, 
-     "uuidCookie": { 
-          "name":"aam_uuid", 
-          "days":30
-     },
-     "visitorService": {
-          "namespace": "INSERT-EXPERIENCE-CLOUD-ORGID-HERE" 
-     } 
-});
-```
-
->[!TIP]
->
->Funktionen `audienceManagement.setup` delar parametrar med funktionen [!DNL Audience Manager] `DIL.create` som du kan konfigurera i den här koden. Mer information om de här parametrarna finns i [DIL create](../../dil/dil-class-overview/dil-create.md#dil-create).
 
 ## Kodelement definierade {#code-elements-defined}
 
