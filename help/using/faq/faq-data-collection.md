@@ -5,16 +5,16 @@ seo-title: Vanliga frågor om datainsamling och produktintegrering
 solution: Audience Manager
 title: Vanliga frågor om datainsamling och produktintegrering
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
-keywords: SFTP; SFTP address; STFP IP address; FTP address
-feature: Administration
+keywords: SFTP; SFTP-adress; IP-adress för STFP, FTP-adress
+feature: Administrering
+exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
 translation-type: tm+mt
-source-git-commit: 1f3b3d7d7ea8eaa0c1b64f147dc60b85f4e2f487
+source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 86%
+source-wordcount: '1159'
+ht-degree: 85%
 
 ---
-
 
 # Vanliga frågor om datainsamling och produktintegrering {#data-collection-and-product-integration-faq}
 
@@ -38,7 +38,7 @@ Tyvärr inte. Dessa IP-adresser tilldelas dynamiskt efter geografisk region via 
 
  
 
-**Kan du ge mig en IP-adress jag kan lägga till i en tillåtelselista för din inkommande och utgående SFTP-server?**
+**Kan du ge mig en IP-adress som jag kan lägga till i en tillåtelselista för din inkommande och utgående SFTP-server?**
 
 Ja, se nedan.
 
@@ -84,7 +84,7 @@ Det bästa är att konfigurera [!DNL Audience Manager] - [!DNL Analytics]-integr
 
 * Placera [!UICONTROL DIL] direkt i `s_code`.
 
-* Tillämpa [!UICONTROL DIL] och `s_code` via [!DNL Adobe Experience Platform Launch] eller [!DNL Adobe DTM].
+* Servera [!UICONTROL DIL] och `s_code` till [!DNL Adobe Experience Platform Launch].
 
 Se [API för Data Integration Library (DIL)](../dil/dil-overview.md).
 
@@ -153,7 +153,7 @@ Ja, [!DNL Audience Manager] kan tillhandahålla data som samlats in för använd
 
 **[!DNL Google Ad Manager]Jag vill samla in data på en webbplats och rikta mig till användare på en annan webbplats via Måste jag använda kod på den andra webbplatsen om jag inte vill samla in data från den?**
 
-Nej. Om data inte behöver samlas in på den andra webbplatsen behöver du inte distribuera DIL där. Så länge du har åtkomst till lagret på den andra webbplatsen via [!DNL Google Ad Manager] kan du använda datainsamlingen från den första platsen och målet via [!DNL Google Ad Manager].
+Nej. Om data inte behöver samlas in på den andra webbplatsen behöver du inte distribuera DIL där. Så länge du har tillgång till lagret på den andra webbplatsen via [!DNL Google Ad Manager] kan du använda datainsamlingen från den första platsen och målet via [!DNL Google Ad Manager].
 
 <br> 
 
