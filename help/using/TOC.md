@@ -5,10 +5,9 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-description: Läs om hur Audience Manager kan samla in kommersiellt relevant information om webbplatsbesökare, skapa marknadsföringsbara segment och leverera riktad reklam och innehåll till rätt målgrupp.
 feature-set: Audience Manager
-translation-type: tm+mt
-source-git-commit: bd049d293eeddf9c3454ea8dc183f84f5c7df59a
+source-git-commit: cf9368d4690b61066646054543cc60d390eea021
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1809'
 ht-degree: 90%
 
 ---
@@ -87,7 +86,7 @@ ht-degree: 90%
       + [Skapa traits av signaler](features/data-explorer/create-traits-from-signals.md)
       + [Efteretablering av realiserade traits](features/data-explorer/data-explorer-trait-backfill.md)
       + [Logiska operatorer som stöds](features/data-explorer/data-explorer-supported-operators.md)
-   + [Dataexportkontroller](features/data-export-controls.md)
+   + [Kontroller vid dataexport](features/data-export-controls.md)
    + Datakällor {#data-sources}
       + [Lista över datakällor och inställningar](features/datasources-list-and-settings.md)
       + [Skapa en datakälla](features/manage-datasources.md)
@@ -246,7 +245,7 @@ ht-degree: 90%
          + [Attribut som stöds för DCS API-anrop](api/dcs-intro/dcs-api-reference/dcs-keys.md)
    + REST API:er {#rest-apis}
       + [Översikt över REST API:er](api/rest-api-main/rest-api-main.md)
-      + [Komma igång med REST API:er](api/rest-api-main/aam-api-getting-started.md)
+      + [Kom igång med REST API:er](api/rest-api-main/aam-api-getting-started.md)
       + [Algoritmiska API-metoder](api/rest-api-main/aam-api-algo-methods.md)
       + [API-metoder för Data Integration Library](api/rest-api-main/aam-api-dil-methods.md)
       + [API-metoder för datakälla](api/rest-api-main/aam-api-data-sources.md)
@@ -327,7 +326,7 @@ ht-degree: 90%
          + [Pixelbaserade dataöverföringar](integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)
          + [Inkommande datainmatning i realtid](integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)
       + Satsvis dataöverföringsprocess {#batch-data-transfer-process}
-         + [Beskrivning av satsvis dataöverföringsprocess](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
+         + [Beskrivning av satsvis överföring av data](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
          + [Översikt över att skicka satsvisa data till Audience Manager](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)
          + [ID-synkronisering för inkommande dataöverföringar](integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)
          + [Krav på namn och innehåll för ID-synkroniseringsfiler](integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
@@ -384,16 +383,17 @@ ht-degree: 90%
    + [Förstå anrop till Demdex-domänen](reference/demdex-calls.md)
    + [Autentiseringstillstånd för besökare i Audience Manager](reference/visitor-authentication-states.md)
 + Vanliga frågor och svar {#faqs}
-   + [Översikt över vanliga frågor om Audience Manager ](faq/faq-overview.md)
+   + [Översikt över vanliga frågor om Audience Manager](faq/faq-overview.md)
    + [Vanliga frågor om API](faq/faq-api.md)
    + [Vanliga frågor om Audience Lab](faq/faq-audience-lab.md)
-   + [Vanliga frågor om anpassade dataflöden](faq/faq-cdf.md)
+   + [Vanliga frågor om kunddataflöden](faq/faq-cdf.md)
    + [Vanliga frågor om datainsamling och produktintegrering](faq/faq-data-collection.md)
    + [Vanliga frågor om inmatning av inkommande kunddata](faq/faq-inbound-data-ingestion.md)
    + [Vanliga frågor om sekretess och datalagring](faq/faq-privacy.md)
    + [Vanliga frågor om personbaserade destinationer](faq/faq-people-based-destinations.md)
    + [Vanliga frågor om produktfunktioner](faq/faq-features.md)
    + [Vanliga frågor om regler för profilsammanslagning och enhetsdiagram](faq/faq-profile-merge.md)
+   + [Vanliga frågor om lookalike-modellering](faq/faq-lookalike-modeling.md)
    + [Vanliga frågor om Predictive Audiences](faq/faq-predictive-audiences.md)
    + [Vanliga frågor om målgruppsanpassning](faq/faq-targeting.md)
    + [Vanliga frågor om rapportering](faq/faq-reporting.md)
@@ -403,10 +403,10 @@ ht-degree: 90%
    + [Kontaktuppgifter och juridisk information](/help/using/help-legal/help-legal-contact.md)
 + De vanligaste supportfrågorna {#top-support-issues}
    + [Översikt](/help/using/support-issues/support-issues-overview.md)
-   + [Varför sjönk mina registrerade trait-populationer till 0 runt den 15 oktober?](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
+   + [Varför sjönk mina registrerade trait-populationer till 0 runt den 15 oktober? ](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
    + [Varför visas inte mina traits eller segment på sidan Overlap Reports?](/help/using/support-issues/why-do-my-traits-or-segments-not-show-up-in-the-overlap-reports.md)
    + [Varför kan användare med skrivskydd skapa, redigera eller ta bort traits och segment?](/help/using/support-issues/aam-read-only-users-create-delete-traits-segments.md)
-   + [Vi använder inte Audience Manager, men kan se Javascript-anropen för Audience Manager på vår webbplats](/help/using/support-issues/not-using-aam-but-seeing-aam-javascript.md)
+   + [Vi är inte Audience Manager-kund, men vi kan se Javascript-anropen för Audience Manager på vår webbplats](/help/using/support-issues/not-using-aam-but-seeing-aam-javascript.md)
    + [Bör jag se mappade segment för Audience Manager Audience Lab på sidan med destinationsuppgifter?](/help/using/support-issues/should-i-see-audience-lab-mapped-segments-on-the-destination-page.md)
 + Dokumentationsuppdateringar {#documentation-updates}
    + [Dokumentationsuppdateringar för 2021](docs-updates/docs-2021.md)
