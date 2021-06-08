@@ -8,11 +8,10 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP-adress; IP-adress för STFP, FTP-adress
 feature: Administrering
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-translation-type: tm+mt
-source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
+source-git-commit: 24284321570ee5eb9632801a4a333a11b532e386
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 85%
+source-wordcount: '1206'
+ht-degree: 82%
 
 ---
 
@@ -206,3 +205,11 @@ Se även [Index över Audience Manager-ID:n](../reference/ids-in-aam.md).
 **Hur lång tid tar det innan användarprofiler synkroniseras mellan olika [regioner](../api/dcs-intro/dcs-api-reference/dcs-regions.md)?**
 
 Det tar vanligtvis upp till 24 timmar för en användarprofil att synkroniseras mellan regioner. I sällsynta fall kan processen ta upp till 48 timmar.
+
+ 
+
+**Vad händer med inaktiva Amazon S3-nycklar?**
+
+Adobe förser Audience Manager-kunder med användarnycklar för Audience Manager-buckarna [!DNL Amazon S3]. Av säkerhetsskäl inaktiveras nycklarna automatiskt efter 100 dagars inaktivitet.
+
+Om du vill återaktivera dina nycklar eller begära nya kontaktar du kundsupport.
