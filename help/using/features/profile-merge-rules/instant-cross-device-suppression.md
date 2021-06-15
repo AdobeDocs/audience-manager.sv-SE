@@ -4,10 +4,9 @@ seo-description: Instant Cross-Device Suppression är möjligheten att undertryc
 seo-title: Omgående enhetsövergripande undertryckning
 title: Omgående enhetsövergripande undertryckning
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
-feature: Profile Merge
+feature: Sammanfoga profil
 exl-id: b9686210-e1aa-4f0a-a549-27d29c94e963
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 2643bebea8618124d5c96906e8dc89e21024d51a
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 1%
@@ -68,4 +67,4 @@ Tänk på följande när det gäller bearbetning:
 Tänk på följande när det gäller timing:
 
 * Ett segment kommer att lagras på [Edge](../../reference/system-components/components-edge.md) under samma tidsperiod som en enhetsprofil lagras på [!UICONTROL Edge], det vill säga 14 dagar sedan den senaste realtidsinteraktionen. Läs mer om datalagring i våra [Vanliga frågor om datalagring](../../faq/faq-privacy.md#data-retention-faq).
-* Det tar cirka 24 timmar för avsegmenteringsåtgärden att spridas över [!DNL DCS]-regioner. Läs mer om våra [!DNL DCS]-regioner [här](../..//reference/system-components/components-data-collection.md) och [här](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
+* Det tar cirka 24 timmar för avsegmenteringsåtgärden att spridas över [!DNL DCS]-regioner. Läs mer om våra [!DNL DCS]-regioner [här](../../reference/system-components/components-data-collection.md) och [här](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
