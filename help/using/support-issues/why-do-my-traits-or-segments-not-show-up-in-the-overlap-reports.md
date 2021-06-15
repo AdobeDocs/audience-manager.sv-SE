@@ -6,8 +6,7 @@ solution: Audience Manager
 title: Varför visas inte mina traits eller segment på sidan Overlap Reports?
 feature: Support
 exl-id: 8341ee38-fc46-4a4b-9c9e-4ce2edb9a2fb
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 2643bebea8618124d5c96906e8dc89e21024d51a
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 99%
@@ -29,4 +28,4 @@ Ett minimikrav på unika besökare måste uppfyllas för att ett trait eller seg
 * För traits: 28 000 under en 14-dagarsperiod
 * För segment: 70 000 användare i realtid under en 14-dagarsperiod
 
-Mer information om detta finns på sidan [Datainsamling och felfrekvens i utvalda Audience Manager-rapporter](..//reporting/report-sampling.md).
+Mer information om detta finns på sidan [Datainsamling och felfrekvens i utvalda Audience Manager-rapporter](../reporting/report-sampling.md).
