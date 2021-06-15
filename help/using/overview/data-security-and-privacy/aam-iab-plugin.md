@@ -4,10 +4,9 @@ seo-description: Adobe ger er möjlighet att hantera och förmedla användarnas 
 seo-title: Plugin-program för Audience Manager för IAB TCF
 solution: Audience Manager
 title: Plugin-program för Audience Manager för IAB TCF
-feature: Data Governance & Privacy
+feature: Datastyrning och sekretess
 exl-id: aa6bc415-e52b-4900-951d-ccf51d907aa2
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 8fc6c96bf9e8216ef4458989c87f1f93ea9f0347
 workflow-type: tm+mt
 source-wordcount: '2441'
 ht-degree: 40%
@@ -76,7 +75,7 @@ Du måste uppfylla följande krav för att kunna använda plugin-programmet Audi
 
 Om du vill aktivera stöd för IAB TCF i Audience Manager läser du vår dokumentation om att [konfigurera IAB med anmälan](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/iab.html).
 
-Det enklaste sättet att göra detta är att använda [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html) för att lägga till [!DNL ECID Opt-in] i egenskaperna. Läs dokumentationen för [tillägget ECID Opt-in](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html) om du vill veta hur du konfigurerar Launch-tillägget.
+Det enklaste sättet att göra detta är att använda [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en) för att lägga till [!DNL ECID Opt-in] i egenskaperna. Läs dokumentationen för [tillägget ECID Opt-in](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html) om du vill veta hur du konfigurerar Launch-tillägget.
 
 ## Arbetsflöde för användarval när IAB-ramverket används {#user-choice-workflow}
 
