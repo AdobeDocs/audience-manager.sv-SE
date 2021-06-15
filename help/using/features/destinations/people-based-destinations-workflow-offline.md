@@ -4,12 +4,11 @@ seo-description: 'Den här sidan innehåller stegvisa anvisningar om hur du skap
 seo-title: Arbetsflöde B – Personalisering endast baserad på offlinedata
 solution: Audience Manager
 title: Arbetsflöde B – Personalisering endast baserad på offlinedata
-feature: People-based Destinations
+feature: Personbaserade mål
 exl-id: d980de26-3133-4ae3-80c2-8c3bf2480bbd
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 87c3169083f0dc66490e6a8c808e16371f1d78c0
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1173'
 ht-degree: 6%
 
 ---
@@ -33,7 +32,7 @@ Oavsett om dina befintliga kund-ID:n för Audience Manager ([DPUID:n](../../refe
 
 ### Exempel
 
-Du vill kvalificera kund-ID:n från tabellen nedan för motsvarande anpassade ID:n. Låt oss tänka på att dina [DPUID:n](../../reference/ids-in-aam.md) lagras i en datakälla med ID 999999 och att ditt Audience Manager Partner-ID är 123.
+Du vill kvalificera kund-ID:n från tabellen nedan för motsvarande anpassade ID:n. Låt oss tänka på att dina [DPUID:n](../../reference/ids-in-aam.md) lagras i en datakälla med ID 999999, och att Audience Manager-datakällans ID är 123.
 
 | Kund-ID (DPUID) | ID för introduktionstrafik |
 | -------------------------------------- | ------------------- |
