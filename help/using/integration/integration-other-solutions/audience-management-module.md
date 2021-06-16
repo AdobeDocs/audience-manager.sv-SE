@@ -37,7 +37,7 @@ Det finns två metoder för att implementera datavidarebefordran från [!DNL Ado
 
 ### Implementering med [!DNL Adobe Experience Platform Launch]
 
-[!DNL Adobe] rekommenderar att du använder  [](https://docs.adobe.com/content/help/en/launch/using/overview.html) Launchextension för instrument  [!DNL Adobe Analytics] och  [!DNL Audience Manager] på dina egenskaper. I så fall behöver du inte kopiera kod manuellt. I stället måste du aktivera datadelning i tillägget [!DNL Analytics Launch], vilket visas i bilden nedan. Se även dokumentationen för [Adobe Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#adobe-audience-manager).
+[!DNL Adobe] rekommenderar att du använder  [](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en) Launchextension för instrument  [!DNL Adobe Analytics] och  [!DNL Audience Manager] på dina egenskaper. I så fall behöver du inte kopiera kod manuellt. I stället måste du aktivera datadelning i tillägget [!DNL Analytics Launch], vilket visas i bilden nedan. Se även dokumentationen för [Adobe Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#adobe-audience-manager).
 
 >[!TIP]
 >
