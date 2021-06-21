@@ -5,10 +5,9 @@ seo-title: Leveransmetoder för metadatafiler
 solution: Audience Manager
 title: Leveransmetoder för metadatafiler
 uuid: 5199ee9b-920d-423d-8070-05a017ecd562
-feature: Log Files
+feature: Loggfiler
 exl-id: 6ef2a80c-2574-4446-b755-28027818b5eb
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 4%
@@ -45,7 +44,7 @@ I följande tabell definieras vart och ett av dessa element i en filleveranssök
 
 
 | Filparameter | Beskrivning |
----------|----------|
+|---------|----------|
 | `.../log_ingestion/` | Detta är början på kataloglagringssökvägen. Du får den fullständiga sökvägen när allt är klart. |
 | `pid=<AAM ID>` | Detta nyckelvärdepar innehåller ditt Audience Manager kund-ID. |
 | `dpid=<d_src>` | Detta nyckelvärdepar innehåller det datakälla-ID som skickades vid ett händelseanrop. Datakällans ID är det värde som kopplar allt innehåll i filen till de data som den hör till. </br> Exempel: du har en kreatör med ID 123 och namnet&quot;Advertiser Creative A&quot;. Som ett händelseanrop skickas bara ID:t du behöver inkludera&quot;Advertiser Creative A&quot; i metadatafilen. Kampanjen och den kreativa delen tillhör en datakälla. Datakällans ID är det som knyter samman dessa och gör att vi kan koppla filinnehåll till ett ID som skickas vid ett händelseanrop. Se [Hur ID:n för händelsesamtal avgör filnamn, innehåll och leveransvägar](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md#how-ids-shape-file-names). |
