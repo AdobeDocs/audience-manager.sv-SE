@@ -6,14 +6,13 @@ solution: Audience Manager
 title: Migrera API-kod för Audience Manager
 uuid: 93cc28c4-4b91-4c79-93d5-ece9bb4cc9d5
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 081be8a7-5029-45b1-8fb1-0531d5090fe0
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '447'
 ht-degree: 4%
 
 ---
-
 
 # Migrera API-kod för Audience Manager {#audience-manager-api-code-migration}
 
@@ -89,7 +88,7 @@ Webbplatsen [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swa
 
 
 | API-typ | API-metoder |
----------|----------
+|---------|----------|
 | **[!UICONTROL Algorithmic Models**] | [Algoritmiska modeller](https://bank.demdex.com/portal/swagger/index.html#/Algorithmic_Models_API) |
 | **[!UICONTROL Audience Marketplace]** | <ul><li>[Dataflöden](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Buyer%20API/get_available_data_feeds_)</li><li>[Datafeedbegäran](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Buyer%20API/post_available_data_feeds__dataSourceId__requests)</li><li>[Datafeedfinansiering](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Finance%20API/get_data_feeds_billing_report)</li><li>[Dataflödesplaner](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Seller%20API/get_data_feeds__dataSourceId__plans_)</li><li>[Prenumerationer på dataflöden](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Seller%20API/get_data_feeds__dataSourceId__subscriptions)</li></ul> |
 | **[!UICONTROL Data Sources]** | [Datakällor ](https://bank.demdex.com/portal/swagger/index.html#/Data_Source_API) |
