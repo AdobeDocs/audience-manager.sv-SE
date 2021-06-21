@@ -6,10 +6,9 @@ seo-title: Adresserbara målgrupper
 solution: Audience Manager
 title: Adresserbara målgrupper
 uuid: 3eb1335a-6949-452b-b77a-697c22856cb3
-feature: Match Rates
+feature: Matchningsfrekvenser
 exl-id: 2728e4a8-522c-423f-a6ef-e4dd624f69e5
-translation-type: tm+mt
-source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '1827'
 ht-degree: 0%
@@ -48,7 +47,7 @@ Funktionen [!UICONTROL Addressable Audience] förvandlar det här abstrakta konc
 De tre mätvärdena som du kan se på startsidan för [!UICONTROL Addressable Audiences] representerar:
 
 | Mått | Beskrivning |
----------|----------|
+|---------|----------|
 | **[!UICONTROL Addressable Audience (Device)]** | Detta mått representerar [!UICONTROL Customer Addressable Audience] (beskrivs i tabellen ovan) *för de senaste 30 dagarna.* |
 | **[!UICONTROL Match Rate]** | Detta mått representerar [!UICONTROL Addressable Audience Match Rate] (beskrivs i tabellen ovan) *för de senaste 30 dagarna*. |
 | **[!UICONTROL Lifetime Addressable Audience (Device)]** | Antal alla enheter som har interagerat med alla [!DNL Audience Manager]-kunder på plattformsnivå under rapportens kontrollperiod och som kan matchas med denna [!UICONTROL destination]. Mer information finns i [Plattformsnivåmått](/help/using/features/addressable-audiences.md#platform-level-metrics). |
