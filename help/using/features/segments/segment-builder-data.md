@@ -5,15 +5,14 @@ seo-title: Trait- och segmentpopulationsdata i Segment Builder
 solution: Audience Manager
 title: Trait- och segmentpopulationsdata i Segment Builder
 uuid: e1e59c0a-b4c7-4cad-8485-3667e0a95e83
-feature: Segments
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 'Segment '
+exl-id: f8953d10-8a31-4c07-8d96-169c30a21de0
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1251'
 ht-degree: 2%
 
 ---
-
 
 # [!UICONTROL Trait] och  [!UICONTROL Segment] populationsdata i  [!UICONTROL Segment Builder] {#trait-and-segment-population-data-in-segment-builder}
 
@@ -29,7 +28,7 @@ I följande tabell definieras mått för trait-populationen:
 
 
 | Mått | Beskrivning |
----------|----------|
+|---------|----------|
 | [!UICONTROL Total Trait Population] | Antalet unika ID:n som har den valda egenskapen i sin profil. |
 
 
@@ -123,7 +122,7 @@ I följande tabell definieras faktiska värden för populationen i realtid och t
 
 
 | Kolumn A | Kolumn B |
----------|----------|
+|---------|----------|
 | [!UICONTROL Real-Time Population (Existing) ] | Det faktiska antalet enheter som visas i realtid med aktuella profiler som, när de sammanfogas med upp till 100 andra enhetsprofiler som är kopplade till enhetsdiagrammet, innehåller egenskaperna som ska kvalificera sig för segmentet så fort det sågs av Audience Manager. |
 | [!UICONTROL Total Population (Existing)] | Det totala antalet enheter med profiler som, när de sammanfogades med upp till 100 andra enhetsprofiler som är kopplade till enhetsdiagrammet, alla var kvalificerade för segmentet. |
 
@@ -138,5 +137,5 @@ För närvarande finns det en känd begränsning eftersom vår uppskattning av s
 >[!MORELIKETHIS]
 >
 >* [Vanliga frågor om regler för profilsammanslagning och enhetsdiagram](../../faq/faq-profile-merge.md)
->* [Profillänk](../profile-merge-rules/merge-rules-overview.md)
+* [Profillänk](../profile-merge-rules/merge-rules-overview.md)
 
