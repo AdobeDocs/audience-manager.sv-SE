@@ -8,7 +8,7 @@ title: Verkställbara loggfiler
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Loggfiler
 exl-id: bd499931-4e02-4f64-82ba-46ef7c4ffd3c
-source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
+source-git-commit: 7c46a246233c3519049197bac824f0ee0db29754
 workflow-type: tm+mt
 source-wordcount: '1611'
 ht-degree: 2%
