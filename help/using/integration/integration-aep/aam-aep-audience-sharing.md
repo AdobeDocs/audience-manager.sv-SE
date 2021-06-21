@@ -7,7 +7,7 @@ title: Målgruppsdelning mellan Audience Manager och Adobe Experience Platform
 keywords: AEP-målgruppsdelning, AEP-segment, plattformssegment, segmentdelning, målgruppsdelning, dela segment
 feature: Plattformsintegrering
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: 6900b56b4e0258ed0c4ddf94ef7b1f2c7e48a50d
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '1480'
 ht-degree: 2%
@@ -42,7 +42,7 @@ Dessutom delas dina Experience Platform-segment med andra Experience Cloud-lösn
 Se tabellen nedan för en översikt över användningsfall för målgruppsdelning:
 
 | **Användningsexempel** | **Adobe Experience Platform** | **Audience Manager** | **Centrala tjänster** |
----------|----------|---------|---------|
+|---------|----------|---------|---------|
 | **Målgruppsdelning** | <ul><li>Förbättra kundprofiler med data från Audience Manager</li><li>Använd data från Audience Manager i segmenteringen Experience Platform</li></ul> | <ul><li>Lägg till data från tredje part i segment</li><li>Algoritmisk modellering</li><li>Aktivering till ytterligare destinationer</li></ul> | Använd Experience Platform-segment i andra Experience Cloud-lösningar, som Adobe Target, Advertising Cloud eller Marketo. |
 
 {style=&quot;table-layout:auto&quot;}
@@ -83,7 +83,7 @@ Ett exempel på ett trait som skapats automatiskt från ett Experience Platform-
 
 
 | Artikelnummer | Namn | Beskrivning |
----------|----------|---------|
+|---------|----------|---------|
 | 1 | [!UICONTROL Trait Type] | Traits created from Experience Platform segments are created as onboard traits in Audience Manager. |
 | 2 | [!UICONTROL Data Source] | Automatiskt skapat. Alla egenskaper och segment som skapas automatiskt från Experience Platform-segment lagras i datakällan **[!UICONTROL Adobe Experience Platform Audience Sharing]**. |
 | 3 | [!UICONTROL Integration Code] | Integrationskoden motsvarar segment-ID:t i Experience Platform. |
@@ -103,10 +103,10 @@ Ett exempel på ett segment som skapats automatiskt från ett Experience Platfor
 ![Skärmbild av segment](/help/using/integration/integration-aep/assets/aep-segment.png)
 
 | Artikelnummer | Namn | Beskrivning |
----------|----------|---------|
-| 1 | [!UICONTROL Integration Code] | Integrationskoden motsvarar segment-ID:t i Experience Platform. |
+|---------|----------|---------|
+| 3 | [!UICONTROL Integration Code] | Integrationskoden motsvarar segment-ID:t i Experience Platform. |
 | 2 | [!UICONTROL Data Source] | Automatiskt skapat. Alla egenskaper och segment som skapas automatiskt från Experience Platform-segment lagras i datakällan **[!DNL Adobe Experience Platform Audience Sharing]**. |
-| 1 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** anger att automatiskt skapade segment följer den sammanfogningsprincip som har konfigurerats i Experience Platform. |
+| 3 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** anger att automatiskt skapade segment följer den sammanfogningsprincip som har konfigurerats i Experience Platform. |
 | 4 | [!UICONTROL Segment Rule] | Segmentet består av det trait som beskrivs i [Traits-avsnittet](#aep-segments-as-aam-traits). |
 
 {style=&quot;table-layout:auto&quot;}
