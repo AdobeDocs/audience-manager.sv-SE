@@ -6,8 +6,7 @@ solution: Audience Manager
 title: Integrering med Facebook WCA
 feature: Tredjepartsintegrering
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
-translation-type: tm+mt
-source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 4%
@@ -69,7 +68,7 @@ Exempelpixel utlöses från sidan. I det här exemplet visas en användare som k
 `https://www.facebook.com/tr/?id=6876666666662303&ev=Adobe-Audience-Manager-Segment&cd[segID]=3401321,2993399,3263410&noscript=1`
 
 | Parameter | Beskrivning |
----------|----------|
+|---------|----------|
 | `id` | Ditt [!DNL Facebook]-pixel-ID som du hittar i [!DNL Facebook Ad Manager]-användargränssnittet när du skapar målgruppspixlar. |
 | `ev` | Event.     Det här är ett godtyckligt värde som visas i [!DNL Facebook Ad Manager]-användargränssnittet när pixeln börjar utlösas på webbplatsen. Mer information finns i [!UICONTROL Include]-objektet i [Steg 3](/help/using/integration/integrating-third-party/facebook-wca-integration.md#step-3-create-audience). |
 | `cd[segID]` | En extra parameter, som börjar fylla i i användargränssnittet för [!DNL Facebook Ad Manager] när pixeln börjar brinna på webbplatsen. `segID` är också godtyckligt. |
@@ -92,7 +91,7 @@ Ange ett slutdatum om tillämpligt, annars lämnas tomt för inget slutdatum.
 Se [Skapa en anpassad målgrupp för en webbplats](https://www.facebook.com/business/help/666509013483225) i hjälpdokumentationen för [!DNL Facebook]. Välj [!UICONTROL Create Audience]-alternativen i tabellen nedan:
 
 | Objekt | Beskrivning |
----------|----------|
+|---------|----------|
 | Webbplatstrafik | Anpassad kombination |
 | Inkludera | <ul><li>Välj **[!UICONTROL Event]** > Välj **[!UICONTROL Adobe-Audience-Manager-Segment]**. Detta var värdet på parametern `ev` i exempelpixeln i steg 1. Observera, att om pixeln ännu inte har startats kanske inte **[!UICONTROL Event]**-alternativet eller **[!UICONTROL Adobe-Audience-Manager-Segment]** visas i [!DNL Facebook]-användargränssnittet.</li><li>Lägg till en parameter: Välj `segID`.</li><li><p>Markera **innehåller**-operatorn.</p><p>Detta är viktigt eftersom besökare kan kvalificera sig för flera segment, kan det finnas flera [!UICONTROL segment IDs] i pixelparametern. Om du använder operatorn lika med (`=`) kanske inte dina besökare kvalificerar dig för målgruppen, och du kommer att märka en lägre volym.</p></li><li>Lägg till ett värde: Ange segment-ID:t för [!DNL Audience Manager].</li></ul> |
 | Lägg till nytt villkor | Valfri inställning. |
