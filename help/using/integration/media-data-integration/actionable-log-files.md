@@ -1,20 +1,19 @@
 ---
 description: Med loggfiler som kan användas kan du hämta mediesignaler från och serverloggfiler för att skapa egenskaper i Audience Manager. Fånga visningar, klick och konverteringar från annonsservrar som egenskaper utan att behöva lägga till pixlar.
-keywords: actionable logs, alf, ALF
+keywords: loggar som kan åtgärdas, alf, ALF
 seo-description: Med loggfiler som kan användas kan du hämta mediesignaler från och serverloggfiler för att skapa egenskaper i Audience Manager. Fånga visningar, klick och konverteringar från annonsservrar som egenskaper utan att behöva lägga till pixlar.
 seo-title: Verkställbara loggfiler
 solution: Audience Manager
 title: Verkställbara loggfiler
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
-feature: Log Files
-translation-type: tm+mt
-source-git-commit: a4d86fb0324a03002123f8713eb9786b5b74c38e
+feature: Loggfiler
+exl-id: bd499931-4e02-4f64-82ba-46ef7c4ffd3c
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1611'
 ht-degree: 2%
 
 ---
-
 
 # Verkställbara loggfiler {#actionable-log-files}
 
@@ -177,7 +176,7 @@ I tabellen visas de åtgärdbara signalerna från [!DNL Google Ad Manager]-loggf
 
 
 | Rubriknamn i loggfil | Signal | Beskrivning |
----------|----------|---------
+|---------|----------|---------|
 | `LineItemId` | `d_lineitem` | Det numeriska ID:t för det levererade radobjektet för annonshanteraren |
 | `OrderId` | `d_orderid` | Det numeriska ID:t för Ad Manager-ordern som innehöll det levererade radobjektet och det kreativa ID:t. |
 | `CreativeId` | `d_creative` | Det numeriska ID:t för den levererade annonshanterarens creative. |
@@ -302,7 +301,7 @@ Om du vill skapa regelbaserade egenskaper med hjälp av dina åtgärdbara signal
 
 ## Använd fall {#use-cases}
 
-En fördel med att implementera [!UICONTROL Actionable Log Files] är att du kan använda [kontroller för senaste och frekvens](../../features/segments/recency-and-frequency.md) på alla [regelbaserade egenskaper](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) som innehåller åtgärdbara signaler. Detta gör att du till exempel kan ange antalet gånger som en användare visas som en viss kreativ i en mediekampanj. Läs [Instant Cross-Device Suppression](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md) om du vill veta hur du gör detta. Andra användningsområden:
+En fördel med att implementera [!UICONTROL Actionable Log Files] är att du kan använda [kontroller för senaste och frekvens](../../features/segments/recency-and-frequency.md) för alla [regelbaserade egenskaper](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) som innehåller åtgärdbara signaler. Detta gör att du till exempel kan ange antalet gånger som en användare visas som en viss kreativ i en mediekampanj. Läs [Instant Cross-Device Suppression](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md) om du vill veta hur du gör detta. Andra användningsområden:
 
 ### Återmarknadsföringsanvändare
 
@@ -337,5 +336,5 @@ En fördel med att implementera [!UICONTROL Actionable Log Files] är att du kan
 >[!MORELIKETHIS]
 >
 >* [Importera Google Campaign Manager-datafiler till Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
->* [Audience Optimization-rapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md)
+* [Audience Optimization-rapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md)
 
