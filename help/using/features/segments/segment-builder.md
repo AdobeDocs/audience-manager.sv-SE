@@ -5,15 +5,14 @@ seo-title: Segment Builder
 solution: Audience Manager
 title: Segment Builder
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
-feature: Segments
-translation-type: tm+mt
-source-git-commit: 9e0c936ba514e517bcbd7572420118293f9a791f
+feature: 'Segment '
+exl-id: 1bd681e4-fdf7-40df-b497-b1b0bf19d68e
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 1%
 
 ---
-
 
 # [!UICONTROL Segment Builder] {#segment-builder}
 
@@ -198,5 +197,5 @@ I fältet [!UICONTROL Destination Value] anger du det värde (del av nyckelvärd
 >[!MORELIKETHIS]
 >
 >* [Skapa ett cookie-mål](../../features/destinations/create-cookie-destination.md)
->* [Skapa ett URL-mål](../../features/destinations/create-url-destination.md)
+* [Skapa ett URL-mål](../../features/destinations/create-url-destination.md)
 
