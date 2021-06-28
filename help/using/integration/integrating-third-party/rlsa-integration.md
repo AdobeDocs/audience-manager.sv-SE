@@ -5,12 +5,11 @@ seo-title: Skicka segment till en Google AdWords-lista för återmarknadsföring
 solution: Audience Manager
 title: Skicka segment till en Google AdWords-lista för återmarknadsföring
 uuid: 5ad821c6-48b4-42c0-b912-1563331e93a2
-feature: Third-party Integration
+feature: Tredjepartsintegrering
 exl-id: 76676eae-de4f-4fee-8774-ee215525306a
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 760d6a56754530368ac11a5c9f10c4be487de028
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '336'
 ht-degree: 5%
 
 ---
@@ -34,7 +33,7 @@ Så här ställer du in en [!DNL Google Ads]-marknadsföringslista som en [!DNL 
 1. I Audience Manager [Skapa en [!DNL URL destination]](../../features/destinations/create-url-destination.md) eller redigera en befintlig [!DNL destination]. Använd följande inställningar när du skapar [!DNL destination]:
    * Typ: URL
    * Serialisera: Aktiverad
-   * Avgränsare: Semikolon (;)
+   * Avgränsare: Semikolon (&amp;semikolon; )
 
 1. I avsnittet [!UICONTROL Segment Mappings] i [!DNL URL] [!DNL destination] lägger du till koden från steg 2 i fälten [!DNL URL] och [!DNL Secure URL]. Lägg till `http:` och `https:` som prefix i fälten [!DNL URL] respektive [!DNL Secure URL].
 
@@ -72,7 +71,7 @@ En slutförd mappning kan se ut ungefär så här:
 >[!MORELIKETHIS]
 >
 >* [[!DNL Destinations]](../../features/destinations/destinations.md)
->* [Skapa en [!DNL URL Destination]](../../features/destinations/create-url-destination.md)
->* [Om AdWords Remarketing Lists](https://support.google.com/adwords/answer/2472738)
->* [Hur AdWords Remarketing fungerar](https://support.google.com/adwords/answer/2454000)
+* [Skapa en [!DNL URL Destination]](../../features/destinations/create-url-destination.md)
+* [Om AdWords Remarketing Lists](https://support.google.com/adwords/answer/2472738)
+* [Hur AdWords Remarketing fungerar](https://support.google.com/adwords/answer/2454000)
 
