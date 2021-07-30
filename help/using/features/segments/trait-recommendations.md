@@ -4,15 +4,14 @@ seo-description: Få rekommendationer för Live-trait när ni bygger era segment
 seo-title: Trait-rekommendationer
 solution: Audience Manager
 title: Trait-rekommendationer
-feature: Segments
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 'Segment '
+exl-id: 7ef862a9-7354-49fb-9af0-925d827a5165
+source-git-commit: 432b12c4d4fb567d1a0bcaa9d12baaac5e3ae0f7
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1574'
 ht-degree: 4%
 
 ---
-
 
 # Trait-rekommendationer
 
@@ -31,7 +30,7 @@ I nästa video visas arbetsflödet för [!UICONTROL Marketplace Recommendations]
 ## Översikt
 
 [!UICONTROL Trait Recommendations], som drivs av  [!DNL Adobe Sensei], för in datavetenskap i era vardagliga arbetsflöden i Audience Manager.
-När du skapar eller redigerar ett segment i [!UICONTROL Trait Recommendations]Segment Builder[ får du rekommendationer om ytterligare egenskaper som du kan inkludera, som liknar egenskaperna i segmentregeln.](segment-builder.md)
+När du skapar eller redigerar ett segment i [Segment Builder](segment-builder.md) får du rekommendationer om ytterligare egenskaper som du kan inkludera, som liknar egenskaperna i segmentregeln.[!UICONTROL Trait Recommendations]
 
 Audience Manager visar dina rekommendationer både från dina egna egenskaper, i **[!UICONTROL Recommendations]**-avsnittet och från **[!UICONTROL Audience Marketplace]** i **[!UICONTROL Recommendations from Marketplace]**-avsnittet.
 
@@ -144,7 +143,7 @@ När du klickar på ett spår från första part öppnas ett popup-fönster, vil
 
 För att kunna skapa rekommendationer för egenskaper beräknar Audience Manager [Jaccard-likhet](https://en.wikipedia.org/wiki/Jaccard_index) mellan målegenskap och alla andra egenskaper som ditt konto har tillgång till, inklusive data från tredje part. Audience Manager visar sedan upp till femtio egenskaper med den största likheten.
 
-## Likhetspoäng för trasig {#trait-similarity-score}
+## Spåra likhetsresultat {#trait-similarity-score}
 
 Audience Manager beräknar [!UICONTROL Trait Similarity Score] mellan två egenskaper genom att beräkna skärningspunkten och unionen utifrån antalet [!UICONTROL UUID]s och sedan dividera de två. För de två egenskaperna A och B ser beräkningen ut så här:
 
@@ -171,7 +170,7 @@ Om samma egenskaper A och B hade 400 000 [!UICONTROL UUID]s som kvalificerar fö
 Använd tabellen nedan som en grov stödlinje för att anpassa likheter. Den här guiden baseras på de likhetspoäng som observerats för en majoritet av egenskaperna.
 
 | [!UICONTROL Trait Similarity Score] | Signifikans |
----------|----------|
+|---------|----------|
 | 0.1 och senare | Hög likhet mellan egenskaper |
 | 0.03-0.1 | Medelstor likhet mellan egenskaper |
 | 0.01-0.03 | Låg likhet mellan egenskaper |
