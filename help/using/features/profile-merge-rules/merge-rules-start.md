@@ -5,12 +5,11 @@ seo-title: Komma igång med regler för profilsammanslagning
 solution: Audience Manager
 title: Komma igång med regler för profilsammanslagning
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
-feature: Profile Merge
+feature: Sammanfoga profil
 exl-id: 11f397dd-1f23-4b14-be6f-60ce8b77ab12
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: b8c8f35376c5a8a85fa4eeace7b447385ee9f339
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1315'
 ht-degree: 3%
 
 ---
@@ -103,7 +102,7 @@ Så här slutför du avsnittet [!UICONTROL Proflie Merge Rule Setup]:
    * **[!UICONTROL Device Co-op]**
 4. Klicka på **[!UICONTROL Save]**.
 
-### Överväganden för Adobe Campaign-destinationer som använder enhets-ID:n som användar-ID:n {#considerations}
+### Överväganden för Adobe Campaign-destinationer som använder enhets-ID som användar-ID {#considerations}
 
 I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profilsammanslagning för att förbättra exaktheten hos gruppfiler som genererats med hjälp av enhets-ID:n. Dessa förbättringar respekteras strikt i din Audience Manager-instans från och med måndagen den 16 mars 2020. Därför kommer segment som mappas till ett mål med hjälp av enhets-ID att sluta producera exporter i vissa konfigurationer av profilkopplingsregler.
 
@@ -126,7 +125,7 @@ Följ de här instruktionerna för att konfigurera [!UICONTROL Adobe Experience 
 
 Du måste konfigurera en [datakälla för olika enheter](#create-data-source) och [profilkopplingsregler](#create-profile-merge-rule) *innan du slutför dessa procedurer.*
 
-## För Adobe Experience Platform identitetstjänstkunder {#id-service-customers}
+## För Adobe Experience Platform Identity Service-kunder {#id-service-customers}
 
 [!UICONTROL Adobe Experience Platform Identity Service] och den senaste versionen av [DIL](../../dil/dil-overview.md) rekommenderas när du arbetar med [!UICONTROL Profile Merge Rules]. Du behöver dock inte använda [!UICONTROL Adobe Experience Platform Identity Service] för att arbeta med den här funktionen. Om du bara använder [!UICONTROL DIL], se [det äldre DIL-avsnittet](#legacy-dil) nedan.
 
@@ -225,7 +224,7 @@ Kontrollera de metoder i din [!DNL SDK]-kod som gör att du kan skicka [!UICONTR
  </tbody>
 </table>
 
-Se även [Audience Manager-metoder för Android](hhttps://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html) och [Audience Manager-metoder för iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html).
+Se även [Audience Manager-metoder för Android](https://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html) och [Audience Manager-metoder för iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html).
 
 >[!MORELIKETHIS]
 >
