@@ -5,17 +5,16 @@ seo-title: Vanliga frågor om sekretess och datalagring
 solution: Audience Manager
 title: Vanliga frågor om sekretess och datalagring
 uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
-feature: Data Governance & Privacy
+feature: Datastyrning och sekretess
 exl-id: bccf49d7-1a3b-4286-86fb-59e472af4501
-translation-type: tm+mt
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 84%
+source-wordcount: '759'
+ht-degree: 83%
 
 ---
 
-# Vanliga frågor om sekretess och datalagring {#privacy-and-data-retention-faq}
+# Vanliga frågor om sekretess och datalagring{#privacy-and-data-retention-faq}
 
 Svar på vanliga frågor och problem som rör sekretess och data.
 
@@ -29,7 +28,7 @@ Svar på vanliga frågor och problem som rör sekretess och data.
 
 **Hur använder Audience Manager cookies och vilka cookies används?**
 
-Se [Cookies för Audience Manager](https://docs.adobe.com/content/help/sv-SE/core-services/interface/ec-cookies/cookies-am.html).
+Se [Cookies för Audience Manager](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html).
 
 **Kan Audience Manager-kunder i USA inrikta sig på EU-användare?**
 
