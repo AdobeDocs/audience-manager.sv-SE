@@ -5,15 +5,14 @@ seo-title: Segmentsyfte, komposition och regler
 solution: Audience Manager
 title: Segmentsyfte, komposition och regler
 uuid: 886d4abe-b1b6-4983-b4fb-b552d54d51ba
-feature: Segments
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 'Segment '
+exl-id: 4e4da7a7-3267-4564-b1c5-663dcddf2b93
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 5%
+source-wordcount: '327'
+ht-degree: 3%
 
 ---
-
 
 # Segment: Syfte, sammansättning och regler {#segments-purpose-composition-and-rules}
 
@@ -37,7 +36,7 @@ När du mappar Adobe Analytics [!UICONTROL segments] eller rapporterar programsv
 
 >[!TIP]
 >
->Audience Manager [!UICONTROL segments] skiljer sig från [!DNL Adobe Analytics] [!UICONTROL segments]. Läs [Förstå segment i analys och Audience Manager](https://docs.adobe.com/content/help/sv-SE/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) om du vill ha en detaljerad beskrivning av skillnaderna.
+>Audience Manager [!UICONTROL segments] skiljer sig från [!DNL Adobe Analytics] [!UICONTROL segments]. Läs [Förstå segment i analys och Audience Manager](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) om du vill ha en detaljerad beskrivning av skillnaderna.
 
 ## Skapa regelbaserad [!UICONTROL Segments] med [!UICONTROL Segment Builder]
 
