@@ -5,23 +5,22 @@ seo-title: Lista över datakällor och inställningar
 solution: Audience Manager
 title: Lista över datakällor och inställningar
 uuid: 280a6acd-fef0-4737-a96d-9e22fbc8bfaf
-feature: Data Sources
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: Datakällor
+exl-id: c561d51e-e1dc-413e-bf24-13f04f10abe6
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1116'
 ht-degree: 1%
 
 ---
 
-
-# [!UICONTROL Data Sources] Lista och inställningar  {#data-sources-list-and-settings}
+# [!UICONTROL Data Sources] Lista och inställningar {#data-sources-list-and-settings}
 
 Visa en lista över din nuvarande konfigurerade [!UICONTROL data sources], lägg till ny [!UICONTROL data sources] och redigera befintlig [!UICONTROL data sources].
 
 Du kan också hantera [!UICONTROL data sources] med [!DNL API]-metoder. Mer information finns i [API-metoder för datakälla](../api/rest-api-main/aam-api-data-sources.md).
 
-## [!UICONTROL Data Sources] Listvy  {#list-view}
+## [!UICONTROL Data Sources] Listvy {#list-view}
 
 Kontrollpanelen [!UICONTROL Data Sources] är en centraliserad arbetsyta för hantering av datakällor.
 
@@ -31,11 +30,11 @@ Kontrollpanelen [!UICONTROL Data Sources] (**[!UICONTROL Audience Data]** > **[!
 * Sök efter [!UICONTROL data sources] efter namn.
 * Skapa, redigera och ta bort [!UICONTROL data sources].
 
-## [!DNL Data Source] Inställningar och menyalternativ  {#settings-menu-options}
+## [!DNL Data Source] Inställningar och menyalternativ {#settings-menu-options}
 
 Inställningarna i de olika avsnitten i [!UICONTROL Data Source]-hanteringsgränssnittet identifierar din [!DNL data source], avgör hur den används eller delas och gör att du kan aktivera felrapportering för [!UICONTROL Onboarding Status Report].
 
-## [!DNL Data Source] Detaljer  {#details}
+## [!DNL Data Source] Detaljer {#details}
 
 Förutom textfält innehåller [!UICONTROL Data Source Details]-avsnittet de kontroller och alternativ som anges nedan.
 
@@ -56,7 +55,7 @@ Förutom textfält innehåller [!UICONTROL Data Source Details]-avsnittet de kon
       <li id="li_063F1B263B3B4D69B8880F7ACCB82450"> <b><span class="uicontrol"> Enhetsövergripande</span></b>: Ett autentiserat ID som tillhandahålls av kunden. Välj det här alternativet när du vill skapa: 
        <ul id="ul_D998B4081AD843C2B3B3E642DD011C1F"> 
         <li id="li_C9D2AF70603043D7BE9DF12FD494D7C7">En datakälla för olika enheter och bygg en <span class="wintitle">-profilkopplingsregel</span>. </li> 
-        <li id="li_992BD05E2AFE454CAA4460DDEB2B839B">En datakälla som använder länkar från <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html" format="https" scope="external"> Adobe Experience Cloud Device Co-op</a> eller ett annat enhetsdiagram från tredje part som är integrerat med <span class="keyword"> Audience Manager</span>. </li> 
+        <li id="li_992BD05E2AFE454CAA4460DDEB2B839B">En datakälla som använder länkar från <a href="https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html" format="https" scope="external"> Adobe Experience Cloud Device Co-op</a> eller ett annat enhetsdiagram från tredje part som är integrerat med <span class="keyword"> Audience Manager</span>. </li> 
        </ul> </li> 
      </ul> </p> </td> 
   </tr> 
@@ -87,7 +86,7 @@ Alternativen är:
 * **[!UICONTROL Cannot be used for off-site ad targeting]**
 * **[!UICONTROL Cannot be used for on-site personalization]**
 
-## [!UICONTROL Data Source] Inställningar  {#data-source-settings}
+## [!UICONTROL Data Source] Inställningar {#data-source-settings}
 
 [!UICONTROL Data Source Settings] innehåller de kontroller och alternativ som anges nedan. Vissa av dessa inställningar har ytterligare underalternativ och menyalternativ som du kan välja för att ändra en datakälla.
 
@@ -113,7 +112,7 @@ Markera kryssrutan **[!UICONTROL Inbound]** när datakällan är utformad för a
      <ul id="ul_3BC963CE378B4F6CB1861643A4541634"> 
       <li id="li_B86C5E7847424A2B9C094DF02741DDB8"> <b><span class="uicontrol"> Kund-ID</span></b>: Identifierar inkommande data med ett kund-ID. </li> 
       <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol"> Audience Manager-ID</span></b>: Identifierar inkommande data med ett  <span class="keyword"> Audience </span> ManagerID. </li> 
-      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud-ID</span></b>: Identifierar inkommande data med ett  <span class="keyword"> Experience </span> CloudID. Se <a href="https://docs.adobe.com/content/help/sv-SE/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID</a>. </li> 
+      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud-ID</span></b>: Identifierar inkommande data med ett  <span class="keyword"> Experience </span> CloudID. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID</a>. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
