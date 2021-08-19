@@ -5,12 +5,11 @@ seo-title: Trendrapporter
 solution: Audience Manager
 title: Trendrapporter
 uuid: bedbe7d4-7cbb-4403-9104-312f9230aea1
-feature: General & Trend Reports
+feature: Allmänna rapporter och trendrapporter
 exl-id: 3373f413-cc8f-49c7-9b4e-34b39e0efc38
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '651'
 ht-degree: 1%
 
 ---
@@ -80,7 +79,7 @@ t_working_with_trend_reports.xml
 
 1. (Valfritt) För musen över enskilda egenskaper eller segment för att visa antalet besök och datumet för varje datapunkt. Du kan klicka på kolumnrubrikerna i tabellen om du vill sortera resultaten i stigande eller fallande ordning.
 
-## Trendrapportresultat för Traits {#trend-report-results-traits}
+## Trendrapportresultat för egenskaper {#trend-report-results-traits}
 
 Filtren nedan är tillgängliga när du kör en [!UICONTROL Trend Report] och väljer **[!UICONTROL Trait]** som rapporttyp.
 
@@ -102,7 +101,7 @@ Nollor anger att [!DNL Audience Manager] inte samlade in data för den dagen. To
 
 Titta på videon nedan för att få en detaljerad bild av hur enhetsövergripande mätvärden fungerar.
 
->[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## Trendrapportresultat för segment {#segment-report-results-traits}
 
