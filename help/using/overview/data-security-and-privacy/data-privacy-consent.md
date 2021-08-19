@@ -6,13 +6,12 @@ solution: Audience Manager
 keywords: GDPR-gränssnitt, GDPR API, CCPA, sekretess, samtycke
 title: Hantering av samtycke
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
-feature: Data Governance & Privacy
+feature: Datastyrning och sekretess
 exl-id: 9e545e8d-dbe4-4df9-8801-af3c2c73e406
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 98%
+source-wordcount: '739'
+ht-degree: 94%
 
 ---
 
@@ -32,11 +31,11 @@ Audience Manager har verktyg som hjälper er att inhämta samtycke från era anv
 
 ## Experience Cloud Opt-in Service
 
-Med [Experience Cloud Opt-in Service](https://docs.adobe.com/content/help/sv-SE/id-service/using/implementation/opt-in-service/optin-overview.html) kan ni konfigurera protokoll för besökare som hjälper er att avgöra om ni kan placera en cookie på personens enhet eller webbläsare när hen besöker er webbplats.
+Med [Experience Cloud Opt-in Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) kan ni konfigurera protokoll för besökare som hjälper er att avgöra om ni kan placera en cookie på personens enhet eller webbläsare när hen besöker er webbplats.
 
 Detta är ett tillägg till [!DNL Experience Cloud ID (ECID) Service] som är utformat för att ni ska kunna kontrollera om och vilka Experience Cloud-lösningar som kan placera cookies på webbsidor för besökare innan användaren ger sitt samtycke.
 
-Med [Experience Cloud Opt-In Service](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) kan ni också ange protokoll som ska integreras med er plattform för hantering av samtycke (CMP) och befintliga system som en del av er större design.
+Med [Experience Cloud Opt-In Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) kan ni också ange protokoll som ska integreras med er plattform för hantering av samtycke (CMP) och befintliga system som en del av er större design.
 
 ## Hantera anmälan/inhämtning av samtycke
 
@@ -44,7 +43,7 @@ Audience Manager-kunder kan lagra samtycke för användare för olika ändamål 
 
 ## Hantera avanmälan/återtagande av samtycke
 
-Du kan hantera avanmälan för Adobe Experience Cloud via sidan [Your Privacy Choices](https://www.adobe.com/se/privacy/opt-out.html#customeruse). Med enklicksfunktioner kan slutanvändarna styra och avanmäla datainsamling via annonslösningarna i Adobe Experience Cloud (inklusive Audience Manager). Mer information finns i avsnittet för [företagskunder ](https://www.adobe.com/privacy/opt-out.html#customeruse) på sidan Privacy Choices. Information om webbläsare som inte stöder cookies från tredje part finns i [Deklarerad ID-anpassning](../../features/declared-ids.md#declared-id-targeting). För mobila enheter kan du hämta relevanta Audience Manager-identifierare och anropa Audience Managers avanmälnings-API:er som beskrivs i [exemplen på deklarerade ID-avanmälningar](../../features/declared-ids.md#opt-out-examples). Därefter kan all datainsamling avslutas för användare som har avanmälnings-API:er från Mobile SDK – se [Android-enheter](https://docs.adobe.com/content/help/sv-SE/mobile-services/android/gdpr-privacy-android/privacy.html) och [iOS-enheter](https://docs.adobe.com/content/help/sv-SE/mobile-services/ios/privacy-gdpr-ios/privacy.html). Mer information om avanmälan finns i [dokumentationen om förfrågningar om datasekretess](../../overview/data-security-and-privacy/data-privacy-requests.md).
+Du kan hantera avanmälan för Adobe Experience Cloud via sidan [Your Privacy Choices](https://www.adobe.com/se/privacy/opt-out.html#customeruse). Med enklicksfunktioner kan slutanvändarna styra och avanmäla datainsamling via annonslösningarna i Adobe Experience Cloud (inklusive Audience Manager). Mer information finns i avsnittet för [företagskunder ](https://www.adobe.com/privacy/opt-out.html#customeruse) på sidan Privacy Choices. Information om webbläsare som inte stöder cookies från tredje part finns i [Deklarerad ID-anpassning](../../features/declared-ids.md#declared-id-targeting). För mobila enheter kan du hämta relevanta Audience Manager-identifierare och anropa Audience Managers avanmälnings-API:er som beskrivs i [exemplen på deklarerade ID-avanmälningar](../../features/declared-ids.md#opt-out-examples). Därefter kan all datainsamling avslutas för användare som har avanmälnings-API:er från Mobile SDK – se [Android-enheter](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html) och [iOS-enheter](https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html). Mer information om avanmälan finns i [dokumentationen om förfrågningar om datasekretess](../../overview/data-security-and-privacy/data-privacy-requests.md).
 
 ## Hantera samtycke för andrapartspartners
 
