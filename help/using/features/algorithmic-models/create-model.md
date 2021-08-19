@@ -1,20 +1,19 @@
 ---
 description: Beskriver de obligatoriska och valfria stegen som gör att du kan skapa en algoritmisk modell i Model Builder.
-keywords: algo how works
+keywords: hur fungerar
 seo-description: Beskriver de obligatoriska och valfria stegen som gör att du kan skapa en algoritmisk modell i Model Builder.
 seo-title: Skapa en algoritmisk modell
 solution: Audience Manager
 title: Skapa en algoritmisk modell
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
-feature: Algorithmic Models
-translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+feature: Algoritmiska modeller
+exl-id: 8b7c4f57-f2c8-46f1-8924-5513fd6ede04
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '651'
 ht-degree: 1%
 
 ---
-
 
 # Skapa en look-alike-modell {#create-an-algorithmic-model}
 
@@ -54,7 +53,7 @@ Följ stegen nedan för att skapa en [!UICONTROL Look-Alike Model]:
 
 Titta på videon nedan för att få en detaljerad bild av hur enhetsövergripande mätvärden fungerar.
 
->[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## Grundläggande information för algoritmiska modeller {#basic-information}
 
