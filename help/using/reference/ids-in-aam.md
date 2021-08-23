@@ -6,12 +6,11 @@ seo-title: Index över ID:n i Audience Manager
 solution: Audience Manager
 title: Index över ID:n i Audience Manager
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
-feature: Reference
+feature: 'Referens '
 exl-id: 1caf3c6a-ebfd-49f1-9ebd-d4604474c070
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '961'
 ht-degree: 3%
 
 ---
@@ -28,14 +27,14 @@ Du kan referera till de flesta av dessa ID:n med deras fristående namn, men de 
 
 Mer information om de prefix som används i följande exempel finns i [Attribut som stöds för DCS API-anrop](../api/dcs-intro/dcs-api-reference/dcs-keys.md).
 
-## [!DNL Audience Manager] Lista med ID:n  {#id-list}
+## [!DNL Audience Manager] Lista med ID:n {#id-list}
 
 | ID | Namn och beskrivning | Användning och exempel | Plats för användargränssnitt |
 |---|---|---|---|
 | [!DNL AAM UUID] | [!DNL Adobe Audience Manager Unique User ID], kallas även  [!UICONTROL Device ID]. Ett numeriskt 38-siffrigt enhets-ID som [!DNL Audience Manager] associerar med varje enhet som det interagerar med. Tänk på det här ID:t när du ser ett omnämnande av unika användare i [!DNL Audience Manager]-gränssnittet. Audience Manager sparar detta ID som [!DNL cookie] i domänen `demdex.net` från tredje part. | I [!DNL DCS] anrop föregås `uuid` av prefixet `d_`. <br>Exempel: `d_uuid = 07955261652886032950143702505894272138` | Du kan filtrera [!DNL traits] med [!UICONTROL Device ID] när du skapar [lookalike-modeller](../features/algorithmic-models/create-model.md) och [byggsegment](../features/segments/segment-builder.md). Du kan även filtrera resultat med [!UICONTROL Device ID] när du kör [Allmänna rapporter för Traits](../reporting/general-reports.md) och [Trend Reports for Traits](../reporting/trend-reports.md). |
-| [!DNL ImsOrgId] | [!DNL Organization ID]. Detta är det ID som ett företag får när det registrerar sig för ett [!DNL Experience Cloud]-konto. | `5DC5123F5245B1D20A490D46@AdobeOrg` | Visas inte i [!DNL Audience Manager]-användargränssnittet. Läs [Hitta ditt företags-ID](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) om du vill veta hur du kan hitta ditt företags [!DNL Organization ID]. |
+| [!DNL ImsOrgId] | [!DNL Organization ID]. Detta är det ID som ett företag får när det registrerar sig för ett [!DNL Experience Cloud]-konto. | `5DC5123F5245B1D20A490D46@AdobeOrg` | Visas inte i [!DNL Audience Manager]-användargränssnittet. Läs [Hitta ditt företags-ID](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) om du vill veta hur du kan hitta ditt företags [!DNL Organization ID]. |
 | [!DNL PID] | [!DNL Partner ID]. [!DNL PID] är ett företags-ID i [!DNL Audience Manager]. Audience Manager associerar en [!DNL imsOrgId] till en [!DNL PID]. | `1352` | Visas inte i [!DNL Audience Manager]-användargränssnittet. |
-| [!DNL ECID],  [!DNL MID] | [!DNL Experience Cloud] ID. [!DNL Experience Cloud]-ID ([!DNL ECID], tidigare förkortningar [!DNL MID] eller [!DNL MCID]) härleds matematiskt från din [!DNL Organization ID] och [!DNL Audience Manager] [!UICONTROL Unique User ID]. Så länge dessa ID:n är konstanta är det helt enkelt ett viktigt problem att generera rättigheten [!DNL ECID] för en viss användare. Med samma [!DNL Organization ID] och [!DNL Audience Manager] [!DNL UUID] får du samma [!DNL ECID]-värde varje gång. Du kan läsa mer om [!DNL ECID] i dokumentationen för [cookies och Experience Cloud ID](https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html#section-15f69c0bac394b4b9966a23fbc586d17). | `mid = 08382830887934830189014177072406221371` | Visas inte i [!DNL Audience Manager]-användargränssnittet. |
+| [!DNL ECID],  [!DNL MID] | [!DNL Experience Cloud] ID. [!DNL Experience Cloud]-ID ([!DNL ECID], tidigare förkortningar [!DNL MID] eller [!DNL MCID]) härleds matematiskt från din [!DNL Organization ID] och [!DNL Audience Manager] [!UICONTROL Unique User ID]. Så länge dessa ID:n är konstanta är det helt enkelt ett viktigt problem att generera rättigheten [!DNL ECID] för en viss användare. Med samma [!DNL Organization ID] och [!DNL Audience Manager] [!DNL UUID] får du samma [!DNL ECID]-värde varje gång. Du kan läsa mer om [!DNL ECID] i dokumentationen för [cookies och Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html#section-15f69c0bac394b4b9966a23fbc586d17). | `mid = 08382830887934830189014177072406221371` | Visas inte i [!DNL Audience Manager]-användargränssnittet. |
 | [!DNL SID] | [!UICONTROL Trait ID]. [!UICONTROL Trait ID] identifierar [!DNL traits] unikt i [!DNL Audience Manager]-miljön. | I [!DNL DCS] anrop föregås `SID` av prefixet `d_`. <br>Exempel `d_sid=289983`. | Varje [!UICONTROL Trait ID] är tilldelad en [!DNL trait], som visas i användargränssnittet, på sidan [Traits](../features/traits/trait-details-page.md). |
 | [!DNL SID] | [!UICONTROL Segment ID]. [!UICONTROL Segment ID] identifierar [!DNL segments] unikt i [!DNL Audience Manager]-miljön. | I [!DNL DCS] anrop föregås `SID` av prefixet `d_`. <br>Exempel `d_sid=4798574`. | En [!UICONTROL Segment ID] är tilldelad till varje [!DNL segment], och synlig i användargränssnittet, på sidan [Segment](../features/segments/segment-summary-view.md). |
 | [!DNL csegID] | [!DNL Legacy Segment ID]. Detta ID identifierar segment unikt i [!DNL Audience Manager]-miljön. | `741232` | En [!UICONTROL Legacy Segment ID] tilldelas till varje segment och visas i användargränssnittet på sidan [Segment](../features/segments/segment-summary-view.md). |
