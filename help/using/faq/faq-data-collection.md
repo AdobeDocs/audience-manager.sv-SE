@@ -8,10 +8,10 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP-adress; IP-adress för STFP, FTP-adress
 feature: Administrering
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-source-git-commit: b8c8f35376c5a8a85fa4eeace7b447385ee9f339
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 82%
+source-wordcount: '1213'
+ht-degree: 81%
 
 ---
 
@@ -190,7 +190,7 @@ Nej, förlita dig inte på [!UICONTROL General Reports] och [!UICONTROL Trend Re
 
 Rapporterna beräknar populationer baserat på oautentiserade profilposter (UUID) i serverdelen när rapporterna skapas.
 
-Vid ett första anrop till [!DNL DCS] länkas deklarerade ID:n *inte* till ett UUID (dvs. det finns ingen [demdex-cookie](https://docs.adobe.com/content/help/sv-SE/core-services/interface/ec-cookies/cookies-am.html) på klientsidan). [!DNL DCS] genererar ett UUID slumpmässigt och ställer in en [!DNL demdex]-cookie och skickar den i svarsanropet, men UUID skickas inte till serverdelen.
+Vid ett första anrop till [!DNL DCS] länkas deklarerade ID:n *inte* till ett UUID (dvs. det finns ingen [demdex-cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html) på klientsidan). [!DNL DCS] genererar ett UUID slumpmässigt och ställer in en [!DNL demdex]-cookie och skickar den i svarsanropet, men UUID skickas inte till serverdelen.
 
 >[!NOTE]
 >
