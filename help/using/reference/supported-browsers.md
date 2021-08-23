@@ -5,17 +5,16 @@ seo-title: Webbläsare som stöds
 solution: Audience Manager
 title: Webbläsare som stöds
 uuid: dffecdb5-d94d-4001-8f2a-9d1d77ce2213
-feature: Reference
+feature: 'Referens '
 exl-id: 5fcb1a64-5e45-4973-9e20-7d4d07071cbf
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
-# Webbläsare som stöds {#supported-browsers}
+# Webbläsare som stöds{#supported-browsers}
 
 På den här sidan visas de webbläsare som stöds av användargränssnittet i Audience Manager. Cookies och JavaScript måste vara aktiverade i alla webbläsare.
 
@@ -29,7 +28,7 @@ Adobe stöder den senaste större versionen av dessa webbläsare:
 
 * **Google Chrome**
 
-   Hämta den senaste versionen av Chrome från [https://www.google.com/intl/sv/chrome/](https://www.google.com/intl/sv/chrome/).
+   Hämta den senaste Chrome-versionen från [https://www.google.com/chrome](https://www.google.com/chrome).
 
 * **Microsoft Edge**
 
@@ -39,10 +38,10 @@ Adobe stöder den senaste större versionen av dessa webbläsare:
 
 * **Mozilla Firefox**
 
-   Hämta den senaste versionen av Firefox från [http://www.mozilla.com/sv-SE/firefox](http://www.mozilla.com/sv-SE/firefox).
+   Hämta den senaste Firefox-versionen från [https://www.mozilla.com/en-US/firefox](https://www.mozilla.com/en-US/firefox).
 
 * **Safari**
 
-   Hämta den senaste versionen av Safari från [http://www.apple.com/se/safari](http://www.apple.com/se/safari).
+   Hämta den senaste Safari-versionen från [https://www.apple.com/safari/download](https://www.apple.com/safari/download).
 
 Andra webbläsare kan fungera, men stöds inte av våra tekniker och produktteam. Om du har problem med att arbeta med [!DNL Audience Manager] ska du kontrollera att du använder en uppdaterad webbläsare som stöds.
