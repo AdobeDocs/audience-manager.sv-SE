@@ -4,12 +4,11 @@ seo-description: 'Nedan finns en översikt över de kundkrav du måste uppfylla 
 seo-title: Krav och överväganden för personbaserade destinationer
 solution: Audience Manager
 title: Förutsättningar och överväganden
-feature: People-based Destinations
+feature: Personbaserade mål
 exl-id: 7656aa3e-3410-4052-8e29-b702bd0bf149
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1013'
 ht-degree: 3%
 
 ---
@@ -46,9 +45,9 @@ Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka [!U
 
 Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka dina egna målgruppssegment till [!DNL LinkedIn] måste du kontrollera att ditt [!DNL LinkedIn Campaign Manager]-konto har behörigheten [!DNL Creative Manager] eller högre.
 
-Mer information om hur du redigerar dina [!DNL LinkedIn Campaign Manager]-användarbehörigheter finns i [Lägg till, redigera och ta bort användarbehörigheter för annonskonton](https://www.linkedin.com/help/lms/answer/5753) i dokumentationen för LinkedIn.
+Mer information om hur du redigerar dina [!DNL LinkedIn Campaign Manager]-användarbehörigheter finns i [Lägg till, redigera och ta bort användarbehörigheter för annonskonton](https://www.linkedin.com/help/lms/answer/5753) i LinkedIn-dokumentationen.
 
-Se [Förstå och konfigurera LinkedIn People-Based Destination](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) om du vill ha videoinstruktioner.
+Se [Förstå och konfigurera det personbaserade LinkedIn-målet](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) om du vill ha videoinstruktioner.
 
 ### [!DNL Google Customer Match] {#gcm}
 
@@ -74,7 +73,7 @@ Kryptering är en tvåvägsfunktion. All krypterad information kan också dekryp
 
 Hash-funktionen är en envägsfunktion som förvränger indata och ger ett unikt resultat. Genom att använda korrekta hash-algoritmer, som [!DNL SHA256], finns det inget sätt att vända på hash-funktionen och visa den oförändrade informationen. E-postadresserna som du kommer att anlita Audience Manager måste hash-kodas med algoritmen [!DNL SHA256]. På så sätt kan du se till att inga ohanterade e-postadresser når Audience Manager.
 
-## Kraven för hashning {#hashing-requirements}
+## Hash-krav {#hashing-requirements}
 
 När du hash-kodar e-postadresserna måste du se till att följande krav uppfylls:
 
@@ -89,7 +88,7 @@ Titta på videon nedan för att förstå hashkraven för [!UICONTROL People-Base
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud ger dig möjlighet att hash-koda kund-ID:n via [!DNL Adobe Experience Platform Identity Service (ECID)]. Se [SHA256 Hashing Support for setCustomerIDs](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) för detaljerad information om hur du använder ECID för att hash-koda kund-ID:n.
+Adobe Experience Cloud ger dig möjlighet att hash-koda kund-ID:n via [!DNL Adobe Experience Platform Identity Service (ECID)]. Se [SHA256 Hashing Support for setCustomerIDs](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html) för detaljerad information om hur du använder ECID för att hash-koda kund-ID:n.
 
 ## Hämtar användarbehörighet {#obtaining-user-permission}
 
@@ -99,13 +98,13 @@ Innan du registrerar dig för [!UICONTROL People-Based Destinations] måste du s
 
 Om dina kunder vill avanmäla sig från annonskampanjer finns mer information om hur du förhindrar att Audience Manager samlar in data i [Opt-out Management](../../overview/data-security-and-privacy/data-privacy-requests.md).
 
-## Aktivering av första parts data {#enforcing-first-party-activation}
+## Tvingande aktivering av förstahandsdata {#enforcing-first-party-activation}
 
 När du använder [!UICONTROL People-Based Destinations] kan du bara använda egna data för att aktivera målgruppssegment i personbaserade kanaler. Ni kan inte använda data från andra leverantörer för målgruppsaktivering i personbaserade kanaler.
 
 När du använder [!UICONTROL People-Based Destinations] ska du använda [Dataexportkontroller](../data-export-controls.md) för att märka [!UICONTROL data sources] och [!UICONTROL destinations] enligt riktlinjerna och kraven från målplattformar och dataleverantörer.
 
-## Inbyggt autentiserade hash-ID:n via deklarerade ID:n {#onboard-authenticated-declared-id}
+## Införliva autentiserade hash-ID:n via deklarerade ID-mål {#onboard-authenticated-declared-id}
 
 Det finns två sätt att överföra offlinedata till Audience Manager för [!UICONTROL People-Based Destinations].
 
