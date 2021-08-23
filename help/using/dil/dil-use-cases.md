@@ -5,15 +5,14 @@ seo-title: DIL-användningsexempel och kodexempel
 solution: Audience Manager
 title: DIL-användningsexempel och kodexempel
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
-feature: DIL Implementation
-translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+feature: Implementering av DIL
+exl-id: 001710be-b377-460a-9e29-7268d25a6305
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 3%
 
 ---
-
 
 # DIL-användningsexempel och kodexempel{#dil-use-cases-and-code-samples}
 
@@ -94,7 +93,7 @@ for (var i = 0; i < my_objects.length; i++)
 sample_dil.api.submit();
 </code></pre>
 
-## Hämta refererande URL {#capture-referring-url}
+## Hämta referens-URL {#capture-referring-url}
 
 Hämta och skicka en refererande URL till Audience Manager.
 
@@ -244,5 +243,5 @@ Så här kör du filen `dil.js` i GTM:
 >
 >* [Hjälpcenter för Google Tag Manager](https://support.google.com/tagmanager#topic=3441530)
 >* [Signaler](../dil/dil-instance-methods.md#signals)
->* [Prefixkrav för nyckelvariabler](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/traits/trait-variable-prefixes.html#prefix-requirements-for-key-variables)
+* [Prefixkrav för nyckelvariabler](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-variable-prefixes.html#prefix-requirements-for-key-variables)
 
