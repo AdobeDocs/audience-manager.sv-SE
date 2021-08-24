@@ -1,22 +1,21 @@
 ---
 description: Vanliga frågor om att lägga in offlinedata i Audience Manager.
-keywords: ftp or s3;s3 or ftp
+keywords: ftp eller s3;s3 eller ftp
 seo-description: Vanliga frågor om att lägga in offlinedata i Audience Manager.
 seo-title: Vanliga frågor om inmatning av inkommande kunddata
 solution: Audience Manager
 title: Vanliga frågor om inmatning av inkommande kunddata
 uuid: 491e9ec1-4731-46a8-86e7-d8c613e6cedc
-feature: Onboarding Offline Data
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: Onboarding Offline-data
+exl-id: 48eef5f1-0655-4dac-9ab4-74b11c705c13
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 91%
+source-wordcount: '1360'
+ht-degree: 89%
 
 ---
 
-
-# Vanliga frågor om inmatning av inkommande kunddata {#inbound-customer-data-ingestion-faq}
+# Vanliga frågor om inmatning av inkommande kunddata{#inbound-customer-data-ingestion-faq}
 
 Vanliga frågor om att lägga in offlinedata i Audience Manager.
 
@@ -61,8 +60,8 @@ Se [Filkomprimering för inkommande dataöverföringsfiler](../integration/sendi
 
 Ja. Så länge du använder en [!UICONTROL cross-device data source] för att lagra de CRM-data som du överför lagrar Audience Manager alltid dessa data. Efter [!UICONTROL Profile Merge Rules]-förbättringarna som Audience Manager lanserade i oktober 2019 och som tillåter användning offline, kan du överföra och vidta åtgärder för data utan att driftsätta Audience Manager-kod i produktionen alls. Se:
 
-* [Översikt över förbättrade regler för profilsammanslagning](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
-* [!UICONTROL People-based Destinations] -  [Personalisering baserad på data som bara är offline](https://docs.adobe.com/content/help/sv-SE/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
+* [Översikt över förbättrade regler för profilsammanslagning](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
+* [!UICONTROL People-based Destinations] -  [Personalisering baserad på data som bara är offline](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
 
 <br>
 
