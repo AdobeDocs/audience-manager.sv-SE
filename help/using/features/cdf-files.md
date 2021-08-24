@@ -1,20 +1,19 @@
 ---
 description: Grundläggande information om CDF-filer (Customer Data Feed) och anvisningar om hur man kommer igång. Börja här om du är intresserad av att få CDF-filer eller bara vill ha mer information.
-keywords: second party data;2nd party;2nd party data;second party
+keywords: data från andra part;data från andra part;data från andra part;data från andra part
 seo-description: Grundläggande information om CDF-filer (Customer Data Feed) och anvisningar om hur man kommer igång. Börja här om du är intresserad av att få CDF-filer eller bara vill ha mer information.
 seo-title: Kunddataflöden
 solution: Audience Manager
 title: Kunddataflöden
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
-feature: Customer Data Feeds
-translation-type: tm+mt
-source-git-commit: 9b17925f9759a7f47629032182b367cf612bebbc
+feature: Kunddataflöden
+exl-id: 118c4225-3b57-4a02-ae05-2fcbf3e5d743
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 3%
+source-wordcount: '1930'
+ht-degree: 2%
 
 ---
-
 
 # [!UICONTROL Customer Data Feeds] {#customer-data-feeds}
 
@@ -28,7 +27,7 @@ En [!UICONTROL CDF]-fil innehåller samma data som ett [!DNL Audience Manager]-h
 >
 >Observera följande begränsningar när du arbetar med CDF-filer:
 >
->* Innan du konfigurerar leveransen av CDF-filer bör du kontrollera att du har rätt behörighet från tredjepartsleverantörer för export av egenskaper från tredje part. Audience Manager stöder för närvarande inte funktioner i användargränssnittet för att begära exporttillstånd för CDF-filer från tredjepartsleverantörer av data, så var vänlig och kontakta dem oberoende av varandra.
+>* Innan du konfigurerar leveransen av CDF-filer bör du kontrollera att du har rätt behörighet från tredjepartsleverantörer för export av egenskaper från tredje part. Audience Manager stöder för närvarande inte funktioner i användargränssnittet för att begära exporttillstånd för CDF-filer från tredjepartsleverantörer av data, så kontakta dem oberoende av varandra.
 >* Du bör inte använda [!UICONTROL CDF]-filer som proxy för att övervaka sidtrafik, avstämma rapportavvikelser eller för fakturering osv.
 
 
@@ -45,7 +44,7 @@ Filmeddelanden och [!UICONTROL CDF]-filer visas i din [!DNL S3]-bucket när de �
 
 Avsnitten nedan och [Vanliga frågor om kunddataflöden](../faq/faq-cdf.md) kan hjälpa dig att bli mer bekant med den här tjänsten.
 
-## [!UICONTROL Customer Data Feed] Innehåll som definierats  {#cdf-defined}
+## [!UICONTROL Customer Data Feed] Innehåll som definierats {#cdf-defined}
 
 Listar och definierar dataelement och arrayer i en [!UICONTROL CDF]-fil, efter utseendeordning. Definitionerna innehåller datatyper, men den här informationen ingår inte i en [!UICONTROL CDF]-fil.
 
@@ -109,7 +108,7 @@ En [!UICONTROL CDF]-fil innehåller några eller alla fält som definieras nedan
   <tr> 
    <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>Det <span class="keyword"> Experience Cloud</span>-ID (MID) som tilldelats webbplatsbesökaren. Se även <a href="https://docs.adobe.com/content/help/sv-SE/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Adobe Experience Platform Identity Service</a>. </p> </td> 
+   <td colname="col3"> <p>Det <span class="keyword"> Experience Cloud</span>-ID (MID) som tilldelats webbplatsbesökaren. Se även <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Adobe Experience Platform Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> All Segments</code> </p> </td> 
@@ -124,11 +123,11 @@ En [!UICONTROL CDF]-fil innehåller några eller alla fält som definieras nedan
  </tbody> 
 </table>
 
-## [!UICONTROL Customer Data Feed] Filstruktur  {#cdf-file-structure}
+## [!UICONTROL Customer Data Feed] Filstruktur {#cdf-file-structure}
 
 Visar och definierar datastrukturen för en [!UICONTROL CDF]-fil. Detta inkluderar datasekvens, fältavgränsare och avgränsare, datamappning och exempelfil.
 
-## Identifierare för datafält och sekvens {#identifiers-and-sequence}
+## Identifierare och sekvens för datafält {#identifiers-and-sequence}
 
 [!UICONTROL CDF] filer innehåller inte taggade kolumner eller fältrubriker. I stället definierar en [!UICONTROL CDF]-fil fält och arrayer med [!DNL ASCII]-tecken som inte skrivs ut. Dessutom visar [!UICONTROL CDF]-filen varje fält och array i en viss ordning. Genom att förstå fältidentifierarna och ordningen kan du tolka filen korrekt.
 
@@ -161,7 +160,7 @@ Visar och definierar datastrukturen för en [!UICONTROL CDF]-fil. Detta inkluder
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">Begärandeparametrar </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referent </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP-adress </li> 
-      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud enhets-ID (eller MID). Se även <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Adobe Experience Platform Identity Service</a> </li> 
+      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud enhets-ID (eller MID). Se även <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Adobe Experience Platform Identity Service</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595">Alla segment </li> 
       <li id="li_1B5A6F076A354BA0A931CB260E6D2675">Alla egenskaper </li> 
      </ol> </p> <p>Fältbeskrivningar finns i <a href="#cdf-defined"> Innehåll för kunddatafeed definierad</a>. </p> </td> 
@@ -169,7 +168,7 @@ Visar och definierar datastrukturen för en [!UICONTROL CDF]-fil. Detta inkluder
  </tbody> 
 </table>
 
-## [!UICONTROL CDF] Filöversikt  {#cdf-file-map}
+## [!UICONTROL CDF] Filöversikt {#cdf-file-map}
 
 [!UICONTROL CDF] fildata visas i den ordning som visas nedan.
 
@@ -179,17 +178,17 @@ Visar och definierar datastrukturen för en [!UICONTROL CDF]-fil. Detta inkluder
 
 Matriser i en [!UICONTROL CDF]-fil börjar och slutar med fältavgränsaren `Ctrl + a`. Detta gör att det första elementet i en array visas som ett fristående datafält. Den realiserade [!UICONTROL traits]-arrayen börjar till exempel med `^A1234`. Arrayavgränsaren och ID `^B5678` följer den här posten. Det kan därför vara frestande att tro att det första elementet i den realiserade [!UICONTROL traits]-arrayen är ID 5678 (eftersom den börjar med `^B`). Detta är inte fallet, och därför måste du känna till en datafils sekvens och struktur. Även om det första elementet i den realiserade [!UICONTROL trait]-arrayen (eller någon av de andra arrayerna i en [!UICONTROL CDF]-fil) börjar med `^A`, definierar utseendeordningen eller positionen i filen början av en array. Och det första elementet i en array separeras alltid från föregående post med `^A`.
 
-## Exempel [!UICONTROL CDF] fil {#sample-file}
+## Exempel på [!UICONTROL CDF]-fil {#sample-file}
 
 Ett exempel på en [!UICONTROL CDF]-fil kan se ut ungefär så här. Vi har infogat radbrytningar i det här exemplet för att det ska passa in på sidan.
 
 ![](assets/CDF-sample.png)
 
-## [!UICONTROL Customer Data Feed] Namngivningskonventioner  {#cdf-naming-conventions}
+## [!UICONTROL Customer Data Feed] Namngivningskonventioner {#cdf-naming-conventions}
 
 Avsnitten nedan listar och definierar elementen i ditt [!UICONTROL CDF]-filnamn.
 
-## [!UICONTROL CDF] Filnamn: Syntax och exempel  {#cdf-file-name}
+## [!UICONTROL CDF] Filnamn: Syntax och exempel {#cdf-file-name}
 
 Ett typiskt [!UICONTROL CDF]-filnamn innehåller elementen som listas nedan. Obs! *kursiv* anger en variabelplatshållare:
 
@@ -207,7 +206,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 
 I ditt [!DNL S3]-lagringsintervall sorteras filerna i stigande ordning efter partner-ID ([!UICONTROL PID]), dag och timme.
 
-## [!UICONTROL CDF] Filnamnselement definierade  {#cdf-file-name-elements}
+## [!UICONTROL CDF] Filnamnselement definierade {#cdf-file-name-elements}
 
 I följande tabell visas och definieras elementen i ett [!UICONTROL CDF]-filnamn.
 
@@ -250,7 +249,7 @@ I följande tabell visas och definieras elementen i ett [!UICONTROL CDF]-filnamn
  </tbody> 
 </table>
 
-## [!UICONTROL Customer Data Feed] Filbearbetningsmeddelanden  {#cdf-file-processing-notifications}
+## [!UICONTROL Customer Data Feed] Filbearbetningsmeddelanden {#cdf-file-processing-notifications}
 
 [!DNL Audience Manager] skriver en  `.info` fil till din  [!DNL S3] katalog så att du vet när  [!UICONTROL Customer Data File] ([!UICONTROL CDF]) filen är klar för hämtning. Filen `.info` innehåller även [!DNL JSON] formaterade metadata om innehållet i dina [!UICONTROL CDF]-filer. I det här avsnittet finns information om syntaxen och fälten som används i den här meddelandefilen.
 
@@ -353,11 +352,11 @@ I följande tabeller listas och definieras elementen i en [!UICONTROL CDF] `.inf
  </tbody> 
 </table>
 
-## [!UICONTROL Customer Data Feed] Filnamnstiderna och filinnehållstiderna skiljer sig åt  {#different-processing-times}
+## [!UICONTROL Customer Data Feed] Filnamnstiderna och filinnehållstiderna skiljer sig åt {#different-processing-times}
 
 Filen [!UICONTROL CDF] innehåller tidsstämplar i filnamnet och i filinnehållet. Dessa tidsstämplar registrerar olika händelseprocesser för samma [!UICONTROL CDF]-fil. Det är inte ovanligt att olika tidsstämplar visas i namnet och innehållet i samma fil. Genom att förstå varje tidsstämpel kan du undvika vanliga misstag när du arbetar med dessa data eller försöker sortera dem efter tid.
 
-## Söker efter [!UICONTROL CDF]-filtidsstämplar {#locating-timestamps}
+## Söker efter [!UICONTROL CDF] filtidsstämplar {#locating-timestamps}
 
 [!UICONTROL CDF] filer spelar in olika tid på två olika platser.
 
@@ -374,5 +373,5 @@ Följande tabell innehåller ytterligare information om dina [!UICONTROL CDF]-fi
 
 >[!MORELIKETHIS]
 >
->* [Vanliga frågor om anpassade dataflöden](../faq/faq-cdf.md)
+>* [Vanliga frågor om kunddataflöden](../faq/faq-cdf.md)
 
