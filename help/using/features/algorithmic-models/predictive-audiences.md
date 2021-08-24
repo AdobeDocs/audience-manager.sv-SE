@@ -4,15 +4,14 @@ seo-description: Med Predictive Audiences kan ni klassificera okända målgruppe
 seo-title: Översikt över Predictive Audiences
 solution: Audience Manager
 title: Audience Manager Predictive Audiences
-feature: Algorithmic Models
-translation-type: tm+mt
-source-git-commit: 3c39ef38d2833d5d706641f70649251d79b2ee6f
+feature: Algoritmiska modeller
+exl-id: 57eaeb09-0e0e-4ce9-9b25-f1a27f4f35ce
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1505'
 ht-degree: 8%
 
 ---
-
 
 # [!UICONTROL Predictive Audiences] Översikt {#predictive-audiences}
 
@@ -33,7 +32,7 @@ Du kan identifiera de prediktiva segment som skapas av modellen på sidan [!UICO
 
 ![prediktiv målgrupp-segment](assets/predictive-audiences-segments.png)
 
-## Använd fall {#use-cases}
+## Användningsexempel {#use-cases}
 
 För att du bättre ska förstå hur och när du kan använda [!UICONTROL Predictive Audiences] finns det några användningsområden som Audience Manager-kunder kan lösa med den här funktionen.
 
@@ -69,7 +68,7 @@ När du skapar en [!UICONTROL Predictive Audiences]-modell går du igenom tre st
 1. Sedan väljer du ett varumärke eller segment som definierar målgruppen som du vill klassificera.
 1. Slutligen väljer du ett namn för modellen, en datakälla som lagrar de prediktiva segmenten och en [!UICONTROL Profile Merge Rule] för modellen.
 
-### Urvalskriterier för persona {#selection-personas}
+### Urvalskriterier för personer {#selection-personas}
 
 Du kan välja vilken som helst av dina egna egenskaper eller segment för att definiera dina profiler. För bästa resultat finns det dock en uppsättning rekommenderade bästa metoder:
 
@@ -87,14 +86,14 @@ När du väljer målgrupp analyserar du ditt användningsfall och avgör vilka t
 
 Vi rekommenderar att du väljer en [!UICONTROL Profile Merge Rule] som har samma konfiguration som målgruppen [!UICONTROL Profile Merge Rule], eller en som innehåller profiltypen (enhetsprofil eller autentiserad profil) för målgruppen.
 
-### [!UICONTROL Predictive Audiences] Modellutbildningsfas  {#model-training}
+### [!UICONTROL Predictive Audiences] Modellutbildningsfas {#model-training}
 
 Innan algoritmen kan klassificera er förstapartsmålgrupp i rätt profiler måste den utbilda sig på era data.
 
 För varje personlighet som du definierar analyserar algoritmen sin respektive målgrupp och utvärderar eventuell realtids- och/eller varumärkesaktivitet för användarna de senaste 30 dagarna.
 Det här steget utförs en gång var 24:e timme för att ta hänsyn till förändringar hos er förstapartsmålgrupp.
 
-### [!UICONTROL Predictive Audiences] Modellklassificeringsfas  {#model-classification}
+### [!UICONTROL Predictive Audiences] Modellklassificeringsfas {#model-classification}
 
 För att klassificera målgrupper i realtid och i batch kontrollerar modellen först om en användare tillhör målgruppen. Om användaren kvalificerar sig för målgruppen och inte tillhör någon av personerna tilldelas de ett personligt kvalifikationspoäng av modellen.
 
@@ -123,11 +122,11 @@ Tänk på följande när du konfigurerar dina [!UICONTROL Predictive Audiences]-
 
 ## [!UICONTROL Data Export Controls] {#dec}
 
-Prediktiva segment som skapats av [!UICONTROL Predictive Audiences]-modeller ärver [dataexportkontroller](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html) från följande datakällor från första part:
+Prediktiva segment som skapats av [!UICONTROL Predictive Audiences]-modeller ärver [dataexportkontroller](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html) från följande datakällor från första part:
 
 1. Den datakälla från första part som du väljer när du skapar modellen.
 1. Målgruppens första datakällor. Det gäller särskilt dataexportkontrollerna för [!UICONTROL traits] eller [!UICONTROL segments] som utgör målgruppen.
-1. [Dataexportkontroller](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html) för [!UICONTROL Profile Merge Rule] som du har valt för modellen.
+1. [Dataexportkontroller](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html) för [!UICONTROL Profile Merge Rule] som du har valt för modellen.
 
 Det nya prediktiva [!UICONTROL traits] och [!UICONTROL segments] har samma sekretessbegränsningar som den union av förstapartsdatakällor som beskrivs ovan.
 
@@ -147,6 +146,6 @@ Om du väljer en [!UICONTROL Profile Merge Rule] som använder både enhetsdata 
 
 ## [!UICONTROL Role-Based Access Controls] {#rbac}
 
-De egenskaper och segment som du väljer för profiler och målgruppsklassificering lyder under Audience Manager [rollbaserade åtkomstkontroller](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/administration/administration-overview.html).
+De egenskaper och segment som du väljer för profiler och målgruppsklassificering lyder under Audience Manager [rollbaserade åtkomstkontroller](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html).
 
-Audience Manager-användare kan bara välja egenskaper eller segment för personer och målgrupper, som de har [behörighet att visa](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions).
+Audience Manager-användare kan bara välja egenskaper eller segment för personer och målgrupper, som de har [behörighet att visa](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions).
