@@ -5,15 +5,14 @@ seo-title: isCoopSafe
 solution: Audience Manager
 title: isCoopSafe
 uuid: c5362a38-93c0-4edb-bdcb-106e43f33a92
-feature: DIL Implementation
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: Implementering av DIL
+exl-id: 33dca495-6923-4966-9ec3-8b0fd2f17649
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
-
 
 # isCoopSafe{#iscoopsafe}
 
@@ -24,11 +23,11 @@ En boolesk konfiguration som avgör om DIL skickar (eller inte skickar) data til
 Om du vill använda `isCoopSafe` måste du:
 
 * Använd [!UICONTROL DIL] v6.11 eller senare.
-* Delta i [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/sv-SE/device-co-op/using/home.html). Medlemmar som kan komma i kontakt med andra bör också granska den här dokumentationen för att avgöra om `isCoopSafe` tar upp eventuella frågor om hur data används för att skapa enhetsdiagrammet.
+* Delta i [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/home.html). Medlemmar som kan komma i kontakt med andra bör också granska den här dokumentationen för att avgöra om `isCoopSafe` tar upp eventuella frågor om hur data används för att skapa enhetsdiagrammet.
 
 * Arbeta med din [!DNL Adobe]-konsult för att ange en tillåtelselista- eller blockeringslista-flagga på ditt Device Co-op-konto. Det finns ingen självbetjäningssökväg för att aktivera dessa flaggor.
 
-## Använd fall {#use-cases}
+## Användningsexempel {#use-cases}
 
 `isCoopSafe` hjälper till att lösa 2 användningsfall som rör datainsamling av aktuella eller potentiella medlemmar i Device Co-op. De här användningsexemplen gäller hur besöksdata för webbplatsen skickas vidare till Device co-op för att hjälpa till att skapa enhetsdiagrammet. I följande tabell beskrivs hur `isCoopSafe` fungerar med dessa användningsfall för att blockera eller skicka data till enhetsdiagrammet
 
@@ -55,7 +54,7 @@ Om du vill använda `isCoopSafe` måste du:
  </tbody> 
 </table>
 
-## Syntax and Code Sample {#syntax-code-sample}
+## Exempel på syntax och kod {#syntax-code-sample}
 
 **Syntax:** `isCoopSafe: true | false`
 
@@ -132,4 +131,3 @@ Med dessa API:er kan du åsidosätta `isCoopSafe`-statusen. Dessa är nödvändi
 Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
  -->
-
