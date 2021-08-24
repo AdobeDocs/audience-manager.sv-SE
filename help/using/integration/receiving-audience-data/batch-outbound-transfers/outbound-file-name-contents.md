@@ -5,15 +5,14 @@ seo-title: Syntax och exempel för utgående datafilnamn
 solution: Audience Manager
 title: Syntax och exempel för utgående datafilnamn
 uuid: effdcaf6-c37c-45f3-9d2f-a938a9da47a6
-feature: Outbound Data Transfers
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: Utgående dataöverföringar
+exl-id: 0944da72-5a8d-45a2-951e-b2988eb3d490
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '693'
 ht-degree: 5%
 
 ---
-
 
 # Namn på utgående datafiler: Syntax och exempel{#outbound-data-file-name-syntax-and-examples}
 
@@ -64,7 +63,7 @@ Tabellen definierar elementen i ett namn på en utgående datafil.
       <li id="li_94DAFA169380405981AFEF1B581997E6">20914 - <span class="keyword"> Google Advertiser ID </span> (raw, unhashed) </li> 
       <li id="li_DE74BE06331C49CF87606A192D815B96">20915 - <span class="keyword"> Apple ID för annonsörer </span> (raw, unhashed) </li> 
       <li id="li_E0A033FEC3174EF08E93EB7C65266337">Leverantörs-ID - Användar-ID:n från tredje part (webb/cookie) </li> 
-     </ul> </p> <p>Mer information finns i <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">Globala datakällor</a>.</p></td> 
+     </ul> </p> <p>Mer information finns i <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/global-data-sources.html">Globala datakällor</a>.</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>PID_ALIAS </i></code> </p> </td> 
