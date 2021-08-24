@@ -8,15 +8,14 @@ title: Vanliga frågor om produktfunktioner
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
 feature: Översikt
 exl-id: b5884d26-0be1-4eaa-99a1-7247942bf6c9
-translation-type: tm+mt
-source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 88%
+source-wordcount: '609'
+ht-degree: 84%
 
 ---
 
-# Vanliga frågor om produktfunktioner {#product-features-and-functions-faq}
+# Vanliga frågor om produktfunktioner{#product-features-and-functions-faq}
 
 Vanliga frågor och problem som rör produkter och funktioner.
 
@@ -34,7 +33,7 @@ faq_features_functions.xml
 
 Ett *`Organization ID`* ser till exempel ut så här: `1FD6776A524453CC0A490D44@AdobeOrg`.
 
-Detta *`Organization ID`* används av Audience Managers [DIL](../dil/dil-overview.md) API, [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html) och andra [!DNL Experience Cloud]-lösningar. Användare med administratörsbehörighet kan hitta *`Organization ID`* på [!DNL Adobe Admin Console]. Se [Administration – Vanliga frågor om användarhantering](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Detta *`Organization ID`* används av Audience Managers [DIL](../dil/dil-overview.md) API, [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) och andra [!DNL Experience Cloud]-lösningar. Användare med administratörsbehörighet kan hitta *`Organization ID`* på [!DNL Adobe Admin Console]. Se [Administration – Vanliga frågor om användarhantering](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
  
 
@@ -96,4 +95,4 @@ Du bör använda trait-rekommendationer när:
 
 **Är det någon skillnad mellan Adobe Analytics- och Audience Manager-segment?**
 
-Ja, läs [Förstå segment i Analytics och Audience Manager](https://docs.adobe.com/content/help/sv-SE/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) för en ingående beskrivning av skillnaderna.
+Ja, läs [Förstå segment i Analytics och Audience Manager](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) för en ingående beskrivning av skillnaderna.
