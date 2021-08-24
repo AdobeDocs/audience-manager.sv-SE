@@ -5,13 +5,12 @@ seo-title: Allmänna användningsexempel för regler för profilsammanslagning
 solution: Audience Manager
 title: Allmänna användningsexempel för regler för profilsammanslagning
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
-feature: Profile Merge
+feature: Sammanfoga profil
 exl-id: 66341736-4f61-4306-b9f4-1b37dc7ce0ff
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 4%
+source-wordcount: '995'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +22,7 @@ ht-degree: 4%
 >
 >Definitioner och beskrivningar av dessa [!UICONTROL Merge Rule]-inställningar finns i [Alternativ för profilkopplingsregel definierade](merge-rule-definitions.md).
 
-## Målinriktning för enhet {#device-personalization}
+## Målinriktning {#device-personalization}
 
 Detta scenario gäller för marknadsförare som vill utvärdera en enda enhetsprofil för ett målgruppssegment som definieras i Audience Manager, för att leverera en enhetlig upplevelse till enheten med målplattformar som stöder enhets-ID (DSP, platspersonaliseringsplattformar och andra enhetsbaserade målinriktningsplattformar) utan att ta hänsyn till användarautentisering.
 
@@ -65,7 +64,7 @@ Tack vare länken mellan enheten och hushållsprofilen kan Audience Manager kval
 
 ![hushållshantering](assets/household-management.png)
 
-## Målgruppsanpassning för personbaserade mål {#all-cross-device}
+## Målgruppsanpassning för personbaserade destinationer {#all-cross-device}
 
 >[!IMPORTANT]
 >
@@ -81,7 +80,7 @@ Mer information om det här alternativet finns i [Personbaserade mål](../destin
 
 ## Alternativ för enhetsdiagram {#device-graph-options}
 
-Om du väljer ett [!UICONTROL device graph]-alternativ för en [!UICONTROL Profile Merge]-regel beror på villkor som är unika för dina digitala egenskaper och affärsmål. Dessa allmänna riktlinjer kan hjälpa dig att förstå när du ska använda en typ av diagram jämfört med en annan. Observera att du måste vara medlem i [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/sv-SE/device-co-op/using/home.html) eller ha ett avtalsförhållande med ett externt enhetsdiagram för att kunna använda dessa alternativ. Se tabellen nedan för allmänna riktlinjer om när du ska välja ett alternativ för enhetsdiagram. Specifika användningsexempel finns i [Användningsexempel för profillänksenhetsdiagram](profile-link-use-case.md) och [Användningsexempel för extern enhetsgrafik](external-graph-use-cases.md).
+Om du väljer ett [!UICONTROL device graph]-alternativ för en [!UICONTROL Profile Merge]-regel beror på villkor som är unika för dina digitala egenskaper och affärsmål. Dessa allmänna riktlinjer kan hjälpa dig att förstå när du ska använda en typ av diagram jämfört med en annan. Observera att du måste vara medlem i [Adobe Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/home.html) eller ha ett avtalsförhållande med ett externt enhetsdiagram för att kunna använda dessa alternativ. Se tabellen nedan för allmänna riktlinjer om när du ska välja ett alternativ för enhetsdiagram. Specifika användningsexempel finns i [Användningsexempel för profillänksenhetsdiagram](profile-link-use-case.md) och [Användningsexempel för extern enhetsgrafik](external-graph-use-cases.md).
 
 <table id="table_66D9152D4FF040A186003272D456625D"> 
  <thead> 
@@ -102,7 +101,7 @@ Om du väljer ett [!UICONTROL device graph]-alternativ för en [!UICONTROL Profi
   </tr> 
   <tr> 
    <td colname="col1"> <p>Alternativ för externt enhetsdiagram </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> Profilsammanfogningar </span> som skapats med  <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html" format="https" scope="external"> Experience Cloud Device Co-</a> opor i externa enhetsdiagram som är integrerade med  <span class="keyword"> Audience </span> Management erare är idealiska för: </p> <p> 
+   <td colname="col2"> <p><span class="wintitle"> Profilsammanfogningar </span> som skapats med  <a href="https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html" format="https" scope="external"> Experience Cloud Device Co-</a> opor i externa enhetsdiagram som är integrerade med  <span class="keyword"> Audience </span> Management erare är idealiska för: </p> <p> 
      <ul id="ul_D76D773988604A619FA4A3BF37F910F0"> 
       <li id="li_969A0755A9E34CBEB2F7331C137B9A26">Digitala egenskaper med låg nivå av kundautentisering. </li> 
       <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">Breda, heltäckande varumärkeskampanjer. </li> 
@@ -119,6 +118,6 @@ I videon nedan visas en översikt över möjliga användningsfall för [!UICONTR
 >[!MORELIKETHIS]
 >
 >* [Användningsexempel för enhetsdiagram för profillänk](profile-link-use-case.md)
->* [Användningsexempel för externt enhetsdiagram](external-graph-use-cases.md)
->* [Vanliga frågor om regler för profilsammanslagning](../../faq/faq-profile-merge.md)
+* [Användningsexempel för externt enhetsdiagram](external-graph-use-cases.md)
+* [Vanliga frågor om regler för profilsammanslagning](../../faq/faq-profile-merge.md)
 
