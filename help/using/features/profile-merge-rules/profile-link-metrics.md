@@ -5,12 +5,11 @@ seo-title: Rapportmätvärden för regler för profilsammanslagning
 solution: Audience Manager
 title: Rapportmätvärden för regler för profilsammanslagning
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
-feature: Profile Merge
+feature: Sammanfoga profil
 exl-id: 2af59c60-2448-44af-90d2-eccc52f7ff02
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '829'
 ht-degree: 2%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 2%
 
 ## Sammanfoga regelmått {#merge-rule-metrics}
 
-Rapporterar returnerade data i liggande diagram sida vid sida när sammanfogningsreglerna använder data från [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html) eller andra enhetsdiagram från tredje part som du har tillgång till i [!DNL Audience Manager]. Detta gör att du kan jämföra autentiserade förstahandsdata med enhetsövergripande data från [!UICONTROL Experience Cloud Device Co-op] eller ett annat enhetsdiagram från tredje part. Mer information om data som returneras av [!UICONTROL Device Co-op] finns i [Enhetsdiagram: Interna processer och utdata](https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/device-graph-overview.html). Dessa data uppdateras dagligen.
+Rapporterar returnerade data i liggande diagram sida vid sida när sammanfogningsreglerna använder data från [Adobe Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html) eller andra enhetsdiagram från tredje part som du har tillgång till i [!DNL Audience Manager]. Detta gör att du kan jämföra autentiserade förstahandsdata med enhetsövergripande data från [!UICONTROL Experience Cloud Device Co-op] eller ett annat enhetsdiagram från tredje part. Mer information om data som returneras av [!UICONTROL Device Co-op] finns i [Enhetsdiagram: Interna processer och utdata](https://experienceleague.adobe.com/docs/device-co-op/using/device-graph/device-graph-overview.html). Dessa data uppdateras dagligen.
 
 <table id="table_A7FB2F9804F84AC8A6DD05C0E6EE7555"> 
  <thead> 
@@ -36,7 +35,7 @@ Rapporterar returnerade data i liggande diagram sida vid sida när sammanfogning
    <td colname="col2"> <p>Visar: </p> 
     <ul id="ul_7F7373919A4A49028EF4BF7B28D9F8E9"> 
      <li id="li_FE2F93C496D64ED8928B3E522C9585EA"> <span class="wintitle"> Aktiva personer</span>: Antalet personer som har autentiserats på din webbplats de senaste 60 dagarna. </li> 
-     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle"> Enhetsövergripande</span>: Det totala antalet  <a href="merge-rules-start.md#create-data-source"> korsenhets-</a> ID:n som lagras i  <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html"> datakällan </a> för den valda  <a href="merge-rule-definitions.md"> autentiserade </a> profilen under den tid som datakällan har funnits. </li> 
+     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle"> Enhetsövergripande</span>: Det totala antalet  <a href="merge-rules-start.md#create-data-source"> korsenhets-</a> ID:n som lagras i  <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html"> datakällan </a> för den valda  <a href="merge-rule-definitions.md"> autentiserade </a> profilen under den tid som datakällan har funnits. </li> 
      <li id="li_F2F07B6A326C4A18B79A0CF2C47D9677"> <span class="wintitle"> % aktiva personer</span>: Visar  <span class="wintitle"> aktiva </span> personer som %. </li> 
     </ul> <p> <span class="wintitle"> Autentiserad </span> aktivering gör att du kan jämföra datakällor efter aktivitet, volym och procent. Det kan hjälpa er att hitta en datakälla som har många personer och en hög andel aktiva användare. Eller så kanske ni tycker att det är värdefullt att jämföra datakällor med en hög andel aktiva användare jämfört med den totala målgruppsstorleken. Ibland kan en datakälla med låga totala livstidsvärden och hög aktivitet vara mer värdefull än den med höga livstidsresultat och låga aktivitetsvärden. </p> <p> <p>Obs! Måtten för <span class="wintitle"> autentiserad aktivitet</span> innehåller endast <span class="wintitle"> Profile Link</span>-data. Den här rapporten innehåller inte <span class="wintitle"> enhetsdiagramdata</span>. </p> </p> </td> 
   </tr> 
@@ -116,7 +115,7 @@ En [!UICONTROL Profile Link Device Graph]-rapport som innehåller enhetsdiagramd
 
 ![](assets/profile-link-graph.png)
 
-## Trenddiagram för profillänk {#profile-link-trend}
+## Trend-diagram för profillänkar {#profile-link-trend}
 
 Förutom andra datavisualiseringar innehåller [!UICONTROL Profile Link]-rapporter ett linjediagram. Linjediagrammet är utformat för att visa trender över tid för dina profilregler. Trenddiagram (och andra rapporter) är tillgängliga när du klickar på en regel från startsidan för [!UICONTROL Profile Merge Rules] ( **[!UICONTROL Audience Data > Profile Merge Rules]**). Dessa diagram innehåller enhetsdiagramdata om du är medlem i [!UICONTROL Device Co-op] eller andra enhetsdiagram från tredje part som du kan ha tillgång till i [!DNL Audience Manager]. Klicka på en trendlinje för att se underliggande data.
 
