@@ -6,13 +6,12 @@ solution: Audience Manager
 keywords: GDPR-gränssnitt, GDPR API, CCPA, sekretess
 title: Förfrågningar om datasekretess
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
-feature: Data Governance & Privacy
+feature: Datastyrning och sekretess
 exl-id: a1fc9c21-3417-4899-a585-92ad2cb25362
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 58%
+source-wordcount: '1482'
+ht-degree: 57%
 
 ---
 
@@ -45,7 +44,7 @@ Om du vill se hur en giltig [!DNL JSON]-fil ser ut kan du [ ladda ned en JSON-fi
 
 Vi vet att ni strävar efter att uppfylla förfrågningar om datasekretess inom den tidsperiod som fastställs i lagstiftningen.
 
-## Förfrågningar om dataradering {#delete-data}
+## Förfrågningar om dataradering  {#delete-data}
 
 Du kan skicka begäranden om borttagning av data via [Privacy Servicens användargränssnitt](https://privacyui.cloud.adobe.io) (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)) eller genom att anropa Privacy Servicens API (dokumentation [här](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) och [!DNL API] referens [här](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)).
 
@@ -98,8 +97,8 @@ Den globala avanmälningen representerar en avanmälan för [!DNL Audience Manag
    <td colname="col1"> <p>Mobila enheter </p> </td> 
    <td colname="col2"> <p>Se inställningarna för avanmälning och sekretess för: </p> <p> 
      <ul id="ul_78042D6D302F4119A2439BF71F228288"> 
-      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://docs.adobe.com/content/help/sv-SE/mobile-services/android/gdpr-privacy-android/privacy.html" format="https" scope="external"> Android-enheter </a> </li> 
-      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://docs.adobe.com/content/help/sv-SE/mobile-services/ios/privacy-gdpr-ios/privacy.html" format="https" scope="external"> iOS-enheter </a> </li> 
+      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html" format="https" scope="external"> Android-enheter </a> </li> 
+      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html" format="https" scope="external"> iOS-enheter </a> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -163,7 +162,7 @@ Efter en avanmälan på partnernivå med ett enhets-ID-anrop:
 * Destinationspartners tar emot begäran om att avsegmentera enhetens ID. Avsegmentering fungerar för destinationer i [realtid](data-privacy-requests.md#aam-partners-with-unsegmentation) och satsvisa destinationer.
 * Inga historiska data tas bort.
 
-## [!DNL Audience Manager] Partners med osegmenteringsfunktioner  {#aam-partners-with-unsegmentation}
+## [!DNL Audience Manager] Partners med osegmenteringsfunktioner {#aam-partners-with-unsegmentation}
 
 [!DNL Audience Manager] kommer att försöka meddela aktiveringspartners om begäranden om borttagning från registrerade genom att skicka dem information som delar upp (eller tar bort segment) för att hjälpa dig att automatisera dina förfrågningar om sekretess för konsumentdata.
 
