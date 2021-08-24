@@ -1,20 +1,19 @@
 ---
 description: Beskriver hur du konfigurerar steg och funktioner som är specifika för den regelbaserade processen att skapa anpassade egenskaper.
-keywords: create trait;create traits
+keywords: skapa egenskap;skapa egenskaper
 seo-description: Beskriver hur du konfigurerar steg och funktioner som är specifika för den regelbaserade processen att skapa anpassade egenskaper.
 seo-title: Skapa regelbaserade eller registrerade traits
 solution: Audience Manager
 title: Skapa regelbaserade eller registrerade traits
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
-feature: Traits
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 'Traits '
+exl-id: cad318ee-93b2-4afa-8a2f-a67b068eec0a
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '381'
 ht-degree: 5%
 
 ---
-
 
 # Skapa [!UICONTROL Rules-Based] eller [!UICONTROL Onboarded Traits] {#create-rules-based-or-onboarded-traits}
 
@@ -61,7 +60,7 @@ I [!UICONTROL Trait Builder] kan du med [!UICONTROL Basic Information]-inställn
   </tr>
    <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Händelsetyp</span></b> </td> 
-   <td colname="col2"> Tilldelar egenskapen till en typ eller kategori, vanligtvis enligt funktion (t.ex. konvertering, besökare, partner, sidvy). Valfritt. <p> Mer information om hur du skapar konverteringsegenskaper finns i <a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">Skapa konverteringsegenskaper i Audience Manager-videon</a>. </p></td> 
+   <td colname="col2"> Tilldelar egenskapen till en typ eller kategori, vanligtvis enligt funktion (t.ex. konvertering, besökare, partner, sidvy). Valfritt. <p> Mer information om hur du skapar konverteringsegenskaper finns i <a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">Skapa konverteringsegenskaper i Audience Manager-videon</a>. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Integreringskod</span></b> </td> 
