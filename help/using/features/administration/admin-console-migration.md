@@ -5,15 +5,14 @@ seo-description: Audience Manager användarhantering övergår till Adobe Admin 
 seo-title: Migrering från Audience Manager till Admin Console
 solution: Audience Manager
 title: Migrering från Audience Manager till Admin Console
-feature: Administration
-translation-type: tm+mt
-source-git-commit: 2e01abab2616daccd7581cdaa18417650951d139
+feature: Administrering
+exl-id: d9069cc1-87fa-47b7-ad0c-d69ee37fc91e
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 2%
+source-wordcount: '451'
+ht-degree: 3%
 
 ---
-
 
 # [!DNL Audience Manager] användarmigrering till  [!DNL Admin Console] {#user-migration}
 
@@ -26,12 +25,12 @@ Fördelarna med att använda [!DNL Admin Console] är:
 | Fördel | Beskrivning |
 |---|---|
 | Samlad inloggning i olika lösningar | [!DNL Audience Manager] -användare kan logga in på  [!DNL Experience Cloud] och alla andra lösningar med sina  [!DNL Adobe ID] eller  [!DNL Enterprise ID]. Denna inloggning ger tillgång till integrerade lösningar och bastjänster i [!DNL Experience Cloud]. Efter migreringen omdirigeras användare som försöker logga in via äldre inloggningar (`bank.demdex.com`) till `experiencecloud.adobe.com`. |
-| Hantera användare och grupper | När migreringen är klar hanterar [!DNL Audience Manager]-administratörer endast användare och grupper i [[!DNL Admin Console]](http://adminconsole.adobe.com/enterprise/). |
-| Hantera produkter och tjänster | Från [[!DNL Admin Console]](http://adminconsole.adobe.com/enterprise/) kan administratörer: <ul><li>Skapa, uppdatera och ta bort användare</li><li>Ge åtkomst till lösningar och tjänster</li></ul> |
+| Hantera användare och grupper | När migreringen är klar hanterar [!DNL Audience Manager]-administratörer endast användare och grupper i [[!DNL Admin Console]](https://adminconsole.adobe.com/enterprise/). |
+| Hantera produkter och tjänster | Från [[!DNL Admin Console]](https://adminconsole.adobe.com/enterprise/) kan administratörer: <ul><li>Skapa, uppdatera och ta bort användare</li><li>Ge åtkomst till lösningar och tjänster</li></ul> |
 
 För att underlätta användarmigreringen ber vi alla [!DNL Audience Manager]-administratörer att börja migrera sina användarkonton till [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) så snart som möjligt genom att följa stegen som beskrivs i den här artikeln.
 
-## Vad användare behöver göra {#what-to-do-users}
+## Vad användarna behöver göra {#what-to-do-users}
 
 Som Audience Manager-användare behöver du bara kontakta din [!DNL Audience Manager]-administratör och be honom/henne att skapa ett nytt användarkonto åt dig i [!DNL Admin Console].
 
