@@ -7,10 +7,10 @@ title: Komma igång med regler för profilsammanslagning
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 feature: Sammanfoga profil
 exl-id: 11f397dd-1f23-4b14-be6f-60ce8b77ab12
-source-git-commit: b8c8f35376c5a8a85fa4eeace7b447385ee9f339
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 3%
+source-wordcount: '1307'
+ht-degree: 2%
 
 ---
 
@@ -151,7 +151,7 @@ visitor.setCustomerIDs({
      "authState":Visitor.AuthState.AUTHENTICATED
 ```
 
-Mer information finns i [Skapa en datakälla för olika enheter](#create-data-source) och [Kund-ID:n och autentiseringstillstånd](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html).
+Mer information finns i [Skapa en datakälla för olika enheter](#create-data-source) och [Kund-ID:n och autentiseringstillstånd](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html).
 
 ### Konfigurera funktionen `DIL.create`
 
@@ -166,7 +166,7 @@ var vDil = DIL.create({
 });
 ```
 
-I namnutrymmets nyckelvärdepar är variabeln `*`MCORG`*` ditt [!DNL Experience Cloud] organisations-ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration]-avsnittet på kontrollpanelen [!DNL Experience Cloud]. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: Huvudtjänster](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html).
+I namnutrymmets nyckelvärdepar är variabeln `*`MCORG`*` ditt [!DNL Experience Cloud] organisations-ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration]-avsnittet på kontrollpanelen [!DNL Experience Cloud]. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: Huvudtjänster](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 ### Konfigurera SDK:er
 
@@ -224,7 +224,7 @@ Kontrollera de metoder i din [!DNL SDK]-kod som gör att du kan skicka [!UICONTR
  </tbody>
 </table>
 
-Se även [Audience Manager-metoder för Android](https://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html) och [Audience Manager-metoder för iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html).
+Se även [Audience Manager-metoder för Android](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html) och [Audience Manager-metoder för iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html).
 
 >[!MORELIKETHIS]
 >
