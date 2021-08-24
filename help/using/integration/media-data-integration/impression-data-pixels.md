@@ -7,8 +7,7 @@ title: Samla in annonsvisningsdata för kampanjer med pixelanrop
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 feature: Adobe Campaign Integration
 exl-id: 04e6f1e5-5075-4221-a310-deb3717458ad
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 20%
@@ -32,7 +31,7 @@ Händelseanropet samlar in visnings- och konverteringsdata och skickar dem till 
 Händelseanrop består av nyckelvärdepar med följande syntax:
 
 ```
-http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID&d_creative=<i>creative_id</i>&d_adgroup=<i>adgroup_id</i>&d_placement=<i>placement_id</i>&d_campaign=<i>campaign_id</i>[&d_cid=(GAID|IDFA)%01 DPUUID]&d_bust=cache buster value
+https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID&d_creative=<i>creative_id</i>&d_adgroup=<i>adgroup_id</i>&d_placement=<i>placement_id</i>&d_campaign=<i>campaign_id</i>[&d_cid=(GAID|IDFA)%01 DPUUID]&d_bust=cache buster value
 ```
 
 I nyckelvärdepar är värdevariabeln ett ID eller makro som infogats av annonsservern. När annonstaggen läses in ersätts den `%macro%` med de nödvändiga motsvarande värdena. Det här anropet returnerar inget svar.
@@ -112,7 +111,7 @@ Impression-händelseanrop accepterar data som har formats till nyckelvärdepar. 
 >
 >Kontakta Adobe Audience Manager konsult- eller kontoansvarig för att få en exakt URL som är specifik för klientdomänen.
 
-## Ytterligare funktionalitet - [!DNL Audience Optimization Reports] {#additional-functionality-aor}
+## Ytterligare funktioner - [!DNL Audience Optimization Reports] {#additional-functionality-aor}
 
 Du kan använda pixelanrop för att aktivera [Audience Optimization-rapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md). Se [Översikt och mappningar för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) om du vill använda pixlar som stöd för rapporterna.
 
