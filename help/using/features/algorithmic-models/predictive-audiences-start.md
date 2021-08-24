@@ -4,12 +4,11 @@ seo-description: Med Predictive Audiences kan ni klassificera okända målgruppe
 seo-title: Hantera prediktiva målgrupper
 solution: Audience Manager
 title: Komma igång med Predictive Audiences
-feature: Algorithmic Models
+feature: Algoritmiska modeller
 exl-id: beb314de-f679-4397-8e14-2dd6576243fd
-translation-type: tm+mt
-source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '572'
 ht-degree: 7%
 
 ---
@@ -19,9 +18,9 @@ ht-degree: 7%
 >[!IMPORTANT]
 >Den här artikeln innehåller produktdokumentation som ska hjälpa dig att konfigurera och använda den här funktionen. Ingenting i det här är juridisk rådgivning. Vänligen kontakta ditt eget juridiska ombud för att få juridisk rådgivning.
 
-## Skapa en prediktiv målgruppsmodell {#create-predictive-audiences}
+## Skapa en modell för prediktiva målgrupper {#create-predictive-audiences}
 
-Innan du skapar en [!UICONTROL Predictive Audiences]-modell måste du bestämma vilken första parts datakälla du vill tilldela dina [!UICONTROL Predictive Audiences]-egenskaper och segment till. Du kan använda en befintlig datakälla från första part eller skapa en ny. Mer information om hur du skapar en ny datakälla finns i [Hantera datakällor](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html).
+Innan du skapar en [!UICONTROL Predictive Audiences]-modell måste du bestämma vilken första parts datakälla du vill tilldela dina [!UICONTROL Predictive Audiences]-egenskaper och segment till. Du kan använda en befintlig datakälla från första part eller skapa en ny. Mer information om hur du skapar en ny datakälla finns i [Hantera datakällor](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html).
 
 När du vet vilken datakälla du ska använda följer du stegen nedan.
 
@@ -46,7 +45,7 @@ När du vet vilken datakälla du ska använda följer du stegen nedan.
       ![prediktiv målgrupp-spara](assets/predictive-audiences-save.png)
 1. Klicka på **[!UICONTROL Save]**.
 
-## Prediktiva målgruppsmodeller för kloning och redigering {#clone-predictive-audiences}
+## Kloning och redigering - prediktiva målgruppsmodeller {#clone-predictive-audiences}
 
 Audience Manager stöder inte redigering av befintliga [!UICONTROL Predictive Audiences]-modeller. Om du vill ändra en modells konfiguration kan du skapa en klon av en befintlig modell och redigera den. Så här kan du göra:
 
@@ -60,6 +59,6 @@ Audience Manager stöder inte redigering av befintliga [!UICONTROL Predictive Au
 
 5. När du är klar med redigeringen av en modell klickar du på **[!UICONTROL Save]**.
 
-## Tar bort prediktiva målgrupper {#delete-predictive-audiences}
+## Ta bort prediktiva målgrupper {#delete-predictive-audiences}
 
 Om du vill ta bort en [!UICONTROL Predictive Audiences]-modell går du till **[!UICONTROL Audience Data]** > **[!UICONTROL Models]**, letar reda på modellen som du vill ta bort och klickar på ikonen **[!UICONTROL Delete]**.
