@@ -4,19 +4,18 @@ seo-description: Med Predictive Audiences kan ni klassificera okända målgruppe
 seo-title: Rapportering i Predictive Audiences
 solution: Audience Manager
 title: Rapportering i Predictive Audiences
-feature: Algorithmic Models
+feature: Algoritmiska modeller
 exl-id: 43a4272c-d9be-47f6-9b81-15472b0366ab
-translation-type: tm+mt
-source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '629'
 ht-degree: 6%
 
 ---
 
 # Rapportering i Predictive Audiences
 
-När du har sparat en [!UICONTROL Predictive Audiences]-modell börjar Audience Manager utbilda den. Inom några timmar kommer den beräknade modellen att börja analysera målgrupper på [datainsamlingsservrarna](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs). Rapporteringen blir tillgänglig följande dag.
+När du har sparat en [!UICONTROL Predictive Audiences]-modell börjar Audience Manager utbilda den. Inom några timmar kommer den beräknade modellen att börja analysera målgrupper på [datainsamlingsservrarna](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs). Rapporteringen blir tillgänglig följande dag.
 
 Om du vill visa resultatet av din [!UICONTROL Predictive Audiences]-klassificering går du till **[!UICONTROL Audience Data]** > **[!UICONTROL Models]** och klickar på modellen i listan.
 
