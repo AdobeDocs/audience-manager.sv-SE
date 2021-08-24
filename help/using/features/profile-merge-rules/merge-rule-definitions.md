@@ -5,17 +5,16 @@ seo-title: Beskrivning av alternativen för regler för profilsammanslagning
 solution: Audience Manager
 title: Beskrivning av alternativen för regler för profilsammanslagning
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
-feature: Profile Merge
+feature: Sammanfoga profil
 exl-id: 682d2540-c764-4f5a-a946-5d0e18c66c00
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 2%
+source-wordcount: '1021'
+ht-degree: 1%
 
 ---
 
-# [!UICONTROL Profile Merge Rules] Alternativ definierade  {#profile-merge-rule-options-defined}
+# [!UICONTROL Profile Merge Rules] Alternativ definierade {#profile-merge-rule-options-defined}
 
 Med alternativen [!UICONTROL profile merge rule] kan du styra vilken typ av data [!DNL Audience Manager] använder för segmentering. En [!UICONTROL profile merge rule] kan innehålla enhetsprofiler som mappats av enhetsdiagrammet [!UICONTROL Profile Link], [!UICONTROL Adobe Experience Cloud Device Co-op] och/eller andra tredjepartsdiagramleverantörer som är integrerade med [!DNL Audience Manager]. Du kan skapa maximalt 4 [!UICONTROL Profile Merge Rules]. Den fjärde [!UICONTROL Profile Merge Rule] är exklusivt tillgänglig för kunder som köpt tillägget [!UICONTROL People-Based Destinations].
 
@@ -23,7 +22,7 @@ Du skapar en [!UICONTROL Profile Merge Rule] genom att göra ett val bland alter
 
 ![profile-merge-rule-setup](assets/profile-merge-rule-setup.png)
 
-## [!UICONTROL Profile Merge Rule] Alternativöversikt  {#overview}
+## [!UICONTROL Profile Merge Rule] Alternativöversikt {#overview}
 
 [!UICONTROL Profile Merge Rules] möjliggör ett antal kombinationer av regler, som var och en är inriktad på specifika användningsområden. Se tabellen nedan för mer ingående information om när varje regelkombination ska användas.
 
@@ -37,7 +36,7 @@ Du skapar en [!UICONTROL Profile Merge Rule] genom att göra ett val bland alter
 | [!UICONTROL Last Authenticated Profiles] | [!UICONTROL External Device Graph] (inkluderar  [!UICONTROL Co-op Device Graph]) | Alla kunder | Realtid och batch | Nej | [Avancerad målgruppsanpassning mellan enheter](external-graph-use-cases.md#advanced-graph-expansion) |
 | [!UICONTROL All Cross-Device Profiles] | Ej tillämpligt | Endast för [personbaserade destinationer](../destinations/people-based-destinations-overview.md)-kunder | Endast batch | Nej | [Målgruppsanpassning för personbaserade destinationer](merge-rule-targeting-options.md#all-cross-device) |
 
-## [!UICONTROL Profile Merge Rule] [!UICONTROL Segment] Utvärdering  {#segment-evaluation}
+## [!UICONTROL Profile Merge Rule] [!UICONTROL Segment] Utvärdering {#segment-evaluation}
 
 Beroende på din [!UICONTROL Profile Merge Rules]-konfiguration kan [!DNL Audience Manager] utföra [!UICONTROL segment]-utvärderingen i realtid, i batch eller båda.
 
@@ -45,7 +44,7 @@ Beroende på din [!UICONTROL Profile Merge Rules]-konfiguration kan [!DNL Audien
 * Utvärdering av grupp [!UICONTROL segment] utförs mot tidigare kvalificerad [!UICONTROL traits].
 * [!UICONTROL Profile Merge Rules] som stöder både realtids- och batchutvärdering  [!UICONTROL segment] kombinerar besöksaktiviteten i realtid med tidigare kvalificerad  [!UICONTROL traits].
 
-## [!UICONTROL Profile Merge Rules] Svarstid för rapportering  {#reporting-latency}
+## [!UICONTROL Profile Merge Rules] Svarstid för rapportering {#reporting-latency}
 
 Realtidsutvärderingen [!UICONTROL segment] återspeglas omedelbart i [!UICONTROL Profile Merge Rules]-rapporterna.
 
@@ -112,11 +111,11 @@ Med [!UICONTROL Device Options] kan du välja den typ av *`device profile`* som 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> Co-op Device Graph</span></b> </p> </td> 
-   <td colname="col2"> <p>Anger att <span class="keyword"> Audience Manager</span> ska läsa profilerna från den aktuella enheten och upp till 100 andra enheter med hjälp av länkarna i <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html" format="https" scope="external"> Experience Cloud Device Co-op</a>. </p> <p><span class="keyword"> Device Co-op</span> är ett digitalt samarbete där deltagande kunder delar information om enhetslänkar. <span class="keyword"> Device Co-op</span> bearbetar dessa data i ett <span class="term"> enhetsdiagram</span>. Ett enhetsdiagram länkar samman enheter från enhetsgrupper. Länkarna byggs från <a href="https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/links.html" format="https" scope="external"> sannolikhetsdata och deterministiska data</a>. Klustren representerar en grupp enheter som används av en okänd person. <span class="keyword"> Device Co-op</span> delar dessa kluster bland medlemmarna, vilket hjälper dem att leverera värdefulla och enhetliga upplevelser över olika enheter till sina kunder. </p> <p> Mer information om <span class="wintitle"> Device Co-op</span> finns i: </p> <p> 
+   <td colname="col2"> <p>Anger att <span class="keyword"> Audience Manager</span> ska läsa profilerna från den aktuella enheten och upp till 100 andra enheter med hjälp av länkarna i <a href="https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html" format="https" scope="external"> Experience Cloud Device Co-op</a>. </p> <p><span class="keyword"> Device Co-op</span> är ett digitalt samarbete där deltagande kunder delar information om enhetslänkar. <span class="keyword"> Device Co-op</span> bearbetar dessa data i ett <span class="term"> enhetsdiagram</span>. Ett enhetsdiagram länkar samman enheter från enhetsgrupper. Länkarna byggs från <a href="https://experienceleague.adobe.com/docs/device-co-op/using/device-graph/links.html" format="https" scope="external"> sannolikhetsdata och deterministiska data</a>. Klustren representerar en grupp enheter som används av en okänd person. <span class="keyword"> Device Co-op</span> delar dessa kluster bland medlemmarna, vilket hjälper dem att leverera värdefulla och enhetliga upplevelser över olika enheter till sina kunder. </p> <p> Mer information om <span class="wintitle"> Device Co-op</span> finns i: </p> <p> 
      <ul id="ul_8EDA7D092ECD444C8C19CDC7534D84DE"> 
-      <li id="li_323BC5993D6A4BA3962169BF0ED37C55"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/home.html" format="https" scope="external"> Device Co-op - översikt</a> </li> 
-      <li id="li_0BDB2144EC584002B3B9F1D64B6CD580"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/requirements.html" format="https" scope="external"> Krav för medlemskap</a> </li> 
-      <li id="li_632D1014909146758F07CFAC79B90CFE"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/device-graph-overview.html" format="https" scope="external"> Enhetsdiagram: Interna processer och utdata</a> </li>
+      <li id="li_323BC5993D6A4BA3962169BF0ED37C55"> <a href="https://experienceleague.adobe.com/docs/device-co-op/using/home.html" format="https" scope="external"> Device Co-op - översikt</a> </li> 
+      <li id="li_0BDB2144EC584002B3B9F1D64B6CD580"> <a href="https://experienceleague.adobe.com/docs/device-co-op/using/about/requirements.html" format="https" scope="external"> Krav för medlemskap</a> </li> 
+      <li id="li_632D1014909146758F07CFAC79B90CFE"> <a href="https://experienceleague.adobe.com/docs/device-co-op/using/device-graph/device-graph-overview.html" format="https" scope="external"> Enhetsdiagram: Interna processer och utdata</a> </li>
      </ul> </p> </td>
   </tr> 
   <tr> 
