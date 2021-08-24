@@ -1,20 +1,19 @@
 ---
 description: Om du vill skapa en ny datakälla går du till Målgruppsdata > Datakällor > Lägg till ny och slutför stegen för varje avsnitt som beskrivs här. Administratörsbehörighet krävs för att skapa en datakälla.
-keywords: data sources;manage data source;audience manager data source
+keywords: datakällor;hantera datakälla;målgruppshanterarens datakälla
 seo-description: Om du vill skapa en ny datakälla går du till Målgruppsdata > Datakällor > Lägg till ny och slutför stegen för varje avsnitt som beskrivs här. Administratörsbehörighet krävs för att skapa en datakälla.
 seo-title: Skapa en datakälla
 solution: Audience Manager
 title: Hantera datakällor
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
-feature: Data Sources
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: Datakällor
+exl-id: 1c20988e-4a09-4d56-b454-d48b75eed1ce
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 3%
+source-wordcount: '378'
+ht-degree: 2%
 
 ---
-
 
 # Hantera [!UICONTROL Data Sources] {#manage-data-sources}
 
@@ -28,7 +27,7 @@ Om du vill skapa en ny [!UICONTROL data source] går du till **[!UICONTROL Audie
 >
 >Mer information om de olika kontrollerna finns i [Inställningar för datakälla och Menyalternativ](../features/datasources-list-and-settings.md#settings-menu-options).
 
-## [!UICONTROL Data Source] Detaljer  {#details}
+## [!UICONTROL Data Source] Detaljer {#details}
 
 Så här slutför du avsnittet [!UICONTROL Data Source Details]:
 
@@ -37,7 +36,7 @@ Så här slutför du avsnittet [!UICONTROL Data Source Details]:
 1. Ange en [!UICONTROL integration code]. I allmänhet är [!UICONTROL integration codes] valfritt. De krävs när du vill:
 
    * [Skapa en datakälla](../features/profile-merge-rules/merge-rules-start.md#create-data-source) för olika enheter.
-   * Använd [Adobe Experience Platform identitetstjänst](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html).
+   * Använd [Adobe Experience Platform identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html).
    * Arbeta med [regler för profilsammanslagning](../features/profile-merge-rules/merge-rules-start.md).
 
 1. Välj en **[!UICONTROL ID Type]**. [!UICONTROL ID Type] bland annat:
@@ -55,7 +54,7 @@ Så här slutför du avsnittet [!UICONTROL Data Source Details]:
 
 [Dataexportkontroller ](../features/data-export-controls.md) är valfria klassificeringsregler som du kan tillämpa på en  [!UICONTROL data source] och  [!UICONTROL destination]. De förhindrar dig från att skicka data till en [!UICONTROL destination] när den åtgärden bryter mot en datasekretess eller användaravtal. Hoppa över det här avsnittet om du inte använder [!UICONTROL Data Export Controls].
 
-## [!UICONTROL Data Source] Inställningar  {#settings}
+## [!UICONTROL Data Source] Inställningar {#settings}
 
 Dessa inställningar avgör hur en [!UICONTROL data source] identifieras, används och delas. Du kan även aktivera felrapportering för inkommande datafiler. Så här slutför du avsnittet [!UICONTROL Data Source Settings]:
 
@@ -73,7 +72,7 @@ Ta bort en [!UICONTROL data source] som du inte längre behöver.
 >Observera följande begränsningar:
 >
 >* Du kan inte ta bort en [aktiv publik eller synkroniserad egenskap för datakälla](../features/traits/client-activity-synced-audience-traits.md).
->* För kunder som använder Adobe Analytics: Audience Manager tillåter inte att du tar bort datakällor som skapats automatiskt från [!DNL Analytics]-rapportsviterna. Använd [bastjänsten](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services-landing.html) för att ta bort mappningen för dessa datakällor.
+>* För kunder som använder Adobe Analytics: Audience Manager tillåter inte att du tar bort datakällor som skapats automatiskt från [!DNL Analytics]-rapportsviterna. Använd [bastjänsten](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services-landing.html) för att ta bort mappningen för dessa datakällor.
 
 
 1. Klicka på **[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**.
@@ -85,3 +84,4 @@ Du kan använda rutan [!UICONTROL Search] för att hitta de önskade datakällor
 >[!MORELIKETHIS]
 >
 >* [Inställningar för datakälla och menyalternativ](../features/datasources-list-and-settings.md#settings-menu-options)
+
