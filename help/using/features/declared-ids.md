@@ -1,30 +1,29 @@
 ---
 description: Hur deklarerade ID:n fungerar, konfigurera procedurer, kodexempel och variabler.
-keywords: id sync
+keywords: id-synkronisering
 seo-description: Hur deklarerade ID:n fungerar, konfigurera procedurer, kodexempel och variabler.
 seo-title: Deklarerade ID:n
 solution: Audience Manager
 title: Deklarerade ID:n
 uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
-feature: ID Syncs
-translation-type: tm+mt
-source-git-commit: 29708d5fc528ac9da08f4c5a7f2bcaa11b240d8b
+feature: ID-synkronisering
+exl-id: a480671a-797d-405d-905d-98ab4ef71369
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1187'
-ht-degree: 9%
+source-wordcount: '1183'
+ht-degree: 8%
 
 ---
-
 
 # [!UICONTROL Declared IDs] {#declared-ids}
 
 Hur [!UICONTROL declared IDs] fungerar, ställer in procedurer, kodexempel och variabler.
 
-## [!UICONTROL Declared ID] Målinriktning  {#declared-id-targeting}
+## [!UICONTROL Declared ID] Målinriktning {#declared-id-targeting}
 
 Utbyt och synkronisera användar-ID:n med [!DNL Audience Manager] från enheter eller webbläsare som inte använder eller accepterar beständiga lagringsmekanismer, till exempel [!DNL cookies] från tredje part.
 
-## Syfte med [!UICONTROL Declared ID] {#declared-id-targeting-purpose}
+## Syfte med [!UICONTROL Declared ID] målinriktning {#declared-id-targeting-purpose}
 
 Vissa webbläsare, och de flesta mobila enheter, accepterar inte [!DNL cookies] från tredje part. Detta gör det svårt att behålla information om webbplatsbesökare eller tilldela beständiga ID:n. För att lösa det här problemet använder [!DNL Audience Manager] [!UICONTROL DIL] så att du kan skicka [!UICONTROL declared IDs] i ett händelseanrop. Dessutom kan en [!UICONTROL declared ID] fungera som ett universellt ID som gäller för samma användare i alla lösningar i [!DNL Experience Cloud]. I följande tabell beskrivs ID-målnings-/matchningsprocessen:
 
@@ -38,7 +37,7 @@ Vissa webbläsare, och de flesta mobila enheter, accepterar inte [!DNL cookies] 
  <tbody> 
   <tr> 
    <td colname="col1"> <b>Händelseanrop</b> </td> 
-   <td colname="col2"> <p>För att fungera behöver du <span class="wintitle"> DIL </span> och <a href="https://docs.adobe.com/content/help/en/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service </a> på sidan. <span class="wintitle"> DIL  </span> får  <span class="wintitle"> deklarerade ID:n  </span> från  <code> setVisitorID </code> funktionen som tillhandahålls av  <span class="keyword"> Adobe Experience Platform identitetstjänst  </span> och skickar dem vidare till  <span class="keyword"> Audience Manager  </span>. </p> </td> 
+   <td colname="col2"> <p>För att fungera behöver du <span class="wintitle"> DIL </span> och <a href="https://experienceleague.adobe.com/docs/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service </a> på sidan. <span class="wintitle"> DIL  </span> får  <span class="wintitle"> deklarerade ID:n  </span> från  <code> setVisitorID </code> funktionen som tillhandahålls av  <span class="keyword"> Adobe Experience Platform identitetstjänst  </span> och skickar dem vidare till  <span class="keyword"> Audience Manager  </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Matcha ID</b> </td> 
@@ -57,7 +56,7 @@ Vissa webbläsare, och de flesta mobila enheter, accepterar inte [!DNL cookies] 
 
 För att komma igång måste du konfigurera ID-tjänsten [!DNL Experience Cloud] och [!UICONTROL DIL] för de sidor på webbplatsen som du vill använda för datainsamling. Se [DIL create](../dil/dil-class-overview/dil-create.md#dil-create) och [Deklarerade ID-variabler](../features/declared-ids.md#declared-id-variables).
 
-## Anrop till avanmälan {#opt-out-calls}
+## Avanmäl samtal {#opt-out-calls}
 
 [!UICONTROL declared ID]-processen följer besökarens inställningar för att avanmäla [!DNL Audience Manager]-mål på din webbplats. När [!DNL Audience Manager] tar emot en avanmälningsbegäran innehåller [!DNL JSON] som returneras av [!DNL DCS] felkoden 171, med meddelandet `Encountered opt out tag`, i stället för användar-ID:t för [!DNL Audience Manager].
 
@@ -66,7 +65,7 @@ För att komma igång måste du konfigurera ID-tjänsten [!DNL Experience Cloud]
 
 Mer information om att avanmäla dig från datainsamling finns i [Dataintegritet](../overview/data-security-and-privacy/data-privacy.md).
 
-## [!UICONTROL Declared ID] Exempel på avanmälan  {#opt-out-examples}
+## [!UICONTROL Declared ID] Exempel på avanmälan {#opt-out-examples}
 
 Du kan göra en [!UICONTROL declared ID]-avanmälningsbegäran med nyckelvärdepar för `d_cid` och `d_cid_ic`. Gamla parametrar som `d_dpid` och `d_dpuuid` fungerar fortfarande, men betraktas som föråldrade. Se [CID ersätter DPID och DPUUID](../reference/cid.md). I exemplen visar *kursiv stil* platshållaren för en variabel.
 
@@ -179,13 +178,13 @@ Med tanke på dessa nyckelvärdepar och deras obligatoriska syntax gör du händ
  </tbody> 
 </table>
 
-## [!UICONTROL Declared ID] Variabler  {#declared-id-variables}
+## [!UICONTROL Declared ID] Variabler {#declared-id-variables}
 
 Beskriver de konfigurationsvariabler som används för att skicka [!UICONTROL declared IDs] till [!UICONTROL DIL] till [!DNL Audience Manager.]
 
 ## [!UICONTROL DIL] använder  [!DNL Adobe Experience Platform Identity Service] till Pass  [!UICONTROL Declared IDs] {#dil-id-service-pass-declared-ids}
 
-När du använder med [Adobe Experience Platform identitetstjänst](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html) behöver du inte längre skicka in [!UICONTROL declared IDs] med de inaktuella variablerna `dpid` och `dpuuid`. I stället förlitar sig de aktuella versionerna av [!UICONTROL DIL] på funktionen `visitorService` för att hämta [!UICONTROL declared IDs] från funktionen `setCustomerIDs` i [!UICONTROL Adobe Experience Platform Identity Service]. Mer information finns i [Kund-ID och autentiseringstillstånd](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html). Du anropar `visitorService` i `DIL.create` enligt nedan.
+När du använder med [Adobe Experience Platform identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html) behöver du inte längre skicka in [!UICONTROL declared IDs] med de inaktuella variablerna `dpid` och `dpuuid`. I stället förlitar sig de aktuella versionerna av [!UICONTROL DIL] på funktionen `visitorService` för att hämta [!UICONTROL declared IDs] från funktionen `setCustomerIDs` i [!UICONTROL Adobe Experience Platform Identity Service]. Mer information finns i [Kund-ID och autentiseringstillstånd](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html). Du anropar `visitorService` i `DIL.create` enligt nedan.
 
 ```js
 var vDil = DIL.create({
@@ -196,7 +195,7 @@ var vDil = DIL.create({
 });
 ```
 
-I `namespace`-nyckelvärdepar är `MCORG` ditt [!DNL Experience Cloud] organisations-ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration]-avsnittet på kontrollpanelen [!DNL Experience Cloud]. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: Huvudtjänster](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html).
+I `namespace`-nyckelvärdepar är `MCORG` ditt [!DNL Experience Cloud] organisations-ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration]-avsnittet på kontrollpanelen [!DNL Experience Cloud]. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: Huvudtjänster](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html).
 
 ## Föråldrade funktioner {#deprecated-functions}
 
@@ -275,7 +274,7 @@ myCallback({
 })
 ```
 
-## Använd inte anrop för mål och avanmälan {#do-not-target}
+## Anrop för inte mål och avanmäl {#do-not-target}
 
 [!UICONTROL declared ID]-processen följer besökarens inställningar för att avanmäla [!DNL Audience Manager]-mål på din webbplats. När [!DNL Audience Manager] tar emot en avanmälningsbegäran returnerar [!DNL DCS] ett tomt [!DNL JSON]-objekt i stället för användar-ID:t för [!DNL Audience Manager].
 
