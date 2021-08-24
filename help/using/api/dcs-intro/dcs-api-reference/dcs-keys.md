@@ -4,19 +4,18 @@ seo-description: Visar och beskriver syntaxen och de attribut (eller nyckelvärd
 seo-title: Attribut som stöds för DCS API-anrop
 solution: Audience Manager
 title: Attribut som stöds för DCS API-anrop
-keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tdpid_ic
+keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tdpid_d ic
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 feature: DCS
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 1bdd7dcd-9411-4b0a-a236-059eb5faf00d
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 4%
+source-wordcount: '839'
+ht-degree: 3%
 
 ---
 
-
-# Attribut som stöds för [!DNL DCS] [!DNL API] anrop {#supported-attributes-for-dcs-api-calls}
+# Attribut som stöds för [!DNL DCS] [!DNL API]-anrop {#supported-attributes-for-dcs-api-calls}
 
 Visar och beskriver syntaxen och de attribut (eller nyckelvärdepar) som stöds och som du kan skicka till [!UICONTROL Data Collection Servers] ([!DNL DCS]). Den här informationen kan hjälpa dig att formatera dina [!DNL DCS]-begäranden och förstå de parametrar som returneras av systemet.
 
@@ -51,7 +50,7 @@ Visar och beskriver syntaxen och de attribut (eller nyckelvärdepar) som stöds 
  </tbody> 
 </table>
 
-## [!DNL d_] Attribut  {#d-attributes}
+## [!DNL d_] Attribut {#d-attributes}
 
 Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du vill att [!DNL DCS] ska returnera ett svar krävs `d_rtbd=json`.
 
@@ -81,7 +80,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Adobe Experience Platform Identity Service och beror på <code> idSyncDisable3rdPartySyncing</code>-konfigurationen. Se <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/coppa.html" format="https" scope="external"> COPPA-stöd i Adobe Experience Platform Identity Service</a>. </p> </td>
+   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Adobe Experience Platform Identity Service och beror på <code> idSyncDisable3rdPartySyncing</code>-konfigurationen. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html" format="https" scope="external"> COPPA-stöd i Adobe Experience Platform Identity Service</a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
@@ -123,7 +122,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>Anger det Experience Cloud-ID som anges och används av ID-tjänsten <span class="keyword"> Experience Cloud</span>. Mer information om ECID finns i <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud Identity Service</a>. </p> </td> 
+   <td colname="col2"> <p>Anger det Experience Cloud-ID som anges och används av ID-tjänsten <span class="keyword"> Experience Cloud</span>. Mer information om ECID finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
