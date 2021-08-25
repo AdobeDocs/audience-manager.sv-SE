@@ -1,16 +1,15 @@
 ---
 description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
-seo-description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
+seo-description: This page includes current server-to-server integrations only. For more information on an integration refer to its Adobe Exchange listing (where available) or contact your Adobe Consultant or Customer Care.
 seo-title: Adobe Audience Manager Technology Partners
 keywords: aktivering, aktiveringspartner, destination, mål
 solution: Audience Manager
 title: Adobe Audience Manager Technology Partners
 feature: Third-party Integration
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 41%
+source-wordcount: '1149'
+ht-degree: 43%
 
 ---
 
@@ -158,7 +157,7 @@ Den här sidan innehåller endast aktuella Audience Manager [server-till-server-
 | TubeMogul | 03/03/2017 | Ja | Nej | Ja | Nej |
 | Sväng/Amobee | 03/03/2027 | Nej | Nej | Nej | Ja |
 | Twenga | 29/10/2018 | Ja | Nej | Nej | Nej |
-| Twitter-anpassade målgrupper | 27/02/2017 | Ja | Nej | Ja | Nej |
+| Twitter Custom Auditions | 27/02/2017 | Ja | Nej | Ja | Nej |
 | Underton | 11/07/2017 | Nej | Nej | Nej | Nej |
 | Verve | 15/06/2017 | Ja | Nej | Nej | Ja |
 | VideoAmp | 03/03/2017 | Nej | Nej | Nej | Nej |
