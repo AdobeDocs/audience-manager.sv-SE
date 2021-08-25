@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-description: Läs om hur Audience Manager kan samla in kommersiellt relevant information om webbplatsbesökare, skapa marknadsföringsbara segment och leverera riktad reklam och innehåll till rätt målgrupp.
 feature-set: Audience Manager
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
 workflow-type: tm+mt
 source-wordcount: '1805'
 ht-degree: 90%
@@ -112,7 +112,7 @@ ht-degree: 90%
          + [Lägga till nya enhetsbaserade destinationer](features/destinations/add-device-based-destinations.md)
          + [Lista över enhetsbaserade destinationer för Audience Manager](/help/using/features/destinations/device-based-destinations-list.md)
          + [Lägga till eller redigera segment för server-till-server-destinationer](features/destinations/add-edit-segments.md)
-         + [Konfigurera Twitter-anpassade målgrupper som enhetsbaserade destinationer med självbetjäning](features/destinations/twitter-tailored-audiences.md)
+         + [Konfigurera anpassade Twitter-målgrupper som självbetjäningsmål](features/destinations/twitter-tailored-audiences.md)
       + Anpassade destinationer {#custom-destinations}
          + [Konfigurera en URL-destination](features/destinations/create-url-destination.md)
          + [Konfigurera en cookie-destination](features/destinations/create-cookie-destination.md)
