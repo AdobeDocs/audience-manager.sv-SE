@@ -1,17 +1,16 @@
 ---
 description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
-seo-description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
-seo-title: Adobe Audience Manager Server-till-server-mål
+seo-description: This page includes current server-to-server integrations only. For more information on an integration refer to its Adobe Exchange listing (where available) or contact your Adobe Consultant or Customer Care.
+seo-title: Adobe Audience Manager Server-to-Server Destinations
 keywords: aktivering, aktiveringspartner, destination, mål
 solution: Audience Manager
 title: Adobe Audience Manager Server-till-server-mål
-feature: Grundläggande om mål
+feature: Destination Basics
 exl-id: 7db3bc02-ece4-4524-a401-d2c8c6de510a
-translation-type: tm+mt
-source-git-commit: 78d3bbc03936130f9c9da8ee5eed33e6ef9a07b9
+source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 52%
+source-wordcount: '1112'
+ht-degree: 54%
 
 ---
 
@@ -163,7 +162,7 @@ Den här sidan innehåller endast aktuella [!DNL Audience Manager] [enhetsbasera
 | [!DNL TubeMogul] | 03/03/2017 | Realtid | Ja | Nej | Ja | Nej |
 | [!DNL Turn] /  [!DNL Amobee] | 03/03/2027 | Realtid | Nej | Nej | Nej | Ja |
 | [!DNL Twenga] | 29/10/2018 | Realtid | Ja | Nej | Nej | Nej |
-| [!DNL Twitter Tailored Audiences] | 27/02/2017 | Realtid | Ja | Nej | Ja | Nej |
+| [!DNL Twitter Custom Audiences] | 27/02/2017 | Realtid | Ja | Nej | Ja | Nej |
 | [!DNL Undertone] | 11/07/2017 | 1:a dag | Nej | Nej | Nej | Nej |
 | [!DNL Verve] | 15/06/2017 | 1:a dag | Ja | Nej | Nej | Ja |
 | [!DNL VideoAmp] | 03/03/2017 | Realtid | Nej | Nej | Nej | Nej |
