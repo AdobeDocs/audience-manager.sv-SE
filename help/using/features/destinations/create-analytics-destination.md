@@ -1,14 +1,14 @@
 ---
 description: Med Audience Analytics kan ni skicka Audience Manager-segment till Analytics. Om du vill använda den här funktionen skapar du ett Analytics-mål och mappar segment till det i Audience Manager.
-seo-description: Med Audience Analytics kan ni skicka Audience Manager-segment till Analytics. Om du vill använda den här funktionen skapar du ett Analytics-mål och mappar segment till det i Audience Manager.
-seo-title: Konfigurera en Analytics-destination
+seo-description: Audience Analytics lets you send Audience Manager segments to Analytics. To use this feature, you create an Analytics destination and map segments to it in Audience Manager.
+seo-title: Configure an Analytics Destination
 solution: Audience Manager
 title: Konfigurera en Analytics-destination
 feature: Adobe Analytics Integration
 exl-id: f3ead057-04d1-40cd-8e3d-d0934d85cdb4
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 089a41b0176f2453e4f301c877dd6b020f726562
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '807'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Mer information finns i Krav i [Audience Analytics](https://experienceleague.ado
 
 | Måltyp för analys | Beskrivning |
 |---|---|
-| Standard | Namnet på standardmålet är &quot;Adobe Analytics&quot;, som du kan redigera. Mappade ID:n för rapporteringsprogramsvit visas i mapplagringen för dina Audience Manager-egenskaper och -segment. <br>  Audience Manager skapar automatiskt ett mål om ditt konto har:  <br>  <ul><li>Uppfyll kraven som beskrivs i dokumentationen för [Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html).</li><li>En [rapportserie](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html) i Analytics.</li><li>[Mappade en rapportsvit till en organisation](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html).</li></ul> |
+| Standard | Namnet på standardmålet är &quot;Adobe Analytics&quot;, som du kan redigera. Mappade ID:n för rapporteringsprogramsvit visas i mapplagringen för dina Audience Manager-egenskaper och -segment. <br>  Audience Manager skapar automatiskt ett mål om ditt konto har:  <br>  <ul><li>Uppfyll kraven som beskrivs i dokumentationen för [Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html).</li><li>En [rapportserie](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html) i Analytics.</li></ul> |
 | Nytt | Om du vill skapa nya Analytics-mål går du till Målgruppsdata > Destinationer > Skapa nytt mål och följer stegen för varje avsnitt som beskrivs nedan. |
 
 ## Steg 1: Ange grundläggande information
