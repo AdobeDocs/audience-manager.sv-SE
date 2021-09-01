@@ -1,19 +1,18 @@
 ---
 description: Information om allmänna krav, autentisering, valfria frågeparametrar, begäran-URL:er och andra referenser.
-seo-description: Information om allmänna krav, autentisering, valfria frågeparametrar, begäran-URL:er och andra referenser.
-seo-title: Kom igång med REST API:er
+seo-description: Information about general requirements, authentication, optional query parameters, request URLs, and other references.
+seo-title: Getting Started with REST APIs
 solution: Audience Manager
 title: Kom igång med REST API:er
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
-translation-type: tm+mt
-source-git-commit: ab8745a8ba24154793201893a39a039b5a098833
+exl-id: f7d5e52d-ad21-4020-a299-d440f954c51a
+source-git-commit: 95182160b37bb15df4867bbacd06d8d75c971fa3
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 2%
+source-wordcount: '1942'
+ht-degree: 1%
 
 ---
-
 
 # Komma igång med [!DNL REST] [!DNL APIs] {#getting-started-with-rest-apis}
 
@@ -47,7 +46,7 @@ Observera följande när du arbetar med [Audience Manager API](https://bank.demd
 >
 >Beroende på din autentiseringsmetod måste du justera din begäran [!DNL URLs] därefter. Avsnittet [Environment](#environments) innehåller information om värdnamn som du bör använda.
 
-## [!DNL JWT] ([!DNL Service Account]) Autentisering med Adobe I/O  {#jwt}
+## [!DNL JWT] ([!DNL Service Account]) Autentisering med Adobe I/O {#jwt}
 
 ### Översikt över Adobe I/O {#adobeio}
 
@@ -72,7 +71,19 @@ Följ stegen nedan för att konfigurera [!DNL JWT (Service Account)]-autentiseri
 >
 >Om du vill konfigurera och arbeta med [!DNL Audience Manager] [!DNL REST APIs] automatiskt kan du generera [!DNL JWT] programmatiskt. Mer information finns i [JWT-autentisering (tjänstkonto)](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
 
-## [!DNL OAuth] Autentisering (inaktuellt)  {#oauth}
+### RBAC-behörigheter för tekniskt konto
+
+Om ditt Audience Manager-konto använder [rollbaserad åtkomstkontroll](../../features/administration/administration-overview.md) måste du skapa ett Audience Manager-tekniskt användarkonto och lägga till det i Audience Manager RBAC-gruppen som ska göra API-anropen.
+
+Följ stegen nedan för att skapa ett tekniskt användarkonto och lägga till det i en RBAC-grupp:
+
+1. Ring `GET` till `https://aam.adobe.io/v1/users/self`. Anropet skapar ett tekniskt användarkonto som du kan se på sidan [!UICONTROL Admin Console] på sidan [!UICONTROL Users].
+
+   ![tekniskt konto](assets/technical-account.png)
+
+1. Logga in på ditt Audience Manager-konto och [lägg till det tekniska användarkontot](../../features/administration/administration-overview.md#create-group) i användargruppen som ska göra API-anropen.
+
+## [!DNL OAuth] Autentisering (inaktuellt) {#oauth}
 
 >[!WARNING]
 > [!DNL Audience Manager] [!UICONTROL REST API] tokenautentisering och förnyelse via  [!DNL OAuth 2.0] är nu föråldrat.
@@ -81,7 +92,7 @@ Följ stegen nedan för att konfigurera [!DNL JWT (Service Account)]-autentiseri
 
 [!DNL Audience Manager] [!UICONTROL REST API] följer [!DNL OAuth 2.0]-standarder för tokenautentisering och förnyelse. I avsnitten nedan beskrivs hur du autentiserar och börjar arbeta med [!DNL API]s.
 
-### Skapa en allmän [!DNL API] användare {#requirements}
+### Skapa en allmän [!DNL API]-användare {#requirements}
 
 Vi rekommenderar att du skapar ett separat, tekniskt användarkonto för att arbeta med [!DNL Audience Manager] [!DNL API]s. Det här är ett generiskt konto som inte är kopplat till eller kopplat till en viss användare i organisationen. Med den här typen av [!DNL API]-användarkonto kan du uppnå två saker:
 
@@ -210,13 +221,13 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 [!DNL URLs] för förfrågningar, staging- och produktionsmiljöer samt versioner.
 
-## Begäran [!DNL URLs] {#request-urls}
+## Begär [!DNL URLs] {#request-urls}
 
 I följande tabell visas begäran [!DNL URLs] som används för att skicka [!DNL API]-begäranden per metod.
 
 Beroende på vilken autentiseringsmetod du använder måste du justera din begäran [!DNL URLs] enligt tabellerna nedan.
 
-### Begär [!DNL URLs] för [!DNL JWT] autentisering {#request-urls-jwt}
+### Begär [!DNL URLs] för [!DNL JWT]-autentisering {#request-urls-jwt}
 
 | [!DNL API] Metoder | Begär [!DNL URL] |
 |--- |--- |
@@ -248,7 +259,7 @@ Beroende på vilken autentiseringsmetod du använder måste du justera din begä
 | [!DNL Trait Types] | `https://api.demdex.com/v1/customer-trait-types` |
 | [!DNL Taxonomy] | `https://api.demdex.com/v1/taxonomies/0/` |
 
-## Miljöer {#environments}
+## Miljö {#environments}
 
 [!DNL Audience Manager] [!DNL API]s ger åtkomst till olika arbetsmiljöer. Dessa miljöer hjälper dig att testa kod mot separata databaser utan att påverka livs- och produktionsdata. I följande tabell visas tillgängliga [!DNL API]-miljöer och motsvarande resursvärdnamn.
 
@@ -269,7 +280,7 @@ Nya versioner av dessa [!DNL API]s släpps regelbundet. En ny version ökar vers
 
 `https://<host>/v1/...`
 
-## Svarskoder definierade {#response-codes-defined}
+## Definierade svarskoder {#response-codes-defined}
 
 `HTTP` statuskoder och svarstext som returneras av  [!DNL Audience Manager] [!UICONTROL REST API].
 
