@@ -6,16 +6,16 @@ solution: Audience Manager
 title: Konfigurera anpassade Twitter-målgrupper som självbetjäningsmål
 feature: People-based Destinations
 exl-id: 13b36469-3f61-47b1-9355-ca329de1fb24
-source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
+source-git-commit: 8023bfe1e4ea415867e1233f143627ff179cce42
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
 
 # Konfigurera [!DNL Twitter Custom Audiences] som ett självbetjäningsenhetsbaserat mål {#configure-twitter}
 
-I den här artikeln beskrivs hur du konfigurerar en integrering med [Twitter Custom Audiences](https://business.twitter.com/en/targeting/tailored-audiences.html).
+I den här artikeln beskrivs hur du konfigurerar en integrering med [Twitter Custom Audiences](https://business.twitter.com/en/help/campaign-setup/campaign-targeting/custom-audiences.html).
 
 ## Förutsättningar {#prerequisites}
 
@@ -35,7 +35,10 @@ Innan du kan lägga till det enhetsbaserade målet måste du länka Audience Man
 
 1. Logga in på ditt Audience Manager-konto och gå till **[!DNL Administration > Integrated Accounts]**. Om du har en tidigare konfigurerad integrering med en målplattform bör du se den på den här sidan. I annat fall är sidan tom.
 1. Klicka på **[!DNL Add Account]**.
-1. Välj [!DNL Twitter Custom Audiences] och klicka på **[!DNL Confirm]** för att omdirigeras till autentiseringssidan.                     ![integrerade plattformar](assets/dbd-integrated-platforms.png)
+1. Välj [!DNL Twitter Custom Audiences] och klicka på **[!DNL Confirm]** för att omdirigeras till autentiseringssidan.
+
+   ![integrerade plattformar](assets/dbd-integrated-platforms.png)
+
 1. När du har autentiserat dig omdirigeras du till Audience Manager där du ska se dina associerade annonskonton. Välj det annonserarkonto som du vill använda och klicka på **[!DNL Confirm]**.
 
 ### Steg 2. Skapa ett nytt enhetsbaserat mål {#step2-create-new-destination}
