@@ -1,15 +1,15 @@
 ---
 description: 'Nedan finns en översikt över de kundkrav du måste uppfylla innan du registrerar dig för personbaserade destinationer.  '
-seo-description: 'Nedan finns en översikt över de kundkrav du måste uppfylla innan du registrerar dig för personbaserade destinationer.  '
-seo-title: Krav och överväganden för personbaserade destinationer
+seo-description: Read below for an overview of customer requirements that you need to meet before signing up for People-Based Destinations.
+seo-title: People-Based Destinations Prerequisites and Considerations
 solution: Audience Manager
 title: Förutsättningar och överväganden
-feature: Personbaserade mål
+feature: People-based Destinations
 exl-id: 7656aa3e-3410-4052-8e29-b702bd0bf149
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: bb0bc62b139917bbf6429bc92a85f8a5010cbebe
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 3%
+source-wordcount: '964'
+ht-degree: 4%
 
 ---
 
@@ -51,11 +51,9 @@ Se [Förstå och konfigurera det personbaserade LinkedIn-målet](https://experie
 
 ### [!DNL Google Customer Match] {#gcm}
 
-Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka egna målgruppssegment till ett [!DNL Google Customer Match]-mål måste du läggas till i tillåtelselista.[!DNL Google]
+Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka dina egna målgruppssegment till ett [!DNL Google Customer Match]-mål måste du kontrollera att ditt [!DNL Google Ads]-konto överensstämmer med [Google Customer Match Policy](https://support.google.com/google-ads/answer/6299717/customer-match-policy).
 
-Kontakta din [!DNL Google]-representant och följ instruktionerna som beskrivs i [Använd kundmatchningspartners för att överföra dina data ](https://support.google.com/google-ads/answer/7361372?hl=en&amp;ref_topic=6296507) [!DNL Google]-dokumentation.
-
-När den här processen har slutförts kan du skapa din [!UICONTROL People-Based Destination].
+Kunder med kompatibla konton tillåts automatiskt listade av Google.
 
 ## Dataregistrering {#data-onboarding}
 
