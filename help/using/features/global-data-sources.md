@@ -1,24 +1,23 @@
 ---
 description: Använd globala datakällor för att importera enhets-ID:n.
-seo-description: Använd globala datakällor för att importera enhets-ID:n.
-seo-title: Globala datakällor
+seo-description: Use Global Data Sources to import device advertising IDs.
+seo-title: Global Data Sources
 solution: Audience Manager
 title: Globala datakällor
 feature: Data Sources
-translation-type: tm+mt
-source-git-commit: cb84f95d52c2e851cb0c016cb25f408f2d79d01b
+exl-id: ef137f89-1e1a-4cc0-8864-8a84162581c1
+source-git-commit: 77daa5bd6545914f65e3e0f19b12c750535244e8
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '448'
 ht-degree: 3%
 
 ---
-
 
 # Globala datakällor {#global-data-sources}
 
 ## Översikt
 
-Globala datakällor är tillgängliga för alla Audience Manager-kunder och innehåller enhetsreklam-ID:n som genererats av enhetstillverkare som [!DNL Apple], [!DNL Samsung], [!DNL Microsoft], [!DNL Roku] och [!DNL Android] enhetstillverkare. Dessa ID:n är tillgängliga för tillverkare i reklamsyfte. Audience Manager-kunder kan använda globala datakällor för att synkronisera enhets-ID:n och importera eller exportera data som är avaktiverade från mappningarna.
+Globala datakällor är tillgängliga för alla Audience Manager-kunder och innehåller enhetsreklam-ID:n som genererats av enhetstillverkare som [!DNL Apple], [!DNL Samsung], [!DNL Microsoft], [!DNL Roku] och [!DNL Android] enhetstillverkare. Dessa ID:n är tillgängliga för tillverkare i reklamsyfte. Audience Manager-kunder kan använda globala datakällor för att synkronisera enhets-ID:n och importera eller exportera data som är avaktiverade från dessa mappningar.
 
 I följande tabell beskrivs de globala datakällor som stöds av Audience Manager.
 
@@ -30,6 +29,8 @@ I följande tabell beskrivs de globala datakällor som stöds av Audience Manage
 | 389146 | **[!DNL Microsoft Advertising ID]** -  **[!DNL MAID]** ID:n representerar enheter som kör  [!DNL Windows 10] operativsystemet. |
 | 963906 | **[!DNL Samsung Tizen IDs for Advertising]** -  **[!DNL TIFA]** ID:n representerar  [!DNL Samsung] smarta TV:er. |
 | 488258 | **[!DNL Amazon Fire TV Advertising IDs]** representerar enheter som körs  [!DNL Amazon Fire OS] |
+| 1171485 | **[!DNL LG webOS TV ID]** -  **[!DNL LGUDID]** representerar enheter som kör  [!DNL LG webOS] operativsystemet. |
+| 1171489 | **[!DNL Vizio ID for Advertising]** -  **[!DNL IFA]** representerar enheter som kör operativsystemen Vizio Smart TV. |
 
 ## Importera data från globala datakällor
 
