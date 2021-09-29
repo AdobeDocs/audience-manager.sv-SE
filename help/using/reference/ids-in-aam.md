@@ -1,16 +1,16 @@
 ---
 description: Se det här dokumentet för en fullständig lista över Adobe Audience Manager ID:n.
 keywords: DPID, DPUUID CID, UUID uuid; uuid, uuid, uuuid, uuid, uuid, uuid, uuuid, uuuid, uuuid, uuuid, uuuid, uuuid, uuid, uuuid, uuuid, uuuid
-seo-description: Se det här dokumentet för en fullständig lista över Adobe Audience Manager ID:n.
-seo-title: Index över ID:n i Audience Manager
+seo-description: Refer to this document for the complete list of Adobe Audience Manager IDs.
+seo-title: Index of IDs in Audience Manager
 solution: Audience Manager
 title: Index över ID:n i Audience Manager
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
-feature: 'Referens '
+feature: Reference
 exl-id: 1caf3c6a-ebfd-49f1-9ebd-d4604474c070
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: e408c118870fb331c40758be8a7e6b38690aeb5f
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '994'
 ht-degree: 3%
 
 ---
@@ -57,3 +57,5 @@ Globala enhets-ID:n är enhets-ID:n som är unika för varje enhet och tillhanda
 | [!DNL MAID] | 389146 | [!DNL Microsoft Advertising ID]s är enhetsidentifierare som genereras av  [!DNL Windows 10] per enhet och användare. | [!DNL MAID]s formateras som alfanumeriska strängar. |
 | [!DNL TIFA] | 963906 | [!DNL Samsung Tizen IDs for Advertising] är enhetsidentifierare som tillhandahålls av  [!DNL Samsung] smarta tv-apparater. | [!DNL Samsung] [!DNL TIFA] ID:n formateras som alfanumeriska strängar. |
 | [!DNL Amazon Fire TV Advertising ID] | 488258 | Enhetsidentifierare som representerar enheter som kör operativsystemet [!DNL Fire OS]. | Formatet består strikt av 32 små hexadecimala siffror, som visas i fem grupper och avgränsas med bindestreck, i formatet 8-4-4-4-12, med totalt 36 tecken. <br>Exempel: `df07c7dc-cea7-4a89-b328-810ff5acb15d` |
+| [!DNL LGUDID] | 1171485 | Enhetsidentifierare som representerar enheter som kör operativsystemet [!DNL LG webOS]. | Formatet består strikt av 32 små hexadecimala siffror, som visas i fem grupper och avgränsas med bindestreck, i formatet 8-4-4-4-12, med totalt 36 tecken. <br>Exempel: `095f142a-ace8-ac5d-b86a-92c8be18b197` |
+| [!DNL Vizio IFA] | 1171489 | Enhetsidentifierare som representerar enheter som kör operativsystemet Vizio smart TV. | [!DNL Vizio IFA] ID:n formateras som alfanumeriska strängar. <br>Exempel: `7XCBNROQJQPYW`. |
