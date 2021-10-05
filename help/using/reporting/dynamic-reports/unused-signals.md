@@ -1,16 +1,15 @@
 ---
 description: Den här rapporten returnerar ett frekvensantal av all oanvänd information som samlats in i ditt lager och skickats till Audience Manager.
-seo-description: Den här rapporten returnerar ett frekvensantal av all oanvänd information som samlats in i ditt lager och skickats till Audience Manager.
-seo-title: Rapport om oanvända signaler
+seo-description: This report returns a frequency count of all the unused information collected on your inventory and sent to Audience Manager.
+seo-title: Unused Signals Report
 solution: Audience Manager
 title: Rapport om oanvända signaler
 uuid: 04334a5c-3e21-44db-b971-0b4457685e9a
 feature: Overlap Reports
 exl-id: ab5cb5ad-4305-4463-8f56-237b5a2f1f9e
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 8fd148df6c19a5d8331faf66c671f91686954a77
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '599'
 ht-degree: 1%
 
 ---
@@ -29,7 +28,7 @@ Den här rapporten returnerar ett frekvensantal av all oanvänd information som 
 
 En signal är information från din webbplats som skickas till [!DNL Audience Manager] i form av [nyckelvärdepar](../../reference/key-value-pairs-explained.md) (t.ex. `color=blue, price>100, gender=female`).
 
-Oanvända signaler består av data som du samlar in men som inte har mappats till ett drag. Rapporten [!UICONTROL Unused Signals] visar data i en tabell utifrån datum, nyckel, värde och frekvens. Alla omappade signaler som skickas till [!DNL Audience Manager] minst 100 gånger per dag kvalificerar sig för [!UICONTROL Unused Signals]-rapporten.
+Oanvända signaler består av data som du samlar in men som inte har mappats till ett drag. Rapporten [!UICONTROL Unused Signals] visar data i en tabell utifrån datum, nyckel, värde och frekvens. Alla omappade signaler som skickas till [!DNL Audience Manager] minst 100 gånger per dag kvalificerar sig för [!UICONTROL Unused Signals]-rapporten. Oanvända signaler lagras i 45 dagar och kasseras sedan.
 
 Läs den här rapporten för att identifiera överblivna signaler som kan mappas till nya eller befintliga egenskaper.
 
