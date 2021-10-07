@@ -1,15 +1,14 @@
 ---
-description: 'Använd personbaserade destinationer för att skicka förstahandssegment till personbaserade miljöer. Dessa miljöer är slutna ekosystem som tillhör en enhet som kontrollerar innehållet som visas i den. De innehåller sociala plattformar som Facebook och andra plattformar som förlitar sig på kundkonton för att personalisera det visade innehållet. '
-seo-description: 'Använd personbaserade destinationer för att skicka förstahandssegment till personbaserade miljöer. Dessa miljöer är slutna ekosystem som tillhör en enhet som kontrollerar innehållet som visas i den. De innehåller sociala plattformar som Facebook och andra plattformar som förlitar sig på kundkonton för att personalisera det visade innehållet.  '
-seo-title: Översikt över och användningsfall för personbaserade destinationer
+description: 'Använd personbaserade destinationer för att skicka förstahandssegment till personbaserade miljöer. Dessa miljöer är slutna ekosystem som tillhör en enhet som kontrollerar innehållet som visas i den. De innehåller sociala plattformar som Facebook och andra plattformar som använder kundkonton för att personalisera det visade innehållet. '
+seo-description: Use people-based destinations to send first-party audience segments to people-based environments. These environments are closed ecosystems belonging to one entity that controls the content that is being displayed within it. They include social platforms such as Facebook, and other platforms that rely on customer accounts to personalize the displayed content.
+seo-title: People-Based Destinations Overview and Use Cases
 solution: Audience Manager
 title: Översikt och användningsexempel
 feature: People-based Destinations
 exl-id: 2edbda3b-e2a3-4a92-965b-206a21764cc8
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: ab3361a0a54a7200d2f0c03a82ae6ef61a755be9
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '863'
 ht-degree: 1%
 
 ---
@@ -23,7 +22,7 @@ Använd [!DNL People-Based Destinations] för att skicka förstahandsmålgruppss
 
 ## Översikt {#overview}
 
-[!DNL People-Based Destinations] gör det möjligt att använda segmentering på online- och offlinedata för att skapa målgruppssegment baserat på  [hashas-identifierare](people-based-destinations-prerequisites.md#hashing-requirements), som e-postadresser eller telefonnummer. Sedan kan ni skicka dessa segment till&quot;trädgårdar&quot; som [!DNL Facebook], där ni kan rikta er mot målgruppen på de sociala plattformarna. [!DNL People-Based Destinations] kan hjälpa dig att:
+[!DNL People-Based Destinations] gör det möjligt att använda segmentering på online- och offlinedata för att skapa målgruppssegment baserat på  [hashas-ID](people-based-destinations-prerequisites.md#hashing-requirements), t.ex. e-postadresser. Sedan kan ni skicka dessa segment till&quot;trädgårdar&quot; som [!DNL Facebook], där ni kan rikta er mot målgruppen på de sociala plattformarna. [!DNL People-Based Destinations] kan hjälpa dig att:
 
 * Rikta er till målgrupper offline och online på plattformar som [!DNL Facebook], baserat på hash-kodade e-postadresser;
 * Komplettera Audience Manager befintliga målgruppsfunktioner för enheter och cookies.
@@ -66,15 +65,15 @@ Titta på videon nedan för att få en översikt över dataflödet när du anvä
 
 >[!VIDEO](https://video.tv.adobe.com/v/28968/)
 
-## Använd fall {#use-cases}
+## Användningsexempel {#use-cases}
 
 För att du bättre ska förstå hur och när du ska använda [!DNL People-Based Destinations] finns det två exempel på användningsområden som Audience Manager-kunder kan lösa med den här funktionen.
 
-### Använd skiftläge 1 {#use-case-1}
+### Användningsfall 1 {#use-case-1}
 
 En webbutik vill nå befintliga kunder via sociala plattformar och visa dem personaliserade erbjudanden baserat på deras tidigare order. Med [!DNL People-Based Destinations] kan onlinehandlaren importera hashade e-postadresser från sin egen [!DNL CRM] till Audience Manager, bygga segment utifrån sina egna offlinedata och skicka dessa segment till de sociala plattformar som de vill annonsera på, vilket optimerar deras annonsutgifter.
 
-### Använd skiftläge nr 2 {#use-case-2}
+### Användningsfall nr 2 {#use-case-2}
 
 Ett flygbolag har olika kundnivåer (Bronze, Silver och Gold) och vill kunna erbjuda varje nivå personaliserade erbjudanden via sociala plattformar. Företaget använder Audience Manager för att analysera kundaktiviteter på webbplatsen. Alla kunder använder dock inte flygbolagets mobilapp, och vissa av dem har inte loggat in på företagets webbplats. De enda identifierare företaget har för dessa kunder är medlems-ID och e-postadresser.
 
