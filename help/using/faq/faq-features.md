@@ -1,16 +1,16 @@
 ---
 description: Vanliga frågor och problem som rör produkter och funktioner.
 keywords: cookies för målgruppshanterare
-seo-description: Vanliga frågor och problem som rör produkter och funktioner.
-seo-title: Vanliga frågor om produktfunktioner
+seo-description: Common product and function-related questions and issues.
+seo-title: Product Features and Functions FAQ
 solution: Audience Manager
 title: Vanliga frågor om produktfunktioner
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
-feature: Översikt
+feature: Overview
 exl-id: b5884d26-0be1-4eaa-99a1-7247942bf6c9
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '596'
 ht-degree: 84%
 
 ---
@@ -47,9 +47,9 @@ Ja. Se [Verktyg för satsvis hantering](../reference/bulk-management-tools/bulk-
 
  
 
-**Vissa kund-ID saknas när du exporterar satsvis-ID till ett mål. Varför händer det?**
+**Vissa kund-ID saknas när du exporterar satsvis-ID till ett mål. Varför händer det där?**
 
-När ett enhets-ID ([AAM UUID](../reference/ids-in-aam.md)) är länkat till flera CRM-ID ([DPUID](../reference/ids-in-aam.md)) exporteras endast den senaste mappningen. Det är därför du kan se ett lägre antal enhets-ID än förväntat som exporteras.
+När ett enhets-ID ([AAM UUID](../reference/ids-in-aam.md)) är länkad till flera CRM-ID:n ([DPUID](../reference/ids-in-aam.md)) exporteras bara den senaste mappningen. Det är därför du kan se ett lägre antal enhets-ID än förväntat som exporteras.
 
  
 
@@ -67,7 +67,7 @@ Din datafeed och alla traits som finns i flödet visas som undermappar och trait
 
 **Vad är [!UICONTROL Tag Insertion Manager (TIM)]?**
 
-Audience Manager använde [!UICONTROL Tag Insertion Manager] (TIM) för att skapa och hantera [!UICONTROL data collection code (DIL)]. Den här funktionen är föråldrad och har ersatts först av [!UICONTROL Dynamic Tag Manager (DTM)] och därefter av [!DNL Adobe Experience Platform Launch]. Mer information finns i [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html).
+Audience Manager använde [!UICONTROL Tag Insertion Manager] (TIM) för att skapa och hantera [!UICONTROL data collection code (DIL)]. Den här funktionen är föråldrad och har ersatts först av [!UICONTROL Dynamic Tag Manager (DTM)] och därefter av [!DNL Adobe Experience Platform Tags]. Mer information finns i [Adobe Experience Platform-taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
 
  
 

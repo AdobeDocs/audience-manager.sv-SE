@@ -1,16 +1,16 @@
 ---
 description: Audience Manager tillhandahåller branschledande tjänster för datahantering av målgrupper online. Våra produkter och tjänster ger digitala annonsörer och utgivare de verktyg de behöver för att styra och utnyttja sina datatillgångar och hjälpa till att öka försäljningen.
-seo-description: Teknisk dokumentation och självhjälp för Audience Manager (AAM). AAM tillhandahåller branschledande tjänster för datahantering av målgrupper online och ger digitala annonsörer och utgivare de verktyg de behöver för att styra och utnyttja sina datatillgångar för att öka försäljningen.
-seo-title: Teknisk produktdokumentation för Adobe Audience Manager
+seo-description: Technical documentation and self help for Audience Manager (AAM). AAM provides industry-leading services for online audience data management, and give digital advertisers and publishers the tools they need to control and leverage their data assets to help drive sales success.
+seo-title: Adobe Audience Manager Product Technical Documentation
 solution: Audience Manager
 title: Audience Manager Guide
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
-feature: Översikt
+feature: Overview
 exl-id: a47bf8ba-4ec0-4b3b-ad20-4afb7c9f924b
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 90%
+source-wordcount: '597'
+ht-degree: 87%
 
 ---
 
@@ -87,7 +87,7 @@ Den här tekniska handboken innehåller självhjälp för Audience Manager, en b
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
      <li><a href="/help/using/api/rest-api-main/aam-api-getting-started.md">Kom igång med REST API:er</a></li>
      <li><a href="/help/using/api/dcs-intro/dcs-event-calls/dcs-event-calls.md">Kom igång med DCS API</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html">Lägg till Audience Manager-tillägget i Adobe Experience Platform Launch</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html">Lägg till tillägget Audience Manager i Adobe Experience Platform-taggar</a></li>
     <li><a href="https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-audience-manager">Lägg till Audience Manager i din app</a></li>
      </ul> </p>
     </td>

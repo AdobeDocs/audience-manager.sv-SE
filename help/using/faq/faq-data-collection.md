@@ -1,16 +1,16 @@
 ---
 description: Vanliga frågor och problem som rör datainsamling och integrering.
-seo-description: Vanliga frågor och problem som rör datainsamling och integrering.
-seo-title: Vanliga frågor om datainsamling och produktintegrering
+seo-description: Common data collection and integration questions and issues.
+seo-title: Data Collection and Product Integration FAQ
 solution: Audience Manager
 title: Vanliga frågor om datainsamling och produktintegrering
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP-adress; IP-adress för STFP, FTP-adress
-feature: Administrering
+feature: Administration
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1198'
 ht-degree: 81%
 
 ---
@@ -59,13 +59,13 @@ SFTP-servrarna nedan är föråldrade. Inga nya konton kommer att etableras med 
 
 **Hur konfigurerar jag min Audience Manager-instans så att den använder de nya SFTP-servrarna?**
 
-Kontakta din [!DNL Audience Manager]-konsult eller kundtjänst så konfigurerar de dina nya SFTP-konton.
+Kontakta [!DNL Audience Manager] konsult eller kundtjänst så konfigurerar de dina nya SFTP-konton.
 
  
 
 **Vilka autentiseringsmetoder stöds för de nya SFTP-servrarna?**
 
-De nya SFTP-servrarna (`ftp-in-gtw` och `ftp-out-gtw`) stöder [!DNL OpenSSH Key-Based Authentication]. Vi kan generera [!DNL SSH]-nycklarna åt dig eller så kan du ge oss en egen offentlig nyckel.
+De nya SFTP-servrarna (`ftp-in-gtw` och `ftp-out-gtw`) support [!DNL OpenSSH Key-Based Authentication]. Vi kan generera [!DNL SSH] för dig, eller så kan du förse oss med din egen offentliga nyckel.
 
  
 
@@ -83,7 +83,7 @@ Det bästa är att konfigurera [!DNL Audience Manager] - [!DNL Analytics]-integr
 
 * Placera [!UICONTROL DIL] direkt i `s_code`.
 
-* Servera [!UICONTROL DIL] och `s_code` till [!DNL Adobe Experience Platform Launch].
+* Serva [!UICONTROL DIL] och `s_code` via [!DNL Adobe Experience Platform Tags].
 
 Se [API för Data Integration Library (DIL)](../dil/dil-overview.md).
 
@@ -152,7 +152,7 @@ Ja, [!DNL Audience Manager] kan tillhandahålla data som samlats in för använd
 
 **[!DNL Google Ad Manager]Jag vill samla in data på en webbplats och rikta mig till användare på en annan webbplats via Måste jag använda kod på den andra webbplatsen om jag inte vill samla in data från den?**
 
-Nej. Om data inte behöver samlas in på den andra webbplatsen behöver du inte distribuera DIL där. Så länge du har tillgång till lagret på den andra webbplatsen via [!DNL Google Ad Manager] kan du använda datainsamlingen från den första platsen och målet via [!DNL Google Ad Manager].
+Nej. Om data inte behöver samlas in på den andra webbplatsen behöver du inte distribuera DIL där. Så länge du har tillgång till lagret på den andra platsen via [!DNL Google Ad Manager]kan du använda datainsamlingen från den ursprungliga webbplatsen och målet via [!DNL Google Ad Manager].
 
 <br> 
 
@@ -210,6 +210,6 @@ Det tar vanligtvis upp till 24 timmar för en användarprofil att synkroniseras 
 
 **Vad händer med inaktiva Amazon S3-nycklar?**
 
-Adobe förser Audience Manager-kunder med användarnycklar för Audience Manager-buckarna [!DNL Amazon S3]. Av säkerhetsskäl inaktiveras nycklarna automatiskt efter 100 dagars inaktivitet.
+Adobe förser Audience Manager kunder med användarnycklar för Audience Manager [!DNL Amazon S3] fickor. Av säkerhetsskäl inaktiveras nycklarna automatiskt efter 100 dagars inaktivitet.
 
 Om du vill återaktivera dina nycklar eller begära nya kontaktar du kundsupport.
