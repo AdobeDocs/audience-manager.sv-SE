@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-description: Läs om hur Audience Manager kan samla in kommersiellt relevant information om webbplatsbesökare, skapa marknadsföringsbara segment och leverera riktad reklam och innehåll till rätt målgrupp.
 feature-set: Audience Manager
-source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
+source-git-commit: 73d1dd1fdc799d7cbe7605d6d084966f76efe38c
 workflow-type: tm+mt
 source-wordcount: '1805'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -339,7 +339,7 @@ ht-degree: 90%
       + [Anpassade partnerintegreringar](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + Integrering med Adobe Experience Platform {#integration-experience-platform}
       + [Experience Platform segmentdelning med Audience Manager och andra Experience Cloud-lösningar](integration/integration-aep/aam-aep-audience-sharing.md)
-   + Integrering med andra Experience Cloud-lösningar {#integration-other-solutions}
+   + Integrering med andra Experience Cloud-program {#integration-other-solutions}
       + [Integrera Audience Manager med Adobe Target](integration/integration-other-solutions/aam-target-integration.md)
       + [Skicka data från Adobe Analytics till Audience Manager](integration/integration-other-solutions/audience-management-module.md)
       + [Publicera ett Adobe Analytics-segment på Experience Cloud (öppnar Adobe Analytics-dokumentation)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
