@@ -1,56 +1,56 @@
 ---
 description: Grundläggande information om CDF-filer (Customer Data Feed) och anvisningar om hur man kommer igång. Börja här om du är intresserad av att få CDF-filer eller bara vill ha mer information.
 keywords: data från andra part;data från andra part;data från andra part;data från andra part
-seo-description: Grundläggande information om CDF-filer (Customer Data Feed) och anvisningar om hur man kommer igång. Börja här om du är intresserad av att få CDF-filer eller bara vill ha mer information.
-seo-title: Kunddataflöden
+seo-description: Basic information about Customer Data Feed (CDF) files and instructions on how to get started. Start here if you're interested in receiving CDF files or just want more information.
+seo-title: Customer Data Feeds
 solution: Audience Manager
 title: Kunddataflöden
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
-feature: Kunddataflöden
+feature: Customer Data Feeds
 exl-id: 118c4225-3b57-4a02-ae05-2fcbf3e5d743
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 08916acd6081031382713737f77ceed8ab1a4e91
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 2%
+source-wordcount: '1904'
+ht-degree: 1%
 
 ---
 
 # [!UICONTROL Customer Data Feeds] {#customer-data-feeds}
 
-Grundläggande information om [!UICONTROL Customer Data Feed] ([!UICONTROL CDF])-filer och anvisningar om hur du kommer igång. Börja här om du vill få [!UICONTROL CDF] filer eller bara vill ha mer information.
+Grundläggande information om [!UICONTROL Customer Data Feed] ([!UICONTROL CDF]) och anvisningar om hur du kommer igång. Börja här om du är intresserad av att få [!UICONTROL CDF] eller bara vill ha mer information.
 
 ## Filinnehåll och syfte {#file-contents-purpose}
 
-En [!UICONTROL CDF]-fil innehåller samma data som ett [!DNL Audience Manager]-händelseanrop (`/event`) skickar till våra servrar. Detta inkluderar data som användar-ID:n, [!UICONTROL trait IDs], [!UICONTROL segment IDs] och alla andra parametrar som hämtats av ett händelseanrop. Interna [!DNL Audience Manager]-system bearbetar händelsedata till en [!UICONTROL CDF]-fil med innehåll organiserat i fält som visas i en angiven ordning. [!DNL Audience Manager] försöker generera  [!UICONTROL CDF] filer varje timme och lagrar dem i en säker, kundspecifik bucket på en  [!DNL Amazon S3] server. Vi tillhandahåller dessa filer så att du kan arbeta med [!DNL Audience Manager]-data utanför de gränser som gäller för användargränssnittet.
+En [!UICONTROL CDF]-fil innehåller samma data som ett [!DNL Audience Manager]-händelseanrop (`/event`) skickar till våra servrar. Detta inkluderar data som användar-ID:n, [!UICONTROL trait IDs], [!UICONTROL segment IDs]och alla andra parametrar som har hämtats av ett händelseanrop. Intern [!DNL Audience Manager] systemen bearbetar händelsedata till [!UICONTROL CDF] fil med innehåll ordnat i fält som visas i en angiven ordning. [!DNL Audience Manager] försöker generera [!UICONTROL CDF] filer per timme och lagrar dem i en säker, kundspecifik bucket på en [!DNL Amazon S3] server. Vi tillhandahåller dessa filer så att du kan arbeta med dem [!DNL Audience Manager] data utanför de gränser som våra användargränssnitt har.
 
 >[!IMPORTANT]
 >
 >Observera följande begränsningar när du arbetar med CDF-filer:
 >
 >* Innan du konfigurerar leveransen av CDF-filer bör du kontrollera att du har rätt behörighet från tredjepartsleverantörer för export av egenskaper från tredje part. Audience Manager stöder för närvarande inte funktioner i användargränssnittet för att begära exporttillstånd för CDF-filer från tredjepartsleverantörer av data, så kontakta dem oberoende av varandra.
->* Du bör inte använda [!UICONTROL CDF]-filer som proxy för att övervaka sidtrafik, avstämma rapportavvikelser eller för fakturering osv.
+>* Du ska inte använda [!UICONTROL CDF] filer som en proxy för att övervaka sidtrafik, stämma av rapportavvikelser eller för fakturering osv.
 
 
 ## Komma igång {#getting-started}
 
-Det finns ingen självbetjäningsprocess för att starta leveransen av [!UICONTROL CDF]-filen. Kontakta din [!DNL Audience Manager]-konsult eller kundtjänst för att komma igång. Under implementeringen kommer din [!DNL Audience Manager]-representant att:
+Det finns ingen självbetjäningsprocess att starta [!UICONTROL CDF] filleverans. Kontakta [!DNL Audience Manager] konsult eller kundtjänst för att komma igång. Under implementeringen kan du [!DNL Audience Manager] kommer att
 
-* Konfigurera din [!DNL Amazon S3]-lagringskucket.
-* Ange skrivskyddade autentiseringsuppgifter för [!DNL S3] till din fillagringsbucket. Du kommer inte att kunna se eller komma åt kataloger och filer som tillhör andra kunder.
+* Konfigurera [!DNL Amazon S3] lagringsbucket.
+* Ange som skrivskyddad [!DNL S3] autentiseringsuppgifter för din fillagringshastighet. Du kommer inte att kunna se eller komma åt kataloger och filer som tillhör andra kunder.
 
-Filmeddelanden och [!UICONTROL CDF]-filer visas i din [!DNL S3]-bucket när de är klara för hämtning. Du ansvarar för att övervaka och hämta filer från din tilldelade [!DNL S3]-katalog. Se [Bearbetningsmeddelanden för CDF-filer](#cdf-file-processing-notifications).
+Filmeddelanden och [!UICONTROL CDF] filerna visas i [!DNL S3] när de är klara för nedladdning. Du ansvarar för att övervaka och hämta filer från dina tilldelade [!DNL S3] katalog. Se [Bearbetningsmeddelanden för CDF-filer](#cdf-file-processing-notifications).
 
 ## Nästa steg {#next-steps}
 
-Avsnitten nedan och [Vanliga frågor om kunddataflöden](../faq/faq-cdf.md) kan hjälpa dig att bli mer bekant med den här tjänsten.
+avsnitten nedan och [Vanliga frågor om kunddataflöden](../faq/faq-cdf.md) kan hjälpa dig att bli mer bekant med den här tjänsten.
 
 ## [!UICONTROL Customer Data Feed] Innehåll som definierats {#cdf-defined}
 
-Listar och definierar dataelement och arrayer i en [!UICONTROL CDF]-fil, efter utseendeordning. Definitionerna innehåller datatyper, men den här informationen ingår inte i en [!UICONTROL CDF]-fil.
+Listar och definierar dataelement och arrayer i en [!UICONTROL CDF] fil, efter utseendeordning. Definitionerna innehåller datatyper, men den här informationen ingår inte i en [!UICONTROL CDF] -fil.
 
 ## Definitioner {#definitions}
 
-En [!UICONTROL CDF]-fil innehåller några eller alla fält som definieras nedan. Mer information om intern filordning finns i [Filstruktur för kunddatamatningsfil](#cdf-file-structure).
+A [!UICONTROL CDF] filen innehåller några eller alla fält som definieras nedan. Mer information om intern filordning finns i [Filstruktur för kunddatafeed](#cdf-file-structure).
 
 <table id="table_46BC897A30C2469AB5911F5B85A3FAA7"> 
  <thead> 
@@ -64,16 +64,16 @@ En [!UICONTROL CDF]-fil innehåller några eller alla fält som definieras nedan
   <tr> 
    <td colname="col1"> <p><code> Event Time</code> </p> </td> 
    <td colname="col2"> <p>Tidsstämpel </p> </td> 
-   <td colname="col3"> <p>Den tid en CDF-fil bearbetades av DCS-servrarna <span class="wintitle"> (Data Collection Servers</span>). Tidsstämpeln använder formatet <i>åååå-mm-dd hh:mm:ss</i> och anges i UTC-tidszonen. </p> <p> <p>Obs! Händelsetiden <i>är inte</i>: <p> 
+   <td colname="col3"> <p>Den tid en CDF-fil bearbetades av <span class="wintitle"> Datainsamlingsservrar</span> (DCS). Tidsstämpeln använder <i>yyyy-mm-dd hh:mm:ss</i> format och anges i UTC-tidszonen. </p> <p> <p>Obs! Händelsetiden <i>är inte</i>: <p> 
        <ul id="ul_41ABC813FAAC4659AC8DA13F4A6DD7EB"> 
         <li id="li_0192D253EA4C49C4BF2E8BA62CEE028E">Tidpunkten för sidhändelsen eller själva händelsesammanropet, men den kan vara nära den tidpunkten. </li> 
-        <li id="li_271DF14395BC495FBF17186588A554A8">Relaterat till DCS-timmen i filnamnet. Se även <a href="#different-processing-times"> Kunddataflödets filnamnstider och Filinnehållstider..</a>. </li> 
+        <li id="li_271DF14395BC495FBF17186588A554A8">Relaterat till DCS-timmen i filnamnet. Se även <a href="#different-processing-times"> Filnamnstider för kunddatafeed och filinnehållstider..</a>. </li> 
        </ul> </p> </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Device</code> </p> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>Det här är det unika användar-ID:t <span class="wintitle"> (UUID), som är ett 38-siffrigt enhets-ID för besökaren på platsen. </span> Se även <a href="../reference/ids-in-aam.md">-index för ID:n i Audience Manager</a>. </p> </td> 
+   <td colname="col3"> <p>Det här är <span class="wintitle"> Unikt användar-ID</span> (UUID), som är ett 38-siffrigt enhets-ID för besökaren på platsen. Se även <a href="../reference/ids-in-aam.md"> Index för ID:n i Audience Manager</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Container ID</code> </p> </td> 
@@ -108,7 +108,7 @@ En [!UICONTROL CDF]-fil innehåller några eller alla fält som definieras nedan
   <tr> 
    <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>Det <span class="keyword"> Experience Cloud</span>-ID (MID) som tilldelats webbplatsbesökaren. Se även <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Adobe Experience Platform Identity Service</a>. </p> </td> 
+   <td colname="col3"> <p>The <span class="keyword"> Experience Cloud</span> ID (MID) som tilldelats besökaren. Se även <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Adobe Experience Platform Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> All Segments</code> </p> </td> 
@@ -125,11 +125,11 @@ En [!UICONTROL CDF]-fil innehåller några eller alla fält som definieras nedan
 
 ## [!UICONTROL Customer Data Feed] Filstruktur {#cdf-file-structure}
 
-Visar och definierar datastrukturen för en [!UICONTROL CDF]-fil. Detta inkluderar datasekvens, fältavgränsare och avgränsare, datamappning och exempelfil.
+Visar och definierar datastrukturen för en [!UICONTROL CDF] -fil. Detta inkluderar datasekvens, fältavgränsare och avgränsare, datamappning och exempelfil.
 
 ## Identifierare och sekvens för datafält {#identifiers-and-sequence}
 
-[!UICONTROL CDF] filer innehåller inte taggade kolumner eller fältrubriker. I stället definierar en [!UICONTROL CDF]-fil fält och arrayer med [!DNL ASCII]-tecken som inte skrivs ut. Dessutom visar [!UICONTROL CDF]-filen varje fält och array i en viss ordning. Genom att förstå fältidentifierarna och ordningen kan du tolka filen korrekt.
+[!UICONTROL CDF] filer innehåller inte taggade kolumner eller fältrubriker. I stället [!UICONTROL CDF] filen definierar fält och arrayer med icke-utskrivbara [!DNL ASCII] tecken. Dessutom [!UICONTROL CDF] -filen listar varje fält och array i en viss ordning. Genom att förstå fältidentifierarna och ordningen kan du tolka filen korrekt.
 
 <table id="table_D2C8786DF7CE47E5ADB8930EC825F8F6"> 
  <thead> 
@@ -143,9 +143,10 @@ Visar och definierar datastrukturen för en [!UICONTROL CDF]-fil. Detta inkluder
    <td colname="col1"> <p>Fältavgränsare och avgränsare </p> </td> 
    <td colname="col2"> <p>Dessa tecken som inte skrivs ut definierar elementen och strukturen i CDF-filen: </p> <p> 
      <ul id="ul_056A9B90AC88405CBB5F81A56CD6E4C9"> 
-      <li id="li_B9DA15DCB6A445D781B8753C1C4262B0">Ctrl+a (ASCII <code> 001</code> eller <code> ^A</code>) separerar data i enskilda fält med en utrymmesindikator som inte skrivs ut. </li> 
+      <li id="li_B9DA15DCB6A445D781B8753C1C4262B0">Ctrl + a (ASCII <code> 001</code> eller <code> ^A</code>) separerar data i enskilda fält med en utrymmesindikator som inte skrivs ut. </li> 
       <li id="li_E68D0CC065B34AC9AF91F166CAA2A67C">Ctrl + b (ASCII <code> 002</code> eller <code> ^B</code>) avgränsar data i en array och begär parametrar. </li> 
       <li id="li_6C32D927FEF04CDE9887374E8C2688E7">Ctrl + c (ASCII <code> 003</code> eller <code> ^C</code>) definierar nyckelvärdepar. </li> 
+      <li> Ny radavgränsare (/N)</li>
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -176,39 +177,39 @@ Visar och definierar datastrukturen för en [!UICONTROL CDF]-fil. Detta inkluder
 
 ## Identifiera arrayer
 
-Matriser i en [!UICONTROL CDF]-fil börjar och slutar med fältavgränsaren `Ctrl + a`. Detta gör att det första elementet i en array visas som ett fristående datafält. Den realiserade [!UICONTROL traits]-arrayen börjar till exempel med `^A1234`. Arrayavgränsaren och ID `^B5678` följer den här posten. Det kan därför vara frestande att tro att det första elementet i den realiserade [!UICONTROL traits]-arrayen är ID 5678 (eftersom den börjar med `^B`). Detta är inte fallet, och därför måste du känna till en datafils sekvens och struktur. Även om det första elementet i den realiserade [!UICONTROL trait]-arrayen (eller någon av de andra arrayerna i en [!UICONTROL CDF]-fil) börjar med `^A`, definierar utseendeordningen eller positionen i filen början av en array. Och det första elementet i en array separeras alltid från föregående post med `^A`.
+Arrayer i en [!UICONTROL CDF] filen börjar och slutar med `Ctrl + a` fältavgränsare. Detta gör att det första elementet i en array visas som ett fristående datafält. Den [!UICONTROL traits] array börjar med `^A1234`. Arrayavgränsaren och ID:t `^B5678` följer den här posten. Därför kan du vara frestad att tro att det första elementet i [!UICONTROL traits] matrisen är ID 5678 (eftersom den börjar med `^B`). Detta är inte fallet, och därför måste du känna till en datafils sekvens och struktur. Även om det första elementet i [!UICONTROL trait] arrayen (eller någon annan array i en [!UICONTROL CDF] fil) börjar med `^A`definierar utseendeordningen eller placeringen i filen början av en array. Och det första elementet i en array separeras alltid från föregående post med `^A`.
 
-## Exempel på [!UICONTROL CDF]-fil {#sample-file}
+## Exempel [!UICONTROL CDF] Fil {#sample-file}
 
-Ett exempel på en [!UICONTROL CDF]-fil kan se ut ungefär så här. Vi har infogat radbrytningar i det här exemplet för att det ska passa in på sidan.
+Ett exempel [!UICONTROL CDF] filen kan se ut ungefär så här. Vi har infogat radbrytningar i det här exemplet för att det ska passa in på sidan.
 
 ![](assets/CDF-sample.png)
 
 ## [!UICONTROL Customer Data Feed] Namngivningskonventioner {#cdf-naming-conventions}
 
-Avsnitten nedan listar och definierar elementen i ditt [!UICONTROL CDF]-filnamn.
+Avsnitten nedan listar och definierar elementen i [!UICONTROL CDF] filnamn.
 
 ## [!UICONTROL CDF] Filnamn: Syntax och exempel {#cdf-file-name}
 
-Ett typiskt [!UICONTROL CDF]-filnamn innehåller elementen som listas nedan. Obs! *kursiv* anger en variabelplatshållare:
+En typisk [!UICONTROL CDF] filnamnet innehåller de element som anges nedan. Obs! *kursiv* anger en variabelplatshållare:
 
 ### Syntax
 
 ```
-s3://aam-cdf/YOUR-S3-BUCKET-NAME/day=yyyy-mm-dd/hour=hh/AAM-CDF-PARTNER-ID-AAM PROCESS-ID_0.gz
+s3://aam-cdf/YOUR-S3-BUCKET-NAME/day=yyyy-mm-dd/hour=hh/AAM-CDF_PARTNER-ID_FILE-SEQUENCE_0.gz
 ```
 
 ### Exempel
 
 ```
-s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
+s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_0_0_0.gz
 ```
 
-I ditt [!DNL S3]-lagringsintervall sorteras filerna i stigande ordning efter partner-ID ([!UICONTROL PID]), dag och timme.
+I [!DNL S3] lagringsintervall sorteras filerna i stigande ordning efter partner-ID ([!UICONTROL PID]), dag och timme.
 
 ## [!UICONTROL CDF] Filnamnselement definierade {#cdf-file-name-elements}
 
-I följande tabell visas och definieras elementen i ett [!UICONTROL CDF]-filnamn.
+I följande tabell listas och definieras elementen i en [!UICONTROL CDF] filnamn.
 
 <table id="table_4AC4F90C1C7D43E2A93CB3B6908D7E94"> 
  <thead> 
@@ -232,15 +233,15 @@ I följande tabell visas och definieras elementen i ett [!UICONTROL CDF]-filnamn
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>hour=<i>hh</i></code> </p> </td> 
-   <td colname="col2"> <p>Ett tidsvärde uttryckt i 24-timmarsnotation och angivet i UTC-tidszonen. Se även <a href="#different-processing-times"> Kunddataflödets filnamnstider och Filinnehållstider..</a>. </p> </td> 
+   <td colname="col2"> <p>Ett tidsvärde uttryckt i 24-timmarsnotation och angivet i UTC-tidszonen. Se även <a href="#different-processing-times"> Filnamnstider för kunddatafeed och filinnehållstider..</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>partner ID</i> </code> </p> </td> 
    <td colname="col2"> <p>Ditt partner-ID. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> <i>AAM process ID</i>_0</code> </p> </td> 
-   <td colname="col2"> <p>Ett internt process-ID, <span class="keyword"> Audience Manager</span>. </p> </td> 
+   <td colname="col1"> <p> <code> <i>File Sequence</i>_0</code> </p> </td> 
+   <td colname="col2"> <p>Värden som identifierar filsekvensen. Sekvensen ökar enligt följande: 0_0_0, 0_1_0, 0_2_0....1_0_0</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> .gz</code> </p> </td> 
@@ -251,11 +252,11 @@ I följande tabell visas och definieras elementen i ett [!UICONTROL CDF]-filnamn
 
 ## [!UICONTROL Customer Data Feed] Filbearbetningsmeddelanden {#cdf-file-processing-notifications}
 
-[!DNL Audience Manager] skriver en  `.info` fil till din  [!DNL S3] katalog så att du vet när  [!UICONTROL Customer Data File] ([!UICONTROL CDF]) filen är klar för hämtning. Filen `.info` innehåller även [!DNL JSON] formaterade metadata om innehållet i dina [!UICONTROL CDF]-filer. I det här avsnittet finns information om syntaxen och fälten som används i den här meddelandefilen.
+[!DNL Audience Manager] skriver en `.info` till [!DNL S3] för att ta reda på när [!UICONTROL Customer Data File] ([!UICONTROL CDF]) kan hämtas. The `.info` filen innehåller också [!DNL JSON] formaterade metadata om innehållet i [!UICONTROL CDF] filer. I det här avsnittet finns information om syntaxen och fälten som används i den här meddelandefilen.
 
 ## Exempelinformationsfil {#sample-info-file}
 
-Varje `.info`-fil innehåller ett `Files`- och `Totals`-avsnitt. Avsnittet `Files` innehåller en array som innehåller specifika mått för varje timfil. Avsnittet `Totals` innehåller mått som aggregerats över alla dina [!UICONTROL CDF]-filer för en viss dag. Innehållet i `.info`-filen kan se ut ungefär som i följande exempel.
+Varje `.info` filen innehåller `Files` och `Totals` -avsnitt. The `Files` -avsnittet innehåller en array som innehåller specifika mått för varje timfil. The `Totals` -avsnittet innehåller mätvärden som är sammanställda över hela [!UICONTROL CDF] filer för en viss dag. Innehållet i `.info` filen kan se ut ungefär som i följande exempel.
 
 ```js
 {
@@ -284,7 +285,7 @@ Varje `.info`-fil innehåller ett `Files`- och `Totals`-avsnitt. Avsnittet `File
 
 ## Fält för informationsfil definierade {#info-file-fields-defined}
 
-I följande tabeller listas och definieras elementen i en [!UICONTROL CDF] `.info`-fil.
+I följande tabeller listas och definieras elementen i en [!UICONTROL CDF] `.info` -fil.
 
 ### Filobjekt
 
@@ -306,7 +307,7 @@ I följande tabeller listas och definieras elementen i en [!UICONTROL CDF] `.inf
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileChecksumMD5</code> </p> </td> 
-   <td colname="col2"> <p>Amazon S3 ETag. Siffran efter bindestrecket visar antalet delar som används för att skapa filen under överföringen av flera delar. <code> ETag</code> är inte identisk med MD5-kontrollsumman för filen. </p> </td> 
+   <td colname="col2"> <p>Amazon S3 ETag. Siffran efter bindestrecket visar antalet delar som används för att skapa filen under överföringen av flera delar. The <code> ETag</code> är inte identisk med filens MD5-kontrollsumma. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileName</code> </p> </td> 
@@ -335,7 +336,7 @@ I följande tabeller listas och definieras elementen i en [!UICONTROL CDF] `.inf
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Day</code> </p> </td> 
-   <td colname="col2"> <p>Den dag som informationen är tillgänglig. Använder <i>ååå-mm-dd</i>-format. </p> </td> 
+   <td colname="col2"> <p>Den dag som informationen är tillgänglig. Användningsområden <i>yyyy-mm-dd</i> format. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Hour</code> </p> </td> 
@@ -354,9 +355,9 @@ I följande tabeller listas och definieras elementen i en [!UICONTROL CDF] `.inf
 
 ## [!UICONTROL Customer Data Feed] Filnamnstiderna och filinnehållstiderna skiljer sig åt {#different-processing-times}
 
-Filen [!UICONTROL CDF] innehåller tidsstämplar i filnamnet och i filinnehållet. Dessa tidsstämplar registrerar olika händelseprocesser för samma [!UICONTROL CDF]-fil. Det är inte ovanligt att olika tidsstämplar visas i namnet och innehållet i samma fil. Genom att förstå varje tidsstämpel kan du undvika vanliga misstag när du arbetar med dessa data eller försöker sortera dem efter tid.
+Dina [!UICONTROL CDF] filen innehåller tidsstämplar i filnamnet och filinnehållet. Dessa tidsstämplar registrerar olika händelseprocesser för samma [!UICONTROL CDF] -fil. Det är inte ovanligt att olika tidsstämplar visas i namnet och innehållet i samma fil. Genom att förstå varje tidsstämpel kan du undvika vanliga misstag när du arbetar med dessa data eller försöker sortera dem efter tid.
 
-## Söker efter [!UICONTROL CDF] filtidsstämplar {#locating-timestamps}
+## Hitta [!UICONTROL CDF] Tidsstämplar {#locating-timestamps}
 
 [!UICONTROL CDF] filer spelar in olika tid på två olika platser.
 
@@ -364,14 +365,14 @@ Filen [!UICONTROL CDF] innehåller tidsstämplar i filnamnet och i filinnehålle
 
 ## Förstå skillnaden mellan tidsstämplar {#understanding-timestamps}
 
-Följande tabell innehåller ytterligare information om dina [!UICONTROL CDF]-filtidsstämplar tillsammans med information om hur du använder dem på rätt sätt.
+I följande tabell finns mer information om [!UICONTROL CDF] tidsstämplar och information om hur de används.
 
 | Tidsstämpelplats | Beskrivning |
 |--- |--- |
-| Filnamn | Tidsstämpeln i ditt [!DNL CDF]-filnamn markerar den tidpunkt då [!DNL Audience Manager] började förbereda filen för leverans. Den här tidsstämpeln anges i tidszonen [!DNL UTC]. Parametern `hour=` används, med tiden formaterad som en tvåsiffrig timme i 24-timmarsnotation. Den här tiden kan skilja sig från den händelsetid som spelas in i filinnehållet. När du arbetar med [!DNL CDF]-filer kanske du märker att din [!DNL S3]-bucket är tom under en viss timme. En tom bucket betyder något av följande:<ul><li>Det finns inga data för just den timmen. </li><li> Våra servrar är mycket belastade och kan inte bearbeta filer på en viss timme. När servern fångar upp placerar den de filer som borde ha gått in i en tidigare tidsmarkeringsfil i en hink med ett senare tidsvärde. Du kommer till exempel att se det här när en fil som borde ha varit inom timmen 17, visas inom timmen 18, (med `hour=18` i filnamnet). I det här fallet började servern förmodligen bearbeta filen på timme 17, men kunde inte slutföra den inom det tidsintervallet. I stället skickas filen till nästa timtidsintervall.</li></ul><br>**Viktigt**: Använd inte filnamnets tidsstämpel för att gruppera händelser efter tid. Om du behöver gruppera efter tid använder du tidsstämpeln `EventTime` i filinnehållet. |
-| Filinnehåll | Tidsstämpeln i ditt [!DNL CDF]-filinnehåll markerar den tidpunkt då [!DNL Data Collection Servers] började bearbeta filen. Den här tidsstämpeln anges i tidszonen [!DNL UTC]. Det använder fältet `EventTime`, med tiden formaterad som *`yyyy-mm-dd hh:mm:ss`*. Den här tiden ligger nära den faktiska tiden för händelsen på sidan, men kan vara en annan än timindikatorn i filnamnet. <br> **Tips**: Till skillnad från  `hour=` tidsstämpeln i filnamnet kan du använda  `EventTime` för att gruppera data efter tid. |
+| Filnamn | Tidsstämpeln i [!DNL CDF] filnamnet anger när [!DNL Audience Manager] började förbereda filen för leverans. Den här tidsstämpeln anges i [!DNL UTC] tidszon. Den använder `hour=` parameter, med tiden formaterad som en tvåsiffrig timme med 24 timmars notation. Den här tiden kan skilja sig från den händelsetid som spelas in i filinnehållet. När du arbetar med [!DNL CDF] filer, ibland märker du att [!DNL S3] Bucket är tomt under en viss timme. En tom bucket betyder något av följande:<ul><li>Det finns inga data för just den timmen. </li><li> Våra servrar är mycket belastade och kan inte bearbeta filer på en viss timme. När servern fångar upp placerar den de filer som borde ha gått in i en tidigare tidsmarkeringsfil i en hink med ett senare tidsvärde. Du kommer till exempel att se det här när en fil som borde ha varit inom timmen 17, visas inom timmen 18, (med `hour=18` i filnamnet). I det här fallet började servern förmodligen bearbeta filen på timme 17, men kunde inte slutföra den inom det tidsintervallet. I stället skickas filen till nästa timtidsintervall.</li></ul><br>**Viktigt**: Använd inte filnamnets tidsstämpel för att gruppera händelser efter tid. Om du behöver gruppera efter tid använder du `EventTime` tidsstämpel i filinnehållet. |
+| Filinnehåll | Tidsstämpeln i [!DNL CDF] filinnehållet markerar när [!DNL Data Collection Servers] började bearbeta filen. Den här tidsstämpeln anges i [!DNL UTC] tidszon. Den använder `EventTime` fält, med tid formaterad som *`yyyy-mm-dd hh:mm:ss`*. Den här tiden ligger nära den faktiska tiden för händelsen på sidan, men kan vara en annan än timindikatorn i filnamnet. <br> **Tips**: Till skillnad från `hour=` tidsstämpel i filnamnet kan du använda `EventTime` för att gruppera data efter tid. |
 
 >[!MORELIKETHIS]
 >
->* [Vanliga frågor om kunddataflöden](../faq/faq-cdf.md)
+>* [Vanliga frågor om anpassade dataflöden](../faq/faq-cdf.md)
 
