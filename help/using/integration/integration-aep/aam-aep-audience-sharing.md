@@ -4,9 +4,10 @@ solution: Audience Manager
 title: Experience Platform segmentdelning med Audience Manager och andra Experience Cloud-lösningar
 keywords: AEP målgruppsdelning, AEP-segment, plattformssegment, segmentdelning, målgruppsdelning, delade segment, AAM AEP-segmentdelning
 feature: Platform Integration
-source-git-commit: f0df41e71340d08e873d8d7e33b481987110c58d
+exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
+source-git-commit: aaaed3930a1e7af4724cc01bda74b83edec98385
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1522'
 ht-degree: 1%
 
 ---
@@ -152,11 +153,15 @@ Antalet segmentpopulationer kan variera mellan Audience Manager och Experience P
 
 ### Segmentutvärdering i Experience Platform
 
-Audience Manager uppdaterar rapportnummer i gränssnittet en gång om dagen.   Tidpunkten för den här uppdateringen justeras sällan mot tidpunkten för segmentutvärderingen i Experience Platform.
+Audience Manager uppdaterar rapportnummer i gränssnittet en gång om dagen. Tidpunkten för den här uppdateringen justeras sällan mot tidpunkten för segmentutvärderingen i Experience Platform.
 
 ### Skillnader mellan regler för profilsammanslagning och kopplingsprofiler
 
 [[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) i Audience Manager och [[!UICONTROL Merge Policies]](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/merge-policies.html) i Experience Platform fungerar olika, och det identitetsdiagram som används för varje bild varierar. På grund av detta förväntas vissa skillnader mellan segmentpopulationerna.
+
+>[!NOTE]
+>
+> När ni delar segment från Experience Platform till Audience Manager är det er plattformsorganisation [standardprincip för sammanslagning](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en#default-merge-policy) har företräde framför [sammanfogningsprincip som används av segmentet](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#merge-policies) delas med Audience Manager. Om t.ex. det delade segmentets kopplingsregel tillåter [ID-sammanfogning](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#configure)Men det gör inte organisationens standardpolicy för sammanfogning, vilket kan leda till skillnader i befolkningsgrupper mellan Platform och Audience Manager.
 
 ### Segmentdisposition i Experience Platform
 
