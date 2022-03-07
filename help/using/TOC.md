@@ -3,11 +3,11 @@ product: audience manager
 solution: Audience Manager
 audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
-user-guide-description: Läs om hur Audience Manager kan samla in kommersiellt relevant information om webbplatsbesökare, skapa marknadsföringsbara segment och leverera riktad reklam och innehåll till rätt målgrupp.
+user-guide-description: Lär dig hur du använder Adobe Audience Manager för att samla in kommersiellt relevant information om webbplatsbesökare och skapa marknadsföringsbara segment. Ni kan också hitta information om hur ni kan leverera riktad reklam och innehåll till rätt målgrupp.
 feature-set: Audience Manager
-source-git-commit: 73d1dd1fdc799d7cbe7605d6d084966f76efe38c
+source-git-commit: 865800eb076811db38aec8e98714ad9712804f77
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1814'
 ht-degree: 89%
 
 ---
