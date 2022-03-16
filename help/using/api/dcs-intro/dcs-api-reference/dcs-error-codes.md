@@ -1,44 +1,41 @@
 ---
 description: Felkoder och meddelanden som genereras av datainsamlingsservrarna (DCS) listas i numerisk ordning efter kod-ID.
-seo-description: Felkoder och meddelanden som genereras av datainsamlingsservrarna (DCS) listas i numerisk ordning efter kod-ID.
-seo-title: Felkoder, meddelanden och exempel för DCS
-solution: Audience Manager
 title: Felkoder, meddelanden och exempel för DCS
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 exl-id: 485e5ce2-143e-4d18-b157-c243c5a510ad
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: dbb557928a296d3dd5f0646644e2ca0cdc11dfdc
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 4%
+source-wordcount: '1520'
+ht-degree: 3%
 
 ---
 
 # Felkoder, meddelanden och exempel för DCS {#dcs-error-codes-messages-and-examples}
 
-Felkoder och meddelanden som genereras av [!UICONTROL Data Collection Servers] ([!DNL DCS]) listas i numerisk ordning efter kod-ID.
+Felkoder och meddelanden som genereras av [!UICONTROL Data Collection Servers] ([!DNL DCS]) visas i numerisk ordning efter kod-ID.
 
-I tabellerna nedan representerar *kursiv* en variabelplatshållare.
+I tabellerna nedan *kursiv* representerar en variabelplatshållare.
 
 ## Systemfelskoder {#system-error-codes}
 
 | Felkod | Felmeddelande | Beskrivning |
 |---|---|---|
-| 0 | Ospecificerat fel | Detta är ett catch-all-fel som hanterar händelser som inte täcks av de andra felhanterarna. Det är svårt att felsöka det här felet. Den kan orsakas av en mängd okända åtgärder eller händelser. Om du får det här felet kan du försöka med din [!DNL DCS]-begäran igen. Kontakta din [!DNL Adobe]-representant om problemet kvarstår. |
-| 1 | Det gick inte att hitta konfigurationen för värdnamnet: `hostname` | Värdnamnet som skickades i begäran har inte konfigurerats av vårt team för partneretablering. Kontakta din [!DNL Adobe]-representant om det här felmeddelandet visas. |
-| 2 | Ogiltigt `d_orgid`-värde (det gick inte att hitta någon konfiguration för detta organisations-ID): `ID` | Organisations-ID:t är felaktigt. Kontrollera ditt ID och försök igen. Om du inte känner till eller har ditt företags-ID kan du läsa avsnittet Administrationssida [Organisationer och kontolänkning](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html) för mer information om hur du hittar det. |
-| 10 | Det går inte att utvärdera egenskaper | Förfrågans egenskaper har antingen utvärderats delvis eller inte utvärderats alls. Kontakta din [!DNL Adobe]-representant om problemet kvarstår. |
+| 0 | Ospecificerat fel | Detta är ett catch-all-fel som hanterar händelser som inte täcks av de andra felhanterarna. Det är svårt att felsöka det här felet. Den kan orsakas av en mängd okända åtgärder eller händelser. Om du får det här felet kan du prova [!DNL DCS] begär igen. Kontakta [!DNL Adobe] om problemet kvarstår. |
+| 1 | Det gick inte att hitta konfigurationen för värdnamnet: `hostname` | Värdnamnet som skickades i begäran har inte konfigurerats av vårt team för partneretablering. Kontakta [!DNL Adobe] -representant om det här felmeddelandet visas. |
+| 2 | Ogiltig `d_orgid` value (could not find a config for this org id): `ID` | Organisations-ID:t är felaktigt. Kontrollera ditt ID och försök igen. Om du inte känner till eller har ditt organisations-ID kan du läsa avsnittet Administrationssida [Organisationer och kontolänkning](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html) om du vill ha information om hur du hittar det. |
+| 10 | Det går inte att utvärdera egenskaper | Förfrågans egenskaper har antingen utvärderats delvis eller inte utvärderats alls. Kontakta [!DNL Adobe] om problemet kvarstår. |
 
 ## Felkoder för integrering {#integration-error-codes}
 
 | Felkod | Felmeddelande | Beskrivning |
 |---|---|---|
-| 100 | Det gick inte att hämta värdnamnet för begäran | Ett [!DNL API]-anrop skickade inte värdhuvudet [!DNL HTTP] i begäran. Lägg till värdhuvudet i samtalet och försök igen. De flesta webbläsare och [!DNL API]-klienter gör detta automatiskt. |
-| 101 | Ogiltigt [!DNL Experience Cloud]-ID skickades i `ID` | Anropet [!DNL DCS] innehåller ett ogiltigt [!DNL Experience Cloud]-ID. Kontrollera nyckelvärdepar `d_mid=` i rubriksträngen. Kontrollera att du har angett rätt [!DNL Experience Cloud]-ID och försök igen. |
-| 102 | Ogiltig [!DNL AAM ID] skickad i begäran `ID` | Anropet [!DNL DCS] innehåller ett ogiltigt [!DNL Audience Manager]-ID. Kontrollera nyckelvärdepar `d_uuid=` i rubriksträngen. Kontrollera att du har angett rätt [!DNL Audience Manager]-ID och försök igen. |
+| 100 | Det gick inte att hämta värdnamnet för begäran | An [!DNL API] anropet skickade inte värden [!DNL HTTP] i begäran. Lägg till värdhuvudet i samtalet och försök igen. De flesta webbläsare och [!DNL API] kunderna gör detta automatiskt. |
+| 101 | Ogiltig [!DNL Experience Cloud] id skickades `ID` | The [!DNL DCS] anropet innehåller ett ogiltigt [!DNL Experience Cloud] ID. Kontrollera `d_mid=` key-value-par i rubriksträngen. Se till att du skickar in rätt [!DNL Experience Cloud] ID och försök utföra begäran igen. |
+| 102 | Ogiltig [!DNL AAM ID] skickade begäran `ID` | The [!DNL DCS] anropet innehåller ett ogiltigt [!DNL Audience Manager] ID. Kontrollera `d_uuid=` key-value-par i rubriksträngen. Se till att du skickar in rätt [!DNL Audience Manager] ID och försök utföra begäran igen. |
 | 104 | Alla kund-ID:n är ogiltiga | Alla kund-ID:n i samtalet är ogiltiga. Kontrollera dina ID:n och försök igen. |
-| 109 | Referens `HTTP referer` tillåts inte för partner `Partner ID` | Anropets `HTTP referer`-huvud tillåts inte för partner-ID:t i samtalet. Kontrollera att rubriken `HTTP referer` är korrekt. |
-| 111 | Ogiltig `IMS`-token har tagits emot | Returnerad för [!DNL Audience Manager] - [!DNL Adobe Target]-integreringar. Felet uppstår när ett anrop görs till [!DNL DCS], som innehåller en ogiltig [!DNL IMS]-token. Token kan ha fel format, ha upphört att gälla eller så har användaren inte behörighet att komma åt den nödvändiga resursen. |
+| 109 | Referent `HTTP referer` tillåts inte för partner `Partner ID` | The `HTTP referer` huvudet i anropet tillåts inte för partner-ID:t i samtalet. Kontrollera att `HTTP referer` huvudet är korrekt. |
+| 111 | Ogiltig `IMS` mottagen token | Returnerad för [!DNL Audience Manager] - [!DNL Adobe Target] integreringar. Felet inträffar när ett anrop görs till [!DNL DCS], innehåller ett ogiltigt [!DNL IMS] token. Token kan ha fel format, ha upphört att gälla eller så har användaren inte behörighet att komma åt den nödvändiga resursen. |
 
 ## Felkoder för avanmälan {#opt-out-error-codes}
 
@@ -53,7 +50,7 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
  <tbody> 
   <tr> 
    <td colname="col1"> <p>171 </p> </td> 
-   <td colname="col2"> <p>En avanmälningstagg för ID <code><i>ID</i></code> påträffades </p> </td> 
+   <td colname="col2"> <p>En avanmälningstagg för ID påträffades <code><i>ID</i></code> </p> </td> 
    <td colname="col3"> <p>En kund har valt att inte ta emot intressebaserad annonsering. </p> </td> 
   </tr> 
   <tr> 
@@ -63,18 +60,18 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
   </tr> 
   <tr> 
    <td colname="col1"> <p>173 </p> </td> 
-   <td colname="col2"> <p>En förtroenderelation påträffades via <a href="https://www.networkadvertising.org/" format="http" scope="external"> NAI</a> </p> </td> 
+   <td colname="col2"> <p>Påträffade förtroenderelation via <a href="https://www.networkadvertising.org/" format="http" scope="external"> NAI</a> </p> </td> 
    <td colname="col3"> <p>Användaren har initierat en avanmälningsprocess via NAI. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>198 </p> </td> 
    <td colname="col2"> <p>Begäranden från det här landet blockeras av partnern </p> </td> 
-   <td colname="col3"> <p>Baserat på IP-adressen blockerar <span class="wintitle"> DCS</span> förfrågningar från länder där partnern avsiktligt har begränsat trafiken. </p> </td> 
+   <td colname="col3"> <p>Baserat på IP-adressen <span class="wintitle"> DCS</span> blockerar förfrågningar från länder där partnern avsiktligt har begränsat trafiken. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>199 </p> </td> 
    <td colname="col2"> <p>Begäranden från det här landet tillåts inte </p> </td> 
-   <td colname="col3"> <p>Baserat på IP-adressen blockerar <span class="wintitle"> DCS</span> förfrågningar från följande länder: </p> <p> 
+   <td colname="col3"> <p>Baserat på IP-adressen <span class="wintitle"> DCS</span> blockbegäran från följande länder: </p> <p> 
      <ul id="ul_4017A7D074064FE7A8B5618AFCFA4E28"> 
       <li id="li_EE65DEC3C64F4522B214C503DC754DC1">Kuba (CU) </li> 
       <li id="li_EDE8B304D35A41458DCFF11E9328802A">Iran (IR) </li> 
@@ -105,12 +102,12 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
   <tr> 
    <td colname="col1"> <p>201 </p> </td> 
    <td colname="col2"> <p> Det går inte att läsa enhets-ID från profilcache för kund-ID: <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Returneras när <a href="../../../reference/ids-in-aam.md"> enhets-ID</a> inte kan hämtas för en sammanfogningsregel för profillänkar. </p> </td> 
+   <td colname="col3"> <p>Returneras när <a href="../../../reference/ids-in-aam.md"> enhets-ID</a> kan inte hämtas för en sammanfogningsregel för profillänk. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>202 </p> </td> 
    <td colname="col2"> <p>Det går inte att läsa relaterad kund för enhets-ID: <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Returneras när det <a href="../../../reference/ids-in-aam.md"> kund-ID (UUID)</a> som är kopplat till ett enhets-ID inte kan hämtas för en senast autentiserad kopplingsregel från vår interna lagring. </p> </td> 
+   <td colname="col3"> <p>Returneras när <a href="../../../reference/ids-in-aam.md"> kund-ID (UUID)</a> som är kopplat till ett enhets-ID kan inte hämtas för en senast autentiserad kopplingsregel från vår interna lagring. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>203 </p> </td> 
@@ -124,7 +121,7 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
   </tr> 
   <tr> 
    <td colname="col1"> <p>205 </p> </td> 
-   <td colname="col2"> <p>Det gick inte att utföra migrering från <code><i>ID</i></code> till <code><i>ID</i></code> eftersom profilläsningen misslyckades för <code><i>ID</i></code> </p> </td>
+   <td colname="col2"> <p>Det gick inte att utföra migreringen från <code><i>ID</i></code> till <code><i>ID</i></code>, eftersom profilläsningen misslyckades för <code><i>ID</i></code> </p> </td>
    <td colname="col3"> <p>Om du får det här felet kan det uppstå skalbarhetsproblem i vårt datalager (<span class="wintitle"> PCS</span>). Kontakta din Adobe-representant om problemet kvarstår. </p> </td> 
   </tr> 
  </tbody> 
@@ -148,13 +145,13 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
   </tr> 
   <tr> 
    <td colname="col1"> <p>301 </p> </td> 
-   <td colname="col2"> <p>Det högsta antalet kund-ID:n har överskridits. Högsta tillåtna värde är <code><i>maximum allowed</i></code>. Hittade <code><i>maximum found</i></code>.</p> </td> 
+   <td colname="col2"> <p>Det högsta antalet kund-ID:n har överskridits. Högsta tillåtna antal är <code><i>maximum allowed</i></code>. Hittade är <code><i>maximum found</i></code>.</p> </td> 
    <td colname="col3"> <p>Antalet kund-ID:n som är associerade med en datakälla mellan olika enheter överskrider det tillåtna antalet korsenhets-ID:n per begäran. Dessa ID:n omfattar enhets-, mobil- eller cookie-ID:n. Gränsen är för närvarande 10. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p>302 </p> </td> 
-   <td colname="col2"> <p>Oauktoriserat kund-ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Returneras när kundens ID-datakälla inte ägs av det aktuella organisations-ID:t. Om du inte känner till eller har ditt företags-ID kan du läsa avsnittet Hitta ditt företags-ID i <a href="https://experiencecloud.adobe.com/resources/help/en_US/mcloud/organizations.html" format="https" scope="external"> Organisationer och Kontolänkning</a> för mer information om hur du hittar det. </p> </td> 
+   <td colname="col2"> <p>Obehörigt kund-ID <code><i>ID</i></code> </p> </td> 
+   <td colname="col3"> <p>Returneras när kundens ID-datakälla inte ägs av det aktuella organisations-ID:t. Om du inte känner till eller har ditt organisations-ID kan du läsa avsnittet Hitta ditt företags-ID i <a href="https://experiencecloud.adobe.com/resources/help/en_US/mcloud/organizations.html" format="https" scope="external"> Organisationer och kontolänkning</a> om du vill ha information om hur du hittar det. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>303 </p> </td> 
@@ -168,8 +165,8 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
   </tr> 
   <tr> 
    <td colname="col1"> <p>306 </p> </td> 
-   <td colname="col2"> <p>Spärrat deklarerat enhets-ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Enhets-ID:t har identifierats som skadligt och har lagts till i en blockeringslista Det här kan hända om vi på kort tid tar emot en extrem mängd <span class="wintitle"> DCS</span>-begäranden som innehåller detta enhets-ID. </p> </td>
+   <td colname="col2"> <p>Blockerat deklarerat enhets-ID <code><i>ID</i></code> </p> </td> 
+   <td colname="col3"> <p>Enhets-ID:t har identifierats som skadligt och har lagts till i en blockeringslista Det här kan hända när vi får en mycket hög mängd <span class="wintitle"> DCS</span> begäranden som innehåller detta enhets-ID på kort tid. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>307 </p> </td> 
@@ -178,37 +175,37 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
   </tr> 
   <tr> 
    <td colname="col1"> <p>309 </p> </td> 
-   <td colname="col2"> <p>Kund-ID <code><i>ID</i></code> ignorerades eftersom det överskred gränsen för deklarerade kund-ID:n per begäran </p> </td> 
-   <td colname="col3"> <p>Relaterat till fel 301. Detta fel anger vilket kund-ID som ignorerades eftersom gränsen överskreds. </p> <p>Om till exempel 12 kund-ID har deklarerats för <span class="wintitle"> DCS</span>-anropet, kommer två av dem att ignoreras. För att kunna meddela vilka som har ignorerats visas det här felet två gånger i svaret (en gång för varje ignorerat kund-ID). </p> </td>
+   <td colname="col2"> <p>Kund-id <code><i>ID</i></code> ignorerades eftersom det överskred gränsen för deklarerade kund-ID:n per begäran </p> </td> 
+   <td colname="col3"> <p>Relaterat till fel 301. Detta fel anger vilket kund-ID som ignorerades eftersom gränsen överskreds. </p> <p>Om till exempel 12 kund-ID har deklarerats på <span class="wintitle"> DCS</span> två av dem kommer att kastas bort. För att kunna meddela vilka som har ignorerats visas det här felet två gånger i svaret (en gång för varje ignorerat kund-ID). </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>310 </p> </td> 
    <td colname="col2"> <p>Kund-ID ignorerades eftersom det överskred gränsen för ett givet namnutrymme. Namnområdes-ID är <code><i>ID</i></code>, kund-ID är <code><i>ID</i></code>. </p> </td> 
-   <td colname="col3"> <p>Felkoden returneras om fler än tre kund-ID har deklarerats för samma namnutrymme (<code> DPID</code>) i ett <span class="wintitle"> DCS</span>-anrop. </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>I det här exemplet <span class="wintitle"> DCS</span>-begäran finns fyra ID:n deklarerade för samma namnutrymme (med integreringskoden ett). Ett av ID:na ignoreras och fel 310 returneras. </p> </td> 
+   <td colname="col3"> <p>Den här felkoden returneras om fler än tre kund-ID har deklarerats för samma namnutrymme (<code> DPID</code>) på en <span class="wintitle"> DCS</span> ring. </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>I det här exemplet <span class="wintitle"> DCS</span> -begäran, finns det 4 id:n deklarerade för samma namnutrymme (med integreringskoden 1). Ett av ID:na ignoreras och fel 310 returneras. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>311 </p> </td> 
    <td colname="col2"> <p>Begäran innehåller ogiltiga parametrar </p> </td> 
-   <td colname="col3"> <p><span class="wintitle"> DCS</span> returnerar den här felkoden när minst en URL-parameter inte är korrekt kodad. I det här fallet ignorerar <span class="wintitle"> DCS</span> hela begäran. </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%esid!&amp;d_creative=%ecid!&amp;d_adgroup=%eaid!&amp;d_placement=%epid!&amp;d_campaign=%ebuy!&amp;d_adsrc=48123</code> </p> <p>I exempelbegäran ovan är <code> %</code>-sekvensen felaktigt kodad. Därför ignoreras DCS<span class="wintitle">-DCS</span>. </p> <p>Det korrekt kodade exemplet ska se ut så här: </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%25esid!&amp;d_creative=%25ecid!&amp;d_adgroup=%25eaid!&amp;d_placement=%25epid!&amp;d_campaign=%25ebuy!&amp;d_adsrc=48123</code> </p> </td> 
+   <td colname="col3"> <p>The <span class="wintitle"> DCS</span> returnerar den här felkoden när minst en URL-parameter inte är korrekt kodad. I det här fallet <span class="wintitle"> DCS</span> ignorerar hela begäran. </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%esid!&amp;d_creative=%ecid!&amp;d_adgroup=%eaid!&amp;d_placement=%epid!&amp;d_campaign=%ebuy!&amp;d_adsrc=48123</code> </p> <p>I exempelbegäran ovan <code> %</code> sekvensen är felaktigt kodad. Följaktligen är <span class="wintitle"> DCS</span> kommer att bortse från det. </p> <p>Det korrekt kodade exemplet ska se ut så här: </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%25esid!&amp;d_creative=%25ecid!&amp;d_adgroup=%25eaid!&amp;d_placement=%25epid!&amp;d_campaign=%25ebuy!&amp;d_adsrc=48123</code> </p> </td> 
   </tr>
   <tr> 
    <td colname="col1"> <p>312 </p> </td> 
    <td colname="col2"> <p>Begäran innehåller ett ogiltigt globalt enhets-ID </p> </td> 
-   <td colname="col3"> <p><span class="wintitle">DCS</span> returnerar den här felkoden när begäran innehåller ett ogiltigt globalt enhets-ID. DCS ignorerar det ogiltiga ID:t och genererar ett 312-fel tillsammans med de specifika felen för det ogiltiga ID:t. Se <a href="../../../features/global-data-sources.md" format="dita" scope="local">Global Data Sources</a> och <a href="../../../reference/ids-in-aam.md" format="dita" scope="local">Index of ID:n i Audience Manager</a> om du vill ha mer information om rätt ID-format för enhetsannonsering och motsvarande globala datakällor.</p>
+   <td colname="col3"> <p>The <span class="wintitle">DCS</span> returnerar den här felkoden när begäran innehåller ett ogiltigt globalt enhets-ID. DCS ignorerar det ogiltiga ID:t och genererar ett 312-fel tillsammans med de specifika felen för det ogiltiga ID:t. Se <a href="../../../features/global-data-sources.md" format="dita" scope="local">Globala datakällor</a> och <a href="../../../reference/ids-in-aam.md" format="dita" scope="local">Index för ID:n i Audience Manager</a> om du vill ha detaljerad information om rätt enhetsannons-ID-format och motsvarande globala datakällor.</p>
    <p>Exempel på ett felaktigt anrop: <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
-   <p>Förklaring: En <span class="keyword">IDFA (DPID 20915)</span> måste vara ett versalt ID. ID:t som angavs i begäran är gemener.</p>
+   <p>Förklaring: An <span class="keyword">IDFA (DPID 20915)</span> måste vara ett versalt ID. ID:t som angavs i begäran är gemener.</p>
    </td>
   </tr>
    <tr> 
    <td colname="col1"> <p>313 </p> </td> 
    <td colname="col2"> <p>CMP ID finns inte i GCL</p> </td> 
-   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av ett CMP ID som inte finns i den cachelagrade versionen av den globala CMP-listan vid tidpunkten för utvärderingen, ignorerar Audience Manager-plugin-programmet för IAB TCF IAB TC-strängen och bearbetar begäran som vanligt. IAB TCF v2.0 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p>
+   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av ett CMP ID som inte finns i den cachelagrade versionen av Global CMP List vid tidpunkten för utvärderingen, tar Audience Manager-pluginen för IAB TCF bort IAB TC-strängen och bearbetar begäran som vanligt. IAB TCF v2.0 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p>
    </td>
   </tr>
    <tr> 
    <td colname="col1"> <p>314 </p> </td> 
    <td colname="col2"> <p>CMP ID har markerats som borttaget i GCL</p> </td> 
-   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av en CMP som är markerad som borttagen i vår cachelagrade version av Global CMP List, ignorerar plugin-programmet Audience Manager för IAB TCF TC-strängen och bearbetar begäran som vanligt, om utvärderingstiden är förbi raderingstiden från den globala CMP-listan. IAB TCF v2.0 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p></td>
+   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av en CMP som är markerad som borttagen i vår cachelagrade version av Global CMP List, tar Audience Manager-pluginen för IAB TCF bort TC-strängen och bearbetar begäran som vanligt, om utvärderingstiden är förbi raderingstiden från den globala CMP-listan. IAB TCF v2.0 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p></td>
   </tr>
    <tr> 
    <td colname="col1"> <p>315 </p> </td> 
@@ -222,7 +219,7 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
 
 ## Exempel på felkodmeddelanden {#sample-error-codes}
 
-[!DNL DCS] returnerar felkoder och meddelanden i ett [!DNL JSON]-objekt eller i ett X-huvud i HTTP-svarssträngen.
+The [!DNL DCS] returnerar felkoder och meddelanden i en [!DNL JSON] eller i ett X-huvud i HTTP-svarssträngen.
 
 ### Exempel på DCS-felkod och -meddelande
 
