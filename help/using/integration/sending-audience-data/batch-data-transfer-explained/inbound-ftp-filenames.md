@@ -7,9 +7,9 @@ title: Krav på FTP-namn och filstorlekar för inkommande datafiler
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 feature: Inbound Data Transfers
 exl-id: 9c889214-7075-4392-9ed5-f07b91e7b50a
-source-git-commit: 534f7c3a04861ad6daba2f168c275bbac8395d37
+source-git-commit: 7721083fd538f0b74f72cfc78981e2cc76777790
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1097'
 ht-degree: 5%
 
 ---
@@ -66,7 +66,7 @@ Tabellen definierar elementen i en [!DNL FTP] filnamn.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
-   <td colname="col2"> <p>Det här fältet anger för Audience Manager vilken datakälla data ska sparas i. Det här fältet är obligatoriskt om du ställer in DPID på ett Android-id, ett iOS-id eller ett annat ID som tillhör globala datakällor. Detta gör att <span class="keyword"> Audience Manager</span> länka tillbaka fildata till organisationen. <br> Den här måldatakällan måste ägas av ditt företag. För datadelning med andra företag måste du ha en åtkomstmappning mellan ditt företag och måldatakällan för att kunna importera data till en måldatakälla som tillhör ett annat företag. Kontakta Adobe-konsulten eller kundsupporten för att konfigurera mappningen.</p> <p>Exempel: </p> 
+   <td colname="col2"> <p>Det här fältet anger för Audience Manager vilken datakälla data ska sparas i. Det här fältet är obligatoriskt om du ställer in DPID på ett Android-id, ett iOS-id eller ett annat ID som tillhör globala datakällor. Detta gör att <span class="keyword"> Audience Manager</span> länka tillbaka fildata till organisationen. <br> Den här måldatakällan måste ägas av ditt företag. För datadelning med andra företag måste du ha en åtkomstmappning mellan ditt företag och måldatakällan för att kunna importera data till en måldatakälla som tillhör ett annat företag. Kontakta Adobe-konsulten eller kundsupporten för att konfigurera mappningen.</p><p><b>Viktigt:</b> Du <i>inte</i> behöver begära en mappning för befintliga datadelningsrelationer (för måldatakällor som tillhör andra företag som du överförde data till före den 14 mars 2022). Mappningen behövs inte heller när du registrerar data i måldatakällor som tillhör ditt PID. </p> <p>Exempel: </p> 
     <ul> 
      <li> <code>...ftp_dpm_33_21_1234567890.sync</code> anger för Audience Manager att du kvalificerar kund-ID:n som tillhör datakällan 33 för egenskaper eller signaler som tillhör datakällan 21. </li> 
      <li> <b>Android ID (GAID):</b> <code>...ftp_dpm_20914_21_1234567890.sync</code> visar <span class="keyword"> Audience Manager</span> att datafilen endast innehåller Android ID:n och ID:n ska kvalificera sig för egenskaperna som tillhör datakällan 21.</li> 
