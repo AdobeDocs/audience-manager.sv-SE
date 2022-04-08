@@ -1,17 +1,16 @@
 ---
 description: I den här artikeln förklaras de begrepp och termer som används i den europeiska dataskyddsförordningen (GDPR) och hur Adobe Audience Manager, som personuppgiftsbiträde, hanterar olika GDPR-krav.
-seo-description: I den här artikeln förklaras de begrepp och termer som används i den europeiska dataskyddsförordningen (GDPR) och hur Adobe Audience Manager, som personuppgiftsbiträde, hanterar olika GDPR-krav.
-seo-title: GDPR-ordlista
+seo-description: This article explains the concepts and terminology used by the European General Data Protection Regulation (GDPR), and how Adobe Audience Manager, as a Data Processor, addresses various GDPR requirements.
+seo-title: GDPR Glossary
 solution: Audience Manager
 title: GDPR-ordlista
 uuid: e52cad27-6a44-45ee-8524-6080adb86cc8
 feature: Data Governance & Privacy
 exl-id: 36930703-745e-4fbd-ad18-ba9efb77eb7e
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 99%
+source-wordcount: '693'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +22,7 @@ I den här artikeln förklaras de begrepp och termer som används i den europeis
 
 GDPR trädde i kraft den 25 maj 2018 med de primära målen att ge enskilda personer i EU (registrerade) bättre kontroll över sina personuppgifter och samtidigt förenkla regelverket för internationella företag genom en enhetlig lagstiftning inom EU. Som en del av Adobes GDPR-förberedelser har Adobe Audience Manager-teamet förbättrat de tjänster och processer som behövs för åtkomst- och raderingsförfrågningar från registrerade, dvs. era kunder.
 
-Läs även [Vanliga frågor om Experience Cloud GDPR.](https://docs.adobe.com/content/help/sv-SE/experience-platform/privacy/home.html#!api-specification/markdown/narrative/gdpr/gdpr-faq.md) för att bättre förstå hur GDPR fungerar i Experience Cloud.
+Se till att du även läser om GDPR i [Översikt över sekretessbestämmelser](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=en) för en bättre förståelse för hur GDPR fungerar i Experience Cloud.
 
 ## GDPR-ordlista {#gdpr-glossay}
 
@@ -59,7 +58,7 @@ Bekanta dig med nyckeltermer som används för GDPR. Vi har markerat några av d
 
  
 
-**Identifierare för Audience Manager (ID:n):** Adobe Audience Manager lagrar olika typer av ID:n. På sidan [Identifierare i Audience Manager](data-privacy-ids.md) finns en sammanfattning av dessa ID:n, motsvarande datakällor och korta beskrivningar. När du skickar förfrågningar till [Adobe Experience Platform Privacy Service](https://docs.adobe.com/content/help/sv-SE/experience-platform/privacy/home.html) ska du hänvisa till dessa ID:n för borttagnings- eller åtkomstförfrågningar från registrerade.
+**Identifierare för Audience Manager (ID:n):** Adobe Audience Manager lagrar olika typer av ID:n. På sidan [Identifierare i Audience Manager](data-privacy-ids.md) finns en sammanfattning av dessa ID:n, motsvarande datakällor och korta beskrivningar. När du skickar förfrågningar till [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) ska du hänvisa till dessa ID:n för borttagnings- eller åtkomstförfrågningar från registrerade.
 
  
 

@@ -5,9 +5,9 @@ title: Experience Platform segmentdelning med Audience Manager och andra Experie
 keywords: AEP målgruppsdelning, AEP-segment, plattformssegment, segmentdelning, målgruppsdelning, delade segment, AAM AEP-segmentdelning
 feature: Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: aaaed3930a1e7af4724cc01bda74b83edec98385
+source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1516'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Tack vare funktionen för målgruppsdelning mellan Audience Manager och Adobe Experience Platform kan ni dela era Audience Manager-egenskaper och segment till Adobe Experience Platform och vice versa. Du behöver [[!DNL Audience Manager Connector]](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html) för att möjliggöra målgruppsdelning mellan Audience Manager och Adobe Experience Platform.
 
-Ni kan använda Audience Manager-egenskaper och segment i Experience Platform för att lägga till Audience Manager-data i era kundprofiler och dra nytta av Experience Platform [segmenteringstjänst](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md).
+Ni kan använda Audience Manager-egenskaper och segment i Experience Platform för att lägga till Audience Manager-data i era kundprofiler och dra nytta av Experience Platform [segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=en).
 
 I Audience Manager kan du använda Experience Platform-segment för datahanteringsplattformens användningsfall, till exempel:
 * Lägg till [data från tredje part](/help/using/overview/data-types-collected.md#third-party-data) till era segment,
@@ -143,7 +143,7 @@ Följande tabell visar hur specifika dataexportetiketter mappas till kända mark
 | Denna destination kan möjliggöra en kombination med personligt identifierbar information (PII) | Kombinera med PII |
 | Den här destinationen kan användas för annonsinriktning utanför webbplatsen | Målgruppsövergripande |
 | Det här målet kan användas för annonsinriktning på plats | Annonsering på plats |
-| Det här målet kan användas för anpassning av annonser på plats | Personalisering på plats |
+| Det här målet kan användas för anpassning av annonser på plats | Personalization på plats |
 
 {style=&quot;table-layout:auto&quot;}
 
