@@ -8,10 +8,10 @@ title: Förfrågningar om datasekretess
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 feature: Data Governance & Privacy
 exl-id: a1fc9c21-3417-4899-a585-92ad2cb25362
-source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
+source-git-commit: 6b43885deddb0cdaeb3698051ea110f0a4eed44e
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 52%
+source-wordcount: '1431'
+ht-degree: 50%
 
 ---
 
@@ -28,7 +28,7 @@ Innan du läser den här artikeln rekommenderar vi att du går igenom ordlistorn
 Du kan skicka enskilda förfrågningar för att få åtkomst till och ta bort konsumentdata från [!DNL Audience Manager], på två sätt:
 
 * Genom gränssnittet för [Privacy Service](https://privacyui.cloud.adobe.io/). Se dokumentationen [här](https://docs.adobe.com/content/help/sv-SE/experience-platform/privacy/home.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md).
-* Genom **[!DNL Privacy Service API]**. Läs dokumentationen [här](https://docs.adobe.com/content/help/sv-SE/experience-platform/privacy/home.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md) och [!DNL API] referens [här](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml).
+* Genom **[!DNL Privacy Service API]**. Läs dokumentationen [här](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en) och [!DNL API] referens [här](https://developer.adobe.com/experience-platform-apis/references/privacy-service/).
 
 När du skickar individuella förfrågningar om datasekretess kan du skicka in [!DNL Audience Manager] identifierare (ID), enligt beskrivningen i **[Audience Manager-identifierare](data-privacy-ids.md)** -avsnittet, tillsammans med deras respektive namnområdes-ID (datakälla-ID).
 
