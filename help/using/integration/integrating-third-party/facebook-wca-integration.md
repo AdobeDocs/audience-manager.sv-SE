@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Integrering med Facebook WCA
 feature: Third-party Integration
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
-source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
+source-git-commit: 8780083474d68717fe3bd4dc632d96da89929122
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Den här sidan visar processen att skapa [!DNL Facebook Website Custom Audiences
 
 ## Översikt {#overview}
 
-[Facebook WCA (Web Site Custom Audiences)](https://www.facebook.com/business/help/449542958510885) Med kan du skapa en lista över personer som har besökt vissa sidor eller vidtagit särskilda åtgärder på webbplatsen. [!DNL Audience Manager] aktiverar aktivering i [!DNL WCA] använda [!DNL URL] mål, med vilka du kan konfigurera en anpassad pixelbaserad integration för att skicka webbaserade målgrupper till [!DNL Facebook] för målinriktning.
+[Facebook WCA (Web Site Custom Audiences)](https://www.facebook.com/business/help/610516375684216?id=2469097953376494) Med kan du skapa en lista över personer som har besökt vissa sidor eller vidtagit särskilda åtgärder på webbplatsen. [!DNL Audience Manager] aktiverar aktivering i [!DNL WCA] använda [!DNL URL] mål, med vilka du kan konfigurera en anpassad pixelbaserad integration för att skicka webbaserade målgrupper till [!DNL Facebook] för målinriktning.
 
 ![Integrering med Facebook WCA](/help/using/integration/assets/facebook-wca-integration.png)
 
