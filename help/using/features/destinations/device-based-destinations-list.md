@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Adobe Audience Manager Server-till-server-mål
 feature: Destination Basics
 exl-id: 7db3bc02-ece4-4524-a401-d2c8c6de510a
-source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
+source-git-commit: 9947adbd99e12efdf2d94c6840929ad9266c58a2
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 54%
@@ -16,18 +16,18 @@ ht-degree: 54%
 
 # [!DNL Audience Manager] [!UICONTROL Device-based Destinations]
 
-Den här sidan innehåller endast aktuella [!DNL Audience Manager] [enhetsbaserade mål](/help/using/features/destinations/add-device-based-destinations.md). I [!DNL Audience Manager] kallas [!UICONTROL device-based destinations] även [!UICONTROL server-to-server destinations]. Mer information om en integrering finns i [Adobe Exchange](https://exchange.adobe.com/experiencecloud.html)-listan (där den är tillgänglig) eller kontakta din [!DNL Adobe]-konsult eller kundtjänst.
+Den här sidan innehåller aktuell [!DNL Audience Manager] [enhetsbaserade mål](/help/using/features/destinations/add-device-based-destinations.md) endast. I [!DNL Audience Manager], [!UICONTROL device-based destinations] anropas också [!UICONTROL server-to-server destinations]. Mer information om en integrering finns i [Adobe Exchange](https://exchange.adobe.com/experiencecloud.html) lista (där det är tillgängligt) eller kontakta [!DNL Adobe] Konsult eller kundtjänst.
 
 
-* **Senast uppdaterad** = Visar det senaste datumet när det fanns en uppdatering för det här  [!UICONTROL device-based destination].
-* **Uppdateringar** = Anger om data  [!DNL Audience Manager] skickas i realtid eller i batch (1 dag) till detta  [!UICONTROL destination].
-* **Unsegment** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från  [!UICONTROL segments]. Din förmåga att ta bort en enhetsprofil från en [!UICONTROL segment] beror på vilket enhetsalternativ som används för att skapa en [!UICONTROL Profile Merge Rule]. Osegmentering används också i samband med [!DNL GDPR]-borttagningsbegäranden. Läs [Profilkopplingsregler och Osegmenteringsprocesser för enheter](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) och [Audience Manager-partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation). [!DNL Audience Manager] skickar information om att segmentera till den  [!UICONTROL destinations] markerade med  **** Yesbelow.
-* **Tar emot  [!DNL IAB TCF] medgivandesignaler** =  [!DNL Audience Manager Plug-in for IAB TCF] Med den kan du vidarebefordra  [!DNL IAB TC] strängen till aktiveringspartners med respekt för användarnas sekretessinställningar. Läs [Audience Manager Plug-in för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
-* **[!DNL ICDS]** = Den här kolumnen listar de partners som stöder  [!UICONTROL Instant Cross-Device Suppression]. Läs om [Direkt undertryckning av olika enheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
-* **ID för mobila enheter** = I den här kolumnen visas partners som kan ta emot ID:n för mobila enheter från  [!DNL Audience Manager].
+* **Senast uppdaterad** = Visar det senaste datumet när det fanns en uppdatering för detta [!UICONTROL device-based destination].
+* **Uppdateringar** = Anger om [!DNL Audience Manager] skickar data i realtid eller i batch (1 dag) till detta [!UICONTROL destination].
+* **Dela upp** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från [!UICONTROL segments]. Du kan ta bort en enhetsprofil från en [!UICONTROL segment] beroende på vilket enhetsalternativ som används för att skapa en [!UICONTROL Profile Merge Rule]. Osegmentering används också i samband med [!DNL GDPR] borttagningsbegäranden. Läs [Regler för profilsammanslagning och process för enhetsosegmentering](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) och [Audience Manager partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation). [!DNL Audience Manager] skickar segmentinformation till [!UICONTROL destinations] markerad med **Ja** nedan.
+* **Mottagande [!DNL IAB TCF] medgivandesignaler** = [!DNL Audience Manager Plug-in for IAB TCF] gör att du kan vidarebefordra [!DNL IAB TC] en sträng till aktiveringspartners med respekt för användarnas valmöjligheter vad gäller integritet. Läs [Plugin-programmet Audience Manager för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
+* **[!DNL ICDS]** = Den här kolumnen innehåller en lista över partners som stöder [!UICONTROL Instant Cross-Device Suppression]. Läs om [Direkt undertryckning av olika enheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
+* **ID för mobila enheter** = Den här kolumnen listar partners som kan ta emot mobil-ID:n från [!DNL Audience Manager].
 
 
-| Integrering | Senast uppdaterad | Uppdateringar | Dela upp | Tar emot [!DNL IAB TCF] godkännandesignaler | [!DNL ICDS] | ID för mobila enheter |
+| Integrering | Senast uppdaterad | Uppdateringar | Dela upp | Mottagande [!DNL IAB TCF] medgivandesignaler | [!DNL ICDS] | ID för mobila enheter |
 |----------------------------------------------------------|------------|-----------|-----------|-----------------------------------|------|-------------------|
 | [!DNL 4C Insights] | 26/09/2018 | 1:a dag | Ja | Nej | Nej | Ja |
 | [!DNL 4info] | 09/02/2017 | 1:a dag | Nej | Nej | Nej | Ja |
@@ -38,7 +38,7 @@ Den här sidan innehåller endast aktuella [!DNL Audience Manager] [enhetsbasera
 | [!DNL AdForm] | 22/02/2017 | Realtid | Ja | Nej | Ja | Ja |
 | [!DNL AdGear] | 22/02/2017 | Realtid | Ja | Nej | Ja | Nej |
 | [!DNL Adikteev] | 26/01/2018 | 1:a dag | Ja | Nej | Nej | Ja |
-| [!DNL Adroll] /  [!DNL NextRoll] | 10/12/2019 | 1:a dag | Nej | Nej | Nej | Nej |
+| [!DNL Adroll] / [!DNL NextRoll] | 10/12/2019 | 1:a dag | Nej | Nej | Nej | Nej |
 | [!DNL Adswizz] | 09/10/2017 | 1:a dag | Ja | Nej | Nej | Ja |
 | [!DNL Adtheorent] | 22/02/2017 | 1:a dag | Ja | Nej | Nej | Ja |
 | [!DNL Affinio] | 03/04/2018 | 1:a dag | Ja | Nej | Nej | Ja |
@@ -46,9 +46,9 @@ Den här sidan innehåller endast aktuella [!DNL Audience Manager] [enhetsbasera
 | [!DNL Amazon Advertising] | 15/06/2017 | 1:a dag | Ja | Nej | Nej | Nej |
 | [!DNL AOL AdLearn] | 02/03/2017 | Realtid | Nej | Nej | Nej | Ja |
 | [!DNL AOL ONE] | 02/03/2017 | Realtid | Ja | Nej | Nej | Ja |
-| [!DNL AppNexus] | 02/03/2017 | Realtid | Ja | Nej | Ja | Nej |
+| [!DNL AppNexus] | 02/03/2017 | Realtid | Ja | Nej | Ja | Ja |
 | [!DNL AppNexus Yieldex] | 10/08/2017 | 1:a dag | Ja | Nej | Nej | Nej |
-| [!DNL Artsai] (tidigare  [!DNL Adxcel]) | 27/01/2020 | 1:a dag | Nej | Nej | Nej | Ja |
+| [!DNL Artsai] (tidigare [!DNL Adxcel]) | 27/01/2020 | 1:a dag | Nej | Nej | Nej | Ja |
 | [!DNL Atedra]/[!DNL AdStanding] | 02/03/2017 | Realtid | Ja | Nej | Ja | Nej |
 | [!DNL Avocet] | 06/12/2017 | 1:a dag | Nej | Nej | Nej | Nej |
 | [!DNL Bidtellect] | 03/03/2017 | Realtid | Ja | Nej | Nej | Nej |
@@ -160,9 +160,9 @@ Den här sidan innehåller endast aktuella [!DNL Audience Manager] [enhetsbasera
 | [!DNL Triple Lift] | 03/03/2017 | Realtid | Nej | Ja | Nej | Nej |
 | [!DNL TrueX] | 11/01/2018 | Realtid | Ja | Nej | Nej | Ja |
 | [!DNL TubeMogul] | 03/03/2017 | Realtid | Ja | Nej | Ja | Nej |
-| [!DNL Turn] /  [!DNL Amobee] | 03/03/2027 | Realtid | Nej | Nej | Nej | Ja |
+| [!DNL Turn] / [!DNL Amobee] | 03/03/2027 | Realtid | Nej | Nej | Nej | Ja |
 | [!DNL Twenga] | 29/10/2018 | Realtid | Ja | Nej | Nej | Nej |
-| [!DNL Twitter Custom Audiences] | 27/02/2017 | Realtid | Ja | Nej | Ja | Nej |
+| [!DNL Twitter Custom Audiences] | 27/03/2017 | Realtid | Ja | Nej | Ja | Nej |
 | [!DNL Undertone] | 11/07/2017 | 1:a dag | Nej | Nej | Nej | Nej |
 | [!DNL Verve] | 15/06/2017 | 1:a dag | Ja | Nej | Nej | Ja |
 | [!DNL VideoAmp] | 03/03/2017 | Realtid | Nej | Nej | Nej | Nej |
@@ -177,4 +177,4 @@ Den här sidan innehåller endast aktuella [!DNL Audience Manager] [enhetsbasera
 | [!DNL Yieldex] | 21/08/2017 | Varierar | Ja | Nej | Nej | Nej |
 | [!DNL YieldMo] | 03/03/2017 | 1:a dag | Nej | Nej | Nej | Nej |
 | [!DNL Yume] | 31/05/2017 | 1:a dag | Nej | Nej | Nej | Nej |
-| [!DNL Zeta] /  [!DNL Sizmek DSP] /  [!DNL RocketFuel] | 17/02/2017 | Realtid | Ja | Nej | Ja | Ja |
+| [!DNL Zeta] / [!DNL Sizmek DSP] / [!DNL RocketFuel] | 17/02/2017 | Realtid | Ja | Nej | Ja | Ja |
