@@ -1,27 +1,26 @@
 ---
 description: Visar makron som du kan använda för att skapa utgående mallar. Bland dessa finns filnamnsmakron, huvudmakron och innehållsmakron.
-seo-description: Visar makron som du kan använda för att skapa utgående mallar. Bland dessa finns filnamnsmakron, huvudmakron och innehållsmakron.
-seo-title: Utgående mallmakron
+seo-description: Lists the macros you can use to create outbound templates. These include file name macros, header macros, and content macros.
+seo-title: Outbound Template Macros
 solution: Audience Manager
 title: Utgående mallmakron
 uuid: dec082d3-306b-4ff5-afb2-418bd543d8d0
 feature: Outbound Data Transfers
-translation-type: tm+mt
-source-git-commit: 31366fb83fc9aaeffc6d4a078dc2e07a0fd727a4
+exl-id: 6988d0e5-7a99-4291-91d3-bcd3a15630fd
+source-git-commit: d76505fda1ba448a1aaa3a756ef3bcf193a2718a
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '710'
 ht-degree: 2%
 
 ---
-
 
 # Utgående mallmakron {#outbound-template-macros}
 
 Visar makron som du kan använda för att skapa utgående mallar. Bland dessa finns filnamnsmakron, huvudmakron och innehållsmakron.
 
-## Filnamn och filhuvudmakron {#file-name-header-macros}
+## Makron för filnamn och filhuvud {#file-name-header-macros}
 
-Tabellen visar och beskriver makrona som du kan använda i filnamnet och för att definiera rubrikfält. Kodexempel finns i [Exempel på utgående makro](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md).
+Tabellen visar och beskriver makrona som du kan använda i filnamnet och för att definiera rubrikfält. För kodexempel, se [Exempel på utgående makro](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md).
 
 <table id="table_C353AF028E0A4944A8727FD01C94FDB6"> 
  <thead> 
@@ -87,7 +86,7 @@ Tabellen visar och beskriver makrona som du kan använda i filnamnet och för at
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> TIMESTAMP </code> </p> </td> 
-   <td colname="col2"> <p>En 10-siffrig UTC-, Unix-tidsstämpel. </p> <p>Den kan också formateras som <code> &lt;TIMESTAMP; format="YYYYMMDDhhmmss"&gt; </code> enligt formateringsreglerna för Java-datum/tidsstämpel. </p> </td> 
+   <td colname="col2"> <p>En 10-siffrig UTC-, Unix-tidsstämpel. </p> <p>Den kan också formateras som <code> &lt;TIMESTAMP; format="YYYYMMDDhhmmss"&gt; </code> följa formateringsregler för Java-datum/tidsstämpel. </p> </td> 
   </tr>
 
 </tbody> 
@@ -95,7 +94,7 @@ Tabellen visar och beskriver makrona som du kan använda i filnamnet och för at
 
 ## Innehållsmakron {#content-macros}
 
-Makron som används för att formatera innehållet i en datafil. Kodexempel finns i [Exempel på utgående makro](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md).
+Makron som används för att formatera innehållet i en datafil. För kodexempel, se [Exempel på utgående makro](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md).
 
 <table id="table_5C6F9678CFF34C5EB67BA1DEA0479F1D"> 
  <thead> 
@@ -107,11 +106,11 @@ Makron som används för att formatera innehållet i en datafil. Kodexempel finn
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> CLOSE_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>Infogar en avslutande klammerparentes <code>}</code>. </p> </td> 
+   <td colname="col2"> <p>Infogar en avslutande klammerparentes <code>}</code> tecken. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DP_UUID </code> </p> </td> 
-   <td colname="col2"> <p> <span class="term"> Unik användaridentifierare för dataprovider  </span>. </p> <p>Det här är ID:t för den datapartner som du skickar data till i en utgående fil. </p> </td> 
+   <td colname="col2"> <p> <span class="term"> Unik användaridentifierare för dataprovider </span>. </p> <p>Det här är ID:t för den datapartent som du skickar data till i en utgående fil. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DP_UUID_LIST </code> </p> </td> 
@@ -123,7 +122,7 @@ Makron som används för att formatera innehållet i en datafil. Kodexempel finn
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DPUUIDS </code> </p> </td> 
-   <td colname="col2"> <p>Utdata för det här makrot mappar DataProvider ID (DPID) till relaterade unika användar-ID:n (DPUID). Detta makro måste ha en formateringssträng för att styra utdata. Exempelutdata skulle se ut ungefär så här: </p> <p> <code> "dpids=dpid1,dpid2,...dpid n|maxMappings= n|format=json" </code> </p> <p>Inställningen <code> maxMappings </code> anger hur många mappningar du vill att makrot ska returnera. När <code> maxMappings=0 </code> returnerar makrot alla mappningar för varje angivet DPID. Data sorteras efter tidsstämpel (senaste först) och returnerar resultat med den största tidsstämpeln först. </p> </td> 
+   <td colname="col2"> <p>Utdata för det här makrot mappar DataProvider ID (DPID) till relaterade unika användar-ID:n (DPUID). Detta makro måste ha en formateringssträng för att styra utdata. Exempelutdata skulle se ut ungefär så här: </p> <p> <code> "dpids=dpid1,dpid2,...dpid n|maxMappings= n|format=json" </code> </p> <p>The <code> maxMappings </code> anger hur många mappningar du vill att makrot ska returnera. När <code> maxMappings=0 </code>returnerar det här makrot alla mappningar för varje angivet DPID. Data sorteras efter tidsstämpel (senaste först) och returnerar resultat med den största tidsstämpeln först. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> if(SEGMENT_LIST &amp;&amp; REMOVED_SEGMENT_LIST)endif </code> </p> </td> 
@@ -135,7 +134,7 @@ Makron som används för att formatera innehållet i en datafil. Kodexempel finn
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPEN_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>Infogar en inledande klammerparentes <code>{</code>. </p> </td> 
+   <td colname="col2"> <p>Infogar en öppen klammerparentes <code>{</code> tecken. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPT_OUT </code> </p> </td> 
@@ -172,14 +171,15 @@ Makron som används för att formatera innehållet i en datafil. Kodexempel finn
      <li id="li_8603B40229624856AF1FBC434DB8F16A"> <code> segmentId </code>: Segment-ID. Föråldrat. Använd <code> sid </code>. </li> 
      <li id="li_1EF40DDCA3C5447586904CF021D8F912"> <code> csegid </code>: Kundsegment-ID. Föråldrat. Använd <code> sid </code>. </li> 
      <li id="li_D85F0A5D16AE4DAFB55C17DBB35EA66E"> <code> sid </code>: Segment-ID </li> 
-     <li id="li_9BE103EFD8384464B46FAC00422431DB"> <code> type </code>: Returnerar  <code> 5 </code>ett statiskt, hårdkodat värde som identifierar data som segmentdata. </li> 
-     <li id="li_FE5049089F2944FA9DB9F9D546DBA167"> <code> alias </code>: Föråldrat. Skall ej användas. </li> 
-     <li id="li_DD778AA2D1DB4D409CF5026B5D9DBD27"> <code> lastUpdateTime </code>: En Unix-tidsstämpel som anger när ett segment senast realiserades. </li> 
+     <li id="li_9BE103EFD8384464B46FAC00422431DB"> <code> type </code>: Returnerar <code> 5 </code>, ett statiskt, hårdkodat värde som identifierar data som segmentdata. </li> 
+     <li id="li_FE5049089F2944FA9DB9F9D546DBA167"> <code> alias </code>: Föråldrat. Skall ej användas. </li>
+     <li id="li_DD778AA2D1DB4D409CF5026B5D9DBD27"> <code> lastUpdateTime </code>: En Unix-tidsstämpel som anger att segmentets senaste medlemskapsstatus uppdaterades. </li>
+     <li id="li_DD778AA2D1DB4D409CF5026B5D9DBD28"> <code> lastRealizationTime </code>: En Unix-tidsstämpel som anger när ett segment senast realiserades. </li>
     </ul> <p>Placera dessa variabler inom klammerparentes efter makrot. I den här koden avgränsas resultatet med ett vertikalstreck (|): <code> &lt;SEGMENT_LIST:{seg|&lt;seg.type&gt;,&lt;seg.sid&gt;}; separator=","&gt; </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> SET_ATTRIBUTES </code> </p> </td> 
-   <td colname="col2"> <p>Returnerar <code> 1 </code> som ett statiskt, hårdkodat värde. </p> </td> 
+   <td colname="col2"> <p>Returnerar <code> 1 </code>, som ett statiskt, hårdkodat värde. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> SYNC_MODE </code> </p> </td> 
@@ -217,7 +217,7 @@ Makron som används för att formatera innehållet i en datafil. Kodexempel finn
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> UUID </code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Audience Manager  </span> användar-ID. </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Audience Manager </span> användar-ID. </p> </td> 
   </tr> 
  </tbody> 
 </table>
