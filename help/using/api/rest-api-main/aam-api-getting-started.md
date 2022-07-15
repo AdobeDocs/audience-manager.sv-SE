@@ -48,7 +48,7 @@ The [!DNL Audience Manager] [!DNL REST APIs] har stöd för två autentiseringsm
 
 ## [!DNL JWT] ([!DNL Service Account]) Autentisering med Adobe Developer {#jwt}
 
-### Adobe Developer Overview {#adobeio}
+### Adobe Developer - översikt {#adobeio}
 
 [!DNL Adobe Developer] är Adobe utvecklares ekosystem och community. Den innehåller [API:er för alla Adobe-produkter](https://www.adobe.io/apis.html).
 
@@ -189,7 +189,7 @@ Anropskrav [!DNL API] metoder när du har fått en autentiseringstoken.
 Göra anrop mot tillgängliga [!DNL API] metoder:
 
 * I `HTTP` rubrik, ange `Authorization: Bearer <token>`.
-* När du använder [JWT-autentisering (tjänstkonto)](#jwt)måste du ange `x-api-key` -huvud, som blir densamma som `client_id`. Du kan få dina `client_id` från [Integrering av Adobe Developer](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) sida.
+* När du använder [JWT-autentisering (tjänstkonto)](#jwt)måste du ange `x-api-key` -huvud, som blir densamma som `client_id`. Du kan få dina `client_id` från [Integrering med Adobe Developer](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) sida.
 * Ring upp [!DNL API] -metod.
 
 ## Valfritt [!DNL API] Frågeparametrar {#optional-api-query-parameters}
