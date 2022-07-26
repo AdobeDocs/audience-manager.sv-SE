@@ -1,19 +1,18 @@
 ---
 description: Dataexportkontroller förhindrar att du skickar data till mål när den här åtgärden bryter mot datasekretess eller dataanvändningsavtal.
-seo-description: Dataexportkontroller förhindrar att du skickar data till mål när den här åtgärden bryter mot datasekretess eller dataanvändningsavtal.
-seo-title: Kontroller vid dataexport
+seo-description: Data Export Controls prevent you from sending data to destinations when this action violates data privacy or data use agreements.
+seo-title: Data Export Controls
 solution: Audience Manager
 title: Kontroller vid dataexport
 uuid: de7f3608-c0cb-4049-973a-8be54525c600
 feature: Data Export Controls
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 4369c210-bcf1-48cc-a9bb-0d122f6c03d4
+source-git-commit: c7a6de018a0ddd782eecec0844c4f5c824431119
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '882'
 ht-degree: 1%
 
 ---
-
 
 # Kontroller vid dataexport {#data-export-controls}
 
@@ -21,30 +20,30 @@ ht-degree: 1%
 
 ## Översikt {#overview}
 
-[!UICONTROL Data Export Controls] kan ni klassificera  [datakällor ](../features/datasources-list-and-settings.md#data-sources-list-and-settings) och  [destinationer](../features/destinations/destinations.md). De klassificeringar du använder avgör när data kan exporteras eller inte till ett mål. Den här funktionen består av:
+[!UICONTROL Data Export Controls] kan du klassificera [datakällor](../features/datasources-list-and-settings.md#data-sources-list-and-settings) och [mål](../features/destinations/destinations.md). De klassificeringar du använder avgör när data kan exporteras eller inte till ett mål. Den här funktionen består av:
 
-* **[!UICONTROL Data Export Controls]**: Du kan ange dataexportkontroller för  *datakällor*. När de anges för en datakälla begränsar dessa kontroller hur datakällan och dess egenskaper kan användas.
-* **[!UICONTROL Data Export Labels]**: Du kan ange dataexportetiketter för  *mål*. När de anges på ett mål identifierar de här etiketterna hur målet använder data. Mer information om hur du lägger till exportetiketter i ett mål finns i [Lägg till dataexportetiketter till ett mål.](/help/using/features/destinations/add-data-export-labels.md)
+* **[!UICONTROL Data Export Controls]**: Du kan ställa in dataexportkontroller på *datakällor*. När de anges för en datakälla begränsar dessa kontroller hur datakällan och dess egenskaper kan användas.
+* **[!UICONTROL Data Export Labels]**: Du kan ange dataexportetiketter på *mål*. När de anges på ett mål identifierar de här etiketterna hur målet använder data. Se [Lägg till dataexportetiketter till ett mål](/help/using/features/destinations/add-data-export-labels.md) om du vill veta hur du lägger till exportetiketter till ett mål.
 
 Exportkontrollerna förhindrar dig från att:
 
 * Lägga till en egenskap i ett segment när egenskapen tillhör en datakälla som har en dataexportkontroll som inte är kompatibel med en dataexportetikett på ett eller flera av de mål som segmentet är mappat till.
-Anta att ett segment är mappat till ett mål med exportetiketten **[!DNL This destination may enable a combination with personally identifiable information (PII)]**. Med exportkontroller kan du inte lägga till en egenskap i det segmentet om datakällan som egenskapen tillhör har en dataexportkontroll som säger **[!DNL Cannot be tied to personally identifiable information (PII)]**.
-* Om du skickar data till ett mål har du en dataexportetikett som blockeras av en dataexportkontroll på något av följande:
+Exempel: ett segment är mappat till ett mål med exportetiketten **[!DNL This destination may enable a combination with personally identifiable information (PII)]**. Exportkontroller hindrar dig från att lägga till en egenskap i det segmentet om datakällan som trait tillhör har en dataexportkontroll som säger **[!DNL Cannot be tied to personally identifiable information (PII)]**.
+* Skicka alla data till ett mål som har en dataexportetikett som blockeras av en dataexportkontroll på något av följande sätt:
    * Datakällan för en egenskap som ingår.
    * Datakällan för en egenskap som används i ett inkluderat segment.
    * Den profilsammanfogningsregel som används av ett inkluderat segment.
    * Alla datakällor som används av ett inkluderat segments profilkopplingsregel.
 
-[!UICONTROL Data Export Controls] är automatiskt tillgängliga för alla Audience Manager-kunder. Du behöver dock administratörsbehörighet för att lägga till exportkontroller i en datakälla. För att lägga till exportetiketter till ett mål krävs administratörsbehörighet för *eller* för att skapa eller redigera ett mål.
+[!UICONTROL Data Export Controls] är automatiskt tillgängliga för alla Audience Manager-kunder. Du behöver dock administratörsbehörighet för att lägga till exportkontroller i en datakälla. Om du vill lägga till exportetiketter till ett mål måste du ha administratörsbehörighet *eller* tillräcklig behörighet för att skapa eller redigera ett mål.
 
 ## Definierade kontroller och etiketter {#controls-labels}
 
 [!UICONTROL Data Export Controls] innehåller följande kontroller som hjälper dig att klassificera datakällor och mål.
 
-Om du vill blockera dataleverans måste du klassificera en datakälla med en exportkontroll och lägga till en exportetikett till ett mål. Om du använder exportkontroller på en datakälla eller ett mål begränsas inte dataöverföringen av den här funktionen. När den anges både för datakällan *och*-målet, begränsar exportkontrollerna de egenskaper som du kan lägga till i ett segment och förhindrar att segmentmedlemmarna skickas till ett mål.
+Om du vill blockera dataleverans måste du klassificera en datakälla med en exportkontroll och lägga till en exportetikett till ett mål. Om du använder exportkontroller på en datakälla eller ett mål begränsas inte dataöverföringen av den här funktionen. När den anges för båda datakällorna *och* mål begränsar exportkontrollerna de egenskaper som du kan lägga till i ett segment och förhindrar att segmentmedlemmarna skickas till ett mål.
 
-Dessutom måste minst en exportetikett matcha en exportkontroll innan dataleveransbegränsningarna börjar gälla. Exempel: du lägger till exportkontrollen [!UICONTROL PII] i en datakälla. Sedan lägger du till etiketten för målinriktning på plats till ett mål. I det här fallet begränsas inte dataleveransen av exportkontrollerna eftersom inställningarna inte matchar. Om du lägger till exportetiketten [!UICONTROL PII] till målet blockerar exportkontrollerna exporten.
+Dessutom måste minst en exportetikett matcha en exportkontroll innan dataleveransbegränsningarna börjar gälla. Anta att du lägger till [!UICONTROL PII] exportkontroll till en datakälla. Sedan lägger du till etiketten för målinriktning på plats till ett mål. I det här fallet begränsas inte dataleveransen av exportkontrollerna eftersom inställningarna inte matchar. Om du lägger till [!UICONTROL PII] exportetiketten till målet, kommer exportkontrollerna att blockera exporten.
 
 >[!IMPORTANT]
 >
@@ -71,7 +70,7 @@ Dessutom måste minst en exportetikett matcha en exportkontroll innan datalevera
    <td colname="col3"> Som standard anges inte exportbegränsningar för nya datakällor och mål. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b><span class="uicontrol"> Kan inte knytas till personligt identifierbar information</span></b>  (PII) </td> 
+   <td colname="col1"> <b><span class="uicontrol"> Kan inte knytas till personligt identifierbar information</span></b> (PII) </td> 
    <td colname="col2"> <b><span class="uicontrol"> Denna destination kan möjliggöra en kombination med personligt identifierbar information (PII)</span></b> </td> 
    <td colname="col3">När du väljer det här alternativet kan du inte: 
     <ul id="ul_0D5A4D0373374217A4BACDFC3BB2F79D"> 
