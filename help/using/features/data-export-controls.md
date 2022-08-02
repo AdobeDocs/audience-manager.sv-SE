@@ -7,9 +7,9 @@ title: Kontroller vid dataexport
 uuid: de7f3608-c0cb-4049-973a-8be54525c600
 feature: Data Export Controls
 exl-id: 4369c210-bcf1-48cc-a9bb-0d122f6c03d4
-source-git-commit: c7a6de018a0ddd782eecec0844c4f5c824431119
+source-git-commit: 26aa0a210a045b40b2329844324315a092947188
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '876'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ Dessutom måste minst en exportetikett matcha en exportkontroll innan datalevera
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Kan inte användas för annonsanpassning utanför webbplatsen</span></b> </td> 
    <td colname="col2"> <b><span class="uicontrol"> Den här destinationen kan användas för annonsinriktning utanför webbplatsen</span></b> </td> 
-   <td colname="col3">Dessa begränsningar används vanligtvis med När du har valt det här alternativet kan du inte: 
+   <td colname="col3">När du väljer det här alternativet kan du inte: 
     <ul id="ul_B9352FF5282C481BA3A24C581217A156"> 
      <li id="li_0F89583A603D4CD8804724954CFD52C6">Lägg till egenskaper i segment som är mappade till mål som återanvänder användare på andra webbplatser. </li> 
      <li id="li_ABDD8BEDE9AF411695C7BDF9AE522BA7">Mappa segment som skapats med en egenskap från datakällan till mål som återanvänder användare på andra webbplatser. </li> 
