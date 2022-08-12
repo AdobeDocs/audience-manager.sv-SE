@@ -1,17 +1,17 @@
 ---
 description: Om du vill skapa en ny datakälla går du till Målgruppsdata > Datakällor > Lägg till ny och slutför stegen för varje avsnitt som beskrivs här. Administratörsbehörighet krävs för att skapa en datakälla.
 keywords: datakällor;hantera datakälla;målgruppshanterarens datakälla
-seo-description: Om du vill skapa en ny datakälla går du till Målgruppsdata > Datakällor > Lägg till ny och slutför stegen för varje avsnitt som beskrivs här. Administratörsbehörighet krävs för att skapa en datakälla.
-seo-title: Skapa en datakälla
+seo-description: To create a new data source, go to Audience Data > Data Sources > Add New and complete the steps for each section described here. Administrator permissions are required to create a data source.
+seo-title: Create a Data Source
 solution: Audience Manager
 title: Hantera datakällor
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
-feature: Datakällor
+feature: Data Sources
 exl-id: 1c20988e-4a09-4d56-b454-d48b75eed1ce
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 6ec76227dd8c7581550c3d95e24fc5b6a4b01093
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 2%
+source-wordcount: '389'
+ht-degree: 0%
 
 ---
 
@@ -19,46 +19,50 @@ ht-degree: 2%
 
 ## Skapa en [!UICONTROL Data Source] {#create-data-source}
 
-Om du vill skapa en ny [!UICONTROL data source] går du till **[!UICONTROL Audience Data > Data Sources > Add New]** och slutför stegen för varje avsnitt som beskrivs här. Administratörsbehörigheter krävs för att skapa en [!UICONTROL data source].
+Skapa en ny [!UICONTROL data source], gå till **[!UICONTROL Audience Data > Data Sources > Add New]** och slutföra stegen för varje avsnitt som beskrivs här. Administratörsbehörighet krävs för att skapa en [!UICONTROL data source].
 
 <!-- create-datasource.xml -->
 
 >[!TIP]
 >
->Mer information om de olika kontrollerna finns i [Inställningar för datakälla och Menyalternativ](../features/datasources-list-and-settings.md#settings-menu-options).
+>Se [Inställningar för datakälla och menyalternativ](../features/datasources-list-and-settings.md#settings-menu-options) för beskrivningar av dessa olika kontroller.
 
 ## [!UICONTROL Data Source] Detaljer {#details}
 
-Så här slutför du avsnittet [!UICONTROL Data Source Details]:
+Slutför [!UICONTROL Data Source Details] avsnitt:
 
 1. Namnge [!UICONTROL data source].
-1. *(Valfritt)* Beskriv  [!UICONTROL data source]. En kortfattad beskrivning hjälper dig att definiera rollen eller syftet med [!UICONTROL data source].
-1. Ange en [!UICONTROL integration code]. I allmänhet är [!UICONTROL integration codes] valfritt. De krävs när du vill:
+1. *(Valfritt)* Beskriv [!UICONTROL data source]. En kortfattad beskrivning hjälper dig att definiera rollen eller syftet med [!UICONTROL data source].
+1. Ange en [!UICONTROL integration code]. I allmänhet [!UICONTROL integration codes] är valfria. De krävs när du vill:
 
-   * [Skapa en datakälla](../features/profile-merge-rules/merge-rules-start.md#create-data-source) för olika enheter.
-   * Använd [Adobe Experience Platform identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html).
-   * Arbeta med [regler för profilsammanslagning](../features/profile-merge-rules/merge-rules-start.md).
+   * [Skapa en datakälla för olika enheter](../features/profile-merge-rules/merge-rules-start.md#create-data-source).
+   * Använd [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+   * Arbeta med [Regler för profilsammanslagning](../features/profile-merge-rules/merge-rules-start.md).
 
 1. Välj en **[!UICONTROL ID Type]**. [!UICONTROL ID Type] bland annat:
 
    * **[!UICONTROL Cookie]**
    * **[!UICONTROL Device Advertising ID]**
-   * **[!UICONTROL Cross-device]** (Krävs för att skapa en  [!UICONTROL Profile Merge Rule]). Observera att för vissa kunder visas **[!UICONTROL ID Definition]**-alternativen i det här valet.
+   * **[!UICONTROL Cross-device]** (Krävs för att skapa en [!UICONTROL Profile Merge Rule]). Observera att för vissa kunder visas **[!UICONTROL ID Definition]** alternativ.
 
-1. Välj ett **[!UICONTROL ID Definition]**-alternativ. Alternativen är:
+   >[!NOTE]
+   >
+   >För varje organisation som har etablerats för Audience Manager och Experience Platform, även om du inte har segmentdelning mellan de två apparna, när du skapar en datakälla för olika enheter, en motsvarande [identity namespace](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#manage-namespaces) skapas i Experience Platform.
+
+1. Välj en **[!UICONTROL ID Definition]** alternativ. Alternativen är:
 
    * **[!UICONTROL Person]**
    * **[!UICONTROL Household]**
 
 ## [!UICONTROL Data Export Controls] {#export-controls}
 
-[Dataexportkontroller ](../features/data-export-controls.md) är valfria klassificeringsregler som du kan tillämpa på en  [!UICONTROL data source] och  [!UICONTROL destination]. De förhindrar dig från att skicka data till en [!UICONTROL destination] när den åtgärden bryter mot en datasekretess eller användaravtal. Hoppa över det här avsnittet om du inte använder [!UICONTROL Data Export Controls].
+[Dataexportkontroller](../features/data-export-controls.md) är valfria klassificeringsregler som du kan tillämpa på [!UICONTROL data source] och [!UICONTROL destination]. De förhindrar att du skickar data till en [!UICONTROL destination] när den åtgärden bryter mot en datasekretess eller ett användningsavtal. Hoppa över det här avsnittet om du inte använder det [!UICONTROL Data Export Controls].
 
 ## [!UICONTROL Data Source] Inställningar {#settings}
 
-Dessa inställningar avgör hur en [!UICONTROL data source] identifieras, används och delas. Du kan även aktivera felrapportering för inkommande datafiler. Så här slutför du avsnittet [!UICONTROL Data Source Settings]:
+Dessa inställningar avgör hur [!UICONTROL data source] identifieras, används och delas. Du kan även aktivera felrapportering för inkommande datafiler. Slutför [!UICONTROL Data Source Settings] avsnitt:
 
-1. Markera en [!UICONTROL Data Source Setting]-kryssruta om du vill använda ett alternativ i [!UICONTROL data source].
+1. Välj en [!UICONTROL Data Source Setting] kryssruta för att använda ett alternativ på [!UICONTROL data source].
 2. Klicka på **[!UICONTROL Save]**.
 
 ## Ta bort en datakälla {#delete-data-source}
@@ -71,14 +75,14 @@ Ta bort en [!UICONTROL data source] som du inte längre behöver.
 >
 >Observera följande begränsningar:
 >
->* Du kan inte ta bort en [aktiv publik eller synkroniserad egenskap för datakälla](../features/traits/client-activity-synced-audience-traits.md).
->* För kunder som använder Adobe Analytics: Audience Manager tillåter inte att du tar bort datakällor som skapats automatiskt från [!DNL Analytics]-rapportsviterna. Använd [bastjänsten](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services-landing.html) för att ta bort mappningen för dessa datakällor.
+>* Du kan inte ta bort en [Synkroniserat varumärke för aktiv publik eller datakälla](../features/traits/client-activity-synced-audience-traits.md).
+>* För kunder som använder Adobe Analytics: Audience Manager tillåter inte att du tar bort datakällor som skapats automatiskt från [!DNL Analytics] rapportsviter. Använd [Bastjänst](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services-landing.html) för att ta bort mappningen för dessa datakällor.
 
 
 1. Klicka på **[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**.
 1. Markera kryssrutan bredvid en eller flera datakällor.
-Du kan använda rutan [!UICONTROL Search] för att hitta de önskade datakällorna om du har en lång lista.
-1. Klicka på ![](assets/icon_trash.png) och bekräfta sedan borttagningen.
+Du kan använda [!UICONTROL Search] för att hitta de önskade datakällorna om du har en lång lista.
+1. Klicka  ![](assets/icon_trash.png)bekräftar du sedan borttagningen.
 
 
 >[!MORELIKETHIS]
