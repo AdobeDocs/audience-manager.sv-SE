@@ -8,9 +8,9 @@ title: Kunddataflöden
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 feature: Customer Data Feeds
 exl-id: 118c4225-3b57-4a02-ae05-2fcbf3e5d743
-source-git-commit: e85dea581e1e7fee2fce0854dc094ed763df8160
+source-git-commit: 89137248aa47573f5b65e387a152f651419da827
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1989'
 ht-degree: 1%
 
 ---
@@ -48,6 +48,10 @@ avsnitten nedan och [Vanliga frågor om kunddataflöden](../faq/faq-cdf.md) kan 
 
 Listar och definierar dataelement och arrayer i en [!UICONTROL CDF] fil, efter utseendeordning. Definitionerna innehåller datatyper, men den här informationen ingår inte i en [!UICONTROL CDF] -fil.
 
+>[!IMPORTANT]
+>
+>Händelsepixlar exkluderas som standard i CDF-konfigurationer. Se till att du anger i din begäran till kundtjänst om du vill att händelsepixlar ska inkluderas i dina CDF-filer. Varje händelsepixel fylls i som en unik rad i dina CDF-filer.
+
 ## Definitioner {#definitions}
 
 A [!UICONTROL CDF] filen innehåller några eller alla fält som definieras nedan. Mer information om intern filordning finns i [Filstruktur för kunddatafeed](#cdf-file-structure).
@@ -78,7 +82,7 @@ A [!UICONTROL CDF] filen innehåller några eller alla fält som definieras neda
   <tr> 
    <td colname="col1"> <p><code> Container ID</code> </p> </td> 
    <td colname="col2"> <p>Numeriskt </p> </td> 
-   <td colname="col3"> <p>ID:t för behållaren som aktiverar ID-synkronisering. </p> </td> 
+   <td colname="col3"> <p>ID:t för behållaren som aktiverar ID-synkronisering. Det här fältet fylls bara i om du anger behållar-ID i <i>d_nsid</i> -fält i webbplatsimplementeringen. I annat fall inkluderas inte standardvärdet 0 i CDF-filer. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Realized Traits</code> </p> </td> 
