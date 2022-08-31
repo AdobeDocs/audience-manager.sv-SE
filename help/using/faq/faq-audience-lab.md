@@ -1,28 +1,22 @@
 ---
 description: Frågor och svar om Audience Lab-funktionen.
-seo-description: Frågor och svar om Audience Lab-funktionen.
-seo-title: Vanliga frågor om Audience Lab
+seo-description: Frequently asked questions about the Audience Lab feature.
+seo-title: Audience Lab FAQ
 solution: Audience Manager
 title: Vanliga frågor om Audience Lab
 uuid: b1daf99d-af60-4f65-987d-794a6d45d566
-feature: 'Audience Lab '
+feature: Audience Lab
 exl-id: 25bdabb5-2ba8-45d2-81ca-05c0590d7d96
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 98%
+source-wordcount: '325'
+ht-degree: 94%
 
 ---
 
 # Vanliga frågor om Audience Lab{#audience-lab-faq}
 
 Frågor och svar om Audience Lab-funktionen.
-
-<!-- 
-
-audience-lab-faq.xml
-
- -->
 
 <br>
 
@@ -54,6 +48,6 @@ I det här fallet räknas det som tre konverteringar i [!UICONTROL Audience Lab]
 
 Mer information om hur du använder [!UICONTROL Audience Lab] med [!UICONTROL RBAC]- behörigheter finns i [Skapa testgrupp för segment](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups).
 
-**Kan jag använda [!UICONTROL Audience Lab] tillsammans med [!UICONTROL Profile Link Device Graph] och externa enhetsdiagram ([Adobe Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/home.html), Tapad Device Graph, Liveramp Device Graph)?**
+**Kan jag använda [!UICONTROL Audience Lab] tillsammans med [!UICONTROL Profile Link Device Graph] och externa enhetsdiagram (Tapad Device Graph, Liveramp Device Graph)?**
 
 För närvarande kan [!UICONTROL Audience Lab] bara dela upp segmentpopulationer efter enheter som är anslutna till en kvalificerande enhet när du använder [!UICONTROL Profile Link Device Graph]. Vi arbetar med att lägga till stöd i [!UICONTROL Audience Lab] för andra enhetsdiagram och kommer att meddela när vi gör det.

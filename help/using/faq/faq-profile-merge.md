@@ -1,17 +1,17 @@
 ---
 description: Svar på vanliga frågor om regler för profilsammanslagning och enhetsdiagram.
 keywords: Organisations-ID
-seo-description: Svar på vanliga frågor om regler för profilsammanslagning och enhetsdiagram.
-seo-title: Vanliga frågor om regler för profilsammanslagning och enhetsdiagram
+seo-description: Answers to common Profile Merge Rule and device graph questions.
+seo-title: Profile Merge Rules and Device Graph FAQ
 solution: Audience Manager
 title: Vanliga frågor om regler för profilsammanslagning och enhetsdiagram
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
-feature: Sammanfoga profil
+feature: Profile Merge
 exl-id: 03ad79b7-a111-437e-82c5-c7406bd33c39
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 85%
+source-wordcount: '1530'
+ht-degree: 82%
 
 ---
 
@@ -31,13 +31,13 @@ Ett enhetsdiagram är en uppsättning ID-mappningar som definierar grupper med a
 
 **Vad är ett externt enhetsdiagram?**
 
-Ett externt enhetsdiagram är ett enhetsdiagram i [!DNL Audience Manager] som inte enbart har skapats av era egna enhetsövergripande datakällor. När du t.ex. skapar en [regel för profilsammanslagning](../features/profile-merge-rules/merge-rules-start.md) och väljer [!UICONTROL Co-op Device Graph] eller enhetsdiagram från tredje part, arbetar du med ett externt enhetsdiagram. Se [Enhetsalternativ](../features/profile-merge-rules/merge-rule-definitions.md#device-options).
+Ett externt enhetsdiagram är ett enhetsdiagram i [!DNL Audience Manager] som inte enbart har skapats av era egna enhetsövergripande datakällor. När du till exempel skapar en [Sammanfogningsregel för profil](../features/profile-merge-rules/merge-rules-start.md) och välj alternativ för enhetsdiagram från tredje part arbetar du med ett externt enhetsdiagram. Se [Enhetsalternativ](../features/profile-merge-rules/merge-rule-definitions.md#device-options).
 
  
 
 **Vilka är några vanliga användningsområden för externa enhetsdiagram i [!UICONTROL Profile Merge Rule]?**
 
-Det främsta målet med att använda ett enhetsdiagram i en [!UICONTROL Profile Merge Rule] är att utvärdera och kvalificera flera enheter som tillhör en enskild person eller ett hushåll för ett visst segment. Själva segmentet kan ha flera användningsområden, till exempel att förse en målgrupp av potentiella kunder med en annons som hanteras av en DSP eller för att personalisera en kunds webbplatsupplevelse via en personaliseringsplattform på webbplatsen. Se [Användningsexempel för externt enhetsdiagram](../features/profile-merge-rules/external-graph-use-cases.md).
+Det främsta målet med att använda ett enhetsdiagram i en [!UICONTROL Profile Merge Rule] är att utvärdera och kvalificera flera enheter som tillhör en enskild person eller ett hushåll för ett visst segment. Själva segmentet kan ha flera användningsområden, till exempel för en målgrupp med potentiella kunder med en annons som betjänas av en DSP eller personalisering av en kunds upplevelse på plats via en personaliseringsplattform på plats. Se [Användningsexempel för externt enhetsdiagram](../features/profile-merge-rules/external-graph-use-cases.md).
 
  
 
@@ -265,7 +265,7 @@ I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profil
 
 Kontrollera att du uppfyller följande krav för att se till att Audience Manager-instansen och destinationerna är korrekt integrerade med olika enhets-ID, t.ex. Adobe Campaign:
 
-1. Granska den profilkopplingsregel som används av de segment som är mappade till ditt Adobe Campaign-deklarerade ID-mål. Regeln för profilsammanslagning måste använda alternativet [!UICONTROL Last Authenticated Profile], så alla autentiserade profiler kan inkluderas i exporten. Om din profilkopplingsregel använder ett annat alternativ växlar du till [!UICONTROL Last Authenticated Profile].
+1. Granska den profilkopplingsregel som används av de segment som är mappade till ditt Adobe Campaign-deklarerade ID-mål. Regeln för profilsammanslagning måste använda [!UICONTROL Last Authenticated Profile] så att alla autentiserade profiler kan inkluderas i exporten. Om du använder ett annat alternativ för profilkopplingsregeln växlar du till [!UICONTROL Last Authenticated Profile].
 2. Markera datakällan för det deklarerade Adobe Campaign-ID:t i inställningarna för profilkopplingsregeln.
 
 >[!NOTE]

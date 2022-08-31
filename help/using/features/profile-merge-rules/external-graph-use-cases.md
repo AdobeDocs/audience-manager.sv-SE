@@ -1,30 +1,29 @@
 ---
-description: Recommendations och använd exempel för prospektering, återannonsering och personalisering för okända användare med ett externt enhetsdiagram. Ett externt enhetsdiagram definieras som ett enhetsdiagram som är skilt från Audience Manager. Detta omfattar Adobe Experience Cloud Device Co-op och andra integreringar som Adobe har med tredjepartsföretag som arbetar med deterministiska eller sannolika enhetsgrafer.
-seo-description: Recommendations och använd exempel för prospektering, återannonsering och personalisering för okända användare med ett externt enhetsdiagram. Ett externt enhetsdiagram definieras som ett enhetsdiagram som är skilt från Audience Manager. Detta omfattar Adobe Experience Cloud Device Co-op och andra integreringar som Adobe har med tredjepartsföretag som arbetar med deterministiska eller sannolika enhetsgrafer.
-seo-title: Användningsexempel för externt enhetsdiagram
+description: Recommendations och använd exempel för prospektering, återannonsering och personalisering för okända användare med ett externt enhetsdiagram. Ett externt enhetsdiagram definieras som ett enhetsdiagram som är skilt från Audience Manager. Detta inkluderar integreringar som Adobe har med tredjepartsföretag som arbetar med deterministiska eller sannolika enhetsgrafer.
+seo-description: Recommendations and use cases for prospecting, retargeting, and personalization for unknown users with an external device graph. An external device graph is defined as a device graph that is separate from Audience Manager. This includes integrations Adobe has with third-party deterministic or probabilistic device graph companies.
+seo-title: External Device Graph Use Cases
 solution: Audience Manager
 title: Användningsexempel för externt enhetsdiagram
 uuid: f4bc822d-39d2-4680-90ed-7ee2ead6db6f
 feature: Profile Merge
 exl-id: 657aecfd-7fa3-466e-8331-c49cc921e3a9
-translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 5%
+source-wordcount: '292'
+ht-degree: 7%
 
 ---
 
 # Användningsexempel för externt enhetsdiagram {#external-device-graph-use-cases}
 
-Recommendations och använd exempel för prospektering, återannonsering och personalisering för okända användare med ett externt enhetsdiagram. Ett externt enhetsdiagram definieras som ett enhetsdiagram som är skilt från Audience Manager. Detta inkluderar [!DNL Adobe Experience Cloud Device Co-op] och andra integreringar som Adobe har med tredjepartsföretag för deterministiska eller sannolika enhetsgrafer.
+Recommendations och använd exempel för prospektering, återannonsering och personalisering för okända användare med ett externt enhetsdiagram. Ett externt enhetsdiagram definieras som ett enhetsdiagram som är skilt från Audience Manager. Detta inkluderar integreringar som Adobe har med tredjepartsföretag som arbetar med deterministiska eller sannolika enhetsgrafer.
 
 ## Recommendations {#recommendations}
 
-Ta en titt på alternativen [!DNL Experience Cloud Device Co-op] och enhetsdiagram från tredje part för kampanjer som:
+Överväg alternativ för enhetsdiagram från tredje part för kampanjer som:
 
 * Har låg autentiseringsnivå över sina digitala resurser. Använd [!UICONTROL Profile Link Device Graph option] om du har ett stort antal autentiserade användare.
-* Rikta er till stora målgrupper. [!DNL Experience Cloud Device Co-op]- och tredjepartsdiagrammen innehåller autentiserade och icke-autentiserade data.
+* Rikta er till stora målgrupper. Enhetsdiagram från tredje part innehåller autentiserade och icke-autentiserade data.
 * Segmentera autentiserade och/eller oautentiserade besökare på individ- och hushållsnivå.
 
 ![](assets/merge-rule-triangle1.png)
@@ -97,33 +96,33 @@ These strategies are designed to bring an unauthenticated or unknown user back t
  </tbody>
 </table> -->
 
-## Utökad målenhet {#audience-expansion}
+<!-- ## Expanded Device Targeting {#audience-expansion}
 
-Det här användningsexemplet visar hur du kan utöka storleken på den adresserbara publiken med korrekt personalisering mellan olika enheter via [!DNL Adobe Co-Op Device Graph] eller andra [!DNL External Device Graphs].
+This use case exemplifies how you can expand the size of your addressable audience with accurate cross-device personalization, through [!DNL External Device Graphs].
 
-Låt oss säga att Jane äger tre enheter som hon regelbundet använder för att söka efter semesterpaket: hennes bärbara dator ([!DNL Device 1]), hennes smarttelefon ([!DNL Device 2]) och hennes surfplatta ([!DNL Device 3]). När Jane använde den bärbara datorn sökte han efter flyg, hotell och guidade turer. När hon använde smarttelefonen och surfplattan besökte hon bara resebyråns hemsida.
+Let's say Jane owns three devices that she uses regularly to search for holiday package deals: her laptop ([!DNL Device 1]), her smartphone ([!DNL Device 2]), and her tablet ([!DNL Device 3]). While using the laptop, Jane searched for flights, hotels, and guided tours. While using the smartphone and tablet, she only visited the homepage of the travel agency.
 
-Genom att använda regeln [!UICONTROL No Cross-Device Profile] + [!UICONTROL Adobe Co-op Device Graph] kan resebyrån sammanfoga alla tre enhetsprofilerna, eftersom de är kopplade till samma ägare via [!UICONTROL Adobe Co-op Device Graph].
+By using the [!UICONTROL No Cross-Device Profile] + [!DNL External Device Graphs] rule, the travel agency can merge all three devices profiles, since they are linked to the same owner through the [!DNL External Device Graphs].
 
-![målgrupp-expansion-rule](assets/audience-expansion-rule.png)
+![audience-expansion-rule](assets/audience-expansion-rule.png)
 
-I vårt exempel har alla egenskaper som krävs för att kvalificera sig för segmentet samlats in [!DNL Device 1]. Eftersom Audience Manager kvalificerar alla enhetsprofiler som deltar i profilsammanfogningen för ett segment segmenteras nu alla Jane tre enhetsprofiler.
+In our example, the traits required to qualify for the segment have all been collected on [!DNL Device 1]. Since Audience Manager qualifies every device profile that took part in the profile merge for a segment, all of Jane's three device profiles are now segmented.
 
-Med den här regeln har enhetsdiagrammet utökat antalet enhetsprofiler som kvalificerar sig för segmentet från en till tre och gjort det möjligt för resebyrån att leverera ett enhetligt budskap till alla tre enheter som ägs av Jane.
+Through this rule, the device graph has expanded the number of device profiles which qualify for the segment from one to three and has enabled the travel agency to deliver a consistent message to all three devices owned by Jane.
 
-![målgruppsexpansion](assets/audience-expansion.png)
+![audience-expansion](assets/audience-expansion.png) -->
 
-## Avancerad målinriktning mellan enheter {#advanced-graph-expansion}
+## Avancerad målgruppsanpassning mellan enheter {#advanced-graph-expansion}
 
-Det här användningsexemplet visar hur du kan utöka målgruppsanpassningen för autentiserade besökare med enheter från ett externt enhetsdiagram eller från [!DNL Adobe Co-Op Device Graph] med hjälp av regeln **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Adobe Co-Op Device Graph]**.
+Det här användningsexemplet visar hur du kan utöka målgruppsanpassningen för autentiserade besökare med enheter från ett externt enhetsdiagram genom att använda **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]** regel.
 
-![last-device-graph](assets/last-device-coop.png)
+![last-device-graph](assets/last-profile-link.png)
 
-I exemplet nedan vill Acme Inc.-företaget inrikta sig på alla hushåll med inkomster över 100 000 USD/år som har [!DNL Acme Inc.] prenumeranter på [!DNL Data Plan A] som använder en [!DNL iPhone 7]-enhet.
+I exemplet nedan vill Acme Inc.-företaget inrikta sig på alla hushåll med inkomster över 100 000 USD/år som har [!DNL Acme Inc.] prenumeranter på [!DNL Data Plan A], som använder [!DNL iPhone 7] enhet.
 
-John använder sin iPhone 7 på Data Plan A för att autentisera på webbplatsen Acme Inc.. Samtidigt innehåller Johns [!DNL Co-Op Device Graph]-kluster ytterligare två enheter som han använder regelbundet: den här bärbara datorn ([!DNL Device 1]) och hans sekundära smarttelefon, [!DNL Device 2] (a [!DNL Samsung S7] på [!DNL Data Plan B]).
+John använder sin iPhone 7 på Data Plan A för att autentisera på webbplatsen Acme Inc.. Samtidigt är John [!DNL Profile Link Device Graph] klustret innehåller ytterligare två enheter som han använder regelbundet: hans bärbara dator ([!DNL Device 1]) och hans sekundära smartphone, [!DNL Device 2] (a [!DNL Samsung S7] på [!DNL Data Plan B]).
 
-Genom att använda **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Adobe Co-Op Device Graph]** kan [!DNL Acme Inc.] leverera personaliserade meddelanden till alla tre enheter från Johns enhetsdiagramkluster, även om bara en av dem ursprungligen kvalificerar sig för segmentet.
+Genom att använda **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]**, [!DNL Acme Inc.] kan leverera personaliserade meddelanden till alla tre enheter från Johns grafikkluster, även om bara en av dem ursprungligen kvalificerar sig för segmentet.
 
 ![avancerad graf-expansion](assets/advanced-device-graph-expansion.png)
 
