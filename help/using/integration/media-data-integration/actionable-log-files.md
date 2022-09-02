@@ -8,7 +8,7 @@ title: Verkställbara loggfiler
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 exl-id: bd499931-4e02-4f64-82ba-46ef7c4ffd3c
-source-git-commit: 869bbe657072255e5ea3f0e68294f8f0e6cc966a
+source-git-commit: b3f97cfbbd5167f03a6951fcc571368e4a0d15a4
 workflow-type: tm+mt
 source-wordcount: '1596'
 ht-degree: 2%
@@ -62,7 +62,8 @@ Signalerna är [minsta dataenheter](../../reference/signal-trait-segment.md) in 
 >[!IMPORTANT]
 >
 >[!UICONTROL Actionable Log Files] stöds för följande annonsservrar:
-> 
+> <br>
+>
 > * [Google Campaign Manager](#dcm-logs-signals)
 > * [Google Ad Manager](#ad-manager-logs-signals)
 > * [Adobe Advertising Cloud, Flashtalk och Sizmek](#generic-logs-signals)
@@ -202,13 +203,14 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 >
 >Händelsens tidsstämpel finns i [!DNL Google Ad Manager] loggarna respekteras och skickas till [!UICONTROL Data Collection Servers].
 >
+>
 >* Om en tidsstämpel inte är tillgänglig för en datarad i [!DNL Google Ad Manager] loggfil, används tiden för `HTTP` anrop som händelsens tidsstämpel.
 >* Om dataraden i [!DNL Google Ad Manager] loggfilen innehåller en felaktig tidsstämpel. Hela raden ignoreras.
 
 
 <br> 
 
-### Signaler som kan användas från Adobe Advertising Cloud, Flashtalk och Sizmek-annonsservrar {#generic-logs-signals}
+### Användbara signaler från Adobe Advertising Cloud, Flashtalk och Sizmek annonsserverloggar {#generic-logs-signals}
 
 Först måste ni lagra era annonsserverloggar i våra Amazon S3-bucket. Läs för att uppnå detta [Datafiler för Audience Optimization-rapporter och åtgärdsloggfiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md) *och* kontakta [!DNL Audience Manager] konsult. Tabellen innehåller en lista med de användbara signalerna från annonsserverns loggfiler:
 
