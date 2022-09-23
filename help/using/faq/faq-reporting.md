@@ -1,21 +1,20 @@
 ---
 description: Vanliga frågor och problem som rör rapportering.
-seo-description: Vanliga frågor och problem som rör rapportering.
-seo-title: Vanliga frågor om rapportering
+seo-description: Common reporting-related questions and issues.
+seo-title: Reporting FAQ
 solution: Audience Manager
 title: Vanliga frågor om rapportering
 uuid: 78cd6c86-8a4a-4748-ab71-b6e8d6078c94
 feature: Reporting Reference
 exl-id: 1e6531b2-bb39-4056-9d5e-164f50955f99
-translation-type: tm+mt
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+source-git-commit: 3bddd51582f3f8c46908dba5c5ac1938cb480013
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 99%
+source-wordcount: '695'
+ht-degree: 100%
 
 ---
 
-# Vanliga frågor om rapportering {#reporting-faq}
+# Vanliga frågor om rapportering{#reporting-faq}
 
 Vanliga frågor och problem som rör rapportering.
 
@@ -46,7 +45,7 @@ För att minska beräkningsbelastningen utelämnas statistiskt insignifikanta da
 
 **Om jag kör en e-postmarknadsföringskampanj, hur kan jag avgöra om omdirigerade användare kommer till min webbplats från den kampanjen eller andra källor?**
 
-Lägg till en kampanjspecifik frågesträng i webbadressen för det webbplatsavsnitt som du vill övervaka. Ställ sedan in en trait-regel som samlar in variabeln. Om till exempel webbadresen innehåller ett kampanj-ID som detta `www.test123.com/electronics?campaign=123`, kan du skapa en trait-regel som hämtar data från `h_referer`-variabeln med en trait-regel som söker efter ett sidhuvud som `h_referer = 'campaign=123'`).
+Lägg till en kampanjspecifik frågesträng i webbadressen för det webbplatsavsnitt som du vill övervaka. Ställ sedan in en trait-regel som samlar in variabeln. Om till exempel webbadresen innehåller ett kampanj-ID som detta `www.test123.com/electronics?campaign=123`, kan du skapa en trait-regel som hämtar data från `h_referer`-variabeln med en trait-regel som söker efter ett sidhuvud som `h_referer = 'campaign=123'`.
 
 <br> 
 
