@@ -1,22 +1,18 @@
 ---
-description: I den här artikeln beskrivs hur målgrupper delas mellan Audience Manager och Adobe Experience Platform
+description: Lär dig hur du aktiverar datadelning och hur målgrupper delas mellan Audience Manager och Adobe Experience Platform
 solution: Audience Manager
 title: Experience Platform segmentdelning med Audience Manager och andra Experience Cloud-lösningar
 keywords: AEP målgruppsdelning, AEP-segment, plattformssegment, segmentdelning, målgruppsdelning, delade segment, AAM AEP-segmentdelning
 feature: Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
+source-git-commit: 14e0ddd00d3a25674090ea9dbe485c77ad1d2aed
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 1%
+source-wordcount: '1862'
+ht-degree: 0%
 
 ---
 
 # Experience Platform segmentdelning med Audience Manager och andra Experience Cloud-lösningar
-
->[!NOTE]
->
-> Kontakta din säljare på Adobe för att få tillgång till den här funktionen.
 
 ## Översikt {#overview}
 
@@ -45,13 +41,39 @@ Se tabellen nedan för en översikt över användningsfall för målgruppsdelnin
 
 {style=&quot;table-layout:auto&quot;}
 
+## Kom igång - Så här aktiverar du datadelning mellan Audience Manager och Experience Platform {#enable-data-sharing-aam-aep}
+
+De två avsnitten nedan visar hur du aktiverar datadelning mellan Audience Manager och Experience Platform.
+
+### Aktivera datadelning från Audience Manager till Experience Platform {#enable-aam-to-aep-data}
+
+Om du vill skicka segment och egenskaper från Audience Manager till Experience Platform måste du skapa källkopplingen för Audience Manager i Experience Platform källkatalogen. Detta är ett självbetjäningsarbetsflöde som inte kräver medverkan av Adobe kundtjänst eller ingenjörsteam. Läs mer om hur du konfigurerar källkopplingen för Audience Manager:
+
+* [Audience Manager source](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
+* [Skapa en Adobe Audience Manager-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/audience-manager.html?lang=en)
+
+>[!IMPORTANT]
+>
+>Adobe uppmuntrar kunderna att konfigurera anslutningen utan att välja **[!UICONTROL Select all segments]** och **[!UICONTROL Select all traits]** enligt nedan. Intag av stora Audience Manager-segmentpopulationer har en direkt inverkan på det totala antalet profiler när du för första gången skickar ett Audience Manager-segment till plattformen via Audience Manager. Det innebär att om du väljer alla segment kan det eventuellt leda till ett profilantal som överskrider licensanvändningsbehörigheten.
+>
+>![Skärmbild med alternativen Markera alla segment och Markera alla egenskaper avmarkerade i arbetsflödet för anslutning till Audience Manager-källkopplingen.](/help/using/integration/integration-aep/assets/select-all-segments-traits-unchecked.png)
+
+### Aktivera datadelning från Experience Platform till Audience Manager {#enable-aep-to-aam-data}
+
+>[!NOTE]
+>
+> Kontakta din Customer Success Manager eller kundtjänst på Adobe om du vill låsa upp åtkomsten till den här funktionen.
+
+Om du vill skicka segment från Experience Platform till Audience Manager måste du kontakta kundtjänst eller en Customer Success Manager. Kundtjänst- och kundsupportteam måste registrera en biljett (se mallbiljett AAM-52354) för att kunna ansluta från Platform till Audience Manager.
+
+Dela planer för data från Platform till Audience Manager för att säkerställa att anslutningen är korrekt konfigurerad. Om du till exempel vill att regionala data ska delas för segment som skickas till Adobe Target, måste dessa uppgifter meddelas i biljetten. Datadelningsanslutningen från Experience Platform till Audience Manager upprättas inom sex arbetsdagar efter den inlämnade begäran.
+
 ## Audience Manager segment och egenskaper i Adobe Experience Platform {#aam-segments-traits-in-aep}
 
-Dina Audience Manager-egenskaper och -segment visas i Experience Platform som **Målgrupper** i segmentarbetsflödet. Mer information om segment och egenskaper för Audience Manager i Experience Platform finns i:
+När du har konfigurerat Audience Manager-källkopplingen för att importera egenskaper och segment från Audience Manager, visas Audience Manager-data i Experience Platform som **Målgrupper** i segmentarbetsflödet. Mer information om segment och egenskaper för Audience Manager i Experience Platform finns i:
 
 * [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#audiences)
 * [Användarhandbok för Experience Platform Segment Builder](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#audiences)
-* [Audience Manager Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
 
 ## Adobe Experience Platform segment i Audience Manager {#aep-segments-in-aam}
 
@@ -143,7 +165,7 @@ Följande tabell visar hur specifika dataexportetiketter mappas till kända mark
 | Denna destination kan möjliggöra en kombination med personligt identifierbar information (PII) | Kombinera med PII |
 | Den här destinationen kan användas för annonsinriktning utanför webbplatsen | Målgruppsövergripande |
 | Det här målet kan användas för annonsinriktning på plats | Annonsering på plats |
-| Det här målet kan användas för anpassning av annonser på plats | Personalization på plats |
+| Det här målet kan användas för anpassning av annonser på plats | Personalisering på plats |
 
 {style=&quot;table-layout:auto&quot;}
 
