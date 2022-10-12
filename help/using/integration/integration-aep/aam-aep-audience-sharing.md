@@ -5,9 +5,9 @@ title: Experience Platform segmentdelning med Audience Manager och andra Experie
 keywords: AEP målgruppsdelning, AEP-segment, plattformssegment, segmentdelning, målgruppsdelning, delade segment, AAM AEP-segmentdelning
 feature: Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: 14e0ddd00d3a25674090ea9dbe485c77ad1d2aed
+source-git-commit: 0245dd11de31c3139c5df5dc78100f0d3935aa2e
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ Se tabellen nedan för en översikt över användningsfall för målgruppsdelnin
 
 {style=&quot;table-layout:auto&quot;}
 
-## Kom igång - Så här aktiverar du datadelning mellan Audience Manager och Experience Platform {#enable-data-sharing-aam-aep}
+## Audience Manager segment och egenskaper i Adobe Experience Platform {#aam-segments-traits-in-aep}
 
-De två avsnitten nedan visar hur du aktiverar datadelning mellan Audience Manager och Experience Platform.
+Avsnitten nedan beskriver hur datadelning kan göras från Audience Manager till Experience Platform och hur Audience Manager-egenskaper och segment kan användas i Experience Platform.
 
 ### Aktivera datadelning från Audience Manager till Experience Platform {#enable-aam-to-aep-data}
 
@@ -58,6 +58,17 @@ Om du vill skicka segment och egenskaper från Audience Manager till Experience 
 >
 >![Skärmbild med alternativen Markera alla segment och Markera alla egenskaper avmarkerade i arbetsflödet för anslutning till Audience Manager-källkopplingen.](/help/using/integration/integration-aep/assets/select-all-segments-traits-unchecked.png)
 
+### Använd Audience Manager-egenskaper och segment i Experience Platform {#use-aam-data-in-aep}
+
+När du har konfigurerat Audience Manager-källkopplingen för att importera egenskaper och segment från Audience Manager, visas Audience Manager-data i Experience Platform som **Målgrupper** i segmentarbetsflödet. Mer information om segment och egenskaper för Audience Manager i Experience Platform finns i:
+
+* [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#audiences)
+* [Användarhandbok för Experience Platform Segment Builder](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#audiences)
+
+## Adobe Experience Platform segment i Audience Manager {#aep-segments-in-aam}
+
+I avsnitten nedan beskrivs hur du aktiverar datadelning från Experience Platform till Audience Manager och hur du använder Experience Platform-segment i Audience Manager.
+
 ### Aktivera datadelning från Experience Platform till Audience Manager {#enable-aep-to-aam-data}
 
 >[!NOTE]
@@ -68,14 +79,7 @@ Om du vill skicka segment från Experience Platform till Audience Manager måste
 
 Dela planer för data från Platform till Audience Manager för att säkerställa att anslutningen är korrekt konfigurerad. Om du till exempel vill att regionala data ska delas för segment som skickas till Adobe Target, måste dessa uppgifter meddelas i biljetten. Datadelningsanslutningen från Experience Platform till Audience Manager upprättas inom sex arbetsdagar efter den inlämnade begäran.
 
-## Audience Manager segment och egenskaper i Adobe Experience Platform {#aam-segments-traits-in-aep}
-
-När du har konfigurerat Audience Manager-källkopplingen för att importera egenskaper och segment från Audience Manager, visas Audience Manager-data i Experience Platform som **Målgrupper** i segmentarbetsflödet. Mer information om segment och egenskaper för Audience Manager i Experience Platform finns i:
-
-* [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#audiences)
-* [Användarhandbok för Experience Platform Segment Builder](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#audiences)
-
-## Adobe Experience Platform segment i Audience Manager {#aep-segments-in-aam}
+### Använd Experience Platform-segment i Audience Manager {#use-aep-data-in-aam}
 
 Segment som du skapar i Experience Platform visas i Audience Manager som signaler, egenskaper och segment, med följande dispositionsregler:
 

@@ -1,23 +1,22 @@
 ---
 description: Den utgående dataöverföringsprocessen i realtid returnerar användardata som en serie JSON-objekt som skickas in med en POST-metod.
-seo-description: Den utgående dataöverföringsprocessen i realtid returnerar användardata som en serie JSON-objekt som skickas in med en POST-metod.
-seo-title: Utgående dataöverföringar i realtid
+seo-description: The outbound real-time data transfer process returns user data as a series of JSON objects passed in with a POST method.
+seo-title: Real-Time Outbound Data Transfers
 solution: Audience Manager
 title: Utgående dataöverföringar i realtid
 uuid: 1895e818-7ab8-4569-a920-4b0a4c8b83d2
 feature: Outbound Data Transfers
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 12aee831-1a44-4cd6-aeba-7738a584dfe7
+source-git-commit: 0245dd11de31c3139c5df5dc78100f0d3935aa2e
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 2%
+source-wordcount: '674'
+ht-degree: 1%
 
 ---
 
-
 # Utgående dataöverföringar i realtid {#real-time-outbound-data-transfers}
 
-Den utgående dataöverföringsprocessen i realtid levererar användardata som en serie [!DNL JSON]-formaterade meddelanden till en målplattform.
+Den utgående dataöverföringsprocessen i realtid levererar användardata som en serie [!DNL JSON] formaterade meddelanden till en målplattform.
 
 <!-- c_outbound_json.xml -->
 
@@ -25,9 +24,9 @@ Den utgående dataöverföringsprocessen i realtid levererar användardata som e
 
 Om du vill använda den här metoden måste målplattformen uppfylla följande krav:
 
-* Den måste tillhandahålla en slutpunkt [!DNL URL] som kan skalas för att kunna ta emot ett stort antal meddelanden från Audience Manager.
-* Den måste acceptera data i [!DNL JSON]-format (`Content-type: application/json`);
-* Den måste acceptera säkra `HTTPS` dataöverföringar. [!DNL Audience Manager] skickar inte meddelanden via det osäkra  `HTTP` protokollet.
+* Den måste ange en slutpunkt [!DNL URL] som kan skalas för att kunna ta emot ett stort antal meddelanden från Audience Manager,
+* Informationen måste accepteras i [!DNL JSON] format (`Content-type: application/json`).
+* Den måste acceptera säker `HTTPS` dataöverföringar. [!DNL Audience Manager] skickar inte meddelanden via den osäkra `HTTP` -protokoll.
 
 ## Frekvens
 
@@ -43,11 +42,11 @@ Det finns inga hastighetsbegränsningar för flödet av levererade meddelanden. 
 
 ## Obligatoriska svar
 
-Som standard måste mottagarservern returnera `200 OK`-koden för att indikera att kvittot lyckades. Andra koder tolkas som fel. Detta svar förväntas inom 3 000 millisekunder. Som svar på ett fel kommer [!DNL Audience Manager] endast att göra ett nytt försök.
+Som standard måste mottagarservern returnera `200 OK` kod som anger att kvittot har slutförts. Andra koder tolkas som fel. Detta svar förväntas inom 3 000 millisekunder. Som svar på ett misslyckande, [!DNL Audience Manager] kommer endast att göra ett nytt försök.
 
 ## Parametrar
 
-Följande tabell definierar elementen i [!DNL JSON]-datafilen som du skickar till målet.
+Följande tabell definierar elementen i [!DNL JSON] datafil som du skickar till målet.
 
 <table id="table_68475F9D01ED4A44B5909234114AEDE2"> 
  <thead> 
@@ -69,7 +68,7 @@ Följande tabell definierar elementen i [!DNL JSON]-datafilen som du skickar til
    <td colname="col3"> <p>Ett ID som anger vilken typ av enhets-ID som finns i meddelandet, i egenskapen User.DataPartner_UUID. </p> 
     <ul id="ul_159306B0CF304DE0B9A9836D41263E70"> 
      <li id="li_46F9F4F9DDC34AB683AE2DF0317FBCAC">Android ID (GAID): <code> 20914</code> </li> 
-     <li id="li_57DEB2A7B9024A94A0E302EEA967AB0B">iOS-ID (IDFA): <code> 20915</code> </li>
+     <li id="li_57DEB2A7B9024A94A0E302EEA967AB0B">iOS ID (IDFA): <code> 20915</code> </li>
      <li>Webb-/cookie-ID: varierar beroende på målplattform</li>
     </ul> </td> 
   </tr> 
@@ -86,7 +85,7 @@ Följande tabell definierar elementen i [!DNL JSON]-datafilen som du skickar til
   <tr valign="top"> 
    <td colname="col1"><code><i>User_count</i></code> </td> 
    <td colname="col2"> <p>Heltal </p> </td> 
-   <td colname="col3"> <p>Totalt antal användare i <code> POST</code>-begäran. </p> </td> 
+   <td colname="col3"> <p>Totalt antal användare i <code> POST</code> begäran. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Users</i></code> </td> 
@@ -96,7 +95,7 @@ Följande tabell definierar elementen i [!DNL JSON]-datafilen som du skickar til
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_UUID</i></code> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>UUID för <span class="keyword"> Audience Manager</span>. </p> </td> 
+   <td colname="col3"> <p>The <span class="keyword"> Audience Manager</span> UUID. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>User.DataPartner_UUID</i></code> </td> 
@@ -106,7 +105,7 @@ Följande tabell definierar elementen i [!DNL JSON]-datafilen som du skickar til
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_Regions</i></code> </td> 
    <td colname="col2"> Array </td> 
-   <td colname="col3"> Det <span class="keyword"> Audience Manager</span>-region-ID där den här enheten har visats. Om enheten till exempel hade någon aktivitet i Paris (Europa) skulle region-ID:t vara <code> 6</code>. Se <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> ID:n för DCS-regionen, platser och värdnamn</a>. </td> 
+   <td colname="col3"> The <span class="keyword"> Audience Manager</span> region-ID där vi har sett den här enheten. Om enheten till exempel har någon aktivitet i Paris (Europa) blir region-ID:t <code> 6</code>. Se <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> DCS-region-ID, -platser och -värdnamn</a>. </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segments</i></code> </td> 
@@ -114,7 +113,7 @@ Följande tabell definierar elementen i [!DNL JSON]-datafilen som du skickar til
    <td colname="col3"> <p>En array med segmentobjekt. För realtidsmeddelanden innehåller arrayen alla segment som användaren tillhör. För gruppmeddelanden innehåller arrayen endast segmentändringar sedan den senaste gruppen.</p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"><code><i>Segmnent.Segment_ID</i></code> </td> 
+   <td colname="col1"><code><i>Segment.Segment_ID</i></code> </td> 
    <td colname="col2"> <p>Heltal </p> </td> 
    <td colname="col3"> <p>Identifieraren för segmentet. I de flesta fall är detta det segment-ID som genereras av Audience Manager (ett heltal). I vissa fall, om målplattformen tillåter det, kan kunderna definiera segmentidentifieraren i användargränssnittet i Audience Manager (öppet textfält), som sedan återspeglas i den här egenskapen. </p> </td> 
   </tr> 
@@ -131,7 +130,7 @@ Följande tabell definierar elementen i [!DNL JSON]-datafilen som du skickar til
      <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">Borttagen från ett segment baserat på segmentets <a href="../../../features/traits/segment-ttl-explained.md"> time-to-live-intervall</a>. </li> 
      <li id="li_F48D1052BA2B45108225641292CC748D">Flyttad till ett inaktivt läge om de inte har setts de senaste 120 dagarna. </li>
      <li>Borttagen på grund av en begäran om sekretessändring (dvs. <span class="keyword"> GDPR</span>)</li>
-    </ul> <p>Alla partner-ID:n som synkroniseras med ett <span class="keyword"> Audience Manager</span>-ID får flaggan <code> "Status":"0"</code> när en användare är osegmenterad. </p> </td> 
+    </ul> <p>Alla partner-ID:n som synkroniseras med en <span class="keyword"> Audience Manager</span> ID:t får <code> "Status":"0"</code> flagga när en användare är osegmenterad. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.DateTime</i></code> </td> 
@@ -143,7 +142,7 @@ Följande tabell definierar elementen i [!DNL JSON]-datafilen som du skickar til
 
 ## Säkerhet
 
-Du kan skydda din utgående dataöverföringsprocess i realtid genom att [signera HTTP-begäranden](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md) med privata nycklar eller genom att låta [!DNL Audience Manager] autentisera via protokollet [OAuth 2.0](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md).
+Du kan skydda din utgående dataöverföringsprocess i realtid genom att [signera HTTP-begäranden](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md) med privata nycklar eller genom att [!DNL Audience Manager] autentisera via [OAuth 2.0](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md) -protokoll.
 
 ## Begäran
 
