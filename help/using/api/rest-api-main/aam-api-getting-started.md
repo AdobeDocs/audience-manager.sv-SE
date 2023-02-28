@@ -1,5 +1,5 @@
 ---
-description: Information om allmänna krav, autentisering, valfria frågeparametrar, begäran-URL:er och andra referenser.
+description: Information om allmänna krav, autentisering, valfria frågeparametrar, URL:er för förfrågningar och andra referenser.
 seo-description: Information about general requirements, authentication, optional query parameters, request URLs, and other references.
 seo-title: Getting Started with REST APIs
 solution: Audience Manager
@@ -10,7 +10,7 @@ exl-id: f7d5e52d-ad21-4020-a299-d440f954c51a
 source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
 workflow-type: tm+mt
 source-wordcount: '1910'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 

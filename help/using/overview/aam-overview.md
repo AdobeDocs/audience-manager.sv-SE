@@ -1,6 +1,6 @@
 ---
 description: Information om historiken bakom Adobe Audience Manager, vilka typer av data som samlas in, segmentering, rapportering med mera.
-landing-page-description: Information om Audience Manager historik, typer av insamlade data, segmentering, rapportering och mycket annat.
+landing-page-description: Information om Audience Manager-historik, typer av insamlade data, segmentering, rapportering och annat.
 seo-title: Audience Manager Overview
 solution: Audience Manager
 title: Översikt över Audience Manager
@@ -9,8 +9,8 @@ feature: Overview
 exl-id: e96d8c05-7082-4f17-936d-f1896e665c8e
 source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 83%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

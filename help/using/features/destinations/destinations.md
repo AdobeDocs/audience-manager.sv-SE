@@ -1,17 +1,17 @@
 ---
-description: Upptäck fördelar, typer och användning av destinationer - alla system från tredje part, som en annonsserver eller DSP, där du delar data. Använd Destination Builder för att skapa och hantera cookies, URL-adresser eller server-till-server-mål.
+description: Upptäck fördelar, typer och användning av destinationer – alla system från tredje part, som t.ex. en annonsserver eller DSP, där du delar data. Använd Destination Builder för att skapa och hantera cookies, URL-adresser eller server-till-server-mål.
 keywords: integrationskod, mål, målöversikt, mål, mål, mål, mål, mål, mål, mål, mål, mål, mål, mål, mål
-landing-page-description: Upptäck fördelar, typer och användning av destinationer - alla system från tredje part, som en annonsserver eller DSP, där du delar data. Använd Destination Builder för att skapa och hantera cookies, URL-adresser eller server-till-server-mål.
+landing-page-description: Upptäck fördelar, typer och användning av destinationer – alla system från tredje part, som t.ex. en annonsserver eller DSP, där du delar data. Använd Destination Builder för att skapa och hantera cookies, URL-adresser eller server-till-server-mål.
 seo-title: Destinations
 solution: Audience Manager
-title: 'Destinationer '
+title: Destinationer
 uuid: 5c7dbdec-f73f-46fe-9f12-7685e8d7334f
 feature: Destination Basics
 exl-id: f880bb18-057a-494d-82bf-69fc9f34781f
 source-git-commit: 865800eb076811db38aec8e98714ad9712804f77
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
