@@ -11,8 +11,8 @@ feature: Destination Basics
 exl-id: f880bb18-057a-494d-82bf-69fc9f34781f
 source-git-commit: 5d62ecabfe66faa024f8e89149e47dd76d1bba86
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 14%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
