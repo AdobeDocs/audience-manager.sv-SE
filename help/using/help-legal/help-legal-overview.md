@@ -1,21 +1,20 @@
 ---
 description: Resurser för kundtjänst och juridiska frågor som rör användningen av denna produkt och dokumentationen.
-seo-description: Resurser för kundtjänst och juridiska frågor som rör användningen av denna produkt och dokumentationen.
-seo-title: Hjälp och juridik
+seo-description: Resources for customer care and legal issues related to the use of this product and documentation.
+seo-title: Help and Legal
 solution: Audience Manager
 title: Hjälp och juridik
 uuid: 522c9b17-3712-4619-9197-15d50eb97045
 feature: Support
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: a083ebff-9371-46fc-9c53-1d20be286609
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '102'
 ht-degree: 100%
 
 ---
 
-
-# Hjälp och juridik {#help-and-legal}
+# Hjälp och juridik{#help-and-legal}
 
 Resurser för kundtjänst och juridiska frågor som rör användningen av denna produkt och dokumentationen.
 

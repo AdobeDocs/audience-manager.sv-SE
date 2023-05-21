@@ -1,17 +1,16 @@
 ---
 description: Vad du ska göra när kalkylbladen returnerar ett fel eller när gruppbegäran misslyckas.
-seo-description: Vad du ska göra när kalkylbladen returnerar ett fel eller när gruppbegäran misslyckas.
-seo-title: Felsökningstips för verktygen för satsvis hantering
+seo-description: What to do when the worksheets return an error or your bulk request fails.
+seo-title: Troubleshooting Tips for Bulk Management Tools
 solution: Audience Manager
 title: Felsökningstips för verktygen för satsvis hantering
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 feature: BAAAM
 exl-id: 4f1c501c-2e28-4ce5-829f-4d81d10cdccd
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 4%
+source-wordcount: '382'
+ht-degree: 3%
 
 ---
 
@@ -29,7 +28,7 @@ Vad du ska göra när kalkylbladen returnerar ett fel eller när gruppbegäran m
 
 >[!NOTE]
 >
->[RBAC-gruppbehörigheter ](../../features/administration/administration-overview.md) som tilldelats i  [!DNL Audience Manager] användargränssnittet respekteras i  [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som har tilldelats i [!DNL Audience Manager] Gränssnittet respekteras i [!UICONTROL Bulk Management Tools].
 
 Faktorer som hög nätverkstrafik, serveranvändning och stora datauppsättningar kan göra att en gruppbegäran misslyckas eller tar slut. Om ett problem uppstår slutar kalkylbladet att skriva data och ett felmeddelande visas. När detta händer bör du:
 
@@ -53,7 +52,7 @@ I följande tabell visas några vanliga problem som du kan stöta på när du g�
   <tr> 
    <td colname="col1"> <b>Autentiseringsfel</b> </td> 
    <td colname="col2"> 
-    <b>Uppdatera till den senaste versionen av Microsoft Excel</b>: När en ny version av Microsoft Excel släpps och du använder en äldre version kan du råka ut för ett autentiseringsfel i kalkylbladet för grupphantering. Uppdatera till den senaste versionen av Microsoft Excel för att lösa autentiseringsfelet.
+    <b>Uppdatera till den senaste versionen av Microsoft Excel</b>: När en ny version av Microsoft Excel släpps och du använder en äldre version, kan du råka ut för ett autentiseringsfel i kalkylbladet för grupphantering. Uppdatera till den senaste versionen av Microsoft Excel för att åtgärda autentiseringsfelet.
 </td> 
   </tr> 
   <tr> 
@@ -78,4 +77,4 @@ I följande tabell visas några vanliga problem som du kan stöta på när du g�
 
 ## Felmeddelanden
 
-Ibland kan du få felmeddelanden när du gör gruppändringar. Information om hur du tolkar felmeddelandet finns i [Svarskoder definierade](/help/using/api/rest-api-main/aam-api-getting-started.md) i API-dokumentationen.
+Ibland kan du få felmeddelanden när du gör gruppändringar. Information om hur du tolkar felmeddelandet finns i [Definierade svarskoder](/help/using/api/rest-api-main/aam-api-getting-started.md) i vår API-dokumentation.

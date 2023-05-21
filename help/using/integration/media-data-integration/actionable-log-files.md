@@ -208,7 +208,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 >* Om dataraden i [!DNL Google Ad Manager] loggfilen innehåller en felaktig tidsstämpel. Hela raden ignoreras.
 
 
-<br> 
+<br>
 
 ### Användbara signaler från Adobe Advertising Cloud, Flashtalk och Sizmek annonsserverloggar {#generic-logs-signals}
 

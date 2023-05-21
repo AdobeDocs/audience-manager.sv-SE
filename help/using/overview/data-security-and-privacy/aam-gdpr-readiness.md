@@ -1,20 +1,19 @@
 ---
 description: GDPR-vägledning för Audience Manager-kunder
-seo-description: GDPR-vägledning för Audience Manager-kunder
-seo-title: GDPR-vägledning för Audience Manager-kunder
+seo-description: GDPR Readiness Guidance for Audience Manager Customers
+seo-title: GDPR Readiness Guidance for Audience Manager Customers
 solution: Audience Manager
 title: GDPR-vägledning för Audience Manager-kunder
 feature: Data Governance & Privacy
 exl-id: 353b9035-20f3-41ff-819c-71f161e6b1e1
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '461'
 ht-degree: 99%
 
 ---
 
-# GDPR-vägledning för Audience Manager-kunder (personuppgiftsansvarig) {#gdpr-readiness-guidance}
+# GDPR-vägledning för Audience Manager-kunder (Datakontroller) {#gdpr-readiness-guidance}
 
 Audience Manager rekommenderar att man agerar proaktivt när det gäller datastyrning och organisationsberedskap. Det hjälper er att se till att era kunddata organiseras för processer som rör förfrågningar om åtkomst eller radering, att era team kan hantera dessa förfrågningar och att era kunder (registrerade) får en positiv, annorlunda upplevelse av ert varumärke.
 

@@ -1,23 +1,22 @@
 ---
-description: Det regionala DCS-servervärdnamnet krävs för att anropa DCS. Detta beror på att DCS lagrar information i datacenter som ligger geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel DCS, men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en DCS-begäran måste du matcha region-ID:t med motsvarande regionalt värdnamn och skapa frågan med rätt värdnamn.
-seo-description: Det regionala DCS-servervärdnamnet krävs för att anropa DCS. Detta beror på att DCS lagrar information i datacenter som ligger geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel DCS, men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en DCS-begäran måste du matcha region-ID:t med motsvarande regionalt värdnamn och skapa frågan med rätt värdnamn.
-seo-title: ID:n för DCS-regioner, -platser och -värdnamn
+description: Det regionala DCS-servervärdnamnet krävs för att anropa DCS. Detta beror på att DCS lagrar information i datacenter som ligger geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel DCS, men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en DCS-begäran måste du matcha region-ID:t med dess motsvarande regionala värdnamn och skapa frågan med rätt värdnamn.
+seo-description: The regional DCS server host name is required to make calls to the DCS. This is because the DCS stores information in data centers that are geographically close to site visitors. Your queries will work if you send them to the wrong DCS, but these calls are inefficient and can delay the response. To make a DCS request, match the region ID to its corresponding regional host name and form your query with the proper host name.
+seo-title: DCS Region IDs, Locations, and Host Names
 solution: Audience Manager
 title: ID:n för DCS-regioner, -platser och -värdnamn
 uuid: ad150ffe-4583-472b-ac8b-fb900a7966e4
 feature: DCS
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 9b12946c-89f1-4f6f-adb9-961e15a0b816
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '227'
 ht-degree: 6%
 
 ---
 
-
 # ID:n för DCS-regioner, -platser och -värdnamn {#dcs-region-ids-locations-and-host-names}
 
-Det regionala värdnamnet [!DNL DCS] krävs för att anropa [!DNL DCS]. Detta beror på att [!DNL DCS] lagrar information i datacenter som ligger geografiskt nära webbplatsbesökarna. Dina frågor fungerar om du skickar dem till fel [!DNL DCS], men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en [!DNL DCS]-begäran måste du matcha region-ID:t med motsvarande regionalt värdnamn och skapa frågan med rätt värdnamn.
+Regionala [!DNL DCS] servervärdnamnet krävs för att anropa [!DNL DCS]. Det beror på att [!DNL DCS] lagrar information i datacenter som ligger geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel [!DNL DCS], men dessa anrop är ineffektiva och kan fördröja svaret. Skapa en [!DNL DCS] begär, matchar region-ID:t med motsvarande regionalt värdnamn och skapar din fråga med rätt värdnamn.
 
 <table id="table_643212E4F9C64DFF9443904B01D89CB3"> 
  <thead> 
@@ -71,4 +70,4 @@ Det regionala värdnamnet [!DNL DCS] krävs för att anropa [!DNL DCS]. Detta be
  </tbody> 
 </table>
 
-Du kan också använda [!DNL API]-metoder för att hämta en lista över tillgängliga [!DNL DCS]-regioner. Se [API-metoder för DCS-region](../../../api/rest-api-main/aam-api-dcs-regions.md).
+Du kan också använda [!DNL API] metoder för att hämta en lista över tillgängliga [!DNL DCS] regioner. Se [API-metoder för DCS-region](../../../api/rest-api-main/aam-api-dcs-regions.md).

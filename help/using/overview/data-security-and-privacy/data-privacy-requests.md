@@ -87,7 +87,7 @@ Den globala avanmälningen representerar en avanmälan över [!DNL Audience Mana
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Adobe Experience Cloud </p> </td> 
-   <td colname="col2"> <p>Sidan <a href="https://www.adobe.com/se/privacy/opt-out.html#customeruse" format="http" scope="external"> Your Privacy Choices </a> innehåller enklicksfunktioner som gör att slutanvändarna kan styra och välja bort datainsamling med annonslösningarna i Adobe Experience Cloud (inklusive Audience Manager). Mer information finns i avsnittet för <a href="https://www.adobe.com/privacy/opt-out.html#customeruse" format="http" scope="external"> företagskunder </a> på sidan Privacy Choices. </p> </td> 
+   <td colname="col2"> <p>Sidan <a href="https://www.adobe.com/se/privacy/opt-out.html#customeruse" format="http" scope="external"> Your Privacy Choices </a> innehåller enklicksfunktioner som gör att slutanvändarna kan styra och välja bort datainsamling med annonslösningarna i Adobe Experience Cloud (inklusive Audience Manager). Mer information finns i avsnittet för <a href="https://www.adobe.com/se/privacy/opt-out.html#customeruse" format="http" scope="external"> företagskunder </a> på sidan Privacy Choices. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Direkta API-anrop till Audience Manager </p> </td> 

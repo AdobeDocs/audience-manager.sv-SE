@@ -1,17 +1,16 @@
 ---
 description: I rapporten Segment Performance jämförs mappade och omappade segment med visningar och Real-Time Segment Uniques. Ett mappat segment är ett segment som du skapar och skickar till ett mål för målanpassning. Ett omappat segment är ett segment som du har skapat men inte skickat till ett mål för målgruppsanpassning. Genom att jämföra dessa olika segmenttyper inom och mellan rapporter kan ni optimera befintliga kampanjer och hitta förbisedda segment som ni kanske vill skicka till en målgrupp för målinriktning.
-seo-description: I rapporten Segment Performance jämförs mappade och omappade segment med visningar och Real-Time Segment Uniques. Ett mappat segment är ett segment som du skapar och skickar till ett mål för målanpassning. Ett omappat segment är ett segment som du har skapat men inte skickat till ett mål för målgruppsanpassning. Genom att jämföra dessa olika segmenttyper inom och mellan rapporter kan ni optimera befintliga kampanjer och hitta förbisedda segment som ni kanske vill skicka till en målgrupp för målinriktning.
-seo-title: Resultatrapport för segment
+seo-description: The Segment Performance report compares mapped and unmapped segments by impressions and Real-Time Segment Uniques. A mapped segment is a segment you create and send to a destination for targeting. An unmapped segment is a segment that you've created but have not sent to a destination for targeting. Comparing these different segment types within and between reports helps you optimize existing campaigns and find overlooked segments that you may want to send to a destination for targeting.
+seo-title: Segment Performance Report
 solution: Audience Manager
 title: Resultatrapport för segment för utgivare
 uuid: c9a1e9ad-4f3f-4334-a3ff-0f241c7303c4
 feature: Audience Optimization Reports
 exl-id: 0cc10399-5737-4d82-a1f6-9561e024054d
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 1%
+source-wordcount: '644'
+ht-degree: 0%
 
 ---
 
@@ -23,32 +22,32 @@ Ett mappat segment är ett segment som du skapar och skickar till ett mål för 
 
 Genom att jämföra dessa olika segmenttyper inom och mellan rapporter kan ni optimera befintliga kampanjer och hitta förbisedda segment som ni kanske vill skicka till en målgrupp för målinriktning.
 
-## Använd fall {#use-cases}
+## Användningsexempel {#use-cases}
 
-Med [!UICONTROL Segment Performance]-rapporten kan du:
+Med [!UICONTROL Segment Performance] kan du
 
 * Identifiera mappade målgruppssegment som driver skala eller prestanda framåt.
 * Identifiera omappade segment som ska introduceras i framtida kampanjer, baserat på en målgrupps bidrag till tidigare resultat.
 
 ## Använda rapporten om segmentprestanda {#using-segment-performance-report}
 
-Växla mellan **[!UICONTROL Mapped]** och **[!UICONTROL Unmapped]** för att markera segment som är mappade till ett mål eller inte. Välj **[!UICONTROL All]** om du vill inkludera alla dina segment i rapporten.
+Växla mellan **[!UICONTROL Mapped]** och **[!UICONTROL Unmapped]** om du vill markera segment som är mappade till ett mål eller inte. Välj **[!UICONTROL All]** för att inkludera alla era segment i rapporten.
 
-Använd kontrollerna **Dagintervall** och **Datum till och med** för att justera backupintervallet. Observera att 7-dagars och 30-dagars summeringsperioder endast är tillgängliga för söndagsdatum.
+Använd **Dagsintervall** och **Datum till** kontroller för att justera uppseendeintervallet. Observera att 7-dagars och 30-dagars summeringsperioder endast är tillgängliga för söndagsdatum.
 
-Använd listrutan **[!UICONTROL Line Item]** för att välja de webbegenskaper som du vill returnera information för.
+Använd **[!UICONTROL Line Item]** för att välja de webbegenskaper som du vill returnera information för.
 
-I listrutan **[!UICONTROL Segment Data Source]** markerar du datakällorna som innehåller de segment som du vill se i rapporten.
+I **[!UICONTROL Segment Data Source]** markerar du datakällorna som innehåller de segment som du vill se i rapporten.
 
-Använd listrutan **[!UICONTROL Segment]** för att välja vilka segment du vill se i rapporten.
+Använd **[!UICONTROL Segment]** för att välja vilka segment som ska visas i rapporten.
 
 >[!IMPORTANT]
 >
->När du aktiverar [!UICONTROL Audience Optimization for Publishers] måste du inkludera beskrivande metadata för [!UICONTROL Line Item IDs], enligt beskrivningen i steg 3 av [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten anger webbegenskapen som [!UICONTROL Line Item] i stället för [!UICONTROL Line Item ID].
+>Vid aktivering [!UICONTROL Audience Optimization for Publishers]måste du ta med beskrivande metadata för [!UICONTROL Line Item IDs], enligt beskrivningen i steg 3 av [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten innehåller information om webbegenskapen som [!UICONTROL Line Item] i stället för [!UICONTROL Line Item ID].
 
 ## Tolka resultaten {#interpreting-results}
 
-Din [!UICONTROL Segment Performance]-rapport kan se ut ungefär som den nedan. Klicka på en bubbla i rapporten för att visa underliggande data. Se beskrivningarna för ytterligare information i tabellen nedan.
+Dina [!UICONTROL Segment Performance] skulle kunna se ut ungefär som nedan. Klicka på en bubbla i rapporten för att visa underliggande data. Se beskrivningarna för ytterligare information i tabellen nedan.
 
 ![](assets/publisher_segment_performance.png)
 
@@ -101,7 +100,7 @@ Om du vill läsa rapporten kan du dela upp resultaten i fyra avsnitt med imagin�
 
 ## Så här läser du omappade segmentresultat {#read-unmapped-segment}
 
-Att titta på omappade segment i en [!UICONTROL Segment Performance]-rapport är ett bra sätt att hitta nya segment som du inte har tänkt dig som målinriktning. Vissa av dessa segment kanske överträffar dina mappade segment.
+Titta på omappade segment i en [!UICONTROL Segment Performance] rapport är ett bra sätt att hitta nya segment som du inte har tänkt dig för målinriktning. Vissa av dessa segment kanske överträffar dina mappade segment.
 
 Om du vill läsa den här rapporten kan du dela upp resultaten i fyra avsnitt med imaginära rader (i rött) och kategorier som visas i exempelrapporten nedan.
 

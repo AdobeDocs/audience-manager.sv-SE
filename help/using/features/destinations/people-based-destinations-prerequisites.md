@@ -1,5 +1,5 @@
 ---
-description: 'Nedan finns en översikt över de kundkrav du måste uppfylla innan du registrerar dig för personbaserade destinationer.  '
+description: Nedan finns en översikt över de kundkrav du måste uppfylla innan du registrerar dig för personbaserade destinationer.
 seo-description: Read below for an overview of customer requirements that you need to meet before signing up for People-Based Destinations.
 seo-title: People-Based Destinations Prerequisites and Considerations
 solution: Audience Manager

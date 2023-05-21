@@ -1,9 +1,8 @@
 ---
 source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-translation-type: tm+mt
 source-wordcount: '329'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 # Instruktioner
@@ -13,17 +12,17 @@ ht-degree: 1%
 ## Innehåll
 
 + `TOC.md` i roten av användarhandboken innehåller information om hur du organiserar de ämnen som finns i handboken för den här lösningen.
-+ Varje användarhandbok har sin egen unika `TOC.md`, där du kan ordna alla sidor/ämnen efter behov.
++ Varje användarhandbok har sin egen `TOC.md`, där du kan ordna alla sidor/ämnen efter behov.
 + Den första sidan i alla användarhandböcker är `overview.md`.
 
 ## Användarhandbok
 
-+ Introduktionen till användarhandboken heter `overview.md`
++ Introduktionen till användarhandboken kallas `overview.md`
 + Varje avsnitt i användarhandboken har en egen separat katalog.
-   + Om det finns ett avsnitt i guiden som heter *Implementering* är motsvarande katalog `/implementation`
+   + Om det finns ett ämne i guiden som heter *Implementering*, är motsvarande katalog `/implementation`
 + Alla bildresurser lagras i `/assets` i roten av användarhandboken.
-   + Alla bilder i katalogen `/assets` kommer att lokaliseras.
-   + Bilder i katalogen `/no-localize` kommer inte att lokaliseras (det kommer en överraskning!). Detta kan användas för att i lokala versioner säkerställa att specifika resurser inte reproduceras i onödan.
+   + Alla bilder i `/assets` kommer att lokaliseras.
+   + Alla bilder i `/no-localize` kommer inte att lokaliseras (det kommer en överraskning!). Detta kan användas för att i lokala versioner säkerställa att specifika resurser inte reproduceras i onödan.
 
 ## Metadata för användarhandboksnivå
 
@@ -51,4 +50,4 @@ ht-degree: 1%
 
 ## Mer information
 
-Mer publiceringsanvisningar, stilguider, exempel och andra resurser finns på [Collaborative Documentation Repo](https://git.corp.adobe.com/AdobeDocs/collaborative-doc-instructions)
+Mer publiceringsanvisningar, stilguider, exempel och andra resurser finns på [Dokumentationsrapport för samarbete](https://git.corp.adobe.com/AdobeDocs/collaborative-doc-instructions)

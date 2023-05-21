@@ -1,16 +1,16 @@
 ---
 description: Kodexempel och beskrivningar för specifika fall för användning i DIL.
-seo-description: Kodexempel och beskrivningar för specifika fall för användning i DIL.
-seo-title: DIL-användningsexempel och kodexempel
+seo-description: Code samples and descriptions for specific DIL use cases.
+seo-title: DIL Use Cases and Code Samples
 solution: Audience Manager
 title: DIL-användningsexempel och kodexempel
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
-feature: Implementering av DIL
+feature: DIL Implementation
 exl-id: 001710be-b377-460a-9e29-7268d25a6305
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 3%
+source-wordcount: '903'
+ht-degree: 2%
 
 ---
 
@@ -36,11 +36,11 @@ c_dil_send_page_objects.xml
 
 **Beskrivning**
 
-Följande kod visar hur du samlar in siddata och skickar dem till Audience Manager med [!UICONTROL DIL]. I de här exemplen används en variabel för att lagra dataelement i en platt lista eller en array. Kom ihåg att skicka in variabler som [nyckelvärdepar](../reference/key-value-pairs-explained.md). Observera också `c_`-prefixet före tangenten i nyckelvärdepar. Detta [obligatoriska prefix](../features/traits/trait-variable-prefixes.md) identifierar information som användardefinierade data. I det första exemplet måste du lägga till `c_` manuellt till nyckeln. I det andra exemplet gör [!UICONTROL DIL] detta automatiskt åt dig.
+I följande kod visas hur du samlar in siddata och skickar dem till Audience Manager med [!UICONTROL DIL]. I de här exemplen används en variabel för att lagra dataelement i en platt lista eller en array. Kom ihåg, skicka in variabler som [nyckelvärdepar](../reference/key-value-pairs-explained.md). Observera även `c_` prefix före nyckeln i nyckelvärdepar. Detta [obligatoriskt prefix](../features/traits/trait-variable-prefixes.md) identifierar information som användardefinierade data. I det första exemplet måste du lägga till manuellt `c_` till nyckeln. I det andra exemplet [!UICONTROL DIL] gör detta automatiskt åt dig.
 
 **Behåll konsekventa värdeegenskaper**
 
-Tänk på att värdeegenskaperna förblir desamma när du skickar data. Om du till exempel har två identiska nycklar med olika värden, prioriteras värdet för det sista nyckel/värde-paret framför de föregående värdeobjekten. Om du till exempel skickar `color:blue` och `color:red` anges det returnerade värdet som rött (blått skrivs över).
+Tänk på att värdeegenskaperna förblir desamma när du skickar data. Om du till exempel har två identiska nycklar med olika värden, prioriteras värdet för det sista nyckel/värde-paret framför de föregående värdeobjekten. Skicka till exempel in `color:blue` och `color:red` anger det returnerade värdet till rött (skriver över blått).
 
 **Exempel 1: Skicka data som nyckelvärdepar**
 
@@ -57,7 +57,7 @@ sample_dil.api.submit();
 
 **Exempel 2: Skicka data i ett objekt**
 
-I det här avancerade exemplet visas hur du skickar data i ett objekt till Audience Manager. När du arbetar med den här metoden kan du med [!UICONTROL DIL] skicka ett objekt som en funktionsparameter till metoden [!DNL signals()]. [!UICONTROL DIL] Koden kan se ut ungefär så här:
+I det här avancerade exemplet visas hur du skickar data i ett objekt till Audience Manager. När du arbetar med den här metoden [!UICONTROL DIL] gör att du kan skicka ett objekt som en funktionsparameter till [!DNL signals()] -metod. [!UICONTROL DIL] Koden kan se ut ungefär så här:
 
 <pre class="java"><code>
 var my_object = { 
@@ -72,7 +72,7 @@ sample_dil.api.signals(my_object,"c_").submit();
 
 **Exempel 3: Skicka siddata i en array**
 
-I det här fallet använder variabeln `my_object` en array för att lagra data. Det här exemplet bygger på den information som skickas med den rekommenderade metoden ovan, men lägger till ytterligare ett lager för en produkttyp och modell. Koden kan se ut ungefär så här:
+I det här fallet är variabeln `my_object` använder en array för att lagra data. Det här exemplet bygger på den information som skickas med den rekommenderade metoden ovan, men lägger till ytterligare ett lager för en produkttyp och modell. Koden kan se ut ungefär så här:
 
 <pre class="java"><code>
 var my_objects = [{ 
@@ -126,7 +126,7 @@ Skicka information om sökmotortyp och sökord till Audience Manager.
 
 **Sökmotorer som stöds**
 
-Som standard känner `DIL.getSearchReferrer` igen sökningar från följande sökmotorer (inklusive internationella varianter):
+Som standard `DIL.getSearchReferrer` känner igen sökningar från dessa sökmotorer (inklusive internationella varianter):
 
 * [!DNL AOL]
 * [!DNL Ask]
@@ -136,11 +136,11 @@ Som standard känner `DIL.getSearchReferrer` igen sökningar från följande sö
 
 **Beskrivning**
 
-I följande kod visas hur du hämtar sökreferenten för någon av de sökmotorer som stöds. I det här fallet antar vi att en användare har sökt efter termen &quot;hem&quot; från [!DNL Google] Kanada ( `www.google.ca`). Med den här koden kan du hämta de söktermerna och skicka dem till Audience Manager.
+I följande kod visas hur du hämtar sökreferenten för någon av de sökmotorer som stöds. I det här fallet antar vi att en användare sökte efter termen &quot;hem&quot; från [!DNL Google] Kanada ( `www.google.ca`). Med den här koden kan du hämta de söktermerna och skicka dem till Audience Manager.
 
 **Grundläggande kod**
 
-Grundläggande kod för att hämta sökreferenten (från till exempel `google.com`) ser ut så här:
+Grundläggande kod för att hämta sökreferenten (från `google.com`, till exempel) ser ut så här:
 
 ```java
 var search_referrer = DIL.tools.getSearchReferrer();
@@ -148,7 +148,7 @@ var search_referrer = DIL.tools.getSearchReferrer();
 
 **Kodexempel för listad sökmotor**
 
-I det här fallet antar vi att en användare sökte efter termen &quot;hem&quot; från [!DNL Google] Kanada ( `www.google.ca`). Observera hur koden prefixerar den obligatoriska `c_`-parametern för sökmotorn ( `c_se`) och söktermen ( `c_st`). `c_` är ett  [obligatoriskt ](../features/traits/trait-variable-prefixes.md) prefix som identifierar dessa som kunddefinierade variabler för Audience Manager.
+I det här fallet antar vi att en användare sökte efter termen &quot;hem&quot; från [!DNL Google] Kanada ( `www.google.ca`). Observera hur koden prefixar det som krävs `c_` parameter till sökmotor ( `c_se`) och sökord ( `c_st`). `c_` är en [obligatoriskt prefix](../features/traits/trait-variable-prefixes.md) som identifierar dessa som kunddefinierade variabler för Audience Manager.
 
 <pre class="java"><code>
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
@@ -164,7 +164,7 @@ if (search_referrer && search_referrer.valid) {
 
 **Kodexempel för ej listad sökmotor**
 
-I det här fallet antar vi att en användare sökte efter termen &quot;hem&quot; från `dogpile.com`. Eftersom [!DNL Dogpile] inte stöds som standard kan du konfigurera DIL så att sökmotorn identifieras och söktermerna returneras till Audience Manager. Koden kan se ut ungefär så här:
+I det här fallet antar vi att en användare sökte efter termen &quot;hem&quot; från `dogpile.com`. För [!DNL Dogpile] som standard inte stöds kan du konfigurera DIL så att sökmotorn identifieras och söktermerna returneras till Audience Manager. Koden kan se ut ungefär så här:
 
 <pre class="java"><code>
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
@@ -193,7 +193,7 @@ c_dil_map_keys.xml
 
 **Beskrivning**
 
-I ett nyckelvärdepar identifierar `c_`-prefixet som läggs till nyckeln signalen som kunddefinierade data. Kunddefinierade data används för målanpassning på den specifika webbplats som skickade data i ett händelseanrop. Ibland vill du dock att den här informationen ska vara tillgänglig för alla egenskaper på ditt Audience Manager-konto. Det gör du genom att mappa värdet i ett `c_`-nyckelvärdepar till en plattformsnivånyckel. En plattformsnivånyckel har prefixet `d_` och gör signalen tillgänglig för målinriktning över alla egenskaper i ditt konto.
+I ett nyckelvärdepar `c_` som läggs till nyckeln identifierar signalen som kunddefinierade data. Kunddefinierade data används för målanpassning på den specifika webbplats som skickade data i ett händelseanrop. Ibland vill du dock att den här informationen ska vara tillgänglig för alla egenskaper på ditt Audience Manager-konto. Det gör du genom att mappa värdet i en `c_` nyckelvärdepar till en plattformsnivå. En plattformsnivånyckel har prefixet `d_` och gör signalen tillgänglig för målinriktning över alla egenskaper i ditt konto.
 
 Du kan till exempel samla in ZIP-koddata från en viss plats men vill rikta dem till alla dina Audience Manager-egenskaper. För att ZIP-koden ska vara tillgänglig på plattformsnivå kan du mappa en kunddefinierad postnummernyckel (t.ex. `c_zip`) till en plattformsdefinierad nyckel enligt nedan.
 
@@ -213,7 +213,7 @@ adobe_dil.api.signals({c_zip : '10010'}).submit();
 // Request will look like /event?c_zip=10010&d_zip=10010
 ```
 
-## Traffic DIL i Google Tag Manager (GTM) {#traffic-dil-gtm}
+## Traffic DIL in Google Tag Manager (GTM) {#traffic-dil-gtm}
 
 Konfigurera och serva DIL med en GTM-tagg.
 
@@ -223,17 +223,17 @@ t_dil_google_tagmanager.xml
 
  -->
 
-För den här proceduren förutsätts att du har ett [!DNL Google Tag Manager]-konto, viss kunskap om produkten och din Audience Manager `dil.js`-fil.
+Den här proceduren förutsätter att du har en [!DNL Google Tag Manager] konto, viss kunskap om produkten och Audience Manager `dil.js` -fil.
 
-Så här kör du filen `dil.js` i GTM:
+För att köra `dil.js` fil i GTM:
 
 1. Skapa en ny behållare eller öppna en befintlig behållare.
 1. Lägg till en ny tagg i behållaren.
 1. Öppna taggen för att redigera den och:
 
    * Ge taggen ett namn.
-   * Välj **[!UICONTROL Custom HTML Tag]** i listrutan **[!UICONTROL Tag Type]**.
-   * Placera [!UICONTROL DIL]-koden (bibliotek + den anpassade koden) i skripttaggar `<script>DIL code</script>` i HTML-fältet.
+   * Välj **[!UICONTROL Custom HTML Tag]** från **[!UICONTROL Tag Type]** nedrullningsbar lista.
+   * Placera HTML i fältet [!UICONTROL DIL] kod (bibliotek + den anpassade koden) i script-taggar `<script>DIL code</script>`.
    * Klicka på **[!UICONTROL Save]**.
 
 1. Publicera behållaren.
@@ -241,7 +241,7 @@ Så här kör du filen `dil.js` i GTM:
 
 >[!MORELIKETHIS]
 >
->* [Hjälpcenter för Google Tag Manager](https://support.google.com/tagmanager#topic=3441530)
+>* [Google Tag Manager Help Center](https://support.google.com/tagmanager#topic=3441530)
 >* [Signaler](../dil/dil-instance-methods.md#signals)
-* [Prefixkrav för nyckelvariabler](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-variable-prefixes.html#prefix-requirements-for-key-variables)
+>* [Prefixkrav för nyckelvariabler](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-variable-prefixes.html#prefix-requirements-for-key-variables)
 

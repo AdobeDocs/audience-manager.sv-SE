@@ -1,16 +1,15 @@
 ---
 description: Placera data i rapportloggfiler för leveransresultat i register som endast innehåller ID. Lägg in icke-ID-metadata i separata uppslagstabeller för att minska filstorleken och bearbetningstiden.
-seo-description: Placera data i rapportloggfiler för leveransresultat i register som endast innehåller ID. Lägg in icke-ID-metadata i separata uppslagstabeller för att minska filstorleken och bearbetningstiden.
-seo-title: Förbättra bearbetningstiden för loggfiler med sökregister
+seo-description: Put data in Delivery Performance report log files into tables that contain IDs only. Put non-ID metadata in separate lookup tables to help reduce file size and processing times.
+seo-title: Improve Log File Processing Times with Lookup Tables
 solution: Audience Manager
 title: Förbättra bearbetningstiden för loggfiler med sökregister
 uuid: ffc77618-474b-455e-9c91-15b32fc151a5
 feature: Reporting Reference
 exl-id: bab51406-21e9-4033-90d4-6100daf6a311
-translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '464'
 ht-degree: 13%
 
 ---
@@ -27,11 +26,11 @@ c_lookup_tables.xml
 
 ## Loggfilens metadata ökar filstorleken och bearbetningstiden
 
-En vanlig loggfil som används av [!UICONTROL Delivery Performance]-rapporten innehåller vanligtvis tusentals rader och dussintals kolumner. Det består av numeriska ID:n och läsbar information, t.ex. namn för kreatörer, annonsörer, infogningsorder osv.
+En vanlig loggfil som används av [!UICONTROL Delivery Performance] -rapporten innehåller vanligtvis tusentals rader och dussintals kolumner. Det består av numeriska ID:n och läsbar information, t.ex. namn för kreatörer, annonsörer, infogningsorder osv.
 
 Denna icke-ID-information kallas *`metadata`* (dvs. information om annan information) och skrivs i varje rad i loggfilen.
 
-Däremot fungerar [!UICONTROL Delivery Performance]-rapporten huvudsakligen med ID:n i loggfilen. Metadata är användbara, men repetitiva. Det ökar filstorleken och tar längre tid att hämta data.
+Men [!UICONTROL Delivery Performance] fungerar i huvudsak med ID:n i loggfilen. Metadata är användbara, men repetitiva. Det ökar filstorleken och tar längre tid att hämta data.
 
 ## Minska filstorleken och förkorta behandlingstiden med indextabeller
 
@@ -55,13 +54,13 @@ Här är samma loggfil med metadata borttagna. Filen är mindre och enklare att 
 
 | Användar-ID | Annons-ID | Order-ID | Annonsörs-ID |
 |---|---|---|---|
-| 3 | 111 | 456 | 27 |
+| 1 | 111 | 456 | 27 |
 | 2 | 111 | 456 | 27 |
 | 3 | 111 | 456 | 27 |
 | 4 | 222 | 789 | 14 |
 | 5 | 222 | 789 | 14 |
 
-<br> 
+<br>
 
 Sökfilen nedan innehåller metadata och kan länkas tillbaka till huvudfilen med ID:t. Notera även storleken. I stället för att upprepa varje annonsör flera gånger behöver du bara en referens för varje.
 

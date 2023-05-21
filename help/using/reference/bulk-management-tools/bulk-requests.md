@@ -1,17 +1,16 @@
 ---
 description: En gruppbegäran returnerar data som du kan använda med de olika rubrikerna i kalkylbladen Uppdatera, Skapa, Beräkna och Ta bort.
-seo-description: En gruppbegäran returnerar data som du kan använda med de olika rubrikerna i kalkylbladen Uppdatera, Skapa, Beräkna och Ta bort.
-seo-title: Satsvisa förfrågningar
+seo-description: A bulk request returns data you can use with the different headers in the Update, Create, Estimate, and Delete worksheets.
+seo-title: Bulk Requests
 solution: Audience Manager
 title: Satsvisa förfrågningar
 uuid: 0192d26a-4cea-4e12-9fea-388b92b382f1
 feature: BAAAM
 exl-id: a0597bf4-79c8-404d-ba3b-a92c6b5c9c06
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 3%
+source-wordcount: '227'
+ht-degree: 2%
 
 ---
 
@@ -27,13 +26,13 @@ t_bulk_requests.xml
 
 >[!NOTE]
 >
->[RBAC-gruppbehörigheter ](../../features/administration/administration-overview.md) som tilldelats i  [!DNL Audience Manager] användargränssnittet respekteras i  [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som har tilldelats i [!DNL Audience Manager] Gränssnittet respekteras i [!UICONTROL Bulk Management Tools].
 
-Kalkylbladet [!UICONTROL Request] har ingen egen uppsättning kolumnrubriker och du behöver inte kopiera ID:n till någon av kolumnerna. I stället returneras data baserat på åtgärdsknappen som du klickar på i verktygsfältet. Och en valfri rapportfunktion returnerar en frekvens för pixelbränder och ett unikt antal användare för flera fasta tidsintervall.
+The [!UICONTROL Request] kalkylbladet har ingen egen uppsättning kolumnrubriker och du behöver inte kopiera ID:n till någon av kolumnerna. I stället returneras data baserat på åtgärdsknappen som du klickar på i verktygsfältet. Och en valfri rapportfunktion returnerar en frekvens för pixelbränder och ett unikt antal användare för flera fasta tidsintervall.
 
-Om du vill göra gruppförfrågningar öppnar du [!UICONTROL Bulk Management Tools]-kalkylbladet och:
+Om du vill göra gruppförfrågningar öppnar du [!UICONTROL Bulk Management Tools] kalkylblad och:
 
-1. Klicka på fliken **[!UICONTROL Request]**.
+1. Klicka på **[!UICONTROL Request]** -fliken.
 2. Klicka på en begärandeknapp som motsvarar de data du vill arbeta med i verktygsfältet högst upp i kalkylbladet. Du kan begära:
 
    * Algoritmiska modeller
@@ -44,10 +43,10 @@ Om du vill göra gruppförfrågningar öppnar du [!UICONTROL Bulk Management Too
    * Segment 
    * ID för trait- och segmentmapp
 
-   API:t [!DNL Audience Manager] skriver massdata tillbaka till kalkylbladet [!UICONTROL Request].
+   The [!DNL Audience Manager] API skriver massdata tillbaka till [!UICONTROL Request] kalkylblad.
 
 >[!NOTE]
 >
->I resultatet returnerar kolumnerna `createTime` och `updateTime` data i exponentiell notation. De underliggande datum-/tidsstämplarna registreras i UNIX UTC-tid. För närvarande kan kalkylbladet inte returnera datum-/tidsstämplar i läsbart format.
+>I resultatet `createTime` och `updateTime` kolumner returnerar data med exponentiell notation. De underliggande datum-/tidsstämplarna registreras i UNIX UTC-tid. För närvarande kan kalkylbladet inte returnera datum-/tidsstämplar i läsbart format.
 
-Om gruppuppdateringen returnerar ett fel eller misslyckas, se [Felsökning för grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-troubleshooting.md).
+Om gruppuppdateringen returnerar ett fel eller misslyckas finns mer information i [Felsökning för grupphanteringsverktyg](../../reference/bulk-management-tools/bulk-troubleshooting.md).

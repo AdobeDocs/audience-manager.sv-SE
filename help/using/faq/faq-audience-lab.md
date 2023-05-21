@@ -24,25 +24,25 @@ Frågor och svar om Audience Lab-funktionen.
 
 Ja, testsegmenten har olika segment-ID. För destinationer med [!UICONTROL Auto-fill Destination Mapping] eller segment som skickas till [!DNL Google] hanteras mappningsvärdena i [!UICONTROL Audience Lab] på samma sätt som destinationerna gör i vanliga fall.
 
-<br> 
+<br>
 
 **Kan samma konverteringstrait kopplas till flera testgrupper?**
 
 Ja, det är tillåtet. Tänk dig ett test med ett manligt segment som är associerat med konvertering X och ett test med ett kvinnligt segment som är associerat med konvertering X. Det spelar ingen roll att båda testerna genererar konverteringar eftersom de testar två olika målgrupper.
 
-<br> 
+<br>
 
 **Låt oss säga att en testgrupp använder en autentiserad profil för delning av testsegment. Den autentiserade profilen är länkad till fyra [Audience Manager UUID](../reference/ids-in-aam.md). När en besökare har ett konverteringstrait från någon av dessa fyra UUID:n, räknas det som en eller fyra konverteringar i [!UICONTROL Audience Lab]?**
 
 I det här fallet räknas det bara som en konvertering i [!UICONTROL Audience Lab].
 
-<br> 
+<br>
 
 **Vad händer om besökaren från exemplet ovan först har ett konverteringstrait från en av de fyra UUID:n som är länkade till hens autentiserade profil och sedan har ett konverteringstrait från två andra UUID:n som är länkade till den autentiserade profilen? Räknas det som en eller tre konverteringar?**
 
 I det här fallet räknas det som tre konverteringar i [!UICONTROL Audience Lab], en för varje enhet som har ett autentiserings-trait.
 
-<br> 
+<br>
 
 **Kan en användare ha åtkomst till [!UICONTROL Segment: Read-Only] och samtidigt ha åtkomst för att skapa [!UICONTROL Audience Lab]-testsegment?**
 

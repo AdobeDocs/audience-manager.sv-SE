@@ -1,23 +1,22 @@
 ---
 description: Beskriver metoder i namnutrymmet DIL.tools. De här verktygen hjälper dig att utföra specifika uppgifter.
-seo-description: Beskriver metoder i namnutrymmet DIL.tools. De här verktygen hjälper dig att utföra specifika uppgifter.
-seo-title: DIL-verktyg
+seo-description: Describes methods in the DIL.tools namespace. These utility functions help you perform specific tasks.
+seo-title: DIL Tools
 solution: Audience Manager
 title: DIL-verktyg
 uuid: 2bc62ce2-16bd-4e80-b493-c816ba643b59
 feature: DIL Implementation
-translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+exl-id: 1f52eb95-8287-4dd0-b933-00de6926a797
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 3%
+source-wordcount: '277'
+ht-degree: 2%
 
 ---
 
-
 # DIL-verktyg
 
-Beskriver metoder i namnutrymmet `DIL.tools`. De här verktygen hjälper dig att utföra specifika uppgifter.
+Beskriver metoder i `DIL.tools` namnutrymme. De här verktygen hjälper dig att utföra specifika uppgifter.
 
 <!-- 
 
@@ -37,7 +36,7 @@ r_dil_get_search_referrer.xml
 
 ### Syfte med `getSearchReferrer`
 
-I DIL returnerar `getSearchReferrer` sökresultat (namn och nyckelord) som används för att nå din webbplats. Du kan skicka specifika söktermer till den här funktionen eller låta den söka efter de sökmotorer som stöds ( [!DNL AOL], [!DNL Ask], [!DNL Bing], [!DNL Google] och [!DNL Yahoo]) mot `document.referrer` som standard.
+I DIL `getSearchReferrer` returnerar sökresultat (namn och nyckelord) som används för att nå din webbplats. Du kan skicka in specifika söktermer till den här funktionen eller låta den söka efter de sökmotorer som stöds ( [!DNL AOL], [!DNL Ask], [!DNL Bing], [!DNL Google]och [!DNL Yahoo]) mot `document.referrer` som standard.
 
 ### Funktionssignatur
 
@@ -47,8 +46,8 @@ Funktionssignatur: `DIL.tools.getSearchReferrer(uri, initConfig)`
 
 `getSearchReferrer` godkänner:
 
-* *`{string}`*:  *(Valfritt)* En sträng som innehåller sök-URL:en (används  `document.referrer` om det är odefinierat).
-* *`{object}`*:  *(Valfritt)* Ett objekt som innehåller konfigurationen för  `hostPattern`,  `queryParam`eller  `queryPattern`.
+* *`{string}`*: *(Valfritt)* En sträng som innehåller sök-URL (använder `document.referrer` om det är odefinierat).
+* *`{object}`*: *(Valfritt)* Ett objekt som innehåller konfigurationen för `hostPattern`, `queryParam`, eller `queryPattern`.
 
 Och returnerar:
 
@@ -114,7 +113,7 @@ Och returnerar:
 
 ## decomposeURI
 
-Disassemblerar en Uniform Resource Identifier ( [!DNL URI]) till dess beståndsdelar: `hash`, `host`, `href`, `pathname`, `protocol`, `search` och `[!DNL uriParams]`.
+Disassemblerar en Uniform Resource Identifier ( [!DNL URI]) till sina beståndsdelar: `hash`, `host`, `href`, `pathname`, `protocol`, `search`och `[!DNL uriParams]`.
 
 <!-- 
 
@@ -128,7 +127,7 @@ Funktionssignatur: `DIL.tools.decomposeURI`
 
 `decomposeURI` godkänner:
 
-* *`uri {string}`*:  *(Valfritt)* En sträng som innehåller URI:n. Standardvärdet är `document.location.href` om inget anges.
+* *`uri {string}`*: *(Valfritt)* En sträng som innehåller URI:n. Standardvärdet är `document.location.href` om inget anges.
 
 Och returnerar:
 

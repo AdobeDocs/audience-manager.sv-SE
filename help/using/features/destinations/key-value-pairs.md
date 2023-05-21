@@ -3,12 +3,11 @@ description: A [!DNL key-value pair] består av [!DNL related elements]. En nyck
 solution: Audience Manager
 title: Standard och seriell [!DNL Key-value pairs]
 uuid: 43789419-5b3f-4e62-b2e0-2722340bdd41
-feature: Grundläggande om mål
+feature: Destination Basics
 exl-id: b37c829b-66be-4c31-8198-bc032371279e
-translation-type: tm+mt
 source-git-commit: 0dfe96a4644c61fb5bc22e4791bfd09c574dcf34
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '545'
 ht-degree: 2%
 
 ---
@@ -27,9 +26,9 @@ En grundläggande uppsättning nyckelvärdepar kan se ut så här:
 
 ## Standard och seriella nyckelvärdespar {#standard-serial-key-value-pairs}
 
-Målen accepterar nyckelvärdesdata i *`standard`*- eller *`serialized`*-format.
+Målen accepterar nyckelvärdesdata i *`standard`* eller *`serialized`* format.
 
-* **Standardpar med nyckelvärden:** Formaterar måldata i separata par med nyckelvärden. Varje nyckel anges explicit, även om den används igen för att definiera ett annat värde.
+* **Standardpar med nyckelvärden:** Formaterar måldata i separata nyckelvärdepar. Varje nyckel anges explicit, även om den används igen för att definiera ett annat värde.
 * **Serialiserade nyckelvärdepar:** Sammanfogar flera värden till ett enda nyckelvärdepar. I ett serialiserat nyckelvärdepar avgränsar en specialindikator värdena i nyckelvärdesmängden.
 
 Både standardvärden och serialiserade nyckelvärden kan innehålla ett eller flera värden. Följande tabell innehåller exempel på standardformat och serienyckelformat.
@@ -60,13 +59,13 @@ Både standardvärden och serialiserade nyckelvärden kan innehålla ett eller f
 
 Tecknen som avgränsar värden inom och mellan tangenter och värden kallas *`delimiters`* och *`separators`*. Dessa blir särskilt viktiga när du skickar segment till ett mål i ett serieformat. Med serialisering kan du skicka in flera värden med en enda nyckel och kombinera nyckelvärdepar. Avgränsare och avgränsare definieras enligt följande:
 
-* **Avgränsare för nyckelvärden:** Avgränsar en nyckel och ett värde inom ett nyckel/värde-par.
-* **Avgränsare för nyckelvärde:** Avgränsar uppsättningar av nyckelvärdepar.
-* **Serieavgränsare:** Delar upp flera värden i uppsättningar med serialiserade nyckelvärdepar.
+* **Avgränsare för nyckelvärde:** Separerar en nyckel och ett värde inom ett nyckelvärdepar.
+* **Avgränsare för nyckelvärde:** Separerar uppsättningar med nyckelvärdepar.
+* **Serieavgränsare:** Separerar flera värden i uppsättningar med serialiserade nyckelvärdepar.
 
 ## Exempel {#examples}
 
-Med [!UICONTROL Destination Builder] kan du formatera nyckelvärdesdata på flera olika sätt. Låt oss titta på några exempel på varje typ.
+Med [!UICONTROL Destination Builder] du kan formatera nyckelvärdesdata på flera olika sätt. Låt oss titta på några exempel på varje typ.
 
 <table id="table_C2FBDC887C8C4CC88B1B2A7CF8E2795F"> 
  <thead> 
@@ -89,7 +88,7 @@ Med [!UICONTROL Destination Builder] kan du formatera nyckelvärdesdata på fler
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Flera nyckelvärdepar</b>  (icke-seriella) </p> </td> 
+   <td colname="col1"> <p> <b>Flera nyckelvärdepar</b> (ej seriellt) </p> </td> 
    <td colname="col2"> <p> <code> X = 1 &amp; X = 2 &amp; Y = 3 &amp; Y = 4 </code> </p> </td> 
    <td colname="col3"> <p>En uppsättning med flera nyckelvärdepar som skickar värden med separata nyckelvärdesuppsättningar. Exemplet innehåller följande element: </p> 
     <ul id="ul_7FB22A43B435463D9F209067FF2C3619"> 
@@ -111,7 +110,7 @@ Med [!UICONTROL Destination Builder] kan du formatera nyckelvärdesdata på fler
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Flera nyckelvärdepar</b>  (seriella) </p> </td> 
+   <td colname="col1"> <p> <b>Flera nyckelvärdepar</b> (seriell) </p> </td> 
    <td colname="col2"> <p> <code> X = 1 ; 2 &amp; Y = 3 ; 4 </code> </p> </td> 
    <td colname="col3"> <p>En uppsättning med flera nyckelvärdepar som skickar flera värden på olika nycklar. Exemplet innehåller följande element: </p> 
     <ul id="ul_CB50133B2E944818B9F2A0586EF69774"> 
@@ -135,4 +134,4 @@ Serialiserad dataöverföring bidrar till att förbättra effektiviteten efterso
 
 ### Destinationer som stöds
 
-I [!DNL Audience Manager] kan du serialisera och skicka data till praktiskt taget alla mål som du vill arbeta med. Innan du använder den här funktionen måste du känna till målet [!DNL URL] och var några obligatoriska eller valfria makron ska placeras. Hämta information om makroplacering från målpartnern. Mer information finns i [Definierade målmakron](../../features/destinations/destination-macros.md#destination-macros-defined).
+I [!DNL Audience Manager]kan du serialisera och skicka data till i stort sett alla mål som du vill arbeta med. Innan du använder den här funktionen måste du känna till målet [!DNL URL] och var du ska placera nödvändiga eller valfria makron. Hämta information om makroplacering från målpartnern. Se [Målmakron definierade](../../features/destinations/destination-macros.md#destination-macros-defined) för mer information.

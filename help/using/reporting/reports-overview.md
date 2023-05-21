@@ -1,31 +1,30 @@
 ---
 description: Använd alternativen på Analytics-menyn för att visa kontrollpanelen och olika rapporter.
-seo-description: Använd alternativen på Analytics-menyn för att visa kontrollpanelen och olika rapporter i Adobe Audience Manager (AAM).
-seo-title: Rapportöversikt i Adobe Audience Manager (AAM)
+seo-description: Use the options under the Analytics menu to view the dashboard and various reports in Adobe Audience Manager (AAM).
+seo-title: Reporting Overview in Adobe Audience Manager (AAM)
 title: Rapportöversikt
 feature: Reporting Reference
 exl-id: 8b0e34be-7a78-426c-a295-5e58a3462d64
-translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '386'
 ht-degree: 8%
 
 ---
 
 # Rapportöversikt
 
-I enskilda avsnitt beskrivs tillgängliga rapporter, deras syfte och typiska användningsområden. Alla rapporter är tillgängliga från kontrollpanelen [!UICONTROL Analytics].
+I enskilda avsnitt beskrivs tillgängliga rapporter, deras syfte och typiska användningsområden. Alla rapporter finns på [!UICONTROL Analytics] kontrollpanel.
 
-Information som beskriver tidsbildrutorna när Audience Manager tar emot information för att fylla i rapporter finns i [Hur dataleverans och filbearbetningstider påverkar rapporter](/help/using/reference/reporting-file-transfer-timeframe.md).
+Information om hur du anger tidsramar när Audience Manager får information för att fylla i rapporter finns i [Hur dataleverans och bearbetningstider påverkar rapporter](/help/using/reference/reporting-file-transfer-timeframe.md).
 
 * [Audience Optimization-rapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
 
-   I [!UICONTROL Audience Optimization]-rapporterna används datavisualiseringsmetoder för att returnera information om destinationerna i ditt Audience Manager-konto. I varje rapport kan du klicka på nästan vilken datapunkt som helst för att returnera detaljerad information om objektet. Dessa målgruppsoptimeringsinsikter kan tillämpas på flera olika användningsområden i alla annonser och publiceringskanaler, men är inte tillgängliga som standard. Kontakta din Audience Manager-konsult för att komma igång.
+   The [!UICONTROL Audience Optimization] rapporter använder datavisualiseringsmetoder för att returnera information om destinationerna i ditt Audience Manager-konto. I varje rapport kan du klicka på nästan vilken datapunkt som helst för att returnera detaljerad information om objektet. Dessa målgruppsoptimeringsinsikter kan tillämpas på flera olika användningsområden i alla annonser och publiceringskanaler, men är inte tillgängliga som standard. Kontakta din Audience Manager-konsult för att komma igång.
 
 * [Allmänna rapporter](/help/using/reporting/general-reports.md)
 
-   En [!UICONTROL General report] returnerar prestandadata på [!UICONTROL traits], [!UICONTROL segments] och [!UICONTROL destinations].
+   A [!UICONTROL General report] returnerar prestandadata på [!UICONTROL traits], [!UICONTROL segments]och [!UICONTROL destinations].
 
 * [Interaktiva och överlappande rapporter](/help/using/reporting/dynamic-reports/dynamic-reports.md)
 
@@ -33,15 +32,15 @@ Information som beskriver tidsbildrutorna när Audience Manager tar emot informa
 
 * [Statusrapport för introduktion: Om](/help/using/reporting/onboarding-status-report.md)
 
-   [!UICONTROL Onboarding Status Report] kontrollerar om det går att bearbeta poster i dina inkommande datakällfiler. Den här rapporten visar data i ett interaktivt stapeldiagram och ger sammanfattningsvärden i tabellform. Dessutom innehåller det ett alternativ som samplar filer för ett fast tidsintervall och visar de vanligaste felen för varje feltyp. Den här rapporten finns i [!UICONTROL Analytics > Onboarding Status Report]. Den här rapporten är också tillgänglig när du skapar en inkommande datakälla.
+   The [!UICONTROL Onboarding Status Report] kontrollerar om det går att bearbeta poster i dina inkommande datakällfiler. Den här rapporten visar data i ett interaktivt stapeldiagram och ger sammanfattningsvärden i tabellform. Dessutom innehåller det ett alternativ som samplar filer för ett fast tidsintervall och visar de vanligaste felen för varje feltyp. Den här rapporten finns i [!UICONTROL Analytics > Onboarding Status Report]. Den här rapporten är också tillgänglig när du skapar en inkommande datakälla.
 
 * [Historik för utgående filer](/help/using/reporting/outbound-history-report.md)
 
-   Visa historikinformation för [!UICONTROL outbound] batchjobb för en angiven mål- och tidsperiod.
+   Visa [!UICONTROL outbound] batchjobbhistorikinformation för en angiven destination och tidsperiod.
 
 * [Trendrapporter](/help/using/reporting/trend-reports.md)
 
-   En [!UICONTROL Trend report] returnerar trenddata på [!UICONTROL traits] och [!UICONTROL segments].
+   A [!UICONTROL Trend report] returnerar trenddata på [!UICONTROL traits] och [!UICONTROL segments].
 
 * [Räkna unika användare i överlappande och allmänna rapporter](/help/using/reporting/unique-user-counts.md)
 
@@ -49,7 +48,7 @@ Information som beskriver tidsbildrutorna när Audience Manager tar emot informa
 
 * [Kontrollpanel för rapporter](/help/using/reporting/trend-reports.md)
 
-   Använd Dashboard för att visa information om partners unika antal besökare uppdelat efter [!UICONTROL trait]-typer och [!UICONTROL segments] för en angiven tidsram.
+   Använd Dashboard för att visa information om partners unika antal besökare uppdelat efter [!UICONTROL trait] typer och [!UICONTROL segments] för en angiven tidsram.
 
 * [Datainsamling och felfrekvens i valda rapporter för Audience Manager](/help/using/reporting/report-sampling.md)
 

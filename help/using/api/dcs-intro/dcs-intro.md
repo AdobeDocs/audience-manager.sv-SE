@@ -1,17 +1,16 @@
 ---
-title: 'API-metoder och -kod för datainsamlingsservrar (DCS) '
-seo-title: API-metoder och kod för Adobe Audience Manager (AAM) Data Collection Server (DCS)
+title: API-metoder och -kod för datainsamlingsservrar (DCS)
+seo-title: Data Collection Server (DCS) API Methods and Code for Adobe Audience Manager (AAM)
 description: Kod, metoder och tekniker som gör att du kan arbeta programmatiskt med Audience Manager Data Collection-servrar (DCS).
-seo-description: Kod, metoder och tekniker som gör att du kan arbeta programmatiskt med Audience Manager Data Collection-servrar (DCS).
+seo-description: Code, methods, and techniques that let you work programmatically with the Audience Manager Data Collection Servers (DCS).
 feature: DCS
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: be18a59c-c70d-4dcb-ae84-58ab0a3b8921
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 17%
+source-wordcount: '139'
+ht-degree: 46%
 
 ---
-
 
 # API-metoder och -kod för datainsamlingsservrar (DCS) 
 
@@ -19,7 +18,7 @@ Kod, metoder och tekniker som gör att du kan arbeta programmatiskt med Audience
 
 * [API:er för DCS-händelseanrop](/help/using/api/dcs-intro/dcs-event-calls/dcs-event-calls.md)
 
-   Om företagspolicyer eller andra tekniska problem hindrar dig från att placera JavaScript-koden på dina sidor, kan du fortfarande arbeta med Audience Manager för att skicka och returnera data från DCS med dessa API:er för händelsanrop.
+   Om företagspolicyer eller andra tekniska problem hindrar dig från att placera JavaScript-koden på dina sidor kan du fortfarande arbeta med Audience Manager för att skicka och returnera data från DCS med dessa API:er för händelseanrop.
 
 * [DCS API:er för överföring av data från server till server](/help/using/api/dcs-intro/dcs-s2s/dcs-s2s.md)
 

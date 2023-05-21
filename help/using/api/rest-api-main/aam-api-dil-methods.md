@@ -1,33 +1,32 @@
 ---
 description: Metoder som gör att du kan arbeta programmatiskt med Datan Integration Library (DIL).
-seo-description: Metoder som gör att du kan arbeta programmatiskt med Datan Integration Library (DIL).
-seo-title: API-metoder för Data Integration Library
+seo-description: Methods that let you work programmatically with the Data Integration Library (DIL).
+seo-title: Data Integration Library API Methods
 solution: Audience Manager
 title: API-metoder för Data Integration Library
 uuid: 507e7afd-3ae7-44de-98b0-589d699c453b
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: d2f3e4e8-65be-4fec-90d7-5991514b8efc
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 10%
+source-wordcount: '170'
+ht-degree: 8%
 
 ---
 
-
 # API-metoder för Data Integration Library {#data-integration-library-api-methods}
 
-Metoder som gör att du kan arbeta programmatiskt med [!UICONTROL Data Integration Library] ([!UICONTROL DIL]).
+Metoder som gör att du kan arbeta programmatiskt med [!UICONTROL Data Integration Library] ([!UICONTROL DIL].
 
 >[!IMPORTANT]
 >
->Data Integration Library-API:t är inaktuellt. Detta API används för att generera DIL, som du nu kan ladda ned själv här: [Hämta DIL](https://github.com/Adobe-Marketing-Cloud/dil/releases).
+>Data Integration Library-API:t är inaktuellt. Detta API används för att generera DIL, som du nu kan ladda ned själv här: [Nedladdning av DIL](https://github.com/Adobe-Marketing-Cloud/dil/releases).
 
 <!-- c_data_integr_library_api.xml -->
 
 ## Returversioner för DIL {#return-version-dil}
 
-En `GET`-metod som returnerar en lista med versioner ordnade från äldsta till nyaste.
+A `GET` som returnerar en lista med versioner som ordnats från äldsta till nyaste.
 
 <!-- r_api_return_versions_dil.xml -->
 
@@ -37,7 +36,7 @@ En `GET`-metod som returnerar en lista med versioner ordnade från äldsta till 
 
 ### Svar
 
-En slutförd begäran returnerar svarskoden `["4.0", "4.1"]` enligt nedan.
+En slutförd begäran returnerar svarskod `["4.0", "4.1"]` enligt nedan.
 
 ```
 ["4.0", "4.1"]
@@ -45,7 +44,7 @@ En slutförd begäran returnerar svarskoden `["4.0", "4.1"]` enligt nedan.
 
 ## Returnera JSON-schema för version {#return-json-schema-version}
 
-En `GET`-metod som returnerar [!DNL JSON]-schemat för [!UICONTROL DIL]-versionen. Stöder användning av alias [!UICONTROL LATEST] för version för att hämta den senaste versionen av [!UICONTROL DIL].
+A `GET` metod som returnerar [!DNL JSON] schema för [!UICONTROL DIL] version. Stöder med alias [!UICONTROL LATEST] för version för att få den senaste versionen av [!UICONTROL DIL].
 
 <!-- r_api_return_json_schema_for_version.xml -->
 
@@ -55,7 +54,7 @@ En `GET`-metod som returnerar [!DNL JSON]-schemat för [!UICONTROL DIL]-versione
 
 ### Svar
 
-En slutförd begäran returnerar svarskoden `["4.0", "4.1"]` och data enligt nedan.
+En slutförd begäran returnerar svarskod `["4.0", "4.1"]` och data enligt nedan.
 
 ```
 { 
@@ -381,7 +380,7 @@ En slutförd begäran returnerar svarskoden `["4.0", "4.1"]` och data enligt ned
 
 ## Generera DIL {#generate-dil}
 
-En `GET`-metod som genererar [!UICONTROL DIL] baserat på skickad i begärandebrödtext med den angivna versionen av [!UICONTROL DIL]. Om aliaset `LATEST` används för version i URL:en genereras den senaste versionen av [!UICONTROL DIL].
+A `GET` metod som genererar [!UICONTROL DIL] baserat på skickad begärandetext med den angivna versionen av [!UICONTROL DIL]. Om aliaset `LATEST` används för version i URL:en, den senaste versionen av [!UICONTROL DIL] genereras.
 
 <!-- r_api_generate_dil.xml -->
 
@@ -465,4 +464,4 @@ En `GET`-metod som genererar [!UICONTROL DIL] baserat på skickad i begärandebr
 
 ### Svar
 
-En uppdatering returnerar svarskoden `201 created` tillsammans med [!UICONTROL DIL] [!DNL JavaScript]-koden.
+En uppdatering returnerar svarskod `201 created` tillsammans med [!UICONTROL DIL] [!DNL JavaScript] kod.

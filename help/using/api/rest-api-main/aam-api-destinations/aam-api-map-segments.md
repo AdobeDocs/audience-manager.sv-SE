@@ -1,33 +1,32 @@
 ---
 description: Mappa segment till mål med dessa RESTful API-metoder.
-seo-description: Mappa segment till mål med dessa RESTful API-metoder.
-seo-title: Mappa segment till en destination
+seo-description: Map segments to destinations with these RESTful API methods.
+seo-title: Map Segments to a Destination
 solution: Audience Manager
 title: Mappa segment till en destination
 uuid: 35358ace-3082-4e86-a6eb-d77281af6d7e
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 906df6c5-f878-48e6-a804-eb5b4407f304
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 3%
+source-wordcount: '494'
+ht-degree: 2%
 
 ---
 
-
 # Mappa segment till en destination {#map-segments-to-a-destination}
 
-Mappa segment till mål med dessa [!DNL RESTful API]-metoder.
+Mappa segment till mål med dessa [!DNL RESTful API] metoder.
 
 <!-- c_api_map_seg_dest.xml -->
 
 ## Måltyper som stöds: Endast URL och cookie
 
-Med de tillgängliga `POST`-metoderna kan du endast mappa segment till [!UICONTROL URL] och [!UICONTROL cookie destinations]. För närvarande kan du inte mappa segment till [!UICONTROL server-to-server destinations] med dessa [!DNL REST API]-metoder. Använd användargränssnittet i stället. Med de relaterade målmetoderna `GET` kan du hämta information om [!UICONTROL server-to-server destinations] som skapats i användargränssnittet.
+Tillgängliga `POST` metoder kan du mappa segment till [!UICONTROL URL] och [!UICONTROL cookie destinations] endast. För närvarande kan du inte mappa segment till [!UICONTROL server-to-server destinations] med dessa [!DNL REST API] metoder. Använd användargränssnittet i stället. Det relaterade målet `GET` metoder som gör att du kan hämta information om [!UICONTROL server-to-server destinations] som har skapats i användargränssnittet.
 
 ## Mappa ett segment till ett icke-serialiserat URL-mål {#map-segment-non-serial}
 
-En `POST`-metod som gör att du kan mappa ett segment till ett icke-seriellt [!UICONTROL URL]-mål.
+A `POST` metod som gör att du kan mappa ett segment till ett icke-seriellt [!UICONTROL URL] mål.
 
 <!-- r_map_noserial_url.xml -->
 
@@ -77,7 +76,7 @@ Alla begärandavärden är obligatoriska om inget annat anges.
 
 ## Mappa ett segment till ett serialiserat URL-mål {#map-segment-serial}
 
-En `POST`-metod som gör att du kan mappa ett segment till ett serialiserat [!UICONTROL URL]-mål.
+A `POST` metod som gör att du kan mappa ett segment till en serialiserad [!UICONTROL URL] mål.
 
 <!-- r_map_serialized_url.xml -->
 
@@ -87,7 +86,7 @@ En `POST`-metod som gör att du kan mappa ett segment till ett serialiserat [!UI
 
 ### Exempelbegäran
 
-I begäran motsvarar `traitAlias` nyckeln i ett nyckelvärdepar. Alla begärandavärden är obligatoriska om inget annat anges.
+I begäran `traitAlias` motsvarar nyckeln i ett nyckelvärdepar. Alla begärandavärden är obligatoriska om inget annat anges.
 
 ```
 {
@@ -127,7 +126,7 @@ I begäran motsvarar `traitAlias` nyckeln i ett nyckelvärdepar. Alla begäranda
 
 ## Mappa ett segment till ett cookie-mål: Enkelnyckel, ej serialiserad {#map-segment-cookie-noserial}
 
-En `POST`-metod som gör att du kan mappa ett segment till ett icke-serialiserat [!UICONTROL cookie]-mål med enkel tangent.
+A `POST` metod som gör att du kan mappa ett segment till icke-serialiserat ennyckelsegment [!UICONTROL cookie] mål.
 
 <!-- r_map_cookie_noserial.xml -->
 
@@ -137,7 +136,7 @@ En `POST`-metod som gör att du kan mappa ett segment till ett icke-serialiserat
 
 ### Exempelbegäran
 
-I begäran motsvarar `valueAlias` värdet i ett nyckelvärdepar. Alla begärandavärden är obligatoriska om inget annat anges.
+I begäran `valueAlias` motsvarar värdet i ett nyckelvärdepar. Alla begärandavärden är obligatoriska om inget annat anges.
 
 ```
 {
@@ -172,9 +171,9 @@ I begäran motsvarar `valueAlias` värdet i ett nyckelvärdepar. Alla begäranda
 }
 ```
 
-## Mappa ett segment till ett cookie-mål: Multinyckel, ej serialiserad {#map-segment-cookie-multi-noserial}
+## Mappa ett segment till ett cookie-mål: Flera nycklar, ej serialiserade {#map-segment-cookie-multi-noserial}
 
-En `POST`-metod som gör att du kan mappa ett segment till ett icke-serialiserat [!UICONTROL cookie]-mål för flera nycklar.
+A `POST` metod som gör att du kan mappa ett segment till icke-serialiserat flernyckelsegment [!UICONTROL cookie] mål.
 
 <!-- r_map_cookie_multikey_noserial.xml -->
 
@@ -184,7 +183,7 @@ En `POST`-metod som gör att du kan mappa ett segment till ett icke-serialiserat
 
 ### Exempelbegäran
 
-I begäran anger `traitAlias` och `valueAlias` nyckeln respektive värdet i ett nyckelvärdepar. Alla begärandavärden är obligatoriska om inget annat anges.
+I begäran `traitAlias` och `valueAlias` ange nyckeln respektive värdet i ett nyckelvärdepar. Alla begärandavärden är obligatoriska om inget annat anges.
 
 ```
 {
@@ -220,9 +219,9 @@ I begäran anger `traitAlias` och `valueAlias` nyckeln respektive värdet i ett 
 }
 ```
 
-## Mappa ett segment till ett cookie-mål: Multinyckel, serialiserad {#map-segment-cookie-multi-serial}
+## Mappa ett segment till ett cookie-mål: Serialiserad flernyckel {#map-segment-cookie-multi-serial}
 
-En `POST`-metod som gör att du kan mappa ett segment till en flernyckel, serialiserad [!UICONTROL cookie destination].
+A `POST` metod som gör att du kan mappa ett segment till en flernyckelsserialiserad [!UICONTROL cookie destination].
 
 <!-- r_map_cookie_multikey_serialized.xml -->
 
@@ -232,7 +231,7 @@ En `POST`-metod som gör att du kan mappa ett segment till en flernyckel, serial
 
 ### Exempelbegäran
 
-I begäran anger `traitAlias` och `valueAlias` nyckeln och värdet i ett nyckelvärdepar. Alla begärandavärden är obligatoriska om inget annat anges.
+I begäran `traitAlias` och `valueAlias` ange nyckeln och värdet i ett nyckelvärdepar. Alla begärandavärden är obligatoriska om inget annat anges.
 
 ```
 {
@@ -270,7 +269,7 @@ I begäran anger `traitAlias` och `valueAlias` nyckeln och värdet i ett nyckelv
 
 ## Mappa ett segment till ett mål för server-till-server {#map-segment-s2s}
 
-En `POST`-metod som gör att du kan mappa ett segment till ett befintligt [!UICONTROL server-to-server]-mål. Observera dock att du inte kan skapa [!UICONTROL server-to-server]-mål med de tillgängliga [!DNL API]-metoderna.
+A `POST` metod som gör att du kan koppla ett segment till en befintlig [!UICONTROL server-to-server] mål. Observera dock att du inte kan skapa [!UICONTROL server-to-server] destinationer med dessa tillgängliga [!DNL API] metoder.
 
 <!-- r_map_segment_s2s.xml -->
 
@@ -280,7 +279,7 @@ En `POST`-metod som gör att du kan mappa ett segment till ett befintligt [!UICO
 
 ### Exempelbegäran
 
-I begäran motsvarar `traitAlias` nyckeln i ett nyckelvärdepar. Alla begärandavärden är obligatoriska om inget annat anges.
+I begäran `traitAlias` motsvarar nyckeln i ett nyckelvärdepar. Alla begärandavärden är obligatoriska om inget annat anges.
 
 ```
 {
@@ -316,7 +315,7 @@ I begäran motsvarar `traitAlias` nyckeln i ett nyckelvärdepar. Alla begäranda
 
 ## Skapa målmappningar gruppvis {#bulk-create}
 
-En `POST`-metod som gör att du kan skicka en array med målmappningarna [!UICONTROL cookie] eller [!UICONTROL URL].
+A `POST` metod som gör att du kan skicka en array med [!UICONTROL cookie] eller [!UICONTROL URL] målmappningar.
 
 <!-- r_bulk_create.xml -->
 
@@ -400,7 +399,7 @@ Ett lyckat svar returnerar arrayen med skapade mappningar.
 
 ## Lägg till flera segment till ett mål {#add-segments-dest}
 
-En `POST`-metod som gör att du kan mappa flera segment till ett mål.
+A `POST` med vilken du kan mappa flera segment till ett mål.
 
 <!-- r_add_segments_to_destination.xml -->
 
@@ -484,7 +483,7 @@ Returnerar en array med skapade mappningar.
 
 ## Uppdatera ett mål med mål-ID {#update-dest-data-order}
 
-En `PUT`-metod som gör att du kan uppdatera ett befintligt mål med `destinationId`.
+A `PUT` metod som gör att du kan uppdatera ett befintligt mål med `destinationId`.
 
 <!-- r_update_destination_data_order_id.xml -->
 
@@ -534,7 +533,7 @@ Alla begärandavärden är obligatoriska om inget annat anges.
 
 ## Uppdatera en mappning till ett mål med mappnings-ID {#update-mapping-dest-id}
 
-En `PUT`-metod som gör att du kan uppdatera en mappning till ett mål med den angivna `mappingId`-metoden.
+A `PUT` metod som gör att du kan uppdatera en mappning till ett mål med den angivna `mappingId`.
 
 <!-- r_update_destination_trait_data_order_id.xml -->
 

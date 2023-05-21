@@ -1,23 +1,23 @@
 ---
 description: Med DIL API:erna på instansnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 keywords: skapa egenskaper;skapa egenskaper
-seo-description: Med DIL API:erna på instansnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
-seo-title: DIL-metoder på instansnivå
+seo-description: The instance-level DIL APIs let you programmatically create and work with Audience Manager objects. The instance-level methods enhance API functionality established by the class-level methods.
+seo-title: Instance-level DIL Methods
 solution: Audience Manager
 title: DIL-metoder på instansnivå
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
-feature: Implementering av DIL
+feature: DIL Implementation
 exl-id: 0342439d-708e-461c-b155-a3ee423f5437
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1075'
 ht-degree: 2%
 
 ---
 
 # DIL-metoder på instansnivå{#instance-level-dil-methods}
 
-Med API:erna på förekomstnivå [!UICONTROL DIL] kan du skapa och arbeta med Audience Manager-objekt programmatiskt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
+Instansnivån [!UICONTROL DIL] Med API:er kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 
 ## Komma igång med DIL-metoder på instansnivå {#get-started-dil-methods}
 
@@ -27,10 +27,10 @@ c_api_overview.xml
 
  -->
 
-När du arbetar med API:er på förekomstnivå [!UICONTROL DIL]:
+När du arbetar med instansnivån [!UICONTROL DIL] API:er:
 
 * Åtkomst kräver ett partnernamn och ett behållarnamnområdes-ID (NSID). Kontakta din kontoansvarige på Audience Manager för att få denna information.
-* Ersätt valfri *kursiv*-text i API-dokumentationen med värde, ID eller annan variabel enligt den metod du arbetar med.
+* Ersätt valfritt exempel *kursiv* text i API-dokumentationen med värde, ID eller annan variabel som krävs för den metod du arbetar med.
 
 <!-- 
 
@@ -53,7 +53,7 @@ r_dil_signals.xml
 >[!NOTE]
 >
 >* Du kan kedja andra API-anrop till den här metoden.
->* Om Adobe Experience Cloud JavaScript-biblioteket finns på sidan väntar `submit()` på att molnet ska ange en cookie innan en begäran skickas.
+>* Om Adobe Experience Cloud JavaScript-biblioteket finns på sidan `submit()` Väntar på att molnet ska ange en cookie innan en begäran skickas.
 
 
 **Reserverade begärandenycklar**
@@ -77,7 +77,7 @@ Följande begärandenycklar är reserverade och kan inte skrivas över av den h�
 
 **Svar**
 
-Returnerar API-objektet för den aktuella [!UICONTROL DIL]-instansen.
+Returnerar API-objektet för den aktuella [!UICONTROL DIL] -instans.
 
 **Exempelkod**
 
@@ -124,7 +124,7 @@ r_dil_traits.xml
 
 **Svar**
 
-Returnerar API-objektet för den aktuella [!UICONTROL DIL]-instansen.
+Returnerar API-objektet för den aktuella [!UICONTROL DIL] -instans.
 
 **Exempelkod**
 
@@ -150,7 +150,7 @@ r_dil_logs.xml
 
 **Svar**
 
-Returnerar API-objektet för den aktuella [!UICONTROL DIL]-instansen.
+Returnerar API-objektet för den aktuella [!UICONTROL DIL] -instans.
 
 **Exempelkod**
 
@@ -167,7 +167,7 @@ partnerObject.api.logs({
 
 ## skicka {#submit}
 
-Skickar alla väntande data till Audience Manager för [!UICONTROL DIL]-instansen.
+Skickar alla väntande data till Audience Manager för [!UICONTROL DIL] -instans.
 
 <!-- 
 
@@ -179,11 +179,11 @@ r_dil_submit.xml
 
 >[!NOTE]
 >
->Du kan kedja andra API-anrop till den här metoden. Dessutom skriver [!UICONTROL DIL] kodade data till en målcookie. Blanksteg kodas till exempel som `%20` och semikolon som `%3B`.
+>Du kan kedja andra API-anrop till den här metoden. Dessutom [!UICONTROL DIL] skriver kodade data till en målcookie. Blanksteg kodas till exempel som `%20` och semikolon som `%3B`.
 
 **Svar**
 
-Returnerar API-objektet för den aktuella [!UICONTROL DIL]-instansen.
+Returnerar API-objektet för den aktuella [!UICONTROL DIL] -instans.
 
 **Exempelkod**
 
@@ -227,7 +227,7 @@ r_dil_after_result.xml
 
 **Svar**
 
-Returnerar ett API-objekt för den aktuella [!UICONTROL DIL]-instansen.
+Returnerar ett API-objekt för den aktuella [!UICONTROL DIL] -instans.
 
 **Exempelkod**
 
@@ -263,7 +263,7 @@ r_dil_clear_data.xml
 
 **Svar**
 
-Returnerar API-objektet för den aktuella [!UICONTROL DIL]-instansen.
+Returnerar API-objektet för den aktuella [!UICONTROL DIL] -instans.
 
 **Exempelkod**
 
@@ -331,7 +331,7 @@ partnerObject.api.customQueryParams({
 
 ## getContainerNSID {#getcontainernsid}
 
-Returnerar värdet för behållar-NSID för instansen [!UICONTROL DIL]. Användbar för felsökning och felsökning.
+Returnerar värdet för behållar-NSID för [!UICONTROL DIL] -instans. Användbar för felsökning och felsökning.
 
 <!-- 
 
@@ -392,7 +392,7 @@ if (log && log.length) {
 
 ## getPartner {#getpartner}
 
-Returnerar partnernamnet för en [!UICONTROL DIL]-instans. Användbar för felsökning och felsökning.
+Returnerar partnernamnet för en [!UICONTROL DIL] -instans. Användbar för felsökning och felsökning.
 
 <!-- 
 
@@ -416,7 +416,7 @@ var partner = dataLib.api.getPartner();
 
 ## getState {#getstate}
 
-Returnerar läget för den aktuella [!UICONTROL DIL]-instansen. Användbar för felsökning och felsökning.
+Returnerar det aktuella läget [!UICONTROL DIL] -instans. Användbar för felsökning och felsökning.
 
 <!-- 
 
@@ -508,11 +508,11 @@ Fungerar med [!UICONTROL DIL] version 2.10 och 3.1 eller senare.
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.idSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>Mellan olika datapartners och Audience Manager. Partner x använder till exempel detta för att synkronisera ett användar-ID med partner y och sedan skicka det till Audience Manager. </p> <p> <p><b>Viktigt:</b>  Den här metoden är föråldrad. Använd metoden <code> idSyncByURL </code> för instansen av Adobe Experience Platform Identity Service. </p> </p> </td> 
+   <td colname="col2"> <p>Mellan olika datapartners och Audience Manager. Partner x använder till exempel detta för att synkronisera ett användar-ID med partner y och sedan skicka det till Audience Manager. </p> <p> <p><b>Viktigt:</b>  Den här metoden är inaktuell. Använd <code> idSyncByURL </code> för instansen av Adobe Experience Platform Identity Service. </p> </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.aamIdSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>När du redan känner till användar-ID:t och vill skicka det till Audience Manager. </p> <p> <p><b>Viktigt:</b>  Den här metoden är föråldrad. Använd metoden <code> idSyncByDataSource </code> för instansen av Adobe Experience Platform Identity Service. </p> </p> </td> 
+   <td colname="col2"> <p>När du redan känner till användar-ID:t och vill skicka det till Audience Manager. </p> <p> <p><b>Viktigt:</b>  Den här metoden är inaktuell. Använd <code> idSyncByDataSource </code> för instansen av Adobe Experience Platform Identity Service. </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -559,11 +559,11 @@ Fungerar med [!UICONTROL DIL] version 2.10 och 3.1 eller senare.
 
 * **`%TIMESTAMP%`:** Skapar en tidsstämpel (i millisekunder). Används för cachebusting.
 * **`%DID%`:** Infogar användarens Audience Manager-ID.
-* **`%HTTP_PROTO%`:** Anger sidprotokollet (  `http` eller  `https`).
+* **`%HTTP_PROTO%`:** Anger sidprotokollet ( `http` eller `https`).
 
 **Svar**
 
-Båda funktionerna returnerar `Successfully queued` om de lyckas. De returnerar i annat fall en felmeddelandesträng.
+Båda funktionerna returnerar `Successfully queued` om det lyckas. De returnerar i annat fall en felmeddelandesträng.
 
 **Exempelkod**
 
@@ -616,7 +616,7 @@ Det här återanropet ersätter standardåteranropet som hanterar målpublicerin
 
 **Svar**
 
-Returnerar API-objektet för den aktuella [!UICONTROL DIL]-instansen.
+Returnerar API-objektet för den aktuella [!UICONTROL DIL] -instans.
 
 **Exempelkod**
 
@@ -633,7 +633,7 @@ dataLib.api.traits([<i>123, 456, 789</i>]).result(function(json){
 
 ## secureDataCollection {#securedatacollection}
 
-`secureDataCollection` är en boolesk parameter som styr hur  [!UICONTROL DIL] anrop till  [!UICONTROL Data Collection Servers (DCS)] och Akamai görs.
+`secureDataCollection` är en boolesk parameter som styr hur [!UICONTROL DIL] ringer [!UICONTROL Data Collection Servers (DCS)] och Akamai.
 
 <!-- 
 
@@ -641,9 +641,9 @@ dil-secure-data-collection.xml
 
  -->
 
-* När `secureDataCollection= true` (standard) gör [!UICONTROL DIL] alltid säkra HTTPS-anrop.
+* När `secureDataCollection= true` (standard), [!UICONTROL DIL] gör alltid säkra HTTPS-anrop.
 
-* När `secureDataCollection= false` utförs antingen HTTP- eller HTTPS-anrop av [!UICONTROL DIL] enligt det säkerhetsprotokoll som angetts av sidan.
+* När `secureDataCollection= false`, [!UICONTROL DIL] gör antingen HTTP- eller HTTPS-anrop genom att följa det säkerhetsprotokoll som angetts av sidan.
 
 >[!IMPORTANT]
 >
@@ -668,7 +668,7 @@ dil-use-cors-only.xml
 
 **Översikt**
 
-`useCORSOnly` är false som standard. Falskt innebär att webbläsaren kan utföra resurskontroller med CORS eller JSONP. [!UICONTROL DIL] försöker dock alltid begära resurser med CORS först. Den återgår till JSONP i äldre webbläsare som inte stöder CORS. Om du behöver tvinga webbläsaren att endast använda CORS, t.ex. för webbplatser som har höga säkerhetskrav, anger du `useCORSOnly:true`.
+`useCORSOnly` är false som standard. Falskt innebär att webbläsaren kan utföra resurskontroller med CORS eller JSONP. Men [!UICONTROL DIL] försöker alltid begära resurser med CORS först. Den återgår till JSONP i äldre webbläsare som inte stöder CORS. Om du behöver tvinga webbläsaren att endast använda CORS, t.ex. webbplatser som har höga säkerhetskrav, ska du ange `useCORSOnly:true`.
 
 **Exempel på kod**
 
@@ -681,16 +681,14 @@ var dilInstance = DIL.create({
 
 >[!IMPORTANT]
 >
->* Vi rekommenderar att du bara anger `useCORSOnly: true` när du är säker på att webbplatsens besökare har webbläsare som stöder den här funktionen.
->* När `useCORSOnly: true` kommer [!UICONTROL DIL] inte att ringa ID-anrop från Internet Explorer version 9 eller tidigare.
-
+>* Vi rekommenderar att du anger `useCORSOnly: true` bara när du är säker på att besökarna på webbplatsen har webbläsare som stöder den här funktionen.
+>* När `useCORSOnly: true`, [!UICONTROL DIL] kommer inte att ringa några ID-anrop från Internet Explorer version 9 eller tidigare.
 >
-
 
 
 ## useImageRequest {#useimagerequest}
 
-Ändrar begärandetypen till bilden `<img>` från skript `<src>`.
+Ändrar begärandetypen till bild `<img>` från skript `<src>`.
 
 <!-- 
 
@@ -706,7 +704,7 @@ r_dil_use_image_request.xml
 
 **Svar**
 
-Returnerar ett API-objekt för den aktuella [!UICONTROL DIL]-instansen.
+Returnerar ett API-objekt för den aktuella [!UICONTROL DIL] -instans.
 
 **Exempelkod**
 
@@ -722,9 +720,9 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >[!MORELIKETHIS]
 >
 >* [Namnkrav för nyckelvariabler](../features/traits/trait-key-name-requirements.md)
-* [Prefixkrav för nyckelvariabler](../features/traits/trait-variable-prefixes.md)
-* [Synkroniseringsfunktioner i Adobe Experience Platform identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/idsync.html)
-* [Skapa DIL](../dil/dil-class-overview/dil-create.md#dil-create)
-* [Adobe Experience Platform identitetstjänst: AnvändCORSOnly](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/use-cors-only.html)
-* [CORS-stöd i Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/reference/cors.html)
+>* [Prefixkrav för nyckelvariabler](../features/traits/trait-variable-prefixes.md)
+>* [Synkroniseringsfunktioner i Adobe Experience Platform identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/idsync.html)
+>* [Skapa DIL](../dil/dil-class-overview/dil-create.md#dil-create)
+>* [Adobe Experience Platform identitetstjänst: AnvändCORSOnly](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/use-cors-only.html)
+>* [CORS-stöd i Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/reference/cors.html)
 

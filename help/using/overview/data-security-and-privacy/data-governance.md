@@ -1,16 +1,15 @@
 ---
 description: Det här dokumentet förklarar hur kunddata regleras i Audience Manager.
-seo-description: Det här dokumentet förklarar hur kunddata regleras i Audience Manager.
-seo-title: Datastyrning
+seo-description: TThis document explains how customer data is governed in Audience Manager.
+seo-title: Data Governance
 solution: Audience Manager
 keywords: GDPR-gränssnitt, GDPR API, CCPA, sekretess, samtycke, obfuskation, styrning
 title: Datastyrning
 feature: Data Governance & Privacy
 exl-id: 52aeca00-73f2-4525-9e11-34a472ec45c6
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '454'
 ht-degree: 94%
 
 ---
@@ -32,7 +31,7 @@ Datastyrning i Audience Manager avser livscykeln för era kunddata i Audience Ma
 
 >[!NOTE]
 >
->Se [IP-adressofuscation](../../features/administration/ip-obfuscation.md) om du vill veta hur du aktiverar [!DNL IP]-adressofusk i användargränssnittet i Audience Manager.
+>Se [IP-adressofuscation](../../features/administration/ip-obfuscation.md) för att lära sig hur man aktiverar [!DNL IP] adressofuscation i användargränssnittet i Audience Manager.
 
 Titta på videon nedan för att få veta mer om hur du döljer [!DNL IP]-adresser i Audience Manager.
 

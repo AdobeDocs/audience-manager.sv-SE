@@ -1,43 +1,42 @@
 ---
 description: Rapporten om annonsenhetsöverlappning visas som ett värmediagram som markerar höga och låga överlappningar mellan annonsenheter.
-seo-description: Rapporten om annonsenhetsöverlappning visas som ett värmediagram som markerar höga och låga överlappningar mellan annonsenheter.
-seo-title: Annonsenhetsöverlappning
+seo-description: The Ad Unit Overlap report is displayed as a heat chart that highlights high and low overlaps between your Ad Units.
+seo-title: Ad Unit Overlap
 solution: Audience Manager
 title: Annonsenhetsöverlappning
 uuid: e4467e81-acbf-474e-b501-89d57395651f
 feature: Audience Optimization Reports
 exl-id: 08b219c6-bf0c-4473-9459-83b3657dfb15
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 3%
+source-wordcount: '408'
+ht-degree: 2%
 
 ---
 
 # Annonsenhetsöverlappning{#ad-unit-overlap}
 
-**[!UICONTROL Ad Unit Overlap]**-rapporten visas som ett värmediagram som markerar höga och låga överlappningar mellan annonsenheter.
+The **[!UICONTROL Ad Unit Overlap]** rapporten visas som ett värmediagram som markerar höga och låga överlappningar mellan annonsenheter.
 
 ## Användningsexempel {#use-cases}
 
-Med **[!UICONTROL Ad Unit Overlap]**-rapporten får ni insikt i var era målgrupper överlappar era webbegenskaper. I rapporten behandlas dina 100 mest relaterade egenskaper och hur de överlappar varandra.
+Med **[!UICONTROL Ad Unit Overlap]** kan ni få insikt i var era målgrupper överlappar era webbegenskaper. I rapporten behandlas dina 100 mest relaterade egenskaper och hur de överlappar varandra.
 
-## Använda överlappningsrapporten för annonsenhet {#using-the-report}
+## Använda överlappningsrapport för annonsenhet {#using-the-report}
 
-Använd kontrollerna **[!UICONTROL Top N Base Ad Units]** och **[!UICONTROL Top N Overlapping Ad Units]** för att välja önskat antal annonsenheter för överlappningen. Du kan välja maximalt 100 objekt för varje.
+Använd **[!UICONTROL Top N Base Ad Units]** och **[!UICONTROL Top N Overlapping Ad Units]** för att välja önskat antal annonsenheter för överlappningen. Du kan välja maximalt 100 objekt för varje.
 
-Använd kontrollerna **Dagintervall** och **Datum till och med** för att justera backupintervallet. Observera att 7-dagars och 30-dagars summeringsperioder endast är tillgängliga för söndagsdatum.
+Använd **Dagsintervall** och **Datum till** kontroller för att justera uppseendeintervallet. Observera att 7-dagars och 30-dagars summeringsperioder endast är tillgängliga för söndagsdatum.
 
-Använd kontrollerna **[!UICONTROL Base Ad Unit]** och **[!UICONTROL Overlap Ad Unit]** för att välja vilka av dina annonsenheter du vill visa i överlappningsrapporten.
+Använd **[!UICONTROL Base Ad Unit]** och **[!UICONTROL Overlap Ad Unit]** för att välja vilka annonsenheter som ska visas i överlappningsrapporten.
 
 >[!IMPORTANT]
 >
->När du aktiverar [!UICONTROL Audience Optimization for Publishers] måste du inkludera beskrivande metadata för [!UICONTROL Ad Unit IDs], enligt beskrivningen i steg 3 av [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten anger webbegenskapen som [!UICONTROL Ad Unit] i stället för [!UICONTROL Ad Unit ID].
+>Vid aktivering [!UICONTROL Audience Optimization for Publishers]måste du ta med beskrivande metadata för [!UICONTROL Ad Unit IDs], enligt beskrivningen i steg 3 av [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten innehåller information om webbegenskapen som [!UICONTROL Ad Unit] i stället för [!UICONTROL Ad Unit ID].
 
 ## Tolka resultaten {#interpreting-results}
 
-Din [!UICONTROL Ad Unit Overlap]-rapport kan se ut ungefär som den nedan. Håll muspekaren över en cell för att få mer information om just den överlappningen. Se beskrivningarna för ytterligare information i tabellen nedan.
+Dina [!UICONTROL Ad Unit Overlap] skulle kunna se ut ungefär som nedan. Håll muspekaren över en cell för att få mer information om just den överlappningen. Se beskrivningarna för ytterligare information i tabellen nedan.
 
 ![](assets/publisher_ad_unit_overlap.png)
 
@@ -67,11 +66,11 @@ Din [!UICONTROL Ad Unit Overlap]-rapport kan se ut ungefär som den nedan. Håll
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> Överlappa antal unika</span> </p> </td> 
-   <td colname="col2"> <p>Överlappningen mellan användare som har besökt en <span class="wintitle"> basannonsenhet</span> och <span class="wintitle"> överlappande annonsenhet</span>. </p> </td> 
+   <td colname="col2"> <p>Överlappningen mellan de användare som har besökt en <span class="wintitle"> Basannonsenhet</span> och <span class="wintitle"> Överlappa annonsenhet</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> Överlappningsprocent</span> </p> </td> 
-   <td colname="col2"> <p>Överlappningen mellan användare som har besökt en <span class="wintitle"> basannonsenhet</span> och <span class="wintitle"> överlappande annonsenhet</span>. Detta är <span class="wintitle"> Överlappa antal unika enheter</span>, uttryckt i procent av <span class="wintitle"> basannonsenhet</span>. </p> </td> 
+   <td colname="col2"> <p>Överlappningen mellan de användare som har besökt en <span class="wintitle"> Basannonsenhet</span> och <span class="wintitle"> Överlappa annonsenhet</span>. Det här är <span class="wintitle"> Överlappa antal unika</span>, uttryckt i procent av <span class="wintitle"> Basannonsenhet</span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -1,23 +1,22 @@
 ---
 description: En GET-metod som returnerar målet för angivet mål-ID.
-seo-description: En GET-metod som returnerar målet för angivet mål-ID.
-seo-title: Returnera en destination med destinations-ID
+seo-description: A GET method that returns the destination for the specified destinationId.
+seo-title: Return A Destination by Destination ID
 solution: Audience Manager
 title: Returnera en destination med destinations-ID
 uuid: abce7426-55a5-4045-93a7-0487652a7189
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: c0850e71-7830-4635-b773-e9a28ab5bd68
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 5%
+source-wordcount: '332'
+ht-degree: 3%
 
 ---
 
-
 # Returnera en destination med destinations-ID {#return-a-destination-by-destination-id}
 
-En `GET`-metod som returnerar målet för den angivna `destinationId`.
+A `GET` metod som returnerar målet för den angivna `destinationId`.
 
 <!-- r_get_all_destinations_order_id.xml -->
 
@@ -27,7 +26,7 @@ En `GET`-metod som returnerar målet för den angivna `destinationId`.
 
 >[!NOTE]
 >
->Om du vill fylla i fältet `mappings` skickar du `includeMappings=true` i URL:en.
+>Fylla i `mappings` fältöverföring `includeMappings=true` i webbadressen.
 
 ## Svar
 
@@ -59,7 +58,7 @@ En `GET`-metod som returnerar målet för den angivna `destinationId`.
 
 ## Returnera alla mål {#return-all-destinations}
 
-En `GET`-metod som returnerar alla mål för den angivna partnern.
+A `GET` metod som returnerar alla mål för den angivna partnern.
 
 <!-- r_get_all_destinations.xml -->
 
@@ -69,15 +68,14 @@ En `GET`-metod som returnerar alla mål för den angivna partnern.
 
 >[!NOTE]
 >
->* *(Valfritt)* Skicka in  `containsSegment=<sid>` för att returnera en array med alla mål som är mappade till det angivna segmentet. Frågan kan till exempel se ut ungefär så här: `GET .../destinations/?containsSegment=4321`.
-   >
-   >
-* Returnerar inte det fullständiga målobjektet. Hämta målet efter dataordning om du behöver ett fullständigt ifyllt objekt.
+>* *(Valfritt)* Skicka in `containsSegment=<sid>` om du vill returnera en array med alla mål som är mappade till det angivna segmentet. Frågan kan till exempel se ut ungefär så här: `GET .../destinations/?containsSegment=4321`.
+>
+>* Returnerar inte det fullständiga målobjektet. Hämta målet efter dataordning om du behöver ett fullständigt ifyllt objekt.
 
 
 ### Valfria frågeparametrar
 
-Du kan använda dessa valfria parametrar med API-metoder som returnerar *alla*-egenskaper för ett objekt. Ange dessa alternativ i begärandesträngen när du skickar frågan till [!DNL API]. Se [Valfria parametrar](../../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters).
+Du kan använda de här valfria parametrarna med API-metoder som returnerar *alla* egenskaper för ett objekt. Ange dessa alternativ i begärandesträngen när frågan skickas till [!DNL API]. Se [Valfria parametrar](../../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters).
 
 <table id="table_B05A8EE22C9A4C72B84A8479E1AB7D0A"> 
  <thead> 
@@ -97,7 +95,7 @@ Du kan använda dessa valfria parametrar med API-metoder som returnerar *alla*-e
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> sortBy</code> </td>
-   <td colname="col2">Sorterar och returnerar resultat enligt den angivna egenskapen <span class="keyword"> JSON</span>. </td>
+   <td colname="col2">Sorterar och returnerar resultat enligt angivet <span class="keyword"> JSON</span> -egenskap. </td>
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> descending</code> </td>
@@ -144,7 +142,7 @@ Du kan använda dessa valfria parametrar med API-metoder som returnerar *alla*-e
 
 ## Returnera en målmappning med mappnings-ID {#return-dest-mapping-id}
 
-En `GET`-metod som returnerar en individuell målmappning baserad på `mappingId`.
+A `GET` metod som returnerar en enskild målmappning baserat på `mappingId`.
 
 <!-- r_get_destination_trait_data_order.xml -->
 
@@ -181,7 +179,7 @@ En `GET`-metod som returnerar en individuell målmappning baserad på `mappingId
 
 ## Returmålsmappningar {#return-dest-mappings}
 
-En `GET`-metod som returnerar mappningarna för ett mål.
+A `GET` som returnerar mappningarna för ett mål.
 
 <!-- r_get_destination_mappings.xml -->
 
@@ -255,7 +253,7 @@ En `GET`-metod som returnerar mappningarna för ett mål.
 
 ## Returnera alla tillgängliga målplattformar {#return-dest-platforms}
 
-En `GET`-metod som returnerar alla tillgängliga enhetsplattformar för mål.
+A `GET` som returnerar alla tillgängliga enhetsplattformar för destinationer.
 
 <!-- r_get_dest_platforms.xml -->
 
@@ -271,9 +269,9 @@ BROWSER, ANDROID, iOS, ALL
 ]
 ```
 
-## Returnera historik för S2S- och S2S-måljobb {#return-job-history}
+## Returnera jobbhistorik för S2S- och S2S-måljobb {#return-job-history}
 
-En `GET`-metod som returnerar historikinformation för utgående [!UICONTROL Server-to-Server] ( [!UICONTROL S2S]) och bulk [!UICONTROL S2S]-måljobb.
+A `GET` metod som returnerar utgående [!UICONTROL Server-to-Server] ( [!UICONTROL S2S]) och bulk [!UICONTROL S2S] information om måljobbhistorik.
 
 <!-- r_get_job_history.xml -->
 

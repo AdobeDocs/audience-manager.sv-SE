@@ -1,18 +1,17 @@
 ---
 description: Lämna fältet för nyckelvärden tomt om du vill söka efter fler signaler och använda de tillgängliga filtren för att begränsa resultaten.
-seo-description: Lämna fältet för nyckelvärden tomt om du vill söka efter fler signaler och använda de tillgängliga filtren för att begränsa resultaten.
-seo-title: Söka efter signaler med filter
+seo-description: Leave the key-value fields blank to search for a broader range of signals and use the available filters to narrow down the results.
+seo-title: Search Signals by Filters
 title: Söka efter signaler med filter
 uuid: 99b00d48-6415-4cb1-848a-5401b34c43a6
 feature: Data Explorer
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 4e2ab375-f998-41c5-affb-b9bf983cc28a
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 9%
+source-wordcount: '105'
+ht-degree: 7%
 
 ---
-
 
 # Söka efter signaler med filter {#search-signals-by-filters}
 

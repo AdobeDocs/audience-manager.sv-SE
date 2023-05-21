@@ -10,7 +10,7 @@ feature: Inbound Data Transfers
 exl-id: ba95537e-30c9-4546-9456-55f46dbe29ff
 source-git-commit: f02e6bcfb7ff3560d9624c3dce7ff065a3a75748
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '459'
 ht-degree: 4%
 
 ---
@@ -55,7 +55,7 @@ När du lägger ut offlinedata online kan du fortfarande använda den här infor
 | Produktion | <ul><li>Amazon S3</li><li>FTP</li></ul> | <ul><li>demdex-s2s-clients</li><li>ftp-in.demdex.com</li></ul> |
 | Betaversion | <ul><li>Amazon S3</li><li>FTP</li></ul> | <ul><li>demdex-s2s-clients-sandbox-us-east-1</li><li>sandbox-ftp-in.demdex.com</li></ul> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Ytterligare teknisk läsning
 

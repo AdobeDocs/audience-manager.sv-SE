@@ -1,15 +1,14 @@
 ---
-description: 'Svar på vanliga frågor om personbaserade destinationer.  '
-seo-description: 'Svar på vanliga frågor om personbaserade destinationer.  '
-seo-title: Vanliga frågor om personbaserade destinationer
+description: Svar på vanliga frågor om personbaserade destinationer.
+seo-description: Answers to common questions about People-Based Destinations.
+seo-title: People-Based Destinations FAQ
 solution: Audience Manager
 title: Vanliga frågor om personbaserade destinationer
 feature: People-based Destinations
 exl-id: 56506bf0-45f1-49df-81ac-10f57a2487eb
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1159'
 ht-degree: 94%
 
 ---
@@ -79,9 +78,9 @@ Så länge e-postadressen är hash-kodad och korrekt inmatad bör det inte vara 
 
 Audience Manager kan samla in och skicka upp till 10 e-postadresser per användare till destinationsplattformar, men e-postadresserna måste hämtas via synkroniseringsfiler. När Audience Manager har skickat e-postadresserna till destinationsplattformarna är det upp till plattformarna att matcha e-postadresserna mot sin egen användardatabas. Vissa plattformar kan ha ytterligare e-postadressdiagram som matchar adresser som skickas från Audience Manager med användarprofiler.
 
-**Kan jag använda  [!DNL People-Based Destinations] i  [!DNL Audience Lab]?**
+**Kan jag använda [!DNL People-Based Destinations] in [!DNL Audience Lab]?**
 
-Nej. För närvarande är alla [!DNL People-Based Destinations]-mål uteslutna från [!DNL Audience Lab]. Eftersom [!DNL People-Based Destinations] och DSP (Demand-side platforms) använder olika ID:n kan du inte testa och mäta prestanda med målgrupper som är jämnt fördelade mellan dem.
+Nej. För närvarande, alla [!DNL People-Based Destinations] destinationer utesluts från [!DNL Audience Lab]. Med tanke på [!DNL People-Based Destinations] och plattformar på efterfrågesidan använder olika ID:n, kan du inte testa och mäta prestanda med målgrupper som är jämnt fördelade mellan dem.
 
 ## Kontroller vid dataexport {#data-export-controls}
 
@@ -117,6 +116,6 @@ Ni kan använda Audience Managers [!DNL Facebook]-integrering [!DNL WCA] via fun
 
 Dessa två integreringar kompletterar varandra och ni kan använda båda för att få bättre målgruppstäckning. Som exempel kan [!DNL WCA] användas för prospektering när ett företag söker efter webbplatsbesökare som inte har registrerat ett konto, medan [!DNL People-Based Destinations] kan hjälpa er att rikta er till befintliga kunder som har angett sin e-postadress men kanske inte besökt webbplatsen.
 
-**Är  [!DNL People-Based Destinations] integreringen med  [!DNL Facebook] support ett sätt att hindra användare från att nå en viss målgrupp när de inte längre är kvalificerade för det?**
+**Gör [!DNL People-Based Destinations] integrering med [!DNL Facebook] ger du stöd för att utesluta användare från en viss målgrupp när de inte längre är berättigade till det?**
 
-Ja, integreringen har stöd för att ta bort användare från [!DNL Facebook]-målgrupper när de inte längre är kvalificerade för dem.
+Ja, integreringen stöder borttagning av användare från [!DNL Facebook] målgrupper när de inte längre är kvalificerade för dem.

@@ -1,18 +1,17 @@
 ---
 description: Kundtjänsten är redo att hjälpa dig att lösa eventuella problem som kan uppstå. Ange så mycket information som du kan när du kontaktar kundtjänst. Det hjälper teamet att förstå och lösa ditt problem.
-seo-description: Kundtjänsten är redo att hjälpa dig att lösa eventuella problem som kan uppstå. Ange så mycket information som du kan när du kontaktar kundtjänst. Det hjälper teamet att förstå och lösa ditt problem.
-seo-title: Om du har problem
+seo-description: Customer Care is prepared to help you solve any issues that might arise. Provide as much of this information as you can when contacting Customer Care. This will help the team understand and resolve your issue.
+seo-title: If There's a Problem
 solution: Audience Manager
 title: Om du har problem
 feature: Support
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 2f7b9dbe-7aac-41b0-aab8-3b703d7a2441
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '373'
 ht-degree: 100%
 
 ---
-
 
 # Om du har problem {#problem}
 

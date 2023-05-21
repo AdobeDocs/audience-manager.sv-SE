@@ -1,29 +1,28 @@
 ---
 description: Resten av API-metoder för att hantera behörigheter för objekt och grupper.
-seo-description: Resten av API-metoder för att hantera behörigheter för objekt och grupper.
-seo-title: API-metoder för behörighetshantering
+seo-description: Rest API methods to manage permissions for objects and groups.
+seo-title: Permissions Management API Methods
 solution: Audience Manager
 title: API-metoder för behörighetshantering
 uuid: 111d0f92-d92c-4d4b-b0d6-10dd3fa466ad
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 7aac8ea8-4120-4c6b-88a6-30e8aa727dc8
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 10%
+source-wordcount: '96'
+ht-degree: 8%
 
 ---
 
-
 # API-metoder för behörighetshantering {#permissions-management-api-methods}
 
-Återställ [!DNL API]-metoder för att hantera behörigheter för objekt och grupper.
+Vila [!DNL API] metoder för att hantera behörigheter för objekt och grupper.
 
 <!-- c_rest_api_perm_man.xml -->
 
-## Lista tillgängliga objekttyper {#list-object-types}
+## Visa tillgängliga objekttyper {#list-object-types}
 
-En `GET`-metod för att lista tillgängliga objekttyper som rollbaserade åtkomstkontroller kan ställas in på.
+A `GET` metod för att lista tillgängliga objekttyper som rollbaserade åtkomstkontroller kan ställas in på.
 
 <!-- r_rest_api_perm_list.xml -->
 
@@ -39,7 +38,7 @@ En `GET`-metod för att lista tillgängliga objekttyper som rollbaserade åtkoms
 
 ## Visa tillgängliga behörigheter för en objekttyp {#list-permissions-object-type}
 
-En `GET`-metod för att visa tillgängliga behörigheter för en objekttyp.
+A `GET` metod för att lista tillgängliga behörigheter för en objekttyp.
 
 <!-- r_rest_api_perm_list_perms.xml -->
 

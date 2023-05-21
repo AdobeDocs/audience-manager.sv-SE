@@ -7,8 +7,8 @@ user-guide-description: Lär dig hur du använder Adobe Audience Manager för at
 feature-set: Audience Manager
 source-git-commit: e50aab600f0bf197b1356ba77ac86efb4456979a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1813'
+ht-degree: 91%
 
 ---
 

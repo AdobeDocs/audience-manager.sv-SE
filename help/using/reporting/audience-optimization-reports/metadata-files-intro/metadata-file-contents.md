@@ -1,17 +1,16 @@
 ---
 description: Formatera innehållet i Audience Optimization-metadatafilen enligt dessa specifikationer.
-seo-description: Formatera innehållet i Audience Optimization-metadatafilen enligt dessa specifikationer.
-seo-title: Innehållsformat för metadatafiler
+seo-description: Format the contents of your Audience Optimization metadata file according to these specifications.
+seo-title: Content Format for Metadata Files
 solution: Audience Manager
 title: Innehållsformat för metadatafiler
 uuid: 9ba44738-3e17-40c7-9e8c-5abd8361e16d
 feature: Log Files
 exl-id: 1aed39f4-f893-4f25-b041-e198895e338a
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 4%
+source-wordcount: '286'
+ht-degree: 3%
 
 ---
 
@@ -21,9 +20,9 @@ Formatera innehållet i Audience Optimization-metadatafilen enligt dessa specifi
 
 ## Syntax {#syntax}
 
-Följande syntax definierar strukturen för välformaterat innehåll i en metadatafil. Obs! *kursiv* anger en variabelplatshållare.
+Följande syntax definierar strukturen för välformaterat innehåll i en metadatafil. Obs! *kursiv* används för att ange en variabelplatshållare.
 
-**Syntax:**  *content ID* |  *name* |  *-1*
+**Syntax:**  *innehålls-ID* | *name* | *-1*
 
 <!--In the contents syntax, you'll notice a parent ID variable. Don't confuse it with the parent ID used in the [metadata file name](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md). These 2 variables seem similar, but they represent different things. In the file name, the parent ID corresponds to a category like "campaign" (ID 1), "placement" (ID 3), or "tactic" (ID 9), etc. In the file body:-->
 
@@ -31,13 +30,13 @@ Den tredje kolumnen **-1** är tekniskt sett överordnat ID, som är ett äldre 
 
 >[!NOTE]
 >
->Observera att en metadatafil per dimension behövs, så att flera metadatafiler förväntas i haken. Dimensionerna listas i artikeln [Namngivningskonventioner för metadatafilen](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md#child-dimension).
+>Observera att en metadatafil per dimension behövs, så att flera metadatafiler förväntas i haken. Dimensionerna visas i artikeln [Namnkonventioner för metadatafil](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md#child-dimension).
 
 **Separata filposter med ^a (kontroll-A eller ASCII 001)**
 
-Använd `^a` (control-A eller ASCII 001) för att separera innehåll i dina metadatafiler. Eftersom det här är tecken som inte skrivs ut visas ett vertikalstreck (|) endast i visningssyfte i syntaxexemplet ovan.
+Använd `^a` (control-A eller ASCII 001) för att separera innehåll i metadatafilerna. Eftersom det här är tecken som inte skrivs ut visas ett vertikalstreck (|) endast i visningssyfte i syntaxexemplet ovan.
 
-Vid behov kan du hämta exempelfilen - [20181105_0_1](assets/20181105_0_1.zip). Zippa upp den och redigera den i valfri redigerare och justera den efter det faktiska metadatainnehållet eftersom den redan innehåller den avgränsare som krävs.
+Vid behov kan du ladda ned exempelfilen - [20181105_0_1](assets/20181105_0_1.zip). Zippa upp den och redigera den i valfri redigerare och justera den efter det faktiska metadatainnehållet eftersom den redan innehåller den avgränsare som krävs.
 
 >[!IMPORTANT]
 >
@@ -45,7 +44,7 @@ Vid behov kan du hämta exempelfilen - [20181105_0_1](assets/20181105_0_1.zip). 
 
 ## Exempel {#examples}
 
-Låt oss titta på hur du strukturerar innehåll i en metadatafil. En del av den här strukturen beror på dimensionen. Dimensionerna listas i artikeln [Namngivningskonventioner för metadatafilen](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md#child-dimension).
+Låt oss titta på hur du strukturerar innehåll i en metadatafil. En del av den här strukturen beror på dimensionen. Dimensionerna visas i artikeln [Namnkonventioner för metadatafil](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md#child-dimension).
 
 **Campaign**
 

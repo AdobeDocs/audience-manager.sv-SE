@@ -1,16 +1,15 @@
 ---
 description: Runt den 14 oktober 2019 märkte jag att mina registrerade trait-populationer för diagrammet med enhets-ID hade sjunkit till 0, trots att de var mycket högre förut.
-seo-description: Runt den 14 oktober 2019 märkte jag att mina registrerade trait-populationer för diagrammet med enhets-ID hade sjunkit till 0, trots att de var mycket högre förut.
-seo-title: Varför sjönk mina registrerade trait-populationer till 0 runt den 15 oktober?
+seo-description: Around October 14th, 2019 I noticed that my onboarded trait populations for the Device ID graph have dropped to 0, where previously they were much higher.
+seo-title: Why did my Onboarded trait populations drop to 0 around October 15th?
 solution: Audience Manager
 title: Varför sjönk mina registrerade trait-populationer till 0 runt den 15 oktober?
 feature: Support
 exl-id: e93cee15-7d05-4f81-8f14-a3e03f214542
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 99%
+source-wordcount: '195'
+ht-degree: 100%
 
 ---
 

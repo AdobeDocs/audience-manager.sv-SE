@@ -9,8 +9,8 @@ feature: Audience Optimization Reports
 exl-id: 045eed94-100f-460d-83bb-78fbd7beb51c
 source-git-commit: 95b7b4347f3da16be05be60cbefc0e236022a4a7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '596'
+ht-degree: 4%
 
 ---
 

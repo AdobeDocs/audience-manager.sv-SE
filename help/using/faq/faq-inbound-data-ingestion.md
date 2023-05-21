@@ -1,16 +1,16 @@
 ---
 description: Vanliga frågor om att lägga in offlinedata i Audience Manager.
 keywords: ftp eller s3;s3 eller ftp
-seo-description: Vanliga frågor om att lägga in offlinedata i Audience Manager.
-seo-title: Vanliga frågor om inmatning av inkommande kunddata
+seo-description: Frequently asked questions about bringing offline data into Audience Manager.
+seo-title: Inbound Customer Data Ingestion FAQ
 solution: Audience Manager
 title: Vanliga frågor om inmatning av inkommande kunddata
 uuid: 491e9ec1-4731-46a8-86e7-d8c613e6cedc
-feature: Onboarding Offline-data
+feature: Onboarding Offline Data
 exl-id: 48eef5f1-0655-4dac-9ab4-74b11c705c13
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1342'
 ht-degree: 89%
 
 ---
@@ -58,10 +58,10 @@ Se [Filkomprimering för inkommande dataöverföringsfiler](../integration/sendi
 
 **Kan jag överföra en inkommande datafil (filen [!DNL .sync] eller [!DNL .overwrite]) innan jag driftsätter [!DNL Audience Manager] -koden i produktionen?**
 
-Ja. Så länge du använder en [!UICONTROL cross-device data source] för att lagra de CRM-data som du överför lagrar Audience Manager alltid dessa data. Efter [!UICONTROL Profile Merge Rules]-förbättringarna som Audience Manager lanserade i oktober 2019 och som tillåter användning offline, kan du överföra och vidta åtgärder för data utan att driftsätta Audience Manager-kod i produktionen alls. Se:
+Ja. Så länge du använder [!UICONTROL cross-device data source] för att lagra de CRM-data som du överför lagrar Audience Manager alltid dessa data. I själva verket följer [!UICONTROL Profile Merge Rules] förbättringar som Audience Manager lanserade i oktober 2019 och som gör det möjligt att endast använda offline, kan du ladda upp data och agera på data utan att behöva driftsätta Audience Manager-kod i produktionen alls. Se:
 
 * [Översikt över förbättrade regler för profilsammanslagning](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
-* [!UICONTROL People-based Destinations] -  [Personalisering baserad på data som bara är offline](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
+* [!UICONTROL People-based Destinations] - [Personalisering baserad på data som bara är offline](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
 
 <br>
 
@@ -187,7 +187,7 @@ Tidsstämplar används för loggning och registrering. De krävs av den syntax s
 
  
 
-**Vad är en  [!DNL Data Provider ID (DPID)] och hur får jag den?**
+**Vad är en [!DNL Data Provider ID (DPID)] och hur får jag tag i den?**
 
 Er Adobe-konsult kommer att tilldela er datakälla ett tresiffrigt eller fyrsiffrigt [DPID (dataleverantörs-ID)](../reference/ids-in-aam.md). Detta ID är unikt och ändras inte.
 

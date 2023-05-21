@@ -1,15 +1,15 @@
 ---
 description: Definitioner och länkar till mer läsning.
-seo-description: Definitioner och länkar till mer läsning.
-seo-title: Ordlista
+seo-description: Definitions and links to further reading.
+seo-title: Glossary
 solution: Audience Manager
 title: Ordlista
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
-feature: 'Referens '
+feature: Reference
 exl-id: 9e2ee3d3-01b2-4038-abda-fedf0f16f163
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1173'
 ht-degree: 98%
 
 ---

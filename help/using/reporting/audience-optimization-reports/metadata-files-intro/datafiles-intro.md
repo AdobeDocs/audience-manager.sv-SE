@@ -9,8 +9,8 @@ feature: Log Files
 exl-id: 0da2c1d3-5ff8-40dd-b831-21d8941688ce
 source-git-commit: db90a6f1aaf85b10e31e93e316c257b7c3a904aa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '988'
+ht-degree: 2%
 
 ---
 

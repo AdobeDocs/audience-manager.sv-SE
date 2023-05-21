@@ -1,33 +1,32 @@
 ---
 description: Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta Adobe Audience Manager-konsulten innan du försöker synkronisera ditt första ID.
-seo-description: Beskriver syntaxen och parametrarna som används i det inledande HTTP-anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta Adobe Audience Manager-konsulten innan du försöker synkronisera ditt första ID.
-seo-title: ID-synkronisering för utgående dataöverföringar
+seo-description: Describes the syntax and parameters used in the initial HTTP call to synchronize user IDs between Audience Manager and a third-party data provider. Contact your Adobe Audience Manager consultant before attempting your first ID synchronization.
+seo-title: ID Synchronization for Outbound Data Transfers
 solution: Audience Manager
 title: ID-synkronisering för utgående dataöverföringar
 uuid: f3849be8-1094-47db-9296-7482f020af18
 feature: Outbound Data Transfers
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 02cca19a-eebf-43b2-b034-24f072fe2efb
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 11%
+source-wordcount: '335'
+ht-degree: 10%
 
 ---
 
-
 # ID-synkronisering för utgående dataöverföringar{#id-synchronization-for-outbound-data-transfers}
 
-Beskriver syntaxen och parametrarna som används i det inledande `HTTP`-anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta Adobe Audience Manager-konsulten innan du försöker synkronisera ditt första ID.
+Beskriver syntaxen och parametrarna som används i den inledande `HTTP` anrop till synkronisering av användar-ID mellan Audience Manager och en tredjepartsleverantör av data. Kontakta Adobe Audience Manager-konsulten innan du försöker synkronisera ditt första ID.
 
 <!-- c_id_sync_out.xml -->
 
 ## Syfte med ID-synkronisering
 
-ID-synkronisering är det första steget i den utgående, asynkrona dataöverföringsprocessen. I det här steget jämför [!DNL Audience Manager] och leverantören ID:n för sina respektive webbplatsbesökare. En [!DNL Audience Manager]-kund kan till exempel känna en användare med ID 123. Din datapartner kan dock identifiera den här användaren med ID 456. Med synkroniseringsprocessen kan [!DNL Audience Manager] och en dataleverantör stämma av dessa olika ID:n och identifiera användare i sina respektive system. När det är klart ska [!DNL Audience Manager] och tredjepartsdataleverantören ha motsvarande ID:n för varje unik användare som visas i våra nätverk.
+ID-synkronisering är det första steget i den utgående, asynkrona dataöverföringsprocessen. I det här steget [!DNL Audience Manager] och leverantören jämför och matchar ID:n för sina respektive webbplatsbesökare. Till exempel en [!DNL Audience Manager] kan känna en användare med ID 123. Din datapartner kan dock identifiera den här användaren med ID 456. Synkroniseringsprocessen tillåter [!DNL Audience Manager] och en dataleverantör för att stämma av dessa olika ID:n och identifiera användare i deras respektive system. När det är klart [!DNL Audience Manager] och tredjepartsleverantören av data bör ha motsvarande ID:n för varje unik användare som visas i våra nätverk.
 
 ## URL-syntax
 
-I en ID-växling ska en korrekt formaterad [!DNL URL]-sträng se ut så här:
+I en ID-växling är en korrekt formaterad [!DNL URL] strängen ska se ut så här:
 
 ```
 https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT_URL>
@@ -35,7 +34,7 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
 
 ## URL-parametrar
 
-[!DNL URL] för ditt inkommande ID-synkroniseringsanrop ska innehålla variabler som beskrivs i tabellen nedan.
+The [!DNL URL] för ditt inkommande ID-synkroniseringsanrop ska innehålla variabler som beskrivs i tabellen nedan.
 
 >[!NOTE]
 >
@@ -59,17 +58,17 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> <i>&lt;REDIRECT_URL&gt;</i> </code> </td> 
-   <td colname="col2">En kodad URL-omdirigering med makrot <code> ${DD_UUID}</code> inbäddat i den. <p><b>Obs!</b> Läggs bara till när DataProvider initierar anropet. </p> </td> 
+   <td colname="col2">En kodad URL-omdirigering med makrot <code> ${DD_UUID}</code> inbäddad i den. <p><b>Obs!</b> Tillagd endast när DataProvider initierar anropet. </p> </td> 
   </tr> 
     </tr> 
   <tr> 
    <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i> </code> </td> 
-   <td colname="col2"> <p><code>gdpr</code> kan vara 0 (GDPR gäller inte) eller 1 (GDPR gäller).</p><p><b>Obs!</b> <ul><li>Parametrarna <code>gdpr</code> och <code>gdpr_consent</code> introduceras gradvis i URL:er för ID-synkronisering med aktiveringspartners. Se Aktiveringspartners som stöder IAB TCF i <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners">Audience Manager Plug-in för IAB TCF.</a></li><li>Den här parametern kan bara användas tillsammans med <code>gdpr_consent.</code></li></ul></p></td>
+   <td colname="col2"> <p><code>gdpr</code> kan vara 0 (GDPR gäller inte) eller 1 (GDPR gäller).</p><p><b>Obs!</b> <ul><li>The <code>gdpr</code> och <code>gdpr_consent</code> parametrar introduceras gradvis i URL:er för ID-synkronisering med aktiveringspartners. Se Aktiveringspartners som stöder IAB TCF i <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners">Plugin-programmet Audience Manager för IAB TCF.</a></li><li>Den här parametern kan bara användas tillsammans med <code>gdpr_consent.</code></li></ul></p></td>
   </tr> 
     </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code><i>gdpr_consent=&lt;ENCODED STRING&gt;</i> </code> </td> 
-   <td colname="col2"><p><code>gdpr_consent</code> är URL-säker base64-kodad GDPR-medgivandesträng (se <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB-specifikation</a>).</p><p><b>Obs!</b> Den här parametern kan bara användas tillsammans med  <code>gdpr</code>.</p> </td> 
+   <td colname="col2"><p><code>gdpr_consent</code> är URL-säker base64-kodad GDPR-medgivandesträng (se <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB-specifikation</a>).</p><p><b>Obs!</b> Den här parametern kan bara användas tillsammans med <code>gdpr</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

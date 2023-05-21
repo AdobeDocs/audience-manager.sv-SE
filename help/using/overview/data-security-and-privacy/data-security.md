@@ -1,16 +1,15 @@
 ---
 description: Audience Manager tar datasäkerhet och integritet på stort allvar. Vi arbetar för att skydda våra system och skydda dina värdefulla data.
-seo-description: Audience Manager tar datasäkerhet och integritet på stort allvar. Vi arbetar för att skydda våra system och skydda dina värdefulla data.
-seo-title: 'Datasäkerhet i Audience Manager '
+seo-description: Audience Manager takes data security and privacy very seriously. We work to keep our systems secure and protect your valuable data.
+seo-title: Data Security in Audience Manager
 solution: Audience Manager
 title: Datasäkerhet i Audience Manager
 uuid: 33ad19ca-4690-4d97-853b-1882d7d4ac01
 feature: Data Governance & Privacy
 exl-id: 94b70250-dca3-4c50-b4dd-bc37178a587e
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '999'
 ht-degree: 98%
 
 ---
@@ -62,11 +61,11 @@ Processer som skyddar personuppgifter. Mer sekretessinformation finns i [Adobes 
 
 Processer som hjälper till att skydda data som ägs av enskilda klienter.
 
-**Trait Data Partitioning:**  Dina data ([!UICONTROL traits]ID, etc.) partitioneras av klienten. Detta förhindrar att information oavsiktligt exponeras för olika kunder. Till exempel trait-data i cookies partitioneras av kunden och lagras i en klientspecifik underdomän. De kan inte läsas eller användas av misstag av en annan Audience Manager-klient. Dessutom partitioneras trait-data som lagras i [!UICONTROL Profile Cache Servers (PCS)] också av kunden. Det förhindrar att andra klienter oavsiktligt använder dina data i händelseanrop eller andra förfrågningar.
+**Trait Data Partitioning:**  Dina data ([!UICONTROL traits], ID:n etc.) partitioneras av klienten. Detta förhindrar att information oavsiktligt exponeras för olika kunder. Till exempel trait-data i cookies partitioneras av kunden och lagras i en klientspecifik underdomän. De kan inte läsas eller användas av misstag av en annan Audience Manager-klient. Dessutom partitioneras trait-data som lagras i [!UICONTROL Profile Cache Servers (PCS)] också av kunden. Det förhindrar att andra klienter oavsiktligt använder dina data i händelseanrop eller andra förfrågningar.
 
 **Datapartitionering i rapporter:**  Klient-ID:n är en del av identifieringsnyckeln i alla rapporttabeller och rapportfrågor filtreras efter ID. Det förhindrar att data visas i rapporter för en annan Audience Manager-kund.
 
-## Inkommande server-till-server-överföringar (S2S) {#inbound-s2s}
+## Inkommande server-till-server-överföringar (S2S)  {#inbound-s2s}
 
 Adobe Audience Manager har stöd för två huvudsakliga metoder för överföring av S2S-datafiler direkt till våra system:
 
@@ -90,8 +89,8 @@ Principen instruerar webbläsaren att när ett säkert [!DNL HTTPS]-anrop har gj
 
 Principen förbättrar datasäkerheten mellan klienter och Adobe [Edge](../../reference/system-components/components-edge.md)-servrar.
 
-### Exempel på {#hsts-example}
+### Exempel {#hsts-example}
 
-Låt oss säga att `yourcompany.demdex.com`-domänen skickar trafik till [!DNL DCS] via [!DNL HTTP]. [!DNL HSTS] uppgraderar anropen till [!DNL HTTPS] och alla efterföljande [!DNL DCS]-anrop som kommer från `yourcompany.demdex.com` använder [!DNL HTTPS] i stället för [!DNL HTTP].
+Låt oss säga `yourcompany.demdex.com` domänen skickar trafik till [!DNL DCS] via [!DNL HTTP]. [!DNL HSTS] uppgraderar anropen till [!DNL HTTPS] och alla efterföljande [!DNL DCS]-anrop som kommer från `yourcompany.demdex.com` använder [!DNL HTTPS] i stället för [!DNL HTTP].
 
 Mer information om HSTS finns i [HTTP Strict Transport Security – Wikipedia](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security).

@@ -1,35 +1,34 @@
 ---
 description: Exempel som du kan referera till när du skapar uttryck i kodredigeraren i Expression Builder.
-seo-description: Exempel som du kan referera till när du skapar uttryck i kodredigeraren i Expression Builder.
-seo-title: Exempeluttryck med booleska operatorer och jämförelseoperatorer
+seo-description: Examples you can refer to for creating expressions in the Expression Builder code editor.
+seo-title: Sample Expressions With Boolean and Comparison Operators
 solution: Audience Manager
 title: Exempeluttryck med booleska operatorer och jämförelseoperatorer
 uuid: ee74c376-2099-4816-8694-43f58845a0ac
 feature: Traits
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 68041d61-7942-4c2f-9e78-f2b2f803ef59
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 9%
+source-wordcount: '190'
+ht-degree: 7%
 
 ---
 
-
 # Exempeluttryck med booleska operatorer och jämförelseoperatorer {#sample-expressions-with-boolean-and-comparison-operators}
 
-Exempel som du kan referera till när du skapar uttryck i kodredigeraren för [!UICONTROL Expression Builder].
+Exempel som du kan referera till när du skapar uttryck i [!UICONTROL Expression Builder] kodredigerare.
 
 ## Översikt över kodexempel {#code-samples-overview}
 
 <!-- r_tb_expression_samples.xml -->
 
-Skapa egna ärenderegler med kodredigeraren [!UICONTROL Expression Builder]. Följande exempel kan hjälpa dig att komma igång. I vissa av exemplen används variabeln *`key`* som prefix med `c_` för att identifiera den som en användardefinierad variabel. Inkludera `c_`-prefixet (eller någon annan namnkonvention) för variabeln *`key`* om dina händelseanrop skickar data till [!DNL Audience Manager] med den syntaxen.
+Skapa egna regler med [!UICONTROL Expression Builder] kodredigerare. Följande exempel kan hjälpa dig att komma igång. I vissa av exemplen används *`key`* variabel med `c_` för att identifiera den som en användardefinierad variabel. Inkludera `c_` prefix (eller annan namnkonvention) för *`key`* variabel om dina händelseanrop skickar data till [!DNL Audience Manager] med den syntaxen.
 
 ## Booleska uttryck {#boolean-expressions}
 
 ### AND-exempel
 
-Regeln fastställer krav för kvalificering av egenskaper med hjälp av booleska [!UICONTROL AND]-operatorer.
+Regeln fastställer krav på kvalificering av traktoregenskaper med Boolean [!UICONTROL AND] operatorer.
 
 <table id="table_7C5E23EC9E0F43B182EA9771D7BB6E87"> 
  <thead> 
@@ -52,7 +51,7 @@ Regeln fastställer krav för kvalificering av egenskaper med hjälp av booleska
 
 ### ELLER-exempel
 
-Den här regeln fastställer krav för kvalificering av egenskaper med hjälp av operatorerna [!DNL Boolean] [!UICONTROL OR] och [!UICONTROL AND].
+I denna regel fastställs krav på kvalificering av traktoregenskaper med hjälp av [!DNL Boolean] [!UICONTROL OR] och [!UICONTROL AND] operatorer.
 
 <table id="table_6E8BA5EE1D7F4DCC9A92074D0C2C050E"> 
  <thead> 
@@ -64,7 +63,7 @@ Den här regeln fastställer krav för kvalificering av egenskaper med hjälp av
  <tbody> 
   <tr> 
    <td colname="col1"><code>(a== "1" OR b=="1") AND (c=="new")</code> </td> 
-   <td colname="col2"> Uppfyll villkoren som anges av variablerna <code><i>a </i></code> eller <code><i>b </i></code> och <code><i>c </i></code>. </td> 
+   <td colname="col2"> Uppfyll villkoren som anges av variabler <code><i>a </i></code> eller <code><i>b </i></code> och <code><i>c </i></code>. </td> 
   </tr> 
  </tbody> 
 </table>

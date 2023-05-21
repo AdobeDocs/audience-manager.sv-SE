@@ -1,23 +1,22 @@
 ---
 description: Varje gång en inkommande Server-till-Server-fil bearbetas skickas ett kvitto via e-post till partnerlösningar och, om detta är konfigurerat, till partnern.
-seo-description: Varje gång en inkommande Server-till-Server-fil bearbetas skickas ett kvitto via e-post till partnerlösningar och, om detta är konfigurerat, till partnern.
-seo-title: Exempelmeddelande till partners efter inkommande bearbetning
+seo-description: Whenever an inbound Server-to-Server file is processed, a receipt is sent via email to partner solutions and, if configured, to the partner.
+seo-title: Sample Message to Partners after Inbound Processing
 solution: Audience Manager
 title: Exempelmeddelande till partners efter inkommande bearbetning
 uuid: 69e3a8b3-8465-4f4c-8005-8a9ff15ae19a
 feature: Inbound Data Transfers
 exl-id: acfc788f-63e6-445f-a086-0a2cc6c8865b
-translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 3%
+source-wordcount: '632'
+ht-degree: 2%
 
 ---
 
 # Exempelmeddelande till partners efter inkommande bearbetning{#sample-message-to-partners-after-inbound-processing}
 
-När en inkommande [!UICONTROL Server-to-Server]-fil bearbetas, skickas ett kvitto via e-post till partnerlösningar och, om den är konfigurerad, till partnern.
+Vid inkommande [!UICONTROL Server-to-Server] filen bearbetas skickas ett kvitto via e-post till partnerlösningar och, om det är konfigurerat, till partnern.
 
 <!-- r_inbound_message.xml -->
 
@@ -26,7 +25,7 @@ Följande exempel är ett exempel på ett e-postmeddelande. Tabellen under medde
 <table id="table_F579C2278A044213BFCEF97F3BEC2C0C"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>Från: aam-noreply@adobe.com  </b> </p> <p> <b>Ämne: Adobe Audience Manager server-till-server-bearbetningsresultat:</b> </p> <p> <b>Bästa Adobe-partner: (ID:7)</b> <b></b> </p> <p> <b>Vi har tagit emot din filleverans från Adobe Audience Manager Server till server</b> </p> <p> <b>Filnamn:</b> <i></i> </p> <p> <b> s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806402.sync</b><i> </i></p> <p> <b> s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-16/ftp_dpm_7_901_1368655202.sync  </b><i> </i></p> <p> <b>s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784804.sync  </b><i> </i></p> <p> <b>s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806403.sync  </b><i> </i></p> <p> <b>s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784802.sync  </b><i> </i></p> <p> <b>s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784803.sync  </b><i> </i></p> <p> <b>s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806404.sync</b><i> </i></p> <p> <b>Mottagna poster: 40669900</b> </p> <p><b>Formatfel: 0</b> </p> <p> <b>Ogiltigt AAM-ID: 112  </b> </p> <p> <b>Inget matchande AAM-ID: 0  </b> </p> <p> <b>Inget fack realiserat: 26730823  </b> </p> <p> <b>Bearbetade poster: 40669900  </b> </p> <p> <b>Lagrade poster: 13938958  </b> </p> <p> <b>Totalt antal enheter: 21  </b> </p> <p> <b>Totalt antal signaler: 918878926  </b> </p> <p> <b>Totalt antal oanvända signaler: 660348376  </b> </p> <p> <b>Totalt antal realiserade egenskaper: 258086908  </b> </p> <p> <b>Totalt antal borttagna egenskaper: 0  </b> </p> <p> <b>Totalt antal traits misslyckades vid validering: 0  </b> </p> <p> <b>Totalt antal användare som har egenskaper som inte kunde valideras: 0  </b> </p> <p> <b>Jobbstarttid: 2018-05-17 18:07:49  </b> </p> <p> <b>Jobbsluttid: 2018-05-17 18:45:02</b> </p> </td> 
+   <td colname="col1"> <p> <b>Från: aam-noreply@adobe.com </b> </p> <p> <b>Ämne: Adobe Audience Manager server-till-server-bearbetningsresultat:</b> </p> <p> <b>Bästa Adobe-partner: (ID:7)</b> <b></b> </p> <p> <b>Vi har tagit emot din filleverans från Adobe Audience Manager Server till server</b> </p> <p> <b>Filnamn:</b> <i></i> </p> <p> <b> s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806402.sync</b> </p> <p> <b> s3n://&lt;<i>bucket_name&gt;</i>/2018-05-16/ftp_dpm_7_901_1368655202.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784804.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806403.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784802.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784803.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806404.sync</b> </p> <p> <b>Mottagna poster: 40669900</b> </p> <p><b>Formatfel: 0</b> </p> <p> <b>Ogiltigt AAM-ID: 112 </b> </p> <p> <b>Inget matchande AAM-ID: 0 </b> </p> <p> <b>Inget fack realiserat: 26730823 </b> </p> <p> <b>Bearbetade poster: 40669900 </b> </p> <p> <b>Lagrade poster: 13938958 </b> </p> <p> <b>Totalt antal enheter: 21 </b> </p> <p> <b>Totalt antal signaler: 918878926 </b> </p> <p> <b>Totalt antal oanvända signaler: 660348376 </b> </p> <p> <b>Totalt antal realiserade egenskaper: 258086908 </b> </p> <p> <b>Totalt antal borttagna egenskaper: 0 </b> </p> <p> <b>Totalt antal traits misslyckades vid validering: 0 </b> </p> <p> <b>Totalt antal användare som har egenskaper som inte kunde valideras: 0 </b> </p> <p> <b>Jobbstarttid: 2018-05-17 18:07:49 </b> </p> <p> <b>Jobbsluttid: 2018-05-17 18:45:02</b> </p> </td> 
   </tr> 
  </tbody> 
 </table>

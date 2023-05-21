@@ -1,17 +1,16 @@
 ---
 description: Dessa element identifierar kodalternativ och variabler som används i hjälpdokumentationen. I allmänhet tar du inte med dessa symboler eller formatelement i koden eller datafilerna. De är bara visuella indikatorer.
-seo-description: Dessa element identifierar kodalternativ och variabler som används i hjälpdokumentationen. I allmänhet tar du inte med dessa symboler eller formatelement i koden eller datafilerna. De är bara visuella indikatorer.
-seo-title: Formatkonventioner för kod- och textelement
+seo-description: These elements identify code options and variables used throughout the help documentation. Generally, you would not include these symbols or style elements in your code or data files. They're visual indicators only.
+seo-title: Style Conventions for Code and Text Elements
 solution: Audience Manager
 title: Formatkonventioner för kod- och textelement
 uuid: 7605604d-bc76-4063-ba92-52c88bd69e3c
 feature: Reference
 exl-id: 12f9b802-b645-4fc3-96ea-3d16b1f4890a
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 10%
+source-wordcount: '170'
+ht-degree: 8%
 
 ---
 
@@ -37,7 +36,7 @@ Dessa element identifierar kodalternativ och variabler som används i hjälpdoku
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> (this|that) </code> </p> </td> 
-   <td colname="col2"> <p>Objekt inom parentes indikerar ett booleskt <span class="wintitle"> OR</span>-val. </p> </td> 
+   <td colname="col2"> <p>Objekt inom parentes indikerar ett booleskt värde <span class="wintitle"> ELLER</span> val. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> literal</code> </p> </td> 

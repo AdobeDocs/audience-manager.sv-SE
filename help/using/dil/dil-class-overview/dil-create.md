@@ -1,15 +1,15 @@
 ---
 description: Skapar en partnerspecifik DIL-instans.
-seo-description: Skapar en partnerspecifik DIL-instans.
-seo-title: Skapa DIL
+seo-description: Creates a partner-specific DIL instance.
+seo-title: DIL create
 solution: Audience Manager
 title: Skapa DIL
 uuid: 6e054600-703c-4a97-af2a-8207c50013db
-feature: Implementering av DIL
+feature: DIL Implementation
 exl-id: 0bef149c-4458-43d6-affe-6d79fe1fca46
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '800'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## Skapa DIL {#dil-create-new}
 
-Skapar en partnerspecifik [!UICONTROL DIL]-instans.
+Skapar en partnerspecifik [!UICONTROL DIL] -instans.
 
 **Funktionssignatur:** `DIL.create: function (initConfig) {}`
 
@@ -32,7 +32,7 @@ r_dil_create.xml
 
 >[!IMPORTANT]
 >
->Egenskapen `visitorService` är *alltid* krävs. Andra egenskaper som anges här är valfria, såvida inte annat anges.
+>The `visitorService` egenskapen är *alltid* krävs. Andra egenskaper som anges här är valfria, såvida inte annat anges.
 
 `initConfig` använder följande element:
 
@@ -48,11 +48,11 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> containerNSID </code> </p> </td> 
    <td colname="col2"> <p>Heltal </p> </td> 
-   <td colname="col3"> <p>Den här egenskapen ställer in det behållar-ID som används av <span class="keyword"> Audience Manager </span> för ID-synkroniseringar. Du skulle ange <code> containerNSID </code> om du har <span class="wintitle"> DIL </span> distribuerat över flera platser. Var och en av dessa platser kommer att ha sina egna behållar-ID- och ID-synkroniseringar. När du bara har en plats är behållar-ID 0 som standard och du behöver inte ange detta korrekt. Kontakta din konsult för att få en lista över dina webbplatser och deras behållar-ID:n. </p> <p>I <a href="https://experienceleague.adobe.com/docs/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service </a> motsvarar egenskapen <code> idSyncContainerID </code> <code> containerNSID </code> i <span class="wintitle"> DIL </span>. Observera följande om du använder <span class="wintitle"> DIL </span> <i>och</i> ID-tjänsten på flera platser: </p> <p> 
+   <td colname="col3"> <p>Den här egenskapen anger behållar-ID som används av <span class="keyword"> Audience Manager </span> för ID-synkronisering. Du skulle ställa in <code> containerNSID </code> om du har <span class="wintitle"> DIL </span> distribueras på flera platser. Var och en av dessa platser kommer att ha sina egna behållar-ID- och ID-synkroniseringar. När du bara har en plats är behållar-ID 0 som standard och du behöver inte ange detta korrekt. Kontakta din konsult för att få en lista över dina webbplatser och deras behållar-ID:n. </p> <p>I <a href="https://experienceleague.adobe.com/docs/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service </a>, egenskapen <code> idSyncContainerID </code> motsvarar <code> containerNSID </code> in <span class="wintitle"> DIL </span>. Observera följande om du använder <span class="wintitle"> DIL </span> <i>och</i> ID-tjänsten på flera platser: </p> <p> 
      <ul id="ul_FF17004C21FC408BB8C8CCE670E45F37"> 
       <li id="li_FFB23BB3CD224678B0A1CF3731F6A206">För varje plats anger du samma behållar-ID på <code> containerNSID </code> och <code> idSyncContainerID </code>. </li> 
-      <li id="li_CC932D3A0D154F6C9566EF31260A14CF">Både <span class="wintitle"> DIL </span> och ID-tjänsten kommer att försöka skicka ID-synkroniseringar till vår datainsamling iFrame. Men iFrame säkerställer att <span class="wintitle"> DIL </span> inte utlöser någon ID-synkronisering. Detta förhindrar duplicering. </li> 
-      <li id="li_0A909AD26DE94EAA960DC1374C7AF89F">Endast <span class="wintitle"> DIL </span> skickar data till ett <a href="../../features/destinations/destinations.md"> URL-mål </a>. </li> 
+      <li id="li_CC932D3A0D154F6C9566EF31260A14CF">Båda <span class="wintitle"> DIL </span> och ID-tjänsten kommer att försöka skicka ID-synkroniseringar till vår datainsamling iFrame. Men iFrame säkerställer att <span class="wintitle"> DIL </span> aktiverar inte en ID-synkronisering. Detta förhindrar duplicering. </li> 
+      <li id="li_0A909AD26DE94EAA960DC1374C7AF89F">Endast <span class="wintitle"> DIL </span> skickar data till en <a href="../../features/destinations/destinations.md"> URL-mål </a>. </li> 
      </ul> </p> <p>Se även <a href="https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/idsyncontainerid.html" format="https" scope="external"> idSyncContainerID </a>. </p> </td> 
   </tr> 
   <tr> 
@@ -61,14 +61,14 @@ r_dil_create.xml
    <td colname="col3"> 
     <p> <code> declaredId </code> används för att skicka in </p> 
     <ul id="ul_75E64D7DDBD14670BB0BC7819F72036C"> 
-     <li id="li_43C7F0EAC5B24F07BBF4ADAB4B0142B7"> <code> dpid </code>: Datapartnerns ID har tilldelats dig av  <span class="keyword"> Audience Manager  </span>. </li> 
+     <li id="li_43C7F0EAC5B24F07BBF4ADAB4B0142B7"> <code> dpid </code>: Datapartners ID som du har tilldelats av <span class="keyword"> Audience Manager </span>. </li> 
      <li id="li_3BD52ADEA1E24B41B51AFA95D71DD1FC"> <code> dpuuid </code>: Ditt unika ID för en användare. </li> 
-    </ul> <p> <p>Viktigt:  Använd endast okodade värden för dina ID:n. Kodningen skapar dubbelkodade identifierare. </p> </p> <p> <p>Obs!  Om du använder <a href="https://experienceleague.adobe.com/docs/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service </a> anger du kund-ID:n med metoden <code> setCustomerIDs </code> i stället för <span class="wintitle"> DIL </span>. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Kund-ID och autentiseringstillstånd </a>. </p> </p> </td> 
+    </ul> <p> <p>Viktigt: Använd endast okodade värden för dina ID:n. Kodningen skapar dubbelkodade identifierare. </p> </p> <p> <p>Obs! Om du använder <a href="https://experienceleague.adobe.com/docs/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service </a>, ange kund-ID:n med <code> setCustomerIDs </code> i stället för <span class="wintitle"> DIL </span>. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Kund-ID och autentiseringstillstånd </a>. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> delayAllUntilWindowLoad </code> </p> </td> 
    <td colname="col2"> <p>Boolean </p> </td> 
-   <td colname="col3"> <p> Om värdet är true avbryts alla begäranden (IFRAME, händelseanrop, ID-synkronisering och mål) från att köras tills händelsen <code> Page Load </code> aktiveras. Standardvärdet är <code> false </code>. </p> </td> 
+   <td colname="col3"> <p> Om true avbryts alla begäranden (IFRAME, händelseanrop, ID-synkronisering och mål) från att köras tills <code> Page Load </code> utlöses. Standard är <code> false </code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> disableDeclaredUUIDCookie </code> </p> </td> 
@@ -78,22 +78,22 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> disableDestinationPublishingIframe </code> </p> </td> 
    <td colname="col2"> <p>Boolean </p> </td> 
-   <td colname="col3"> <p> <p>Viktigt:  Det här elementet har tagits bort med <span class="wintitle"> DIL </span> version 8.0 (släppt augusti 2018). Använd <code> visitor.disableIdSyncs </code> <a href="https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external">-funktionen </a> i Adobe Experience Platform identitetstjänst i stället. </p> </p> <p> Om <code> true </code> inte bifogar målpubliceringen IFRAME till DOM- eller branddestinationerna. Standardvärdet är <code> false </code>. </p> </td> 
+   <td colname="col3"> <p> <p>Viktigt: Det här elementet har ersatts med <span class="wintitle"> DIL </span> version 8.0 (släppt augusti 2018). Använd <code> visitor.disableIdSyncs </code> <a href="https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external"> function </a> i Adobe Experience Platform identitetstjänst i stället. </p> </p> <p> If <code> true </code>, kommer inte att bifoga destinationspubliceringen IFRAME till DOM eller branddestinationerna. Standard är <code> false </code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> disableIDSyncs </code> </p> </td> 
    <td colname="col2"> <p>Boolean </p> </td> 
-   <td colname="col3"> <p> <p>Viktigt:  Det här elementet har tagits bort med <span class="wintitle"> DIL </span> version 8.0 (släppt augusti 2018). Använd <code> visitor.disableIdSyncs </code> <a href="https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external">-funktionen </a> i Adobe Experience Platform identitetstjänst i stället. </p> </p> <p>Inaktiverar ID-synkronisering. Du måste inaktivera ID-synkronisering när du använder DIL v6.2+ och Visitor ID-tjänsten. Funktionen <code> visitorService </code> (se exempelkod nedan) hanterar den här åtgärden. </p> </td> 
+   <td colname="col3"> <p> <p>Viktigt: Det här elementet har ersatts med <span class="wintitle"> DIL </span> version 8.0 (släppt augusti 2018). Använd <code> visitor.disableIdSyncs </code> <a href="https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external"> function </a> i Adobe Experience Platform identitetstjänst i stället. </p> </p> <p>Inaktiverar ID-synkronisering. Du måste inaktivera ID-synkronisering när du använder DIL v6.2+ och Visitor ID-tjänsten. The <code> visitorService </code> funktionen (se exempelkoden nedan) hanterar den här åtgärden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> enableErrorReporting </code> </p> </td> 
    <td colname="col2"> <p>Boolean </p> </td> 
-   <td colname="col3"> <p> Ange <code> true </code> om du vill aktivera felrapportering för alla <span class="wintitle"> DIL </span>-instanser på sidan. Fungerar endast med Boolean <code> true </code>. </p> </td> 
+   <td colname="col3"> <p> Ange till <code> true </code> för att aktivera felrapportering för alla <span class="wintitle"> DIL </span> instanser på sidan. Fungerar med Boolean <code> true </code> endast. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> iframeAkamaiHTTPS </code> </p> </td> 
    <td colname="col2"> <p>Boolean </p> </td> 
-   <td colname="col3"> <p> <p>Viktigt:  Det här elementet har tagits bort med <span class="wintitle"> DIL </span> version 8.0 (släppt augusti 2018). Använd <code> visitor.idSyncSSLUseAkamai </code> <a href="https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/idsyncssluseakamai.html" format="https" scope="external">-funktionen </a> i Adobe Experience Platform identitetstjänst i stället. </p> </p> <p> Anger om målpubliceringsmallen ska använda Akamai för HTTPS-anslutningar. Aktiverat per partner. </p> </td> 
+   <td colname="col3"> <p> <p>Viktigt: Det här elementet har ersatts med <span class="wintitle"> DIL </span> version 8.0 (släppt augusti 2018). Använd <code> visitor.idSyncSSLUseAkamai </code> <a href="https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/idsyncssluseakamai.html" format="https" scope="external"> function </a> i Adobe Experience Platform identitetstjänst i stället. </p> </p> <p> Anger om målpubliceringsmallen ska använda Akamai för HTTPS-anslutningar. Aktiverat per partner. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> mappings </code> </p> </td> 
@@ -103,7 +103,7 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> namespace </code> </p> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>Obligatoriskt. </p> <p><code> namespace </code>-nyckelvärdepar innehåller ditt <span class="keyword"> Experience Cloud </span> organisations-ID. Om du inte har detta ID kan du hitta det i avsnittet <span class="wintitle"> Administration </span> på kontrollpanelen <span class="keyword"> Experience Cloud. </span> Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se de vanliga frågorna om funktioner och funktioner i <a href="../../faq/faq-features.md"> och <a href="https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html" format="https" scope="external"> Administration - Användarhantering och Vanliga frågor och svar </a>.</a> </p> </td> 
+   <td colname="col3"> <p>Obligatoriskt. </p> <p>The <code> namespace </code> nyckelvärdepar innehåller <span class="keyword"> Experience Cloud </span> Organisations-ID. Om du inte har detta ID kan du hitta det i <span class="wintitle"> Administration </span> i <span class="keyword"> Experience Cloud </span> kontrollpanel. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se <a href="../../faq/faq-features.md"> Funktioner och funktioner Frågor och svar </a> och <a href="https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html" format="https" scope="external"> Administration - Användarhantering och vanliga frågor och svar </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> partner </code> </p> </td> 
@@ -113,7 +113,7 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> removeFinishedScriptsAndCallbacks </code> </p> </td> 
    <td colname="col2"> <p>Boolean </p> </td> 
-   <td colname="col3"> <p> Tar bort skript och återanrop. Standardvärdet är <code> False </code>. Gäller endast den aktuella <span class="wintitle"> DIL-instansen </span>. Har släppts med v3.3. </p> </td> 
+   <td colname="col3"> <p> Tar bort skript och återanrop. Standard är <code> False </code>. Gäller den aktuella <span class="wintitle"> DIL </span> Endast instans. Har släppts med v3.3. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> uuidCookie </code> </p> </td> 
@@ -123,14 +123,14 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> visitorService </code> </p> </td> 
    <td colname="col2"> <p>Objekt </p> </td> 
-   <td colname="col3"> <p>Krävs med <span class="wintitle"> DIL </span> 6.2 eller senare. </p> <p> DIL förlitar sig på funktionen <code> setCustomerIDs </code> i <span class="wintitle"> Adobe Experience Platform Identity Service </span> för att skicka deklarerade ID:n till <span class="keyword"> Audience Manager </span>. Mer information finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Kund-ID och autentiseringstillstånd </a>. </p> </td> 
+   <td colname="col3"> <p>Krävs med <span class="wintitle"> DIL </span> 6.2 eller senare. </p> <p> DIL förlitar sig på <code> setCustomerIDs </code> funktionen i <span class="wintitle"> Adobe Experience Platform Identity Service </span> skicka deklarerade ID:n till <span class="keyword"> Audience Manager </span>. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Kund-ID och autentiseringstillstånd </a> för mer information. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Exempelkod**
 
-Ett [!UICONTROL DIL]-samplingsanrop kan se ut ungefär så här:
+Ett exempel [!UICONTROL DIL] anropet kan se ut ungefär så här:
 
 ```js
 var partnerObject1 = DIL.create({ 
@@ -157,11 +157,11 @@ var partnerObject2 = DIL.create({
 }); 
 ```
 
-Ett svar returnerar [!UICONTROL DIL]-instansen. Ett misslyckat försök returnerar ett felobjekt (kastas inte) om koden har konfigurerats felaktigt eller om ett fel påträffas.
+Ett godkänt svar returnerar [!UICONTROL DIL] -instans. Ett misslyckat försök returnerar ett felobjekt (kastas inte) om koden har konfigurerats felaktigt eller om ett fel påträffas.
 
 ## uidCookie-egenskaper {#uuidcookie-props}
 
-Definierar de egenskaper som används av variabeln `uuidCookie`. Den här variabeln är en del av metoden `DIL.create`.
+Definierar egenskaperna som används av `uuidCookie` variabel. Den här variabeln är en del av `DIL.create` -metod.
 
 `uuidCookie` har följande egenskaper:
 
@@ -173,7 +173,7 @@ r_dil_uuid_cookie.xml
 
 | Namn | Beskrivning |
 |---|---|
-| `name` | Cookie-namnet ( `aam_did` är standard). |
+| `name` | Cookie-namn ( `aam_did` är standard). |
 | `days` | Cookie-livstid (100 dagar är standard). |
 | `path` | Cookie-sökväg, t.ex. `'/test'` ( `/` är standard). |
 | `domain` | Domänen som cookien är inställd i, t.ex. `'adobe.com'` ( `'.'+document.domain` är standard). |
@@ -181,7 +181,7 @@ r_dil_uuid_cookie.xml
 
 ## visitorService Properties {#visitor-service-props}
 
-Definierar de egenskaper som används av variabeln `visitorService`. Den här variabeln är en del av metoden `DIL.create`.
+Definierar egenskaperna som används av `visitorService` variabel. Den här variabeln är en del av `DIL.create` -metod.
 
 `visitorService` har följande egenskaper:
 

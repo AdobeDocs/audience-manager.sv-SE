@@ -38,7 +38,7 @@ Företagskunder som använder [!DNL Audience Manager] behöver en datahanterings
 
 >[!IMPORTANT]
 >
-> Hanteringen av användarkonton går över till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). För att starta migreringen av användare måste alla Audience Manager-kunder omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln: [migrering från Audience Manager till Admin Console](admin-console-migration.md).
+> Hanteringen av användarkonton går över till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). För att starta migreringen av användare måste alla Audience Manager-kunder omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln: [migrering från Audience Manager till Admin Console](admin-console-migration.md).
 > 
 > När alla kunder har migrerat försvinner avsnittet för användarhantering i det här dokumentet.
 Skapa användare i [!DNL Audience Manager] och ange användarinformation, inloggningsstatus och tilldela användare till grupper.
@@ -66,7 +66,7 @@ Mer information om grupper och behörigheter finns i [Skapa en grupp](../../feat
 
 >[!IMPORTANT]
 >
-> Hanteringen av användarkonton går över till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Vi rekommenderar alla Audience Manager-kunder att omedelbart vidta de åtgärder som beskrivs i den här artikeln för att starta migreringen av användare: [migrering från Audience Manager till Admin Console](admin-console-migration.md).
+> Hanteringen av användarkonton går över till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Vi rekommenderar alla Audience Manager-kunder att omedelbart vidta de åtgärder som beskrivs i den här artikeln för att starta migreringen av användare: [migrering från Audience Manager till Admin Console](admin-console-migration.md).
 > 
 > När alla kunder har migrerat försvinner det här avsnittet.
 
@@ -92,7 +92,7 @@ Då öppnas ett behörighetsfönster för det markerade objektet.
 
 >[!IMPORTANT]
 >
-> Hanteringen av användarkonton går över till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Vi rekommenderar alla Audience Manager-kunder att omedelbart vidta de åtgärder som beskrivs i den här artikeln för att starta migreringen av användare: [migrering från Audience Manager till Admin Console](admin-console-migration.md).
+> Hanteringen av användarkonton går över till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Vi rekommenderar alla Audience Manager-kunder att omedelbart vidta de åtgärder som beskrivs i den här artikeln för att starta migreringen av användare: [migrering från Audience Manager till Admin Console](admin-console-migration.md).
 > 
 > När alla kunder har migrerat försvinner det här avsnittet.
 

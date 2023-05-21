@@ -1,22 +1,21 @@
 ---
 description: Arbeta med data från Experience Cloud eller andra externa system i Audience Manager.
-seo-description: Arbeta med data från Experience Cloud eller andra externa system i Audience Manager.
-seo-title: Arbeta med data från Experience Cloud eller andra externa system i Audience Manager.
+seo-description: Work with data from Experience Cloud solutions or other external systems in Audience Manager.
+seo-title: Work with data from Experience Cloud solutions or other external systems in Audience Manager.
 solution: Audience Manager
 title: Handböcker för implementering och integrering
 feature: Third-party Integration
 exl-id: 6e3cccdd-10af-4b17-9ddb-c4faf63f0a50
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 24%
+source-wordcount: '47'
+ht-degree: 40%
 
 ---
 
 # Implementering och integrering - översikt
 
-Arbeta med data från [!DNL Experience Cloud]-lösningar eller andra externa system i [!DNL Audience Manager].
+Arbeta med data från [!DNL Experience Cloud] lösningar eller andra externa system i [!DNL Audience Manager].
 
 * [Metoder för dataintegrering](data-integration-methods.md)
 * [Implementera Audience Manager](implement-audience-manager.md)

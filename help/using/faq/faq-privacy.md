@@ -1,15 +1,15 @@
 ---
 description: Svar på vanliga frågor och problem som rör sekretess och data.
-seo-description: Svar på vanliga frågor och problem som rör sekretess och data.
-seo-title: Vanliga frågor om sekretess och datalagring
+seo-description: Answers to common privacy- and data-related questions or issues.
+seo-title: Privacy and Data Retention FAQ
 solution: Audience Manager
 title: Vanliga frågor om sekretess och datalagring
 uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
-feature: Datastyrning och sekretess
+feature: Data Governance & Privacy
 exl-id: bccf49d7-1a3b-4286-86fb-59e472af4501
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '742'
 ht-degree: 83%
 
 ---
@@ -55,11 +55,11 @@ I följande tabell anges lagringstiderna för olika datatyper och lagringssystem
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Serverlösningar </p> </td> 
-   <td colname="col2"> <p>120 dagar </p> <p> Audience Manager tar bort användardata från våra backend-servrar 120 dagar efter att en användare senast besökte Audience Manager-plattformen. Om <span class="keyword"> Audience Manager</span> registrerar användaraktivitet inom denna 120-dagarscykel sparar vi dessa data i ytterligare 120 dagar. </p> </td> 
+   <td colname="col2"> <p>120 dagar </p> <p> Audience Manager tar bort användardata från våra backend-servrar 120 dagar efter att en användare senast besökte Audience Manager-plattformen. If <span class="keyword"> Audience Manager</span> registrerar användaraktivitet inom denna 120-dagarscykel, vi sparar dessa data i ytterligare 120 dagar. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Edge-servrar </p> </td> 
-   <td colname="col2"> <p> 14 dagar </p> <p>Audience Manager tar bort användardata från våra edge-servrar 14 dagar efter att en användare senast besökte Audience Manager-plattformen. Om <span class="keyword"> Audience Manager</span> registrerar användaraktivitet inom denna 14-dagarscykel sparar vi dessa data i ytterligare 14 dagar. Om användaren blir aktiv igen efter 14-dagarscykeln kommer det att bli en fördröjning mellan den första nya sidvyn och när användaren blir åtgärdbar. Det tar 6-18 timmar att få ut hela profilen tillbaka till kantcentret efter mer än 14 dagars inaktivitet. </p> </td> 
+   <td colname="col2"> <p> 14 dagar </p> <p>Audience Manager tar bort användardata från våra edge-servrar 14 dagar efter att en användare senast besökte Audience Manager-plattformen. If <span class="keyword"> Audience Manager</span> registrerar användaraktivitet inom denna 14-dagarscykel, vi sparar dessa data i ytterligare 14 dagar. Om användaren blir aktiv igen efter 14-dagarscykeln kommer det att bli en fördröjning mellan den första nya sidvyn och när användaren blir åtgärdbar. Det tar 6-18 timmar att få ut hela profilen tillbaka till kantcentret efter mer än 14 dagars inaktivitet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Råloggar </p> </td> 

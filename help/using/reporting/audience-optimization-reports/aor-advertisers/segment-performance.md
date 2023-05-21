@@ -1,27 +1,26 @@
 ---
 description: I rapporten Segment Performance jämförs mappade och omappade segment med visningar och konverteringsgrader. Ett mappat segment är ett segment som du skapar och skickar till ett mål för målanpassning. Ett omappat segment är ett segment som du har skapat men inte skickat till ett mål för målgruppsanpassning. Genom att jämföra dessa olika segmenttyper inom och mellan rapporter kan ni optimera befintliga kampanjer och hitta förbisedda segment som ni kanske vill skicka till en målgrupp för målinriktning.
-seo-description: I rapporten Segment Performance jämförs mappade och omappade segment med visningar och konverteringsgrader. Ett mappat segment är ett segment som du skapar och skickar till ett mål för målanpassning. Ett omappat segment är ett segment som du har skapat men inte skickat till ett mål för målgruppsanpassning. Genom att jämföra dessa olika segmenttyper inom och mellan rapporter kan ni optimera befintliga kampanjer och hitta förbisedda segment som ni kanske vill skicka till en målgrupp för målinriktning.
-seo-title: Resultatrapport för segment
+seo-description: The Segment Performance report compares mapped and unmapped segments by impressions and conversion rates. A mapped segment is a segment you create and send to a destination for targeting. An unmapped segment is a segment that you've created but have not sent to a destination for targeting. Comparing these different segment types within and between reports helps you optimize existing campaigns and find overlooked segments that you may want to send to a destination for targeting.
+seo-title: Segment Performance Report
 solution: Audience Manager
 title: Resultatrapport för segment
 uuid: 5156a4c7-831d-4a95-a1be-eb516f0d91b7
 feature: Audience Optimization Reports
 exl-id: 2cd54b18-6916-4d69-bd65-7b8c8846c446
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '564'
 ht-degree: 1%
 
 ---
 
 # Resultatrapport för segment{#segment-performance-report}
 
-I [!UICONTROL Segment Performance]-rapporten jämförs mappade och omappade segment med visningar och konverteringsgrader. Ett mappat segment är ett segment som du skapar och skickar till ett mål för målanpassning. Ett omappat segment är ett segment som du har skapat men inte skickat till ett mål för målgruppsanpassning. Genom att jämföra dessa olika segmenttyper inom och mellan rapporter kan ni optimera befintliga kampanjer och hitta förbisedda segment som ni kanske vill skicka till en målgrupp för målinriktning.
+The [!UICONTROL Segment Performance] rapporten jämför mappade och omappade segment med visningar och konverteringsgrader. Ett mappat segment är ett segment som du skapar och skickar till ett mål för målanpassning. Ett omappat segment är ett segment som du har skapat men inte skickat till ett mål för målgruppsanpassning. Genom att jämföra dessa olika segmenttyper inom och mellan rapporter kan ni optimera befintliga kampanjer och hitta förbisedda segment som ni kanske vill skicka till en målgrupp för målinriktning.
 
 ## Så här läser du mappade segmentresultat {#read-mapped-segment-results}
 
-Den mappade [!UICONTROL Segment Performance]-rapporten visar alla segment som du har skapat och skickat till ett mål för målinriktning. Positionen för dina mappade segment i en rapport kan vara bra att veta vilka segment som fungerar och var du kan behöva göra några justeringar.
+Mappade [!UICONTROL Segment Performance] rapporten visar alla segment som du har skapat och skickat till ett mål för målinriktning. Positionen för dina mappade segment i en rapport kan tala om vilka segment som fungerar bra och var du kan behöva göra några justeringar.
 
 Om du vill läsa rapporten kan du dela upp resultaten i fyra avsnitt med imaginära rader (i rött) och de kategorier som visas i exempelrapporten nedan.
 
@@ -58,7 +57,7 @@ Etiketterna i exemplet och följande tabell kan hjälpa dig att förstå segment
 
 ## Så här läser du omappade segmentresultat {#read-unmapped-segment-results}
 
-Att titta på omappade segment i en [!UICONTROL Segment Performance]-rapport är ett bra sätt att hitta nya segment som du inte har tänkt dig som målinriktning. Vissa av dessa segment kanske överträffar dina mappade segment. Detta beror på att ett omappat segment måste uppfylla en uppsättning kvalificeringskriterier som ska ingå i den här rapporten. För att kunna inkluderas i den här rapporten måste ett omappat segment:
+Titta på omappade segment i en [!UICONTROL Segment Performance] rapport är ett bra sätt att hitta nya segment som du inte har tänkt dig för målinriktning. Vissa av dessa segment kanske överträffar dina mappade segment. Detta beror på att ett omappat segment måste uppfylla en uppsättning kvalificeringskriterier som ska ingå i den här rapporten. För att kunna inkluderas i den här rapporten måste ett omappat segment:
 
 * Har konverteringar som är större än genomsnittet för alla mappade segment.
 * Var i de 100 övre omappade segmenten efter konverteringsgrad.
@@ -71,4 +70,4 @@ I den här rapporten vill du bara fokusera på de omappade segmenten i det övre
 
 >[!NOTE]
 >
->7-dagars och 30-dagars summeringsperioder är bara tillgängliga för söndag **[!UICONTROL Date Through]**-datum.
+>7-dagars och 30-dagars summeringsperioder är endast tillgängliga för söndag **[!UICONTROL Date Through]** datum.

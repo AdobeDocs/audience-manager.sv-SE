@@ -1,31 +1,30 @@
 ---
 description: Metoder som gör att du programmässigt kan lista Audience Manager DCS-regioner.
-seo-description: Metoder som gör att du programmässigt kan lista Audience Manager DCS-regioner.
-seo-title: API-metoder för DCS-region
+seo-description: Methods that let you programmatically list Audience Manager DCS regions.
+seo-title: DCS Region API Methods
 solution: Audience Manager
 title: API-metoder för DCS-region
 uuid: 00b70927-b3b7-46bb-8be1-37c6100ecf80
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 3cd1700e-6914-46be-a0be-a870c472343e
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 9%
+source-wordcount: '110'
+ht-degree: 7%
 
 ---
 
-
 # API-metoder för DCS-region {#dcs-region-api-methods}
 
-Metoder som gör att du programmässigt kan visa Audience Manager [!DNL DCS]-regioner.
+Metoder som du kan använda för att programmässigt lista Audience Manager [!DNL DCS] regioner.
 
 <!-- c_rest_api_regions.xml -->
 
-En lista över regioner och deras motsvarande heltal finns i [DCS-regions-ID, -platser och -värdnamn](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
+En lista med regioner och deras motsvarande heltal finns på [DCS-region-ID, -platser och -värdnamn](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
 
 ## Lista en specifik DCS-region {#list-specific-dcs-region}
 
-En `GET`-metod för att lista en specifik [!DNL DCS]-region.
+A `GET` metod för att lista en viss [!DNL DCS] region.
 
 <!-- r_rest_api_regions_list_specific.xml -->
 
@@ -51,11 +50,11 @@ En `GET`-metod för att lista en specifik [!DNL DCS]-region.
 
 Returnerar `200 OK` om det lyckas.
 
-En lista över regioner och deras motsvarande heltal finns i [DCS-regions-ID, -platser och -värdnamn](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
+En lista med regioner och deras motsvarande heltal finns på [DCS-region-ID, -platser och -värdnamn](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
 
 ## Lista DCS-regioner {#list-dcs-regions}
 
-En `GET`-metod för att lista [!DNL DCS]-regioner.
+A `GET` metod att lista [!DNL DCS] regioner.
 
 <!-- r_rest_api_regions_list.xml -->
 
@@ -84,4 +83,4 @@ En `GET`-metod för att lista [!DNL DCS]-regioner.
 
 Returnerar `200 OK` om det lyckas.
 
-En lista över regioner och deras motsvarande heltal finns i [DCS-regions-ID, -platser och -värdnamn](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
+En lista med regioner och deras motsvarande heltal finns på [DCS-region-ID, -platser och -värdnamn](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).

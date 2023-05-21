@@ -1,17 +1,16 @@
 ---
 description: Komponenter för dataåtgärder är bland annat kunddataflöden, datainsamlingsservern, SFTP/S3/HTTP-utgivare, IRIS och profilcacheservern.
-seo-description: Komponenter för dataåtgärder är bland annat kunddataflöden, datainsamlingsservern, SFTP/S3/HTTP-utgivare, IRIS och profilcacheservern.
-seo-title: Dataåtgärdskomponenter
+seo-description: Data action components include Customer Data Feeds, the Data Collection Server, SFTP/S3/HTTP publishers, IRIS, and the Profile Cache Server.
+seo-title: Data Action Components
 solution: Audience Manager
 title: Dataåtgärdskomponenter
 uuid: c4c4cc46-8c96-4ef5-8269-571cc5ac9276
 feature: System Components
 exl-id: 8065c19f-1930-4164-a952-1686aa5cb622
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 3%
+source-wordcount: '656'
+ht-degree: 2%
 
 ---
 
@@ -25,11 +24,11 @@ c_compact.xml
 
  -->
 
-Åtgärdskomponenter är system och processer som gör att du kan flytta data in och ut ur [!DNL Audience Manager] och (utan en bättre fras) göra saker med dem. Dessa [!DNL Audience Manager]-komponenter omfattar:
+Åtgärdskomponenter är system och processer som gör att du kan flytta data in och ut från [!DNL Audience Manager] och (eftersom det inte finns någon bättre fras) gör du något med den. Dessa [!DNL Audience Manager] komponenter:
 
 ## Kunddataflöden (CDF) {#cdf}
 
-[!UICONTROL CDF] är filer som skickas varje timme till kunderna. Dessa innehåller användar-ID:n tillsammans med tillhörande segment-ID:n, trait-ID:n och andra data. Mer information finns i [Översikt över kunddataflöden](../../features/cdf-files.md).
+[!UICONTROL CDF] är filer som skickas varje timme till kunderna. Dessa innehåller användar-ID:n tillsammans med tillhörande segment-ID:n, trait-ID:n och andra data. Mer information finns i [Översikt över kunddataflöde](../../features/cdf-files.md).
 
 ## Datainsamlingsserver (DCS) {#dcs}
 
@@ -37,46 +36,46 @@ Se [Komponenter för datainsamling](../../reference/system-components/components
 
 ## SFTP/S3 {#sftp-s3}
 
-Utgivare i [!UICONTROL SFTP/S3] får synkroniserade ID-data från [!UICONTROL Outbound Feed Converter]. När dessa filer är klara skickar [!UICONTROL SFTP/S3 publishers] dessa data till ett mål som anges av klienten. Dessa filer innehåller synkroniserade ID-data med en 1:N-mappning av [!DNL Audience Manager] användar-ID:n (UUID) till:
+The [!UICONTROL SFTP/S3] utgivare får synkroniserade ID-data från [!UICONTROL Outbound Feed Converter]. När filerna är klara [!UICONTROL SFTP/S3 publishers] skicka dessa data till ett mål som anges av klienten. Dessa filer innehåller synkroniserade ID-data med en 1:N-mappning av [!DNL Audience Manager] användar-ID (UUID) till:
 
 * Enhets-ID/DataProvider-ID (DPUID)
 * Kvalificerade segment-ID:n
 * Trait IDs
 
-[!DNL Audience Manager] kunderna inte har tillgång till funktioner som direkt styr  [!UICONTROL SFPT/S3 publishers]dem. Kunder använder den här tjänsten indirekt när de skapar och skickar data till destinationer. [!UICONTROL SFTP/S3]-systemet är i princip en automatiserad jobbprocess som körs med schemalagda intervall.
+[!DNL Audience Manager] kunderna inte har tillgång till funktioner som direkt styr [!UICONTROL SFPT/S3 publishers]. Kunder använder den här tjänsten indirekt när de skapar och skickar data till destinationer. The [!UICONTROL SFTP/S3] är i princip en automatiserad jobbprocess som körs med schemalagda intervall.
 
 ## IRIS {#iris}
 
-I grekisk mytologi är [!UICONTROL Iris] en person som reser och levererar meddelanden snabbt. [!UICONTROL IRIS]-systemet är ett namngivningssystem som återspeglar den här figurens egenskaper från den gamla världen. I moderna termer är [!UICONTROL IRIS] en cookie-synkroniserings- och dataöverföringstjänst med låg latens och hög frekvens.
+I grekisk mytologi [!UICONTROL Iris] är en person som reser och levererar budskap snabbt. The [!UICONTROL IRIS] system är ett namngivningssystem som återspeglar den här figurens egenskaper från den gamla världen. I moderna termer [!UICONTROL IRIS] är en cookie-synkroniserings- och dataöverföringstjänst med låg latens.
 
-[!UICONTROL IRIS] fungerar med samma typ av data som  [!UICONTROL SFTP/S3] systemet. [!UICONTROL IRIS] är dock annorlunda eftersom det skickar data till destinationer i realtid i stället för med angivna intervall. Det här är ett separat system eftersom [!UICONTROL SFTP/S3]-utgivare inte kan skicka data till ett HTTP-mål och de inte är utformade för dataöverföringar i realtid.
+[!UICONTROL IRIS] fungerar med samma typ av data som [!UICONTROL SFTP/S3] system. Men [!UICONTROL IRIS] är annorlunda eftersom data skickas till destinationer i realtid i stället för med bestämda intervall. Detta är ett separat system eftersom [!UICONTROL SFTP/S3] utgivare kan inte skicka data till en HTTP-destination och de är inte utformade för dataöverföringar i realtid.
 
-Det finns inga gränssnittskontroller som gör att kunder kan arbeta direkt med [!UICONTROL IRIS]. Kunderna arbetar med [!UICONTROL IRIS] indirekt när de skapar och skickar data till destinationer och för andra processer som kräver snabba dataöverföringar.
+Det finns inga gränssnittskontroller som gör att kunderna kan arbeta direkt med [!UICONTROL IRIS]. Kunderna arbetar med [!UICONTROL IRIS] indirekt när de skapar och skickar data till destinationer och för andra processer som kräver snabba dataöverföringar.
 
-Exempel på [!UICONTROL IRIS]-tjänster och funktioner är:
+Exempel på [!UICONTROL IRIS] tjänster och funktioner:
 
-* Snabb synkronisering (inom 30 sekunder) för cookies och segment. Den kan synkronisera [!DNL Audience Manager]-cookien, partnercookies eller båda.
-* Dataöverföringar i realtid. [!UICONTROL IRIS] ansvarar för att skicka kvalificeringshändelser för segment i realtid till en partner eller annan destination. Dessa data är JSON-formaterade och skickas via en HTTP `POST`-begäran.
+* Snabb synkronisering (inom 30 sekunder) för cookies och segment. Den kan synkronisera [!DNL Audience Manager] cookie, partnercookies eller båda.
+* Dataöverföringar i realtid. [!UICONTROL IRIS] ansvarar för att skicka kvalificeringshändelser för segment i realtid till en partner eller annan destination. Dessa data är JSON-formaterade och skickas via HTTP `POST` begäran.
 
-* Dataöverföringar mellan servrar och servrar gruppvis: Om du utbyter stora mängder data med [!DNL Audience Manager] är [!UICONTROL IRIS] det system som dina servrar använder för att överföra data.
+* Dataöverföringar mellan servrar och servrar gruppvis: Om du utbyter stora mängder data med [!DNL Audience Manager], [!UICONTROL IRIS] är det system som dina servrar använder för att överföra data.
 
-* Tillförlitlig infrastruktur som fungerar i stor skala och är feltolerant. Datorer som hanterar [!UICONTROL IRIS] är bland annat Amazon SQS, Amazon EC2 och Cassandra.
+* Tillförlitlig infrastruktur som fungerar i stor skala och är feltolerant. Kraftfulla system [!UICONTROL IRIS] innehåller Amazon SQS, Amazon EC2 och Cassandra.
 
 **Regler för segmentmappning**
 
-[!UICONTROL IRIS] skickar segment till mål baserat på en uppsättning regler för att optimera trafiken mellan [!UICONTROL IRIS] och segmentmål.
+Optimera trafiken mellan [!UICONTROL IRIS] och segmentdestinationer, [!UICONTROL IRIS] skickar segment till destinationer baserat på en uppsättning regler.
 
-1. **Ny segmentkvalificering**: när en enhet kvalificerar sig för ett nytt segment,  [!UICONTROL IRIS] skickar alla segment som är kopplade till den enheten till alla mål som är mappade till dessa segment.
+1. **Ny segmentkvalificering**: när en enhet kvalificerar sig för ett nytt segment, [!UICONTROL IRIS] skickar alla segment som är kopplade till den enheten till alla mål som är mappade till dessa segment.
 
-1. **Ny segmentdiskvalificering**: när en enhet inte längre kvalificerar sig för ett segment,  [!UICONTROL IRIS] skickas alla segmentkvalifikationer och diskvalificeringar som är kopplade till den enheten till alla destinationer som är mappade till dessa segment.
+1. **Ny segmentdiskvalificering**: när en enhet inte längre kvalificerar sig för ett segment, [!UICONTROL IRIS] skickar alla segmentkvalifikationer och diskvalificeringar som är kopplade till den enheten till alla destinationer som är mappade till dessa segment.
 
-1. **Målmappningsuppdateringar**: När en målmappning uppdateras  [!UICONTROL IRIS] skickas alla segment som är kopplade till en enhet till alla mål som är mappade till dessa segment nästa gång Audience Manager ser enheten.
+1. **Uppdateringar av målmappning**: när en målmappning uppdateras, [!UICONTROL IRIS] skickar alla segment som är kopplade till en enhet till alla mål som är mappade till dessa segment nästa gång Audience Manager ser enheten.
 
-1. **Uppdateringar** av enhetsdiagram: När ett enhets-ID läggs till eller tas bort från enhetsdiagrammet som används för att utvärdera ett segment,  [!UICONTROL IRIS] skickas alla segment som är kopplade till den enheten till alla mål som är mappade till dessa segment nästa gång Audience Manager ser enheten.
+1. **Uppdateringar av enhetsdiagram**: när ett enhets-ID läggs till eller tas bort från enhetsdiagrammet som används för att utvärdera ett segment, [!UICONTROL IRIS] skickar alla segment som är kopplade till den enheten till alla mål som är mappade till dessa segment nästa gång Audience Manager ser enheten.
 
 >[!IMPORTANT]
 >
->Om Audience Manager inte hittar någon av uppdateringarna ovan under 3 dagar i följd skickar [!UICONTROL IRIS] alla segment som är kopplade till en enhet till alla mål som är mappade till dessa segment nästa gång Audience Manager ser enheten.
+>Om Audience Manager inte hittar någon av uppdateringarna ovan under 3 dagar i följd, [!UICONTROL IRIS] skickar alla segment som är kopplade till en enhet till alla mål som är mappade till dessa segment nästa gång Audience Manager ser enheten.
 
 **Exempeldatafil**
 

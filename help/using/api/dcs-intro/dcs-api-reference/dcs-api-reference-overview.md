@@ -1,17 +1,16 @@
 ---
 description: Konceptuell information, beskrivningar och definitioner för DCS API-kod, metoder och processer.
-seo-description: Konceptuell information, beskrivningar och definitioner för DCS API-kod, metoder och processer i Adobe Audience Manager (AAM).
-seo-title: DCS API Reference Overview i Adobe Audience Manager (AAM)
+seo-description: Conceptual information, descriptions, and definitions for DCS API code, methods, and processes in Adobe Audience Manager (AAM).
+seo-title: DCS API Reference Overview in Adobe Audience Manager (AAM)
 title: Översikt över API-referens för DCS
 feature: DCS
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 84d20041-0b98-4ba5-ba97-29c35f088ad9
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 13%
+source-wordcount: '276'
+ht-degree: 14%
 
 ---
-
 
 # Översikt över API-referens för DCS
 
@@ -31,11 +30,11 @@ Konceptuell information, beskrivningar och definitioner för [!DNL DCS API] kod,
 
 * [ID:n för DCS-regioner, -platser och -värdnamn](/help/using/api/dcs-intro/dcs-api-reference/dcs-regions.md)
 
-   Det regionala DCS-servervärdnamnet krävs för att anropa DCS. Detta beror på att DCS lagrar information i datacenter som ligger geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel DCS, men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en DCS-begäran måste du matcha region-ID:t med motsvarande regionalt värdnamn och skapa frågan med rätt värdnamn.
+   Det regionala DCS-servervärdnamnet krävs för att anropa DCS. Detta beror på att DCS lagrar information i datacenter som ligger geografiskt nära besökarna. Dina frågor fungerar om du skickar dem till fel DCS, men dessa samtal är ineffektiva och kan fördröja svaret. Om du vill göra en DCS-begäran måste du matcha region-ID:t med dess motsvarande regionala värdnamn och skapa frågan med rätt värdnamn.
 
 * [Formatera nyckelvärdespar i DCS-anrop](/help/using/api/dcs-intro/dcs-api-reference/dcs-key-format.md)
 
-   När DCS anropar tar det emot nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
+   När DCS anropar accepterar nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
 
 * [Överbelastning och felhantering](/help/using/api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
 

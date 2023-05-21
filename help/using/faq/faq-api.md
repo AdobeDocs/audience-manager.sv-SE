@@ -1,21 +1,20 @@
 ---
 description: Vanliga API-frågor och problem.
-seo-description: Vanliga API-frågor och problem.
-seo-title: Vanliga frågor om API
+seo-description: Common API questions and issues.
+seo-title: API FAQ
 solution: Audience Manager
 title: Vanliga frågor om API
 uuid: 8222ebf0-b50e-4f48-8021-dbfca2828b7c
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 9a51220e-3f53-4911-876b-16e968d44d0f
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '237'
 ht-degree: 100%
 
 ---
 
-
-# Vanliga frågor om API {#api-faq}
+# Vanliga frågor om API{#api-faq}
 
 Vanliga API-frågor och problem.
 
@@ -39,7 +38,7 @@ Dokumentationen för [REST API](../api/rest-api-main/rest-api-main.md) innehåll
 
 Även om metoderna skickar data på olika sätt så påverkas inte funktionen. Med båda metoderna skickar [!DNL Audience Manager] fortfarande data till destinationer, ID-synkroniseringen fungerar normalt och du kan skapa traits utifrån datasignaler.
 
-<br> 
+<br>
 
 **Vad kan jag göra med [!UICONTROL REST API]?**
 

@@ -1,17 +1,16 @@
 ---
 description: Beskriver den underliggande programvara som ligger till grund för de interaktiva rapporterna och datauppdateringsschemat.
-seo-description: Beskriver den underliggande programvara som ligger till grund för de interaktiva rapporterna och datauppdateringsschemat.
-seo-title: Rapportteknik
+seo-description: Describes the underlying software that powers the interactive reports and the data update schedule.
+seo-title: Report Technology
 solution: Audience Manager
 title: Rapportteknik
 uuid: 5f3d815b-e1e6-42f2-b848-ac035a5aa77d
 feature: Overlap Reports
 exl-id: 59d875d6-a630-4795-93a7-1d432860f0a1
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 2%
+source-wordcount: '262'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +26,7 @@ c_report_technology.xml
 
 ## Interaktiva rapporter använder tabellösningsteknik
 
-[!DNL Audience Manager] använder  [](https://www.tableausoftware.com/) Tableu för att visa data i de interaktiva rapporterna. Med [!DNL Tableau] använder [!UICONTROL Delivery and Overlap]-rapporterna visuella tecken och symboler som hjälper dig att:
+[!DNL Audience Manager] använder [Tableau](https://www.tableausoftware.com/) för att visa data i interaktiva rapporter. Med [!DNL Tableau], [!UICONTROL Delivery and Overlap] rapporter använder visuella tecken och symboler som hjälper dig att:
 
 * Hitta egenskaper med höga och låga prestanda.
 * Dekordrag och segment med låg och hög unik besökaröverlappning.
@@ -73,7 +72,7 @@ Följande tabell definierar de former, storlekar och färger som används i de d
    <td colname="col2"> 
     <ul id="ul_F5D243297F0C4E5A8EDCBD28A548869E"> 
      <li id="li_332EB873A35440E6BB6093E36A0FAC3D">Röda skuggor indikerar <i>låg</i> överlappning. </li> 
-     <li id="li_29DFDB1218DF4069B5DCFF841D48EF56">Gröna skuggor indikerar <i>hög</i> överlappning. </li> 
+     <li id="li_29DFDB1218DF4069B5DCFF841D48EF56">Gröna nyanser indikerar <i>hög</i> överlappning. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -83,6 +82,6 @@ Följande tabell definierar de former, storlekar och färger som används i de d
  </tbody> 
 </table>
 
-## Dokumentation till tabelldokument {#tableau-documentation}
+## Dokumentation för surfplatta {#tableau-documentation}
 
-Mer information om flikkontroller som du kan se i våra interaktiva rapporter finns i den officiella dokumentationen för [Tableau Server i Linux 2018.2](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm)
+Om du vill veta mer om flikkontrollerna som du kan se i våra interaktiva rapporter kan du läsa den officiella dokumentationen för [Tableu Server i Linux 2018.2](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm)

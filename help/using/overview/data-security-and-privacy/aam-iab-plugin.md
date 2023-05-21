@@ -183,7 +183,7 @@ Se [Målmakron definierade](../../features/destinations/destination-macros.md) o
 
 ## Hantering av enhetsövergripande samtycke
 
-Insticksprogrammet Audience Manager för IAB TCF väljer automatiskt vilka ID:n som finns på en begäran när besökarna på platsen inte har tillräcklig behörighet. Om begäran innehåller en [ID för olika enheter (CRM-ID)](../../reference/ids-in-aam.md), avanmäler Audience Manager ID:t tillsammans med den sista enheten som är länkad till det [ID för olika enheter (CRM-ID)](../../reference/ids-in-aam.md).
+Insticksprogrammet Audience Manager för IAB TCF väljer automatiskt ut de ID som finns på en begäran när besökarna på platsen inte har tillräcklig behörighet. Om begäran innehåller en [ID för olika enheter (CRM-ID)](../../reference/ids-in-aam.md), avanmäler Audience Manager ID:t tillsammans med den sista enheten som är länkad till det [ID för olika enheter (CRM-ID)](../../reference/ids-in-aam.md).
 
 ## Testa implementeringen av IAB {#test-iab-implementation}
 
@@ -197,7 +197,7 @@ Avanmälningar i Audience Manager behandlas i en [separat artikel i vår dokumen
 
 >[!IMPORTANT]
 >
->Användare som har avanmält sig från alla datainsamlingar efter att de avböjt sitt samtycke kan inte återansluta.
+>Användare som har avanmält sig från all datainsamling efter att de avböjt sitt samtycke kan inte återinsättas.
 
 >[!NOTE]
 >

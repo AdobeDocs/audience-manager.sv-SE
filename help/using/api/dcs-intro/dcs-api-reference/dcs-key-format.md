@@ -1,23 +1,22 @@
 ---
-description: När DCS anropar tar det emot nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
-seo-description: När DCS anropar tar det emot nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
-seo-title: Formatera nyckelvärdespar i DCS-anrop
+description: När DCS anropar accepterar nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
+seo-description: When making a call, the DCS accepts key-value data in standard or serialized format. Review this section for information about how to format standard and serialized key-value data.
+seo-title: Formatting Key-Value Pairs in DCS Calls
 solution: Audience Manager
 title: Formatera nyckelvärdespar i DCS-anrop
 uuid: af02f2a1-4388-4074-ab4e-66ee82023f1c
 feature: DCS
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: ff2d9ff6-7d5b-4a0d-b831-5d9bc79b32a1
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 10%
+source-wordcount: '223'
+ht-degree: 9%
 
 ---
 
-
 # Formatera nyckelvärdespar i DCS-anrop {#formatting-key-value-pairs-in-dcs-calls}
 
-När ett anrop görs accepterar [!DNL DCS] nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
+När du ringer ett samtal [!DNL DCS] använder nyckelvärdesdata i standard- eller serialiserat format. I det här avsnittet finns information om hur du formaterar standarddata och serialiserade nyckelvärdesdata.
 
 ## Standardpar och serialiserade nyckelvärdepar {#standard-serialized}
 

@@ -1,17 +1,16 @@
 ---
 description: Audience Manager får enorma mängder data varje dag. Detta påverkar hur lång tid det tar att bearbeta dina data och generera rapportresultat. Innehållet i det här avsnittet beskriver hur dessa tidsintervall påverkar ditt Audience Manager-konto. Dessutom är de tidsramar och scheman som beskrivs här endast allmänna riktlinjer. Dessa scheman utgör inte serviceavtal (SLA) eller åtaganden som rör dataleverans. Adobe förbehåller sig rätten att när som helst ändra tidsramar och tidsplaner utan föregående meddelande.
-seo-description: Audience Manager får enorma mängder data varje dag. Detta påverkar hur lång tid det tar att bearbeta dina data och generera rapportresultat. Innehållet i det här avsnittet beskriver hur dessa tidsintervall påverkar ditt Audience Manager-konto. Dessutom är de tidsramar och scheman som beskrivs här endast allmänna riktlinjer. Dessa scheman utgör inte serviceavtal (SLA) eller åtaganden som rör dataleverans. Adobe förbehåller sig rätten att när som helst ändra tidsramar och tidsplaner utan föregående meddelande.
-seo-title: Hur dataleverans och filbearbetningstider påverkar rapporter
+seo-description: Audience Manager receives a tremendous amount of data every day. This affects the amount of time it takes to process your data and generate report results. The content in this section describes how these time intervals affect your Audience Manager account. Also, the time frames and schedules described here are general guidelines only. These schedules do not constitute Service-Level Agreements (SLAs) or commitments related to data delivery. Adobe reserves the right to change the time frames and schedules at any time without notice.
+seo-title: How Data Delivery and File Processing Times Affect Reports
 solution: Audience Manager
 title: Hur dataleverans och filbearbetningstider påverkar rapporter
 uuid: 4b975512-f67e-4749-a7ef-168415597682
 feature: Reference
 exl-id: d13102c3-fd1b-4c31-8003-9fdc0df36838
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 5%
+source-wordcount: '596'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 5%
 
 Audience Manager får enorma mängder data varje dag. Detta påverkar hur lång tid det tar att bearbeta dina data och generera rapportresultat. Innehållet i det här avsnittet beskriver hur dessa tidsintervall påverkar ditt Audience Manager-konto. Dessutom är de tidsramar och scheman som beskrivs här endast allmänna riktlinjer. Dessa scheman utgör inte serviceavtal (SLA) eller åtaganden som rör dataleverans. Adobe förbehåller sig rätten att när som helst ändra tidsramar och tidsplaner utan föregående meddelande.
 
-## Rapportnummer {#reporting-numbers}
+## Rapporteringsnummer {#reporting-numbers}
 
 <!-- 
 
@@ -33,11 +32,11 @@ I följande tabell visas och beskrivs tidsintervallen i våra allmänna rapporte
 | Datatyper | Beskrivning |
 |---|---|
 | Realtidsdata | Dagens realtidsnummer är för timmarna 00:00 till 23:59:59 UTC från igår. |
-| Allmänna rapportdata | Data i [Allmänna rapporter](../reporting/general-reports.md#general-reports-overview) är beroende av att andra jobbprocesser har slutförts och mängden data som har tagits emot för en viss dag. För det mesta bör [!UICONTROL General Report]-data uppdateras med 18:00 UTC varje dag. |
+| Allmänna rapportdata | Data i [Allmänna rapporter](../reporting/general-reports.md#general-reports-overview) är beroende av att andra jobbprocesser slutförs och hur mycket data som tas emot under en viss dag. För det mesta [!UICONTROL General Report] data ska uppdateras före kl. 18.00 UTC varje dag. |
 
 ## Inkommande och utgående filöverföringar {#inbound-outbound-file-transfers}
 
-[!DNL Audience Manager] bearbetar och skickar inkommande och utgående  [!UICONTROL Server-to-Server (S2S)] filöverföringar enligt de scheman som beskrivs i detta avsnitt. Med tanke på dessa tidsplaner och bryttider kan det finnas skillnader mellan segmentens realtids- och sluttider.
+[!DNL Audience Manager] och skickar inkommande och utgående [!UICONTROL Server-to-Server (S2S)] filöverföringar enligt de scheman som beskrivs i detta avsnitt. Med tanke på dessa tidsplaner och bryttider kan det finnas skillnader mellan segmentens realtids- och sluttider.
 
 | Filtyp | Beskrivning |
 |---|---|

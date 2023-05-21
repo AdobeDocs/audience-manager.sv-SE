@@ -1,23 +1,22 @@
 ---
 description: En allmän rapport returnerar resultatdata för egenskaper, segment och mål.
-seo-description: En allmän rapport i Audience Manager returnerar resultatdata för egenskaper, segment och destinationer.
-seo-title: Allmänna rapporter i Audience Manager
+seo-description: A General report in Audience Manager returns performance data on traits, segments, and destinations.
+seo-title: General Reports in Audience Manager
 solution: Audience Manager
 title: Allmänna rapporter
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
 feature: General & Trend Reports
 exl-id: dc16a821-b776-4a04-af60-4b8c914253dd
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
 
 # Allmänna rapporter{#general-reports}
 
-En [!UICONTROL General]-rapport returnerar prestandadata för egenskaper, segment och mål.
+A [!UICONTROL General] rapporten returnerar resultatdata för egenskaper, segment och mål.
 
 ## Översikt {#general-reports-overview}
 
@@ -27,9 +26,9 @@ c_general_reports.xml
 
  -->
 
-[!DNL Audience Manager] använder  [!UICONTROL Role Based Access Control] ([!UICONTROL RBAC]) för att utöka användargruppsbehörigheter till  [!UICONTROL General] rapporter. Användarna kan bara se de egenskaper och segment i rapporter som de har behörighet att visa. [!UICONTROL RBAC] kan ni styra vilka rapportdata som interna team kan visa. En byrå som till exempel hanterar olika annonsörkonton kan konfigurera användargruppbehörigheter så att ett team som hanterar Advertiser A:s konto inte kan se annonsörens B:s rapportdata.
+[!DNL Audience Manager] använder [!UICONTROL Role Based Access Control] ([!UICONTROL RBAC]) för att utöka användargruppsbehörigheter till [!UICONTROL General] rapporter. Användarna kan bara se de egenskaper och segment i rapporter som de har behörighet att visa. [!UICONTROL RBAC] kan ni styra vilka rapportdata som interna team kan visa. En byrå som till exempel hanterar olika annonsörkonton kan konfigurera användargruppbehörigheter så att ett team som hanterar Advertiser A:s konto inte kan se annonsörens B:s rapportdata.
 
-Kör en [!UICONTROL General]-rapport när du behöver:
+Kör en [!UICONTROL General] rapportera när du behöver:
 
 * Granska prestanda efter egenskaper, segment eller mål.
 * Spåra visningar (totalt och unikt) med 1, 7, 14, 30, 60 och 90 dagars intervall.
@@ -38,23 +37,23 @@ Kör en [!UICONTROL General]-rapport när du behöver:
 * Identifiera starka eller dåliga prestationsegenskaper och segment, analysera efterfrågan eller jämför lastnings-/branddata med tredjepartsrapporter.
 * Exportera data (.csv-format) för vidare analys och delning.
 
-Följande bild ger en översikt på hög nivå över nyckelelement i [!UICONTROL General]-rapporten.
+Följande bild ger en översikt på hög nivå över nyckelelement i [!UICONTROL General] rapport.
 
 ![](assets/general_reports.png)
 
 1. Konfigurera följande alternativ:
 
-   * **Typ av rapport:** Välj önskad rapporttyp (Trait, Segment eller Destination).
+   * **Typ av rapportering:** Välj önskad rapporttyp (Trait, Segment eller Destination).
 
-   * **För Datum till:** Ange rapportens datumintervall.
+   * **Till:** Ange rapportens datumintervall.
 
 2. Sök efter ett varumärke, segment eller mål efter namn eller ID.
-3. Dra och släpp de egenskaper, segment eller mål som du vill rapportera till panelen [!UICONTROL Selections] till höger i mapplistan.
+3. Dra och släpp de egenskaper, segment eller mål som du vill rapportera till mapplistan [!UICONTROL Selections] till höger.
 4. Generera rapporten som ska visas i en exporterbar rapport.
 
 ## Kör en allmän rapport {#run-general-report}
 
-I det här avsnittet beskrivs hur du kör en [!UICONTROL General]-rapport och anger tid och andra prestandaalternativ.
+I det här avsnittet beskrivs hur du kör en [!UICONTROL General] rapportera och ange tid och andra prestandaalternativ.
 
 <!-- 
 
@@ -62,31 +61,31 @@ t_run_general_report.xml
 
  -->
 
-1. Klicka på **[!UICONTROL General Reports]** på kontrollpanelen **[!UICONTROL Analytics]**.
-1. Välj önskad typ i listrutan **[!UICONTROL Report Type]**: Trait, Segment eller Destination.
-1. ** VillkorligtKlicka i datumrutan för att visa en kalender och välj sedan rapportens slutdatum om du vill ange ett annat datum än dagens.
+1. I **[!UICONTROL Analytics]** kontrollpanel, klicka **[!UICONTROL General Reports]**.
+1. Från **[!UICONTROL Report Type]** väljer du önskad typ: Trait, Segment eller Destination.
+1. *Villkorlig* Klicka i datumrutan för att visa en kalender och välj sedan slutdatumet för rapporten om du vill ange ett annat datum än dagens.
 1. Sök efter ett varumärke, segment eller mål efter namn eller ID.
-1. Dra och släpp de egenskaper, segment eller mål som du vill rapportera till panelen [!UICONTROL Selections] till höger i mapplistan.
+1. Dra och släpp de egenskaper, segment eller mål som du vill rapportera till mapplistan [!UICONTROL Selections] till höger.
 1. Klicka på **[!UICONTROL Run Report]**.
 
    Resultaten visas i en tabell som kan exporteras. Klicka på kolumnrubrikerna för att sortera resultaten i stigande eller fallande ordning.
-1. Välj önskad alternativknapp längst upp i rapporten om du vill filtrera data efter prestanda ( [!UICONTROL Unique Trait Realizations], [!UICONTROL Total Trait Realizations] eller [!UICONTROL Total Trait Population]) eller efter tid (intervallet 1, 7, 14, 30, 60 eller 90 dagar).
+1. Välj önskad alternativknapp längst upp i rapporten för att filtrera data efter prestanda ( [!UICONTROL Unique Trait Realizations], [!UICONTROL Total Trait Realizations], eller [!UICONTROL Total Trait Population]) eller efter tid (1, 7, 14, 30, 60 eller 90 dagar).
 
    >[!NOTE]
    >
-   >[!UICONTROL Total Trait Realizations] beräknas  [!UICONTROL Rule-based Traits] endast.
+   >[!UICONTROL Total Trait Realizations] beräknas för [!UICONTROL Rule-based Traits] endast.
 
-1. ** ValfrittKlicka  **[!UICONTROL Export to CSV]**. Detta exporterar [!UICONTROL Unique Trait Realizations], [!UICONTROL Total Trait Realizations] och [!UICONTROL Total Trait Population] för alla dagintervall.
+1. *Valfritt* Klicka **[!UICONTROL Export to CSV]**. Detta exporterar [!UICONTROL Unique Trait Realizations], [!UICONTROL Total Trait Realizations]och [!UICONTROL Total Trait Population] för alla dagsintervall.
 
 ## Allmänna rapportresultat förklaras {#general-reports-explained}
 
-Siffrorna i [!UICONTROL General Reports] genereras direkt från vår [!UICONTROL User Profile Store]. Resultatet visar antalet användare som [!DNL Audience Manager] fanns i serverdelen när dessa rapportnummer genererades.
+Siffrorna i [!UICONTROL General Reports] genereras direkt från [!UICONTROL User Profile Store]. Resultatet avspeglar antalet användare som [!DNL Audience Manager] som finns i serverdelen vid den tidpunkt då dessa rapportnummer genererades.
 
 * Dessa siffror inkluderar inte besökar-ID:n med mycket trafik. Trafik från bottar filtreras innan den når vårt serverdelssystem. Dessutom ignoreras viss robottrafik under en veckas rensningsjobb som körs i serverdelen.
-* Om du bäddar in data via inkommande bearbetning som är avaktiverad för [!DNL Audience Manager] UUID, och dessa ID:n innehåller användare som inte längre är aktiva i vårt system, kommer dessa inaktiva [!DNL Audience Manager] UUID:n aldrig att nå [!UICONTROL User Profile Store] och rapporteras inte.
-* [!UICONTROL Total Trait Realizations] beräknas  [!UICONTROL Rule-based Traits] endast.
+* Om du arbetar med data via inkommande bearbetning är [!DNL Audience Manager] UUID, och dessa ID:n innehåller användare som inte längre är aktiva i vårt system, dessa inaktiva [!DNL Audience Manager] UUID:n når aldrig [!UICONTROL User Profile Store] och rapporteras inte.
+* [!UICONTROL Total Trait Realizations] beräknas för [!UICONTROL Rule-based Traits] endast.
 
-## Resultat av allmänna rapporter för Traits {#general-report-results-traits}
+## Resultat av allmänna rapporter för egenskaper {#general-report-results-traits}
 
 Filtren nedan är tillgängliga när du kör en allmän rapport och väljer **[!UICONTROL Trait]** som rapporttyp.
 
@@ -138,7 +137,7 @@ Det här måttet representerar det totala antalet Audience Manager-UID:n som är
 
 >[!NOTE]
 >
->Välj **[!UICONTROL Include Destination Mappings]** om du vill visa en uppdelning av segmentpopulationen för aktiverade destinationer.
+>Välj **[!UICONTROL Include Destination Mappings]** för att se en uppdelning av segmentpopulationen för aktiverade destinationer.
 
 Bilden nedan visar resultatet av att köra en allmän rapport för rapporttypen Segment.
 

@@ -1,13 +1,14 @@
 ---
 description: Look-Alike Modeling hjälper er att identifiera nya, unika målgrupper genom automatiserad dataanalys. I den här artikeln finns svar på de vanligaste frågorna.
-seo-description: Look-Alike Modeling hjälper er att identifiera nya, unika målgrupper genom automatiserad dataanalys. I den här artikeln finns svar på de vanligaste frågorna.
-seo-title: Vanliga frågor om lookalike-modellering
+seo-description: Look-Alike Modeling helps you discover new, unique audiences through automated data analysis. This article provides answers to the most frequently asked questions.
+seo-title: Look-Alike Modeling FAQ
 solution: Audience Manager
 title: Vanliga frågor om lookalike-modellering
-feature: Algoritmiska modeller
-source-git-commit: cf9368d4690b61066646054543cc60d390eea021
+feature: Algorithmic Models
+exl-id: c6e92db0-129f-489e-8cf0-600e0e09698b
+source-git-commit: 37823ae54e106e32aa195a6b69e0f1ebfc322f09
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -20,9 +21,9 @@ I den här artikeln finns svar på de vanligaste frågorna om [!UICONTROL Look-A
 
 ## Frågor {#questions}
 
-**Varför får jag ett platt  [!UICONTROL Accuracy & Reach] diagram?**
+**Varför får jag punktering? [!UICONTROL Accuracy & Reach] diagram?**
 
-Ett platt [!UICONTROL Accuracy & Reach]-diagram innebär att nästan alla användare fick samma poäng av modellen. Detta kan inträffa när du inkluderar besökaregenskaper på platsen i de datakällor som du körde modellen på. Du undviker detta genom att ta bort det generiska attributet från modellindata när du skapar modellen med hjälp av fältet [!UICONTROL Exclusions].
+Platt [!UICONTROL Accuracy & Reach] graf betyder att nästan alla användare fick samma poäng av modellen. Detta kan inträffa när du inkluderar besökaregenskaper på platsen i de datakällor som du körde modellen på. Du undviker detta genom att ta bort det generiska attributet från modellindata under steget när du skapar modellen med hjälp av [!UICONTROL Exclusions] fält.
 
  
 
@@ -52,13 +53,13 @@ Ett fåtal tusen användare bör vara tillräckligt för att köra modellen på,
 
 **Vilka datakällor från tredje part ska jag välja för min modell?**
 
-Använd datakällor som åtminstone delvis överlappar ditt baslinjefärg/baslinjesegment, men som samtidigt tar med fler användare. Du bör också ta hänsyn till kostnaden för varje datafeed. Kostnads- och prissättningsmodeller varierar mellan olika dataleverantörer i [!UICONTROL Audience Marketplace].
+Använd datakällor som åtminstone delvis överlappar ditt baslinjefärg/baslinjesegment, men som samtidigt tar med fler användare. Du bör också ta hänsyn till kostnaden för varje datafeed. Kostnads- och prissättningsmodeller varierar mellan olika dataleverantörer inom [!UICONTROL Audience Marketplace].
 
  
 
 **Kostar det att använda data från tredje part för modellering?**
 
-Det beror på prismodellen för vald datafeed. Vissa flöden gör det möjligt att modellera utan kostnad, medan andra tar ut en avgift. Mer information finns i [Fakturering för köpare av dataflöden](../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md).
+Det beror på prismodellen för vald datafeed. Vissa flöden gör det möjligt att modellera utan kostnad, medan andra tar ut en avgift. Se [Fakturering för köpare av dataflöden](../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md) för mer information.
 
  
 

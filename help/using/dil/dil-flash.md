@@ -1,19 +1,18 @@
 ---
 description: Samla in data som skickas från FLA-filer till Analytics och arbeta med den informationen i Audience Manager.
-seo-description: Samla in data som skickas från FLA-filer till Analytics och arbeta med den informationen i Audience Manager.
+seo-description: Collect data sent from FLA files to Analytics and work with that information in Audience Manager.
 seo-title: Flash DIL
 solution: Audience Manager
 title: Flash DIL
 uuid: 65833cfd-768e-4b16-95c5-debd8411df38
 feature: DIL Implementation
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: e530d893-db26-4411-8df7-9bb2df84b68e
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '620'
 ht-degree: 2%
 
 ---
-
 
 # Flash DIL{#flash-dil}
 
@@ -25,9 +24,9 @@ c_flash_dil_toc.xml
 
  -->
 
-[!UICONTROL Flash DIL] är ett  [!DNL ActionScript] kodbibliotek där du kan arbeta med videouppspelningsdata i Audience Manager. [!DNL Flash DIL] fungerar genom att hämta SWF-innehåll som Adobe- [!UICONTROL AppMeasurement] biblioteket skickar in till Analytics. [!DNL Flash DIL] skickar dessa data till den separata  [!UICONTROL DIL] JavaScript-datainsamlingsmodulen, som skickar informationen till Audience Manager. Analysdata ( [!UICONTROL Props], [!UICONTROL eVars], händelser osv.) som hämtats från [!DNL FLA]-filen är tillgänglig i Audience Manager som traits eller oanvända signaler.
+[!UICONTROL Flash DIL] är en [!DNL ActionScript] kodbibliotek där du kan arbeta med videouppspelningsdata i Audience Manager. [!DNL Flash DIL] fungerar genom att hämta SWF-innehåll i Adobe [!UICONTROL AppMeasurement] biblioteket överförs till Analytics. [!DNL Flash DIL] skickar dessa data till den separata [!UICONTROL DIL] JavaScript-datainsamlingsmodulen som skickar informationen till Audience Manager. Analysdata ( [!UICONTROL Props], [!UICONTROL eVars], händelser osv.) som hämtats från [!DNL FLA] filen finns i Audience Manager som traits eller oanvända signaler.
 
-## Krav för datainsamling {#requirements} för Flash DIL
+## Krav för datainsamling från Flash DIL {#requirements}
 
 Allmänna krav för implementering och kodrelaterade åtgärder.
 
@@ -41,23 +40,23 @@ c_flash_dil_intro.xml
 
 [!UICONTROL Flash] datainsamling kräver:
 
-* Klassbiblioteket [!UICONTROL DIL] ( `dil.swc`). Hämta [!UICONTROL DIL]-klassbiblioteket från din kontaktperson för Partner Solutions.
+* The [!UICONTROL DIL] klassbibliotek ( `dil.swc`). Hämta [!UICONTROL DIL] klassbibliotek från din kontaktperson för Partner Solutions.
 
-* JavaScript [!UICONTROL DIL] datainsamlingskod på sidan.
-* [Biblioteket DIL ActionScript ](../dil/dil-flash.md#flash-dil-actionscript) läses in i det Flash-objekt som du vill samla in data från.
-* Adobe [!DNL AppMeasurement] [!DNL AS]-biblioteket (version 3.5.2 eller senare) läste in [!DNL Flash]-objektet som du vill samla in data från.
+* JavaScript [!UICONTROL DIL] datakod på sidan.
+* [DIL ActionScript bibliotek](../dil/dil-flash.md#flash-dil-actionscript) som läses in i det Flash-objekt som du vill samla in data från.
+* Adobe [!DNL AppMeasurement] [!DNL AS] biblioteket (version 3.5.2 eller senare) har läst in [!DNL Flash] objekt som du vill samla in data från.
 
-**Ange AllowScriptAccess till  `Always` eller`sameDomain`**
+**Ange AllowScriptAccess till `Always` eller`sameDomain`**
 
-`AllowScriptAccess` i HTML-koden som läser in en SWF-fil kontrollerar möjligheten att utföra utgående URL-åtkomst inifrån SWF-filen. När du konfigurerar en [!UICONTROL Flash DIL]-dataintegrering måste du se till att Flash-parametern `AllowScriptAccess` är inställd på `always` eller `sameDomain`. [!UICONTROL Flash DIL] datainsamlingen fungerar inte om  `AllowScriptAccess` den är inställd på  `never`. Se [Kontrollera åtkomst till skript eller värdwebbsida](https://helpx.adobe.com/flash/kb/control-access-scripts-host-web.html).
+The `AllowScriptAccess` i HTML-kod som läser in en SWF-fil kontrollerar möjligheten att utföra utgående URL-åtkomst inifrån SWF-filen. När du konfigurerar en [!UICONTROL Flash DIL] dataintegrering, se till att Flash `AllowScriptAccess` parametern är inställd på `always` eller `sameDomain`. [!UICONTROL Flash DIL] datainsamlingen fungerar inte om `AllowScriptAccess` är inställd på `never`. Se [Kontrollera åtkomst till skript eller värdwebbsidan](https://helpx.adobe.com/flash/kb/control-access-scripts-host-web.html).
 
-**JS- [!UICONTROL DIL] kodplacering**
+**JS [!UICONTROL DIL] Kodplacering**
 
-Försök att placera datainsamlingsmodulen för JS [!UICONTROL DIL] på sidan så att den läses in före filen [!DNL FLA]. När [!DNL FLA]-filen läses in först, innan [!UICONTROL DIL]-datainsamlingen är klar, kan du missa de initiala datasignalerna som [!UICONTROL Flash DIL] skickar till den modulen. När datainsamlingsmodulen [!UICONTROL DIL] har instansierats hämtar den dock alla efterföljande SWF-fildata som skickas av [!UICONTROL Flash DIL].
+Försök att montera JS [!UICONTROL DIL] datainsamlingsmodulen på sidan så att den läses in före [!DNL FLA] -fil. När [!DNL FLA] filen läses in först, före [!UICONTROL DIL] datainsamlingen är klar kan du missa de initiala datameddelandena om att [!UICONTROL Flash DIL] skickar till den modulen. När den har instansierats [!UICONTROL DIL] datainsamlingsmodulen hämtar alla efterföljande SWF-fildata som skickas in av [!UICONTROL Flash DIL].
 
 ## Data som samlats in av Flash DIL {#data-collected}
 
-[!UICONTROL Flash DIL] hämtar sidvy, länkspårning, mediaspårning och andra medievyhändelser från Adobe- [!UICONTROL AppMeasurement] biblioteket.
+[!UICONTROL Flash DIL] hämtar sidvy, länkspårning, mediaspårning och andra medievyhändelser från Adobe [!UICONTROL AppMeasurement] bibliotek.
 
 <!-- 
 
@@ -67,7 +66,7 @@ r_flash_dil_data_collected.xml
 
 **Sidvyhändelser**
 
-Om inget annat anges av `s.trackVars` samlar [!UICONTROL Flash DIL] in följande data från Adobe AppMeasurement:
+Om inte annat anges av `s.trackVars`, [!UICONTROL Flash DIL] samlar in följande data från Adobe AppMeasurement:
 
 * `pageName`
 * `channel`
@@ -79,7 +78,7 @@ Om inget annat anges av `s.trackVars` samlar [!UICONTROL Flash DIL] in följande
 
 **Händelser för länkspårning**
 
-Om inget annat anges av `s.linkTrackVars`, samlar [!UICONTROL Flash DIL] in följande data från Adobe [!UICONTROL AppMeasurement]:
+Om inte annat anges av `s.linkTrackVars`, [!UICONTROL Flash DIL] samlar in följande data från Adobe [!UICONTROL AppMeasurement]:
 
 * `pe` (Typ av spårlänk har anropats)
 * `pev1` (Länk-URL)
@@ -87,7 +86,7 @@ Om inget annat anges av `s.linkTrackVars`, samlar [!UICONTROL Flash DIL] in föl
 
 **Mediespårningshändelser**
 
-Om inget annat anges av `s.Media.trackVars` samlar [!UICONTROL Flash DIL] in alla data som räknas upp i avsnittet Sidvyhändelser.
+Om inte annat anges av `s.Media.trackVars`, [!UICONTROL Flash DIL] samlar in alla data som räknas upp i avsnittet Sidvyhändelser.
 
 **Andra datapunkter**
 
@@ -99,9 +98,9 @@ Data från dessa parametrar samlas in som standard:
 * `mediaAdParentPod` (Poden eller annonsen bryts i det primära innehållet där annonsen spelas upp)
 * `mediaAdParentPodPos` (Den numeriska positionen i rutan där annonsen spelas upp. Fler än en annons kan spelas upp i en ruta.
 
-## Data från Flash DIL i Audience Manager {#flash-dil-data}
+## Flash DIL data i Audience Manager {#flash-dil-data}
 
-Modulen [!UICONTROL Flash DIL] förvandlar Adobe AppMeasurement-data till Audience Manager-egenskaper och oanvända signaler.
+The [!UICONTROL Flash DIL] i ändras data från Adobe AppMeasurement till Audience Manager och oanvända signaler.
 
 <!-- 
 
@@ -109,11 +108,11 @@ c_flash_dil_in_aam.xml
 
  -->
 
-Analyserna [!UICONTROL Props], [!UICONTROL eVars] och händelser fungerar som egenskaper i Audience Manager. Fällor är nyckelvärdepar och används för att skapa segment. I en Analytics-prop som `c30=foo` är `c30` nyckeln (en konstant) och `foo` värdet (en variabel).
+Analyser [!UICONTROL Props], [!UICONTROL eVars]och händelser fungerar som Audience Manager. Fällor är nyckelvärdepar och används för att skapa segment. I en Analytics-propp som `c30=foo`, `c30` är nyckeln (en konstant) och `foo` är värdet (en variabel).
 
 **Matcha Audience Manager-egenskaper mot analysvariabler**
 
-Om du vill använda de analysdata som skickas av [!UICONTROL Flash DIL] måste du skapa Audience Manager-egenskaper med nyckelvärdet prefix med `c_`.
+Använda de analysdata som skickas av [!UICONTROL Flash DIL]bör du skapa Audience Manager-egenskaper som har nyckelvärdet prefix med `c_`.
 
 Se tabellen för exempel:
 
@@ -125,11 +124,11 @@ Se tabellen för exempel:
 
 **DIL/Analysdata som oanvända signaler**
 
-Audience Manager accepterar Analytics [!UICONTROL Props], [!UICONTROL eVars] och händelser även utan motsvarande egenskap. I det här fallet är data inte tillgängliga för att skapa egenskaper och visas i [rapporten Oanvända signaler](../reporting/dynamic-reports/unused-signals.md) i stället. För att få ut så mycket som möjligt av den här informationen skapar du Audience Manager-egenskaper som matchar de analysdata som skickas i [!UICONTROL Flash DIL]-biblioteket.
+Audience Manager godkänner Analytics [!UICONTROL Props], [!UICONTROL eVars]och händelser även utan motsvarande egenskaper. I det här fallet är data inte tillgängliga för att skapas och visas i [Rapport om oanvända signaler](../reporting/dynamic-reports/unused-signals.md) i stället. För att få ut så mycket som möjligt av den här informationen skapar du Audience Manager-egenskaper som matchar de analysdata som skickas av [!UICONTROL Flash DIL] bibliotek.
 
-## Bibliotek för Flash-ActionScript{#flash-dil-actionscript}
+## Biblioteket Flash DIL ActionScript {#flash-dil-actionscript}
 
-Kod för [!DNL Flash]-objektet som ska skicka Analytics-data till Audience Manager.
+Kod för [!DNL Flash] objekt för att skicka analysdata till Audience Manager.
 
 <!-- 
 
@@ -139,10 +138,9 @@ r_flash_dil_actionscript.xml
 
 >[!NOTE]
 >
->* För varje [!DNL Flash]-objekt stöder koden endast en partnerinstans ( `d.partner`).
-   >
-   >
-* Kräver Adobe [!UICONTROL AppMeasurement] [!DNL AS] biblioteksversion 3.5.2 eller senare.
+>* För varje [!DNL Flash] -objekt, koden stöder en partnerinstans ( `d.partner`).
+>
+>* Kräver Adobe [!UICONTROL AppMeasurement] [!DNL AS] biblioteksversion 3.5.2 eller senare.
 
 
 ```js

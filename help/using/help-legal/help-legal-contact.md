@@ -1,18 +1,17 @@
 ---
 description: Information som hjälper dig att kontakta Adobe och juridisk information om användning av produkten och dokumentationen.
-seo-description: Information som hjälper dig att kontakta Adobe och juridisk information om användning av produkten och dokumentationen.
-seo-title: Kontaktuppgifter och juridisk information
+seo-description: Information to help you contact Adobe and to understand the legal issues concerning your use of this product and documentation.
+seo-title: Contact and Legal Information
 solution: Audience Manager
 title: Kontaktuppgifter och juridisk information
 feature: Support
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 02c80394-c5ed-4963-8543-4585c0c289c6
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '262'
 ht-degree: 100%
 
 ---
-
 
 # Kontaktuppgifter och juridisk information {#legal-contact}
 

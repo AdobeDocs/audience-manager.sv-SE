@@ -1,29 +1,28 @@
 ---
 description: Resten av API-metoder för att hantera grupper, inklusive att skapa, uppdatera, lista och ta bort grupper.
-seo-description: Resten av API-metoder för att hantera grupper, inklusive att skapa, uppdatera, lista och ta bort grupper.
-seo-title: API-metoder för grupphantering
+seo-description: Rest API methods to manage groups, including creating, updating, listing, deleting groups.
+seo-title: Group Management API Methods
 solution: Audience Manager
 title: API-metoder för grupphantering
 uuid: fe042eb5-ea12-42fe-be98-d721f987a914
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: b43c8404-1853-4306-8f26-96d9191a2548
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 5%
+source-wordcount: '206'
+ht-degree: 3%
 
 ---
 
-
 # API-metoder för grupphantering {#group-management-api-methods}
 
-Återställ [!DNL API]-metoder för att hantera grupper, inklusive att skapa, uppdatera, lista och ta bort grupper.
+Vila [!DNL API] metoder för att hantera grupper, inklusive att skapa, uppdatera, lista och ta bort grupper.
 
 <!-- c_rest_api_user_man_group.xml -->
 
 ## Skapa en grupp {#create-group}
 
-En `POST`-metod för att skapa en ny användargrupp.
+A `POST` metod för att skapa en ny användargrupp.
 
 <!-- r_rest_api_group_create.xml -->
 
@@ -31,7 +30,7 @@ En `POST`-metod för att skapa en ny användargrupp.
 
 `POST /api/v1/groups/`
 
-### Exempelbegärandebrödtext
+### Exempelbegärandetext
 
 ```
  {
@@ -56,7 +55,7 @@ En `POST`-metod för att skapa en ny användargrupp.
 
 ## Uppdatera en grupp {#update-group}
 
-En `PUT`-metod för att uppdatera en användargrupp.
+A `PUT` metod för att uppdatera en användargrupp.
 
 <!--
 r_rest_api_group_update.xml
@@ -66,7 +65,7 @@ r_rest_api_group_update.xml
 
 `PUT /api/v1/groups/`*`<groupId>`*
 
-### Exempelbegärandebrödtext
+### Exempelbegärandetext
 
 ```
  {
@@ -91,7 +90,7 @@ r_rest_api_group_update.xml
 
 ## Listgrupper {#list-groups}
 
-En `GET`-metod för att lista användargrupper.
+A `GET` metod för att lista användargrupper.
 
 <!--
 r_rest_api_group_list.xml
@@ -119,7 +118,7 @@ r_rest_api_group_list.xml
 
 ## Ta bort en grupp {#delete-groups}
 
-En `DELETE`-metod som tar bort en användargrupp och alla medlemmar från den gruppen.
+A `DELETE` metod för att ta bort en användargrupp och ta bort alla medlemmar från den gruppen.
 
 <!-- r_rest_api_group_delete.xml -->
 
@@ -127,11 +126,11 @@ En `DELETE`-metod som tar bort en användargrupp och alla medlemmar från den gr
 
 `DELETE /api/v1/groups/`*`<groupId>`*
 
-Returnerar `204 No Content` om det lyckas. Vid en konflikt returneras `409 Conflict`.
+Returnerar `204 No Content` om det lyckas. Om en konflikt uppstår returneras `409 Conflict`.
 
 ## Ta bort grupper gruppvis {#delete-groups-bulk}
 
-En `DELETE`-metod som tar bort flera grupper samtidigt och alla medlemmar från den gruppen.
+A `DELETE` om du vill ta bort flera grupper samtidigt och ta bort alla medlemmar från den gruppen.
 
 <!-- r_rest_api_group_delete_bulk.xml -->
 
@@ -139,11 +138,11 @@ En `DELETE`-metod som tar bort flera grupper samtidigt och alla medlemmar från 
 
 `DELETE /api/v1/groups/bulk-delete`
 
-Returnerar `204 No Content` om det lyckas. Vid en konflikt returneras `409 Conflict`.
+Returnerar `204 No Content` om det lyckas. Om en konflikt uppstår returneras `409 Conflict`.
 
 ## Visa alla behörigheter för en grupp {#list-permissions-group}
 
-En `GET`-metod för att lista behörighetsobjekten i en grupp.
+A `GET` metod för att lista behörighetsobjekten i en grupp.
 
 <!-- r_rest_api_perm_list_group.xml -->
 
@@ -177,7 +176,7 @@ Returnerar `400 Bad Request` om gruppen inte är tillgänglig.
 
 ## Ange behörigheter för en grupp {#set-permissions-group}
 
-En `PUT`-metod för att uppdatera gruppbehörigheter. Den här metoden skriver över de gamla behörigheterna med de nya behörigheterna.
+A `PUT` metod för att uppdatera gruppbehörigheter. Den här metoden skriver över de gamla behörigheterna med de nya behörigheterna.
 
 <!-- r_rest_api_perm_set.xml -->
 

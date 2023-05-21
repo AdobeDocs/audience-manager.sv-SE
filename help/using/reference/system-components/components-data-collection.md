@@ -1,17 +1,16 @@
 ---
 description: Datainsamlingskomponenterna omfattar datainsamlingsservrar, DIL-API, inkommande server-till-server-dataöverföringar och loggfiler.
-seo-description: Datainsamlingskomponenterna omfattar datainsamlingsservrar, DIL-API, inkommande server-till-server-dataöverföringar och loggfiler.
-seo-title: Datainsamlingskomponenter
+seo-description: Data collection components include the Data Collection Servers, the DIL API, inbound server-to-server data transfers, and log files.
+seo-title: Data Collection Components
 solution: Audience Manager
 title: Datainsamlingskomponenter
 uuid: 51bb1719-5ff2-4bc7-8eb1-98795e05d08f
 feature: System Components
 exl-id: 7ae407f1-f1e4-4545-baa2-bcca40aad76f
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 6%
+source-wordcount: '741'
+ht-degree: 5%
 
 ---
 
@@ -48,27 +47,27 @@ I [!DNL Audience Manager], DCS:
 
 **[!DNL DCS]Hanterar efterfrågan via[!UICONTROL Global Server Load Balancing (GSLB)]**
 
-[!DNL DCS] är ett geografiskt distribuerat och belastningsbalanserat system. Det innebär att [!DNL Audience Manager] kan dirigera begäranden till och från ett regionalt datacenter baserat på den geografiska platsen för en besökare. Denna strategi hjälper till att förbättra svarstiderna eftersom ett [!DNL DCS]-svar går direkt till ett datacenter som innehåller information om besökaren. [!UICONTROL GSLB] gör vårt system effektivt eftersom relevanta data cachas i servrar som ligger närmast användaren.
+The [!DNL DCS] är ett geografiskt fördelat och lastbalanserat system. Detta innebär [!DNL Audience Manager] kan dirigera förfrågningar till och från ett regionalt datacenter baserat på den geografiska platsen för en besökare. Denna strategi hjälper till att förbättra svarstiderna eftersom [!DNL DCS] går direkt till ett datacenter som innehåller information om besökaren. [!UICONTROL GSLB] gör vårt system effektivt eftersom relevanta data cachas i servrar som ligger närmast användaren.
 
 >[!IMPORTANT]
 >
->[!DNL DCS] identifierar bara webbtrafik som kommer från enheter som använder IPv4.
+>The [!DNL DCS] identifierar bara webbtrafik som kommer från enheter som använder IPv4.
 
-I ett händelseanrop hämtas geografisk plats i ett nyckelvärdepar som returneras i en större mängd JSON-data. Detta nyckelvärdepar är parametern `"dcs_region": region ID`.
+I ett händelseanrop hämtas geografisk plats i ett nyckelvärdepar som returneras i en större mängd JSON-data. Detta nyckelvärdepar är `"dcs_region": region ID` parameter.
 
 ![](assets/dcs-map.png)
 
-Som kund interagerar du indirekt med [!DNL DCS] via vår datainsamlingskod. Du kan också arbeta direkt med [!DNL DCS] via en uppsättning API:er. Se [API-metoder för datainsamlingsserver (DCS) och kod](../../api/dcs-intro/dcs-event-calls/dcs-event-calls.md).
+Som kund interagerar ni med [!DNL DCS] direkt via vår datainsamlingskod. Du kan också arbeta direkt med [!DNL DCS] via en uppsättning API:er. Se [API-metoder och -kod för Data Collection Server (DCS)](../../api/dcs-intro/dcs-event-calls/dcs-event-calls.md).
 
 **[!UICONTROL Profile Cache Servers (PCS)]**
 
-[!UICONTROL PCS] är en stor databas (i stort sett en stor cookie på serversidan). Den lagrar data som tas emot för aktiva användare vid server till server-överföringar och [!DNL DCS]. [!UICONTROL PCS]-data består av enhets-ID, autentiserade profil-ID:n och tillhörande traits. När [!DNL DCS] tar emot ett realtidsanrop kontrollerar den [!UICONTROL PCS] om det finns andra egenskaper som en användare kan tillhöra eller vara berättigad till. Och om en egenskap läggs till i ett segment vid ett senare tillfälle läggs dessa trait-ID:n till i [!UICONTROL PCS] och användarna kan kvalificera sig för det segmentet automatiskt, utan att besöka en viss webbplats eller app. [!UICONTROL PCS] ger en djupare förståelse för dina användare eftersom det kan matcha och segmentera användare i realtid eller bakom kulisserna med nya och historiska trait-data. [!DNL Audience Manager] Detta beteende ger en mer fullständig och korrekt bild av era användare än bara med realtidskvalifikationer.
+The [!UICONTROL PCS] är en stor databas (i stort sett en stor cookie på serversidan). Den lagrar data som tas emot för aktiva användare vid server till server-överföringar och [!DNL DCS]. [!UICONTROL PCS]-data består av enhets-ID, autentiserade profil-ID:n och tillhörande traits. När [!DNL DCS] tar emot ett realtidssamtal, kontrollerar [!UICONTROL PCS] för andra egenskaper som en användare kan tillhöra eller vara berättigad till. Om en egenskap läggs till i ett segment vid ett senare tillfälle läggs dessa trait-ID:n till i [!UICONTROL PCS] och användare kan kvalificera sig för det segmentet automatiskt utan att besöka en viss webbplats eller app. The [!UICONTROL PCS] hjälper till att fördjupa [!DNL Audience Manager]Förståelse av era användare eftersom det kan matcha och segmentera användare i realtid eller bakom kulisserna med nya och historiska traits-data. Detta beteende ger en mer fullständig och korrekt bild av era användare än bara med realtidskvalifikationer.
 
-Det finns inga gränssnittskontroller som gör att våra kunder kan arbeta direkt med [!UICONTROL PCS]. Kundåtkomst till [!UICONTROL PCS] är indirekt genom sin roll som datalager och dataöverföringar. [!UICONTROL PCS] körs på Apache Cassandra.
+Det finns inga gränssnittskontroller som gör att våra kunder kan arbeta direkt med [!UICONTROL PCS]. Kundåtkomst till [!UICONTROL PCS] är indirekt genom sin roll som datalager och dataöverföringar. The [!UICONTROL PCS] går på Apache Cassandra.
 
 **Tar bort inaktiva ID:n från[!UICONTROL PCS]**
 
-Som tidigare nämnts lagrar [!UICONTROL PCS] trait-ID:n för aktiva användare. En aktiv användare är en användare som har setts av [edge data-servrarna](../../reference/system-components/components-edge.md) från valfri domän under de senaste 14 dagarna. Dessa anrop till [!UICONTROL PCS] håller en användare i ett aktivt tillstånd:
+Som tidigare nämnts finns [!UICONTROL PCS] lagrar trait-ID:n för aktiva användare. En aktiv användare är en användare som har setts av [edge data-servrar](../../reference/system-components/components-edge.md) från valfri domän under de senaste 14 dagarna. Dessa anrop till [!UICONTROL PCS] behålla en användare i ett aktivt tillstånd:
 
 * [!DNL /event] samtal
 * [!DNL /ibs] anrop (ID-synk)
@@ -79,23 +78,23 @@ Removed /dpm calls from the bulleted list. /dpm calls have been deprecated.
 
  -->
 
-[!UICONTROL PCS] tömmer egenskaper om de är inaktiva i 17 dagar. De här egenskaperna går dock inte förlorade. De är lagrade i Hadoop. Om användaren visas igen vid ett senare tillfälle kommer Hadoopet att överföra alla sina egenskaper tillbaka till [!UICONTROL PCS], vanligtvis inom en 24-timmarsperiod.
+The [!UICONTROL PCS] tömmer egenskaper om de är inaktiva i 17 dagar. De här egenskaperna går dock inte förlorade. De är lagrade i Hadoop. Om användaren visas igen vid ett senare tillfälle kommer Hadoopet att överföra alla sina egenskaper tillbaka till [!UICONTROL PCS], vanligtvis inom 24 timmar.
 
-**Andra  [!UICONTROL DCS/PCS] processer: Avanmäl dig till sekretess**
+**Övriga [!UICONTROL DCS/PCS] Processer: Avanmäl dig till sekretess**
 
-Dessa serversystem hanterar förfrågningar om sekretess och avanmälan av användare. Information om användarens cookie samlas inte in i loggfilen om en användare har avanmält sig från datainsamlingen. Mer information om våra integritetspolicyer finns i [Adobe Privacy Center](https://www.adobe.com/se/privacy/advertising-services.html).
+Dessa serversystem hanterar förfrågningar om sekretess och avanmälan av användare. Information om användarens cookie samlas inte in i loggfilen om en användare har avanmält sig från datainsamlingen. Mer information om vår sekretesspolicy finns i [Adobe Privacy Center](https://www.adobe.com/se/privacy/advertising-services.html).
 
-## Data Integration Library (DIL)  {#dil}
+## Data Integration Library (DIL) {#dil}
 
-[!UICONTROL DIL] är kod som du placerar på sidan för datainsamling. Mer information om tillgängliga tjänster och metoder finns i [DIL API](../../dil/dil-overview.md).
+[!UICONTROL DIL] är kod som du placerar på sidan för datainsamling. Se [DIL API](../../dil/dil-overview.md) för mer information om tillgängliga tjänster och metoder.
 
 ## Inkommande server-till-server {#inbound-outbound-server}
 
-Detta är system som tar emot data som skickas in av olika server-till-server-integreringar med våra klienter. Mer information finns i dokumentationen om [sändning av målgruppsdata](/help/using/integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md).
+Detta är system som tar emot data som skickas in av olika server-till-server-integreringar med våra klienter. Läs dokumentationen om [skicka målgruppsdata](/help/using/integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md) för mer information.
 
 ## Loggfiler {#log-files}
 
-Med [!UICONTROL PCS] skapas och skrivs data till loggfilerna. Dessa skickas till andra databassystem för bearbetning, rapportering och lagring.
+The [!UICONTROL PCS] skapar och skriver data till loggfilerna. Dessa skickas till andra databassystem för bearbetning, rapportering och lagring.
 
 >[!MORELIKETHIS]
 >

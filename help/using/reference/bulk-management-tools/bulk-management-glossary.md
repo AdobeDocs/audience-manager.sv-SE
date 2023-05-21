@@ -1,17 +1,16 @@
 ---
 description: Kolumnrubriketiketter har definierats.
-seo-description: Kolumnrubriketiketter har definierats.
-seo-title: Ordlista för verktyg för satsvis hantering
+seo-description: Column header labels defined.
+seo-title: Bulk Management Tools Glossary
 solution: Audience Manager
 title: Ordlista för verktyg för satsvis hantering
 uuid: 4658a6bc-9515-4d31-9715-0084760b0cea
 feature: BAAAM
 exl-id: 036d16c7-1546-4539-a318-455b98e10026
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 4%
+source-wordcount: '338'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +26,7 @@ Kolumnrubriketiketter har definierats.
 
 >[!NOTE]
 >
->[RBAC-gruppbehörigheter ](../../features/administration/administration-overview.md) som tilldelats i  [!DNL Audience Manager] användargränssnittet respekteras i  [!UICONTROL Bulk Management Tools].
+>[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som har tilldelats i [!DNL Audience Manager] Gränssnittet respekteras i [!UICONTROL Bulk Management Tools].
 
 <table id="table_2C2BC2FB3EFC443C9A5AE18EFC6FABFD"> 
  <thead> 
@@ -39,11 +38,11 @@ Kolumnrubriketiketter har definierats.
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> dataSourceId</span> </p> </td> 
-   <td colname="col2"> <p>ID:t för en <a href="../../features/datasources-list-and-settings.md#data-sources-list-and-settings">-datakälla</a> som du vill returnera eller tilldela gruppvis. </p> </td> 
+   <td colname="col2"> <p>ID för en <a href="../../features/datasources-list-and-settings.md#data-sources-list-and-settings"> datakälla</a> du vill returnera eller tilldela gruppvis. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> derivedSignalId</span> </p> </td> 
-   <td colname="col2"> <p>Ett <a href="../../features/derived-signals.md"> härlett signal</a>-ID. </p> </td> 
+   <td colname="col2"> <p>A <a href="../../features/derived-signals.md"> härledd signal</a> ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> description</span> </p> </td> 
@@ -51,7 +50,7 @@ Kolumnrubriketiketter har definierats.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> målID</span> </p> </td> 
-   <td colname="col2"> <p>ID:t för det <a href="../../features/destinations/destinations.md"> mål</a> som du vill mappa eller ta bort. </p> </td> 
+   <td colname="col2"> <p>ID för <a href="../../features/destinations/destinations.md"> mål</a> du vill mappa eller ta bort. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> destinationMappingId</span> </p> </td> 
@@ -75,15 +74,15 @@ Kolumnrubriketiketter har definierats.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceKey</span> </p> </td> 
-   <td colname="col2"> <p>Signaler är databitar som skickas till <span class="keyword"> Audience Manager</span> baserat på användaraktivitet. Dessa överförs som <a href="../../reference/key-value-pairs-explained.md"> nyckelvärdepar</a>. Källnyckeln är en konstant som inte ändras. Det hjälper till att kategorisera källvärdet som kan ändras. Se <a href="../../features/derived-signals.md"> Härledda signaler</a>. </p> </td> 
+   <td colname="col2"> <p>Signaler är databitar som skickas till <span class="keyword"> Audience Manager</span> baserat på användaraktivitet. Dessa skickas som <a href="../../reference/key-value-pairs-explained.md"> nyckelvärdepar</a>. Källnyckeln är en konstant som inte ändras. Det hjälper till att kategorisera källvärdet som kan ändras. Se <a href="../../features/derived-signals.md"> Härledda signaler</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceValue</span> </p> </td> 
-   <td colname="col2"> <p>Källvärdet är en variabel som skickas som en del av ett <a href="../../reference/key-value-pairs-explained.md">-nyckelvärdepar</a>. </p> </td> 
+   <td colname="col2"> <p>Källvärdet är en variabel som skickas som en del av <a href="../../reference/key-value-pairs-explained.md"> nyckelvärdepar</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> startDate</span> </p> </td> 
-   <td colname="col2"> <p>Anger när ett segment kan börja skickas till ett mål. Använder <i>ååå-mm-dd</i>-format. </p> </td> 
+   <td colname="col2"> <p>Anger när ett segment kan börja skickas till ett mål. Användningsområden <i>yyyy-mm-dd</i> format. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> targetKey</span> </p> </td> 
@@ -95,11 +94,11 @@ Kolumnrubriketiketter har definierats.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitAlias</span> </p> </td> 
-   <td colname="col2"> <p>Ett ID skickades till ett icke-cookie-baserat mål. För ett cookie-baserat mål är det här nyckeln i ett <a href="../../reference/key-value-pairs-explained.md"> nyckelvärdepar</a>. </p> </td> 
+   <td colname="col2"> <p>Ett ID skickades till ett icke-cookie-baserat mål. För en cookie-baserad destination är detta nyckeln i en <a href="../../reference/key-value-pairs-explained.md"> nyckelvärdepar</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitRule / segmentRule</span> </p> </td> 
-   <td colname="col2"> <p>Den faktiska egenskap eller segmentregel som används för att samla in data. En gruppbegäran returnerar reglerna som skapats i <span class="keyword"> Audience Manager</span> med <a href="../../features/traits/about-trait-builder.md"> trait rule builder</a> eller segmentregelbyggaren <a href="../../features/segments/segment-builder.md">. </a> Du kan också använda de här verktygen för att skapa regler och tillämpa dem samtidigt när du uppdaterar ett segment eller en egenskap. </p> <p>Se även <a href="../../reference/bulk-management-tools/bulk-rules.md"> Skapa eller uppdatera dragregler och segmentregler</a>. </p> </td> 
+   <td colname="col2"> <p>Den faktiska egenskap eller segmentregel som används för att samla in data. En gruppbegäran returnerar reglerna som skapats i <span class="keyword"> Audience Manager</span> med <a href="../../features/traits/about-trait-builder.md"> trait rule builder</a> eller <a href="../../features/segments/segment-builder.md"> segmentregelbyggaren</a>. Du kan också använda de här verktygen för att skapa regler och tillämpa dem samtidigt när du uppdaterar ett segment eller en egenskap. </p> <p>Se även <a href="../../reference/bulk-management-tools/bulk-rules.md"> Skapa eller uppdatera dragregler och segmentregler</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitType</span> </p> </td> 
@@ -116,7 +115,7 @@ Kolumnrubriketiketter har definierats.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> valueAlias</span> </p> </td> 
-   <td colname="col2"> <p>Nyckeln i ett <a href="../../reference/key-value-pairs-explained.md"> nyckelvärdepar</a> som skickas till en cookie-destination. </p> </td> 
+   <td colname="col2"> <p>Tangenten i <a href="../../reference/key-value-pairs-explained.md"> nyckelvärdepar</a> skickas till en cookie-destination. </p> </td> 
   </tr> 
  </tbody> 
 </table>

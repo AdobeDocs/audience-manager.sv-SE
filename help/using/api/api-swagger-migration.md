@@ -1,7 +1,7 @@
 ---
 description: Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitlig, korrekt API-dokumentation. Därför skriver vi om vårt API-innehåll i Swagger och flyttar det till en ny plats. Dessa ändringar är avsedda att förbättra din upplevelse av Audience Manager API-koden.
-seo-description: Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitlig, korrekt API-dokumentation. Därför skriver vi om vårt API-innehåll i Swagger och flyttar det till en ny plats. Dessa ändringar är avsedda att förbättra din upplevelse av Audience Manager API-koden.
-seo-title: Migrera API-kod för Audience Manager
+seo-description: Here at Audience Manager, we're engineers, developers, and code ninjas just like you. And, like you, we want to work with reliable, accurate API documentation. As a result, we're re-writing our API content in Swagger and moving it to a new location. These changes are designed to help improve your experience with the Audience Manager API code.
+seo-title: Audience Manager API Code Migration
 solution: Audience Manager
 title: Migrera API-kod för Audience Manager
 uuid: 93cc28c4-4b91-4c79-93d5-ece9bb4cc9d5
@@ -9,20 +9,20 @@ feature: API
 exl-id: 081be8a7-5029-45b1-8fb1-0531d5090fe0
 source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '384'
 ht-degree: 4%
 
 ---
 
 # Migrera API-kod för Audience Manager {#audience-manager-api-code-migration}
 
-Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitlig [!DNL API]-dokumentation. Därför skriver vi om vårt [!DNL API]-innehåll i [!DNL Swagger] och flyttar det till en ny plats. Ändringarna är avsedda att förbättra din upplevelse av Audience Manager [!DNL API]-koden.
+Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitligt, korrekt [!DNL API] dokumentation. Därför skriver vi om [!DNL API] innehåll i [!DNL Swagger] och flytta den till en ny plats. Dessa ändringar är avsedda att förbättra din upplevelse av Audience Manager [!DNL API] kod.
 
-## Flyttar uppåt {#code-migration-details}
+## Flytta uppåt {#code-migration-details}
 
 <!-- api-swagger-migration.xml -->
 
-Webbplatsen [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html) är det nya hemmet för vårt reviderade [!DNL API]-innehåll. Vi försöker skriva om och flytta några uppsättningar [!DNL API]-metoder med varje release. Det innebär att du måste checka in både den nya platsen och dokumentationen för [REST API](../api/rest-api-main/rest-api-main.md) för att hitta alla tillgängliga metoder. Till slut kommer alla publika [!DNL API]s att finnas på webbplatsen [!DNL Audience Manager] [!DNL API] docs. I följande tabell visas de ändrade och migrerade [!DNL API]s.
+The [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html) sajten är det nya hemmet för vår reviderade [!DNL API] innehåll. Vi försöker skriva om och flytta några uppsättningar [!DNL API] metoder med varje release. Det innebär att du måste checka in både den nya platsen och [REST API](../api/rest-api-main/rest-api-main.md) dokumentation för att hitta alla tillgängliga metoder. Så småningom är hela allmänheten [!DNL API]kommer att finnas på [!DNL Audience Manager] [!DNL API] dokumentwebbplats. I följande tabell visas de ändrade och migrerade [!DNL API]s.
 
 <!--
 

@@ -29,7 +29,7 @@ Traits som registreras via [!UICONTROL Inbound] fylls i av [!UICONTROL Inbound] 
 * DomainID ställs in på 5325
 * Region ställs in på 0
 
-<br> 
+<br>
 
 **Kan du ge mig en lista över IP-adresser som jag kan lägga till i en tillåtelselista för dpm.demdex.net?**
 
@@ -114,7 +114,7 @@ Kunden använder [!DNL AppMeasurement] version 3.5.2:
 https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 ```
 
-<br> 
+<br>
 
 **Kan jag samla in siddata även om jag inte är [!DNL Analytics]-kund?**
 
@@ -127,7 +127,7 @@ Ja. Modulen [!UICONTROL DIL] hjälper dig att samla in siddata även om du inte 
 
 Dessutom kan en kund använda ett enkelt webbplatsobjekt och fylla det med nyckelvärdespar som ni vill att [!UICONTROL DIL] ska samla in data om. På så sätt kan ni lägga till och ta bort specifika målgruppsdatapunkter på webbplatsen utan att behöva uppdatera [!DNL Audience Management]. Samarbeta med er Partner Solutions-representant för att konfigurera detta och se till att [!DNL DIL]-modulen refererar till sidobjektet korrekt.
 
-<br> 
+<br>
 
 **Kan [!UICONTROL DIL] samla in data från [!DNL Google Analytics]?**
 
@@ -136,7 +136,7 @@ Ja. [!UICONTROL DIL] kan samla in vissa [!DNL Google Analytics]-element (GA) och
 * [GA.submitUniversalAnalytics](../dil/dil-modules.md#ga-submit-universal-analytics)
 * [GA.init](../dil/dil-modules.md#ga-init)
 
-<br> 
+<br>
 
 **Kan jag hämta rådata från [!DNL Audience Manager] och hur granulära är dessa data?**
 
@@ -148,37 +148,37 @@ Ja, [!DNL Audience Manager] kan tillhandahålla data som samlats in för använd
 * Tidstämplar
 * Sidadresser
 
-<br> 
+<br>
 
 **[!DNL Google Ad Manager]Jag vill samla in data på en webbplats och rikta mig till användare på en annan webbplats via Måste jag använda kod på den andra webbplatsen om jag inte vill samla in data från den?**
 
 Nej. Om data inte behöver samlas in på den andra webbplatsen behöver du inte distribuera DIL där. Så länge du har tillgång till lagret på den andra platsen via [!DNL Google Ad Manager]kan du använda datainsamlingen från den ursprungliga webbplatsen och målet via [!DNL Google Ad Manager].
 
-<br> 
+<br>
 
 **Vilken är den bästa tredjepartsleverantören av data?**
 
 Varje leverantör tillför något unikt, så det beror på vad du letar efter. Vi kan aktivera överlappande rapportering (utan extra kostnad) som hjälper dig att förstå vilken leverantör som fungerar bäst för dig.
 
-<br> 
+<br>
 
 **Hur ställs cookies in i [!DNL Audience Manager] och hur skickas variabler till [!DNL Google Ad Manager]?**
 
 [!DNL Audience Manager][!DNL Google Ad Manager] ställer in 2 cookies: Den ena skickar segmentvariabler till annonstaggen i och den andra ställer in vårt unika användar-ID (UUID) som också läses in av [!DNL Google Ad Manager]. Genom att lägga till UUID i annonstaggen kan vi skapa rapporter och målgruppsidentifiering på användarnivå.
 
-<br> 
+<br>
 
 **Kan vi skicka DSP-information om punkter i konverteringstratten som en användare nått?**
 
 Ja. Vi kan skicka trattdata, men DSP måste ha de tekniska funktioner som behövs för att använda dem. Er DSP måste bekräfta att de kan hantera flera segment. Om de inte kan det kanske vi måste skapa specifika segment för att få bort användare från andra segment baserat på konverteringsförlopp (t.ex. slutfört steg 1 och 2 men inte steg 3). Du kanske vill skicka den här informationen till en DSP så att de kan återmarknadsföra till användare, dirigera dem till en viss startsida eller visa specifika kampanjer.
 
-<br> 
+<br>
 
 **Hur kan jag bekräfta att data som skickas via FTP har hämtats av [!DNL Audience Manager]?**
 
 En fil har hämtats när tillägget ändras från `.sync` till `.processed`. När det inträffar står filen i kön för inläsning. Er kontoansvariga kan också bekräfta när en fil har överförts.
 
-<br> 
+<br>
 
 **Jag vill testa funktionaliteten i [DCS API](../api/dcs-intro/dcs-event-calls/dcs-event-calls.md). Jag skickar händelseanrop enligt nedan. Anropen innehåller [deklarerade ID:n](../features/declared-ids.md) och signaler som bör realisera vissa traits och segment som jag redan har konfigurerat. Kan jag använda [!UICONTROL General Reports] och [!UICONTROL Trend Reports] för att kontrollera om trait- och segmentpopulationerna ökar?**
 
@@ -200,7 +200,7 @@ Därför återspeglar rapporterna inte händelser som utlöses av deklarerade ID
 
 Se även [Index över Audience Manager-ID:n](../reference/ids-in-aam.md).
 
-<br> 
+<br>
 
 **Hur lång tid tar det innan användarprofiler synkroniseras mellan olika [regioner](../api/dcs-intro/dcs-api-reference/dcs-regions.md)?**
 

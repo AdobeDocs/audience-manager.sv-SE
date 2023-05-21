@@ -1,21 +1,20 @@
 ---
 description: På den här sidan beskrivs information som tillhandahålls direkt av våra partner allt eftersom den blir tillgänglig, tillsammans med eventuella konsekvenser för Audience Manager. I främsta hand beror dessa uppdateringar på GDPR (General Data Protection Regulation), som trädde i kraft den 25 maj 2018, och IABs nya GDPR-ramverket för öppenhet och samtycke (IAB Framework).
-seo-description: På den här sidan beskrivs information som tillhandahålls direkt av våra partner allt eftersom den blir tillgänglig, tillsammans med eventuella konsekvenser för Audience Manager. I främsta hand beror dessa uppdateringar på GDPR (General Data Protection Regulation), som trädde i kraft den 25 maj 2018, och IABs nya GDPR-ramverket för öppenhet och samtycke (IAB Framework).
-seo-title: GDPR-överväganden för destinationer
+seo-description: This page outlines information provided directly by our partners, as it becomes available, along with any implications related to your Audience Manager practice. Key implications for partners making these updates are the result of GDPR (General Data Protection Regulation), which went into effect on May 25th, 2018 and the new IAB GDPR Transparency & Consent Framework (IAB Framework).
+seo-title: GDPR Considerations for Destinations
 solution: Audience Manager
 title: GDPR-överväganden för destinationer
 uuid: e8a40060-086c-4f03-b48c-9c903acb7891
 feature: Data Governance & Privacy
 exl-id: ff2aa030-94cd-45dc-a9a2-283b38ab5e46
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '297'
 ht-degree: 96%
 
 ---
 
-# GDPR-överväganden för destinationer {#gdpr-considerations-for-destinations}
+# GDPR-överväganden för destinationer{#gdpr-considerations-for-destinations}
 
 På den här sidan beskrivs information som tillhandahålls direkt av våra partner allt eftersom den blir tillgänglig, tillsammans med eventuella konsekvenser för Audience Manager. I främsta hand beror dessa uppdateringar på GDPR (General Data Protection Regulation), som trädde i kraft den 25 maj 2018, och IABs nya GDPR-ramverket för öppenhet och samtycke (IAB Framework).
 

@@ -1,25 +1,23 @@
 ---
 description: På landningssidan Mål visas alla dina URL-, cookie- och server-till-server-mål. Det innehåller funktioner som gör att du kan skapa, redigera, söka efter och rapportera destinationer. Landningssidan finns i Målgruppsdata > Destinationer.
-seo-description: På landningssidan Mål visas alla dina URL-, cookie- och server-till-server-mål. Det innehåller funktioner som gör att du kan skapa, redigera, söka efter och rapportera destinationer. Landningssidan finns i Målgruppsdata > Destinationer.
-seo-title: Hantera mål
+seo-description: The Destination landing page lists all of your URL, cookie, and server-to-server destinations. It provides features that let you create, edit, search for, and report on destinations. The landing page is located in Audience Data > Destinations.
+seo-title: Manage Destinations
 solution: Audience Manager
 title: Hantera mål
 feature: Destination Basics
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 367bad0f-d7d6-4dd5-9717-85ac6eda47ab
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '173'
 ht-degree: 1%
 
 ---
 
-
-
 # Startsida för destinationer {#destinations-home}
 
-På startsidan för [!UICONTROL Destination] visas alla dina [!DNL URL]-, cookie- och server-till-server-mål. Det innehåller funktioner som gör att du kan skapa, redigera, söka efter och rapportera destinationer. Landningssidan finns i **[!UICONTROL Audience Data > Destinations]**.
+The [!UICONTROL Destination] på landningssidan visas alla [!DNL URL], cookie och server-till-server-mål. Det innehåller funktioner som gör att du kan skapa, redigera, söka efter och rapportera destinationer. Landningssidan finns i **[!UICONTROL Audience Data > Destinations]**.
 
-## Standardstartsida {#default-landing-page}
+## Standardlandningssida {#default-landing-page}
 
 <!-- destinations-home.xml -->
 
@@ -28,15 +26,15 @@ Standardlandningssidan visar dina destinationer baserat på typ. Du kan filtrera
 * **Alla**: visar alla typer av destinationer.
 * **Adobe Experience Cloud**: visar mål som skickar data till andra Adobe Experience Cloud-lösningar. För närvarande är Adobe Analytics det enda alternativ som stöds. Se [Konfigurera ett analysmål](/help/using/features/destinations/create-analytics-destination.md).
 * **Integrerade plattformar**: visar personbaserade och enhetsbaserade mål (även namngivna server-till-server-mål).
-* **Anpassad**: visar mål för cookie och URL.
+* **Egen**: visar mål för cookie och URL.
 
 
 ![](assets/destinations-landing.png)
 
-## Startsida för adresserbara målgrupper {#audiences-landing-page}
+## Landningssida för adresserbara målgrupper {#audiences-landing-page}
 
 Om du vill visa målgruppsdata och matchningsfrekvenser för server-till-server-målet väljer du **[!UICONTROL Integrated Platforms > Device-Based]**.
 
-Mer information om den information som visas finns i [Addressable Audiences Interface](/help/using/features/addressable-audiences.md#addressable-audience-interface).
+Mer information om den information som visas finns i [Addresserable Auditions Interface](/help/using/features/addressable-audiences.md#addressable-audience-interface).
 
 ![](/help/using/features/assets/addressable-audiences-landing.png)

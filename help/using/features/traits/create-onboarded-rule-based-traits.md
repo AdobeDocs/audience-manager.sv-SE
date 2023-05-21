@@ -1,29 +1,29 @@
 ---
 description: Beskriver hur du konfigurerar steg och funktioner som är specifika för den regelbaserade processen att skapa anpassade egenskaper.
 keywords: skapa egenskap;skapa egenskaper
-seo-description: Beskriver hur du konfigurerar steg och funktioner som är specifika för den regelbaserade processen att skapa anpassade egenskaper.
-seo-title: Skapa regelbaserade eller registrerade traits
+seo-description: Describes set up steps and features specific to the rules-based and onboarded trait creation process.
+seo-title: Create Rules-Based or Onboarded Traits
 solution: Audience Manager
 title: Skapa regelbaserade eller registrerade traits
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
-feature: 'Traits '
+feature: Traits
 exl-id: cad318ee-93b2-4afa-8a2f-a67b068eec0a
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 5%
+source-wordcount: '360'
+ht-degree: 3%
 
 ---
 
 # Skapa [!UICONTROL Rules-Based] eller [!UICONTROL Onboarded Traits] {#create-rules-based-or-onboarded-traits}
 
-Beskriver hur du konfigurerar steg och funktioner som är specifika för processen att skapa [!UICONTROL rules-based] och [!UICONTROL onboarded]-egenskaper.
+Beskriver hur du konfigurerar steg och funktioner som är specifika för [!UICONTROL rules-based] och [!UICONTROL onboarded] processen att skapa egenskaper.
 
 <!-- c_tb_rules_traits.xml -->
 
 ## Grundläggande information för Traits {#basics}
 
-I [!UICONTROL Trait Builder] kan du med [!UICONTROL Basic Information]-inställningarna skapa nya eller redigera befintliga [!UICONTROL traits]. [!UICONTROL Basic Information]-inställningarna är desamma för [!UICONTROL rules-based], [!UICONTROL onboarded] och [!UICONTROL algorithmic traits]. Om du vill skapa en ny [!UICONTROL trait] anger du ett namn (undvik specialtecken), en [!UICONTROL data source] och väljer en [!UICONTROL storage folder]. Andra [!UICONTROL Basic Information]-fält är valfria.
+I [!UICONTROL Trait Builder], [!UICONTROL Basic Information] gör att du kan skapa nya eller redigera befintliga [!UICONTROL traits]. The [!UICONTROL Basic Information] inställningarna är desamma för [!UICONTROL rules-based], [!UICONTROL onboarded] och [!UICONTROL algorithmic traits]. Skapa en ny [!UICONTROL trait], ange ett namn (undvik specialtecken), [!UICONTROL data source]och väljer [!UICONTROL storage folder]. Övriga [!UICONTROL Basic Information] -fält är valfria.
 
 <!-- c_tb_basics.xml -->
 
@@ -48,7 +48,7 @@ I [!UICONTROL Trait Builder] kan du med [!UICONTROL Basic Information]-inställn
        <li id="li_579302FE34B64FE0AE3C751012839229">Bindestreck </li> 
        <li id="li_44890F738CC64E449CC2545D701ECBC7">Tabbar </li> 
        <li id="li_C203837501A94342923C99A7DAD1ED61">Lodrät stapel- eller lodsymbol </li> 
-      </ul> </p> </p> <p>Detta minskar antalet bearbetningsfel när du konfigurerar en <a href="../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md"> inkommande datafilöverföring</a>. </p> </td> 
+      </ul> </p> </p> <p>Detta minskar antalet bearbetningsfel när du ställer in en <a href="../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md"> överföring av inkommande datafil</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Beskrivning</span></b> </td> 
@@ -60,7 +60,7 @@ I [!UICONTROL Trait Builder] kan du med [!UICONTROL Basic Information]-inställn
   </tr>
    <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Händelsetyp</span></b> </td> 
-   <td colname="col2"> Tilldelar egenskapen till en typ eller kategori, vanligtvis enligt funktion (t.ex. konvertering, besökare, partner, sidvy). Valfritt. <p> Mer information om hur du skapar konverteringsegenskaper finns i <a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">Skapa konverteringsegenskaper i Audience Manager-videon</a>. </p></td> 
+   <td colname="col2"> Tilldelar egenskapen till en typ eller kategori, vanligtvis enligt funktion (t.ex. konvertering, besökare, partner, sidvy). Valfritt. <p> Mer information om hur du skapar konverteringsegenskaper finns i <a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">Video om att skapa konverteringsegenskaper i Audience Manager</a>. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Integreringskod</span></b> </td> 
@@ -76,20 +76,20 @@ I [!UICONTROL Trait Builder] kan du med [!UICONTROL Basic Information]-inställn
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Datakategori</span></b> </td> 
-   <td colname="col2"> Klassificerar egenskaper enligt vanliga kategorier. <p>Obs!  Fastigheter tillhör endast en kategori. Valfritt. </p> </td> 
+   <td colname="col2"> Klassificerar egenskaper enligt vanliga kategorier. <p>Obs! Fastigheter tillhör endast en kategori. Valfritt. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Ange ett [!UICONTROL Trait]-förfallointervall {#set-expiration-interval}
+## Ange en [!UICONTROL Trait] Förfallointervall {#set-expiration-interval}
 
-I [!UICONTROL Trait Builder] kan du med [!UICONTROL Advanced Options] ange ett time-to-live-intervall ([!DNL TTL]) för ett [!UICONTROL trait]. [!DNL TTL] definierar hur många dagar en kvalificerad besökare stannar kvar på en  [!UICONTROL trait] (120 dagar är standard). När [!UICONTROL trait]-medlemskapet är inställt på 0 upphör det aldrig att gälla.
+I [!UICONTROL Trait Builder], [!UICONTROL Advanced Options] gör att du kan ange en time-to-live-inställning ([!DNL TTL]) intervall för [!UICONTROL trait]. [!DNL TTL] definierar hur många dagar en kvalificerad besökare stannar kvar på en [!UICONTROL trait] (120 dagar är standard). Med inställningen 0 [!UICONTROL trait] upphör aldrig att gälla.
 
 <!-- t_tb_ttl.xml -->
 
 ### Ange TTL för en [!UICONTROL trait]
 
-1. Expandera avsnittet [!UICONTROL Advanced Options] och ange ett tal för att ange ett [!DNL TTL]-värde för [!UICONTROL trait].
+1. Expandera [!UICONTROL Advanced Options] och ange ett tal för [!DNL TTL] värdet för [!UICONTROL trait].
 1. Klicka på **[!UICONTROL Save]**.
 
    ![](assets/TTL.png)

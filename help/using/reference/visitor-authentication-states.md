@@ -1,16 +1,16 @@
 ---
 description: Statusen för besöksautentisering i Audience Manager avgör om den nya trait-informationen skrivs till besökarens autentiserade profil eller till enhetsprofilen, där data samlades in från. Audience Manager hanterar autentiseringsstatusarna för besökar-ID UNKNOWN och LOGGED_OUT i händelseanrop på samma sätt.
 keywords: dpm.demdex.net
-seo-description: Statusen för besöksautentisering i Audience Manager avgör om den nya trait-informationen skrivs till besökarens autentiserade profil eller till enhetsprofilen, där data samlades in från. Audience Manager hanterar autentiseringsstatusarna för besökar-ID UNKNOWN och LOGGED_OUT i händelseanrop på samma sätt.
-seo-title: Autentiseringstillstånd för besökare i Audience Manager
+seo-description: The visitor authentication status in Audience Manager determines if the new trait information is written to the visitor's authenticated profile or to the device profile, where the data was collected from. Audience Manager handles the visitor ID authentication statuses UNKNOWN and LOGGED_OUT in event calls in the same way.
+seo-title: Visitor Authentication States in Audience Manager
 solution: Audience Manager
 title: Autentiseringstillstånd för besökare i Audience Manager
 uuid: d748c0c3-5833-4fb9-ab3e-793f5f252e47
-feature: 'Referens '
+feature: Reference
 exl-id: 55aec28d-02f6-4e6d-9be1-4ce40deb8dc3
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '330'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 Statusen för besöksautentisering i Audience Manager avgör om den nya trait-informationen skrivs till besökarens autentiserade profil eller till enhetsprofilen, där data samlades in från. Audience Manager hanterar autentiseringsstatusarna för besökar-ID UNKNOWN och LOGGED_OUT i händelseanrop på samma sätt.
 
-Från och med [!DNL Experience Cloud] ID-tjänst v1.5+ inkluderar metoden `setCustomerID` det valfria `AuthState`-objektet. `AuthState` identifierar besökare utifrån deras  [autentiseringsstatus](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html). [!DNL Audience Manager] hanterar de realiserade egenskaperna på olika sätt, beroende på vilken autentiseringsstatus som skickas i anropet och vilken  [profilkopplingsregel ](../features/profile-merge-rules/merge-rules-dashboard.md) du använder för segmentering.
+Börja med [!DNL Experience Cloud] ID-tjänsten v1.5+, `setCustomerID` metoden innehåller det valfria `AuthState` -objekt. `AuthState` identifierar besökare utifrån deras [autentiseringsstatus](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html). [!DNL Audience Manager] hanterar de realiserade egenskaperna på olika sätt, beroende på vilken autentiseringsstatus som skickas i anropet och vilka [Sammanfogningsregel för profil](../features/profile-merge-rules/merge-rules-dashboard.md) som används för segmentering.
 
 ## Autentiseringsstatus: OKÄND {#auth-status-unknown}
 
@@ -53,7 +53,7 @@ Exempelanrop (det begärandevärde som motsvarar autentiseringsstatusen markeras
 
 >[!NOTE]
 >
->[!DNL Audience Manager] utför en ID-synkronisering mellan  [CID och ](../reference/ids-in-aam.md) UID i alla tre fallen.
+>[!DNL Audience Manager] utför en ID-synkronisering mellan [CID och UUID](../reference/ids-in-aam.md) i samtliga tre fall.
 
 >[!MORELIKETHIS]
 >

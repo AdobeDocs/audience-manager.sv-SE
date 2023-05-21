@@ -1,17 +1,16 @@
 ---
 description: Sök efter använda och oanvända signaler som tagits emot under en viss tidsperiod. Om du vill söka efter signaler går du till Målgruppsdata > Signaler > Sök.
-seo-description: Sök efter använda och oanvända signaler som tagits emot under en viss tidsperiod. Om du vill söka efter signaler går du till Målgruppsdata > Signaler > Sök.
-seo-title: 'Signalsökning '
-title: 'Signalsökning '
+seo-description: Search for used and unused signals received over specific periods of time. To search for signals, go to Audience Data > Signals > Search.
+seo-title: Signals Search
+title: Signalsökning
 feature: Data Explorer
-translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+exl-id: 4cc363eb-9102-4c48-8cd5-efc52ee1c2fd
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 29%
+source-wordcount: '69'
+ht-degree: 36%
 
 ---
-
 
 # Översikt över signalsökning {#signals-search}
 

@@ -32,7 +32,7 @@ När du har överfört traits visas ibland inga resultat eller värden som är l
 
 Dessa data skickas till rapporteringssystemet sent och visas inte i det rapportintervall på 1 dag som används för att beräkna [!UICONTROL Trait Graph]. Du kan visa dessa data i rapportintervallen för 7, 14, 30 och 60 dagar i en [trendrapport](../reporting/trend-reports.md#trend-report-overview) eller [allmän rapport](../reporting/general-reports.md#general-reports-overview) dagen därpå.
 
-<br> 
+<br>
 
 **Vissa segment saknas i en [!UICONTROL Overlap]-rapport. Var är de?**
 
@@ -41,13 +41,13 @@ För att minska beräkningsbelastningen utelämnas statistiskt insignifikanta da
 * [Metoder för rapportering och datainsamling](../reporting/report-sampling.md)
 * [Räkna unika användare i överlappande och allmänna rapporter](../reporting/unique-user-counts.md).
 
-<br> 
+<br>
 
 **Om jag kör en e-postmarknadsföringskampanj, hur kan jag avgöra om omdirigerade användare kommer till min webbplats från den kampanjen eller andra källor?**
 
 Lägg till en kampanjspecifik frågesträng i webbadressen för det webbplatsavsnitt som du vill övervaka. Ställ sedan in en trait-regel som samlar in variabeln. Om till exempel webbadresen innehåller ett kampanj-ID som detta `www.test123.com/electronics?campaign=123`, kan du skapa en trait-regel som hämtar data från `h_referer`-variabeln med en trait-regel som söker efter ett sidhuvud som `h_referer = 'campaign=123'`.
 
-<br> 
+<br>
 
 **Vad är skillnaden mellan antalet segmentpopulationer i realtid och totalt?**
 
@@ -62,13 +62,13 @@ Lägg till en kampanjspecifik frågesträng i webbadressen för det webbplatsavs
 
  -->
 
-<br> 
+<br>
 
 **Jag har ett segment som bara består av ett trait. När jag tittar på rapportmätvärdena så stämmer inte antalen överens. Varför det?**
 
 Se [Trait- och segmentpopulationsdata i Segment Builder](../features/segments/segment-builder-data.md).
 
-<br> 
+<br>
 
 <!-- 
 
@@ -85,7 +85,7 @@ Se [Trait- och segmentpopulationsdata i Segment Builder](../features/segments/se
 
 I serverdelen kopplas registrerade data endast till användare som fortfarande är aktiva i AAM (användaren måste ha haft [!DNL DCS]-aktivitet under de senaste 120 dagarna). Om du lägger in data för användare som redan har gått ut i [!DNL Audience Manager] kan [!UICONTROL Inbound] meddela att ett visst antal användarposter har registrerats, men om dessa användare inte har haft någon aktivitet nyligen, kommer dessa data att tas bort när de når vår [!UICONTROL User Profile Store] och rapporteringen kommer att visa detta.
 
-<br> 
+<br>
 
 **Varför är unika traits för registrerade enhetövergripande traits mycket högre än det totala antalet registrerade poster?**
 
@@ -98,13 +98,13 @@ Det finns två orsaker till varför ett enskilt enhetsövergripande kund-ID kan 
 * Användare loggar in på samma enhetsövergripande konto från flera datorer/webbläsare.
 * Användare rensar sina cookies. Obs! Övergivna cookies tas bort efter 120 dagars inaktivitet.
 
-<br> 
+<br>
 
 **Varför är mina registrerade traits alltid 0 i [!UICONTROL Total Trait Realizations]?**
 
 [!UICONTROL Total Trait Realizations] motsvarar sidinläsningar. [!UICONTROL Total Trait Realizations] anger hur många gånger ett specifikt trait har utlösts i realtid. Antalet beräknas bara för regelbaserade traits. Registrerade traits visas alltid som 0 i [!UICONTROL Total Trait Realizations].
 
-<br> 
+<br>
 
 **Jag skapade ett trait och [!UICONTROL Trait Graph] visar ett större antal [!UICONTROL Unique Trait Realizations] än [!UICONTROL Total Trait Population]. Är det normalt?**
 

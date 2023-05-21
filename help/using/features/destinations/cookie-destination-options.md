@@ -1,22 +1,21 @@
 ---
 description: I Destination Builder innehåller konfigurationsavsnittet fälten Cookie-domän och Publicera data till. Med dessa kan du skapa regler som avgör om en destination ställer in en cookie eller returnerar en cookie. Cookie-domän och Publicera data för att fungera oberoende av varandra och är valfria. Du kan skapa en cookie-destination utan att använda någon av dem.
-seo-description: I Destination Builder innehåller konfigurationsavsnittet fälten Cookie-domän och Publicera data till. Med dessa kan du skapa regler som avgör om en destination ställer in en cookie eller returnerar en cookie. Cookie-domän och Publicera data för att fungera oberoende av varandra och är valfria. Du kan skapa en cookie-destination utan att använda någon av dem.
-seo-title: Valfria inställningar för cookie-destinationer
+seo-description: In Destination Builder, the Configuration section contains the Cookie Domain and Publish Data To fields. These let you create rules to determine if a destination sets a cookie or returns a cookie. Cookie Domain and Publish Data To work independently of each other and are optional. You can create a cookie destination without using either of them.
+seo-title: Optional Settings for Cookie Destinations
 solution: Audience Manager
 title: Valfria inställningar för cookie-destinationer
 feature: Destination Basics
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: b44f386e-4d43-41c3-b8ce-88b83d5d83c2
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '399'
 ht-degree: 4%
 
 ---
 
-
 # Valfria inställningar för cookie-destinationer {#optional-settings-cookies}
 
-I [!UICONTROL Destination Builder] innehåller [!UICONTROL Configuration section] fälten [!UICONTROL Cookie Domain] och [!UICONTROL Publish Data To]. Med dessa kan du skapa regler som avgör om en destination ställer in en cookie eller returnerar en cookie. [!UICONTROL Cookie Domain] och  [!UICONTROL Publish Data To] arbetar oberoende av varandra och är valfria. Du kan skapa en cookie-destination utan att använda någon av dem.
+I [!UICONTROL Destination Builder], [!UICONTROL Configuration section] innehåller [!UICONTROL Cookie Domain] och [!UICONTROL Publish Data To] fält. Med dessa kan du skapa regler som avgör om en destination ställer in en cookie eller returnerar en cookie. [!UICONTROL Cookie Domain] och [!UICONTROL Publish Data To] arbeta oberoende av varandra och är valfria. Du kan skapa en cookie-destination utan att använda någon av dem.
 
 ## Cookie-domän: Syntax och exempel {#cookie-domain-syntax}
 
@@ -32,27 +31,27 @@ I [!UICONTROL Destination Builder] innehåller [!UICONTROL Configuration section
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Syntax</b> </p> </td> 
-   <td colname="col2"> <p>Fältet <span class="wintitle"> Cookie-domän</span> accepterar en enkel textsträng där du kan ange cookies på en angiven domän eller alla domäner. När den här funktionen används: </p> <p> 
+   <td colname="col2"> <p>The <span class="wintitle"> Cookie-domän</span> Du kan använda en enkel textsträng för att ange cookies i en angiven domän eller i alla domäner. När den här funktionen används: </p> <p> 
      <ul id="ul_473CB59F2C0C4B358201BE5C8B27D73D"> 
-      <li id="li_4E7F4691C1B54415963F7D5AA1558C9A">Ange endast en domän för varje cookie-mål. Ange inte flera domäner i fältet <span class="wintitle"> Cookie-domän</span>. Skapa ett annat <span class="wintitle">-mål</span> i stället. </li> 
+      <li id="li_4E7F4691C1B54415963F7D5AA1558C9A">Ange endast en domän för varje cookie-mål. Skriv inte flera domäner i <span class="wintitle"> Cookie-domän</span> fält. Skapa en till <span class="wintitle"> Mål</span> i stället. </li> 
       <li id="li_AEBF5C5F3C264C5EA4A2A6063C3F377D">Använd inte jokertecken. </li> 
-     </ul> </p> <p> Lämna fältet <span class="wintitle"> Cookie-domän</span> tomt om du vill ange en cookie för alla domäner. Det här är standardinställningen. </p> <p>Så här anger du cookies för en specifik domän och underdomäner: </p> <p> 
+     </ul> </p> <p> Lämna <span class="wintitle"> Cookie-domän</span> fältet tomt för att ange en cookie för alla domäner. Det här är standardinställningen. </p> <p>Så här anger du cookies för en specifik domän och underdomäner: </p> <p> 
      <ul id="ul_F25BC0D8C40641A2A5CA338E5C258435"> 
-      <li id="li_E236D8DEE4F24F9BBA36074F7049C12C">Skriv namnet på domänen i fältet <span class="wintitle"> Cookie-domän</span>. </li> 
+      <li id="li_E236D8DEE4F24F9BBA36074F7049C12C">Skriv namnet på domänen i <span class="wintitle"> Cookie-domän</span> fält. </li> 
       <li id="li_0471C198EE344DE5963A3C2F70B9E78B">Starta domännamnet med en punkt. Exempel, <code> .somedomain.com</code>. </li> 
-      <li id="li_73D06F2BEF45487280C2245E1F6B8ED0"><code> https://www</code>-prefixet krävs inte. </li> 
+      <li id="li_73D06F2BEF45487280C2245E1F6B8ED0">The <code> https://www</code> prefix krävs inte. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Exempel</b> </p> </td> 
-   <td colname="col2"> <p>Låt oss som ett enkelt exempel säga att vi har en fiktiv webbplats som kallas sport.com. Sports.com har domäner för golf, baseball och fotboll. Om du vill ange en cookie i alla sportdomäner skriver du den i rutan <span class="wintitle"> Cookie-domän</span> enligt nedan: </p> <p> <img src="assets/sports-domain.png" id="image_8883477BB3B543648C97A441AD34C6DE" /> </p> <p>Detta anger att <span class="keyword"> Audience Manager</span> ska ange en cookie i alla domäner som innehåller mönstret <code><i>something</i></code>.sport.com. Nedan finns en mer komplex uppsättning exempel. </p> </td> 
+   <td colname="col2"> <p>Låt oss som ett enkelt exempel säga att vi har en fiktiv webbplats som kallas sport.com. Sports.com har domäner för golf, baseball och fotboll. Om du vill skapa en cookie i alla sportdomäner skriver du den i <span class="wintitle"> Cookie-domän</span> enligt nedan: </p> <p> <img src="assets/sports-domain.png" id="image_8883477BB3B543648C97A441AD34C6DE" /> </p> <p>Det här säger <span class="keyword"> Audience Manager</span> för att ange en cookie i en domän som innehåller mönstret <code><i>something</i></code>.sport.com. Nedan finns en mer komplex uppsättning exempel. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Exempel på komplexa cookie-domäner
 
-De här exemplen visar om [!DNL Audience Manager] kommer att ange en cookie utifrån hur alternativet [!UICONTROL Cookie Domain] är konfigurerat.
+De här exemplen visar om [!DNL Audience Manager] skapar en cookie utifrån hur [!UICONTROL Cookie Domain] är konfigurerat.
 
 <table id="table_3A7B9479CDA6493FA8104D8D9841E914"> 
  <thead> 
@@ -93,12 +92,13 @@ De här exemplen visar om [!DNL Audience Manager] kommer att ange en cookie utif
 
 ## Publicera data till {#publish-data-to}
 
-[!UICONTROL Publish Data To]-inställningarna returnerar en cookie om domänen uppfyller villkoren som anges av de alternativ du väljer. Alternativen är:
+The [!UICONTROL Publish Data To] -inställningarna returnerar en cookie om domänen uppfyller villkoren som anges av de alternativ du väljer. Alternativen är:
 
-* **[!UICONTROL All of our domains]**: (Standard) Returnerar ett värde  [!DNL cookie] för valfri domän.
-* **[!UICONTROL Only the selected domains]**: Returnerar endast en cookie för de domäner som är markerade i domänlistan.
-* **[!UICONTROL All of our domains except the selected domains]**: Förhindrar att markerade domäner tar emot en  [!DNL cookie]fil. Alla andra domäner kan ta emot en [!DNL cookie].
+* **[!UICONTROL All of our domains]**: (Standard) Returnerar en [!DNL cookie] för alla domäner.
+* **[!UICONTROL Only the selected domains]**: Returnerar endast en cookie för de domäner som har valts i domänlistan.
+* **[!UICONTROL All of our domains except the selected domains]**: Förhindrar att markerade domäner tar emot en [!DNL cookie]. Alla andra domäner kan ta emot en [!DNL cookie].
 
 >[!MORELIKETHIS]
 >
 >* [Skapa ett cookie-mål](../../features/destinations/create-cookie-destination.md)
+

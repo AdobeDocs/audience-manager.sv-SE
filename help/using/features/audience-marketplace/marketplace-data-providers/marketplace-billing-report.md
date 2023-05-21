@@ -1,25 +1,24 @@
 ---
 description: Generera en faktureringsrapport för Audience Marketplace för att visa dataflödesanvändningen för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
-seo-description: Generera en faktureringsrapport för Audience Marketplace för att visa dataflödesanvändningen för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
-seo-title: Fakturering för dataflödesleverantörer
+seo-description: Generate an Audience Marketplace billing report to view data feed usage for the previous month for each of your subscribers. You can create a report for the previous month at any time. However, the report is more accurate when you generate it on or after the 10th day of the current month.
+seo-title: Billing for Data Feed Providers
 solution: Audience Manager
 title: Fakturering för dataflödesleverantörer
 uuid: 4e11dbd2-91fd-4b59-a66d-86a92e0de655
 feature: Audience Marketplace
 exl-id: aca2cec1-d3a0-421c-83ca-1c11e9e7d4c7
-translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 4%
+source-wordcount: '396'
+ht-degree: 3%
 
 ---
 
 # Fakturering för dataflödesleverantörer {#billing-for-data-feed-providers}
 
-Generera en [!DNL Audience Marketplace] faktureringsrapport för att visa dataflödesanvändningen för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
+Generera en [!DNL Audience Marketplace] faktureringsrapport för att visa dataflödets användning för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
 
-## Hämta en faktureringsrapport {#download-billing-report}
+## Ladda ned en faktureringsrapport {#download-billing-report}
 
 Så här hämtar du en rapport:
 
@@ -40,7 +39,7 @@ En faktureringsrapport innehåller följande information.
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Dataproviderns PID</span></b> </p> </td> 
-   <td colname="col2"> <p>Ditt <span class="keyword"> Audience Manager</span>-dataleverantörs-ID. </p> </td> 
+   <td colname="col2"> <p>Dina <span class="keyword"> Audience Manager</span> DataProvider-ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Dataproviderns namn</span></b> </p> </td> 
@@ -93,7 +92,7 @@ En faktureringsrapport innehåller följande information.
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Total kostnad</span></b> </p> </td> 
-   <td colname="col2"> <p>Beloppet <span class="keyword"> Audience Manager</span> avser en köpare. </p> </td> 
+   <td colname="col2"> <p>Beloppet <span class="keyword"> Audience Manager</span> fakturerar en köpare. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Faktureringsperiod</span></b> </p> </td> 
@@ -113,7 +112,7 @@ En faktureringsrapport innehåller följande information.
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Flagga</span></b> </p> </td> 
-   <td colname="col2"> <p> <i>Endast</i> för CPM-flöden. Flaggalternativen är: </p> 
+   <td colname="col2"> <p> <i>Endast för CPM-flöden</i>. Flaggalternativen är: </p> 
     <ul id="ul_509BC73B754A43299F8D719AB0805ABD"> 
      <li id="li_AB35E33B68EC49A187495DF6B9D86563">0: Anger att en prenumerant har rapporterat användningsinformation till <span class="keyword"> Audience Manager</span>. </li> 
      <li id="li_2E4871B127A84EC586A9F3659F52D67E">1: Anger att en prenumerant inte har rapporterat användningsinformation till <span class="keyword"> Audience Manager</span>. </li> 
