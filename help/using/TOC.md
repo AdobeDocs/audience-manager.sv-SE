@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-description: Lär dig hur du använder Adobe Audience Manager för att samla in kommersiellt relevant information om webbplatsbesökare och skapa marknadsföringsbara segment. Du kan också hitta information om hur du kan leverera riktad reklam och innehåll till rätt målgrupp.
 feature-set: Audience Manager
-source-git-commit: e50aab600f0bf197b1356ba77ac86efb4456979a
+source-git-commit: 27581b03b71d5254f24d7e46646abce82f9e4df2
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 91%
+source-wordcount: '1827'
+ht-degree: 90%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 91%
 # Användarhandbok för Audience Manager {#user-guide}
 
 + [Audience Manager Guide](aam-home.md)
++ [Audience Manager to Real-Time CDP evolutionsguide](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
 + Översikt {#overview}
    + [Översikt över Audience Manager](overview/aam-overview.md)
    + [Typer av insamlade data](overview/data-types-collected.md)
@@ -198,7 +199,7 @@ ht-degree: 91%
          + [Överlappning mellan segment och annonsenhet](reporting/audience-optimization-reports/aor-publishers/publisher-segment-ad-unit-overlap.md)
          + [Unik användarräckvidd](reporting/audience-optimization-reports/aor-publishers/publisher-unique-reach.md)
       + Data- och metadatafiler för Audience Optimization-rapporter och verkställbara loggfiler {#data-and-metadata-files}
-         + [ Loggdata och metadatafiler](reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
+         + [Loggdata och metadatafiler](reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
          + [Datafiler för Audience Optimization-rapporter och verkställbara loggfiler](reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
          + [Översikt och mappningar för metadatafiler](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
          + [Namnkonventioner för metadatafiler](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)
@@ -402,7 +403,7 @@ ht-degree: 91%
    + [Kontaktuppgifter och juridisk information](/help/using/help-legal/help-legal-contact.md)
 + De vanligaste supportfrågorna {#top-support-issues}
    + [Översikt](/help/using/support-issues/support-issues-overview.md)
-   + [Varför sjönk mina registrerade trait-populationer till 0 runt den 15 oktober? ](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
+   + [Varför sjönk mina registrerade trait-populationer till 0 runt den 15 oktober?](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
    + [Varför visas inte mina traits eller segment på sidan Overlap Reports?](/help/using/support-issues/why-do-my-traits-or-segments-not-show-up-in-the-overlap-reports.md)
    + [Varför kan användare med skrivskydd skapa, redigera eller ta bort traits och segment?](/help/using/support-issues/aam-read-only-users-create-delete-traits-segments.md)
    + [Vi är inte Audience Manager-kund, men vi kan se Javascript-anropen för Audience Manager på vår webbplats](/help/using/support-issues/not-using-aam-but-seeing-aam-javascript.md)
