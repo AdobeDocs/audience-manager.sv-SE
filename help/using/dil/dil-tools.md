@@ -7,14 +7,22 @@ title: DIL-verktyg
 uuid: 2bc62ce2-16bd-4e80-b493-c816ba643b59
 feature: DIL Implementation
 exl-id: 1f52eb95-8287-4dd0-b933-00de6926a797
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 152b3101e69e99dfe19c1be93edceaea6adc4fec
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 2%
+source-wordcount: '355'
+ht-degree: 1%
 
 ---
 
 # DIL-verktyg
+
+>[!WARNING]
+>
+>Från och med juli 2023 har Adobe upphört med utvecklingen av [!DNL Data Integration Library (DIL)] och [!DNL DIL] tillägg.
+><br><br>
+>Befintliga kunder kan fortsätta använda sina [!DNL DIL] implementering. Adobe kommer dock inte att utvecklas [!DNL DIL] bortom denna punkt. Kunder uppmanas att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) för deras långsiktiga strategi för datainsamling.
+><br><br>
+>Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) i stället.
 
 Beskriver metoder i `DIL.tools` namnutrymme. De här verktygen hjälper dig att utföra specifika uppgifter.
 
@@ -173,7 +181,7 @@ Funktionssignatur: `DIL.tools.getMetaTags( 1 or more parameters)`
 
 ### Exempelkod
 
-<pre class="&ldquo;javascript&rdquo;"><code>
+<pre class="javascript"><code>
 var dataLib = DIL.create({ 
      partner: '<i>partnerName'</i>, 
      containerNSID: <i>containerNSID</i> 

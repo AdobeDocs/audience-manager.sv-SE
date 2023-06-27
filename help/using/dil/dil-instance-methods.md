@@ -8,14 +8,22 @@ title: DIL-metoder på instansnivå
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
 feature: DIL Implementation
 exl-id: 0342439d-708e-461c-b155-a3ee423f5437
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 152b3101e69e99dfe19c1be93edceaea6adc4fec
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1153'
 ht-degree: 2%
 
 ---
 
 # DIL-metoder på instansnivå{#instance-level-dil-methods}
+
+>[!WARNING]
+>
+>Från och med juli 2023 har Adobe upphört med utvecklingen av [!DNL Data Integration Library (DIL)] och [!DNL DIL] tillägg.
+><br><br>
+>Befintliga kunder kan fortsätta använda sina [!DNL DIL] implementering. Adobe kommer dock inte att utvecklas [!DNL DIL] bortom denna punkt. Kunder uppmanas att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) för deras långsiktiga strategi för datainsamling.
+><br><br>
+>Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) i stället.
 
 Instansnivån [!UICONTROL DIL] Med API:er kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 
@@ -54,7 +62,6 @@ r_dil_signals.xml
 >
 >* Du kan kedja andra API-anrop till den här metoden.
 >* Om Adobe Experience Cloud JavaScript-biblioteket finns på sidan `submit()` Väntar på att molnet ska ange en cookie innan en begäran skickas.
-
 
 **Reserverade begärandenycklar**
 
@@ -685,7 +692,6 @@ var dilInstance = DIL.create({
 >* När `useCORSOnly: true`, [!UICONTROL DIL] kommer inte att ringa några ID-anrop från Internet Explorer version 9 eller tidigare.
 >
 
-
 ## useImageRequest {#useimagerequest}
 
 Ändrar begärandetypen till bild `<img>` från skript `<src>`.
@@ -725,4 +731,3 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >* [Skapa DIL](../dil/dil-class-overview/dil-create.md#dil-create)
 >* [Adobe Experience Platform identitetstjänst: AnvändCORSOnly](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/use-cors-only.html)
 >* [CORS-stöd i Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/reference/cors.html)
-
