@@ -8,9 +8,9 @@ title: Administrering
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
 feature: Administration
 exl-id: f23f4294-35d9-4128-bcda-64a3eccbb4e7
-source-git-commit: 8ef6e8eb4351c24b55703b1788c68c580f199fc8
+source-git-commit: c29e581c736e03066df7d0698d4ea384e14db467
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1187'
 ht-degree: 2%
 
 ---
@@ -24,6 +24,10 @@ ht-degree: 2%
 > Hanteringen av användarkonton går över till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). För att starta migreringen av användare måste alla Audience Manager-kunder omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln: [migrering från Audience Manager till Admin Console](admin-console-migration.md).
 > 
 > När alla kunder har migrerat kommer användarhanteringsavsnitten i det här dokumentet att försvinna.
+
+>[!IMPORTANT]
+>
+> Innan du kan använda [!DNL RBAC]måste den här funktionen aktiveras av Adobe för din organisation. Kontakta ditt kontoteam för att be om [!DNL RBAC] eller kontakta Kundtjänst.
 
 
 Alternativen under [!UICONTROL Administration] kan du skapa Audience Manager-användare och tilldela dem till grupper. Du kan också visa gränser (egenskaper, segment, mål och modeller).
@@ -41,6 +45,7 @@ Företagskunder som använder [!DNL Audience Manager] behöver en datahanterings
 > Hanteringen av användarkonton går över till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). För att starta migreringen av användare måste alla Audience Manager-kunder omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln: [migrering från Audience Manager till Admin Console](admin-console-migration.md).
 > 
 > När alla kunder har migrerat försvinner avsnittet för användarhantering i det här dokumentet.
+> 
 Skapa användare i [!DNL Audience Manager] och ange användarinformation, inloggningsstatus och tilldela användare till grupper.
 
 1. Klicka på **[!UICONTROL Administration]** > **[!UICONTROL Users]**.
