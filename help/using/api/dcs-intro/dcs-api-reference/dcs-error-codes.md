@@ -4,7 +4,7 @@ title: Felkoder, meddelanden och exempel för DCS
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 exl-id: 485e5ce2-143e-4d18-b157-c243c5a510ad
-source-git-commit: dbb557928a296d3dd5f0646644e2ca0cdc11dfdc
+source-git-commit: 5044a38c751abace922008f00b9ff463ea9c7e57
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 3%
@@ -32,10 +32,10 @@ I tabellerna nedan *kursiv* representerar en variabelplatshållare.
 |---|---|---|
 | 100 | Det gick inte att hämta värdnamnet för begäran | An [!DNL API] anropet skickade inte värden [!DNL HTTP] i begäran. Lägg till värdhuvudet i samtalet och försök igen. De flesta webbläsare och [!DNL API] kunderna gör detta automatiskt. |
 | 101 | Ogiltig [!DNL Experience Cloud] id skickades `ID` | The [!DNL DCS] anropet innehåller ett ogiltigt [!DNL Experience Cloud] ID. Kontrollera `d_mid=` key-value-par i rubriksträngen. Se till att du skickar in rätt [!DNL Experience Cloud] ID och försök utföra begäran igen. |
-| 102 | Ogiltig [!DNL AAM ID] skickade begäran `ID` | The [!DNL DCS] anropet innehåller ett ogiltigt [!DNL Audience Manager] ID. Kontrollera `d_uuid=` key-value-par i rubriksträngen. Se till att du skickar in rätt [!DNL Audience Manager] ID och försök utföra begäran igen. |
+| 102 | Ogiltig [!DNL AAM ID] har skickats i begäran `ID` | The [!DNL DCS] anropet innehåller ett ogiltigt [!DNL Audience Manager] ID. Kontrollera `d_uuid=` key-value-par i rubriksträngen. Se till att du skickar in rätt [!DNL Audience Manager] ID och försök utföra begäran igen. |
 | 104 | Alla kund-ID:n är ogiltiga | Alla kund-ID:n i samtalet är ogiltiga. Kontrollera dina ID:n och försök igen. |
 | 109 | Referent `HTTP referer` tillåts inte för partner `Partner ID` | The `HTTP referer` huvudet i anropet tillåts inte för partner-ID:t i samtalet. Kontrollera att `HTTP referer` huvudet är korrekt. |
-| 111 | Ogiltig `IMS` mottagen token | Returnerad för [!DNL Audience Manager] - [!DNL Adobe Target] integreringar. Felet inträffar när ett anrop görs till [!DNL DCS], innehåller ett ogiltigt [!DNL IMS] token. Token kan ha fel format, ha upphört att gälla eller så har användaren inte behörighet att komma åt den nödvändiga resursen. |
+| 111 | Ogiltig `IMS` mottagen token | Returnerad för [!DNL Audience Manager] - [!DNL Adobe Target] integreringar. Felet genereras när ett anrop görs till [!DNL DCS], innehåller ett ogiltigt [!DNL IMS] token. Token kan ha fel format, ha upphört att gälla eller så har användaren inte behörighet att komma åt den nödvändiga resursen. |
 
 ## Felkoder för avanmälan {#opt-out-error-codes}
 
@@ -73,7 +73,7 @@ I tabellerna nedan *kursiv* representerar en variabelplatshållare.
    <td colname="col2"> <p>Begäranden från det här landet tillåts inte </p> </td> 
    <td colname="col3"> <p>Baserat på IP-adressen <span class="wintitle"> DCS</span> blockbegäran från följande länder: </p> <p> 
      <ul id="ul_4017A7D074064FE7A8B5618AFCFA4E28"> 
-      <li id="li_EE65DEC3C64F4522B214C503DC754DC1">Kuba (CU) </li> 
+      <li id="li_EE65DEC3C64F4522B214C503DC754DC1">Kuba </li> 
       <li id="li_EDE8B304D35A41458DCFF11E9328802A">Iran (IR) </li> 
       <li id="li_36664315A06540E0BE024EE60638D5DC">Nordkorea (KP) </li> 
       <li id="li_B508A5FF173E491AAE41334C074D9DED">Sudan (SD) </li> 
@@ -171,17 +171,17 @@ I tabellerna nedan *kursiv* representerar en variabelplatshållare.
   <tr> 
    <td colname="col1"> <p>307 </p> </td> 
    <td colname="col2"> <p>Spärrad profilåtgärd för <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>En läs-/skrivåtgärd har blockerats eftersom ett ID har identifierats som skadligt och har lagts till i en blockeringslista Se felkod 306. </p> </td> 
+   <td colname="col3"> <p>En läs-/skrivåtgärd har blockerats eftersom ett ID har identifierats som skadligt och har lagts till i blockeringslista Se felkod 306. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>309 </p> </td> 
    <td colname="col2"> <p>Kund-id <code><i>ID</i></code> ignorerades eftersom det överskred gränsen för deklarerade kund-ID:n per begäran </p> </td> 
-   <td colname="col3"> <p>Relaterat till fel 301. Detta fel anger vilket kund-ID som ignorerades eftersom gränsen överskreds. </p> <p>Om till exempel 12 kund-ID har deklarerats på <span class="wintitle"> DCS</span> två av dem kommer att kastas bort. För att kunna meddela vilka som har ignorerats visas det här felet två gånger i svaret (en gång för varje ignorerat kund-ID). </p> </td>
+   <td colname="col3"> <p>Relaterat till fel 301. Det här felet anger vilket kund-ID som ignorerades eftersom gränsen överskreds. </p> <p>Om till exempel 12 kund-ID har deklarerats på <span class="wintitle"> DCS</span> två av dem kommer att kastas bort. För att kunna meddela vilka som har ignorerats visas det här felet två gånger i svaret (en gång för varje ignorerat kund-ID). </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>310 </p> </td> 
    <td colname="col2"> <p>Kund-ID ignorerades eftersom det överskred gränsen för ett givet namnutrymme. Namnområdes-ID är <code><i>ID</i></code>, kund-ID är <code><i>ID</i></code>. </p> </td> 
-   <td colname="col3"> <p>Den här felkoden returneras om fler än tre kund-ID har deklarerats för samma namnutrymme (<code> DPID</code>) på en <span class="wintitle"> DCS</span> ring. </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>I det här exemplet <span class="wintitle"> DCS</span> -begäran, finns det 4 id:n deklarerade för samma namnutrymme (med integreringskoden 1). Ett av ID:na ignoreras och fel 310 returneras. </p> </td> 
+   <td colname="col3"> <p>Den här felkoden returneras om fler än tre kund-ID har deklarerats för samma namnutrymme (<code> DPID</code>) på en <span class="wintitle"> DCS</span> ring. </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>I detta exempel <span class="wintitle"> DCS</span> -begäran, finns det 4 id:n deklarerade för samma namnutrymme (med integreringskoden 1). Ett av ID:na ignoreras och fel 310 returneras. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>311 </p> </td> 
@@ -193,19 +193,19 @@ I tabellerna nedan *kursiv* representerar en variabelplatshållare.
    <td colname="col2"> <p>Begäran innehåller ett ogiltigt globalt enhets-ID </p> </td> 
    <td colname="col3"> <p>The <span class="wintitle">DCS</span> returnerar den här felkoden när begäran innehåller ett ogiltigt globalt enhets-ID. DCS ignorerar det ogiltiga ID:t och genererar ett 312-fel tillsammans med de specifika felen för det ogiltiga ID:t. Se <a href="../../../features/global-data-sources.md" format="dita" scope="local">Globala datakällor</a> och <a href="../../../reference/ids-in-aam.md" format="dita" scope="local">Index för ID:n i Audience Manager</a> om du vill ha detaljerad information om rätt enhetsannons-ID-format och motsvarande globala datakällor.</p>
    <p>Exempel på ett felaktigt anrop: <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
-   <p>Förklaring: An <span class="keyword">IDFA (DPID 20915)</span> måste vara ett versalt ID. ID:t som angavs i begäran är gemener.</p>
+   <p>Förklaring: En <span class="keyword">IDFA (DPID 20915)</span> måste vara ett versalt ID. ID:t som angavs i begäran är gemener.</p>
    </td>
   </tr>
    <tr> 
    <td colname="col1"> <p>313 </p> </td> 
    <td colname="col2"> <p>CMP ID finns inte i GCL</p> </td> 
-   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av ett CMP ID som inte finns i den cachelagrade versionen av Global CMP List vid tidpunkten för utvärderingen, tar Audience Manager-pluginen för IAB TCF bort IAB TC-strängen och bearbetar begäran som vanligt. IAB TCF v2.0 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p>
+   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av ett CMP-ID som inte finns i den cachelagrade versionen av Global CMP List vid tidpunkten för utvärderingen, tar Audience Manager-pluginen för IAB TCF bort IAB TC-strängen och bearbetar begäran som vanligt. IAB TCF v2.2 ${GDPR} makrot är inställt på 0 och ${GDPR_CONSENT_XXX} makrot är tomt.</p>
    </td>
   </tr>
    <tr> 
    <td colname="col1"> <p>314 </p> </td> 
    <td colname="col2"> <p>CMP ID har markerats som borttaget i GCL</p> </td> 
-   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av en CMP som är markerad som borttagen i vår cachelagrade version av Global CMP List, tar Audience Manager-pluginen för IAB TCF bort TC-strängen och bearbetar begäran som vanligt, om utvärderingstiden är förbi raderingstiden från den globala CMP-listan. IAB TCF v2.0 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p></td>
+   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av en CMP som är markerad som borttagen i vår cachelagrade version av Global CMP List, tar Audience Manager-pluginen för IAB TCF bort TC-strängen och bearbetar begäran som vanligt, om utvärderingstiden är förbi raderingstiden från den globala CMP-listan. IAB TCF v2.2 ${GDPR} makrot är inställt på 0 och ${GDPR_CONSENT_XXX} makrot är tomt.</p></td>
   </tr>
    <tr> 
    <td colname="col1"> <p>315 </p> </td> 

@@ -7,7 +7,7 @@ title: Audience Manager Guide
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 feature: Overview
 exl-id: a47bf8ba-4ec0-4b3b-ad20-4afb7c9f924b
-source-git-commit: 79ce9c05c9168e3bcecabc11db3f9585a5b5ef6c
+source-git-commit: 5044a38c751abace922008f00b9ff463ea9c7e57
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 86%
@@ -151,7 +151,7 @@ Den här tekniska handboken innehåller självhjälp för Audience Manager, en b
      Se den senaste <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html" format="https" scope="external"> versionsinformationen för Experience Cloud</a> angående nya funktioner och korrigeringar.</p> 
      <p> <b>Nya funktioner</b> </p> <p> 
      Läs om de senaste funktionerna i Audience Manager:</p>
-     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">migrering från Audience Manager till Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">Google kundmatchning för personbaserade destinationer</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager plug-in för IAB TCF v2.0</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">Rapportera aktivitetsanvändning</a></li>
+     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">migrering från Audience Manager till Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">Google kundmatchning för personbaserade destinationer</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager plug-in för IAB TCF v2.2</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">Predictive Audiences</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">Rapportera aktivitetsanvändning</a></li>
      </ul></p>
     </td>
   </tr> 
