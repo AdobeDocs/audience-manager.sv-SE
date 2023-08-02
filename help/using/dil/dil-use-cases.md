@@ -7,7 +7,7 @@ title: DIL-användningsexempel och kodexempel
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
 feature: DIL Implementation
 exl-id: 001710be-b377-460a-9e29-7268d25a6305
-source-git-commit: fcf13cf39f688f8aafd2b1020ddfe4583d67e14f
+source-git-commit: cad38e2c523e9b762aa996c275daefa96c8e14b0
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 2%
@@ -19,9 +19,9 @@ ht-degree: 2%
 >[!WARNING]
 >
 >Från och med juli 2023 har Adobe upphört med utvecklingen av [!DNL Data Integration Library (DIL)] och [!DNL DIL] tillägg.
-><br>
+>
 >Befintliga kunder kan fortsätta använda sina [!DNL DIL] implementering. Adobe kommer dock inte att utvecklas [!DNL DIL] bortom denna punkt. Kunder uppmanas att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) för deras långsiktiga strategi för datainsamling.
-><br>
+>
 >Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) i stället.
 
 Kodexempel och beskrivningar för specifika fall för användning i DIL.
@@ -44,11 +44,11 @@ c_dil_send_page_objects.xml
 
 **Beskrivning**
 
-I följande kod visas hur du samlar in siddata och skickar dem till Audience Manager med [!UICONTROL DIL]. I de här exemplen används en variabel för att lagra dataelement i en platt lista eller en array. Kom ihåg, skicka in variabler som [nyckelvärdepar](../reference/key-value-pairs-explained.md). Observera även `c_` prefix före nyckeln i nyckelvärdepar. Detta [obligatoriskt prefix](../features/traits/trait-variable-prefixes.md) identifierar information som användardefinierade data. I det första exemplet måste du lägga till manuellt `c_` till nyckeln. I det andra exemplet [!UICONTROL DIL] gör detta automatiskt åt dig.
+I följande kod visas hur du samlar in siddata och skickar dem till Audience Manager med [!UICONTROL DIL]. I de här exemplen används en variabel för att lagra dataelement i en platt lista eller en array. Kom ihåg, skicka in variabler som [nyckelvärdepar](../reference/key-value-pairs-explained.md). Observera även `c_` prefix före tangenten i nyckelvärdepar. Detta [obligatoriskt prefix](../features/traits/trait-variable-prefixes.md) identifierar information som användardefinierade data. I det första exemplet måste du lägga till manuellt `c_` till nyckeln. I det andra exemplet [!UICONTROL DIL] gör detta automatiskt åt dig.
 
 **Behåll konsekventa värdeegenskaper**
 
-Tänk på att värdeegenskaperna förblir desamma när du skickar data. Om du till exempel har två identiska nycklar med olika värden, prioriteras värdet för det sista nyckel/värde-paret framför de föregående värdeobjekten. Skicka till exempel in `color:blue` och `color:red` anger det returnerade värdet till rött (skriver över blått).
+Tänk på att värdeegenskaperna förblir desamma när du skickar data. Om du till exempel har två identiska nycklar med olika värden, prioriteras värdet för det sista nyckel/värde-paret framför föregående värdeobjekt. Skicka till exempel in `color:blue` och `color:red` anger det returnerade värdet till rött (skriver över blått).
 
 **Exempel 1: Skicka data som nyckelvärdepar**
 
@@ -240,7 +240,7 @@ För att köra `dil.js` fil i GTM:
 1. Öppna taggen för att redigera den och:
 
    * Ge taggen ett namn.
-   * Välj **[!UICONTROL Custom HTML Tag]** från **[!UICONTROL Tag Type]** nedrullningsbar lista.
+   * Välj **[!UICONTROL Custom HTML Tag]** från **[!UICONTROL Tag Type]** listruta.
    * Placera HTML i fältet [!UICONTROL DIL] kod (bibliotek + den anpassade koden) i script-taggar `<script>DIL code</script>`.
    * Klicka på **[!UICONTROL Save]**.
 

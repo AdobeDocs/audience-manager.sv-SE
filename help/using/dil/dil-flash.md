@@ -7,7 +7,7 @@ title: Flash DIL
 uuid: 65833cfd-768e-4b16-95c5-debd8411df38
 feature: DIL Implementation
 exl-id: e530d893-db26-4411-8df7-9bb2df84b68e
-source-git-commit: fcf13cf39f688f8aafd2b1020ddfe4583d67e14f
+source-git-commit: cad38e2c523e9b762aa996c275daefa96c8e14b0
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 2%
@@ -19,9 +19,9 @@ ht-degree: 2%
 >[!WARNING]
 >
 >Från och med juli 2023 har Adobe upphört med utvecklingen av [!DNL Data Integration Library (DIL)] och [!DNL DIL] tillägg.
-><br>
+>
 >Befintliga kunder kan fortsätta använda sina [!DNL DIL] implementering. Adobe kommer dock inte att utvecklas [!DNL DIL] bortom denna punkt. Kunder uppmanas att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) för deras långsiktiga strategi för datainsamling.
-><br>
+>
 >Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) i stället.
 
 Samla in data som skickas från FLA-filer till Analytics och arbeta med den informationen i Audience Manager.
@@ -32,7 +32,7 @@ c_flash_dil_toc.xml
 
  -->
 
-[!UICONTROL Flash DIL] är en [!DNL ActionScript] kodbibliotek där du kan arbeta med videouppspelningsdata i Audience Manager. [!DNL Flash DIL] fungerar genom att hämta SWF-innehåll i Adobe [!UICONTROL AppMeasurement] biblioteket överförs till Analytics. [!DNL Flash DIL] skickar dessa data till den separata [!UICONTROL DIL] JavaScript-datainsamlingsmodulen som skickar informationen till Audience Manager. Analysdata ( [!UICONTROL Props], [!UICONTROL eVars], händelser osv.) som hämtats från [!DNL FLA] filen finns i Audience Manager som traits eller oanvända signaler.
+[!UICONTROL Flash DIL] är en [!DNL ActionScript] kodbibliotek som gör att du kan arbeta med videouppspelningsdata i Audience Manager. [!DNL Flash DIL] fungerar genom att hämta SWF-innehåll i Adobe [!UICONTROL AppMeasurement] biblioteket överförs till Analytics. [!DNL Flash DIL] skickar dessa data till den separata [!UICONTROL DIL] JavaScript-datainsamlingsmodulen som skickar informationen till Audience Manager. Analysdata ( [!UICONTROL Props], [!UICONTROL eVars], händelser osv.) som hämtats från [!DNL FLA] filen finns i Audience Manager som traits eller oanvända signaler.
 
 ## Krav för datainsamling från Flash DIL {#requirements}
 
@@ -50,13 +50,13 @@ c_flash_dil_intro.xml
 
 * The [!UICONTROL DIL] klassbibliotek ( `dil.swc`). Hämta [!UICONTROL DIL] klassbibliotek från din kontaktperson för Partner Solutions.
 
-* JavaScript [!UICONTROL DIL] datakod på sidan.
+* JavaScript [!UICONTROL DIL] datainsamlingskod på sidan.
 * [DIL ActionScript bibliotek](../dil/dil-flash.md#flash-dil-actionscript) som läses in i det Flash-objekt som du vill samla in data från.
 * Adobe [!DNL AppMeasurement] [!DNL AS] biblioteket (version 3.5.2 eller senare) har läst in [!DNL Flash] objekt som du vill samla in data från.
 
 **Ange AllowScriptAccess till `Always` eller`sameDomain`**
 
-The `AllowScriptAccess` i HTML-kod som läser in en SWF-fil kontrollerar möjligheten att utföra utgående URL-åtkomst inifrån SWF-filen. När du konfigurerar en [!UICONTROL Flash DIL] dataintegrering, se till att Flash `AllowScriptAccess` parametern är inställd på `always` eller `sameDomain`. [!UICONTROL Flash DIL] datainsamlingen fungerar inte om `AllowScriptAccess` är inställd på `never`. Se [Kontrollera åtkomst till skript eller värdwebbsidan](https://helpx.adobe.com/flash/kb/control-access-scripts-host-web.html).
+The `AllowScriptAccess` i HTML-kod som läser in en SWF-fil kontrollerar möjligheten att utföra utgående URL-åtkomst inifrån SWF-filen. När du konfigurerar [!UICONTROL Flash DIL] dataintegrering, se till att Flash `AllowScriptAccess` parametern är inställd på `always` eller `sameDomain`. [!UICONTROL Flash DIL] datainsamlingen fungerar inte om `AllowScriptAccess` är inställd på `never`. Se [Kontrollera åtkomst till skript eller värdwebbsidan](https://helpx.adobe.com/flash/kb/control-access-scripts-host-web.html).
 
 **JS [!UICONTROL DIL] Kodplacering**
 
@@ -106,7 +106,7 @@ Data från dessa parametrar samlas in som standard:
 * `mediaAdParentPod` (Poden eller annonsen bryts i det primära innehållet där annonsen spelas upp)
 * `mediaAdParentPodPos` (Den numeriska positionen i rutan där annonsen spelas upp. Fler än en annons kan spelas upp i en ruta.
 
-## Flash DIL data i Audience Manager {#flash-dil-data}
+## Data från Flash DIL i Audience Manager {#flash-dil-data}
 
 The [!UICONTROL Flash DIL] i ändras data från Adobe AppMeasurement till Audience Manager och oanvända signaler.
 
@@ -124,7 +124,7 @@ Använda de analysdata som skickas av [!UICONTROL Flash DIL]bör du skapa Audien
 
 Se tabellen för exempel:
 
-| Analysdataelement | Analysexempel | Som Audience Manager-trait |
+| Analysdataelement | Analysexempel | Som Audience Manager trait |
 |---|---|---|
 | **prop** | `c30=foo` | `c_prop30=foo` |
 | **evar** | `v35=bar` | `c_evar35=bar` |
@@ -136,7 +136,7 @@ Audience Manager godkänner Analytics [!UICONTROL Props], [!UICONTROL eVars]och 
 
 ## Biblioteket Flash DIL ActionScript {#flash-dil-actionscript}
 
-Kod för [!DNL Flash] objekt för att skicka analysdata till Audience Manager.
+Kod för [!DNL Flash] objekt för att skicka Analytics-data till Audience Manager.
 
 <!-- 
 

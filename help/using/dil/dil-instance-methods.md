@@ -8,7 +8,7 @@ title: DIL-metoder på instansnivå
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
 feature: DIL Implementation
 exl-id: 0342439d-708e-461c-b155-a3ee423f5437
-source-git-commit: fcf13cf39f688f8aafd2b1020ddfe4583d67e14f
+source-git-commit: cad38e2c523e9b762aa996c275daefa96c8e14b0
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 2%
@@ -20,9 +20,9 @@ ht-degree: 2%
 >[!WARNING]
 >
 >Från och med juli 2023 har Adobe upphört med utvecklingen av [!DNL Data Integration Library (DIL)] och [!DNL DIL] tillägg.
-><br>
+>
 >Befintliga kunder kan fortsätta använda sina [!DNL DIL] implementering. Adobe kommer dock inte att utvecklas [!DNL DIL] bortom denna punkt. Kunder uppmanas att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) för deras långsiktiga strategi för datainsamling.
-><br>
+>
 >Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) i stället.
 
 Instansnivån [!UICONTROL DIL] Med API:er kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
@@ -35,9 +35,9 @@ c_api_overview.xml
 
  -->
 
-När du arbetar med instansnivån [!UICONTROL DIL] API:er:
+När du arbetar med instansnivån [!UICONTROL DIL] API:
 
-* Åtkomst kräver ett partnernamn och ett behållarnamnområdes-ID (NSID). Kontakta din kontoansvarige på Audience Manager för att få denna information.
+* Åtkomst kräver ett partnernamn och ett behållar-ID (NSID). Kontakta din kontoansvarige på Audience Manager för att få denna information.
 * Ersätt valfritt exempel *kursiv* text i API-dokumentationen med värde, ID eller annan variabel som krävs för den metod du arbetar med.
 
 <!-- 
@@ -186,7 +186,7 @@ r_dil_submit.xml
 
 >[!NOTE]
 >
->Du kan kedja andra API-anrop till den här metoden. Dessutom [!UICONTROL DIL] skriver kodade data till en målcookie. Blanksteg kodas till exempel som `%20` och semikolon som `%3B`.
+>Du kan kedja andra API-anrop till den här metoden. Dessutom [!UICONTROL DIL] skriver kodade data till en målcookie. Blanksteg kodas till exempel som `%20` och semikolon `%3B`.
 
 **Svar**
 
@@ -515,11 +515,11 @@ Fungerar med [!UICONTROL DIL] version 2.10 och 3.1 eller senare.
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.idSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>Mellan olika datapartners och Audience Manager. Partner x använder till exempel detta för att synkronisera ett användar-ID med partner y och sedan skicka det till Audience Manager. </p> <p> <p><b>Viktigt:</b>  Den här metoden är inaktuell. Använd <code> idSyncByURL </code> för instansen av Adobe Experience Platform Identity Service. </p> </p> </td> 
+   <td colname="col2"> <p>Mellan olika datapartners och Audience Manager. Partner x använder till exempel detta för att synkronisera ett användar-ID med partner y och sedan skicka det till Audience Manager. </p> <p> <p><b>Viktigt:</b>  Den här metoden är föråldrad. Använd <code> idSyncByURL </code> för instansen av Adobe Experience Platform Identity Service. </p> </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.aamIdSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>När du redan känner till användar-ID:t och vill skicka det till Audience Manager. </p> <p> <p><b>Viktigt:</b>  Den här metoden är inaktuell. Använd <code> idSyncByDataSource </code> för instansen av Adobe Experience Platform Identity Service. </p> </p> </td> 
+   <td colname="col2"> <p>När du redan känner till användar-ID:t och vill skicka det till Audience Manager. </p> <p> <p><b>Viktigt:</b>  Den här metoden är föråldrad. Använd <code> idSyncByDataSource </code> för instansen av Adobe Experience Platform Identity Service. </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -570,7 +570,7 @@ Fungerar med [!UICONTROL DIL] version 2.10 och 3.1 eller senare.
 
 **Svar**
 
-Båda funktionerna returnerar `Successfully queued` om det lyckas. De returnerar i annat fall en felmeddelandesträng.
+Båda funktionerna returnerar `Successfully queued` om det lyckas. De returnerar en felmeddelandesträng om de inte gör det.
 
 **Exempelkod**
 
@@ -729,5 +729,5 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >* [Prefixkrav för nyckelvariabler](../features/traits/trait-variable-prefixes.md)
 >* [Synkroniseringsfunktioner i Adobe Experience Platform identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/idsync.html)
 >* [Skapa DIL](../dil/dil-class-overview/dil-create.md#dil-create)
->* [Adobe Experience Platform identitetstjänst: AnvändCORSOnly](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/use-cors-only.html)
+>* [Adobe Experience Platform identitetstjänst: UseCORSOonly](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/use-cors-only.html)
 >* [CORS-stöd i Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/reference/cors.html)
