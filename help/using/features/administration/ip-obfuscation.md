@@ -5,9 +5,9 @@ solution: Audience Manager
 title: Dölja IP-adresser
 feature: Data Governance & Privacy
 exl-id: 8c976d1e-f4ba-4892-bd68-d4e74bdb4d9b
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+source-git-commit: ae074cdeb8dcf6f6a224c2ede5f3bb704b28f49f
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '518'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,10 @@ I enlighet med principerna för&quot;Integritet via design&quot; tillåter Adobe
 * Efter obfuktion: `255.255.255.0`
 
 Se även Samla in IP-adresser och IP-adressofficering i vår [Avsnittet Dataintegritet](/help/using/overview/data-security-and-privacy/data-privacy.md).
+
+### Prioritet för IP-obefuscation {#precedence}
+
+[IP-obfuskation på datasterivå](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#create) har företräde framför alla IP-felsökningsalternativ som har angetts i Audience Manager, och de tillämpas på alla IP-adresser. Alla sökningar efter geopositionering som gjorts av Audience Manager påverkas av datastream-nivån [!UICONTROL IP obfuscation] alternativ. En sökning efter geopositionering i Audience Manager, som baseras på en helt okomplicerad IP-adress, resulterar i en okänd region och inga segment som baseras på resulterande geopositioneringsdata kommer att realiseras.
 
 ## Krav för IP-adressofficering {#ip-obfuscation-requirements}
 
@@ -52,7 +56,7 @@ Följ stegen nedan för att konfigurera IP-adressofficering.
 
 Om du vill inaktivera IP-adressofusk globalt går du till **Administration > Integritet**, markera **Tvinga inte bort IP-adresser** och klicka **Spara**.
 
-Om du vill inaktivera IP-adressofficering för specifika länder kan du hitta länderna i **Markerad för obfuskation** klicka sedan på motsvarande **X** ikon. Klicka **Spara** när du är klar.
+Om du vill inaktivera IP-adressofficering för specifika länder kan du hitta länderna i **Markerad för obfuskation** klicka sedan på motsvarande **X** -ikon. Klicka **Spara** när du är klar.
 
 ## Relaterade begrepp {#related-concepts}
 
