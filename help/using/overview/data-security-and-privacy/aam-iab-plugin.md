@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Plugin-program för Audience Manager för IAB TCF
 feature: Data Governance & Privacy
 exl-id: aa6bc415-e52b-4900-951d-ccf51d907aa2
-source-git-commit: 5044a38c751abace922008f00b9ff463ea9c7e57
+source-git-commit: 8b370a64d80b40124abee91351cbef09711243d4
 workflow-type: tm+mt
 source-wordcount: '2353'
 ht-degree: 34%
@@ -69,7 +69,7 @@ Du måste uppfylla följande krav för att kunna använda plugin-programmet Audi
 
 >[!WARNING]
 >
->Om du använder en CMP (Consent Management Platform) som inte har stöd för IAB TCF v.2.0, skickar Audience Manager automatiskt `gdpr=0` i ID-synk, även om besökarna befinner sig i EU. För att avgöra om din GDPR-validering är aktiv rekommenderar vi att du bekräftar med din CMP (Consent Management Platform) att de stöder IAB TCF v2.2.
+>Om du använder en CMP (Consent Management Platform) som inte har stöd för IAB TCF v2.2, skickar Audience Manager automatiskt `gdpr=0` i ID-synk, även om besökarna befinner sig i EU. För att avgöra om din GDPR-validering är aktiv rekommenderar vi att du bekräftar med din CMP (Consent Management Platform) att de stöder IAB TCF v2.2.
 
 ## Rekommendationer och implementering {#recommendations}
 
