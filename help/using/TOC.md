@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-description: Lär dig hur du använder Adobe Audience Manager för att samla in kommersiellt relevant information om webbplatsbesökare och skapa marknadsföringsbara segment. Du kan också hitta information om hur du kan leverera riktad reklam och innehåll till rätt målgrupp.
 feature-set: Audience Manager
-source-git-commit: f4babbb632279cf213116e004551e5c77869ab78
+source-git-commit: 7302fafa537ad15144a64cc96f7150c5b0233c12
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1835'
 ht-degree: 90%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 90%
 + Funktioner {#features}
    + [Adresserbara målgrupper](features/addressable-audiences.md)
    + Administrering {#administration}
-      + [Migrering från Audience Manager till Admin Console](features/administration/admin-console-migration.md)
+      + [Migrering av användare från Audience Manager till Admin Console](features/administration/admin-console-migration.md)
       + [Administrering](features/administration/administration-overview.md)
       + [Redigera kontoinställningar](features/administration/edit-account-settings.md)
       + [Dölja IP-adresser](features/administration/ip-obfuscation.md)
@@ -113,7 +113,7 @@ ht-degree: 90%
          + [Lägga till nya enhetsbaserade destinationer](features/destinations/add-device-based-destinations.md)
          + [Lista över enhetsbaserade destinationer för Audience Manager](/help/using/features/destinations/device-based-destinations-list.md)
          + [Lägga till eller redigera segment för server-till-server-destinationer](features/destinations/add-edit-segments.md)
-         + [Konfigurera anpassade Twitter-målgrupper som självbetjäningsmål](features/destinations/twitter-tailored-audiences.md)
+         + [Konfigurera anpassade målgrupper för Twitter som självbetjäningsmål](features/destinations/twitter-tailored-audiences.md)
       + Anpassade destinationer {#custom-destinations}
          + [Konfigurera en URL-destination](features/destinations/create-url-destination.md)
          + [Konfigurera en cookie-destination](features/destinations/create-cookie-destination.md)
@@ -336,6 +336,7 @@ ht-degree: 90%
          + [PGP-filkryptering för inkommande datatyper](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)
          + [Filkomprimering för inkommande dataöverföringsfiler](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
          + [Exempelmeddelande till partners efter inkommande bearbetning](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
+         + [Utnyttja Amazon S3-behörigheter för kontoöverskridande paket för inkommande filer](integration/sending-audience-data/batch-data-transfer-explained/authorize-s3-inbound.md)
       + [Anpassade partnerintegreringar](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + Integrering med Adobe Experience Platform {#integration-experience-platform}
       + [Experience Platform segmentdelning med Audience Manager och andra Experience Cloud-lösningar](integration/integration-aep/aam-aep-audience-sharing.md)
