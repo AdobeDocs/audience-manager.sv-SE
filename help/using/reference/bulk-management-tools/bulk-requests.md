@@ -7,16 +7,20 @@ title: Satsvisa förfrågningar
 uuid: 0192d26a-4cea-4e12-9fea-388b92b382f1
 feature: BAAAM
 exl-id: a0597bf4-79c8-404d-ba3b-a92c6b5c9c06
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: bd1ad233dd69bc8683731d0c63dc3fb74ef91ade
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 2%
+source-wordcount: '253'
+ht-degree: 1%
 
 ---
 
 # Satsvisa förfrågningar{#bulk-requests}
 
 En gruppbegäran returnerar data som du kan använda med de olika rubrikerna i kalkylbladen Uppdatera, Skapa, Beräkna och Ta bort.
+
+>[!IMPORTANT]
+>
+>Masshanteringsverktygen är inte ett officiellt Adobe-erbjudande som stöds. Felsökning och support via kundtjänst hanteras från fall till fall.
 
 <!-- 
 
@@ -28,9 +32,9 @@ t_bulk_requests.xml
 >
 >[RBAC-gruppbehörigheter](../../features/administration/administration-overview.md) som har tilldelats i [!DNL Audience Manager] Gränssnittet respekteras i [!UICONTROL Bulk Management Tools].
 
-The [!UICONTROL Request] kalkylbladet har ingen egen uppsättning kolumnrubriker och du behöver inte kopiera ID:n till någon av kolumnerna. I stället returneras data baserat på åtgärdsknappen som du klickar på i verktygsfältet. Och en valfri rapportfunktion returnerar en frekvens för pixelbränder och ett unikt antal användare för flera fasta tidsintervall.
+The [!UICONTROL Request] kalkylbladet har ingen egen uppsättning kolumnrubriker och du behöver inte kopiera ID:n till någon av kolumnerna. I stället returneras data baserat på den åtgärdsknapp du klickar på i verktygsfältet. Och en valfri rapportfunktion returnerar en frekvens för pixelbränder och ett unikt antal användare för flera fasta tidsintervall.
 
-Om du vill göra gruppförfrågningar öppnar du [!UICONTROL Bulk Management Tools] kalkylblad och:
+Öppna [!UICONTROL Bulk Management Tools] och:
 
 1. Klicka på **[!UICONTROL Request]** -fliken.
 2. Klicka på en begärandeknapp som motsvarar de data du vill arbeta med i verktygsfältet högst upp i kalkylbladet. Du kan begära:
@@ -41,7 +45,7 @@ Om du vill göra gruppförfrågningar öppnar du [!UICONTROL Bulk Management Too
    * Målmappningar
    * Algoritmiska, regelbaserade och ombord-anpassade egenskaper
    * Segment 
-   * ID för trait- och segmentmapp
+   * ID:n för trait- och segmentmapp
 
    The [!DNL Audience Manager] API skriver massdata tillbaka till [!UICONTROL Request] kalkylblad.
 

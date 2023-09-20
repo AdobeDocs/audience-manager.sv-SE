@@ -7,9 +7,9 @@ title: Ordlista för verktyg för satsvis hantering
 uuid: 4658a6bc-9515-4d31-9715-0084760b0cea
 feature: BAAAM
 exl-id: 036d16c7-1546-4539-a318-455b98e10026
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: bd1ad233dd69bc8683731d0c63dc3fb74ef91ade
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '364'
 ht-degree: 2%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 2%
 # Ordlista för verktyg för satsvis hantering{#bulk-management-tools-glossary}
 
 Kolumnrubriketiketter har definierats.
+
+>[!IMPORTANT]
+>
+>Masshanteringsverktygen är inte ett officiellt Adobe-erbjudande som stöds. Felsökning och support via kundtjänst hanteras från fall till fall.
 
 <!-- 
 
@@ -50,7 +54,7 @@ Kolumnrubriketiketter har definierats.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> målID</span> </p> </td> 
-   <td colname="col2"> <p>ID för <a href="../../features/destinations/destinations.md"> mål</a> du vill mappa eller ta bort. </p> </td> 
+   <td colname="col2"> <p>ID:t för <a href="../../features/destinations/destinations.md"> mål</a> du vill mappa eller ta bort. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> destinationMappingId</span> </p> </td> 

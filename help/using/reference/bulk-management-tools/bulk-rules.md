@@ -7,9 +7,9 @@ title: Skapa eller uppdatera trait-regler och segmentregler
 uuid: bdd5f8f1-bb83-4844-b681-654e45ace3e1
 feature: BAAAM
 exl-id: 9b697606-5534-4e6e-a3f2-b1a4c26bb707
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: bd1ad233dd69bc8683731d0c63dc3fb74ef91ade
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '342'
 ht-degree: 8%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 8%
 # Skapa eller uppdatera trait-regler och segmentregler{#create-or-update-trait-rules-and-segment-rules}
 
 Kalkylbladen för att skapa och uppdatera accepterar ett traitRule-huvud som gör att du kan tillämpa flera regler i en enda åtgärd. Följ de här instruktionerna för att göra gruppregelförfrågningar.
+
+>[!IMPORTANT]
+>
+>Masshanteringsverktygen är inte ett officiellt Adobe-erbjudande som stöds. Felsökning och support via kundtjänst hanteras från fall till fall.
 
 <!-- 
 
@@ -54,7 +58,7 @@ Klistra in regeln i [!UICONTROL Bulk Management Tools] kalkylblad och implemente
 
 ## Skapa egna regler {#create-rules}
 
-Du kan skriva egna regler utanför [!UICONTROL Rule Builder]. Innan du börjar bör du läsa dokumentationen som innehåller funktioner som operatorer, uttryck och obligatoriska variabler. Vi rekommenderar att du går igenom följande:
+Du kan skriva egna regler utanför [!UICONTROL Rule Builder]. Innan du börjar bör du läsa dokumentationen som beskriver t.ex. operatorer, uttryck och obligatoriska variabler. Vi rekommenderar att du går igenom följande:
 
 * [Arbeta med jämförelseoperatorer i Trait Builder](../../features/traits/trait-comparison-operators.md)
 * [Operationsordning](../../features/traits/trait-operator-precedence.md)

@@ -7,9 +7,9 @@ title: Satsvis radering
 uuid: 679cde46-09fb-45c6-b84d-47e00e0e7c0a
 feature: BAAAM
 exl-id: 3ff530dd-66d0-4dd3-a6e6-afe4a9cb5ba4
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: bd1ad233dd69bc8683731d0c63dc3fb74ef91ade
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '258'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 1%
 # Satsvis radering{#bulk-delete}
 
 Med massborttagning kan du ta bort flera segment, egenskaper, mappar, härledda signaler, datakällor, modeller och mål med en enda åtgärd. Följ de här instruktionerna för att göra en begäran om massborttagning.
+
+>[!IMPORTANT]
+>
+>Masshanteringsverktygen är inte ett officiellt Adobe-erbjudande som stöds. Felsökning och support via kundtjänst hanteras från fall till fall.
 
 <!-- 
 
@@ -32,7 +36,7 @@ Med massborttagning kan du ta bort flera segment, egenskaper, mappar, härledda 
 >
 >En massborttagning för målmappningar misslyckas om du har segment mappade till målet. Ta bort dina segment från den destinationen i användargränssnittet innan du försöker att ta bort mål gruppvis. Dessutom måste trait- och segmentmappar vara tomma innan du kan ta bort dem.
 
-Om du vill ta bort flera objekt öppnar du [!UICONTROL Bulk Management Tools] kalkylblad och:
+Öppna [!UICONTROL Bulk Management Tools] och:
 
 1. Klicka på **[!UICONTROL Headers]** och kopiera de nya rubrikerna för det objekt som du vill lägga till.
 2. Klicka på **[!UICONTROL Delete]** -fliken.

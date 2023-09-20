@@ -7,10 +7,10 @@ title: Felsökningstips för verktygen för satsvis hantering
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 feature: BAAAM
 exl-id: 4f1c501c-2e28-4ce5-829f-4d81d10cdccd
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: bd1ad233dd69bc8683731d0c63dc3fb74ef91ade
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 3%
+source-wordcount: '408'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,9 @@ ht-degree: 3%
 
 Vad du ska göra när kalkylbladen returnerar ett fel eller när gruppbegäran misslyckas.
 
-
+>[!IMPORTANT]
+>
+>Masshanteringsverktygen är inte ett officiellt Adobe-erbjudande som stöds. Felsökning och support via kundtjänst hanteras från fall till fall.
 
 <!-- 
 
@@ -52,7 +54,7 @@ I följande tabell visas några vanliga problem som du kan stöta på när du g�
   <tr> 
    <td colname="col1"> <b>Autentiseringsfel</b> </td> 
    <td colname="col2"> 
-    <b>Uppdatera till den senaste versionen av Microsoft Excel</b>: När en ny version av Microsoft Excel släpps och du använder en äldre version, kan du råka ut för ett autentiseringsfel i kalkylbladet för grupphantering. Uppdatera till den senaste versionen av Microsoft Excel för att åtgärda autentiseringsfelet.
+    <b>Uppdatera till den senaste versionen av Microsoft Excel</b>: När en ny version av Microsoft Excel släpps och du använder en äldre version kan du råka ut för ett autentiseringsfel i kalkylbladet för grupphantering. Uppdatera till den senaste versionen av Microsoft Excel för att åtgärda autentiseringsfelet.
 </td> 
   </tr> 
   <tr> 
@@ -60,7 +62,7 @@ I följande tabell visas några vanliga problem som du kan stöta på när du g�
    <td colname="col2"> 
     <ul id="ul_AA6F414024B2475AB1C0B46DC3FF0B36"> 
      <li id="li_ECC83AC39D7142519AA9A223DB8FCF23"> <b>Inaktivera kompatibilitetsläge</b>: Kontrollera om andra kalkylblad är öppna i kompatibilitetsläget för Microsoft Excel. Kompatibilitetsläget kan öka körningsmiljöerna. Stäng eventuella öppna kalkylblad i det här läget och försök utföra gruppbegäran igen. </li> 
-     <li id="li_234BFCF563234DE198884F33AB75280D"> <b>Systemresurser</b>: Begränsade systemresurser leder till långa förseningar. Stäng alla andra program innan du gör en gruppbegäran. </li> 
+     <li id="li_234BFCF563234DE198884F33AB75280D"> <b>Systemresurser</b>: Begränsade systemresurser bidrar till långa förseningar. Stäng alla andra program innan du gör en gruppbegäran. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
