@@ -7,10 +7,10 @@ title: Kom igång med REST API:er
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
 exl-id: f7d5e52d-ad21-4020-a299-d440f954c51a
-source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
+source-git-commit: 16421f8f15a8aa8c1a561b0b6682091bf78683ce
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 2%
+source-wordcount: '2551'
+ht-degree: 0%
 
 ---
 
@@ -18,35 +18,202 @@ ht-degree: 2%
 
 Information om allmänna krav, autentisering, valfria frågeparametrar, begäran [!DNL URLs]och andra referenser.
 
-<!-- c_rest_api_overview.xml -->
+## API-krav och Recommendations {#api-requirements-recommendations}
 
-## Krav och rekommendationer för API {#api-requirements-recommendations}
-
-Saker du måste och bör göra när du arbetar med [!DNL Audience Manager] [!DNL API]s.
-
-<!-- aam-api-requirements.xml -->
-
-Observera följande när du arbetar med [Audience Manager API](https://bank.demdex.com/portal/swagger/index.html#/) kod:
+Observera följande när du arbetar med [AUDIENCE MANAGER API](https://bank.demdex.com/portal/swagger/index.html#/) kod:
 
 * **Begäranparametrar:** Alla begäranparametrar är obligatoriska om inte annat anges.
-* **Begäranrubriker**: när [Adobe Developer](https://www.adobe.io/) variabler måste du ange `x-api-key` header. Du kan få dina [!DNL API] genom att följa instruktionerna i [Integrering av tjänstkonto](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) sida.
+* **Begäranrubriker**: vid användning [Adobe Developer](https://www.adobe.io/) variabler måste du ange `x-api-key` header. Du kan få dina [!DNL API] genom att följa instruktionerna i [Integrering av tjänstkonto](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) sida.
 * **[!DNL JSON]innehållstyp:** Ange `content-type: application/json`  *och*  `accept: application/json` i koden.
-* **Förfrågningar och svar:** Skicka begäranden som korrekt formaterade [!DNL JSON] -objekt. [!DNL Audience Manager] svarar med [!DNL JSON] formaterade data. Serversvar kan innehålla begärda data, en statuskod eller båda.
+* **Förfrågningar och svar:** Skicka begäranden som korrekt formaterade [!DNL JSON] -objekt. [!DNL Audience Manager] svarar med [!DNL JSON] data. Serversvar kan innehålla begärda data, en statuskod eller båda.
 * **Åtkomst:** Dina [!DNL Audience Manager] konsulten ger dig ett klient-ID och en nyckel som gör att du kan [!DNL API] förfrågningar.
 * **Exempel på dokumentation och kod:** Text in *kursiv* representerar en variabel som du anger eller skickar in när du skapar eller tar emot [!DNL API] data. Ersätt *kursiv* text med egen kod, egna parametrar eller annan obligatorisk information.
 
 ## Autentisering {#authentication}
 
-The [!DNL Audience Manager] [!DNL REST APIs] har stöd för två autentiseringsmetoder.
+The [!DNL Audience Manager] [!DNL REST APIs] har stöd för tre autentiseringsmetoder.
 
-* [JWT-autentisering (tjänstkonto)](#jwt) använda [Adobe Developer](https://www.adobe.io/). [!DNL Adobe Developer] är Adobe utvecklares ekosystem och community. Den innehåller [API:er för alla Adobe-produkter](https://www.adobe.io/apis.html). Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
-* [OAuth-autentisering (borttagen)](#oauth). Den här metoden är föråldrad, men kunder med befintlig [!DNL OAuth] integreringar kan fortsätta med den här metoden.
+* [!BADGE Rekommenderas]{type=positive}[OAuth Server-till-server-autentisering](#oauth-adobe-developer) använda [Adobe utvecklarkonsol](https://www.adobe.io/). [!DNL Adobe Developer] är Adobe utvecklares ekosystem och community. Den innehåller [API:er för alla Adobe-produkter](https://developer.adobe.com/apis/). Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs]. Läs mer om [OAuth Server-till-server-autentisering](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/) i dokumentationen för utvecklaren av Adobe.
+* [!BADGE Föråldrat]{type=negative}[JWT-autentisering (tjänstkonto)](#jwt) använda [Adobe utvecklarkonsol](https://www.adobe.io/). [!DNL Adobe Developer] är Adobe utvecklares ekosystem och community. Den innehåller [API:er för alla Adobe-produkter](https://developer.adobe.com/apis/).
+* [!BADGE Föråldrat]{type=negative}[Äldre OAuth-autentisering](#oauth-deprecated). Den här metoden är föråldrad, men kunder med befintlig [!DNL OAuth] integreringar kan fortsätta med den här metoden.
 
 >[!IMPORTANT]
 >
 >Beroende på din autentiseringsmetod måste du justera din begäran [!DNL URLs] i enlighet med detta. Se [Miljö](#environments) om du vill ha information om värdnamn som du bör använda.
 
-## [!DNL JWT] ([!DNL Service Account]) Autentisering med Adobe Developer {#jwt}
+## OAuth Server-till-Server-autentisering med Adobe Developer {#oauth-adobe-developer}
+
+I det här avsnittet beskrivs hur du samlar in de inloggningsuppgifter som krävs för att autentisera Audience Manager API-anrop, vilket beskrivs i nedanstående flödesschema. Du kan samla de flesta nödvändiga autentiseringsuppgifter i den första engångsinställningen. Åtkomsttoken måste dock uppdateras var 24:e timme.
+
+![Audience Manager autentiseringsflödesdiagram.](/help/using/api/rest-api-main/assets/aam-authentication-flow.png)
+
+### Adobe Developer - översikt {#developer-overview}
+
+[!DNL Adobe Developer] är Adobe utvecklares ekosystem och community. Den innehåller [API:er för alla Adobe-produkter](https://developer.adobe.com/apis).
+
+Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
+
+### Förutsättningar {#prerequisites-server-to-server}
+
+Innan du kan konfigurera [!DNL OAuth Server-to-Server] verifiering, se till att du har åtkomst till [Adobe Developer Console](https://developer.adobe.com/console/home) in [Adobe Developer](https://developer.adobe.com/). Kontakta din organisations administratör för åtkomstbegäranden.
+
+### Autentisering {#oauth}
+
+Följ stegen nedan för att konfigurera [!DNL OAuth Server-to-Server] autentisering med [!DNL Adobe Developer]:
+
+1. Logga in på [Adobe Developer Console](https://developer.adobe.com/console/home).
+1. Följ stegen i [Implementeringshandbok för OAuth Server-till-Server-autentiseringsuppgifter](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/).
+   * Under [Steg 2: Lägg till ett API i ditt projekt med autentisering av tjänstkonto](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)väljer du [!DNL Audience Manager] [!DNL API] alternativ.
+1. Testa anslutningen genom att göra din första [!DNL API] samtal baserat på instruktionerna från [Steg 3](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
+
+>[!NOTE]
+>
+>Konfigurera och arbeta med [!DNL Audience Manager] [!DNL REST APIs] på ett automatiserat sätt kan ni rotera kundhemligheter programmatiskt. Se [dokumentation för utvecklare](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#rotating-client-secrets-programmatically) för detaljerade anvisningar.
+
+### Lägga till Audience Manager API i ett projekt {#add-aam-api-to-project}
+
+Gå till [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui) och logga in med din Adobe ID. Följ sedan instruktionerna i självstudiekursen på [skapa ett tomt projekt](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty/) i dokumentationen för Adobe Developer Console.
+
+När du har skapat ett nytt projekt väljer du **[!UICONTROL Add API]** på **[!UICONTROL Project Overview]** skärm.
+
+>[!TIP]
+>
+>Om du har etablerat dig för flera organisationer använder du organisationsväljaren i det övre högra hörnet av gränssnittet för att kontrollera att du är i den organisation du behöver.
+
+![Developer Console-skärmen med alternativet Lägg till API markerat.](/help/using/api/rest-api-main/assets/add-api.png)
+
+The **[!UICONTROL Add an API]** visas. Markera produktikonen för Adobe Experience Cloud och välj sedan **[!UICONTROL Audience Manager API]** före markering **[!UICONTROL Next]**.
+
+![Välj Audience Manager API.](/help/using/api/rest-api-main/assets/audience-manager-api.png)
+
+>[!TIP]
+>
+>Välj **[!UICONTROL View docs]** alternativ för att navigera i ett separat webbläsarfönster till det fullständiga [Referenshandbok för Audience Manager API](https://bank.demdex.com/portal/swagger/index.html#).
+
+### Välj autentiseringstypen OAuth Server-till-server {#select-oauth-server-to-server}
+
+Välj sedan autentiseringstypen för att generera åtkomsttoken och få åtkomst till Audience Manager-API:t.
+
+>[!IMPORTANT]
+>
+>Välj **[!UICONTROL OAuth Server-to-Server]** eftersom det här är den enda metod som stöds för att gå framåt. The **[!UICONTROL Service Account (JWT)]** -metoden är inaktuell. Även om integreringar med JWT-autentiseringsmetoden fortsätter att fungera fram till 1 januari 2025 rekommenderar Adobe starkt att du migrerar befintliga integreringar till den nya OAuth Server-till-Server-metoden före detta datum.
+
+![Välj OAuth-autentiseringsmetod.](/help/using/api/rest-api-main/assets/select-oauth-authentication-method.png)
+
+### Välj produktprofiler för integreringen {#select-product-profiles}
+
+I **[!UICONTROL Configure API]** väljer du produktprofiler. Integreringens tjänstkonto får tillgång till detaljerade funktioner via de produktprofiler som väljs här.
+
+![Välj produktprofiler för din integrering.](/help/using/api/rest-api-main/assets/select-product-profiles.png)
+
+Välj **[!UICONTROL Save configured API]** när du är redo.
+
+### Samla in inloggningsuppgifter {#gather-credentials}
+
+När API:t har lagts till i projektet **[!UICONTROL Audience Manager API]** På projektsidan visas följande autentiseringsuppgifter som krävs för alla anrop till API:er för Audience Manager:
+
+![Integreringsinformation när du har lagt till ett API i Developer Console.](/help/using/api/rest-api-main/assets/api-integration-information.png)
+
+* `{API_KEY}` ([!UICONTROL Client ID])
+* `{ORG_ID}` ([!UICONTROL Organization ID])
+
+## Generera en åtkomsttoken {#generate-access-token}
+
+Nästa steg är att skapa en `{ACCESS_TOKEN}` autentiseringsuppgifter för användning i API-anrop för Audience Manager. Till skillnad från värdena för `{API_KEY}` och `{ORG_ID}`måste en ny token genereras var 24:e timme för att du ska kunna fortsätta använda Audience Manager API:er. Välj **[!UICONTROL Generate access token]**, vilket visas nedan.
+
+![Visa hur du genererar åtkomsttoken](/help/using/api/rest-api-main/assets/generate-acces-token.gif)
+
+## Testa ett API-anrop {#test-api-call}
+
+När du har hämtat din token för autentisering av innehavare utför du ett API-anrop för att testa att du nu kan komma åt API:er för Audience Manager.
+
+1. Navigera till [API-referensdokumentation](https://bank.demdex.com/portal/swagger/index.html#/Data%20Source%20API/get_datasources_).
+2. Välj **[!UICONTROL Authorize]** och klistra in åtkomsttoken som du fick i [generera åtkomsttoken](#generate-access-token) steg.
+
+   ![Auktorisera API-anrop](/help/using/api/rest-api-main/assets/authorize-api-calls.gif)
+
+3. Utför ett GET-samtal till `/datasources` API-slutpunkt för att hämta en lista över alla globalt tillgängliga datakällor, vilket anges i [API-referensdokumentation](https://bank.demdex.com/portal/swagger/index.html#/Data%20Source%20API/get_datasources_). Välj **[!UICONTROL Try it out]**, följt av **[!UICONTROL Execute]**, vilket visas nedan.
+
+   ![Utför API-anrop](/help/using/api/rest-api-main/assets/perform-api-calls.gif)
+
+
+>[!BEGINSHADEBOX]
+
+>[!BEGINTABS]
+
+>[!TAB API-begäran]
+
+```shell
+curl -X 'GET' \
+  'https://api.demdex.com/v1/datasources/' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer your-access-token'
+```
+
+
+>[!TAB API-svar om rätt innehavartoken används]
+
+
+När du använder en arbetsåtkomsttoken returnerar API-slutpunkten ett 200-svar tillsammans med ett svarstext som innehåller alla globala datakällor som din organisation har tillgång till.
+
+```json
+[
+  {
+    "pid": 1794,
+    "name": "testdatasource1",
+    "description": "Test data source",
+    "status": "ACTIVE",
+    "integrationCode": "test_ds1",
+    "dataExportRestrictions": [],
+    "updateTime": 1595340792000,
+    "crUID": 0,
+    "upUID": 15910,
+    "linkNamespace": false,
+    "type": "GENERAL",
+    "subIdType": "CROSS_DEVICE_PERSON",
+    "inboundS2S": true,
+    "outboundS2S": true,
+    "useAudienceManagerVisitorID": false,
+    "allowDataSharing": true,
+    "masterDataSourceIdProvider": true,
+    "uniqueTraitIntegrationCodes": false,
+    "uniqueSegmentIntegrationCodes": false,
+    "marketingCloudVisitorIdVersion": 0,
+    "idType": "CROSS_DEVICE",
+    "samplingEndTime": 1596550392825,
+    "allowDeviceGraphSharing": false,
+    "supportsAuthenticatedProfile": true,
+    "deviceGraph": false,
+    "authenticatedProfileName": "testdatasource1",
+    "deviceGraphName": "",
+    "customNamespaceId": 29769,
+    "customNamespaceCode": "silviu_ds1",
+    "customerProfileDataRetention": 62208000,
+    "samplingStartTime": 1595340792825,
+    "dataSourceId": 29769,
+    "containerIds": [],
+    "samplingEnabled": false
+  },
+  {
+    "pid": 1794,
+    "name": "AAM Test Company Audiences",
+    "description": "Automatically generated trait data source",
+    "status": "ACTIVE",
+    "integrationCode": "adobe-provided",
+    "dataExportRestrictions": [
+      "PII"
+    ],
+
+    [...]
+```
+
+>[!ENDTABS]
+
+>[!ENDSHADEBOX]
+
+## [!BADGE Föråldrat]{type=negative}[!DNL JWT] ([!DNL Service Account]) Autentisering med Adobe Developer {#jwt}
+
++++ Visa information om den borttagna [!DNL JWT] ([!DNL Service Account]) metod för att hämta autentiseringstoken.
 
 ### Adobe Developer - översikt {#adobeio}
 
@@ -63,8 +230,8 @@ Innan du kan konfigurera [!DNL JWT] verifiering, se till att du har åtkomst til
 Följ stegen nedan för att konfigurera [!DNL JWT (Service Account)] autentisering med [!DNL Adobe Developer]:
 
 1. Logga in på [Adobe Developer Console](https://console.adobe.io/).
-1. Följ stegen i [Tjänstkontoanslutning](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
-   * Under [Steg 2: Lägg till ett API i projektet med autentisering av tjänstkonto](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)väljer du [!DNL Audience Manager] [!DNL API] alternativ.
+1. Följ stegen i [Anslutning till tjänstkonto](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
+   * Under [Steg 2: Lägg till ett API i ditt projekt med autentisering av tjänstkonto](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)väljer du [!DNL Audience Manager] [!DNL API] alternativ.
 1. Testa anslutningen genom att göra din första [!DNL API] samtal baserat på instruktionerna från [Steg 3](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
 
 >[!NOTE]
@@ -83,7 +250,11 @@ Följ stegen nedan för att skapa ett tekniskt användarkonto och lägga till de
 
 1. Logga in på ditt Audience Manager-konto och [lägg till det tekniska användarkontot](../../features/administration/administration-overview.md#create-group) till den användargrupp som ska göra API-anropen.
 
-## [!DNL OAuth] Autentisering (inaktuellt) {#oauth}
++++
+
+## [!BADGE Föråldrat]{type=negative}[!DNL OAuth] Autentisering (inaktuellt) {#oauth-deprecated}
+
++++ Visa information om det gamla inaktuella [!DNL OAuth] Autentiseringsmetod för att hämta autentiseringstoken.
 
 >[!WARNING]
 > [!DNL Audience Manager] [!UICONTROL REST API] tokenautentisering och förnyelse via [!DNL OAuth 2.0] är nu föråldrat.
@@ -94,7 +265,7 @@ The [!DNL Audience Manager] [!UICONTROL REST API] följer [!DNL OAuth 2.0] stand
 
 ### Skapa en allmän [!DNL API] Användare {#requirements}
 
-Vi rekommenderar att du skapar ett separat, tekniskt användarkonto för att arbeta med [!DNL Audience Manager] [!DNL API]s. Det här är ett generiskt konto som inte är kopplat till eller kopplat till en viss användare i organisationen. Den här typen av [!DNL API] Med användarkontot kan du uppnå två saker:
+Vi rekommenderar att du skapar ett separat, tekniskt användarkonto för att arbeta med [!DNL Audience Manager] [!DNL API]s. Detta är ett generiskt konto som inte är kopplat till eller kopplat till en viss användare i organisationen. Den här typen av [!DNL API] Med användarkontot kan du uppnå två saker:
 
 * Identifiera vilken tjänst som anropar [!DNL API] (t.ex. samtal från appar som använder våra [!DNL API]eller andra verktyg som [!DNL API] förfrågningar).
 * Oavbruten åtkomst till [!DNL API]s. Ett konto som är knutet till en viss person kan tas bort när de lämnar företaget. Detta förhindrar dig från att arbeta med tillgängliga [!DNL API] kod. Ett generiskt konto som inte är kopplat till en viss medarbetare hjälper dig att undvika det här problemet.
@@ -123,9 +294,9 @@ Skicka en tokenbegäran med din egen inställning [!DNL JSON] klient. När du sk
 
 * Använd en `POST` metod att anropa `https://api.demdex.com/oauth/token`.
 * Konvertera ditt klient-ID och hemlighet till en base-64-kodad sträng. Separera ID:t och hemligheten med ett kolon under konverteringsprocessen. Inloggningsuppgifterna `testId : testSecret` konvertera till `dGVzdElkOnRlc3RTZWNyZXQ=`.
-* Skicka in [!DNL HTTP] [!DNL headers] `Authorization:Basic <base-64 clientID:clientSecret>` och `Content-Type: application/x-www-form-urlencoded` . Sidhuvudet kan till exempel se ut så här: <br/>`Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/>`Content-Type: application/x-www-form-urlencoded`
+* Skicka in [!DNL HTTP] [!DNL headers] `Authorization:Basic <base-64 clientID:clientSecret>` och `Content-Type: application/x-www-form-urlencoded` . Sidhuvudet kan se ut så här: <br/>`Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/>`Content-Type: application/x-www-form-urlencoded`
 * Ställ in begärandetexten enligt följande:
-   <br/> `grant_type=password&username=<your-AudienceManager-user-name>&password=<your-AudienceManager-password>`
+  <br/> `grant_type=password&username=<your-AudienceManager-user-name>&password=<your-AudienceManager-password>`
 
 #### Steg 3: Ta emot token
 
@@ -149,7 +320,7 @@ Uppdatera förnyelse av tokens [!DNL API] åtkomst när den ursprungliga token h
 
 Du kan också använda en uppdateringstoken för att generera en ny token innan den befintliga åtkomsttoken upphör att gälla.
 
-Om din åtkomsttoken har gått ut får du en `401 Status Code` och följande rubrik i svaret:
+Om din åtkomsttoken har upphört att gälla får du en `401 Status Code` och följande rubrik i svaret:
 
 `WWW-Authenticate: Bearer realm="oauth", error="invalid_token", error_description="Access token expired: <token>"`
 
@@ -161,7 +332,7 @@ Skicka en begäran om en uppdateringstoken till dig [!DNL JSON] klient. När du 
 
 * Använd en `POST` metod att anropa `https://api.demdex.com/oauth/token`.
 * Konvertera ditt klient-ID och hemlighet till en base-64-kodad sträng. Separera ID:t och hemligheten med ett kolon under konverteringsprocessen. Inloggningsuppgifterna `testId : testSecret` konvertera till `dGVzdElkOnRlc3RTZWNyZXQ=`.
-* Skicka in HTTP-rubriker `Authorization:Basic <base-64 clientID:clientSecret>` och `Content-Type: application/x-www-form-urlencoded`. Sidhuvudet kan till exempel se ut så här: <br> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br> `Content-Type: application/x-www-form-urlencoded`
+* Skicka in HTTP-rubriker `Authorization:Basic <base-64 clientID:clientSecret>` och `Content-Type: application/x-www-form-urlencoded`. Sidhuvudet kan se ut så här: <br> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br> `Content-Type: application/x-www-form-urlencoded`
 * I begärandetexten anger du `grant_type:refresh_token` och skicka den uppdateringstoken som du fick i din tidigare åtkomstbegäran. Begäran ska se ut så här: <br> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
 
 #### Steg 2: Ta emot den nya token
@@ -182,6 +353,8 @@ The [!DNL JSON] -svaret innehåller din nya åtkomsttoken. Svaret bör se ut så
 
 The [!DNL Audience Manager] [!UICONTROL REST API] stöder auktoriseringskod och implicit autentisering. Om du vill använda dessa åtkomstmetoder måste användarna logga in på `https://api.demdex.com/oauth/authorize` för att få åtkomst till och uppdatera tokens.
 
++++
+
 ## Gör autentiserad [!DNL API] Begäranden {#authenticated-api-requests}
 
 Anropskrav [!DNL API] metoder när du har fått en autentiseringstoken.
@@ -189,8 +362,8 @@ Anropskrav [!DNL API] metoder när du har fått en autentiseringstoken.
 Göra anrop mot tillgängliga [!DNL API] metoder:
 
 * I `HTTP` rubrik, ange `Authorization: Bearer <token>`.
-* När du använder [JWT-autentisering (tjänstkonto)](#jwt)måste du ange `x-api-key` -huvud, som blir densamma som `client_id`. Du kan få dina `client_id` från [Integrering med Adobe Developer](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) sida.
-* Ring upp [!DNL API] -metod.
+* När du använder [JWT-autentisering (tjänstkonto)](#jwt)måste du ange `x-api-key` -huvud, som kommer att vara samma som `client_id`. Du kan få dina `client_id` från [Integrering med Adobe Developer](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) sida.
+* Anropa [!DNL API] -metod.
 
 ## Valfritt [!DNL API] Frågeparametrar {#optional-api-query-parameters}
 
@@ -205,7 +378,7 @@ Du kan använda de här valfria parametrarna med [!DNL API] metoder som returner
 | `sortBy` | Sorterar och returnerar resultat enligt angivet [!DNL JSON] -egenskap. |
 | `descending` | Sorterar och returnerar resultat i fallande ordning. `ascending` är standard. |
 | `search` | Returnerar resultat baserat på den angivna strängen som du vill använda som sökparameter. Anta att du vill hitta resultat för alla modeller som har ordet &quot;Test&quot; i något av värdefälten för det objektet. Din exempelbegäran kan se ut så här:   `GET https://aam.adobe.io/v1/models/?search=Test`.  Du kan söka efter alla värden som returneras av en[!DNL get all]&quot;. |
-| `folderId` | Returnerar alla ID:n för [!UICONTROL traits] inuti den angivna mappen. Inte tillgängligt för alla metoder. |
+| `folderId` | Returnerar alla ID för [!UICONTROL traits] inuti den angivna mappen. Inte tillgängligt för alla metoder. |
 | `permissions` | Returnerar en lista med segment baserat på den angivna behörigheten. `READ` är standard. Behörigheterna är:<ul><li>`READ` : Returnera och visa information om ett segment.</li><li>`WRITE` : Använd  `PUT`  för att uppdatera ett segment.</li><li>`CREATE` : Använd  `POST`  för att skapa ett segment.</li><li>`DELETE` : Ta bort ett segment. Kräver åtkomst till eventuella underliggande egenskaper. Du måste till exempel ha behörighet att ta bort de egenskaper som tillhör ett segment om du vill ta bort det.</li></ul><br>Ange flera behörigheter med separata nyckelvärdepar. Om du till exempel vill returnera en lista med segment med  `READ`  och  `WRITE`  endast behörigheter, skicka in  `"permissions":"READ"`, `"permissions":"WRITE"` . |
 | `includePermissions` | ([!DNL Boolean]) Ange som `true` för att returnera dina behörigheter för segmentet. Standard är `false`. |
 
@@ -261,7 +434,7 @@ Beroende på vilken autentiseringsmetod du använder måste du justera din begä
 
 ## Miljö {#environments}
 
-The [!DNL Audience Manager] [!DNL API]s ger åtkomst till olika arbetsmiljöer. Dessa miljöer hjälper dig att testa kod mot separata databaser utan att påverka livedata. I följande tabell visas de tillgängliga [!DNL API] miljöer och motsvarande resursvärdnamn.
+The [!DNL Audience Manager] [!DNL API]s ger åtkomst till olika arbetsmiljöer. Dessa miljöer hjälper dig att testa kod mot separata databaser utan att påverka livedata i produktionen. I följande tabell visas de tillgängliga [!DNL API] miljöer och motsvarande resursvärdnamn.
 
 Beroende på vilken autentiseringsmetod du använder måste du justera miljön [!DNL URLs] enligt tabellen nedan.
 
@@ -276,7 +449,7 @@ Beroende på vilken autentiseringsmetod du använder måste du justera miljön [
 
 ## Versioner {#versions}
 
-Nya versioner av dessa [!DNL API]s släpps regelbundet. En ny release ökar [!DNL API] versionsnummer. Versionsnumret refereras i begäran [!DNL URL] as `v<version number>` som i följande exempel:
+Nya versioner av dessa [!DNL API]s släpps enligt ett regelbundet schema. En ny release ökar [!DNL API] versionsnummer. Versionsnumret refereras i begäran [!DNL URL] as `v<version number>` som i följande exempel:
 
 `https://<host>/v1/...`
 
@@ -301,4 +474,3 @@ Nya versioner av dessa [!DNL API]s släpps regelbundet. En ny release ökar [!DN
 >* [OAuth-autentisering](../../api/rest-api-main/aam-api-getting-started.md#oauth)
 >* [OAuth 2.0](https://oauth.net/2/)
 >* [OAuth 2 - förenklad](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
-
