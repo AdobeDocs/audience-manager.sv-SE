@@ -7,9 +7,9 @@ title: Kom igång med REST API:er
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
 exl-id: f7d5e52d-ad21-4020-a299-d440f954c51a
-source-git-commit: 16421f8f15a8aa8c1a561b0b6682091bf78683ce
+source-git-commit: 622664170f2a76039bcf2333bde43ce9e60b6af2
 workflow-type: tm+mt
-source-wordcount: '2551'
+source-wordcount: '2558'
 ht-degree: 0%
 
 ---
@@ -382,6 +382,8 @@ Du kan använda de här valfria parametrarna med [!DNL API] metoder som returner
 | `permissions` | Returnerar en lista med segment baserat på den angivna behörigheten. `READ` är standard. Behörigheterna är:<ul><li>`READ` : Returnera och visa information om ett segment.</li><li>`WRITE` : Använd  `PUT`  för att uppdatera ett segment.</li><li>`CREATE` : Använd  `POST`  för att skapa ett segment.</li><li>`DELETE` : Ta bort ett segment. Kräver åtkomst till eventuella underliggande egenskaper. Du måste till exempel ha behörighet att ta bort de egenskaper som tillhör ett segment om du vill ta bort det.</li></ul><br>Ange flera behörigheter med separata nyckelvärdepar. Om du till exempel vill returnera en lista med segment med  `READ`  och  `WRITE`  endast behörigheter, skicka in  `"permissions":"READ"`, `"permissions":"WRITE"` . |
 | `includePermissions` | ([!DNL Boolean]) Ange som `true` för att returnera dina behörigheter för segmentet. Standard är `false`. |
 
+{style="table-layout:auto"}
+
 ### En anteckning om sidalternativ
 
 När sidinformation *är inte* anges returnerar begäran normal [!DNL JSON] resulterar i en array. Om sidinformation *är* anges, radbryts den returnerade listan i en [!DNL JSON] objekt som innehåller information om det totala resultatet och den aktuella sidan. Din exempelbegäran med sidalternativ kan se ut ungefär så här:
@@ -400,7 +402,7 @@ I följande tabell visas begäran [!DNL URLs] används för att skicka in [!DNL 
 
 Beroende på vilken autentiseringsmetod du använder måste du justera din begäran [!DNL URLs] enligt tabellerna nedan.
 
-### Begäran [!DNL URLs] for [!DNL JWT] Autentisering {#request-urls-jwt}
+### Begäran [!DNL URLs] för [!BADGE Rekommenderas]{type=positive}[!BADGE Föråldrat]{type=negative}[!DNL JWT] Autentisering via Adobe Developer {#request-urls-jwt}
 
 | [!DNL API] Metoder | Begäran [!DNL URL] |
 |--- |--- |
@@ -416,7 +418,9 @@ Beroende på vilken autentiseringsmetod du använder måste du justera din begä
 | [!DNL Trait Types] | `https://aam.adobe.io/v1/customer-trait-types` |
 | [!DNL Taxonomy] | `https://aam.adobe.io/v1/taxonomies/0/` |
 
-### Begäran [!DNL URLs] for [!DNL OAuth] Autentisering (inaktuellt) {#request-urls-oauth}
+{style="table-layout:auto"}
+
+### Begäran [!DNL URLs] för [!BADGE Föråldrat]{type=negative}[!DNL OAuth] Autentisering {#request-urls-oauth}
 
 | [!DNL API] Metoder | Begäran [!DNL URL] |
 |--- |--- |
@@ -431,6 +435,8 @@ Beroende på vilken autentiseringsmetod du använder måste du justera din begä
 | [!DNL Traits] | `https://api.demdex.com/v1/traits/` |
 | [!DNL Trait Types] | `https://api.demdex.com/v1/customer-trait-types` |
 | [!DNL Taxonomy] | `https://api.demdex.com/v1/taxonomies/0/` |
+
+{style="table-layout:auto"}
 
 ## Miljö {#environments}
 
