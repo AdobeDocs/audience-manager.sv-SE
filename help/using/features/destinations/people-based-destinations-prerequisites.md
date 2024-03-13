@@ -6,12 +6,13 @@ solution: Audience Manager
 title: Förutsättningar och överväganden
 feature: People-based Destinations
 exl-id: 7656aa3e-3410-4052-8e29-b702bd0bf149
-source-git-commit: cd40e1e3cc2199d1937950934d674cfad301f3e8
+source-git-commit: 2b823855994f394261a66e896ef7de7bb7a5450f
 workflow-type: tm+mt
 source-wordcount: '996'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
+
 
 # Förutsättningar och överväganden {#prerequisites-considerations}
 
@@ -33,17 +34,19 @@ Kontakta din Adobe-representant för att få tillgång till denna premiumfunktio
 
 ### [!DNL Facebook] {#facebook}
 
-Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka förstahandspubliken [!UICONTROL segments] till [!DNL Facebook]måste du uppfylla följande krav:
+Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka förstahandspubliken [!UICONTROL segments] till [!DNL Facebook]ska du kontrollera att du uppfyller följande krav:
 
 1. Dina [!DNL Facebook] användarkontot måste ha **Hantera kampanjer** behörighet aktiverad för annonskontot som du tänker använda.
 2. Lägg till **Adobe Experience Cloud** företagskonto som annonspartner i [!DNL Facebook Ad Account]. Använd `business ID=206617933627973`. Se [Lägg till partners i din Business Manager](https://www.facebook.com/business/help/1717412048538897) för mer information.
+
    >[!IMPORTANT]
-   > När du konfigurerar behörigheter för Adobe Experience Cloud måste du aktivera **Hantera kampanjer** behörighet. Det krävs för [!UICONTROL People-Based Destinations]-integreringen.
+   >När du konfigurerar behörigheter för Adobe Experience Cloud måste du aktivera **Hantera kampanjer** behörighet. Det krävs för [!UICONTROL People-Based Destinations]-integreringen.
+
 3. Läs och signera [!DNL Facebook Custom Audiences] Användarvillkor. Gör det genom att gå till `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`, där `accountID` är din [!DNL Facebook Ad Account ID].
 
 ### [!DNL LinkedIn] {#linkedin}
 
-Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka era egna målgruppssegment till [!DNL LinkedIn]bör du se till att [!DNL LinkedIn Campaign Manager] kontot har [!DNL Creative Manager] eller högre behörighetsnivå.
+Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka era egna målgruppssegment till [!DNL LinkedIn], kontrollera att dina [!DNL LinkedIn Campaign Manager] kontot har [!DNL Creative Manager] eller högre behörighetsnivå.
 
 Så här redigerar du [!DNL LinkedIn Campaign Manager] användarbehörigheter, se [Lägg till, redigera och ta bort användarbehörigheter på annonskonton](https://www.linkedin.com/help/lms/answer/5753) i LinkedIn-dokumentationen.
 
@@ -53,23 +56,31 @@ Se [Förstå och konfigurera LinkedIn personbaserade mål](https://experiencelea
 
 Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka era egna målgruppssegment till en [!DNL Google Customer Match] ska du kontrollera att du läser och följer Google policy för användning av [!DNL Customer Match], konturerad i [Google supportdokumentation](https://support.google.com/google-ads/answer/6299717).
 
-Kontrollera sedan att [!DNL Google] kontot har konfigurerats för [!DNL Standard] eller högre behörighetsnivå. Se [Google Ads-dokumentation](https://support.google.com/google-ads/answer/9978556?visit_id=637611563637058259-4176462731&amp;rd=1) för mer information.
+Se sedan till att [!DNL Google] kontot har konfigurerats för [!DNL Standard] eller högre behörighetsnivå. Se [Google Ads-dokumentation](https://support.google.com/google-ads/answer/9978556?visit_id=637611563637058259-4176462731&amp;rd=1) för mer information.
 
 Kunder med kompatibla konton tillåts automatiskt listade av Google.
 
-## Dataregistrering {#data-onboarding}
+## Datainhämtning {#data-onboarding}
 
-Intag av data för [!UICONTROL People-Based Destinations] stöder för närvarande upp till 10 hash-kodade e-postadresser som är länkade till ett kund-ID ([!DNL CRM ID]), per batchöverföring. Om du överför mer än 10 hash-kodade e-postadresser som är länkade till ett kund-ID importeras 10 av Audience Manager, utan någon särskild ordning.
+>[!IMPORTANT]
+>
+>Alla Audience Manager-kunder kan importera hashade e-postmeddelanden utan att registrera sig för [!UICONTROL People-Based Destinations].
+
+Intag av data för [!UICONTROL People-Based Destinations] stöder för närvarande upp till 10 hash-kodade e-postadresser som är länkade till ett kund-ID ([!DNL CRM ID]), per batchöverföring.
 
 Om du överför mer än 10 hash-kodade e-postadresser som är länkade till ett kund-ID vid flera batchöverföringar kommer Audience Manager att behålla de 10 senaste e-postadresserna som lagts till.
 
-## Datasekretess {#data-privacy}
+Så här infogar du hash-kodade identifierare: [skapa en datakälla för olika enheter för hash-kodade identifierare](../create-data-source-hashed-emails.md) och aktivera **[!UICONTROL Share associated cross-device IDs in people-based destinations and/or hashed email workflows]** alternativ.
+
+![Audience Manager-användargränssnittsbild som visar möjligheten att dela associerade enhets-ID:n på personbaserade mål och/eller hashad e-postarbetsflöde](assets/data-source-share-ids.png)
+
+## Dataintegritet {#data-privacy}
 
 Fast [!UICONTROL People-Based Destinations] om du vill att målgrupper ska kunna målgruppsanpassas baserat på hash-kodade e-postadresser som du har överfört är det förbjudet att överföra direkt identifierbar besöksinformation till Audience Manager. Under introduktionsfasen av data måste du se till att de e-postadresser du tänker använda hashas med [!DNL SHA256] algoritm. Annars kan du inte använda dem i [!UICONTROL People-Based Destinations].
 
 ## Dataskärm jämfört med kryptering {#data-hashing-encryption}
 
-Kryptering är en tvåvägsfunktion. All krypterad information kan också dekrypteras med rätt dekrypteringsnyckel. Kryptering av data i samband med Audience Manager utgör allvarliga risker, eftersom alla krypterade former av personligt identifierbar information också kan dekrypteras. I motsats till kryptering [!UICONTROL People-Based Destinations] är utformade för att fungera med hash-kodade data i stället.
+Kryptering är en tvåvägsfunktion. All krypterad information kan också dekrypteras med rätt dekrypteringsnyckel. Kryptering av data i samband med Audience Manager utgör allvarliga risker, eftersom alla krypterade former av personligt identifierbar information också kan dekrypteras. I motsats till kryptering [!UICONTROL People-Based Destinations] är utformade för att fungera med hash-kodade data istället.
 
 Hash-funktionen är en envägsfunktion som förvränger indata och ger ett unikt resultat. Genom att använda rätt hash-algoritmer, som [!DNL SHA256]går det inte att vända på hashfunktionen och visa den information som inte är så rörig. E-postadresserna som du kommer att anlita Audience Manager måste hash-kodas med [!DNL SHA256] algoritm. På så sätt kan du se till att inga ohanterade e-postadresser når Audience Manager.
 
@@ -77,7 +88,7 @@ Hash-funktionen är en envägsfunktion som förvränger indata och ger ett unikt
 
 När du hash-kodar e-postadresserna måste du se till att följande krav uppfylls:
 
-* Trimma alla inledande och avslutande blanksteg från e-poststrängen. exempel: `johndoe@example.com`, inte `<space>johndoe@example.com<space>`;
+* Trimma alla inledande och avslutande blanksteg från e-poststrängen, exempel: `johndoe@example.com`, inte `<space>johndoe@example.com<space>`;
 * När du hash-kodar e-poststrängarna ska du se till att hash-koda den gemena strängen.
    * Exempel: `example@email.com`, inte `EXAMPLE@EMAIL.COM`;
 * Kontrollera att den hash-kodade strängen är i gemener
@@ -98,7 +109,7 @@ Innan du registrerar dig för [!UICONTROL People-Based Destinations]måste du se
 
 Om kunderna vill avanmäla sig från annonskampanjer finns mer information i [Hantering av avanmälan](../../overview/data-security-and-privacy/data-privacy-requests.md) för mer ingående information om hur du kan hindra Audience Manager från att samla in data ytterligare.
 
-## Tvingande aktivering av förstahandsdata {#enforcing-first-party-activation}
+## Tvingande aktivering av första parts data {#enforcing-first-party-activation}
 
 När du använder [!UICONTROL People-Based Destinations]kan ni bara använda egna data för att aktivera målgruppssegment i personbaserade kanaler. Ni kan inte använda data från andra leverantörer för målgruppsaktivering i personbaserade kanaler.
 
@@ -108,5 +119,5 @@ När du använder [!UICONTROL People-Based Destinations], använda [Dataexportko
 
 Det finns två sätt att överföra offlinedata till Audience Manager för [!UICONTROL People-Based Destinations].
 
-* [Skicka batchdata](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) till Audience Manager för att importera hashade e-postadresser. Med den här metoden kan du välja att använda de hash-kodade e-postadresserna från [!DNL CRM] databas i [!UICONTROL People-Based Destinations]. När du använder den här metoden kan du dessutom kvalificera de streckade e-postadresserna för [onboardtraits](../traits/trait-and-segment-qualification-reference.md).
+* [Skicka batchdata](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) till Audience Manager för att importera hashade e-postadresser. Med den här metoden kan du välja att använda de streckade e-postadresserna från [!DNL CRM] databas i [!UICONTROL People-Based Destinations]. När du använder den här metoden kan du dessutom kvalificera de streckade e-postadresserna för [Konstruerade trasiga egenskaper](../traits/trait-and-segment-qualification-reference.md).
 * Använd [Deklarerade ID:n](../declared-ids.md) för att deklarera hash-kodade e-postadresser när autentiserade kund-ID skickas. När du använder den här metoden skickar Audience Manager bara till [!UICONTROL People-Based Destinations] e-postadresser som hashas av användare som har autentiserats online. E-postadresserna som aktiveras via personbaserade kanaler är bara de som anges i de deklarerade ID-händelseanropen. Andra e-postadresser som är kopplade till kund-ID:t skickas inte i realtid.

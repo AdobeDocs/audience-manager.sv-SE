@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-description: Lär dig hur du använder Adobe Audience Manager för att samla in kommersiellt relevant information om webbplatsbesökare och skapa marknadsföringsbara segment. Du kan också hitta information om hur du kan leverera riktad reklam och innehåll till rätt målgrupp.
 feature-set: Audience Manager
-source-git-commit: 95028ac2131dda5a483c9d12007dcd38369d5b6f
+source-git-commit: 2b823855994f394261a66e896ef7de7bb7a5450f
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1835'
 ht-degree: 23%
 
 ---
@@ -91,6 +91,7 @@ ht-degree: 23%
    + Datakällor {#data-sources}
       + [Lista över datakällor och inställningar](features/datasources-list-and-settings.md)
       + [Skapa en datakälla](features/manage-datasources.md)
+      + [Konfigurera en datakälla för arbetsflöden för hashad e-post](features/create-data-source-hashed-emails.md)
       + [Globala datakällor](features/global-data-sources.md)
    + [Deklarerade ID:n](features/declared-ids.md)
    + [Härledda signaler](features/derived-signals.md)
