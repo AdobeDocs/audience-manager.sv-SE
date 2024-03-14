@@ -3,7 +3,7 @@ title: Konfigurera en datakälla för hash-kodade e-postarbetsflöden
 description: Lär dig hur du skapar en datakälla för att lagra hash-kodade e-postmeddelanden för hash-kodade e-postarbetsflöden.
 solution: Audience Manager
 feature: Data Sources
-source-git-commit: 903c2602f759e0d507e45f1db4cbc880a599c32e
+source-git-commit: b88f180808ec9723a2a5324441733f6383f6302d
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -29,4 +29,5 @@ Följ stegen nedan för att skapa och konfigurera en datakälla för hashad e-po
    >Med det här alternativet anges endast att datakällan innehåller data som har hash-kodats med den specifika algoritmen. Audience Manager hash-kodar inte data i det här steget. Kontrollera att de e-postadresser som du planerar att lagra i den här datakällan redan är hashas med [!DNL SHA256] algoritm. I annat fall kan du inte använda den för hashad e-postarbetsflöden.
 
    ![Audience Manager-gränssnittsbild som visar avsnittet med inställningar för datakälla.](../features/assets/data-source-settings.png)
+
 
