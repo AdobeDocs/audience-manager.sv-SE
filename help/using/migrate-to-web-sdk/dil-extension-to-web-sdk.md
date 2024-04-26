@@ -1,7 +1,7 @@
 ---
 title: Migrera från taggtillägget Audience Manager till Web SDK-taggtillägget
 description: Förstå stegen för att uppdatera ditt datainsamlingsbibliotek för Audience Manager från taggtillägget Audience Manager till taggtillägget Web SDK
-source-git-commit: 1cf6a80bd5b7f583ea2511becf415b430ce2889e
+source-git-commit: c80f39c4001d2bcfa94012b9f4ffa720806487d4
 workflow-type: tm+mt
 source-wordcount: '1309'
 ht-degree: 0%
@@ -153,3 +153,4 @@ När taggimplementeringen är helt migrerad till Web SDK kan du inaktivera till�
 +++
 
 I nuläget är implementeringen av Audience Manager helt migrerad till Web SDK och är redo att gå över till Real-Time CDP i framtiden.
+
