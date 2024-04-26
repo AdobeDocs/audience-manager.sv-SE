@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-description: Lär dig hur du använder Adobe Audience Manager för att samla in kommersiellt relevant information om webbplatsbesökare och skapa marknadsföringsbara segment. Du kan också hitta information om hur du kan leverera riktad reklam och innehåll till rätt målgrupp.
 feature-set: Audience Manager
-source-git-commit: 2b823855994f394261a66e896ef7de7bb7a5450f
+source-git-commit: b0c35d79a07b481e332ddf8f4aedab5484416a51
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1865'
 ht-degree: 23%
 
 ---
@@ -17,6 +17,9 @@ ht-degree: 23%
 
 + [Audience Manager Guide](aam-home.md)
 + [Utvecklingshandbok för Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
++ Migrera till Web SDK{#migrate-to-web-sdk}
+   + [Migrera från Adobe Audience Manager-taggtillägget till Web SDK-taggtillägget](migrate-to-web-sdk/dil-extension-to-web-sdk.md)
+   + [Migrera från AppMeasurementets JavaScript-bibliotek till Web SDK JavaScript-biblioteket](migrate-to-web-sdk/appmeasurement-to-web-sdk.md)
 + Översikt {#overview}
    + [Översikt över Audience Manager](overview/aam-overview.md)
    + [Typer av insamlade data](overview/data-types-collected.md)
