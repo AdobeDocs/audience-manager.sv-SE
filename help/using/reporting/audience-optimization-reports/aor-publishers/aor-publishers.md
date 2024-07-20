@@ -10,7 +10,7 @@ exl-id: 5972ea89-3e4d-48a5-bdd2-0a34211d8bfd
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 12%
+ht-degree: 0%
 
 ---
 
@@ -20,19 +20,19 @@ Audience Optimization for Publishers kan hjälpa er att identifiera potentiella 
 
 ## Översikt {#aor-overview}
 
-[!UICONTROL Audience Optimization for Publishers] lägger in kampanjdata på loggnivå från [!DNL Google Ad Manager] med [!DNL Audience Manager] segmentmått. Rapporterna är tillgängliga för kunder som har konfigurerat loggningsuppgifterna från [!DNL Google Ad Manager]till [!DNL Audience Manager]. Om du ännu inte har konfigurerat loggimporten, läs [Importera Google Ad Manager-datafiler till Audience Manager](import-dfp.md) om du vill ha information om hur du gör det.
+[!UICONTROL Audience Optimization for Publishers] sammanställer kampanjresultatdata på loggnivå från [!DNL Google Ad Manager] med [!DNL Audience Manager] segmentmått. Rapporterna är tillgängliga för kunder som har konfigurerat loggningsuppläsning från [!DNL Google Ad Manager] till [!DNL Audience Manager]. Om du ännu inte har konfigurerat loggimporten läser du [Importera Google Ad Manager-datafiler till Audience Manager](import-dfp.md) för att få information om hur du gör det.
 
 ## Metadata {#metadata}
 
-Prestandainformationen som visas i rapporterna importeras från [!DNL Google Ad Manager] -instans. Du måste skicka metadatafiler till oss så att vi kan lägga till beskrivande, egna namn till dina objekt i rapporterna i stället för ID:n. Steg 3 in [Importera Google Ad Manager-datafiler till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md) beskriver hur du skickar metadata till oss.
+Prestandainformationen som visas i rapporterna importeras från din [!DNL Google Ad Manager]-instans. Du måste skicka metadatafiler till oss så att vi kan lägga till beskrivande, egna namn till dina objekt i rapporterna i stället för ID:n. Steg 3 i [Importera Google Ad Manager-datafiler till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md) beskriver hur du skickar metadata till oss.
 
 ## Tillgängliga rapporter {#available-reports}
 
-[!UICONTROL Audience Optimization for Publishers] har sex distinkta vyer som ger prestanda för lager och servrar jämfört med segmentering som skapats i [!DNL Audience Manager] för att lösa utgivarcentrerade affärsmål.
+[!UICONTROL Audience Optimization for Publishers] har sex distinkta vyer som visar prestanda för lager och servrar jämfört med segmentering som skapats i [!DNL Audience Manager] för att lösa problem med utgivarcentrerade affärsmål.
 
 + [Resultatrapport för segment](publisher-segment-performance.md)
 + [Trendrapport för segment](publisher-segment-trends.md)
-+ [Vanligaste oanvända traits](publisher-top-unused-traits.md)
-+ [Annonsenhetsöverlappning](publisher-ad-unit-overlap.md)
++ [De vanligaste oanvända traderna](publisher-top-unused-traits.md)
++ [Annonsväxling](publisher-ad-unit-overlap.md)
 + [Överlappning mellan segment och annonsenhet](publisher-segment-ad-unit-overlap.md)
-+ [Unik användarräckvidd](publisher-unique-reach.md)
++ [Unikt användarområde](publisher-unique-reach.md)

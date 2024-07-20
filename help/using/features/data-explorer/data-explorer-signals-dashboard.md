@@ -8,22 +8,22 @@ feature: Data Explorer
 exl-id: dfcacdca-c301-4655-9ab4-0642ce6d1cc0
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 1%
+source-wordcount: '250'
+ht-degree: 0%
 
 ---
 
 # Kontrollpanel för signaler {#signals-dashboard}
 
-Få en översikt över oanvända signaler som Audience Manager tagit emot under de senaste 7 dagarna och identifiera potentiella nya egenskaper. Oanvända signaler når Audience Manager från dina online-egenskaper, men används inte i dina befintliga egenskaper. Så här visar du [!UICONTROL Signals Dashboard], gå till [!UICONTROL Audience Data] > [!UICONTROL Signals]. The [!UICONTROL Signals Dashboard] visar er åtgärdbara insikter baserat på era mest aktiva oanvända signaler.
+Få en översikt över oanvända signaler som Audience Manager tagit emot under de senaste 7 dagarna och identifiera potentiella nya egenskaper. Oanvända signaler når Audience Manager från dina online-egenskaper, men används inte i dina befintliga egenskaper. Om du vill visa [!UICONTROL Signals Dashboard] går du till [!UICONTROL Audience Data] > [!UICONTROL Signals]. [!UICONTROL Signals Dashboard] visar åtgärdbara insikter baserat på dina mest aktiva oanvända signaler.
 
 >[!IMPORTANT]
 >
->The **[!UICONTROL Top Unused Signals]** och **[!UICONTROL New Unused Signals]** avsnitt visar bara poster med mer än **100 förekomster/timme**. Signaler under det tröskelvärdet ingår i [!UICONTROL Signals Search].
+>Avsnitten **[!UICONTROL Top Unused Signals]** och **[!UICONTROL New Unused Signals]** visar bara poster med fler än **100 förekomster/timme**. Signaler under det tröskelvärdet ingår i [!UICONTROL Signals Search].
 
 ## De vanligaste oanvända signaturerna {#top-unused-signals}
 
-I det här avsnittet visas de 50 mest oanvända signalerna (både nya och gamla) som skickas till [!DNL Audience Manager] under de senaste 7 dagarna, baserat på deras totala antal. Beroende på data [!DNL Audience Manager] tar emot kan tabellen innehålla några eller alla poster i **Nya oanvända signaler** tabell.
+I det här avsnittet visas de 50 mest oanvända signalerna (både nya och gamla) som skickats till [!DNL Audience Manager] under de senaste 7 dagarna, baserat på deras totala antal. Beroende på vilka data [!DNL Audience Manager] tar emot kan den här tabellen innehålla några eller alla poster i tabellen **Nya oanvända signaler**.
 
 ![](assets/signals-top-unused.png)
 
@@ -35,7 +35,7 @@ I det här avsnittet visas de 50 bästa nya oanvända signalerna som tagits emot
 
 ## Sparade sökningar {#saved-searches}
 
-[!DNL Audience Manager] visar alla [sparade sökningar](../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md) på [!UICONTROL Dashboard] och läser in dem igen varje gång [!UICONTROL Dashboard].
+[!DNL Audience Manager] visar alla dina [sparade sökningar](../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md) på [!UICONTROL Dashboard] och läser in dem igen varje gång du läser in [!UICONTROL Dashboard].
 
 Sparade sökningar visar de 50 främsta resultaten för motsvarande villkor.
 

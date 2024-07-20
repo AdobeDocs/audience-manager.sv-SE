@@ -10,22 +10,22 @@ exl-id: ca4906a7-0c39-49bc-9505-d76a61ec9eac
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '120'
-ht-degree: 19%
+ht-degree: 0%
 
 ---
 
-# Integrering av mediedata  {#media-data-integration}
+# Integrering av mediedata {#media-data-integration}
 
 Du kan hämta in data från mediekampanjer med pixelanrop till Audience Manager (kallas ofta för att skapa pixlar) eller genom att importera loggfiler. Läs artiklarna i det här avsnittet om du vill veta mer om processen.
 
 <!-- c_camp_data_int.xml -->
 
-* [Verkställbara loggfiler](/help/using/integration/media-data-integration/actionable-log-files.md)
-* [Samla in annonsvisningsdata för kampanjer med pixelanrop](/help/using/integration/media-data-integration/impression-data-pixels.md)
-* [Samla in klickdata för kampanjer med pixelanrop](/help/using/integration/media-data-integration/click-data-pixels.md)
+* [Loggfiler som kan användas](/help/using/integration/media-data-integration/actionable-log-files.md)
+* [Samla in data för kampanjexponering via pixelanrop](/help/using/integration/media-data-integration/impression-data-pixels.md)
+* [Hämta kampanjklicksdata via pixelanrop](/help/using/integration/media-data-integration/click-data-pixels.md)
 
-Läs följande artiklar om du vill konfigurera loggöverföring:
+Läs följande artiklar om du vill konfigurera logginmatning:
 
 * [Importera Google Campaign Manager-datafiler till Audience Manager](/help/using/reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
-* [Importera Google Ad Manager-datafiler till Audience Manager ](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
-* [Loggdata och metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) för att konfigurera logginmatning för allmänna loggfiler
+* [Importera Google Ad Manager-datafiler till Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
+* [Logga data- och metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) för att konfigurera logginmatning för allmänna loggfiler

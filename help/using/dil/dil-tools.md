@@ -3,28 +3,28 @@ description: Beskriver metoder i namnutrymmet DIL.tools. De här verktygen hjäl
 seo-description: Describes methods in the DIL.tools namespace. These utility functions help you perform specific tasks.
 seo-title: DIL Tools
 solution: Audience Manager
-title: DIL-verktyg
+title: DIL Tools
 uuid: 2bc62ce2-16bd-4e80-b493-c816ba643b59
 feature: DIL Implementation
 exl-id: 1f52eb95-8287-4dd0-b933-00de6926a797
 source-git-commit: cad38e2c523e9b762aa996c275daefa96c8e14b0
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 1%
+source-wordcount: '343'
+ht-degree: 0%
 
 ---
 
-# DIL-verktyg
+# DIL Tools
 
 >[!WARNING]
 >
->Från och med juli 2023 har Adobe upphört med utvecklingen av [!DNL Data Integration Library (DIL)] och [!DNL DIL] tillägg.
+>Från och med juli 2023 har Adobe upphört med utvecklingen av tillägget [!DNL Data Integration Library (DIL)] och [!DNL DIL].
 >
->Befintliga kunder kan fortsätta använda sina [!DNL DIL] implementering. Adobe kommer dock inte att utvecklas [!DNL DIL] bortom denna punkt. Kunder uppmanas att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) för deras långsiktiga strategi för datainsamling.
+>Befintliga kunder kan fortsätta använda sin [!DNL DIL]-implementering. Adobe kommer dock inte att utveckla [!DNL DIL] efter den här punkten. Kunder uppmuntras att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) för sin långsiktiga datainsamlingsstrategi.
 >
 >Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) i stället.
 
-Beskriver metoder i `DIL.tools` namnutrymme. De här verktygen hjälper dig att utföra specifika uppgifter.
+Beskriver metoder i namnområdet `DIL.tools`. De här verktygen hjälper dig att utföra specifika uppgifter.
 
 <!-- 
 
@@ -44,7 +44,7 @@ r_dil_get_search_referrer.xml
 
 ### Syfte med `getSearchReferrer`
 
-I DIL `getSearchReferrer` returnerar sökresultat (namn och nyckelord) som används för att nå din webbplats. Du kan skicka in specifika söktermer till den här funktionen eller låta den söka efter de sökmotorer som stöds ( [!DNL AOL], [!DNL Ask], [!DNL Bing], [!DNL Google]och [!DNL Yahoo]) mot `document.referrer` som standard.
+I DIL returnerar `getSearchReferrer` sökresultat (namn och nyckelord) som används för att nå din webbplats. Du kan skicka specifika söktermer till den här funktionen eller låta den söka efter de sökmotorer som stöds ( [!DNL AOL], [!DNL Ask], [!DNL Bing], [!DNL Google] och [!DNL Yahoo]) mot `document.referrer` som standard.
 
 ### Funktionssignatur
 
@@ -52,10 +52,10 @@ Funktionssignatur: `DIL.tools.getSearchReferrer(uri, initConfig)`
 
 ### Funktionsparametrar
 
-`getSearchReferrer` godkänner:
+`getSearchReferrer` accepterar:
 
-* *`{string}`*: *(Valfritt)* En sträng som innehåller sök-URL (använder `document.referrer` om det är odefinierat).
-* *`{object}`*: *(Valfritt)* Ett objekt som innehåller konfigurationen för `hostPattern`, `queryParam`, eller `queryPattern`.
+* *`{string}`*: *(Valfritt)* En sträng som innehåller sökwebbadressen (använder `document.referrer` om det är odefinierat).
+* *`{object}`*: *(Valfritt)* Ett objekt som innehåller konfigurationen för `hostPattern`, `queryParam` eller `queryPattern`.
 
 Och returnerar:
 
@@ -121,7 +121,7 @@ Och returnerar:
 
 ## decomposeURI
 
-Disassemblerar en Uniform Resource Identifier ( [!DNL URI]) till sina beståndsdelar: `hash`, `host`, `href`, `pathname`, `protocol`, `search`och `[!DNL uriParams]`.
+Disassemblerar en Uniform Resource Identifier ( [!DNL URI]) till dess beståndsdelar: `hash`, `host`, `href`, `pathname`, `protocol`, `search` och `[!DNL uriParams]`.
 
 <!-- 
 
@@ -133,9 +133,9 @@ Funktionssignatur: `DIL.tools.decomposeURI`
 
 ### Funktionsparametrar
 
-`decomposeURI` godkänner:
+`decomposeURI` accepterar:
 
-* *`uri {string}`*: *(Valfritt)* En sträng som innehåller URI. Standardvärdet är `document.location.href` om inget anges.
+* *`uri {string}`*: *(Valfritt)* En sträng som innehåller URI:n. Standardvärdet är `document.location.href` om inget anges.
 
 Och returnerar:
 

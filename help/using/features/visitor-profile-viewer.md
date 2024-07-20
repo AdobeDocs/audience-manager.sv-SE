@@ -10,20 +10,19 @@ feature: Traits
 exl-id: 6c1ee14c-6f78-4e45-9b88-24ace8400079
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 2%
+source-wordcount: '250'
+ht-degree: 0%
 
 ---
 
 # Visningsprogram för besökarprofiler {#visitor-profile-viewer}
 
-Använd [!UICONTROL Visitor Profile Viewer] för att visa det aktuella läget för en användarprofil för den aktuella webbläsaren, inklusive dess egenskaper och segment. För varje tram kan du visa dess [!UICONTROL SID], namn, information om hur besökarens egenskaper realiserades (första eller tredje part), realiseringstidpunkten och frekvensen för realiseringar. För varje segment kan du visa dess [!UICONTROL SID], namn och datum för segmentmedlemskap. Du kan även visa besökarprofilen för ett annat profils-ID för Audience Manager ([!UICONTROL UUID]). The [!UICONTROL Visitor Profile Viewer] är användbart i felsökningssyfte.
+Använd [!UICONTROL Visitor Profile Viewer] för att visa det aktuella läget för en användarprofil för den aktuella webbläsaren, inklusive dess egenskaper och segment. För varje egenskap kan du visa dess [!UICONTROL SID], namn, information om hur besökaregenskaper realiserades (första eller tredje part), realiseringsdatum och realiseringstid. För varje segment kan du visa dess [!UICONTROL SID], namn och datum för segmentmedlemskap. Du kan också visa besökarprofilen för ett annat profils-ID ([!UICONTROL UUID]) för Audience Manager. [!UICONTROL Visitor Profile Viewer] är användbart i felsökningssyfte.
 
 >[!NOTE]
 >
->* Åtkomst krävs [!UICONTROL Administrator] behörigheter.
+>* Åtkomst kräver [!UICONTROL Administrator] behörigheter.
 >* Det tar 24 timmar innan information om realiserade segment och anpassade egenskaper visas i användargränssnittet.
-
 
 <!-- 
 Traits that are not part of a segment will not appear in the
@@ -32,7 +31,7 @@ Traits that are not part of a segment will not appear in the
 
 1. Klicka på **[!UICONTROL Tools]** > **[!UICONTROL Visitor Profile Viewer]**.
 
-1. *(Valfritt)* Klicka på trapnamnet för att visa trapet i [!UICONTROL Trait Builder].
+1. *(Valfritt)* Klicka på trait-namnet om du vill visa den egenskapen i [!UICONTROL Trait Builder].
 
    Mer information finns i [Traits](../features/traits/trait-details-page.md).
 
@@ -40,4 +39,4 @@ Traits that are not part of a segment will not appear in the
 
    Mer information finns i [Segment](../features/segments/segments-purpose.md).
 
-1. *(Villkorligt)* I **[!UICONTROL UUID]** anger du ett annat profil-ID för Audience Manager och klickar sedan på **[!UICONTROL Refresh]** för att visa egenskaper och segment för den användaren.
+1. *(Villkorligt)* Ange ett annat profil-ID i rutan **[!UICONTROL UUID]** och klicka sedan på **[!UICONTROL Refresh]** för att visa egenskaperna och segmenten för den Audience Manager.

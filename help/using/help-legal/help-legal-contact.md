@@ -8,8 +8,8 @@ feature: Support
 exl-id: 02c80394-c5ed-4963-8543-4585c0c289c6
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 100%
+source-wordcount: '243'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Experience Cloud kundtjänstteamet finns här för att hjälpa er och ni k
 
 Beroende på er konfiguration av lösningen kan vissa alternativ som beskrivs i den här dokumentationen inte vara tillgängliga. Eftersom varje konto är unikt kan du läsa ert avtal för information om priser, förfallodatum och villkor. Om du vill lägga till eller på annat sätt ändra servicenivån eller om du har frågor om den nuvarande tjänsten kan du kontakta den som ansvarar för ert konto.
 
-## Juridiskt {#legal}
+## Juridisk {#legal}
 
 Published by Adobe Systems Incorporated.
 

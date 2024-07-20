@@ -9,8 +9,8 @@ feature: Data Governance & Privacy
 exl-id: 051de369-e762-49fb-b65f-6faf94db48a4
 source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 68%
+source-wordcount: '437'
+ht-degree: 52%
 
 ---
 
@@ -18,43 +18,43 @@ ht-degree: 68%
 
 ## Översikt
 
-Dokumentationen om dataintegritet beskriver [!DNL Audience Manager] integrering och efterlevnad av allmänt vedertagna bästa metoder för konsumentintegritet och avanmälningsförfaranden.
+Dokumentationen om dataintegritet beskriver [!DNL Audience Manager]-integrering och kompatibilitet med allmänt accepterade bästa metoder för konsumentsekretess och avanmälningsförfaranden.
 
-[!DNL Audience Manager] inser hur viktig relationen är mellan konsumenterna och de varumärken som de interagerar med online. Båda parter drar nytta av det transparenta utbytet av pseudonyma dataelement:
+[!DNL Audience Manager] inser vikten av relationen mellan konsumenterna och de onlinevarumärken de interagerar med. Båda parter drar nytta av det transparenta utbytet av pseudonyma dataelement:
 
 * Konsumenterna får personaliserat innehåll, rabatterade produkterbjudanden och smidiga användarupplevelser.
 * Varumärken får viktiga intäktsströmmar som stöder flera onlineaffärsmodeller.
 
-I vårt fortsatta stöd för denna modell [!DNL Audience Manager] fortsätter att ge dig de verktyg du behöver för att kunna erbjuda dina kunder transparens och kontroll, samtidigt som ni levererar personaliserade annonser som är anpassade efter [Självreglerande principer för onlineannonsering](https://www.iab.com/news/self-regulatory-principles-for-online-behavioral-advertising/).
+I vårt fortsatta stöd för den här modellen fortsätter [!DNL Audience Manager] att tillhandahålla verktyg som hjälper dig att tillhandahålla transparens och kontroll till dina kunder, samtidigt som personaliserade annonser levereras i enlighet med [Advertising självreglerande principer för onlinebeteende](https://www.iab.com/news/self-regulatory-principles-for-online-behavioral-advertising/) (OBA).
 
 ## [!DNL GDPR] {#gdpr}
 
-I den [allmänna dataskyddsförordningen (GDPR)](https://gdpr.eu/data-privacy/) infördes flera nya rättigheter för EU-medlemmar, bland annat **rätten till åtkomst** och **rätten att raderas**. Detta innebär att alla [!DNL EU] medborgare vars personuppgifter har samlats in av ert företag kan när som helst begära att få tillgång till eller radera sina uppgifter. Om ni inte uppfyller dessa krav kan det leda till böter på flera miljoner dollar för er organisation.
+I den [allmänna dataskyddsförordningen (GDPR)](https://gdpr.eu/data-privacy/) infördes flera nya rättigheter för EU-medlemmar, bland annat **rätten till åtkomst** och **rätten att raderas**. Det innebär att alla [!DNL EU]-medborgare vars personuppgifter har samlats in av ditt företag kan begära åtkomst till eller radera sina data när som helst. Om ni inte uppfyller dessa krav kan det leda till böter på flera miljoner dollar för er organisation.
 
-Följ [!DNL GDPR], [!DNL Audience Manager] stöder dataåtkomst och -borttagning [förfrågningar](data-privacy-requests.md).
+För att uppfylla kraven för [!DNL GDPR] stöder [!DNL Audience Manager] dataåtkomst och [borttagningsbegäranden](data-privacy-requests.md).
 
 ## [!DNL CCPA] {#ccpa}
 
 I [California Consumer Privacy Act (CCPA)](https://www.caprivacy.org/about), som trädde i kraft den 1 januari 2020, ges personer bosatta i Kalifornien nya rättigheter när det gäller personuppgifter och det gör att vissa enheter som bedriver verksamhet i Kalifornien åläggs dataskyddsansvar.
 
-[!DNL CCPA] ger personer bosatta i Kalifornien nya rättigheter, inklusive rätten att få tillgång till och radera personuppgifter och att få veta om personuppgifter säljs eller offentliggörs (och till vem). Följ [!DNL CCPA], [!DNL Audience Manager] supports [!DNL CCPA] åtkomst och borttagning [förfrågningar](data-privacy-requests.md).
+[!DNL CCPA] ger personer bosatta i Kalifornien nya integritetsrättigheter, inklusive rätten att få tillgång till och ta bort sina personuppgifter och att få veta om deras personuppgifter säljs eller avslöjas (och till vem). [!DNL Audience Manager] stöder [!DNL CCPA] åtkomst och borttagning av [förfrågningar](data-privacy-requests.md) för att uppfylla kraven för [!DNL CCPA].
 
 Mer information finns på [Adobes sekretesscenter](https://www.adobe.com/se/privacy/opt-out.html#customeruse).
 
 ## Regelefterlevnad {#compliance}
 
-[!DNL Audience Manager] hjälper er att uppfylla era skyldigheter enligt vissa sekretessregler via sekretessverktyg som [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) för förfrågningar om åtkomst och radering av data.
+[!DNL Audience Manager] hjälper dig att uppfylla dina skyldigheter enligt vissa sekretessregler, via sekretessverktyg som [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) för dataåtkomst och borttagningsbegäranden.
 
 Den här tjänsten tillhandahåller ett [!DNL RESTful API] och användargränssnitt som hjälper er att hantera förfrågningar om konsumentdata. Med hjälp av [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) kan ni skicka förfrågningar om att få tillgång till och radera personuppgifter baserat på en kunds begäran vilket hjälper er att automatisera denna del av era efterlevnadsskyldigheter.
 
-Begäran om dataåtkomst och borttagning hanteras via Privacy Servicen, [avanmälningsbegäranden](data-privacy-requests.md#opt-out-requests) stöds för närvarande via [DCS API](../../api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md). Mer information finns i [Förfrågningar om datasekretess](data-privacy-requests.md).
+Dataåtkomst- och borttagningsbegäranden hanteras via Privacy Servicen, men [avanmälningsbegäranden](data-privacy-requests.md#opt-out-requests) stöds för närvarande via [DCS API](../../api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md). Mer information finns i [Förfrågningar om datasekretess](data-privacy-requests.md).
 
 ## Relaterade begrepp {#related-concepts}
 
 * [Förfrågningar om datasekretess](data-privacy-requests.md)
 * [Hantering av samtycke](data-privacy-consent.md)
 * [Plugin-program för Audience Manager för IAB TCF](aam-iab-plugin.md)
-* [Identifierare i Audience Manager](data-privacy-ids.md)
+* [Audience Manager-identifierare](data-privacy-ids.md)
 * [CCPA-ordlista](aam-ccpa-glossary.md)
 * [GDPR-ordlista](aam-gdpr-glossary.md)
 * [GDPR-överväganden för destinationer](aam-gdpr-partners.md)

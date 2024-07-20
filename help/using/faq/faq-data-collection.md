@@ -5,13 +5,13 @@ seo-title: Data Collection and Product Integration FAQ
 solution: Audience Manager
 title: Vanliga frågor om datainsamling och produktintegrering
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
-keywords: SFTP; SFTP-adress; IP-adress för STFP, FTP-adress
+keywords: SFTP; SFTP-adress; STFP IP-adress; FTP-adress
 feature: Administration
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
 source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 81%
+source-wordcount: '1211'
+ht-degree: 77%
 
 ---
 
@@ -31,7 +31,7 @@ Traits som registreras via [!UICONTROL Inbound] fylls i av [!UICONTROL Inbound] 
 
 <br>
 
-**Kan du ge mig en lista över IP-adresser som jag kan lägga till i en tillåtelselista för dpm.demdex.net?**
+**Kan du ge mig en lista över IP-adresser som jag kan lägga till i ett tillåtelselista för dpm.demdex.net?**
 
 Tyvärr inte. Dessa IP-adresser tilldelas dynamiskt efter geografisk region via [!DNL Amazon Web Services]. Det innebär att [!DNL Audience Manager] inte styr vilket IP-intervall som kan tilldelas till den här adressen.
 
@@ -59,13 +59,13 @@ SFTP-servrarna nedan är föråldrade. Inga nya konton kommer att etableras med 
 
 **Hur konfigurerar jag min Audience Manager-instans så att den använder de nya SFTP-servrarna?**
 
-Kontakta [!DNL Audience Manager] konsult eller kundtjänst så konfigurerar de dina nya SFTP-konton.
+Kontakta din [!DNL Audience Manager]-konsult eller kundtjänst så konfigurerar de dina nya SFTP-konton.
 
  
 
 **Vilka autentiseringsmetoder stöds för de nya SFTP-servrarna?**
 
-De nya SFTP-servrarna (`ftp-in-gtw` och `ftp-out-gtw`) support [!DNL OpenSSH Key-Based Authentication]. Vi kan generera [!DNL SSH] för dig, eller så kan du förse oss med din egen offentliga nyckel.
+De nya SFTP-servrarna (`ftp-in-gtw` och `ftp-out-gtw`) stöder [!DNL OpenSSH Key-Based Authentication]. Vi kan generera nycklarna [!DNL SSH] åt dig eller så kan du ge oss en egen offentlig nyckel.
 
  
 
@@ -83,7 +83,7 @@ Det bästa är att konfigurera [!DNL Audience Manager] - [!DNL Analytics]-integr
 
 * Placera [!UICONTROL DIL] direkt i `s_code`.
 
-* Serva [!UICONTROL DIL] och `s_code` via [!DNL Adobe Experience Platform Tags].
+* Servera [!UICONTROL DIL] och `s_code` till [!DNL Adobe Experience Platform Tags].
 
 Se [API för Data Integration Library (DIL)](../dil/dil-overview.md).
 
@@ -150,9 +150,9 @@ Ja, [!DNL Audience Manager] kan tillhandahålla data som samlats in för använd
 
 <br>
 
-**[!DNL Google Ad Manager]Jag vill samla in data på en webbplats och rikta mig till användare på en annan webbplats via Måste jag använda kod på den andra webbplatsen om jag inte vill samla in data från den?**
+**Jag vill samla in data på en webbplats och för målanvändare via [!DNL Google Ad Manager] på en annan webbplats. Måste jag använda kod på den andra webbplatsen om jag inte vill samla in data från den?**
 
-Nej. Om data inte behöver samlas in på den andra webbplatsen behöver du inte distribuera DIL där. Så länge du har tillgång till lagret på den andra platsen via [!DNL Google Ad Manager]kan du använda datainsamlingen från den ursprungliga webbplatsen och målet via [!DNL Google Ad Manager].
+Nej. Om data inte behöver samlas in på den andra webbplatsen behöver du inte distribuera DIL där. Så länge du har åtkomst till lagret på den andra webbplatsen via [!DNL Google Ad Manager] kan du använda datainsamlingen från den ursprungliga webbplatsen och målet via [!DNL Google Ad Manager].
 
 <br>
 
@@ -162,9 +162,9 @@ Varje leverantör tillför något unikt, så det beror på vad du letar efter. V
 
 <br>
 
-**Hur ställs cookies in i [!DNL Audience Manager] och hur skickas variabler till [!DNL Google Ad Manager]?**
+**Hur anger [!DNL Audience Manager] cookies och skickar variabler till [!DNL Google Ad Manager]?**
 
-[!DNL Audience Manager][!DNL Google Ad Manager] ställer in 2 cookies: Den ena skickar segmentvariabler till annonstaggen i och den andra ställer in vårt unika användar-ID (UUID) som också läses in av [!DNL Google Ad Manager]. Genom att lägga till UUID i annonstaggen kan vi skapa rapporter och målgruppsidentifiering på användarnivå.
+[!DNL Audience Manager] anger 2 cookies: Den ena skickar segmentvariabler till taggen [!DNL Google Ad Manager] ad och den andra anger vårt unika användar-ID (UUID), som även läses av [!DNL Google Ad Manager]. Genom att lägga till UUID i annonstaggen kan vi skapa rapporter och målgruppsidentifiering på användarnivå.
 
 <br>
 
@@ -210,6 +210,6 @@ Det tar vanligtvis upp till 24 timmar för en användarprofil att synkroniseras 
 
 **Vad händer med inaktiva Amazon S3-nycklar?**
 
-Adobe förser Audience Manager kunder med användarnycklar för Audience Manager [!DNL Amazon S3] fickor. Av säkerhetsskäl inaktiveras nycklarna automatiskt efter 100 dagars inaktivitet.
+Adobe förser Audience Manager-kunder med användarnycklar för Audience Manager [!DNL Amazon S3]-bucket. Av säkerhetsskäl inaktiveras nycklarna automatiskt efter 100 dagars inaktivitet.
 
 Om du vill återaktivera dina nycklar eller begära nya kontaktar du kundsupport.

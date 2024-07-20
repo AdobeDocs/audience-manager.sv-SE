@@ -11,26 +11,25 @@ exl-id: db3d1f3b-9a39-4ff7-a301-1236d3b33fc2
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '69'
-ht-degree: 34%
+ht-degree: 0%
 
 ---
 
-# [!DNL API] och [!DNL SDK] Code {#api-and-sdk-code}
+# [!DNL API] och [!DNL SDK]-kod {#api-and-sdk-code}
 
-[!DNL API]och verktyg som gör att du kan arbeta programmatiskt med [!DNL Audience Manager].
+[!DNL API]s och verktyg som gör att du kan arbeta programmatiskt med [!DNL Audience Manager].
 
 >[!NOTE]
 >
->Dessa funktioner stöds inte av vår [!DNL API]s:
+>De här funktionerna stöds inte av våra [!DNL API]s:
 >
->* [!UICONTROL General], [!UICONTROL Trend]och [!UICONTROL Interactive] rapporter.
->* Föråldrat [!DNL Tag Insertion Manager] ([!DNL TIM]).
-
+>* [!UICONTROL General], [!UICONTROL Trend] och [!UICONTROL Interactive] rapporter.
+>* Funktionen [!DNL Tag Insertion Manager] ([!DNL TIM]) har tagits bort.
 
 Information:
 
-* [Migrera API-kod för Audience Manager](api-swagger-migration.md)
-* [API:er för DCS-händelseanrop](dcs-intro/dcs-event-calls/dcs-event-calls.md)
+* [API-kodmigrering för Audience Manager](api-swagger-migration.md)
+* [DCS Event Call API:er](dcs-intro/dcs-event-calls/dcs-event-calls.md)
 * [DCS API:er för överföring av data från server till server](dcs-intro/dcs-s2s/dcs-s2s.md)
 * [DCS API-metoder](dcs-intro/dcs-api-reference/dcs-api-methods.md)
 * [SDK-kod](/help/using/api/aam-sdk.md)

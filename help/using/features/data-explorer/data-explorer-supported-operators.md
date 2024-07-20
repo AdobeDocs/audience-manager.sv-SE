@@ -9,7 +9,7 @@ exl-id: 5e405390-1c19-4e43-b3f9-598e8aa6bd99
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -33,12 +33,12 @@ Använd följande logiska operatorer som stöds för att söka efter nyckelvärd
 
 ### Namngivna operatorer
 
-| Operator | Utvärderar till [!DNL True] När |
+| Operator | Utvärderar till [!DNL True] när |
 |---|---|
-| **[!UICONTROL Contains]** | Värdet i ett nyckelvärdepar *innehåller* tecken som anges av den här operatorn. |
-| **[!UICONTROL Startswith]** | Värdet i ett nyckelvärdepar *börjar med* tecken som anges av den här operatorn. |
-| **[!UICONTROL Endswith]** | Värdet i ett nyckelvärdepar *slutar med* de tecken som anges av den här operatorn. |
+| **[!UICONTROL Contains]** | Värdet i nyckelvärdepar *innehåller* tecken som anges av den här operatorn. |
+| **[!UICONTROL Startswith]** | Värdet i nyckelvärdepar *börjar med* tecken som anges av den här operatorn. |
+| **[!UICONTROL Endswith]** | Värdet i nyckelvärdepar *avslutas med* de tecken som anges av den här operatorn. |
 
 ## Operatorer som stöds för trait Backfilling and Estimation {#supported-operators-backfilling}
 
-Du kan använda bakåtfyllnadsegenskaper som innehåller uttryck som innehåller någon av de operatorer som stöds av [!UICONTROL Signal Search]. Förutom dessa operatorer stöder även bakåtfyllnad och uppskattning av trait-egenskaper [!UICONTROL AND], [!UICONTROL OR]och [!UICONTROL AND NOT] logiska operatorer, som används för att kombinera nyckelvärdepar i uttryck med bakgrundsfyllning.
+Du kan återfylla egenskaper som innehåller uttryck som innehåller någon av de operatorer som stöds av [!UICONTROL Signal Search]. Förutom de här operatorerna stöder även bakåtfyllning och uppskattning av egenskaper ([!UICONTROL AND], [!UICONTROL OR] och [!UICONTROL AND NOT]) logiska operatorer som används för att kombinera nyckelvärdepar i uttryck för fullfyllda egenskaper.

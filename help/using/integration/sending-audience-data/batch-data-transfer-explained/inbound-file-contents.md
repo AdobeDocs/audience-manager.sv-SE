@@ -7,18 +7,18 @@ feature: Inbound Data Transfers
 exl-id: 894f1923-6c78-41d2-b6a2-eebf56eaa29e
 source-git-commit: dbb557928a296d3dd5f0646644e2ca0cdc11dfdc
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 1%
+source-wordcount: '1210'
+ht-degree: 0%
 
 ---
 
-# Innehåll i inkommande datafil: Syntax, ogiltiga tecken, variabler och exempel {#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
+# Innehåll i inkommande datafil: syntax, ogiltiga tecken, variabler och exempel {#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
 
 Obligatoriska fält, syntax och regler som du ska följa när du formaterar en inkommande trait-datafil.
 
 ## Syntax för filinnehåll {#file-content-syntax}
 
-Fälten i den inkommande datafilen måste visas i den ordning som visas nedan. I det här exemplet `<` `>` symboler har lagts till för att hjälpa till att skilja ut varje element visuellt. Du behöver inte inkludera dessa i datafilen.
+Fälten i den inkommande datafilen måste visas i den ordning som visas nedan. I det här exemplet har symbolerna `<` `>` lagts till för att hjälpa till att separera varje element visuellt. Du behöver inte inkludera dessa i din datafil.
 
 ```
 <user ID><TAB><trait ID>,<trait ID>,<trait ID>,...
@@ -30,8 +30,7 @@ Information om andra godkända filinnehållsformat finns i [Anpassade partnerint
 >
 >Vi har en gräns på 200 rader som vi kan behandla för varje användar-ID som skickas i den inkommande datafilen. Om du till exempel skickar 300 rader för ett användar-ID behålls de första 200 raderna och de ytterligare 100 raderna tas bort. I exemplet nedan är du bra eftersom du skickar tre rader vardera för användar-ID 1 och användar-ID 2. Vi har ingen begränsning för hur många traits- eller key-value-par du får med på en rad.
 >
->
-```
+>```
 ><user ID1><TAB><trait ID>,<trait ID>,<trait ID>
 ><user ID1><TAB><trait ID>,<trait ID>,<trait ID>
 ><user ID1><TAB><trait ID>,<trait ID>,<trait ID>
@@ -42,7 +41,7 @@ Information om andra godkända filinnehållsformat finns i [Anpassade partnerint
 
 ## Filvariabler definierade {#file-variables-defined}
 
-Tabellen listar och definierar de variabler som används i en korrekt formaterad inkommande datafil. *Kursiv* används för att ange en variabelplatshållare.
+Tabellen listar och definierar de variabler som används i en korrekt formaterad inkommande datafil. *Kursiv* anger en variabelplatshållare.
 
 <table id="table_FE043CE392B34D5194111188E5C39671"> 
  <thead> 
@@ -57,12 +56,12 @@ Tabellen listar och definierar de variabler som används i en korrekt formaterad
    <td colname="col2"> <p>Ett användar-ID kan vara: </p> <p> 
      <ul id="ul_25168355353545A9A049D0083403025E"> 
       <li id="li_23829FE2F6464E33859B3E388FCD106B">Ett unikt användar-ID som tilldelats av <span class="keyword"> Audience Manager </span> ( <a href="../../../reference/ids-in-aam.md"> Audience Manager UUID </a>). </li> 
-      <li id="li_76961F20DD3F4554AD2ADFB773F975DB">Ett unikt användar-ID som tilldelats i CRM-systemet ( <a href="../../../reference/ids-in-aam.md"> DPUID, i Audience Manager </a>). </li> 
-      <li id="li_52ABF6CCBCD147E2BD84D056F7461BA0">Ett mobilt Android- eller iOS-enhets-ID i dess ursprungliga oförändrade form så som det visas i det mobila operativsystemet. </li> 
+      <li id="li_76961F20DD3F4554AD2ADFB773F975DB">Ett unikt användar-ID som tilldelats i CRM-systemet ( <a href="../../../reference/ids-in-aam.md"> DPUUID, i Audience Manager </a>). </li> 
+      <li id="li_52ABF6CCBCD147E2BD84D056F7461BA0">Ett mobilt Android- eller iOS-enhets-ID i dess ursprungliga, oförändrade form som det visas i det mobila operativsystemet. </li> 
      </ul> </p> <p>För mobil-ID: </p> <p> 
      <ul id="ul_717A17E11565427E9E2D9D7554BB231B"> 
-      <li id="li_83BC5EA1E0294651A1F11D7E78EBCE98">IDFA-format: ID:n måste vara versaler och inte hash. Exempel, <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
-      <li id="li_27F298E62A1E46F88ECF52A01B752D3A">Android-format: ID:n måste vara gemena och inte hashas. Exempel, <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
+      <li id="li_83BC5EA1E0294651A1F11D7E78EBCE98">IDFA-format: ID:n måste vara versaler och inte hash. Exempel: <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
+      <li id="li_27F298E62A1E46F88ECF52A01B752D3A">Android-format: ID:n måste vara gemena och inte hashas. Exempel: <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -71,14 +70,14 @@ Tabellen listar och definierar de variabler som används i en korrekt formaterad
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>trait ID </i> </code> </p> </td> 
-   <td colname="col2"> <p>The <span class="keyword"> Audience Manager </span> trait-ID. Vi ber dig att <i>endast ombord på trakten</i> i inkommande datafiler. Vi bearbetar inga andra typer av egenskaper vid inkommande dataöverföring. </p> <p> <p>Obs! Du kan hitta ditt Trait ID med hjälp av metoden GET som returnerar information om alla dina egenskaper. Mer information finns i <a href="../../../api/rest-api-main/api-traits.md"> Metoder för Trait API </a>. </p> </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Audience Manager </span> trait-ID. Vi ber dig att ta med <i>endast inkluderade egenskaper</i> i inkommande datafiler. Vi bearbetar inga andra typer av egenskaper i den inkommande dataöverföringen. </p> <p> <p>Obs! Trait-ID:t kan hittas med hjälp av metoden GET som returnerar information om alla dina egenskaper. Mer information finns i <a href="../../../api/rest-api-main/api-traits.md"> Programmeringsmetoder </a>. </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Formatering [!UICONTROL Trait IDs] {#formatting-trait-ids}
+## Formaterar [!UICONTROL Trait IDs] {#formatting-trait-ids}
 
-I följande tabell beskrivs de prefix som identifierar [!UICONTROL trait] namn eller ID i en inkommande datafil. Se [exempelfiler](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#data-file-examples) till exempel.
+Följande tabell beskriver prefixen som identifierar [!UICONTROL trait] namn eller ID:n i en inkommande datafil. Se [exempelfilerna](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#data-file-examples) för exempel.
 
 <table id="table_AD54B3E5487E47C481A4E5FD3A93FDA5"> 
  <thead> 
@@ -90,20 +89,20 @@ I följande tabell beskrivs de prefix som identifierar [!UICONTROL trait] namn e
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> d_sid= </code> </p> </td> 
-   <td colname="col2"> <p>The <code> d_sid </code> -prefixet talar om för vårt system att ID:t är ett <span class="keyword"> Audience Manager </span> trait-ID. Detta är samma ID som visas i användargränssnittet. Du kan också returnera trait ID:n med API:t <code> GET </code> -metod. Se <a href="../../../api/rest-api-main/api-traits.md"> Metoder för Trait API </a>. </p> </td>
+   <td colname="col2"> <p>Prefixet <code> d_sid </code> talar om för vårt system att ID:t är ett <span class="keyword"> Audience Manager </span> -trait-ID. Detta är samma ID som visas i användargränssnittet. Du kan också returnera trait-ID:n med API-metoden <code> GET </code>. Se <a href="../../../api/rest-api-main/api-traits.md">-API-metoder för spår </a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p> <code> d_unsid= </code> </p> </td> 
-   <td colname="col2"> <p>Data med prefix <code> d_unsid </code> tar bort användare från den egenskapen. The <code> d_unsid </code> -prefixet ignoreras i en <code> overwrite </code> -fil. </p> <p>The <code> d_unsid= </code> -prefixet talar om för vårt system att ID:t är ett <span class="keyword"> Audience Manager </span> trait-ID. Detta är samma ID som visas i användargränssnittet. Du kan också returnera trait ID:n med API:t <code> GET </code> -metod. Se <a href="../../../api/rest-api-main/api-traits.md"> Metoder för Trait API </a>. </p> </td>
+   <td colname="col2"> <p>Data som har prefixats med <code> d_unsid </code> tar bort användare från den egenskapen. Prefixet <code> d_unsid </code> ignoreras i en <code> overwrite </code>-fil. </p> <p>Prefixet <code> d_unsid= </code> talar om för vårt system att ID:t är ett <span class="keyword"> Audience Manager </span> -trait-ID. Detta är samma ID som visas i användargränssnittet. Du kan också returnera trait-ID:n med API-metoden <code> GET </code>. Se <a href="../../../api/rest-api-main/api-traits.md">-API-metoder för spår </a>. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ic= </code> </p> </td> 
-   <td colname="col2"> <p> <a href="../../../features/traits/manage-trait-rules.md#managing-trait-rules"> Trait Rules </a> gör att du kan ange kriterier för kvalificering av egenskaper. Om du formaterar en trasig regel som <code> ic == trait ID </code>kan du skicka in egenskaper i en enkel kommaformaterad lista. </p> <p>Exempel: du skapar följande 3-trait-regler: </p> <p> 
+   <td colname="col2"> <p> <a href="../../../features/traits/manage-trait-rules.md#managing-trait-rules"> Trait-regler </a> gör att du kan ange kriterier för trait-kvalificering. Om du formaterar en trait-regel som <code> ic == trait ID </code> kan du skicka in traits i en enkel kommaformaterad lista. </p> <p>Exempel: du skapar följande 3-trait-regler: </p> <p> 
      <ul class="simplelist"> 
       <li> <code> ic == "123" </code> </li>
       <li> <code> ic == "456" </code> </li>
       <li> <code> ic == "789" </code> </li>
-     </ul> </p> <p>Dessa egenskaper är kopplade till <code> ic </code> nyckel. På så sätt kan du skapa en enklare lista över egenskaper i datafilen. Och du behöver inte inkludera <code> ic </code> prefix. Innehållet i datafilen kan därför se ut så här: </p> <p>
+     </ul> </p> <p>Dessa egenskaper är associerade med nyckeln <code> ic </code>. På så sätt kan du skapa en enklare lista över egenskaper i datafilen. Du behöver inte ta med prefixet <code> ic </code>. Innehållet i datafilen kan därför se ut så här: </p> <p>
      <code> 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
       <i>user ID</i>&nbsp;&lt;TAB&gt;&nbsp;123,456,789 
@@ -111,7 +110,7 @@ I följande tabell beskrivs de prefix som identifierar [!UICONTROL trait] namn e
   </tr> 
   <tr> 
    <td colname="col1"> <p>Nyckelvärdepar </p> </td> 
-   <td colname="col2"> <p>Fackdata kan formateras som nyckelvärdepar med alfanumeriska strängar. Det finns flera sätt att formatera nyckelvärdepar, vilket visas nedan: </p> <p> 
+   <td colname="col2"> <p>Trait-data kan formateras som nyckelvärdepar med alfanumeriska strängar. Det finns flera sätt att formatera nyckelvärdepar, vilket visas nedan: </p> <p> 
      <ul id="ul_D4F5A97FE0444AC6B7D8D4DAEDD3EAF2"> 
       <li id="li_07B893AA8EB24F34B70F8DA06E87EAB3"> <code> key = value </code> </li> 
       <li id="li_1F3ACA27C5794931B430298B27AB8BCC"> <code> "key" = value </code> </li> 
@@ -126,7 +125,7 @@ I följande tabell beskrivs de prefix som identifierar [!UICONTROL trait] namn e
 
 ### [!UICONTROL Trait IDs]
 
-[!UICONTROL Trait IDs] består endast av numeriska tecken. Vi ber dig att *endast[!UICONTROL onboarded traits]* i inkommande datafiler. Vi bearbetar inga andra [!UICONTROL trait] typer i den inkommande dataöverföringen.
+[!UICONTROL Trait IDs] består endast av numeriska tecken. Vi ber dig att ta med *endast[!UICONTROL onboarded traits]* i inkommande datafiler. Inga andra [!UICONTROL trait]-typer bearbetas i den inkommande dataöverföringen.
 
 ### [!UICONTROL User IDs]
 
@@ -140,14 +139,14 @@ I följande tabell beskrivs de prefix som identifierar [!UICONTROL trait] namn e
  <tbody> 
   <tr> 
    <td colname="col1"> <p>DPUUID </p> </td> 
-   <td colname="col2"> <p><i>Gör inte</i> använd ett kodat kolon ( <code> %3A </code>) eller okodat kolon ( : ) i DPUID. </p> </td> 
+   <td colname="col2"> <p><i>Använd inte</i> en kodad kolon ( <code> %3A </code>) eller okodad kolon ( : ) i DPUID. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Mobile iOS (IDFA) eller Android-enhets-ID </p> </td> 
+   <td colname="col1"> <p>Mobile iOS (IDFA) eller Android device ID </p> </td> 
    <td colname="col2"> <p>ID:n för mobila enheter måste vara strikt formaterade så som visas här: </p> <p> 
      <ul id="ul_6AEFB6CFA54444D9B75F03BCE7916696"> 
-      <li id="li_45B272D5EEE944FC9D5C89A0924465F7">IDFA-format: ID:n måste vara versaler och inte hash. Exempel, <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
-      <li id="li_2DA0347293814C70ADCD253BF01A81F5">Android-format: ID:n måste vara gemena och inte hashas. Exempel, <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
+      <li id="li_45B272D5EEE944FC9D5C89A0924465F7">IDFA-format: ID:n måste vara versaler och inte hash. Exempel: <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
+      <li id="li_2DA0347293814C70ADCD253BF01A81F5">Android-format: ID:n måste vara gemena och inte hashas. Exempel: <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
      </ul> </p> </td>
   </tr>
  </tbody>
@@ -155,7 +154,7 @@ I följande tabell beskrivs de prefix som identifierar [!UICONTROL trait] namn e
 
 ### Nyckelvärdepar
 
-Felaktigt formaterade värdenamn i nyckelvärdepar orsakar också problem. Följ dessa regler när du skapar eller namnger värdet i ett nyckelvärdepar:
+Felaktigt formaterade värdenamn i ett nyckelvärdepar orsakar också problem. Följ dessa regler när du skapar eller namnger värdet i ett nyckelvärdepar:
 
 <table id="table_41A4991090A64DEFA9AF704164B26DBB"> 
  <thead> 
@@ -175,15 +174,15 @@ Felaktigt formaterade värdenamn i nyckelvärdepar orsakar också problem. Följ
   </tr> 
   <tr> 
    <td colname="col1"> <p>Streck (-) </p> </td> 
-   <td colname="col2"> <p>Vi ignorerar strecktecken i början av nycklarna. Till exempel: <code> -product = camera </code> tolkas som <code> product = camera </code>. </p> </td> 
+   <td colname="col2"> <p>Vi ignorerar strecktecken i början av nycklarna. <code> -product = camera </code> tolkas till exempel som <code> product = camera </code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> TAB </code> </p> </td> 
-   <td colname="col2"> <p><i>Gör inte</i> use <code> TAB </code> i stället för tomma värden i nyckelvärdepar. Endast användning <code> TAB </code> för att avgränsa variabler i den inkommande datafilen. </p> </td> 
+   <td colname="col2"> <p><i>Använd inte</i> <code> TAB </code> i stället för tomma värden i nyckelvärdepar. Använd bara <code> TAB </code> för att separera variabler i den inkommande datafilen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> \n, \t </code> </p> </td> 
-   <td colname="col2"> <p>Använd inte nya rad- eller tabbtecken ( <code> \n, \t </code>) i nycklar eller i värden. </p> </td> 
+   <td colname="col2"> <p>Använd inte de nya rad- eller tabbtecknen ( <code> \n, \t </code>) i nycklar eller i värden. </p> </td> 
   </tr>
  </tbody>
 </table>
@@ -213,7 +212,7 @@ Felaktigt formaterade värdenamn i nyckelvärdepar orsakar också problem. Följ
   </tr> 
   <tr> 
    <td colname="col1"> <p>Med <code> ic== </code> </p> </td> 
-   <td colname="col2"> <p>Dessa egenskaper har lagts till i en trait-regel med <code> ic </code> prefix. Därför kan du lägga till dem i datafilen avgränsade med kommatecken. En flik skiljer UUID och trait ID:n. The <code> ic </code> -prefix krävs inte i filen. </p> <p><b>Numeriska ID:n</b> </p> <p> 
+   <td colname="col2"> <p>Dessa egenskaper har lagts till i en trait-regel med prefixet <code> ic </code>. Därför kan du lägga till dem i datafilen avgränsade med kommatecken. En flik skiljer UUID och trait ID:n. Prefixet <code> ic </code> krävs inte i filen. </p> <p><b>Numeriska ID:n</b> </p> <p> 
      <code>
        DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;30608,50354,50338,50352,30626 
      </code> </p> <p><b>Sträng-ID</b> </p> <p> 
@@ -231,11 +230,11 @@ Felaktigt formaterade värdenamn i nyckelvärdepar orsakar också problem. Följ
  </tbody> 
 </table>
 
-[Hämta](assets/ftp_dpm_1234_1445374061.overwrite) exempeldatafilen om du behöver ytterligare exempel. Den hämtade filen har en `.overwrite` filtillägg. Du kan öppna den med en enkel textredigerare.
+[Hämta](assets/ftp_dpm_1234_1445374061.overwrite) exempeldatafilen om du behöver fler exempel. Den hämtade filen har filtillägget `.overwrite`. Du kan öppna den med en enkel textredigerare.
 
 ## Exempelmatris {#examples-matrix}
 
-Diagrammet nedan visar exempel på det korrekta sättet att formatera dina inkommande filer, beroende på [typ av ID](../../../reference/ids-in-aam.md) och metoden som du vill lägga till med [!UICONTROL traits] till profiler.
+Diagrammet nedan visar exempel på rätt sätt att formatera dina inkommande filer, beroende på typen av [ID:n](../../../reference/ids-in-aam.md) och metoden som du vill lägga till [!UICONTROL traits] i profiler med.
 
 <table id="table_FE6D97A1F5074E4A8EFC723AF0C5E707"> 
  <thead> 
@@ -256,7 +255,7 @@ Diagrammet nedan visar exempel på det korrekta sättet att formatera dina inkom
    <td colname="col5"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-4"> Exempel 4 </a> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Google Advertising ID for Android Devices </p> </td> 
+   <td colname="col1"> <p>Google Advertising ID för Android-enheter </p> </td> 
    <td colname="col2"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-5"> Exempel 5 </a> </p> </td> 
    <td colname="col3"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-6"> Exempel 6 </a> </p> </td> 
    <td colname="col4"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-7"> Exempel 7 </a> </p> </td> 
@@ -281,7 +280,7 @@ Diagrammet nedan visar exempel på det korrekta sättet att formatera dina inkom
 
 ### Exempel 1 {#example-1}
 
-Använd [!UICONTROL trait IDs] skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL Audience Manager] [!DNL UUIDs].
+Använd [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL Audience Manager] [!DNL UUIDs].
 
 ```
 59767559181262060060278870901087098252 <TAB> d_sid=24, d_sid=26, d_sid=27
@@ -289,7 +288,7 @@ Använd [!UICONTROL trait IDs] skicka [!UICONTROL trait] kvalificeringsinformati
 
 ### Exempel 2 {#example-2}
 
-Använd [!UICONTROL trait IDs] skicka [!UICONTROL trait] information om diskvalificering för [!DNL Audience Manager] [!DNL UUIDs].
+Använd [!UICONTROL trait IDs] för att skicka information om [!UICONTROL trait] diskvalificering för [!DNL Audience Manager] [!DNL UUIDs].
 
 ```
 59767559181262060060278870901087098252 <TAB> d_unsid=24, d_unsid=26, d_unsid=27
@@ -323,7 +322,7 @@ eller
 
 ### Exempel 4 {#example-4}
 
-Använd `ic` prefix att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL Audience Manager] [!DNL UUIDs].
+Använd prefixet `ic` för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL Audience Manager] [!DNL UUIDs].
 
 ```
 59767559181262060060278870901087098252 <TAB> 30608,50354,50338,50352,30626
@@ -337,7 +336,7 @@ eller
 
 ### Exempel 5 {#example-5}
 
-Använd [!UICONTROL trait IDs] skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL Android] enheter.
+Använd [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL Android] enheter.
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -345,7 +344,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
 
 ### Exempel 6 {#example-6}
 
-Använd [!UICONTROL trait IDs] skicka [!UICONTROL trait] information om diskvalificering för [!DNL Android] enheter.
+Använd [!UICONTROL trait IDs] för att skicka information om [!UICONTROL trait] diskvalificering för [!DNL Android] enheter.
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -379,7 +378,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> "product" = "tablet", "product" = "ph
 
 ### Exempel 8 {#example-8}
 
-Använd `ic` prefix att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL Android] enheter.
+Använd prefixet `ic` för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL Android] enheter.
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 30608,50354,50338,50352,30626
@@ -393,7 +392,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Exempel 9 {#example-9}
 
-Använd [!UICONTROL trait IDs] skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL iOS] enheter.
+Använd [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL iOS] enheter.
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -401,7 +400,7 @@ Använd [!UICONTROL trait IDs] skicka [!UICONTROL trait] kvalificeringsinformati
 
 ### Exempel 10 {#example-10}
 
-Använd [!UICONTROL trait IDs] skicka [!UICONTROL trait] information om diskvalificering för [!DNL iOS] enheter.
+Använd [!UICONTROL trait IDs] för att skicka information om [!UICONTROL trait] diskvalificering för [!DNL iOS] enheter.
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -435,7 +434,7 @@ eller
 
 ### Exempel 12 {#example-12}
 
-Använd `ic` prefix att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL iOS] enheter.
+Använd prefixet `ic` för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL iOS] enheter.
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> 30608,50354,50338,50352,30626
@@ -449,7 +448,7 @@ eller
 
 ### Exempel 13 {#example-13}
 
-Använd [!UICONTROL trait IDs] skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL DPUUIDs].
+Använd [!UICONTROL trait IDs] för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL DPUUIDs].
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -457,7 +456,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
 
 ### Exempel 14 {#example-14}
 
-Använd [!UICONTROL trait IDs] skicka [!UICONTROL trait] information om diskvalificering för [!DNL DPUUIDs].
+Använd [!UICONTROL trait IDs] för att skicka information om [!UICONTROL trait] diskvalificering för [!DNL DPUUIDs].
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -491,7 +490,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> "product" = "tablet", "product" = 
 
 ### Exempel 16 {#example-16}
 
-Använd `ic` prefix att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL DPUUIDs].
+Använd prefixet `ic` för att skicka [!UICONTROL trait] kvalificeringsinformation för [!DNL DPUUIDs].
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 30608,50354,50338,50352,30626
@@ -505,5 +504,4 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> ic=52,ic=55
 
 >[!MORELIKETHIS]
 >
->* [Trait Builder ](../../../features/traits/about-trait-builder.md)
-
+>* [Trait Builder](../../../features/traits/about-trait-builder.md)

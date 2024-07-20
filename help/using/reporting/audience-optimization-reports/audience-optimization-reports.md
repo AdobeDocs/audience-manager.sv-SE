@@ -10,13 +10,13 @@ exl-id: 673267fb-5655-4cc2-ac2c-c717ea5830fc
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 9%
+ht-degree: 0%
 
 ---
 
 # [!UICONTROL Audience Optimization Reports] {#audience-optimization-reports}
 
-The [!UICONTROL Audience Optimization Reports] använder datavisualiseringsmetoder för att returnera information om [!UICONTROL destinations] på ditt Audience Manager-konto. I varje rapport kan du klicka på nästan vilken datapunkt som helst för att returnera detaljerad information om objektet. Dessa [!UICONTROL Audience Optimization] insikter kan tillämpas på flera användningsområden i alla annonser och publiceringskanaler, men är inte tillgängliga som standard. Kontakta din Audience Manager-konsult för att komma igång.
+[!UICONTROL Audience Optimization Reports] använder datavisualiseringsmetoder för att returnera information om [!UICONTROL destinations] i ditt Audience Manager-konto. I varje rapport kan du klicka på nästan vilken datapunkt som helst för att returnera detaljerad information om objektet. Dessa [!UICONTROL Audience Optimization] insikter kan tillämpas på flera användningsfall i annonserings- och publiceringskanaler, men är inte tillgängliga som standard. Kontakta din Audience Manager-konsult för att komma igång.
 
-+ [Översikt över Audience Optimization för annonsörer](aor-advertisers/aor-advertisers.md)
-+ [Översikt över Audience Optimization för utgivare](aor-publishers/aor-publishers.md)
++ [Audience Optimization for Advertisers - översikt](aor-advertisers/aor-advertisers.md)
++ [Audience Optimization for Publishers - översikt](aor-publishers/aor-publishers.md)

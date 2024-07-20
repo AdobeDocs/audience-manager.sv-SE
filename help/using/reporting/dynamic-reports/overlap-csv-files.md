@@ -9,8 +9,8 @@ feature: Overlap Reports
 exl-id: 759c39cb-64ec-47dd-a3a4-027408aa6b5e
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 2%
+source-wordcount: '909'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ Följande tabell innehåller en beskrivning av de filnamnkonventioner och filtil
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Filtillägg </p> </td> 
-   <td colname="col2"> <p>Överlappande rapportfiler är gzip-komprimerade och har en <code> .gz</code> filtillägg. Du måste lägga till <code> .csv</code> filtillägg efter dekomprimering. </p> </td> 
+   <td colname="col2"> <p>Överlappande rapportfiler är gzip-komprimerade och har filtillägget <code> .gz</code>. Du måste lägga till tillägget <code> .csv</code> i filen efter dekomprimeringen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Filnamn </p> </td> 
@@ -40,14 +40,14 @@ Följande tabell innehåller en beskrivning av de filnamnkonventioner och filtil
      <ul id="ul_D69D320A1AE94361B75D2AB47F90C4D1"> 
       <li id="li_FFB104975D104050AB67FEEC903C6E2E">Segment-till-segment-filer: <code>S2S_overlap_<i>partner ID</i>_<i>yyyy-mm-dd</i>_<i>date range</i></code> </li> 
       <li id="li_7DEC51D693FB4377840D652AF40386EF">Segment-till-trait-filer: <code>S2T_overlap_<i>partner ID</i>_<i>yyyy-mm-dd</i>_<i>date range</i></code> </li> 
-      <li id="li_CCB35A2BCB714E518AB279D453740623">Trait-to-trait-filer: <code>T2T_overlap_<i>partner ID</i>_<i>yyyy-mm-dd</i>_<i>date range</i></code> </li> 
+      <li id="li_CCB35A2BCB714E518AB279D453740623">Spåra till trait-filer: <code>T2T_overlap_<i>partner ID</i>_<i>yyyy-mm-dd</i>_<i>date range</i></code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Datumintervall </p> </td> 
    <td colname="col2"> <p>Datumintervallet för en rapport är ett 5-siffrigt ID som innehåller: </p> <p> 
      <ul id="ul_7B334CDFD7DA42AC8F383BE0F8F77FB9"> 
-      <li id="li_0045DED532E747C08824DCC98A9174B3"> <code> 70000</code> för en 7-dagars rapport. </li> 
+      <li id="li_0045DED532E747C08824DCC98A9174B3"> <code> 70000</code> för en sjutdagarsrapport. </li> 
       <li id="li_3A22775F78E648BF8AC32A9E1AF1F5DE"> <code> 30000</code> för en 30-dagars rapport. </li> 
      </ul> </p> </td> 
   </tr> 
@@ -84,7 +84,7 @@ I filen omges strängdata med citattecken. Se modelldata nedan. Detta har trunke
 
 ## Poster för segment-till-segment-rapporter {#segment-segment-records}
 
-En datafil för [Överlappningsrapport för segment-till-segment](segment-segment-overlap-report.md) innehåller följande poster.
+En datafil för [segmentöverlappningsrapporten ](segment-segment-overlap-report.md) från segment till segment innehåller följande poster.
 
 <table id="table_1BDC7019DF2543069D7AE229C5E2454E"> 
  <thead> 
@@ -112,7 +112,7 @@ En datafil för [Överlappningsrapport för segment-till-segment](segment-segmen
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> rangeid</code> </p> </td> 
-   <td colname="col2"> <p>Du kan få rapporter för 7- och 30-dagars summeringsintervall. The <code> rangeid</code> motsvarar de tidsintervall som visas nedan. </p> <p> 
+   <td colname="col2"> <p>Du kan få rapporter för 7- och 30-dagars summeringsintervall. <code> rangeid</code> motsvarar de tidsintervall som visas nedan. </p> <p> 
      <ul id="ul_129D6CB0EB6F48F28440D22DA257D1A4"> 
       <li id="li_5FC34516A437459F854C81B1CE353B89"> <code> 7</code>: 7 dagar </li> 
       <li id="li_2CECC5039DAF4796BCCF27DACC3754A3"> <code> 30</code>: 30 dagar </li> 
@@ -143,7 +143,7 @@ En datafil för [Överlappningsrapport för segment-till-segment](segment-segmen
 
 ## Rapportposter för segment-till-trait {#segment-trait-records}
 
-En datafil för [Överlappningsrapport för segment-till-trait](segment-trait-overlap-report.md) innehåller följande poster.
+En datafil för [Överlappningsrapporten för segment-till-trait](segment-trait-overlap-report.md) innehåller följande poster.
 
 <table id="table_45270B5D01014AD99921B320D3A32DB6"> 
  <thead> 
@@ -175,7 +175,7 @@ En datafil för [Överlappningsrapport för segment-till-trait](segment-trait-ov
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> rangeid</code> </p> </td> 
-   <td colname="col2"> <p>Du kan få rapporter för 7- och 30-dagars summeringsintervall. The <code> rangeid</code> motsvarar de tidsintervall som visas nedan. </p> <p> 
+   <td colname="col2"> <p>Du kan få rapporter för 7- och 30-dagars summeringsintervall. <code> rangeid</code> motsvarar de tidsintervall som visas nedan. </p> <p> 
      <ul id="ul_4B07DFF4A226428A930E22B5FF73E1D0"> 
       <li id="li_4BD0F8AE64C74D7BBE2298F19E2F5328"> <code> 7</code>: 7 dagar </li> 
       <li id="li_7C0C0D2CD9144C4CAF00EDEA90929104"> <code> 30</code>: 30 dagar </li> 
@@ -210,7 +210,7 @@ En datafil för [Överlappningsrapport för segment-till-trait](segment-trait-ov
 
 ## Rapportposter för fack till fack {#trait-trait-records}
 
-En datafil för [Överlappningsrapport för spår-till-trait](trait-trait-overlap-report.md) innehåller följande poster.
+En datafil för [Överlappningsrapporten ](trait-trait-overlap-report.md) av typen Trait-to-Trait innehåller följande poster.
 
 <table id="table_603216E6AFE4439A87C91DDFF2989F53"> 
  <thead> 
@@ -250,7 +250,7 @@ En datafil för [Överlappningsrapport för spår-till-trait](trait-trait-overla
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> rangeid</code> </p> </td> 
-   <td colname="col2"> <p>Du kan få rapporter för 7- och 30-dagars summeringsintervall. The <code> rangeid</code> motsvarar de tidsintervall som visas nedan. </p> <p> 
+   <td colname="col2"> <p>Du kan få rapporter för 7- och 30-dagars summeringsintervall. <code> rangeid</code> motsvarar de tidsintervall som visas nedan. </p> <p> 
      <ul id="ul_BC2C41B90F864522B075EFDED33537EC"> 
       <li id="li_929639F70A1A4039BA19332562B71845"> <code> 7</code>: 7 dagar </li> 
       <li id="li_1C489A4B755D4444AD5FAAF0B492F412"> <code> 30</code>: 30 dagar </li> 

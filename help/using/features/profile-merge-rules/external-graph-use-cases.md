@@ -9,8 +9,8 @@ feature: Profile Merge
 exl-id: 657aecfd-7fa3-466e-8331-c49cc921e3a9
 source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 7%
+source-wordcount: '294'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ Recommendations och använd exempel för prospektering, återannonsering och per
 
 Överväg alternativ för enhetsdiagram från tredje part för kampanjer som:
 
-* Har låg autentiseringsnivå över sina digitala resurser. Använd [!UICONTROL Profile Link Device Graph option] om du har ett stort antal autentiserade användare.
+* Har låg autentiseringsnivå över sina digitala resurser. Använd [!UICONTROL Profile Link Device Graph option] om du har många autentiserade användare.
 * Rikta er till stora målgrupper. Enhetsdiagram från tredje part innehåller autentiserade och icke-autentiserade data.
 * Segmentera autentiserade och/eller oautentiserade besökare på individ- och hushållsnivå.
 
@@ -114,21 +114,20 @@ Through this rule, the device graph has expanded the number of device profiles w
 
 ## Avancerad målgruppsanpassning mellan enheter {#advanced-graph-expansion}
 
-Det här användningsexemplet visar hur du kan utöka målgruppsanpassningen för autentiserade besökare med enheter från ett externt enhetsdiagram genom att använda **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]** regel.
+Det här användningsexemplet visar hur du kan utöka målgruppsanpassningen för autentiserade besökare med enheter från ett externt enhetsdiagram genom att använda regeln **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]**.
 
 ![last-device-graph](assets/last-profile-link.png)
 
-I exemplet nedan vill Acme Inc.-företaget inrikta sig på alla hushåll med inkomster över 100 000 USD/år som har [!DNL Acme Inc.] prenumeranter på [!DNL Data Plan A], som använder [!DNL iPhone 7] enhet.
+I exemplet nedan vill Acme Inc.-företaget rikta in sig på alla hushåll med inkomster över 100 000 USD/år, som har [!DNL Acme Inc.] prenumeranter på [!DNL Data Plan A], som använder en [!DNL iPhone 7]-enhet.
 
-John använder sin iPhone 7 på Data Plan A för att autentisera på webbplatsen Acme Inc.. Samtidigt är John [!DNL Profile Link Device Graph] klustret innehåller ytterligare två enheter som han använder regelbundet: hans bärbara dator ([!DNL Device 1]) och hans sekundära smartphone, [!DNL Device 2] (a [!DNL Samsung S7] på [!DNL Data Plan B]).
+John använder sin iPhone 7 på Data Plan A för att autentisera på webbplatsen Acme Inc.. Samtidigt innehåller Johns [!DNL Profile Link Device Graph]-kluster ytterligare två enheter som han använder regelbundet: hans bärbara dator ([!DNL Device 1]) och hans sekundära smarttelefon, [!DNL Device 2] (en [!DNL Samsung S7] på [!DNL Data Plan B]).
 
-Genom att använda **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]**, [!DNL Acme Inc.] kan leverera personaliserade meddelanden till alla tre enheter från Johns grafikkluster, även om bara en av dem ursprungligen kvalificerar sig för segmentet.
+Genom att använda **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]** kan [!DNL Acme Inc.] leverera personaliserade meddelanden till alla tre enheter från Johns enhetsdiagramkluster, även om bara en av dem ursprungligen kvalificerar sig för segmentet.
 
-![avancerad graf-expansion](assets/advanced-device-graph-expansion.png)
+![avancerad-graph-expansion](assets/advanced-device-graph-expansion.png)
 
 >[!MORELIKETHIS]
 >
 >* [Användningsexempel för enhetsdiagram för profillänk](profile-link-use-case.md)
 >* [Allmänna användningsexempel för regler för profilsammanslagning](merge-rule-targeting-options.md)
->* [Vanliga frågor om regler för profilsammanslagning](../../faq/faq-profile-merge.md)
-
+>* [Regler för profilsammanslagning - frågor och svar](../../faq/faq-profile-merge.md)

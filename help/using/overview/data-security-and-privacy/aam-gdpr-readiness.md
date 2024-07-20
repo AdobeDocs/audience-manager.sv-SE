@@ -9,11 +9,11 @@ exl-id: 353b9035-20f3-41ff-819c-71f161e6b1e1
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
-# GDPR-vägledning för Audience Manager-kunder (Datakontroller) {#gdpr-readiness-guidance}
+# GDPR:s beredskapsvägledning för Audience Manager-kunder (datakontroller) {#gdpr-readiness-guidance}
 
 Audience Manager rekommenderar att man agerar proaktivt när det gäller datastyrning och organisationsberedskap. Det hjälper er att se till att era kunddata organiseras för processer som rör förfrågningar om åtkomst eller radering, att era team kan hantera dessa förfrågningar och att era kunder (registrerade) får en positiv, annorlunda upplevelse av ert varumärke.
 

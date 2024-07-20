@@ -13,9 +13,9 @@ ht-degree: 1%
 
 ---
 
-# [!DNL Facebook WCA] Integrering {#facebook-wca-integration}
+# Integrering av [!DNL Facebook WCA] {#facebook-wca-integration}
 
-Den här sidan visar processen att skapa [!DNL Facebook Website Custom Audiences] ([!DNL WCA]) pixlar för att skicka webbaserade [!DNL Audience Manager] målgruppssegment till [!DNL Facebook], för målinriktad webbannonsering med förbättrad transparens.
+Den här sidan visar processen att skapa [!DNL Facebook Website Custom Audiences] ([!DNL WCA]) pixlar för att skicka webbaserade [!DNL Audience Manager] målgruppssegment till [!DNL Facebook], för onlineannonsering med förbättrad genomskinlighet.
 
 >[!IMPORTANT]
 >
@@ -23,32 +23,32 @@ Den här sidan visar processen att skapa [!DNL Facebook Website Custom Audiences
 
 ## Översikt {#overview}
 
-[Facebook WCA (Web Site Custom Audiences)](https://www.facebook.com/business/help/610516375684216?id=2469097953376494) Med kan du skapa en lista över personer som har besökt vissa sidor eller vidtagit särskilda åtgärder på din webbplats. [!DNL Audience Manager] aktiverar aktivering i [!DNL WCA] använda [!DNL URL] mål, med vilka du kan konfigurera en anpassad pixelbaserad integration för att skicka webbaserade målgrupper till [!DNL Facebook] för målinriktning.
+Med [Facebook WCA (Web Site Custom Audiences)](https://www.facebook.com/business/help/610516375684216?id=2469097953376494) kan du skapa en lista över personer som har besökt vissa sidor eller vidtagit särskilda åtgärder på webbplatsen. [!DNL Audience Manager] aktiverar aktivering i [!DNL WCA] med [!DNL URL] mål, med vilka du kan konfigurera en anpassad pixelbaserad integrering för att skicka webbaserade målgrupper till [!DNL Facebook] för målgruppsanpassning.
 
 ![Integrering med Facebook WCA](/help/using/integration/assets/facebook-wca-integration.png)
 
 >[!IMPORTANT]
 >
-> Den här funktionen kräver att du väljer [!UICONTROL Website] för sociala plattformar i [URL-mål](/help/using/features/destinations/create-url-destination.md). Sociala plattformar kräver att referensinformation avmaskeras när den skickas till deras plattform. Observera att detta innebär att målplattformen/målpartnern kan se information i din referent [!DNL URL].
+> Den här funktionen kräver att du väljer alternativet [!UICONTROL Website] målgrupp för sociala plattformar i [URL-mål](/help/using/features/destinations/create-url-destination.md). Sociala plattformar kräver att referensinformation avmaskeras när den skickas till deras plattform. Observera att detta innebär att målplattformen/målpartnern kan se information i din referent [!DNL URL].
 
 ## Förutsättningar {#prerequisites}
 
 1. [!DNL Facebook Ad Account]
-2. [!DNL Audience Manager] segment, redo att tilldelas till dina nya [!DNL Facebook] mål. Här är [skapa ett segment](/help/using/features/segments/segment-builder.md) i [!DNL Audience Manager] Gränssnitt.
+2. [!DNL Audience Manager] segment, redo att tilldelas till ditt nya [!DNL Facebook]-mål. Så här skapar du ett segment ](/help/using/features/segments/segment-builder.md) i [!DNL Audience Manager]-gränssnittet: [Så här skapar du ett segment.
 3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID]) Version 4.1.0 eller senare. Hämta den senaste versionen **[här](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**.
-4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL]) version 9.0 eller senare, kan hämtas från **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Om du använder [SSF (Server-Side Forwarding)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) att importera data till [!DNL Audience Manager]måste du använda AppMeasurement version 2.12 eller senare. Ladda ned [!DNL AppMeasurement] med [Analytics Code Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html).
+4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL]) version 9.0 eller senare, kan hämtas från **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Om du använder [SSF (Server-Side Forwarding)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) för att importera data till [!DNL Audience Manager] måste du använda AppMeasurement version 2.12 eller senare. Hämta [!DNL AppMeasurement] med [Analytics Code Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html).
 
-Vi rekommenderar att du installerar eller uppgraderar biblioteken i steg 3 och 4 med [Adobe Experience Platform-taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
+Vi rekommenderar att du installerar eller uppgraderar biblioteken i steg 3 och 4 med [Adobe Experience Platform Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
 
-## Steg 1 - Skapa en [!UICONTROL Facebook Destination] in [!DNL Audience Manager] {#step-1-create-facebook-destination}
+## Steg 1 - Skapa en [!UICONTROL Facebook Destination] i [!DNL Audience Manager] {#step-1-create-facebook-destination}
 
-Skapa ett nytt [!UICONTROL URL Destination] in [!DNL Audience Manager] och namnge [!DNL Facebook Website Custom Audiences]. Använd inställningarna nedan när du skapar målet. Du kan även använda [Konfigurera ett URL-mål](/help/using/features/destinations/create-url-destination.md) sida.
+Skapa en ny [!UICONTROL URL Destination] i [!DNL Audience Manager] och ge den namnet [!DNL Facebook Website Custom Audiences]. Använd inställningarna nedan när du skapar målet. Du kan även referera till sidan [Konfigurera ett URL-mål](/help/using/features/destinations/create-url-destination.md).
 
 ### Grundläggande information
 
 * **[!UICONTROL Category]**: Anpassad
 * **[!UICONTROL Type]**: [!DNL URL]
-* Välj **[!UICONTROL Auto-fill Destination Mapping]** markera kryssrutan och sedan markera **[!UICONTROL Segment ID]**.
+* Markera kryssrutan **[!UICONTROL Auto-fill Destination Mapping]** och välj sedan **[!UICONTROL Segment ID]**.
 
 ### [!UICONTROL Data Export Labels]
 
@@ -60,57 +60,57 @@ Välj alternativet **[!UICONTROL This destination may enable a combination with 
 
 ### Konfiguration
 
-* **[!UICONTROL URL type]**: Välj **[!UICONTROL Website audience for social platforms]**. Genom att markera detta [!UICONTROL URL Type] option, [!DNL Audience Manager] inte skymmer referenten [!DNL URL] information när en [!DNL Facebook WCA] pixel.
+* **[!UICONTROL URL type]**: Välj **[!UICONTROL Website audience for social platforms]**. Om du väljer det här [!UICONTROL URL Type]-alternativet skymmer [!DNL Audience Manager] inte referensinformationen [!DNL URL] när en [!DNL Facebook WCA] -pixel utlöses.
 * **[!UICONTROL Serialize]**: Välj **[!UICONTROL Enable]**.
-* I **[!UICONTROL Base URL]** och **[!UICONTROL Secure URL]** fält, ange [!DNL Facebook WCA] pixel.
+* Ange pixeln [!DNL Facebook WCA] i fältet **[!UICONTROL Base URL]** och **[!UICONTROL Secure URL]**.
 * **[!UICONTROL Delimiter]**: `,`
 
-Bas [!DNL URL] exempel: `https://www.facebook.com/tr/?id=XXXXXXXXX&ev=Adobe-Audience-Manager-Segment&cd[segID]=%ALIAS%&noscript=1`
+Exempel på bas [!DNL URL]: `https://www.facebook.com/tr/?id=XXXXXXXXX&ev=Adobe-Audience-Manager-Segment&cd[segID]=%ALIAS%&noscript=1`
 
-Exempelpixel utlöses från sidan. I det här exemplet visas en användare som kvalificerar sig för tre [!DNL Audience Manager] segment, med ID 3401321, 2993399, 3263410:
+Exempelpixel utlöses från sidan. I det här exemplet visas en användare som kvalificerar sig för tre [!DNL Audience Manager]-segment, med ID 3401321, 2993399, 3263410:
 
 `https://www.facebook.com/tr/?id=6876666666662303&ev=Adobe-Audience-Manager-Segment&cd[segID]=3401321,2993399,3263410&noscript=1`
 
 | Parameter | Beskrivning |
 |---------|----------|
-| `id` | Dina [!DNL Facebook] pixel-ID som du hittar i [!DNL Facebook Ad Manager] när du skapar målgruppspixlar. |
-| `ev` | Händelse. Det här är ett godtyckligt värde som visas i [!DNL Facebook Ad Manager] -användargränssnittet när pixeln börjar brinna på webbplatsen. Se [!UICONTROL Include] artikel i [Steg 3](/help/using/integration/integrating-third-party/facebook-wca-integration.md#step-3-create-audience), för mer information. |
-| `cd[segID]` | Ytterligare en parameter som börjar fyllas i i [!DNL Facebook Ad Manager] -användargränssnittet när pixeln börjar brinna på webbplatsen. `segID` är också godtyckligt. |
-| `%ALIAS%` | An [!DNL Audience Manager] makro, som ersätts dynamiskt med [!DNL Audience Manager] [!UICONTROL segment] ID:n som besökaren uppfyller kraven för, avgränsade med kommatecken , |
+| `id` | Ditt [!DNL Facebook] pixel-ID som du hittar i användargränssnittet för [!DNL Facebook Ad Manager] när du skapar målgruppspixlar. |
+| `ev` | Händelse. Det här är ett godtyckligt värde som visas i användargränssnittet för [!DNL Facebook Ad Manager] när pixeln börjar utlösas på webbplatsen. Mer information finns i [!UICONTROL Include]-objektet i [steg 3](/help/using/integration/integrating-third-party/facebook-wca-integration.md#step-3-create-audience). |
+| `cd[segID]` | En extra parameter, som börjar fylla i i användargränssnittet för [!DNL Facebook Ad Manager] när pixeln börjar utlösas på webbplatsen. `segID` är också godtycklig. |
+| `%ALIAS%` | Ett [!DNL Audience Manager]-makro, som ersätts dynamiskt med de [!DNL Audience Manager] [!UICONTROL segment]-ID som besökaren kvalificerar sig för, avgränsade med kommatecken , |
 
-Dina [!UICONTROL URL destination] bör se ut som i bilden nedan:
+[!UICONTROL URL destination]-konfigurationen ska se ut så här i bilden nedan:
 
-![Destinationskonfiguration](/help/using/integration/assets/facebook-wca.png)
+![Målkonfiguration](/help/using/integration/assets/facebook-wca.png)
 
-Spara [!UICONTROL destination]. Sedan kan du gå vidare till **Segmentmappningar** steg.
+Spara [!UICONTROL destination]. Sedan kan du fortsätta till steget **Segmentmappningar**.
 
 ## Steg 2 - Segmentmappningar - Mappa segment till mål {#step-2-segment-mappings}
 
-I [Konfigurera URL-mål](/help/using/features/destinations/create-url-destination.md) arbetsflöde, mappa det aktuella segmentet till det nyskapade [!UICONTROL destination]. Observera att mappningsvärdet fylls i automatiskt med [!DNL Audience Manager] [!UICONTROL segment ID].
+I arbetsflödet [Konfigurera URL-mål](/help/using/features/destinations/create-url-destination.md) mappar du det aktuella segmentet till det [!UICONTROL destination] du nyss skapade. Observera att mappningsvärdet fylls i automatiskt med [!DNL Audience Manager] [!UICONTROL segment ID].
 
 Ange ett slutdatum om tillämpligt, annars lämnas tomt för inget slutdatum.
 
-## Steg 3 - Skapa en [!UICONTROL Audience] inom [!DNL Facebook Ads Manager] {#step-3-create-audience}
+## Steg 3 - Skapa en [!UICONTROL Audience] i [!DNL Facebook Ads Manager] {#step-3-create-audience}
 
-Se [Skapa en anpassad webbplats](https://www.facebook.com/business/help/666509013483225) i [!DNL Facebook] hjälpdokumentation. Välj [!UICONTROL Create Audience] i tabellen nedan:
+Se [Skapa en anpassad målgrupp för en webbplats](https://www.facebook.com/business/help/666509013483225) i hjälpdokumentationen för [!DNL Facebook]. Välj alternativen för [!UICONTROL Create Audience] i tabellen nedan:
 
 | Objekt | Beskrivning |
 |---------|----------|
 | Webbplatstrafik | Anpassad kombination |
-| Inkludera | <ul><li>Välj **[!UICONTROL Event]** > Välj **[!UICONTROL Adobe-Audience-Manager-Segment]**. Detta var värdet på `ev` i exempelpixeln i steg 1. Observera, att om pixeln ännu inte har börjat brinna, **[!UICONTROL Event]** eller **[!UICONTROL Adobe-Audience-Manager-Segment]** kanske inte visas i [!DNL Facebook] användargränssnitt.</li><li>Lägg till en parameter: Välj `segID`.</li><li><p>Välj **innehåller** -operator.</p><p>Detta är viktigt, med tanke på att besökare kan kvalificera sig för flera segment, kan det finnas flera [!UICONTROL segment IDs] i pixelparametern. Använda lika med (`=`) kanske inte är rätt för besökarna och du kommer att märka en lägre volym.</p></li><li>Lägg till ett värde: Ange [!DNL Audience Manager] segment-ID.</li></ul> |
+| Inkludera | <ul><li>Välj **[!UICONTROL Event]** > Markera **[!UICONTROL Adobe-Audience-Manager-Segment]**. Detta var värdet för parametern `ev` i exempelpixeln i steg 1. Observera, att om pixeln ännu inte har startats kanske alternativet **[!UICONTROL Event]** eller **[!UICONTROL Adobe-Audience-Manager-Segment]** inte visas i användargränssnittet för [!DNL Facebook].</li><li>Lägg till en parameter: Välj `segID`.</li><li><p>Välj operatorn **contains**.</p><p>Detta är viktigt eftersom besökare kan kvalificera sig för flera segment, kan det finnas flera [!UICONTROL segment IDs] i pixelparametern. Om du använder operatorn lika med (`=`) kanske inte dina besökare är kvalificerade för målgruppen, och du kommer att märka en lägre volym.</p></li><li>Lägg till ett värde: Ange segmentets ID [!DNL Audience Manager].</li></ul> |
 | Lägg till nytt villkor | Valfri inställning. |
 | I slutet | Valfri inställning. |
-| Målgruppsnamn | Du bör använda samma [!DNL Audience Manager] Segmentnamn för enhetlighet, såvida du inte lägger till ytterligare villkor till den här målgruppen. |
+| Målgruppsnamn | Vi rekommenderar att du använder samma [!DNL Audience Manager]-segmentnamn för att skapa en konsekvent upplevelse, såvida du inte lägger till ytterligare villkor till den här målgruppen. |
 
-## Steg 4 - Tilldela [!UICONTROL Audience] till [!UICONTROL Campaign] in [!DNL Facebook Ads Manager] {#step-4-assign-audience-to-campaign}
+## Steg 4 - Tilldela [!UICONTROL Audience] till en [!UICONTROL Campaign] i [!DNL Facebook Ads Manager] {#step-4-assign-audience-to-campaign}
 
-När du har skapat [!DNL Custom Audience], tilldela den till en annonskampanj. Skapa en ny kampanj eller redigera en befintlig så ser du att den nya målgruppen listas i [!DNL Facebook] användargränssnitt. Din annonskampanj riktar sig till användare som har sett pixelbranden i sin webbläsare när de besöker din webbplats, om [!DNL Audience Manager] innehåller dem i segmentet.
+När du har skapat [!DNL Custom Audience] tilldelar du den till en annonskampanj. Skapa en ny kampanj eller redigera en befintlig så ser du att den nya målgruppen visas i användargränssnittet för [!DNL Facebook]. Din annonskampanj riktar sig till användare som har sett pixelbranden i sin webbläsare när de besöker din webbplats, om [!DNL Audience Manager] inkluderar dem i segmentet.
 
 ## Sammanfattning {#summary}
 
-Nu när du har tilldelat [!DNL Audience Manager] segmentera [!DNL Facebook WCA] destination, [!DNL Audience Manager] kommer att utlösa [!DNL Facebook WCA] pixel till användare av ett givet segment med respektive segment-ID i pixeln för att fylla i [!DNL Facebook Audience]. Detta leder till en gradvis ökning av [!DNL Facebook Audience] ju mer taggen skickas till den tillämpliga publiken på er webbplats.
+Nu när du har tilldelat [!DNL Audience Manager]-segmentet till [!DNL Facebook WCA]-målet, kommer [!DNL Audience Manager] selektivt att utlösa [!DNL Facebook WCA]-pixeln för användare av ett givet segment med respektive segment-ID i pixeln för att fylla i [!DNL Facebook Audience]. Detta resulterar i en gradvis ökning av [!DNL Facebook Audience] ju mer taggen skickas till den tillämpliga målgruppen på din webbplats.
 
 >[!NOTE]
 >
-> Om en användare faller bort från [!DNL Audience Manager] segment, det finns för närvarande inget sätt att [!DNL Audience Manager] att informera [!DNL Facebook] för att ta bort användaren från [!DNL Custom Audience].
+> Om en användare faller utanför [!DNL Audience Manager]-segmentet finns det för närvarande inget sätt för [!DNL Audience Manager] att informera [!DNL Facebook] att ta bort användaren från [!DNL Custom Audience].
 >

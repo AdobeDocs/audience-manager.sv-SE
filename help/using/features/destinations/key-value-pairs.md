@@ -1,5 +1,5 @@
 ---
-description: A [!DNL key-value pair] består av [!DNL related elements]. En nyckel, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris) och ett värde, vilket är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). Destination Builder skickar data som är formaterade som nyckelvärdepar.
+description: A [!DNL key-value pair] består av [!DNL related elements]. En nyckel, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris) och ett värde, vilket är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). Destination Builder skickar data formaterade som nyckelvärdepar.
 solution: Audience Manager
 title: Standard och seriell [!DNL Key-value pairs]
 uuid: 43789419-5b3f-4e62-b2e0-2722340bdd41
@@ -7,14 +7,14 @@ feature: Destination Basics
 exl-id: b37c829b-66be-4c31-8198-bc032371279e
 source-git-commit: 0dfe96a4644c61fb5bc22e4791bfd09c574dcf34
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 2%
+source-wordcount: '560'
+ht-degree: 0%
 
 ---
 
-# Standard och seriella nyckelvärdespar {#standard-and-serial-key-value-pairs}
+# Standardpar och serienyckelvärdepar {#standard-and-serial-key-value-pairs}
 
-Ett nyckelvärdepar består av relaterade element: En nyckel, som är en konstant som definierar datauppsättningen (t.ex.: kön, färg, pris) och ett värde, som är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). [!UICONTROL Destination Builder] skickar data som är formaterade som nyckelvärdepar.
+Ett nyckelvärdepar består av relaterade element: En nyckel, som är en konstant som definierar datauppsättningen (t.ex. kön, färg, pris) och ett värde, som är en variabel som tillhör uppsättningen (t.ex. man/kvinna, grön, 100). [!UICONTROL Destination Builder] skickar data formaterade som nyckelvärdepar.
 
 ## Grundläggande nyckelvärdepar {#basic-key-value-pairs}
 
@@ -24,12 +24,12 @@ En grundläggande uppsättning nyckelvärdepar kan se ut så här:
 * `color = green`
 * `price > 100`
 
-## Standard och seriella nyckelvärdespar {#standard-serial-key-value-pairs}
+## Standardpar och serienyckelvärdepar {#standard-serial-key-value-pairs}
 
-Målen accepterar nyckelvärdesdata i *`standard`* eller *`serialized`* format.
+Destinationer accepterar nyckelvärdesdata i formatet *`standard`* eller *`serialized`*.
 
-* **Standardpar med nyckelvärden:** Formaterar måldata i separata nyckelvärdepar. Varje nyckel anges explicit, även om den används igen för att definiera ett annat värde.
-* **Serialiserade nyckelvärdepar:** Sammanfogar flera värden till ett enda nyckelvärdepar. I ett serialiserat nyckelvärdepar avgränsar en specialindikator värdena i nyckelvärdesmängden.
+* **Standardnyckelvärdepar:** Formaterar måldata i separata nyckelvärdepar. Varje nyckel anges explicit, även om den används igen för att definiera ett annat värde.
+* **Serialiserade nyckelvärdepar:** Komprimerar flera värden till ett nyckelvärdepar. I ett serialiserat nyckelvärdepar avgränsar en specialindikator värdena i nyckelvärdesmängden.
 
 Både standardvärden och serialiserade nyckelvärden kan innehålla ett eller flera värden. Följande tabell innehåller exempel på standardformat och serienyckelformat.
 
@@ -59,13 +59,13 @@ Både standardvärden och serialiserade nyckelvärden kan innehålla ett eller f
 
 Tecknen som avgränsar värden inom och mellan tangenter och värden kallas *`delimiters`* och *`separators`*. Dessa blir särskilt viktiga när du skickar segment till ett mål i ett serieformat. Med serialisering kan du skicka in flera värden med en enda nyckel och kombinera nyckelvärdepar. Avgränsare och avgränsare definieras enligt följande:
 
-* **Avgränsare för nyckelvärde:** Separerar en nyckel och ett värde inom ett nyckelvärdepar.
-* **Avgränsare för nyckelvärde:** Separerar uppsättningar med nyckelvärdepar.
-* **Serieavgränsare:** Separerar flera värden i uppsättningar med serialiserade nyckelvärdepar.
+* **Nyckelvärdesavgränsare:** Separerar en nyckel och ett värde inom ett nyckelvärdepar.
+* **Avgränsare för nyckelvärde:** Separerar uppsättningar av nyckelvärdepar.
+* **Seriell avgränsare:** Separerar flera värden i uppsättningar med serialiserade nyckelvärdepar.
 
 ## Exempel {#examples}
 
-Med [!UICONTROL Destination Builder] du kan formatera nyckelvärdesdata på flera olika sätt. Låt oss titta på några exempel på varje typ.
+Med [!UICONTROL Destination Builder] kan du formatera nyckelvärdesdata på flera olika sätt. Låt oss titta på några exempel på varje typ.
 
 <table id="table_C2FBDC887C8C4CC88B1B2A7CF8E2795F"> 
  <thead> 
@@ -77,7 +77,7 @@ Med [!UICONTROL Destination Builder] du kan formatera nyckelvärdesdata på fler
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>Enkel standardtangent</b> </p> </td> 
+   <td colname="col1"> <p> <b>Enkel standardnyckel</b> </p> </td> 
    <td colname="col2"> <p> <code> X = 1 &amp; X = 2 </code> </p> </td> 
    <td colname="col3"> <p>En enkel uppsättning nyckelvärdepar. Exemplet innehåller följande element: </p> 
     <ul id="ul_28C0CB005B264373926CA5D7418EE845"> 
@@ -88,7 +88,7 @@ Med [!UICONTROL Destination Builder] du kan formatera nyckelvärdesdata på fler
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Flera nyckelvärdepar</b> (ej seriellt) </p> </td> 
+   <td colname="col1"> <p> <b>Flera nyckelvärdepar</b> (icke-seriella) </p> </td> 
    <td colname="col2"> <p> <code> X = 1 &amp; X = 2 &amp; Y = 3 &amp; Y = 4 </code> </p> </td> 
    <td colname="col3"> <p>En uppsättning med flera nyckelvärdepar som skickar värden med separata nyckelvärdesuppsättningar. Exemplet innehåller följande element: </p> 
     <ul id="ul_7FB22A43B435463D9F209067FF2C3619"> 
@@ -99,9 +99,9 @@ Med [!UICONTROL Destination Builder] du kan formatera nyckelvärdesdata på fler
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Serienyckel</b> </p> </td> 
+   <td colname="col1"> <p> <b>Seriell enskild nyckel</b> </p> </td> 
    <td colname="col2"> <p> <code> X = 1 ; 2 ; 3 </code> </p> </td> 
-   <td colname="col3"> <p>En uppsättning nyckelvärden som skickar in flera värden med en enda nyckel. Eftersom den här nyckeln har flera värden kallas den för ett serialiserat nyckelvärdepar. Exemplet innehåller följande element: </p> 
+   <td colname="col3"> <p>En uppsättning nyckelvärden som skickar in flera värden med en enda nyckel. Eftersom nyckeln har flera värden kallas den för ett serialiserat nyckelvärdepar. Exemplet innehåller följande element: </p> 
     <ul id="ul_69C4C662B9BD4F77BB940D921B316CCF"> 
      <li id="li_718BEC527E69417C9F88D3DBD3357A28">Nyckel: X </li> 
      <li id="li_659DCBBFB4024AC2B9C4E74D2A86648D">Värden: 1, 2, 3 </li> 
@@ -110,7 +110,7 @@ Med [!UICONTROL Destination Builder] du kan formatera nyckelvärdesdata på fler
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Flera nyckelvärdepar</b> (seriell) </p> </td> 
+   <td colname="col1"> <p> <b>Flera nyckelvärdepar</b> (seriella) </p> </td> 
    <td colname="col2"> <p> <code> X = 1 ; 2 &amp; Y = 3 ; 4 </code> </p> </td> 
    <td colname="col3"> <p>En uppsättning med flera nyckelvärdepar som skickar flera värden på olika nycklar. Exemplet innehåller följande element: </p> 
     <ul id="ul_CB50133B2E944818B9F2A0586EF69774"> 
@@ -134,4 +134,4 @@ Serialiserad dataöverföring bidrar till att förbättra effektiviteten efterso
 
 ### Destinationer som stöds
 
-I [!DNL Audience Manager]kan du serialisera och skicka data till i stort sett alla mål som du vill arbeta med. Innan du använder den här funktionen måste du känna till målet [!DNL URL] och var du ska placera nödvändiga eller valfria makron. Hämta information om makroplacering från målpartnern. Se [Målmakron definierade](../../features/destinations/destination-macros.md#destination-macros-defined) för mer information.
+I [!DNL Audience Manager] kan du serialisera och skicka data till i stort sett alla mål som du vill arbeta med. Innan du använder den här funktionen måste du känna till målet [!DNL URL] och var några obligatoriska eller valfria makron ska placeras. Hämta information om makroplacering från målpartnern. Mer information finns i [Definierade målmakron](../../features/destinations/destination-macros.md#destination-macros-defined).

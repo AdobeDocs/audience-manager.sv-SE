@@ -9,14 +9,14 @@ feature: API
 exl-id: 69f26b7b-ce96-4ec6-9155-4abd7c8338b1
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 15%
+source-wordcount: '88'
+ht-degree: 6%
 
 ---
 
 # API-metoder för härledda signaler {#derived-signals-api-methods}
 
-[!DNL API] metoder som gör att du kan arbeta med härledda signaler. En härledd signal kvalificerar besökare för ytterligare egenskaper baserat på det förlopp de redan har sett.
+[!DNL API]-metoder som gör att du kan arbeta med härledda signaler. En härledd signal kvalificerar besökare för ytterligare egenskaper baserat på det förlopp de redan har sett.
 
 <!-- c_separator.xml -->
 
@@ -24,8 +24,7 @@ Mer information om härledda signaler finns i [Härledda signaler](../../feature
 
 >[!IMPORTANT]
 >
->De härledda signalerna [!DNL API] metoder har skrivits om med [!DNL Swagger] och migrerad. Se:
+>De härledda signalerna [!DNL API]-metoderna har skrivits om med [!DNL Swagger] och migrerats. Se:
 >
 >* [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html)
 >* [Migrera API-kod för Audience Manager](../../api/api-swagger-migration.md)
-

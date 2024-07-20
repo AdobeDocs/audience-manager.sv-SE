@@ -9,8 +9,8 @@ feature: Data Governance & Privacy
 exl-id: 52aeca00-73f2-4525-9e11-34a472ec45c6
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 94%
+source-wordcount: '451'
+ht-degree: 90%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 94%
 
 Datastyrning i Audience Manager avser livscykeln för era kunddata i Audience Manager och omfattar [insamling och döljande av IP-adresser](data-governance.md#collecting-ip-addresses), [datalagring](data-governance.md#data-retention) och [gränsöverskridande dataöverföringar](data-governance.md#data-transfers).
 
-## Insamling och döljande av IP-adresser {#collecting-ip-addresses}
+## Samlar in IP-adresser och IP-adressofficering {#collecting-ip-addresses}
 
 [!DNL IP]-adressen till en person som besöker kundens webbplats skickas till Adobe [!DNL Data Processing Center] ([!DNL DPC]) där [!DNL IP]-adressen kan lagras. Beroende på vilken nätverkskonfiguration besökaren har kan det hända att [!DNL IP]-adressen inte nödvändigtvis representerar [!DNL IP]-adressen till besökarens dator. Adressen kan till exempel vara den externa [!DNL IP]-adressen till en NAT-brandvägg (Network Address Translation) [!DNL IP], en [!DNL HTTP]-proxy eller en internetgateway.
 
@@ -31,7 +31,7 @@ Datastyrning i Audience Manager avser livscykeln för era kunddata i Audience Ma
 
 >[!NOTE]
 >
->Se [IP-adressofuscation](../../features/administration/ip-obfuscation.md) för att lära sig hur man aktiverar [!DNL IP] adressofuscation i användargränssnittet i Audience Manager.
+>Mer information om hur du aktiverar [!DNL IP]-adressofficering i användargränssnittet i Audience Manager finns i [IP-adressofficering](../../features/administration/ip-obfuscation.md).
 
 Titta på videon nedan för att få veta mer om hur du döljer [!DNL IP]-adresser i Audience Manager.
 

@@ -8,7 +8,7 @@ feature: Algorithmic Models
 exl-id: 21073970-8457-470b-89fc-724a118a18d2
 source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '957'
 ht-degree: 59%
 
 ---
@@ -57,43 +57,43 @@ Om modellen inte ger några resultat inom 24 timmar kan du kontakta din Adobe-re
 
 [!UICONTROL Predictive Audiences]-modeller kanske inte ger resultat på grund av en rad orsaker:
 
-1. Ingen av de valda personuppgifterna [!UICONTROL traits] / [!UICONTROL segments] har tillräckligt många användarprofiler. Vi rekommenderar att du väljer [!UICONTROL traits] eller [!UICONTROL segments] så att varje person har minst ett fåtal hundra användarprofiler.
-1. Ingen av de valda personuppgifterna [!UICONTROL traits] / [!UICONTROL segments] har tillräckligt med data i sina användarprofiler (inte tillräckligt med egenskaper för att analysera).
+1. Ingen av de markerade personerna [!UICONTROL traits] / [!UICONTROL segments] har tillräckligt många användarprofiler. Vi rekommenderar att du väljer [!UICONTROL traits] eller [!UICONTROL segments] så att varje person har minst några hundra användarprofiler.
+1. Ingen av de markerade personerna [!UICONTROL traits] / [!UICONTROL segments] har tillräckligt med data i sina användarprofiler (det finns inte tillräckligt med egenskaper för att analysera).
 1. Målgruppens trait/segment har inga aktiva eller onboardade användare.
 1. De målgruppsanvändare som varit aktiva eller registrerade under de senaste 30 dagarna har inte tillräckligt med data i sina användarprofiler (inte tillräckligt med traits att analysera).
-1. Målgruppssegmentet använder ett annat [!UICONTROL Profile Merge Rule] från den du valde för modellen.
-1. Datakällan för målgruppens egenskaper kanske inte inkluderas i [!UICONTROL Profile Merge Rule] som du valde för modellen.
+1. Målgruppssegmentet använder en annan [!UICONTROL Profile Merge Rule] än den som du valde för modellen.
+1. Datakällan för målpublikens egenskaper kanske inte inkluderas i [!UICONTROL Profile Merge Rule] som du valde för modellen.
 
 Följ de föreslagna riktlinjerna i [Urvalskriterier för personas](../features/algorithmic-models/predictive-audiences.md#selection-personas) och [Urvalskriterier för målgrupp](../features/algorithmic-models/predictive-audiences.md#selection-audience) för att få optimala resultat.
 
  
 
-**Varför visar min modell [!UICONTROL Error] status?**
+**Varför visar min modell [!UICONTROL Error]-status?**
 
-Modellen kunde inte köras. I sådana fall kan du kontakta [!DNL Adobe] -representant.
+Modellen kunde inte köras. Kontakta i så fall din [!DNL Adobe]-representant.
 
  
 
-**Hur kan jag ändra [!UICONTROL Profile Merge Rule] för [!UICONTROL Predictive Audiences] [!UICONTROL segment]?**
+**Hur ändrar jag [!UICONTROL Profile Merge Rule] för en [!UICONTROL Predictive Audiences] [!UICONTROL segment]?**
 
-Skapa en ny modell genom att välja samma personer och målgrupp som din tidigare modell. Tilldela en annan modell när en modell skapas [!UICONTROL Profile Merge Rule].
+Skapa en ny modell genom att välja samma personer och målgrupp som din tidigare modell. Tilldela en annan [!UICONTROL Profile Merge Rule] när en modell skapas.
 
 >[!WARNING]
-> Du kan också använda [Segment Builder](../features/segments/segment-builder.md) skapa en [!UICONTROL segment] med en befintlig prediktiv [!UICONTROL trait] och tilldela den en [!UICONTROL Profile Merge Rule] efter eget val.
+> Du kan också använda [Segment Builder](../features/segments/segment-builder.md) för att manuellt skapa en [!UICONTROL segment] med en befintlig prediktiv [!UICONTROL trait] och tilldela den ett [!UICONTROL Profile Merge Rule] som du väljer.
 > 
-> Vi rekommenderar dock inte den här metoden eftersom prediktiv [!UICONTROL traits] ärver automatiskt [!UICONTROL Profile Merge Rule] av den modell de tillhör, och de byggs av inflytelserika [!UICONTROL traits] som uppfyller [!UICONTROL Profile Merge Rule] av modellen.
+> Vi rekommenderar dock inte den här metoden eftersom prediktiv [!UICONTROL traits] automatiskt ärver [!UICONTROL Profile Merge Rule] för modellen som de tillhör och de byggs från inflytelserik [!UICONTROL traits] som uppfyller modellens [!UICONTROL Profile Merge Rule].
 
  
 
 **Vad [!UICONTROL Profile Merge Rule] ska jag välja?**
 
-När du väljer [!UICONTROL Profile Merge Rule] för din modell, analysera dina användningsfall noggrant.
+När du väljer [!UICONTROL Profile Merge Rule] för din modell bör du noggrant analysera ditt användningsfall.
 
-Låt oss säga er målgrupp [!UICONTROL segment] använder [!UICONTROL Profile Merge Rule] baserat på autentiserade profiler + [!DNL Device Graph] och du väljer samma [!UICONTROL Profile Merge Rule] för prediktiva [!UICONTROL segments]. I det här fallet både enhetsnivå och enhetsövergripande nivå [!UICONTROL traits] kommer att användas för att utbilda modellen och placera användaren i en prediktiv [!UICONTROL segment].
+Anta att målgruppen [!UICONTROL segment] använder en [!UICONTROL Profile Merge Rule] baserad på autentiserade profiler + [!DNL Device Graph] profiler och att du väljer samma [!UICONTROL Profile Merge Rule] för prediktiva [!UICONTROL segments]. I det här fallet används både enhetsnivån och enhetsövergripande [!UICONTROL traits] för att utbilda modellen och användarens placering i en prediktiv [!UICONTROL segment].
 
-Om du väljer en [!UICONTROL Profile Merge Rule] baserat enbart på enhetsprofiler, ingen av dina enheter [!UICONTROL traits] kommer att bli inflytelserik och kommer inte att bidra till att användarna blir prediktiva [!UICONTROL segment]. Detta kan påverka modellens noggrannhet och räckvidd negativt.
+Om du väljer en [!UICONTROL Profile Merge Rule] som enbart baseras på enhetsprofiler kommer ingen av dina enheter [!UICONTROL traits] att bli inflytelserik och kommer inte att bidra till att användarna placeras i ett prediktivt [!UICONTROL segment]. Detta kan påverka modellens noggrannhet och räckvidd negativt.
 
-Analysera användningsfallet noggrant och bestäm vilka [!UICONTROL trait] typer som du vill att modellen ska lära sig av och vilken typ av data som du vill att modellen ska använda för klassificering.
+Analysera ditt användningsfall noggrant och bestäm vilka [!UICONTROL trait] typer du vill att modellen ska lära sig av och vilken typ av data du vill att modellen ska använda för klassificering.
 
 **Går det att klassificera en användare från målgruppen som inte är en del av något persona-trait/segment?**
 
@@ -113,9 +113,9 @@ Ja, du kan se alla viktiga traits för alla baslinjer på modellrapporteringssid
 
  
 
-**Kan jag ändra tiden för att leva (TTL) för prediktiva egenskaper?**
+**Kan jag ändra TTL-tiden (time to live) för prediktiva egenskaper?**
 
-TTL för det prediktiva beteendet är inställt på 0 (livstid) och kan inte ändras. [!UICONTROL Predictive Audiences] kan endast dela upp användare från prediktiva segment när de kvalificerar sig för antingen bassegmentet eller omklassificeras till ett annat prediktivt segment.
+TTL för det prediktiva beteendet är inställt på 0 (livstid) och kan inte ändras. [!UICONTROL Predictive Audiences] kan bara dela upp användare från prediktiva segment när de kvalificerar sig för antingen bassegmentet eller omklassificeras till ett annat prediktivt segment.
 
 Vid behov kan du kringgå den här funktionen genom att skapa ett nytt segment som innehåller både ett prediktivt drag och ett aktivitetsdrag med en angiven TTL.
 

@@ -9,8 +9,8 @@ feature: API
 exl-id: c2ba9992-5d0f-46f7-861d-ae279b37674f
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 25%
+source-wordcount: '43'
+ht-degree: 13%
 
 ---
 
@@ -20,8 +20,7 @@ Metoder som gör att du kan arbeta programmatiskt med segment.
 
 >[!IMPORTANT]
 >
->Segmentet [!DNL API] metoder har skrivits om med [!DNL Swagger] och migrerad. Se:
+>Metoderna för segmentet [!DNL API] har skrivits om med [!DNL Swagger] och migrerats. Se:
 >
 >* [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html)
 >* [Migrera API-kod för Audience Manager](../../api/api-swagger-migration.md)
-

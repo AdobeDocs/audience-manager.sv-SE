@@ -1,5 +1,5 @@
 ---
-description: Audience Manager tillhandahåller SDK (Software Development Kits) för Android och iOS.
+description: Audience Manager erbjuder programutvecklingspaket (SDK) för Android och iOS.
 seo-description: Audience Manager provides software development kits (SDKs) for Android and iOS.
 seo-title: SDK Code
 solution: Audience Manager
@@ -9,22 +9,22 @@ feature: API
 exl-id: de7b5a09-353d-4eea-94d3-8e611036b12d
 source-git-commit: 79ce9c05c9168e3bcecabc11db3f9585a5b5ef6c
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 2%
+source-wordcount: '120'
+ht-degree: 0%
 
 ---
 
-# [!DNL SDK] Code {#sdk-code}
+# [!DNL SDK]-kod {#sdk-code}
 
-Audience Manager tillhandahåller programutvecklingspaket ([!DNL SDK]s) for [!DNL Android] och [!DNL iOS].
+Audience Manager tillhandahåller programutvecklingspaket ([!DNL SDK]) för [!DNL Android] och [!DNL iOS].
 
 >[!IMPORTANT]
 >
 >Från om med september 2018 har vi släppt en ny större version av SDK. Dessa nya Adobe Experience Platform Mobile SDK:er kan konfigureras via [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html).
 
-* För att komma igång, gå till [Starta](https://launch.adobe.com/).
-* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDKs](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
-* Om du vill implementera Audience Manager i din app med nya SDK v.5 läser du [Adobe Audience Manager-dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/data-management/aam-dil-extension.html?lang=en) på den nya SDK-sidan.
+* Gå till [Starta](https://launch.adobe.com/) om du vill komma igång.
+* Om du vill se vad som finns i Experience Platform SDK-databaserna går du till [Github: Adobe Experience Platform SDK:er](https://github.com/Adobe-Marketing-Cloud/acp-sdks).
+* Om du vill implementera Audience Manager i din app med den nya SDK v.5 läser du [Adobe Audience Manager-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/data-management/aam-dil-extension.html?lang=en) på den nya SDK-sidan.
 
 <br>
 

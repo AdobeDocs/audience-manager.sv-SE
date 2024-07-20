@@ -10,19 +10,19 @@ exl-id: b43c8404-1853-4306-8f26-96d9191a2548
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
 # API-metoder för grupphantering {#group-management-api-methods}
 
-Vila [!DNL API] metoder för att hantera grupper, inklusive att skapa, uppdatera, lista och ta bort grupper.
+Återställ [!DNL API] metoder för att hantera grupper, inklusive att skapa, uppdatera, lista och ta bort grupper.
 
 <!-- c_rest_api_user_man_group.xml -->
 
 ## Skapa en grupp {#create-group}
 
-A `POST` metod för att skapa en ny användargrupp.
+En `POST`-metod för att skapa en ny användargrupp.
 
 <!-- r_rest_api_group_create.xml -->
 
@@ -30,7 +30,7 @@ A `POST` metod för att skapa en ny användargrupp.
 
 `POST /api/v1/groups/`
 
-### Exempelbegärandetext
+### Exempelbegärandebrödtext
 
 ```
  {
@@ -55,7 +55,7 @@ A `POST` metod för att skapa en ny användargrupp.
 
 ## Uppdatera en grupp {#update-group}
 
-A `PUT` metod för att uppdatera en användargrupp.
+En `PUT`-metod för att uppdatera en användargrupp.
 
 <!--
 r_rest_api_group_update.xml
@@ -65,7 +65,7 @@ r_rest_api_group_update.xml
 
 `PUT /api/v1/groups/`*`<groupId>`*
 
-### Exempelbegärandetext
+### Exempelbegärandebrödtext
 
 ```
  {
@@ -90,7 +90,7 @@ r_rest_api_group_update.xml
 
 ## Listgrupper {#list-groups}
 
-A `GET` metod för att lista användargrupper.
+En `GET`-metod för att lista användargrupper.
 
 <!--
 r_rest_api_group_list.xml
@@ -118,7 +118,7 @@ r_rest_api_group_list.xml
 
 ## Ta bort en grupp {#delete-groups}
 
-A `DELETE` metod för att ta bort en användargrupp och ta bort alla medlemmar från den gruppen.
+En `DELETE`-metod som tar bort en användargrupp och alla medlemmar från den gruppen.
 
 <!-- r_rest_api_group_delete.xml -->
 
@@ -126,11 +126,11 @@ A `DELETE` metod för att ta bort en användargrupp och ta bort alla medlemmar f
 
 `DELETE /api/v1/groups/`*`<groupId>`*
 
-Returnerar `204 No Content` om det lyckas. Om en konflikt uppstår returneras `409 Conflict`.
+Returnerar `204 No Content` om det lyckas. Om en konflikt skulle returnera `409 Conflict`.
 
 ## Ta bort grupper gruppvis {#delete-groups-bulk}
 
-A `DELETE` om du vill ta bort flera grupper samtidigt och ta bort alla medlemmar från den gruppen.
+En `DELETE`-metod för att ta bort flera grupper samtidigt och ta bort alla medlemmar från den gruppen.
 
 <!-- r_rest_api_group_delete_bulk.xml -->
 
@@ -138,11 +138,11 @@ A `DELETE` om du vill ta bort flera grupper samtidigt och ta bort alla medlemmar
 
 `DELETE /api/v1/groups/bulk-delete`
 
-Returnerar `204 No Content` om det lyckas. Om en konflikt uppstår returneras `409 Conflict`.
+Returnerar `204 No Content` om det lyckas. Om en konflikt skulle returnera `409 Conflict`.
 
 ## Visa alla behörigheter för en grupp {#list-permissions-group}
 
-A `GET` metod för att lista behörighetsobjekten i en grupp.
+En `GET`-metod för att lista behörighetsobjekten i en grupp.
 
 <!-- r_rest_api_perm_list_group.xml -->
 
@@ -176,7 +176,7 @@ Returnerar `400 Bad Request` om gruppen inte är tillgänglig.
 
 ## Ange behörigheter för en grupp {#set-permissions-group}
 
-A `PUT` metod för att uppdatera gruppbehörigheter. Den här metoden skriver över de gamla behörigheterna med de nya behörigheterna.
+En `PUT`-metod för att uppdatera gruppbehörigheter. Den här metoden skriver över de gamla behörigheterna med de nya behörigheterna.
 
 <!-- r_rest_api_perm_set.xml -->
 
@@ -209,4 +209,4 @@ A `PUT` metod för att uppdatera gruppbehörigheter. Den här metoden skriver ö
 
 Exempelsvaret representerar den uppdaterade listan med behörighetsobjekt.
 
-Returnerar `200 OK` om det lyckas. Returnerar `400` om en given behörighet är ogiltig. Kan även returnera `403` om objektet inte är tillgängligt för den inloggade användaren.
+Returnerar `200 OK` om det lyckas. Returnerar `400` om någon angiven behörighet är ogiltig. Kan även returnera `403` om objektet inte är tillgängligt för den inloggade användaren.

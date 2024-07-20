@@ -7,7 +7,7 @@ feature: Experience Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
 source-git-commit: d21d0574ee0338dbd5e11c60e0d64042182aa18b
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1799'
 ht-degree: 0%
 
 ---
@@ -18,25 +18,25 @@ ht-degree: 0%
 
 Med målgruppsdelningsfunktionen mellan Audience Manager och Adobe Experience Platform kan ni dela era Audience Manager-egenskaper och segment till Adobe Experience Platform och Experience Platform till Audience Manager.
 
-Du behöver [[!DNL Audience Manager source connector]](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html) och [Experience Cloud målgrupper](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/experience-cloud-audiences.html) i Experience Platform för att möjliggöra målgruppsdelning mellan Audience Manager och Adobe Experience Platform.
+Du behöver målplatsen [[!DNL Audience Manager source connector]](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html) och [Experience Cloud ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/experience-cloud-audiences.html) i Experience Platform för att kunna dela målgrupper mellan Audience Manager och Adobe Experience Platform.
 
-Ni kan använda Audience Manager-egenskaper och segment i Experience Platform för att lägga till Audience Manager-data i era kundprofiler och dra nytta av Experience Platform [segmenteringstjänst](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=en).
+Du kan använda Audience Manager-egenskaper och segment i Experience Platform för att lägga till Audience Manager-data i dina kundprofiler och dra nytta av [segmenteringstjänsten ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=en) för Experience Platform.
 
 I Audience Manager kan du använda Experience Platform-segment för datahanteringsplattformens användningsfall, till exempel:
-* Lägg till [data från tredje part](/help/using/overview/data-types-collected.md#third-party-data) till era segment,
+* Lägg till [data från tredje part](/help/using/overview/data-types-collected.md#third-party-data) i dina segment;
 * [Algoritmisk modellering](/help/using/features/algorithmic-models/understanding-models.md);
-* Aktivera dina segment till mål som ännu inte stöds i Experience Platform [målkatalog](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/destinations-cat/destinations-catalog.html).
+* Aktivera dina segment för mål som ännu inte stöds i Experience Platform [målkatalogen](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/destinations-cat/destinations-catalog.html).
 
-Dessutom delas era Experience Platform-segment med andra Experience Cloud-lösningar via [Centrala tjänster](https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html).
+Dessutom delas dina Experience Platform-segment med andra Experience Cloud-lösningar via [bastjänster](https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html).
 
 >[!IMPORTANT]
 >
 > * Du behöver en Audience Manager-licens för att kunna aktivera de datahanteringsplattformar som nämns ovan.
-> * Du *behöver inte* en Audience Manager-licens för att dela Experience Platform-segment med Adobe Advertising Cloud, Adobe Target, Marketo och andra Experience Cloud, via integreringen av bastjänsterna.
+> * Du *behöver inte* en Audience Manager-licens för att dela Experience Platform-segment med Adobe Advertising Cloud, Adobe Target, Marketo och andra Experience Cloud via integreringen med bastjänsterna.
 
 Se tabellen nedan för en översikt över användningsfall för målgruppsdelning:
 
-| **Användningsexempel** | **Adobe Experience Platform** | **Audience Manager** | **Centrala tjänster** |
+| **Använd skiftläge** | **Adobe Experience Platform** | **Audience Manager** | **Centrala tjänster** |
 |---------|----------|---------|---------|
 | **Målgruppsdelning** | <ul><li>Förbättra kundprofiler med data från Audience Manager</li><li>Använd data från Audience Manager i segmenteringen Experience Platform</li></ul> | <ul><li>Lägg till data från tredje part i segment</li><li>Algoritmisk modellering</li><li>Aktivering till ytterligare destinationer</li></ul> | Använd Experience Platform-segment i andra Experience Cloud-lösningar, som Adobe Target, Advertising Cloud eller Marketo. |
 
@@ -50,18 +50,18 @@ Avsnitten nedan beskriver hur datadelning kan göras från Audience Manager till
 
 Om du vill skicka segment och egenskaper från Audience Manager till Experience Platform måste du skapa källkopplingen för Audience Manager i Experience Platform källkatalogen. Detta är ett självbetjäningsarbetsflöde som inte kräver medverkan av Adobe kundtjänst eller ingenjörsteam. Läs mer om hur du konfigurerar källkopplingen för Audience Manager:
 
-* [Audience Manager source](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
+* [Audience Manager-källa](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
 * [Skapa en Adobe Audience Manager-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/audience-manager.html?lang=en)
 
 >[!IMPORTANT]
 >
->Adobe uppmuntrar kunderna att konfigurera anslutningen utan att välja **[!UICONTROL Select all segments]** och **[!UICONTROL Select all traits]** enligt nedan. Intag av stora Audience Manager-segmentpopulationer har en direkt inverkan på det totala antalet profiler när du för första gången skickar ett Audience Manager-segment till plattformen via Audience Manager. Det innebär att om du väljer alla segment kan det eventuellt leda till ett profilantal som överskrider licensanvändningsbehörigheten.
+>Adobe uppmanar kunderna att konfigurera anslutningen utan att välja alternativen **[!UICONTROL Select all segments]** och **[!UICONTROL Select all traits]**, vilket visas nedan. Intag av stora Audience Manager-segmentpopulationer har en direkt inverkan på det totala antalet profiler när du för första gången skickar ett Audience Manager-segment till plattformen via Audience Manager. Det innebär att om du väljer alla segment kan det eventuellt leda till ett profilantal som överskrider licensanvändningsbehörigheten.
 >
->![Skärmbild med alternativen Markera alla segment och Markera alla egenskaper avmarkerade i arbetsflödet för anslutning till Audience Manager-källkopplingen.](/help/using/integration/integration-aep/assets/select-all-segments-traits-unchecked.png)
+>![Skärmbild med alternativen Markera alla segment och Markera alla egenskaper avmarkerade i arbetsflödet för att ansluta till Audience Manager-källkopplingen.](/help/using/integration/integration-aep/assets/select-all-segments-traits-unchecked.png)
 
 ### Använd Audience Manager-egenskaper och segment i Experience Platform {#use-aam-data-in-aep}
 
-När du har konfigurerat Audience Manager-källkopplingen för att importera egenskaper och segment från Audience Manager, visas Audience Manager-data i Experience Platform som **Målgrupper** i segmentarbetsflödet. Mer information om segment och egenskaper för Audience Manager i Experience Platform finns i:
+När du har konfigurerat Audience Manager-källkopplingen för att importera egenskaper och segment från Audience Manager, visas dina Audience Manager-data i Experience Platform som **Publiker** i segmentarbetsflödet. Mer information om segment och egenskaper för Audience Manager i Experience Platform finns i:
 
 * [Översikt över segmenteringstjänsten](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#audiences)
 * [Användarhandbok för Experience Platform Segment Builder](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#audiences)
@@ -74,7 +74,7 @@ I avsnitten nedan beskrivs hur du aktiverar datadelning från Experience Platfor
 
 >[!IMPORTANT]
 >
-> I det här avsnittet beskrivs den tidigare integreringen av segmentdelning från Experience Platform till Audience Manager. Nu kan ni konfigurera den här integreringen utan stöd från Adobe kundrepresentanter. Mer information finns i [Experience Cloud målgrupper](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/experience-cloud-audiences.html) måldokumentation.
+> I det här avsnittet beskrivs den tidigare integreringen av segmentdelning från Experience Platform till Audience Manager. Nu kan ni konfigurera den här integreringen utan stöd från Adobe kundrepresentanter. Mer information finns i måldokumentationen för [Experience Cloud-målgrupper](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/experience-cloud-audiences.html).
 
 >[!NOTE]
 >
@@ -88,19 +88,19 @@ Dela planer för data från Platform till Audience Manager för att säkerställ
 
 Segment som du skapar i Experience Platform visas i Audience Manager som signaler, egenskaper och segment, med följande dispositionsregler:
 
-* Signal: För varje Experience Platform-segment ska du se signaler i formuläret `segID = segment ID`.
+* Signal: För varje Experience Platform-segment ska du se signaler i formatet `segID = segment ID`.
 * Trait: The trait rule is the ID of the Experience Platform segment.
 * Segment: Segmentet består av den egenskap som beskrivs ovan.
 
 ### Signaler {#aep-segments-as-aam-signals}
 
-Välj **[!UICONTROL Audience Data > Signals > General Online Data]** och söka efter `SegId` för att hitta signaler från Experience Platform. Du kan använda den här skärmen i felsökningssyfte för att kontrollera om integreringen mellan Experience Platform och Audience Manager har konfigurerats korrekt.
+Välj **[!UICONTROL Audience Data > Signals > General Online Data]** och sök efter `SegId` för att hitta signaler som kommer in från Experience Platform. Du kan använda den här skärmen i felsökningssyfte för att kontrollera om integreringen mellan Experience Platform och Audience Manager har konfigurerats korrekt.
 
-![Se Experience Platform signaler i Audience Manager på kontrollpanelen för signaler](/help/using/integration/integration-aep/assets/aep-signals-in-aam.png)
+![Se Experience Platform-signaler i Audience Manager på kontrollpanelen Signaler](/help/using/integration/integration-aep/assets/aep-signals-in-aam.png)
 
-### Traits  {#aep-segments-as-aam-traits}
+### Traits {#aep-segments-as-aam-traits}
 
-Audience Manager skapar automatiskt en egen mapp med namnet **Experience Platform traits** i din egen lagring.
+Audience Manager skapar automatiskt en trait-mapp med namnet **Experience Platform Traits** i ditt fack.
 
 ![Traits from Experience Platform dashboard](/help/using/integration/integration-aep/assets/aep-traits-dashboard.png)
 
@@ -108,7 +108,7 @@ Du kan använda automatiskt skapade egenskaper i segment tillsammans med andra e
 
 Ett exempel på ett trait som skapats automatiskt från ett Experience Platform-segment finns i skärmbilden nedan:
 
-![Fälla från Experience Platform](/help/using/integration/integration-aep/assets/aep-trait.png)
+![Tåg från Experience Platform](/help/using/integration/integration-aep/assets/aep-trait.png)
 
 
 | Artikelnummer | Namn | Beskrivning |
@@ -121,9 +121,9 @@ Ett exempel på ett trait som skapats automatiskt från ett Experience Platform-
 
 {style="table-layout:auto"}
 
-### Segment  {#aep-segments-as-aam-segments}
+### Segment {#aep-segments-as-aam-segments}
 
-Audience Manager skapar automatiskt en segmentmapp med namnet **Experience Platform segment** i ert segmentlagringsutrymme.
+Audience Manager skapar automatiskt en segmentmapp med namnet **Experience Platform Segments** i segmentlagringen.
 
 ![Skärmbild av instrumentpanelen](/help/using/integration/integration-aep/assets/aep-segments-dashboard.png)
 
@@ -135,20 +135,20 @@ Ett exempel på ett segment som skapats automatiskt från ett Experience Platfor
 |---------|----------|---------|
 | 1 | [!UICONTROL Integration Code] | Integrationskoden motsvarar segment-ID:t i Experience Platform. |
 | 2 | [!UICONTROL Data Source] | Automatiskt skapad. Alla egenskaper och segment som skapas automatiskt från Experience Platform-segment lagras i datakällan **[!DNL Adobe Experience Platform Audience Sharing]**. |
-| 3 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** anger att automatiskt skapade segment följer den sammanfogningsprincip som har konfigurerats i Experience Platform. |
-| 4 | [!UICONTROL Segment Rule] | Segmentet består av det drag som beskrivs i [Traits section](#aep-segments-as-aam-traits). |
+| 3 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** anger att automatiskt skapade segment följer den sammanslagningsprincip som har konfigurerats i Experience Platform. |
+| 4 | [!UICONTROL Segment Rule] | Segmentet består av det trait som beskrivs i avsnittet [Traits](#aep-segments-as-aam-traits). |
 
 {style="table-layout:auto"}
 
 ## Stöd för dataexportkontroll i Audience Manager i Experience Platform {#aam-data-export-control-in-aep}
 
-För att se till att dataanvändningen efterlevs i Experience Platform måste alla tillämpliga datauppsättningar och fält anges på lämpligt sätt [etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html). Dessutom [dataanvändningsprinciper](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html) måste aktiveras för specifika marknadsföringsåtgärder mot dessa etiketter, vilket anges av [Systemet för märkning och verkställighet av dataanvändning (DULE)](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html#dule-framework).
+Om du vill framtvinga efterlevnad av dataanvändning i Experience Platform måste alla tillämpliga datauppsättningar och fält tilldelas lämpliga [etiketter för dataanvändning](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html). Dessutom måste [dataanvändningsprinciper](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html) aktiveras för specifika marknadsföringsåtgärder mot dessa etiketter, enligt riktlinjerna i [ramverket för etiketter och verkställighet (DULE)](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html#dule-framework).
 
 I målgruppsdelningsprocessen mellan Audience Manager och Experience Platform översätts alla dataexportkontroller som har tillämpats på Audience Manager-segment till likvärdiga etiketter och marknadsföringsåtgärder som har godkänts av Experience Platform Data Governance, och vice versa.
 
 >[!NOTE]
 >
->Mer allmän information om dataexportkontroller finns i [Dokumentation för dataexportkontroller](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html).
+>Mer allmän information om dataexportkontroller finns i [dokumentationen för dataexportkontroller](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html).
 >
 >Det här dokumentet innehåller en referens för hur specifika dataexportkontroller för Audience Manager mappas till dataanvändningsetiketter och marknadsföringsåtgärder i Platform.
 
@@ -173,8 +173,8 @@ I följande tabell beskrivs hur specifika dataexportetiketter mappas till kända
 | --- | --- |
 | Denna destination kan möjliggöra en kombination med personligt identifierbar information (PII) | Kombinera med PII |
 | Den här destinationen kan användas för annonsinriktning utanför webbplatsen | Målgruppsövergripande |
-| Det här målet kan användas för annonsinriktning på plats | Annonsering på plats |
-| Det här målet kan användas för anpassning av annonser på plats | Personalisering på plats |
+| Det här målet kan användas för annonsinriktning på plats | Advertising på plats |
+| Det här målet kan användas för anpassning av annonser på plats | Personalization på plats |
 
 {style="table-layout:auto"}
 
@@ -188,15 +188,15 @@ Audience Manager uppdaterar rapportnummer i gränssnittet en gång om dagen. Tid
 
 ### Skillnader mellan regler för profilsammanslagning och kopplingsprofiler
 
-[[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) i Audience Manager och [[!UICONTROL Merge Policies]](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/merge-policies.html) i Experience Platform fungerar olika, och det identitetsdiagram som används för varje bild varierar. På grund av detta förväntas vissa skillnader mellan segmentpopulationerna.
+[[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) i Audience Manager och [[!UICONTROL Merge Policies]](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/merge-policies.html) i Experience Platform fungerar annorlunda, och identitetsdiagrammet som används för varje varierar. På grund av detta förväntas vissa skillnader mellan segmentpopulationerna.
 
 >[!NOTE]
 >
-> När ni delar segment från Experience Platform till Audience Manager är det er plattformsorganisation [standardprincip för sammanslagning](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en#default-merge-policy) har företräde framför [sammanfogningsprincip som används av segmentet](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#merge-policies) delas med Audience Manager. Om t.ex. det delade segmentets kopplingsregel tillåter [ID-sammanfogning](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#configure)Men det gör inte organisationens standardpolicy för sammanfogning, vilket kan leda till skillnader i befolkningsgrupper mellan Platform och Audience Manager.
+> När du delar segment från Experience Platform till Audience Manager har plattformsorganisationen [standardprincipen för sammanfogning](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en#default-merge-policy) företräde framför den [sammanfogningsprincip som används av segmentet](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#merge-policies) som delas med Audience Manager. Om t.ex. det delade segmentets kopplingsprofil tillåter [ID-sammanslagning](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#configure), men organisationens standardkopplingsregel inte gör det, kan det leda till populationsskillnader mellan plattformen och Audience Manager.
 
 ### Segmentdisposition i Experience Platform
 
-Integrationen mellan Adobe Experience Platform och Audience Manager har ett antal gemensamma standarder [identitetsnamnutrymmen](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#identity-types) för alla kunder: ECID, IDFA, GAID, hash-kodade e-postadresser (EMAIL_LC_SHA256), AdCloud ID. Om era Experience Platform-segment använder någon av dessa som primär identitet för de kvalificerade profilerna räknas profilerna i Audience Manager-egenskaper och segment.
+Integrationen mellan Adobe Experience Platform och Audience Manager delar ett antal standardnamnutrymmen för [identitet](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#identity-types) för alla kunder: ECID, IDFA, GAID, hash-kodade e-postadresser (EMAIL_LC_SHA256), AdCloud ID. Om era Experience Platform-segment använder någon av dessa som primär identitet för de kvalificerade profilerna räknas profilerna i Audience Manager-egenskaper och segment.
 
 >[!NOTE]
 >
@@ -204,7 +204,7 @@ Integrationen mellan Adobe Experience Platform och Audience Manager har ett anta
 
 Om du till exempel hade ett Experience Platform-segment,&quot;Alla mina kunder&quot;, och de kvalificerade profilerna skulle vara CRM-ID, ECID, IDFA, raw och hash-adresser, skulle motsvarande segment i Audience Manager endast innehålla profiler som är avaktiverade från ECID, IDFA och hash-kodade e-postadresser. Segmentpopulationen i Audience Manager skulle vara mindre än den i Experience Platform.
 
-![Segmentdelning mellan Experience Platform och Audience Manager - segmentdisposition](assets/AEP-to-AAM-profiles.png)
+![Segmentdelning Experience Platform till Audience Manager - segmentdisposition](assets/AEP-to-AAM-profiles.png)
 
 <!--
 

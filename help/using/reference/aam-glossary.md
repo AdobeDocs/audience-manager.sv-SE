@@ -9,7 +9,7 @@ feature: Reference
 exl-id: 9e2ee3d3-01b2-4038-abda-fedf0f16f163
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1157'
 ht-degree: 98%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 98%
 
 Definitioner och länkar till mer läsning.
 
-## A–B {#a-b}
+## A-B {#a-b}
 
 **Algoritmiska modeller**
 
@@ -32,7 +32,7 @@ Se [Förstå algoritmiska modeller](../features/algorithmic-models/algo-models-o
 
 Se [Verktyg för satsvis hantering](../reference/bulk-management-tools/bulk-management-intro.md).
 
-## C–D {#c-d}
+## C-D {#c-d}
 
 **CDF**
 
@@ -52,7 +52,7 @@ Se DPUUID i [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
 I [Addressable Audience](/help/using/features/addressable-audiences.md) representerar detta mätvärde enheter som:
 * Har fått antingen ett regelbaserat eller registrerat trait under tillbakablicksperioden
-   **OCH**
+  **OCH**
 * Har en ID-synkronisering med den valda destinationen oavsett synkroniseringstidpunkten.
 
 
@@ -107,7 +107,7 @@ I [!DNL Audience Manager] är destinationen ett annat system (annonsserver, DSP,
 
 [!UICONTROL Data Provider Match]. Talar om för interna [!DNL Adobe]-system att ett anrop från [!DNL Audience Manager] eller ID-tjänsten skickas i kunddata för synkronisering eller begäran om ID. Se [Förstå anrop till Demdex-domänen](../reference/demdex-calls.md).
 
-## E–F {#e-f}
+## E-F {#e-f}
 
 **Experience Cloud ID (ECID)**
 
@@ -129,7 +129,7 @@ Ett begränsat antal gånger som en annonsör vill visa en viss kampanj för en 
 
 Se [Recency och frekvens](../features/segments/recency-and-frequency.md).
 
-## G–H {#g-h}
+## G-H {#g-h}
 
 **GAID**
 
@@ -142,7 +142,7 @@ Google Advertising ID, det unika enhets-ID som Google tilldelar maskinvaruenhete
 En akronym för global unik identifierare. Vi använder inte termen GUID i [!DNL Audience Manager]. I vårt fall är GUID detsamma som [!DNL Audience Manager] UUID.
 Se [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
-## I–J {#i-j}
+## I-J {#i-j}
 
 **IDFA**
 
@@ -164,19 +164,19 @@ När ni arbetar med [!DNL Audience Manager]-gränssnittet eller API:t kan ni lä
 * [!UICONTROL Segments]: en integreringskod är ett fält för ett användardefinierat ID eller annan företagsspecifik information. Valfritt.
 * [!UICONTROL Data Sources]: integreringskoder krävs när ni vill skapa enhetsövergripande datakällor, använda Adobe Experience Platform Identity Service eller arbeta med [!UICONTROL Profile Merge Rules]. Mer information finns i [Skapa en datakälla](../features/manage-datasources.md#create-data-source).
 
-## K–L {#k-l}
+## K-L {#k-l}
 
 **[!UICONTROL Look-alike modeling]**
 
 Se [Algoritmiska modeller](../reference/aam-glossary.md#a-b).
 
-## M–N {#m-n}
+## M-N {#m-n}
 
 **MCID**, **MID**
 
 Se [Experience Cloud ID](../reference/aam-glossary.md#e-f).
 
-## O–P {#o-p}
+## O-P {#o-p}
 
 **PCS**
 
@@ -198,13 +198,13 @@ Med [!UICONTROL Profile Merge Rules] kan du styra vilken typ av data som använd
 
 Se [Beskrivning av alternativen för regler för profilsammanslagning](../features/profile-merge-rules/merge-rule-definitions.md).
 
-## Q–R {#q-r}
+## Q-R {#q-r}
 
 **Realisering**
 
 Den åtgärd med vilken en besökare på er webbplats kvalificerar för ett trait. Ni kan använda verktyget [Visitor Profile Viewer](../features/visitor-profile-viewer.md) för att få information om hur traits realiseras för specifika användare.
 
-## S–T {#s-t}
+## S-T {#s-t}
 
 **Segment**
 
@@ -256,7 +256,7 @@ TTL definierar hur många dagar en kvalificerad besökare stannar i ett trait. T
 
 
 
-## U–V {#u-v}
+## U-V {#u-v}
 
 **UUID**
 
@@ -270,4 +270,4 @@ TTL definierar hur många dagar en kvalificerad besökare stannar i ett trait. T
 
 Se dokumentationen för [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 
-## W–X–Y–Z {#w-z}
+## W-X-Y-Z {#w-z}

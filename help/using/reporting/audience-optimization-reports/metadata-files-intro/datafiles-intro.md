@@ -3,20 +3,20 @@ description: En datafil innehåller indata för att visa, klicka eller konverter
 seo-description: A data file contains impression, click, or conversion data. When formatted properly, you can import this data into Audience Manager and use it in the Audience Optimization reports and for Actionable Log Files. Format your data files according to the specifications in this section.
 seo-title: Data Files for Audience Optimization Reports and Actionable Log Files
 solution: Audience Manager
-title: Datafiler för Audience Optimization-rapporter och verkställbara loggfiler
+title: Datafiler för Audience Optimization-rapporter och åtgärdsloggfiler
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 feature: Log Files
 exl-id: 0da2c1d3-5ff8-40dd-b831-21d8941688ce
 source-git-commit: db90a6f1aaf85b10e31e93e316c257b7c3a904aa
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 2%
+source-wordcount: '994'
+ht-degree: 0%
 
 ---
 
-# Datafiler för Audience Optimization-rapporter och verkställbara loggfiler {#data-files-for-audience-optimization-reports}
+# Datafiler för Audience Optimization-rapporter och åtgärdsloggfiler {#data-files-for-audience-optimization-reports}
 
-En datafil innehåller indata för att visa, klicka eller konvertera. När data är korrekt formaterade kan du importera dem till Audience Manager för att visa dem i [Audience Optimization-rapporter](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) och skapa egenskaper med hjälp av data via [Åtgärdsbara loggfiler](/help/using/integration/media-data-integration/actionable-log-files.md). Formatera datafilerna enligt dessa specifikationer i det här avsnittet.
+En datafil innehåller indata för att visa, klicka eller konvertera. När dessa data är korrekt formaterade kan du importera dem till Audience Manager för att visa dem i [Audience Optimization-rapporter](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) och skapa egenskaper med hjälp av data via [loggfiler som kan användas ](/help/using/integration/media-data-integration/actionable-log-files.md). Formatera datafilerna enligt dessa specifikationer i det här avsnittet.
 
 ## Översikt {#overview}
 
@@ -26,35 +26,35 @@ En datafil måste åtföljas av en metadatafil. Innehållet i metadatafilen matc
 
 ## Namnkonventioner för datafiler {#naming-conventions}
 
-Följande syntax definierar strukturen för ett välformaterat datafilnamn. Obs! *kursiv* används för att ange en variabelplatshållare som ändras beroende på filinnehållet.
+Följande syntax definierar strukturen för ett välformaterat datafilnamn. Obs! *italics* anger en variabelplatshållare som ändras beroende på filinnehållet.
 
-**Syntax:** <pre><i>händelsetyp</i>_<i>yyyymmdd</i></code></pre>
+**Syntax:** <pre><code><i>händelsetyp</i>_<i>åååmmdd</i></code></pre>
 
 I ett filnamn:
 
 * Händelsetypen anger att filen innehåller avbildningar, klickningar eller konverteringar. Skapa en separat fil för varje händelsetyp.
 * Ett understreck skiljer händelsetypen och en tidsstämpel för årsdatum.
-* Innan du överför filerna ska du komprimera dem med gzip och spara dem med `.gz` filtillägg.
+* Innan du överför filer komprimerar du filerna med gzip och sparar dem med filtillägget `.gz`.
 
 Med tanke på dessa krav bör du namnge dina datafiler baserat på deras innehåll så här:
 
-* Impressionsdata: <pre>imponations_<i>yyyymmdd</i>.gz</code></pre>
-* Klicka på data: <pre>klickningar_<i>yyyymmdd</i>.gz</code></pre>
-* Konverteringsdata: <pre>conversions_<i>yyyymmdd</i>.gz</code></pre>
+* Impressionsdata: <pre><code>imponeringar_<i>åååmmdd</i>.gz</code></pre>
+* Klicka på data: <pre><code>klickningar_<i>åååmmdd</i>.gz</code></pre>
+* Konverteringsdata: <pre><code>conversions_<i>yyymmdd</i>.gz</code></pre>
 
 ## Innehållsformat för datafiler {#content-format}
 
-Följande syntax definierar innehållsstrukturen i välformade datafiler. Obs! *kursiv* anger en variabelplatshållare och ersätts med en etikett i en faktisk datafil.
+Följande syntax definierar innehållsstrukturen i välformade datafiler. Obs! *italics* anger en variabelplatshållare och ersätts med en etikett i en faktisk datafil.
 
-**Syntax:** <pre><i>rubriketikett 1</i> | <i>rubriketikett 2</i> ... <i>rubriketikett n</i> | <i>version</i></code></pre>
+**Syntax:** <pre><code><i>rubriketikett 1</i> | <i>rubriketikett 2</i> ... <i>rubriketikett n</i> | <i>version</i></code></pre>
 
 I filinnehållet:
 
 * Rubriketiketterna måste finnas i den ordning som visas i tabellen nedan. Samma etiketter används för tryck och klick. Konverteringsfiler innehåller extra rubriker.
-* Om du inte har data för en viss kolumn fyller du i fältet med ett `-1`.
+* Om du inte har data för en viss kolumn fyller du i fältet med en `-1`.
 
-* Filer *måste* avslutas med ett versionsnummer. Den aktuella versionen är 1.1.
-* Avgränsa filhuvuden och -innehåll med icke-utskrivbara ASCII 001-tecken. Om du inte kan använda ASCII 001 ska du separera sidhuvuden och data med en tabbavgränsare. Eftersom det här är tecken som inte skrivs ut visas ett rör i syntaxexemplet ovan `"|"` endast för visning.
+* Filerna *måste* sluta med ett versionsnummer. Den aktuella versionen är 1.1.
+* Avgränsa filhuvuden och -innehåll med icke-utskrivbara ASCII 001-tecken. Om du inte kan använda ASCII 001 ska du separera sidhuvuden och data med en tabbavgränsare. Eftersom det här är tecken som inte skrivs ut visar syntaxexemplet ovan endast ett rör `"|"` i visningssyfte.
 
 **Fältetiketter**
 
@@ -70,11 +70,11 @@ Tabellen nedan listar och beskriver kolumnrubrikerna för datafilen. Sidhuvuden 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Tidsstämpel </p> </td> 
-   <td colname="col2"> <p>Ett UTC-datum och en UTC-tid för intrycket, klickningen eller konverteringshändelsen. Använd <code> yyyy-MM-dd HH:mm:ss</code> format. </p> </td> 
+   <td colname="col2"> <p>Ett UTC-datum och en UTC-tid för intrycket, klickningen eller konverteringshändelsen. Använd formatet <code> yyyy-MM-dd HH:mm:ss</code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Användar-ID </p> </td> 
-   <td colname="col2"> <p>Ditt ID för en besökare på platsen, kallas även <span class="term"> unikt användar-ID för dataleverantör</span> eller DPUID. </p> </td> 
+   <td colname="col2"> <p>Ditt ID för en besökare på platsen, kallas även <span class="term">-dataleverantörens unika användar-ID </span> eller DPUID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Advertiser-ID </p> </td> 
@@ -118,18 +118,18 @@ Tabellen nedan listar och beskriver kolumnrubrikerna för datafilen. Sidhuvuden 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Intäkter </p> </td> 
-   <td colname="col2"> <p>Inköp eller annat konverteringsbelopp. Datatyp: Flyt. </p> <p> <i>Endast för konvertering av datafiler.</i> </p> </td> 
+   <td colname="col2"> <p>Inköp eller annat konverteringsbelopp. Datatyp: Float. </p> <p> <i>Endast för konvertering av datafiler.</i> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Andra data </p> </td> 
-   <td colname="col2"> <p>URL för konverteringslandsidan. Datatyp: Sträng. </p> <p> <i>Endast för konvertering av datafiler.</i> </p> </td> 
+   <td colname="col2"> <p>URL för konverteringslandsidan. Datatyp: String. </p> <p> <i>Endast för konvertering av datafiler.</i> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Händelsetyp </p> </td> 
    <td colname="col2"> <p>Konverteringstyp. Anger om en konvertering matchar eller inte. Alternativen är: </p> 
     <ul id="ul_DA8230D167F241F2B53F29367874D4B1"> 
      <li id="li_2BC2EBCAE12541029A5F62AC0785E7FE"> <code> 0</code>: Impression </li> 
-     <li id="li_2A4B1354891144D587624228D8FB5E77"> <code> 1</code>: Klicka på </li> 
+     <li id="li_2A4B1354891144D587624228D8FB5E77"> <code> 1</code>: Klicka </li> 
      <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>: Okänd eller okänd </li> 
     </ul> <p> <i>Endast för konvertering av datafiler.</i> </p> </td> 
   </tr> 
@@ -142,17 +142,17 @@ Tabellen nedan listar och beskriver kolumnrubrikerna för datafilen. Sidhuvuden 
 
 ## Leveransmetoder för datafiler {#delivery-methods}
 
-Överför dina intryckta, klickningar eller konverteringar till en Amazon S3-katalog [!DNL Audience Manager] konto. I det här avsnittet finns information om leverans-/katalogsökvägar, bearbetningstider och uppdateringar.
+Överför dina intryckta, klickningar eller konverteringsdatafiler till en Amazon S3-katalog för ditt [!DNL Audience Manager]-konto. I det här avsnittet finns information om leverans-/katalogsökvägar, bearbetningstider och uppdateringar.
 
 >[!IMPORTANT]
 >
-> Kontakta Audience Manager eller kundtjänst för att komma igång och konfigurera en [!DNL Amazon S3] -katalog för dina datafiler.
+> Kontakta din Audience Manager-konsult eller kundtjänst för att komma igång och konfigurera en [!DNL Amazon S3]-katalog för dina datafiler.
 
-**Syntax och exempel för leveranssökväg**
+**Syntax för leveranssökväg och exempel**
 
-Data lagras i en separat namnrymd för varje kund i en [!DNL Amazon S3] katalog. Filsökvägen följer den syntax som visas nedan. Obs! *kursiv* används för att ange en variabelplatshållare. Andra element är konstanter eller nycklar och ändras inte.
+Data lagras i en separat namnrymd för varje kund i en [!DNL Amazon S3]-katalog. Filsökvägen följer den syntax som visas nedan. Obs! *kursiv* anger en variabelplatshållare. Andra element är konstanter eller nycklar och ändras inte.
 
-**Syntax:** <pre>.../log_inghit/pid= <i>AAM ID</i>/dpid= <i>d_src</i>/logs/ <i>filtyp</i>_<i>yyyymmdd</i></code></pre>
+**Syntax:** <pre><code>../log_inghit/pid= <i>AAM ID</i>/dpid= <i>d_src</i>/logs/ <i>filtyp</i>_<i>åååmmdd</i></code></pre>
 
 I följande tabell definieras vart och ett av dessa element i en filleveranssökväg.
 
@@ -170,11 +170,11 @@ I följande tabell definieras vart och ett av dessa element i en filleveranssök
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>pid=<i>AAM ID</i></code> </p> </td> 
-   <td colname="col2"> <p>Detta nyckelvärdepar innehåller <span class="keyword"> Audience Manager</span> kund-ID. </p> </td> 
+   <td colname="col2"> <p>Detta nyckelvärdepar innehåller ditt <span class="keyword"> Audience Manager </span> kund-ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>dpid=<i>d_src</i></code> </p> </td> 
-   <td colname="col2"> <p>Detta nyckelvärdepar innehåller det datakälla-ID som skickades vid ett händelseanrop. Den identifierar byrån som uppgifterna kommer från och knyter dem till en metadatafil som stöds. </p> </td> 
+   <td colname="col2"> <p>Detta nyckelvärdepar innehåller datakällans ID som skickades vid ett händelseanrop. Den identifierar byrån som uppgifterna kommer från och knyter dem till en metadatafil som stöds. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> logs</code> </p> </td> 
@@ -197,8 +197,8 @@ När du överför en fil ser sökvägen ut ungefär så här:
 
 Datafilerna behandlas fyra gånger dagligen med regelbundna intervall.
 
-Om du vill uppdatera dina data skickar du in en fil som innehåller alla visningar, klick eller konverteringar för en viss dag. I det här fallet är en dag dygnet runt, från en midnatt till nästa. Det är en god vana att använda UTC-tid för att definiera ditt dagsintervall.
+Om du vill uppdatera dina data skickar du in en fil som innehåller alla visningar, klick eller konverteringar för en viss dag. I det här fallet är en dag 24-timmarsperioden från en midnatt till nästa. Det är en god vana att använda UTC-tid för att definiera ditt dagsintervall.
 
 ## Nästa steg {#next-steps}
 
-Granska kraven för att namnge och skapa metadatafiler. För att komma igång, se [Översikt och mappningar för metadatafiler](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md).
+Granska kraven för att namnge och skapa metadatafiler. Information om hur du kommer igång finns i [Översikt och mappningar för metadatafiler](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md).

@@ -8,7 +8,7 @@ feature: Algorithmic Models
 exl-id: c6e92db0-129f-489e-8cf0-600e0e09698b
 source-git-commit: 37823ae54e106e32aa195a6b69e0f1ebfc322f09
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ I den här artikeln finns svar på de vanligaste frågorna om [!UICONTROL Look-A
 
 ## Frågor {#questions}
 
-**Varför får jag punktering? [!UICONTROL Accuracy & Reach] diagram?**
+**Varför får jag ett platt [!UICONTROL Accuracy & Reach]-diagram?**
 
-Platt [!UICONTROL Accuracy & Reach] graf betyder att nästan alla användare fick samma poäng av modellen. Detta kan inträffa när du inkluderar besökaregenskaper på platsen i de datakällor som du körde modellen på. Du undviker detta genom att ta bort det generiska attributet från modellindata under steget när du skapar modellen med hjälp av [!UICONTROL Exclusions] fält.
+Ett platt [!UICONTROL Accuracy & Reach]-diagram innebär att nästan alla användare fick samma poäng av modellen. Detta kan inträffa när du inkluderar besökaregenskaper på platsen i de datakällor som du körde modellen på. Du undviker detta genom att ta bort det generiska attributet från modellindata när du skapar modellen med hjälp av fältet [!UICONTROL Exclusions].
 
  
 
-**Varför har några av mina största inflytelserika egenskaper mycket små målgrupper?**
+**Varför har vissa av mina största inflytelserika egenskaper mycket små målgrupper?**
 
 Algoritmen väljer egenskaper som är mycket korrelerade med baslinjetrafiken. Om en viss egenskap till exempel till 100 % överlappar den ursprungliga egenskapen kommer den att ha en mycket hög vikt, även om antalet användare i den egenskapen är litet.
 
@@ -53,13 +53,13 @@ Ett fåtal tusen användare bör vara tillräckligt för att köra modellen på,
 
 **Vilka datakällor från tredje part ska jag välja för min modell?**
 
-Använd datakällor som åtminstone delvis överlappar ditt baslinjefärg/baslinjesegment, men som samtidigt tar med fler användare. Du bör också ta hänsyn till kostnaden för varje datafeed. Kostnads- och prissättningsmodeller varierar mellan olika dataleverantörer inom [!UICONTROL Audience Marketplace].
+Använd datakällor som åtminstone delvis överlappar ditt baslinjefärg/baslinjesegment, men som samtidigt tar med fler användare. Du bör också ta hänsyn till kostnaden för varje datafeed. Kostnads- och prissättningsmodeller varierar mellan olika dataleverantörer i [!UICONTROL Audience Marketplace].
 
  
 
-**Kostar det att använda data från tredje part för modellering?**
+**Kostar det att använda tredjepartsdata för modellering?**
 
-Det beror på prismodellen för vald datafeed. Vissa flöden gör det möjligt att modellera utan kostnad, medan andra tar ut en avgift. Se [Fakturering för köpare av dataflöden](../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md) för mer information.
+Det beror på prismodellen för vald datafeed. Vissa flöden gör det möjligt att modellera utan kostnad, medan andra tar ut en avgift. Mer information finns i [Fakturering för köpare av dataflöden](../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md).
 
  
 

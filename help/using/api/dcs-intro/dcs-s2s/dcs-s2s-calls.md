@@ -9,21 +9,21 @@ exl-id: 977f4dfe-0beb-43c8-b64e-df4042427474
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 5%
+ht-degree: 0%
 
 ---
 
 # Göra DCS API-anrop från server till server {#making-server-to-server-dcs-api-calls}
 
-Anrop kräver värdnamnet för den regionala DCS-servern och användar-ID:t. Om du inte har rätt användar-ID och region-ID:n kan du läsa [Hämta användar-ID och regioner från ett DCS-svar](/help/using/api/dcs-intro/dcs-s2s/dcs-aam-ids.md) och/eller [Experience Cloud](/help/using/api/dcs-intro/dcs-s2s/dcs-mcid-ids.md). När du har användar-ID:n och region-ID:n kan du göra server-till-server-anrop till DCS. I det här avsnittet finns syntax och exempel.
+Anrop kräver värdnamnet för den regionala DCS-servern och användar-ID:t. Om du inte har rätt användar-ID och region-ID kan du läsa [Hämta användar-ID och regioner från ett DCS-svar](/help/using/api/dcs-intro/dcs-s2s/dcs-aam-ids.md) och/eller [Experience Cloud](/help/using/api/dcs-intro/dcs-s2s/dcs-mcid-ids.md). När du har användar-ID:n och region-ID:n kan du göra server-till-server-anrop till DCS. I det här avsnittet finns syntax och exempel.
 
 >[!NOTE]
 >
->I koden och exemplen *kursiv* representerar en variabelplatshållare. Ersätt ett reellt värde för platshållaren när du anropar server-till-server till [!DNL DCS].
+>I koden och exemplen representerar *italics* en variabelplatshållare. Ersätt ett reellt värde för platshållaren när du anropar servern till [!DNL DCS].
 
 ## Samtalssyntax och exempel {#call-syntax-example}
 
-En grundläggande server-till-server-begäran som skickar data till [!DNL DCS] använder den syntax som visas nedan.
+En grundläggande server-till-server-begäran som skickar data till [!DNL DCS] använder syntaxen som visas nedan.
 
 ```js
 "Host:domain_alias.demdex.net" "https://DCS_host_name.demdex.net/event?d_rtbd=json&d_jsonv=1&d_uuid=userID
@@ -50,12 +50,12 @@ Ett samplingsanrop ser ut ungefär som i följande exempel.
    <td colname="col2"> <p>Denna del av samtalet innehåller: </p> <p> 
      <ul id="ul_3EDA9C7BA6794D06BCB07A75A9BD2372"> 
       <li id="li_74624CA78D6F4536A8164AE1FA1DECB9">Ditt domänalias som tilldelats av <span class="keyword"> Audience Manager</span> (t.ex. <i><code> my_domain.demdex.net</code></i>). </li> 
-      <li id="li_08ABE91CA247403AA480B3FB4BEF83BA">Måldomänen, som alltid är <i><code> demdex.net</code></i>. Se <a href="../../../reference/demdex-calls.md">Förstå anrop till Demdex-domänen</a>. </li> 
+      <li id="li_08ABE91CA247403AA480B3FB4BEF83BA">Måldomänen, som alltid är <i><code> demdex.net</code></i>. Se <a href="../../../reference/demdex-calls.md"> Förstå anrop till Demdex-domänen </a>. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> <i>DCS host name</i>.demdex.net</code> </p> </td> 
-   <td colname="col2"> <p>Den http-huvudvärdparameter som visar namnet på den regionala <span class="wintitle"> DCS</span> server. Värdnamnet är kopplat till ett region-ID, vilket är orsaken till att du behöver det här innan du gör dessa typer av samtal. Se <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> DCS-region-ID, -platser och -värdnamn</a>. </p> </td> 
+   <td colname="col2"> <p>Den http-huvudvärdparameter som visar namnet på den regionala <span class="wintitle"> DCS</span> -servern. Värdnamnet är kopplat till ett region-ID, vilket är orsaken till att du behöver det här innan du gör dessa typer av samtal. Se <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> ID:n för DCS-region, platser och värdnamn</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> /event?</code> </p> </td> 
@@ -67,11 +67,11 @@ Ett samplingsanrop ser ut ungefär som i följande exempel.
   </tr> 
   <tr> 
    <td colname="col1"> <p><code>d_uuid= <i>Audience Manager user ID</i></code> </p> </td> 
-   <td colname="col2"> <p>Detta är den unika användar-ID-nyckeln som innehåller <span class="keyword"> Audience Manager</span> användar-ID i nyckelvärdepar. </p> <p>Använd <code><i>d_uuid</i></code> om du skickar in <span class="keyword"> Audience Manager</span> användar-ID. </p> </td>
+   <td colname="col2"> <p>Detta är den unika användar-ID-nyckeln som innehåller användar-ID:t <span class="keyword"> Audience Manager </span> i ett nyckelvärdepar. </p> <p>Använd <code><i>d_uuid</i></code> om du skickar användar-ID:t <span class="keyword"> Audience Manager </span>. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p><code>d_mid=<i>Experience Cloud user ID</i></code> </p> </td> 
-   <td colname="col2"> <p>Detta är den unika användar-ID-nyckeln som innehåller <span class="keyword"> Experience Cloud</span> användar-ID i nyckelvärdepar. Se även <a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#get-user-ids-from-service-cookie"> Hämta användar-ID från ID-tjänstens cookie</a>. </p> <p>Använd <i><code> d_mid</code></i> om du skickar in en <span class="keyword"> Experience Cloud</span> ID som hämtats från <span class="keyword"> Experience Cloud</span> ID-tjänst. </p> </td> 
+   <td colname="col2"> <p>Detta är den unika användar-ID-nyckeln som innehåller användar-ID:t <span class="keyword"> Experience Cloud </span> i ett nyckelvärdepar. Se även <a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#get-user-ids-from-service-cookie"> Hämta användar-ID från ID-tjänstcookie</a>. </p> <p>Använd <i><code> d_mid</code></i> om du skickar ett <span class="keyword"> Experience Cloud </span> ID som hämtats från <span class="keyword"> Experience Cloud </span> ID-tjänsten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> 
@@ -80,7 +80,7 @@ Ett samplingsanrop ser ut ungefär som i följande exempel.
       <li id="li_4B6B29499D444E31808DE0A9AA0442D0"><code> d_rtbd=json</code> </li> 
       <li id="li_3430CD0438604B83BE6437E6EC480816"><code>d_cb=<i>callback</i></code> </li> 
      </ul> </p> </td> 
-   <td colname="col2"> <p>Valfria svarsparametrar. </p> <p> Ingen av dessa behövs för att skicka data till <span class="wintitle"> DCS</span>. Men om du vill ha <span class="wintitle"> DCS</span> om du vill returnera ett svar måste du inkludera <i><code> d_rtbd=json</code></i> på din begäran. </p> </td> 
+   <td colname="col2"> <p>Valfria svarsparametrar. </p> <p> Ingen av dessa krävs för att skicka data till <span class="wintitle"> DCS</span>. Om du vill att <span class="wintitle"> DCS</span> ska returnera ett svar måste du inkludera <i><code> d_rtbd=json</code></i> i din begäran. </p> </td> 
   </tr> 
  </tbody> 
 </table>

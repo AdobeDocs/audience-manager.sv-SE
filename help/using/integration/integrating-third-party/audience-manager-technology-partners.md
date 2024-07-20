@@ -2,29 +2,29 @@
 description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
 seo-description: This page includes current server-to-server integrations only. For more information on an integration refer to its Adobe Exchange listing (where available) or contact your Adobe Consultant or Customer Care.
 seo-title: Adobe Audience Manager Technology Partners
-keywords: aktivering, aktiveringspartner, destination, mål
+keywords: aktivering; aktiveringspartner, destination, destinationer
 solution: Audience Manager
 title: Adobe Audience Manager Technology Partners
 feature: Third-party Integration
 source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
 workflow-type: tm+mt
-source-wordcount: '1149'
-ht-degree: 43%
+source-wordcount: '1299'
+ht-degree: 0%
 
 ---
 
 
 # Audience Manager Activation Partners
 
-Den här sidan innehåller Audience Manager [server-till-server-integreringar](/help/using/features/destinations/add-edit-segments.md) endast.  Mer information om en integrering finns i [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html) eller kontakta Adobe Consultant eller kundtjänst.
+Den här sidan innehåller endast aktuella Audience Manager [server-till-server-integreringar](/help/using/features/destinations/add-edit-segments.md).  Mer information om en integrering finns i [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
 
 <br>
 
-* **Uppdaterat** = Visar det senaste datumet då det fanns en uppdatering för den här aktiveringspartnern.
-* **Dela upp** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från segment. Din möjlighet att ta bort en enhetsprofil från ett segment beror på vilket enhetsalternativ som används för att skapa en profilkopplingsregel. Osegmentering används också i samband med begäran om GDPR-borttagning Läs [Regler för profilsammanslagning och process för enhetsosegmentering](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) och [Audience Manager partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation). Audience Manager skickar information om att segmentera till de destinationer som är markerade med Ja nedan.
-* **Tar emot IAB TCF-medgivandesignaler** = Med plugin-programmet Audience Manager för IAB TCF kan du vidarebefordra IAB TC-strängen till aktiveringspartners med hänsyn till användarnas sekretessinställningar. Läs [Plugin-programmet Audience Manager för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
-* **ICD** = I den här kolumnen listas de partners som stöder direkt undertryckning av olika enheter. Läs [Direkt undertryckning av olika enheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
-* **ID för mobila enheter** = Den här kolumnen innehåller partners som kan ta emot mobilenhets-ID:n från Audience Manager.
+* **Uppdaterad** = Visar det senaste datumet när det fanns en uppdatering för den här aktiveringspartnern.
+* **Dela upp** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från segment. Din möjlighet att ta bort en enhetsprofil från ett segment beror på vilket enhetsalternativ som används för att skapa en profilkopplingsregel. Osegmentering används också i samband med GDPR-borttagningsbegäranden Läs [profilkopplingsregler och Osegmenteringsprocesser för enheter](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) och [Audience Manager-partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation). Audience Manager skickar information om att segmentera till de destinationer som är markerade med Ja nedan.
+* **Om du tar emot IAB TCF-medgivandesignaler** = Insticksprogrammet Audience Manager för IAB TCF kan du vidarebefordra IAB TC-strängen till aktiveringspartners med hänsyn till användarnas sekretessval. Läs [Audience Manager-plugin-programmet för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
+* **ICDS** = Den här kolumnen listar de partners som stöder inaktivering av direktenheter. Läs [Direkt undertryckning av olika enheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
+* **ID:n för mobila enheter** = Den här kolumnen listar partners som kan ta emot ID:n för mobila enheter från Audience Manager.
 
 <br>
 
@@ -51,7 +51,7 @@ Den här sidan innehåller Audience Manager [server-till-server-integreringar](/
 | Atedra/AdStanding | 02/03/2017 | Ja | Nej | Ja | Nej |
 | Avocet | 06/12/2017 | Nej | Nej | Nej | Nej |
 | Bidtellect | 03/03/2017 | Ja | Nej | Nej | Nej |
-| Bax | 25/05/2018 | Nej | Nej | Nej | Ja |
+| Bevax | 25/05/2018 | Nej | Nej | Nej | Ja |
 | Brandscreen | 03/03/2017 | Nej | Nej | Nej | Nej |
 | Brightroll | 03/03/2017 | Nej | Ja | Nej | Nej |
 | Knapp | 18/12/2017 | Ja | Nej | Nej | Ja |
@@ -61,11 +61,11 @@ Den här sidan innehåller Audience Manager [server-till-server-integreringar](/
 | ChoiceStream | 27/02/2017 | Nej | Nej | Nej | Nej |
 | Clearstream.tv | 27/02/2017 | Ja | Nej | Nej | Nej |
 | Gemensam AMP-plattform | 27/02/2017 | Nej | Nej | Nej | Nej |
-| Kriterium | 27/02/2017 | Nej | Ja | Nej | Ja |
+| Criteo | 27/02/2017 | Nej | Ja | Nej | Ja |
 | Medsols | 27/02/2017 | Ja | Nej | Nej | Nej |
 | D.A.C. AudienceOne | 27/02/2017 | Ja | Nej | Nej | Nej |
 | DataXu | 11/20/2017 | Nej | Nej | Nej | Ja |
-| Digilant | 02/03/2017 |  | Nej | Nej | Nej |
+| Digilant | 02/03/2017 |           | Nej | Nej | Nej |
 | DistrictM | 02/03/2017 | Ja | Nej | Nej | Nej |
 | DoubleVerify | 06/09/2017 | Ja | Nej | Nej | Nej |
 | Drawbridge | 02/03/2017 | Nej | Nej | Nej | Ja |
@@ -78,7 +78,7 @@ Den här sidan innehåller Audience Manager [server-till-server-integreringar](/
 | Flashtalk | 02/03/2017 | Nej | Nej | Nej | Nej |
 | FreakOut | 03/03/2017 | Ja | Nej | Nej | Nej |
 | Frihjulshjul | 27/02/2017 | Ja | Ja | Nej | Ja |
-| Tryckbarheter | 03/03/2017 |  | Nej | Nej |  |
+| Tryckbarheter | 03/03/2017 |           | Nej | Nej |                   |
 | Google AdsWords Display | 02/08/2018 | Ja | Ja | Nej | Ja |
 | Google DoubleClick Bid Manager (DBM) | 24/04/2017 | Ja | Ja | Ja | Ja |
 | Google DoubleClick Campaign Manager (DCM fka DFA) | 24/04/2017 | Ja | Ja | Ja | Ja |
@@ -95,7 +95,7 @@ Den här sidan innehåller Audience Manager [server-till-server-integreringar](/
 | Krux | 30/06/2017 | Nej | Nej | Nej | Ja |
 | Liftoff.io | 09/11/2017 | Ja | Nej | Nej | Ja |
 | LiveIntent | 17/07/2017 | Ja | Nej | Nej | Nej |
-| LiveRail | 20/01/2017 |  | Nej | Nej |  |
+| LiveRail | 20/01/2017 |           | Nej | Nej |                   |
 | Logicad | 22/06/2017 | Nej | Nej | Nej | Nej |
 | Lotame | 30/06/2017 | Ja | Nej | Nej | Ja |
 | MaxPoint Interactive | 27/02/2017 | Nej | Nej | Nej | Nej |
@@ -114,7 +114,7 @@ Den här sidan innehåller Audience Manager [server-till-server-integreringar](/
 | OneSpot | 19/06/2017 | Ja | Nej | Nej | Ja |
 | OpenX | 26/07/2018 | Ja | Nej | Nej | Ja |
 | Opera Mediaworks | 13/02/2017 | Ja | Nej | Nej | Ja |
-| Utanför | 03/04/2017 | Ja | Nej | Nej | Nej |
+| Utanför hjärnan | 03/04/2017 | Ja | Nej | Nej | Nej |
 | ÄgareIQ | 13/02/2017 | Ja | Nej | Ja | Nej |
 | Plattform 161 | 28/11/2018 | Ja | Nej | Nej | Ja |
 | PocketMath | 22/02/2017 | Ja | Nej | Nej | Ja |
@@ -128,14 +128,14 @@ Den här sidan innehåller Audience Manager [server-till-server-integreringar](/
 | Resonera | 17/02/2017 | Ja | Nej | Nej | Nej |
 | RevJet | 17/02/2017 | Nej | Nej | Nej | Nej |
 | RocketFuel | 17/02/2017 | Ja | Nej | Ja | Ja |
-| Rubicon |  | Ja | Ja | Nej |  |
+| Rubicon |            | Ja | Ja | Nej |                   |
 | KÖR | 17/02/2017 | Ja | Nej | Nej | Nej |
 | Sabio Mobile | 17/02/2017 | Nej | Nej | Nej | Ja |
 | Simpli.fi | 17/02/2017 | Nej | Nej | Nej | Ja |
-| Sizmek Audience Hub | 17/02/2017 | Ja | Nej | Nej |  |
+| Sizmek Audience Hub | 17/02/2017 | Ja | Nej | Nej |                   |
 | Slickerbjudanden | 04/09/2018 | Ja | Nej | Nej | Ja |
 | Smart Adserver | 31/07/2017 | Ja | Nej | Ja | Ja |
-| Logikresurs för Sonet Media Networks |  | Ja | Nej | Nej |  |
+| Logikresurs för Sonet Media Networks |            | Ja | Nej | Nej |                   |
 | Sonobi | 28/03/2017 | Ja | Nej | Ja | Nej |
 | SpecificMedia | 03/03/2017 | Nej | Nej | Nej | Nej |
 | SvampCell | 03/03/2017 | Ja | Nej | Ja | Ja |
@@ -150,21 +150,21 @@ Den här sidan innehåller Audience Manager [server-till-server-integreringar](/
 | Telaria | 25/04/2019 | Ja | Nej | Nej | Ja |
 | Telologiska system | 03/03/2017 | Ja | Nej | Nej | Nej |
 | The Trade Desk | 03/03/2017 | Ja | Ja | Ja | Ja |
-| Thnk Realtime | 05/02/2016 |  | Nej | Nej |  |
+| Thnk Realtime | 05/02/2016 |           | Nej | Nej |                   |
 | Tremor Video | 03/03/2017 | Ja | Nej | Nej | Nej |
 | Trippellyft | 03/03/2017 | Nej | Ja | Nej | Nej |
 | TrueX | 11/01/2018 | Ja | Nej | Nej | Ja |
 | TubeMogul | 03/03/2017 | Ja | Nej | Ja | Nej |
-| Sväng/Amobee | 03/03/2027 | Nej | Nej | Nej | Ja |
+| Sväng/Amobe | 03/03/2027 | Nej | Nej | Nej | Ja |
 | Twenga | 29/10/2018 | Ja | Nej | Nej | Nej |
-| Twitter Custom Auditions | 27/03/2017 | Ja | Nej | Ja | Nej |
+| Anpassade målgrupper för twitter | 27/03/2017 | Ja | Nej | Ja | Nej |
 | Underton | 11/07/2017 | Nej | Nej | Nej | Nej |
 | Verve | 15/06/2017 | Ja | Nej | Nej | Ja |
 | VideoAmp | 03/03/2017 | Nej | Nej | Nej | Nej |
 | Videologi | 03/03/2017 | Nej | Nej | Nej | Nej |
 | VisualIQ | 24/03/2017 | Ja | Nej | Nej | Nej |
 | Wikibuy | 04/08/2018 | Ja | Nej | Nej | Ja |
-| X+1 | 05/02/2016 |  | Nej | Nej |  |
+| X+1 | 05/02/2016 |           | Nej | Nej |                   |
 | Xaxis | 03/03/2017 | Ja | Nej | Nej | Nej |
 | Yahoo DataX | 03/03/2017 | Ja | Ja | Ja | Ja |
 | Yahoo! Japan | 03/03/2017 | Nej | Nej | Nej | Nej |

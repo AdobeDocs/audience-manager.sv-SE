@@ -9,7 +9,7 @@ feature: Third-party Integration
 exl-id: 8f8a6881-d616-4d0e-aeaa-bf3bb3a172f9
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ I följande tabell beskrivs viktiga aktiviteter som äger rum under den här fas
 Produkterna för den här fasen kan inkludera:
 
 * En slutförd strategi för datainsamling från första part, andra part och tredje part.
-* En slutförd [!DNL CRM] eller data warehouse,
+* En slutförd [!DNL CRM]- eller datalageringsplan;
 * Definierade krav för målgruppssegmentering.
 * en slutförd datataxonomi,
 * En utvecklad integrationsplan för data från tredje part.
@@ -147,7 +147,7 @@ Under konstruktions-, test- och tågfasen kommer du att granska datainsamlingsst
 
 <!-- c_build_test_train.xml -->
 
-Din datainsamlingsstrategi kommer att gå från början till slut [!DNL QA] testning. Partnerlösningar spårar identifierade fel och koordinerar problemlösningar med våra systemtekniker. Kundutbildningen kan börja parallellt med dessa andra satsningar.
+Din datainsamlingsstrategi genomgår [!DNL QA]-testning från början till slut. Partnerlösningar spårar identifierade fel och koordinerar problemlösningar med våra systemtekniker. Kundutbildningen kan börja parallellt med dessa andra satsningar.
 
 I följande tabell beskrivs viktiga aktiviteter som äger rum under den här fasen:
 
@@ -161,13 +161,13 @@ I följande tabell beskrivs viktiga aktiviteter som äger rum under den här fas
 Produkterna för den här fasen kan inkludera:
 
 * En slutförd och godkänd plan för datainsamling.
-* Från början till slut [!DNL QA] provning,
+* [!DNL QA]-testning från början till slut;
 * Grundläggande anvisningar om Audience Manager användargränssnitt;
 * Godkännande och godkännande.
 
 ## Start-, support- och optimeringsfasen {#launch-support-optimize-phase}
 
-Under start-, support- och optimeringsfasen går datainsamlingen och den prototypbaserade implementeringen från utveckling till en aktiv produktionsmiljö. Vi kommer att fortsätta att utbilda oss i produktbekanta och strategier som kan bidra till att öka [!DNL ROI] genom datadriven optimering.
+Under start-, support- och optimeringsfasen går datainsamlingen och den prototypbaserade implementeringen från utveckling till en aktiv produktionsmiljö. Vi kommer att fortsätta att utbilda oss om produktbekanta och strategier som kan bidra till att öka din [!DNL ROI] genom datadriven optimering.
 
 <!-- c_launch_support_optimize.xml -->
 
@@ -218,11 +218,11 @@ Uppgifter för den här fasen kan vara:
 * svara på förfrågningar, buggrapporter och användarfeedback,
 * Bekanta dig med Audience Manager funktioner och rapporter.
 
-## Kodimplementering {#code-implementation}
+## Kod {#code-implementation}
 
 Audience Manager använder Datan Integration Library ([!DNL DIL]) för att ta emot målgruppsdata.
 
-Detaljerade anvisningar om hur du använder [!DNL DIL], se [Hämta och implementera DIL-kod](../dil/dil-overview.md).
+Detaljerade instruktioner om hur du använder [!DNL DIL] finns i [Hämta och implementera DIL-kod](../dil/dil-overview.md).
 
 ### Deltagare
 

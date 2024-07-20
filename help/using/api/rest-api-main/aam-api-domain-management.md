@@ -9,8 +9,8 @@ feature: API
 exl-id: f9907f6e-d553-4771-945b-2fddb3c9ce2f
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 2%
+source-wordcount: '340'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ Domänhanteringsmetoder som gör att du kan skapa och hantera domäner som du vi
 
 ## Skapa en ny domän {#create-new-domain}
 
-A `POST` metod som gör att du kan skapa en ny domän för (endast cookie-mål).
+En `POST`-metod som låter dig skapa en ny domän för (endast cookie-mål).
 
 <!-- r_post_new_partner_site.xml -->
 
@@ -40,7 +40,7 @@ A `POST` metod som gör att du kan skapa en ny domän för (endast cookie-mål).
 
 ### Svar
 
-Ett godkänt svar returnerar `201 created` och partnerwebbplatsen, inklusive dess unika ID.
+Ett lyckat svar returnerar `201 created` och partnerwebbplatsen, inklusive dess unika ID.
 
 ```
 {
@@ -52,7 +52,7 @@ Ett godkänt svar returnerar `201 created` och partnerwebbplatsen, inklusive des
 
 ## Ta bort en domän {#delete-domain}
 
-A `DELETE` metod som gör att du kan ta bort en domän (endast för cookie-mål).
+En `DELETE`-metod som låter dig ta bort en domän (endast för cookie-mål).
 
 <!-- r_delete_partner_site.xml -->
 
@@ -62,11 +62,11 @@ A `DELETE` metod som gör att du kan ta bort en domän (endast för cookie-mål)
 
 ### Svar
 
-Ett godkänt svar returnerar `204 no content`. Returnerar `404 not found` om partnerwebbplatsen inte kan hittas.
+Ett svar returnerar `204 no content`. Returnerar `404 not found` om partnerwebbplatsen inte kan hittas.
 
 ## Returnera egenskaper för en domän {#return-props-domain}
 
-A `GET` metod som returnerar information om den angivna domänen (endast för cookie-mål).
+En `GET`-metod som returnerar information om den angivna domänen (endast för cookie-mål).
 
 <!-- r_get_partner_site.xml -->
 
@@ -76,7 +76,7 @@ A `GET` metod som returnerar information om den angivna domänen (endast för co
 
 ### Svar
 
-Ett godkänt svar returnerar `200 OK` och data enligt exemplet nedan. Returnerar `404 Not found` om plats-ID:t eller partnern inte hittas.
+Ett lyckat svar returnerar `200 OK` och data enligt exemplet nedan. Returnerar `404 Not found` om plats-ID:t eller partnern inte hittas.
 
 ```
 {
@@ -88,7 +88,7 @@ Ett godkänt svar returnerar `200 OK` och data enligt exemplet nedan. Returnerar
 
 ## Returnera egenskaper för alla domäner {#return-props-all-domains}
 
-A `GET` metod som returnerar information om alla dina domäner (endast för cookie-mål).
+En `GET`-metod som returnerar information om alla dina domäner (endast för cookie-mål).
 
 <!-- r_get_partner_sites.xml -->
 
@@ -98,7 +98,7 @@ A `GET` metod som returnerar information om alla dina domäner (endast för cook
 
 ### Valfria frågeparametrar
 
-Du kan använda de här valfria parametrarna med [!DNL API] metoder som returnerar *alla* egenskaper för ett objekt. Ange dessa alternativ i begärandesträngen när frågan skickas till [!DNL API]. Se [Valfria parametrar](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters).
+Du kan använda de här valfria parametrarna med [!DNL API]-metoder som returnerar *all* -egenskaper för ett objekt. Ange dessa alternativ i begärandesträngen när du skickar frågan till [!DNL API]. Se [Valfria parametrar](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters).
 
 <table id="table_B05A8EE22C9A4C72B84A8479E1AB7D0A"> 
  <thead> 
@@ -133,7 +133,7 @@ Du kan använda de här valfria parametrarna med [!DNL API] metoder som returner
 
 ### Svar
 
-Ett godkänt svar returnerar `200 OK` och data i en array enligt exemplet nedan. Returnerar `404 Not found` om plats-ID:t eller partnern inte hittas.
+Ett lyckat svar returnerar `200 OK` och data i en matris, vilket visas i exemplet nedan. Returnerar `404 Not found` om plats-ID:t eller partnern inte hittas.
 
 ```
 [

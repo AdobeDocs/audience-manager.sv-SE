@@ -10,8 +10,8 @@ feature: Onboarding Offline Data
 exl-id: 48eef5f1-0655-4dac-9ab4-74b11c705c13
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 89%
+source-wordcount: '1343'
+ht-degree: 86%
 
 ---
 
@@ -35,9 +35,9 @@ Registreringsprocessen består av två steg som beskrivs i [Översikt över att 
 Vi rekommenderar följande:
 
 * Samarbeta med er dataleverantör för att formatera den dagliga inkommande datafilen enligt Adobes specifikationer. Kraven på filnamn och syntax finns i följande dokumentation:
-   * [Krav på namn och innehåll för ID-synkroniseringsfiler](../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
-   * [Innehåll i inkommande datafil: Syntax, ogiltiga tecken, variabler och exempel](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
-   * [Krav på Amazon S3-namn och filstorlekar för inkommande datafiler](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+   * [Namn- och innehållskrav för ID-synkroniseringsfiler](../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
+   * [Innehåll i inkommande datafil: syntax, ogiltiga tecken, variabler och exempel](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
+   * [Amazon S3-namn och filstorlek för inkommande datafiler](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 * Samarbeta med er [!DNL Adobe]-konsult för att överföra en testdatafil till [!DNL Adobe] för formatverifiering.
 * Samarbeta med er [!DNL Adobe]-konsult för att ta fram en taxonomi som passar för att tolka innehållet i datafilen.
 * I mellanlagrings-/utvecklingsmiljön bekräftar du att ID-synkroniseringen är konfigurerad för att hämta dataleverantörens besökar-ID och överföra det till [!DNL Audience Manager]-servrarna i realtid.
@@ -58,10 +58,10 @@ Se [Filkomprimering för inkommande dataöverföringsfiler](../integration/sendi
 
 **Kan jag överföra en inkommande datafil (filen [!DNL .sync] eller [!DNL .overwrite]) innan jag driftsätter [!DNL Audience Manager] -koden i produktionen?**
 
-Ja. Så länge du använder [!UICONTROL cross-device data source] för att lagra de CRM-data som du överför lagrar Audience Manager alltid dessa data. I själva verket följer [!UICONTROL Profile Merge Rules] förbättringar som Audience Manager lanserade i oktober 2019 och som gör det möjligt att endast använda offline, kan du ladda upp data och agera på data utan att behöva driftsätta Audience Manager-kod i produktionen alls. Se:
+Ja. Så länge du använder en [!UICONTROL cross-device data source] för att lagra de CRM-data som du överför lagrar Audience Manager alltid dessa data. Efter de [!UICONTROL Profile Merge Rules] förbättringar som Audience Manager lanserade i oktober 2019 och som gör att endast offlineanvändning kan användas, kan du överföra och vidta åtgärder för data utan att distribuera Audience Manager-kod till produktionen alls. Se:
 
 * [Översikt över förbättrade regler för profilsammanslagning](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
-* [!UICONTROL People-based Destinations] - [Personalisering baserad på data som bara är offline](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
+* [!UICONTROL People-based Destinations] - [Personalization baserad på data som bara är offline](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
 
 <br>
 
@@ -154,9 +154,9 @@ FTP-filer tas bort efter att de har bearbetats. [!DNL S3]-filer tas bort efter 3
 
 * **Fullständig:** En fullständig fil skriver över alla era befintliga besökarprofiler och ersätter dem med data i filen. Fullständiga filer identifieras av taggen `.overwrite` som läggs till efter filnamnet. Du kan använda en `.overwrite`-fil för att återställa besökarnas traits eller ta bort inaktuella, föråldrade traits.
 
-   >[!NOTE]
-   >
-   >[!DNL .overwrite]-filerna skriver bara över [!DNL Audience Manager]-profildata som är associerade med dataleverantören. Med andra ord förblir alla [!DNL Audience Manager]-data som är kopplade till besökaren intakta efter att en [!DNL .overwrite]-fil har bearbetats.
+  >[!NOTE]
+  >
+  >[!DNL .overwrite]-filerna skriver bara över [!DNL Audience Manager]-profildata som är associerade med dataleverantören. Med andra ord förblir alla [!DNL Audience Manager]-data som är kopplade till besökaren intakta efter att en [!DNL .overwrite]-fil har bearbetats.
 
 * **Inkrementell:** En inkrementell fil lägger till nya data i befintliga besökarprofiler. Inkrementella filer identifieras av taggen `.sync` som läggs till efter filnamnet. Befintliga profiler raderas eller skrivs inte över när ni skickar en inkrementell fil.
 
@@ -169,7 +169,7 @@ Följande exempel visar hur dessa filtyper påverkar lagrade besökarprofiler.
 
 Mer information om fullständiga och inkrementella filtyper finns i:
 
-* [Krav på Amazon S3-namn och filstorlekar för inkommande data...](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+* [Amazon S3-namn och filstorlek för inkommande data..](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
  
 
@@ -183,11 +183,11 @@ Under bearbetningen hoppar [!DNL Audience Manager] över den posten och går vid
 
 Tidsstämplar används för loggning och registrering. De krävs av den syntax som används för ett korrekt formaterat inkommande filnamn. Se:
 
-* [Krav på Amazon S3-namn och filstorlekar för inkommande datafiler](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+* [Amazon S3-namnkrav för inkommande datafiler](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
  
 
-**Vad är en [!DNL Data Provider ID (DPID)] och hur får jag tag i den?**
+**Vad är en [!DNL Data Provider ID (DPID)] och hur skaffar jag den?**
 
 Er Adobe-konsult kommer att tilldela er datakälla ett tresiffrigt eller fyrsiffrigt [DPID (dataleverantörs-ID)](../reference/ids-in-aam.md). Detta ID är unikt och ändras inte.
 
@@ -204,7 +204,7 @@ Se [Filkomprimering för inkommande dataöverföringsfiler](../integration/sendi
 Ja, se:
 
 * [Filkomprimering för inkommande dataöverföringsfiler](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
-* [Krav på Amazon S3-namn och filstorlekar för inkommande datafiler](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+* [Amazon S3-namnkrav för inkommande datafiler](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
  
 
@@ -247,4 +247,3 @@ Det beror på. [!DNL Audience Manager] läser max 119 000 poster från [!DNL Ama
 >[!MORELIKETHIS]
 >
 >* [Beskrivning av satsvis överföring av data](../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
-

@@ -10,7 +10,7 @@ exl-id: 4d777b67-6330-4582-b398-abc267b84d83
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 16%
+ht-degree: 0%
 
 ---
 
@@ -21,4 +21,4 @@ Tredjepartsleverantörer av innehåll kan förvänta sig att de utbyter data med
 <!-- c_rt_realtime_intro.xml -->
 
 * [Pixelbaserade dataöverföringar](/help/using/integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)
-* [Inkommande datainmatning i realtid](/help/using/integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)
+* [Ingående datainmatning i realtid](/help/using/integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)

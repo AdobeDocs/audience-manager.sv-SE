@@ -8,8 +8,8 @@ feature: Support
 exl-id: 2f7b9dbe-7aac-41b0-aab8-3b703d7a2441
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 100%
+source-wordcount: '370'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Kontakta [kundtjänsten](https://helpx.adobe.com/marketing-cloud/contact-support
 
 * **Telefon:** 1-800-497-0335
 
-   Information om avgiftsfria nummer utanför USA finns på vår webbplats med [regionala nummer till kundtjänsten](https://helpx.adobe.com/se/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html). När du blir ombedd att välja ett alternativ för produkten trycker du på 4 för att kontakta [!DNL Audience Manager]-teamet.
+  Information om avgiftsfria nummer utanför USA finns på vår webbplats med [regionala nummer till kundtjänsten](https://helpx.adobe.com/se/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html). När du blir ombedd att välja ett alternativ för produkten trycker du på 4 för att kontakta [!DNL Audience Manager]-teamet.
 
 * **E-post:** amsupport@adobe.com
 
@@ -74,7 +74,7 @@ Ha följande information till hands innan du kontaktar oss.
  </tbody> 
 </table>
 
-## Vid avbrott {#outage}
+## Vid ett utbrott {#outage}
 
 Om du misstänker ett driftstopp ska du först kontrollera [Experience Cloud System Status-sidan](https://status.adobe.com) ( [!DNL https://status.adobe.com]). Här finns en lista över alla driftavbrott, incidenter och underhåll för Experience Cloud-lösningarna, inklusive Audience Manager, samt de senaste uppdateringarna från vårt Tech Ops-team. Om du fortfarande behöver hjälp, ska du se till att du har följande information, förutom de uppgifter som anges ovan, innan du kontaktar kundtjänsten:
 

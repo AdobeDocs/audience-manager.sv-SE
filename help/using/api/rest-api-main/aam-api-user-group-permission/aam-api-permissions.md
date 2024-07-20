@@ -10,19 +10,19 @@ exl-id: 7aac8ea8-4120-4c6b-88a6-30e8aa727dc8
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 8%
+ht-degree: 0%
 
 ---
 
 # API-metoder för behörighetshantering {#permissions-management-api-methods}
 
-Vila [!DNL API] metoder för att hantera behörigheter för objekt och grupper.
+Återställ [!DNL API] metoder för att hantera behörigheter för objekt och grupper.
 
 <!-- c_rest_api_perm_man.xml -->
 
 ## Visa tillgängliga objekttyper {#list-object-types}
 
-A `GET` metod för att lista tillgängliga objekttyper som rollbaserade åtkomstkontroller kan ställas in på.
+En `GET`-metod för att lista tillgängliga objekttyper som rollbaserade åtkomstkontroller kan anges för.
 
 <!-- r_rest_api_perm_list.xml -->
 
@@ -38,7 +38,7 @@ A `GET` metod för att lista tillgängliga objekttyper som rollbaserade åtkomst
 
 ## Visa tillgängliga behörigheter för en objekttyp {#list-permissions-object-type}
 
-A `GET` metod för att lista tillgängliga behörigheter för en objekttyp.
+En `GET`-metod för att visa tillgängliga behörigheter för en objekttyp.
 
 <!-- r_rest_api_perm_list_perms.xml -->
 

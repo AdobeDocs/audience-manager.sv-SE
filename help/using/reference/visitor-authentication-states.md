@@ -10,8 +10,8 @@ feature: Reference
 exl-id: 55aec28d-02f6-4e6d-9be1-4ce40deb8dc3
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 6%
+source-wordcount: '315'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 Statusen för besöksautentisering i Audience Manager avgör om den nya trait-informationen skrivs till besökarens autentiserade profil eller till enhetsprofilen, där data samlades in från. Audience Manager hanterar autentiseringsstatusarna för besökar-ID UNKNOWN och LOGGED_OUT i händelseanrop på samma sätt.
 
-Börja med [!DNL Experience Cloud] ID-tjänsten v1.5+, `setCustomerID` metoden innehåller det valfria `AuthState` -objekt. `AuthState` identifierar besökare utifrån deras [autentiseringsstatus](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html). [!DNL Audience Manager] hanterar de realiserade egenskaperna på olika sätt, beroende på vilken autentiseringsstatus som skickas i anropet och vilka [Sammanfogningsregel för profil](../features/profile-merge-rules/merge-rules-dashboard.md) som används för segmentering.
+Från och med [!DNL Experience Cloud] ID-tjänsten v1.5+ innehåller metoden `setCustomerID` det valfria `AuthState`-objektet. `AuthState` identifierar besökare enligt deras [autentiseringsstatus](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html). [!DNL Audience Manager] hanterar de realiserade egenskaperna på olika sätt, beroende på vilken autentiseringsstatus som skickas i anropet och vilken [profilkopplingsregel ](../features/profile-merge-rules/merge-rules-dashboard.md) du använder för segmentering.
 
 ## Autentiseringsstatus: OKÄND {#auth-status-unknown}
 
@@ -53,9 +53,8 @@ Exempelanrop (det begärandevärde som motsvarar autentiseringsstatusen markeras
 
 >[!NOTE]
 >
->[!DNL Audience Manager] utför en ID-synkronisering mellan [CID och UUID](../reference/ids-in-aam.md) i samtliga tre fall.
+>[!DNL Audience Manager] utför en ID-synkronisering mellan [CID och UUID](../reference/ids-in-aam.md) i alla tre fallen.
 
 >[!MORELIKETHIS]
 >
 >* [Kund-ID:n och autentiseringstillstånd](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)
-

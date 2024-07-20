@@ -9,8 +9,8 @@ feature: Customer Data Feeds
 exl-id: a948accc-6bec-4748-bcc8-2b77acf6b96a
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 100%
+source-wordcount: '451'
+ht-degree: 98%
 
 ---
 
@@ -87,4 +87,3 @@ Du kan bara generera CDF-filer för de senaste 8 dagarna. CDF-filer för interva
 >[!MORELIKETHIS]
 >
 >* [Kunddataflöden](../features/cdf-files.md)
-

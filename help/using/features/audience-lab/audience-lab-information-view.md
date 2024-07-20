@@ -10,7 +10,7 @@ exl-id: fb691c12-304d-4331-a395-a9005efa8bb0
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -20,16 +20,16 @@ I det här avsnittet visas allmän information om testgruppen och de testsegment
 
 Du kan också se information om baslinjesegmentet som du använde för testgruppen och hur testsegmenten är uppdelade.
 
-The **[!UICONTROL Test Segments]** fylls i slumpmässigt med användare från det baslinjesegment som du använde för testgruppen. I översikten visas procentsatserna för de användare som du tilldelade varje testsegment.
+**[!UICONTROL Test Segments]** fylls i slumpmässigt med användare från det baslinjesegment som du använde för testgruppen. I översikten visas procentsatserna för de användare som du tilldelade varje testsegment.
 
-The **[!UICONTROL Conversion Traits]** driva rapporteringen för testgrupperna. Om du vill ange ett varumärke som en konvertering när du skapar eller redigerar egenskaper i [!UICONTROL Trait Builder], markera **Konvertering** as **[Händelsetyp](../../features/traits/create-onboarded-rule-based-traits.md).**
+**[!UICONTROL Conversion Traits]** kör rapporteringen för testgrupperna. Välj **Konvertering** som **[Händelsetyp](../../features/traits/create-onboarded-rule-based-traits.md) när du skapar eller redigerar egenskaper i [!UICONTROL Trait Builder].**
 
-The **[!UICONTROL Destinations]** kortet är komprimerbart. Tryck på pilarna för att öppna eller stänga enskilda mål och få följande information för testsegment, grupperade efter de mål som de är mappade till:
+Kortet **[!UICONTROL Destinations]** är komprimerbart. Tryck på pilarna för att öppna eller stänga enskilda mål och få följande information för testsegment, grupperade efter de mål som de är mappade till:
 
 * antalet enheter från bassegmentets totala population som tilldelats varje mål.
 * kartnyckel,
 * Mappningsvärde.
-* [!DNL URL] och säker [!DNL URL] for [!DNL URL] destinationer.
+* [!DNL URL] och säker [!DNL URL] för [!DNL URL] mål.
 
 >[!NOTE]
 >

@@ -3,18 +3,18 @@ description: Valfria metoder som gör att du kan tilldela egenskaper till en anv
 seo-description: Optional methods that let you to assign traits to a user-defined type or category, usually according to function or for your own internal reporting processes.
 seo-title: Trait Type Methods
 solution: Audience Manager
-title: Metoder för traittyper
+title: Trait Type-metoder
 uuid: 082931d5-457b-4622-817b-86303f38c26a
 feature: API
 exl-id: d450f9ce-2abb-4a8b-b8db-2962b84fb341
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
-# Metoder för traittyper {#trait-type-methods}
+# Trait Type-metoder {#trait-type-methods}
 
 Valfria metoder som gör att du kan tilldela egenskaper till en användardefinierad typ eller kategori, vanligtvis efter funktion eller för dina egna interna rapporteringsprocesser.
 
@@ -22,13 +22,13 @@ Valfria metoder som gör att du kan tilldela egenskaper till en användardefinie
 
 >[!NOTE]
 >
->Trait-typsmetoder tilldelar inte egenskaper till kategorier som används av [vanlig taxonomi](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods). Tänk på dessa som etiketter som är åtskilda från den vanliga taxonomin.
+>Trait-typmetoder tilldelar inte egenskaper till kategorier som används av [Common taxonomy](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods). Tänk på dessa som etiketter som är åtskilda från den vanliga taxonomin.
 
-För visuell referens [!UICONTROL Trait Types] är en listrutekontroll som finns i [!DNL UI] under **[!UICONTROL Traits > Create new trait > Basic Information]**.
+För visuell referens är [!UICONTROL Trait Types] en nedrullningsbar kontroll som finns i [!DNL UI] under **[!UICONTROL Traits > Create new trait > Basic Information]**.
 
 ## Skapa en ny dragtyp {#create-trait-type}
 
-A `POST` -metod som gör att du kan skapa en ny trait-typ.
+En `POST`-metod som gör att du kan skapa en ny trait-typ.
 
 <!-- r_rest_api_create_trait_type.xml -->
 
@@ -61,7 +61,7 @@ A `POST` -metod som gör att du kan skapa en ny trait-typ.
 
 ## Returnera egenskaper för en dragtyp {#return-props}
 
-A `GET` metod som returnerar information om den angivna trait-typen.
+En `GET`-metod som returnerar information om den angivna trait-typen.
 
 <!-- r_rest_api_get_trait_type.xml -->
 
@@ -86,7 +86,7 @@ A `GET` metod som returnerar information om den angivna trait-typen.
 
 ## Returnera egenskaper för alla trait-typer {#return-props-all}
 
-A `GET` som returnerar information om alla dina trait-typer i en array.
+En `GET`-metod som returnerar information om alla dina trait-typer i en array.
 
 <!-- r_rest_api_get_trait_types.xml -->
 

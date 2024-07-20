@@ -9,8 +9,8 @@ feature: Reference
 exl-id: 5fcb1a64-5e45-4973-9e20-7d4d07071cbf
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 77%
+source-wordcount: '155'
+ht-degree: 84%
 
 ---
 
@@ -28,20 +28,20 @@ Adobe stöder den senaste större versionen av dessa webbläsare:
 
 * **Google Chrome**
 
-   Hämta den senaste Chrome-versionen från [https://www.google.com/chrome](https://www.google.com/chrome).
+  Hämta den senaste Chrome-versionen från [https://www.google.com/chrome](https://www.google.com/chrome).
 
 * **Microsoft Edge**
 
-   (Adobe upphörde med stödet för Internet Explorer 11 i Audience Manager den 10 juli 2019. Byt till den senaste större versionen av Microsoft Edge eller en annan webbläsare som stöds så snart som möjligt.)
+  (Adobe upphörde med stödet för Internet Explorer 11 i Audience Manager den 10 juli 2019. Byt till den senaste större versionen av Microsoft Edge eller en annan webbläsare som stöds så snart som möjligt.)
 
-   Hämta den senaste versionen av Edge från [https://www.microsoft.com/sv-se/edge](https://www.microsoft.com/sv-se/edge).
+  Hämta den senaste versionen av Edge från [https://www.microsoft.com/sv-se/edge](https://www.microsoft.com/sv-se/edge).
 
 * **Mozilla Firefox**
 
-   Hämta den senaste Firefox-versionen från [https://www.mozilla.com/en-US/firefox](https://www.mozilla.com/en-US/firefox).
+  Hämta den senaste Firefox-versionen från [https://www.mozilla.com/en-US/firefox](https://www.mozilla.com/en-US/firefox).
 
 * **Safari**
 
-   Hämta den senaste Safari-versionen från [https://www.apple.com/safari/download](https://www.apple.com/safari/download).
+  Hämta den senaste Safari-versionen från [https://www.apple.com/safari/download](https://www.apple.com/safari/download).
 
 Andra webbläsare kan fungera, men stöds inte av våra tekniker och produktteam. Om du har problem med att arbeta med [!DNL Audience Manager] ska du kontrollera att du använder en uppdaterad webbläsare som stöds.

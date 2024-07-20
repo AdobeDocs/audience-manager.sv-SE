@@ -9,8 +9,8 @@ feature: DIL Implementation
 exl-id: 814268bc-4387-4e06-ae94-eda86993a967
 source-git-commit: cad38e2c523e9b762aa996c275daefa96c8e14b0
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 2%
+source-wordcount: '130'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 2%
 
 >[!WARNING]
 >
->Från och med juli 2023 har Adobe upphört med utvecklingen av [!DNL Data Integration Library (DIL)] och [!DNL DIL] tillägg.
+>Från och med juli 2023 har Adobe upphört med utvecklingen av tillägget [!DNL Data Integration Library (DIL)] och [!DNL DIL].
 >
->Befintliga kunder kan fortsätta använda sina [!DNL DIL] implementering. Adobe kommer dock inte att utvecklas [!DNL DIL] bortom denna punkt. Kunder uppmanas att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) för deras långsiktiga strategi för datainsamling.
+>Befintliga kunder kan fortsätta använda sin [!DNL DIL]-implementering. Adobe kommer dock inte att utveckla [!DNL DIL] efter den här punkten. Kunder uppmuntras att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) för sin långsiktiga datainsamlingsstrategi.
 >
 >Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) i stället.
 
@@ -40,11 +40,11 @@ r_dil_get_dexqsvars.xml
 |---|---|---|
 | `variableName` | Sträng | Namnet på variabeln som du vill hämta ett värde för. |
 | `partner` | Sträng | Partnernamnet som ska sökas efter. |
-| `containerNSID` | Heltal | The [!DNL NSID] för behållaren som du söker efter. Standardvärdena är `0`. |
+| `containerNSID` | Heltal | [!DNL NSID] för behållaren som du söker efter. Standardvärdena är `0`. |
 
 **Svar**
 
-Returnerar variabelvärdet för en [!UICONTROL DIL] -instans.
+Returnerar variabelvärdet för en [!UICONTROL DIL]-instans.
 
 **Exempelkod**
 

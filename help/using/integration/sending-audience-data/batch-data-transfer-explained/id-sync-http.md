@@ -9,16 +9,16 @@ feature: Inbound Data Transfers
 exl-id: cd9be32f-f443-45bd-a906-ec4c8589f608
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 6%
+source-wordcount: '430'
+ht-degree: 1%
 
 ---
 
 # ID-synkronisering för inkommande dataöverföringar {#id-synchronization-for-inbound-data-transfers}
 
-Beskriver syntaxen och parametrarna som används i den inledande `HTTP` anrop för att synkronisera användar-ID mellan en leverantör och [!DNL Audience Manager]. ID-synkronisering kan börja när du har skickat din datataxonomi till [!DNL Audience Manager].
+Beskriver syntaxen och parametrarna som används i det första `HTTP`-anropet för att synkronisera användar-ID:n mellan en leverantör och [!DNL Audience Manager]. Synkronisering av ID kan påbörjas när du har skickat din datataxonomi till [!DNL Audience Manager].
 
-ID-synkronisering är det första steget i den inkommande, asynkrona dataöverföringsprocessen. I det här steget [!DNL Audience Manager] och leverantören jämför och matchar ID:n för sina respektive webbplatsbesökare. Till exempel en [!DNL Audience Manager] kan känna en användare med ID 123. Din datapartner kan dock identifiera den här användaren med ID 456. Synkroniseringsprocessen tillåter [!DNL Audience Manager] och en dataleverantör för att stämma av dessa olika ID:n och identifiera användare i deras respektive system. När det är klart [!DNL Audience Manager] och din tredjepartspartner bör ha motsvarande ID:n för varje unik användare som visas i våra nätverk.
+ID-synkronisering är det första steget i den inkommande, asynkrona dataöverföringsprocessen. I det här steget jämför och matchar [!DNL Audience Manager] och leverantören ID:n för sina respektive webbplatsbesökare. En [!DNL Audience Manager]-kund kan till exempel känna en användare med ID 123. Din datapartner kan dock identifiera den här användaren med ID 456. Med synkroniseringsprocessen kan [!DNL Audience Manager] och en dataleverantör stämma av dessa olika ID:n och identifiera användare i sina respektive system. När det är klart ska [!DNL Audience Manager] och din tredjepartspartner ha motsvarande ID:n för varje unik användare som visas i våra nätverk.
 
 Du kan använda följande metoder för att hämta data till [!DNL Audience Manager]:
 
@@ -26,15 +26,15 @@ Du kan använda följande metoder för att hämta data till [!DNL Audience Manag
 * [Deklarerad ID-händelse](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md#declared-id-event)
 * [ID-synkronisering från en e-postinbäddad bild](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md#id-sync-email-image)
 
-## ID-synkronisering `HTTP` Begäran {#id-sync-http}
+## ID-synkroniseringsbegäran `HTTP` {#id-sync-http}
 
-I en ID-växling är en korrekt formaterad [!DNL URL] strängen ska se ut så här:
+I en ID-utbyte ska en korrekt formaterad [!DNL URL]-sträng se ut så här:
 
 ```
 https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT_URL>
 ```
 
-The [!DNL URL] för ditt inkommande ID-synkroniseringsanrop ska innehålla variabler som beskrivs i tabellen nedan.
+[!DNL URL] för ditt inkommande ID-synkroniseringsanrop ska innehålla variabler som beskrivs i tabellen nedan.
 
 >[!NOTE]
 >
@@ -50,28 +50,28 @@ The [!DNL URL] för ditt inkommande ID-synkroniseringsanrop ska innehålla varia
  <tbody> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;VENDOR_ID&gt;</i> </code> </td> 
-   <td colname="col2"> <p>Unikt ID för innehållsleverantören (tilldelad av <span class="keyword"> Audience Manager</span>). </p> </td> 
+   <td colname="col2"> <p>Unikt ID för innehållsleverantören (tilldelad av <span class="keyword"> Audience Manager </span>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i> </code> </td> 
-   <td colname="col2"> <p>URL (procent) för den kodade representationen av ditt unika användar-ID. Förutom kodning av reserverade ASCII-tecken bör alla tecken som inte är ASCII-tecken kodas i procent baserat på teckenkodningstabellen UTF-8. </p> <p>Mer information finns i <a href="https://www.url-encode-decode.com" format="http" scope="external"> URL-kodning/avkodning online</a> webbplats. </p> </td> 
+   <td colname="col2"> <p>URL (procent) för den kodade representationen av ditt unika användar-ID. Förutom kodning av reserverade ASCII-tecken bör alla tecken som inte är ASCII-tecken kodas i procent baserat på teckenkodningstabellen UTF-8. </p> <p>Mer information finns på webbplatsen <a href="https://www.url-encode-decode.com" format="http" scope="external"> URL Encode/Decode Online</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;REDIRECT_URL&gt;</i> </code> </td> 
-   <td colname="col2"> <p>En kodad URL-omdirigering med makrot <code> ${DD_UUID}</code> inbäddad i den. </p> <p>Obs! Tillagd endast när innehållsleverantören initierar anropet. </p> </td> 
+   <td colname="col2"> <p>En kodad URL-omdirigering med makrot <code> ${DD_UUID}</code> inbäddat i. </p> <p>Obs! Tillagd endast när innehållsleverantören initierar anropet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i> </code> </td> 
-   <td colname="col2"> <p>Valfritt. Lägg till den här parametern om du använder <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Plugin-programmet Audience Manager för IAB TCF.</a></p> <p><code> gdpr</code> kan vara 0 (GDPR gäller inte) eller 1 (GDPR gäller). </p> <p> <b>Obs!</b> Den här parametern kan bara användas tillsammans med <code>gdpr_consent</code>.</p></td> 
+   <td colname="col2"> <p>Valfritt. Lägg till den här parametern om du använder plugin-programmet <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF.</a></p> <p><code> gdpr</code> kan vara 0 (GDPR gäller inte) eller 1 (GDPR gäller). </p> <p> <b>Obs!</b> Den här parametern kan bara användas tillsammans med <code>gdpr_consent</code>.</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code><i>gdpr_consent=&lt;ENCODED STRING&gt;</i> </code> </td> 
-   <td colname="col2"> <p>Valfritt. Lägg till den här parametern om du använder <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Plugin-programmet Audience Manager för IAB TCF.</a></p> <p><code>gdpr_consent</code> är URL-säker base64-kodad GDPR-medgivandesträng (se <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB-specifikation</a>). </p> <p> <b>Obs!</b> Den här parametern kan bara användas tillsammans med <code>gdpr</code>.</p> </td> 
+   <td colname="col2"> <p>Valfritt. Lägg till den här parametern om du använder plugin-programmet <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF.</a></p> <p><code>gdpr_consent</code> är den URL-säkra base64-kodade GDPR-medgivandesträngen (se <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB-specifikation </a>). </p> <p> <b>Obs!</b> Den här parametern kan bara användas tillsammans med <code>gdpr</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## [!UICONTROL Declared ID] Händelse {#declared-id-event}
+## Händelsen [!UICONTROL Declared ID] {#declared-id-event}
 
 Mer information finns i [Deklarerade ID:n](../../../features/declared-ids.md).
 
@@ -82,4 +82,3 @@ Formatet för att matcha ID:n via en e-postbild är detsamma som visas ovan. Obs
 >[!MORELIKETHIS]
 >
 >* [Datainsamlingskomponenter](../../../reference/system-components/components-data-collection.md)
-

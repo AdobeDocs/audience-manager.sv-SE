@@ -16,18 +16,18 @@ ht-degree: 0%
 
 # [!DNL Audience Manager] [!UICONTROL Device-based Destinations]
 
-Den här sidan innehåller aktuell [!DNL Audience Manager] [enhetsbaserade mål](/help/using/features/destinations/add-device-based-destinations.md) endast. I [!DNL Audience Manager], [!UICONTROL device-based destinations] anropas också [!UICONTROL server-to-server destinations]. Mer information om en integrering finns i [Adobe Exchange](https://exchange.adobe.com/experiencecloud.html) lista (där det är tillgängligt) eller kontakta [!DNL Adobe] Konsult eller kundtjänst.
+Den här sidan innehåller endast aktuella [!DNL Audience Manager] [enhetsbaserade mål](/help/using/features/destinations/add-device-based-destinations.md). I [!DNL Audience Manager] anropas även [!UICONTROL device-based destinations] [!UICONTROL server-to-server destinations]. Mer information om en integrering finns i [Adobe Exchange](https://exchange.adobe.com/experiencecloud.html)-listan (där den är tillgänglig) eller kontakta din [!DNL Adobe]-konsult eller kundtjänst.
 
 
-* **Senast uppdaterad** = Visar det senaste datumet när det fanns en uppdatering för detta [!UICONTROL device-based destination].
-* **Uppdateringar** = Anger om [!DNL Audience Manager] skickar data i realtid eller i batch (1 dag) till detta [!UICONTROL destination].
-* **Dela upp** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från [!UICONTROL segments]. Du kan ta bort en enhetsprofil från en [!UICONTROL segment] beroende på vilket enhetsalternativ som används för att skapa en [!UICONTROL Profile Merge Rule]. Osegmentering används också i samband med [!DNL GDPR] borttagningsbegäranden. Läs [Regler för profilsammanslagning och process för enhetsosegmentering](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) och [Audience Manager partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation). [!DNL Audience Manager] skickar segmentinformation till [!UICONTROL destinations] markerad med **Ja** nedan.
-* **Mottagande [!DNL IAB TCF] medgivandesignaler** = [!DNL Audience Manager Plug-in for IAB TCF] gör att du kan vidarebefordra [!DNL IAB TC] en sträng till aktiveringspartners med respekt för användarnas valmöjligheter vad gäller integritet. Läs [Audience Manager plug-in för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
-* **[!DNL ICDS]** = Den här kolumnen innehåller en lista över partners som stöder [!UICONTROL Instant Cross-Device Suppression]. Läs om [Direkt undertryckning av olika enheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
-* **ID för mobila enheter** = Den här kolumnen listar partners som kan ta emot mobil-ID:n från [!DNL Audience Manager].
+* **Senast uppdaterad** = Visar det senaste datumet när det fanns en uppdatering för [!UICONTROL device-based destination].
+* **Uppdateringar** = Anger om [!DNL Audience Manager] skickar data i realtid eller i batch (1 dag) till denna/detta [!UICONTROL destination].
+* **Dela upp** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från [!UICONTROL segments]. Din möjlighet att ta bort en enhetsprofil från en [!UICONTROL segment] beror på vilket enhetsalternativ som används för att skapa en [!UICONTROL Profile Merge Rule]. Osegmentering används också i samband med [!DNL GDPR] borttagningsbegäranden. Läs [regler för profilsammanslagning och osegmenteringsprocesser för enheter](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) och [Audience Manager-partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation). [!DNL Audience Manager] skickar information om att dela upp segment till [!UICONTROL destinations] som är markerad med **Ja** nedan.
+* **Tar emot [!DNL IAB TCF] medgivandesignaler** = Med [!DNL Audience Manager Plug-in for IAB TCF] kan du vidarebefordra [!DNL IAB TC]-strängen till aktiveringspartners samtidigt som du respekterar användarnas sekretessval. Läs [Audience Manager-plugin-programmet för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
+* **[!DNL ICDS]** = Den här kolumnen listar partners som stöder [!UICONTROL Instant Cross-Device Suppression]. Läs om [Omedelbar inaktivering av enheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
+* **ID:n för mobila enheter** = Den här kolumnen listar partners som kan ta emot ID:n för mobila enheter från [!DNL Audience Manager].
 
 
-| Integrering | Senast uppdaterad | Uppdateringar | Dela upp | Mottagande [!DNL IAB TCF] medgivandesignaler | [!DNL ICDS] | ID för mobila enheter |
+| Integrering | Senast uppdaterad | Uppdateringar | Dela upp | Tar emot [!DNL IAB TCF] godkännandesignaler | [!DNL ICDS] | ID för mobila enheter |
 |----------------------------------------------------------|------------|-----------|-----------|-----------------------------------|------|-------------------|
 | [!DNL 4C Insights] | 26/09/2018 | 1:a dag | Ja | Nej | Nej | Ja |
 | [!DNL 4info] | 09/02/2017 | 1:a dag | Nej | Nej | Nej | Ja |

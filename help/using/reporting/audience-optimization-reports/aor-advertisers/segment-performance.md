@@ -9,18 +9,18 @@ feature: Audience Optimization Reports
 exl-id: 2cd54b18-6916-4d69-bd65-7b8c8846c446
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 1%
+source-wordcount: '567'
+ht-degree: 0%
 
 ---
 
 # Resultatrapport för segment{#segment-performance-report}
 
-The [!UICONTROL Segment Performance] rapporten jämför mappade och omappade segment med visningar och konverteringsgrader. Ett mappat segment är ett segment som du skapar och skickar till ett mål för målanpassning. Ett omappat segment är ett segment som du har skapat men inte skickat till ett mål för målgruppsanpassning. Genom att jämföra dessa olika segmenttyper inom och mellan rapporter kan ni optimera befintliga kampanjer och hitta förbisedda segment som ni kanske vill skicka till en målgrupp för målinriktning.
+Rapporten [!UICONTROL Segment Performance] jämför mappade och omappade segment med visningar och konverteringsgrader. Ett mappat segment är ett segment som du skapar och skickar till ett mål för målanpassning. Ett omappat segment är ett segment som du har skapat men inte skickat till ett mål för målgruppsanpassning. Genom att jämföra dessa olika segmenttyper inom och mellan rapporter kan ni optimera befintliga kampanjer och hitta förbisedda segment som ni kanske vill skicka till en målgrupp för målinriktning.
 
 ## Så här läser du mappade segmentresultat {#read-mapped-segment-results}
 
-Mappade [!UICONTROL Segment Performance] rapporten visar alla segment som du har skapat och skickat till ett mål för målinriktning. Positionen för dina mappade segment i en rapport kan tala om vilka segment som fungerar bra och var du kan behöva göra några justeringar.
+Den mappade [!UICONTROL Segment Performance]-rapporten visar alla segment som du har skapat och skickat till ett mål för målinriktning. Positionen för dina mappade segment i en rapport kan tala om vilka segment som fungerar bra och var du kan behöva göra några justeringar.
 
 Om du vill läsa rapporten kan du dela upp resultaten i fyra avsnitt med imaginära rader (i rött) och de kategorier som visas i exempelrapporten nedan.
 
@@ -55,9 +55,9 @@ Etiketterna i exemplet och följande tabell kan hjälpa dig att förstå segment
  </tbody> 
 </table>
 
-## Så här läser du omappade segmentresultat {#read-unmapped-segment-results}
+## Läs omappade segmentresultat {#read-unmapped-segment-results}
 
-Titta på omappade segment i en [!UICONTROL Segment Performance] rapport är ett bra sätt att hitta nya segment som du inte har tänkt dig för målinriktning. Vissa av dessa segment kanske överträffar dina mappade segment. Detta beror på att ett omappat segment måste uppfylla en uppsättning kvalificeringskriterier som ska ingå i den här rapporten. För att kunna inkluderas i den här rapporten måste ett omappat segment:
+Att titta på omappade segment i en [!UICONTROL Segment Performance]-rapport är ett bra sätt att hitta nya segment som du inte har övervägt som mål. Vissa av dessa segment kanske överträffar dina mappade segment. Detta beror på att ett omappat segment måste uppfylla en uppsättning kvalificeringskriterier som ska ingå i den här rapporten. För att kunna inkluderas i rapporten måste ett omappat segment
 
 * Har konverteringar som är större än genomsnittet för alla mappade segment.
 * Var i de 100 övre omappade segmenten efter konverteringsgrad.
@@ -66,8 +66,8 @@ Om du vill läsa den här rapporten kan du dela upp resultaten i fyra avsnitt me
 
 ![](assets/unmapped-segment-performance.png)
 
-I den här rapporten vill du bara fokusera på de omappade segmenten i det övre vänstra avsnittet. Dessa omappade segment har hög konverteringsgrad för en låg nivå av visningar jämfört med segment i de övriga tre avsnitten.
+I den här rapporten vill du bara fokusera på de omappade segmenten i det övre vänstra avsnittet. De omappade segmenten har höga konverteringsgrader för en låg nivå av visningar jämfört med segmenten i de övriga tre avsnitten.
 
 >[!NOTE]
 >
->7-dagars och 30-dagars summeringsperioder är endast tillgängliga för söndag **[!UICONTROL Date Through]** datum.
+>Synkroniseringsperioder på 7 dagar och 30 dagar är bara tillgängliga för **[!UICONTROL Date Through]**-datumen på söndag.

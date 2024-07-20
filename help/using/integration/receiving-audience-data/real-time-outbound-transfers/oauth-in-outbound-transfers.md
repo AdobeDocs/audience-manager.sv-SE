@@ -9,40 +9,40 @@ feature: Outbound Data Transfers
 exl-id: eef3a3ae-1a3f-47e9-aab6-abf878e4cb77
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 1%
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
-# [!DNL OAuth 2.0] Integrering för utgående överföringar i realtid{#oauth-integration-for-real-time-outbound-transfers}
+# [!DNL OAuth 2.0]-integrering för utgående överföringar i realtid{#oauth-integration-for-real-time-outbound-transfers}
 
-När du publicerar segment till partnermålet via en realtidsintegration mellan server och server kan Audience Manager konfigureras för autentisering med [!DNL OAuth 2.0] när de begär det. Då kan du skicka autentiserade begäranden från Audience Manager till slutpunkten.
+När du publicerar segment till partnermålet via en realtidsintegration mellan server och server, kan Audience Manager konfigureras för autentisering med [!DNL OAuth 2.0] när begäranden görs. Då kan du skicka autentiserade begäranden från Audience Manager till slutpunkten.
 
 ## Autentiseringsflöde {#auth-flow}
 
-The [!DNL Adobe Audience Manager] [OAuth 2.0](https://tools.ietf.org/html/rfc6749#section-4.4) Autentiseringsimplementeringen baseras på processen för beviljande av klientautentiseringsuppgifter och följer dessa steg:
+Autentiseringsimplementeringen av [!DNL Adobe Audience Manager] [OAuth 2.0](https://tools.ietf.org/html/rfc6749#section-4.4) baseras på bidragsflödet för klientautentiseringsuppgifter och följer dessa steg:
 
 1. Du måste ge oss följande:
-   * The [!DNL OAuth 2.0] slutpunkt som genererar autentiseringstoken.
-   * De autentiseringsuppgifter som används för att generera en token.
-1. An [!DNL Audience Manager] konsulten skapar [mål](../../../features/destinations/destinations.md) med hjälp av den information du har angett.
-1. När ett segment mappas till denna destination, vårt realtidssystem för dataöverföring, [IRIS](../../../reference/system-components/components-data-action.md#iris), skapar en `POST` begäran till tokenslutpunkten om att växla autentiseringsuppgifter för en innehavartoken.
-1. För varje segmentpubliceringsbegäran till partnerslutpunkten, [!UICONTROL IRIS] använder bearer-token för att autentisera.
+   * Slutpunkten [!DNL OAuth 2.0] som genererar autentiseringstoken.
+   * Autentiseringsuppgifterna som används för att generera en token.
+1. En [!DNL Audience Manager]-konsult konfigurerar [destination](../../../features/destinations/destinations.md) med den information du har angett.
+1. När ett segment har mappats till det här målet gör vårt dataöverföringssystem i realtid, [IRIS](../../../reference/system-components/components-data-action.md#iris), en `POST`-begäran till tokenslutpunkten för utbyte av autentiseringsuppgifter för en innehavartoken.
+1. För varje segmentpubliceringsbegäran till partnerslutpunkten använder [!UICONTROL IRIS] innehavartoken för att autentisera.
 
 ![](assets/oauth2-iris.png)
 
 ## Krav {#auth-requirements}
 
-Som en [!DNL Audience Manager] partner krävs följande slutpunkter för att kunna ta emot autentiserade begäranden:
+Som [!DNL Audience Manager]-partner krävs följande slutpunkter för att ta emot autentiserade begäranden:
 
 ### Slutpunkt 1 som används av IRIS för att erhålla en innehavartoken
 
 Den här slutpunkten godkänner inloggningsuppgifterna som anges i steg 1 och genererar en innehavartoken som kommer att användas för efterföljande begäranden.
 
-* Slutpunkten måste acceptera `HTTP POST` förfrågningar.
-* Slutpunkten måste acceptera och titta på [!DNL Authorization] header. Värdet för den här rubriken är: `Basic <credentials_provided_by_partner>`.
-* Slutpunkten måste titta på [!DNL Content-type] header och validera att dess värde är `application/x-www-form-urlencoded ; charset=UTF-8`.
-* Begärandetexten är `grant_type=client_credentials`.
+* Slutpunkten måste acceptera `HTTP POST` begäranden.
+* Slutpunkten måste acceptera och titta på rubriken [!DNL Authorization]. Värdet för den här rubriken blir: `Basic <credentials_provided_by_partner>`.
+* Slutpunkten måste granska rubriken [!DNL Content-type] och verifiera att dess värde är `application/x-www-form-urlencoded ; charset=UTF-8`.
+* Innehållet i begäran blir `grant_type=client_credentials`.
 
 ### Exempelbegäran från Audience Manager till partnerslutpunkten för att erhålla en innehavartoken
 
@@ -73,9 +73,9 @@ Content-Length: 121
 
 ### Slutpunkt 2 som används av IRIS för att publicera segment med hjälp av bearer-token
 
-[!DNL Audience Manager] skickar data till den här slutpunkten i nära realtid när användarna kvalificerar sig för segment. Dessutom kan den här metoden skicka batchar med offline- eller inbyggda data så ofta som var 24:e timme.
+[!DNL Audience Manager] skickar data till den här slutpunkten i nästan realtid när användare kvalificerar sig för segment. Dessutom kan den här metoden skicka batchar med offline- eller inbyggda data så ofta som var 24:e timme.
 
-Bearer-token som genereras av slutpunkt 1 används för att skicka begäranden till den här slutpunkten. The [!DNL Audience Manager] dataöverföringssystem i realtid, [IRIS](../../../reference/system-components/components-data-action.md#iris), skapar en normal HTTPS-begäran och innehåller en auktoriseringsrubrik. Värdet för den här rubriken är: Bearer `<bearer token from step 1>`.
+Bearer-token som genereras av slutpunkt 1 används för att skicka begäranden till den här slutpunkten. Dataöverföringssystemet [!DNL Audience Manager] i realtid, [IRIS](../../../reference/system-components/components-data-action.md#iris), konstruerar en normal HTTPS-begäran och innehåller en auktoriseringshuvud. Värdet för den här rubriken blir: Bearer `<bearer token from step 1>`.
 
 ### Exempelsvar från partnerslutpunkten
 
@@ -114,8 +114,8 @@ Accept-Encoding: gzip
 
 ### Tokens är lösenord
 
-De autentiseringsuppgifter som partnern anger och de tokens som erhålls av [!DNL Audience Manager] vid autentisering med [!DNL OAuth 2.0] är känslig information och får inte delas med tredje part.
+De autentiseringsuppgifter som anges av partnern och de tokens som erhålls av [!DNL Audience Manager] vid autentisering med [!DNL OAuth 2.0]-flödet är känslig information och får inte delas med tredje parter.
 
 ### [!DNL SSL] krävs
 
-[!DNL SSL] måste användas för att upprätthålla en säker autentiseringsprocess. Alla förfrågningar, inklusive de som används för att hämta och använda tokens måste använda `HTTPS` slutpunkter.
+[!DNL SSL] måste användas för att upprätthålla en säker autentiseringsprocess. Alla förfrågningar, inklusive de som används för att hämta och använda tokens, måste använda `HTTPS` slutpunkter.

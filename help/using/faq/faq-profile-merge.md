@@ -10,8 +10,8 @@ feature: Profile Merge
 exl-id: 03ad79b7-a111-437e-82c5-c7406bd33c39
 source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 82%
+source-wordcount: '1583'
+ht-degree: 81%
 
 ---
 
@@ -31,7 +31,7 @@ Ett enhetsdiagram är en uppsättning ID-mappningar som definierar grupper med a
 
 **Vad är ett externt enhetsdiagram?**
 
-Ett externt enhetsdiagram är ett enhetsdiagram i [!DNL Audience Manager] som inte enbart har skapats av era egna enhetsövergripande datakällor. När du till exempel skapar en [Sammanfogningsregel för profil](../features/profile-merge-rules/merge-rules-start.md) och välj alternativ för enhetsdiagram från tredje part arbetar du med ett externt enhetsdiagram. Se [Enhetsalternativ](../features/profile-merge-rules/merge-rule-definitions.md#device-options).
+Ett externt enhetsdiagram är ett enhetsdiagram i [!DNL Audience Manager] som inte enbart har skapats av era egna enhetsövergripande datakällor. När du t.ex. skapar en [profilkopplingsregel](../features/profile-merge-rules/merge-rules-start.md) och väljer alternativ för enhetsdiagram från tredje part arbetar du med ett externt enhetsdiagram. Se [Enhetsalternativ](../features/profile-merge-rules/merge-rule-definitions.md#device-options).
 
  
 
@@ -53,7 +53,7 @@ En gång i veckan.
 
  
 
-## Enhetsdiagram och regler för profilsammanslagning {#device-graph-profile-merge-rules}
+## Enhetsdiagram och sammanfogningsregler för profiler {#device-graph-profile-merge-rules}
 
 **Hur används ett enhetsdiagram i [!DNL Audience Manager]?**
 
@@ -89,7 +89,7 @@ Enheterna som [!DNL Audience Manager] sammanfogar och avläser är samma enheter
 
  
 
-## Segment, enhetsdiagram och regler för profilsammanslagning {#segments-device-graphs-rules}
+## Segment, enhetsdiagram och regler för profilsammanfogning {#segments-device-graphs-rules}
 
 **Hur tas segmenteringen bort i [!DNL Audience Manager] för en enhet när den inte längre kvalificerar för ett segment med en [!UICONTROL Profile Merge Rule] som använder ett enhetsdiagram?**
 
@@ -127,7 +127,7 @@ Ja. Audience Manager räknar inte de traits som lagras i den enhetsövergripande
 
  
 
-## Trait-frekvens, enhetsdiagram och regler för profilsammanslagning {#trait-freq-device-rules}
+## Trait Frequency, Device Graphs och Profile Merge Rules {#trait-freq-device-rules}
 
 **Hur beräknar [!DNL Audience Manager] trait-frekvensen med en [!UICONTROL Profile Merge Rule] som använder ett enhetsdiagram?**
 
@@ -259,13 +259,13 @@ Ja. Segmentets totala populationsmått omfattar andra enheter som har kvalificer
 
 Nej.
 
-**Varför ser jag en nollsegmentspopulation för segmentexport till Adobe Campaign efter den 16 mars 2020?**
+**Varför ser jag ingen segmentpopulation för segmentexport till Adobe Campaign efter 16 mars 2020?**
 
 I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profilsammanslagning för att förbättra exaktheten hos gruppfiler som genererats med hjälp av enhets-ID:n. Dessa förbättringar respekteras strikt i din Audience Manager-instans från och med måndagen den 16 mars 2020. Därför kommer segment som mappas till ett mål med hjälp av enhets-ID att sluta producera exporter i vissa konfigurationer av profilkopplingsregler.
 
 Kontrollera att du uppfyller följande krav för att se till att Audience Manager-instansen och destinationerna är korrekt integrerade med olika enhets-ID, t.ex. Adobe Campaign:
 
-1. Granska den profilkopplingsregel som används av de segment som är mappade till ditt Adobe Campaign-deklarerade ID-mål. Regeln för profilsammanslagning måste använda [!UICONTROL Last Authenticated Profile] så att alla autentiserade profiler kan inkluderas i exporten. Om du använder ett annat alternativ för profilkopplingsregeln växlar du till [!UICONTROL Last Authenticated Profile].
+1. Granska den profilkopplingsregel som används av de segment som är mappade till ditt Adobe Campaign-deklarerade ID-mål. Regeln för profilsammanslagning måste använda alternativet [!UICONTROL Last Authenticated Profile], så alla autentiserade profiler kan inkluderas i exporten. Om din profilkopplingsregel använder ett annat alternativ växlar du till [!UICONTROL Last Authenticated Profile].
 2. Markera datakällan för det deklarerade Adobe Campaign-ID:t i inställningarna för profilkopplingsregeln.
 
 >[!NOTE]
@@ -275,4 +275,3 @@ Kontrollera att du uppfyller följande krav för att se till att Audience Manage
 >[!MORELIKETHIS]
 >
 >* [Profillänk](../features/profile-merge-rules/profile-link-use-case.md)
-

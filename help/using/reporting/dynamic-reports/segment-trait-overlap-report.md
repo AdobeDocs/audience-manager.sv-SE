@@ -3,24 +3,24 @@ description: Returnerar data om antalet unika användare som delas mellan en vis
 seo-description: Returns data on the number of unique users shared between a particular trait and an entire segment.
 seo-title: Segment-to-Trait Overlap Report
 solution: Audience Manager
-title: Överlappningsrapport för segment till trait
+title: Överlappningsrapport för segment-till-trait
 uuid: a6b3dd21-332e-449f-aa01-2beb47f1794e
 feature: Overlap Reports
 exl-id: 7ce3dd2d-ab22-46f8-90bf-a32222df2e76
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 5%
+source-wordcount: '831'
+ht-degree: 3%
 
 ---
 
-# Överlappningsrapport för segment till trait{#segment-to-trait-overlap-report}
+# Överlappningsrapport för segment-till-trait{#segment-to-trait-overlap-report}
 
 Returnerar data om antalet unika användare som delas mellan en viss egenskap och ett helt segment.
 
 >[!NOTE]
 >
->Överlappningsrapporterna i Audience Manager följer RBAC-principerna. Du kan bara se segment och egenskaper från datakällor som du har åtkomst till baserat på [RBAC-användargrupp](/help/using/features/administration/administration-overview.md) som du tillhör.
+>Överlappningsrapporterna i Audience Manager följer RBAC-principerna. Du kan bara se segment och egenskaper från datakällor som du har åtkomst till baserat på den [RBAC-användargrupp](/help/using/features/administration/administration-overview.md) som du tillhör.
 
 <!-- 
 
@@ -30,17 +30,17 @@ c_segment_trait_overlap.xml
 
 ## Översikt
 
-Som optimeringsverktyg [!UICONTROL Segment to Trait Overlap] Med hjälp av rapporter kan ni skapa fokuserade segment eller utöka segmentens räckvidd. Du kan till exempel skapa fokuserade segment och egenskaper med hög överlappning för att nå en viss målgrupp. Många överlappningar kan dock innebära färre unika användare (mindre räckvidd). Genom att köra den här rapporten kan du utöka räckvidden genom att ta bort egenskaper med många segmentöverlappningar och ersätta dem med egenskaper som inte överlappar varandra.
+[!UICONTROL Segment to Trait Overlap]-rapporterna är ett optimeringsverktyg som hjälper dig att skapa segment med mycket fokus eller utöka segmentens räckvidd. Du kan till exempel skapa fokuserade segment och egenskaper med hög överlappning för att nå en viss målgrupp. Många överlappningar kan dock innebära färre unika användare (mindre räckvidd). Genom att köra den här rapporten kan du utöka räckvidden genom att ta bort egenskaper med många segmentöverlappningar och ersätta dem med egenskaper som inte överlappar varandra.
 
 ### Exempelrapport
 
-Följande bild ger en översikt på hög nivå över [!UICONTROL Segment-to-Trait Overlap] rapport.
+Följande bild ger en översikt på hög nivå över rapporten [!UICONTROL Segment-to-Trait Overlap].
 
 ![](assets/segment-to-trait-overlap.png)
 
 ### Detaljgranska enskilda datapunkter
 
-Markera en enskild punkt om du vill visa datainformation i ett popup-fönster. Dina klickåtgärder uppdaterar automatiskt data som visas i rapporten.
+Markera en enskild punkt om du vill visa datainformation i ett popup-fönster. Dina klickåtgärder uppdaterar automatiskt de data som visas i rapporten.
 
 ## Jämföra segment med egenskaper {#comparing-segments-to-traits}
 
@@ -52,11 +52,11 @@ c_compare_s2t.xml
 
  -->
 
-### Jämförelse mellan Trait and Segment Uniques: Ett exempel
+### Jämförelse mellan Trait och Segment Uniques: Ett exempel
 
 Vid första anblicken kan det verka ologiskt att jämföra segment med egenskaper och försöka dra slutsatser av resultaten. När allt kommer omkring är segment och egenskaper olika, så hur kan data som härleds från olika artiklar få betydelse? I det här fallet jämför vi dock inte egenskaper och segment, utan antalet unika besökare som delas mellan dem. Antalet delade unika besökare ger det gemensamma värdet som gör det möjligt att jämföra segment för att anpassa.
 
-I följande diagram visas relationen mellan en egenskap och det segment den tillhör. I det här fallet har vi en egenskap med 10 besökare och ett segment med 1 000 besökare. De delar tre unika besökare gemensamt.
+I följande diagram visas relationen mellan en egenskap och det segment den tillhör. I det här fallet har vi en egenskap med tio besökare och ett segment med 1 000 besökare. De delar tre unika besökare gemensamt.
 
 ![](assets/s2t.png)
 
@@ -83,7 +83,7 @@ Om du tittar på överlappningen mellan egenskaper och segment kan det hjälpa d
   </tr> 
   <tr> 
    <td colname="col1"><b>Hitta ineffektiva segment</b> </td> 
-   <td colname="col2"> <p>Om ett drag är en del av en <span class="wintitle"> OCH</span> i en segmentdefinition är de unika besökarna som har den egenskapen redan i segmentet och inte tillgängliga för att lägga till i segmentet. Du kan använda den här rapporten för att hitta relevanta egenskaper med låg överlappning och lägga till dem i segmentdefinitionen, vilket ökar segmentets räckvidd. </p> </td> 
+   <td colname="col2"> <p>Om en egenskap är en del av en <span class="wintitle"> AND</span>-grupp i en segmentdefinition finns de unika besökarna som har den egenskapen redan i segmentet och är inte tillgängliga för att läggas till i segmentet. Du kan använda den här rapporten för att hitta relevanta egenskaper med låg överlappning och lägga till dem i segmentdefinitionen, vilket ökar segmentets räckvidd. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -98,10 +98,10 @@ r_s2t_sliders.xml
 
  -->
 
-The [!UICONTROL Segment-to-Trait overlap] kan du använda två reglage för att filtrera data efter överlappningen % efter trait eller segment.
+Med rapporten [!UICONTROL Segment-to-Trait overlap] kan du använda två reglage för att filtrera data efter överlappningen % efter trait eller segment.
 
-* **[!UICONTROL Filter Trait Uniques %:]** Filtrerar data efter % av unika besökare som delas mellan egenskapen och segmentet.
-* **[!UICONTROL Filter Segment Uniques Overlap %:]** Filtrerar data efter % av unika besökare delar mellan segmentet och egenskapen.
+* **[!UICONTROL Filter Trait Uniques %:]** filtrerar data efter % av unika besökare som delas mellan egenskapen och segmentet.
+* **[!UICONTROL Filter Segment Uniques Overlap %:]** filtrerar data efter % av unika besökare delar mellan segmentet och egenskapen.
 
 ### Exempel
 
@@ -122,7 +122,7 @@ r_s2t_data_pop.xml
 
  -->
 
-Popup för [!UICONTROL Segment-to-Trait Overlap] rapporten innehåller måtten nedan. Observera att det unika måttet i tabellen representerar *användare i realtid*.
+Popup-fönstret för rapporten [!UICONTROL Segment-to-Trait Overlap] innehåller måtten nedan. Observera att det unika måttet i tabellen representerar dina *realtidsanvändare*.
 
 <table id="table_4AF72754276242FFB11543635B43AD90"> 
  <thead> 
@@ -133,15 +133,15 @@ Popup för [!UICONTROL Segment-to-Trait Overlap] rapporten innehåller måtten n
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> Segment-ID</span></b> </td> 
+   <td colname="col1"><b><span class="wintitle"> Segment-ID </span></b> </td> 
    <td colname="col2"> Unikt numeriskt ID för segmentet. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> Anpassa datakälla </span></b> </td> 
+   <td colname="col1"><b><span class="wintitle"> Trait Data Source </span></b> </td> 
    <td colname="col2"> Namn på trait-ägaren. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> Typ av datakälla</span></b> </td> 
+   <td colname="col1"><b><span class="wintitle"> Data Source Type</span></b> </td> 
    <td colname="col2">Definierar den typ av provider som ett drag tillhör. Kan antingen vara: 
     <ul id="ul_0477C04A33FD4F5D998B98984E6554D3"> 
      <li id="li_50FCA48EDB5843AB8FB6C34ED2C0067D">Första part (din egen egenskap). </li> 
@@ -149,7 +149,7 @@ Popup för [!UICONTROL Segment-to-Trait Overlap] rapporten innehåller måtten n
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> Trait-ID</span></b> </td> 
+   <td colname="col1"><b><span class="wintitle"> Trait ID </span></b> </td> 
    <td colname="col2"> Unikt numeriskt ID för trait. </td> 
   </tr> 
   <tr> 
@@ -157,15 +157,15 @@ Popup för [!UICONTROL Segment-to-Trait Overlap] rapporten innehåller måtten n
    <td colname="col2"> Namn på trait. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> Trait Uniques-överlappning %</span></b> </td> 
+   <td colname="col1"><b><span class="wintitle"> Trait Uniques överlappar %</span></b> </td> 
    <td colname="col2"> % av de unika besökarna som ett varumärke delar med segmentet. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> Segmentvetenskaper överlappar %</span></b> </td> 
+   <td colname="col1"><b><span class="wintitle"> segmentgränssnitt överlappar %</span></b> </td> 
    <td colname="col2"> % av unika besökare som delar ett segment med en egenskap. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> Överlappa unika</span></b> </td> 
+   <td colname="col1"><b><span class="wintitle"> Överlappa uniques</span></b> </td> 
    <td colname="col2"> Antal unika besökare som delas mellan segmentet och trait. </td> 
   </tr> 
   <tr> 
@@ -185,6 +185,5 @@ Popup för [!UICONTROL Segment-to-Trait Overlap] rapporten innehåller måtten n
 >* [Former, färger och storlekar som används i interaktiva rapporter](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
 >* [Ikoner och verktyg för rapporter förklaras](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
 >* [Överlappningsrapporter: Uppdatera schema och minsta segmentstorlek](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
->* [Datainsamling och felfrekvens i valda rapporter för Audience Manager...](../../reporting/report-sampling.md)
+>* [Datainsamling och felfrekvens i rapporter för markerade Audience Manager..](../../reporting/report-sampling.md)
 >* [CSV-filer för överlappningsrapporter](../../reporting/dynamic-reports/overlap-csv-files.md)
-

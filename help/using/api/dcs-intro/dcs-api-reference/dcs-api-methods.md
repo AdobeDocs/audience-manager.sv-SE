@@ -9,20 +9,20 @@ feature: DCS
 exl-id: 258994e1-6b15-4ae1-9e1f-c6e0685350c1
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 3%
+source-wordcount: '99'
+ht-degree: 0%
 
 ---
 
-# [!DNL DCS] [!DNL API] Metoder {#dcs-api-methods}
+# [!DNL DCS] [!DNL API] metoder {#dcs-api-methods}
 
-Skicka data till [!DNL DCS] [!DNL API] använda `GET` eller `POST` metoder.
+Skicka data till [!DNL DCS] [!DNL API] med metoderna `GET` eller `POST`.
 
-Du kan skicka data till [!DNL DCS] använder någon av `GET` eller `POST` metoder. Ta en titt på exempelsamtalen nedan med [kurva](https://curl.haxx.se/). I alla tre provsamtalen lägger vi till signalerna `c_likes = famous popstar` och `c_loves = famous actress` till enhetsprofilen `12345678901234567890123456789012345678`.
+Du kan skicka data till [!DNL DCS] med någon av metoderna `GET` eller `POST`. Ta en titt på exempelsamtalen nedan med [curl](https://curl.haxx.se/). I alla tre exempelanropen lägger vi till signalerna `c_likes = famous popstar` och `c_loves = famous actress` i enhetsprofilen `12345678901234567890123456789012345678`.
 
 ## Skicka data via [!DNL GET] {#send-data-via-get}
 
-Observera att den största tillåtna storleken för `GET` samtal är 8K.
+Observera att den största tillåtna storleken för `GET` anrop är 8 kB.
 
 ```
 curl -i "yourcompany.demdex.net/event?d_uuid=12345678901234567890123456789012345678&d_rtbd=json&c_likes=famous%20popstar&c_loves=famous%20actress"
@@ -30,7 +30,7 @@ curl -i "yourcompany.demdex.net/event?d_uuid=12345678901234567890123456789012345
 
 ## Skicka data via [!DNL POST] {#send-data-via-post}
 
-Observera kraven för att skicka data med `POST` metod:
+Observera kraven för att skicka data med metoden `POST`:
 
 * Den största tillåtna storleken är 32 kB.
 * Ange innehållstypen till `application/x-www-form-urlencoded`.

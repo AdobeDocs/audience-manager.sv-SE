@@ -9,11 +9,11 @@ exl-id: 2777fdf1-df79-4111-9fe4-d2638ee10395
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '75'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
-# Vanliga frågor och svar om Audience Manager Översikt {#audience-manager-faq}
+# Audience Manager FAQ Overview {#audience-manager-faq}
 
 I det här avsnittet finns en lista över kategorierna med vanliga frågor och svar för olika funktioner i Audience Manager.
 

@@ -10,8 +10,8 @@ feature: API
 exl-id: 5104d3fe-907e-4a40-87a2-5c712e293ded
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 20%
+source-wordcount: '54'
+ht-degree: 11%
 
 ---
 
@@ -21,8 +21,7 @@ Metoder som gör att du kan arbeta programmatiskt med algoritmisk modellering.
 
 >[!IMPORTANT]
 >
->De algoritmiska modellerna [!DNL API] metoder har skrivits om med [!DNL Swagger] och migrerad. Se:
+>De algoritmiska modellerna [!DNL API] har skrivits om med [!DNL Swagger] och migrerats. Se:
 >
 >* [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html)
 >* [Migrera API-kod för Audience Manager](../../api/api-swagger-migration.md)
-

@@ -9,8 +9,8 @@ feature: Audience Optimization Reports
 exl-id: 1fdca05a-b661-4875-88d7-b0893e2ca08f
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 2%
+source-wordcount: '537'
+ht-degree: 0%
 
 ---
 
@@ -24,31 +24,31 @@ Jämför trender och volym för valda mätvärden för att få en bättre bild a
 
 ## Användningsexempel {#use-cases}
 
-Använd [!UICONTROL Segment Trend] för att validera ett segments prestanda över tid och för att identifiera trender baserat på starka prestanda eller skalbarhet.
+Använd rapporten [!UICONTROL Segment Trend] för att validera ett segments prestanda över tid och för att identifiera trender baserat på höga prestanda eller skalbarhet.
 
-Med den här rapporten kan du förstå vilka av dina webbegenskaper som visar en ökning av antalet fel och felsökning efter behov. Den här rapporten är nästa steg efter att du har identifierat din publik i [!UICONTROL Segment Performance] för att försäkra dig om att de goda eller dåliga resultat du såg i [!UICONTROL Segment Performance] -fliken är konsekvent över tid.
+Med den här rapporten kan du förstå vilka av dina webbegenskaper som visar en ökning av antalet fel och felsökning efter behov. Den här rapporten är nästa steg efter att du har identifierat en viss målgrupp i [!UICONTROL Segment Performance]-rapporten, för att säkerställa att de starka eller dåliga prestanda som du såg på fliken [!UICONTROL Segment Performance] är konsekventa över tiden.
 
 ## Använda segmenttrendrapporten {#using-the-report}
 
-Växla mellan **[!UICONTROL Mapped]** och **[!UICONTROL Unmapped]** om du vill markera segment som är mappade till ett mål eller inte. Välj **[!UICONTROL All]** för att inkludera alla era segment i rapporten.
+Växla mellan **[!UICONTROL Mapped]** och **[!UICONTROL Unmapped]** om du vill markera segment som är mappade till ett mål eller inte. Välj **[!UICONTROL All]** om du vill inkludera alla dina segment i rapporten.
 
-Justera fönstret för att titta bakåt med **[!UICONTROL Date Through]** skjutreglage.
+Justera bakåtfönstret med reglaget **[!UICONTROL Date Through]**.
 
-Klicka på något av segmenten under **[!UICONTROL Date Through]** för att ta fram alternativet att bara behålla det segmentet i rapporten eller exkludera det.
+Klicka på något av segmenten under skjutreglaget **[!UICONTROL Date Through]** för att visa alternativet att bara behålla det segmentet i rapporten eller exkludera det.
 
-Använd **[!UICONTROL Line Item]** för att välja de egenskaper i din portfölj för vilka du vill returnera information.
+Använd listrutan **[!UICONTROL Line Item]** för att välja de egenskaper i portföljen som du vill returnera information för.
 
-I **[!UICONTROL Segment Data Source]** markerar du datakällorna som innehåller de segment som du vill se i rapporten.
+I listrutan **[!UICONTROL Segment Data Source]** markerar du datakällorna som innehåller de segment som du vill se i rapporten.
 
-Använd **[!UICONTROL Segment]** för att välja vilka segment som ska visas i rapporten.
+Använd listrutan **[!UICONTROL Segment]** för att välja vilka segment som ska visas i rapporten.
 
 >[!IMPORTANT]
 >
->Vid aktivering [!UICONTROL Audience Optimization for Publishers]måste du ta med beskrivande metadata för [!UICONTROL Line Item] ID, enligt beskrivning i steg 3 av [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten innehåller information om webbegenskapen som [!UICONTROL Line Item] i stället för [!UICONTROL Line Item] ID.
+>När du aktiverar [!UICONTROL Audience Optimization for Publishers] måste du inkludera beskrivande metadata för [!UICONTROL Line Item] ID:n, enligt beskrivningen i steg 3 i [Importera datafiler från Google Ad Manager (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten innehåller information om webbegenskapen som [!UICONTROL Line Item] i stället för [!UICONTROL Line Item]-ID:t.
 
 ## Tolka resultaten {#interpreting-results}
 
-The [!UICONTROL Segment Trend] rapporten returnerar data i ett linjediagram endast för 14-dagarsintervall. I det här exemplet visar rapporten intrycks- och klickningstrender för en uppsättning mappade och omappade segment.
+Rapporten [!UICONTROL Segment Trend] returnerar data i ett linjediagram endast för 14-dagarsintervall. I det här exemplet visar rapporten intrycks- och klickningstrender för en uppsättning mappade och omappade segment.
 
 Håll pekaren över en linje för att få mer information om den aktuella segmenttrenden. Se beskrivningarna för ytterligare information i tabellen nedan.
 
@@ -63,19 +63,19 @@ Håll pekaren över en linje för att få mer information om den aktuella segmen
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> Segment</span> </p> </td> 
-   <td colname="col2"> <p>Det alfanumeriska namn som du tilldelade det här segmentet. </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> segment </span> </p> </td> 
+   <td colname="col2"> <p>Det alfanumeriska namn som du tilldelade segmentet. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> Segment-ID</span> </p> </td> 
-   <td colname="col2"> <p>Det unika ID:t för det här segmentet. </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> Segment-ID </span> </p> </td> 
+   <td colname="col2"> <p>Unikt ID för det här segmentet. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> Radartikel</span> </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> Radobjekt </span> </p> </td> 
    <td colname="col2"> <p>Den webbegenskap som du ser den här rapporten för. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> Klickningar</span> </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> klickar </span> </p> </td> 
    <td colname="col2"> <p>Antalet gånger som medlemmar i den här egenskapen har klickat på objekt i din webbegenskap. </p> </td> 
   </tr> 
   <tr> 
@@ -84,7 +84,7 @@ Håll pekaren över en linje för att få mer information om den aktuella segmen
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> CTR</span> </p> </td> 
-   <td colname="col2"> <p>Klickfrekvens. Det här måttet visar hur många procent av intrycken som ska följas av klickningar. Dela upp klickningarna med avtryck för att få fram mätvärdet. </p> </td> 
+   <td colname="col2"> <p>Klickfrekvens. Det här måttet visar hur många procent av intrycken som har följts av klickningar. Dela upp klickningarna med avtryck för att få fram det här mätvärdet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> Segment Uniques</span> </p> </td> 

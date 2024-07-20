@@ -10,18 +10,18 @@ feature: DCS
 exl-id: 1bdd7dcd-9411-4b0a-a236-059eb5faf00d
 source-git-commit: e10211057a87622340fd2c61737c7c7a45c0e99c
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 3%
+source-wordcount: '833'
+ht-degree: 1%
 
 ---
 
-# Attribut som stöds för [!DNL DCS] [!DNL API] Samtal {#supported-attributes-for-dcs-api-calls}
+# Attribut som stöds för [!DNL DCS] [!DNL API]-anrop {#supported-attributes-for-dcs-api-calls}
 
-Visar och beskriver syntaxen och de attribut (eller nyckelvärdepar) som stöds som du kan skicka in till [!UICONTROL Data Collection Servers] ([!DNL DCS]). Den här informationen kan hjälpa dig att formatera [!DNL DCS] begär och förstår de parametrar som returneras av systemet.
+Visar och beskriver syntaxen och de attribut (eller nyckelvärdepar) som stöds och som du kan skicka till [!UICONTROL Data Collection Servers] ([!DNL DCS]). Den här informationen kan hjälpa dig att formatera dina [!DNL DCS]-begäranden och förstå de parametrar som returneras av systemet.
 
 ## Attributprefix {#attribute-prefixes}
 
-The [!DNL DCS] förlitar sig på specifika prefix som läggs till nycklarna i nyckelvärdepar för att klassificera den typ av data som du skickar in.
+[!DNL DCS] förlitar sig på specifika prefix som läggs till nycklarna i nyckelvärdepar för att klassificera den typ av data som du skickar in.
 
 <table id="table_23B7E15EC13749E9A245DFB543822DB7"> 
  <thead> 
@@ -37,7 +37,7 @@ The [!DNL DCS] förlitar sig på specifika prefix som läggs till nycklarna i ny
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_</code> </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> Audience Manager</span> attribut. </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Audience Manager</span>-attribut. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> h_</code> </p> </td> 
@@ -45,14 +45,14 @@ The [!DNL DCS] förlitar sig på specifika prefix som läggs till nycklarna i ny
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> p_</code> </p> </td> 
-   <td colname="col2"> <p>Privata, kunddefinierade attribut. </p> <p> DCS accepterar egna, privata data när nyckeln har en <code> p_</code> prefix. Privata data används för utvärdering av egenskaper, men de kommer inte att loggas eller lagras i vårt system. Anta till exempel att du har en egenskap definierad som <code> customers = p_age&lt;25</code> och du <code> p_age=23</code> i ett event call. Under dessa förhållanden kvalificerar den användare som uppfyller de åldersbaserade kvalificeringskriterierna sig för egenskapen, men nyckelvärdepar tas bort efter <span class="keyword"> Audience Manager</span> tar emot begäran och är inte loggad. </p> </td>
+   <td colname="col2"> <p>Privata, kunddefinierade attribut. </p> <p> DCS accepterar egna, privata data när nyckeln har ett <code> p_</code>-prefix. Privata data används för utvärdering av egenskaper, men de kommer inte att loggas eller lagras i vårt system. Anta till exempel att du har en egenskap definierad som <code> customers = p_age&lt;25</code> och du skickar in <code> p_age=23</code> i ett händelseanrop. På grund av dessa villkor kvalificerar den användare som uppfyller de åldersbaserade kvalificeringskriterierna för egenskapen, men nyckel-värde-paret tas bort efter att <span class="keyword"> Audience Manager</span> har tagit emot begäran och inte loggats. </p> </td>
   </tr> 
  </tbody> 
 </table>
 
-## [!DNL d_] Attribut {#d-attributes}
+## [!DNL d_] attribut {#d-attributes}
 
-Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du vill ha [!DNL DCS] för att returnera ett svar, sedan `d_rtbd=json` krävs.
+Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du vill att [!DNL DCS] ska returnera ett svar krävs `d_rtbd=json`.
 
 <table id="table_FCCE4F9D796648899772A191981EFDE6"> 
  <thead> 
@@ -64,29 +64,29 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
  <tbody> 
   <tr> 
    <td colname="col1"> <p><code> d_caller</code> </p> </td> 
-   <td colname="col2"> <p>Används för att identifiera den uppringare som gör anropet till <span class="wintitle"> DCS</span> API. </p> </td> 
+   <td colname="col2"> <p>Används för att identifiera anroparen som gör anropet till API:t <span class="wintitle"> DCS</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_cb</code> </p> </td> 
-   <td colname="col2"> <p>Anger en JavaScript-funktion som du vill köra med <span class="wintitle"> DCS</span> som en funktionsparameter för callback-funktionen. </p> </td> 
+   <td colname="col2"> <p>Anger en JavaScript-funktion som du vill köra med <span class="wintitle"> DCS</span> -svaret som en funktionsparameter för callback-funktionen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_cid</code> </p> </td> 
-   <td colname="col2"> <p>Innehåller ett eller flera par med DataProvider-ID:n (<code> DPID</code>) och användar-ID för DataProvider (<code> DPUUID</code>) tilldelad av <span class="keyword"> Audience Manager</span>. Om du använder flera par med <code> DPID</code>s och <code> DPUUID</code>s, separera varje par med tecknet som inte skrivs ut <code> %01</code>. Exempel: <code><i>DPID</i>%01<i>DPUUUID</i></code>. </p> <p><code> d_cid</code> Ersätter <code> d_dpid</code> och <code> d_dpuuid</code>, som är inaktuella men fortfarande stöds. Se <a href="../../../reference/cid.md">CID ersätter DPID och DPUUID</a>. </p> </td>
+   <td colname="col2"> <p>Innehåller ett eller flera par med DataProvider-ID (<code> DPID</code>) och DataProvider-användar-ID (<code> DPUUID</code>) som tilldelats av <span class="keyword"> Audience Manager</span>. Om du använder flera par med <code> DPID</code> och <code> DPUUID</code>, skiljer du varje par åt med det tecken som inte skrivs ut <code> %01</code>. Till exempel: <code><i>DPID</i>%01<i>DPUUUID</i></code>. </p> <p><code> d_cid</code> ersätter <code> d_dpid</code> och <code> d_dpuuid</code>, som är inaktuella men fortfarande stöds. Se <a href="../../../reference/cid.md"> CID ersätter DPID och DPUUID </a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cid_ic</code> </p> </td> 
-   <td colname="col2"> <p>Innehåller en integreringskod och ett associerat unikt användar-ID i ett enda nyckelvärdepar. </p> <p><code> d_cid_ic</code> Ersätter <code> d_dpid</code> och <code> d_dpuuid</code>, som är inaktuella men fortfarande stöds. Se <a href="../../../reference/cid.md">CID ersätter DPID och DPUUID</a>. </p> </td>
+   <td colname="col2"> <p>Innehåller en integreringskod och ett associerat unikt användar-ID i ett enda nyckelvärdepar. </p> <p><code> d_cid_ic</code> ersätter <code> d_dpid</code> och <code> d_dpuuid</code>, som är inaktuella men fortfarande stöds. Se <a href="../../../reference/cid.md"> CID ersätter DPID och DPUUID </a>. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Adobe Experience Platform identitetstjänst och beror på <code> idSyncDisable3rdPartySyncing</code> konfiguration. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html" format="https" scope="external"> Stöd för COPPA i Adobe Experience Platform Identity Service</a>. </p> </td>
+   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Adobe Experience Platform Identity Service och beror på <code> idSyncDisable3rdPartySyncing</code>-konfigurationen. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html" format="https" scope="external"> COPPA-stöd i Adobe Experience Platform Identity Service </a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
-   <td colname="col2"> <p>Valfritt. Aktiverad på kundens begäran. Kontakta Adobe Audience Manager eller kundtjänst. </p> <p>Anger att egenskaper och segment ska returneras inuti <code> JSON</code> svar. </p> <p> 
+   <td colname="col2"> <p>Valfritt. Aktiverad på kundens begäran. Kontakta Adobe Audience Manager eller kundtjänst. </p> <p>Anger att egenskaper och segment ska returneras inuti svaret <code> JSON</code>. </p> <p> 
      <ul id="ul_8B936ACB18724681B959783421ACF026"> 
-      <li id="li_792A6248F49141C0B4B214C754D5F5C5"> <p><code> d_cts=1</code> returnerar <a href="../../../reference/ids-in-aam.md"> äldre segment-ID</a> för segmenten. </p> </li>
+      <li id="li_792A6248F49141C0B4B214C754D5F5C5"> <p><code> d_cts=1</code> returnerar <a href="../../../reference/ids-in-aam.md"> äldre segment-ID:n </a> för segmenten. </p> </li>
       <li id="li_F304CA651F3C444A9A24576726925D87"> <p><code> d_cts=2</code> returnerar segment-ID:n för segmenten. </p> </li>
      </ul> </p> <p>Ett exempelsvar kan se ut som det nedan: </p> <p>
      <code class="syntax javascript">
@@ -110,7 +110,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_dst=1</code> </p> </td> 
-   <td colname="col2"> <p>Returnerar URL-måldata i <code> JSON</code> svar. </p> </td> 
+   <td colname="col2"> <p>Returnerar URL-måldata i svaret <code> JSON</code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_dst_filter</code> </p> </td> 
@@ -118,19 +118,19 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_jsonv=1|0</code> </p> </td> 
-   <td colname="col2"> <p>Anger <code> JSON</code> version som ska användas i svaret. Normalt bör du ange att detta ska vara <code> d_jsonv=1</code>. Inställning <code> d_jsonv=0</code> inaktiverar ID-synk. </p> </td> 
+   <td colname="col2"> <p>Anger den <code> JSON</code>-version som ska användas i svaret. Normalt bör du ange det här till <code> d_jsonv=1</code>. Inställningen <code> d_jsonv=0</code> inaktiverar ID-synkronisering. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>Anger Experience Cloud-ID:t som används av <span class="keyword"> Experience Cloud</span> ID-tjänst. Mer information om ECID finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud Identity Service</a>. </p> </td> 
+   <td colname="col2"> <p>Anger det Experience Cloud-ID som angetts och som används av ID-tjänsten <span class="keyword"> Experience Cloud</span>. Mer information om ECID finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud Identity Service </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
-   <td colname="col2"> <p>Namnområdes-ID. Anger vilken JavaScript-behållare som används. Används av <span class="wintitle"> DIL</span> till för id-syncing. </p> </td> 
+   <td colname="col2"> <p>Namnområdes-ID. Anger vilken JavaScript-behållare som används. Används av <span class="wintitle"> DIL</span> för ID-synkronisering. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_ptfm </code> </p> </td> 
-   <td colname="col2"> <p>Gör att Audience Manager kan skilja på mobilförfrågningar och datorförfrågningar. Värden som stöds är: </p> <p> 
+   <td colname="col2"> <p>Gör att Audience Manager kan skilja på mobilförfrågningar och datorförfrågningar. Följande värden stöds: </p> <p> 
      <ul id="ul_A01D4B15C89F4713A39E08377924D632"> 
       <li id="li_E17CC839265B4EB9AC44A3DA31A23857"> <code> ios</code> </li> 
       <li id="li_468F5903CD3048B5AE02A3FDA9B3C4F1"> <code> android</code> </li> 
@@ -140,14 +140,14 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_rs</code> </p> </td> 
-   <td colname="col2"> <p>Föråldrat. <code> d_rs</code> är ett reserverat attribut som används i den äldre integreringen mellan <span class="keyword"> Adobe Analytics</span> och <span class="keyword"> Audience Manager</span>. </p> <p>Vi rekommenderar att du inte skapar egenskaper som använder reserverade attribut. Adobe kan när som helst ändra reserverade attribut. </p> </td> 
+   <td colname="col2"> <p>Föråldrat. <code> d_rs</code> är ett reserverat attribut som används i den äldre integreringen mellan <span class="keyword"> Adobe Analytics </span> och <span class="keyword"> Audience Manager </span>. </p> <p>Vi rekommenderar att du inte skapar egenskaper som använder reserverade attribut. Adobe kan när som helst ändra reserverade attribut. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_rtbd=json</code> </p> </td> 
-   <td colname="col2"> <p>Krävs om du vill ha en <code> JSON</code> svar från <span class="wintitle"> DCS</span>. </p> <p> 
+   <td colname="col2"> <p>Krävs om du vill ha ett <code> JSON</code>-svar från <span class="wintitle"> DCS</span>. </p> <p> 
      <ul id="ul_9EA00BD822504BCA8ECB59C1634DB91A"> 
-      <li id="li_7CB890F92C4A4C6AA8B4EE32E1AD4564">Om du utelämnar det här <span class="wintitle"> DCS</span> returnerar en pixel i sidhuvudet. </li> 
-      <li id="li_824C23B4C7AA4B5EBADF73D26016A18E">Om du tar med det här <span class="wintitle"> DCS</span> returnerar <code> JSON</code> -objektet i svarstexten. Se exemplet nedan. Svaret kan vara mer komplext. </li> 
+      <li id="li_7CB890F92C4A4C6AA8B4EE32E1AD4564">Om du utelämnar detta returnerar <span class="wintitle"> DCS</span> en pixel i sidhuvudet. </li> 
+      <li id="li_824C23B4C7AA4B5EBADF73D26016A18E">Om du tar med det här returnerar <span class="wintitle"> DCS</span> ett <code> JSON</code>-objekt i svarstexten. Se exemplet nedan. Svaret kan vara mer komplext. </li> 
      </ul> </p> <p> 
      <code class="syntax javascript">
       {
@@ -160,27 +160,27 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_sid</code> </p> </td> 
-   <td colname="col2"> <p><code> SID</code> står för <span class="term"> poäng-ID</span>. Detta är ett unikt ID för ett trait eller segment. </p> </td> 
+   <td colname="col2"> <p><code> SID</code> står för <span class="term"> poäng-ID </span>. Detta är ett unikt ID för ett trait eller segment. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_tdpid</code> </p> </td> 
-   <td colname="col2"> <p>Skickar en datakälla för utvärdering av egenskaper. Endast egenskaper från den här datakällan utvärderas. </p> <p>Anta till exempel att du har: </p> <p> 
+   <td colname="col2"> <p>Skickar en datakälla för utvärdering av egenskaper. Endast egenskaper från den här datakällan utvärderas. </p> <p>Anta att du har: </p> <p> 
      <ul id="ul_6230777E16C14DCB83025A101A4ECA14"> 
       <li id="li_71F3970417BC4B93881A3E12DADE4120"><b>Trait T1</b> med: </li> 
-      <li id="li_66125E035F524A958C6F4BFAABA2A0D2">Trait-regel: "<code> key1 == val1</code>" </li> 
-      <li id="li_4EE486E02CF54AEA876ABC005094E9E4">Datakälla (<a href="../../../reference/ids-in-aam.md"> DPID</a>): 1 </li> 
-      <li id="li_3E6BBDEAE5C644C6A96CB49766CDA988">Integrationskod för DPID: ic1 </li> 
+      <li id="li_66125E035F524A958C6F4BFAABA2A0D2">Trait-regel: <code> key1 == val1</code> </li> 
+      <li id="li_4EE486E02CF54AEA876ABC005094E9E4">Data-Source (<a href="../../../reference/ids-in-aam.md"> DPID</a>): 1 </li> 
+      <li id="li_3E6BBDEAE5C644C6A96CB49766CDA988">DPID-integrationskod: ic1 </li> 
      </ul> 
      <ul id="ul_0C30A8AE349D43A08490DA76CB4B06FA"> 
       <li id="li_F1E8DB26168B471FA35D82F4DD3AC601"><b>Trait T2</b> med: </li> 
-      <li id="li_1C943F84A4A149A0A86ABC92761D3E9E">Trait-regel: "<code> key2 == val2</code>" </li> 
-      <li id="li_F2AA086C87B7484F8BFE1D5C09E8EBDF">Datakälla (DPID): 2 </li> 
-      <li id="li_877CAAAE996A4707BEE74F7042708481">Integrationskod för DPID: ic2 </li> 
-     </ul> </p> <p>I ett provsamtal <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid=1</code>, returneras bara trait T1. </p> </td> 
+      <li id="li_1C943F84A4A149A0A86ABC92761D3E9E">Trait-regel: <code> key2 == val2</code> </li> 
+      <li id="li_F2AA086C87B7484F8BFE1D5C09E8EBDF">Data Source (DPID): 2 </li> 
+      <li id="li_877CAAAE996A4707BEE74F7042708481">DPID-integrationskod: ic2 </li> 
+     </ul> </p> <p>I ett samplingsanrop, <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid=1</code>, returneras bara trait T1. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_tdpid_ic</code> </p> </td> 
-   <td colname="col2"> <p>Syftet är identiskt med <code> d_tdpid</code> parameter som beskrivs ovan. I det här fallet skickas datakällan med integreringskoden. </p> <p>Behåll de egenskaper som beskrivs ovan, överväg att genomföra stickprovet: </p> <p>För <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid_ic=ic2</code>, returneras bara trait T2. </p> </td> 
+   <td colname="col2"> <p>Syftet är identiskt med parametern <code> d_tdpid</code> som beskrivs ovan. I det här fallet skickas datakällan med integreringskoden. </p> <p>Behåll de egenskaper som beskrivs ovan, överväg att genomföra stickprovet: </p> <p>För <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid_ic=ic2</code> returneras endast egenskapen T2. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_uuid</code> </p> </td> 
@@ -195,9 +195,9 @@ Dessa rubriker innehåller information som förfrågningar om data och svar i et
 
 | Attribut | Beskrivning |
 | --- | --- | 
-| `h_host` | Detta anges till klientens specifika värdnamn för datainsamling. Det ser ut som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en). |
-| `h_user-agent` | Ange till `User-Agent` rubrikvärde. |
-| `h_accept-language` | Ange till  `Accept-Language`  rubrikvärde. |
-| `h_referer` | Ange till `Referer` rubrikvärde. |
-| `h_referrer` | Ange till `Referrer` rubrikvärde. |
-| `h_date` | Ange till `Date` rubrikvärde. |
+| `h_host` | Detta anges till klientens specifika värdnamn för datainsamling. Det visas som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en). |
+| `h_user-agent` | Ange till rubrikvärdet `User-Agent`. |
+| `h_accept-language` | Ange till rubrikvärdet `Accept-Language`. |
+| `h_referer` | Ange till rubrikvärdet `Referer`. |
+| `h_referrer` | Ange till rubrikvärdet `Referrer`. |
+| `h_date` | Ange till rubrikvärdet `Date`. |

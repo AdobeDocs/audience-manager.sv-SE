@@ -1,5 +1,5 @@
 ---
-description: En datafeed kräver ett namn, en beskrivning, en datakälla och en plantyp. Feeds inaktiveras tills du sparar och aktiverar feeden. Konfigurera offentliga eller privata dataflöden i Audience Marketplace > Mina delade data. Endast tillgängligt för dataförsäljare.
+description: En datafeed kräver ett namn, en beskrivning, en datakälla och en plantyp. Feeds inaktiveras tills du sparar och aktiverar feeden. Ställ in offentliga eller privata dataflöden i Audience Marketplace > Mina delade data. Endast tillgängligt för dataförsäljare.
 seo-description: A data feed requires a name, description, data source, and a plan type. Feeds are disabled until you save and activate the feed. Set up public or private data feeds in Audience Marketplace > My Shared Data. Available to data sellers only.
 seo-title: Create, Price, and Manage Data Feeds
 solution: Audience Manager
@@ -9,8 +9,8 @@ feature: Audience Marketplace
 exl-id: e8605e94-e62a-430c-9aef-875f995fb436
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 1%
+source-wordcount: '1260'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## Skapa en offentlig eller privat datafeed {#create-public-private-data-feed}
 
-En datafeed kräver ett namn, en beskrivning, en datakälla och en plantyp. Feeds inaktiveras tills du sparar och aktiverar feeden. Ställ in offentliga eller privata dataflöden i **[!UICONTROL Audience Marketplace > My Shared Data]**. Endast tillgängligt för dataförsäljare.
+En datafeed kräver ett namn, en beskrivning, en datakälla och en plantyp. Feeds inaktiveras tills du sparar och aktiverar feeden. Konfigurera offentliga eller privata datafeeds i **[!UICONTROL Audience Marketplace > My Shared Data]**. Endast tillgängligt för dataförsäljare.
 
 <!-- t_data_feed.xml -->
 
@@ -29,20 +29,20 @@ Så här skapar du en datafeed:
 1. Namnge datafeeden. Datainköpare kan söka efter din feed baserat på namnet.
 1. Ge en kort beskrivning (högst 255 tecken).
 
-   En bra beskrivning bör beskriva ditt foder korrekt. Du kan t.ex. inkludera text för marknadsföringskategorier, demografiska uppgifter och geografisk täckning (t.ex. [!DNL US] eller Nordamerika). Beskrivningstexten är sökbar och hjälper köpare att hitta eller utvärdera din feed. En bra beskrivning är en viktig del av att locka abonnenter till dataflödet.
-1. Välj en datakälla på menyn **[!UICONTROL Data Source]** alternativ. Dataflöden är begränsade till en enda datakälla. Du kan inte tilldela flera datakällor till samma datafeed.
+   En bra beskrivning bör beskriva ditt foder korrekt. Du kan till exempel inkludera text för marknadsföringskategorier, demografiska uppgifter och geografisk täckning (t.ex. [!DNL US] eller Nordamerika). Beskrivningstexten är sökbar och hjälper köpare att hitta eller utvärdera din feed. En bra beskrivning är en viktig del av att locka abonnenter till dataflödet.
+1. Välj en datakälla bland alternativen för **[!UICONTROL Data Source]**. Dataflöden är begränsade till en enda datakälla. Du kan inte tilldela flera datakällor till samma datafeed.
 
    >[!IMPORTANT]
    >
    >Alla nuvarande och framtida egenskaper som tillhör den här datakällan delas med era datainköpare som en del av denna feed.
 
-1. I [!UICONTROL Plan Types], markerar de alternativ du vill använda och klickar på **[!UICONTROL Add Plan]**.
+1. I [!UICONTROL Plan Types] markerar du de alternativ som du vill använda och klickar på **[!UICONTROL Add Plan]**.
 
-   Feeds kan innehålla flera planer. Planer kan innehålla flera användningsfall. Mer information finns i [Plantyper för datafeeds](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#plan-types).
+   Feeds kan innehålla flera planer. Planer kan innehålla flera användningsfall. Mer information finns i [Planera typer för datafeeds](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#plan-types).
 
-1. Klicka **[!UICONTROL Save]** för att spara din datafeed *utan* aktivera den.
+1. Klicka på **[!UICONTROL Save]** om du vill spara din datafeed *utan att* aktivera den.
 1. Så här sparar och aktiverar du en datafeed:
-   1. Flytta **[!UICONTROL Availability]** skjutreglage till **[!UICONTROL Active]**.
+   1. Flytta reglaget **[!UICONTROL Availability]** till **[!UICONTROL Active]**.
    1. Klicka på **[!UICONTROL Save]**.
 
    >[!NOTE]
@@ -50,34 +50,33 @@ Så här skapar du en datafeed:
    >* Det går inte att ta bort sparade och aktiverade dataflöden.
    >* Köpare ser endast aktiva feeds.
 
-
 ### Valfritt: Skapa en privat datafeed
 
-I [!UICONTROL Settings] flyttar du reglaget till:
+I avsnittet [!UICONTROL Settings] flyttar du reglaget till:
 
-* **[!UICONTROL Private]** och **[!UICONTROL Branded]**: Köparens [!UICONTROL Marketplace] listan visar säljarens namn i leverantörskolumnen och alla andra data är dolda.
+* **[!UICONTROL Private]** och **[!UICONTROL Branded]**: Köparens [!UICONTROL Marketplace]-lista visar säljarens namn i leverantörskolumnen och alla andra data är dolda.
 
-* **[!UICONTROL Private]** och **[!UICONTROL Unbranded]**: Köparens [!UICONTROL Marketplace] listan visar endast dataflödets namn och beskrivning. DataProvider-namnet visas som [!UICONTROL Private Seller].
+* **[!UICONTROL Private]** och **[!UICONTROL Unbranded]**: Köparens [!UICONTROL Marketplace]-lista visar endast dataflödets namn och beskrivning. DataProvider-namnet visas som [!UICONTROL Private Seller].
 
-För att se hur en privat feed ser ut för köpare, se avsnittet köpare i [Privata datafeeds](../../../features/audience-marketplace/marketplace-private-feeds.md).
+Om du vill se hur en privat feed ser ut för köpare kan du läsa avsnittet köpare i [Privata datafeeds](../../../features/audience-marketplace/marketplace-private-feeds.md).
 
 ## Inaktivera en abonnents datafeed {#deactivate-data-feed}
 
-Som en [!UICONTROL Audience Marketplace] DataProvider kan du återkalla köparåtkomst till en prenumererad datafeed. Du kan ta bort en köpare från ett flöde av orsaker som försenad betalning/utebliven betalning av avgifter eller om de använder felaktiga uppgifter.
+Som [!UICONTROL Audience Marketplace]-dataleverantör kan du återkalla köparåtkomst till en prenumererad datafeed. Du kan ta bort en köpare från ett flöde av orsaker som försenad betalning/utebliven betalning av avgifter eller om de använder felaktiga uppgifter.
 
 <!-- marketplace-deactiva4te-subscribers.xml -->
 
 Så här återkallar du en prenumerant:
 
-1. I [!UICONTROL My Shared Data]söker du efter den feed som prenumeranten använder.
+1. I [!UICONTROL My Shared Data] hittar du den feed som prenumeranten använder.
 
    >[!NOTE]
    >
    >Datamatningar med försenade konton flaggas med en ikon för triangel-/utropstecken.
 
-1. I [!UICONTROL Subscribers] klickar du på det blå nummer som räknar prenumeranter för den aktuella feeden. Sidan med prenumerationsinformation öppnas.
-1. Flytta **[!UICONTROL Subscription]** skjutreglage till **[!UICONTROL Off]**. Då öppnas en bekräftelsedialogruta.
-1. I [!UICONTROL Confirmation] pop, klicka **[!UICONTROL Yes]** för att inaktivera en prenumeration eller **[!UICONTROL Cancel]** att sluta utan att göra prenumerationsändringar.
+1. Klicka i kolumnen [!UICONTROL Subscribers] på det blå nummer som räknar prenumeranter för den aktuella feeden. Sidan med prenumerationsinformation öppnas.
+1. Flytta reglaget **[!UICONTROL Subscription]** till **[!UICONTROL Off]**. Ett bekräftelsefönster öppnas.
+1. Klicka på **[!UICONTROL Yes]** på popup-menyn [!UICONTROL Confirmation] om du vill inaktivera en prenumeration eller på **[!UICONTROL Cancel]** om du vill avsluta utan att göra några prenumerationsändringar.
 
 ### Vad som händer när du har inaktiverat en prenumerant
 
@@ -89,9 +88,9 @@ När du har tagit bort åtkomsten till en datafeed ansvarar abonnenterna för av
 
 ## Plantyper för datafeeds {#plan-types}
 
-[!DNL Plan types] är viktiga komponenter i [!UICONTROL Audience Marketplace] dataflöde. Som dataleverantör kan du skapa flera användningsfall och prisalternativ för dina feeds. Dessutom kan det vara en bra strategi att skapa ett antal planer för varje dataflöde. Detta ger köparna olika alternativ att välja mellan när de letar efter data att modellera eller skicka till en destination.
+[!DNL Plan types] är viktiga komponenter i en [!UICONTROL Audience Marketplace]-datafeed. Som dataleverantör kan du skapa flera användningsfall och prisalternativ för dina feeds. Dessutom kan det vara en bra strategi att skapa ett antal planer för varje dataflöde. Detta ger köparna olika alternativ att välja mellan när de letar efter data att modellera eller skicka till en destination.
 
-[Skapa en datafeed](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#create-public-private-data-feed) för att markera [!UICONTROL Plan Types].
+[Skapa en datafeed](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#create-public-private-data-feed) för att välja [!UICONTROL Plan Types].
 
 ![](assets/plan_types.png)
 
@@ -99,34 +98,34 @@ När du har tagit bort åtkomsten till en datafeed ansvarar abonnenterna för av
 
 <!-- c_feed_options.xml -->
 
-The [!UICONTROL Use Case] gör att säljarna kan styra hur köpare kan använda era data.
+Med inställningarna för [!UICONTROL Use Case] kan säljarna styra hur köpare kan använda dina data.
 
 ### Segment och överlappning
 
-A **[!UICONTROL Segments and Overlap]** use case skapar en plan där köpare kan jämföra sina egna data i en [Överlappningsrapport mellan egenskaper](../../../reporting/dynamic-reports/trait-trait-overlap-report.md#trait-to-trait-overlap-report). Dessutom kan köpare lägga till data i segment och jämföra dem med [segment-till-trait](../../../reporting/dynamic-reports/segment-trait-overlap-report.md) och [segment-till-segment](../../../reporting/dynamic-reports/segment-segment-overlap-report.md) rapporter.
+Ett **[!UICONTROL Segments and Overlap]**-användningsfall skapar en plan där köpare kan jämföra trait-data i en [trait-to-trait-överlappningsrapport](../../../reporting/dynamic-reports/trait-trait-overlap-report.md#trait-to-trait-overlap-report). Dessutom kan köpare lägga till dina data i segment och jämföra dem med [segment-till-trait](../../../reporting/dynamic-reports/segment-trait-overlap-report.md)- och [segment-till-segment](../../../reporting/dynamic-reports/segment-segment-overlap-report.md)-rapporterna.
 
-Varje datafeed måste innehålla minst ett [!UICONTROL Segments and Overlap] användningsfall. Köpare kan inte prenumerera på andra planer i en datafeed om den inte innehåller någon [!UICONTROL Segments and Overlap] användningsfall, antingen för sig själv eller i kombination med ett annat användningsfall.
+Varje datafeed måste innehålla minst ett [!UICONTROL Segments and Overlap]-användningsfall. Köpare kan inte prenumerera på andra planer i en datafeed om den inte innehåller ett [!UICONTROL Segments and Overlap]-användningsfall, antingen för sig själv eller i kombination med ett annat användningsfall.
 
 Överlappningsjämförelser kan hjälpa köpare:
 
-* **Nå fler:** Låg överlappning tyder på att dina egenskaper innehåller användare som köparen inte har sett tidigare. Därför kan köpare vilja att dessa egenskaper lägger till nya användare i sina målgruppssegment.
-* **Förbättra befintliga målgrupper:** Hög överlappning tyder på att era egenskaper innehåller användare som liknar de som en köpare redan känner till. Därför kanske köpare vill att dessa egenskaper ska bidra till riktade, stegvisa förbättringar för framtagna målgrupper.
+* **Utöka målgruppens räckvidd:** Låg överlappning tyder på att dina egenskaper innehåller användare som köparen inte har sett tidigare. Därför kan köpare vilja att dessa egenskaper lägger till nya användare i sina målgruppssegment.
+* **Förbättra befintliga målgrupper:** Hög överlappning innebär att dina egenskaper innehåller användare som liknar de som en köpare redan känner till. Därför kanske köpare vill att dessa egenskaper ska bidra till riktade, stegvisa förbättringar för framtagna målgrupper.
 
 Priser för detta fall enligt följande:
 
-* Måttenhet: Schablonavgift
+* Måttenhet: schablonavgift
 * Pris: Kostnadsfritt ($0.00)
 
 ### Modeling
 
-A **[!UICONTROL Modeling]** use case skapar en plan där köpare kan jämföra dina egenskaper med sina [algoritmisk modellering](../../../features/algorithmic-models/understanding-models.md#understanding-models). Köpare tittar på modellresultaten för att hitta nya målgrupper i era data som delar konverteringsattribut som liknar deras egna. Priser för detta fall enligt följande:
+Ett **[!UICONTROL Modeling]**-användningsfall skapar en plan där köpare kan jämföra dina egenskaper med sina egna med [algoritmisk modellering](../../../features/algorithmic-models/understanding-models.md#understanding-models). Köpare tittar på modellresultaten för att hitta nya målgrupper i era data som delar konverteringsattribut som liknar deras egna. Priser för detta fall enligt följande:
 
-* Måttenhet: Schablonavgift
+* Måttenhet: schablonavgift
 * Pris: Rabatterad kurs eller marknadspris
 
 ### Aktivering
 
-An **[!UICONTROL Activation]** användningsfall låter köpare skicka data till en [mål](../../../features/destinations/destinations.md). I det här fallet kan köpare inte jämföra data med en överlappningsrapport eller i en algoritmisk modell. Priser för detta fall enligt följande:
+Ett **[!UICONTROL Activation]**-användningsfall tillåter att köpare skickar data till ett [mål](../../../features/destinations/destinations.md). I det här fallet kan köpare inte jämföra data med en överlappningsrapport eller i en algoritmisk modell. Priser för detta fall enligt följande:
 
 * Måttenhet: [!DNL CPM]
 * Pris: [!DNL CPM] marknadsränta
@@ -144,8 +143,8 @@ Fakturerings- och prisalternativen styr hur köpare betalar för dina data.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <b><span class="uicontrol"> Faktureringscykel</span></b> </td> 
-   <td colname="col2"> <b><span class="uicontrol"> Månadsvis i form av arv</span></b> är det enda alternativet. Faktureringscykeln avslutas den 10:e dagen i varje månad. </td> 
+   <td colname="col1"> <b><span class="uicontrol"> faktureringscykel </span></b> </td> 
+   <td colname="col2"> <b><span class="uicontrol"> Månadsvis i slutet </span></b> är det enda alternativet. Faktureringscykeln avslutas den 10:e dagen i varje månad. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Måttenhet</span></b> </td> 
@@ -156,7 +155,7 @@ Fakturerings- och prisalternativen styr hur köpare betalar för dina data.
     </ul> </td>
   </tr> 
   <tr> 
-   <td colname="col1"> <b><span class="uicontrol"> Pris</span></b> </td>
+   <td colname="col1"> <b><span class="uicontrol"> pris</span></b> </td>
    <td colname="col2"> Det belopp som en säljare debiterar köparen som CPM-ränta eller fast avgiftspris, i dollar. </td>
   </tr> 
  </tbody> 
@@ -164,7 +163,7 @@ Fakturerings- och prisalternativen styr hur köpare betalar för dina data.
 
 ## Versionsinformation {#plan-notes}
 
-I **[!UICONTROL Additional Notes]** ska du ta lite tid att beskriva varje dataplan i en feed. En bra, kort beskrivning hjälper köpare att förstå innehållet eller syftet med varje plan i ett dataflöde. Köpare kan läsa dataflöden och planera beskrivningar när de söker efter eller utvärderar nya datakällor.
+I fältet **[!UICONTROL Additional Notes]** kan du ta lite tid för att beskriva varje dataplan i en feed. En bra, kort beskrivning hjälper köpare att förstå innehållet eller syftet med varje plan i ett dataflöde. Köpare kan läsa dataflöden och planera beskrivningar när de söker efter eller utvärderar nya datakällor.
 
 ## Hantera förfrågningar om privat datafeed {#manage-private-requests}
 
@@ -175,24 +174,24 @@ Om du vill granska, godkänna eller avvisa köparförfrågningar går du till [!
 <!-- t_private_feed_workflows.xml -->
 
 1. Klicka på namnet på den privata datafeeden.
-2. Klicka **[!UICONTROL Access Requests]** för att granska alla köpare som vill ha tillgång till din datafeed.
-3. I [!UICONTROL Allow Access] i varje begäranderuta klickar du på bockmarkeringen för att godkänna en förfrågan eller på X för att neka åtkomst.
+2. Klicka på **[!UICONTROL Access Requests]** om du vill granska alla köpare som vill ha tillgång till din datafeed.
+3. Klicka på bockmarkeringen i avsnittet [!UICONTROL Allow Access] i varje begäranderuta för att godkänna en begäran eller på krysset för att neka åtkomst.
 4. Bekräfta eller avbryt den valda åtgärden i bekräftelsefönstret.
 
 ## Rabatter för dataleverantörer {#discounts}
 
-I [!UICONTROL Audience Marketplace]Med hjälp av rabatter kan du sänka det publicerade priset för en datafeed för enskilda prenumeranter. Du kan erbjuda rabatter till prenumeranter som har lämnat in en prenumerationsansökan eller till prenumeranter som har begärt information om en datafeed. Rabatterna gäller [!DNL CPM] och feeds med schablonbelopp. Rabatter kan vara användbara när du vill erbjuda prenumerationsincittioner för nya kunder eller belöna kundlojalitet.
+I [!UICONTROL Audience Marketplace] kan du minska det publicerade priset för en datafeed för enskilda prenumeranter. Du kan erbjuda rabatter till prenumeranter som har lämnat in en prenumerationsansökan eller till prenumeranter som har begärt information om en datafeed. Rabatterna gäller för [!DNL CPM] och feeds med schablonbelopp. Rabatter kan vara användbara när du vill erbjuda prenumerationsincittioner för nya kunder eller belöna kundlojalitet.
 
 ## Använda rabatter på en datafeed {#apply-discounts}
 
 <!-- marketplace-seller-discounts.xml -->
 
-Om du vill rabattera en feed lägger du till ett rabattbelopp i % i rabattfältet och bekräftar dina ändringar. Dataleverantörer kan radera dataflöden i [!UICONTROL Audience Marketplace] från antingen
+Om du vill rabattera en feed lägger du till ett rabattbelopp i % i rabattfältet och bekräftar dina ändringar. Dataleverantörer kan rabattera dataflöden i [!UICONTROL Audience Marketplace] från antingen:
 
 * **[!UICONTROL My Shared Data > Potential Subscribers]**
 * **[!UICONTROL My Shared Data > Details Requests]**
 
-I de här exemplen har säljaren lagt till 10 % rabatt på [!UICONTROL Software Audience] dataflöde.
+I de här exemplen har säljaren lagt till 10 % rabatt i dataflödet [!UICONTROL Software Audience].
 
 ![](assets/potential_subscribers.png)
 
@@ -200,11 +199,10 @@ I de här exemplen har säljaren lagt till 10 % rabatt på [!UICONTROL Software 
 
 ## Granska rabatterade feeds {#review-discounted-feeds}
 
-Dataleverantörer kan se alla sina prenumeranter och rabatterade flöden i **[!UICONTROL Audience Marketplace > My Shared Data > Current Subscribers]**.
+Dataleverantörer kan se alla sina prenumeranter och rabatterade feeds i **[!UICONTROL Audience Marketplace > My Shared Data > Current Subscribers]**.
 
 ![](assets/subscribers.png)
 
 >[!MORELIKETHIS]
 >
 >* [Privata dataflöden](../../../features/audience-marketplace/marketplace-private-feeds.md)
-

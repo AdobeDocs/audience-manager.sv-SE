@@ -9,13 +9,13 @@ exl-id: 367bad0f-d7d6-4dd5-9717-85ac6eda47ab
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Startsida för destinationer {#destinations-home}
+# Startsida för mål {#destinations-home}
 
-The [!UICONTROL Destination] på landningssidan visas alla [!DNL URL], cookie och server-till-server-mål. Det innehåller funktioner som gör att du kan skapa, redigera, söka efter och rapportera destinationer. Landningssidan finns i **[!UICONTROL Audience Data > Destinations]**.
+På [!UICONTROL Destination]-landningssidan visas alla dina [!DNL URL]-, cookie- och server-till-server-mål. Det innehåller funktioner som gör att du kan skapa, redigera, söka efter och rapportera destinationer. Landningssidan finns i **[!UICONTROL Audience Data > Destinations]**.
 
 ## Standardlandningssida {#default-landing-page}
 
@@ -23,18 +23,18 @@ The [!UICONTROL Destination] på landningssidan visas alla [!DNL URL], cookie oc
 
 Standardlandningssidan visar dina destinationer baserat på typ. Du kan filtrera destinationerna med hjälp av de fyra flikarna:
 
-* **Alla**: visar alla typer av destinationer.
+* **Alla**: visar alla typer av mål.
 * **Adobe Experience Cloud**: visar mål som skickar data till andra Adobe Experience Cloud-lösningar. För närvarande är Adobe Analytics det enda alternativ som stöds. Se [Konfigurera ett analysmål](/help/using/features/destinations/create-analytics-destination.md).
 * **Integrerade plattformar**: visar personbaserade och enhetsbaserade mål (även namngivna server-till-server-mål).
-* **Egen**: visar mål för cookie och URL.
+* **Egen**: visar mål för cookies och URL.
 
 
 ![](assets/destinations-landing.png)
 
 ## Landningssida för adresserbara målgrupper {#audiences-landing-page}
 
-Om du vill visa målgruppsdata och matchningsfrekvenser för server-till-server-målet väljer du **[!UICONTROL Integrated Platforms > Device-Based]**.
+Välj **[!UICONTROL Integrated Platforms > Device-Based]** om du vill visa målgruppsdata och matchningsfrekvenser för server-till-server-målet.
 
-Mer information om den information som visas finns i [Addresserable Auditions Interface](/help/using/features/addressable-audiences.md#addressable-audience-interface).
+Mer information om den information som visas finns i [Gränssnitt för adresserbara målgrupper](/help/using/features/addressable-audiences.md#addressable-audience-interface).
 
 ![](/help/using/features/assets/addressable-audiences-landing.png)

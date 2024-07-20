@@ -3,24 +3,24 @@ description: Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan
 seo-description: Describes the common platform-level key-value pairs you can use to target users with device-related variables across all properties in your Audience Manager account.
 seo-title: Device Targeting With Platform-level Keys
 solution: Audience Manager
-title: Enhetsmålinriktning med nycklar på plattformsnivå
+title: Målinriktning på enheter med plattformsnivå
 uuid: bc048cc5-3df1-49bc-ac78-0ea5d7edd9cc
 feature: Traits
 exl-id: 85c848e0-a4cf-49b5-9fe9-56f8c565f665
 source-git-commit: b299783b993c5d4a1c7738eca82932c20f377ee7
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 5%
+source-wordcount: '264'
+ht-degree: 1%
 
 ---
 
-# Enhetsmålinriktning med nycklar på plattformsnivå {#device-targeting-with-platform-level-keys}
+# Målinriktning på enheter med plattformsnivå {#device-targeting-with-platform-level-keys}
 
 >[!WARNING]
 >
->Google har uppdaterat funktionerna i [!DNL Google Chrome] och alla [!DNL Chromium]webbläsare för att minimera den information som samlas in via `User-Agent` header.
->Från och med mars 2023 stöder Audience Manager dessa uppdateringar genom att utnyttja [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en). Om du vill fortsätta att använda traits-information via `User-Agent` header, du måste använda [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) och aktivera [Tips för High Entropy User Agent-klient](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=en).
->Dessa uppdateringar stöds inte av [DIL](../../../using/dil/dil-overview.md)så Audience Manager som använder [!DNL DIL] kommer inte att kunna samla in uppgifter om trait via `User-Agent` header.
+>Google har uppdaterat funktionerna för [!DNL Google Chrome] och alla [!DNL Chromium]-baserade webbläsare för att minimera informationen som samlas in via rubriken `User-Agent`.
+>Från och med mars 2023 stöder Audience Manager dessa uppdateringar genom att utnyttja [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en). Om du vill fortsätta använda trait-information som tillhandahålls via rubriken `User-Agent` måste du använda [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) och aktivera [High Entropy User-Agent Client-tips](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=en).
+>Dessa uppdateringar stöds inte av [DIL](../../../using/dil/dil-overview.md), så Audience Manager-kunder som använder [!DNL DIL] kan inte samla in information om egenskaper via rubriken `User-Agent`.
 
 Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med enhetsrelaterade variabler i alla egenskaper i ditt Audience Manager-konto.
 
@@ -28,11 +28,11 @@ Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda fö
 
 <!-- c_tb_device_targeting.xml -->
 
-Med variabler på plattformsnivå kan ni hämta data som skickas från en viss webbplats och göra dem tillgängliga för målinriktning i alla egenskaper i [!DNL Audience Manager] konto. Variablerna är skapade av [nyckelvärdepar](../../reference/key-value-pairs-explained.md) med tangenten prefix av `d_` enligt nedan.
+Med plattformsnivåvariabler kan du ta data som skickas från en viss webbplats och göra dem tillgängliga för målinriktning för alla egenskaper i ditt [!DNL Audience Manager]-konto. Variablerna är formade med [nyckel/värde-par](../../reference/key-value-pairs-explained.md) med nyckeln prefix av `d_` enligt nedan.
 
 ## Tangenter på plattformsnivå definierade av användaragenten {#keys-user-agent}
 
-The [!UICONTROL Data Collection Servers] extrahera värdena för dessa nycklar från [användaragenthuvud](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43) in `HTTP` förfrågningar. Värdena representerar information på enhetsnivå från [!UICONTROL Device Atlas] databas. Signalerna i tabellen nedan är tillgängliga, som hämtats från användaragentexemplet. [Ladda ned en lista med de vanligaste tangenterna](assets/device_keys.csv), enligt [!UICONTROL Device Atlas] mått.
+[!UICONTROL Data Collection Servers] extraherar värdena för de här nycklarna från [användaragenthuvudet](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43) i `HTTP`-begäranden. Värdena representerar information på enhetsnivå från databasen [!UICONTROL Device Atlas]. Signalerna i tabellen nedan är tillgängliga, som hämtats från användaragentexemplet. [Hämta en lista med de vanligaste tangenterna ](assets/device_keys.csv) enligt [!UICONTROL Device Atlas] mått.
 
 | [!DNL Signal] | [!DNL Type] | [!DNL Example] |
 |---|---|---|
@@ -50,9 +50,8 @@ The [!UICONTROL Data Collection Servers] extrahera värdena för dessa nycklar f
 
 >[!NOTE]
 >
->Även om en eller flera signaler inte kan hämtas från användaragentens huvud, kommer de andra signalerna fortfarande att skickas till [!UICONTROL Data Collection Servers].
+>Även om en eller flera signaler inte kan hämtas från användaragenthuvudet, kommer de andra signalerna fortfarande att skickas till [!UICONTROL Data Collection Servers].
 
 >[!MORELIKETHIS]
 >
 >* [Prefixkrav för nyckelvariabler](../../features/traits/trait-variable-prefixes.md)
-

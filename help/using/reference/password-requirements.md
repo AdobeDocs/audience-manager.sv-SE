@@ -9,7 +9,7 @@ feature: Reference
 exl-id: beeb65e3-b715-49a8-b14b-ce3fff96a5cd
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '267'
 ht-degree: 100%
 
 ---
@@ -81,4 +81,3 @@ Klicka på länken **[!UICONTROL Forgot password]** på inloggningssidan för at
 >
 >* [Datasäkerhet](../overview/data-security-and-privacy/data-security.md)
 >* [Datasäkerhet](../overview/data-security-and-privacy/data-privacy.md)
-

@@ -10,13 +10,13 @@ exl-id: a76f4d7d-5dd2-4b29-a97e-039c8f1d765f
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '105'
-ht-degree: 13%
+ht-degree: 0%
 
 ---
 
 # Viktiga komponenter i Audience Manager-systemet{#key-components-in-the-audience-manager-system}
 
-Audience Manager grupperar sina system och processer i fyra huvudkategorier: tagghantering, datainsamling, datahantering och datahantering.
+Audience Manager grupperar sina system och processer i fyra huvudkategorier: tagghantering, datainsamling, datahantering och dataåtgärder.
 
 <!-- 
 
@@ -24,6 +24,6 @@ c_compstack.xml
 
  -->
 
-Följande bild visar de viktigaste komponenterna och den underliggande tekniken (maskinvara och programvara) som används [!DNL Audience Manager]. Även om vissa processer utför specifika funktioner och andra har roller med flera syften, fungerar alla system tillsammans för att hjälpa dig att hantera taggar, samla in data, analysera prestanda, synkronisera information med andra system och vidta åtgärder för den informationen.
+Följande bild visar huvudkomponenterna och den underliggande tekniken (maskinvara och programvara) som stöder [!DNL Audience Manager]. Även om vissa processer utför specifika funktioner och andra har roller med flera syften, fungerar alla system tillsammans för att hjälpa dig att hantera taggar, samla in data, analysera prestanda, synkronisera information med andra system och vidta åtgärder för den informationen.
 
 ![](assets/components.png)

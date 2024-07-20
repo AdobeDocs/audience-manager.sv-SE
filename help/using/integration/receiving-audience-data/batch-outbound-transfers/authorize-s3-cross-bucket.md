@@ -3,21 +3,21 @@ description: Processen för utgående dataöverföring för kunder som använder
 seo-description: The Outbound Data Transfer process for customers using Amazon Simple Storage Service (Amazon S3) requires us to ask for your Amazon S3 access key and secret key, in order to deliver the outbound data files to your bucket.
 seo-title: Leverage Amazon S3 Cross-Account Bucket Permissions for Your Outbound Files
 solution: Audience Manager
-title: Utnyttja behörigheter för Amazon S3 Cross Account Bucket för utgående filer
+title: Utnyttja Amazon S3-behörigheter för kontoöverskridande paket för utgående filer
 uuid: 400a8d67-ebf3-48be-aa3f-498a5441f498
 feature: Outbound Data Transfers
 exl-id: e52f5bc0-7dc0-4c73-833c-5a778e8b5891
 source-git-commit: 7302fafa537ad15144a64cc96f7150c5b0233c12
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 12%
+source-wordcount: '155'
+ht-degree: 0%
 
 ---
 
-# Utnyttja behörigheter för Amazon S3 Cross Account Bucket för utgående filer {#leverage-amazon-s-cross-account-bucket-permissions-for-your-outbound-files}
+# Utnyttja Amazon S3-behörigheter för kontoöverskridande paket för utgående filer {#leverage-amazon-s-cross-account-bucket-permissions-for-your-outbound-files}
 
-The [!UICONTROL Outbound Data Transfer] för kunder som använder [!DNL Amazon Simple Storage Service] ([!DNL Amazon S3]) kräver att vi frågar efter [!DNL Amazon S3] åtkomstnyckel och hemlig nyckel för att kunna leverera utgående datafiler till din bucket.
+Processen [!UICONTROL Outbound Data Transfer] för kunder som använder [!DNL Amazon Simple Storage Service] ([!DNL Amazon S3]) kräver att vi frågar efter din [!DNL Amazon S3]-åtkomstnyckel och hemliga nyckel för att kunna leverera de utgående datafilerna till din bucket.
 
-Om du inte vill dela dina [!DNL Amazon S3] åtkomstnyckel och hemlig nyckel till oss, kontakta din [!DNL Audience Manager] konsult eller kundtjänst så kommer de att konfigurera [!DNL Cross-Account Bucket Permissions] för dig.
+Om du inte vill dela din [!DNL Amazon S3]-åtkomstnyckel och hemliga nyckel med oss kontaktar du din [!DNL Audience Manager]-konsult eller kundtjänst så konfigurerar de [!DNL Cross-Account Bucket Permissions] åt dig.
 
-Du behöver bara lägga till [!DNL Amazon S3] konto-ID till tillåtelselista för [!DNL S3] bucket där du vill ta emot utgående datafiler, enligt beskrivningen i [Amazon S3-dokumentation](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-walkthroughs-managing-access-example2.html). Dina [!DNL Audience Manager] konsult eller kundtjänst kommer att ge dig våra [!DNL Amazon S3] konto-ID.
+Du behöver bara lägga till ditt konto-ID för [!DNL Amazon S3] i en tillåtelselista för den [!DNL S3]-bucket där du vill ta emot de utgående datafilerna, enligt beskrivningen i [Amazon S3-dokumentationen](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-walkthroughs-managing-access-example2.html). Din [!DNL Audience Manager]-konsult eller kundtjänst kommer att förse dig med ditt [!DNL Amazon S3] konto-ID.

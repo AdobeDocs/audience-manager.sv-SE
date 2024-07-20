@@ -10,23 +10,23 @@ exl-id: bae0f304-0ff3-4c5f-b432-19aef61d9d10
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '346'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Skapa destinationer {#create-destinations}
 
-Skapa destinationer med dessa [!UICONTROL RESTful API] metoder.
+Skapa mål med dessa [!UICONTROL RESTful API]-metoder.
 
 <!-- c_create_destinations.xml -->
 
 ## Måltyper som stöds: Endast URL och cookie
 
-Tillgängliga `POST` metoder som du kan använda för att skapa [!UICONTROL URL] och [!UICONTROL cookie destinations] endast. Du kan för närvarande inte skapa [!UICONTROL server-to-server destinations] med dessa [!DNL REST API] metoder. Det relaterade målet `GET` metoder som gör att du kan hämta information om [!UICONTROL server-to-server destinations] som har skapats i användargränssnittet.
+Med de tillgängliga `POST`-metoderna kan du bara skapa [!UICONTROL URL] och [!UICONTROL cookie destinations]. Du kan för närvarande inte skapa [!UICONTROL server-to-server destinations] med dessa [!DNL REST API]-metoder. Med de relaterade målmetoderna `GET` kan du hämta information om [!UICONTROL server-to-server destinations] som har skapats i användargränssnittet.
 
 ## Skapa ett icke-seriellt URL-mål {#create-nonserial-dest}
 
-A `POST` metod som gör att du kan skapa ett mål som accepterar segment som består av nyckelvärdepar (t.ex. `gender=male` eller `gender=female`).
+En `POST`-metod som gör att du kan skapa ett mål som accepterar segment som består av nyckelvärdepar (t.ex. `gender=male` eller `gender=female`).
 
 <!-- r_create_nonserial_destination.xml -->
 
@@ -79,7 +79,7 @@ En lyckad begäran returnerar `201 created` och målet.
 
 ## Skapa ett serialiserat URL-mål {#create-serial-url-dest}
 
-A `POST` metod som gör att du kan skapa ett mål som accepterar flera värden som är kopplade till en enskild nyckel (t.ex. `color=blue, red, green`).
+En `POST`-metod som gör att du kan skapa ett mål som accepterar flera värden som är kopplade till en enskild nyckel (t.ex. `color=blue, red, green`).
 
 <!-- r_create_serial_url_destination.xml -->
 
@@ -105,7 +105,7 @@ Ange säker [!DNL URL] och avgränsare för nyckelvärdepar som skickas till må
 
 ### Svar
 
-En uppdatering returnerar svarskod `201 created` och målet.
+En uppdatering returnerar svarskoden `201 created` och målet.
 
 ```
 { 
@@ -133,9 +133,9 @@ En uppdatering returnerar svarskod `201 created` och målet.
 }
 ```
 
-## Skapa ett cookie-mål: Enkelnyckel, ej serialiserad {#create-cookie-dest-single}
+## Skapa ett cookie-mål: En nyckel, icke-serialiserad {#create-cookie-dest-single}
 
-A `POST` metod som gör att du kan skapa [!UICONTROL cookie destination] som godkänner segment som består av nyckelvärdepar (t.ex. `gender=male` eller `gender=female`).
+En `POST`-metod som gör att du kan skapa en [!UICONTROL cookie destination] som accepterar segment som består av nyckelvärdepar (t.ex. `gender=male` eller `gender=female`).
 
 <!-- r_cookie_destination_singlekey_noserial.xml -->
 
@@ -170,7 +170,7 @@ Alla begärandavärden är obligatoriska om inget annat anges.
 
 ### Svar
 
-En uppdatering returnerar svarskod `201 created` och målet.
+En uppdatering returnerar svarskoden `201 created` och målet.
 
 ```
 { 
@@ -204,7 +204,7 @@ En uppdatering returnerar svarskod `201 created` och målet.
 
 ## Skapa ett cookie-mål: En nyckel, serialiserad {#create-cookie-dest-single-serial}
 
-A `POST` metod som gör att du kan skapa ett mål som accepterar flera värden som är kopplade till en enskild nyckel (t.ex. `color=blue, red, green`).
+En `POST`-metod som gör att du kan skapa ett mål som accepterar flera värden som är kopplade till en enskild nyckel (t.ex. `color=blue, red, green`).
 
 <!-- r_cookie_destination_singlekey_serial.xml -->
 
@@ -240,7 +240,7 @@ Alla begärandavärden är obligatoriska om inget annat anges.
 
 ### Svar
 
-En uppdatering returnerar svarskod `201 created` och målet.
+En uppdatering returnerar svarskoden `201 created` och målet.
 
 ```
 { 
@@ -273,9 +273,9 @@ En uppdatering returnerar svarskod `201 created` och målet.
 }
 ```
 
-## Skapa ett cookie-mål: Flera nycklar, ej serialiserade {#create-cookie-dest-multi}
+## Skapa en cookie-destination: flernyckelslicens, icke-serialiserad {#create-cookie-dest-multi}
 
-A `POST` metod som gör att du kan skapa ett mål som accepterar segment som innehåller flera nycklar med olika värden (t.ex. `gender=male; gender=female; color=blue; color=red`).
+En `POST`-metod som låter dig skapa ett mål som accepterar segment som innehåller flera nycklar med olika värden (t.ex. `gender=male; gender=female; color=blue; color=red`).
 
 <!-- r_create_cookie_multikey_noserial.xml -->
 
@@ -309,7 +309,7 @@ Alla begärandavärden är obligatoriska om inget annat anges.
 
 ### Svar
 
-En uppdatering returnerar svarskod `201 created` och målet.
+En uppdatering returnerar svarskoden `201 created` och målet.
 
 ```
 { 
@@ -340,9 +340,9 @@ En uppdatering returnerar svarskod `201 created` och målet.
 }
 ```
 
-## Skapa ett cookie-mål: Serialiserad flernyckel {#create-cookie-dest-multi-serial}
+## Skapa ett cookie-mål: Serialiserad flernyckelsmodell {#create-cookie-dest-multi-serial}
 
-A `POST` metod som gör att du kan skapa ett mål som accepterar segment som innehåller flera nycklar och värden (t.ex. `gender=male, female; color=blue, red, green`).
+En `POST`-metod där du kan skapa ett mål som accepterar segment som innehåller flera nycklar och värden (t.ex. `gender=male, female; color=blue, red, green`).
 
 <!-- r_cookie_destination_multikey_serial.xml -->
 
@@ -377,7 +377,7 @@ Alla begärandavärden är obligatoriska om inget annat anges.
 
 ### Svar
 
-En uppdatering returnerar svarskod `201 created` och målet.
+En uppdatering returnerar svarskoden `201 created` och målet.
 
 ```
 { 
@@ -411,7 +411,6 @@ En uppdatering returnerar svarskod `201 created` och målet.
 
 >[!MORELIKETHIS]
 >
->* [Destinationer ](../../../features/destinations/destinations.md)
+>* [Mål](../../../features/destinations/destinations.md)
 >* [Målserialisering](../../../features/destinations/key-value-pairs.md#destination-serialized)
 >* [Förklaring av nyckelvärdespar](../../../reference/key-value-pairs-explained.md)
-

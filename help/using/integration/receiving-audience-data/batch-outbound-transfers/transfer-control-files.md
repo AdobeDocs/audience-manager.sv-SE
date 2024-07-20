@@ -1,26 +1,26 @@
 ---
-description: Filer med överföringskontroll (.info) innehåller metadatainformation om filöverföringar så att partners kan verifiera att filöverföringar hanteras korrekt i Audience Manager.
+description: Filer med överföringskontroll (.info) innehåller metadatainformation om filöverföringar så att partners kan verifiera att filöverföringar hanteras på rätt sätt i Audience Manager.
 seo-description: Transfer-control (.info) files provide metadata information about file transfers so that partners can verify that Audience Manager handled file transfers correctly.
 seo-title: Transfer-Control Files for Log File Transfers
 solution: Audience Manager
-title: Kontrollfiler för loggfilsöverföringar
+title: Överföringskontrollfiler för loggfilsöverföringar
 uuid: ef58213e-7b37-4c5a-8556-0de695706793
 feature: Outbound Data Transfers
 exl-id: 4fd1aab1-2dc2-4de9-97be-58e79825db40
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
-# Kontrollfiler för loggfilsöverföringar {#transfer-control-files-for-log-file-transfers}
+# Överföringskontrollfiler för loggfilsöverföringar {#transfer-control-files-for-log-file-transfers}
 
-Överföringskontroll ([!DNL .info])-filer innehåller metadatainformation om filöverföringar så att partners kan verifiera att filöverföringar hanteras på rätt sätt i Audience Manager.
+Filer med överföringskontroll ([!DNL .info]) tillhandahåller metadatainformation om filöverföringar så att partners kan verifiera att filöverföringar hanteras korrekt i Audience Manager.
 
-[!DNL Audience Manager] skickar en fil för överföringskontroll till en partner vid varje filöverföring. På grund av flertrådsbeskaffenheten hos [!DNL FTP] kan överföringskontrollfilen skickas innan själva filerna har överförts.
+[!DNL Audience Manager] skickar en fil för överföringskontroll till en partner vid varje filöverföring. På grund av flertrådskaraktären hos utgivaren [!DNL FTP] kan överföringskontrollfilen skickas innan de faktiska filerna har överförts.
 
-Metadata i [!DNL .info] file lets partners:
+Med metadata i filen [!DNL .info] kan partners:
 
 * Fastställa när en fullständig överföringscykel är slutförd (det totala antalet filer i sekvensen har levererats).
 * Fastställ om en viss fil i sekvensen är fullständig/korrekt (genom att undersöka filens storlek i byte och det totala antalet rader).
@@ -28,9 +28,9 @@ Metadata i [!DNL .info] file lets partners:
 
 ## Namngivningskonventioner {#file-naming-conventions}
 
-Överföringskontrollfilen har samma namn som roten för gruppen/sekvensen med en [!DNL .info] filtillägg.s
+Överföringskontrollfilen har samma namn som roten för gruppen/sekvensen med filtillägget [!DNL .info].
 
-Om till exempel den första filen i sekvensen hade namn: [!DNL ftp_12345_67890_full_1500727351632-1.sync], skulle kontrollfilen få ett namn [!DNL ftp_12345_67890_iter_1500727351632.info].
+Om till exempel den första filen i sekvensen hade namnet: [!DNL ftp_12345_67890_full_1500727351632-1.sync] skulle kontrollfilen ha namnet [!DNL ftp_12345_67890_iter_1500727351632.info].
 
 ## Filformat {#file-format}
 
@@ -77,7 +77,7 @@ Om till exempel den första filen i sekvensen hade namn: [!DNL ftp_12345_67890_f
 
 >[!NOTE]
 >
-> Batchens totala nummer är exklusive [!DNL .info] själva filen. Det innebär att summorna inte innehåller [!DNL .info] fil, dess bytestorlek eller antalet rader.
+> Batchens totala nummer är exklusive själva filen [!DNL .info]. Det innebär att summorna inte innehåller filen [!DNL .info], dess bytestorlek eller antalet rader.
 >
 > Filernas bytestorlekar och antalet rader är inkluderande alla rader/rader för huvud och distans (tomma). Ta bort rubriker för att få antalet faktiska datarader/rader.
 >

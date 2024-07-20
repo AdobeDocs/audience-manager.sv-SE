@@ -9,7 +9,7 @@ feature: Audience Optimization Reports
 exl-id: 0cc10399-5737-4d82-a1f6-9561e024054d
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -24,30 +24,30 @@ Genom att jämföra dessa olika segmenttyper inom och mellan rapporter kan ni op
 
 ## Användningsexempel {#use-cases}
 
-Med [!UICONTROL Segment Performance] kan du
+Med rapporten [!UICONTROL Segment Performance] kan du:
 
 * Identifiera mappade målgruppssegment som driver skala eller prestanda framåt.
 * Identifiera omappade segment som ska introduceras i framtida kampanjer, baserat på en målgrupps bidrag till tidigare resultat.
 
 ## Använda rapporten om segmentprestanda {#using-segment-performance-report}
 
-Växla mellan **[!UICONTROL Mapped]** och **[!UICONTROL Unmapped]** om du vill markera segment som är mappade till ett mål eller inte. Välj **[!UICONTROL All]** för att inkludera alla era segment i rapporten.
+Växla mellan **[!UICONTROL Mapped]** och **[!UICONTROL Unmapped]** om du vill markera segment som är mappade till ett mål eller inte. Välj **[!UICONTROL All]** om du vill inkludera alla dina segment i rapporten.
 
-Använd **Dagsintervall** och **Datum till** kontroller för att justera uppseendeintervallet. Observera att 7-dagars och 30-dagars summeringsperioder endast är tillgängliga för söndagsdatum.
+Använd kontrollerna **Dagintervall** och **Datum till** om du vill justera intervallet. Observera att 7-dagars och 30-dagars summeringsperioder endast är tillgängliga för söndagsdatum.
 
-Använd **[!UICONTROL Line Item]** för att välja de webbegenskaper som du vill returnera information för.
+Använd listrutan **[!UICONTROL Line Item]** för att välja de webbegenskaper som du vill returnera information för.
 
-I **[!UICONTROL Segment Data Source]** markerar du datakällorna som innehåller de segment som du vill se i rapporten.
+I listrutan **[!UICONTROL Segment Data Source]** markerar du datakällorna som innehåller de segment som du vill se i rapporten.
 
-Använd **[!UICONTROL Segment]** för att välja vilka segment som ska visas i rapporten.
+Använd listrutan **[!UICONTROL Segment]** för att välja vilka segment som ska visas i rapporten.
 
 >[!IMPORTANT]
 >
->Vid aktivering [!UICONTROL Audience Optimization for Publishers]måste du ta med beskrivande metadata för [!UICONTROL Line Item IDs], enligt beskrivningen i steg 3 av [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten innehåller information om webbegenskapen som [!UICONTROL Line Item] i stället för [!UICONTROL Line Item ID].
+>När du aktiverar [!UICONTROL Audience Optimization for Publishers] måste du inkludera beskrivande metadata för [!UICONTROL Line Item IDs], enligt beskrivningen i steg 3 i [Importera datafiler från Google Ad Manager (tidigare DFP) till Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). Genom att göra detta försäkrar du dig om att rapporten innehåller information om webbegenskapen som [!UICONTROL Line Item] i stället för [!UICONTROL Line Item ID].
 
 ## Tolka resultaten {#interpreting-results}
 
-Dina [!UICONTROL Segment Performance] skulle kunna se ut ungefär som nedan. Klicka på en bubbla i rapporten för att visa underliggande data. Se beskrivningarna för ytterligare information i tabellen nedan.
+Din [!UICONTROL Segment Performance]-rapport kan se ut ungefär som den nedan. Klicka på en bubbla i rapporten för att visa underliggande data. Se beskrivningarna för ytterligare information i tabellen nedan.
 
 ![](assets/publisher_segment_performance.png)
 
@@ -61,11 +61,11 @@ Dina [!UICONTROL Segment Performance] skulle kunna se ut ungefär som nedan. Kli
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Segment </p> </td> 
-   <td colname="col2"> <p>Det alfanumeriska namn som du tilldelade det här segmentet. </p> </td> 
+   <td colname="col2"> <p>Det alfanumeriska namn som du tilldelade segmentet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Segment-ID </p> </td> 
-   <td colname="col2"> <p>Det unika ID:t för det här segmentet. </p> </td> 
+   <td colname="col2"> <p>Unikt ID för det här segmentet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Radartikel </p> </td> 
@@ -81,7 +81,7 @@ Dina [!UICONTROL Segment Performance] skulle kunna se ut ungefär som nedan. Kli
   </tr> 
   <tr> 
    <td colname="col1"> <p>CTR </p> </td> 
-   <td colname="col2"> <p>Klickfrekvens. </p> <p>Det här måttet visar hur många procent av intrycken som ska följas av klickningar. Dela upp klickningarna efter Impressions för att få detta mätresultat. </p> </td> 
+   <td colname="col2"> <p>Klickfrekvens. </p> <p>Det här måttet visar hur många procent av intrycken som har följts av klickningar. Dela upp klickningarna efter Impressions för att få detta mätresultat. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Realtime-segmentpopulering </p> </td> 
@@ -98,9 +98,9 @@ Om du vill läsa rapporten kan du dela upp resultaten i fyra avsnitt med imagin�
 
 ![](assets/publisher_segment_performance_mapped.png)
 
-## Så här läser du omappade segmentresultat {#read-unmapped-segment}
+## Läs omappade segmentresultat {#read-unmapped-segment}
 
-Titta på omappade segment i en [!UICONTROL Segment Performance] rapport är ett bra sätt att hitta nya segment som du inte har tänkt dig för målinriktning. Vissa av dessa segment kanske överträffar dina mappade segment.
+Att titta på omappade segment i en [!UICONTROL Segment Performance]-rapport är ett bra sätt att hitta nya segment som du inte har övervägt som mål. Vissa av dessa segment kanske överträffar dina mappade segment.
 
 Om du vill läsa den här rapporten kan du dela upp resultaten i fyra avsnitt med imaginära rader (i rött) och kategorier som visas i exempelrapporten nedan.
 

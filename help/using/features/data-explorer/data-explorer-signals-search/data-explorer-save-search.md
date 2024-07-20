@@ -8,28 +8,28 @@ feature: Data Explorer
 exl-id: ab56ddb7-6b0b-4a3d-9590-00c49a4ae7dc
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 4%
+source-wordcount: '176'
+ht-degree: 0%
 
 ---
 
 # Spara sökvillkor {#save-search-criteria}
 
-Optimera signalsökningarna genom att spara upp till 10 uppsättningar sökvillkor som kan användas när du behöver dem, och spåra dem på [!UICONTROL Signals Dashboard]. Audience Manager läser in de sparade sökningarna igen varje gång du läser in [!UICONTROL Signals Dashboard].
+Optimera signalsökningarna genom att spara upp till 10 uppsättningar sökvillkor som du kan använda när du behöver dem, och spåra dem på [!UICONTROL Signals Dashboard]. Audience Manager läser in de sparade sökningarna igen varje gång du läser in [!UICONTROL Signals Dashboard].
 
-1. Gå till **[!UICONTROL Audience Data > Signals > Search]** och kör **[!UICONTROL Signals Search]** med nyckelvärdepar och/eller filter som du vill spara för framtida sökningar.
-1. Klicka **[!UICONTROL Save this Search]** när du fått sökresultaten.
+1. Gå till **[!UICONTROL Audience Data > Signals > Search]** och kör en **[!UICONTROL Signals Search]** med nyckelvärdepar och/eller de filter som du vill spara för framtida sökningar.
+1. Klicka på **[!UICONTROL Save this Search]** när du har fått sökresultaten.
 
    ![Stegresultat](assets/save-search-criteria.png)
 1. Ange ett förslagsnamn för sökningen så att du kan identifiera den senare.
-1. (Valfritt) Aktivera **[!UICONTROL Track this search result in the dashboard]** om du vill att signalkontrollpanelen ska inkludera signalerna i den aktuella sökuppsättningen.
-1. Välj **[!UICONTROL Default Sorting]** villkor:
+1. (Valfritt) Aktivera alternativet **[!UICONTROL Track this search result in the dashboard]** om du vill att signalinstrumentpanelen ska inkludera signalerna i den aktuella sökuppsättningen.
+1. Välj villkoret **[!UICONTROL Default Sorting]**:
    * **[!UICONTROL Total Counts]**
    * **[!UICONTROL Key Name]**
-1. Välj **[!UICONTROL Default Sorting]** läge:
+1. Välj läget **[!UICONTROL Default Sorting]**:
    * **[!UICONTROL Descending]**
    * **[!UICONTROL Ascending]**
-1. Klicka på **[!UICONTROL Save]**. Du kan se din sparade sökning i [!UICONTROL Saved Search] och använd det när du behöver det.
+1. Klicka på **[!UICONTROL Save]**. Du kan se din sparade sökning i avsnittet [!UICONTROL Saved Search] och använda den när du behöver den.
 
 ![sparad sökning](assets/saved-search.png)
 

@@ -16,28 +16,28 @@ ht-degree: 0%
 
 # [!UICONTROL Audience Optimization] för annonsörer{#audience-optimization-for-advertisers}
 
-[!UICONTROL Audience Optimization] för annonsörer kan hjälpa er att identifiera potentiella prestationsmöjligheter för segment i Audience Manager i era betalda mediekampanjer. Dessa rapporter kombinerar kampanjdata på loggnivå med Audience Manager [!UICONTROL segment] mätvärden som bygger på segmentcentrerade optimeringar och en effektiv kanalmix.
+[!UICONTROL Audience Optimization] för annonsörer kan hjälpa dig att identifiera potentiella prestandamöjligheter för Audience Manager-segment i dina betalda mediekampanjer. Dessa rapporter kombinerar kampanjresultatdata på loggnivå med Audience Manager [!UICONTROL segment]-statistik för att informera segmentbaserade optimeringar och en effektiv kanalmix.
 
-## Metoder för datainmatning {#data-ingestion-methods}
+## Metoder för dataöverföring {#data-ingestion-methods}
 
-Du kan skicka data till [!DNL Audience Manager] för användning i dessa rapporter med någon av dessa metoder. Ibland skickar kunderna data på båda sätten. Detta säkerställer att era rapporter innehåller den mest omfattande och korrekta informationen om besökaren. Så här använder du [!UICONTROL Audience Optimization] rapporter, dina eventsamtal måste innehålla *alla* av parametrarna i [Översikt och mappningar för metadatafiler](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) dokumentation. Du kan skicka data via följande metoder som listas nedan.
+Du kan skicka data till [!DNL Audience Manager] för användning i dessa rapporter på något av följande sätt. Ibland skickar kunderna data på båda sätten. Detta bidrar till att säkerställa att era rapporter innehåller den mest omfattande och korrekta informationen om besökaren. Om du vill använda [!UICONTROL Audience Optimization]-rapporterna måste dina händelseanrop innehålla *all* av de parametrar som anges i [Översikt och mappningar för metadatafiler](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) -dokumentationen. Du kan skicka data via följande metoder som listas nedan.
 
-* Pixelanrop: Skicka de metadataparametrar som krävs till [!DNL Audience Manager] se [Samla in data för kampanjklickningar via pixelanrop](../../../integration/media-data-integration/click-data-pixels.md) och [Samla in data för kampanjexponering via pixelanrop](../../../integration/media-data-integration/impression-data-pixels.md).
+* Pixelanrop: Information om hur du skickar de nödvändiga metadataparametrarna till [!DNL Audience Manager] finns i [Hämta kampanjklicksdata via pixelanrop](../../../integration/media-data-integration/click-data-pixels.md) och [Hämta kampanjkomprimeringsdata via pixelanrop](../../../integration/media-data-integration/impression-data-pixels.md).
 
-* Datafiler: Om du vill använda dessa rapporter för att analysera dina egna data eller data från en källa som inte är integrerad med [!DNL Audience Manager]måste du skapa och överföra data och metadatafiler för dessa data. Mer information finns i [Datafiler för Audience Optimization-rapporter](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md) och [Data- och metadatafiler för Audience Optimization-rapporter](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md).
+* Datafiler: Om du vill använda dessa rapporter för att analysera dina egna data eller data från en källa som inte är integrerad med [!DNL Audience Manager] måste du skapa och överföra data och metadatafiler för dessa data. Mer information finns i [Datafiler för Audience Optimization-rapporter](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md) och [Data- och metadatafiler för Audience Optimization-rapporter](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md).
 
 ## [!UICONTROL Role-Based Access Controls] (RBAC) {#rbac}
 
-Vilken typ av rapporter du kan visa beror på [!UICONTROL RBAC] grupp som du är tilldelad. Se [Administration](../../../features/administration/administration-overview.md) och [Skapa en grupp](../../../features/administration/administration-overview.md#create-group) för mer information.
+Vilken typ av rapporter du kan visa beror på gruppen [!UICONTROL RBAC] som du är tilldelad till. Mer information finns i [Administration](../../../features/administration/administration-overview.md) och [Skapa en grupp](../../../features/administration/administration-overview.md#create-group).
 
-[!UICONTROL RBAC] grupper måste ha vissa datakällor konfigurerade för att kunna visa [!UICONTROL Audience Optimization] rapporter. Dina [!DNL Audience Manager] kommer att skapa dessa [!UICONTROL data sources] för dig. Ju mer [!UICONTROL data sources] i varje [!UICONTROL RBAC] användargrupp, ju mer data dessa gruppmedlemmar har åtkomst till. Din konsult kommer att skapa minst en av dessa [!UICONTROL data sources]:
+[!UICONTROL RBAC] grupper måste ha vissa datakällor konfigurerade för att kunna visa [!UICONTROL Audience Optimization]-rapporter. Din [!DNL Audience Manager]-konsult kommer att konfigurera dessa [!UICONTROL data sources] åt dig. Ju mer [!UICONTROL data sources] i varje [!UICONTROL RBAC]-användargrupp, desto mer data har dessa gruppmedlemmar åtkomst till. Din konsult kommer att konfigurera minst en av dessa [!UICONTROL data sources]:
 
-* Annonsör [!UICONTROL data source ]
-* Varumärke [!UICONTROL data source]
+* Annonsör [!UICONTROL data source]
+* Märke [!UICONTROL data source]
 * Plattform [!UICONTROL data source]
 
-Användare som tillhör fler än en [!UICONTROL RBAC] kan växla mellan varje grupps vy. De data som visas uppdateras för att motsvara den valda gruppen. Om ditt företag inte använder [!UICONTROL RBAC], alla användare har administratörsbehörighet och åtkomst till alla [!UICONTROL data sources] (konverteringsgrupper).
+Användare som tillhör mer än en [!UICONTROL RBAC]-användargrupp kan växla mellan varje grupps vy. De data som visas uppdateras för att motsvara den valda gruppen. Om ditt företag inte använder [!UICONTROL RBAC] får alla användare administratörsbehörighet och åtkomst till alla [!UICONTROL data sources] (konverteringsgrupper).
 
 ## Konverteringsgrupper {#conversion-groups}
 
-I [!UICONTROL Audience Optimization] rapporter, **[!UICONTROL Conversion Groups]** är synonyma med [!UICONTROL data sources] som innehåller minst en konverteringsegenskap. [!UICONTROL Data sources] som inte innehåller minst en konverteringsegenskap visas inte i [!UICONTROL Audience Optimization] rapporter. Du kan visa konverteringsegenskaperna för konverteringsgrupper i [Rapporterade konverteringsegenskaper](../../../reporting/audience-optimization-reports/aor-advertisers/reported-conversion-traits.md) rapport.
+I [!UICONTROL Audience Optimization]-rapporterna är **[!UICONTROL Conversion Groups]** synonymt med [!UICONTROL data sources] som innehåller minst en konverteringsegenskap. [!UICONTROL Data sources] som inte innehåller minst en konverteringsegenskap visas inte i [!UICONTROL Audience Optimization]-rapporterna. Du kan visa konverteringsegenskaperna för konverteringsgrupper i rapporten [Rapporterade konverteringsegenskaper](../../../reporting/audience-optimization-reports/aor-advertisers/reported-conversion-traits.md).

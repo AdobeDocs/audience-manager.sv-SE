@@ -3,24 +3,24 @@ description: Klickspårning möjliggör mätning av besökarnas engagemang under
 seo-description: Click tracking enables measurement of visitor engagement throughout your campaign, as it records click-based activity for third-party creatives.
 seo-title: Capturing Campaign Click Data via Pixel Calls
 solution: Audience Manager
-title: Samla in klickdata för kampanjer med pixelanrop
+title: Hämta kampanjklicksdata via pixelanrop
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 feature: Adobe Campaign Integration
 exl-id: 41b169bf-3727-4ed7-b74f-fea75244d2cb
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 8%
+source-wordcount: '639'
+ht-degree: 5%
 
 ---
 
-# Samla in klickdata för kampanjer med pixelanrop {#capturing-campaign-click-data-via-pixel-calls}
+# Hämta kampanjklicksdata via pixelanrop {#capturing-campaign-click-data-via-pixel-calls}
 
-Klickspårning möjliggör mätning av besökarnas engagemang under hela kampanjen, eftersom klickbaserade aktiviteter registreras för tredjepartskreatörer. Liknar [imponeringssamling](/help/using/integration/media-data-integration/impression-data-pixels.md), skickas ett händelseanrop till [!DNL Audience Manager] datainsamlingsservrar ([!DNL DCS]) för bearbetning. Besökaren omdirigeras sedan till den avsedda webbadressen.
+Klickspårning möjliggör mätning av besökarnas engagemang under hela kampanjen, eftersom klickbaserade aktiviteter registreras för tredjepartskreatörer. Ungefär som i [imponeringssamlingen](/help/using/integration/media-data-integration/impression-data-pixels.md) skickas ett händelseanrop till datainsamlingsservrarna [!DNL Audience Manager] ([!DNL DCS]) för bearbetning. Besökaren omdirigeras sedan till den avsedda webbadressen.
 
 >[!NOTE]
 >
->Kontakta [!DNL Audience Manager] konsult eller kontolead för exakt [!DNL URL] specifikt för klientdomänen.
+>Kontakta din [!DNL Audience Manager]-konsult eller ditt kontolead för att få exakt information om [!DNL URL] som är specifik för klientdomänen.
 
 ## Krav
 
@@ -39,15 +39,15 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ## Svar
 
-Svaret dirigerar om webbläsaren till [!DNL URL] anges i `d_rd` parameter. Svarssträngen kan innehålla värden som genererats av något av de makron som stöds som listas nedan.
+Svaret dirigerar om webbläsaren till [!DNL URL] som anges i parametern `d_rd`. Svarssträngen kan innehålla värden som genererats av något av de makron som stöds som listas nedan.
 
-Webbläsaren omdirigeras till följande utifrån ovanstående exempel [!DNL URL]:
+Baserat på ovanstående exempel omdirigeras webbläsaren till följande [!DNL URL]:
 
 `https://adobe.com/callback?creative=123`
 
-## Makron som stöds
+## Makron
 
-Klickhändelser stöder de makron som anges i följande tabell. Ett makro är en liten enhet med egen kod som aktiveras när annonstaggen läses in för kampanj- och användarspårning. Makrona skickas tillsammans med målet [!DNL URL], förutsatt att de är markerade med följande format: `%macro%`. Vissa nycklar har inga makron och accepterar i stället ett hårdkodat ID-värde. Tangenter som accepterar hårdkodade värden krävs om du vill analysera data i [Audience Optimization-rapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md).
+Klickhändelser har stöd för de makron som anges i följande tabell. Ett makro är en liten enhet med självständig kod som aktiveras när annonstaggen läses in för kampanj- och användarspårning. Makrona skickas tillsammans med målet [!DNL URL], förutsatt att de är markerade med följande format: `%macro%`. Vissa nycklar har inga makron och accepterar i stället ett hårdkodat ID-värde. Tangenter som accepterar hårdkodade värden krävs om du vill analysera data i [Audience Optimization-rapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md).
 
 <table id="table_6EB65C3B7D0E49C59AA6C932549E33FC"> 
  <thead> 
@@ -66,17 +66,17 @@ Klickhändelser stöder de makron som anges i följande tabell. Ett makro är en
   <tr> 
    <td colname="col1"> <p> <code> d_adsrc</code> </p> </td> 
    <td colname="col02"> <p>Inget makro. </p> <p>Accepterar ett hårdkodat ID-värde. </p> </td> 
-   <td colname="col2"> <p>Advertiser-ID.</p> <p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till datakällor i Audience Manager.</p> <p> Krävs för <span class="wintitle"> Audience Optimization</span> rapporter. </p> </td> 
+   <td colname="col2"> <p>Advertiser-ID.</p> <p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till datakällor i Audience Manager.</p> <p> Krävs för <span class="wintitle"> Audience Optimization</span>-rapporter. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bu</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_bu%</code> </p> </td> 
-   <td colname="col2"> <p>Numeriskt ID för affärsenheten. </p> <p> Krävs för <span class="wintitle"> Audience Optimization</span> rapporter. </p> </td> 
+   <td colname="col2"> <p>Numeriskt ID för affärsenheten. </p> <p> Krävs för <span class="wintitle"> Audience Optimization</span>-rapporter. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_campaign</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_campaign%</code> </p> </td> 
-   <td colname="col2"> <p>Numeriskt kampanj-ID från annonsservern. </p> <p> Krävs för <span class="wintitle"> Audience Optimization</span> rapporter. </p> </td> 
+   <td colname="col2"> <p>Numeriskt kampanj-ID från annonsservern. </p> <p> Krävs för <span class="wintitle"> Audience Optimization</span>-rapporter. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_creative</code> </p> </td> 
@@ -86,17 +86,17 @@ Klickhändelser stöder de makron som anges i följande tabell. Ett makro är en
   <tr> 
    <td colname="col1"> <p> <code> d_dpid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_id%</code> </p> </td> 
-   <td colname="col2"> <p>DataProvider-ID. </p> <p>Används ofta med <code> d_dpuuid</code> om du vill länka ett dataleverantörs-ID till ett användar-ID. </p> <p>Valfritt. </p> </td> 
+   <td colname="col2"> <p>DataProvider-ID. </p> <p>Används ofta med <code> d_dpuuid</code> för att länka ett dataleverantörs-ID till ett användar-ID. </p> <p>Valfritt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_dpuuid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_dpuuid%</code> </p> </td> 
-   <td colname="col2"> <p>Unikt användar-ID från dataleverantören. </p> <p>Används ofta med <code> d_dpid</code> för att länka ett användar-ID till ett DataProvider ID. </p> </td> 
+   <td colname="col2"> <p>Unikt användar-ID som anges av dataleverantören. </p> <p>Används ofta med <code> d_dpid</code> för att länka ett användar-ID till ett dataleverantörs-ID. </p> </td> 
   </tr>
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"></span> Experience Cloud ID (ECID). Mer information om ECID finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID</a>. </p> <p>Valfritt. </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Experience Cloud</span>-ID (ECID). Mer information om ECID finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID </a>. </p> <p>Valfritt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_placement</code> </p> </td> 
@@ -106,7 +106,7 @@ Klickhändelser stöder de makron som anges i följande tabell. Ett makro är en
   <tr> 
    <td colname="col1"> <p> <code> d_region</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_region%</code> </p> </td> 
-   <td colname="col2"> <p>Det numeriska region-ID:t för det DCS-kluster som hanterar en begäran. Mer information om DCS finns i <a href="../../reference/system-components/components-data-collection.md"> Datainsamlingskomponenter</a>. </p> <p>Valfritt. </p> </td> 
+   <td colname="col2"> <p>Det numeriska region-ID:t för det DCS-kluster som hanterar en begäran. Mer information om DCS finns i <a href="../../reference/system-components/components-data-collection.md"> Komponenter för datainsamling </a>. </p> <p>Valfritt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> r_rand</code> </p> </td> 
@@ -136,7 +136,7 @@ Klickhändelser stöder de makron som anges i följande tabell. Ett makro är en
    <tr> 
    <td colname="col1"> <p> <code>gdpr_consent</code> </p> </td> 
    <td colname="col02"> <p> <code>${gdpr_consent_XXXX}</code> </p> </td> 
-   <td colname="col2"> <p>Rör plugin-programmet <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF.</a></p><p> If <code>gdpr=1</code>sedan <code>${gdpr_consent_XXXX}</code> ersätts med <code>gdpr_consent</code> sträng och leverantörs-ID (se <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20Consent%20string%20and%20vendor%20list%20formats%20v2.md#about-the-transparency--consent-string-tc-string" format="http" scope="external"> IAB-specifikation</a>).</p> <p>Standardvärdet är 0.</p><p>Valfritt.</p></td> 
+   <td colname="col2"> <p>Rör plugin-programmet <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF.</a></p><p> Om <code>gdpr=1</code> ersätts <code>${gdpr_consent_XXXX}</code> av strängen <code>gdpr_consent</code> och leverantörs-ID (se <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20Consent%20string%20and%20vendor%20list%20formats%20v2.md#about-the-transparency--consent-string-tc-string" format="http" scope="external"> IAB-specifikation </a>).</p> <p>Standardvärdet är 0.</p><p>Valfritt.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -162,7 +162,7 @@ d_rd%3Dhttp%253A%252F%252Fadobe.com%252Fcallback%253Fcreative%253D%2525d_creativ
 
 ## Svar
 
-Webbläsaren omdirigeras till följande utifrån ovanstående exempel [!DNL URL]:
+Baserat på ovanstående exempel omdirigeras webbläsaren till följande [!DNL URL]:
 
 `https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`
 
@@ -174,4 +174,3 @@ Du kan använda pixelanrop för att aktivera [Audience Optimization-rapporter](/
 >[!MORELIKETHIS]
 >
 >* [Data- och metadatafiler för Audience Optimization-rapporter](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
-

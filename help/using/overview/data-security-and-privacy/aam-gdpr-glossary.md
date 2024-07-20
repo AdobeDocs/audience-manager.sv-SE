@@ -9,8 +9,8 @@ feature: Data Governance & Privacy
 exl-id: 36930703-745e-4fbd-ad18-ba9efb77eb7e
 source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 94%
+source-wordcount: '678'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ I den här artikeln förklaras de begrepp och termer som används i den europeis
 
 GDPR trädde i kraft den 25 maj 2018 med de primära målen att ge enskilda personer i EU (registrerade) bättre kontroll över sina personuppgifter och samtidigt förenkla regelverket för internationella företag genom en enhetlig lagstiftning inom EU. Som en del av Adobes GDPR-förberedelser har Adobe Audience Manager-teamet förbättrat de tjänster och processer som behövs för åtkomst- och raderingsförfrågningar från registrerade, dvs. era kunder.
 
-Se till att du även läser om GDPR i [Översikt över sekretessbestämmelser](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=en) för en bättre förståelse för hur GDPR fungerar i Experience Cloud.
+Se till att du även läser om GDPR i [Översikt över sekretessbestämmelser](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=en) för att få en bättre förståelse för hur GDPR fungerar i Experience Cloud.
 
 ## GDPR-ordlista {#gdpr-glossay}
 

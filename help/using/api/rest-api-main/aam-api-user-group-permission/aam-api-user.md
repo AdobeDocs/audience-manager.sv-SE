@@ -10,19 +10,19 @@ exl-id: c015c42c-63c7-4392-9fef-f48dc787a56f
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
 # API-metoder för användarhantering {#user-management-api-methods}
 
-Vila [!DNL API] metoder för att hantera användare, inklusive att skapa, uppdatera, lista, ta bort och returnera användarobjekt.
+Återställ [!DNL API] metoder för att hantera användare, inklusive att skapa, uppdatera, lista, ta bort och returnera användarobjekt.
 
 <!-- c_rest_api_user_man_user.xml -->
 
 ## Skapa en användare {#create-user}
 
-A `POST` metod för att skapa en ny användare.
+En `POST`-metod för att skapa en ny användare.
 
 <!-- r_rest_api_user_create.xml -->
 
@@ -30,7 +30,7 @@ A `POST` metod för att skapa en ny användare.
 
 `POST /api/v1/users/`
 
-### Exempelbegärandetext
+### Exempelbegärandebrödtext
 
 ```
 { 
@@ -65,13 +65,13 @@ A `POST` metod för att skapa en ny användare.
 }
 ```
 
-If `isAdmin` är inställt på true, och användaren skapas som partneradministratör. Den här egenskapen talar också om för dig om en användare är partneradministratör eller inte.
+Om `isAdmin` är true skapas användaren som partneradministratör. Den här egenskapen talar också om för dig om en användare är partneradministratör eller inte.
 
 Returnerar `409 Conflict` om användarnamnet redan används.
 
 ## Uppdatera en användare {#update-user}
 
-A `PUT` metod för att uppdatera en användare.
+En `PUT`-metod för att uppdatera en användare.
 
 <!-- r_rest_api_user_update.xml -->
 
@@ -79,7 +79,7 @@ A `PUT` metod för att uppdatera en användare.
 
 `PUT /api/v1/users/`*`<userId>`*
 
-### Exempelbegärandetext
+### Exempelbegärandebrödtext
 
 ```
 { 
@@ -114,19 +114,19 @@ Returnerar `409 Conflict` om användarnamnet redan används.
 
 ## Uppdatera inloggad användare {#update-logged-in-user}
 
-A `PUT` för att uppdatera den inloggade användaren.
+En `PUT`-metod för att uppdatera den inloggade användaren.
 
 <!-- r_rest_api_user_update_self.xml -->
 
 >[!NOTE]
 >
->De [!DNL API] Metoderna kan bara anropas av partneradministratörer. Den här metoden kan anropas av icke-adminanvändare.
+>De flesta [!DNL API]-metoder kan bara anropas av partneradministratörer, men den här metoden kan anropas av icke-adminanvändare.
 
 ### Begäran
 
 `PUT /self/update`
 
-### Exempelbegärandetext
+### Exempelbegärandebrödtext
 
 ```
 {  
@@ -157,19 +157,19 @@ Returnerar `409 Conflict` om användarnamnet redan används.
 
 ## Uppdatera inloggat användarlösenord {#update-logged-in-user-pw}
 
-A `PUT` för att uppdatera den inloggade användaren.
+En `PUT`-metod för att uppdatera den inloggade användaren.
 
 <!-- r_rest_api_user_password.xml -->
 
 >[!NOTE]
 >
->De [!DNL API] Metoderna kan bara anropas av partneradministratörer. Den här metoden kan anropas av icke-adminanvändare.
+>De flesta [!DNL API]-metoder kan bara anropas av partneradministratörer, men den här metoden kan anropas av icke-adminanvändare.
 
 ### Begäran
 
 `POST /users/self/update-password`
 
-### Exempelbegärandetext
+### Exempelbegärandebrödtext
 
 ```
 { "oldPassword" : "old password", "newPassword" : "new password" }
@@ -179,13 +179,13 @@ Returnerar `200 OK` om det lyckas. Returnerar `400 Bad Request` om något är fe
 
 ## Återställ inloggat användarlösenord {#reset-logged-in-user-pw}
 
-A `PUT` för att återställa den inloggade användaren. [!UICONTROL Audience Management] skickar ett systemgenererat lösenord till användaren.
+En `PUT`-metod för att återställa den inloggade användaren. [!UICONTROL Audience Management] skickar ett systemgenererat lösenord till användaren.
 
 <!-- r_rest_api_user_password_reset.xml -->
 
 >[!NOTE]
 >
->De [!DNL API] Metoderna kan bara anropas av partneradministratörer. Den här metoden kan anropas av icke-adminanvändare.
+>De flesta [!DNL API]-metoder kan bara anropas av partneradministratörer, men den här metoden kan anropas av icke-adminanvändare.
 
 ### Begäran
 
@@ -195,7 +195,7 @@ Returnerar `200 OK` om det lyckas.
 
 ## Returnera användarobjekt för ett användar-ID {#return-user-object-for-id}
 
-A `Get` metod som returnerar användarobjektet för ett användar-ID.
+En `Get`-metod som returnerar användarobjektet för ett användar-ID.
 
 <!-- r_rest_api_user_get_user_obj.xml -->
 
@@ -223,13 +223,13 @@ A `Get` metod som returnerar användarobjektet för ett användar-ID.
 
 ## Returnera användarobjekt för inloggad användare {#return-user-object-for-logged-in-user}
 
-A `Get` metod som returnerar användarobjektet för den inloggade användaren.
+En `Get`-metod som returnerar användarobjektet för den inloggade användaren.
 
 <!-- r_rest_api_user_get_self.xml -->
 
 >[!NOTE]
 >
->De [!DNL API] Metoderna kan bara anropas av partneradministratörer. Den här metoden kan anropas av icke-adminanvändare.
+>De flesta [!DNL API]-metoder kan bara anropas av partneradministratörer, men den här metoden kan anropas av icke-adminanvändare.
 
 ### Begäran
 
@@ -255,7 +255,7 @@ A `Get` metod som returnerar användarobjektet för den inloggade användaren.
 
 ## Listanvändare {#list-users}
 
-A `GET` metod för att lista användare.
+En `GET`-metod för att lista användare.
 
 <!-- r_rest_api_user_list.xml -->
 
@@ -289,7 +289,7 @@ Den här frågan returnerar en lista med alla användare i de angivna grupperna.
 
 ## Ta bort en användare {#delete-users}
 
-A `DELETE` metod för att ta bort en användare.
+En `DELETE`-metod för att ta bort en användare.
 
 <!-- r_rest_api_user_delete.xml -->
 
@@ -297,11 +297,11 @@ A `DELETE` metod för att ta bort en användare.
 
 `DELETE /api/v1/users/`*`<user_id>`*
 
-Returnerar `204 No Content` om det lyckas. Om en konflikt uppstår returneras `409 Conflict`.
+Returnerar `204 No Content` om det lyckas. Om en konflikt skulle returnera `409 Conflict`.
 
 ## Ta bort användare gruppvis {#delete-users-bulk}
 
-A `POST` metod för att ta bort flera användare samtidigt.
+En `POST`-metod för att ta bort flera användare samtidigt.
 
 <!-- r_rest_api_user_delete_bulk.xml -->
 
@@ -309,7 +309,7 @@ A `POST` metod för att ta bort flera användare samtidigt.
 
 `POST /api/v1/users/bulk-delete`
 
-### Exempelbegärandetext
+### Exempelbegärandebrödtext
 
 ```
 {[<user_id_1>, <user_id_2>, ...]}

@@ -3,26 +3,26 @@ description: Här på Audience Manager är vi ingenjörer, utvecklare och kodar 
 seo-description: Here at Audience Manager, we're engineers, developers, and code ninjas just like you. And, like you, we want to work with reliable, accurate API documentation. As a result, we're re-writing our API content in Swagger and moving it to a new location. These changes are designed to help improve your experience with the Audience Manager API code.
 seo-title: Audience Manager API Code Migration
 solution: Audience Manager
-title: Migrera API-kod för Audience Manager
+title: API-kodmigrering för Audience Manager
 uuid: 93cc28c4-4b91-4c79-93d5-ece9bb4cc9d5
 feature: API
 exl-id: 081be8a7-5029-45b1-8fb1-0531d5090fe0
 source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 4%
+source-wordcount: '248'
+ht-degree: 1%
 
 ---
 
-# Migrera API-kod för Audience Manager {#audience-manager-api-code-migration}
+# API-kodmigrering för Audience Manager {#audience-manager-api-code-migration}
 
-Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitligt, korrekt [!DNL API] dokumentation. Därför skriver vi om [!DNL API] innehåll i [!DNL Swagger] och flytta den till en ny plats. Dessa ändringar är avsedda att förbättra din upplevelse av Audience Manager [!DNL API] kod.
+Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitlig, korrekt [!DNL API]-dokumentation. Därför skriver vi om vårt [!DNL API]-innehåll i [!DNL Swagger] och flyttar det till en ny plats. De här ändringarna är utformade för att förbättra din upplevelse av Audience Manager [!DNL API]-koden.
 
 ## Flytta uppåt {#code-migration-details}
 
 <!-- api-swagger-migration.xml -->
 
-The [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html) sajten är det nya hemmet för vår reviderade [!DNL API] innehåll. Vi försöker skriva om och flytta några uppsättningar [!DNL API] metoder med varje release. Det innebär att du måste checka in både den nya platsen och [REST API](../api/rest-api-main/rest-api-main.md) dokumentation för att hitta alla tillgängliga metoder. Så småningom är hela allmänheten [!DNL API]kommer att finnas på [!DNL Audience Manager] [!DNL API] dokumentwebbplats. I följande tabell visas de ändrade och migrerade [!DNL API]s.
+Webbplatsen [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/index.html) är det nya hemmet för vårt reviderade [!DNL API]-innehåll. Vi försöker skriva om och flytta några uppsättningar [!DNL API]-metoder med varje release. Det innebär att du måste checka in både den nya platsen och [REST API](../api/rest-api-main/rest-api-main.md) -dokumentationen för att hitta alla tillgängliga metoder. Till slut kommer alla publika [!DNL API] att finnas på [!DNL Audience Manager] [!DNL API] docs-webbplatsen. I följande tabell visas de ändrade och migrerade [!DNL API].
 
 <!--
 
@@ -90,9 +90,9 @@ The [Adobe Audience Manager API Docs](https://bank.demdex.com/portal/swagger/ind
 | API-typ | API-metoder |
 |---------|----------|
 | **[!UICONTROL Algorithmic Models**] | [Algoritmiska modeller](https://bank.demdex.com/portal/swagger/index.html#/Algorithmic_Models_API) |
-| **[!UICONTROL Audience Marketplace]** | <ul><li>[Dataflöden](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Buyer%20API/get_available_data_feeds_)</li><li>[Datafeedbegäran](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Buyer%20API/post_available_data_feeds__dataSourceId__requests)</li><li>[Datafeedfinansiering](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Finance%20API/get_data_feeds_billing_report)</li><li>[Dataflödesplaner](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Seller%20API/get_data_feeds__dataSourceId__plans_)</li><li>[Prenumerationer på dataflöden](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Seller%20API/get_data_feeds__dataSourceId__subscriptions)</li></ul> |
-| **[!UICONTROL Data Sources]** | [Datakällor ](https://bank.demdex.com/portal/swagger/index.html#/Data_Source_API) |
+| **[!UICONTROL Audience Marketplace]** | <ul><li>[Dataflöden](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Buyer%20API/get_available_data_feeds_)</li><li>[Datafeedbegäran](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Buyer%20API/post_available_data_feeds__dataSourceId__requests)</li><li>[Ekonomi för datafeed](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Finance%20API/get_data_feeds_billing_report)</li><li>[Dataflödesplaner](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Seller%20API/get_data_feeds__dataSourceId__plans_)</li><li>[Prenumerationer på dataflöden](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Seller%20API/get_data_feeds__dataSourceId__subscriptions)</li></ul> |
+| **[!UICONTROL Data Sources]** | [Datakällor](https://bank.demdex.com/portal/swagger/index.html#/Data_Source_API) |
 | **[!UICONTROL Folders]** | <ul><li>[Segmentmappar](https://bank.demdex.com/portal/swagger/index.html#/Segment_Folder_API)</li><li>[Trait Folders](https://bank.demdex.com/portal/swagger/index.html#/Trait%20Folder%20API)</li></ul> |
 | **[!UICONTROL Reporting]** | [Rapporter](https://bank.demdex.com/portal/swagger/index.html#/Reporting%20API) |
-| **[!UICONTROL Segments]** | <ul><li>[Segment ](https://bank.demdex.com/portal/swagger/index.html#/Segments%20API)</li><li>[Segmenttestgrupper](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API)</li><li>[Utkast-API för segmenttestgrupp](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API/post_segment_test_groups_drafts)</li></ul> |
-| **[!UICONTROL Traits]** | [Traits ](https://bank.demdex.com/portal/swagger/index.html#/Traits%20API) |
+| **[!UICONTROL Segments]** | <ul><li>[Segment](https://bank.demdex.com/portal/swagger/index.html#/Segments%20API)</li><li>[Segmenttestgrupper](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API)</li><li>[Utkast-API för segmenttestgrupp](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API/post_segment_test_groups_drafts)</li></ul> |
+| **[!UICONTROL Traits]** | [Traits](https://bank.demdex.com/portal/swagger/index.html#/Traits%20API) |

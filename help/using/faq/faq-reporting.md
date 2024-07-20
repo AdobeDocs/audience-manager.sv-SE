@@ -9,8 +9,8 @@ feature: Reporting Reference
 exl-id: 1e6531b2-bb39-4056-9d5e-164f50955f99
 source-git-commit: 3bddd51582f3f8c46908dba5c5ac1938cb480013
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 100%
+source-wordcount: '705'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ För att minska beräkningsbelastningen utelämnas statistiskt insignifikanta da
 
 **Om jag kör en e-postmarknadsföringskampanj, hur kan jag avgöra om omdirigerade användare kommer till min webbplats från den kampanjen eller andra källor?**
 
-Lägg till en kampanjspecifik frågesträng i webbadressen för det webbplatsavsnitt som du vill övervaka. Ställ sedan in en trait-regel som samlar in variabeln. Om till exempel webbadresen innehåller ett kampanj-ID som detta `www.test123.com/electronics?campaign=123`, kan du skapa en trait-regel som hämtar data från `h_referer`-variabeln med en trait-regel som söker efter ett sidhuvud som `h_referer = 'campaign=123'`.
+Lägg till en kampanjspecifik frågesträng i webbadressen för det webbplatsavsnitt som du vill övervaka. Ställ sedan in en trait-regel som samlar in variabeln. Om din URL skickar ett kampanj-ID som detta, `www.test123.com/electronics?campaign=123`, skapar du en trait-regel för att hämta data från variabeln `h_referer` med en trait-regel som söker efter ett huvud som `h_referer = 'campaign=123'`.
 
 <br>
 

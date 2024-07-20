@@ -16,10 +16,10 @@ ht-degree: 23%
 # Användarhandbok för Audience Manager {#user-guide}
 
 + [Audience Manager Guide](aam-home.md)
-+ [Utvecklingshandbok för Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
++ [Utvecklingsguide till Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
 + Migrera till Web SDK{#migrate-to-web-sdk}
    + [Migrera från Adobe Audience Manager-taggtillägget till Web SDK-taggtillägget](migrate-to-web-sdk/dil-extension-to-web-sdk.md)
-   + [Migrera från AppMeasurementets JavaScript-bibliotek till Web SDK JavaScript-biblioteket](migrate-to-web-sdk/appmeasurement-to-web-sdk.md)
+   + [Migrera från AppMeasurement JavaScript-bibliotek till Web SDK JavaScript-biblioteket](migrate-to-web-sdk/appmeasurement-to-web-sdk.md)
 + Översikt {#overview}
    + [Översikt över Audience Manager](overview/aam-overview.md)
    + [Typer av insamlade data](overview/data-types-collected.md)
@@ -93,8 +93,8 @@ ht-degree: 23%
    + [Dataexportkontroller](features/data-export-controls.md)
    + Datakällor {#data-sources}
       + [Lista över datakällor och inställningar](features/datasources-list-and-settings.md)
-      + [Skapa en datakälla](features/manage-datasources.md)
-      + [Konfigurera en datakälla för arbetsflöden för hashad e-post](features/create-data-source-hashed-emails.md)
+      + [Skapa en Data Source](features/manage-datasources.md)
+      + [Konfigurera ett Data Source för arbetsflöden för hashad e-post](features/create-data-source-hashed-emails.md)
       + [Globala datakällor](features/global-data-sources.md)
    + [Deklarerade ID:n](features/declared-ids.md)
    + [Härledda signaler](features/derived-signals.md)
@@ -108,9 +108,9 @@ ht-degree: 23%
          + [Förutsättningar och överväganden](features/destinations/people-based-destinations-prerequisites.md)
          + Implementeringshandbok {#implementation-guide}
             + [Implementeringsöversikt](features/destinations/people-based-destinations-workflow.md)
-            + [Arbetsflöde A - Personalisering baserad på all onlineaktivitet i kombination med offlinedata](features/destinations/people-based-destinations-workflow-combined.md)
-            + [Arbetsflöde B - Personalisering baserad på data som bara är offline](features/destinations/people-based-destinations-workflow-offline.md)
-            + [Arbetsflöde C - Personalisering baserad på autentiserad aktivitet i kombination med offlinedata](features/destinations/people-based-destinations-workflow-authenticated.md)
+            + [Arbetsflöde A - Personalization baserad på all onlineaktivitet i kombination med offlinedata](features/destinations/people-based-destinations-workflow-combined.md)
+            + [Arbetsflöde B - Personalization baserat på data som endast är offline](features/destinations/people-based-destinations-workflow-offline.md)
+            + [Arbetsflöde C - Personalization baserat på autentiserad aktivitet i kombination med offlinedata](features/destinations/people-based-destinations-workflow-authenticated.md)
          + [Autentisering med personbaserade plattformar](features/destinations/people-based-destinations-authentication.md)
          + [Delningsbara målgrupper](/help/using/features/destinations/people-based-destinations-reporting.md)
       + Enhetsbaserade destinationer (server-till-server) {#device-based}
@@ -118,7 +118,7 @@ ht-degree: 23%
          + [Lista över enhetsbaserade destinationer i Audience Manager](/help/using/features/destinations/device-based-destinations-list.md)
          + [Lägg till eller redigera segment för server-till-server-mål](features/destinations/add-edit-segments.md)
          + [Konfigurera anpassade målgrupper för Twitter som självbetjäningsmål](features/destinations/twitter-tailored-audiences.md)
-         + [Konfigurera Amazon Advertising som självbetjäningsbaserat enhetsbaserat mål](features/destinations/amazon-advertising.md)
+         + [Konfigurera Amazon Advertising som självbetjäningsbaserat mål](features/destinations/amazon-advertising.md)
       + Anpassade destinationer {#custom-destinations}
          + [Konfigurera ett URL-mål](features/destinations/create-url-destination.md)
          + [Konfigurera ett cookie-mål](features/destinations/create-cookie-destination.md)
@@ -156,7 +156,7 @@ ht-degree: 23%
       + [Traits Overview](/help/using/features/traits/traits-overview.md)
       + [Anpassa detaljsida](features/traits/trait-details-page.md)
       + [Instrumentpanel för egenskaper](features/traits/trait-dashboard.md)
-      + [Synkroniserade egenskaper för aktiv målgrupp och datakälla](features/traits/client-activity-synced-audience-traits.md)
+      + [Aktiva målgrupper och Source Synced Traits (datakunskaper)](features/traits/client-activity-synced-audience-traits.md)
       + [Mappegenskaper: Om](features/traits/about-folder-traits.md)
       + [Hantera mappegenskaper](features/traits/manage-folder-traits.md)
       + Trait Builder {#trait-builder}
@@ -254,7 +254,7 @@ ht-degree: 23%
       + [Kom igång med REST API:er](api/rest-api-main/aam-api-getting-started.md)
       + [Algoritmiska API-metoder](api/rest-api-main/aam-api-algo-methods.md)
       + [Data Integration Library-API-metoder](api/rest-api-main/aam-api-dil-methods.md)
-      + [API-metoder för datakälla](api/rest-api-main/aam-api-data-sources.md)
+      + [API-metoder för data-Source](api/rest-api-main/aam-api-data-sources.md)
       + [API-metoder för härledda signaler](api/rest-api-main/aam-api-derived-signals.md)
       + API-metoder för destinationer {#destination-api-methods}
          + [Översikt över mål-API-metoder](api/rest-api-main/aam-api-destinations/aam-api-destinations.md)
@@ -335,7 +335,7 @@ ht-degree: 23%
          + [Skicka batchdata till Audience Manager - översikt](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)
          + [ID-synkronisering för inkommande dataöverföringar](integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)
          + [Namn- och innehållskrav för ID-synkroniseringsfiler](integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
-         + [Innehåll i inkommande datafil: syntax, ogiltiga tecken, variabler och exempel](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
+         + [Innehåll i inkommande datafil: syntax, ogiltiga tecken, variabler och   Exempel](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
          + [Amazon S3-namn och filstorlek för inkommande datafiler](integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
          + [Krav för FTP-namn och filstorlek för inkommande datafiler](integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md)
          + [PGP-kryptering för inkommande datatyper](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)
@@ -348,7 +348,7 @@ ht-degree: 23%
    + Integrering med andra Experience Cloud-program {#integration-other-solutions}
       + [Integrera Audience Manager med Adobe Target](integration/integration-other-solutions/aam-target-integration.md)
       + [Så här vidarebefordrar du data från Adobe Analytics till Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [Publicera ett Adobe Analytics-segment på Experience Cloud (öppnar Adobe Analytics-dokumentation)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
+      + [Publish och Adobe Analytics Segment till Experience Cloud (öppnar Adobe Analytics-dokumentation)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
       + [Integrera Audience Manager med Adobe Campaign (öppnar Adobe Campaign-dokumentation)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
 + Referens {#reference}
    + [Referensöversikt](reference/reference.md)
@@ -382,7 +382,7 @@ ht-degree: 23%
       + [Databearbetningskomponenter](reference/system-components/components-data-processing.md)
       + [Tag Management Components](reference/system-components/components-tag-management.md)
       + [Plattformsarkitektur: Dataflödesschema](reference/system-components/components-platform-architecture.md)
-      + [Förstå Edge Data Center](reference/system-components/components-edge.md)
+      + [Förstå Edge datacenter](reference/system-components/components-edge.md)
    + [Formatkonventioner för kod- och textelement](reference/code-style-elements.md)
    + [Tidszoner i Audience Manager](reference/aam-time-zones.md)
    + [Borttagning av TLS 1.0 och 1.1](reference/tls-support.md)

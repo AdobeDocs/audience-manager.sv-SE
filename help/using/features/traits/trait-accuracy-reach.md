@@ -3,18 +3,18 @@ description: Beskriver förhållandet mellan noggrannhet och räckvidd i algorit
 seo-description: Describes the relationship between accuracy and reach in algorithmic traits.
 seo-title: Accuracy and Reach
 solution: Audience Manager
-title: Precision och räckvidd
+title: Noggrannhet och räckvidd
 uuid: d121e099-6642-4003-ad4f-507d21e478d8
 feature: Traits
 exl-id: 647b283a-fcfa-4e3f-8667-50c6aacbc78a
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 1%
+source-wordcount: '342'
+ht-degree: 0%
 
 ---
 
-# Precision och räckvidd {#accuracy-and-reach}
+# Noggrannhet och räckvidd {#accuracy-and-reach}
 
 Beskriver förhållandet mellan noggrannhet och räckvidd i algoritmiska egenskaper.
 
@@ -37,4 +37,4 @@ Fokuset på precision och räckvidd beror på vad du vill uppnå med ett visst s
 | Favoriter för varumärkesbeslut | Hjälper till att hitta |
 |---|---|
 | **Noggrannhet** | Användare som liknar baslinjekunder i din modell. Användbar för riktade kampanjer när ni vill nå en viss målgrupp. |
-| **Räckvidd** | Ett visst antal användare för varje datakörning. Användbar för varumärkeskampanjer när ni är intresserade av att nå en viss målgrupp. |
+| **Nå** | Ett visst antal användare för varje datakörning. Användbar för varumärkeskampanjer när ni är intresserade av att nå en viss målgrupp. |

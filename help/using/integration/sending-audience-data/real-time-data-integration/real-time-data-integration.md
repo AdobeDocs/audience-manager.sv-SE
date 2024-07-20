@@ -9,7 +9,7 @@ feature: Inbound Data Transfers
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
 source-wordcount: '22'
-ht-degree: 36%
+ht-degree: 0%
 
 ---
 

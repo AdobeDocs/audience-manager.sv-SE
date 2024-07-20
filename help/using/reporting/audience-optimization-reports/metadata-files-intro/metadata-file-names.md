@@ -9,8 +9,8 @@ feature: Log Files
 exl-id: 7a895c4f-1100-4ba1-947e-abb47307fb40
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 5%
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
@@ -20,17 +20,17 @@ Namnge metadatafilen för Audience Optimization enligt dessa specifikationer.
 
 ## Syntax- och ID-kategorier {#syntax}
 
-Följande syntax definierar strukturen för ett välformaterat metadatafilnamn. Obs! *kursiv* används för att ange en variabelplatshållare. De andra elementen är konstanter och ändras inte.
+Följande syntax definierar strukturen för ett välformaterat metadatafilnamn. Obs! *kursiv* anger en variabelplatshållare. De andra elementen är konstanter och ändras inte.
 
 **Syntax:** *`yyyymmdd_0_childID`*
 
 >[!NOTE]
 >
->*Gör inte* använda filtillägg i dina metadatafiler (.txt eller något annat).
+>*Använd inte* filtillägg i dina metadatafiler (.txt eller något annat).
 
 <!--In the name syntax, you'll notice a parent ID variable. Don't confuse it with the parent ID used in the [metadata file contents](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md). These 2 variables seem similar, but they represent different things:-->
 
-* Den mittersta komponenten **0** är tekniskt sett överordnat ID, som är ett äldre fält. Värdet ska alltid anges som **0**.
+* Den mittersta komponenten **0** är tekniskt överordnat ID, som är ett äldre fält. Värdet ska alltid anges som **0**.
 * Det underordnade ID:t kan ha ett värde mellan 1 och 10, beroende på dimensionen. Se nedan:
 
 ## Dimensioner för underordnat ID {#child-dimension}
@@ -42,7 +42,7 @@ I metadatafilnamnet är det underordnade ID:t en identifierare som klassificerar
 1. Placement
 1. Exchange
 1. Plats
-1. Advertiser (om integreringskoder används i en [datakälla](../../../features/manage-datasources.md#details))
+1. Annonsör (om integreringskoder används i en [datakälla](../../../features/manage-datasources.md#details))
 1. Infogningsordning (IO)
 1. Vertikalt (dvs. en specifik bransch- eller affärskategori som &quot;datorer&quot;, &quot;bilar&quot;, &quot;fastigheter&quot; osv.)
 1. Taktisk

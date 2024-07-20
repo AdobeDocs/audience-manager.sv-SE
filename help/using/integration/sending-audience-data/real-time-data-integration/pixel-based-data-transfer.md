@@ -9,8 +9,8 @@ feature: Inbound Data Transfers
 exl-id: fe9ecb97-4a45-4fbb-855e-01df007144cf
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 3%
+source-wordcount: '175'
+ht-degree: 0%
 
 ---
 
@@ -23,18 +23,18 @@ Enkla pixlar (som kan användas för att kvalificera användare för egenskaper)
 Om du vill aktivera inkommande dataöverföringar gör leverantören och klienten följande:
 
 1. Bestäm vilka egenskaper du vill att leverantören eller partnern ska tända.
-1. Hämta pixeln för trait. Håll muspekaren över skärmen i listan över egenskaper **[!UICONTROL Actions]** kolumn och klicka på **[!UICONTROL Get trait URL]** symbolen för det önskade tecknet.
+1. Hämta pixeln för trait. Håll markören över kolumnen **[!UICONTROL Actions]** på skärmen med listan över egenskaper och klicka på symbolen **[!UICONTROL Get trait URL]** för det önskade tecknet.
 1. Ange [!DNL URL] till leverantören eller partnern.
 
 ## Exempel
 
-Det här grundläggande händelseanropet skickar trait ID 1234 till [!DNL Audience Manager].
+Detta grundläggande händelseanrop skickar trait ID 1234 till [!DNL Audience Manager].
 
 ```
 https://something.demdex.net/event?d_sid=1234
 ```
 
-Du kan serialisera trait-ID:n i ett händelseanrop för att minska antalet `HTTP` trafik från sidan. Lägg till ytterligare trait-ID:n i URL-strängen så som visas i följande exempel:
+Du kan serialisera trait-ID:n i ett händelseanrop för att minska trafiken på `HTTP` från sidan. Lägg till ytterligare trait-ID:n i URL-strängen så som visas i följande exempel:
 
 ```
 https://something.demdex.net/event?d_sid=1234,5678,9876,5432

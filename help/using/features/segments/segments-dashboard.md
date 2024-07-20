@@ -3,24 +3,24 @@ description: Kontrollpanelen Segment är en central arbetsyta för att hantera m
 seo-description: The Segments dashboard is a centralized workspace for managing destinations.
 seo-title: Segments List View
 solution: Audience Manager
-title: Vy över segmentlista
+title: Vy för segmentlista
 uuid: aa69877b-1d52-4b87-8734-b4bff39935a5
 feature: Segments
 exl-id: 983ce119-52af-40fb-9d64-3063e85f2b3d
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '73'
-ht-degree: 8%
+ht-degree: 0%
 
 ---
 
-# Vy över segmentlista {#segments-list-view}
+# Vy för segmentlista {#segments-list-view}
 
-The [!UICONTROL Segments dashboard] är en central arbetsyta för att hantera era målgruppssegment. Du kan se [!UICONTROL Segments] instrumentpanel genom att navigera till **[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**.
+[!UICONTROL Segments dashboard] är en central arbetsyta för att hantera målgruppssegment. Du kan se kontrollpanelen [!UICONTROL Segments] genom att gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**.
 
 ![segment-dashboard](assets/segments-dashboard.png)
 
-The [!UICONTROL Segments] sidan innehåller funktioner och verktyg som hjälper dig att:
+Sidan [!UICONTROL Segments] innehåller funktioner och verktyg som hjälper dig att:
 
 * Skapa nya segment,
 * Redigera och ta bort segment,

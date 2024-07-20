@@ -9,32 +9,32 @@ feature: Traits
 exl-id: 68041d61-7942-4c2f-9e78-f2b2f803ef59
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 7%
+source-wordcount: '193'
+ht-degree: 0%
 
 ---
 
 # Exempeluttryck med booleska operatorer och jämförelseoperatorer {#sample-expressions-with-boolean-and-comparison-operators}
 
-Exempel som du kan referera till när du skapar uttryck i [!UICONTROL Expression Builder] kodredigerare.
+Exempel som du kan referera till när du skapar uttryck i kodredigeraren för [!UICONTROL Expression Builder].
 
 ## Översikt över kodexempel {#code-samples-overview}
 
 <!-- r_tb_expression_samples.xml -->
 
-Skapa egna regler med [!UICONTROL Expression Builder] kodredigerare. Följande exempel kan hjälpa dig att komma igång. I vissa av exemplen används *`key`* variabel med `c_` för att identifiera den som en användardefinierad variabel. Inkludera `c_` prefix (eller annan namnkonvention) för *`key`* variabel om dina händelseanrop skickar data till [!DNL Audience Manager] med den syntaxen.
+Skapa egna trait-regler med kodredigeraren [!UICONTROL Expression Builder]. Följande exempel kan hjälpa dig att komma igång. Vissa av exemplen föregår variabeln *`key`* med `c_` för att identifiera den som en användardefinierad variabel. Inkludera prefixet `c_` (eller någon annan namnkonvention) för variabeln *`key`* om dina händelseanrop skickar data till [!DNL Audience Manager] med den syntaxen.
 
 ## Booleska uttryck {#boolean-expressions}
 
 ### AND-exempel
 
-Regeln fastställer krav på kvalificering av traktoregenskaper med Boolean [!UICONTROL AND] operatorer.
+Regeln fastställer krav på kvalificering av egenskaper med hjälp av booleska operatorer [!UICONTROL AND].
 
 <table id="table_7C5E23EC9E0F43B182EA9771D7BB6E87"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Exempelkod </th> 
-   <th colname="col2" class="entry"> För att bli berättigad måste besökaren </th> 
+   <th colname="col2" class="entry"> För att kvalificera sig måste besökaren </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -51,32 +51,32 @@ Regeln fastställer krav på kvalificering av traktoregenskaper med Boolean [!UI
 
 ### ELLER-exempel
 
-I denna regel fastställs krav på kvalificering av traktoregenskaper med hjälp av [!DNL Boolean] [!UICONTROL OR] och [!UICONTROL AND] operatorer.
+Den här regeln ställer in krav på kvalificering av egenskaper med hjälp av operatorerna [!DNL Boolean] [!UICONTROL OR] och [!UICONTROL AND].
 
 <table id="table_6E8BA5EE1D7F4DCC9A92074D0C2C050E"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Exempelkod </th> 
-   <th colname="col2" class="entry"> För att bli berättigad måste besökaren </th> 
+   <th colname="col2" class="entry"> För att kvalificera sig måste besökaren </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"><code>(a== "1" OR b=="1") AND (c=="new")</code> </td> 
-   <td colname="col2"> Uppfyll villkoren som anges av variabler <code><i>a </i></code> eller <code><i>b </i></code> och <code><i>c </i></code>. </td> 
+   <td colname="col2"> Uppfyll villkoren som anges av variablerna <code><i>a </i></code> eller <code><i>b </i></code> och <code><i>c </i></code>. </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Intervallexempel med större än, mindre än, lika med
 
-I den här regeln fastställs krav för kvalificering av egenskaper utifrån ett intervall.
+I den här regeln fastställs krav för kvalificering av egenskaper med hjälp av ett intervall.
 
 <table id="table_988DE28E35D94348ADD334FB4C9F68D3"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Exempelkod </th> 
-   <th colname="col2" class="entry"> För att bli berättigad måste besökaren </th> 
+   <th colname="col2" class="entry"> För att kvalificera sig måste besökaren </th> 
   </tr> 
  </thead>
  <tbody> 

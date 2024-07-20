@@ -3,18 +3,18 @@ description: Metoder som gör att du kan visa den vanliga taxonomin för Audienc
 seo-description: Methods that let you view the Audience Manager common taxonomy. This optional classification scheme organizes traits into industry standard categories.
 seo-title: Taxonomic API Methods
 solution: Audience Manager
-title: Taxonomiska API-metoder
+title: Metoder för taxonomiska API
 uuid: 4ee29ba5-e9ba-4498-a6ee-7343227dd7ba
 feature: API
 exl-id: 8bc6dcbb-7f5b-4a7b-998d-025eaf76c409
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
-# Taxonomiska API-metoder {#taxonomic-api-methods}
+# Metoder för taxonomiska API {#taxonomic-api-methods}
 
 Metoder som gör att du kan visa den vanliga taxonomin för Audience Manager. Detta valfria klassificeringssystem organiserar egenskaper i branschstandardkategorier.
 
@@ -22,11 +22,11 @@ Metoder som gör att du kan visa den vanliga taxonomin för Audience Manager. De
 
 >[!NOTE]
 >
->Du kan inte skapa nya taxonomiska kategorier eller klassificera egenskaper med dessa metoder. Om du vill klassificera en egenskap anger du lämplig `categoryId` med en egen metod för att skapa eller uppdatera.
+>Du kan inte skapa nya taxonomiska kategorier eller klassificera egenskaper med dessa metoder. Om du vill klassificera en egenskap anger du lämplig `categoryId` med en metod för att skapa eller uppdatera egenskaper.
 
 ## Returnera en specifik taxonomi {#return-specific-taxonomy}
 
-A `GET` metod som returnerar information om den angivna taxonomiska kategorin.
+En `GET`-metod som returnerar information om den angivna taxonomiska kategorin.
 
 <!-- r_rest_api_taxonomy.xml -->
 
@@ -36,7 +36,7 @@ A `GET` metod som returnerar information om den angivna taxonomiska kategorin.
 
 ### Svar
 
-Ett godkänt svar returnerar `200 OK` och kategorin för det angivna ID:t. En misslyckad begäran returnerar `404 No Content` om ID:t inte finns.
+Ett lyckat svar returnerar `200 OK` och kategorin för det angivna ID:t. En misslyckad begäran returnerar `404 No Content` om ID:t inte finns.
 
 ```
 {
@@ -51,7 +51,7 @@ Ett godkänt svar returnerar `200 OK` och kategorin för det angivna ID:t. En mi
 
 ## Returnera alla taxonomiska kategorier {#return-all-taxonomy-categories}
 
-A `GET` metod som returnerar en lista över de översta kategorierna i en array.
+En `GET`-metod som returnerar en lista över kategorierna på den översta nivån i en array.
 
 <!-- r_rest_api_taxonomies.xml -->
 
@@ -94,7 +94,7 @@ Trunkerad för att vara snabb.
 
 ## Returtaxonomiska underkategorier {#return-taxonomy-sub-categories}
 
-A `GET` metod som returnerar underkategorier för den angivna överordnade kategorin i en array.
+En `GET`-metod som returnerar underkategorier för den angivna överordnade kategorin i en array.
 
 <!-- r_rest_api_taxonomy_sub.xml -->
 
@@ -104,7 +104,7 @@ A `GET` metod som returnerar underkategorier för den angivna överordnade kateg
 
 ### Svar
 
-Ett godkänt svar returnerar `200 OK` och kategorin för det angivna ID:t. En misslyckad begäran returnerar `404 No Content` om ID:t inte finns. Trunkerad för att vara snabb.
+Ett lyckat svar returnerar `200 OK` och kategorin för det angivna ID:t. En misslyckad begäran returnerar `404 No Content` om ID:t inte finns. Trunkerad för att vara snabb.
 
 ```
 [

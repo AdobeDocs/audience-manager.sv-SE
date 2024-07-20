@@ -3,24 +3,24 @@ description: Exempel på hur några av de vanliga makrona används för att skap
 seo-description: Examples of how some of the common macros are used to create outbound file templates.
 seo-title: Outbound Macro Examples
 solution: Audience Manager
-title: Exempel på utgående makron
+title: Exempel på utgående makro
 uuid: 823d85d4-d683-45cf-9e60-c12b7d52a498
 feature: Outbound Data Transfers
 exl-id: 7e3f2b25-7b7c-47fe-aa62-7ebd4e25f9ba
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 2%
+source-wordcount: '322'
+ht-degree: 0%
 
 ---
 
-# Exempel på utgående makron {#outbound-macro-examples}
+# Exempel på utgående makro {#outbound-macro-examples}
 
 Exempel på hur några av de vanliga makrona används för att skapa utgående filmallar.
 
 >[!NOTE]
 >
->I tabellerna **fet** typ identifierar varje makro med tillhörande utdata. För formatexemplen finns följande `<` `>` symboler har lagts till för att hjälpa till att visuellt skilja ut varje makro.
+>I tabellerna identifierar typen **fet stil** varje makro med tillhörande utdata. För formatexemplen har symbolerna `<` `>` lagts till för att hjälpa till att visuellt separera varje makro.
 
 ## Filnamnsmakron {#file-name-macros}
 
@@ -84,7 +84,7 @@ En lista över tillgängliga makron och definitioner finns i [Utgående mallmakr
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> TAB </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;ORDER_ID&gt; &lt;TAB&gt;&lt;SYNC_TYPE&gt; </code> </p> <p>Utdata: <code> 888 full.sync </code> </p> <p>I utdata separerar tabbtecknet som inte skrivs ut varje element. </p> </td>
+   <td colname="col2"> <p>Format: <code> &lt;ORDER_ID&gt; &lt;TAB&gt;&lt;SYNC_TYPE&gt; </code> </p> <p>Utdata: <code> 888 full.sync </code> </p> <p>I utdata separeras varje element med tabbtecknet som inte skrivs ut. </p> </td>
   </tr>
  </tbody>
 </table>
@@ -128,7 +128,7 @@ En lista över tillgängliga makron och definitioner finns i [Utgående mallmakr
        {"AdvertiserId":"&lt;PIDALIAS&gt;",&nbsp;"DataCenterId":&nbsp;2,"TDID":"&lt;DP_UUID&gt;", "Data":[&lt;SEGMENT_LIST:{seg|&lt;OPEN_CURLY_BRACKET&gt;"Name":"&lt;seg.alias&gt;"&lt;CLOSE_CURLY_BRACKET&gt;}; separator=","&gt;&lt;if(SEGMENT_LIST&nbsp;&amp;&amp;&nbsp;REMOVED_SEGMENT_LIST)&gt;&lt;COMMA&gt;&lt;endif&gt; &lt;REMOVED_SEGMENT_LIST:{seg|&lt;OPEN_CURLY_BRACKET&gt;"Name":"&lt;seg.alias&gt;", "TtlInMinutes":0&lt;CLOSE_CURLY_BRACKET&gt;};&nbsp;separator=","&gt;]}
      </code></p><p><b>Utdata:</b></p> <p>
      <code>//First&nbsp;example {"AdvertiserId":"12345",&nbsp;"DataCenterId":&nbsp;2, "TDID":"dfd215e4-8d6b-4fdb-90b9-fab4456f2c9d","Data":[{"Name":"4321"}]} //Second&nbsp;example {"AdvertiserId":"12345",&nbsp;"DataCenterId":&nbsp;2,"TDID":"9099e8fe-abab-5114-abaa-28bdaa0539ca","Data":[{"Name":"4321"},{"Name":"987","TtlInMinutes":0}, {"Name":"654","TtlInMinutes":0}]} 
-     </code></p> <p> <p>Obs! I det första exemplet returnerar makrot bara data för <code> SEGMENT_LIST </code> därför <code> REMOVED_SEGMENT_LIST </code> är tom. Det andra exemplet returnerar data för båda makrona. </p> </p> </td> 
+     </code></p> <p> <p>Obs! I det första exemplet returnerar makrot bara data för <code> SEGMENT_LIST </code> eftersom <code> REMOVED_SEGMENT_LIST </code> är tomt. Det andra exemplet returnerar data för båda makrona. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> SET_ATTRIBUTES </code> </p> </td> 
@@ -136,7 +136,7 @@ En lista över tillgängliga makron och definitioner finns i [Utgående mallmakr
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> TAB </code> </p> </td> 
-   <td colname="col2"> <p>Format: <code> &lt;DP_UUID&gt;&lt;TAB&gt;&lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>Utdata: <code> 123456 UUID1 UUID2 UUID3 </code> </p> <p>I utdata separerar tabbtecknet som inte skrivs ut varje element. </p> </td> 
+   <td colname="col2"> <p>Format: <code> &lt;DP_UUID&gt;&lt;TAB&gt;&lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>Utdata: <code> 123456 UUID1 UUID2 UUID3 </code> </p> <p>I utdata separeras varje element med tabbtecknet som inte skrivs ut. </p> </td> 
   </tr>
   <tr>
    <td colname="col1"> <p> <code> TRAIT_LIST </code> </p> </td> 
@@ -145,12 +145,12 @@ En lista över tillgängliga makron och definitioner finns i [Utgående mallmakr
  </tbody> 
 </table>
 
-### `DPUUID` Exempel
+### Exempel på `DPUUID`
 
-För att du ska förstå hur `DPUUID` makroutdata, anta att vi har 2 `DPID`mappas till `DPUUID`som visas nedan:
+För att du ska få en förståelse för hur makrot `DPUUID` genererar data kan vi anta att vi har 2 `DPID` mappade till `DPUUID` enligt nedan:
 
 * DPID `1111` mappar till DPUID `AAAA` (tidsstämpel = 1) och `BBBB` (tidsstämpel = 2).
-* DPID `2222` mappar till DPUID `CCCC`.
+* DPID `2222` mappar till DPUUID `CCCC`.
 
 Under dessa förhållanden räknar följande tabell upp några möjliga formatsträngar och deras utdata.
 
@@ -171,12 +171,12 @@ Under dessa förhållanden räknar följande tabell upp några möjliga formatst
   <tr> 
    <td colname="col1"> <p>Returnera maximalt 1 mappning för alla DPID </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=1111,2222|maxMappings=1|format=json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [["1111","BBBB"],["2222","CCCC"]] </code> </p> <p>För DPID <code> 1111 </code>mappar makrot till DPUUID <code> BBBB </code> bara för att detta ID har den större tidsstämpeln. </p> </td> 
+   <td colname="col3"> <p> <code> [["1111","BBBB"],["2222","CCCC"]] </code> </p> <p>För DPID <code> 1111 </code> mappas makrot endast till DPUUID <code> BBBB </code> eftersom det ID:t har den större tidsstämpeln. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Returnera maximalt 2 mappningar för ett enskilt DPID </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=2222|maxMappings=2|format=json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [["2222","CCCC"]] </code> </p> <p>Även om <code> maxMappings=2 </code>returnerar det här makrot endast 1 DPID till DPUID-mappning eftersom det angivna DPID bara har ett DPUID. </p> </td> 
+   <td colname="col3"> <p> <code> [["2222","CCCC"]] </code> </p> <p>Trots att <code> maxMappings=2 </code> returnerar det här makrot bara 1 DPID till DPUID-mappning eftersom det angivna DPID bara har ett DPUID. </p> </td> 
   </tr> 
  </tbody> 
 </table>

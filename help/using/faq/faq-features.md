@@ -10,8 +10,8 @@ feature: Overview
 exl-id: b5884d26-0be1-4eaa-99a1-7247942bf6c9
 source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 84%
+source-wordcount: '574'
+ht-degree: 87%
 
 ---
 
@@ -47,9 +47,9 @@ Ja. Se [Verktyg för satsvis hantering](../reference/bulk-management-tools/bulk-
 
  
 
-**Vissa kund-ID saknas när du exporterar satsvis-ID till ett mål. Varför händer det där?**
+**Vissa kund-ID saknas vid export av ett bulk-ID till ett mål. Varför händer det?**
 
-När ett enhets-ID ([AAM UUID](../reference/ids-in-aam.md)) är länkad till flera CRM-ID:n ([DPUID](../reference/ids-in-aam.md)) exporteras bara den senaste mappningen. Det är därför du kan se ett lägre antal enhets-ID än förväntat som exporteras.
+När ett enhets-ID ([AAM UUID](../reference/ids-in-aam.md)) är länkat till flera CRM-ID ([DPUID](../reference/ids-in-aam.md)) exporteras endast den senaste mappningen. Det är därför du kan se ett lägre antal enhets-ID än förväntat som exporteras.
 
  
 

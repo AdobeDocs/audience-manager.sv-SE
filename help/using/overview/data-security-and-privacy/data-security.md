@@ -9,8 +9,8 @@ feature: Data Governance & Privacy
 exl-id: 94b70250-dca3-4c50-b4dd-bc37178a587e
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 98%
+source-wordcount: '988'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ Processer som håller vårt system och era data säkra.
 
 **Säker åtkomst:**  Audience Manager kräver starka lösenord för att logga in på systemet. Se [lösenordskrav](../../reference/password-requirements.md).
 
-## Integritet och personligt identifierbar information (PII) {#pii}
+## Integritet och personligt identifierbar information {#pii}
 
 Processer som skyddar personuppgifter. Mer sekretessinformation finns i [Adobes sekretesscenter](https://www.adobe.com/se/privacy/advertising-services.html).
 
@@ -61,11 +61,11 @@ Processer som skyddar personuppgifter. Mer sekretessinformation finns i [Adobes 
 
 Processer som hjälper till att skydda data som ägs av enskilda klienter.
 
-**Trait Data Partitioning:**  Dina data ([!UICONTROL traits], ID:n etc.) partitioneras av klienten. Detta förhindrar att information oavsiktligt exponeras för olika kunder. Till exempel trait-data i cookies partitioneras av kunden och lagras i en klientspecifik underdomän. De kan inte läsas eller användas av misstag av en annan Audience Manager-klient. Dessutom partitioneras trait-data som lagras i [!UICONTROL Profile Cache Servers (PCS)] också av kunden. Det förhindrar att andra klienter oavsiktligt använder dina data i händelseanrop eller andra förfrågningar.
+**Trait Data Partitioning:** Dina data ([!UICONTROL traits], ID:n osv.) partitioneras av klienten. Detta förhindrar att information oavsiktligt exponeras för olika kunder. Till exempel trait-data i cookies partitioneras av kunden och lagras i en klientspecifik underdomän. De kan inte läsas eller användas av misstag av en annan Audience Manager-klient. Dessutom partitioneras trait-data som lagras i [!UICONTROL Profile Cache Servers (PCS)] också av kunden. Det förhindrar att andra klienter oavsiktligt använder dina data i händelseanrop eller andra förfrågningar.
 
 **Datapartitionering i rapporter:**  Klient-ID:n är en del av identifieringsnyckeln i alla rapporttabeller och rapportfrågor filtreras efter ID. Det förhindrar att data visas i rapporter för en annan Audience Manager-kund.
 
-## Inkommande server-till-server-överföringar (S2S)  {#inbound-s2s}
+## Ankommande överföring från server till server (S2S) {#inbound-s2s}
 
 Adobe Audience Manager har stöd för två huvudsakliga metoder för överföring av S2S-datafiler direkt till våra system:
 
@@ -73,11 +73,11 @@ Båda metoderna är utformade med hänsyn till kundens och partnerns säkerhet n
 
 **SFTP:** För alternativet SFTP väljer de flesta kunder att leverera filer via SFTP-protokollet (Secure FTP), som använder SSH-protokollet (Secure Shell). Med den här metoden krypteras filerna när de överförs mellan kundens system och Adobes system. För varje kund skapar vi en skyddad inkorg på våra SFTP-servrar som är kopplad till ett användarkonto i det systemet. Det är bara kundens inloggade och behöriga interna systemanvändare som har åtkomst till den skyddade inkorgen. Den skyddade platsen är inte tillgänglig för andra kunder.
 
-**[!UICONTROL Amazon Web Services S3]via HTTPS:** För leveransalternativet S3 rekommenderar vi att alla kunder konfigurerar sina S3-klienter så att de använder HTTPS-krypteringsmetoden för filöverföringar (den är inte standard så den måste konfigureras manuellt). Alternativet HTTPS stöds både av kommandoradsverktyget s3cmd och de S3-bibliotek som finns i alla större programmeringsspråk. När det här HTTPS-alternativet är aktiverat krypteras kundens data när de överförs till våra system. För varje kund skapar vi en separat S3-bucket underkatalog som bara kan nås med kundens och våra interna systemanvändares autentiseringsuppgifter.
+**[!UICONTROL Amazon Web Services S3]via HTTPS:** För leveransalternativet S3 rekommenderar vi att alla kunder konfigurerar sina S3-klienter så att de använder HTTPS-krypteringsmetoden för filöverföringar (detta är inte standard, så det måste konfigureras explicit). Alternativet HTTPS stöds både av kommandoradsverktyget s3cmd och de S3-bibliotek som finns i alla större programmeringsspråk. När det här HTTPS-alternativet är aktiverat krypteras kundens data när de överförs till våra system. För varje kund skapar vi en separat S3-bucket underkatalog som bara kan nås med kundens och våra interna systemanvändares autentiseringsuppgifter.
 
 Information om hur du lägger till PGP-kryptering i datafiler finns i [PGP-filkryptering för inkommande datatyper](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md).
 
-## Skydda data med dubbla undantagstecken {#escaping-data}
+## Skydda data med Escaping {#escaping-data}
 
 Observera att [!DNL Audience Manager] data inte skyddas av dubbla undantagstecken för att förhindra eventuell XSS (cross-site scripting) osv. Det är kundens ansvar att skydda inkommande data med dubbla undantagstecken.
 
@@ -91,6 +91,6 @@ Principen förbättrar datasäkerheten mellan klienter och Adobe [Edge](../../re
 
 ### Exempel {#hsts-example}
 
-Låt oss säga `yourcompany.demdex.com` domänen skickar trafik till [!DNL DCS] via [!DNL HTTP]. [!DNL HSTS] uppgraderar anropen till [!DNL HTTPS] och alla efterföljande [!DNL DCS]-anrop som kommer från `yourcompany.demdex.com` använder [!DNL HTTPS] i stället för [!DNL HTTP].
+Låt oss säga att `yourcompany.demdex.com`-domänen skickar trafik till [!DNL DCS] via [!DNL HTTP]. [!DNL HSTS] uppgraderar anropen till [!DNL HTTPS] och alla efterföljande [!DNL DCS]-anrop som kommer från `yourcompany.demdex.com` använder [!DNL HTTPS] i stället för [!DNL HTTP].
 
 Mer information om HSTS finns i [HTTP Strict Transport Security – Wikipedia](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security).
