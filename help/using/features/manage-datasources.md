@@ -8,7 +8,7 @@ title: Hantera datakällor
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 feature: Data Sources
 exl-id: 1c20988e-4a09-4d56-b454-d48b75eed1ce
-source-git-commit: 6ec76227dd8c7581550c3d95e24fc5b6a4b01093
+source-git-commit: e41dddd022b6fa02cab3e16bd21536d41584975f
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Ta bort en [!UICONTROL data source] som du inte längre behöver.
 >Observera följande begränsningar:
 >
 >* Du kan inte ta bort en [aktiv publik eller Data Source Synced Trait](../features/traits/client-activity-synced-audience-traits.md).
->* För kunder som använder Adobe Analytics: Audience Manager tillåter inte att du tar bort datakällor som skapas automatiskt från [!DNL Analytics]-rapportsviterna. Använd [bastjänsten](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services-landing.html) för att ta bort mappningen för dessa datakällor.
+>* För kunder som använder Adobe Analytics: Audience Manager tillåter inte att du tar bort datakällor som skapas automatiskt från [!DNL Analytics]-rapportsviterna. Använd [bastjänsten](https://experienceleague.adobe.com/en/docs/core-services/interface/services/customer-attributes/attributes) för att ta bort mappningen för dessa datakällor.
 
 1. Klicka på **[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**.
 1. Markera kryssrutan bredvid en eller flera datakällor.
