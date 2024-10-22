@@ -8,9 +8,9 @@ title: Hantera datakällor
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 feature: Data Sources
 exl-id: 1c20988e-4a09-4d56-b454-d48b75eed1ce
-source-git-commit: e41dddd022b6fa02cab3e16bd21536d41584975f
+source-git-commit: bda66cb9aaee3a40ae64dda100f42b88696a027e
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -29,26 +29,19 @@ Om du vill skapa en ny [!UICONTROL data source] går du till **[!UICONTROL Audie
 
 ## Information om [!UICONTROL Data Source] {#details}
 
-Så här slutför du avsnittet [!UICONTROL Data Source Details]:
+Fyll i följande fält för att slutföra avsnittet [!UICONTROL Data Source Details]:
 
-1. Namnge [!UICONTROL data source].
-1. *(Valfritt)* Beskriv [!UICONTROL data source]. En kort beskrivning hjälper dig att definiera rollen eller syftet med [!UICONTROL data source].
-1. Ange en [!UICONTROL integration code]. I allmänhet är [!UICONTROL integration codes] valfritt. De är obligatoriska när du vill:
-
+1. **[!UICONTROL Name]**: Ange ett namn för datakällan.
+1. **[!UICONTROL Description]** (valfritt): Ange en beskrivning för datakällan som hjälper dig att definiera rollen eller syftet med datakällan.
+1. **[!UICONTROL Integration Code]** (valfritt): Ange en integreringskod. Dessa koder är obligatoriska när du vill:
    * [Skapa en datakälla för olika enheter](../features/profile-merge-rules/merge-rules-start.md#create-data-source).
    * Använd [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
    * Arbeta med [profilkopplingsregler](../features/profile-merge-rules/merge-rules-start.md).
-
-1. Välj en **[!UICONTROL ID Type]**. [!UICONTROL ID Type] alternativ omfattar:
-
+1. **[!UICONTROL Namespace]** (skrivskyddad): Det här fältet är skrivskyddat och genereras automatiskt när du sparar datakällan. Om du vill exportera segment från Audience Manager till Experience Platform måste du skapa ett motsvarande [identitetsnamnutrymme](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#manage-namespaces) i Experience Platform och använda det automatiskt genererade värdet som namnutrymmets [identitetssymbol](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#components-of-a-namespace) i Experience Platform.
+1. **[!UICONTROL ID Type]**: Välj vilken typ av ID som den här datakällan ska innehålla:
    * **[!UICONTROL Cookie]**
    * **[!UICONTROL Device Advertising ID]**
    * **[!UICONTROL Cross-device]** (krävs för att skapa en [!UICONTROL Profile Merge Rule]). Observera att för vissa kunder visas alternativen för **[!UICONTROL ID Definition]** i det här valet.
-
-   >[!NOTE]
-   >
-   >För varje organisation som har etablerats för Audience Manager och Experience Platform skapas ett motsvarande [identitetsnamnutrymme](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#manage-namespaces) i Experience Platform när du skapar en datakälla för olika enheter, även om du inte har segmentdelning mellan de två programmen.
-
 1. Välj ett **[!UICONTROL ID Definition]**-alternativ. Alternativen är:
 
    * **[!UICONTROL Person]**
