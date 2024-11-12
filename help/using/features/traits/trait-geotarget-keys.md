@@ -7,7 +7,7 @@ title: Geotargeting med tangenter på plattformsnivå
 uuid: c7e4cbfe-e564-404e-a565-bbe5fd2fb519
 feature: Traits
 exl-id: 449096f9-64fd-495f-ac1d-3181a4544279
-source-git-commit: 366589d51601f438999bfdc6a10c306eb1186742
+source-git-commit: 2de7aba53e3c88d31270f2acb4fa29389f940312
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 2%
@@ -58,3 +58,4 @@ Listan med [alla platsbaserade signaler](assets/all.txt) innehåller alla signal
 >[!MORELIKETHIS]
 >
 >* [Prefixkrav för nyckelvariabler](../../features/traits/trait-variable-prefixes.md)
+
