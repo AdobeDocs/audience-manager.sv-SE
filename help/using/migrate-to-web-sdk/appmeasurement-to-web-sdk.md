@@ -2,9 +2,9 @@
 title: Uppdatera ditt datainsamlingsbibliotek för Audience Manager från AppMeasurement JavaScript-biblioteket till Web SDK JavaScript-biblioteket.
 description: Lär dig hur du uppdaterar ditt datainsamlingsbibliotek för Audience Manager från AppMeasurement JavaScript-biblioteket till Web SDK JavaScript-biblioteket.
 exl-id: 9c771d6c-4cfa-4929-9a79-881d4e8643e4
-source-git-commit: 3ba980e97763866d82bdf94109068f1f1f8f63d2
+source-git-commit: f8d8eb722e7b5cc4371f400a76fbd548a1318668
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2589'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,18 @@ Din datastream är nu redo att ta emot och skicka data till Audience Manager. Ob
 1. Välj **[!UICONTROL Save]**.
 
 Din datastream är nu redo att både skicka data till Audience Manager och skicka Audience Manager svar till Web SDK.
+
++++
+
++++**4. Lägg till kund-ID:n på identitetskartan**
+
+De flesta Audience Manager-implementeringar använder [profilkopplingsregler](../features/profile-merge-rules/merge-rules-overview.md) i personaliseringsscenarier mellan olika enheter och för att hjälpa till att styra vilka segment besökarna kan kvalificera sig för beroende på autentiseringsstatus (inloggad eller utloggad). Regler för profilsammanslagning kräver att en kundägd identifierare (CRM-ID, kontonummer osv.) skickas till Audience Manager vid varje datainsamlingsanrop efter autentiseringen. Tidigare användes funktionen `setCustomerIDs` i Visitor ID-tjänsten ([!DNL visitor.js]) för att lägga till kund-ID:n i varje anrop till Analytics-datainsamling, som sedan vidarebefordrades till Audience Manager.
+
+Med Web SDK måste dessa identiteter skickas till Edge Network med hjälp av en speciell XDM-konstruktion som kallas [IdentityMap](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap).
+
+Att skicka identiteter korrekt i en identitetskarta kräver förståelse för [identitetsnamnutrymmen](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces) och att du noga undersöker vilka identiteter som ska skickas, särskilt när du skickar data till en Experience Platform-sandlåda. [I den här artikeln](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21305) beskrivs dessa överväganden och instruktioner.
+
+När du har fastställt vilka identiteter som ska skickas och när, följer du guiderna för hur du använder [!UICONTROL Identity map] **[!UICONTROL Identity map]** [dataelementet](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/data-element-types#identity-map) i Taggar eller ställer in det manuellt så som beskrivs i [översikten över identitetsdata](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/overview) för att anpassa dig till din distributionsstrategi för Web SDK.
 
 +++
 
