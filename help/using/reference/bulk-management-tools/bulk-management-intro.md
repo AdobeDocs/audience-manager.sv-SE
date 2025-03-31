@@ -8,9 +8,9 @@ title: Komma igång med masshantering
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 feature: BAAAM
 exl-id: 5603146e-7172-4181-90ad-4606129176dd
-source-git-commit: e8d81f648f5a46495193fe6631c8a7f73e290493
+source-git-commit: 0c9c333f4e8d6d416d497f336e3e447e2e251d47
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Om du vill använda [!DNL Bulk Management Tools] behöver du följande:
 
 * Din [!DNL Experience Cloud]-inloggning. Som kund bör du redan ha dessa uppgifter.
 * Kalkylbladet [!DNL Bulk Management Tools]. [Hämta kalkylbladet](assets/BAAAM_V2_20210609.xlsm) för att hämta den senaste versionen.
-* [!DNL Microsoft Excel] körs på [!DNL macOS] eller 64 bitar [!DNL Microsoft Windows]. Du bör använda den senaste versionen av [!DNL Microsoft Excel].
+* [!DNL Microsoft Excel] körs på 64-bitars [!DNL Microsoft Windows]. Du bör använda den senaste versionen av [!DNL Microsoft Excel]. Masshanteringsverktygen stöds inte på [!DNL macOS].
 * När du öppnar kalkylbladet måste du **aktivera makron** för att [!DNL Bulk Management Tools] ska fungera.
 
 ## Autentiseringskrav och alternativ {#auth-reqs}
