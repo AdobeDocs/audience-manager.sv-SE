@@ -8,9 +8,9 @@ title: Deklarerade ID:n
 uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
 feature: ID Syncs
 exl-id: a480671a-797d-405d-905d-98ab4ef71369
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: e17eedfb94f2936c61298c44f3d556bae254b2a7
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1151'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,7 @@ Vissa webbläsare, och de flesta mobila enheter, accepterar inte [!DNL cookies] 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Matcha ID</b> </td> 
-   <td colname="col2"> <p>Audience Manager försöker matcha klient- och besökar-ID med ett motsvarande ID i vårt system. Om det inte finns något matchande ID skapar Audience Manager ett nytt ID och associerar det med klient- och besökar-ID:t. </p> <p> <p>Obs! Den senaste mappningen används om ditt ID mappas till mer än ett Audience Manager-ID. </p> </p> </td> 
+   <td colname="col2"> <p>Audience Manager försöker matcha klient- och besöks-ID med ett motsvarande ID i vårt system. Om det inte finns något matchande ID skapar Audience Manager ett nytt ID och associerar det med klient- och besökar-ID:t. </p> <p> <p>Obs! Den senaste mappningen används om ditt ID mappas till mer än ett Audience Manager ID. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Retur-ID</b> </td> 
@@ -49,12 +49,12 @@ Vissa webbläsare, och de flesta mobila enheter, accepterar inte [!DNL cookies] 
   </tr>
   <tr>
    <td colname="col1"> <b>Efterföljande händelseanrop</b> </td>
-   <td colname="col2"> <p>Ytterligare händelseanrop läser Audience Manager-ID från klientens domän och skickar det till Audience Manager. </p> </td>
+   <td colname="col2"> <p>Ytterligare händelseanrop läser Audience Manager-id:t från klientens domän och skickar det till Audience Manager. </p> </td>
   </tr> 
  </tbody>
 </table>
 
-För att komma igång måste du konfigurera [!DNL Experience Cloud] ID-tjänsten och [!UICONTROL DIL] på alla sidor på webbplatsen som du vill använda för datainsamling. Se [Skapa](../dil/dil-class-overview/dil-create.md#dil-create) och [Deklarerade ID-variabler](../features/declared-ids.md#declared-id-variables) i DIL.
+För att komma igång måste du konfigurera [!DNL Experience Cloud] ID-tjänsten och [!UICONTROL DIL] på alla sidor på webbplatsen som du vill använda för datainsamling. Se [DIL skapa](../dil/dil-class-overview/dil-create.md#dil-create) och [Deklarerade ID-variabler](../features/declared-ids.md#declared-id-variables).
 
 ## Avanmäl samtal {#opt-out-calls}
 
@@ -114,7 +114,7 @@ Dessa metoder fungerar fortfarande men anses vara föråldrade. Denna informatio
   </tr> 
   <tr> 
    <td colname="col1"> <p>Avanmälan på partnernivå </p> </td> 
-   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid= user ID&amp;d_dpid= data provider ID </code> </p> <p>En avanmälan på partnernivå lagras för den senaste mappningen av det här <code> dpid </code> + <code> dpuuid </code>-paret till ett AAM UUID. Om det inte finns någon befintlig mappning kontrollerar Audience Manager om begäran innehåller en AAM UUID i cookien, och om den gör det använder den för lagring av avanmälan. I annat fall genererar Audience Manager ett nytt AAM UUID och lagrar avanmälan under det. </p> </td> 
+   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid= user ID&amp;d_dpid= data provider ID </code> </p> <p>En avanmälan på partnernivå lagras för den senaste mappningen av det här <code> dpid </code> + <code> dpuuid </code>-paret till ett AAM UUID. Om det inte finns någon befintlig mappning kontrollerar Audience Manager om begäran innehåller ett AAM UUID i cookien, och om så är fallet använder den för lagring av avanmälan. I annat fall genererar Audience Manager ett nytt AAM UUID och lagrar avanmälan under det. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_dpuuid </code> + <code> d_dpid </code> och explicit <code> d_uuid </code> </p> </td> 
@@ -195,7 +195,7 @@ var vDil = DIL.create({
 });
 ```
 
-I nyckelvärdepar `namespace` är `MCORG` ditt [!DNL Experience Cloud]-organisations-ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration]-avsnittet på [!DNL Experience Cloud]-instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: bastjänster](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html).
+I nyckelvärdepar `namespace` är `MCORG` ditt [!DNL Experience Cloud]-organisations-ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration]-avsnittet på [!DNL Experience Cloud]-instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Kom igång med Experience Cloud-tjänster](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started).
 
 ## Föråldrade funktioner {#deprecated-functions}
 
@@ -214,7 +214,7 @@ I följande tabell beskrivs de äldre variablerna som används av objektet `decl
   <tr> 
    <td colname="col1"> <code> dpid </code> </td> 
    <td colname="col2"> Sträng </td> 
-   <td colname="col3"> <p>Datapartnerns ID tilldelat av Audience Manager. </p> </td> 
+   <td colname="col3"> <p>Datapartnerns ID har tilldelats av Audience Manager. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> dpuuid </code> </td> 
@@ -265,7 +265,7 @@ Begäran skickar en DataProvider och ett användar-ID till [!DNL Audience Manage
 https://my_domain.net/event?d_rtbd=json&d_cb=myCallback&key=val&d_dpuuid=1234&d_dpid=5678
 ```
 
-Svaret returnerar Audience Manager-ID (t.ex. `UUID`) som är skrivet till en cookie för första part i siddomänen.
+Svaret returnerar det Audience Manager-ID (t.ex. `UUID`) som är skrivet till en cookie från en annan leverantör i siddomänen.
 
 ```js
 myCallback({
