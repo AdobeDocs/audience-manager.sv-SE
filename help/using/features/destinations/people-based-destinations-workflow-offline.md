@@ -177,6 +177,7 @@ Om du vill skapa nya segment från data som bara är offline använder du [Segme
    * **[!UICONTROL Type]**: Personbaserad;
    * **[!UICONTROL Platform]**: välj den personbaserade plattform som du vill skicka målgruppssegment till;
    * **[!UICONTROL Account]**: välj önskat annonserarkonto som är associerat med den valda plattformen.
+
      ![create-destination](assets/pbd-create-destination.png)
 1. Klicka på **[!UICONTROL Next]**.
 1. Välj den **[!UICONTROL Data Export Labels]** som du vill ange för det här målet.

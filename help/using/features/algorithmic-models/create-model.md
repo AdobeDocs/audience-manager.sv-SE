@@ -40,14 +40,17 @@ Följ stegen nedan för att skapa en [!UICONTROL Look-Alike Model]:
    * Ge modellen ett namn.
    * *(Valfritt)* Ange en kort beskrivning av modellen.
    * Ange modellens status till **[!UICONTROL Active]** eller **[!UICONTROL Inactive]**. Inaktiva modeller kommer inte att köras och kommer inte att generera några data.
+
      ![look-alike-basic](assets/look-alike-basic.png)
 1. I avsnittet [Konfiguration](../../features/algorithmic-models/create-model.md#configuration):
    * Klicka på **[!UICONTROL Browse All Traits]** eller **[!UICONTROL Browse All Segments]** för att välja ett spår eller segment som du vill modellera mot. Sök efter egenskaper efter namn, ID, beskrivning eller datakälla. Klicka på en mapp medan du söker för att begränsa resultatet till den mappen och dess undermappar. Du kan också filtrera egenskaper efter trait-typ ([!UICONTROL Folder Trait], [!UICONTROL Rule-based], [!UICONTROL Onboarded] och [!UICONTROL Algorithmic]) eller populationstyp ([enhets-ID](../../reference/ids-in-aam.md) och [Cross-Device ID](../../reference/ids-in-aam.md)).
+
      ![browse-traits](assets/browse-traits.png)
    * Välj en 30, 60 eller 90 dagars summeringsperiod. Detta anger ett tidsintervall för modellen.
    * Algoritmen [!UICONTROL TraitWeight] är markerad som standard.
    * Välj en datakälla i listan [!UICONTROL Available Data].
    * Klicka på **[!UICONTROL Save]** när du är klar.
+
      ![look-alike-configuration](assets/look-alike-configuration.png)
 
 Titta på videon nedan för att få en detaljerad bild av hur enhetsövergripande mätvärden fungerar.

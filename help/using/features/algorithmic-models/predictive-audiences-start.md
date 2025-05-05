@@ -42,6 +42,7 @@ När du vet vilken datakälla du ska använda följer du stegen nedan.
    * **[!UICONTROL Description]**: Ange en beskrivning av modellen som hjälper dig att identifiera dess användningsfall.
    * **[!UICONTROL Data Source]**: Välj den första parts datakälla som du vill att [!UICONTROL Predictive Audiences]-segmenten från den här modellen ska tilldelas till.
    * **[!UICONTROL Profile Merge Rule]**: Välj [!UICONTROL Profile Merge Rule] som ska tilldelas för alla prediktiva [!UICONTROL segments] som skapas av den här modellen. Om den valda målgruppen är en [!UICONTROL segment] rekommenderar vi att du väljer samma [!UICONTROL Profile Merge Rule] av målgruppen.
+
      ![prediktiv-audiences-save](assets/predictive-audiences-save.png)
 1. Klicka på **[!UICONTROL Save]**.
 

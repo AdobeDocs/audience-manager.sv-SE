@@ -201,30 +201,30 @@ Felaktigt formaterade värdenamn i ett nyckelvärdepar orsakar också problem. F
    <td colname="col1"> <p>Med <code> d_sid </code> eller <code> d_unsid </code> </p> </td> 
    <td colname="col2"> <p>Den här datafilen visar en användare som är kvalificerad för traits 24, 26, 27 och som har tagits bort från trait 28 och 29. </p> <p> 
      <code>
-       59767559181262060060278870901087098252&amp;nbsp;&amp;nbsp;d_sid=24,d_sid=26,d_sid=27,d_unsid=28,d_unsid=29 
+       59767559181262060060278870901087098252&nbsp;&nbsp;d_sid=24,d_sid=26,d_sid=27,d_unsid=28,d_unsid=29 
      </code> </p> <p>Obs!  <p>I stället för att använda d_unsid kan du ta bort egenskaper från användarprofiler med följande syntax: </p> <p> 
       <code>
-        59767559181262060060278870901087098252&amp;nbsp;28:0,&amp;nbsp;29:0 
+        59767559181262060060278870901087098252&nbsp;28:0,&nbsp;29:0 
       </code> </p> <p> 
       <code>
-        59767559181262060060278870901087098252&amp;nbsp;28:-1,&amp;nbsp;29:-1 
+        59767559181262060060278870901087098252&nbsp;28:-1,&nbsp;29:-1 
       </code> </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Med <code> ic== </code> </p> </td> 
    <td colname="col2"> <p>Dessa egenskaper har lagts till i en trait-regel med prefixet <code> ic </code>. Därför kan du lägga till dem i datafilen avgränsade med kommatecken. En flik skiljer UUID och trait ID:n. Prefixet <code> ic </code> krävs inte i filen. </p> <p><b>Numeriska ID:n</b> </p> <p> 
      <code>
-       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;30608,50354,50338,50352,30626 
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&nbsp;&nbsp;30608,50354,50338,50352,30626 
      </code> </p> <p><b>Sträng-ID</b> </p> <p> 
      <code>
-       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;ic=52,ic=55 
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&nbsp;&nbsp;ic=52,ic=55 
      </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Med nyckelvärdepar </p> </td> 
    <td colname="col2"> Dessa fildata använder nyckelvärdepar för att skicka data till <span class="keyword"> Audience Manager </span>. <p> 
      <code>
-       59767559181262060060278870901087098252&amp;nbsp;“gender”=”female”,“luxury_shopper”=”yes” 
+       59767559181262060060278870901087098252&nbsp;“gender”=”female”,“luxury_shopper”=”yes” 
      </code> </p> </td> 
   </tr> 
  </tbody> 

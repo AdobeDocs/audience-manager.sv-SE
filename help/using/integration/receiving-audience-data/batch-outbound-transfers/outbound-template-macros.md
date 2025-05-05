@@ -106,7 +106,7 @@ Makron som används för att formatera innehållet i en datafil. Kodexempel finn
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> CLOSE_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>Infogar en avslutande klammerparentes <code>}</code>. </p> </td> 
+   <td colname="col2"> <p>Infogar en avslutande klammerparentes <code>&rbrace;</code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DP_UUID </code> </p> </td> 
@@ -134,7 +134,7 @@ Makron som används för att formatera innehållet i en datafil. Kodexempel finn
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPEN_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>Infogar en öppen klammerparentes (<code>{</code>). </p> </td> 
+   <td colname="col2"> <p>Infogar en öppen klammerparentes (<code>&lbrace;</code>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPT_OUT </code> </p> </td> 

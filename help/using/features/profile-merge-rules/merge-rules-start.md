@@ -215,8 +215,8 @@ Kontrollera metoderna i din [!DNL SDK]-kod som gör att du kan skicka [!UICONTRO
     </code></p>
     <p> <b>Exempel:</b> </p><p>
     <code class="javascript">
-      [ADBMobile&nbsp;audienceSetDpid:@"290"
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:@"99301393923940"];
+      &lbrack;ADBMobile&nbsp;audienceSetDpid:@"290"
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:@"99301393923940"&rbrack;;
     </code></p>
     </td>
   </tr>

@@ -50,7 +50,7 @@ När rapporten har lästs in kan du se en beskrivning av din [!UICONTROL Activit
 [!UICONTROL Activities] definierar den sammanlagda summan av alla interaktioner på plats och utanför webbplatsen med Audience Manager, uppdelat i följande kategorier:
 
 * **[!UICONTROL Server Calls]**: Alla datainsamlings- eller hämtningshändelser som skickas till Audience Manager från webbplatser, servrar, e-post, mobilprogram eller andra system.
-* **[!UICONTROL Pixel Calls](tidigare [!UICONTROL Impression Server Calls])**: Data som samlats in från annonser (till exempel visningsvolym från en målinriktningsplattform) eller e-postvisningsanrop till Audience Manager. Dessa kräver att parametern `d_event` finns i frågesträngen.
+* **[!UICONTROL Pixel Calls] (tidigare [!UICONTROL Impression Server Calls])**: Data som samlats in från annonser (till exempel visningsvolym från en målinriktningsplattform) eller e-postvisningsanrop till Audience Manager. Dessa kräver att parametern `d_event` finns i frågesträngen.
 * **[!UICONTROL On-Boarded Records]**: Unika poster som hämtas från ditt eget CRM-system eller andra offlinedatafiler, till exempel callcenters poster, enhets-ID:n och anpassade dataflöden från externa dataleverantörer.
 * **[!UICONTROL Log File Records]**: Unika poster från loggfiler som har hämtats till Audience Manager från en målplattform.
 

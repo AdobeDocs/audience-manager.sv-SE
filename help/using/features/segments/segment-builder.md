@@ -44,6 +44,7 @@ Börja med att titta på [Skapa segment i Audience Manager-videon](https://image
    ![segment-builder-traits](assets/segment-builder-traits.png)
    * Sök efter de [!UICONTROL trait] som du vill lägga till i ett segment och klicka på **[!UICONTROL Add Trait]**. Lägg till ytterligare [!UICONTROL trait] för att skapa en [!UICONTROL trait]-grupp.
    * Ta fram spärren [!UICONTROL Advanced Search] genom att klicka på **[!UICONTROL Browse All Traits]**. Sök efter [!UICONTROL traits] efter namn, ID, beskrivning eller [!UICONTROL data source]. Klicka på en mapp medan du söker för att begränsa resultatet till den mappen och dess undermappar. Du kan även filtrera [!UICONTROL traits] efter [!UICONTROL trait type] ([!UICONTROL Folder Trait], [!UICONTROL Rule-based], [!UICONTROL Onboarded] och [!UICONTROL Algorithmic]) eller populationstyp ([enhets-ID](../../reference/ids-in-aam.md) och [enhets-ID](../../reference/ids-in-aam.md)).
+
      ![segment-builder-browser-traits](assets/segment-builder-browse-traits.png)
    * Få [anpassade rekommendationer](trait-recommendations.md) live när du bygger din [!UICONTROL segment].
    * Klicka och dra [!UICONTROL traits] för att skapa separata grupper.
