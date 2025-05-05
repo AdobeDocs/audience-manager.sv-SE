@@ -25,7 +25,7 @@ r_problem.xml
 
  -->
 
-Kontakta [kundtjänsten](https://helpx.adobe.com/marketing-cloud/contact-support.html) om du har tekniska problem eller vill logga ett fel.
+Kontakta [kundtjänsten](https://helpx.adobe.com/se/marketing-cloud/contact-support.html) om du har tekniska problem eller vill logga ett fel.
 
 * **Telefon:** 1-800-497-0335
 

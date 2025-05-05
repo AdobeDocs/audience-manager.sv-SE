@@ -63,7 +63,7 @@ Tabellen definierar elementen i ett namn på en utgående datafil.
       <li id="li_94DAFA169380405981AFEF1B581997E6">2014 - <span class="keyword"> Google Advertiser ID </span> (raw, unhashed) </li> 
       <li id="li_DE74BE06331C49CF87606A192D815B96">2015 - <span class="keyword"> Apple ID för annonsörer </span> (raw, unhashed) </li> 
       <li id="li_E0A033FEC3174EF08E93EB7C65266337">Leverantörs-ID - Användar-ID:n från tredje part (webb/cookie) </li> 
-     </ul> </p> <p>Mer information finns i <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/global-data-sources.html">Globala datakällor</a>.</p></td> 
+     </ul> </p> <p>Mer information finns i <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/global-data-sources.html?lang=sv-SE">Globala datakällor</a>.</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>PID_ALIAS </i></code> </p> </td> 

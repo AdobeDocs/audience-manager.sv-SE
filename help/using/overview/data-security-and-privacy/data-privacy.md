@@ -43,9 +43,9 @@ Mer information finns på [Adobes sekretesscenter](https://www.adobe.com/se/priv
 
 ## Regelefterlevnad {#compliance}
 
-[!DNL Audience Manager] hjälper dig att uppfylla dina skyldigheter enligt vissa sekretessregler, via sekretessverktyg som [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) för dataåtkomst och borttagningsbegäranden.
+[!DNL Audience Manager] hjälper dig att uppfylla dina skyldigheter enligt vissa sekretessregler, via sekretessverktyg som [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv-SE) för dataåtkomst och borttagningsbegäranden.
 
-Den här tjänsten tillhandahåller ett [!DNL RESTful API] och användargränssnitt som hjälper er att hantera förfrågningar om konsumentdata. Med hjälp av [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) kan ni skicka förfrågningar om att få tillgång till och radera personuppgifter baserat på en kunds begäran vilket hjälper er att automatisera denna del av era efterlevnadsskyldigheter.
+Den här tjänsten tillhandahåller ett [!DNL RESTful API] och användargränssnitt som hjälper er att hantera förfrågningar om konsumentdata. Med hjälp av [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv-SE) kan ni skicka förfrågningar om att få tillgång till och radera personuppgifter baserat på en kunds begäran vilket hjälper er att automatisera denna del av era efterlevnadsskyldigheter.
 
 Dataåtkomst- och borttagningsbegäranden hanteras via Privacy Servicen, men [avanmälningsbegäranden](data-privacy-requests.md#opt-out-requests) stöds för närvarande via [DCS API](../../api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md). Mer information finns i [Förfrågningar om datasekretess](data-privacy-requests.md).
 

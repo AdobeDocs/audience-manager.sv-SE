@@ -16,7 +16,7 @@ ht-degree: 23%
 # Användarhandbok för Audience Manager {#user-guide}
 
 + [Audience Manager Guide](aam-home.md)
-+ [Utvecklingsguide till Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
++ [Utvecklingsguide till Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html?lang=sv-SE)
 + Migrera till Web SDK{#migrate-to-web-sdk}
    + [Migrera från taggtillägget Adobe Audience Manager till taggtillägget Web SDK](migrate-to-web-sdk/dil-extension-to-web-sdk.md)
    + [Migrera ditt datainsamlingsbibliotek från AppMeasurement till Web SDK](migrate-to-web-sdk/appmeasurement-to-web-sdk.md)
@@ -151,7 +151,7 @@ ht-degree: 23%
       + [Kodsyntax i segmentuttrycksredigeraren](features/segments/segment-code-syntax.md)
       + [Trait and Segment Population Data in Segment Builder](features/segments/segment-builder-data.md)
       + [Trait Recommendations](features/segments/trait-recommendations.md)
-      + [Referens för kvalificering av traits och segment](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html)
+      + [Referens för kvalificering av traits och segment](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html?lang=sv-SE)
    + Traits {#traits}
       + [Traits Overview](/help/using/features/traits/traits-overview.md)
       + [Anpassa detaljsida](features/traits/trait-details-page.md)
@@ -348,8 +348,8 @@ ht-degree: 23%
    + Integrering med andra Experience Cloud-program {#integration-other-solutions}
       + [Integrera Audience Manager med Adobe Target](integration/integration-other-solutions/aam-target-integration.md)
       + [Så här vidarebefordrar du data från Adobe Analytics till Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [Publicera ett Adobe Analytics-segment till Experience Cloud (öppnar Adobe Analytics-dokumentation)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
-      + [Integrera Audience Manager med Adobe Campaign (öppnar Adobe Campaign-dokumentation)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
+      + [Publicera ett Adobe Analytics-segment till Experience Cloud (öppnar Adobe Analytics-dokumentation)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html?lang=sv-SE)
+      + [Integrera Audience Manager med Adobe Campaign (öppnar Adobe Campaign-dokumentation)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html?lang=sv-SE)
 + Referens {#reference}
    + [Referensöversikt](reference/reference.md)
    + [Amazon S3: Om](reference/amazon-s3.md)

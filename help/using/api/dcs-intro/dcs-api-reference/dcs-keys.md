@@ -80,7 +80,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Adobe Experience Platform Identity Service och beror på <code> idSyncDisable3rdPartySyncing</code>-konfigurationen. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html" format="https" scope="external"> COPPA-stöd i Adobe Experience Platform Identity Service </a>. </p> </td>
+   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Adobe Experience Platform Identity Service och beror på <code> idSyncDisable3rdPartySyncing</code>-konfigurationen. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html?lang=sv-SE" format="https" scope="external"> COPPA-stöd i Adobe Experience Platform Identity Service </a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
@@ -122,7 +122,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>Anger det Experience Cloud-ID som angetts och som används av ID-tjänsten <span class="keyword"> Experience Cloud</span>. Mer information om ECID finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud Identity Service </a>. </p> </td> 
+   <td colname="col2"> <p>Anger det Experience Cloud-ID som angetts och som används av ID-tjänsten <span class="keyword"> Experience Cloud</span>. Mer information om ECID finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=sv-SE" format="https" scope="external"> Cookies och Experience Cloud Identity Service </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
@@ -195,7 +195,7 @@ Dessa rubriker innehåller information som förfrågningar om data och svar i et
 
 | Attribut | Beskrivning |
 | --- | --- | 
-| `h_host` | Detta anges till klientens specifika värdnamn för datainsamling. Det visas som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en). |
+| `h_host` | Detta anges till klientens specifika värdnamn för datainsamling. Det visas som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=sv-SE). |
 | `h_user-agent` | Ange till rubrikvärdet `User-Agent`. |
 | `h_accept-language` | Ange till rubrikvärdet `Accept-Language`. |
 | `h_referer` | Ange till rubrikvärdet `Referer`. |

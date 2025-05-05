@@ -31,7 +31,7 @@ Se även Samla in IP-adresser och IP-adressofficering i avsnittet [Dataintegrite
 
 ### Prioritet för IP-obefuscation {#precedence}
 
-[IP-ojämnheter på datastranaminivå](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#create) har företräde framför IP-ofuskeringsalternativ som har angetts i Audience Manager, och de tillämpas på alla IP-adresser. Alla sökningar efter geopositionering som gjorts av Audience Manager påverkas av alternativet [!UICONTROL IP obfuscation] på datastream-nivå. En sökning efter geopositionering i Audience Manager, som baseras på en helt okomplicerad IP-adress, resulterar i en okänd region och inga segment som baseras på resulterande geopositioneringsdata kommer att realiseras.
+[IP-ojämnheter på datastranaminivå](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=sv-SE#create) har företräde framför IP-ofuskeringsalternativ som har angetts i Audience Manager, och de tillämpas på alla IP-adresser. Alla sökningar efter geopositionering som gjorts av Audience Manager påverkas av alternativet [!UICONTROL IP obfuscation] på datastream-nivå. En sökning efter geopositionering i Audience Manager, som baseras på en helt okomplicerad IP-adress, resulterar i en okänd region och inga segment som baseras på resulterande geopositioneringsdata kommer att realiseras.
 
 ## Krav för IP-adressofficering {#ip-obfuscation-requirements}
 

@@ -60,7 +60,7 @@ I [!UICONTROL Trait Builder] kan du med [!UICONTROL Basic Information]-inställn
   </tr>
    <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Händelsetyp </span></b> </td> 
-   <td colname="col2"> Tilldelar egenskapen till en typ eller kategori, vanligtvis enligt funktion (t.ex. konvertering, besökare, partner, sidvy). Valfritt. <p> Mer information om hur du skapar konverteringsegenskaper finns i videon <a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">Skapa konverteringsegenskaper i Audience Manager</a>. </p></td> 
+   <td colname="col2"> Tilldelar egenskapen till en typ eller kategori, vanligtvis enligt funktion (t.ex. konvertering, besökare, partner, sidvy). Valfritt. <p> Mer information om hur du skapar konverteringsegenskaper finns i videon <a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html?lang=sv-SE">Skapa konverteringsegenskaper i Audience Manager</a>. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Integrationskod </span></b> </td> 

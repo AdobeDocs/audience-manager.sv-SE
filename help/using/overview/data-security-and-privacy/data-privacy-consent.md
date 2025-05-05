@@ -31,11 +31,11 @@ Audience Manager har verktyg som hjälper er att inhämta samtycke från era anv
 
 ## Experience Cloud Opt-in Service
 
-Med [Experience Cloud Opt-in Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) kan ni konfigurera protokoll för besökare som hjälper er att avgöra om ni kan placera en cookie på personens enhet eller webbläsare när hen besöker er webbplats.
+Med [Experience Cloud Opt-in Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=sv-SE) kan ni konfigurera protokoll för besökare som hjälper er att avgöra om ni kan placera en cookie på personens enhet eller webbläsare när hen besöker er webbplats.
 
 Detta är ett tillägg till [!DNL Experience Cloud ID (ECID) Service] som är utformat för att ni ska kunna kontrollera om och vilka Experience Cloud-lösningar som kan placera cookies på webbsidor för besökare innan användaren ger sitt samtycke.
 
-Med [Experience Cloud Opt-In Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) kan ni också ange protokoll som ska integreras med er plattform för hantering av samtycke (CMP) och befintliga system som en del av er större design.
+Med [Experience Cloud Opt-In Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=sv-SE) kan ni också ange protokoll som ska integreras med er plattform för hantering av samtycke (CMP) och befintliga system som en del av er större design.
 
 ## Hantera anmälan/inhämtning av samtycke
 

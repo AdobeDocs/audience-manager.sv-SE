@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Målgrupp
 
-Den här sidan är avsedd för Audience Manager-kunder som använder taggtillägget [Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/audience-manager/overview) för att hämta webbsamlingsdata till Audience Manager. Kunder som använder AppMeasurement JavaScript-biblioteket kan läsa guiden om hur du uppdaterar ditt datainsamlingsbibliotek för Audience Manager [ från AppMeasurement JavaScript-biblioteket till Web SDK JavaScript-biblioteket](appmeasurement-to-web-sdk.md).
+Den här sidan är avsedd för Audience Manager-kunder som använder taggtillägget [Audience Manager](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/audience-manager/overview) för att hämta webbsamlingsdata till Audience Manager. Kunder som använder AppMeasurement JavaScript-biblioteket kan läsa guiden om hur du uppdaterar ditt datainsamlingsbibliotek för Audience Manager [ från AppMeasurement JavaScript-biblioteket till Web SDK JavaScript-biblioteket](appmeasurement-to-web-sdk.md).
 
 ## Fördelar och nackdelar med implementeringsvägen
 

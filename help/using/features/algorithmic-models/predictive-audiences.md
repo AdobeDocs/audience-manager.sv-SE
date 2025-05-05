@@ -122,11 +122,11 @@ När du konfigurerar dina [!UICONTROL Predictive Audiences]-modeller bör du tä
 
 ## [!UICONTROL Data Export Controls] {#dec}
 
-Prediktiva segment som skapats av [!UICONTROL Predictive Audiences] modeller ärver [ dataexportkontroller ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html) från följande datakällor från första part:
+Prediktiva segment som skapats av [!UICONTROL Predictive Audiences] modeller ärver [ dataexportkontroller ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=sv-SE) från följande datakällor från första part:
 
 1. Den datakälla från första part som du väljer när du skapar modellen.
 1. Målgruppens första datakällor. Det gäller särskilt dataexportkontrollerna för [!UICONTROL traits] eller [!UICONTROL segments] som utgör målgruppen.
-1. [Dataexportkontroller](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html) för [!UICONTROL Profile Merge Rule] som du har valt för modellen.
+1. [Dataexportkontroller](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=sv-SE) för [!UICONTROL Profile Merge Rule] som du har valt för modellen.
 
 Det nya prediktiva objektet [!UICONTROL traits] och [!UICONTROL segments] har samma sekretessbegränsningar som unionen av förstapartsdatakällor som beskrivs ovan.
 
@@ -146,6 +146,6 @@ Om du väljer en [!UICONTROL Profile Merge Rule] som använder både enhetsdata 
 
 ## [!UICONTROL Role-Based Access Controls] {#rbac}
 
-De egenskaper och segment som du väljer för profiler och målgruppsklassificering omfattas av Audience Manager [rollbaserade åtkomstkontroller](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html).
+De egenskaper och segment som du väljer för profiler och målgruppsklassificering omfattas av Audience Manager [rollbaserade åtkomstkontroller](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html?lang=sv-SE).
 
-Audience Manager-användare kan bara välja egenskaper eller segment för personer och målgrupper, som de har [behörighet att visa](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions).
+Audience Manager-användare kan bara välja egenskaper eller segment för personer och målgrupper, som de har [behörighet att visa](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html?lang=sv-SE#wild-card-permissions).

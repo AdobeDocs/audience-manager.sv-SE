@@ -36,7 +36,7 @@ När du mappar Adobe Analytics [!UICONTROL segments] eller rapportsviter till di
 
 >[!TIP]
 >
->Audience Manager [!UICONTROL segments] skiljer sig från [!DNL Adobe Analytics] [!UICONTROL segments]. Läs [Förstå segment i Analytics och Audience Manager](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) om du vill ha en detaljerad beskrivning av skillnaderna.
+>Audience Manager [!UICONTROL segments] skiljer sig från [!DNL Adobe Analytics] [!UICONTROL segments]. Läs [Förstå segment i Analytics och Audience Manager](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html?lang=sv-SE) om du vill ha en detaljerad beskrivning av skillnaderna.
 
 ## Skapa regelbaserad [!UICONTROL Segments] med [!UICONTROL Segment Builder]
 

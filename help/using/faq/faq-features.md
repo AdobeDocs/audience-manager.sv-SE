@@ -33,7 +33,7 @@ faq_features_functions.xml
 
 Ett *`Organization ID`* ser till exempel ut så här: `1FD6776A524453CC0A490D44@AdobeOrg`.
 
-Detta *`Organization ID`* används av Audience Managers [DIL](../dil/dil-overview.md) API, [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) och andra [!DNL Experience Cloud]-lösningar. Användare med administratörsbehörighet kan hitta *`Organization ID`* på [!DNL Adobe Admin Console]. Se [Administration – Vanliga frågor om användarhantering](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Detta *`Organization ID`* används av Audience Managers [DIL](../dil/dil-overview.md) API, [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE) och andra [!DNL Experience Cloud]-lösningar. Användare med administratörsbehörighet kan hitta *`Organization ID`* på [!DNL Adobe Admin Console]. Se [Administration – Vanliga frågor om användarhantering](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=sv-SE).
 
  
 
@@ -67,7 +67,7 @@ Din datafeed och alla traits som finns i flödet visas som undermappar och trait
 
 **Vad är [!UICONTROL Tag Insertion Manager (TIM)]?**
 
-Audience Manager använde [!UICONTROL Tag Insertion Manager] (TIM) för att skapa och hantera [!UICONTROL data collection code (DIL)]. Den här funktionen är föråldrad och har ersatts först av [!UICONTROL Dynamic Tag Manager (DTM)] och därefter av [!DNL Adobe Experience Platform Tags]. Mer information finns i [Adobe Experience Platform-taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
+Audience Manager använde [!UICONTROL Tag Insertion Manager] (TIM) för att skapa och hantera [!UICONTROL data collection code (DIL)]. Den här funktionen är föråldrad och har ersatts först av [!UICONTROL Dynamic Tag Manager (DTM)] och därefter av [!DNL Adobe Experience Platform Tags]. Mer information finns i [Adobe Experience Platform-taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv-SE).
 
  
 
@@ -95,4 +95,4 @@ Du bör använda trait-rekommendationer när:
 
 **Är det någon skillnad mellan Adobe Analytics- och Audience Manager-segment?**
 
-Ja, läs [Förstå segment i Analytics och Audience Manager](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) för en ingående beskrivning av skillnaderna.
+Ja, läs [Förstå segment i Analytics och Audience Manager](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html?lang=sv-SE) för en ingående beskrivning av skillnaderna.
