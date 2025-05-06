@@ -7,9 +7,9 @@ title: Utnyttja Amazon S3-behörigheter för kontoöverskridande paket för utg�
 uuid: 400a8d67-ebf3-48be-aa3f-498a5441f498
 feature: Outbound Data Transfers
 exl-id: e52f5bc0-7dc0-4c73-833c-5a778e8b5891
-source-git-commit: 7302fafa537ad15144a64cc96f7150c5b0233c12
+source-git-commit: 9c0254e8a29ffeb0353ed6faa898b74bcae7cef1
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -21,3 +21,8 @@ Processen [!UICONTROL Outbound Data Transfer] för kunder som använder [!DNL Am
 Om du inte vill dela din [!DNL Amazon S3]-åtkomstnyckel och hemliga nyckel med oss kontaktar du din [!DNL Audience Manager]-konsult eller kundtjänst så konfigurerar de [!DNL Cross-Account Bucket Permissions] åt dig.
 
 Du behöver bara lägga till ditt konto-ID för [!DNL Amazon S3] i en tillåtelselista för den [!DNL S3]-bucket där du vill ta emot de utgående datafilerna, enligt beskrivningen i [Amazon S3-dokumentationen](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-walkthroughs-managing-access-example2.html). Din [!DNL Audience Manager]-konsult eller kundtjänst kommer att förse dig med ditt [!DNL Amazon S3] konto-ID.
+
+>[!NOTE]
+>
+>På grund av Amazon S3-objektets storleksgräns stöder Audience Manager delningsstorlekar på upp till 1 TB. Om du inte anger någon delad storlek tillämpas 1 TB-gränsen automatiskt.
+
