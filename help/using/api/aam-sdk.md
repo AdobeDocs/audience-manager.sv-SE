@@ -30,5 +30,5 @@ Audience Manager tillhandahåller programutvecklingspaket ([!DNL SDK]) för [!DN
 
 Vi stöder fortfarande Android och iOS 4.x SDK. Information om dessa SDK-kodbibliotek finns i:
 
-* [Android SDK](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
-* [iOS SDK](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
+* [Android SDK](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=sv-SE)
+* [iOS SDK](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=sv-SE)

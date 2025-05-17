@@ -223,7 +223,7 @@ Kontrollera metoderna i din [!DNL SDK]-kod som gör att du kan skicka [!UICONTRO
  </tbody>
 </table>
 
-Se även [Audience Manager-metoder för Android](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html) och [Audience Manager-metoder för iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html).
+Se även [Audience Manager-metoder för Android](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html?lang=sv-SE) och [Audience Manager-metoder för iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html?lang=sv-SE).
 
 >[!MORELIKETHIS]
 >

@@ -97,8 +97,8 @@ Den globala avanmälningen representerar en avanmälan för [!DNL Audience Manag
    <td colname="col1"> <p>Mobila enheter </p> </td> 
    <td colname="col2"> <p>Se inställningarna för avanmälning och sekretess för: </p> <p> 
      <ul id="ul_78042D6D302F4119A2439BF71F228288"> 
-      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html" format="https" scope="external"> Android-enheter </a> </li> 
-      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html" format="https" scope="external"> iOS-enheter </a> </li> 
+      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=sv-SE" format="https" scope="external"> Android-enheter </a> </li> 
+      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html?lang=sv-SE" format="https" scope="external"> iOS-enheter </a> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
