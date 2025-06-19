@@ -8,12 +8,13 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP-adress; STFP IP-adress; FTP-adress
 feature: Administration
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
+source-git-commit: 974f45268d50c486c872137a3aa6d8fc7f691024
 workflow-type: tm+mt
-source-wordcount: '1211'
-ht-degree: 77%
+source-wordcount: '1255'
+ht-degree: 74%
 
 ---
+
 
 # Vanliga frågor om datainsamling och produktintegrering{#data-collection-and-product-integration-faq}
 
@@ -25,7 +26,7 @@ Vanliga frågor och problem som rör datainsamling och integrering.
 
 Traits som registreras via [!UICONTROL Inbound] fylls i av [!UICONTROL Inbound] på samma sätt som de fylls i av [!DNL DCS]. Det finns olika sätt att se var trafiken kommer från [!UICONTROL Inbound]:
 
-* Fjärr-IP ställs in på 68.67.173.18
+* Fjärr-IP anges till 68.67.173.18
 * DomainID ställs in på 5325
 * Region ställs in på 0
 
@@ -190,7 +191,7 @@ Nej, förlita dig inte på [!UICONTROL General Reports] och [!UICONTROL Trend Re
 
 Rapporterna beräknar populationer baserat på oautentiserade profilposter (UUID) i serverdelen när rapporterna skapas.
 
-Vid ett första anrop till [!DNL DCS] länkas deklarerade ID:n *inte* till ett UUID (dvs. det finns ingen [demdex-cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html?lang=sv-SE) på klientsidan). [!DNL DCS] genererar ett UUID slumpmässigt och ställer in en [!DNL demdex]-cookie och skickar den i svarsanropet, men UUID skickas inte till serverdelen.
+Vid ett första anrop till [!DNL DCS] länkas deklarerade ID:n *inte* till ett UUID (dvs. det finns ingen [demdex-cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html) på klientsidan). [!DNL DCS] genererar ett UUID slumpmässigt och ställer in en [!DNL demdex]-cookie och skickar den i svarsanropet, men UUID skickas inte till serverdelen.
 
 >[!NOTE]
 >
@@ -210,6 +211,8 @@ Det tar vanligtvis upp till 24 timmar för en användarprofil att synkroniseras 
 
 **Vad händer med inaktiva Amazon S3-nycklar?**
 
-Adobe förser Audience Manager-kunder med användarnycklar för Audience Manager [!DNL Amazon S3]-bucket. Av säkerhetsskäl inaktiveras nycklarna automatiskt efter 100 dagars inaktivitet.
+Adobe förser Audience Manager-kunder med åtkomstnycklar för [!DNL Amazon S3] bucket. Av säkerhetsskäl inaktiveras dessa åtkomstnycklar automatiskt om de inte används i 100 dagar.
 
-Om du vill återaktivera dina nycklar eller begära nya kontaktar du kundsupport.
+Om dina nycklar är inaktiverade kan du kontakta kundsupport för att återaktivera dem eller begära nya.
+
+Åtkomstnycklar som är inaktiva i 1 000 dagar tas bort permanent tillsammans med Amazon S3 IAM-användarkontot. Om du är kund som returnerar produkten och behöver åtkomst efter denna period, kontakta kundsupport för att återskapa ditt konto och få nya nycklar.
