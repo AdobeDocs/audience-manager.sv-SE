@@ -57,7 +57,7 @@ Dataleverantörerna som listas nedan markeras som **[!UICONTROL suspended]** i A
 * Mobilewalla
 * Navegg
 * Netscape
-* On{er
+* On&lbrace;er
 * PeopleFinders
 * Plunge Digital
 * Resonera
