@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Användarhandbok för Audience Manager
 user-guide-description: Lär dig hur du använder Adobe Audience Manager för att samla in kommersiellt relevant information om webbplatsbesökare och skapa marknadsföringsbara segment. Du kan också hitta information om hur du kan leverera riktad reklam och innehåll till rätt målgrupp.
 feature-set: Audience Manager
-source-git-commit: fa0e5df921550f3c287baa08aedf53cf486d3675
+source-git-commit: a03953af94e98d1aabfc9cb6cd1af82f42080d91
 workflow-type: tm+mt
-source-wordcount: '1863'
-ht-degree: 23%
+source-wordcount: '1866'
+ht-degree: 14%
 
 ---
 
@@ -16,18 +16,18 @@ ht-degree: 23%
 # Användarhandbok för Audience Manager {#user-guide}
 
 + [Audience Manager Guide](aam-home.md)
-+ [Utvecklingsguide till Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html?lang=sv-SE)
++ [Utvecklingsguide till Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
 + Migrera till Web SDK{#migrate-to-web-sdk}
    + [Migrera från taggtillägget Adobe Audience Manager till taggtillägget Web SDK](migrate-to-web-sdk/dil-extension-to-web-sdk.md)
    + [Migrera ditt datainsamlingsbibliotek från AppMeasurement till Web SDK](migrate-to-web-sdk/appmeasurement-to-web-sdk.md)
-+ Översikt {#overview}
++ Översikt{#overview}
    + [Översikt över Audience Manager](overview/aam-overview.md)
    + [Typer av insamlade data](overview/data-types-collected.md)
    + [Datasäkerhet](overview/data-security-and-privacy/data-security.md)
-   + Datasekretess {#data-privacy}
+   + Dataintegritet {#data-privacy}
       + [Översikt över datasekretess](overview/data-security-and-privacy/data-privacy.md)
       + [Förfrågningar om datasekretess](overview/data-security-and-privacy/data-privacy-requests.md)
-      + Referens för datasekretess {#data-privacy-reference}
+      + Referens för dataintegritet {#data-privacy-reference}
          + [Audience Manager Identifiers](overview/data-security-and-privacy/data-privacy-ids.md)
          + [CCPA-ordlista](overview/data-security-and-privacy/aam-ccpa-glossary.md)
          + [GDPR-ordlista](overview/data-security-and-privacy/aam-gdpr-glossary.md)
@@ -38,18 +38,18 @@ ht-degree: 23%
          + [Plugin-program för Audience Manager för IAB TCF](overview/data-security-and-privacy/aam-iab-plugin.md)
    + [Datastyrning](overview/data-security-and-privacy/data-governance.md)
    + [Tillgänglighet i Audience Manager](/help/using/overview/accessibility-in-aam.md)
-+ Funktioner {#features}
++ Funktioner{#features}
    + [Adresserbara målgrupper](features/addressable-audiences.md)
-   + Administrering {#administration}
+   + Administration{#administration}
       + [Audience Manager User Migration to Admin Console](features/administration/admin-console-migration.md)
       + [Administration](features/administration/administration-overview.md)
       + [Redigera dina kontoinställningar](features/administration/edit-account-settings.md)
       + [IP-adressofficering](features/administration/ip-obfuscation.md)
       + [Användningsgränser](features/administration/usage-limits.md)
       + [Rapportera aktivitetsanvändning](features/administration/activity-usage-reporting.md)
-   + Algoritmiska modeller {#algorithmic-models}
+   + Algoritmiska modeller{#algorithmic-models}
       + [Översikt över algoritmiska modeller](features/algorithmic-models/algo-models-overview.md)
-      + Look-alike-modellering {#look-alike-modeling}
+      + Utseendeliknande modellering {#look-alike-modeling}
          + [Understanding Look-Alike modeling](features/algorithmic-models/understanding-models.md)
          + [Skapa en lookalike-modell](features/algorithmic-models/create-model.md)
          + [Look Alike Modeling: Trait Exclusion](features/algorithmic-models/trait-exclusion-algo-models.md)
@@ -57,30 +57,31 @@ ht-degree: 23%
          + [Översikt över prediktiva målgrupper](features/algorithmic-models/predictive-audiences.md)
          + [Komma igång med prediktiva målgrupper](features/algorithmic-models/predictive-audiences-start.md)
          + [Rapportering om prediktiva målgrupper](features/algorithmic-models/predictive-audiences-reporting.md)
-   + Audience Lab {#audience-lab}
+   + Audience Lab{#audience-lab}
       + [Audience Lab - översikt](features/audience-lab/audience-lab.md)
       + [Hantera testgrupper](features/audience-lab/audience-lab-manage-test-groups.md)
       + [Information om testgrupp](features/audience-lab/audience-lab-information-view.md)
       + [Testgruppsrapportering](features/audience-lab/audience-lab-reporting-view.md)
       + [Användningsexempel för Audience Lab](features/audience-lab/audience-lab-use-cases.md)
       + [Avancerade funktioner i Audience Lab](features/audience-lab/audience-lab-advanced.md)
-   + Audience Marketplace {#audience-marketplace}
+   + Audience Marketplace{#audience-marketplace}
       + [Audience Marketplace](features/audience-marketplace/audience-marketplace.md)
-      + Audience Marketplace för dataleverantörer {#audience-marketplace-for-data-providers}
+      + [Audience Marketplace-optimering](features/audience-marketplace/audience-marketplace-optimization.md)
+      + Audience Marketplace for Data Providers{#audience-marketplace-for-data-providers}
          + [Audience Marketplace for Data Providers](features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
          + [Skapa, prissätta och hantera dataflöden](features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md)
          + [Fakturering för datautmatningsleverantörer](features/audience-marketplace/marketplace-data-providers/marketplace-billing-report.md)
-      + Audience Marketplace för dataköpare {#audience-marketplace-for-data-buyers}
+      + Audience Marketplace for Data Buyers{#audience-marketplace-for-data-buyers}
          + [Audience Marketplace for Data Buyers](features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)
          + [Hantera abonnemang på dataflöden](features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md)
          + [Fakturering för köpare av dataflöden](features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
       + [Privata datafeeds](features/audience-marketplace/marketplace-private-feeds.md)
    + [Kunddataflöden](features/cdf-files.md)
-   + Data Explorer {#data-explorer}
+   + Data Explorer{#data-explorer}
       + [Data Explorer - Översikt, fördelar och användningsexempel](features/data-explorer/data-explorer-overview.md)
       + [Signaler](features/data-explorer/data-explorer-understanding-signals.md)
       + [Kontrollpanel för signaler](features/data-explorer/data-explorer-signals-dashboard.md)
-      + Signalsökning {#signals-search}
+      + Signalsökning{#signals-search}
          + [Signalsökning - översikt](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
          + [Söksignaler efter nyckelvärdepar](features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)
          + [Sök efter signaler efter filter](features/data-explorer/data-explorer-signals-search/data-explorer-search-filters.md)
@@ -98,12 +99,12 @@ ht-degree: 23%
       + [Globala datakällor](features/global-data-sources.md)
    + [Deklarerade ID:n](features/declared-ids.md)
    + [Härledda signaler](features/derived-signals.md)
-   + Destinationer {#destinations}
+   + Destinationer{#destinations}
       + [Översikt över destinationer](features/destinations/destinations.md)
       + [Startsida för mål](features/destinations/destinations-home.md)
-      + Adobe Experience Cloud-destinationer {#experience-cloud-destinations}
+      + Adobe Experience Cloud Destinations{#experience-cloud-destinations}
          + [Konfigurera ett analysmål](features/destinations/create-analytics-destination.md)
-      + Personbaserade destinationer {#people-based}
+      + Personbaserade mål {#people-based}
          + [Översikt och användningsexempel](features/destinations/people-based-destinations-overview.md)
          + [Förutsättningar och överväganden](features/destinations/people-based-destinations-prerequisites.md)
          + Implementeringshandbok {#implementation-guide}
@@ -113,7 +114,7 @@ ht-degree: 23%
             + [Arbetsflöde C - Personalization baserat på autentiserad aktivitet i kombination med offlinedata](features/destinations/people-based-destinations-workflow-authenticated.md)
          + [Autentisering med personbaserade plattformar](features/destinations/people-based-destinations-authentication.md)
          + [Delningsbara målgrupper](/help/using/features/destinations/people-based-destinations-reporting.md)
-      + Enhetsbaserade destinationer (server-till-server) {#device-based}
+      + Enhetsbaserade mål (server-till-server) {#device-based}
          + [Lägg till nya enhetsbaserade mål](features/destinations/add-device-based-destinations.md)
          + [Lista över Audience Manager enhetsbaserade destinationer](/help/using/features/destinations/device-based-destinations-list.md)
          + [Lägg till eller redigera segment för server-till-server-mål](features/destinations/add-edit-segments.md)
@@ -129,7 +130,7 @@ ht-degree: 23%
          + [Målmakron definierade](features/destinations/destination-macros.md)
          + [Standardpar och serienyckelvärdepar](features/destinations/key-value-pairs.md)
          + [Lägg till dataexportkontroller till ett mål](/help/using/features/destinations/add-data-export-labels.md)
-   + Regler för profilsammanslagning {#profile-merge-rules}
+   + Regler för profilsammanslagning{#profile-merge-rules}
       + [Regler för profilsammanslagning - översikt](features/profile-merge-rules/merge-rules-overview.md)
       + [Komma igång med profilkopplingsregler](features/profile-merge-rules/merge-rules-start.md)
       + [Kontrollpanel för regler för profilsammanslagning](features/profile-merge-rules/merge-rules-dashboard.md)
@@ -140,7 +141,7 @@ ht-degree: 23%
       + [Rapportera mått för profilsammanfogningsregler](features/profile-merge-rules/profile-link-metrics.md)
       + [Regler för profilsammanslagning och icke-segmenteringsprocesser för enheter](features/profile-merge-rules/merge-rule-unsegment.md)
       + [Direkt undertryckning av olika enheter](features/profile-merge-rules/instant-cross-device-suppression.md)
-   + Segment {#segments}
+   + Segment{#segments}
       + [Segment: Syfte, Disposition och Regler](features/segments/segments-purpose.md)
       + [Vy för segmentlista](features/segments/segments-dashboard.md)
       + [Segmentsammanfattningsvy](features/segments/segment-summary-view.md)
@@ -151,15 +152,15 @@ ht-degree: 23%
       + [Kodsyntax i segmentuttrycksredigeraren](features/segments/segment-code-syntax.md)
       + [Trait and Segment Population Data in Segment Builder](features/segments/segment-builder-data.md)
       + [Trait Recommendations](features/segments/trait-recommendations.md)
-      + [Referens för kvalificering av traits och segment](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html?lang=sv-SE)
-   + Traits {#traits}
+      + [Referens för kvalificering av traits och segment](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html)
+   + Traits{#traits}
       + [Traits Overview](/help/using/features/traits/traits-overview.md)
       + [Anpassa detaljsida](features/traits/trait-details-page.md)
       + [Instrumentpanel för egenskaper](features/traits/trait-dashboard.md)
       + [Aktiva målgrupper och Source Synced Traits (datakunskaper)](features/traits/client-activity-synced-audience-traits.md)
       + [Mappegenskaper: Om](features/traits/about-folder-traits.md)
       + [Hantera mappegenskaper](features/traits/manage-folder-traits.md)
-      + Trait Builder {#trait-builder}
+      + Trait Builder{#trait-builder}
          + [Om Trait Builder](features/traits/about-trait-builder.md)
          + [Skapa regelbaserade eller introduktionskassor](features/traits/create-onboarded-rule-based-traits.md)
          + [Hantering av trait-regler](features/traits/manage-trait-rules.md)
@@ -178,14 +179,14 @@ ht-degree: 23%
       + [Exempeluttryck med booleska operatorer och jämförelseoperatorer](features/traits/trait-expression-samples.md)
       + [Referens för egenskaper för trait och segment](features/traits/trait-and-segment-qualification-reference.md)
    + [Visningsprogram för besökarprofiler](features/visitor-profile-viewer.md)
-+ Rapporter {#reporting}
++ Rapportering{#reporting}
    + [Översikt över rapporter](reporting/reports-overview.md)
    + [Kontrollpanel för rapporter](reporting/reports-dashboard.md)
    + [Allmänna rapporter](reporting/general-reports.md)
    + [Trendrapporter](reporting/trend-reports.md)
-   + Audience Optimization-rapporter {#audience-optimization-reports}
+   + Audience Optimization Reports {#audience-optimization-reports}
       + [Audience Optimization Reports](reporting/audience-optimization-reports/audience-optimization-reports.md)
-      + Audience Optimization för annonsörer {#audience-optimization-advertisers}
+      + Audience Optimization for Advertisers {#audience-optimization-advertisers}
          + [Audience Optimization for Advertisers - översikt](reporting/audience-optimization-reports/aor-advertisers/aor-advertisers.md)
          + [Importera Google Campaign Manager-datafiler till Audience Manager](reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
          + [Resultatrapport för segment](reporting/audience-optimization-reports/aor-advertisers/segment-performance.md)
@@ -194,7 +195,7 @@ ht-degree: 23%
          + [Unikt användarområde](reporting/audience-optimization-reports/aor-advertisers/unique-user-reach.md)
          + [Rapporterade konverteringsegenskaper](reporting/audience-optimization-reports/aor-advertisers/reported-conversion-traits.md)
          + [Konvertering över flera kanaler](reporting/audience-optimization-reports/aor-advertisers/cross-channel-conversion-reporting.md)
-      + Audience Optimization för utgivare {#audience-optimization-publishers}
+      + Audience Optimization for Publishers {#audience-optimization-publishers}
          + [Audience Optimization for Publishers - översikt](reporting/audience-optimization-reports/aor-publishers/aor-publishers.md)
          + [Importera Google Ad Manager-datafiler (tidigare DFP) till Audience Manager](reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
          + [Resultatrapport för segment](reporting/audience-optimization-reports/aor-publishers/publisher-segment-performance.md)
@@ -203,7 +204,7 @@ ht-degree: 23%
          + [Annonsväxling](reporting/audience-optimization-reports/aor-publishers/publisher-ad-unit-overlap.md)
          + [Överlappning mellan segment och annonsenhet](reporting/audience-optimization-reports/aor-publishers/publisher-segment-ad-unit-overlap.md)
          + [Unikt användarområde](reporting/audience-optimization-reports/aor-publishers/publisher-unique-reach.md)
-      + Data- och metadatafiler för Audience Optimization-rapporter och verkställbara loggfiler {#data-and-metadata-files}
+      + Data- och metadatafiler för Audience Optimization-rapporter och körbara loggfiler {#data-and-metadata-files}
          + [Loggdata och metadatafiler](reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
          + [Datafiler för Audience Optimization-rapporter och körbara loggfiler](reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
          + [Översikt och mappningar för metadatafiler](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
@@ -211,7 +212,7 @@ ht-degree: 23%
          + [Innehållsformat för metadata](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md)
          + [Leveransmetoder för metadatafiler](reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)
       + [Rapport över variationer för daglig trait](reporting/audience-optimization-reports/daily-trait-variation-report.md)
-   + Interaktiva och överlappande rapporter {#interactive-and-overlap-reports}
+   + Interaktiva rapporter och överlappande rapporter {#interactive-and-overlap-reports}
       + [Översikt över interaktiva rapporter och överlappningsrapporter](reporting/dynamic-reports/dynamic-reports.md)
       + [Överlappningsrapport för spår till spår](reporting/dynamic-reports/trait-trait-overlap-report.md)
       + [Överlappningsrapport för segment-till-trait](reporting/dynamic-reports/segment-trait-overlap-report.md)
@@ -226,21 +227,21 @@ ht-degree: 23%
    + [Historik för utgående filer](reporting/outbound-history-report.md)
    + [Räkna unika användare i överlappning och allmänna rapporter](reporting/unique-user-counts.md)
    + [Datainsamling och felfrekvens i utvalda Audience Manager-rapporter](reporting/report-sampling.md)
-+ API och SDK-kod {#api-and-sdk-code}
++ API och SDK Code{#api-and-sdk-code}
    + [API och SDK Code Overview](api/api.md)
    + [Migrering av Audience Manager API-kod](api/api-swagger-migration.md)
-   + API-metoder och -kod för datainsamlingsservrar (DCS) {#dcs}
+   + API-metoder och -kod för Data Collection Server (DCS){#dcs}
       + [DCS API-metoder och kod](api/dcs-intro/dcs-intro.md)
-      + DCS-händelseanrop {#dcs-event-calls}
+      + DCS-händelseanrop{#dcs-event-calls}
          + [DCS Event Call API:er](api/dcs-intro/dcs-event-calls/dcs-event-calls.md)
          + [Skicka data till DCS](api/dcs-intro/dcs-event-calls/dcs-url-send.md)
          + [Ta emot data från DCS](api/dcs-intro/dcs-event-calls/dcs-url-receive.md)
-      + DCS API:er {#dcs-apis}
+      + DCS API:er{#dcs-apis}
          + [DCS API:er för överföring av data från server till server](api/dcs-intro/dcs-s2s/dcs-s2s.md)
          + [Hämta användar-ID och regioner från ett DCS-svar](api/dcs-intro/dcs-s2s/dcs-aam-ids.md)
          + [Hämta användar-ID:n och regioner via Adobe Experience Platform identitetstjänst](api/dcs-intro/dcs-s2s/dcs-mcid-ids.md)
          + [Göra DCS API-anrop från server till server](api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)
-      + API-referens för DCS {#dcs-api-reference}
+      + API-referens för DCS{#dcs-api-reference}
          + [API-referens för DCS - översikt](api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)
          + [DCS API-metoder](api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
          + [Felkoder, meddelanden och exempel för DCS](api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
@@ -249,14 +250,14 @@ ht-degree: 23%
          + [Formatera nyckelvärdepar i DCS-anrop](api/dcs-intro/dcs-api-reference/dcs-key-format.md)
          + [Ansiktsvillkor och felhantering](api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
          + [Attribut som stöds för DCS API-anrop](api/dcs-intro/dcs-api-reference/dcs-keys.md)
-   + REST API:er {#rest-apis}
+   + REST API:er{#rest-apis}
       + [REST API:er - översikt](api/rest-api-main/rest-api-main.md)
       + [Kom igång med REST API:er](api/rest-api-main/aam-api-getting-started.md)
       + [Algoritmiska API-metoder](api/rest-api-main/aam-api-algo-methods.md)
       + [Data Integration Library API-metoder](api/rest-api-main/aam-api-dil-methods.md)
       + [API-metoder för data-Source](api/rest-api-main/aam-api-data-sources.md)
       + [API-metoder för härledda signaler](api/rest-api-main/aam-api-derived-signals.md)
-      + API-metoder för destinationer {#destination-api-methods}
+      + Mål-API-metoder{#destination-api-methods}
          + [Översikt över mål-API-metoder](api/rest-api-main/aam-api-destinations/aam-api-destinations.md)
          + [Skapa destinationer](api/rest-api-main/aam-api-destinations/aam-api-create-destinations.md)
          + [Mappa segment till ett mål](api/rest-api-main/aam-api-destinations/aam-api-map-segments.md)
@@ -268,15 +269,15 @@ ht-degree: 23%
       + [Metoder för taxonomiska API](api/rest-api-main/aam-api-taxonomy.md)
       + [Metoder för Trait API](api/rest-api-main/api-traits.md)
       + [Trait Type-metoder](api/rest-api-main/aam-api-trait-type.md)
-      + API-metoder för användar-, grupp- och behörighetshantering {#user-group-permissions}
+      + API-metoder för användar-, grupp- och behörighetshantering{#user-group-permissions}
          + [API-metoder för användarhantering](api/rest-api-main/aam-api-user-group-permission/aam-api-user.md)
          + [API-metoder för grupphantering](api/rest-api-main/aam-api-user-group-permission/aam-api-group.md)
          + [API-metoder för behörighetshantering](api/rest-api-main/aam-api-user-group-permission/aam-api-permissions.md)
       + [API-metoder för DCS-region](api/rest-api-main/aam-api-dcs-regions.md)
    + [SDK Code](api/aam-sdk.md)
-+ Data Integration Library (DIL) API {#dil-api}
++ Data Integration Library (DIL) API{#dil-api}
    + [Förstå Data Integration Library (DIL)](dil/dil-overview.md)
-   + DIL-metoder på klassnivå {#class-level-dil-methods}
+   + DIL-metoder på klassnivå{#class-level-dil-methods}
       + [Komma igång med DIL API:er på klassnivå](dil/dil-class-overview/dil-start.md)
       + [Skapa DIL](dil/dil-class-overview/dil-create.md)
       + [getDil](dil/dil-class-overview/dil-get-instance.md)
@@ -288,7 +289,7 @@ ht-degree: 23%
    + [DIL Användningsexempel och kodexempel](dil/dil-use-cases.md)
    + [Flash DIL](dil/dil-flash.md)
    + [Versionsinformation för DIL](/help/using/dil/dil-release-notes.md)
-+ Handböcker för implementering och integrering {#implementation-integration-guides}
++ Handböcker för implementering och integrering{#implementation-integration-guides}
    + [Handböcker för implementering och integrering](integration/implementation-and-integration.md)
    + [Metoder för dataintegrering](integration/data-integration-methods.md)
    + Integrera Google Ad Manager med Google Publisher Tags (GPT){#integrate-dfp-using-gpt}
@@ -297,26 +298,26 @@ ht-degree: 23%
       + [Skapa ett GPT-mål](integration/gpt-aam-destination/gpt-aam-create-destination.md)
       + [Ändra GPT-API-anropet setTargeting](integration/gpt-aam-destination/gpt-aam-modify-api.md)
       + [Audience Manager Code for Google Publisher-taggar](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
-   + Integrering med tredjepartsdestinationer {#integrating-third-party}
+   + Integrera med tredjepartsmål {#integrating-third-party}
       + [Integrering med Facebook WCA](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
       + [OAS som Audience Manager-mål](integration/integrating-third-party/open-ad-server-destination.md)
       + [OpenX som Audience Manager-mål](integration/integrating-third-party/openx-destination.md)
       + [Google Ad Manager (tidigare DFP) som Audience Manager-mål](integration/aam-dfp.md)
       + [Skicka segment till en Google AdWords Remarketing-lista](integration/integrating-third-party/rlsa-integration.md)
    + [Implementera Audience Manager](integration/implement-audience-manager.md)
-   + Integrering av mediedata {#media-data-integration}
+   + Integrering av mediedata{#media-data-integration}
       + [Översikt över integrering av mediadata](integration/media-data-integration/media-data-integration.md)
       + [Loggfiler som kan användas](integration/media-data-integration/actionable-log-files.md)
       + [Samla in data för kampanjexponering via pixelanrop](integration/media-data-integration/impression-data-pixels.md)
       + [Hämta kampanjklicksdata via pixelanrop](integration/media-data-integration/click-data-pixels.md)
-   + Ta emot målgruppsdata {#receiving-audience-data}
+   + Tar emot målgruppsdata{#receiving-audience-data}
       + [Få en översikt över målgruppsdata](integration/receiving-audience-data/receiving-audience-data-overview.md)
       + [ID-synkronisering för utgående dataöverföringar](integration/receiving-audience-data/id-sync-outbound.md)
-      + Utgående dataöverföringar i realtid {#real-time-outbound-transfers}
+      + Utgående dataöverföringar i realtid{#real-time-outbound-transfers}
          + [Utgående dataöverföringar i realtid](integration/receiving-audience-data/real-time-outbound-transfers/real-time-outbound-transfers.md)
          + [Digitalt signerade HTTP-begäranden](integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)
          + [OAuth 2.0-integrering för utgående överföringar i realtid](integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)
-      + Satsvisa utgående dataöverföringar {#batch-outbound-data-transfers}
+      + Batchutgående dataöverföringar{#batch-outbound-data-transfers}
          + [Översikt över utgående dataöverföringar i grupp](integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)
          + [Konfigurera integrering av batchdataöverföring](integration/receiving-audience-data/batch-outbound-transfers/batch-server-configuration.md)
          + [Namn på utgående datafil: Syntax och exempel](integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
@@ -324,13 +325,13 @@ ht-degree: 23%
          + [Utgående mallmakron](integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)
          + [Exempel på utgående makro](integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)
          + [Utnyttja Amazon S3-behörigheter för kontoöverskridande paket för utgående filer](integration/receiving-audience-data/batch-outbound-transfers/authorize-s3-cross-bucket.md)
-   + Skicka målgruppsdata {#sending-audience-data}
+   + Skicka målgruppsdata{#sending-audience-data}
       + [Skicka målgruppsdata](integration/sending-audience-data/send-audience-data.md)
       + Inkommande dataintegrering i realtid {#real-time-inbound-data-integration}
          + [Tekniska specifikationer för inkommande dataöverföringar i realtid](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
          + [Pixelbaserade dataöverföringar](integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)
          + [Ingående datainmatning i realtid](integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)
-      + Satsvis dataöverföringsprocess {#batch-data-transfer-process}
+      + Batchdataöverföringsprocess{#batch-data-transfer-process}
          + [Beskriver batchdataöverföringsprocessen](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
          + [Skicka batchdata till Audience Manager - översikt](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)
          + [ID-synkronisering för inkommande dataöverföringar](integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)
@@ -348,16 +349,16 @@ ht-degree: 23%
    + Integrering med andra Experience Cloud-program {#integration-other-solutions}
       + [Integrera Audience Manager med Adobe Target](integration/integration-other-solutions/aam-target-integration.md)
       + [Så här vidarebefordrar du data från Adobe Analytics till Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [Publicera ett Adobe Analytics-segment till Experience Cloud (öppnar Adobe Analytics-dokumentation)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html?lang=sv-SE)
-      + [Integrera Audience Manager med Adobe Campaign (öppnar Adobe Campaign-dokumentation)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html?lang=sv-SE)
-+ Referens {#reference}
+      + [Publicera ett Adobe Analytics-segment till Experience Cloud (öppnar Adobe Analytics-dokumentation)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
+      + [Integrera Audience Manager med Adobe Campaign (öppnar Adobe Campaign-dokumentation)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
++ Referens{#reference}
    + [Referensöversikt](reference/reference.md)
    + [Amazon S3: Om](reference/amazon-s3.md)
    + [Användningsexempel för annonsörer](reference/advertiser-use-cases.md)
    + [Användningsexempel för utgivare](reference/publisher-use-cases.md)
    + [Beta Environment](reference/beta-environment.md)
    + [Booleska uttryck i Trait och Segment Builder](reference/boolean-expressions-tsb.md)
-   + Verktyg för satsvis hantering {#bulk-management-tools}
+   + Masshanteringsverktyg{#bulk-management-tools}
       + [Komma igång med masshantering](reference/bulk-management-tools/bulk-management-intro.md)
       + [Massbegäranden](reference/bulk-management-tools/bulk-requests.md)
       + [Massuppdateringar](reference/bulk-management-tools/bulk-updates.md)
@@ -374,7 +375,7 @@ ht-degree: 23%
    + [Lösenordskrav, låsta konton och glömda lösenord](reference/password-requirements.md)
    + [Signaler, traits och segment](reference/signal-trait-segment.md)
    + [Webbläsare som stöds](reference/supported-browsers.md)
-   + Systemkomponenter {#system-components}
+   + Systemkomponenter{#system-components}
       + [Översikt över systemkomponenter](reference/system-components/components-overview.md)
       + [Viktiga komponenter i Audience Manager System](reference/system-components/components-stack.md)
       + [Dataåtgärdskomponenter](reference/system-components/components-data-action.md)
@@ -388,7 +389,7 @@ ht-degree: 23%
    + [Borttagning av TLS 1.0 och 1.1](reference/tls-support.md)
    + [Förstå anrop till Demdex-domänen](reference/demdex-calls.md)
    + [Autentiseringstillstånd för besökare i Audience Manager](reference/visitor-authentication-states.md)
-+ Vanliga frågor och svar {#faqs}
++ Vanliga frågor{#faqs}
    + [Audience Manager FAQ - översikt](faq/faq-overview.md)
    + [Vanliga frågor om API](faq/faq-api.md)
    + [Vanliga frågor om Audience Lab](faq/faq-audience-lab.md)
@@ -403,18 +404,18 @@ ht-degree: 23%
    + [Vanliga frågor om Predictive Audiences](faq/faq-predictive-audiences.md)
    + [Vanliga frågor om målgruppsanpassning](faq/faq-targeting.md)
    + [Vanliga frågor om rapportering](faq/faq-reporting.md)
-+ Hjälp och juridik {#help-and-legal}
++ Hjälp och juridik{#help-and-legal}
    + [Översikt](/help/using/help-legal/help-legal-overview.md)
    + [Om du har problem](/help/using/help-legal/help-problem.md)
    + [Kontaktuppgifter och juridisk information](/help/using/help-legal/help-legal-contact.md)
-+ De vanligaste supportfrågorna {#top-support-issues}
++ De vanligaste frågorna för kundsupport{#top-support-issues}
    + [Översikt](/help/using/support-issues/support-issues-overview.md)
    + [Varför sjönk mina registrerade trait-populationer till 0 runt den 15 oktober?](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
    + [Varför visas inte mina traits eller segment på sidan Overlap Reports?](/help/using/support-issues/why-do-my-traits-or-segments-not-show-up-in-the-overlap-reports.md)
    + [Varför kan användare med skrivskydd skapa, redigera eller ta bort traits och segment?](/help/using/support-issues/aam-read-only-users-create-delete-traits-segments.md)
    + [Vi är inte Audience Manager-kund, men vi kan se Javascript-anropen för Audience Manager på vår webbplats](/help/using/support-issues/not-using-aam-but-seeing-aam-javascript.md)
    + [Ska jag visa mappade segment för Audience Manager Audience Lab på sidan med målinformation?](/help/using/support-issues/should-i-see-audience-lab-mapped-segments-on-the-destination-page.md)
-+ Dokumentationsuppdateringar {#documentation-updates}
++ Dokumentationsuppdateringar{#documentation-updates}
    + [Dokumentationsuppdateringar för 2021](docs-updates/docs-2021.md)
    + [Dokumentationsuppdateringar för 2020](docs-updates/docs-2020.md)
    + [Dokumentationsuppdateringar för 2019](docs-updates/docs-2019.md)
