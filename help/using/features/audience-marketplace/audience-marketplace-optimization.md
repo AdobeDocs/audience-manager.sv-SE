@@ -5,13 +5,13 @@ title: Audience Marketplace-optimering
 feature: Audience Marketplace
 hide: true
 hidefromtoc: true
-source-git-commit: a03953af94e98d1aabfc9cb6cd1af82f42080d91
+exl-id: 92d4d043-3cc1-4a59-926f-c29709d9bc63
+source-git-commit: e9b8f102b5a123ba4a9f6e9c9a29e331d803d293
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
-
 
 # Audience Marketplace-optimering {#audience-marketplace-optimization}
 
@@ -19,7 +19,7 @@ Adobe förbättrar Audience Marketplace för att förbättra synligheten för da
 
 Under den här processen tar vi bort dataleverantörer som inte används aktivt. Optimeringen tar också bort egenskaper som tillhandahålls av dessa dataleverantörer. Processen har utformats för att effektivisera marknaden och förbättra prestandan för alla användare.
 
-**Tidslinje:** Dataleverantörer tas bort i slutet av juli 2025.
+**Tidslinje:** Dataleverantörer tas bort under augusti 2025.
 
 ## Vad förändras? {#what-changes}
 
@@ -57,7 +57,7 @@ Dataleverantörerna som listas nedan markeras som **[!UICONTROL suspended]** i A
 * Mobilewalla
 * Navegg
 * Netscape
-* On&lbrace;er
+* On{er
 * PeopleFinders
 * Plunge Digital
 * Resonera
@@ -121,4 +121,4 @@ Om du har en stark affärsidé för att behålla en viss dataleverantör kan du 
 
 ### När träder ändringarna i kraft?
 
-Dataleverantörer som valts ut för borttagning tas bort i slutet av juli 2025.
+Dataleverantörer som valts ut för borttagning tas bort under augusti 2025.
