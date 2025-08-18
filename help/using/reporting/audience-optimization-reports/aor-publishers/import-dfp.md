@@ -82,7 +82,7 @@ Du måste ange [!DNL Audience Manager]-ID:t själv och kan arbeta med [!DNL Audi
   </tr> 
   <tr> 
    <td colname="col1"> <p>Steg 6 </p> </td> 
-   <td colname="col2"> <p>Kompilera förutsättningarna och öppna en supportanmälan genom att följa instruktionerna som beskrivs <a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html">här</a> för att starta loggningsprocessen. </p> </td> 
+   <td colname="col2"> <p>Kompilera förutsättningarna och öppna en supportanmälan genom att följa instruktionerna som beskrivs <a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=sv-SE">här</a> för att starta loggningsprocessen. </p> </td> 
    <td colname="col3"> <p>Du, eller <span class="keyword"> Audience Manager</span> Consulting åt dig </p> </td> 
   </tr> 
  </tbody> 

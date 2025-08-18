@@ -50,7 +50,7 @@ Innan du kan använda [!UICONTROL People-Based Destinations] för att skicka din
 
 Mer information om hur du redigerar användarbehörigheter för [!DNL LinkedIn Campaign Manager] finns i [Lägg till, redigera och ta bort användarbehörigheter för Advertising-konton](https://www.linkedin.com/help/lms/answer/5753) i dokumentationen för LinkedIn.
 
-Se [Förstå och konfigurera LinkedIn People-Based Destination](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) om du vill ha videoinstruktioner.
+Se [Förstå och konfigurera LinkedIn People-Based Destination](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html?lang=sv-SE) om du vill ha videoinstruktioner.
 
 ### [!DNL Google Customer Match] {#gcm}
 
@@ -99,7 +99,7 @@ Titta på videon nedan för att förstå hashkraven för [!UICONTROL People-Base
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud ger dig möjlighet att hash-koda kund-ID:n via [!DNL Adobe Experience Platform Identity Service (ECID)]. Se [SHA256 Hash-stöd för setCustomerID:n](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html) för mer information om hur du använder ECID för att hash-koda kund-ID:n.
+Adobe Experience Cloud ger dig möjlighet att hash-koda kund-ID:n via [!DNL Adobe Experience Platform Identity Service (ECID)]. Se [SHA256 Hash-stöd för setCustomerID:n](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html?lang=sv-SE) för mer information om hur du använder ECID för att hash-koda kund-ID:n.
 
 ## Hämtar användarbehörighet {#obtaining-user-permission}
 

@@ -150,7 +150,7 @@ visitor.setCustomerIDs({
      "authState":Visitor.AuthState.AUTHENTICATED
 ```
 
-Mer information finns i [Skapa enhetsövergripande data för Source](#create-data-source) och [Kund-ID:n och autentiseringstillstånd](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html).
+Mer information finns i [Skapa enhetsövergripande data för Source](#create-data-source) och [Kund-ID:n och autentiseringstillstånd](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=sv-SE).
 
 ### Konfigurera funktionen `DIL.create`
 
@@ -165,7 +165,7 @@ var vDil = DIL.create({
 });
 ```
 
-I namnutrymmets nyckelvärdepar är variabeln `*`MCORG`*` ditt [!DNL Experience Cloud] Organization ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration]-avsnittet på [!DNL Experience Cloud]-instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: bastjänster](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
+I namnutrymmets nyckelvärdepar är variabeln `*`MCORG`*` ditt [!DNL Experience Cloud] Organization ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration]-avsnittet på [!DNL Experience Cloud]-instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: bastjänster](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=sv-SE).
 
 ### Konfigurera SDK:er
 
@@ -223,7 +223,7 @@ Kontrollera metoderna i din [!DNL SDK]-kod som gör att du kan skicka [!UICONTRO
  </tbody>
 </table>
 
-Se även [Audience Manager-metoder för Android](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html) och [Audience Manager-metoder för iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html).
+Se även [Audience Manager-metoder för Android](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html?lang=sv-SE) och [Audience Manager-metoder för iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html?lang=sv-SE).
 
 >[!MORELIKETHIS]
 >

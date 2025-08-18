@@ -21,15 +21,15 @@ ht-degree: 1%
 >
 >Från och med juli 2023 har Adobe upphört med utvecklingen av tillägget [!DNL Data Integration Library (DIL)] och [!DNL DIL].
 >
->Befintliga kunder kan fortsätta använda sin [!DNL DIL]-implementering. Adobe kommer dock inte att utveckla [!DNL DIL] efter den här punkten. Kunder uppmuntras att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) för sin långsiktiga datainsamlingsstrategi.
+>Befintliga kunder kan fortsätta använda sin [!DNL DIL]-implementering. Adobe kommer dock inte att utveckla [!DNL DIL] efter den här punkten. Kunder uppmuntras att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE) för sin långsiktiga datainsamlingsstrategi.
 >
->Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) i stället.
+>Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE) i stället.
 
 Översikt, Komma igång och kodmetoder som är tillgängliga i kodbiblioteket [!DNL Audience Manager DIL].
 
 >[!IMPORTANT]
 >
->Från och med version 8.0 (släppt augusti 2018) är [!UICONTROL DIL] beroende av [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html), version 3.3 eller senare. Den förlitar sig på [!DNL ID Service] för att utlösa ID-synkroniseringar och URL-mål. Ett fel inträffar om [!DNL ID Service] saknas, är gammal eller inte har konfigurerats.
+>Från och med version 8.0 (släppt augusti 2018) är [!UICONTROL DIL] beroende av [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE), version 3.3 eller senare. Den förlitar sig på [!DNL ID Service] för att utlösa ID-synkroniseringar och URL-mål. Ett fel inträffar om [!DNL ID Service] saknas, är gammal eller inte har konfigurerats.
 >
 >Vi rekommenderar att du använder [!DNL Adobe Experience Platform Tags] för att implementera och hantera dina [!DNL DIL]- och [!DNL Adobe Experience Platform Identity Service]-bibliotek.
 
@@ -40,16 +40,16 @@ Du kan även hämta de senaste Experience Cloud- och [!DNL DIL]-versionerna frå
 
 ## DIL syfte {#purpose-dil}
 
-[!UICONTROL DIL] är ett API-bibliotek. Du kan tänka dig det som en samling hjälpkod för [!DNL Adobe Audience Manager]. Det är inte nödvändigt att använda [!DNL Audience Manager], men metoderna och funktionerna i [!UICONTROL DIL] innebär att du inte behöver utveckla din egen kod för att skicka data till [!DNL Audience Manager]. Dessutom skiljer sig [!UICONTROL DIL] från API:t som tillhandahålls av [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html). Tjänsten är utformad för att hantera besökaridentitet över olika [!DNL Experience Cloud]-lösningar. [!UICONTROL DIL] är däremot utformat för att:
+[!UICONTROL DIL] är ett API-bibliotek. Du kan tänka dig det som en samling hjälpkod för [!DNL Adobe Audience Manager]. Det är inte nödvändigt att använda [!DNL Audience Manager], men metoderna och funktionerna i [!UICONTROL DIL] innebär att du inte behöver utveckla din egen kod för att skicka data till [!DNL Audience Manager]. Dessutom skiljer sig [!UICONTROL DIL] från API:t som tillhandahålls av [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE). Tjänsten är utformad för att hantera besökaridentitet över olika [!DNL Experience Cloud]-lösningar. [!UICONTROL DIL] är däremot utformat för att:
 
 * Gör händelseanrop och skicka data till [datainsamlingsservern](../reference/system-components/components-data-collection.md).
 * Skicka data till [mål](../features/destinations/destinations.md).
 
 ## Hämta och implementera DIL Code {#get-implement-dil-code}
 
-Koden [!UICONTROL DIL] kan hämtas **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Observera att från och med version 8.0 (släppt augusti 2018) har [!UICONTROL DIL] ett svårt beroende av [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html), version 3.3 eller senare. Den förlitar sig på [!DNL ID Service] för att utlösa ID-synkroniseringar och [!DNL URL destinations]. Ett fel inträffar om [!DNL ID Service] saknas, är gammal eller inte har konfigurerats.
+Koden [!UICONTROL DIL] kan hämtas **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Observera att från och med version 8.0 (släppt augusti 2018) har [!UICONTROL DIL] ett svårt beroende av [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE), version 3.3 eller senare. Den förlitar sig på [!DNL ID Service] för att utlösa ID-synkroniseringar och [!DNL URL destinations]. Ett fel inträffar om [!DNL ID Service] saknas, är gammal eller inte har konfigurerats.
 
-I stället för att arbeta med [!UICONTROL DIL] och konfigurera [!DNL Audience Manager] manuellt rekommenderar vi att du använder [Adobe Experience Platform-taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) i stället. [!DNL Adobe Experience Platform Tags] rekommenderas som implementeringsverktyg eftersom det förenklar koddistribution, placering och versionshantering. Läs mer om [Audience Manager-tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html) i [!DNL Adobe Experience Platform Tags].
+I stället för att arbeta med [!UICONTROL DIL] och konfigurera [!DNL Audience Manager] manuellt rekommenderar vi att du använder [Adobe Experience Platform-taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv-SE) i stället. [!DNL Adobe Experience Platform Tags] rekommenderas som implementeringsverktyg eftersom det förenklar koddistribution, placering och versionshantering. Läs mer om [Audience Manager-tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html?lang=sv-SE) i [!DNL Adobe Experience Platform Tags].
 
 ## Exempel på samtal {#sample-code}
 

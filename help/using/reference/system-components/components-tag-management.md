@@ -38,7 +38,7 @@ Klientportalen är det primära användargränssnittet för tagg- och datahanter
 
 ## DIL/TIM-behållare {#dil-tim}
 
-Behållaren [!UICONTROL DIL] hjälper till att distribuera [!DNL Audience Manager]-datainsamlingskod till din webbplats. [!UICONTROL TIM] är den inaktuella hanteraren för tagginfogning. Den används inte längre av [!DNL Audience Manager]. I stället använder du tillägget [!DNL Audience Manager] i [Adobe Experience Platform Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html) för att konfigurera och generera behållarkod som du placerar på sidor i lagret.
+Behållaren [!UICONTROL DIL] hjälper till att distribuera [!DNL Audience Manager]-datainsamlingskod till din webbplats. [!UICONTROL TIM] är den inaktuella hanteraren för tagginfogning. Den används inte längre av [!DNL Audience Manager]. I stället använder du tillägget [!DNL Audience Manager] i [Adobe Experience Platform Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html?lang=sv-SE) för att konfigurera och generera behållarkod som du placerar på sidor i lagret.
 
 ## Data Integration Library (DIL) {#dil}
 

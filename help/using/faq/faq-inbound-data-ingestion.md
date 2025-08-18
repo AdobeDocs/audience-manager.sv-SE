@@ -60,8 +60,8 @@ Se [Filkomprimering för inkommande dataöverföringsfiler](../integration/sendi
 
 Ja. Så länge du använder [!UICONTROL cross-device data source] för att lagra de CRM-data som du överför lagrar Audience Manager alltid dessa data. Efter de [!UICONTROL Profile Merge Rules] förbättringarna som Audience Manager lanserade i oktober 2019 och som gör att endast offlineanvändning kan användas kan du överföra och vidta åtgärder för data utan att distribuera Audience Manager-kod till produktion alls. Se:
 
-* [Översikt över förbättrade regler för profilsammanslagning](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
-* [!UICONTROL People-based Destinations] - [Personalization baserad på data som bara är offline](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
+* [Översikt över förbättrade regler för profilsammanslagning](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html?lang=sv-SE)
+* [!UICONTROL People-based Destinations] - [Personalization baserad på data som bara är offline](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html?lang=sv-SE)
 
 <br>
 

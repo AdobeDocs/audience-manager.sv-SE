@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Rapportering om prediktiva målgrupper
 
-När du har sparat en [!UICONTROL Predictive Audiences]-modell börjar Audience Manager utbilda den. Inom några timmar kommer den beräknade modellen att börja analysera målgrupper på [datainsamlingsservrarna](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs). Rapporteringen blir tillgänglig följande dag.
+När du har sparat en [!UICONTROL Predictive Audiences]-modell börjar Audience Manager utbilda den. Inom några timmar kommer den beräknade modellen att börja analysera målgrupper på [datainsamlingsservrarna](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=sv-SE#dcs-pcs). Rapporteringen blir tillgänglig följande dag.
 
 Om du vill se resultatet av din [!UICONTROL Predictive Audiences]-klassificering går du till **[!UICONTROL Audience Data]** > **[!UICONTROL Models]** och klickar på modellen i listan.
 

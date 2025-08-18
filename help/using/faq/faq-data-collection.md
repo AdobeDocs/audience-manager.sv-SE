@@ -191,7 +191,7 @@ Nej, förlita dig inte på [!UICONTROL General Reports] och [!UICONTROL Trend Re
 
 Rapporterna beräknar populationer baserat på oautentiserade profilposter (UUID) i serverdelen när rapporterna skapas.
 
-Vid ett första anrop till [!DNL DCS] länkas deklarerade ID:n *inte* till ett UUID (dvs. det finns ingen [demdex-cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html) på klientsidan). [!DNL DCS] genererar ett UUID slumpmässigt och ställer in en [!DNL demdex]-cookie och skickar den i svarsanropet, men UUID skickas inte till serverdelen.
+Vid ett första anrop till [!DNL DCS] länkas deklarerade ID:n *inte* till ett UUID (dvs. det finns ingen [demdex-cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html?lang=sv-SE) på klientsidan). [!DNL DCS] genererar ett UUID slumpmässigt och ställer in en [!DNL demdex]-cookie och skickar den i svarsanropet, men UUID skickas inte till serverdelen.
 
 >[!NOTE]
 >

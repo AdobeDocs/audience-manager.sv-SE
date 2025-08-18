@@ -28,7 +28,7 @@ Svar på vanliga frågor och problem som rör sekretess och data.
 
 **Hur använder Audience Manager cookies och vilka cookies används?**
 
-Se [Cookies för Audience Manager](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html).
+Se [Cookies för Audience Manager](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html?lang=sv-SE).
 
 **Kan Audience Manager-kunder i USA inrikta sig på EU-användare?**
 

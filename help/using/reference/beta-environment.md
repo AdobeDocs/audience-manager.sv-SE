@@ -29,7 +29,7 @@ Betamiljön uppdateras i slutet av varje månad under tider med låg belastning.
 
 >[!IMPORTANT]
 >
->Observera att dina kunddata ([signaler, egenskaper och segment](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=en)) inte synkroniseras mellan produktions- och betamiljöerna.
+>Observera att dina kunddata ([signaler, egenskaper och segment](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=sv-SE)) inte synkroniseras mellan produktions- och betamiljöerna.
 
 ## Inkommande trafik
 

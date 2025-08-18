@@ -111,7 +111,7 @@ Ja.
 
 **Inkluderar beräknade segmentstorlekar enheter som kvalificerar för ett segment baserat på anslutningar som tillhandahålls av en [!UICONTROL Profile Merge Rule] som använder ett alternativ för enhetsdiagram?**
 
-Nej. Se definitionerna för [!UICONTROL Estimated Real-Time Population] och [!UICONTROL Estimated Total Population] i [Trait- och segmentpopulationsdata i Segment Builder](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html).
+Nej. Se definitionerna för [!UICONTROL Estimated Real-Time Population] och [!UICONTROL Estimated Total Population] i [Trait- och segmentpopulationsdata i Segment Builder](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=sv-SE).
 
  
 

@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## Skapa en modell för prediktiva målgrupper {#create-predictive-audiences}
 
-Innan du skapar en [!UICONTROL Predictive Audiences]-modell måste du bestämma vilken första parts datakälla du vill tilldela dina [!UICONTROL Predictive Audiences]-egenskaper och segment till. Du kan använda en befintlig datakälla från första part eller skapa en ny. Se [Hantera datakällor](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html) för mer information om hur du skapar en ny datakälla från första part.
+Innan du skapar en [!UICONTROL Predictive Audiences]-modell måste du bestämma vilken första parts datakälla du vill tilldela dina [!UICONTROL Predictive Audiences]-egenskaper och segment till. Du kan använda en befintlig datakälla från första part eller skapa en ny. Se [Hantera datakällor](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html?lang=sv-SE) för mer information om hur du skapar en ny datakälla från första part.
 
 När du vet vilken datakälla du ska använda följer du stegen nedan.
 

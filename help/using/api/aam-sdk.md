@@ -24,11 +24,11 @@ Audience Manager tillhandahåller programutvecklingspaket ([!DNL SDK]) för [!DN
 
 * Gå till [Starta](https://launch.adobe.com/) om du vill komma igång.
 * Gå till [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks) om du vill se vad som finns i Experience Platform SDK-databaser.
-* Om du vill implementera Audience Manager i din app med nya SDK v.5 läser du [Adobe Audience Manager-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/data-management/aam-dil-extension.html?lang=en) på den nya SDK-sidan.
+* Om du vill implementera Audience Manager i din app med nya SDK v.5 läser du [Adobe Audience Manager-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/data-management/aam-dil-extension.html?lang=sv-SE) på den nya SDK-sidan.
 
 <br>
 
 Vi stöder fortfarande Android och iOS 4.x SDK. Se följande om du har SDK-kodbibliotek:
 
-* [Android SDK](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
-* [iOS SDK](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
+* [Android SDK](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=sv-SE)
+* [iOS SDK](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=sv-SE)
