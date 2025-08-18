@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ## Krav {#requirements}
 
-Om du vill konfigurera ett Analytics-mål måste din Audience Manager-användare ha administratörsbehörighet. Se [Skapa användare](/help/using/features/administration/administration-overview.md#create-users) i administrationshandboken. Observera att det inte räcker med jokerteckenbehörigheten `CREATE_DESTINATIONS` [2} för att skapa Analytics-mål.
-](/help/using/features/administration/administration-overview.md#wild-card-permissions)
+Om du vill konfigurera ett Analytics-mål måste din Audience Manager-användare ha administratörsbehörighet. Se [Skapa användare](/help/using/features/administration/administration-overview.md#create-users) i administrationshandboken. Observera att det inte räcker med jokerteckenbehörigheten `CREATE_DESTINATIONS` [&#128279;](/help/using/features/administration/administration-overview.md#wild-card-permissions)2&rbrace; för att skapa Analytics-mål.
+
 Mer information finns i Krav i [Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html).
 
 ## Standardanalysmålet och nya analysmål

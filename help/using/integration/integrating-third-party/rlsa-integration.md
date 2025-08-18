@@ -33,7 +33,7 @@ Så här konfigurerar du en [!DNL Google Ads]-remarketing-lista som en [!DNL Aud
 1. [Skapa en [!DNL URL destination]](../../features/destinations/create-url-destination.md) eller redigera en befintlig [!DNL destination] i Audience Manager. Använd följande inställningar när du skapar [!DNL destination]:
    * Typ: URL
    * Serialisera: Aktiverat
-   * Avgränsare: Semikolon (&amp;semi; )
+   * Avgränsare: Semikolon (&semi; )
 
 1. I avsnittet [!UICONTROL Segment Mappings] i [!DNL URL] [!DNL destination] lägger du till koden från steg 2 i fälten [!DNL URL] och [!DNL Secure URL]. Lägg till `http:` och `https:` i fälten [!DNL URL] och [!DNL Secure URL] som prefix.
 

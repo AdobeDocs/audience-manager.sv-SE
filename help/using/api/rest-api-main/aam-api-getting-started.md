@@ -34,7 +34,7 @@ Observera följande när du arbetar med [Audience Manager API](https://bank.demd
 [!DNL Audience Manager] [!DNL REST APIs] har stöd för tre autentiseringsmetoder.
 
 * [!BADGE Rekommenderad]{type=positive} [OAuth Server-till-server-autentisering](#oauth-adobe-developer) med [Adobe utvecklarkonsol](https://www.adobe.io/). [!DNL Adobe Developer] är Adobe ekosystem och community för utvecklare. Den innehåller [API:er för alla Adobe-produkter](https://developer.adobe.com/apis/). Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs]. Läs mer om [OAuth Server-till-Server-autentisering](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/) i dokumentationen för Adobe-utvecklare.
-* [!BADGE JWT-autentisering (tjänstkonto)]{type=negative} har tagits bort[ ](#jwt)med [Adobe utvecklarkonsol](https://www.adobe.io/). [!DNL Adobe Developer] är Adobe ekosystem och community för utvecklare. Den innehåller [API:er för alla Adobe-produkter](https://developer.adobe.com/apis/).
+* [!BADGE JWT-autentisering (tjänstkonto)]{type=negative} har tagits bort[&#128279;](#jwt)med [Adobe utvecklarkonsol](https://www.adobe.io/). [!DNL Adobe Developer] är Adobe ekosystem och community för utvecklare. Den innehåller [API:er för alla Adobe-produkter](https://developer.adobe.com/apis/).
 * [!BADGE Föråldrad]{type=negative} [Äldre OAuth-autentisering](#oauth-deprecated). Den här metoden är föråldrad, men kunder med befintliga [!DNL OAuth]-integreringar kan fortsätta använda den här metoden.
 
 >[!IMPORTANT]
@@ -211,7 +211,7 @@ När du använder en arbetsåtkomsttoken returnerar API-slutpunkten ett 200-svar
 
 >[!ENDSHADEBOX]
 
-## [!BADGE Inaktuell ]{type=negative} [!DNL JWT] ([!DNL Service Account]) autentisering med Adobe Developer {#jwt}
+## [!BADGE Inaktuell &#x200B;]{type=negative} [!DNL JWT] ([!DNL Service Account]) autentisering med Adobe Developer {#jwt}
 
 +++ Visa information om den borttagna [!DNL JWT] ([!DNL Service Account])-metoden för att hämta autentiseringstoken.
 
@@ -252,7 +252,7 @@ Följ stegen nedan för att skapa ett tekniskt användarkonto och lägga till de
 
 +++
 
-## [!BADGE Inaktuell ]{type=negative} [!DNL OAuth] autentisering (inaktuell) {#oauth-deprecated}
+## [!BADGE Inaktuell &#x200B;]{type=negative} [!DNL OAuth] autentisering (inaktuell) {#oauth-deprecated}
 
 +++ Visa information om den inaktuella, gamla autentiseringsmetoden [!DNL OAuth] för att hämta autentiseringstoken.
 

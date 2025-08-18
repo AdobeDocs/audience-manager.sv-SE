@@ -46,7 +46,7 @@ Företagskunder som använder [!DNL Audience Manager] behöver en datahanterings
 > 
 > När alla kunder har migrerat försvinner avsnittet för användarhantering i det här dokumentet.
 > 
-Skapa användare i [!DNL Audience Manager] och ange användarinformation, inloggningsstatus och tilldela användare till grupper.
+>Skapa användare i [!DNL Audience Manager] och ange användarinformation, inloggningsstatus och tilldela användare till grupper.
 
 1. Klicka på **[!UICONTROL Administration]** > **[!UICONTROL Users]**.
 1. Klicka på ![](assets/icon_add.png) för att visa sidan [!UICONTROL Create New User].

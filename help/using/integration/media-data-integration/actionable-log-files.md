@@ -62,7 +62,7 @@ Signalerna är de [minsta dataenheterna](../../reference/signal-trait-segment.md
 >[!IMPORTANT]
 >
 >[!UICONTROL Actionable Log Files] stöds för följande annonsservrar:
->> <br>
+>&#x200B;> <br>
 >
 > * [Google Campaign Manager](#dcm-logs-signals)
 > * [Google Ad Manager](#ad-manager-logs-signals)

@@ -19,8 +19,8 @@ ht-degree: 1%
 >[!WARNING]
 >
 >Google har uppdaterat funktionerna för [!DNL Google Chrome] och alla [!DNL Chromium]-baserade webbläsare för att minimera informationen som samlas in via rubriken `User-Agent`.
->>Från och med mars 2023 stöder Audience Manager dessa uppdateringar genom att utnyttja [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en). Om du vill fortsätta använda trait-information som tillhandahålls via rubriken `User-Agent` måste du använda [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) och aktivera [High Entropy User-Agent Client Hints](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=en).
->>Dessa uppdateringar stöds inte av [DIL](../../../using/dil/dil-overview.md), så Audience Manager-kunder som använder [!DNL DIL] kan inte samla in information om egenskaper via rubriken `User-Agent`.
+>&#x200B;>Från och med mars 2023 stöder Audience Manager dessa uppdateringar genom att utnyttja [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en). Om du vill fortsätta använda trait-information som tillhandahålls via rubriken `User-Agent` måste du använda [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) och aktivera [High Entropy User-Agent Client Hints](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=en).
+>&#x200B;>Dessa uppdateringar stöds inte av [DIL](../../../using/dil/dil-overview.md), så Audience Manager-kunder som använder [!DNL DIL] kan inte samla in information om egenskaper via rubriken `User-Agent`.
 
 Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med enhetsrelaterade variabler i alla egenskaper på ditt Audience Manager-konto.
 
