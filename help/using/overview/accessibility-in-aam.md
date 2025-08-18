@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Hjälpmedel är en serie funktioner som gör en programprodukt användbar, med så lite ansträngning som möjligt från användare med olika funktionshinder, som visuell, auditiv, kognitiv, motor eller andra typer.
 
-Adobe är branschledande inom tillgänglighet och stöder skapandet av enastående webbupplevelser genom att uppmuntra utvecklare att producera engagerande innehåll som är tillgängligt för alla användare. Mer information om tillgänglighetsåtaganden i Adobe finns i [hjälpmedel för Adobe](https://www.adobe.com/accessibility.html).
+Adobe är ledande inom tillgänglighet och stöder framtagning av enastående webbupplevelser genom att uppmuntra utvecklare att producera engagerande material som är tillgängligt för alla användare. Mer information om Adobe hjälpmedelsåtagande finns i [Adobe Accessibility](https://www.adobe.com/accessibility.html).
 
 De vanligaste hjälpmedelsfunktionerna i programvaror är: tangentbordsnavigering, semantisk struktur, tillräcklig kontrast mellan förgrundselement och bakgrundselement, stöd för hjälpfunktioner, etiketter för tydliga element osv.
 
@@ -47,7 +47,7 @@ Genom att använda semantisk kod och [ARIA](https://www.w3.org/WAI/standards-gui
 
 Detta garanterar att hjälpmedelstekniker, som skärmläsare, kan läsa upp etiketter och annan information för användarna så att de enkelt kan interagera med programkontrollerna.
 
-Alla interaktiva element i användargränssnittet i Audience Manager innehåller motsvarande etiketter. Detta garanterar att hjälpmedelstekniker, som skärmläsare, kan läsa upp etiketterna för användarna.
+Alla interaktiva element i Audience Manager användargränssnitt innehåller motsvarande etiketter. Detta garanterar att hjälpmedelstekniker, som skärmläsare, kan läsa upp etiketterna för användarna.
 
 ## Färger och kontrast {#colors-contrast}
 
@@ -61,4 +61,4 @@ Inläsningsskärmar kan till exempel innehålla en inläsande snurra inuti en vi
 
 [!DNL Audience Manager] strävar efter att tillhandahålla en allt större grad av tillgänglighet, vilket gör produkten enkel att använda för alla.
 
-Vi rekommenderar att du använder formuläret [Återkoppling om tillgänglighet för Adobe](https://www.adobe.com/accessibility/feedback.html) för att skicka förbättringsförslag och tillgänglighetsproblem som du stöter på. Vi tar gärna hänsyn till din feedback och förbättrar [!DNL Audience Manager].
+Vi rekommenderar att du använder [Adobe Accessibility Feedback Form](https://www.adobe.com/accessibility/feedback.html) för att skicka förbättringsförslag och tillgänglighetsproblem som du stöter på. Vi tar gärna hänsyn till din feedback och förbättrar [!DNL Audience Manager].

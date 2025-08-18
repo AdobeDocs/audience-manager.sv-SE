@@ -123,5 +123,5 @@ Popup-fönstret för rapporten [!UICONTROL Trait-to-Trait Overlap] innehåller m
 >* [Former, färger och storlekar som används i dynamiska rapporter](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
 >* [Ikoner och verktyg för rapporter förklaras](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
 >* [Överlappningsrapporter: Uppdatera schema och minsta segmentstorlek](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
->* [Datainsamling och felfrekvens i rapporter för markerade Audience Manager..](../../reporting/report-sampling.md)
+>* [Datainsamling och felfrekvens i markerade Audience Manager-rapporter..](../../reporting/report-sampling.md)
 >* [CSV-filer för överlappningsrapporter](../../reporting/dynamic-reports/overlap-csv-files.md)

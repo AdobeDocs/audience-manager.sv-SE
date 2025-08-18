@@ -76,7 +76,7 @@ En [!UICONTROL CDF]-fil innehåller några eller alla fält som definieras nedan
   <tr> 
    <td colname="col1"> <p><code> Device</code> </p> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>Detta är det <span class="wintitle"> unika användar-ID:t </span> (UUID), som är ett 38-siffrigt enhets-ID för besökaren på platsen. Se även <a href="../reference/ids-in-aam.md">-index för ID:n i Audience Manager</a>. </p> </td> 
+   <td colname="col3"> <p>Detta är det <span class="wintitle"> unika användar-ID:t </span> (UUID), som är ett 38-siffrigt enhets-ID för besökaren på platsen. Se även <a href="../reference/ids-in-aam.md">-index för ID i Audience Manager</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Container ID</code> </p> </td> 
@@ -96,7 +96,7 @@ En [!UICONTROL CDF]-fil innehåller några eller alla fält som definieras nedan
   <tr> 
    <td colname="col1"> <p><code> Request Parameters</code> </p> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>En sträng som hämtar alla parametrar (variabler, ID:n, nyckelvärdepar, enhets-ID:n med mera) har skickats in i händelseanropet. </p> <p>Kortare exempel: </p> <p> <code> d_rtbd:json,c_contextData.a.CarrierName:mobile,c_contextData.a.adid:92D56353-49C5-431E-B474-FC528D585810,c_contextData.a,RunMode:Application,c_contextData.a.DaysSinceLastUpgrade:61,d_cid_ic:xid%01EACB6E40-AC65-4012-9FE9-ABD59965E9C4%011,c_contextData.a.PrevSessionLength:583</code> </p> </td> 
+   <td colname="col3"> <p>En sträng som fångar alla parametrar (variabler, ID:n, nyckelvärdepar, enhets-reklam-ID:n osv.) som skickas i händelseanropet. </p> <p>Kortare exempel: </p> <p> <code> d_rtbd:json,c_contextData.a.CarrierName:mobile,c_contextData.a.adid:92D56353-49C5-431E-B474-FC528D585810,c_contextData.a,RunMode:Application,c_contextData.a.DaysSinceLastUpgrade:61,d_cid_ic:xid%01EACB6E40-AC65-4012-9FE9-ABD59965E9C4%011,c_contextData.a.PrevSessionLength:583</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Referer Data Type</code> </p> </td> 
@@ -111,7 +111,7 @@ En [!UICONTROL CDF]-fil innehåller några eller alla fält som definieras nedan
   <tr> 
    <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p><span class="keyword"> Experience Cloud</span>-ID (MID) som tilldelats webbplatsbesökaren. Se även <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=sv-SE" format="https" scope="external"> Cookies och Adobe Experience Platform Identity Service </a>. </p> </td> 
+   <td colname="col3"> <p>Det <span class="keyword"> Experience Cloud</span>-ID (MID) som tilldelats webbplatsbesökaren. Se även <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Adobe Experience Platform Identity Service </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> All Segments</code> </p> </td> 
@@ -163,7 +163,7 @@ Visar och definierar datastrukturen för en [!UICONTROL CDF]-fil. Detta inkluder
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">Begärandeparametrar </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referent </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP-adress </li> 
-      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud enhets-ID (eller MID). Se även <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=sv-SE" format="https" scope="external"> cookies och Adobe Experience Platform identitetstjänst</a> </li> 
+      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud Device ID (eller MID). Se även <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> cookies och Adobe Experience Platform identitetstjänst</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595">Alla segment </li> 
       <li id="li_1B5A6F076A354BA0A931CB260E6D2675">Alla egenskaper </li> 
      </ol> </p> <p>Fältbeskrivningar finns i <a href="#cdf-defined"> Innehåll för kunddatafeed definierad </a>. </p> </td> 

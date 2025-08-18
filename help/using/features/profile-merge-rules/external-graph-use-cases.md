@@ -1,5 +1,5 @@
 ---
-description: Recommendations och använd exempel för prospektering, återannonsering och personalisering för okända användare med ett externt enhetsdiagram. Ett externt enhetsdiagram definieras som ett enhetsdiagram som är skilt från Audience Manager. Detta inkluderar integreringar som Adobe har med tredjepartsföretag som arbetar med deterministiska eller sannolika enhetsgrafer.
+description: Rekommendationer och användningsexempel för prospektering, återannonsering och personalisering för okända användare med ett externt enhetsdiagram. Ett externt enhetsdiagram definieras som ett enhetsdiagram som är skilt från Audience Manager. Detta inkluderar integreringar som Adobe har med tredjepartsföretag för deterministiska eller sannolika enhetsgrafer.
 seo-description: Recommendations and use cases for prospecting, retargeting, and personalization for unknown users with an external device graph. An external device graph is defined as a device graph that is separate from Audience Manager. This includes integrations Adobe has with third-party deterministic or probabilistic device graph companies.
 seo-title: External Device Graph Use Cases
 solution: Audience Manager
@@ -16,9 +16,9 @@ ht-degree: 4%
 
 # Användningsexempel för externt enhetsdiagram {#external-device-graph-use-cases}
 
-Recommendations och använd exempel för prospektering, återannonsering och personalisering för okända användare med ett externt enhetsdiagram. Ett externt enhetsdiagram definieras som ett enhetsdiagram som är skilt från Audience Manager. Detta inkluderar integreringar som Adobe har med tredjepartsföretag som arbetar med deterministiska eller sannolika enhetsgrafer.
+Rekommendationer och användningsexempel för prospektering, återannonsering och personalisering för okända användare med ett externt enhetsdiagram. Ett externt enhetsdiagram definieras som ett enhetsdiagram som är skilt från Audience Manager. Detta inkluderar integreringar som Adobe har med tredjepartsföretag för deterministiska eller sannolika enhetsgrafer.
 
-## Recommendations {#recommendations}
+## Rekommendationer {#recommendations}
 
 Överväg alternativ för enhetsdiagram från tredje part för kampanjer som:
 

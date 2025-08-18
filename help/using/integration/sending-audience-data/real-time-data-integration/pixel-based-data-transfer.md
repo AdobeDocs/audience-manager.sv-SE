@@ -1,5 +1,5 @@
 ---
-description: Enkla pixlar (som kan användas för att kvalificera användare för egenskaper) utför dataöverföringar i realtid. Med Audience Manager kan kunderna själva skapa valfritt antal pixlar. Pixelsträngar består av enkla ID:n eller nyckelvärdepar.
+description: Enkla pixlar (som kan användas för att kvalificera användare för egenskaper) utför dataöverföringar i realtid. Med Audience Manager-gränssnittet kan kunderna själva skapa valfritt antal pixlar. Pixelsträngar består av enkla ID:n eller nyckelvärdepar.
 seo-description: Simple pixels (that can be used to qualify users for traits) perform real-time data transfers. The Audience Manager interface lets clients create any number of pixels on a self-service basis. Pixel strings consist of simple IDs or key-value pairs.
 seo-title: Pixel-based Data Transfers
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Pixelbaserade dataöverföringar {#pixel-based-data-transfers}
 
-Enkla pixlar (som kan användas för att kvalificera användare för egenskaper) utför dataöverföringar i realtid. Med Audience Manager kan kunderna själva skapa valfritt antal pixlar. Pixelsträngar består av enkla ID:n eller nyckelvärdepar.
+Enkla pixlar (som kan användas för att kvalificera användare för egenskaper) utför dataöverföringar i realtid. Med Audience Manager-gränssnittet kan kunderna själva skapa valfritt antal pixlar. Pixelsträngar består av enkla ID:n eller nyckelvärdepar.
 
 <!-- c_rt_inbound_pixel_transfers.xml -->
 

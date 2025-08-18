@@ -22,7 +22,7 @@ Användare som inte är administratörer kan redigera sina egna profiler, bland 
 
 Administratörsanvändare kan skapa användare och lägga till dem i grupper för behörighetssyften, vilket förklaras i [Skapa användare](../../features/administration/administration-overview.md#create-users) och [Skapa en grupp](../../features/administration/administration-overview.md#create-group).
 
-1. Klicka på ![](assets/icon_profile.png) i sidhuvudet Audience Manager.
+1. Klicka på ![](assets/icon_profile.png) i Audience Manager-huvudet.
 1. Klicka på **[!UICONTROL Account Settings]** och sedan på **[!UICONTROL Edit]** för att visa sidan [!UICONTROL My Account].
 1. Ange din nya e-postadress i fältet **[!UICONTROL Email Address]** om det behövs. Audience Manager skickar inte regelbundna meddelanden till användarna. Audience Manager-administratörer har tillgång till användarnas e-postadresser och kan manuellt skicka e-post till användare efter behov. Om en användare t.ex. glömmer sitt lösenord, används den e-postadress som anges i det här fältet för att skicka ett tillfälligt lösenord och instruktioner för att återställa lösenordet.
 1. Om du vill återställa ditt lösenord anger du det aktuella lösenordet, anger det nya lösenordet och bekräftar sedan det nya lösenordet.

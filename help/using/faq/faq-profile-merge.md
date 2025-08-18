@@ -37,7 +37,7 @@ Ett externt enhetsdiagram är ett enhetsdiagram i [!DNL Audience Manager] som in
 
 **Vilka är några vanliga användningsområden för externa enhetsdiagram i [!UICONTROL Profile Merge Rule]?**
 
-Det främsta målet med att använda ett enhetsdiagram i en [!UICONTROL Profile Merge Rule] är att utvärdera och kvalificera flera enheter som tillhör en enskild person eller ett hushåll för ett visst segment. Själva segmentet kan ha flera användningsområden, till exempel för en målgrupp med potentiella kunder med en annons som betjänas av en DSP eller personalisering av en kunds upplevelse på plats via en personaliseringsplattform på plats. Se [Användningsexempel för externt enhetsdiagram](../features/profile-merge-rules/external-graph-use-cases.md).
+Det främsta målet med att använda ett enhetsdiagram i en [!UICONTROL Profile Merge Rule] är att utvärdera och kvalificera flera enheter som tillhör en enskild person eller ett hushåll för ett visst segment. Själva segmentet kan ha flera användningsområden, till exempel för en målgrupp med potentiella kunder med en annons som betjänas av DSP eller för att personalisera en kunds upplevelse på plats via en personaliseringsplattform på plats. Se [Användningsexempel för externt enhetsdiagram](../features/profile-merge-rules/external-graph-use-cases.md).
 
  
 
@@ -111,7 +111,7 @@ Ja.
 
 **Inkluderar beräknade segmentstorlekar enheter som kvalificerar för ett segment baserat på anslutningar som tillhandahålls av en [!UICONTROL Profile Merge Rule] som använder ett alternativ för enhetsdiagram?**
 
-Nej. Se definitionerna för [!UICONTROL Estimated Real-Time Population] och [!UICONTROL Estimated Total Population] i [Trait- och segmentpopulationsdata i Segment Builder](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=sv-SE).
+Nej. Se definitionerna för [!UICONTROL Estimated Real-Time Population] och [!UICONTROL Estimated Total Population] i [Trait- och segmentpopulationsdata i Segment Builder](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html).
 
  
 
@@ -263,7 +263,7 @@ Nej.
 
 I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profilsammanslagning för att förbättra exaktheten hos gruppfiler som genererats med hjälp av enhets-ID:n. Dessa förbättringar respekteras strikt i din Audience Manager-instans från och med måndagen den 16 mars 2020. Därför kommer segment som mappas till ett mål med hjälp av enhets-ID att sluta producera exporter i vissa konfigurationer av profilkopplingsregler.
 
-Kontrollera att du uppfyller följande krav för att se till att Audience Manager-instansen och destinationerna är korrekt integrerade med olika enhets-ID, t.ex. Adobe Campaign:
+För att säkerställa korrekt integrering mellan din Audience Manager-instans och destinationer med olika enhets-ID, som Adobe Campaign, måste du uppfylla följande krav:
 
 1. Granska den profilkopplingsregel som används av de segment som är mappade till ditt Adobe Campaign-deklarerade ID-mål. Regeln för profilsammanslagning måste använda alternativet [!UICONTROL Last Authenticated Profile], så alla autentiserade profiler kan inkluderas i exporten. Om din profilkopplingsregel använder ett annat alternativ växlar du till [!UICONTROL Last Authenticated Profile].
 2. Markera datakällan för det deklarerade Adobe Campaign-ID:t i inställningarna för profilkopplingsregeln.

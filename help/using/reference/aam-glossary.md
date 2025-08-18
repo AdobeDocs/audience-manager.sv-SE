@@ -10,7 +10,7 @@ exl-id: 9e2ee3d3-01b2-4038-abda-fedf0f16f163
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
 source-wordcount: '1157'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -59,7 +59,7 @@ I [Addressable Audience](/help/using/features/addressable-audiences.md) represen
 
 **Kundattribut**
 
-Se [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=sv-SE) i [!DNL Experience Cloud Core Services] produktdokumentationen.
+Se [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) i [!DNL Experience Cloud Core Services] produktdokumentationen.
 
 
 
@@ -93,7 +93,7 @@ Se [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 
 **Destination**
 
-I [!DNL Audience Manager] är destinationen ett annat system (annonsserver, DSP, annonsnätverk osv.) som du vill dela data med. [!UICONTROL Destination Builder] i användargränssnittet innehåller de verktyg som du kan använda för att skapa och hantera sådana dataleveransprocesser. [!DNL Audience Manager]-destinationsfunktionerna finns i **[!UICONTROL Audience Data > Destinations]**.
+I [!DNL Audience Manager] är ett mål ett annat system (annonsserver, DSP, annonsnätverk osv.) som du vill dela data med. [!UICONTROL Destination Builder] i användargränssnittet innehåller de verktyg som du kan använda för att skapa och hantera sådana dataleveransprocesser. [!DNL Audience Manager]-destinationsfunktionerna finns i **[!UICONTROL Audience Data > Destinations]**.
 
 
 
@@ -111,7 +111,7 @@ I [!DNL Audience Manager] är destinationen ett annat system (annonsserver, DSP,
 
 **Experience Cloud ID (ECID)**
 
-Tidigare kallat [!DNL Marketing Cloud] ID (MID eller MCID). [!DNL Experience Cloud]-ID är centralt för ID-tjänsten. Det är en unik och beständig identifierare för era webbplatsbesökare. Se Cookies och [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=sv-SE).
+Tidigare kallat [!DNL Marketing Cloud] ID (MID eller MCID). [!DNL Experience Cloud]-ID är centralt för ID-tjänsten. Det är en unik och beständig identifierare för era webbplatsbesökare. Se Cookies och [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html).
 
 
 
@@ -268,6 +268,6 @@ TTL definierar hur många dagar en kvalificerad besökare stannar i ett trait. T
 
 [!DNL Experience Cloud] ID-tjänsten (tidigare besökar-ID) tillhandahåller ett universellt, beständigt ID som identifierar era besökare i alla lösningar i [!DNL Experience Cloud].
 
-Se dokumentationen för [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE).
+Se dokumentationen för [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 
 ## W-X-Y-Z {#w-z}

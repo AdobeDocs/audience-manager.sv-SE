@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # [!DNL OAuth 2.0]-integrering för utgående överföringar i realtid{#oauth-integration-for-real-time-outbound-transfers}
 
-När du publicerar segment till partnermålet via en realtidsintegration mellan server och server, kan Audience Manager konfigureras för autentisering med [!DNL OAuth 2.0] när begäranden görs. Då kan du skicka autentiserade begäranden från Audience Manager till slutpunkten.
+När du publicerar segment till partnermålet via en server-till-server-integration i realtid, kan Audience Manager konfigureras för autentisering med [!DNL OAuth 2.0] när begäranden görs. Då kan du skicka autentiserade begäranden från Audience Manager till slutpunkten.
 
 ## Autentiseringsflöde {#auth-flow}
 

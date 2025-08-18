@@ -47,7 +47,7 @@ När ett anrop med flera ID även innehåller ett blocklist ID:n ignorerar [!DNL
 
 ## Orsaker och korrigeringar för ID-Blockeringslistning
 
-Den vanligaste orsaken till att ID:n läggs till i blockeringslista är den felaktiga integreringen mellan kundinfrastrukturen och Audience Manager. När du identifierar ett blocklist ID måste du noga granska dina Audience Manager-integreringar. I **Handböcker för implementering och integrering** finns detaljerade förklaringar om hur du bör konfigurera Audience Manager så att det fungerar med andra Experience Cloud-lösningar eller externa system.
+Den vanligaste orsaken till att ID läggs till i blockeringslista är den felaktiga integreringen mellan kundinfrastrukturen och Audience Manager. När du identifierar ett blocklist ID måste du noga granska dina Audience Manager-integreringar. Se **Handböcker för implementering och integrering** för detaljerade förklaringar av hur du bör konfigurera Audience Manager så att det fungerar med andra Experience Cloud-lösningar eller externa system.
 
 En annan vanlig orsak till att ID:n läggs till i blockeringslista är indexering av botar (web crawlers), vilket vanligtvis leder till ökad trafik, vilket leder till att samma ID:n skickas till [!DNL DCS] flera gånger. Om du identifierar att indexeringsobjekt är orsaken till att ID:n läggs till i blockeringslista bör du begränsa båda åtkomsten till webbplatsen.
 

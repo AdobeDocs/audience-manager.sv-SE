@@ -10,7 +10,7 @@ exl-id: e6b3a438-f843-4a24-89fd-03ef77d7cf04
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ Beskriver obligatoriska fält, syntax och namnkonventioner som används för fil
 
 >[!NOTE]
 >
->Textformaten (`monospaced text`, *kursiv*, parenteser `[ ]` `( )` etc.) i det här dokumentet anger kodelement och alternativ. Mer information finns i [Formatkonventioner för kod- och textelement](../../../reference/code-style-elements.md).
+>Textformaten (`monospaced text`, *kursiv*, hakparenteser `[ ]` `( )` osv.) i det här dokumentet anger kodelement och alternativ. Mer information finns i [Formatkonventioner för kod- och textelement](../../../reference/code-style-elements.md).
 
 ## Filnamnssyntax och exempel {#file-name-syntax}
 
@@ -48,7 +48,7 @@ ID-filnamn innehåller följande obligatoriska och valfria element:
   </tr> 
   <tr> 
    <td colname="col1"><code><i>MASTERDPID</i></code> </td> 
-   <td colname="col2"> <p>Huvuddataleverantörens ID är det överordnade ID:t för DPID:n i filnamnet. Det första användar-ID:t i datafilen motsvarar också huvud-ID:t. De efterföljande DPID:n är andra identifierare som tillhör mallen. Synkroniseringen mappar DPID:n i filnamnet till UUID:n i filen.</p> <p>Detta DPID får bara innehålla enhets-ID, t.ex. AAM UUID, GAID, IDFA osv. Den får inte innehålla DPUID. Om du gör det kan synkroniseringen bli felaktig.</p>  </td> 
+   <td colname="col2"> <p>Huvuddataleverantörens ID är det överordnade ID:t för DPID:n i filnamnet. Det första användar-ID:t i datafilen motsvarar också huvud-ID:t. De efterföljande DPID:n är andra identifierare som tillhör mallen. Synkroniseringen mappar DPID:n i filnamnet till UUID:n i filen.</p> <p>Detta DPID får endast innehålla enhets-ID, t.ex. AAM UUID, GAID, IDFA. Den får inte innehålla DPUID. Om du gör det kan synkroniseringen bli felaktig.</p>  </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>DPID</i></code> </p> </td> 
@@ -101,7 +101,7 @@ abc123 def456 ghi789 xyz987
 
 ### Fillinnehåll {#considerations}
 
-När du skapar dina inkommande filer måste du se till att den första kolumnen bara är ifylld med enhets-ID:n, som [!DNL AAM UUID], [!DNL GAID], [!DNL IDFA] och så vidare. Se [Index för ID:n i Audience Manager](../../../reference/ids-in-aam.md) för en detaljerad förklaring av ID:n som stöds av Audience Manager.
+När du skapar dina inkommande filer måste du se till att den första kolumnen bara är ifylld med enhets-ID:n, som [!DNL AAM UUID], [!DNL GAID], [!DNL IDFA] och så vidare. Mer information om vilka ID:n som stöds av Audience Manager finns i [Index för ID:n i Audience Manager](../../../reference/ids-in-aam.md).
 
 >[!IMPORTANT]
 >

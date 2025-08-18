@@ -1,5 +1,5 @@
 ---
-description: Recommendations och användningsexempel för återmarknadsföring av segment och anpassade segmentkvalifikationer med enhetsdiagrammet Profile Link.
+description: Rekommendationer och användningsexempel för återannonsering av segment och anpassade segmentkvalifikationer med enhetsdiagrammet Profile Link.
 seo-description: Recommendations and use cases for segment retargeting and personalized segment qualification with the Profile Link device graph.
 seo-title: Profile Link Device Graph Use Cases
 solution: Audience Manager
@@ -16,9 +16,9 @@ ht-degree: 3%
 
 # Användningsexempel för profillänkens enhetsdiagram {#profile-link-device-graph-use-cases}
 
-Recommendations och användningsexempel för återmarknadsföring av segment och anpassade segmentkvalifikationer med [!UICONTROL Profile Link Device Graph].
+Rekommendationer och användningsexempel för återmarknadsföring av segment och personliga segmentkvalifikationer med [!UICONTROL Profile Link Device Graph].
 
-## Recommendations {#recommendations}
+## Rekommendationer {#recommendations}
 
 Titta på enhetsdiagrammet [!UICONTROL Profile Link] för kampanjer som:
 
@@ -40,7 +40,7 @@ Låt oss säga att John äger tre enheter som han använder regelbundet för att
 
 ![last-device-graph](assets/last-device-graph.png)
 
-Eftersom Audience Manager kvalificerar alla enhetsprofiler som ingår i profilsammanfogningen för ett segment segmenteras alla tre enhetsprofilerna. Med [!UICONTROL Profile Link Device Graph] kan Audience Manager granska beteendet på alla tre enheterna och kvalificera alla enheter för ett segment som ingen enskild enhetsprofil kvalificerar sig för.
+Eftersom Audience Manager kvalificerar alla enhetsprofiler som deltar i profilsammanfogningen för ett segment segmenteras alla tre enhetsprofilerna. Med [!UICONTROL Profile Link Device Graph] kan Audience Manager undersöka beteendet på alla tre enheter och kvalificera alla enheter för ett segment som ingen enskild enhetsprofil kvalificerar sig för.
 
 Med [!UICONTROL Profile Merge Rule] kan marknadsförare leverera en enhetlig upplevelse till alla enheter som ägs av en person, baserat på användaraktiviteten i stället för den enskilda enhetsaktiviteten.
 

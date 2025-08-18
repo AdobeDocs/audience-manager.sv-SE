@@ -22,7 +22,7 @@ Du kan komprimera datafiler när du skickar dem till Audience Manager.
 
 Audience Manager stöder gzip-komprimering (`.gz`) för inkommande, asynkrona dataöverföringar.
 
-Audience Manager har även stöd för okomprimerade filer.
+Audience Manager stöder även okomprimerade filer.
 
 >[!IMPORTANT]
 >

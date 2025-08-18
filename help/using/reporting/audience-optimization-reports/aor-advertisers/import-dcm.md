@@ -22,7 +22,7 @@ Konfigurera en [!DNL Google]-grupp för att överföra dina [!DNL Google Campaig
 
 [!DNL Google Campaign Manager] ersätter [!DNL Google] för [!DNL DoubleClick for Advertisers] (DFA). Precis som för DFA kan [!DNL Google Campaign Manager]-kunder importera, visa och arbeta med sina data i [!DNL Audience Manager]. Men [!DNL Audience Manager] kan inte direkt komma åt och importera dina filer för [!UICONTROL Data Transfer] och [!UICONTROL Match Table]. Kunderna ansvarar i stor grad själva för import av dessa filer.
 
-Konfigurationsproceduren är dock väl dokumenterad i [hjälpen för Dubbelklickning i Campaign Manager](https://support.google.com/dcm/partner/answer/2941575?hl=en&amp;ref_topic=6107456). Du kan också gå igenom stegen nedan för att komma igång.
+Konfigurationsproceduren är dock väl dokumenterad i [hjälpen för Dubbelklickning i Campaign Manager](https://support.google.com/dcm/partner/answer/2941575?hl=en&ref_topic=6107456). Du kan också gå igenom stegen nedan för att komma igång.
 
 >[!CAUTION]
 >
@@ -34,15 +34,15 @@ Konfigurationsproceduren är dock väl dokumenterad i [hjälpen för Dubbelklick
 
 ## Steg
 
-1. [Skapa en grupp](https://support.google.com/dcm/partner/answer/3370419?hl=en&amp;ref_topic=6107456).
+1. [Skapa en grupp](https://support.google.com/dcm/partner/answer/3370419?hl=en&ref_topic=6107456).
 
    Grupper styr åtkomsten till dina [!DNL Google Campaign Manager]-data. Till slut bjuder du in och lägger till [!DNL Audience Manager] i den här gruppen.
 
-1. [Verifiera din Google Cloud-lagringsstatus](https://support.google.com/dcm/partner/answer/3370481?hl=en&amp;ref_topic=6107456).
+1. [Verifiera din Google Cloud-lagringsstatus](https://support.google.com/dcm/partner/answer/3370481?hl=en&ref_topic=6107456).
 
    Google Cloud-lagring innehåller det datablock som innehåller din [!UICONTROL Data Transfer] och [!UICONTROL Match Tables]. Du måste konfigurera en bucket eller se till att den nya gruppen har åtkomst till en befintlig datalagringsenhet.
 
-1. [Hämta en URL för datafil](https://support.google.com/dcm/partner/answer/3370482?hl=en&amp;ref_topic=6107456).
+1. [Hämta en URL för datafil](https://support.google.com/dcm/partner/answer/3370482?hl=en&ref_topic=6107456).
 
    Arbeta med kontohanteraren för [!DNL Google Campaign Manager] eller plattformslösningskonsulten. De ger dig en URL till dina datafiler. [!DNL Google] kan ändra formatet för bucket och filnamn i framtida versioner. Återigen, samarbeta med din kontohanterare för [!DNL Google Campaign Manager] för att kontrollera att du använder rätt format.
 

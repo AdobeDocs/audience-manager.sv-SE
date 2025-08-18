@@ -4,7 +4,7 @@ keywords: Google Analytics
 seo-description: Overview and workflow for data providers who want to sell data from within Audience Manager.
 seo-title: Audience Marketplace for Data Providers
 solution: Audience Manager
-title: Audience Marketplace för dataleverantörer
+title: Audience Marketplace for Data Providers
 uuid: 80e60d33-63e7-496c-82c5-205ecf0ec03a
 feature: Audience Marketplace
 exl-id: 10a00bc9-5ee0-4aed-95d7-ace749b75542
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Audience Marketplace för dataleverantörer {#audience-marketplace-for-data-providers}
+# Audience Marketplace for Data Providers {#audience-marketplace-for-data-providers}
 
 Översikt och arbetsflöde för dataleverantörer som vill sälja data inifrån [!DNL Audience Manager].
 

@@ -18,7 +18,7 @@ Skicka målgruppsdata från andra källor till Audience Manager.
 
 * [Inkommande dataintegrering i realtid](/help/using/integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
 
-  Information om integreringen av Real-Time Audience Manager.
+  Information om Audience Manager-integrationen i realtid.
 
 * [Beskriver batchdataöverföringsprocessen](/help/using/integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
 

@@ -23,6 +23,6 @@ Varför händer det?
 
 ## Svar
 
-Det är troligt att egenskapen ni kör [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE) på webbplatsen. Om så är fallet behöver inte referensen till Audience Manager innebära att webbplatsen kör Audience Manager. Det innebär i stället att Audience Manager driver tjänsten.
+Det är troligt att egenskapen ni kör [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) på webbplatsen. Om så är fallet behöver inte referensen till Audience Manager innebära att webbplatsen kör Audience Manager. Det innebär i stället att Audience Manager driver tjänsten.
 
-Audience Manager-serveranrop görs vanligtvis för att [synkronisera kund-ID:n](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html?lang=sv-SE).
+Audience Manager-serveranrop görs vanligtvis för att [synkronisera kund-ID:n](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html).

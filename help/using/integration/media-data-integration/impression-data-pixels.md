@@ -1,5 +1,5 @@
 ---
-description: Ett tillvägagångssätt för att skicka mediedata till Audience Manager använder annonsservermakron för att skicka kampanjattribut till Audience Manager.
+description: Ett tillvägagångssätt för att skicka mediedata till Audience Manager använder annonsnätverk för att skicka kampanjattribut till Audience Manager.
 seo-description: One approach for sending media data to Audience Manager uses ad server macros to send campaign attributes to Audience Manager.
 seo-title: Capturing Campaign Impression Data via Pixel Calls
 solution: Audience Manager
@@ -10,13 +10,13 @@ exl-id: 04e6f1e5-5075-4221-a310-deb3717458ad
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
 source-wordcount: '698'
-ht-degree: 18%
+ht-degree: 16%
 
 ---
 
 # Samla in data för kampanjexponering via pixelanrop{#capturing-campaign-impression-data-via-pixel-calls}
 
-Ett tillvägagångssätt för att skicka mediedata till Audience Manager använder annonsservermakron för att skicka kampanjattribut till Audience Manager.
+Ett tillvägagångssätt för att skicka mediedata till Audience Manager använder annonsnätverk för att skicka kampanjattribut till Audience Manager.
 
 Den här metoden kallas ofta&quot;pixelering av den kreativa&quot;. Dessa datapunkter infogas dynamiskt i [!DNL Audience Manager]-pixelkoden av tredjeparts- och servermakron, som används för att mappa och rapportera alla visningar och klickningar baserat på kampanjens huvudrapporteringsattribut. De aggregerade data ger en enhetlig bild av kampanjens resultat, hjälper till att identifiera anpassade konverteringsvägar och hjälper kunderna att förbättra sekvensen av annonsserverhändelser som leder till konverteringar.
 
@@ -24,7 +24,7 @@ Den här metoden kallas ofta&quot;pixelering av den kreativa&quot;. Dessa datapu
 
 >[!NOTE]
 >
->Textformaten (`monospaced text`, *kursiv*, parenteser `[ ]` `( )` etc.) anger kodelement och alternativ. Mer information finns i [Formatkonventioner för kod- och textelement](../../reference/code-style-elements.md).
+>Textformaten (`monospaced text`, *kursiv*, hakparenteser `[ ]` `( )` osv.) anger kodelement och alternativ. Mer information finns i [Formatkonventioner för kod- och textelement](../../reference/code-style-elements.md).
 
 Händelseanropet samlar in visnings- och konverteringsdata och skickar dem till [!DNL Audience Manager] [datainsamlingsservrarna](/help/using/reference/system-components/components-data-collection.md) ([!DNL DCS]). Den här processen bygger på externa annonsservrar som placerar anropet i annonsmaterialet för att styra vilket innehåll som ska infogas i koden. De externa annonsservrarna (till exempel [!DNL DFA]) kan placera den här koden i alla annonsvisningar. Dessutom använder ett annonsanrop inte [!DNL JavaScript] eller s.k. frame bursting-teknik för att komma åt utgivardata utanför annonstaggen.
 
@@ -113,7 +113,7 @@ Impression-händelseanrop accepterar data som har formats till nyckelvärdepar. 
 
 ## Ytterligare funktioner - [!DNL Audience Optimization Reports] {#additional-functionality-aor}
 
-Du kan använda pixelanrop för att aktivera [Audience Optimization-rapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md). Se [Översikt och mappningar för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) om du vill använda pixlar som stöd för rapporterna.
+Du kan använda pixelanrop för att aktivera [Audience Optimization Reports](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md). Se [Översikt och mappningar för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) om du vill använda pixlar som stöd för rapporterna.
 
 >[!MORELIKETHIS]
 >

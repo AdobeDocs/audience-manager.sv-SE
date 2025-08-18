@@ -1,5 +1,5 @@
 ---
-description: Rapporten Överlappning mellan segment och annonsenhet visas som ett värmediagram som markerar höga och låga överlappningar mellan annonsenheter och Audience Manager.
+description: Rapporten Överlappning mellan segment och annonsenhet visas som ett värmediagram som markerar höga och låga överlappningar mellan annonsenheter och Audience Manager-segment.
 seo-description: The Segment to Ad Unit Overlap report is displayed as a heat chart that highlights high and low overlaps between your Ad Units and Audience Manager segments.
 seo-title: Segment to Ad Unit Overlap
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Överlappning mellan segment och annonsenhet{#segment-to-ad-unit-overlap}
 
-Rapporten Överlappning mellan segment och annonsenhet visas som ett värmediagram som markerar höga och låga överlappningar mellan annonsenheter och Audience Manager.
+Rapporten Överlappning mellan segment och annonsenhet visas som ett värmediagram som markerar höga och låga överlappningar mellan annonsenheter och Audience Manager-segment.
 
 ## Användningsexempel {#use-cases}
 

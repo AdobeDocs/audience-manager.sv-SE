@@ -30,7 +30,7 @@ c_unique_user_counts.xml
 
 * Under rapportens valda tidsintervall.
 * Det har ett [time-to-live](../features/traits/segment-ttl-explained.md)-värde som är längre än det valda tidsintervallet för rapporten.
-* Om de betraktas som aktiva i vårt system (dvs. är kvalificerade för andra egenskaper, har en ID-synkronisering osv.) under de senaste 60 dagarna.
+* Om de betraktas som aktiva i vårt system (dvs. kvalificerade för andra egenskaper, hade en ID-synkronisering osv.) under de senaste 60 dagarna.
 
 ## Allmän rapport: Unikt antal användare
 

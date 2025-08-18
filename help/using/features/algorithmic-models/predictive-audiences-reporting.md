@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Rapportering om prediktiva målgrupper
 
-När du har sparat en [!UICONTROL Predictive Audiences]-modell börjar Audience Manager utbilda den. Inom några timmar kommer den beräknade modellen att börja analysera målgrupper på [datainsamlingsservrarna](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=sv-SE#dcs-pcs). Rapporteringen blir tillgänglig följande dag.
+När du har sparat en [!UICONTROL Predictive Audiences]-modell börjar Audience Manager utbilda den. Inom några timmar kommer den beräknade modellen att börja analysera målgrupper på [datainsamlingsservrarna](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs). Rapporteringen blir tillgänglig följande dag.
 
 Om du vill se resultatet av din [!UICONTROL Predictive Audiences]-klassificering går du till **[!UICONTROL Audience Data]** > **[!UICONTROL Models]** och klickar på modellen i listan.
 
@@ -33,7 +33,7 @@ I modelltabellen visas följande information:
    * **[!UICONTROL Pending]**: modellen initieras och börjar producera resultat inom kort;
    * **[!UICONTROL Active]**: modellen körs och ger resultat;
    * **[!UICONTROL Warning]**: Det gick inte att skapa resultat för modellen på grund av otillräckliga data (dvs. låg baslinjepopulation, användarprofiler är inte rika);
-   * **[!UICONTROL Error]**: Det gick inte att köra modellen. Kontakta din Adobe-representant.
+   * **[!UICONTROL Error]**: Det gick inte att köra modellen. Kontakta Adobe.
 
 ## Modellöversiktsrapport{#model-report}
 

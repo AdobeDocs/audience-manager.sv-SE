@@ -20,7 +20,7 @@ Rapporten Conversion Traits visar alla egenskaper som märkts som konverteringse
 
 Konverteringsegenskaper för konverteringsgrupper kan ändras från rapportkörning till rapportkörning. Rapporten visar konverteringsegenskaper per konverteringsgrupp för det valda rapportdatumet.
 
-Om du vill veta mer om hur du skapar konverteringsegenskaper i Audience Manager ska du titta på videon nedan:
+Om du vill lära dig hur du skapar konverteringsegenskaper i Audience Manager ska du titta på videon nedan:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23431/)
 

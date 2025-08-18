@@ -13,7 +13,7 @@ ht-degree: 98%
 
 ---
 
-# GDPR:s beredskapsvägledning för Audience Manager-kunder (datakontroller) {#gdpr-readiness-guidance}
+# GDPR-beredskapsvägledning för Audience Manager-kunder (datakontroller) {#gdpr-readiness-guidance}
 
 Audience Manager rekommenderar att man agerar proaktivt när det gäller datastyrning och organisationsberedskap. Det hjälper er att se till att era kunddata organiseras för processer som rör förfrågningar om åtkomst eller radering, att era team kan hantera dessa förfrågningar och att era kunder (registrerade) får en positiv, annorlunda upplevelse av ert varumärke.
 

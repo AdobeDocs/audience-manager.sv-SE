@@ -1,5 +1,5 @@
 ---
-description: Få en översikt över oanvända signaler som Audience Manager tagit emot under de senaste 7 dagarna och identifiera potentiella nya egenskaper. Oanvända signaler når Audience Manager från dina online-egenskaper, men används inte i dina befintliga egenskaper. Gå till Målgruppsdata > Signaler om du vill visa kontrollpanelen för signaler. Kontrollpanelen Signals visar åtgärdbara insikter baserat på dina mest aktiva oanvända signaler.
+description: Få en översikt över oanvända signaler som Audience Manager tagit emot de senaste 7 dagarna och identifiera potentiella nya egenskaper. Oanvända signaler når Audience Manager från era onlinebutiker, men används inte i dina befintliga egenskaper. Gå till Målgruppsdata > Signaler om du vill visa kontrollpanelen för signaler. Kontrollpanelen Signals visar åtgärdbara insikter baserat på dina mest aktiva oanvända signaler.
 seo-description: Get an overview of the unused signals received by Audience Manager in the past 7 days and identify potential new traits. Unused signals reach Audience Manager from your online properties, but are not used in any of your existing traits. To view the Signals Dashboard, go to Audience Data > Signals. The Signals Dashboard shows you actionable insights based on your most active unused signals.
 seo-title: Signals Dashboard
 title: Kontrollpanel för signaler
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Kontrollpanel för signaler {#signals-dashboard}
 
-Få en översikt över oanvända signaler som Audience Manager tagit emot under de senaste 7 dagarna och identifiera potentiella nya egenskaper. Oanvända signaler når Audience Manager från dina online-egenskaper, men används inte i dina befintliga egenskaper. Om du vill visa [!UICONTROL Signals Dashboard] går du till [!UICONTROL Audience Data] > [!UICONTROL Signals]. [!UICONTROL Signals Dashboard] visar åtgärdbara insikter baserat på dina mest aktiva oanvända signaler.
+Få en översikt över oanvända signaler som Audience Manager tagit emot de senaste 7 dagarna och identifiera potentiella nya egenskaper. Oanvända signaler når Audience Manager från era onlinebutiker, men används inte i dina befintliga egenskaper. Om du vill visa [!UICONTROL Signals Dashboard] går du till [!UICONTROL Audience Data] > [!UICONTROL Signals]. [!UICONTROL Signals Dashboard] visar åtgärdbara insikter baserat på dina mest aktiva oanvända signaler.
 
 >[!IMPORTANT]
 >

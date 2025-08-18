@@ -1,5 +1,5 @@
 ---
-description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om en integrering finns i Adobe Exchange-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
+description: Den här sidan innehåller endast aktuella server-till-server-integreringar. Mer information om integrering finns i Adobe Exchange lista (där det finns tillgängligt) eller kontakta Adobe Consultant eller kundtjänst.
 seo-description: This page includes current server-to-server integrations only. For more information on an integration refer to its Adobe Exchange listing (where available) or contact your Adobe Consultant or Customer Care.
 seo-title: Adobe Audience Manager Technology Partners
 keywords: aktivering; aktiveringspartner, destination, destinationer
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 # Audience Manager Activation Partners
 
-Den här sidan innehåller endast aktuella Audience Manager [server-till-server-integreringar](/help/using/features/destinations/add-edit-segments.md).  Mer information om en integrering finns i [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)-listan (där den är tillgänglig) eller kontakta Adobe Consultant eller kundtjänst.
+Den här sidan innehåller endast aktuella Audience Manager [server-till-server-integreringar](/help/using/features/destinations/add-edit-segments.md).  Mer information om en integrering finns i [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)-listan (där den är tillgänglig) eller kontakta din Adobe-konsult eller kundtjänst.
 
 <br>
 
 * **Uppdaterad** = Visar det senaste datumet när det fanns en uppdatering för den här aktiveringspartnern.
-* **Dela upp** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från segment. Din möjlighet att ta bort en enhetsprofil från ett segment beror på vilket enhetsalternativ som används för att skapa en profilkopplingsregel. Osegmentering används också i samband med GDPR-borttagningsbegäranden Läs [profilkopplingsregler och Osegmenteringsprocesser för enheter](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) och [Audience Manager-partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation). Audience Manager skickar information om att segmentera till de destinationer som är markerade med Ja nedan.
-* **Om du tar emot IAB TCF-medgivandesignaler** = Insticksprogrammet Audience Manager för IAB TCF kan du vidarebefordra IAB TC-strängen till aktiveringspartners med hänsyn till användarnas sekretessval. Läs [Audience Manager-plugin-programmet för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
+* **Dela upp** = Osegmentering beskriver processer som diskvalificerar och tar bort enhetsprofiler från segment. Din möjlighet att ta bort en enhetsprofil från ett segment beror på vilket enhetsalternativ som används för att skapa en profilkopplingsregel. Osegmentering används också i samband med GDPR-borttagningsbegäranden Läs [profilkopplingsregler och Unsegmenteringsprocesser för enheter](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) och [Audience Manager Partners med osegmenteringsfunktioner](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation). Audience Manager skickar information om att segmentera till de destinationer som är markerade med Ja nedan.
+* **Om du tar emot IAB TCF-medgivandesignaler** = Audience Manager-plugin-programmet för IAB TCF kan du vidarebefordra IAB TC-strängen till aktiveringspartners med hänsyn till användarnas sekretessval. Läs [Audience Manager Plug-in för IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
 * **ICDS** = Den här kolumnen listar de partners som stöder inaktivering av direktenheter. Läs [Direkt undertryckning av olika enheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
 * **ID:n för mobila enheter** = Den här kolumnen listar partners som kan ta emot ID:n för mobila enheter från Audience Manager.
 
@@ -157,7 +157,7 @@ Den här sidan innehåller endast aktuella Audience Manager [server-till-server-
 | TubeMogul | 03/03/2017 | Ja | Nej | Ja | Nej |
 | Sväng/Amobe | 03/03/2027 | Nej | Nej | Nej | Ja |
 | Twenga | 29/10/2018 | Ja | Nej | Nej | Nej |
-| Anpassade målgrupper för twitter | 27/03/2017 | Ja | Nej | Ja | Nej |
+| Twitter-anpassade målgrupper | 27/03/2017 | Ja | Nej | Ja | Nej |
 | Underton | 11/07/2017 | Nej | Nej | Nej | Nej |
 | Verve | 15/06/2017 | Ja | Nej | Nej | Ja |
 | VideoAmp | 03/03/2017 | Nej | Nej | Nej | Nej |

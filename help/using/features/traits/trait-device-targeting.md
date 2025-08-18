@@ -1,5 +1,5 @@
 ---
-description: Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med enhetsrelaterade variabler i alla egenskaper i ditt Audience Manager-konto.
+description: Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med enhetsrelaterade variabler i alla egenskaper på ditt Audience Manager-konto.
 seo-description: Describes the common platform-level key-value pairs you can use to target users with device-related variables across all properties in your Audience Manager account.
 seo-title: Device Targeting With Platform-level Keys
 solution: Audience Manager
@@ -19,10 +19,10 @@ ht-degree: 1%
 >[!WARNING]
 >
 >Google har uppdaterat funktionerna för [!DNL Google Chrome] och alla [!DNL Chromium]-baserade webbläsare för att minimera informationen som samlas in via rubriken `User-Agent`.
->Från och med mars 2023 stöder Audience Manager dessa uppdateringar genom att utnyttja [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE). Om du vill fortsätta använda trait-information som tillhandahålls via rubriken `User-Agent` måste du använda [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE) och aktivera [High Entropy User-Agent Client-tips](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=sv-SE).
->Dessa uppdateringar stöds inte av [DIL](../../../using/dil/dil-overview.md), så Audience Manager-kunder som använder [!DNL DIL] kan inte samla in information om egenskaper via rubriken `User-Agent`.
+>>Från och med mars 2023 stöder Audience Manager dessa uppdateringar genom att utnyttja [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en). Om du vill fortsätta använda trait-information som tillhandahålls via rubriken `User-Agent` måste du använda [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) och aktivera [High Entropy User-Agent Client Hints](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=en).
+>>Dessa uppdateringar stöds inte av [DIL](../../../using/dil/dil-overview.md), så Audience Manager-kunder som använder [!DNL DIL] kan inte samla in information om egenskaper via rubriken `User-Agent`.
 
-Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med enhetsrelaterade variabler i alla egenskaper i ditt Audience Manager-konto.
+Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med enhetsrelaterade variabler i alla egenskaper på ditt Audience Manager-konto.
 
 ## Syfte med variabler på plattformsnivå {#platform-variables}
 

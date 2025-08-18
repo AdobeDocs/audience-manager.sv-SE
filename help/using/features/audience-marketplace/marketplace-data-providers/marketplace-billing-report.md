@@ -1,5 +1,5 @@
 ---
-description: Generera en faktureringsrapport för Audience Marketplace för att visa dataflödesanvändningen för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
+description: Generera en faktureringsrapport från Audience Marketplace för att visa dataflödesanvändningen för den föregående månaden för var och en av dina prenumeranter. Du kan skapa en rapport för föregående månad när som helst. Rapporten blir dock mer exakt när du genererar den den den 10:e dagen i den aktuella månaden eller senare.
 seo-description: Generate an Audience Marketplace billing report to view data feed usage for the previous month for each of your subscribers. You can create a report for the previous month at any time. However, the report is more accurate when you generate it on or after the 10th day of the current month.
 seo-title: Billing for Data Feed Providers
 solution: Audience Manager
@@ -72,7 +72,7 @@ En faktureringsrapport innehåller följande information.
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> Måttenhet</span></b> </p> </td> 
-   <td colname="col2"> <p>Anger CPM eller platt avgiftsfakturering. </p> </td> 
+   <td colname="col2"> <p>Anger CPM eller fakturering av en platt avgift. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> listpris</span></b> </p> </td> 
@@ -87,7 +87,7 @@ En faktureringsrapport innehåller följande information.
    <td colname="col2"> <p>Varierar efter flödespristyp: </p> 
     <ul id="ul_01550B436EEE4FBC8C9945E08E3CE2C6"> 
      <li id="li_C589F6A751AB407E853AC6F726A47F14">Datautflöden med schablonavgift: Returnerar endast 1. </li> 
-     <li id="li_F93F8AEB2D8C45BFA0305E7808AFF848">CPM-dataflöden: Returnerar den faktiska användningsmängden för CPM-dataflöden. Om en prenumerant inte har angett visningsdata för en CPM-feed är cellen Units tom och flaggcellen är inställd på 1. </li> 
+     <li id="li_F93F8AEB2D8C45BFA0305E7808AFF848">CPM dataflöden: Returnerar den faktiska användningsmängden för CPM dataflöden. Om en prenumerant inte har lämnat några visningsdata för en CPM-feed är cellen Units tom och flaggcellen är inställd på 1. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -112,7 +112,7 @@ En faktureringsrapport innehåller följande information.
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> flagga </span></b> </p> </td> 
-   <td colname="col2"> <p> <i>Endast för CPM-feeds</i>. Flaggalternativen är: </p> 
+   <td colname="col2"> <p> <i>Endast för CPM-flöden</i>. Flaggalternativen är: </p> 
     <ul id="ul_509BC73B754A43299F8D719AB0805ABD"> 
      <li id="li_AB35E33B68EC49A187495DF6B9D86563">0: Anger att en prenumerant har rapporterat användningsinformation till <span class="keyword"> Audience Manager</span>. </li> 
      <li id="li_2E4871B127A84EC586A9F3659F52D67E">1: Anger att en prenumerant inte har rapporterat användningsinformation till <span class="keyword"> Audience Manager</span>. </li> 
@@ -123,6 +123,6 @@ En faktureringsrapport innehåller följande information.
 
 >[!MORELIKETHIS]
 >
->* [Fakturering och Impression-allokering för CPM-datafeeds](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
+>* [Fakturerings- och impressionsallokering för CPM-datafeeds](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
 >* [Fakturerings- och impressionsallokering för statiska avgiftsdatafeeds](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
 >* [Rapportera CPM-användning](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#report-cpm-usage)

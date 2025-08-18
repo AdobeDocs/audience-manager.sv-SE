@@ -66,7 +66,7 @@ Klickhändelser har stöd för de makron som anges i följande tabell. Ett makro
   <tr> 
    <td colname="col1"> <p> <code> d_adsrc</code> </p> </td> 
    <td colname="col02"> <p>Inget makro. </p> <p>Accepterar ett hårdkodat ID-värde. </p> </td> 
-   <td colname="col2"> <p>Advertiser-ID.</p> <p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till datakällor i Audience Manager.</p> <p> Krävs för <span class="wintitle"> Audience Optimization</span>-rapporter. </p> </td> 
+   <td colname="col2"> <p>Advertiser-ID.</p> <p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till Audience Manager datakällor.</p> <p> Krävs för <span class="wintitle"> Audience Optimization</span>-rapporter. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bu</code> </p> </td> 
@@ -96,7 +96,7 @@ Klickhändelser har stöd för de makron som anges i följande tabell. Ett makro
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Experience Cloud</span>-ID (ECID). Mer information om ECID finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=sv-SE" format="https" scope="external"> Cookies och Experience Cloud ID </a>. </p> <p>Valfritt. </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Experience Cloud</span> ID (ECID). Mer information om ECID finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID </a>. </p> <p>Valfritt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_placement</code> </p> </td> 
@@ -168,7 +168,7 @@ Baserat på ovanstående exempel omdirigeras webbläsaren till följande [!DNL U
 
 ## Ytterligare funktioner - [!UICONTROL Audience Optimization Reports]
 
-Du kan använda pixelanrop för att aktivera [Audience Optimization-rapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md). Se [Översikt och mappningar för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) om du vill använda pixlar som stöd för rapporterna.
+Du kan använda pixelanrop för att aktivera [Audience Optimization Reports](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md). Se [Översikt och mappningar för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) om du vill använda pixlar som stöd för rapporterna.
 
 
 >[!MORELIKETHIS]

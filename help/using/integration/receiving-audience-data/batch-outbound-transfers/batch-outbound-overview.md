@@ -1,5 +1,5 @@
 ---
-description: Audience Manager skickar batchdata till tredjepartsleverantörer av innehåll enligt dessa specifikationer.
+description: Audience Manager skickar batchdata till tredjepartsleverantörer enligt dessa specifikationer.
 seo-description: Adobe Audience Manager (AAM) sends batch data to third-party content providers according to these specifications.
 seo-title: Batch Outbound Data Transfers in Adobe Audience Manager (AAM)
 title: Batchutgående dataöverföringar
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Batchutgående dataöverföringar
 
-Audience Manager skickar batchdata till tredjepartsleverantörer av innehåll enligt dessa specifikationer.
+Audience Manager skickar batchdata till tredjepartsleverantörer enligt dessa specifikationer.
 
 * [Namn på utgående datafil: Syntax och exempel](/help/using/integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
 
@@ -26,7 +26,7 @@ Audience Manager skickar batchdata till tredjepartsleverantörer av innehåll en
 
 * [Överföringskontrollfiler för loggfilsöverföringar](/help/using/integration/receiving-audience-data/batch-outbound-transfers/transfer-control-files.md)
 
-  Filer med överföringskontroll (.info) innehåller metadatainformation om filöverföringar så att partners kan verifiera att filöverföringar hanteras på rätt sätt i Audience Manager.
+  Filer med överföringskontroll (.info) innehåller metadatainformation om filöverföringar så att partners kan verifiera att filöverföringar hanteras korrekt i Audience Manager.
 
 * [Utgående mallmakron](/help/using/integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)
 

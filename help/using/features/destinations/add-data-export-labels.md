@@ -33,7 +33,6 @@ Så här lägger du till exportetiketter till ett mål:
    * **[!UICONTROL This destination may be used for on-site ad targeting]**
    * **[!UICONTROL This destination may be used for off-site ad targeting]**
    * **[!UICONTROL This destination may be used for on-site ad personalization]**
-
    >[!IMPORTANT]
    >
    >Exportbegränsningar fungerar inte om du inte anger en [matchande exportkontroll](../../features/data-export-controls.md) för en datakälla.

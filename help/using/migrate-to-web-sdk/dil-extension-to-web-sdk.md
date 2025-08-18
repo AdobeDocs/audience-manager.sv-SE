@@ -1,5 +1,5 @@
 ---
-title: Migrera från taggtillägget Audience Manager till Web SDK-taggtillägget
+title: Migrera från taggtillägget Audience Manager till taggtillägget Web SDK
 description: Förstå stegen för att uppdatera ditt datainsamlingsbibliotek för Audience Manager från taggtillägget Audience Manager till taggtillägget Web SDK
 exl-id: 7f0486db-4511-4311-90df-290580fdcd78
 source-git-commit: a50aaeb5e384685100dc3ecc1d6d45f1c41461d0
@@ -9,11 +9,11 @@ ht-degree: 0%
 
 ---
 
-# Uppdatera datainsamlingsbiblioteket för Audience Manager från taggtillägget Audience Manager till Web SDK-taggtillägget
+# Uppdatera ditt datainsamlingsbibliotek för Audience Manager från taggtillägget Audience Manager till taggtillägget Web SDK
 
 ## Målgrupp
 
-Den här sidan är avsedd för Audience Manager-kunder som använder taggtillägget [Audience Manager](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/audience-manager/overview) för att hämta webbsamlingsdata till Audience Manager. Kunder som använder AppMeasurement JavaScript-biblioteket kan läsa guiden om hur du uppdaterar ditt datainsamlingsbibliotek för Audience Manager [ från AppMeasurement JavaScript-biblioteket till Web SDK JavaScript-biblioteket](appmeasurement-to-web-sdk.md).
+Den här sidan är avsedd för Audience Manager-kunder som använder [Audience Manager-taggtillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/audience-manager/overview) för att hämta webbsamlingsdata till Audience Manager. Kunder som använder AppMeasurement JavaScript-biblioteket kan läsa guiden om hur du uppdaterar ditt datainsamlingsbibliotek för Audience Manager [från AppMeasurement JavaScript-biblioteket till Web SDK JavaScript-biblioteket](appmeasurement-to-web-sdk.md).
 
 ## Fördelar och nackdelar med implementeringsvägen
 
@@ -21,17 +21,17 @@ Att använda den här migreringsmetoden har både fördelar och nackdelar. Väg 
 
 | Fördelar | Nackdelar |
 | --- | --- |
-| <ul><li>**Inga kodändringar på din plats**: Eftersom implementeringen redan har installerade taggar kan alla migreringsuppdateringar göras i tagggränssnittet.</li><li>**Använder din befintliga implementering**: Den här metoden kräver ingen ny implementering. Även om det kräver nya regelåtgärder kan du återanvända befintliga dataelement och regelvillkor med minimala ändringar.</li><li>**Kräver inget schema**: För den här migreringsfasen till Web SDK behövs inget XDM-schema. I stället kan du fylla i objektet `data`, som skickar data direkt till Adobe Audience Manager. När migreringen till Web SDK är klar kan du skapa ett schema för din organisation och använda datastream-mappning för att fylla i tillämpliga XDM-fält. Om det krävs ett schema i det här skedet av migreringsprocessen måste din organisation använda ett Adobe Audience Manager XDM-schema. Om du använder det här schemat blir det svårare för din organisation att använda ditt eget schema i framtiden.</li></ul> | <ul><li>**Implementeringens tekniska skuld**: Eftersom den här metoden använder en modifierad form av din befintliga implementering, kan det vara svårare att spåra implementeringslogik och utföra ändringar vid behov. Anpassad kod kan vara särskilt svår att felsöka.</li><li>**Kräver mappning för att skicka data till plattformen**: När din organisation är redo att använda Real-Time CDP måste du skicka data till en datauppsättning i Adobe Experience Platform. Den här åtgärden kräver att alla fält i objektet `data` är en post i datastream-mappningsverktyget som tilldelar det till ett XDM-schemafält. Mappning behöver bara göras en gång för det här arbetsflödet, och implementeringen behöver inte ändras. Det är dock ett extra steg som inte krävs när du skickar data i ett XDM-objekt.</li></ul> |
+| <ul><li>**Inga kodändringar på din plats**: Eftersom implementeringen redan har installerade taggar kan alla migreringsuppdateringar göras i tagggränssnittet.</li><li>**Använder din befintliga implementering**: Den här metoden kräver ingen ny implementering. Även om det kräver nya regelåtgärder kan du återanvända befintliga dataelement och regelvillkor med minimala ändringar.</li><li>**Kräver inget schema**: För den här migreringsfasen till Web SDK behöver du inget XDM-schema. I stället kan du fylla i objektet `data`, som skickar data direkt till Adobe Audience Manager. När migreringen till Web SDK är klar kan du skapa ett schema för din organisation och använda datastream-mappning för att fylla i tillämpliga XDM-fält. Om det krävs ett schema i det här skedet av migreringsprocessen måste din organisation använda ett Adobe Audience Manager XDM-schema. Om du använder det här schemat blir det svårare för din organisation att använda ditt eget schema i framtiden.</li></ul> | <ul><li>**Implementeringens tekniska skuld**: Eftersom den här metoden använder en modifierad form av din befintliga implementering, kan det vara svårare att spåra implementeringslogik och utföra ändringar vid behov. Anpassad kod kan vara särskilt svår att felsöka.</li><li>**Kräver mappning för att skicka data till plattformen**: När din organisation är redo att använda Real-Time CDP måste du skicka data till en datauppsättning i Adobe Experience Platform. Den här åtgärden kräver att alla fält i objektet `data` är en post i datastream-mappningsverktyget som tilldelar det till ett XDM-schemafält. Mappning behöver bara göras en gång för det här arbetsflödet, och implementeringen behöver inte ändras. Det är dock ett extra steg som inte krävs när du skickar data i ett XDM-objekt.</li></ul> |
 
 Adobe rekommenderar att du följer den här implementeringsvägen när du har en befintlig implementering med Adobe Audience Manager-taggtillägget.
 
-## Steg som krävs för att migrera till Web SDK
+## Steg som krävs för att migrera till SDK för webben
 
 Följande steg innehåller konkreta mål att arbeta mot. Välj varje steg om du vill ha detaljerade anvisningar om hur du slutför det.
 
 +++**1. Skapa och konfigurera en datastream**
 
-Följ instruktionerna nedan för att skapa ett datastam i Adobe Experience Platform Data Collection. När du skickar data till den här datastreamen vidarebefordrar den data till Audience Manager. I framtiden skickar samma dataström data till Real-Time CDP.
+Följ instruktionerna nedan för att skapa ett datastam i Adobe Experience Platform Data Collection. När du skickar data till den här dataströmmen vidarebefordrar den data till Audience Manager. I framtiden skickar samma dataström data till Real-Time CDP.
 
 1. Navigera till [experience.adobe.com](https://experience.adobe.com) och logga in med dina autentiseringsuppgifter.
 1. Använd hemsidan eller produktväljaren i det övre högra hörnet för att navigera till **[!UICONTROL Data Collection]**.
@@ -42,7 +42,7 @@ Följ instruktionerna nedan för att skapa ett datastam i Adobe Experience Platf
 1. Välj **[!UICONTROL Adobe Audience Manager]** på den nedrullningsbara menyn för tjänster.
 1. Kontrollera att alternativet **[!UICONTROL Enable XDM Flattened Fields]** inte är markerat.
 
-   ![Lägg till tjänsten Audience Manager](assets/add-service.png) {style="border:1px solid lightslategray"}
+   ![Lägg till Audience Manager-tjänst](assets/add-service.png) {style="border:1px solid lightslategray"}
 
 Din datastream är nu redo att ta emot och skicka data till Audience Manager.
 
@@ -72,7 +72,7 @@ Din taggegenskap har nu Web SDK installerat.
 
 +++**3. Skapa ett dataobjektdataelement**
 
-Dataobjektets dataelement tillhandahåller ett intuitivt ramverk för att konfigurera en nyttolast som Web SDK använder för att skicka till en datastam. De flesta regler som du uppdaterar i följande steg interagerar med det här dataelementet.
+Dataobjektets dataelement tillhandahåller ett intuitivt ramverk för att konfigurera en nyttolast som SDK använder för att skicka till en datastam. De flesta regler som du uppdaterar i följande steg interagerar med det här dataelementet.
 
 1. Välj **[!UICONTROL Data Elements]** i den vänstra navigeringen i tagggränssnittet.
 1. Välj **[!UICONTROL Add Data Element]**
@@ -94,7 +94,7 @@ Din taggegenskap har nu allt som behövs för att uppdatera varje regel.
 
 +++**4. Uppdatera regler för att använda Web SDK-tillägget i stället för Audience Manager-tillägget**
 
-Det här steget innehåller det mesta som krävs för att migrera till Web SDK och kräver kunskap om hur implementeringen fungerar. Nedan visas ett exempel på hur du redigerar en typisk taggregel. Uppdatera alla taggregler i implementeringen så att alla referenser till tillägget Audience Manager ersätts med tillägget Web SDK.
+Det här steget innehåller det mesta som krävs för att migrera till Web SDK och kräver kunskap om hur implementeringen fungerar. Nedan visas ett exempel på hur du redigerar en typisk taggregel. Uppdatera alla taggregler i implementeringen för att ersätta alla referenser till Audience Manager-tillägget med Web SDK-tillägget.
 
 1. Välj **[!UICONTROL Rules]** i den vänstra navigeringen i tagggränssnittet.
 1. Markera en regel som du vill redigera.
@@ -104,7 +104,7 @@ Det här steget innehåller det mesta som krävs för att migrera till Web SDK o
    * **[!UICONTROL Extension]**: [!UICONTROL Adobe Experience Platform Web SDK]
    * **[!UICONTROL Action type]**: Uppdatera variabel
 1. Kontrollera att dataobjektet som du skapade i steg 3 är markerat i listrutan till höger i fältet **[!UICONTROL Data element]**.
-1. Ställ in nyckelvärdepar för Audience Manager på samma respektive värden som de konfigurerades i tillägget Audience Manager.
+1. Ställ in Audience Manager nyckelvärdepar på samma värden som de konfigurerades i tillägget Audience Manager.
 1. När all regellogik har replikerats med Web SDK-tillägget väljer du **[!UICONTROL Keep Changes]**.
 1. Upprepa dessa steg för varje åtgärdskonfiguration som använder taggtillägget Audience Manager för att ange värden.
 
@@ -123,13 +123,13 @@ Stegen ovan gäller bara regler som anger värden. Följande steg ersätter alla
 
 +++
 
-+++**5. Publish uppdaterade regler**
++++**5. Publicera uppdaterade regler**
 
 Publicering av uppdaterade regler följer samma arbetsflöde som andra ändringar av taggkonfigurationen.
 
 1. Välj **[!UICONTROL Publishing Flow]** i den vänstra navigeringen i tagggränssnittet.
 1. Välj **[!UICONTROL Add Library]**.
-1. Ge den här taggen ett namn, till exempel&quot;Uppgradera till Web SDK&quot;.
+1. Ge den här taggen ett namn, till exempel&quot;Uppgradera till SDK&quot;.
 1. Välj **[!UICONTROL Add All Changed Resources]**.
 1. Välj **[!UICONTROL Save]**.
 1. Publiceringsarbetsflödet visar en orange punkt som anger att den håller på att byggas. När punkten blir grön är dina ändringar tillgängliga i utvecklingsmiljön.
@@ -142,7 +142,7 @@ Publicering av uppdaterade regler följer samma arbetsflöde som andra ändringa
 
 +++**6. Inaktivera Audience Manager-tillägget**
 
-När taggimplementeringen är helt migrerad till Web SDK kan du inaktivera tillägget Audience Manager.
+När taggimplementeringen är helt migrerad till Web SDK kan du inaktivera Audience Manager-tillägget.
 
 1. Välj **[!UICONTROL Extensions]** i den vänstra navigeringen i tagggränssnittet.
 1. Leta reda på och välj tillägget [!UICONTROL Audience Manager]. Välj **[!UICONTROL Disable]** till höger.
@@ -152,4 +152,4 @@ När taggimplementeringen är helt migrerad till Web SDK kan du inaktivera till�
 
 +++
 
-I nuläget är implementeringen av Audience Manager helt migrerad till Web SDK och är redo att gå över till Real-Time CDP i framtiden.
+I nuläget är er Audience Manager-implementering helt migrerad till Web SDK och är beredd att gå över till Real-Time CDP i framtiden.

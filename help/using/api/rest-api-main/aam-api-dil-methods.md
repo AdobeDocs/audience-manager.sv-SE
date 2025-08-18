@@ -1,9 +1,9 @@
 ---
-description: Metoder som gör att du kan arbeta programmatiskt med Datan Integration Library (DIL).
+description: Metoder som gör att du kan arbeta programmatiskt med Data Integration Library (DIL).
 seo-description: Methods that let you work programmatically with the Data Integration Library (DIL).
 seo-title: Data Integration Library API Methods
 solution: Audience Manager
-title: Data Integration Library-API-metoder
+title: Data Integration Library API-metoder
 uuid: 507e7afd-3ae7-44de-98b0-589d699c453b
 feature: API
 exl-id: d2f3e4e8-65be-4fec-90d7-5991514b8efc
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 ---
 
-# Data Integration Library-API-metoder {#data-integration-library-api-methods}
+# Data Integration Library API-metoder {#data-integration-library-api-methods}
 
 Metoder som gör att du kan arbeta programmatiskt med [!UICONTROL Data Integration Library] ([!UICONTROL DIL]).
 
 >[!IMPORTANT]
 >
->Data Integration Library-API:t är inaktuellt. Detta API användes för att generera DIL, som du nu kan hämta själv här: [DIL download](https://github.com/Adobe-Marketing-Cloud/dil/releases).
+>Data Integration Library API har tagits bort. Detta API användes för att generera DIL, som du nu kan hämta själv här: [DIL download](https://github.com/Adobe-Marketing-Cloud/dil/releases).
 
 <!-- c_data_integr_library_api.xml -->
 

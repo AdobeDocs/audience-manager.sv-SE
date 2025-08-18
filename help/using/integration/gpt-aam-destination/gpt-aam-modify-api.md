@@ -1,5 +1,5 @@
 ---
-description: Lägg till en if-sats för att kontrollera om det finns Audience Manager-cookies innan du anropar Google Publisher-taggen .setTargeting-metoden.
+description: Lägg till en if-programsats för att kontrollera Audience Manager-cookies innan du anropar Google Publisher-taggen .setTargeting-metoden.
 seo-description: Add an if statement to check for Audience Manager cookies before calling the Google Publisher Tag .setTargeting method.
 seo-title: Modify the GPT setTargeting API Call
 solution: Audience Manager
@@ -16,15 +16,15 @@ ht-degree: 4%
 
 # Ändra GPT-API-anropet `setTargeting` {#modify-the-gpt-settargeting-api-call}
 
-Lägg till en if-sats som ska kontrolleras för Audience Manager-cookies innan du anropar metoden [!DNL Google Publisher Tag] `.setTargeting`.
+Lägg till en if-sats som söker efter Audience Manager-cookies innan metoden [!DNL Google Publisher Tag] `.setTargeting` anropas.
 
-## Sök efter Audience Manager-cookies med en `IF`-sats
+## Sök efter Audience Manager Cookies med en `IF`-sats
 
-Metoden `.setTargeting` hämtar data från målcookien för Audience Manager och den unika cookien för användar-ID ( `aam_uuid`). Om `.setTargeting` anropas innan [!UICONTROL DIL] skriver dessa cookies, eller om cookies är tomma, kan du se fel när sidan läses in. Du kan undvika detta genom att kapsla in metoden `.setTargeting` i en `if` -sats som söker efter dessa cookies. Om de inte anges förhindrar den här programsatsen `.setTargeting` från att anropa funktionen `AamGpt`.
+Metoden `.setTargeting` hämtar data från Audience Manager målcookie och den unika användar-ID-cookien ( `aam_uuid`). Om `.setTargeting` anropas innan [!UICONTROL DIL] skriver dessa cookies, eller om cookies är tomma, kan du se fel när sidan läses in. Du kan undvika detta genom att kapsla in metoden `.setTargeting` i en `if` -sats som söker efter dessa cookies. Om de inte anges förhindrar den här programsatsen `.setTargeting` från att anropa funktionen `AamGpt`.
 
 ### Exempel på programsats `IF`
 
-I det här exemplet är målcookie-namnet för Audience Manager `Sample`. Du anger det här namnet när du skapar målcookien i användargränssnittet i Audience Manager. [!UICONTROL DIL] anger cookien `aam_uuid` och det går inte att ändra namnet.
+I det här exemplet är målcookie-namnet för Audience Manager `Sample`. Du anger det här namnet när du skapar målcookien i Audience Manager-användargränssnittet. [!UICONTROL DIL] anger cookien `aam_uuid` och det går inte att ändra namnet.
 
 ```js
 if(typeof AamGpt.getCookie("Sample") != "undefined"){ 

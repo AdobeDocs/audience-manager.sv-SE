@@ -1,5 +1,5 @@
 ---
-description: Betamiljön används för att testa implementeringen av Audience Manager. Ändringar som görs i betaversionen påverkar inte produktionsdata. Kontakta din Audience Manager Partner Solutions-representant om du är intresserad av att använda betamiljön.
+description: Betamiljön används för att testa din Audience Manager-implementering. Ändringar som görs i betaversionen påverkar inte produktionsdata. Kontakta din Audience Manager Partner Solutions-representant om du är intresserad av att använda betamiljön.
 keywords: sandlåda
 seo-description: The beta environment is for testing your Audience Manager implementation. Changes made in beta do not affect production data. Contact your Audience Manager Partner Solutions representative if you're interested in using the beta environment.
 seo-title: Beta Environment
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Beta Environment {#beta-environment}
 
-Betamiljön används för att testa implementeringen av Audience Manager. Ändringar som görs i betaversionen påverkar inte produktionsdata. Kontakta din Audience Manager Partner Solutions-representant om du är intresserad av att använda betamiljön.
+Betamiljön används för att testa din Audience Manager-implementering. Ändringar som görs i betaversionen påverkar inte produktionsdata. Kontakta din Audience Manager Partner Solutions-representant om du är intresserad av att använda betamiljön.
 
 ## Översikt
 
@@ -29,7 +29,7 @@ Betamiljön uppdateras i slutet av varje månad under tider med låg belastning.
 
 >[!IMPORTANT]
 >
->Observera att dina kunddata ([signaler, egenskaper och segment](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=sv-SE)) inte synkroniseras mellan produktions- och betamiljöerna.
+>Observera att dina kunddata ([signaler, egenskaper och segment](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=en)) inte synkroniseras mellan produktions- och betamiljöerna.
 
 ## Inkommande trafik
 
@@ -47,7 +47,7 @@ Utgående trafik är inte aktiverat för betamiljön.
 
 | Tjänst | URL/värdnamn | Hur man får åtkomst |
 |--- |--- | --- |
-| S3 | Kontakta din Audience Manager Partner Solutions-representant eller kundtjänst | Kontakta din Audience Manager Partner Solutions-representant eller kundtjänst om du vill konfigurera en Amazon S3-bucket för din betainstans. Läs om [fördelarna med att använda Amazon S3](../reference/amazon-s3.md). |
+| S3 | Kontakta din Audience Manager Partner Solutions-representant eller kundtjänst | Kontakta din Audience Manager Partner Solutions-representant eller kundtjänst för att skapa en Amazon S3-bucket för din betainstans. Läs om [fördelarna med att använda Amazon S3](../reference/amazon-s3.md). |
 | DCS | `https://dcs-beta.demdex.net/...` | Se [Åtkomst till DCS i Beta-miljön](../reference/beta-environment.md#access-dcs-beta-environment). |
 | UI | `https://bank-beta.demdex.com` | Autentiseringsuppgifterna för produktionsmiljön gäller för betamiljön. |
 | API | `https://api-beta.demdex.com/...` | Autentiseringsuppgifterna för produktionsmiljön gäller för betamiljön. Vi rekommenderar att du skapar en allmän API-användare, [se information](../api/rest-api-main/aam-api-getting-started.md#requirements). |

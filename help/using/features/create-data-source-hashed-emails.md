@@ -17,10 +17,10 @@ Hash-kodade e-postarbetsflöden, t.ex. personbaserade mål, kräver att du skapa
 
 Följ stegen nedan för att skapa och konfigurera en datakälla för hashad e-post.
 
-1. Logga in på ditt Audience Manager-konto och gå till **[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]** och klicka på **[!UICONTROL Add New]**.
+1. Logga in på ditt Audience Manager-konto, gå till **[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]** och klicka på **[!UICONTROL Add New]**.
 1. Ange **[!UICONTROL Name]** och **[!UICONTROL Description]** som ny datakälla.
-1. Välj **[!UICONTROL Cross Device]** i listrutan **[!UICONTROL ID Type]**.
-   ![Audience Manager-gränssnittsbild som visar informationsområdet för datakällan.](../features/assets/create-hashed-email-data-source.png)
+1. Välj **[!UICONTROL ID Type]** i listrutan **[!UICONTROL Cross Device]**.
+   ![Audience Manager-gränssnittsbild som visar avsnittet med information om datakällan.](../features/assets/create-hashed-email-data-source.png)
 1. I avsnittet **[!UICONTROL Data Source Settings]** markerar du både alternativen **[!UICONTROL Inbound]** och **[!UICONTROL Outbound]** och aktiverar alternativet **[!UICONTROL Share associated cross-device IDs in people-based destinations]**.
 1. Använd listrutan för att välja etiketten **[!UICONTROL Emails(SHA256, lowercased)]** för den här datakällan.
 

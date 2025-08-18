@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
-> Hanteringen av användarkonton flyttas till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). För att starta användarmigreringen måste alla Audience Manager-kunder omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln: [Audience Manager-användarmigrering till Admin Console](admin-console-migration.md).
+> Hanteringen av användarkonton flyttas till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). För att starta användarmigrering måste alla Audience Manager-kunder omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln: [Audience Manager användarmigrering till Admin Console](admin-console-migration.md).
 > 
 > När alla kunder har migrerat kommer användarhanteringsavsnitten i det här dokumentet att försvinna.
 
@@ -34,7 +34,7 @@ Med alternativen på menyn [!UICONTROL Administration] kan du skapa Audience Man
 
 Företagskunder som använder [!DNL Audience Manager] behöver en datahanteringsplattform för alla sina data, men måste kunna styra synligheten för olika dataelement för specifika affärsenheter. Du kan uppnå detta med gruppbehörigheter, som också kallas [!UICONTROL Role-Based Access Control] ([!UICONTROL RBAC]).
 
-[!DNL Audience Manager] använder grupper för att tilldela behörigheter. Behörigheter tilldelas inte på användarnivå. Gruppbehörigheter är knutna till objekt ([!UICONTROL traits], segment osv.) och åtgärder som du kan utföra på dessa objekt (redigera, visa, osv.). Dessa kontroller är också tillgängliga via Audience Manager REST API:er. Se API-metoderna [Användarhantering](/help/using/api/rest-api-main/aam-api-user-group-permission/aam-api-user.md), [Grupphantering](/help/using/api/rest-api-main/aam-api-user-group-permission/aam-api-group.md) och [Behörighetshantering](/help/using/api/rest-api-main/aam-api-user-group-permission/aam-api-permissions.md).
+[!DNL Audience Manager] använder grupper för att tilldela behörigheter. Behörigheter tilldelas inte på användarnivå. Gruppbehörigheter är knutna till objekt ([!UICONTROL traits], segment osv.) och till åtgärder som du kan utföra på dessa objekt (redigera, visa osv.). Dessa kontroller är också tillgängliga via Audience Manager REST API:er. Se API-metoderna [Användarhantering](/help/using/api/rest-api-main/aam-api-user-group-permission/aam-api-user.md), [Grupphantering](/help/using/api/rest-api-main/aam-api-user-group-permission/aam-api-group.md) och [Behörighetshantering](/help/using/api/rest-api-main/aam-api-user-group-permission/aam-api-permissions.md).
 
 ## Skapa användare {#create-users}
 
@@ -42,11 +42,11 @@ Företagskunder som använder [!DNL Audience Manager] behöver en datahanterings
 
 >[!IMPORTANT]
 >
-> Hanteringen av användarkonton flyttas till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). För att starta användarmigreringen måste alla Audience Manager-kunder omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln: [Audience Manager-användarmigrering till Admin Console](admin-console-migration.md).
+> Hanteringen av användarkonton flyttas till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). För att starta användarmigrering måste alla Audience Manager-kunder omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln: [Audience Manager användarmigrering till Admin Console](admin-console-migration.md).
 > 
 > När alla kunder har migrerat försvinner avsnittet för användarhantering i det här dokumentet.
 > 
->Skapa användare i [!DNL Audience Manager] och ange användarinformation, inloggningsstatus och tilldela användare till grupper.
+Skapa användare i [!DNL Audience Manager] och ange användarinformation, inloggningsstatus och tilldela användare till grupper.
 
 1. Klicka på **[!UICONTROL Administration]** > **[!UICONTROL Users]**.
 1. Klicka på ![](assets/icon_add.png) för att visa sidan [!UICONTROL Create New User].
@@ -71,7 +71,7 @@ Mer information om grupper och behörigheter finns i [Skapa en grupp](../../feat
 
 >[!IMPORTANT]
 >
-> Hanteringen av användarkonton flyttas till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). För att starta användarmigrering rekommenderar vi alla Audience Manager-kunder att omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln: [Audience Manager-användarmigrering till Admin Console](admin-console-migration.md).
+> Hanteringen av användarkonton flyttas till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Vi rekommenderar alla Audience Manager-kunder att omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln för att starta migreringen av användare: [Audience Manager-migrering till Admin Console](admin-console-migration.md).
 > 
 > När alla kunder har migrerat försvinner det här avsnittet.
 
@@ -97,7 +97,7 @@ Då öppnas ett behörighetsfönster för det markerade objektet.
 
 >[!IMPORTANT]
 >
-> Hanteringen av användarkonton flyttas till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). För att starta användarmigrering rekommenderar vi alla Audience Manager-kunder att omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln: [Audience Manager-användarmigrering till Admin Console](admin-console-migration.md).
+> Hanteringen av användarkonton flyttas till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Vi rekommenderar alla Audience Manager-kunder att omedelbart vidta de nödvändiga åtgärder som beskrivs i den här artikeln för att starta migreringen av användare: [Audience Manager-migrering till Admin Console](admin-console-migration.md).
 > 
 > När alla kunder har migrerat försvinner det här avsnittet.
 
@@ -166,7 +166,7 @@ Läs nedan för att få en beskrivning av vad varje [!UICONTROL wildcard permiss
 
 ### Övervaka användaråtkomst {#monitoring-user-access}
 
-[!UICONTROL Role-Based Access Control] kan hjälpa dig att övervaka inloggningsstatusen för användare, vilket ger dig en tydlig bild av vem som har åtkomst till din Audience Manager-instans.
+[!UICONTROL Role-Based Access Control] kan hjälpa dig att övervaka inloggningsstatusen för användare och ge dig en tydlig bild av vem som har åtkomst till din Audience Manager-instans.
 
 Beroende på dina affärskrav kan du aktivera och inaktivera användarkonton efter behov.
 

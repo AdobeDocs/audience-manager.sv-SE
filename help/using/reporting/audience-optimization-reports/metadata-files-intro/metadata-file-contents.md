@@ -61,9 +61,9 @@ I det här exemplet är filtiteln 20180921_0_1 och de tre kolumnerna i filen är
 333 Campaign C -1
 ```
 
-**Kreativ**
+**Creative**
 
-I det här exemplet är filtiteln 20180827_0_2 och de tre kolumnerna i filen är: Creative ID, Name och Parent ID.
+I det här exemplet är filtiteln 20180827_0_2 och de tre kolumnerna i filen är: Creative ID, Namn och Överordnat ID.
 
 ```
 //File Title

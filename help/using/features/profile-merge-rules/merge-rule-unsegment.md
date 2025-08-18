@@ -24,7 +24,7 @@ Som påminnelse är [!UICONTROL Device Options] tillgängligt i avsnittet [!UICO
 
 ## Aktuellt alternativ för enhetsprofil och osegmentering av enhet {#current-device-profile-options}
 
-**[!UICONTROL Device Profile]** är standardprofilalternativet för en [!UICONTROL Profile Merge Rule]. [!DNL Audience Manager] kan ta bort en enhetsprofil från ett segment när alternativet **[!UICONTROL Device Profile]** används i [!UICONTROL Profile Merge Rule]. Under dessa förhållanden sker avsegmentering när:
+**[!UICONTROL Device Profile]** är standardprofilalternativet för en [!UICONTROL Profile Merge Rule]. [!DNL Audience Manager] kan ta bort en enhetsprofil från ett segment när alternativet [!UICONTROL Profile Merge Rule] används i **[!UICONTROL Device Profile]**. Under dessa förhållanden sker avsegmentering när:
 
 * Enhetsprofilen har varit inaktiv i 120 dagar. En veckovis datarensningsprocess tar bort inaktiva enhetsprofiler från era segment.
 * Enheten är inte längre berättigad till ett segment eftersom uppdateringar eller ändringar av enhetsprofilen diskvalificerar det. Detta inträffar när villkoren för godkännande av segment ändras, eller när du tillämpar en [!DNL AND NOT]-operator på en segmentregel, eller anger [villkor för senaste och frekvens](../segments/recency-and-frequency.md) som använder inställningarna mindre än/lika med. Användningsexempel beskrivs i dokumentationen för [Undertryckande av direktenheter](instant-cross-device-suppression.md).
@@ -33,7 +33,7 @@ Som påminnelse är [!UICONTROL Device Options] tillgängligt i avsnittet [!UICO
 
 ## Inget enhetsalternativ och ingen enhetssegmentering {#no-device-option}
 
-[!DNL Audience Manager] kan ta bort ett enhets-ID från ett segment när alternativet **[!UICONTROL Current Authenticated Profiles]** + **[!UICONTROL No Device Profile]** används i [!UICONTROL Profile Merge Rule]. Under dessa förhållanden sker avsegmentering när enhets-ID inte längre kvalificerar för ett segment eftersom uppdateringar eller ändringar av enhetsprofilen diskvalificerar det. Detta inträffar när villkoren för godkännande av segment ändras, eller när du tillämpar en [!UICONTROL AND NOT]-operator på en segmentregel, eller anger [villkor för senaste och frekvens](../segments/recency-and-frequency.md) som använder inställningarna mindre än/lika med. Användningsexempel beskrivs i dokumentationen för [Undertryckande av direktenheter](instant-cross-device-suppression.md).
+[!DNL Audience Manager] kan ta bort ett enhets-ID från ett segment när alternativet [!UICONTROL Profile Merge Rule] + **[!UICONTROL Current Authenticated Profiles]** används i **[!UICONTROL No Device Profile]**. Under dessa förhållanden sker avsegmentering när enhets-ID inte längre kvalificerar för ett segment eftersom uppdateringar eller ändringar av enhetsprofilen diskvalificerar det. Detta inträffar när villkoren för godkännande av segment ändras, eller när du tillämpar en [!UICONTROL AND NOT]-operator på en segmentregel, eller anger [villkor för senaste och frekvens](../segments/recency-and-frequency.md) som använder inställningarna mindre än/lika med. Användningsexempel beskrivs i dokumentationen för [Undertryckande av direktenheter](instant-cross-device-suppression.md).
 
 ![](assets/current-no-device.png)
 
@@ -44,7 +44,7 @@ Som påminnelse är [!UICONTROL Device Options] tillgängligt i avsnittet [!UICO
 >[!NOTE]
 >
 >**100 enhetsgräns för utvärdering och diskvalificering av segment**.
->Audience Manager sammanfogar upp till 100 enheter när segment utvärderas med en profilsammanfogningsregel som använder ett enhetsdiagram. Audience Manager utvärderar den aktuella enheten och upp till 99 enheter som är länkade till den aktuella enheten med en [autentiserad profil](../../reference/visitor-authentication-states.md) (enhets-ID). Om signalen för att dela upp segment skickas tas den aktuella enheten och ytterligare enheter bort från segmentet i målet.
+>>Audience Manager sammanfogar upp till 100 enheter när segment utvärderas med en profilsammanfogningsregel som använder ett enhetsdiagram. Audience Manager utvärderar den aktuella enheten och upp till 99 enheter länkade till den aktuella enheten med en [autentiserad profil](../../reference/visitor-authentication-states.md) (enhets-ID). Om signalen för att dela upp segment skickas tas den aktuella enheten och ytterligare enheter bort från segmentet i målet.
 
 ![](assets/last-device-graph.png)
 

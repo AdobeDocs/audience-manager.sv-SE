@@ -31,7 +31,7 @@ Datastyrning i Audience Manager avser livscykeln för era kunddata i Audience Ma
 
 >[!NOTE]
 >
->Mer information om hur du aktiverar [!DNL IP]-adressofficering i användargränssnittet i Audience Manager finns i [IP-adressofficering](../../features/administration/ip-obfuscation.md).
+>Mer information om hur du aktiverar [-adressofficering i Audience Manager-användargränssnittet finns i ](../../features/administration/ip-obfuscation.md)IP-adressofficering[!DNL IP].
 
 Titta på videon nedan för att få veta mer om hur du döljer [!DNL IP]-adresser i Audience Manager.
 

@@ -35,9 +35,9 @@ Fyll i följande fält för att slutföra avsnittet [!UICONTROL Data Source Deta
 1. **[!UICONTROL Description]** (valfritt): Ange en beskrivning för datakällan som hjälper dig att definiera rollen eller syftet med datakällan.
 1. **[!UICONTROL Integration Code]** (valfritt): Ange en integreringskod. Dessa koder är obligatoriska när du vill:
    * [Skapa en datakälla för olika enheter](../features/profile-merge-rules/merge-rules-start.md#create-data-source).
-   * Använd [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE).
+   * Använd [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
    * Arbeta med [profilkopplingsregler](../features/profile-merge-rules/merge-rules-start.md).
-1. **[!UICONTROL Namespace]** (skrivskyddad): Det här fältet är skrivskyddat och genereras automatiskt när du sparar datakällan. Om du vill exportera segment från Audience Manager till Experience Platform måste du skapa ett motsvarande [identitetsnamnutrymme](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=sv-SE#manage-namespaces) i Experience Platform och använda det automatiskt genererade värdet som namnutrymmets [identitetssymbol](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces#components-of-a-namespace) i Experience Platform.
+1. **[!UICONTROL Namespace]** (skrivskyddad): Det här fältet är skrivskyddat och genereras automatiskt när du sparar datakällan. Om du vill exportera segment från Audience Manager till Experience Platform måste du skapa ett motsvarande [identitetsnamnutrymme](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#manage-namespaces) i Experience Platform och använda det automatiskt genererade värdet som namnutrymmets [identitetssymbol](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#components-of-a-namespace) i Experience Platform.
 1. **[!UICONTROL ID Type]**: Välj vilken typ av ID som den här datakällan ska innehålla:
    * **[!UICONTROL Cookie]**
    * **[!UICONTROL Device Advertising ID]**
@@ -69,7 +69,7 @@ Ta bort en [!UICONTROL data source] som du inte längre behöver.
 >Observera följande begränsningar:
 >
 >* Du kan inte ta bort en [aktiv publik eller Data Source Synced Trait](../features/traits/client-activity-synced-audience-traits.md).
->* För kunder som använder Adobe Analytics: Audience Manager tillåter inte att du tar bort datakällor som skapas automatiskt från [!DNL Analytics]-rapportsviterna. Använd [bastjänsten](https://experienceleague.adobe.com/sv/docs/core-services/interface/services/customer-attributes/attributes) för att ta bort mappningen för dessa datakällor.
+>* För kunder som använder Adobe Analytics: Audience Manager tillåter inte att du tar bort datakällor som skapats automatiskt från [!DNL Analytics]-rapportsviterna. Använd [bastjänsten](https://experienceleague.adobe.com/en/docs/core-services/interface/services/customer-attributes/attributes) för att ta bort mappningen för dessa datakällor.
 
 1. Klicka på **[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**.
 1. Markera kryssrutan bredvid en eller flera datakällor.

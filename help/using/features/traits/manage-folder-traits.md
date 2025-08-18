@@ -43,7 +43,7 @@ Beskriver hur du kan redigera en [!UICONTROL folder trait].
 
 <!-- edit-folder-trait.xml -->
 
-1. Håll markören över kolumnen **[!UICONTROL Actions]** på kontrollpanelen [!UICONTROL Traits] för mappegenskapen som du vill redigera.
+1. Håll markören över kolumnen [!UICONTROL Traits] på kontrollpanelen **[!UICONTROL Actions]** för mappegenskapen som du vill redigera.
 1. Klicka på pennan för att redigera tecknet.
 
    ![](assets/folder_traits_edit_border.png)

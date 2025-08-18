@@ -23,7 +23,7 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
 |---|---|---|
 | 0 | Ospecificerat fel | Detta är ett catch-all-fel som hanterar händelser som inte täcks av de andra felhanterarna. Det är svårt att felsöka det här felet. Den kan orsakas av en mängd okända åtgärder eller händelser. Om du får det här felet kan du försöka med din [!DNL DCS]-begäran igen. Kontakta din [!DNL Adobe]-representant om problemet kvarstår. |
 | 1 | Det gick inte att hitta konfigurationen för värdnamnet: `hostname` | Värdnamnet som skickades i begäran har inte konfigurerats av vårt team för partneretablering. Kontakta din [!DNL Adobe]-representant om det här felmeddelandet visas. |
-| 2 | Ogiltigt `d_orgid`-värde (det gick inte att hitta någon konfiguration för detta organisations-ID): `ID` | Organisations-ID:t är felaktigt. Kontrollera ditt ID och försök igen. Om du inte känner till eller har ditt företags-ID kan du läsa avsnittet Administrationssida [Organisationer och kontolänkning](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=sv-SE) för mer information om hur du hittar det. |
+| 2 | Ogiltigt `d_orgid`-värde (det gick inte att hitta någon konfiguration för detta organisations-ID): `ID` | Organisations-ID:t är felaktigt. Kontrollera ditt ID och försök igen. Om du inte känner till eller har ditt företags-ID kan du läsa avsnittet Administrationssida [Organisationer och kontolänkning](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html) för mer information om hur du hittar det. |
 | 10 | Det går inte att utvärdera egenskaper | Förfrågans egenskaper har antingen utvärderats delvis eller inte utvärderats alls. Kontakta din [!DNL Adobe]-representant om problemet kvarstår. |
 
 ## Felkoder för integrering {#integration-error-codes}
@@ -117,12 +117,12 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
   <tr> 
    <td colname="col1"> <p>204 </p> </td> 
    <td colname="col2"> <p>Det gick inte att utföra migreringen eftersom profilläsningen misslyckades för den primära enheten </p> </td> 
-   <td colname="col3"> <p>Om du får det här felet kan det uppstå skalbarhetsproblem i vårt datalager (<span class="wintitle"> PCS</span>). Kontakta din Adobe-representant om problemet kvarstår. </p> </td> 
+   <td colname="col3"> <p>Om du får det här felet kan det uppstå skalbarhetsproblem i vårt datalager (<span class="wintitle"> PCS</span>). Kontakta Adobe om problemet kvarstår. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>205 </p> </td> 
    <td colname="col2"> <p>Det gick inte att utföra migrering från <code><i>ID</i></code> till <code><i>ID</i></code> eftersom profilläsningen misslyckades för <code><i>ID</i></code> </p> </td>
-   <td colname="col3"> <p>Om du får det här felet kan det uppstå skalbarhetsproblem i vårt datalager (<span class="wintitle"> PCS</span>). Kontakta din Adobe-representant om problemet kvarstår. </p> </td> 
+   <td colname="col3"> <p>Om du får det här felet kan det uppstå skalbarhetsproblem i vårt datalager (<span class="wintitle"> PCS</span>). Kontakta Adobe om problemet kvarstår. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -191,7 +191,7 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
   <tr> 
    <td colname="col1"> <p>312 </p> </td> 
    <td colname="col2"> <p>Begäran innehåller ett ogiltigt globalt enhets-ID </p> </td> 
-   <td colname="col3"> <p><span class="wintitle">DCS</span> returnerar den här felkoden när begäran innehåller ett ogiltigt globalt enhets-ID. DCS ignorerar det ogiltiga ID:t och genererar ett 312-fel tillsammans med de specifika felen för det ogiltiga ID:t. Se <a href="../../../features/global-data-sources.md" format="dita" scope="local">Globala datakällor</a> och <a href="../../../reference/ids-in-aam.md" format="dita" scope="local">Index med ID:n i Audience Manager</a> för detaljerad information om rätt enhets-ID-format och motsvarande globala datakällor.</p>
+   <td colname="col3"> <p><span class="wintitle">DCS</span> returnerar den här felkoden när begäran innehåller ett ogiltigt globalt enhets-ID. DCS ignorerar det ogiltiga ID:t och genererar ett 312-fel tillsammans med de specifika felen för det ogiltiga ID:t. Se <a href="../../../features/global-data-sources.md" format="dita" scope="local">Globala datakällor</a> och <a href="../../../reference/ids-in-aam.md" format="dita" scope="local">Index med ID:n i Audience Manager</a> för detaljerad information om rätt ID-format för enhetsannonsering och motsvarande globala datakällor.</p>
    <p>Exempel på ett felaktigt anrop: <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
    <p>Förklaring: En <span class="keyword">IDFA (DPID 20915)</span> måste vara ett versalt ID. ID:t som angavs i begäran är gemener.</p>
    </td>
@@ -199,18 +199,18 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
    <tr> 
    <td colname="col1"> <p>313 </p> </td> 
    <td colname="col2"> <p>CMP ID finns inte i GCL</p> </td> 
-   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av ett CMP ID som inte finns i den Audience Manager-cachelagrade versionen av den globala CMP-listan vid tidpunkten för utvärderingen, ignorerar plugin-programmet Audience Manager för IAB TCF IAB TC-strängen och bearbetar begäran som vanligt. IAB TCF v2.2 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p>
+   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av ett CMP-ID som inte finns i Audience Manager cachelagrade version av den globala CMP-listan vid tidpunkten för utvärderingen, tar Audience Manager-plugin-programmet för IAB TCF bort IAB TC-strängen och bearbetar begäran som vanligt. IAB TCF v2.2 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p>
    </td>
   </tr>
    <tr> 
    <td colname="col1"> <p>314 </p> </td> 
    <td colname="col2"> <p>CMP ID har markerats som borttaget i GCL</p> </td> 
-   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av en CMP som har markerats som borttagen i vår cachelagrade version av Global CMP-listan, ignorerar plugin-programmet Audience Manager för IAB TCF TC-strängen och bearbetar begäran som vanligt, om utvärderingstiden är förbi raderingstiden i den globala CMP-listan. IAB TCF v2.2 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p></td>
+   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av en CMP som har markerats som borttagen i vår cachelagrade version av Global CMP-listan, ignorerar Audience Manager-plugin-programmet för IAB TCF TC-strängen och bearbetar begäran som vanligt, om utvärderingstiden är förbi raderingstiden från den globala CMP-listan. IAB TCF v2.2 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p></td>
   </tr>
    <tr> 
    <td colname="col1"> <p>315 </p> </td> 
    <td colname="col2"> <p>Godkännandesträngen anger inget samtycke</p> </td> 
-   <td colname="col3"> <p>Om du inte ger något samtycke väljer Audience Manager-plugin-programmet för IAB TCF att användaren inte ska samla in ytterligare data eller att samtalet ska tas bort helt om ingen partnerkontext hittas.</p>
+   <td colname="col3"> <p>När inget medgivande ges, kommer Audience Manager-plugin-programmet för IAB TCF att stoppa användaren från ytterligare datainsamling eller helt koppla från samtalet om inget partnersammanhang hittas.</p>
    </td>
   </tr>
 

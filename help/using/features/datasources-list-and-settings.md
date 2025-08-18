@@ -61,9 +61,9 @@ Förutom textfält innehåller avsnittet [!UICONTROL Data Source Details] de kon
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> ID-definition </span></b> </p> </td> 
-   <td colname="col2"> <p>Alternativen för <b><span class="uicontrol"> ID-definition </span></b> definierar den relation en datakälla har till ett <span class="keyword"> Audience Manager </span> användar-ID (UUID) och associerade enheter som är länkade till ett enhetsdiagram från en annan tillverkare som är integrerat med <span class="keyword"> Audience Manager </span>. Alternativen är: </p> <p> 
+   <td colname="col2"> <p>Alternativen för <b><span class="uicontrol"> ID-definition </span></b> definierar relationen mellan en datakälla och ett <span class="keyword"> Audience Manager</span>-användar-ID (UUID) och associerade enheter som är länkade till ett enhetsdiagram från en annan tillverkare som är integrerat med <span class="keyword"> Audience Manager </span>. Alternativen är: </p> <p> 
      <ul id="ul_718ADABF0C0C44E29643C85C69CE294F"> 
-      <li id="li_19936095319446698E9A577385CD2A80"> <b><span class="uicontrol"> Person:</span></b> Det ID som används för att definiera en person. Detta ID kan mappas till flera <span class="keyword"> Audience Manager </span> ID:n. </li> 
+      <li id="li_19936095319446698E9A577385CD2A80"> <b><span class="uicontrol"> Person:</span></b> Det ID som används för att definiera en person. Detta ID kan mappas till flera <span class="keyword"> Audience Manager</span> ID:n. </li> 
       <li id="li_3D939AFF34654D618A05D2603F34462D"> <b><span class="uicontrol"> Hushållet:</span></b> Det ID som används för att definiera en grupp med personer. Detta ID kan mappas till flera Audience Manager ID:n. </li> 
      </ul> </p> </td> 
   </tr> 
@@ -111,8 +111,8 @@ Markera kryssrutan **[!UICONTROL Inbound]** när datakällan är utformad för a
    <td colname="col2"> <p>Alternativet <b><span class="uicontrol"> Inkommande</span></b> kräver en ID-typ. Alternativen är: </p> <p> 
      <ul id="ul_3BC963CE378B4F6CB1861643A4541634"> 
       <li id="li_B86C5E7847424A2B9C094DF02741DDB8"> <b><span class="uicontrol"> Kund-ID </span></b>: Identifierar inkommande data med ett kund-ID. </li> 
-      <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol"> Audience Manager ID </span></b>: Identifierar inkommande data med ett <span class="keyword"> Audience Manager </span> ID. </li> 
-      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud ID </span></b>: Identifierar inkommande data med ett <span class="keyword"> Experience Cloud </span> ID. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=sv-SE" format="https" scope="external"> Cookies och Experience Cloud ID </a>. </li> 
+      <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol"> Audience Manager-ID </span></b>: Identifierar inkommande data med ett <span class="keyword"> Audience Manager </span>-ID. </li> 
+      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud-ID </span></b>: Identifierar inkommande data med ett <span class="keyword"> Experience Cloud </span>-ID. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud ID </a>. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -142,19 +142,19 @@ Markera kryssrutan **[!UICONTROL Inbound]** när datakällan är utformad för a
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> Använd som autentiserad profil </span></b> </p> </td> 
-   <td colname="col2"> <p>Din datakälla för olika enheter innehåller ett autentiserat ID. Ett autentiserat ID samlas in och synkroniseras till ett <span class="keyword"> Audience Manager </span>-ID under en autentiseringshändelse (t.ex. när en användare loggar in på platsen, i appen osv.). Det autentiserade ID:t kan användas för att inhämta data från andra källor som lagrar detta ID. Den kan också användas för att länka flera enhets-ID:n i <span class="wintitle"> Profile Link </span>. </p> <p>Med det här alternativet visas ett textfält där du kan byta namn på datakällan med ett alias. Om du använder ett alias åsidosätter det nya namnet datakällans namn och visas i <span class="wintitle"> autentiserade profilalternativ </span> när du <a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule"> skapar en profilsammanfogningsregel </a>. </p> </td> 
+   <td colname="col2"> <p>Din datakälla för olika enheter innehåller ett autentiserat ID. Ett autentiserat ID samlas in och synkroniseras till ett <span class="keyword"> Audience Manager</span> ID under en autentiseringshändelse (t.ex. när en användare loggar in på plats, i appen osv.). Det autentiserade ID:t kan användas för att inhämta data från andra källor som lagrar detta ID. Den kan också användas för att länka flera enhets-ID:n i <span class="wintitle"> Profile Link </span>. </p> <p>Med det här alternativet visas ett textfält där du kan byta namn på datakällan med ett alias. Om du använder ett alias åsidosätter det nya namnet datakällans namn och visas i <span class="wintitle"> autentiserade profilalternativ </span> när du <a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule"> skapar en profilsammanfogningsregel </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> Använd som enhetsdiagram </span></b> </p> </td> 
-   <td colname="col2"> <p>Skapar en datakälla som ett enhetsdiagram som du kan ge andra <span class="keyword"> Audience Manager </span>-kunder tillgång till. Innan du markerar det här alternativet bör du informera din <span class="keyword"> Audience Manager</span>-konsult om vilka kunder denna <span class="wintitle"> Data Source</span> ska delas med. Din konsult måste tillhandahålla dessa företag genom våra interna processer. </p> <p>Med det här alternativet visas ett textfält där du kan byta namn på datakällan med ett alias. Om du använder ett alias åsidosätter det här nya namnet datakällans namn och visas i <span class="wintitle"> Enhetsalternativ </span> när du <a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule"> skapar en profilsammanfogningsregel </a>. </p> </td> 
+   <td colname="col2"> <p>Skapar en datakälla som ett enhetsdiagram som du kan ge andra <span class="keyword"> Audience Manager</span>-kunder tillgång till. Innan du väljer det här alternativet bör du informera din <span class="keyword"> Audience Manager</span> -konsult om vilka kunder denna <span class="wintitle"> Data Source</span> ska delas med. Din konsult måste tillhandahålla dessa företag genom våra interna processer. </p> <p>Med det här alternativet visas ett textfält där du kan byta namn på datakällan med ett alias. Om du använder ett alias åsidosätter det här nya namnet datakällans namn och visas i <span class="wintitle"> Enhetsalternativ </span> när du <a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule"> skapar en profilsammanfogningsregel </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> Dela associerade besökar- eller enhets-ID med specifika Audience Manager-kunder</span></b> </p> </td> 
-   <td colname="col2"> <p>Datakällan för olika enheter innehåller ID:n från ett enhetsdiagram. Ett enhetsdiagram är en samling ID:n som mappar till ett eller flera <span class="keyword"> Audience Manager </span> ID:n till ett kluster. Klustret representerar vanligtvis en person eller en större hushållsgrupp. Endast tillgängligt för konton som listas som"Data Provider". </p> </td> 
+   <td colname="col2"> <p>Datakällan för olika enheter innehåller ID:n från ett enhetsdiagram. Ett enhetsdiagram är en samling ID:n som mappar till ett eller flera <span class="keyword"> Audience Manager</span> ID:n till ett kluster. Klustret representerar vanligtvis en person eller en större hushållsgrupp. Endast tillgängligt för konton som listas som"Data Provider". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> Dela associerade besökar- eller enhets-ID:n på Audience Manager-plattformen</span></b> </p> </td> 
-   <td colname="col2"> <p>Datakällan innehåller besökar- eller enhets-ID:n som kan delas med andra <span class="keyword"> Experience Cloud </span> -lösningar. </p> </td> 
+   <td colname="col2"> <p>Datakällan innehåller besökar- eller enhets-ID:n som kan delas med andra <span class="keyword"> Experience Cloud</span> -lösningar. </p> </td> 
   </tr>
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> Datalagring för inaktiva kund-ID:n </span></b> </p> </td> 

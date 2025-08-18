@@ -1,5 +1,5 @@
 ---
-description: I det här avsnittet beskrivs de processer som är kopplade till att komma igång med datahanteringsplattformen (DMP) i Audience Manager. Det här avsnittet är utformat för att hjälpa affärsteam, projektledare och teknikchefer att förstå implementeringsprocessen i Audience Manager. Det kan ta cirka sex veckor till tre månader att komma igång med Audience Manager, beroende på dina behov av datainsamling.
+description: I det här avsnittet beskrivs de processer som är kopplade till att komma igång med Audience Manager datahanteringsplattform (DMP). Det här avsnittet är utformat för att hjälpa affärsteam, projektledare och teknikchefer att förstå Audience Manager implementeringsprocess. Det kan ta cirka sex veckor till tre månader att komma igång med Audience Manager, beroende på dina datainsamlingsbehov.
 seo-description: This section outlines and explains the processes related to getting started with the Audience Manager data management platform (DMP). This section is designed to help business teams, project managers, and technology managers understand the Audience Manager implementation process. Getting started with Audience Manager can take approximately six weeks to three months, depending on your data collection needs.
 seo-title: Implementing Audience Manager
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Implementera Audience Manager {#implementing-audience-manager}
 
-I det här avsnittet beskrivs de processer som är kopplade till att komma igång med datahanteringsplattformen Audience Manager ([!DNL DMP]). Det här avsnittet är utformat för att hjälpa affärsteam, projektledare och teknikchefer att förstå implementeringsprocessen i Audience Manager. Det kan ta cirka sex veckor till tre månader att komma igång med Audience Manager, beroende på dina behov av datainsamling.
+I det här avsnittet beskrivs de processer som är kopplade till att komma igång med Audience Manager datahanteringsplattform ([!DNL DMP]). Det här avsnittet är utformat för att hjälpa affärsteam, projektledare och teknikchefer att förstå Audience Manager implementeringsprocess. Det kan ta cirka sex veckor till tre månader att komma igång med Audience Manager, beroende på dina datainsamlingsbehov.
 
 Våra implementeringstekniker hjälper till att skapa ett rådgivande partnerskap med nya kunder. Den här processen är utformad för att:
 
@@ -156,13 +156,13 @@ I följande tabell beskrivs viktiga aktiviteter som äger rum under den här fas
 | Förbered en strategi för datainsamling | Samarbeta med Adobe tekniska team för att ta fram en datainsamlingsplan som uppfyller era verksamhetskrav | Näringsliv och tekniska team |
 | Distribuera och testa kod | Testa den föreslagna lösningen i en testmiljö och utför testning i olika webbläsare | Tekniska team |
 | Verifiera funktioner och åtgärda fel | Granska och förmedla resultat, åtgärda buggar och testa igen | Tekniska team |
-| Utbildning | Undervisa och förstå Audience Manager om funktioner, verktyg och rapporter | Affärsteam |
+| Utbildning | Undervisa om Audience Manager funktioner, verktyg och rapporter | Affärsteam |
 
 Produkterna för den här fasen kan inkludera:
 
 * En slutförd och godkänd plan för datainsamling.
 * [!DNL QA]-testning från början till slut;
-* Grundläggande anvisningar om Audience Manager användargränssnitt;
+* Grundläggande instruktioner om Audience Manager användargränssnitt;
 * Godkännande och godkännande.
 
 ## Start-, support- och optimeringsfasen {#launch-support-optimize-phase}
@@ -204,7 +204,7 @@ I följande tabell beskrivs viktiga aktiviteter som äger rum under den här fas
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> Uppföljningsmeddelanden </td> 
-   <td colname="col2"> Regelbunden schemalagd kommunikation för att hålla dig à jour med användarupplevelsen på Audience Manager </td> 
+   <td colname="col2"> Regelbundet schemalagd kommunikation för att hålla dig à jour med dina erfarenheter av Audience Manager </td> 
    <td colname="col3"> Näringsliv och tekniska team </td> 
   </tr> 
  </tbody> 
@@ -220,7 +220,7 @@ Uppgifter för den här fasen kan vara:
 
 ## Kod {#code-implementation}
 
-Audience Manager använder Datan Integration Library ([!DNL DIL]) för att ta emot målgruppsdata.
+Audience Manager använder Data Integration Library ([!DNL DIL]) för att ta emot målgruppsdata.
 
 Detaljerade instruktioner om hur du använder [!DNL DIL] finns i [Hämta och implementera DIL-kod](../dil/dil-overview.md).
 
@@ -232,6 +232,6 @@ Partnerlösningar kan arbeta direkt med era tekniska team för att driftsätta k
 
 Våra samarbetssatsningar upphör inte med den slutliga driftsättningen. När implementeringen är klar tar vårt kontohanteringsteam över sig.
 
-Kontoansvariga tillhandahåller fortlöpande support och konsulttjänster när produktimplementeringen är klar. Du kan förvänta dig regelbundna möten med din kontoansvarige. Dessa möten ser till att du får ut så mycket som möjligt av Audience Manager.
+Kontoansvariga tillhandahåller fortlöpande support och konsulttjänster när produktimplementeringen är klar. Du kan förvänta dig regelbundna möten med din kontoansvarige. Dessa möten ser till att du får ut maximalt av Audience Manager.
 
 Kontakta oss [här](https://www.adobe.com/products/audiencemanager.html) om du vill ha mer information och komma igång med Audience Manager.

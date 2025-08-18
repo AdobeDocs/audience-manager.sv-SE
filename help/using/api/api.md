@@ -4,7 +4,7 @@ seo-description: APIs and toolkits that let you work programmatically with Audie
 seo-title: API and SDK Code
 keywords: api, api, api, api, api, api, api, api, api, api, api
 solution: Audience Manager
-title: API och SDK-kod
+title: API och SDK Code
 uuid: bf801e84-f914-4efd-8807-c4972474894a
 feature: API
 exl-id: db3d1f3b-9a39-4ff7-a301-1236d3b33fc2
@@ -28,8 +28,8 @@ ht-degree: 0%
 
 Information:
 
-* [API-kodmigrering för Audience Manager](api-swagger-migration.md)
+* [Migrering av Audience Manager API-kod](api-swagger-migration.md)
 * [DCS Event Call API:er](dcs-intro/dcs-event-calls/dcs-event-calls.md)
 * [DCS API:er för överföring av data från server till server](dcs-intro/dcs-s2s/dcs-s2s.md)
 * [DCS API-metoder](dcs-intro/dcs-api-reference/dcs-api-methods.md)
-* [SDK-kod](/help/using/api/aam-sdk.md)
+* [SDK Code](/help/using/api/aam-sdk.md)

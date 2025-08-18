@@ -28,9 +28,9 @@ Det här avsnittet innehåller fält och alternativ som startar processen att sk
 1. Klicka på **[!UICONTROL Basic Information]** för att visa kontrollerna.
 2. Namnge målet. Undvik förkortningar och specialtecken.
 3. *(Valfritt)* Beskriv målet. En kort beskrivning är ett effektivt sätt att definiera eller ange mer information om en destination.
-4. Välj **[!UICONTROL Custom]** i listan **[!UICONTROL Category]**.
-5. Välj **[!UICONTROL Browser]** i listan **[!UICONTROL Environment]**. Du kan inte konfigurera cookie-mål för inbyggda mobilmiljöer som Android- eller iOS-appar.
-6. Klicka på **[!UICONTROL Cookie]** i listan **[!UICONTROL Type]**.
+4. Välj **[!UICONTROL Category]** i listan **[!UICONTROL Custom]**.
+5. Välj **[!UICONTROL Environment]** i listan **[!UICONTROL Browser]**. Du kan inte konfigurera cookie-mål för inbyggda mobilmiljöer som Android- eller iOS-appar.
+6. Klicka på **[!UICONTROL Type]** i listan **[!UICONTROL Cookie]**.
 7. *(Valfritt)* Välj en **[!UICONTROL Auto-fill Destination Mapping]**. Alternativen är:
    * **[!UICONTROL Segment ID]**: Lägger automatiskt till och skickar segment-ID:t till målet.
    * **[!UICONTROL Integration Code Value]**: Lägger automatiskt till och skickar segmentintegreringskoden till målmappningen. Integrationskoden är en unik identifierare som skapas och används av kunden. Det får innehålla högst 255 tecken.

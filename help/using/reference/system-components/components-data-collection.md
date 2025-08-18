@@ -1,5 +1,5 @@
 ---
-description: Datainsamlingskomponenterna omfattar datainsamlingsservrar, DIL-API, inkommande server-till-server-dataöverföringar och loggfiler.
+description: Datainsamlingskomponenterna omfattar datainsamlingsservrar, DIL API, inkommande överföring av data från server till server samt loggfiler.
 seo-description: Data collection components include the Data Collection Servers, the DIL API, inbound server-to-server data transfers, and log files.
 seo-title: Data Collection Components
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # Datainsamlingskomponenter{#data-collection-components}
 
-Datainsamlingskomponenterna omfattar datainsamlingsservrar, DIL-API, inkommande server-till-server-dataöverföringar och loggfiler.
+Datainsamlingskomponenterna omfattar datainsamlingsservrar, DIL API, inkommande överföring av data från server till server samt loggfiler.
 
 <!-- 
 
@@ -24,7 +24,7 @@ c_compcollect.xml
 
  -->
 
-Audience Manager innehåller följande datainsamlingskomponenter:
+Audience Manager innehåller följande komponenter för datainsamling:
 
 * [Datainsamlingsservrar (DCS) och profilcacheservrar (PCS)](../../reference/system-components/components-data-collection.md#dcs-pcs)
 * [Data Integration Library (DIL)](../../reference/system-components/components-data-collection.md#dil)
@@ -78,7 +78,7 @@ Removed /dpm calls from the bulleted list. /dpm calls have been deprecated.
 
  -->
 
-[!UICONTROL PCS] tömmer egenskaper om de är inaktiva i 17 dagar. De här egenskaperna går dock inte förlorade. De är lagrade i Hadoop. Om användaren visas igen vid ett senare tillfälle, kommer Hadoopet att återföra alla sina egenskaper till [!UICONTROL PCS], vanligtvis inom 24 timmar.
+[!UICONTROL PCS] tömmer egenskaper om de är inaktiva i 17 dagar. De här egenskaperna går dock inte förlorade. De lagras i Hadoop. Om användaren visas igen vid ett senare tillfälle överför Hadoop alla sina egenskaper tillbaka till [!UICONTROL PCS], vanligtvis inom 24 timmar.
 
 **Andra [!UICONTROL DCS/PCS] processer: Avanmäl dig till sekretess**
 
@@ -98,4 +98,4 @@ Detta är system som tar emot data som skickas in av olika server-till-server-in
 
 >[!MORELIKETHIS]
 >
->* [Sekretesscenter för Adobe](https://www.adobe.com/se/privacy.html)
+>* [Adobe Sekretesscenter](https://www.adobe.com/se/privacy.html)

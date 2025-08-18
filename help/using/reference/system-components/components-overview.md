@@ -1,5 +1,5 @@
 ---
-description: En omfattande genomgång av de viktigaste komponenterna och dataflödena i systemet Audience Manager.
+description: Demo av de viktigaste komponenterna och dataflödena i Audience Manager-systemet.
 seo-description: A high-level tour of the major components and data flows in the Audience Manager system.
 seo-title: System Components Overview
 title: Översikt över systemkomponenter
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Översikt över systemkomponenter{#system-components-overview}
 
-En omfattande genomgång av de viktigaste komponenterna och dataflödena i systemet Audience Manager.
+Demo av de viktigaste komponenterna och dataflödena i Audience Manager-systemet.
 
 <!-- 
 
@@ -31,7 +31,7 @@ Den här guiden ger en grundläggande översikt över de huvudkomponenter som st
 
 Den här guiden försöker hitta en balans mellan allmänna beskrivningar och en djupdykning. Men det finns saker som är egna, så vi går bara inte dit. Det finns mer än bara majonnäs och ketchup. Vi måste hålla väljarna en hemlighet. Som alltid kan du höra med din [!DNL Audience Manager]-konsult om du har några frågor.
 
-* [Nyckelkomponenter i Audience Manager-systemet](/help/using/reference/system-components/components-stack.md)
+* [Viktiga komponenter i Audience Manager System](/help/using/reference/system-components/components-stack.md)
 * [Dataåtgärdskomponenter](/help/using/reference/system-components/components-data-action.md)
 * [Datainsamlingskomponenter](/help/using/reference/system-components/components-data-collection.md)
 * [Databearbetningskomponenter](/help/using/reference/system-components/components-data-processing.md)

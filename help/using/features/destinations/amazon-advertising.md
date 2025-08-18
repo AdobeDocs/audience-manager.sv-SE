@@ -63,7 +63,7 @@ När du har länkat Audience Manager och ditt [!DNL Amazon Advertising]-konto ka
 
 ## Överväganden om matchningsfrekvenser {#match-rates-considerations}
 
-Integrationen mellan Audience Manager och [!DNL Amazon Advertising] har stöd för historiska målgruppsåsidosättningar. Alla segmentkvalifikationer skickas till [!DNL Amazon] när du skapar målet.
+Integrationen mellan Audience Manager och [!DNL Amazon Advertising] har stöd för tidigare målgruppsåsidosättningar. Alla segmentkvalifikationer skickas till [!DNL Amazon] när du skapar målet.
 
 ## Felsökning {#troubleshooting}
 
@@ -71,5 +71,5 @@ När du konfigurerar eller skickar data till målet [!DNL Amazon Advertising] ka
 
 | Felmeddelande | Förekomst/orsak | Upplösning |
 |---|---|---|
-| `Internal server error` | Det här felmeddelandet visas i användargränssnittet i Audience Manager när du försöker lägga till ett nytt [!DNL Amazon]-konto med en inaktuell version av Amazon API. | Kontakta Adobe kundtjänst. |
+| `Internal server error` | Det här felmeddelandet visas i Audience Manager-gränssnittet när du försöker lägga till ett nytt [!DNL Amazon]-konto med en inaktuell version av Amazon API. | Kontakta Adobe kundtjänst. |
 | `Amazon Error: Account XXXXXXXXX was not found` | Det här felmeddelandet visas i användargränssnittet i Audience Manager när de autentiseringsuppgifter som konfigurerats för målet inte har behörighet att komma åt motsvarande Amazon Ads-konto. | <ul><li>Kontrollera att kontoautentiseringsuppgifterna som du använder uppfyller [kraven](#prerequisites).</li><li>Navigera till användargränssnittet för Amazon Ads med samma inloggningsuppgifter och kontrollera om rätt målgrupper visas under motsvarande konto. </li></ul> |

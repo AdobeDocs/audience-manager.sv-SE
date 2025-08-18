@@ -34,11 +34,11 @@ mellan Audience Manager och personbaserade plattformar.
    ![Personbaserad-plattform](assets/pbd-add.png)
 4. Klicka på **[!UICONTROL Confirm]** om du vill omdirigeras till autentiseringssidan för den valda plattformen.
 5. När du har autentiserat dig på ditt konto för sociala plattformar omdirigeras du till Audience Manager där du ska se dina associerade annonskonton. Välj det annonserarkonto som du vill använda och klicka på **[!UICONTROL Confirm]**.
-6. Audience Manager visar ett meddelande högst upp på sidan för att tala om för dig om kontot har lagts till eller inte. I meddelandet kan du även lägga till en e-postadress för kontakt för att få meddelanden från Adobe när autentiseringen för den sociala plattformen håller på att gå ut.
+6. Audience Manager visar ett meddelande högst upp på sidan för att tala om för dig om kontot har lagts till. I meddelandet kan du även lägga till en e-postadress för att få meddelanden från Adobe när autentiseringen för den sociala plattformen håller på att upphöra.
 
 ## Förfallotid för autentiseringstoken och meddelandehantering {#token-expiration-notification}
 
-Audience Manager hanterar integreringen med sociala plattformar genom autentiseringstoken som upphör efter en viss tid. Giltighetstiden för token regleras av respektive social plattforms integreringsregler. När autentiseringstoken har upphört att gälla kan Audience Manager inte skicka målgruppssegment till ditt mål. För att undvika det här scenariot rekommenderar vi att du lägger till minst en e-postadress för kontakt i integreringen, så att du får ett meddelande så snart autentiseringstoken håller på att upphöra att gälla. När det inträffar kan ni autentisera er på nytt för att försäkra er om att målgruppen fortsätter att ta emot era målgruppssegment.
+Audience Manager hanterar integreringen med sociala plattformar genom autentiseringstoken som upphör efter en viss tid. Giltighetstiden för token regleras av respektive social plattforms integreringsregler. När autentiseringstoken gått ut kan Audience Manager inte skicka målgruppssegment till ditt mål. För att undvika det här scenariot rekommenderar vi att du lägger till minst en e-postadress för kontakt i integreringen, så att du får ett meddelande så snart autentiseringstoken håller på att upphöra att gälla. När det inträffar kan ni autentisera er på nytt för att försäkra er om att målgruppen fortsätter att ta emot era målgruppssegment.
 
 Så här lägger du till e-postadresser i befintliga integreringar:
 
@@ -49,7 +49,7 @@ Så här lägger du till e-postadresser i befintliga integreringar:
 
 ## Förnyelse av autentiseringstoken {#token-renewal}
 
-När en autentiseringstoken upphör att gälla avbryts integreringen mellan Audience Manager och motsvarande sociala plattform, så att Audience Manager inte längre kan skicka målgruppssegment till målet. På sidan [!UICONTROL Integrated Accounts] visas förfallostatusen för varje integrering i kolumnen [!UICONTROL Expiration], och du kan när som helst förnya autentiseringen.
+När en autentiseringstoken upphör att gälla avbryts integreringen mellan Audience Manager och motsvarande sociala plattform, så Audience Manager kan inte längre skicka målgruppssegment till målet. På sidan [!UICONTROL Integrated Accounts] visas förfallostatusen för varje integrering i kolumnen [!UICONTROL Expiration], och du kan när som helst förnya autentiseringen.
 
 Så här förnyar du en autentisering som har upphört att gälla eller som snart upphör att gälla:
 1. Logga in på ditt Audience Manager-konto och gå till **[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**.

@@ -34,9 +34,9 @@ I följande tabell definieras mått för trait-populationen:
 
 ## Beräkna faktiska och beräknade segmentpopulationer {#calculating-real-estimated-populations}
 
-När du skapar ett nytt segment, eller ändrar ett befintligt segment, tar det upp till 24 timmar för Audience Manager att visa resultat för faktiska realtids- och segmentpopulationer.
+När du skapar ett nytt segment, eller ändrar ett befintligt segment, tar det upp till 24 timmar för Audience Manager att visa resultat för den faktiska realtids- och segmentpopulationen.
 
-Audience Manager kan dock omedelbart uppskatta segmentets totala populationsstorlek och realtidsstorlek. Dessa uppskattningar baseras på historiska data som samlats in och på returresultat vid 95% konfidensintervall.
+Audience Manager kan dock omedelbart beräkna segmentets totala populationsstorlek och realtidsstorlek. Dessa uppskattningar baseras på historiska data som samlats in och på returresultat vid 95% konfidensintervall.
 
 ![](assets/confidence-interval.png)
 
@@ -68,7 +68,7 @@ I följande tabell definieras de uppskattade populationsmåtten.
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> beräknad realtidspopulation (möjlig) </span> </p> </td> 
-   <td colname="col2"> <p>Det uppskattade antalet unika besökare som har setts i realtid för det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av Audience Manager. </p> <p>I <span class="wintitle"> Segment Builder </span> kan de sista 30-dagarspopulationerna för egenskaper (<span class="wintitle"> Total Trait Populations </span>) vara olika för egenskaper och segment som utvärderats i realtid. </p> <p>
+   <td colname="col2"> <p>Uppskattat antal unika besökare som har setts i realtid för det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av Audience Manager. </p> <p>I <span class="wintitle"> Segment Builder </span> kan de sista 30-dagarspopulationerna för egenskaper (<span class="wintitle"> Total Trait Populations </span>) vara olika för egenskaper och segment som utvärderats i realtid. </p> <p>
      <ul id="ul_CAE803D09913462CAD413A665D85C1A2"> 
       <li id="li_3E64330D6F5B4D2F8F3456730A86894F">För egenskaper är det senaste 30-dagars måttet antalet unika användare som kvalificerat sig för den egenskapen under de senaste 30 dagarna. </li>
       <li id="li_FF3CACD0B6C742CDB94D66200D77CE06">För segment som utvärderas i realtid är det senaste 30-dagarsmåttet det antal användare som har kvalificerat sig för en egenskap (i det segmentet) någon gång tidigare och som har setts igen av Audience Manager under de senaste 30 dagarna. Anta att du har en användare som kvalificerat sig för ett tåg för 60 dagar sedan och som sågs igen för 10 dagar sedan. I dessa data kommer användaren inte att läggas till i antalet trait eftersom han/hon först kvalificerade sig för trait för mer än 30 dagar sedan. De kommer dock att ingå i det sista 30-dagarsantalet för de segment som utvärderas i realtid. Det beror på att de har kvalificerat sig för segmentet inom 30-dagarsintervallet. </li>
@@ -123,7 +123,7 @@ I följande tabell definieras faktiska populationsvärden i realtid och totalt n
 
 | Kolumn A | Kolumn B |
 |---------|----------|
-| [!UICONTROL Real-Time Population (Existing)] | Det faktiska antalet enheter som visas i realtid med aktuella profiler som, när de sammanfogas med upp till 100 andra enhetsprofiler som är kopplade till enhetsdiagrammet, innehåller egenskaperna som ska kvalificera sig för segmentet så fort det sågs av Audience Manager. |
+| [!UICONTROL Real-Time Population (Existing)] | Det faktiska antalet enheter som visas i realtid med aktuella profiler som, när de sammanfogas med upp till 100 andra enhetsprofiler som är kopplade till enhetsdiagrammet, innehåller egenskaperna som ska kvalificera sig för segmentet så fort det ses av Audience Manager. |
 | [!UICONTROL Total Population (Existing)] | Det totala antalet enheter med profiler som, när de sammanfogades med upp till 100 andra enhetsprofiler som är kopplade till enhetsdiagrammet, alla var kvalificerade för segmentet. |
 
 ### Begränsningar på grund av återanvändnings- och frekvensuttryck vid beräkning av segmentpopulationer

@@ -3,7 +3,7 @@ description: Översikt och arbetsflöde för datainköpare som vill köpa data f
 seo-description: Overview and workflow for data buyers who want to purchase third-party data from within Audience Manager
 seo-title: Audience Marketplace for Data Buyers
 solution: Audience Manager
-title: Audience Marketplace för datainköpare
+title: Audience Marketplace for Data Buyers
 uuid: f505b5f4-4231-4e84-993a-cd64128b540f
 feature: Audience Marketplace
 exl-id: 9d6a7fda-f79f-41ad-9654-3ebcf9028cc2
@@ -32,7 +32,7 @@ I [!UICONTROL Marketplace] kan du med rapportverktygen spåra flödeanvändninge
 
 >[!TIP]
 >
->Använd **[Adobe Audience Finder](https://www.adobe-audience-finder.com/)** för att hitta högkvalitativa dataflöden som du kan prenumerera på. Gå sedan tillbaka till användargränssnittet för [!DNL Audience Manager] eller använd API:t för [Audience Marketplace Buyer](https://bank.demdex.com/portal/swagger/index.html#/Audience_Marketplace_Buyer_API) för att prenumerera på de feeds du har hittat.
+>Använd **[Adobe Audience Finder](https://www.adobe-audience-finder.com/)** för att hitta högkvalitativa dataflöden som du kan prenumerera på. Gå sedan tillbaka till användargränssnittet för [!DNL Audience Manager] eller använd [Audience Marketplace Buyer API](https://bank.demdex.com/portal/swagger/index.html#/Audience_Marketplace_Buyer_API) för att prenumerera på de feeds du har hittat.
 
 ![purchase-marketplace-overview](assets/buyer-marketplace-overview.png)
 

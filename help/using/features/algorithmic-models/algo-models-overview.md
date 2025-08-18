@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Vad är algoritmisk modellering?{#what-algo-modeling}
 
-Algoritmisk modellering i Audience Manager avser användningen av datavetenskap för att antingen utöka era befintliga målgrupper eller klassificera dem som personaliserade.
+Algoritmisk modellering i Audience Manager avser användning av datavetenskap för att antingen utöka era befintliga målgrupper eller klassificera dem som personaliserade.
 
 Detta görs via två typer av algoritmer: [!UICONTROL Look-Alike Modeling] och [!UICONTROL Predictive Audiences].
 
@@ -38,6 +38,6 @@ Mer information om [!UICONTROL Look-Alike Modeling] finns i [Om look-Alike Model
 
 I ett marknadsföringssammanhang är en person ett målgruppssegment som definieras av besökare, användare eller potentiella köpare som delar en viss uppsättning egenskaper, som demografi, surfvanor, shoppinghistorik osv.
 
-[!UICONTROL Predictive Audiences] modeller tar det här konceptet ett steg längre genom att använda Audience Manager maskininlärningsfunktioner för att automatiskt klassificera okända målgrupper i distinkta profiler. Audience Manager uppnår detta genom att beräkna hur känslig din okända publik är för en uppsättning kända målgrupper.
+[!UICONTROL Predictive Audiences] modeller tar det här konceptet ett steg längre genom att använda Audience Manager maskininlärningsfunktioner för att automatiskt klassificera okända målgrupper i distinkta personligheter. Audience Manager uppnår detta genom att beräkna hur stor benägenheten är för er okända publik för en uppsättning kända målgrupper.
 
 Mer information om [!UICONTROL Predictive Audiences] finns i [Översikt över prediktiva målgrupper](predictive-audiences.md).

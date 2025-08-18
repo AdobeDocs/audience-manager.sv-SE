@@ -21,11 +21,11 @@ På den här sidan visas anpassade integreringar mellan Audience Manager och dat
 
 ### Beskrivning
 
-Audience Manager inhämtar cookie- och mobil-ID-data från Oracle Data Cloud för Audience Marketplace via inkommande datafiler. Specifikationerna för anpassad integrering som beskrivs nedan avser endast inkommande datafiler som innehåller mobila ID:n (IDFA och Android Device ID).
+Audience Manager importerar cookie- och mobil-ID-data från Oracle Data Cloud för Audience Marketplace via inkommande datafiler. Specifikationerna för anpassad integrering som beskrivs nedan avser endast inkommande datafiler som innehåller mobila ID:n (IDFA och Android Device ID).
 
 ### Integrationsinformation
 
-Inkommande datafiler som tas emot från Oraclet Data Cloud skiljer sig från standardsyntaxen för inkommande filnamn, som beskrivs i [Amazon S3 Name and File Size Requirements for Inbound Data Files](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md), och från standardsyntaxen för inkommande filinnehåll, som beskrivs i [Innehåll i den inkommande datafilen: Syntax, Invalid Characters, Variables, and Examples](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md).
+Inkommande datafiler som tas emot från Oracle Data Cloud skiljer sig från standardsyntaxen för inkommande filnamn som beskrivs i [Amazon S3-namnkrav och filstorlekskrav för inkommande datafiler](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) och från standardsyntaxen för inkommande filinnehåll som beskrivs i [Innehåll i den inkommande datafilen: Syntax, Ogiltiga tecken, Variabler och Exempel](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md).
 
 De element som markeras nedan är obligatoriska, förutom standardimplementeringsfälten för inkommande datafiler. Beskrivningar av alla andra standardfält och filnamnselement finns i Filnamnssyntax och Syntax för filinnehåll på de två sidor som är länkade ovan.
 
@@ -35,7 +35,7 @@ ODC-filnamn är strukturerade som:
 
 `ftp_dpm_`**`odc`**`_DPID[_DPID_TARGET_DATA_OWNER]_TIMESTAMP(.sync|.overwrite)[.SPLIT_NUMBER][.gz]`
 
-Filnamnselementet `odc` identifierar filen som importerad från Oraclet Data Cloud och instruerar den inkommande filvalideraren i Audience Manager att bearbeta den som sådan.
+Filnamnselementet `odc` identifierar filen som importerad från Oracle Data Cloud och instruerar Audience Manager filvaliderare att bearbeta den som sådan.
 
 ### Filinnehåll
 

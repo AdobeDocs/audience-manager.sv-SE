@@ -3,7 +3,7 @@ description: Audience Manager tar datasäkerhet och integritet på stort allvar.
 seo-description: Audience Manager takes data security and privacy very seriously. We work to keep our systems secure and protect your valuable data.
 seo-title: Data Security in Audience Manager
 solution: Audience Manager
-title: Datasäkerhet i Audience Manager
+title: 'Datasäkerhet i Audience Manager '
 uuid: 33ad19ca-4690-4d97-853b-1882d7d4ac01
 feature: Data Governance & Privacy
 exl-id: 94b70250-dca3-4c50-b4dd-bc37178a587e
@@ -61,7 +61,7 @@ Processer som skyddar personuppgifter. Mer sekretessinformation finns i [Adobes 
 
 Processer som hjälper till att skydda data som ägs av enskilda klienter.
 
-**Trait Data Partitioning:** Dina data ([!UICONTROL traits], ID:n osv.) partitioneras av klienten. Detta förhindrar att information oavsiktligt exponeras för olika kunder. Till exempel trait-data i cookies partitioneras av kunden och lagras i en klientspecifik underdomän. De kan inte läsas eller användas av misstag av en annan Audience Manager-klient. Dessutom partitioneras trait-data som lagras i [!UICONTROL Profile Cache Servers (PCS)] också av kunden. Det förhindrar att andra klienter oavsiktligt använder dina data i händelseanrop eller andra förfrågningar.
+**Trait Data Partitioning:** Dina data ([!UICONTROL traits], ID:n osv.) är partitionerade av klienten. Detta förhindrar att information oavsiktligt exponeras för olika kunder. Till exempel trait-data i cookies partitioneras av kunden och lagras i en klientspecifik underdomän. De kan inte läsas eller användas av misstag av en annan Audience Manager-klient. Dessutom partitioneras trait-data som lagras i [!UICONTROL Profile Cache Servers (PCS)] också av kunden. Det förhindrar att andra klienter oavsiktligt använder dina data i händelseanrop eller andra förfrågningar.
 
 **Datapartitionering i rapporter:**  Klient-ID:n är en del av identifieringsnyckeln i alla rapporttabeller och rapportfrågor filtreras efter ID. Det förhindrar att data visas i rapporter för en annan Audience Manager-kund.
 

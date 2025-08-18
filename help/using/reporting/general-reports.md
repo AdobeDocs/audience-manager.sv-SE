@@ -61,7 +61,7 @@ t_run_general_report.xml
 
  -->
 
-1. Klicka på **[!UICONTROL General Reports]** på kontrollpanelen **[!UICONTROL Analytics]**.
+1. Klicka på **[!UICONTROL Analytics]** på kontrollpanelen **[!UICONTROL General Reports]**.
 1. Välj önskad typ i listrutan **[!UICONTROL Report Type]**: Trait, Segment eller Destination.
 1. *Villkorlig* Klicka i datumrutan för att visa en kalender och välj sedan slutdatumet för rapporten om du vill ange ett annat datum än dagens.
 1. Sök efter ett varumärke, segment eller mål efter namn eller ID.
@@ -133,7 +133,7 @@ Detta mått visar det faktiska antalet unika besökare som har setts i realtid i
 
 ### Total segmentpopulation
 
-Det här måttet representerar det totala antalet Audience Manager-UID:n som är kvalificerade för segmentet inom den summeringsperiod som du har valt. Den totala segmentpopulationen på en dag representerar den mest korrekta användarbasen för målinriktning.
+Det här måttet visar det totala antalet Audience Manager UUID:n som är kvalificerade för segmentet under den summeringsperiod som du valde. Den totala segmentpopulationen på en dag representerar den mest korrekta användarbasen för målinriktning.
 
 >[!NOTE]
 >
@@ -153,7 +153,7 @@ Detta mått visar det faktiska antalet unika besökare som har setts i realtid i
 
 **Total segmentpopulation**
 
-Det här måttet representerar det totala antalet Audience Manager UID som tillhör ett segment inom summeringsperioden och som skickades till ett mål.
+Det här måttet representerar det totala antalet Audience Manager UUID som tillhör ett segment inom summeringsperioden och som skickades till ett mål.
 
 Bilden nedan visar resultatet av att köra en allmän rapport för rapporttypen Destinationer.
 

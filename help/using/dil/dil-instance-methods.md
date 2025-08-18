@@ -1,5 +1,5 @@
 ---
-description: Med DIL API:erna på instansnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
+description: Med DIL API:er på instansnivå kan du programmässigt skapa och arbeta med Audience Manager-objekt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 keywords: skapa egenskaper;skapa egenskaper
 seo-description: The instance-level DIL APIs let you programmatically create and work with Audience Manager objects. The instance-level methods enhance API functionality established by the class-level methods.
 seo-title: Instance-level DIL Methods
@@ -21,9 +21,9 @@ ht-degree: 1%
 >
 >Från och med juli 2023 har Adobe upphört med utvecklingen av tillägget [!DNL Data Integration Library (DIL)] och [!DNL DIL].
 >
->Befintliga kunder kan fortsätta använda sin [!DNL DIL]-implementering. Adobe kommer dock inte att utveckla [!DNL DIL] efter den här punkten. Kunder uppmuntras att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE) för sin långsiktiga datainsamlingsstrategi.
+>Befintliga kunder kan fortsätta använda sin [!DNL DIL]-implementering. Adobe kommer dock inte att utveckla [!DNL DIL] efter den här punkten. Kunder uppmuntras att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) för sin långsiktiga datainsamlingsstrategi.
 >
->Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE) i stället.
+>Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) i stället.
 
 Med API:erna på förekomstnivå [!UICONTROL DIL] kan du skapa och arbeta med Audience Manager-objekt programmatiskt. Metoderna på förekomstnivå förbättrar API-funktionaliteten som fastställs av klassnivåmetoderna.
 
@@ -80,7 +80,7 @@ Följande begärandenycklar är reserverade och kan inte skrivas över av den h�
 |---|---|---|
 | `obj` | Objekt | Ett objekt som representerar nyckelvärdepar för mappningar på plattformsnivå. Parametern accepterar strängar och arrayer som egenskapsvärden i objektet. |
 | `prefix` | Sträng | Valfritt. Strängvärdet som är prefixat för varje objektnyckel (ersätter originalnyckeln). |
-| `return` | DIL.api | Returnerar API-objektet för den aktuella DIL-instansen. |
+| `return` | DIL.api | Returnerar API-objektet för aktuell DIL-instans. |
 
 **Svar**
 
@@ -89,10 +89,10 @@ Returnerar API-objektet för aktuell [!UICONTROL DIL]-instans.
 **Exempelkod**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>' 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
 // Method 1 
 var obj = { key1 : 1, key2 : 2 }; 
@@ -136,10 +136,10 @@ Returnerar API-objektet för aktuell [!UICONTROL DIL]-instans.
 **Exempelkod**
 
 <pre><code>
-var partnerObject = DIL.create(&lbrace; 
+var partnerObject = DIL.create({ 
      partner: '<i>partner name</i>', 
      containerNSID: <i>NSID</i> 
-&rbrace;); 
+}); 
 partnerObject.api.traits(<i>[123, 456, 789]</i>); 
 </code></pre>
 
@@ -162,14 +162,14 @@ Returnerar API-objektet för aktuell [!UICONTROL DIL]-instans.
 **Exempelkod**
 
 <pre><code>
-var partnerObject = DIL.create(&lbrace; 
+var partnerObject = DIL.create({ 
      partner: '<i>partner</i>', 
      containerNSID: <i>NSID</i> 
-&rbrace;); 
-partnerObject.api.logs(&lbrace; 
+}); 
+partnerObject.api.logs({ 
      file: 'dil.js', 
      message: 'This is the first request' 
-&rbrace;);
+});
 </code></pre>
 
 ## skicka {#submit}
@@ -195,19 +195,19 @@ Returnerar API-objektet för aktuell [!UICONTROL DIL]-instans.
 **Exempelkod**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
-dataLib.api.traits(&lbrack; 
-<i>123,456, 789</i>&rbrack;).logs(&lbrace; 
+dataLib.api.traits([ 
+<i>123,456, 789</i>]).logs({ 
      file: 'dil.js', 
      message: 'This is the first request' 
-&rbrace;).signals(&lbrace; 
+}).signals({ 
      c_zdid: <i>1111</i> 
      d_dma: '<i>default</i>' 
-&rbrace;).submit();
+}).submit();
 </code></pre>
 
 ## afterResult {#afterresult}
@@ -239,17 +239,17 @@ Returnerar ett API-objekt för den aktuella [!UICONTROL DIL]-instansen.
 **Exempelkod**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
-dataLib.api.signals(&lbrace; 
+dataLib.api.signals({ 
      c_zdid: <i>54321</i> 
      d_dma: '<i>default</i>' 
-&rbrace;).afterResult(function(json)&lbrace; 
+}).afterResult(function(json){ 
      //Do something with the JSON data returned from the server. 
-&rbrace;).submit();
+}).submit();
 </code></pre>
 
 ## clearData {#cleardata}
@@ -275,18 +275,18 @@ Returnerar API-objektet för aktuell [!UICONTROL DIL]-instans.
 **Exempelkod**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
-dataLib.api.traits([<i>123,456, 789</i>]).logs(&lbrace; 
+dataLib.api.traits([<i>123,456, 789</i>]).logs({ 
      file: 'dil.js' 
      message: 'This is the first request' 
-&rbrace;).signals(&lbrace; 
+}).signals({ 
      c_zdid: <i>1111</i> 
      d_dma: '<i>default</i>' 
-&rbrace;); 
+}); 
  
 //Reset the pending data 
 dataLib.clearData();
@@ -321,19 +321,19 @@ Följande begärandenycklar är reserverade och kan inte skrivas över av den h�
 
 **Svar**
 
-Returnerar API-objektet för den aktuella DIL-instansen.
+Returnerar API-objektet för aktuell DIL-instans.
 
 **Exempelkod**
 
 <pre><code>
-var partnerObject = DIL.create(&lbrace; 
+var partnerObject = DIL.create({ 
      partner: '<i>partner</i>', 
      containerNSID: <i>NSID</i> 
-&rbrace;); 
-partnerObject.api.customQueryParams(&lbrace; 
+}); 
+partnerObject.api.customQueryParams({ 
      nid: 54231, 
      ntype: 'default' 
-&rbrace;); 
+}); 
 </code></pre>
 
 ## getContainerNSID {#getcontainernsid}
@@ -351,10 +351,10 @@ r_dil_get_container_nsid.xml
 **Exempelkod**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
 //Verify the container NSID 
 var nsid = dataLib.api.getContainerNSID();
@@ -375,26 +375,26 @@ r_dil_get_event_log.xml
 **Exempelkod**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
-dataLib.api.traits([<i>123, 456, 789</i>]).logs(&lbrace; 
+dataLib.api.traits([<i>123, 456, 789</i>]).logs({ 
      file: 'dil.js', 
      message: 'This is the first request' 
-&rbrace;);.signals(&lbrace; 
+});.signals({ 
      c_zdid: <i>1111</i> 
      d_dma: '<i>default</i>' 
-&rbrace;);.submit(); 
+});.submit(); 
  
 //Check log for messages 
 var log = dataLib.api.getEventLog(); 
-if (log && log.length) &lbrace; 
+if (log && log.length) { 
      alert(log.join('\n')); 
-&rbrace;else&lbrace; 
+}else{ 
      alert('No log messages'); 
-&rbrace;
+}
 </code></pre>
 
 ## getPartner {#getpartner}
@@ -412,10 +412,10 @@ r_dil_get_partner.xml
 **Exempelkod**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>' 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
 //Verify the partner name 
 var partner = dataLib.api.getPartner();
@@ -436,49 +436,49 @@ r_dil_get_state.xml
 **Exempelkod**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
-dataLib.api.traits([<i>123, 456, 789</i>]).logs(&lbrace; 
+dataLib.api.traits([<i>123, 456, 789</i>]).logs({ 
      file: 'dil.js', 
      message:'This is the first request' 
-&rbrace;);.signals(&lbrace; 
+});.signals({ 
      c.zdid: <i>1111</i> 
      d_dma: '<i>default</i>' 
-&rbrace;);.submit(); 
+});.submit(); 
  
 var state = dataLib.api.getState(); 
  
 /*Object outline of state 
-state = &lbrace; 
+state = { 
      pendingRequest: {<i>pending data for call to server</i>}, 
-     otherRequestInfo:&lbrace; 
+     otherRequestInfo:{ 
           firingQueue: [], 
           fired: [], 
           firing: false, 
           errored: [], 
-          reservedKeys: &lbrace; 
+          reservedKeys: { 
                sids: true, 
                pdata: true, 
                logdata: true, 
                callback: true, 
                postCallbackFn: true, 
                useImageRequest: true, 
-          &rbrace;, 
+          }, 
           firstRequestHasFired: false, 
           num_of_jsonp_responses: 0, 
           num_of_jsonp_errors: 0, 
           num_of_img_responses: 0, 
           num_of_img_errors: 0 
-     &rbrace;, 
-     destinationPublishingInfo: &lbrace; 
+     }, 
+     destinationPublishingInfo: { 
           THROTTLE_START: 3000, 
           throttleTimerSet: false, 
           id: ''destination_publishing_iframe_' + partner + '_' + containerNSID, 
           url: (constants.isHTTPS ? 'https://' : 'https://fast.') + partner + '.demdex.net/dest3.html?d_nsid=' 
-          &#x200B;+ containerNSID + '#' + encodeURIComponent(document.location.href), 
+          + containerNSID + '#' + encodeURIComponent(document.location.href), 
                iframe: null, 
                iframeHasLoaded: false, 
                sendingMessages: false, 
@@ -486,14 +486,14 @@ state = &lbrace;
                messageSendingInterval: constants.POST_MESSAGE_ENABLED ? 15: 100, 
                //Recommend 100ms for IE 6 & 7, 15ms for other browsers 
                jsonProcessed: [] 
-     &rbrace; 
-&rbrace; 
+     } 
+} 
 */
 </code></pre>
 
 ## idSync {#idsync}
 
-Består av två funktioner som gör att datapartners kan utbyta och synkronisera användar-ID:n mellan sig och Audience Manager.
+Består av två funktioner som gör att datapartners kan utbyta och synkronisera användar-ID mellan sig och Audience Manager.
 
 <!-- 
 
@@ -578,23 +578,23 @@ Båda funktionerna returnerar `Successfully queued` om de lyckas. De returnerar 
 
 <pre><code class="js">
 // Fires url with macros replaced 
-dilInstance.api.idSync(&lbrace; 
+dilInstance.api.idSync({ 
  dpid: '23', // must be a string 
  url: '//su.addthis.com/red/usync?pid=16&puid=%DID%&url=%HTTP_PROTO%%3A%2F%2Fdpm.demdex.net 
 %2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D', 
  minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days)  
-&rbrace;);
+});
 </code></pre>
 
 `dilInstance.api.aamIdSync(initConfig)`
 
 <pre><code class="js">
 // Fires 'https:/https:' + '//dpm.demdex.net/ibs:dpid=&lt;dpid&gt;&dpuuid=&lt;dpuuid&gt;' 
-dilInstance.api.aamIdSync(&lbrace; 
+dilInstance.api.aamIdSync({ 
  dpid: '23', // must be a string 
  dpuuid: '98765', // must be a string 
  minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days)  
-&rbrace;);
+});
 </code></pre>
 
 ## resultat {#result}
@@ -628,14 +628,14 @@ Returnerar API-objektet för aktuell [!UICONTROL DIL]-instans.
 **Exempelkod**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
-dataLib.api.traits([<i>123, 456, 789</i>]).result(function(json)&lbrace; 
+dataLib.api.traits([<i>123, 456, 789</i>]).result(function(json){ 
      //Do something, possibly with the JSON data returned from the server. 
-&rbrace;);.submit();
+});.submit();
 </code></pre>
 
 ## secureDataCollection {#securedatacollection}
@@ -657,10 +657,10 @@ dil-secure-data-collection.xml
 >Ange `secureDataCollection= false` om du använder visitorAPI.js och [!UICONTROL DIL] på samma sida. Se kodexemplet nedan.
 
 <pre><code class="js">
-var dilInstance = DIL.create(&lbrace; 
+var dilInstance = DIL.create({ 
      ... 
      secureDataCollection: false 
-&rbrace;);
+});
 </code></pre>
 
 ## useCORSOnly {#usecorsonly}
@@ -680,10 +680,10 @@ dil-use-cors-only.xml
 **Kodexempel**
 
 <pre><code class="js">
-var dilInstance = DIL.create(&lbrace; 
+var dilInstance = DIL.create({ 
      ... 
      useCORSOnly: true 
-&rbrace;);
+});
 </code></pre>
 
 >[!IMPORTANT]
@@ -715,10 +715,10 @@ Returnerar ett API-objekt för den aktuella [!UICONTROL DIL]-instansen.
 **Exempelkod**
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner:'<i>partnerName</i>', 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
  
 dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 </code></pre>
@@ -727,7 +727,7 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >
 >* [Namnkrav för nyckelvariabler](../features/traits/trait-key-name-requirements.md)
 >* [Prefixkrav för nyckelvariabler](../features/traits/trait-variable-prefixes.md)
->* [Synkroniseringsfunktioner i Adobe Experience Platform identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/idsync.html?lang=sv-SE)
+>* [Synkroniseringsfunktioner i Adobe Experience Platform identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/idsync.html)
 >* [Skapa DIL](../dil/dil-class-overview/dil-create.md#dil-create)
->* [Adobe Experience Platform identitetstjänst: UseCORSOnly](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/use-cors-only.html?lang=sv-SE)
->* [CORS-stöd i Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/reference/cors.html?lang=sv-SE)
+>* [Adobe Experience Platform identitetstjänst: UseCORSOnly](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/use-cors-only.html)
+>* [CORS-stöd i Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/reference/cors.html)

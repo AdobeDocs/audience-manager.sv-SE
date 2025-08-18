@@ -122,7 +122,7 @@ Det första steget i processen kräver ingripande från Adobe Consulting eller k
 
 ### Steg 2 - Dataprovider - Skapa nya data-Source
 
-Skapa en ny cookie-datakälla med:
+I ditt Audience Manager-konto skapar du en ny cookie-datakälla med:
 
 * **Audience Manager ID** som inkommande nyckel;
 * Alternativet **Dela aktiverad** har markerats.

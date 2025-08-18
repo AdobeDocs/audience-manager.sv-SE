@@ -22,7 +22,7 @@ Du kan också se information om baslinjesegmentet som du använde för testgrupp
 
 **[!UICONTROL Test Segments]** fylls i slumpmässigt med användare från det baslinjesegment som du använde för testgruppen. I översikten visas procentsatserna för de användare som du tilldelade varje testsegment.
 
-**[!UICONTROL Conversion Traits]** kör rapporteringen för testgrupperna. Välj **Konvertering** som **[Händelsetyp](../../features/traits/create-onboarded-rule-based-traits.md) när du skapar eller redigerar egenskaper i [!UICONTROL Trait Builder].**
+**[!UICONTROL Conversion Traits]** kör rapporteringen för testgrupperna. Välj [!UICONTROL Trait Builder]Konvertering **som** Händelsetyp **[när du skapar eller redigerar egenskaper i ](../../features/traits/create-onboarded-rule-based-traits.md).**
 
 Kortet **[!UICONTROL Destinations]** är komprimerbart. Tryck på pilarna för att öppna eller stänga enskilda mål och få följande information för testsegment, grupperade efter de mål som de är mappade till:
 

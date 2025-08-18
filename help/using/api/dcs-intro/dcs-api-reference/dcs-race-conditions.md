@@ -35,7 +35,7 @@ Om hastighetsbegränsning är aktiverat kan du få en `429 Too Many Requests` HT
 
 Felhanteringen är begränsad för ogiltiga eller dåligt formade frågor. En ogiltig begäran returnerar ett `HTTP 200 OK`-svar och inga data. Dessutom slutar [!DNL DCS] bearbeta en begäran, raderar trait-data och returnerar ett `HTTP 200 OK`-svar när en användare:
 
-* Spårning på Audience Manager- eller partnernivå är inte längre tillgängligt.
+* Spåra inte på Audience Manager- eller partnernivå.
 * Kommer från en ogiltig/omarkerad geografisk region.
 * Inaktiverar cookies för webbläsare (antingen alla eller tredje part).
 

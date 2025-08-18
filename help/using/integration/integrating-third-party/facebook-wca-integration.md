@@ -1,9 +1,9 @@
 ---
-description: På den här sidan illustreras processen att skapa Facebook WCA-pixlar (Web Site Custom Audiences) för att skicka webbaserade Audience Manager-målgruppssegment till Facebook, för webbannonsering med förbättrad transparens.
+description: Den här sidan illustrerar processen att skapa WCA-pixlar (Custom Audiences) för Facebook för att skicka webbaserade Audience Manager-målgruppssegment till Facebook, för onlineannonsering med förbättrad transparens.
 seo-description: This page illustrates the process of creating Facebook Website Custom Audiences (WCA) pixels for the purposes of sending web-based Audience Manager audience segments to Facebook, for online ad targeting with improved transparency.
 seo-title: Facebook WCA Integration
 solution: Audience Manager
-title: Integrering med facebook WCA
+title: Integrering med Facebook WCA
 feature: Third-party Integration
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
 source-git-commit: 6dc931b88666515cf51ab89ce1a54bbcf9995679
@@ -23,7 +23,7 @@ Den här sidan visar processen att skapa [!DNL Facebook Website Custom Audiences
 
 ## Översikt {#overview}
 
-Med [Facebook WCA (Web Site Custom Audiences)](https://www.facebook.com/business/help/610516375684216?id=2469097953376494) kan du skapa en lista över personer som har besökt vissa sidor eller vidtagit särskilda åtgärder på webbplatsen. [!DNL Audience Manager] aktiverar aktivering i [!DNL WCA] med [!DNL URL] mål, med vilka du kan konfigurera en anpassad pixelbaserad integrering för att skicka webbaserade målgrupper till [!DNL Facebook] för målgruppsanpassning.
+Med [Anpassade målgrupper på Facebooks webbplats (WCA)](https://www.facebook.com/business/help/610516375684216?id=2469097953376494) kan du skapa en lista över personer som har besökt vissa sidor eller vidtagit särskilda åtgärder på din webbplats. [!DNL Audience Manager] aktiverar aktivering i [!DNL WCA] med [!DNL URL] mål, med vilka du kan konfigurera en anpassad pixelbaserad integrering för att skicka webbaserade målgrupper till [!DNL Facebook] för målgruppsanpassning.
 
 ![Integrering med Facebook WCA](/help/using/integration/assets/facebook-wca-integration.png)
 
@@ -34,11 +34,11 @@ Med [Facebook WCA (Web Site Custom Audiences)](https://www.facebook.com/business
 ## Förutsättningar {#prerequisites}
 
 1. [!DNL Facebook Ad Account]
-2. [!DNL Audience Manager] segment, redo att tilldelas till ditt nya [!DNL Facebook]-mål. Så här skapar du ett segment [&#128279;](/help/using/features/segments/segment-builder.md) i [!DNL Audience Manager]-gränssnittet: Så här skapar du ett segment.
+2. [!DNL Audience Manager] segment, redo att tilldelas till ditt nya [!DNL Facebook]-mål. Så här skapar du ett segment [ i ](/help/using/features/segments/segment-builder.md)-gränssnittet: [!DNL Audience Manager]Så här skapar du ett segment.
 3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID]) Version 4.1.0 eller senare. Hämta den senaste versionen **[här](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**.
-4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL]) version 9.0 eller senare, kan hämtas från **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Om du använder [SSF (Server-Side Forwarding)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=sv-SE) för att importera data till [!DNL Audience Manager] måste du använda AppMeasurement version 2.12 eller senare. Hämta [!DNL AppMeasurement] med [Analytics Code Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html?lang=sv-SE).
+4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL]) version 9.0 eller senare, kan hämtas från **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Om du använder [SSF (Server-Side Forwarding)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) för att importera data till [!DNL Audience Manager] måste du använda AppMeasurement version 2.12 eller senare. Hämta [!DNL AppMeasurement] med [Analytics Code Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html).
 
-Vi rekommenderar att du installerar eller uppgraderar biblioteken i steg 3 och 4 med [Adobe Experience Platform Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=sv-SE).
+Vi rekommenderar att du installerar eller uppgraderar biblioteken i steg 3 och 4 med [Adobe Experience Platform Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
 
 ## Steg 1 - Skapa en [!UICONTROL Facebook Destination] i [!DNL Audience Manager] {#step-1-create-facebook-destination}
 
@@ -62,7 +62,7 @@ Välj alternativet **[!UICONTROL This destination may enable a combination with 
 
 * **[!UICONTROL URL type]**: Välj **[!UICONTROL Website audience for social platforms]**. Om du väljer det här [!UICONTROL URL Type]-alternativet skymmer [!DNL Audience Manager] inte referensinformationen [!DNL URL] när en [!DNL Facebook WCA] -pixel utlöses.
 * **[!UICONTROL Serialize]**: Välj **[!UICONTROL Enable]**.
-* Ange pixeln [!DNL Facebook WCA] i fältet **[!UICONTROL Base URL]** och **[!UICONTROL Secure URL]**.
+* Ange pixeln **[!UICONTROL Base URL]** i fältet **[!UICONTROL Secure URL]** och [!DNL Facebook WCA].
 * **[!UICONTROL Delimiter]**: `,`
 
 Exempel på bas [!DNL URL]: `https://www.facebook.com/tr/?id=XXXXXXXXX&ev=Adobe-Audience-Manager-Segment&cd[segID]=%ALIAS%&noscript=1`

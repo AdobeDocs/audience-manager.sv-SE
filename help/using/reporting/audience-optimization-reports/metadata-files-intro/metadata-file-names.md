@@ -1,5 +1,5 @@
 ---
-description: Namnge metadatafilen för Audience Optimization enligt dessa specifikationer.
+description: Namnge Audience Optimization-metadatafilen enligt dessa specifikationer.
 seo-description: Name your Audience Optimization metadata file according to these specifications.
 seo-title: Naming Conventions for Metadata Files
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Namnkonventioner för metadatafiler{#naming-conventions-for-metadata-files}
 
-Namnge metadatafilen för Audience Optimization enligt dessa specifikationer.
+Namnge Audience Optimization-metadatafilen enligt dessa specifikationer.
 
 ## Syntax- och ID-kategorier {#syntax}
 
@@ -38,7 +38,7 @@ Följande syntax definierar strukturen för ett välformaterat metadatafilnamn. 
 I metadatafilnamnet är det underordnade ID:t en identifierare som klassificerar datatypen i en fil och placerar den i en hierarki. Du kan tagga det underordnade ID:t i filnamnet med följande kategori-ID:
 
 1. Campaign
-1. Kreativ
+1. Creative
 1. Placement
 1. Exchange
 1. Plats

@@ -40,7 +40,7 @@ I följande tabell visas viktiga aspekter när du konfigurerar [!UICONTROL Cross
   </tr>
   <tr> 
    <td> <p>Attributionsfönster </p> </td> 
-   <td> <p> <b><span class="uicontrol"> Attributeringsfönstret AAM+Google Campaign Manager</span></b> är 14 dagar, vilket innebär att endast konverteringsegenskaper som har visats under de senaste två veckorna beaktas. </p> </td> 
+   <td> <p> <b><span class="uicontrol"> Attributeringsfönstret för AAM+Google Campaign Manager</span></b> är 14 dagar, vilket innebär att endast konverteringsegenskaper som har visats under de senaste två veckorna beaktas. </p> </td> 
   </tr> 
   <tr> 
    <td> <p>Senaste beröringsmetod </p> </td> 

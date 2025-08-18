@@ -19,9 +19,9 @@ ht-degree: 85%
 
 Audience Manager hjälper er att samla in målgruppsdata, vilket gör det enkelt att samla in kommersiellt relevant information om webbplatsbesökare, skapa segment som kan marknadsföras och leverera riktad reklam och innehåll till rätt målgrupp. Dessutom erbjuder Audience Manager enkel taggetablering och -hantering med robust datainsamling, kontroll och skydd.
 
-Med Audience Manager är ni inte bundna till en dataleverantör, bytesplattform eller DSP (Demand-Side Platform). Dessutom är Audience Manager helt agnostiker när det gäller våra partners datatillgångar. Med tillgång till flera datakällor kan digitala utgivare använda en mängd olika data från tredje part i Audience Manager. Tala med vårt Partner Solutions-team om du vill ha hjälp med att fatta smarta och korrekta beslut om målgrupper.
+Med Audience Manager är ni inte bundna till en dataleverantör, bytesplattform eller DSP (Demand-Side Platform). Dessutom är Audience Manager helt agnostikerat när det gäller våra partners datatillgångar. Med tillgång till flera datakällor erbjuder Audience Manager digitala utgivare möjlighet att använda en mängd olika tredjepartsdata. Tala med vårt Partner Solutions-team om du vill ha hjälp med att fatta smarta och korrekta beslut om målgrupper.
 
-## Tre funktioner i en plattform för datahantering (DMP) {#dmp-three-functions}
+## Tre funktioner i en datahanteringsplattform (DMP) {#dmp-three-functions}
 
 Funktionerna i en plattform för datahantering (DMP) kan sammanfattas i tre kategorier som visas nedan.
 

@@ -20,7 +20,7 @@ Metoder som gör att du kan arbeta programmatiskt med målfunktioner.
 
 <!-- c_destinations_api.xml -->
 
-I Audience Manager är en destination vilket annat system som helst (annonsserver, [!DNL DSP], annonsnätverk, utbyte, egen cookie från första part osv.) som du vill dela data med.
+I Audience Manager är målet vilket annat system som helst (annonsserver, [!DNL DSP], annonsnätverk, utbyte, egen cookie från första part osv.) som du vill dela data med.
 
 ## Måltyper: URL och cookie {#destination-types}
 

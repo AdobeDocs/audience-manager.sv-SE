@@ -1,5 +1,5 @@
 ---
-description: Du kan hämta in data från mediekampanjer med pixelanrop till Audience Manager (kallas ofta för att skapa pixlar) eller genom att importera loggfiler.
+description: Du kan hämta in data från mediekampanjer med hjälp av pixelanrop till Audience Manager (kallas ofta för att skapa pixlar) eller genom att importera loggfiler.
 seo-description: You can capture data from media campaigns using pixel calls to Audience Manager (often called pixeling the creative) or by ingesting log files.
 seo-title: Media Data Integration
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Integrering av mediedata {#media-data-integration}
 
-Du kan hämta in data från mediekampanjer med pixelanrop till Audience Manager (kallas ofta för att skapa pixlar) eller genom att importera loggfiler. Läs artiklarna i det här avsnittet om du vill veta mer om processen.
+Du kan hämta in data från mediekampanjer med hjälp av pixelanrop till Audience Manager (kallas ofta för att skapa pixlar) eller genom att importera loggfiler. Läs artiklarna i det här avsnittet om du vill veta mer om processen.
 
 <!-- c_camp_data_int.xml -->
 

@@ -37,7 +37,7 @@ Så här slutför du avsnittet [!UICONTROL Data Source Details]:
 1. Ge datakällan ett namn.
 2. *(Valfritt)* Beskriv datakällan. En kortfattad beskrivning hjälper dig att definiera rollen eller syftet med datakällan.
 3. Ange en integreringskod. En integrationskod är ditt eget unika ID för den här datakällan.
-4. Välj **[!UICONTROL Cross Device]** i listan **[!UICONTROL ID Type]**.
+4. Välj **[!UICONTROL ID Type]** i listan **[!UICONTROL Cross Device]**.
 5. I listan **[!UICONTROL ID Definition]** väljer du ett alternativ som definierar datakälltypen. Alternativen är:
    * **[!UICONTROL Person]**: Ett ID som definierar en person. Detta ID kan mappas till flera [!DNL Audience Manager] ID:n.
    * **[!UICONTROL Household]**: Ett ID som definierar en grupp med personer. Detta ID kan mappas till flera [!DNL Audience Manager] ID:n.
@@ -105,7 +105,7 @@ Så här slutför du avsnittet [!UICONTROL Proflie Merge Rule Setup]:
 
 I slutet av 2019 har vi släppt en serie förbättringar av reglerna för profilsammanslagning för att förbättra exaktheten hos gruppfiler som genererats med hjälp av enhets-ID:n. Dessa förbättringar respekteras strikt i din Audience Manager-instans från och med måndagen den 16 mars 2020. Därför kommer segment som mappas till ett mål med hjälp av enhets-ID att sluta producera exporter i vissa konfigurationer av profilkopplingsregler.
 
-Kontrollera att du uppfyller följande krav för att se till att Audience Manager-instansen och destinationerna är korrekt integrerade med olika enhets-ID, t.ex. Adobe Campaign:
+För att säkerställa korrekt integrering mellan din Audience Manager-instans och destinationer med olika enhets-ID, som Adobe Campaign, måste du uppfylla följande krav:
 
 1. Granska den profilkopplingsregel som används av de segment som är mappade till ditt Adobe Campaign-deklarerade ID-mål. Regeln för profilsammanslagning måste använda alternativet [!UICONTROL Last Authenticated Profile], så alla autentiserade profiler kan inkluderas i exporten. Om din profilkopplingsregel använder ett annat alternativ växlar du till [!UICONTROL Last Authenticated Profile].
 2. Markera datakällan för det deklarerade Adobe Campaign-ID:t i inställningarna för profilkopplingsregeln.
@@ -126,7 +126,7 @@ Du måste konfigurera en [datakälla för olika enheter](#create-data-source) oc
 
 ## För Adobe Experience Platform Identity Service-kunder {#id-service-customers}
 
-[!UICONTROL Adobe Experience Platform Identity Service] och den senaste versionen av [DIL](../../dil/dil-overview.md) rekommenderas när du arbetar med [!UICONTROL Profile Merge Rules]. Du behöver dock inte använda [!UICONTROL Adobe Experience Platform Identity Service] för att arbeta med den här funktionen. Om du bara använder [!UICONTROL DIL] kan du läsa avsnittet [äldre DIL](#legacy-dil) nedan.
+[!UICONTROL Adobe Experience Platform Identity Service] och den senaste versionen av [DIL](../../dil/dil-overview.md) rekommenderas när du arbetar med [!UICONTROL Profile Merge Rules]. Du behöver dock inte använda [!UICONTROL Adobe Experience Platform Identity Service] för att arbeta med den här funktionen. Om du bara använder [!UICONTROL DIL] kan du läsa [det gamla DIL-avsnittet](#legacy-dil) nedan.
 
 ### Konfigurera funktionen Ange kundens ID
 
@@ -150,7 +150,7 @@ visitor.setCustomerIDs({
      "authState":Visitor.AuthState.AUTHENTICATED
 ```
 
-Mer information finns i [Skapa enhetsövergripande data för Source](#create-data-source) och [Kund-ID:n och autentiseringstillstånd](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=sv-SE).
+Mer information finns i [Skapa enhetsövergripande data för Source](#create-data-source) och [Kund-ID:n och autentiseringstillstånd](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html).
 
 ### Konfigurera funktionen `DIL.create`
 
@@ -165,13 +165,13 @@ var vDil = DIL.create({
 });
 ```
 
-I namnutrymmets nyckelvärdepar är variabeln `*`MCORG`*` ditt [!DNL Experience Cloud] Organization ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration]-avsnittet på [!DNL Experience Cloud]-instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: bastjänster](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=sv-SE).
+I namnutrymmets nyckelvärdepar är variabeln `*`MCORG`*` ditt [!DNL Experience Cloud] Organization ID. Om du inte har det här ID:t kan du hitta det i [!UICONTROL Administration]-avsnittet på [!DNL Experience Cloud]-instrumentpanelen. Du behöver administratörsbehörighet för att kunna visa den här instrumentpanelen. Se [Administration: bastjänster](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 ### Konfigurera SDK:er
 
 Se avsnittet [Konfigurera SDK](#configure-sdks-legacy-dil) nedan.
 
-## DIL äldre {#legacy-dil}
+## Äldre DIL {#legacy-dil}
 
 Om du inte använder [!DNL Adobe Experience Platform Identity Service] än så borde du verkligen göra det. Men vi förstår att en övergång till ny kod kräver noggranna genomgångar och tester. I dessa fall kontrollerar du funktionen `DIL.create` för att kontrollera att den är korrekt konfigurerad enligt exemplet nedan.
 
@@ -215,15 +215,15 @@ Kontrollera metoderna i din [!DNL SDK]-kod som gör att du kan skicka [!UICONTRO
     </code></p>
     <p> <b>Exempel:</b> </p><p>
     <code class="javascript">
-      &lbrack;ADBMobile&nbsp;audienceSetDpid:@"290"
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:@"99301393923940"&rbrack;;
+      [ADBMobile&nbsp;audienceSetDpid:@"290"
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dpuuid:@"99301393923940"];
     </code></p>
     </td>
   </tr>
  </tbody>
 </table>
 
-Se även [Audience Manager-metoder för Android](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html?lang=sv-SE) och [Audience Manager-metoder för iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html?lang=sv-SE).
+Se även [Audience Manager-metoder för Android](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html) och [Audience Manager-metoder för iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html).
 
 >[!MORELIKETHIS]
 >

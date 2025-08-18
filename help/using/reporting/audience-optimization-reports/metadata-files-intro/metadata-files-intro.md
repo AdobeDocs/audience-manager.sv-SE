@@ -1,5 +1,5 @@
 ---
-description: En datafil innehåller indata som du kan använda i Audience Optimization-rapporter och för körbara loggfiler. En metadatafil innehåller läsbara namn som motsvarar olika rapportalternativ och menyalternativ. Formatera data och metadatafiler enligt specifikationerna i det här avsnittet.
+description: En datafil innehåller de intrycks-, klicknings- eller konverteringsdata som du kan använda i Audience Optimization-rapporter och för körbara loggfiler. En metadatafil innehåller läsbara namn som motsvarar olika rapportalternativ och menyalternativ. Formatera data och metadatafiler enligt specifikationerna i det här avsnittet.
 seo-description: A data file contains impression, click, or conversion data that you can use in the Audience Optimization reports and for Actionable Log Files. A metadata file contains human-readable names that correspond to various report options and menu items. Format your data and metadata files according to the specifications in this section.
 seo-title: Log Data and Metadata Files
 solution: Audience Manager
@@ -19,7 +19,7 @@ ht-degree: 0%
 En datafil innehåller indata, klickningar eller konverteringsdata som kan användas för:
 
 * [Loggfiler som kan användas](/help/using/integration/media-data-integration/actionable-log-files.md)
-* [Audience Optimization-rapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
+* [Audience Optimization Reports](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
 
 En metadatafil innehåller läsbara namn som motsvarar olika rapportalternativ och menyalternativ. Formatera data och metadatafiler enligt specifikationerna i det här avsnittet.
 
@@ -27,7 +27,7 @@ En metadatafil innehåller läsbara namn som motsvarar olika rapportalternativ o
 >
 >Om du vill använda metadatafiler måste dina händelseanrop innehålla *alla* parametrar som anges i avsnittet [Översikt och mappningar](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md).
 
-* [Datafiler för Audience Optimization-rapporter och åtgärdsloggfiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
+* [Datafiler för Audience Optimization-rapporter och körbara loggfiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
 * [Översikt och mappningar för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
 * [Namnkonventioner för metadatafiler](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)
 * [Innehållsformat för metadata](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md)

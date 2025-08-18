@@ -45,11 +45,11 @@ t_reports_outbound_history.xml
  <tbody> 
   <tr> 
    <td colname="col1"> Datasynkroniseringsfilnamn </td> 
-   <td colname="col2"> <p>Lista över alla utgående filer som <span class="keyword"> Adobe</span> genererade för det här målet och som bearbetades tillsammans. </p> </td> 
+   <td colname="col2"> <p>Lista över alla utgående filer som <span class="keyword"> Adobe</span> har genererat för det här målet och som har bearbetats tillsammans. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Slutförd </td> 
-   <td colname="col2"> <p>Antal poster som har skickats från <span class="keyword"> Audience Manager </span> till målet. </p> </td> 
+   <td colname="col2"> <p>Antal poster som har skickats från <span class="keyword"> Audience Manager</span> till målet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Misslyckades </td> 
@@ -57,7 +57,7 @@ t_reports_outbound_history.xml
   </tr> 
   <tr> 
    <td colname="col1"> Mottagna poster </td> 
-   <td colname="col2"> <p>Totalt antal poster <span class="keyword"> Adobe </span> som genererats i filerna och som försökt skicka till målet. I de flesta fall bör detta vara det totala antalet slutförda och misslyckade filer. </p> </td> 
+   <td colname="col2"> <p>Totalt antal poster <span class="keyword"> Adobe</span> som genererats i filerna och som försökt skicka till målet. I de flesta fall bör detta vara det totala antalet slutförda och misslyckade filer. </p> </td> 
   </tr> 
  </tbody> 
 </table>

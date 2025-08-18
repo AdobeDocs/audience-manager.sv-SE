@@ -1,5 +1,5 @@
 ---
-description: En datafeed kräver ett namn, en beskrivning, en datakälla och en plantyp. Feeds inaktiveras tills du sparar och aktiverar feeden. Ställ in offentliga eller privata dataflöden i Audience Marketplace > Mina delade data. Endast tillgängligt för dataförsäljare.
+description: En datafeed kräver ett namn, en beskrivning, en datakälla och en plantyp. Feeds inaktiveras tills du sparar och aktiverar feeden. Konfigurera offentliga eller privata dataflöden i Audience Marketplace > Mina delade data. Endast tillgängligt för dataförsäljare.
 seo-description: A data feed requires a name, description, data source, and a plan type. Feeds are disabled until you save and activate the feed. Set up public or private data feeds in Audience Marketplace > My Shared Data. Available to data sellers only.
 seo-title: Create, Price, and Manage Data Feeds
 solution: Audience Manager
@@ -76,7 +76,7 @@ Så här återkallar du en prenumerant:
 
 1. Klicka i kolumnen [!UICONTROL Subscribers] på det blå nummer som räknar prenumeranter för den aktuella feeden. Sidan med prenumerationsinformation öppnas.
 1. Flytta reglaget **[!UICONTROL Subscription]** till **[!UICONTROL Off]**. Ett bekräftelsefönster öppnas.
-1. Klicka på **[!UICONTROL Yes]** på popup-menyn [!UICONTROL Confirmation] om du vill inaktivera en prenumeration eller på **[!UICONTROL Cancel]** om du vill avsluta utan att göra några prenumerationsändringar.
+1. Klicka på [!UICONTROL Confirmation] på popup-menyn **[!UICONTROL Yes]** om du vill inaktivera en prenumeration eller på **[!UICONTROL Cancel]** om du vill avsluta utan att göra några prenumerationsändringar.
 
 ### Vad som händer när du har inaktiverat en prenumerant
 
@@ -150,13 +150,13 @@ Fakturerings- och prisalternativen styr hur köpare betalar för dina data.
    <td colname="col1"> <b><span class="uicontrol"> Måttenhet</span></b> </td> 
    <td colname="col2">Debitera datainköpare till en CPM-taxa eller en fast avgift. 
     <ul id="ul_D5F125E0F7364C568D9F3107E090059D"> 
-     <li id="li_A79F47FFC1DC4B9DADC014621A9C12A1"> Med CPM-priser måste datainköpare själva rapportera användningen. </li> 
+     <li id="li_A79F47FFC1DC4B9DADC014621A9C12A1"> Med CPM prissättning behöver datainköpare själva rapportera användningen. </li> 
      <li id="li_DFED3194854A492F9DD0E7BA1A655E96">Med fast avgift rapporterar inte datainköpare om användningen eftersom de debiteras en fast avgift. </li> 
     </ul> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> pris</span></b> </td>
-   <td colname="col2"> Det belopp som en säljare debiterar köparen som CPM-ränta eller fast avgiftspris, i dollar. </td>
+   <td colname="col2"> Det belopp som en säljare debiterar köparen som CPM-pris eller ett schablonpris, i dollar. </td>
   </tr> 
  </tbody> 
 </table>

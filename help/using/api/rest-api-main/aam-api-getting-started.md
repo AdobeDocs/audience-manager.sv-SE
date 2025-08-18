@@ -9,7 +9,7 @@ feature: API
 exl-id: f7d5e52d-ad21-4020-a299-d440f954c51a
 source-git-commit: 622664170f2a76039bcf2333bde43ce9e60b6af2
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2563'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Information om allmänna krav, autentisering, valfria frågeparametrar, begäran [!DNL URLs] och andra referenser.
 
-## API-krav och Recommendations {#api-requirements-recommendations}
+## Krav och rekommendationer för API {#api-requirements-recommendations}
 
 Observera följande när du arbetar med [Audience Manager API](https://bank.demdex.com/portal/swagger/index.html#/) -kod:
 
@@ -33,9 +33,9 @@ Observera följande när du arbetar med [Audience Manager API](https://bank.demd
 
 [!DNL Audience Manager] [!DNL REST APIs] har stöd för tre autentiseringsmetoder.
 
-* [!BADGE Rekommenderas]{type=positive}[OAuth Server-till-Server-autentisering](#oauth-adobe-developer) med [Adobe-utvecklarkonsolen](https://www.adobe.io/). [!DNL Adobe Developer] är Adobe utvecklares ekosystem och community. Den innehåller [API:er för alla Adobe-produkter](https://developer.adobe.com/apis/). Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs]. Läs mer om [OAuth Server-till-Server-autentisering](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/) i utvecklardokumentationen för Adobe.
-* [!BADGE Föråldrat]{type=negative}[JWT-autentisering (tjänstkonto)](#jwt) med [Adobe-utvecklarkonsolen](https://www.adobe.io/). [!DNL Adobe Developer] är Adobe utvecklares ekosystem och community. Den innehåller [API:er för alla Adobe-produkter](https://developer.adobe.com/apis/).
-* [!BADGE Föråldrat]{type=negative}[Äldre OAuth-autentisering](#oauth-deprecated). Den här metoden är föråldrad, men kunder med befintliga [!DNL OAuth]-integreringar kan fortsätta använda den här metoden.
+* [!BADGE Rekommenderad]{type=positive} [OAuth Server-till-server-autentisering](#oauth-adobe-developer) med [Adobe utvecklarkonsol](https://www.adobe.io/). [!DNL Adobe Developer] är Adobe ekosystem och community för utvecklare. Den innehåller [API:er för alla Adobe-produkter](https://developer.adobe.com/apis/). Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs]. Läs mer om [OAuth Server-till-Server-autentisering](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/) i dokumentationen för Adobe-utvecklare.
+* [!BADGE JWT-autentisering (tjänstkonto)]{type=negative} har tagits bort[ ](#jwt)med [Adobe utvecklarkonsol](https://www.adobe.io/). [!DNL Adobe Developer] är Adobe ekosystem och community för utvecklare. Den innehåller [API:er för alla Adobe-produkter](https://developer.adobe.com/apis/).
+* [!BADGE Föråldrad]{type=negative} [Äldre OAuth-autentisering](#oauth-deprecated). Den här metoden är föråldrad, men kunder med befintliga [!DNL OAuth]-integreringar kan fortsätta använda den här metoden.
 
 >[!IMPORTANT]
 >
@@ -49,7 +49,7 @@ I det här avsnittet beskrivs hur du samlar in de inloggningsuppgifter som kräv
 
 ### Adobe Developer - översikt {#developer-overview}
 
-[!DNL Adobe Developer] är Adobe utvecklares ekosystem och community. Den innehåller [API:er för alla Adobe-produkter](https://developer.adobe.com/apis).
+[!DNL Adobe Developer] är Adobe ekosystem och community för utvecklare. Den innehåller [API:er för alla Adobe-produkter](https://developer.adobe.com/apis).
 
 Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
 
@@ -70,7 +70,7 @@ Följ stegen nedan för att konfigurera [!DNL OAuth Server-to-Server]-autentiser
 >
 >Om du vill konfigurera och arbeta med [!DNL Audience Manager] [!DNL REST APIs] automatiskt kan du rotera klienthemligheter programmatiskt. Mer information finns i [utvecklardokumentationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/#rotating-client-secrets-programmatically).
 
-### Lägga till Audience Manager API i ett projekt {#add-aam-api-to-project}
+### Lägg till Audience Manager API i ett projekt {#add-aam-api-to-project}
 
 Gå till [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui) och logga in med din Adobe ID. Följ sedan stegen som beskrivs i självstudiekursen om att [skapa ett tomt projekt](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty/) i Adobe Developer Console-dokumentationen.
 
@@ -84,7 +84,7 @@ När du har skapat ett nytt projekt väljer du **[!UICONTROL Add API]** på skä
 
 Skärmen **[!UICONTROL Add an API]** visas. Markera produktikonen för Adobe Experience Cloud och välj sedan **[!UICONTROL Audience Manager API]** innan du väljer **[!UICONTROL Next]**.
 
-![Välj Audience Manager-API.](/help/using/api/rest-api-main/assets/audience-manager-api.png)
+![Välj Audience Manager API.](/help/using/api/rest-api-main/assets/audience-manager-api.png)
 
 >[!TIP]
 >
@@ -92,11 +92,11 @@ Skärmen **[!UICONTROL Add an API]** visas. Markera produktikonen för Adobe Exp
 
 ### Välj autentiseringstypen OAuth Server-till-server {#select-oauth-server-to-server}
 
-Välj sedan autentiseringstypen för att generera åtkomsttoken och få åtkomst till Audience Manager-API:t.
+Välj sedan autentiseringstypen för att generera åtkomsttoken och få åtkomst till Audience Manager API.
 
 >[!IMPORTANT]
 >
->Välj metoden **[!UICONTROL OAuth Server-to-Server]** eftersom det här är den enda metod som stöds för att gå framåt. Metoden **[!UICONTROL Service Account (JWT)]** är föråldrad. Även om integreringar med JWT-autentiseringsmetoden fortsätter att fungera fram till 1 januari 2025 rekommenderar Adobe starkt att du migrerar befintliga integreringar till den nya OAuth Server-till-Server-metoden före detta datum.
+>Välj metoden **[!UICONTROL OAuth Server-to-Server]** eftersom det här är den enda metod som stöds för att gå framåt. Metoden **[!UICONTROL Service Account (JWT)]** är föråldrad. Integreringar som använder JWT-autentiseringsmetoden fortsätter att fungera fram till 1 januari 2025, men Adobe rekommenderar starkt att du migrerar befintliga integreringar till den nya OAuth Server-till-Server-metoden före detta datum.
 
 ![Välj OAuth-autentiseringsmetod.](/help/using/api/rest-api-main/assets/select-oauth-authentication-method.png)
 
@@ -110,7 +110,7 @@ Välj **[!UICONTROL Save configured API]** när du är klar.
 
 ### Samla in inloggningsuppgifter {#gather-credentials}
 
-När API:t har lagts till i projektet visar **[!UICONTROL Audience Manager API]**-sidan för projektet följande autentiseringsuppgifter som krävs i alla anrop till API:er för Audience Manager:
+När API:t har lagts till i projektet visar **[!UICONTROL Audience Manager API]**-sidan för projektet följande autentiseringsuppgifter som krävs i alla anrop till Audience Manager API:er:
 
 ![Integreringsinformation när du har lagt till ett API i Developer Console.](/help/using/api/rest-api-main/assets/api-integration-information.png)
 
@@ -119,13 +119,13 @@ När API:t har lagts till i projektet visar **[!UICONTROL Audience Manager API]*
 
 ## Generera en åtkomsttoken {#generate-access-token}
 
-Nästa steg är att generera en `{ACCESS_TOKEN}`-autentiseringsuppgift som kan användas i API-anrop från Audience Manager. Till skillnad från värdena för `{API_KEY}` och `{ORG_ID}` måste en ny token genereras var 24:e timme för att du ska kunna fortsätta använda Audience Manager API:er. Välj **[!UICONTROL Generate access token]** enligt nedan.
+Nästa steg är att generera en `{ACCESS_TOKEN}`-autentiseringsuppgift som kan användas i Audience Manager API-anrop. Till skillnad från värdena för `{API_KEY}` och `{ORG_ID}` måste en ny token genereras var 24:e timme för att du ska kunna fortsätta använda Audience Manager API:er. Välj **[!UICONTROL Generate access token]** enligt nedan.
 
 ![Visa hur du genererar åtkomsttoken](/help/using/api/rest-api-main/assets/generate-acces-token.gif)
 
 ## Testa ett API-anrop {#test-api-call}
 
-När du har hämtat din token för autentisering av innehavare utför du ett API-anrop för att testa att du nu kan komma åt API:er för Audience Manager.
+När du har fått din token för autentisering av innehavare utför du ett API-anrop för att testa att du nu kan komma åt Audience Manager API:er.
 
 1. Navigera till [API-referensdokumentationen](https://bank.demdex.com/portal/swagger/index.html#/Data%20Source%20API/get_datasources_).
 2. Välj **[!UICONTROL Authorize]** och klistra in åtkomsttoken som du fick i steget [Generera åtkomsttoken](#generate-access-token).
@@ -211,13 +211,13 @@ När du använder en arbetsåtkomsttoken returnerar API-slutpunkten ett 200-svar
 
 >[!ENDSHADEBOX]
 
-## [!BADGE Föråldrat]{type=negative}[!DNL JWT] ([!DNL Service Account]) Autentisering med Adobe Developer {#jwt}
+## [!BADGE Inaktuell ]{type=negative} [!DNL JWT] ([!DNL Service Account]) autentisering med Adobe Developer {#jwt}
 
 +++ Visa information om den borttagna [!DNL JWT] ([!DNL Service Account])-metoden för att hämta autentiseringstoken.
 
 ### Adobe Developer - översikt {#adobeio}
 
-[!DNL Adobe Developer] är Adobe utvecklares ekosystem och community. Den innehåller [API:er för alla Adobe-produkter](https://www.adobe.io/apis.html).
+[!DNL Adobe Developer] är Adobe ekosystem och community för utvecklare. Den innehåller [API:er för alla Adobe-produkter](https://www.adobe.io/apis.html).
 
 Detta är det rekommenderade sättet att konfigurera och använda [!DNL Adobe] [!DNL APIs].
 
@@ -252,7 +252,7 @@ Följ stegen nedan för att skapa ett tekniskt användarkonto och lägga till de
 
 +++
 
-## [!BADGE Föråldrat]{type=negative}[!DNL OAuth]-autentisering (inaktuell) {#oauth-deprecated}
+## [!BADGE Inaktuell ]{type=negative} [!DNL OAuth] autentisering (inaktuell) {#oauth-deprecated}
 
 +++ Visa information om den inaktuella, gamla autentiseringsmetoden [!DNL OAuth] för att hämta autentiseringstoken.
 
@@ -361,7 +361,7 @@ Krav för att anropa [!DNL API]-metoder när du har tagit emot en autentiserings
 
 Så här anropar du mot de tillgängliga [!DNL API]-metoderna:
 
-* Ange `Authorization: Bearer <token>` i rubriken `HTTP`.
+* Ange `HTTP` i rubriken `Authorization: Bearer <token>`.
 * När du använder [JWT-autentisering (tjänstkonto)](#jwt) måste du ange rubriken `x-api-key` som är densamma som din `client_id`. Du kan hämta `client_id` från [Adobe Developer-integreringssidan](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
 * Anropa den obligatoriska [!DNL API]-metoden.
 
@@ -402,7 +402,7 @@ I följande tabell visas begäran [!DNL URLs] som används för att skicka [!DNL
 
 Beroende på vilken autentiseringsmetod du använder måste du justera din begäran [!DNL URLs] enligt tabellerna nedan.
 
-### Begär [!DNL URLs] för [!BADGE Rekommenderad]{type=positive}[!BADGE Föråldrat]{type=negative}Autentisering av [!DNL JWT] via Adobe Developer {#request-urls-jwt}
+### Begär [!DNL URLs] för [!BADGE Recommended]{type=positive} OAuth Server-to-Server och [!BADGE Deprecated]{type=negative} [!DNL JWT]-autentiseringen via Adobe Developer {#request-urls-jwt}
 
 | [!DNL API]-metoder | Begäran [!DNL URL] |
 |--- |--- |
@@ -420,7 +420,7 @@ Beroende på vilken autentiseringsmetod du använder måste du justera din begä
 
 {style="table-layout:auto"}
 
-### Begär [!DNL URLs] för [!BADGE borttagen]{type=negative}Autentisering av [!DNL OAuth] {#request-urls-oauth}
+### Begär [!DNL URLs] för den [!BADGE inaktuella]{type=negative} gamla [!DNL OAuth]-autentiseringen {#request-urls-oauth}
 
 | [!DNL API]-metoder | Begäran [!DNL URL] |
 |--- |--- |

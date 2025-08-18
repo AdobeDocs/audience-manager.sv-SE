@@ -72,7 +72,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_cid</code> </p> </td> 
-   <td colname="col2"> <p>Innehåller ett eller flera par med DataProvider-ID (<code> DPID</code>) och DataProvider-användar-ID (<code> DPUUID</code>) som tilldelats av <span class="keyword"> Audience Manager</span>. Om du använder flera par med <code> DPID</code> och <code> DPUUID</code>, skiljer du varje par åt med det tecken som inte skrivs ut <code> %01</code>. Till exempel: <code><i>DPID</i>%01<i>DPUUUID</i></code>. </p> <p><code> d_cid</code> ersätter <code> d_dpid</code> och <code> d_dpuuid</code>, som är inaktuella men fortfarande stöds. Se <a href="../../../reference/cid.md"> CID ersätter DPID och DPUUID </a>. </p> </td>
+   <td colname="col2"> <p>Innehåller ett eller flera par med ID:n för dataleverantör (<code> DPID</code>) och användar-ID:n för dataleverantör (<code> DPUUID</code>) som tilldelats av <span class="keyword"> Audience Manager</span>. Om du använder flera par med <code> DPID</code> och <code> DPUUID</code>, skiljer du varje par åt med det tecken som inte skrivs ut <code> %01</code>. Till exempel: <code><i>DPID</i>%01<i>DPUUUID</i></code>. </p> <p><code> d_cid</code> ersätter <code> d_dpid</code> och <code> d_dpuuid</code>, som är inaktuella men fortfarande stöds. Se <a href="../../../reference/cid.md"> CID ersätter DPID och DPUUID </a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cid_ic</code> </p> </td> 
@@ -80,7 +80,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Adobe Experience Platform Identity Service och beror på <code> idSyncDisable3rdPartySyncing</code>-konfigurationen. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html?lang=sv-SE" format="https" scope="external"> COPPA-stöd i Adobe Experience Platform Identity Service </a>. </p> </td>
+   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Adobe Experience Platform identitetstjänst och beror på <code> idSyncDisable3rdPartySyncing</code>-konfigurationen. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html" format="https" scope="external"> COPPA-stöd i Adobe Experience Platform Identity Service </a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
@@ -90,14 +90,14 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
       <li id="li_F304CA651F3C444A9A24576726925D87"> <p><code> d_cts=2</code> returnerar segment-ID:n för segmenten. </p> </li>
      </ul> </p> <p>Ett exempelsvar kan se ut som det nedan: </p> <p>
      <code class="syntax javascript">
-      &lbrace;
+      {
       &nbsp;&nbsp;&nbsp;&nbsp;"stuff":&nbsp;[],
       &nbsp;&nbsp;&nbsp;&nbsp;"uuid":&nbsp;"07955261652886032950143702505894272138",
       &nbsp;&nbsp;&nbsp;&nbsp;"dcs_region":&nbsp;7,
       &nbsp;&nbsp;&nbsp;&nbsp;"traits":&nbsp;[420020,&nbsp;5421506],
       &nbsp;&nbsp;&nbsp;&nbsp;"segments":&nbsp;[984263,&nbsp;985264],
       &nbsp;&nbsp;&nbsp;&nbsp;"tid":&nbsp;"ss3OTqPiQp0="
-      &rbrace;
+      }
      </code> </p> </td> 
   </tr> 
   <tr> 
@@ -114,7 +114,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_dst_filter</code> </p> </td> 
-   <td colname="col2"> <p><code> d_dst_filter</code> är ett reserverat attribut, som används vid integreringen mellan Adobe Analytics och Audience Manager. </p> <p>Vi rekommenderar att du inte skapar egenskaper som använder reserverade attribut. Adobe kan när som helst ändra reserverade attribut. </p> </td> 
+   <td colname="col2"> <p><code> d_dst_filter</code> är ett reserverat attribut som används i integrationen mellan Adobe Analytics och Audience Manager. </p> <p>Vi rekommenderar att du inte skapar egenskaper som använder reserverade attribut. Adobe kan när som helst ändra reserverade attribut. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_jsonv=1|0</code> </p> </td> 
@@ -122,7 +122,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>Anger det Experience Cloud-ID som angetts och som används av ID-tjänsten <span class="keyword"> Experience Cloud</span>. Mer information om ECID finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=sv-SE" format="https" scope="external"> Cookies och Experience Cloud Identity Service </a>. </p> </td> 
+   <td colname="col2"> <p>Anger det Experience Cloud-ID som anges och används av <span class="keyword"> Experience Cloud</span>-ID-tjänsten. Mer information om ECID finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud Identity Service </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
@@ -150,12 +150,12 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
       <li id="li_824C23B4C7AA4B5EBADF73D26016A18E">Om du tar med det här returnerar <span class="wintitle"> DCS</span> ett <code> JSON</code>-objekt i svarstexten. Se exemplet nedan. Svaret kan vara mer komplext. </li> 
      </ul> </p> <p> 
      <code class="syntax javascript">
-      &lbrace;
+      {
       &nbsp;&nbsp;&nbsp;&nbsp;"stuff":&nbsp;[],
       &nbsp;&nbsp;&nbsp;&nbsp;"uuid":&nbsp;"22920112968019678612904394744954398990",
       &nbsp;&nbsp;&nbsp;&nbsp;"dcs_region":&nbsp;7,
       &nbsp;&nbsp;&nbsp;&nbsp;"tid":&nbsp;"ss3OTqPiQp0="
-      &rbrace;
+      }
      </code> </p> </td> 
   </tr> 
   <tr> 
@@ -195,7 +195,7 @@ Dessa rubriker innehåller information som förfrågningar om data och svar i et
 
 | Attribut | Beskrivning |
 | --- | --- | 
-| `h_host` | Detta anges till klientens specifika värdnamn för datainsamling. Det visas som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=sv-SE). |
+| `h_host` | Detta anges till klientens specifika värdnamn för datainsamling. Det visas som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en). |
 | `h_user-agent` | Ange till rubrikvärdet `User-Agent`. |
 | `h_accept-language` | Ange till rubrikvärdet `Accept-Language`. |
 | `h_referer` | Ange till rubrikvärdet `Referer`. |

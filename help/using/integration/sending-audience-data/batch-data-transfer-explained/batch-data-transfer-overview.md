@@ -1,5 +1,5 @@
 ---
-description: Översikt för tekniska och icke-tekniska kunder som vill hämta data från andra system (offline) till Audience Manager.
+description: Översikt över tekniska och icke-tekniska kunder som vill överföra data från andra system (offline) till Audience Manager.
 keywords: inkommande, batch, batchöverföring, batchdata
 seo-description: An overview for technical and non-technical customers who want to bring data from other systems (offline) into Audience Manager. To do so, use the batch upload option in Audience Manager.
 seo-title: Send Batch Data to Audience Manager Overview

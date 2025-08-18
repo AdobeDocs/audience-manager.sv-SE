@@ -85,7 +85,7 @@ Din [!UICONTROL Segment Performance]-rapport kan se ut ungefär som den nedan. K
   </tr> 
   <tr> 
    <td colname="col1"> <p>Realtime-segmentpopulering </p> </td> 
-   <td colname="col2"> <p>Det faktiska antalet unika besökare som visas i realtid för det angivna tidsintervallet och som var kvalificerade för segmentet när de sågs av <span class="keyword"> Audience Manager</span>. </p> </td> 
+   <td colname="col2"> <p>Det faktiska antalet unika besökare som visas i realtid för det angivna tidsintervallet och som var kvalificerade för segmentet när de visades av <span class="keyword"> Audience Manager</span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

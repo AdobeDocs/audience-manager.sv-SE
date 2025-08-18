@@ -20,9 +20,9 @@ TLS (Transport Layer Security) är ett kryptografiskt protokoll som används fö
 
 I mars 2019 upphörde stödet för protokollet [!DNL Adobe]. [!DNL TLS 1.0] Adobe Audience Manager-funktionalitet fungerar inte för slutanvändare som använder webbläsare som bara stöder [!DNL TLS 1.0].
 
-I mars 2020 upphör stödet för protokollet [!DNL TLS 1.1] för [!DNL Adobe]. Adobe Audience Manager-funktionaliteten slutar fungera för slutanvändare som bara har stöd för [!DNL TLS 1.1].
+I mars 2020 upphör stödet för protokollet [!DNL Adobe] för [!DNL TLS 1.1]. Adobe Audience Manager-funktionaliteten slutar fungera för slutanvändare som bara har stöd för [!DNL TLS 1.1].
 
-Adobe rekommenderar starkt att du använder [!DNL TLS 1.2], vilket är den senaste versionen av protokollet när du skriver. Alla moderna webbläsare använder [!DNL TLS 1.2]. Vi har samlat in en lista över webbläsare, versioner och deras [!DNL TLS]-stöd åt dig. Mer information om stöd för TLS-webbläsare finns på [länken Transport Layer Security Wikipedia](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers).
+Adobe rekommenderar starkt att du använder [!DNL TLS 1.2], som när du skriver är den senaste versionen av protokollet. Alla moderna webbläsare använder [!DNL TLS 1.2]. Vi har samlat in en lista över webbläsare, versioner och deras [!DNL TLS]-stöd åt dig. Mer information om stöd för TLS-webbläsare finns på [länken Transport Layer Security Wikipedia](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers).
 
 <!--
 

@@ -1,9 +1,9 @@
 ---
-description: I den här artikeln beskrivs hur du konfigurerar anpassade målgrupper för Twitter för både nya och befintliga integreringar.
+description: I den här artikeln beskrivs hur du konfigurerar anpassade Twitter-målgrupper för både nya och befintliga integreringar.
 seo-description: This article explains how to configure Twitter Custom Audiences for both new and existing integrations.
 seo-title: Configure Twitter Custom Audiences as a Self-Service Device-Based Destination
 solution: Audience Manager
-title: Konfigurera anpassade målgrupper för Twitter som självbetjäningsmål
+title: Konfigurera anpassade Twitter-målgrupper som självbetjäningsbaserade enhetsbaserade mål
 feature: People-based Destinations
 exl-id: 13b36469-3f61-47b1-9355-ca329de1fb24
 source-git-commit: 72be9e032ec3c92cf09a5286baa872b884feaaa0
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Konfigurera [!DNL Twitter Custom Audiences] som ett självbetjäningsenhetsbaserat mål {#configure-twitter}
 
-I den här artikeln beskrivs hur du konfigurerar en integrering med [anpassade målgrupper för Twitter](https://business.twitter.com/en/help/campaign-setup/campaign-targeting/custom-audiences.html).
+I den här artikeln beskrivs hur du konfigurerar en integrering med [anpassade Twitter-målgrupper](https://business.twitter.com/en/help/campaign-setup/campaign-targeting/custom-audiences.html).
 
 ## Förutsättningar {#prerequisites}
 
@@ -62,7 +62,7 @@ När du har länkat Audience Manager och din [!DNL Twitter Custom Audiences] kan
 När du mappar målgruppssegment till [!UICONTROL Twitter] måste du se till att följande krav för segmentnamngivning uppfylls:
 
 * Ge segmentmappningsnamn som kan läsas av människor. Vi rekommenderar att du använder samma namn som du använde för Audience Manager-segmenten.
-* Använd inte specialtecken (`+` `&` `,` `%` `:` `;` `@` `/` `=` `?` `$`) i namn på segment- och segmentmappningar. Om Audience Manager-segmentnamnet innehåller dessa tecken tar du bort dem innan du mappar segmentet till ett [!UICONTROL Twitter]-mål.
+* Använd inte specialtecken (`+` `&` `,` `%` `:` `;` `@` `/` `=` `?` `$`) i namn på segment- och segmentmappningar. Om ditt Audience Manager-segmentnamn innehåller dessa tecken tar du bort dem innan du mappar segmentet till ett [!UICONTROL Twitter]-mål.
 
 ### Exempel
 
@@ -75,14 +75,14 @@ När du mappar målgruppssegment till [!UICONTROL Twitter] måste du se till att
 
 ## Överväganden om matchningsfrekvenser {#match-rates-considerations}
 
-* Integrationen mellan Audience Manager och [!UICONTROL Twitter Custom Audiences] har stöd för historiska målgruppsåsidosättningar. Alla segmentkvalifikationer skickas till [!UICONTROL Twitter] när du skapar målet.
+* Integrationen mellan Audience Manager och [!UICONTROL Twitter Custom Audiences] har stöd för tidigare målgruppsåsidosättningar. Alla segmentkvalifikationer skickas till [!UICONTROL Twitter] när du skapar målet.
 
 ## Felsökning {#troubleshooting}
 
-När du konfigurerar eller skickar data till Twitternas mål för anpassade målgrupper kan du råka ut för de fel som beskrivs nedan. I det här avsnittet förklaras vad som kan orsaka felen och hur du åtgärdar dem.
+När du konfigurerar eller skickar data till Twitter Custom Audiences-målet kan du råka ut för de fel som beskrivs nedan. I det här avsnittet förklaras vad som kan orsaka felen och hur du åtgärdar dem.
 
 | Felmeddelande | Förekomst/orsak | Upplösning |
 |---|---|---|
-| `Internal server error` | Det här felmeddelandet visas i användargränssnittet i Audience Manager när du försöker lägga till ett nytt [!DNL Twitter]-konto med en inaktuell version av Twitter-API:t. | Kontakta Adobe kundtjänst. |
-| `Twitter Error: This request is not properly authenticated` | Det här felmeddelandet visas i användargränssnittet i Audience Manager när du försöker mappa segment med segmentnamn som inte stöds till målet. | Granska mappade segmentnamn och se till att de inte innehåller tecken som inte stöds. Se [överväganden för segmentmappning](#segment-mapping-considerations) för en lista över tecken som inte stöds. |
-| `Twitter Error: Account XXXXXXXXX was not found` | Det här felmeddelandet visas i användargränssnittet i Audience Manager när de autentiseringsuppgifter som konfigurerats för målet inte har behörighet att komma åt motsvarande Twitter Ads-konto. | <ul><li>Kontrollera att kontoautentiseringsuppgifterna som du använder uppfyller [kraven](#prerequisites).</li><li>Navigera till användargränssnittet för Twitter Ads med samma autentiseringsuppgifter och kontrollera om rätt målgrupper visas under motsvarande `XXXXXXXXX`-konto. </li></ul> |
+| `Internal server error` | Det här felmeddelandet visas i Audience Manager-gränssnittet när du försöker lägga till ett nytt [!DNL Twitter]-konto med en inaktuell version av Twitter-API:t. | Kontakta Adobe kundtjänst. |
+| `Twitter Error: This request is not properly authenticated` | Det här felmeddelandet visas i Audience Manager-gränssnittet när du försöker mappa segment med segmentnamn som inte stöds till målet. | Granska mappade segmentnamn och se till att de inte innehåller tecken som inte stöds. Se [överväganden för segmentmappning](#segment-mapping-considerations) för en lista över tecken som inte stöds. |
+| `Twitter Error: Account XXXXXXXXX was not found` | Det här felmeddelandet visas i användargränssnittet i Audience Manager när de autentiseringsuppgifter som konfigurerats för målet inte har behörighet att komma åt motsvarande Twitter-annonskonto. | <ul><li>Kontrollera att kontoautentiseringsuppgifterna som du använder uppfyller [kraven](#prerequisites).</li><li>Navigera till användargränssnittet för Twitter-annonser med samma inloggningsuppgifter och kontrollera om rätt målgrupper visas under motsvarande `XXXXXXXXX`-konto. </li></ul> |

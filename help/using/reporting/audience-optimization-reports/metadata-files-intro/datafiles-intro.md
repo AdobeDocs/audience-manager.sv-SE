@@ -1,9 +1,9 @@
 ---
-description: En datafil innehåller indata för att visa, klicka eller konvertera. När informationen är korrekt formaterad kan du importera den till Audience Manager och använda den i Audience Optimization-rapporterna och för loggfiler som kan användas. Formatera datafilerna enligt specifikationerna i det här avsnittet.
+description: En datafil innehåller indata för att visa, klicka eller konvertera. När informationen är korrekt formaterad kan du importera den till Audience Manager och använda den i Audience Optimization-rapporter och för loggfiler som kan användas. Formatera datafilerna enligt specifikationerna i det här avsnittet.
 seo-description: A data file contains impression, click, or conversion data. When formatted properly, you can import this data into Audience Manager and use it in the Audience Optimization reports and for Actionable Log Files. Format your data files according to the specifications in this section.
 seo-title: Data Files for Audience Optimization Reports and Actionable Log Files
 solution: Audience Manager
-title: Datafiler för Audience Optimization-rapporter och åtgärdsloggfiler
+title: Datafiler för Audience Optimization-rapporter och körbara loggfiler
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 feature: Log Files
 exl-id: 0da2c1d3-5ff8-40dd-b831-21d8941688ce
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ---
 
-# Datafiler för Audience Optimization-rapporter och åtgärdsloggfiler {#data-files-for-audience-optimization-reports}
+# Datafiler för Audience Optimization-rapporter och körbara loggfiler {#data-files-for-audience-optimization-reports}
 
-En datafil innehåller indata för att visa, klicka eller konvertera. När dessa data är korrekt formaterade kan du importera dem till Audience Manager för att visa dem i [Audience Optimization-rapporter](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) och skapa egenskaper med hjälp av data via [loggfiler som kan användas ](/help/using/integration/media-data-integration/actionable-log-files.md). Formatera datafilerna enligt dessa specifikationer i det här avsnittet.
+En datafil innehåller indata för att visa, klicka eller konvertera. När dessa data är korrekt formaterade kan du importera dem till Audience Manager för att visa dem i [Audience Optimization Reports](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) och skapa egenskaper med hjälp av data via [loggfiler som kan användas ](/help/using/integration/media-data-integration/actionable-log-files.md). Formatera datafilerna enligt dessa specifikationer i det här avsnittet.
 
 ## Översikt {#overview}
 
@@ -90,7 +90,7 @@ Tabellen nedan listar och beskriver kolumnrubrikerna för datafilen. Sidhuvuden 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Creative-ID </p> </td> 
-   <td colname="col2"> <p>Kreativt ID. </p> </td> 
+   <td colname="col2"> <p>Creative ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Plats-ID </p> </td> 
@@ -146,7 +146,7 @@ Tabellen nedan listar och beskriver kolumnrubrikerna för datafilen. Sidhuvuden 
 
 >[!IMPORTANT]
 >
-> Kontakta din Audience Manager-konsult eller kundtjänst för att komma igång och konfigurera en [!DNL Amazon S3]-katalog för dina datafiler.
+> Kontakta Audience Manager eller kundtjänst för att komma igång och konfigurera en [!DNL Amazon S3]-katalog för dina datafiler.
 
 **Syntax för leveranssökväg och exempel**
 
@@ -170,7 +170,7 @@ I följande tabell definieras vart och ett av dessa element i en filleveranssök
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>pid=<i>AAM ID</i></code> </p> </td> 
-   <td colname="col2"> <p>Detta nyckelvärdepar innehåller ditt <span class="keyword"> Audience Manager </span> kund-ID. </p> </td> 
+   <td colname="col2"> <p>Detta nyckelvärdepar innehåller ditt <span class="keyword"> Audience Manager</span>-kund-ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>dpid=<i>d_src</i></code> </p> </td> 

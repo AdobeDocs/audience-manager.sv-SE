@@ -38,7 +38,7 @@ Din [!UICONTROL Unique User Reach]-rapport kan se ut ungefär som den nedan. Kli
 
 | Objekt | Beskrivning |
 |--- |--- |
-| Dimension | Namnet på din webbegenskap. |
-| Dimension | Typen av utgivardimension. För närvarande stöder vi bara annonsenhet som dimensionstyp. |
+| Dimension Value | Namnet på din webbegenskap. |
+| Dimension Type | Typen av utgivardimension. För närvarande stöder vi bara annonsenhet som dimensionstyp. |
 | Impressions | Antalet visningar som användes för din webbegenskap inom det angivna backupintervallet. |
 | Unikt omfång | Det unika antalet användare som har fått intrycket av dina webbegenskaper. |

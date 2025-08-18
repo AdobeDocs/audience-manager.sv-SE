@@ -1,5 +1,5 @@
 ---
-description: Komponenterna för databehandling är Hadoop, Snowflake, SOLR och Tableau.
+description: Komponenterna för databehandling är bland annat Hadoop, Snowflake, SOLR och Tableau.
 seo-description: Data processing components include Hadoop, Snowflake, SOLR, and Tableau.
 seo-title: Data Processing Components
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Databearbetningskomponenter{#data-processing-components}
 
-Komponenterna för databehandling är Hadoop, Snowflake, SOLR och Tableau.
+Komponenterna för databehandling är bland annat Hadoop, Snowflake, SOLR och Tableau.
 
 <!-- 
 
@@ -28,11 +28,11 @@ Audience Manager använder följande komponenter för att bearbeta data:
 
 ## Hadoop {#hadoop}
 
-I [!DNL Audience Manager] är Hadoopet huvuddatabasen som innehåller allt som [!DNL Audience Manager] känner till om en användare. När till exempel [profilcacheservrarna](../../reference/system-components/components-data-collection.md) skapar loggfiler som innehåller data om dina användare, skickas dessa data till Hadoopet för lagring. Andra viktiga element inom Hadoopet är:
+I [!DNL Audience Manager] är Hadoop huvuddatabasen som innehåller allt som [!DNL Audience Manager] känner till om en användare. När till exempel [profilcacheservrarna](../../reference/system-components/components-data-collection.md) skapar loggfiler som innehåller data om dina användare, skickas dessa data till Hadoop för lagring. Andra viktiga Hadoop-element är:
 
-* **Hive:** Ett datalager för Hadoop. Hive hanterar ad hoc-frågor till data som lagras i Hadoopet.
+* **Hive:** Ett datalager för Hadoop. Hive hanterar ad hoc-frågor till data som lagras i Hadoop.
 
-* **HBase:** En mycket stor Hadoopen databas. Den behandlar och hanterar inkommande och utgående data, varumärkesregler, algoritmisk modelleringsinformation och utför många andra funktioner som rör lagring och flyttning av data till olika system.
+* **HBase:** En mycket stor Hadoop-databas. Den behandlar och hanterar inkommande och utgående data, varumärkesregler, algoritmisk modelleringsinformation och utför många andra funktioner som rör lagring och flyttning av data till olika system.
 
 Kunderna har inte direktåtkomst till dessa system. Men kunderna arbetar med dem indirekt eftersom de här komponenterna lagrar viktiga data om webbplatsens besökare.
 
@@ -60,7 +60,7 @@ SOLR är en databas och ett serversystem med öppen källkod från Apache. Det g
 
 ## Tableau {#tableau}
 
-[!DNL Audience Manager] använder [Tableau](https://www.tableausoftware.com/) för att visa data i [Interaktiva rapporter](../../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) och [Audience Optimization-rapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md). De interaktiva rapporterna visar prestanda och överlappar data för egenskaper och segment. I stället för att använda siffror ordnade i kolumner och rader, returnerar de data med olika former, färger och storlekar. Dessutom kan du välja enskilda eller grupper av datapunkter och gå ned i rapportresultaten för mer information. Dessa visualiseringstekniker och rapportinteraktivitet gör stora mängder numeriska data lättare att förstå.
+[!DNL Audience Manager] använder [Tablet PC](https://www.tableausoftware.com/) för att visa data i [Interaktiva rapporter](../../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) och [Audience Optimization-rapporter](../../reporting/audience-optimization-reports/audience-optimization-reports.md). De interaktiva rapporterna visar prestanda och överlappar data för egenskaper och segment. I stället för att använda siffror ordnade i kolumner och rader, returnerar de data med olika former, färger och storlekar. Dessutom kan du välja enskilda eller grupper av datapunkter och gå ned i rapportresultaten för mer information. Dessa visualiseringstekniker och rapportinteraktivitet gör stora mängder numeriska data lättare att förstå.
 
 
 

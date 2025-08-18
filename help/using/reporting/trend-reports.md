@@ -60,7 +60,7 @@ t_working_with_trend_reports.xml
 
  -->
 
-1. Klicka på **[!UICONTROL Trend Reports]** på kontrollpanelen **[!UICONTROL Analytics]**.
+1. Klicka på **[!UICONTROL Analytics]** på kontrollpanelen **[!UICONTROL Trend Reports]**.
 1. Välj önskad typ i listrutan **[!UICONTROL Report Type]**: **[!UICONTROL Trait]** eller **[!UICONTROL Segment]**.
 1. Klicka på datumrutorna för att visa en kalender och välj sedan start- och slutdatum för rapporten.
 1. Ange visningsintervall: med 1, 7, 14, 30, 60 eller 90 dagar.
@@ -101,7 +101,7 @@ Nollor anger att [!DNL Audience Manager] inte samlade in data för den dagen. To
 
 Titta på videon nedan för att få en detaljerad bild av hur enhetsövergripande mätvärden fungerar.
 
->[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html?lang=sv-SE)
+>[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## Trendrapportresultat för segment {#segment-report-results-traits}
 

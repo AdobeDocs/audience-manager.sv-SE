@@ -1,5 +1,5 @@
 ---
-description: I den här artikeln beskrivs hur du konfigurerar nya enhetsbaserade mål från användargränssnittet i Audience Manager.
+description: I den här artikeln beskrivs hur du konfigurerar nya enhetsbaserade mål från Audience Manager användargränssnitt.
 seo-description: This article explains how to configure new device-based destinations from the Audience Manager user interface.
 seo-title: Add New Device-Based Destinations
 solution: Audience Manager
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 # Lägg till nya enhetsbaserade mål {#add-new-device-based-destinations}
 
-I den här artikeln beskrivs hur du konfigurerar nya enhetsbaserade mål från användargränssnittet i Audience Manager.
+I den här artikeln beskrivs hur du konfigurerar nya enhetsbaserade mål från Audience Manager användargränssnitt.
 
 >[!IMPORTANT]
 >
->För närvarande är de flesta enhetsbaserade mål inte berättigade till arbetsflödet för konfiguration av självbetjäning. Om det enhetsbaserade mål som du behöver lägga till inte visas i destinationslistan kontaktar du din Adobe-konsult eller kundsupport för att få hjälp.
+>För närvarande är de flesta enhetsbaserade mål inte berättigade till arbetsflödet för konfiguration av självbetjäning. Om det enhetsbaserade mål som du behöver lägga till inte visas i mållistan kontaktar du Adobe konsult eller kundsupport.
 
 ## Översikt {#overview}
 
@@ -27,7 +27,7 @@ Processen att lägga till ett nytt enhetsbaserat mål består av två huvudsteg.
 
 ## Förutsättningar {#prerequisites}
 
-När du skapar det första enhetsbaserade målet med en integrerad plattform kontaktar du Adobe Consulting eller kundtjänst för att aktivera ID-synkronisering mellan Audience Manager och den integrerade plattformen för ditt konto. Detta krävs för korrekt synkronisering mellan Audience Manager och målplattformen.
+När du skapar det första enhetsbaserade målet med en integrerad plattform kontaktar du Adobe Consulting eller kundtjänst för att aktivera synkronisering av ID mellan Audience Manager och den integrerade plattformen för ditt konto. Detta krävs för korrekt synkronisering mellan Audience Manager och målplattformen.
 
 ## Steg 1. Autentisera med en målplattform {#step1}
 

@@ -13,7 +13,7 @@ ht-degree: 94%
 
 ---
 
-# Audience Manager FAQ Overview {#audience-manager-faq}
+# Audience Manager FAQ - översikt {#audience-manager-faq}
 
 I det här avsnittet finns en lista över kategorierna med vanliga frågor och svar för olika funktioner i Audience Manager.
 

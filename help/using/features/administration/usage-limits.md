@@ -1,5 +1,5 @@
 ---
-description: Audience Manager sätter en maxgräns för antalet egenskaper, segment, destinationer och algoritmiska modeller som du kan skapa för ett konto. Begränsningar gäller för dessa objekt oavsett om de har skapats i användargränssnittet eller programmatiskt via API-metoder. Begränsningar av användningen hjälper till att skydda Audience Manager från automatiserade processer som kan äventyra våra API:er eller användargränssnittet.
+description: Audience Manager sätter en maxgräns för antalet egenskaper, segment, mål och algoritmiska modeller som du kan skapa för ett konto. Begränsningar gäller för dessa objekt oavsett om de har skapats i användargränssnittet eller programmatiskt via API-metoder. Begränsningar av användningen skyddar Audience Manager från automatiserade processer som kan äventyra våra API:er eller användargränssnittet.
 seo-description: Audience Manager sets a maximum limit on the number of traits, segments, destinations, and algorithmic models that you can create for an account. Limits apply to these items whether created in the user interface or programmatically through API methods. Usage limits help protect Audience Manager from automated processes that may attempt to compromise our APIs or user interface.
 seo-title: Usage Limits
 solution: Audience Manager
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Användningsgränser {#usage-limits}
 
-Audience Manager sätter en maxgräns för antalet egenskaper, segment, destinationer och algoritmiska modeller som du kan skapa för ett konto. Begränsningar gäller för de här objekten oavsett om de har skapats i användargränssnittet eller programmatiskt via [!DNL API]-metoder. Användningsbegränsningar hjälper till att skydda Audience Manager från automatiserade processer som kan försöka äventyra våra [!DNL API]s eller användargränssnitt.
+Audience Manager sätter en maxgräns för antalet egenskaper, segment, mål och algoritmiska modeller som du kan skapa för ett konto. Begränsningar gäller för de här objekten oavsett om de har skapats i användargränssnittet eller programmatiskt via [!DNL API]-metoder. Begränsningar av användningen hjälper till att skydda Audience Manager från automatiserade processer som kan äventyra våra [!DNL API]s eller användargränssnitt.
 
 ## Gränser för ID-mappning {#id-mapping-limits}
 
@@ -64,9 +64,9 @@ Tabellerna visar de aktuella gränserna per objekttyp. Du kan inte skapa nya ege
 
 | Objekt | Maximal gräns |
 | -------- | ----- |
-| Aktiv [!UICONTROL Look-Alike Models] | 20. Audience Manager räknar bara *aktiva* algoritmiska modeller mot gränsen. |
+| Aktiv [!UICONTROL Look-Alike Models] | &#x200B;20. Audience Manager räknar bara *aktiva* algoritmiska modeller mot gränsen. |
 | [!UICONTROL Look-Alike Models] maximal målgruppsstorlek | 25 000 000.  Observera att den här gränsen inte kan ökas. Du kan minska målgruppsstorleken genom att välja färre datakällor för modellen eller genom att välja ett kortare fönster för att titta tillbaka. |
-| Maximalt antal uteslutna egenskaper för en [!UICONTROL Look-Alike Model] | 500. Se [Trait Exclusion in Algorithmic Modeling](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md). |
+| Maximalt antal uteslutna egenskaper för en [!UICONTROL Look-Alike Model] | &#x200B;500. Se [Trait Exclusion in Algorithmic Modeling](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md). |
 | Maximalt [!UICONTROL Predictive Audiences Models] | 10 |
 | Maximalt antal baslinjeprofiler för [!UICONTROL Predictive Audiences Models] | 50 |
 

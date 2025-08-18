@@ -78,7 +78,7 @@ Kolumnrubriketiketter har definierats.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceKey </span> </p> </td> 
-   <td colname="col2"> <p>Signaler är databitar som skickas till <span class="keyword"> Audience Manager </span> baserat på användaraktivitet. Dessa överförs som <a href="../../reference/key-value-pairs-explained.md"> nyckelvärdepar </a>. Källnyckeln är en konstant som inte ändras. Det hjälper till att kategorisera källvärdet som kan ändras. Se <a href="../../features/derived-signals.md"> Härledda signaler</a>. </p> </td> 
+   <td colname="col2"> <p>Signaler är databitar som skickas till <span class="keyword"> Audience Manager</span> baserat på användaraktivitet. Dessa överförs som <a href="../../reference/key-value-pairs-explained.md"> nyckelvärdepar </a>. Källnyckeln är en konstant som inte ändras. Det hjälper till att kategorisera källvärdet som kan ändras. Se <a href="../../features/derived-signals.md"> Härledda signaler</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceValue </span> </p> </td> 
@@ -102,7 +102,7 @@ Kolumnrubriketiketter har definierats.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitRule / segmentRule</span> </p> </td> 
-   <td colname="col2"> <p>Den faktiska egenskap eller segmentregel som används för att samla in data. En gruppbegäran returnerar reglerna som skapats i <span class="keyword"> Audience Manager </span> med <a href="../../features/traits/about-trait-builder.md"> trait rule builder </a> eller <a href="../../features/segments/segment-builder.md"> segment rule builder </a>. Du kan också använda de här verktygen för att skapa regler och tillämpa dem samtidigt när du uppdaterar ett segment eller en egenskap. </p> <p>Se även <a href="../../reference/bulk-management-tools/bulk-rules.md"> Skapa eller uppdatera Trait Rules och Segment Rules </a>. </p> </td> 
+   <td colname="col2"> <p>Den faktiska egenskap eller segmentregel som används för att samla in data. En gruppbegäran returnerar reglerna som skapats i <span class="keyword"> Audience Manager</span> med <a href="../../features/traits/about-trait-builder.md"> trait rule builder </a> eller <a href="../../features/segments/segment-builder.md"> segment rule builder</a>. Du kan också använda de här verktygen för att skapa regler och tillämpa dem samtidigt när du uppdaterar ett segment eller en egenskap. </p> <p>Se även <a href="../../reference/bulk-management-tools/bulk-rules.md"> Skapa eller uppdatera Trait Rules och Segment Rules </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitType </span> </p> </td> 

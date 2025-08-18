@@ -28,7 +28,7 @@ Du kan kryptera datafiler med [!DNL PGP]-kryptering när du skickar dem till Aud
 
 Följ stegen nedan för att kryptera inkommande datafiler.
 
-1. Hämta den offentliga nyckeln [Audience Manager](./assets/adobe_pgp.pub).
+1. Hämta [Audience Manager offentliga nyckel](./assets/adobe_pgp.pub).
 2. Importera den offentliga nyckeln till din betrodda butik.
 
    Om du till exempel använder [!DNL GPG] kan kommandot se ut ungefär så här:

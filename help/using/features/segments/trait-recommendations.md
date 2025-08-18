@@ -1,5 +1,5 @@
 ---
-description: När du skapar eller redigerar ett segment i Segment Builder med Trait Recommendations får du rekommendationer om ytterligare egenskaper som du kan inkludera, som liknar egenskaperna i segmentregeln. Lägg till de rekommenderade egenskaperna i ert segment för att öka er målgrupp.
+description: När du skapar eller redigerar ett segment i Segment Builder får du rekommendationer om ytterligare egenskaper som du kan inkludera, som liknar egenskaperna i segmentregeln. Lägg till de rekommenderade egenskaperna i ert segment för att öka er målgrupp.
 seo-description: Get live trait recommendations as you build your segments.
 seo-title: Trait Recommendations
 solution: Audience Manager
@@ -29,22 +29,22 @@ I nästa video visas arbetsflödet för [!UICONTROL Marketplace Recommendations]
 
 ## Översikt
 
-[!UICONTROL Trait Recommendations], som drivs av [!DNL Adobe Sensei], för in datavetenskap i dina dagliga arbetsflöden i Audience Manager.
-När du skapar eller redigerar ett segment i [Segment Builder](segment-builder.md) i [!UICONTROL Trait Recommendations] får du rekommendationer om ytterligare egenskaper som du kan inkludera, som liknar egenskaperna i segmentregeln.
+[!UICONTROL Trait Recommendations], som drivs av [!DNL Adobe Sensei], för in datavetenskap i dina dagliga Audience Manager-arbetsflöden.
+När du skapar eller redigerar ett segment i [!UICONTROL Trait Recommendations]Segment Builder[ i ](segment-builder.md) får du rekommendationer om ytterligare egenskaper som du kan inkludera, som liknar egenskaperna i segmentregeln.
 
-Audience Manager visar dina rekommendationer för anpassade egenskaper både från dina egna egenskaper, i avsnittet **[!UICONTROL Recommendations]** och från **[!UICONTROL Audience Marketplace]** i avsnittet **[!UICONTROL Recommendations from Marketplace]**.
+Audience Manager visar dig rekommendationer för att dra fördel av både dina egna egenskaper, i avsnittet **[!UICONTROL Recommendations]** och från **[!UICONTROL Audience Marketplace]** i avsnittet **[!UICONTROL Recommendations from Marketplace]**.
 
 Lägg till de rekommenderade egenskaperna i ert segment för att öka er målgrupp.
 
-![Anpassa Recommendations - översikt](assets/trait-recommendations-overview-full.png)
+![Trait Recommendations Overview](assets/trait-recommendations-overview-full.png)
 
 **I ett nötskal:**
 
 * Audience Manager visar egenskaper för första part i avsnittet [!UICONTROL Recommendations]. Marketplace-rekommendationer från offentliga och privata feeds som du inte prenumererar på visas i avsnittet [!UICONTROL Recommendations from Marketplace]. Klicka på feed-namnet för att gå till [!UICONTROL Audience Marketplace] och prenumerera.
-* Audience Manager visar högst femtio egenskaper som liknar den i segmentregeln.
+* Audience Manager har högst femtio egenskaper som liknar den i segmentregeln.
 * Du kan filtrera bort de datakällor som du inte vill se några rekommendationer från.
-* Vid beräkning av likheter anser Audience Manager att [UID:n](../../reference/ids-in-aam.md) som kvalificerats för egenskapen under de senaste 30 dagarna.
-* Om felmeddelandet&quot;Inga liknande egenskaper hittades. Trait(s) kan vara för nytt.&quot;, vilket innebär att det inte har förekommit någon aktivitet för den egenskapen under de senaste 30 dagarna, eller att Audience Manager ännu inte har uppdaterat rekommendationerna för den egenskapen. Försök igen om 24 timmar.
+* Vid beräkning av likheter anser Audience Manager att [UID:n](../../reference/ids-in-aam.md) som är kvalificerade för egenskapen under de senaste 30 dagarna.
+* Om felmeddelandet&quot;Inga liknande egenskaper hittades. Trait(s) kan vara för nytt.&quot;, det betyder att det inte har förekommit någon aktivitet för den egenskapen under de senaste 30 dagarna, eller att Audience Manager ännu inte har uppdaterat rekommendationerna för den egenskapen. Försök igen om 24 timmar.
 
 ## Användningsexempel
 
@@ -55,7 +55,7 @@ Med [!UICONTROL Trait Recommendations] kan du förbättra dina arbetsflöden ber
 * Som datainköpare för [!UICONTROL Audience Marketplace] vill jag identifiera relevanta tredjepartsdata utan att behöva bläddra igenom ett stort antal feeds.
 * Som [!UICONTROL Audience Marketplace]-dataleverantör vill jag rekommendera relevanta data till köpare så att jag kan dra nytta av optimala och relevanta prenumerationer.
 
-## Skillnader mellan Trait Recommendations och algoritmiska modeller
+## Skillnader mellan trait Recommendations och algoritmic Models
 
 ### Algoritmiska modeller
 
@@ -83,7 +83,7 @@ När du skapar eller redigerar ett segment i [Segmentverktyget](segment-builder.
 
 1. Gå till **Målgruppsdata > Segment** och klicka på **Lägg till ny**.
 1. Lägg till minst ett drag till segmentregeln i listrutan **Traits** .
-1. I avsnittet **[!UICONTROL Recommendations]** kan du se rekommenderade egenskaper och [!UICONTROL Audience Marketplace] rekommendationer för egenskaper för feeds som du prenumererar på. Avsnittet **[!UICONTROL Recommendations from Marketplace]** visar rekommendationer från feeds som du inte prenumererar på. Alla dessa rekommendationer liknar de egenskaper som du har lagt till i segmentregeln. Rulla ned för att se alla rekommenderade egenskaper.
+1. I avsnittet [!UICONTROL Audience Marketplace] kan du se rekommenderade egenskaper och **[!UICONTROL Recommendations]** rekommendationer för egenskaper för feeds som du prenumererar på. Avsnittet **[!UICONTROL Recommendations from Marketplace]** visar rekommendationer från feeds som du inte prenumererar på. Alla dessa rekommendationer liknar de egenskaper som du har lagt till i segmentregeln. Rulla ned för att se alla rekommenderade egenskaper.
 1. (Valfritt) Om du vill utesluta rekommenderade egenskaper från första part från vissa datakällor klickar du på symbolen **X** för de datakällor som du vill utesluta.
 
    >[!NOTE]
@@ -111,7 +111,7 @@ När du skapar eller redigerar ett segment i [Segmentverktyget](segment-builder.
    >De utelämnade datakällorna visas alldeles ovanför listan med rekommenderade egenskaper. Klicka på **X** i den grå rutan om du vill ta bort undantagen och visa resultat från respektive datakälla igen.
 1. Om du vill lägga till rekommenderade egenskaper i segmentregeln klickar du på symbolen **+**.
 
-När du skapar eller redigerar ett segment och lägger till ett drag i segmentregeln, visas maximalt femtio rekommenderade egenskaper, liknande den som du har lagt till. Om segmentregeln innehåller mer än ett drag, använder Audience Manager en runda rader-metod för att visa den bästa matchningen för varje egenskap, den näst bästa matchningen för varje egenskap och så vidare, för de största femtio egenskaperna per population, i segmentregeln.
+När du skapar eller redigerar ett segment och lägger till ett drag i segmentregeln, visas maximalt femtio rekommenderade egenskaper, liknande den som du har lagt till. Om segmentregeln innehåller mer än ett drag, använder Audience Manager en runda fyrkantsmetod för att visa den bästa matchningen för varje egenskap, den näst bästa matchningen för varje egenskap och så vidare, för de största femtio egenskaperna per population, i segmentregeln.
 
 ![Tre basegenskaper](assets/three-base-traits.png)
 
@@ -141,7 +141,7 @@ När du klickar på ett spår från första part öppnas ett popup-fönster, vil
 
 ## Så här fungerar det
 
-För att kunna skapa anpassade rekommendationer beräknar Audience Manager [Jaccard-likheter](https://en.wikipedia.org/wiki/Jaccard_index) mellan målegenskapen och alla andra egenskaper som ditt konto har tillgång till, inklusive tredjepartsdata. Audience Manager visar sedan upp till femtio egenskaper med den största likheten.
+Audience Manager beräknar [Jaccard-likhet](https://en.wikipedia.org/wiki/Jaccard_index) mellan målegenskapen och alla andra egenskaper som ditt konto har åtkomst till, inklusive tredjepartsdata, för att kunna skapa anpassade rekommendationer. Audience Manager visar sedan upp till femtio egenskaper med störst likhet.
 
 ## Spåra likhetsresultat {#trait-similarity-score}
 

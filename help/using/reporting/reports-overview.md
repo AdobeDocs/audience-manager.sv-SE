@@ -16,9 +16,9 @@ ht-degree: 0%
 
 I enskilda avsnitt beskrivs tillgängliga rapporter, deras syfte och typiska användningsområden. Alla rapporter är tillgängliga från kontrollpanelen [!UICONTROL Analytics].
 
-Information som beskriver tidsbildrutorna när Audience Manager tar emot information för att fylla i rapporter finns i [Hur dataleverans och filbearbetningstider påverkar rapporter](/help/using/reference/reporting-file-transfer-timeframe.md).
+Information som beskriver tidsramarna när Audience Manager tar emot information för att fylla i rapporter finns i [Hur dataleverans och filbearbetningstider påverkar rapporter](/help/using/reference/reporting-file-transfer-timeframe.md).
 
-* [Audience Optimization-rapporter](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
+* [Audience Optimization Reports](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
 
   [!UICONTROL Audience Optimization]-rapporterna använder datavisualiseringsmetoder för att returnera information om destinationerna i ditt Audience Manager-konto. I varje rapport kan du klicka på nästan vilken datapunkt som helst för att returnera detaljerad information om objektet. Dessa målgruppsoptimeringsinsikter kan tillämpas på flera olika användningsområden i alla annonser och publiceringskanaler, men är inte tillgängliga som standard. Kontakta din Audience Manager-konsult för att komma igång.
 
@@ -50,6 +50,6 @@ Information som beskriver tidsbildrutorna när Audience Manager tar emot informa
 
   Använd kontrollpanelen för att visa information om dina partners unika antal besökare, uppdelat efter [!UICONTROL trait] typer och [!UICONTROL segments] för en angiven tidsram.
 
-* [Datainsamling och felfrekvens i rapporter för markerade Audience Manager](/help/using/reporting/report-sampling.md)
+* [Datainsamling och felfrekvens i utvalda Audience Manager-rapporter](/help/using/reporting/report-sampling.md)
 
   En sammanfattning av den provtagningsmetod som används för vissa rapporter, felfrekvenser vid provtagning och en lista över rapporter som returnerar information baserat på provdata.

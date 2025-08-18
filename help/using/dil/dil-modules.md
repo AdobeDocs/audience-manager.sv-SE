@@ -3,7 +3,7 @@ description: Beskriver metoder i namnutrymmet DIL.modules. Med dessa moduler kan
 seo-description: Describes methods in the DIL.modules namespace. These modules let you programmatically collect data and work with Audience Manager objects.
 seo-title: DIL Modules
 solution: Audience Manager
-title: Moduler DIL
+title: DIL Modules
 uuid: d4c0d8dd-79f8-448e-b17c-c935415dd449
 feature: DIL Implementation
 exl-id: 4685bcbb-a63b-4613-bc94-54de9881966e
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 ---
 
-# Moduler DIL{#dil-modules}
+# DIL Modules{#dil-modules}
 
 >[!WARNING]
 >
 >Från och med juli 2023 har Adobe upphört med utvecklingen av tillägget [!DNL Data Integration Library (DIL)] och [!DNL DIL].
 >
->Befintliga kunder kan fortsätta använda sin [!DNL DIL]-implementering. Adobe kommer dock inte att utveckla [!DNL DIL] efter den här punkten. Kunder uppmuntras att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE) för sin långsiktiga datainsamlingsstrategi.
+>Befintliga kunder kan fortsätta använda sin [!DNL DIL]-implementering. Adobe kommer dock inte att utveckla [!DNL DIL] efter den här punkten. Kunder uppmuntras att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) för sin långsiktiga datainsamlingsstrategi.
 >
->Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE) i stället.
+>Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) i stället.
 
 Beskriver metoder i namnområdet `DIL.modules`. Med dessa moduler kan du programmässigt samla in data och arbeta med Audience Manager-objekt.
 
@@ -244,7 +244,7 @@ Som standard hämtar `GA.init` data från följande funktioner:
 
 **DIL skapar nycklar för GA-data**
 
-Audience Manager accepterar data i form av nyckelvärdepar medan GA arbetar med objekt i en array. Om du vill arbeta med GA-data skapar [!UICONTROL DIL] automatiskt ett nyckelvärdepar och skapar en nyckel som den här: `c_ <key name>`. Dessutom visas objekt i GA-arrayer i en viss ordning. Därför måste du ange alla parametrar i den ordningen, även om de inte innehåller några data. [!UICONTROL DIL] mappar nycklar för följande GA-metoder:
+Audience Manager godkänner data i form av nyckelvärdepar medan GA arbetar med objekt i en array. Om du vill arbeta med GA-data skapar [!UICONTROL DIL] automatiskt ett nyckelvärdepar och skapar en nyckel som den här: `c_ <key name>`. Dessutom visas objekt i GA-arrayer i en viss ordning. Därför måste du ange alla parametrar i den ordningen, även om de inte innehåller några data. [!UICONTROL DIL] mappar nycklar för följande GA-metoder:
 
 ```js
 // Tracking Social Interactions 
@@ -317,7 +317,7 @@ URL-händelseanropet till Audience Manager kan se ut ungefär så här:
 
 >[!MORELIKETHIS]
 >
->* [Kod för spårning av Google Analytics](https://developers.google.com/analytics/devguides/collection/gajs/methods/)
+>* [Google Analytics Tracking Code](https://developers.google.com/analytics/devguides/collection/gajs/methods/)
 >* [Fullständig webbuppgradering: ga.js/dc.js to analytics.js](https://developers.google.com/analytics/devguides/collection/upgrade)
 >* [Lägger till analytics.js på din webbplats](https://developers.google.com/analytics/devguides/collection/analyticsjs/)
 >* [ga-objektmetodreferens](https://developers.google.com/analytics/devguides/collection/analyticsjs/ga-object-methods-reference)

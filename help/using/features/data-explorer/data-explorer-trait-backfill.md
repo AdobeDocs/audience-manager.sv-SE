@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->[!UICONTROL Data Explorer Trait Backfill] är en premiumfunktion som förbättrar Audience Manager genom att låsa upp ytterligare användningsfall. Bakgrundsfyllning kräver extra processorkraft och är tillgänglig för alla Audience Manager-kunder till en stegvis kostnad. Kontakta din säljare på Adobe för mer information.
+>[!UICONTROL Data Explorer Trait Backfill] är en premiumfunktion som förbättrar Audience Manager-upplevelsen genom att låsa upp ytterligare användningsfall. Bakgrundsfyllning kräver extra processorkraft och är tillgänglig för alla Audience Manager-kunder till en tillkommande kostnad. Kontakta din Adobe-återförsäljare för mer information.
 
 När du skapar egenskaper utifrån oanvända signaler kan du välja att fylla i trait-implementeringarna igen under en viss tidsperiod. [!DNL Audience Manager] samlar in historiska data om målgrupper som kvalificerar sig för det nya varumärket och lagrar dem på motsvarande profil. Du kan se **[!UICONTROL Backfill Options]** i avsnittet [!UICONTROL Trait Expression] i **[Trait Builder](../../features/traits/about-trait-builder.md)**.
 
@@ -57,7 +57,7 @@ Titta på videon nedan om du vill se en videogenomgång av hur du fyller ut trai
 
 Nyligen skapade egenskaper som börjar fånga målgrupper två till tre timmar efter att de skapats. På grund av den stora datavolym som [!DNL Audience Manager] utför dagligen återspeglas emellertid inte den efterfyllda populationen omedelbart i diagrammen [!UICONTROL Unique Trait Realizations] och [!UICONTROL Total Trait Population].
 
-Audience Manager uppdaterar [!UICONTROL Trait Graph] med den ofyllda fyllningen inom 48 timmar från det att egenskaperna skapades.
+Audience Manager uppdaterar [!UICONTROL Trait Graph] med den inmatade fyllningen inom 48 timmar efter att egenskaperna har skapats.
 
 ## Gräns för bakåtfyllnad av trait {#trait-backfilling-limit}
 

@@ -24,7 +24,7 @@ Med alternativen för [!UICONTROL Profile Merge Rules] kan du utöka eller öka 
 
 ## Målinriktning {#device-personalization}
 
-Detta scenario gäller för marknadsförare som vill utvärdera en enda enhetsprofil för ett målgruppssegment som definieras i Audience Manager, för att leverera en enhetlig upplevelse till enheten med målplattformar som stöder enhets-ID (DSP, platspersonaliseringsplattformar och andra enhetsbaserade målinriktningsplattformar) utan att ta hänsyn till användarautentisering.
+Detta scenario gäller för marknadsförare som vill utvärdera en enda enhetsprofil för ett målgruppssegment som definieras i Audience Manager, för att leverera en enhetlig upplevelse till enheten med målplattformar som stöder enhets-ID (DSP, plattformar för personalisering på plats och andra enhetsbaserade målplattformar), utan att ta hänsyn till användarautentisering.
 
 Om du vill skapa en regel som endast har enhetsprofiler som mål väljer du **[!UICONTROL No Cross-Device Profile]** + **[!UICONTROL Device Profile]**.
 
@@ -60,7 +60,7 @@ Låt oss titta på ett segment som består av hushåll med inkomster över 100 0
 
 Audience Manager sammanfogar alla enheter + profilpar för olika enheter för att se om den sammanfogade uppsättningen egenskaper kvalificerar sig för segmentet. Eftersom Audience Manager utvärderar alla profiler som ingick i sammanslagningen kan både en enhetsprofil och en hushållsprofil segmenteras.
 
-Med länken mellan enheten och hushållsprofilen kan Audience Manager kvalificera [!DNL Household 2] för segmentet, men inte [!DNL Household 1]. Från [!DNL Household 2] är det bara [!DNL Device 3] som kvalificerar för segmentet. Detta [!UICONTROL Profile Merge Rule] har gjort det möjligt för marknadsföraren att leverera ett konsekvent marknadsföringsmeddelande till en enskild enhet ([!DNL Device 3]) och ett större hushåll ([!DNL Household 2]).
+Länken mellan enheten och hushållsprofilen gör att Audience Manager kan kvalificera [!DNL Household 2] för segmentet, men inte [!DNL Household 1]. Från [!DNL Household 2] är det bara [!DNL Device 3] som kvalificerar för segmentet. Detta [!UICONTROL Profile Merge Rule] har gjort det möjligt för marknadsföraren att leverera ett konsekvent marknadsföringsmeddelande till en enskild enhet ([!DNL Device 3]) och ett större hushåll ([!DNL Household 2]).
 
 ![Hushållshantering](assets/household-management.png)
 
@@ -72,7 +72,7 @@ Med länken mellan enheten och hushållsprofilen kan Audience Manager kvalificer
 
 Det här målscenariot är bara tillgängligt för kunder som har köpt tillägget [!DNL People-Based Destinations]. Med den här regeln kan marknadsförarna nå kunder utifrån sina egna autentiserade data.
 
-En webbutik vill nå befintliga kunder via sociala plattformar och visa dem personaliserade erbjudanden baserat på deras tidigare order. Med [!UICONTROL People-Based Destinations] kan de importera hashade e-postadresser från sina egna [!DNL CRM] till Audience Manager, skapa segment från offlinedata och skicka dessa segment till de sociala plattformar som de vill annonsera på, med hjälp av den hashade identifieraren, vilket optimerar deras annonsutgifter.
+En webbutik vill nå befintliga kunder via sociala plattformar och visa dem personaliserade erbjudanden baserat på deras tidigare order. Med [!UICONTROL People-Based Destinations] kan de importera hashade e-postadresser från sina egna [!DNL CRM] till Audience Manager, skapa segment utifrån offlinedata och skicka dessa segment till de sociala plattformar som de vill annonsera på, med hjälp av den hash-kodade identifieraren, vilket optimerar deras annonsutgifter.
 
 Mer information om det här alternativet finns i [Personbaserade mål](../destinations/people-based-destinations-overview.md).
 
@@ -101,7 +101,7 @@ Om du väljer ett [!UICONTROL device graph]-alternativ för en [!UICONTROL Profi
   </tr> 
   <tr> 
    <td colname="col1"> <p>Alternativ för externt enhetsdiagram </p> </td> 
-   <td colname="col2"> <p><span class="wintitle">-profilsammanfogningsregler</span> som har skapats med externa enhetsdiagram som är integrerade med <span class="keyword"> Audience Manager </span> är idealiska för: </p> <p> 
+   <td colname="col2"> <p>Regler för <span class="wintitle">-profilsammanslagning</span> som skapats med externa enhetsdiagram som är integrerade med <span class="keyword"> Audience Manager</span> är idealiska för: </p> <p> 
      <ul id="ul_D76D773988604A619FA4A3BF37F910F0"> 
       <li id="li_969A0755A9E34CBEB2F7331C137B9A26">Digitala egenskaper som har låg nivå av kundautentisering. </li> 
       <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">Breda, heltäckande varumärkeskampanjer. </li> 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # API-metoder för DCS-region {#dcs-region-api-methods}
 
-Metoder som gör att du programmässigt kan visa Audience Manager [!DNL DCS]-regioner.
+Metoder som gör att du programmässigt kan lista Audience Manager [!DNL DCS]-regioner.
 
 <!-- c_rest_api_regions.xml -->
 

@@ -22,7 +22,7 @@ Ditt företag kanske vill dölja IP-adressen i många länder på grund av globa
 
 ### IP-faktureringsmetod
 
-I enlighet med principerna för&quot;Integritet via design&quot; tillåter Adobe Audience Manager kunderna att aktivera IP-förfalskning från användargränssnittet, antingen globalt i alla geografiska regioner eller för specifika länder. När du aktiverar den här inställningen ignoreras den sista oktetten (den sista delen) i IP-adressen omedelbart när IP-adressen hämtas till Audience Manager. Audience Manager ignorerar den här delen av IP-adressen före bearbetning (inklusive före eventuell geografisk sökning eller loggning av IP-adressen). Exempel:
+I enlighet med principerna för&quot;Integritet via design&quot; tillåter Adobe Audience Manager kunderna att aktivera IP-förfalskning från användargränssnittet, antingen globalt i alla geografiska regioner eller för specifika länder. När du aktiverar den här inställningen ignoreras den sista oktetten (den sista delen) i IP-adressen omedelbart när IP-adressen importeras till Audience Manager. Audience Manager ignorerar den här delen av IP-adressen före bearbetning (inklusive före eventuell geografisk sökning eller loggning av IP-adressen). Exempel:
 
 * Före förvrängning: `255.255.255.255`
 * Efter förvrängning: `255.255.255.0`
@@ -31,15 +31,15 @@ Se även Samla in IP-adresser och IP-adressofficering i avsnittet [Dataintegrite
 
 ### Prioritet för IP-obefuscation {#precedence}
 
-[IP-ojämnheter på datastranaminivå](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=sv-SE#create) har företräde framför IP-ofuskeringsalternativ som har angetts i Audience Manager, och de tillämpas på alla IP-adresser. Alla sökningar efter geopositionering som gjorts av Audience Manager påverkas av alternativet [!UICONTROL IP obfuscation] på datastream-nivå. En sökning efter geopositionering i Audience Manager, som baseras på en helt okomplicerad IP-adress, resulterar i en okänd region och inga segment som baseras på resulterande geopositioneringsdata kommer att realiseras.
+[IP-ojämnheter på datastranaminivå](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#create) har företräde framför IP-ofuskeringsalternativ som har angetts i Audience Manager, och de tillämpas på alla IP-adresser. Alla sökningar efter geopositionering som görs av Audience Manager påverkas av alternativet [!UICONTROL IP obfuscation] på datastream-nivå. En sökning efter geopositionering i Audience Manager, som baseras på en helt okomplicerad IP-adress, resulterar i en okänd region och eventuella segment som baseras på den resulterande geopositioneringsinformationen inte realiseras.
 
 ## Krav för IP-adressofficering {#ip-obfuscation-requirements}
 
-IP-adressofficering är bara tillgängligt för administratörskonton i Audience Manager. Mer information om hur du tilldelar administratörsbehörighet för en användare finns i [Skapa användare](/help/using/features/administration/administration-overview.md#create-users).
+IP-adressofficering är bara tillgängligt för Audience Manager administratörskonton. Mer information om hur du tilldelar administratörsbehörighet för en användare finns i [Skapa användare](/help/using/features/administration/administration-overview.md#create-users).
 
 >[!NOTE]
 >
-> På grund av den stora datamängden som bearbetas av Audience Manager kan det ta upp till 4 timmar innan ändringar av IP-döljning börjar gälla, från det att du uppdaterar inställningarna.
+> På grund av den stora datamängden som bearbetas av Audience Manager kan det ta upp till 4 timmar innan ändringar av IP-kompabiliteten börjar gälla, från det att du uppdaterar inställningarna.
 
 ## Konfigurera IP-adressofuscation {#configure-ip-obfuscation}
 

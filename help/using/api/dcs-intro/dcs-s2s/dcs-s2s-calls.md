@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Göra DCS API-anrop från server till server {#making-server-to-server-dcs-api-calls}
 
-Anrop kräver värdnamnet för den regionala DCS-servern och användar-ID:t. Om du inte har rätt användar-ID och region-ID kan du läsa [Hämta användar-ID och regioner från ett DCS-svar](/help/using/api/dcs-intro/dcs-s2s/dcs-aam-ids.md) och/eller [Experience Cloud](/help/using/api/dcs-intro/dcs-s2s/dcs-mcid-ids.md). När du har användar-ID:n och region-ID:n kan du göra server-till-server-anrop till DCS. I det här avsnittet finns syntax och exempel.
+Anrop kräver värdnamnet för den regionala DCS-servern och användar-ID:t. Om du inte har rätt användar- och region-id:n läser du [Hämta användar-ID:n och regioner från ett DCS-svar](/help/using/api/dcs-intro/dcs-s2s/dcs-aam-ids.md) och/eller [Experience Cloud](/help/using/api/dcs-intro/dcs-s2s/dcs-mcid-ids.md). När du har användar-ID:n och region-ID:n kan du göra server-till-server-anrop till DCS. I det här avsnittet finns syntax och exempel.
 
 >[!NOTE]
 >
@@ -67,11 +67,11 @@ Ett samplingsanrop ser ut ungefär som i följande exempel.
   </tr> 
   <tr> 
    <td colname="col1"> <p><code>d_uuid= <i>Audience Manager user ID</i></code> </p> </td> 
-   <td colname="col2"> <p>Detta är den unika användar-ID-nyckeln som innehåller användar-ID:t <span class="keyword"> Audience Manager </span> i ett nyckelvärdepar. </p> <p>Använd <code><i>d_uuid</i></code> om du skickar användar-ID:t <span class="keyword"> Audience Manager </span>. </p> </td>
+   <td colname="col2"> <p>Detta är den unika användar-ID-nyckeln som innehåller användar-ID:t <span class="keyword"> Audience Manager</span> i ett nyckelvärdepar. </p> <p>Använd <code><i>d_uuid</i></code> om du skickar användar-ID:t <span class="keyword"> Audience Manager</span>. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p><code>d_mid=<i>Experience Cloud user ID</i></code> </p> </td> 
-   <td colname="col2"> <p>Detta är den unika användar-ID-nyckeln som innehåller användar-ID:t <span class="keyword"> Experience Cloud </span> i ett nyckelvärdepar. Se även <a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#get-user-ids-from-service-cookie"> Hämta användar-ID från ID-tjänstcookie</a>. </p> <p>Använd <i><code> d_mid</code></i> om du skickar ett <span class="keyword"> Experience Cloud </span> ID som hämtats från <span class="keyword"> Experience Cloud </span> ID-tjänsten. </p> </td> 
+   <td colname="col2"> <p>Detta är den unika användar-ID-nyckeln som innehåller användar-ID:t <span class="keyword"> Experience Cloud</span> i ett nyckelvärdepar. Se även <a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#get-user-ids-from-service-cookie"> Hämta användar-ID från ID-tjänstcookie</a>. </p> <p>Använd <i><code> d_mid</code></i> om du skickar ett <span class="keyword"> Experience Cloud</span> ID som hämtats från <span class="keyword"> Experience Cloud </span> ID-tjänsten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> 

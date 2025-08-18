@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## Översikt
 
-Globala datakällor är tillgängliga för alla Audience Manager-kunder och innehåller enhetsreklam-ID:n som genererats av enhetstillverkare som [!DNL Apple], [!DNL Samsung], [!DNL Microsoft], [!DNL Roku] och [!DNL Android] enhetstillverkare. Dessa ID:n är tillgängliga för tillverkare i annonssyfte. Audience Manager-kunder kan använda globala datakällor för att synkronisera enhets-ID:n och importera eller exportera data som är avaktiverade från dessa mappningar.
+Globala datakällor är tillgängliga för alla Audience Manager-kunder och innehåller enhetsreklam-ID:n som genererats av enhetstillverkare som [!DNL Apple], [!DNL Samsung], [!DNL Microsoft], [!DNL Roku] och [!DNL Android] enhetstillverkare. Dessa ID:n är tillgängliga för tillverkare i annonssyfte. Audience Manager-kunder kan använda globala datakällor för att synkronisera enhets-ID:n och importera eller exportera data som är avpassade från mappningarna.
 
 I följande tabell beskrivs de globala datakällor som stöds av Audience Manager.
 
@@ -46,14 +46,14 @@ På enheter som kör [!DNL iOS] och [!DNL Android] kan bara inbyggda program hä
 
 ## Verifiering av globalt enhets-ID
 
-Audience Manager validerar de annonserings-ID ([!UICONTROL DAID]) för enheten som importeras av kunder, baserat på deras format, för att säkerställa att de matchar det standardformat som anges av enhetstillverkarna. Se [Index för ID:n i Audience Manager](../reference/ids-in-aam.md) för en detaljerad mappning av enhets-ID:n till globala datakällor och rätt format för varje ID. Kontrollera att du importerar enhets-ID:n i rätt format, baserat på enhetstypen. Audience Manager avvisar enhets-ID:n som inte har rätt format och returnerar ett felmeddelande som anger att ID:t avvisades.
+Audience Manager validerar de enhets-ID:n ([!UICONTROL DAID]) som importeras av kunder, baserat på deras format, för att säkerställa att de matchar det standardformat som anges av enhetstillverkarna. Se [Index för ID:n i Audience Manager](../reference/ids-in-aam.md) för en detaljerad mappning av enhets-ID:n till globala datakällor och rätt format för varje ID. Kontrollera att du importerar enhets-ID:n i rätt format, baserat på enhetstypen. Audience Manager avvisar enhets-ID:n som inte har rätt format och returnerar ett felmeddelande som anger att ID:t avvisades.
 
 * Felmeddelanden för batchdataöverföringar beskrivs här: [Villkor och definitioner för introduktionsstatusrapport](../reporting/onboarding-status-report.md#report-terms-conditions).
 * Felmeddelanden för dataöverföringar i realtid beskrivs här: [DCS-felkoder, meddelanden och exempel](../api/dcs-intro/dcs-api-reference/dcs-error-codes.md).
 
 ## Förfalloprincip för enhets-ID
 
-Audience Manager tar automatiskt bort enhets-ID:n efter 120 dagars inaktivitet, ungefär som [AAM UUID](../faq/faq-privacy.md)s.
+Audience Manager tar automatiskt bort enhets-ID:n efter 120 dagars inaktivitet, liknande [AAM UUID](../faq/faq-privacy.md)s.
 
 ## Begär nya globala datakällor
 

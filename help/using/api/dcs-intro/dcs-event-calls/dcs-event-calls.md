@@ -16,7 +16,7 @@ ht-degree: 34%
 
 # DCS Event Call API:er {#dcs-event-call-apis}
 
-Händelseanrop skickar information till [!DNL DCS] i en [!DNL URL]-sträng. I en vanlig Audience Manager-distribution använder kunderna vår [!DNL JavaScript]-datainsamlingskod ([!UICONTROL DIL]) för att skicka data till [!DNL DCS]. Men ibland kan kunderna inte placera vår [!DNL JavaScript]-kod på sina sidor. Om företagspolicyer eller andra tekniska problem hindrar dig från att placera din [!DNL JavaScript]-kod på dina sidor, kan du fortfarande arbeta med Audience Manager för att skicka och returnera data från [!DNL DCS] med dessa event call [!DNL API]s.
+Händelseanrop skickar information till [!DNL DCS] i en [!DNL URL]-sträng. I en typisk Audience Manager-distribution använder kunderna vår [!DNL JavaScript]-datainsamlingskod ([!UICONTROL DIL]) för att skicka data till [!DNL DCS]. Men ibland kan kunderna inte placera vår [!DNL JavaScript]-kod på sina sidor. Om företagspolicyer eller andra tekniska problem hindrar dig från att placera din [!DNL JavaScript]-kod på dina sidor, kan du fortfarande arbeta med Audience Manager för att skicka och returnera data från [!DNL DCS] med dessa event call [!DNL API]s.
 
 ## Komma igång {#dcs-getting-started}
 

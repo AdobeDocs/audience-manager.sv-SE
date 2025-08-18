@@ -1,5 +1,5 @@
 ---
-description: Audience Manager-kunder som även använder Adobe Analytics kan utnyttja den nära integrationen mellan de båda lösningarna genom att aktivera alternativet Avancerad sökning för Adobe Analytics.
+description: Audience Manager-kunder som också använder Adobe Analytics kan utnyttja den nära integrationen mellan de båda lösningarna genom att aktivera alternativet Avancerad sökning för Adobe Analytics.
 seo-description: Audience Manager customers who also use Adobe Analytics can leverage the tight integration between the two solutions by enabling the Advanced Search for Adobe Analytics option.
 seo-title: Advanced Search for Adobe Analytics
 title: Avancerad sökning i Adobe Analytics

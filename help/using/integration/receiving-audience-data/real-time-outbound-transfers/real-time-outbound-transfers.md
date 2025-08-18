@@ -20,7 +20,7 @@ Den utgående dataöverföringsprocessen i realtid levererar användardata som e
 
 <!-- c_outbound_json.xml -->
 
-## Recommendations
+## Rekommendationer
 
 Om du vill använda den här metoden måste målplattformen uppfylla följande krav:
 
@@ -95,7 +95,7 @@ Följande tabell definierar elementen i datafilen [!DNL JSON] som du skickar til
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_UUID</i></code> </td> 
    <td colname="col2"> <p>Sträng </p> </td> 
-   <td colname="col3"> <p>UUID för <span class="keyword"> Audience Manager</span>. </p> </td> 
+   <td colname="col3"> <p><span class="keyword"> Audience Manager</span> UUID. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>User.DataPartner_UUID</i></code> </td> 
@@ -105,7 +105,7 @@ Följande tabell definierar elementen i datafilen [!DNL JSON] som du skickar til
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_Regions</i></code> </td> 
    <td colname="col2"> Array </td> 
-   <td colname="col3"> Det region-ID för <span class="keyword"> Audience Manager</span> där vi har sett den här enheten. Om enheten till exempel har någon aktivitet i Paris (Europa) blir region-ID <code> 6</code>. Se <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> ID:n för DCS-region, platser och värdnamn</a>. </td> 
+   <td colname="col3"> Det <span class="keyword"> Audience Manager</span>-region-ID där den här enheten har visats. Om enheten till exempel har någon aktivitet i Paris (Europa) blir region-ID <code> 6</code>. Se <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> ID:n för DCS-region, platser och värdnamn</a>. </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segments</i></code> </td> 
@@ -115,7 +115,7 @@ Följande tabell definierar elementen i datafilen [!DNL JSON] som du skickar til
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.Segment_ID</i></code> </td> 
    <td colname="col2"> <p>Heltal </p> </td> 
-   <td colname="col3"> <p>Segmentets identifierare. I de flesta fall är detta det segment-ID som genereras av Audience Manager (ett heltal). I vissa fall, om målplattformen tillåter det, kan kunderna definiera segmentidentifieraren i användargränssnittet i Audience Manager (öppet textfält), som sedan återspeglas i den här egenskapen. </p> </td> 
+   <td colname="col3"> <p>Segmentets identifierare. I de flesta fall är detta det segment-ID som genereras av Audience Manager (ett heltal). I vissa fall, om målplattformen tillåter det, kan kunderna definiera segmentidentifieraren i Audience Manager användargränssnitt (öppet textfält), som sedan återspeglas i den här egenskapen. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.Status</i></code> </td> 
@@ -130,7 +130,7 @@ Följande tabell definierar elementen i datafilen [!DNL JSON] som du skickar til
      <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">Borttagen från ett segment baserat på segmentets <a href="../../../features/traits/segment-ttl-explained.md"> time-to-live-intervall </a>. </li> 
      <li id="li_F48D1052BA2B45108225641292CC748D">Flyttad till ett inaktivt läge om de inte har setts de senaste 120 dagarna. </li>
      <li>Borttagen på grund av en begäran om sekretessändring (t.ex. <span class="keyword"> GDPR</span>)</li>
-    </ul> <p>Alla partner-ID:n som synkroniseras med ett <span class="keyword"> Audience Manager </span>-ID får flaggan <code> "Status":"0"</code> när en användare är osegmenterad. </p> </td> 
+    </ul> <p>Alla partner-ID:n som synkroniseras med ett <span class="keyword"> Audience Manager</span>-ID får flaggan <code> "Status":"0"</code> när en användare är osegmenterad. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.DateTime</i></code> </td> 

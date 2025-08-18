@@ -46,7 +46,7 @@ Följande tabell innehåller rader som motsvarar rader i det mottagna e-postmedd
   </tr> 
   <tr> 
    <td colname="col1"> Mottagna poster </td> 
-   <td colname="col2"> <p>Totalt antal poster som tagits emot Adobe över alla filer. I de flesta fall bör detta vara det totala antalet rader i inkommande filer. </p> </td> 
+   <td colname="col2"> <p>Totalt antal poster som Adobe har tagit emot över alla filer. I de flesta fall bör detta vara det totala antalet rader i inkommande filer. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Formatfel </td> 
@@ -54,15 +54,15 @@ Följande tabell innehåller rader som motsvarar rader i det mottagna e-postmedd
   </tr> 
   <tr> 
    <td colname="col1"> Ogiltigt AAM-ID </td> 
-   <td colname="col2"> <p>Antal Audience Manager-UID som inte matchade det förväntade 38-siffriga formatet. Eller så är Audience Manager UUID:n som skickas i filen inte siffror. </p> </td> 
+   <td colname="col2"> <p>Antal Audience Manager UUID som inte matchar det förväntade 38-siffriga formatet. Eller så är Audience Manager UUID:n som skickas i filen inte siffror. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Inget matchande AAM-ID </td> 
-   <td colname="col2"> <p>Totalt antal användare som Audience Manager inte kunde hitta ett matchande UUID. Dessa filer har inte synkroniserats med ID, så Audience Manager kan inte hitta UUID. </p> </td> 
+   <td colname="col2"> <p>Totalt antal användare för vilka Audience Manager inte kunde hitta ett matchande UUID. Dessa filer har inte synkroniserats med ID, så Audience Manager kan inte hitta UUID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Inget fack realiserat </td> 
-   <td colname="col2"> <p>Antal poster där ingen av signalerna på linjen är kopplad till ett Audience Manager-trait. </p> </td> 
+   <td colname="col2"> <p>Antal poster där ingen av signalerna på linjen är kopplad till en Audience Manager-egenskap. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Bearbetade poster </td> 
@@ -70,7 +70,7 @@ Följande tabell innehåller rader som motsvarar rader i det mottagna e-postmedd
   </tr> 
   <tr> 
    <td colname="col1"> Lagrade poster </td> 
-   <td colname="col2"> <p>Antal poster som resulterar i data som ska läsas in i systemet = Bearbetade poster - Formatfel - Ogiltiga AAM-ID:n - Inget matchande AAM-ID - Inget spår realiserat. </p> </td> 
+   <td colname="col2"> <p>Antal poster som resulterar i data som ska läsas in i systemet = Bearbetade poster - Formatfel - Ogiltiga AAM-ID:n - Inget matchande AAM-ID - Inga egenskaper har realiserats. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Totalt antal enheter </td> 
@@ -82,7 +82,7 @@ Följande tabell innehåller rader som motsvarar rader i det mottagna e-postmedd
   </tr> 
   <tr> 
    <td colname="col1"> Totalt antal oanvända signaler </td> 
-   <td colname="col2"> <p>Totalt antal oanvända signaler för alla användare i alla inkommande filer (nyckel/värde-par som inte mappades till Audience Manager). I de flesta fall innebär detta att Audience Manager inte har några definierade regler för signalen. </p> </td> 
+   <td colname="col2"> <p>Totalt antal oanvända signaler för alla användare i alla inkommande filer (nyckel/värde-par som inte mappades till Audience Manager-egenskaper). I de flesta fall innebär detta att Audience Manager inte har några definierade regler för signalen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Totala realiserade egenskaper </td> 

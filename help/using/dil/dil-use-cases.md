@@ -1,9 +1,9 @@
 ---
-description: Kodexempel och beskrivningar för specifika fall för användning i DIL.
+description: Kodexempel och beskrivningar för specifika DIL-användningsfall.
 seo-description: Code samples and descriptions for specific DIL use cases.
 seo-title: DIL Use Cases and Code Samples
 solution: Audience Manager
-title: Exempel på användning i DIL och kodexempel
+title: DIL Användningsexempel och kodexempel
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
 feature: DIL Implementation
 exl-id: 001710be-b377-460a-9e29-7268d25a6305
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 ---
 
-# Exempel på användning i DIL och kodexempel{#dil-use-cases-and-code-samples}
+# DIL Användningsexempel och kodexempel{#dil-use-cases-and-code-samples}
 
 >[!WARNING]
 >
 >Från och med juli 2023 har Adobe upphört med utvecklingen av tillägget [!DNL Data Integration Library (DIL)] och [!DNL DIL].
 >
->Befintliga kunder kan fortsätta använda sin [!DNL DIL]-implementering. Adobe kommer dock inte att utveckla [!DNL DIL] efter den här punkten. Kunder uppmuntras att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE) för sin långsiktiga datainsamlingsstrategi.
+>Befintliga kunder kan fortsätta använda sin [!DNL DIL]-implementering. Adobe kommer dock inte att utveckla [!DNL DIL] efter den här punkten. Kunder uppmuntras att utvärdera [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) för sin långsiktiga datainsamlingsstrategi.
 >
->Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE) i stället.
+>Kunder som vill implementera integreringar för datainsamling efter juli 2023 bör använda [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) i stället.
 
-Kodexempel och beskrivningar för specifika fall för användning i DIL.
+Kodexempel och beskrivningar för specifika DIL-användningsfall.
 
 <!-- 
 
@@ -52,14 +52,14 @@ Tänk på att värdeegenskaperna förblir desamma när du skickar data. Om du ti
 
 **Exempel 1: Skicka data som nyckelvärdepar**
 
-I det här grundläggande exemplet skickas färg- och prisdata till Audience Manager i form av nyckelvärdepar. Koden kan se ut ungefär så här:
+Det här grundläggande exemplet skickar färg- och prisdata till Audience Manager i form av nyckelvärdepar. Koden kan se ut ungefär så här:
 
 <pre class="java"><code>
 var sample_dil = DIL.create({partner:"<i>partner name</i>"}); 
-sample_dil.api.signals(&lbrace; 
+sample_dil.api.signals({ 
    c_color:"blue", 
    c_price:"900" 
-&rbrace;); 
+}); 
 sample_dil.api.submit();
 </code></pre>
 
@@ -68,10 +68,10 @@ sample_dil.api.submit();
 I det här avancerade exemplet visas hur du skickar data i ett objekt till Audience Manager. När du arbetar med den här metoden kan du med [!UICONTROL DIL] skicka ett objekt som en funktionsparameter till metoden [!DNL signals()]. [!UICONTROL DIL] Koden kan se ut ungefär så här:
 
 <pre class="java"><code>
-var my_object = &lbrace; 
+var my_object = { 
    color : "blue", 
    price : "900" 
-&rbrace;; 
+}; 
  
 var sample_dil = DIL.create({ partner : "<i>partner name</i>" }); 
 //Load the object and append "c_" to all keys in the key-value pairs and send data to AudienceManager. 
@@ -83,21 +83,21 @@ sample_dil.api.signals(my_object,"c_").submit();
 I det här fallet använder variabeln `my_object` en matris för data. Det här exemplet bygger på den information som skickas med den rekommenderade metoden ovan, men lägger till ytterligare ett lager för en produkttyp och modell. Koden kan se ut ungefär så här:
 
 <pre class="java"><code>
-var my_objects = &lbrack;&lbrace; 
+var my_objects = [{ 
    color : "blue", 
    price : "900" 
-&rbrace;, &lbrace; 
+}, { 
    type : "acura", 
    model : "tl" 
-&rbrace;&rbrack;; 
+}]; 
  
 var sample_dil = DIL.create({ partner : "<i>partner name</i>" }); 
  
 for (var i = 0; i < my_objects.length; i++) 
 //Load the object and append "c_" to all the keys in the key-value pairs.  
-&lbrace; 
+{ 
     sample_dil.api.signals(my_objects[i], "c_"); 
-&rbrace; 
+} 
 sample_dil.api.submit();
 </code></pre>
 
@@ -162,31 +162,31 @@ I det här fallet antar vi att en användare sökte efter termen &quot;hem&quot;
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
 var search_referrer = DIL.tools.getSearchReferrer(); 
  
-if (search_referrer && search_referrer.valid) &lbrace; 
-  adobe_dil.api.signals(&lbrace; 
+if (search_referrer && search_referrer.valid) { 
+  adobe_dil.api.signals({ 
     c_se : se.name, 
     c_st : se.keywords 
-  &rbrace;).submit(); 
-&rbrace;
+  }).submit(); 
+}
 </code></pre>
 
 **Kodexempel för sökmotor som inte finns med i listan**
 
-I det här fallet antar vi att en användare sökte efter termen &quot;hem&quot; från `dogpile.com`. Eftersom [!DNL Dogpile] inte stöds som standard kan du konfigurera DIL så att sökmotorn identifieras och söktermerna returneras till Audience Manager. Koden kan se ut ungefär så här:
+I det här fallet antar vi att en användare sökte efter termen &quot;hem&quot; från `dogpile.com`. Eftersom [!DNL Dogpile] inte stöds som standard kan du konfigurera DIL så att sökmotorn känns igen och returnera söktermerna till Audience Manager. Koden kan se ut ungefär så här:
 
 <pre class="java"><code>
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
-var search_referrer = DIL.tools.getSearchReferrer(document.referrer, &lbrace;  
+var search_referrer = DIL.tools.getSearchReferrer(document.referrer, {  
     hostPattern:/dogpile\./, 
     queryParam:"q" 
-&rbrace;); 
+}); 
  
-if (search_referrer && search_referrer.valid) &lbrace; 
-  adobe_dil.api.signals(&lbrace; 
+if (search_referrer && search_referrer.valid) { 
+  adobe_dil.api.signals({ 
     c_se : se.name, 
     c_st : se.keywords 
-  &rbrace;).submit(); 
-&rbrace;
+  }).submit(); 
+}
 </code></pre>
 
 ## Mappa nyckelvärden till andra nycklar {#map-key-values}
@@ -203,7 +203,7 @@ c_dil_map_keys.xml
 
 I ett nyckelvärdepar identifierar prefixet `c_` som lagts till nyckeln signalen som kunddefinierade data. Kunddefinierade data används för målanpassning på den specifika webbplats som skickade data i ett händelseanrop. Ibland vill du dock att den här informationen ska vara tillgänglig för alla egenskaper på ditt Audience Manager-konto. Det gör du genom att mappa värdet i ett `c_`-nyckelvärdepar till en plattformsnivånyckel. En nyckel på plattformsnivå har prefixet `d_` och gör signalen tillgänglig för målinriktning över alla egenskaper i ditt konto.
 
-Du kan till exempel samla in ZIP-koddata från en viss plats men vill rikta dem till alla dina Audience Manager-egenskaper. Om du vill göra ZIP-koden tillgänglig på plattformsnivå kan du mappa den kunddefinierade ZIP-kodnyckeln (t.ex. `c_zip`) till en plattformsdefinierad nyckel enligt nedan.
+Du kan till exempel samla in ZIP-koddata från en viss webbplats men vill rikta dem till alla dina Audience Manager-egenskaper. Om du vill göra ZIP-koden tillgänglig på plattformsnivå kan du mappa den kunddefinierade ZIP-kodnyckeln (t.ex. `c_zip`) till en plattformsdefinierad nyckel enligt nedan.
 
 **Kodexempel**
 
@@ -223,7 +223,7 @@ adobe_dil.api.signals({c_zip : '10010'}).submit();
 
 ## Traffic DIL in Google Tag Manager (GTM) {#traffic-dil-gtm}
 
-Konfigurera och serva DIL med en GTM-tagg.
+Konfigurera och leverera DIL med en GTM-tagg.
 
 <!-- 
 
@@ -231,7 +231,7 @@ t_dil_google_tagmanager.xml
 
  -->
 
-I den här proceduren förutsätts att du har ett [!DNL Google Tag Manager]-konto, viss kunskap om produkten och din `dil.js`-fil i Audience Manager.
+I den här proceduren förutsätts att du har ett [!DNL Google Tag Manager]-konto, viss kunskap om produkten och din Audience Manager `dil.js`-fil.
 
 Så här kör du filen `dil.js` i GTM:
 
@@ -244,11 +244,11 @@ Så här kör du filen `dil.js` i GTM:
    * Placera [!UICONTROL DIL]-koden (bibliotek + den anpassade koden) i skripttaggar `<script>DIL code</script>` i fältet HTML.
    * Klicka på **[!UICONTROL Save]**.
 
-1. Publish behållaren.
+1. Publicera behållaren.
 1. Generera behållartaggkod och placera den i lagret.
 
 >[!MORELIKETHIS]
 >
 >* [Google Tag Manager Help Center](https://support.google.com/tagmanager#topic=3441530)
 >* [Signaler](../dil/dil-instance-methods.md#signals)
->* [Prefixkrav för nyckelvariabler](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-variable-prefixes.html?lang=sv-SE#prefix-requirements-for-key-variables)
+>* [Prefixkrav för nyckelvariabler](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-variable-prefixes.html#prefix-requirements-for-key-variables)

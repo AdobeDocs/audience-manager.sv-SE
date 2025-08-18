@@ -28,9 +28,9 @@ Det här avsnittet innehåller fält och alternativ som startar skapandet av [!D
 1. Klicka på **[!UICONTROL Basic Information]** för att visa kontrollerna.
 2. Namnge [!DNL destination]. Undvik förkortningar och specialtecken.
 3. *(Valfritt)* Beskriv [!DNL destination]. En kort beskrivning är ett effektivt sätt att definiera eller tillhandahålla mer information om en [!DNL destination].
-4. Välj **[!UICONTROL Custom]** i listan **[!UICONTROL Category]**.
+4. Välj **[!UICONTROL Category]** i listan **[!UICONTROL Custom]**.
 5. I listan **[!UICONTROL Environment]** väljer du den miljö där [!DNL URL destination] ska utlösas.
-6. Klicka på **[!UICONTROL URL]** i listan **[!UICONTROL Type]**.
+6. Klicka på **[!UICONTROL Type]** i listan **[!UICONTROL URL]**.
 7. *(Valfritt)* Välj en **[!UICONTROL Auto-fill Destination Mapping]**. Alternativen är:
    * **[!UICONTROL Segment ID]**: Lägger automatiskt till och skickar segment-ID:t till [!DNL destination].
    * **[!UICONTROL Integration Code Value]**: Lägger automatiskt till och skickar segmentintegreringskoden till målmappningen. Integrationskoden är en unik identifierare som skapas och används av kunden. Det får innehålla högst 255 tecken.

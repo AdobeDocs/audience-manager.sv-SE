@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ---
 
-# Data Explorer - Översikt, Fördelar och Användningsexempel {#overview-benefits-and-use-cases}
+# Data Explorer - Översikt, fördelar och användningsexempel {#overview-benefits-and-use-cases}
 
 Använd [!UICONTROL Data Explorer] om du vill dra nytta av historiska målgrupper genom att bygga egenskaper baserat på använda och oanvända signaler och fylla dem med historiska data för att undvika potentiell förlust av relevanta målgrupper.
 
@@ -45,8 +45,8 @@ En global återförsäljare av elektronik har en stor mängd besökstrafik, men 
 
 Efter att en leverantör av resetjänster har lagt till nya destinationer på sin bokningswebbplats vill de annonsera dem för historiska målgrupper, även om de inte har några egenskaper skapade för dem. De kan använda Signals Search för att identifiera oanvända signaler som hör till de nya destinationerna, inkludera dem i nya egenskaper och [bakåtfyll](../../features/data-explorer/data-explorer-trait-backfill.md) dem med historiska realiseringar. Skapa sedan nya segment med de nya egenskaperna och inrikta er omedelbart på dem med dedikerade kampanjer.
 
-### Använda Data Explorer för att validera Trait Creation för dina inbyggda data
+### Använda Data Explorer för att validera Trait Creative för dina inbyggda data
 
-En av de kraftfullaste funktionerna i Audience Manager är möjligheten att lägga in offlinedata och knyta dessa till era onlinedata. Läs om hur du använder [!UICONTROL Data Explorer] i videon nedan för att verifiera att du har skapat alla egenskaper som krävs för att utnyttja dessa onboarddata.
+En av de kraftfullaste funktionerna i Audience Manager är möjligheten att lägga in offlinedata och knyta dessa till onlinedata. Läs om hur du använder [!UICONTROL Data Explorer] i videon nedan för att verifiera att du har skapat alla egenskaper som krävs för att utnyttja dessa onboarddata.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25149/)

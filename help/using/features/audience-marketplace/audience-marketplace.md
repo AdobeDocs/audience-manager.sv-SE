@@ -1,5 +1,5 @@
 ---
-description: Med Audience Marketplace kan dataleverantörer och köpare utföra dataaffärer på ett självbetjäningssätt med minsta möjliga ansträngning. Det gör man genom att erbjuda specialfunktioner som varierar beroende på din roll som datamedare eller dataförsäljare. Du kan till och med bli köpare och säljare samtidigt. Och om detta inte skulle bli bättre tar Audience Marketplace hand om kontrakt, fakturering och betalningar mellan dataproviders och säljare.
+description: Audience Marketplace gör det möjligt för dataleverantörer och köpare att utföra dataaffärer på ett självbetjäningssätt med minsta möjliga ansträngning. Det gör man genom att erbjuda specialfunktioner som varierar beroende på din roll som datamedare eller dataförsäljare. Du kan till och med bli köpare och säljare samtidigt. Och om detta inte skulle bli bättre tar Audience Marketplace hand om kontrakt, fakturering och betalningar mellan dataleverantörer och säljare.
 keywords: Google Analytics
 seo-description: Audience Marketplace lets data providers and buyers execute data deals in a self-service manner with minimum effort. It does this by providing specialized features that vary depending on your role as a data buyer or data seller. In fact, you can even be a buyer and a seller at the same time. And, if this couldn’t get any better, Audience Marketplace takes care of contracts, billing, and payments between data providers and sellers.
 seo-title: Audience Marketplace
@@ -28,6 +28,6 @@ Tala med din [!DNL Audience Manager]-säljare för att komma igång. De kan akti
 > * Administratörer kan skapa dataflöden, hantera prenumeranter och prenumerera på dataflöden.
 > * Användarna kan bara söka efter och visa feeds.
 
-* [Audience Marketplace för dataleverantörer](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
-* [Audience Marketplace för datainköpare](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)
+* [Audience Marketplace for Data Providers](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
+* [Audience Marketplace for Data Buyers](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)
 * [Privata datafeeds](/help/using/features/audience-marketplace/marketplace-private-feeds.md)

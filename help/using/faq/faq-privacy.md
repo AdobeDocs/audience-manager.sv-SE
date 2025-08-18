@@ -28,7 +28,7 @@ Svar på vanliga frågor och problem som rör sekretess och data.
 
 **Hur använder Audience Manager cookies och vilka cookies används?**
 
-Se [Cookies för Audience Manager](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html?lang=sv-SE).
+Se [Cookies för Audience Manager](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html).
 
 **Kan Audience Manager-kunder i USA inrikta sig på EU-användare?**
 
@@ -71,7 +71,7 @@ I följande tabell anges lagringstiderna för olika datatyper och lagringssystem
   </tr> 
   <tr> 
    <td colname="col1"> <p>Profiler på CRM-nivå (autentiserade profiler) </p> </td> 
-   <td colname="col2"> <p>Standardintervallet för TTL (time-to-live) för inaktiva profiler på CRM-nivå (kund-ID:n) är 24 månader. Du kan emellertid använda användargränssnittet i Audience Manager för att minska eller förlänga TTL-intervallet för inaktiva CRM-nivåprofiler mellan en månad och 5 år. Du kan göra det när du skapar eller redigerar en enhetsövergripande datakälla.</p> <p>Mer information finns i Inställningar för datakälla i <a href="../features/profile-merge-rules/merge-rules-start.md#settings"> Skapa en enhetsövergripande datakälla</a>.</p> </td> 
+   <td colname="col2"> <p>Standardintervallet för TTL (time-to-live) för inaktiva profiler på CRM-nivå (kund-ID:n) är 24 månader. Du kan emellertid använda Audience Manager användargränssnitt för att minska eller förlänga TTL-intervallet för inaktiva CRM-nivåprofiler mellan en månad och 5 år. Du kan göra det när du skapar eller redigerar en enhetsövergripande datakälla.</p> <p>Mer information finns i Inställningar för datakälla i <a href="../features/profile-merge-rules/merge-rules-start.md#settings"> Skapa en enhetsövergripande datakälla</a>.</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID för mobila enheter </p> </td> 

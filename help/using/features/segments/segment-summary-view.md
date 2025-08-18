@@ -27,7 +27,7 @@ Detaljsidan för ett enskilt segment innehåller en översikt över segmentinfor
 2. **[!UICONTROL Edit]**: Använd det här alternativet om du vill ändra konfigurationen för det aktuella segmentet.
 3. **[!UICONTROL Duplicate]**: Använd det här alternativet om du vill skapa en kopia av det aktuella segmentet.
 4. **[!UICONTROL Delete]**: Använd det här alternativet om du vill ta bort det aktuella segmentet från ditt Audience Manager-konto.
-5. **[!UICONTROL Marketplace Recommendations]**: Använd det här alternativet för att hitta segment som liknar de som du visar, från [!UICONTROL Audience Marketplace] dataflöden som du inte prenumererar på. Mer information om hur du navigerar på Marketplace och hittar liknande segment finns i [Audience Marketplace för datainköpare](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md).
+5. **[!UICONTROL Marketplace Recommendations]**: Använd det här alternativet för att hitta segment som liknar de som du visar, från [!UICONTROL Audience Marketplace] dataflöden som du inte prenumererar på. Mer information om hur du navigerar på Marketplace och hittar liknande segment finns i [Audience Marketplace for Data Buyers](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) .
 
 ![basic-segment-information](assets/basic-segment-information.png)
 

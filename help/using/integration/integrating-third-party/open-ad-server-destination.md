@@ -1,20 +1,20 @@
 ---
-description: Konfigurera Open Ad Server som mål och skicka data från Audience Manager till den plattformen.
+description: Konfigurera Open Ad Server som mål och skicka Audience Manager-data till den plattformen.
 seo-description: Set up Open Ad Server as a destination and send Audience Manager data to that platform.
 seo-title: OAS as an Audience Manager Destination
 solution: Audience Manager
-title: OAS som mål för Audience Manager
+title: OAS som Audience Manager-mål
 uuid: 5891a063-5a4b-4ea7-865f-b24e17ca735f
 feature: Third-party Integration
 exl-id: cf919c27-691f-424b-be83-040f03e34455
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
-# OAS som mål för Audience Manager {#oas-as-an-audience-manager-destination}
+# OAS som Audience Manager-mål {#oas-as-an-audience-manager-destination}
 
 Konfigurera [!DNL Open Ad Server] som mål och skicka Audience Manager-data till den plattformen.
 
@@ -27,8 +27,8 @@ Standarder för kodplacering, nyckelvärdesformat som stöds, rapporter och den 
 Måltypen kräver följande:
 
 * **[!UICONTROL DIL]:** [!UICONTROL Data Integration Library] kod ska distribueras i ditt lager. [!UICONTROL DIL] hjälper till att eliminera behovet av att skriva specialkod för datainsamling, integrering, läsning av cookie-värden och återställning av siddata.
-* **`get_aamCookie`Funktion:** Kod som hämtar användar-ID och cookie-data för Audience Manager. Placera [den här koden](../../features/destinations/get-aam-cookie-code.md) överst på sidan eller inuti `<head>`-kodlåset.
-* **Skicka leveransloggar till Audience Manager:** Om du vill ha en segmentleveransrapport (valfritt) kan du förse Audience Manager med en daglig logg som innehåller leveransdata på visningsnivå. Data kan ha Raw-format, men varje post måste innehålla Audience Manager [!UICONTROL UUID]. Audience Manager kan hämta eller ta emot dessa via [!DNL FTP].
+* **`get_aamCookie`Funktion:** Kod som samlar in användar-ID och cookie-data för Audience Manager. Placera [den här koden](../../features/destinations/get-aam-cookie-code.md) överst på sidan eller inuti `<head>`-kodlåset.
+* **Skicka leveransloggar till Audience Manager:** Om du vill ha en segmentleveransrapport (valfritt) kan du förse Audience Manager med en daglig logg som innehåller leveransdata på visningsnivå. Data kan ha Raw-format, men varje post måste innehålla Audience Manager [!UICONTROL UUID]. Audience Manager kan hämta dessa via [!DNL FTP].
 
 ### Cookie-format och nyckelvärdesdata
 
@@ -54,7 +54,7 @@ Skapa ett cookie-baserat mål för [!DNL OAS] i Audience Manager.
 
 <!-- aam-oas-destination-setup.xml -->
 
-I Audience Manager är ett *mål* vilket annat system som helst (annonsserver, [!DNL DSP], annonsnätverk osv.) som du vill dela data med. [!UICONTROL Destination Builder] innehåller de verktyg som du kan använda för att skapa och hantera dessa dataleveransprocesser. Målfunktionerna för Audience Manager finns i *Målgruppsdata > Destinationer*. Kom igång genom att klicka på **[!UICONTROL Add New Destination]** och följa stegen nedan.
+I Audience Manager är ett *mål* vilket annat system (annonsserver, [!DNL DSP], annonsnätverk osv.) som du vill dela data med. [!UICONTROL Destination Builder] innehåller de verktyg som du kan använda för att skapa och hantera dessa dataleveransprocesser. Audience Manager målfunktioner finns i *Målgruppsdata > Destinationer*. Kom igång genom att klicka på **[!UICONTROL Add New Destination]** och följa stegen nedan.
 
 ### Steg 1: Grundläggande information
 
@@ -86,14 +86,14 @@ Så här lägger du till ett segment i en cookie-destination:
 
 ## OAS-inställningar {#oas-code-setup}
 
-Ändra inställningarna för [!DNL OAS] om du vill arbeta med segmentdata för Audience Manager.
+Ändra inställningarna för [!DNL OAS] om du vill arbeta med Audience Manager segmentdata.
 
 <!-- aam-oas-code.xml -->
 
 För att konfigurera [!DNL OAS]
 
 * Installera [!UICONTROL DIL]-kod på hela platsen.
-* Skapa OAS som en cookie-destination i Audience Manager.
+* Skapa OAS som cookie-mål i Audience Manager.
 * Placera funktionen `get_aamCookie` högst upp på sidan, helst i kodlåset `<head>`. Koden `get_aamCookie` är tillgänglig [här](../../features/destinations/get-aam-cookie-code.md).
 * Ändra din annonstagg för att anropa funktionen `get_aamCookie` och inkludera det cookie-namn du angav när du konfigurerade målet för [!DNL OAS]. Om du till exempel namngav cookien `test_cookie` bör annonstaggen anropa `get_aamCookie` och referera till cookie-namnet.
 * Din annonstagg kan se ut ungefär som i exemplet nedan.

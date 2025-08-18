@@ -1,9 +1,9 @@
 ---
-description: Audience Manager grupperar sina system och processer i fyra huvudkategorier tagghantering, datainsamling, dataorganisation och dataåtgärder.
+description: 'Audience Manager grupperar sina system och processer i fyra huvudkategorier: tagghantering, datainsamling, datahantering och datahantering.'
 seo-description: Audience Manager groups its systems and processes into four main categories  tag management, data collection, data organization, and data actionability.
 seo-title: Key Components in the Audience Manager System
 solution: Audience Manager
-title: Viktiga komponenter i Audience Manager-systemet
+title: Viktiga komponenter i Audience Manager System
 uuid: dedb15e6-b8dd-4eea-ab84-d99f160e4d34
 feature: System Components
 exl-id: a76f4d7d-5dd2-4b29-a97e-039c8f1d765f
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ---
 
-# Viktiga komponenter i Audience Manager-systemet{#key-components-in-the-audience-manager-system}
+# Viktiga komponenter i Audience Manager System{#key-components-in-the-audience-manager-system}
 
-Audience Manager grupperar sina system och processer i fyra huvudkategorier: tagghantering, datainsamling, datahantering och dataåtgärder.
+Audience Manager grupperar sina system och processer i fyra huvudkategorier: tagghantering, datainsamling, datahantering och datahantering.
 
 <!-- 
 

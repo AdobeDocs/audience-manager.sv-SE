@@ -118,7 +118,7 @@ I [!UICONTROL Audience Marketplace] kan leverantörer erbjuda köpare en rabatt 
     <ol id="ol_A58D419EBB9349E9B1225202535130F6"> 
      <li id="li_D0DDC8AC6E9C4675AA4630D63FE8F071"> <a href="../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#unsubscribe"> Avbeställ </a> från dataflödet. </li> 
      <li id="li_05A5379F2A944FB28AB39C196DDE3A1D">Kontakta DataProvider och begär ett rabatterat pris. </li> 
-     <li id="li_B1B5AA6F6CC64512A02D5E8861A5F266">Om leverantören ger dig rabatt återprenumererar du på feeden den </sup>-dagen i nästa månad.<sup> </li> 
+     <li id="li_B1B5AA6F6CC64512A02D5E8861A5F266">Om leverantören ger dig rabatt återprenumererar du på feeden den <sup>-dagen i nästa månad.</sup> </li> 
     </ol> </td> 
   </tr> 
   <tr> 
@@ -314,11 +314,11 @@ Med det här användningsexemplet kan du utvärdera leverantörens egenskaper mo
 
 ### Aktivering
 
-Med det här användningsexemplet kan du skicka data till ett [mål](../../../features/destinations/destinations.md). I [!DNL Audience Manager] är ett mål ett tredjepartssystem (annonsserver, [!DNL DSP], [!DNL DMP], Exchange, osv.) som du vill dela data med. Med ett [!UICONTROL Activation]-användningsfall kan du dock inte köra överlappningsrapporter eller testa data i en algoritmisk modell.
+Med det här användningsexemplet kan du skicka data till ett [mål](../../../features/destinations/destinations.md). I [!DNL Audience Manager] är ett mål ett tredjepartssystem (annonsserver, [!DNL DSP], [!DNL DMP], utbyte osv.) som du vill dela data med. Med ett [!UICONTROL Activation]-användningsfall kan du dock inte köra överlappningsrapporter eller testa data i en algoritmisk modell.
 
 >[!MORELIKETHIS]
 >
->* [Fakturering och Impression-allokering för CPM-datafeeds](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
+>* [Fakturerings- och impressionsallokering för CPM-datafeeds](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
 >* [Fakturerings- och impressionsallokering för statiska avgiftsdatafeeds](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
 >* [Rapportera CPM-användning](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#report-cpm-usage)
 >* [Prenumerera på en offentlig datafeed](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed)

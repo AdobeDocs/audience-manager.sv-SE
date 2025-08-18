@@ -29,9 +29,9 @@ Dataöverföringar i realtid skickar och tar emot segment-ID:n när en användar
 Integreringen av data i realtid fungerar på följande sätt:
 
 1. En användare besöker en kunds webbplats som innehåller Audience Manager-kod.
-1. Audience Manager läser in en iframe och anropar [!UICONTROL Data Collection Server] ( [!DNL DCS]).
+1. Audience Manager läser in en iframe och anropar vår [!UICONTROL Data Collection Server] ( [!DNL DCS]).
 1. [!DNL DCS] anropar tredjepartsservern (i realtid) för att kontrollera om leverantören har någon segmentinformation om användaren.
 1. Innehållsleverantören returnerar segmentinformation om den användaren till Audience Manager.
-1. Audience Manager får denna segmentinformation och kan målinrikta och bygga nya egenskaper och segment.
+1. Audience Manager får denna segmentinformation och gör den tillgänglig för målinriktning och utveckling av nya egenskaper och segment.
 
 ![](assets/rt_reduce70.png)

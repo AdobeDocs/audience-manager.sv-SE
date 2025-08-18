@@ -36,7 +36,7 @@ Börja med att titta på [Skapa segment i Audience Manager-videon](https://image
 
    * Namnge [!UICONTROL segment]. Namnet [!UICONTROL segment] får innehålla högst 255 tecken.
    * Ange status [!UICONTROL segment] (aktiv är standard).
-   * Välj en [!UICONTROL data source]. Använd den första listrutan för att filtrera mellan Audience Manager [!UICONTROL data sources], Adobe Analytics rapportsviter eller båda. Använd sedan den andra listrutan för att välja [!UICONTROL data source]. Om du inte använder Adobe Analytics rapportprogramsviter är typväljaren [!UICONTROL data source] inaktiverad och standardinställningen är endast Audience Manager datakällor.
+   * Välj en [!UICONTROL data source]. Använd den första listrutan för att filtrera mellan Audience Manager [!UICONTROL data sources], Adobe Analytics rapporteringsprogram eller båda. Använd sedan den andra listrutan för att välja [!UICONTROL data source]. Om du inte använder Adobe Analytics rapportprogramsviter är typväljaren [!UICONTROL data source] inaktiverad och standardinställningen är endast Audience Manager datakällor.
    * Välj en [!UICONTROL profile merge rule] som ska användas för [!UICONTROL segment]-kvalificering.
    * Tilldela [!UICONTROL segment] till en lagringsmapp.
 
@@ -44,7 +44,6 @@ Börja med att titta på [Skapa segment i Audience Manager-videon](https://image
    ![segment-builder-traits](assets/segment-builder-traits.png)
    * Sök efter de [!UICONTROL trait] som du vill lägga till i ett segment och klicka på **[!UICONTROL Add Trait]**. Lägg till ytterligare [!UICONTROL trait] för att skapa en [!UICONTROL trait]-grupp.
    * Ta fram spärren [!UICONTROL Advanced Search] genom att klicka på **[!UICONTROL Browse All Traits]**. Sök efter [!UICONTROL traits] efter namn, ID, beskrivning eller [!UICONTROL data source]. Klicka på en mapp medan du söker för att begränsa resultatet till den mappen och dess undermappar. Du kan även filtrera [!UICONTROL traits] efter [!UICONTROL trait type] ([!UICONTROL Folder Trait], [!UICONTROL Rule-based], [!UICONTROL Onboarded] och [!UICONTROL Algorithmic]) eller populationstyp ([enhets-ID](../../reference/ids-in-aam.md) och [enhets-ID](../../reference/ids-in-aam.md)).
-
      ![segment-builder-browser-traits](assets/segment-builder-browse-traits.png)
    * Få [anpassade rekommendationer](trait-recommendations.md) live när du bygger din [!UICONTROL segment].
    * Klicka och dra [!UICONTROL traits] för att skapa separata grupper.
@@ -115,7 +114,7 @@ I [!UICONTROL Segment Builder] kan du med [!UICONTROL the Basic Information]-ins
 | **[!UICONTROL Name]** | Ge segmentet ett kort logiskt namn som beskriver dess funktion eller syfte. Undvik förkortningar och specialtecken. Segmentnamnet får innehålla högst 255 tecken. |
 | **[!UICONTROL Description]** | Ett fält för ytterligare beskrivande information om segmentet. |
 | **[!UICONTROL Integration Code]** | Ett fält för ett användardefinierat ID eller annan företagsspecifik information. |
-| **[!UICONTROL Data Source]** | Associerar segmentet med en viss DataProvider. <br> Använd den första listrutan för att filtrera mellan datakällor i Audience Manager, Adobe Analytics rapporteringsprogram eller båda. Använd sedan den andra listrutan för att välja datakälla. <br> Om du inte använder Adobe Analytics rapportprogramsviter inaktiveras datakälltypväljaren och standardinställningen används endast för datakällor i Audience Manager. |
+| **[!UICONTROL Data Source]** | Associerar segmentet med en viss DataProvider. <br> Använd den första listrutan för att filtrera mellan Audience Manager-datakällor, Adobe Analytics rapporteringsprogram eller båda. Använd sedan den andra listrutan för att välja datakälla. <br> Om du inte använder Adobe Analytics rapportprogramsviter inaktiveras datakälltypväljaren och används som standard endast för Audience Manager datakällor. |
 | **[!UICONTROL Profile Merge Rule]** | Väljer den profilkopplingsregel som ska användas för segmentkvalificering. |
 | **[!UICONTROL Status]** | Aktiverar eller inaktiverar segmentet (aktivt som standard). |
 | **Mapplagring** | Avgör vilken lagringsmapp som segmentet tillhör. |
@@ -133,7 +132,7 @@ I [!UICONTROL Segment Builder] kan du med [!UICONTROL Traits]-avsnittet hantera 
 | **[!UICONTROL Basic View]** | I det här avsnittet finns visuella kontroller som du kan använda för att: <ul><li>Skapa nytt och hantera befintligt [!UICONTROL segments].</li><li>Ta bort [!UICONTROL traits] från en [!UICONTROL segment].</li><li>Lägg till upp till 50 (max) [!UICONTROL traits] i en [!UICONTROL segment].</li><li>Dra och släpp [!UICONTROL traits] för att skapa nya grupper.</li><li>Visa [!UICONTROL traits] och [!UICONTROL trait] grupper i en [!UICONTROL segment].</li><li>Ange kvalificeringskriterier med booleska uttryck, jämförelseoperatorer och inställningar för senaste frekvens/frekvens.</li></ul> |
 | **[!UICONTROL Code View]** | Öppnar en utvecklingsmiljö där du kan skapa och hantera [!UICONTROL traits], grupper och kvalificeringskrav med kod i stället för det visuella gränssnittet. Kodvyn är användbar om din [!UICONTROL segments]: <ul><li>Innehåller mer än 50 [!UICONTROL traits] i en enskild [!UICONTROL segment]. Obs! [!UICONTROL Segments] är begränsad till 5 000 [!UICONTROL traits] (max).</li><li>Innehåller många [!UICONTROL trait] grupper.</li><li>ha komplexa kvalifikationskrav.</li></ul> |
 | Sök | Hjälper dig att hitta [!UICONTROL traits] att lägga till i en [!UICONTROL segment]. |
-| Recommendations | Hämta liverekommendationer för liknande [!UICONTROL traits] från dina första [!UICONTROL traits]- och [!UICONTROL Audience Marketplace]-datafeeds som du prenumererar på. Lägg till de här rekommendationerna i regeln [!UICONTROL segment] för att utöka din målgrupp. Läs mer i [Trait Recommendations](trait-recommendations.md). |
+| Rekommendationer | Hämta liverekommendationer för liknande [!UICONTROL traits] från dina första [!UICONTROL traits]- och [!UICONTROL Audience Marketplace]-datafeeds som du prenumererar på. Lägg till de här rekommendationerna i regeln [!UICONTROL segment] för att utöka din målgrupp. Läs mer i [Trait Recommendations](trait-recommendations.md). |
 | **[!UICONTROL Marketplace Recommendations]** | Hämta liverekommendationer för liknande [!UICONTROL traits], från [!UICONTROL Audience Marketplace] datafeeds som du inte prenumererar på. Läs mer i [Trait Recommendations](trait-recommendations.md). |
 | Reella och beräknade [!UICONTROL Segment]-storleksdata | Se [Trait- och segmentpopulationsdata i Segment Builder](segment-builder-data.md). |
 

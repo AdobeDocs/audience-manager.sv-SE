@@ -1,5 +1,5 @@
 ---
-description: Använd visningsprogrammet för besökarprofiler för att visa det aktuella läget för en användarprofil för den aktuella webbläsaren, inklusive dess egenskaper och segment. För varje trait kan du visa dess SID, namn, information om hur besökaregenskaper realiserades (första eller tredje part), realiseringstidpunkten och frekvensen för realiseringar. För varje segment kan du visa dess SID, namn och datum för segmentmedlemskapet. Du kan även visa besökarprofilen för ett annat Audience Manager-profil-ID (UUID). Visningsprogrammet för besökarprofiler är användbart i felsökningssyfte.
+description: Använd visningsprogrammet för besökarprofiler för att visa det aktuella läget för en användarprofil för den aktuella webbläsaren, inklusive dess egenskaper och segment. För varje trait kan du visa dess SID, namn, information om hur besökaregenskaper realiserades (första eller tredje part), realiseringstidpunkten och frekvensen för realiseringar. För varje segment kan du visa dess SID, namn och datum för segmentmedlemskapet. Du kan även visa besökarprofilen för ett annat Audience Manager profil-ID (UUID). Visningsprogrammet för besökarprofiler är användbart i felsökningssyfte.
 keywords: positionsparameter
 seo-description: Use the Visitor Profile Viewer to display the current state of a user profile for the current browser, including its traits and segments. For each trait, you can view its SID, name, details about how visitor traits were realized (first- or third-party), the realization date, and the frequency of realizations. For each segment, you can view its SID, name, and the segment membership date. You can also view the visitor profile for another Audience Manager profile ID (UUID). The Visitor Profile Viewer is helpful for troubleshooting purposes.
 seo-title: Visitor Profile Viewer
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Visningsprogram för besökarprofiler {#visitor-profile-viewer}
 
-Använd [!UICONTROL Visitor Profile Viewer] för att visa det aktuella läget för en användarprofil för den aktuella webbläsaren, inklusive dess egenskaper och segment. För varje egenskap kan du visa dess [!UICONTROL SID], namn, information om hur besökaregenskaper realiserades (första eller tredje part), realiseringsdatum och realiseringstid. För varje segment kan du visa dess [!UICONTROL SID], namn och datum för segmentmedlemskap. Du kan också visa besökarprofilen för ett annat profils-ID ([!UICONTROL UUID]) för Audience Manager. [!UICONTROL Visitor Profile Viewer] är användbart i felsökningssyfte.
+Använd [!UICONTROL Visitor Profile Viewer] för att visa det aktuella läget för en användarprofil för den aktuella webbläsaren, inklusive dess egenskaper och segment. För varje egenskap kan du visa dess [!UICONTROL SID], namn, information om hur besökaregenskaper realiserades (första eller tredje part), realiseringsdatum och realiseringstid. För varje segment kan du visa dess [!UICONTROL SID], namn och datum för segmentmedlemskap. Du kan även visa besökarprofilen för ett annat Audience Manager-profil-ID ([!UICONTROL UUID]). [!UICONTROL Visitor Profile Viewer] är användbart i felsökningssyfte.
 
 >[!NOTE]
 >
@@ -39,4 +39,4 @@ Traits that are not part of a segment will not appear in the
 
    Mer information finns i [Segment](../features/segments/segments-purpose.md).
 
-1. *(Villkorligt)* Ange ett annat profil-ID i rutan **[!UICONTROL UUID]** och klicka sedan på **[!UICONTROL Refresh]** för att visa egenskaperna och segmenten för den Audience Manager.
+1. *(Villkorligt)* Ange ett annat Audience Manager-profil-ID i rutan **[!UICONTROL UUID]** och klicka sedan på **[!UICONTROL Refresh]** för att visa egenskaperna och segmenten för den användaren.

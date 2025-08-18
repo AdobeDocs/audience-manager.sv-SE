@@ -19,7 +19,7 @@ ht-degree: 42%
 
 ## Översikt {#overview}
 
-I det här dokumentet finns en översikt över hur du hanterar enskilda dataintegritets- och avanmälningsbegäranden som du kan skicka till [!DNL Audience Manager] via [Privacy Servicens användargränssnitt](https://privacyui.cloud.adobe.io/) och **[!DNL Privacy Service API]**.
+I det här dokumentet finns en översikt över hur du hanterar enskilda dataintegritets- och avanmälningsbegäranden som du kan skicka till [!DNL Audience Manager] via [Privacy Service-gränssnittet](https://privacyui.cloud.adobe.io/) och **[!DNL Privacy Service API]**.
 
 Med de här verktygen kan du skicka sekretessförfrågningar för konsumentdata som gjorts under [!DNL GDPR] och [!DNL CCPA].
 
@@ -28,15 +28,15 @@ Innan du läser den här artikeln rekommenderar vi att du går igenom ordlistorn
 Du kan skicka enskilda förfrågningar för att få åtkomst till och ta bort konsumentdata från [!DNL Audience Manager] på två sätt:
 
 * Genom gränssnittet för [Privacy Service](https://privacyui.cloud.adobe.io/). Se dokumentationen [här](https://docs.adobe.com/content/help/sv-SE/experience-platform/privacy/home.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md).
-* Genom **[!DNL Privacy Service API]**. Se dokumentationen [här](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=sv-SE) och [!DNL API] referensen [här](https://developer.adobe.com/experience-platform-apis/references/privacy-service/).
+* Genom **[!DNL Privacy Service API]**. Se dokumentationen [här](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en) och [!DNL API] referensen [här](https://developer.adobe.com/experience-platform-apis/references/privacy-service/).
 
-När du skickar individuella dataskyddsförfrågningar kan du skicka in alla [!DNL Audience Manager]-identifierare (ID), enligt beskrivningen i avsnittet **[Audience Manager Identifiers](data-privacy-ids.md)**, tillsammans med deras respektive namnområdes-ID:n (ID för datakälla).
+När du skickar individuella dataskyddsförfrågningar kan du skicka in alla [!DNL Audience Manager]-identifierare (ID), enligt beskrivningen i avsnittet **[Audience Manager-identifierare](data-privacy-ids.md)**, tillsammans med deras respektive namnområdes-ID:n (ID för datakälla).
 
-[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv-SE) har stöd för två typer av förfrågningar: förfrågningar om dataåtkomst och dataradering.
+[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) har stöd för två typer av förfrågningar: förfrågningar om dataåtkomst och dataradering.
 
 ## Begäranden om dataåtkomst {#access-data}
 
-Du kan skicka enskilda dataåtkomstbegäranden via [Privacy Servicens användargränssnitt](https://privacyui.cloud.adobe.io) (dokumentation [här](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=sv-SE)) eller genom att anropa Privacy Servicens API (dokumentation [här](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=sv-SE) och [!DNL API] referens [här](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)).
+Du kan skicka enskilda dataåtkomstbegäranden via [Privacy Service-gränssnittet](https://privacyui.cloud.adobe.io) (dokumentation [här](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=en) eller genom att anropa Privacy Service API (dokumentation [här](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en) och [!DNL API] referens [här](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)).
 
 Med användargränssnittet i [Privacy Service](https://privacyui.cloud.adobe.io/) kan du skapa nya jobbförfrågningar genom att använda [!UICONTROL Request Builder] eller överföra en [!DNL JSON]-fil.
 
@@ -46,7 +46,7 @@ Vi vet att ni strävar efter att uppfylla förfrågningar om datasekretess inom 
 
 ## Begäranden om borttagning av data {#delete-data}
 
-Du kan skicka begäranden om borttagning av data via [Privacy Servicens användargränssnitt](https://privacyui.cloud.adobe.io) (dokumentation [här](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=sv-SE) eller genom att anropa Privacy Servicens API (dokumentation [här](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=sv-SE) och [!DNL API] referens [här](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)).
+Du kan skicka begäranden om borttagning av data via [Privacy Service-gränssnittet](https://privacyui.cloud.adobe.io) (dokumentation [här](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=en) eller genom att anropa Privacy Service API (dokumentation [här](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en) och [!DNL API] referens [här](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)).
 
 Med användargränssnittet i [Privacy Service](https://privacyui.cloud.adobe.io/) kan du skapa nya jobbförfrågningar genom att använda [!UICONTROL Request Builder] eller överföra en [!DNL JSON]-fil.
 
@@ -71,7 +71,7 @@ Läs vår [enhetsbaserade mållista ](assets/AAM-Partners-October2019.xlsx) om d
 
 [!DNL Audience Manager] har stöd för branschövergripande standarder när det gäller hantering av avanmälan. Läs vidare för att få fullständig information om vilka typer av undantag som stöds av [!DNL Audience Manager].
 
-Begäran om dataåtkomst och borttagning hanteras via [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv-SE), men avanmälningsbegäranden stöds för närvarande via [!DNL DCS API]. Läs vidare för att lära dig hur avanmälningen av [!DNL API]-anrop ska se ut.
+Begäran om dataåtkomst och borttagning hanteras via [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en), men avanmälningsbegäranden stöds för närvarande via [!DNL DCS API]. Läs vidare för att lära dig hur avanmälningen av [!DNL API]-anrop ska se ut.
 
 ### Globala förfrågningar om avanmälan
 
@@ -97,8 +97,8 @@ Den globala avanmälningen representerar en avanmälan för [!DNL Audience Manag
    <td colname="col1"> <p>Mobila enheter </p> </td> 
    <td colname="col2"> <p>Se inställningarna för avanmälning och sekretess för: </p> <p> 
      <ul id="ul_78042D6D302F4119A2439BF71F228288"> 
-      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=sv-SE" format="https" scope="external"> Android-enheter </a> </li> 
-      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html?lang=sv-SE" format="https" scope="external"> iOS-enheter </a> </li> 
+      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html" format="https" scope="external"> Android-enheter </a> </li> 
+      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html" format="https" scope="external"> iOS-enheter </a> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 

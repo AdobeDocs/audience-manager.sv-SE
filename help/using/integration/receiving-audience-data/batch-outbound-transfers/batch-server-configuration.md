@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Innan du kan skicka batchdata till tredjepartsleverantörer av innehåll måste du konfigurera integreringen mellan Audience Manager och tredjepartsleverantören av innehåll. Du kan göra detta på två sätt:
 
-## Begär assistentkonfiguration via din Adobe-konsult {#config-consultant}
+## Begär assistentkonfiguration via Adobe konsult {#config-consultant}
 
 Om du arbetar med en Adobe-konsult tar de hand om konfigurationsprocessen åt dig.
 

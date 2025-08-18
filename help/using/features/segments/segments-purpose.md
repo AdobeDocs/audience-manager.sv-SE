@@ -28,19 +28,19 @@ En *`segment`* (eller en *`audience`*) är en uppsättning användare som delar 
 
 ## [!UICONTROL Segment]-komposition
 
-Audience Manager [!UICONTROL segment] är en regel på serversidan som består av enskilda egenskaper eller grupper av egenskaper. Traits består av dataelement som kallas nyckelvärdepar. Förutom regler som du anger på nivån [!UICONTROL segment] innehåller dessa nyckelvärdepar de kriterier som kvalificerar besökare för rätt och [!UICONTROL segment]-medlemskap.
+En Audience Manager [!UICONTROL segment] är en regel på serversidan som består av enskilda egenskaper eller grupper av egenskaper. Traits består av dataelement som kallas nyckelvärdepar. Förutom regler som du anger på nivån [!UICONTROL segment] innehåller dessa nyckelvärdepar de kriterier som kvalificerar besökare för rätt och [!UICONTROL segment]-medlemskap.
 
 ## Överväganden för [!UICONTROL Adobe Analytics] [!UICONTROL Segment]-mappning
 
-När du mappar Adobe Analytics [!UICONTROL segments] eller rapportsviter till din Experience Cloud-organisation skapar Audience Manager automatiskt nya, motsvarande skrivskyddade [!UICONTROL segments] och egenskaper. Du kan inte redigera eller ändra lagringsplatsen för dessa [!UICONTROL segments] från Audience Manager. Alla ändringar du gör i dina mappade Adobe Analytics [!UICONTROL segments] eller rapportsviter visas i Audience Manager.
+När du mappar Adobe Analytics [!UICONTROL segments] eller rapportsviter till din Experience Cloud-organisation skapar Audience Manager automatiskt nya, motsvarande, skrivskyddade [!UICONTROL segments] och egenskaper. Du kan inte redigera eller ändra lagringsplatsen för dessa [!UICONTROL segments] från Audience Manager. Alla ändringar som du gör i dina mappade Adobe Analytics [!UICONTROL segments] eller rapportsviter visas i Audience Manager.
 
 >[!TIP]
 >
->Audience Manager [!UICONTROL segments] skiljer sig från [!DNL Adobe Analytics] [!UICONTROL segments]. Läs [Förstå segment i Analytics och Audience Manager](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html?lang=sv-SE) om du vill ha en detaljerad beskrivning av skillnaderna.
+>Audience Manager [!UICONTROL segments] skiljer sig från [!DNL Adobe Analytics] [!UICONTROL segments]. Läs [Förstå segment i Analytics och Audience Manager](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) om du vill ha en detaljerad beskrivning av skillnaderna.
 
 ## Skapa regelbaserad [!UICONTROL Segments] med [!UICONTROL Segment Builder]
 
-Till skillnad från traditionella pixlar som utlöses som svar på enkla ja/nej-villkor kan du skapa komplexa [!UICONTROL segment]-krav med [!UICONTROL Segment Builder]. Precis som [!UICONTROL traits] utvärderar [!UICONTROL segments] data med [!DNL Boolean] uttryck ([!DNL AND], [!DNL OR], [!DNL NOT]), jämförelseoperatorer (större än, mindre än, lika med osv.) och villkor för senaste och frekvens. De här funktionerna hjälper dig att skapa en fokuserad målgrupp [!UICONTROL segments] som är relevant för dina affärsbehov.
+Till skillnad från traditionella pixlar som utlöses som svar på enkla ja/nej-villkor kan du skapa komplexa [!UICONTROL Segment Builder]-krav med [!UICONTROL segment]. Precis som [!UICONTROL traits] utvärderar [!UICONTROL segments] data med [!DNL Boolean] uttryck ([!DNL AND], [!DNL OR], [!DNL NOT]), jämförelseoperatorer (större än, mindre än, lika med osv.) och villkor för senaste och frekvens. De här funktionerna hjälper dig att skapa en fokuserad målgrupp [!UICONTROL segments] som är relevant för dina affärsbehov.
 
 ## Fördelar
 
@@ -49,7 +49,7 @@ Till skillnad från traditionella pixlar som utlöses som svar på enkla ja/nej-
 * Bygg relevanta, användbara [!UICONTROL segments] med egenskaper från första och tredje part.
 * Skapa sofistikerade och komplexa segmenteringsregler med booleska operatorer, jämförelseuttryck och kriterier för senaste/frekvens.
 * Skicka [!UICONTROL segment]-data till en målpartner.
-* Övervaka prestanda med rapporter från Audience Manager.
+* Övervaka prestanda med Audience Manager-rapporter.
 
 >[!MORELIKETHIS]
 >

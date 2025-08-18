@@ -40,7 +40,7 @@ När du skapar ett [!DNL URL]-mål kan du infoga följande makron i strängen [!
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> %did%</code> </p> </td> 
-   <td colname="col2"> <p>Infogar användarens <span class="keyword"> Audience Manager </span>-ID i mål-URL:en. </p> </td> 
+   <td colname="col2"> <p>Infogar användarens <span class="keyword"> Audience Manager</span>-ID i mål-URL:en. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>%dpid_<i>data source id</i>%</code> </p> </td> 
@@ -49,7 +49,7 @@ När du skapar ett [!DNL URL]-mål kan du infoga följande makron i strängen [!
      <li id="li_32D9F72A7D1543A892DC7E1529E98A96">Datakällans ID: <code> 1</code> </li> 
      <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">Ett internt kund-ID: <code> CustomerABC</code> </li> 
      <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">Deklarerat ID: Partnern vill skicka in dessa värden som deklarerat ID <code> 1:CustomerABC</code>. </li> 
-    </ul> <p>Om du vill göra det med <code>%dpid_<i>data source id</i>%</code> formaterar partnern <span class="keyword"> Audience Manager </span> makrot så här: </p> 
+    </ul> <p>Om du vill göra det med <code>%dpid_<i>data source id</i>%</code> formaterar <span class="keyword"> Audience Manager</span>-partnern makrot så här: </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
     </ul> <p>Makrot ersätter <code> 1</code> med <code> CustomerABC</code>. </p> </td> 
@@ -73,11 +73,11 @@ När du skapar ett [!DNL URL]-mål kan du infoga följande makron i strängen [!
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> %mcid%</code> </p> </td> 
-   <td colname="col2"> <p>Infogar <span class="keyword"> Experience Cloud </span>-ID:t i mål-URL:en. </p> </td> 
+   <td colname="col2"> <p>Infogar <span class="keyword"> Experience Cloud</span>-ID:t i mål-URL:en. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> %region%</code> </p> </td> 
-   <td colname="col2"> <p>Infogar regionen <span class="wintitle">-datainsamlingsservern (DCS)</span> i mål-URL:en. För att minimera fördröjningen omdirigeras de till närmaste <span class="wintitle"> DCS </span>-datacenter när besökaren gör ett HTTP-anrop till <span class="keyword"> Audience Manager </span>. Detta uppnås med DNS, som kan identifiera besökarens plats och dirigera dem till rätt datacenter. </p> </td> 
+   <td colname="col2"> <p>Infogar regionen <span class="wintitle">-datainsamlingsservern (DCS)</span> i mål-URL:en. För att minimera fördröjningen omdirigeras de till närmaste <span class="keyword"> DCS </span>-datacenter när besökaren gör ett HTTP-anrop till <span class="wintitle"> Audience Manager</span>. Detta uppnås med DNS, som kan identifiera besökarens plats och dirigera dem till rätt datacenter. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> %rnd%</code> </p> </td> 

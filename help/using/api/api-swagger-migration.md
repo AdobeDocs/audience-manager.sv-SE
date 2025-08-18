@@ -1,9 +1,9 @@
 ---
-description: Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitlig, korrekt API-dokumentation. Därför skriver vi om vårt API-innehåll i Swagger och flyttar det till en ny plats. Dessa ändringar är avsedda att förbättra din upplevelse av Audience Manager API-koden.
+description: Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitlig, korrekt API-dokumentation. Därför skriver vi om vårt API-innehåll i Swagger och flyttar det till en ny plats. Dessa ändringar är utformade för att förbättra din upplevelse av Audience Manager API-kod.
 seo-description: Here at Audience Manager, we're engineers, developers, and code ninjas just like you. And, like you, we want to work with reliable, accurate API documentation. As a result, we're re-writing our API content in Swagger and moving it to a new location. These changes are designed to help improve your experience with the Audience Manager API code.
 seo-title: Audience Manager API Code Migration
 solution: Audience Manager
-title: API-kodmigrering för Audience Manager
+title: Migrering av Audience Manager API-kod
 uuid: 93cc28c4-4b91-4c79-93d5-ece9bb4cc9d5
 feature: API
 exl-id: 081be8a7-5029-45b1-8fb1-0531d5090fe0
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ---
 
-# API-kodmigrering för Audience Manager {#audience-manager-api-code-migration}
+# Migrering av Audience Manager API-kod {#audience-manager-api-code-migration}
 
 Här på Audience Manager är vi ingenjörer, utvecklare och kodar ninjor precis som du. Och precis som du vill vi arbeta med tillförlitlig, korrekt [!DNL API]-dokumentation. Därför skriver vi om vårt [!DNL API]-innehåll i [!DNL Swagger] och flyttar det till en ny plats. De här ändringarna är utformade för att förbättra din upplevelse av Audience Manager [!DNL API]-koden.
 

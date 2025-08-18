@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # ID-synkronisering för utgående dataöverföringar{#id-synchronization-for-outbound-data-transfers}
 
-Beskriver syntaxen och parametrarna som används i det inledande `HTTP`-anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsdataleverantör. Kontakta Adobe Audience Manager-konsulten innan du försöker synkronisera ditt första ID.
+Beskriver syntaxen och parametrarna som används i det första `HTTP`-anropet för att synkronisera användar-ID:n mellan Audience Manager och en tredjepartsleverantör av data. Kontakta Adobe Audience Manager-konsulten innan du försöker synkronisera ditt första ID.
 
 <!-- c_id_sync_out.xml -->
 
@@ -50,7 +50,7 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <code> <i>&lt;VENDOR_ID&gt;</i> </code> </td> 
-   <td colname="col2">Unikt ID för dataleverantören (tilldelad av <span class="keyword"> Audience Manager </span>). </td> 
+   <td colname="col2">Unikt ID för dataleverantören (tilldelad av <span class="keyword"> Audience Manager</span>). </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i> </code> </td> 

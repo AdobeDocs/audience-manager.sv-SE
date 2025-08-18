@@ -32,8 +32,8 @@ Audience Manager beräknar [!DNL TTL] förfallodatum för traits med 1 dag [!DNL
 
 `24 + (24 - Hour of the day the trait was realized, in UTC)`
 
-* **Exempel 1**: Ett trait realiserades vid 1:00 [!DNL UTC], med 1 dag [!DNL TTL]. [!DNL TTL] går ut 24 + 24 - 1 = 47 timmar senare.
-* **Exempel 2**: Ett trait realiserades vid 23:00 [!DNL UTC], med en 1 dag [!DNL TTL]. [!DNL TTL] upphör att gälla 24 + 24 - 23 = 25 timmar senare.
+* **Exempel 1**: Ett trait realiserat vid 1:00 [!DNL UTC], med 1 dag [!DNL TTL]. [!DNL TTL] går ut 24 + 24 - 1 = 47 timmar senare.
+* **Exempel 2**: Ett trait realiserat vid 23:00 [!DNL UTC], med 1 dag [!DNL TTL]. [!DNL TTL] upphör att gälla 24 + 24 - 23 = 25 timmar senare.
 
 ## [!DNL TTL] och släpper ut ur ett segment
 

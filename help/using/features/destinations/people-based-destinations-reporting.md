@@ -1,5 +1,5 @@
 ---
-description: Folk-baserade destinationer introducerar begreppet delningsbara målgrupper för Audience Manager. Detta mått hjälper dig att förstå hur många av de hash-kodade e-postadresserna som Audience Manager kan dela med målplattformen.
+description: People-Based Destinations introducerar begreppet Shareable Audiences till Audience Manager. Detta mått hjälper dig att förstå hur många hash-kodade e-postadresser Audience Manager kan dela med målplattformen.
 seo-description: People-Based Destinations introduce the notion of Shareable Audiences to Audience Manager. This metric helps you understand how many of the hashed email addresses Audience Manager can share with the destination platform.
 seo-title: Shareable Audiences
 solution: Audience Manager
@@ -18,7 +18,7 @@ ht-degree: 0%
 >[!IMPORTANT]
 >Den här artikeln innehåller produktdokumentation som ska hjälpa dig att konfigurera och använda den här funktionen. Ingenting i det här är juridisk rådgivning. Vänligen kontakta ditt eget juridiska ombud för att få juridisk rådgivning.
 
-[!DNL People-Based Destinations] för begreppet [!DNL Shareable Audiences] till Audience Manager. Detta mått hjälper dig att förstå hur många av de hash-kodade e-postadresserna som Audience Manager kan dela med målplattformen.
+[!DNL People-Based Destinations] överför begreppet [!DNL Shareable Audiences] till Audience Manager. Detta mått hjälper dig att förstå hur många hash-kodade e-postadresser Audience Manager kan dela med målplattformen.
 
 [!DNL Shareable Audiences] är ett mått som hjälper dig att tolka målgruppsdata i kontexten för [!DNL People-Based Destinations]. Det här måttet visas på sidan [!UICONTROL Destinations] och på sidan [!UICONTROL Segment].
 

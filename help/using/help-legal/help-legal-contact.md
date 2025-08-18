@@ -9,7 +9,7 @@ exl-id: 02c80394-c5ed-4963-8543-4585c0c289c6
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
@@ -36,6 +36,6 @@ Published by Adobe Systems Incorporated.
 
 [Användningsvillkor](https://www.adobe.com/se/legal/terms.html) | [Sekretesscenter](https://www.adobe.com/se/privacy.html)
 
-Adobe and the Adobe logo are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. A trademark symbol (®, ™, etc.) denotes an Adobe trademark.
+Adobe and the Adobe logo are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. Ett varumärkessymbol (®, ™ osv.) betecknar ett Adobe-varumärke.
 
-All third-party trademarks are the property of their respective owners. Updated Information/Additional Third Party Code Information available at [https://www.adobe.com/go/thirdparty_se](https://www.adobe.com/se/products/eula/third_party/).
+All third-party trademarks are the property of their respective owners. Updated Information/Additional Third Party Code Information available at [https://www.adobe.com/go/thirdparty](https://www.adobe.com/se/products/eula/third_party/).

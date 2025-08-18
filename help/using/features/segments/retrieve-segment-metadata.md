@@ -26,7 +26,7 @@ Som datapartent är ni antagligen vana att hämta målgruppsmetadata från era k
 
 [!DNL Audience Manager] innehåller en uppsättning [REST API:er](../../api/rest-api-main/rest-api-main.md) som gör att du kan hämta segmentmetadata automatiskt. Med [!DNL API] kan du skapa jobb som hämtar segmentmetadata med schemalagda intervall eller automatiskt när du bearbetar [!DNL Audience Manager]-data och hittar ett nytt segment-ID. Se stegen nedan för mer information.
 
-### Steg 1: Granska API:erna för Audience Manager
+### Steg 1: Granska Audience Manager API:er
 
 Avsnittet [Komma igång med REST API:er](../../api/rest-api-main/aam-api-getting-started.md) innehåller information om allmänna krav, autentisering, tillgängliga metoder osv. Det här är en bra plats att börja på om du inte har arbetat med [!DNL Audience Manager] [!DNL API] tidigare.
 
@@ -56,7 +56,7 @@ När du har slutfört de föregående stegen kan du använda en `GET`-metod för
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> destinationMappingId</code> </p> </td> 
-   <td colname="col2"> <p>Segment-ID:t för <span class="keyword"> Audience Manager</span>. </p> </td> 
+   <td colname="col2"> <p>Segment-ID för <span class="keyword"> Audience Manager</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> elementName</code> </p> </td> 

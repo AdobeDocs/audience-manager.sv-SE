@@ -3,7 +3,7 @@ description: En sammanfattning av den provtagningsmetod som används för vissa 
 seo-description: A summary of the sampling methodology used for some reports, sampling error rates, and a list of reports that return information based on sampled data.
 seo-title: Data Sampling and Error Rates in Selected Audience Manager Reports
 solution: Audience Manager
-title: Datainsamling och felfrekvens i rapporter för markerade Audience Manager
+title: Datainsamling och felfrekvens i utvalda Audience Manager-rapporter
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 feature: Reporting Reference
 exl-id: 0b7f9423-0859-4fa8-926b-e4858eed2294
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ---
 
-# Datainsamling och felfrekvens i rapporter för markerade Audience Manager{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
+# Datainsamling och felfrekvens i utvalda Audience Manager-rapporter{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
 
 En sammanfattning av den provtagningsmetod som används för vissa rapporter, felfrekvenser vid provtagning och en lista över rapporter som returnerar information baserat på provdata.
 
@@ -59,7 +59,7 @@ Observera att våra tester och modeller visar att felfrekvensen *minskar* i en o
 
 ## Använda metoden för Minhash-provtagning {#minhash}
 
-Baserat på [Minhash](https://en.wikipedia.org/wiki/MinHash) -samplingsmetoden använder Audience Manager en ny metod för att beräkna trait- och segmentuppskattare ovanpå en One Permutation Hashing-dataskiss. Den här nya metoden ger en lägre varians än standarduppskattaren för Jaccard-likhet. Se avsnittet nedan för de rapporter som använder denna metod.
+Baserat på [Minhash](https://en.wikipedia.org/wiki/MinHash) -samplingsmetoden använder Audience Manager en ny metod för att beräkna trait- och segmentuppskattare ovanpå en enpermutation-hash-skiss. Den här nya metoden ger en lägre varians än standarduppskattaren för Jaccard-likhet. Se avsnittet nedan för de rapporter som använder denna metod.
 
 <!--
 

@@ -1,5 +1,5 @@
 ---
-description: Metoder som gör att du kan visa den vanliga taxonomin för Audience Manager. Detta valfria klassificeringssystem organiserar egenskaper i branschstandardkategorier.
+description: Metoder som gör att du kan visa Audience Manager vanliga taxonomi. Detta valfria klassificeringssystem organiserar egenskaper i branschstandardkategorier.
 seo-description: Methods that let you view the Audience Manager common taxonomy. This optional classification scheme organizes traits into industry standard categories.
 seo-title: Taxonomic API Methods
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Metoder för taxonomiska API {#taxonomic-api-methods}
 
-Metoder som gör att du kan visa den vanliga taxonomin för Audience Manager. Detta valfria klassificeringssystem organiserar egenskaper i branschstandardkategorier.
+Metoder som gör att du kan visa Audience Manager vanliga taxonomi. Detta valfria klassificeringssystem organiserar egenskaper i branschstandardkategorier.
 
 <!-- c_rest_api_taxonomy.xml -->
 

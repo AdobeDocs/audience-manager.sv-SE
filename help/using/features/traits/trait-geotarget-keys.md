@@ -1,5 +1,5 @@
 ---
-description: Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med geografiska variabler i alla egenskaper i ditt Audience Manager-konto.
+description: Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med geografiska variabler i alla egenskaper på ditt Audience Manager-konto.
 seo-description: Describes the common platform-level key-value pairs you can use to target users with geographic variables across all properties in your Audience Manager account.
 seo-title: Geotargeting With Platform-level Keys
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # Geotargeting med tangenter på plattformsnivå {#geotargeting-with-platform-level-keys}
 
-Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med geografiska variabler i alla egenskaper i ditt Audience Manager-konto.
+Beskriver de vanliga nyckelvärdepar på plattformsnivå som du kan använda för att rikta in användare med geografiska variabler i alla egenskaper på ditt Audience Manager-konto.
 
 <!-- c_tb_platform_vars.xml -->
 

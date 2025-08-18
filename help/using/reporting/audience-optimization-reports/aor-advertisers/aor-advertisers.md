@@ -1,9 +1,9 @@
 ---
-description: Audience Optimization for Advertisers kan hjälpa er att identifiera potentiella prestationsmöjligheter för Audience Manager-segment i era betalda mediekampanjer. Dessa rapporter kombinerar kampanjdata på loggnivå med Audience Manager segmentstatistik för att kunna skapa segmentbaserade optimeringar och en effektiv kanalmix.
+description: Audience Optimization for Advertisers kan hjälpa er att identifiera potentiella prestandamöjligheter för Audience Manager-segment i era betalda mediekampanjer. Dessa rapporter kombinerar kampanjresultatdata på log-nivå med Audience Manager segmentstatistik för att skapa segmentbaserade optimeringar och en effektiv kanalmix.
 seo-description: Audience Optimization for Advertisers can help you identify potential performance opportunities for Audience Manager segments across your paid media campaigns. These reports combine log-level campaign performance data with Audience Manager segment metrics to inform segment-centric optimizations and an effective channel mix.
 seo-title: Audience Optimization for Advertisers
 solution: Audience Manager
-title: Audience Optimization för annonsörer
+title: Audience Optimization for Advertisers
 uuid: 852d550e-3c7f-4750-9abc-365c3a6f7883
 feature: Audience Optimization Reports
 exl-id: 13595778-3d3a-4c83-a84f-4bc3af1ee367

@@ -21,5 +21,5 @@ Det här avsnittet innehåller teknisk dokumentation om systemfunktioner, datain
 * [Systemkomponenter](/help/using/reference/system-components/components-overview.md)
 * [Beta Environment](/help/using/reference/beta-environment.md)
 * [Ordlista](/help/using/reference/aam-glossary.md)
-* [Index för ID:n i Audience Manager](/help/using/reference/ids-in-aam.md)
+* [Index för ID i Audience Manager](/help/using/reference/ids-in-aam.md)
 * [Signaler, traits och segment](/help/using/reference/signal-trait-segment.md)

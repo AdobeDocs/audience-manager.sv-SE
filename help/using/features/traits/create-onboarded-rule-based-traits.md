@@ -56,11 +56,11 @@ I [!UICONTROL Trait Builder] kan du med [!UICONTROL Basic Information]-inställn
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Data Source</span></b> </td> 
-   <td colname="col2"> Associerar egenskapen med en viss DataProvider. Obligatoriskt. <p>Använd den första listrutan för att filtrera mellan Audience Manager och datakällor, Adobe Analytics rapportsviter eller båda. Använd sedan den andra listrutan för att välja datakälla.</p><p> Om du inte använder Adobe Analytics rapportprogramsviter är datakälltypväljaren inaktiverad och standardinställningen är endast Audience Manager datakällor.</p>  </td> 
+   <td colname="col2"> Associerar egenskapen med en viss DataProvider. Obligatoriskt. <p>Använd den första listrutan för att filtrera mellan Audience Manager datakällor, Adobe Analytics rapporteringsprogram eller båda. Använd sedan den andra listrutan för att välja datakälla.</p><p> Om du inte använder Adobe Analytics rapportprogramsviter är datakälltypväljaren inaktiverad och standardinställningen är endast Audience Manager datakällor.</p>  </td> 
   </tr>
    <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Händelsetyp </span></b> </td> 
-   <td colname="col2"> Tilldelar egenskapen till en typ eller kategori, vanligtvis enligt funktion (t.ex. konvertering, besökare, partner, sidvy). Valfritt. <p> Mer information om hur du skapar konverteringsegenskaper finns i videon <a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html?lang=sv-SE">Skapa konverteringsegenskaper i Audience Manager</a>. </p></td> 
+   <td colname="col2"> Tilldelar egenskapen till en typ eller kategori, vanligtvis enligt funktion (t.ex. konvertering, besökare, partner, sidvy). Valfritt. <p> Mer information om hur du skapar konverteringsegenskaper finns i videon <a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">Skapa konverteringsegenskaper i Audience Manager</a>. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> Integrationskod </span></b> </td> 

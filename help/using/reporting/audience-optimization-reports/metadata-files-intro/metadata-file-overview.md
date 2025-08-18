@@ -34,7 +34,7 @@ Händelseanropet ordnar information i uppsättningar med definierade nyckelvärd
 
 Metadatafilen krävs för att koppla ett numeriskt ID till ett läsbart namn. Anta att ett händelseanrop innehåller ett kreativt ID i ett nyckelvärdepar som det här: `d_creative:1234`. Utan en metadatafil visas den här kreativa sidan som 1 234 i en alternativmeny.
 
-En korrekt formaterad metadatafil kan dock knyta denna kreativitet till ett verkligt namn som&quot;Advertiser Creative A&quot;, ett namn som du kan läsa och känna igen i en rapport.
+En korrekt formaterad metadatafil kan dock knyta denna kreativitet till ett verkligt namn som&quot;Advertiser Creative A&quot;, som är ett namn som du kan läsa och känna igen i en rapport.
 
 ### När behöver du en metadatafil
 
@@ -73,7 +73,7 @@ I följande tabell visas nyckelvärdepar som innehåller data som används av [!
    <td colname="col2"> <p> <code>d_campaign = <i>campaign ID</i></code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Kreativ </p> </td> 
+   <td colname="col1"> <p>Creative </p> </td> 
    <td colname="col2"> <p> <code>d_creative = <i>creative ID</i></code> </p> </td> 
   </tr> 
   <tr> 
@@ -129,7 +129,7 @@ Se [Namngivningskonventioner för metadatafiler](../../../reporting/audience-opt
 
 ### Filinnehåll
 
-I det här exemplet återspeglar filinnehållet de kreativa ID:n och kampanj-ID:n som skickades i eventsamtalet. Det nya elementet här har ett läsbart namn. När filen har bearbetats visas namnet i den här filen som ett alternativ på menyn Creative i en [!UICONTROL Audience Optimization]-rapport.
+I det här exemplet återspeglar filinnehållet de kreativa ID:n och kampanj-ID:n som skickades i eventsamtalet. Det nya elementet här har ett läsbart namn. När filen har bearbetats visas namnet i den här filen som ett alternativ på Creative-menyn i en [!UICONTROL Audience Optimization]-rapport.
 
 ![innehåll i en metadatafil](/help/using/reporting/audience-optimization-reports/metadata-files-intro/assets/metadata_file_contents.png)
 

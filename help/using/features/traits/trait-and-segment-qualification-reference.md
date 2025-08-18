@@ -1,5 +1,5 @@
 ---
-description: Trait-kvalificering, eller trait-implementering, behandlas annorlunda i Audience Manager, beroende på trait-typ. Se tabellen nedan för detaljerad information om kvalificering av trait.
+description: Trait-kvalificering, eller trait-implementering, behandlas annorlunda i Audience Manager beroende på trait-typ. Se tabellen nedan för detaljerad information om kvalificering av trait.
 keywords: Trait-kvalificering,Trait Realization,Unique Trait Realizations,UTR,Total Trait Population,TTP
 seo-description: Trait qualification, or trait realization, is treated differently in Audience Manager, depending on trait type. See the table below for detailed information on trait qualification.
 seo-title: Trait Qualification Reference
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Referens för egenskaper för trait och segment {#trait-qualification-reference}
 
-Trait-kvalificering, eller trait-implementering, behandlas annorlunda i Audience Manager, beroende på trait-typ. Mer information om kvalificering av trait-typ finns i [Trait Qualification by Trait Type](#trait-type).
+Trait-kvalificering, eller trait-implementering, behandlas annorlunda i Audience Manager beroende på trait-typ. Mer information om kvalificering av trait-typ finns i [Trait Qualification by Trait Type](#trait-type).
 
 Mer information om segmentkvalificering finns i [Population för realtidssegment och populering av totalt segment](#real-time-segment) .
 

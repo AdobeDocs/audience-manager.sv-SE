@@ -1,5 +1,5 @@
 ---
-description: Signaler är den minsta informationsenheten inom Audience Manager. De representerar användarinteraktioner eller användaraktivitet i dina onlineegenskaper och skickas vidare till Audience Manager för att användas i varumärkesregler.
+description: Signaler är den minsta informationsenheten inom Audience Manager. De representerar användarinteraktioner eller användaraktivitet på dina onlineegenskaper och skickas vidare till Audience Manager för att användas i varumärkesregler.
 seo-description: Signals are the smallest unit of information within Audience Manager. They represent user interactions or user activity on your online properties, and get passed on to Audience Manager to be used in trait rules.
 seo-title: Understanding Signals
 title: Signaler
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # Signaler
 
-Signaler är den minsta informationsenheten inom Audience Manager. De representerar användarinteraktioner eller användaraktivitet i onlineegenskaperna och skickas vidare till Audience Manager för att användas i varumärkesregler.
+Signaler är den minsta informationsenheten inom Audience Manager. De representerar användarinteraktioner eller användaraktivitet på dina onlineegenskaper och skickas vidare till Audience Manager för att användas i varumärkesregler.
 
 [!DNL Audience Manager] använder nyckelvärdepar för att representera signaler. Följande signal kan till exempel indikera att en besökare har nått en webbsida som innehåller elektronik:
 
@@ -38,7 +38,7 @@ Signaler är den minsta informationsenheten inom Audience Manager. De represente
 
 ## Uppdateringsfrekvens för signaldata
 
-På grund av den stora mängd data som Audience Manager dagligen bearbetar, uppdaterar [!UICONTROL Data Explorer] de visade signaldata med fasta tidsintervall, beroende på signaltypen:
+På grund av den stora mängd data som Audience Manager bearbetar dagligen, uppdaterar [!UICONTROL Data Explorer] de visade signaldata med fasta tidsintervall, beroende på signaltypen:
 
 * Signaldata i realtid (hanterbara loggfiler, [!DNL Adobe Analytics]-data och allmänna onlinedata) uppdateras var 4:e till 6:e timme.
 * Signaldata uppdateras var 24: e timme.

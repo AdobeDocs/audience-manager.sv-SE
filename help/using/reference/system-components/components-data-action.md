@@ -69,7 +69,7 @@ Om du vill optimera trafiken mellan [!UICONTROL IRIS] och segmentmål skickar [!
 
 1. **Nytt segmentfel**: När en enhet inte längre är kvalificerad för ett segment skickar [!UICONTROL IRIS] alla segmentkvalifikationer och diskvalificeringar som är kopplade till den enheten till alla mål som är mappade till de här segmenten.
 
-1. **Målmappningen uppdateras**: När en målmappning uppdateras skickar [!UICONTROL IRIS] alla segment som är kopplade till en enhet till alla mål som är mappade till dessa segment nästa gång Audience Manager ser enheten.
+1. **Målmappningen uppdateras**: när en målmappning uppdateras skickar [!UICONTROL IRIS] alla segment som är kopplade till en enhet till alla mål som är mappade till dessa segment nästa gång Audience Manager ser enheten.
 
 1. **Enhetsdiagramuppdateringar**: När ett enhets-ID läggs till eller tas bort från enhetsdiagrammet som används för att utvärdera ett segment, skickar [!UICONTROL IRIS] alla segment som är kopplade till den enheten till alla mål som är mappade till dessa segment nästa gång Audience Manager ser enheten.
 

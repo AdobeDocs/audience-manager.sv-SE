@@ -36,7 +36,7 @@ Datacentret för kanten [!DNL Audience Manager] innehåller:
 
 * **Belastningsutjämnare:** Hantera ojämna datoranvändnings-/bearbetningskrav som är inbyggda i Internet-program. Dessa balanserare förhindrar att serverkluster överbelastas medan andra förblir inaktiva.
 
-I följande diagram visas datacentermiljön i Audience Manager.
+I följande diagram visas Audience Manager edge data center-miljö.
 
 ![](assets/edge_data_center.png)
 

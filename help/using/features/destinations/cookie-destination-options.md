@@ -1,5 +1,5 @@
 ---
-description: I Destination Builder innehåller konfigurationsavsnittet fälten Cookie-domän och Publish Data To. Med dessa kan du skapa regler som avgör om en destination ställer in en cookie eller returnerar en cookie. Cookie Domain och Publish Data Att arbeta oberoende av varandra och är valfritt. Du kan skapa en cookie-destination utan att använda någon av dem.
+description: I Destination Builder innehåller konfigurationsavsnittet fälten Cookie-domän och Publicera data till. Med dessa kan du skapa regler som avgör om en destination ställer in en cookie eller returnerar en cookie. Cookie-domän och Publicera data för att fungera oberoende av varandra och är valfria. Du kan skapa en cookie-destination utan att använda någon av dem.
 seo-description: In Destination Builder, the Configuration section contains the Cookie Domain and Publish Data To fields. These let you create rules to determine if a destination sets a cookie or returns a cookie. Cookie Domain and Publish Data To work independently of each other and are optional. You can create a cookie destination without using either of them.
 seo-title: Optional Settings for Cookie Destinations
 solution: Audience Manager
@@ -90,7 +90,7 @@ De här exemplen visar om [!DNL Audience Manager] kommer att ange en cookie utif
  </tbody> 
 </table>
 
-## Publish-data till {#publish-data-to}
+## Publicera data till {#publish-data-to}
 
 [!UICONTROL Publish Data To]-inställningarna returnerar en cookie om domänen uppfyller villkoren som anges i de alternativ du väljer. Alternativen är:
 

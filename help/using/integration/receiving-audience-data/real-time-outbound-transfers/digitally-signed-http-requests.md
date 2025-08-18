@@ -31,7 +31,7 @@ Med hjälp av en privat nyckel som du har angett och som delas med [!DNL Audienc
 
 ## Information du behöver ange {#info-to-provide}
 
-Kontakta din [!DNL Audience Manager]-konsult och ange följande för ett `HTTP(S)` server-till-server-mål i realtid:
+Kontakta din `HTTP(S)`-konsult och ange följande för ett [!DNL Audience Manager] server-till-server-mål i realtid:
 
 * Nyckeln som användes för att signera begäran.
 * Namnet på rubriken `HTTP(S)` som ska innehålla den genererade signaturen (X-Signature i exempelrubriken nedan).

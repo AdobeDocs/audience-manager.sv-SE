@@ -1,5 +1,5 @@
 ---
-description: Med alternativen för sammanfogningsregeln kan du styra vilken typ av data Audience Manager använder för segmentering. En sammanfogningsregel kan innehålla enhetsprofiler som har mappats av enhetsdiagrammet Profile Link och/eller andra tredjepartsleverantörer av enhetsdiagram som är integrerade med Audience Manager. Du kan skapa maximalt fyra regler för profilsammanslagning.
+description: Med alternativen för sammanfogningsregeln kan du styra vilken typ av data som Audience Manager använder för segmentering. En sammanfogningsregel kan innehålla enhetsprofiler som mappats av enhetsdiagrammet Profile Link och/eller andra tredjepartsleverantörer av enhetsdiagram som är integrerade med Audience Manager. Du kan skapa maximalt fyra regler för profilsammanslagning.
 seo-description: The merge rule options let you control the type of data Audience Manager uses for segmentation. A merge rule can include device profiles mapped by the Profile Link device graph and/or other, third-party device graph providers who are integrated with Audience Manager. You can create a maximum of 4 Profile Merge Rules.
 seo-title: Profile Merge Rule Options Defined
 solution: Audience Manager
@@ -72,11 +72,11 @@ Med [!UICONTROL Cross-Device Options] kan du välja autentiserade och oautentise
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> senast autentiserade profiler</span></b> </p> </td> 
-   <td colname="col2"> <p>Uppmanar <span class="keyword"> Audience Manager</span> att läsa data från den autentiserade profilen för den användare som senast loggade in på enheten. </p> <p>Om det här alternativet är markerat skriver <span class="keyword"> Audience Manager</span> inte nya egenskapsdata till den autentiserade profilen om användaren är anonym. Vid autentisering skrivs nya trait-data till användarens autentiserade profil. </p> </td>
+   <td colname="col2"> <p>Uppmanar <span class="keyword"> Audience Manager</span> att läsa data från den autentiserade profilen för den användare som senast loggade in på enheten. </p> <p>När du väljer det här alternativet skriver <span class="keyword"> Audience Manager</span> inte nya egenskapsdata till den autentiserade profilen om användaren är anonym. Vid autentisering skrivs nya trait-data till användarens autentiserade profil. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> Alla enhetsövergripande profiler</span></b> </p> </td> 
-   <td colname="col2"> <p>Uppmanar Audience Manager att läsa data från alla enhetsövergripande profiler, oavsett autentiseringsstatus. Det här alternativet är endast tillgängligt för Audience Manager-kunder som har köpt tillägget Personer-baserade destinationer.</p> </td>
+   <td colname="col2"> <p>Uppmanar Audience Manager att läsa data från alla enhetsövergripande profiler, oavsett autentiseringsstatus. Det här alternativet är endast tillgängligt för Audience Manager-kunder som har köpt tillägget Personbaserade destinationer.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -116,7 +116,7 @@ Med [!UICONTROL Device Options] kan du välja vilken typ av *`device profile`* s
      <ul id="ul_5BA0D940BA15484FADF134A5A73815D5"> 
       <li id="li_389ACEBBF79A47499B6119B0F9CB3B5D"> Sannolikhetsdata och/eller deterministiska data. </li> 
       <li id="li_E8606D3871A145A68E87BDC3554AC4EF">Uppgifter på individ- eller hushållsnivå. </li> 
-     </ul> </p> <p>Om du vill använda de här alternativen måste du vara kund till en enhetsdiagram som redan är integrerad med <span class="keyword"> Audience Manager</span>. Kontakta din kontoansvarige om du vill ha mer information eller vill komma igång. </p> </td>
+     </ul> </p> <p>Om du vill använda de här alternativen måste du vara kund till en enhetsgraf som redan är integrerad med <span class="keyword"> Audience Manager</span>. Kontakta din kontoansvarige om du vill ha mer information eller vill komma igång. </p> </td>
   </tr>
  </tbody>
 </table>

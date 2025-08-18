@@ -26,8 +26,8 @@ I artiklarna nedan finns en översikt över hur du integrerar [!DNL Google Ad Ma
 
 * [Ändra GPT-API-anropet setTargeting](/help/using/integration/gpt-aam-destination/gpt-aam-modify-api.md)
 
-  Lägg till en if-sats för att kontrollera om det finns Audience Manager-cookies innan du anropar Google Publisher-taggen .setTargeting-metoden.
+  Lägg till en if-programsats för att kontrollera Audience Manager-cookies innan du anropar Google Publisher-taggen .setTargeting-metoden.
 
-* [Audience Manager Code for Google Publisher Tags](/help/using/integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
+* [Audience Manager Code for Google Publisher-taggar](/help/using/integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
 
   AamGpt är en JavaScript-funktion som läser Audience Manager cookie-data och skickar den informationen till Google Publisher-taggar.

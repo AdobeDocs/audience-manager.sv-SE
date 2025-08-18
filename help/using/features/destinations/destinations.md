@@ -12,7 +12,7 @@ exl-id: f880bb18-057a-494d-82bf-69fc9f34781f
 source-git-commit: 5d62ecabfe66faa024f8e89149e47dd76d1bba86
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 19%
+ht-degree: 18%
 
 ---
 
@@ -26,7 +26,7 @@ I Audience Manager är en [!UICONTROL destination] ett tredjepartssystem (annons
 
 Med [!UICONTROL Destinations] och [!UICONTROL Destination Builder] kan du skapa [!UICONTROL destinations] och skicka information om segmenterade användare till din datapartner. Detta hjälper dig att:
 
-* **Protect-datavärde:** I stället för att skicka alla användardata till en [!UICONTROL destination] kan du med [!UICONTROL Destination Builder] endast dela specifik information om kvalificerade användare.
+* **Skydda datavärde:** I stället för att skicka alla användardata till en [!UICONTROL destination] kan du med [!UICONTROL Destination Builder] endast dela specifik information om kvalificerade användare.
 * **Vidta åtgärder för dina data:** Genom att skicka data till en [!UICONTROL destination] -partner kan de snabbt utveckla och inrikta sig på kvalificerade målgruppssegment.
 * **Minska den tekniska overheadkostnaden:** Affärsanvändare kan konfigurera [!UICONTROL destinations] säkert i gränssnittet [!UICONTROL Destination Builder]. Detta minskar tiden som krävs för testning före driftsättning. Med [!UICONTROL Destination Builder] kan du skapa, hantera och ta bort [!UICONTROL destinations] när ditt företags behov ändras, helt utan att behöva gå igenom en lång utvecklingscykel.
 
@@ -50,6 +50,6 @@ Exemplen i följande tabell kan hjälpa dig att förstå när du ska använda en
 | [!UICONTROL Destination]-typ | Används vanligen vid | Exempel | Överväganden |
 |--- |--- |--- |--- |
 | **[!UICONTROL Adobe Experience Cloud Destinations]** | Ni måste skicka data till andra Adobe Experience Cloud-lösningar. | Skicka data till Adobe Analytics. |  |
-| **[!UICONTROL People-Based Destinations]** | Ni måste skicka målgruppssegment till personbaserade miljöer som Facebook. | Leverera personaliserade erbjudanden till befintliga kunder utifrån deras inköpshistorik | Målgruppsanpassning görs med hjälp av hash-identifierare. Se [Personbaserade mål](people-based-destinations-overview.md). |
+| **[!UICONTROL People-Based Destinations]** | Ni måste skicka målgruppssegment till personbaserade miljöer, som Facebook. | Leverera personaliserade erbjudanden till befintliga kunder utifrån deras inköpshistorik | Målgruppsanpassning görs med hjälp av hash-identifierare. Se [Personbaserade mål](people-based-destinations-overview.md). |
 | **[!UICONTROL Device-Based Destinations]** (**Server-till-server**) | <ul><li>Omedelbar dataöverföring krävs inte.</li><li>Samla in data för att bygga upp en stor målgruppspool med kvalificerade användare.</li></ul> | Samla in data över tid (timmar eller dagar) för att använda dem i en kampanj som ska köras vid ett senare datum. | <ul><li>Överför data om nya och tidigare webbplatsbesökare. </li><li>Besökarna behöver inte ses igen för att kvalificera sig för andra segment.</li></ul> |
 | **[!UICONTROL Custom Destinations]** (**URL** eller **cookie**) | Ni måste överföra data omedelbart så att en destination kan vidta åtgärder mot en kvalificerad användare direkt. | Skicka data från en biljettinköpsplats. Använd en [!UICONTROL URL] eller [!UICONTROL cookie destination] för att kvalificera användaren och omedelbart återskapa målet. | <ul><li>Överför endast data om nya besökare. </li><li>Besökarna måste ses igen för att bli kvalificerade för segmentet.</li></ul> |

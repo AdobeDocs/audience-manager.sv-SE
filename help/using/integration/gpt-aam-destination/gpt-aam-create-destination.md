@@ -10,7 +10,7 @@ exl-id: 26373826-de06-49e5-82fd-bb6588a73fb9
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Du kan skicka kvalificerade segment till [!DNL Google Ad Manager] via en klienti
 
 ## Destinationer
 
-I Audience Manager är en *`destination`* vilket annat system som helst (annonsserver, [!DNL DSP], annonsnätverk osv.) som du vill dela data med. [!UICONTROL Destination Builder] innehåller de verktyg som du kan använda för att skapa och hantera dessa dataleveransprocesser. Målfunktionerna för Audience Manager finns i *[!UICONTROL Audience Data]>[!UICONTROL Destinations]*. Kom igång genom att klicka på **[!UICONTROL Add New Destination]** och följa stegen nedan.
+I Audience Manager är en *`destination`* ett annat system (annonsserver, [!DNL DSP], annonsnätverk osv.) som du vill dela data med. [!UICONTROL Destination Builder] innehåller de verktyg som du kan använda för att skapa och hantera dessa dataleveransprocesser. Audience Manager målfunktioner finns i *[!UICONTROL Audience Data]>[!UICONTROL Destinations]*. Kom igång genom att klicka på **[!UICONTROL Add New Destination]** och följa stegen nedan.
 
 ## Grundläggande information
 

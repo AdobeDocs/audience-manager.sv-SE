@@ -26,4 +26,4 @@ Ta emot målgruppsdata från Audience Manager.
 
 * [Batchutgående dataöverföringar](batch-outbound-transfers/batch-outbound-overview.md)
 
-  Audience Manager skickar batchdata till tredjepartsleverantörer av innehåll enligt dessa specifikationer.
+  Audience Manager skickar batchdata till tredjepartsleverantörer enligt dessa specifikationer.

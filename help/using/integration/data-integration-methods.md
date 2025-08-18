@@ -31,7 +31,7 @@ Kom ihåg att [skapa egenskaper](../features/traits/create-onboarded-rule-based-
 
 ## Användningsexempel för integrering {#integration-use-cases}
 
-En sammanfattning av dataintegreringsmetoderna i Audience Manager samt för- och nackdelar med dem.
+En sammanfattning av Audience Manager dataintegreringsmetoder, samt för- och nackdelar.
 
 ### Integreringar i realtid [!DNL Server-to-Server]
 
@@ -47,7 +47,7 @@ Dataintegrering i realtid av [!DNL server-to-server] synkroniserar snabbt använ
     <li id="li_1737EBB1AD8844BD87E736BB4D8080EF">Gör att du kan kvalificera användare för segment utan att visa dem igen på sidan, i en videospelare osv. </li>
     <li id="li_1C1F346CB7BD40508AA5A6918C6B8514"> Minskar antalet HTTP-anrop från sidan. Färre samtal hjälper till att bevara användarupplevelsen. </li>
     <li id="li_046BF4568B104F53A0E5372568C957CD">Hjälper er med tidskänslig målinriktning så att ni snabbt kan vidta åtgärder mot en kvalificerad användare. </li>
-    <li id="li_70F7AB19AC5D4A9AB80216A2B05163B8">Användbart när du går över till en DSP för målinriktning utanför webbplatsen. </li>
+    <li id="li_70F7AB19AC5D4A9AB80216A2B05163B8">Användbart när du går över till en DSP för målinriktning utomlands. </li>
    </ul></td>
  </tr>
  <tr class="strow">
@@ -77,7 +77,7 @@ En [!DNL server-to-server]-batchintegrering paketerar data och skickar dem till 
 
 ### Realtidsanrop
 
-Realtidsanrop utbyter data med Audience Manager direkt när en användare besöker er webbplats eller vidtar åtgärder på sidan. Med den här metoden får målgruppssystem den senaste informationen om segmentkvalificering och kan ta hänsyn till den informationen vid beslut om innehåll eller annonsleverans. Den här processen fungerar även med utgivarannonsservrar där vi uppdaterar kvalificerade segment till en cookie som läses in i ett annonsanrop som nyckelvärdepar. För närvarande använder Audience Manager realtidsanrop för integrering med [!DNL Adobe Target] och andra innehållshanteringssystem.
+Realtidsanrop utbyter data med Audience Manager omedelbart när en användare besöker er webbplats eller vidtar åtgärder på sidan. Med den här metoden får målgruppssystem den senaste informationen om segmentkvalificering och kan ta hänsyn till den informationen vid beslut om innehåll eller annonsleverans. Den här processen fungerar även med utgivarannonsservrar där vi uppdaterar kvalificerade segment till en cookie som läses in i ett annonsanrop som nyckelvärdepar. För närvarande använder Audience Manager realtidsanrop för integrering med [!DNL Adobe Target] och andra innehållshanteringssystem.
 
 <table> 
  <tr>
@@ -139,7 +139,7 @@ Integreringen av data i realtid fungerar på följande sätt:
 1. Audience Manager läser in en Iframe och anropar [!UICONTROL Data Collection Server] ([!DNL DCS]).
 1. [!DNL DCS] anropar tredjepartsservern (i realtid) för att kontrollera om leverantören har någon segmentinformation om användaren.
 1. Den tredje parten returnerar segmentinformation om den användaren till Audience Manager.
-1. Audience Manager infogar segmentinformation och gör den tillgänglig för målinriktning.
+1. Audience Manager importerar segmentinformation och gör den tillgänglig för målinriktning.
 
 ![](assets/rt_reduce70.png)
 

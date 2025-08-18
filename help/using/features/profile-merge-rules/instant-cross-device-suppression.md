@@ -1,5 +1,5 @@
 ---
-description: Instant Cross-Device Suppression är möjligheten att undertrycka användare på flera enheter som är anslutna till dem när en viss upplevelse inträffar på någon av dessa enheter. Använd funktionen för direkt undertryckning mellan enheter för att leverera en enhetlig upplevelse på olika enheter till användarna. Den här upplevelsen blir möjlig tack vare segmenteringsfunktionerna i realtid i Audience Manager.
+description: Instant Cross-Device Suppression är möjligheten att undertrycka användare på flera enheter som är anslutna till dem när en viss upplevelse inträffar på någon av dessa enheter. Använd funktionen för direkt undertryckning mellan enheter för att leverera en enhetlig upplevelse på olika enheter till användarna. Detta blir möjligt tack vare segmenteringsfunktionerna i realtid i Audience Manager.
 seo-description: Instant Cross-Device Suppression is the ability to suppress users across multiple devices connected to them when a particular experience occurs on any of these devices. Use the Instant Cross-Device Suppression capability to deliver a consistent experience across devices to your users. This experience is made possible by the real-time unsegment capabilities in Audience Manager.
 seo-title: Instant Cross-Device Suppression
 title: Direkt undertryckning av olika enheter
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Direkt undertryckning av olika enheter {#instant-cross-device-suppression}
 
-[!UICONTROL Instant Cross-Device Suppression] är möjligheten att inaktivera användare på flera enheter som är anslutna till dem när en viss upplevelse inträffar på någon av dessa enheter. Använd funktionen [!UICONTROL Instant Cross-Device Suppression] för att leverera en enhetlig upplevelse på olika enheter till dina användare. Den här upplevelsen blir möjlig tack vare segmenteringsfunktionerna i realtid i Audience Manager.
+[!UICONTROL Instant Cross-Device Suppression] är möjligheten att inaktivera användare på flera enheter som är anslutna till dem när en viss upplevelse inträffar på någon av dessa enheter. Använd funktionen [!UICONTROL Instant Cross-Device Suppression] för att leverera en enhetlig upplevelse på olika enheter till dina användare. Detta blir möjligt tack vare segmenteringsfunktionerna i realtid i Audience Manager.
 
 ## Översikt {#overview}
 
@@ -28,7 +28,7 @@ De tekniska detaljerna om osegmentering i realtid beskrivs i detalj i [Regler f�
 
 ## Använd inte som mål när du har konverterat {#do-not-target-once}
 
-Se till att dina användare som redan har konverterat (köpt en produkt, köpt en prenumeration osv.) kommer inte att se samma meddelande som före konverteringen. Du kan hämta detta med hjälp av logiken [!UICONTROL AND NOT] enligt följande.
+Kontrollera att de användare som redan har konverterat (köpt en produkt, köpt en prenumeration osv.) inte ser samma meddelande som före konverteringen. Du kan hämta detta med hjälp av logiken [!UICONTROL AND NOT] enligt följande.
 
 1. Skapa ett segment med hjälp av två egenskaper och använd logiken [!UICONTROL AND NOT], som visas i bilden nedan. Du måste använda en regelbaserad egenskap för att definiera konverteringshändelsen för det segment som ska aktiveras i realtid. Läs mer om hur du [skapar regelbaserade egenskaper](../traits/create-onboarded-rule-based-traits.md).
 2. Mappa segmentet till valfritt antal server-till-server-mål i realtid. Läs vidare om hur du lägger till segment till [server-till-server-mål](../destinations/add-edit-segments.md).

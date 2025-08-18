@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Skicka segment till en Google Ads Remarketing List {#send-segments-to-a-google-adwords-remarketing-list}
 
-Den här proceduren kräver en [!DNL Google Ads]-återmarknadsföringslista, pixelkod och Audience Manager [!DNL URL] [!DNL destination]. Det kallas även en återmarknadsföringslista för sökannonsering ([!DNL RLSA])-integrering. Gäller endast betald sökning.
+Den här proceduren kräver en [!DNL Google Ads]-återmarknadsföringslista, pixelkod och en Audience Manager [!DNL URL] [!DNL destination]. Det kallas även en återmarknadsföringslista för sökannonsering ([!DNL RLSA])-integrering. Gäller endast betald sökning.
 
 >[!IMPORTANT]
 >Observera att detta inte är en produkterad integrering av de två systemen.
@@ -33,7 +33,7 @@ Så här konfigurerar du en [!DNL Google Ads]-remarketing-lista som en [!DNL Aud
 1. [Skapa en [!DNL URL destination]](../../features/destinations/create-url-destination.md) eller redigera en befintlig [!DNL destination] i Audience Manager. Använd följande inställningar när du skapar [!DNL destination]:
    * Typ: URL
    * Serialisera: Aktiverat
-   * Avgränsare: Semikolon (&semi; )
+   * Avgränsare: Semikolon (&amp;semi; )
 
 1. I avsnittet [!UICONTROL Segment Mappings] i [!DNL URL] [!DNL destination] lägger du till koden från steg 2 i fälten [!DNL URL] och [!DNL Secure URL]. Lägg till `http:` och `https:` i fälten [!DNL URL] och [!DNL Secure URL] som prefix.
 
@@ -61,7 +61,7 @@ Så här konfigurerar du en [!DNL Google Ads]-remarketing-lista som en [!DNL Aud
    >
    >Om du arbetar med flera segment hämtar du en ny pixel för varje segment som du vill mappa till [!DNL Google Ads] [!DNL destination]. Detta garanterar att data tillämpas på rätt lista för återmarknadsföring.
 
-1. När du mappar ett nytt segment till denna/detta [!DNL destination] i Audience Manager definierar du mappningen som `aam=segmentID` och ersätter `segmentID` med ID:t för ditt segment.
+1. När du mappar ett nytt segment till denna/detta [!DNL destination] i Audience Manager, definierar du mappningen som `aam=segmentID` och ersätter `segmentID` med ditt segments ID.
 1. När du definierar en bucket i [!DNL Google Ads] skapar du en regel som matchar mappningen som definieras i steg 6.
 
 En slutförd mappning kan se ut ungefär så här:

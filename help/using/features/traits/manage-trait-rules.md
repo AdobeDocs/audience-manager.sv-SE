@@ -102,7 +102,7 @@ I den här proceduren beskrivs hur du redigerar en egenskap.
 
 <!-- t_tb_edit.xml -->
 
-1. Håll markören över kolumnen **[!UICONTROL Actions]** på kontrollpanelen [!UICONTROL Traits] för den egenskap som du vill redigera. Detta öppnar upp ikonerna för trait-hantering.
+1. Håll markören över kolumnen [!UICONTROL Traits] på kontrollpanelen **[!UICONTROL Actions]** för den egenskap som du vill redigera. Detta öppnar upp ikonerna för trait-hantering.
 1. Klicka på pennan för att redigera tecknet.
 
    ![](assets/tb_edit_trait.png)
@@ -113,7 +113,7 @@ I den här proceduren beskrivs hur du tar bort en trait-regel.
 
 <!-- t_tb_delete_rule.xml -->
 
-1. Håll markören över [!UICONTROL Actions]-kolumnerna på kontrollpanelen [!UICONTROL Traits] för den egenskap som du vill redigera och klicka på pennikonen. Detta öppnar upp ikonerna för trait-hantering.
+1. Håll markören över [!UICONTROL Traits]-kolumnerna på kontrollpanelen [!UICONTROL Actions] för den egenskap som du vill redigera och klicka på pennikonen. Detta öppnar upp ikonerna för trait-hantering.
 1. Expandera avsnittet [!UICONTROL Trait Expression].
 1. Håll pekaren över den linje som du vill ta bort och klicka på X-ikonen. Regeln tas bort omedelbart.
 

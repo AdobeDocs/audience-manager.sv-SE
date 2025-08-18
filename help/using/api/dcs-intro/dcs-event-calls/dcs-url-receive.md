@@ -61,7 +61,7 @@ Tabellen nedan listar och definierar de vanligaste parametrarna som du kan se i 
 | `stuff` | Det här objektet innehåller information för alla cookie-mål. Objektets lista är dynamisk baserat på användarens åtgärder. |
 | `tid` | Transaktions-ID, som är ett unikt 12-tecken-ID som används för felsökning. Varje /event-anrop till DCS får en tid som du kan referera till i supportfrågor för att få ett bättre och snabbare svar. |
 | `ttl` | Kakans värde för time-to-live i dagar. |
-| `u` och `uuid` | Unikt användar-ID som tilldelats av Audience Manager. Detta krävs om du gör [server-till-server-DCS-anrop](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md). |
+| `u` och `uuid` | Unikt användar-ID tilldelat av Audience Manager. Detta krävs om du gör [server-till-server-DCS-anrop](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md). |
 | `y` | Måltyp, iFrame (`iframe`) eller bild (`img`). |
 
 >[!MORELIKETHIS]

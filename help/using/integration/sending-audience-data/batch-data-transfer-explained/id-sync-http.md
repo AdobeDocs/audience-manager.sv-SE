@@ -50,7 +50,7 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
  <tbody> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;VENDOR_ID&gt;</i> </code> </td> 
-   <td colname="col2"> <p>Unikt ID för innehållsleverantören (tilldelad av <span class="keyword"> Audience Manager </span>). </p> </td> 
+   <td colname="col2"> <p>Unikt ID för innehållsleverantören (tilldelad av <span class="keyword"> Audience Manager</span>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i> </code> </td> 
@@ -62,11 +62,11 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i> </code> </td> 
-   <td colname="col2"> <p>Valfritt. Lägg till den här parametern om du använder plugin-programmet <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF.</a></p> <p><code> gdpr</code> kan vara 0 (GDPR gäller inte) eller 1 (GDPR gäller). </p> <p> <b>Obs!</b> Den här parametern kan bara användas tillsammans med <code>gdpr_consent</code>.</p></td> 
+   <td colname="col2"> <p>Valfritt. Lägg till den här parametern om du använder <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager-plugin-programmet för IAB TCF.</a></p> <p><code> gdpr</code> kan vara 0 (GDPR gäller inte) eller 1 (GDPR gäller). </p> <p> <b>Obs!</b> Den här parametern kan bara användas tillsammans med <code>gdpr_consent</code>.</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code><i>gdpr_consent=&lt;ENCODED STRING&gt;</i> </code> </td> 
-   <td colname="col2"> <p>Valfritt. Lägg till den här parametern om du använder plugin-programmet <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager för IAB TCF.</a></p> <p><code>gdpr_consent</code> är den URL-säkra base64-kodade GDPR-medgivandesträngen (se <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB-specifikation </a>). </p> <p> <b>Obs!</b> Den här parametern kan bara användas tillsammans med <code>gdpr</code>.</p> </td> 
+   <td colname="col2"> <p>Valfritt. Lägg till den här parametern om du använder <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager-plugin-programmet för IAB TCF.</a></p> <p><code>gdpr_consent</code> är den URL-säkra base64-kodade GDPR-medgivandesträngen (se <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB-specifikation </a>). </p> <p> <b>Obs!</b> Den här parametern kan bara användas tillsammans med <code>gdpr</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

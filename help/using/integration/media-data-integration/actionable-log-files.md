@@ -1,5 +1,5 @@
 ---
-description: Med loggfiler som kan användas kan du hämta mediesignaler från och serverloggfiler för att skapa egenskaper i Audience Manager. Fånga visningar, klick och konverteringar från annonsservrar som egenskaper utan att behöva lägga till pixlar.
+description: Loggfiler som kan användas för att hämta mediereddelanden från och serverloggfiler för att skapa egenskaper i Audience Manager. Fånga visningar, klick och konverteringar från annonsservrar som egenskaper utan att behöva lägga till pixlar.
 keywords: användbara loggar, alf, ALF
 seo-description: Actionable Log Files allow you to capture media signals from ad server log files to create traits in Audience Manager. Capture impressions, clicks, and conversions from ad servers as traits without having to append pixels.
 seo-title: Actionable Log Files
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Textformaten (`monospaced text`, *kursiv*, parenteser `[ ]` `( )` etc.) i det här dokumentet anger kodelement och alternativ. Mer information finns i [Formatkonventioner för kod- och textelement](../../reference/code-style-elements.md).
+>Textformaten (`monospaced text`, *kursiv*, hakparenteser `[ ]` `( )` osv.) i det här dokumentet anger kodelement och alternativ. Mer information finns i [Formatkonventioner för kod- och textelement](../../reference/code-style-elements.md).
 
 ## Syfte {#purpose}
 
@@ -41,7 +41,7 @@ Om du redan importerar loggdata till [!DNL Audience Manager] ber du din [!DNL Au
 
 >[!IMPORTANT]
 >
-> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/se/contact/enterprise-support.ec.html) to get started.
+> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
 
 -->
 
@@ -62,7 +62,7 @@ Signalerna är de [minsta dataenheterna](../../reference/signal-trait-segment.md
 >[!IMPORTANT]
 >
 >[!UICONTROL Actionable Log Files] stöds för följande annonsservrar:
-> <br>
+>> <br>
 >
 > * [Google Campaign Manager](#dcm-logs-signals)
 > * [Google Ad Manager](#ad-manager-logs-signals)
@@ -110,7 +110,7 @@ I tabellen visas de användbara signalerna från [!DNL Google Campaign Manager] 
   <tr> 
    <td colname="col1"> <p> <code>Advertiser Group ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_adsrc</code> </p> </td> 
-   <td colname="col3"><p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till datakällor i Audience Manager.</p> <p>Det här fältet mappar till Advertiser Group ID från Google Campaign Manager. </p> </td> 
+   <td colname="col3"><p>En integrationskod för annonsörens datakälla. Observera att detta inte är relaterat till Audience Manager datakällor.</p> <p>Det här fältet mappar till Advertiser Group ID från Google Campaign Manager. </p> </td> 
    <td colname="col4"> <p> <code> 134243</code> </p> </td> 
   </tr> 
   <tr> 
@@ -128,7 +128,7 @@ I tabellen visas de användbara signalerna från [!DNL Google Campaign Manager] 
   <tr> 
    <td colname="col1"> <p> <code>Creative ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_creative</code> </p> </td> 
-   <td colname="col3"> <p>Det kreativa ID som tillhandahålls av Google Campaign Manager. </p> </td> 
+   <td colname="col3"> <p>Det Creative-ID som tillhandahålls av Google Campaign Manager. </p> </td> 
    <td colname="col4"> <p> <code> 224221</code> </p> </td> 
   </tr> 
   <tr> 
@@ -191,7 +191,7 @@ I tabellen visas de användbara signalerna från [!DNL Google Ad Manager] loggfi
 | `-` | `d_event` | Anger händelsetypen. Audience Manager läser händelsetypen från Ad Manager-loggfilens namn och omvandlar den till en användbar signal. Godkända värden är: <br> <ul><li>d_event = imp för visningar.</li><li>d_event = click for clicks.</li><li>d_event = conv för konverteringar och aktiviteter.</li></ul> |
 | `-` | `d_src` | ID:t för datakällan som du använder för att hämta Ad Manager-data. Se [Så här skapar du en Source-fil](/help/using/features/manage-datasources.md). |
 
-Signalerna som beskrivs i tabellen fångas i Audience Manager som ett HTTP-anrop i realtid. Exempelsamtalet nedan innehåller information om en konverteringshändelse från Google Ad Manager. Samtal behöver inte nödvändigtvis innehålla alla signaler i exempelanropet.
+Signalerna som beskrivs i tabellen hämtas i Audience Manager som ett HTTP-anrop i realtid. Exempelsamtalet nedan innehåller information om en konverteringshändelse från Google Ad Manager. Samtal behöver inte nödvändigtvis innehålla alla signaler i exempelanropet.
 
 ```
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_event=conv&d_lineitem=112&d_orderid=22223&d_creative=3983524
@@ -259,7 +259,7 @@ Först måste ni lagra era annonsserverloggar i våra Amazon S3-bucket. Läs [Da
   <tr> 
    <td colname="col1"> <p> <code>Creative-ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_creative</code> </p> </td> 
-   <td colname="col3"> <p>Creative ID från loggfilen. </p> </td> 
+   <td colname="col3"> <p>Creative-id:t från loggfilen. </p> </td> 
    <td colname="col4"> <p> <code> 224221</code> </p> </td> 
   </tr>
     <tr> 
@@ -294,7 +294,7 @@ Signalerna som beskrivs i tabellen hämtas i [!DNL Audience Manager] som ett `HT
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_activity=1234&d_creative=24122&d_placemebt=3442&d_bu=3983524&d_campaign=7321391&d_adsrc=11111
 ```
 
-## Arbeta med körbara signaler i användargränssnittet i Audience Manager {#actionable-signals-in-ui}
+## Arbeta med körbara signaler i Audience Manager användargränssnitt {#actionable-signals-in-ui}
 
 Du kan visa dina inkommande åtgärdbara signaler i gränssnittet [Signalsökning](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md).
 
@@ -337,7 +337,7 @@ Med [Floodlight-taggar](https://support.google.com/dcm/partner/answer/4293719?hl
 
    `d_event == conv AND d_conversion == 123`
 
-   När du skapar trait i Audience Manager [!UICONTROL UI] väljer du [!UICONTROL Conversion] som [!UICONTROL Event Type].
+   När du skapar egenskapen i Audience Manager [!UICONTROL UI] väljer du [!UICONTROL Conversion] som [!UICONTROL Event Type].
 
 2. När du har skapat egenskapen börjar konverteringen rapporteras i [!UICONTROL Audience Optimization Reports] och [!UICONTROL Audience Lab].
 

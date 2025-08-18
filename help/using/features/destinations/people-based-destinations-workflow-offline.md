@@ -26,13 +26,13 @@ Det första steget för att skapa målgruppssegment i det här scenariot är att
 
 >[!IMPORTANT]
 >
-> Innan du fortsätter kontrollerar du att kundaktiviteten som du är på väg att introducera redan har definierats i Audience Manager med motsvarande [onboardegenskaper](../traits/trait-and-segment-qualification-reference.md).
+> Innan du fortsätter kontrollerar du att kundaktiviteten som du är på väg att introducera redan har definierats i Audience Manager med motsvarande [fördefinierade egenskaper](../traits/trait-and-segment-qualification-reference.md).
 
-Oavsett om dina befintliga kund-ID:n för Audience Manager ([DPUID:n](../../reference/ids-in-aam.md)) är hashade e-postmeddelanden eller inte, måste du utföra anpassad introduktion mot datakällan som innehåller dina [DPUID:n](../../reference/ids-in-aam.md).
+Oavsett om dina befintliga Audience Manager-kund-ID:n ([DPUID:n](../../reference/ids-in-aam.md)) är hashade e-postmeddelanden eller inte, måste du utföra anpassad introduktion mot datakällan som innehåller dina [DPUID:n](../../reference/ids-in-aam.md).
 
 ### Exempel
 
-Du vill kvalificera kund-ID:n från tabellen nedan för motsvarande anpassade ID:n. Låt oss tänka på att dina [DPUID:n](../../reference/ids-in-aam.md) lagras i en datakälla med ID 999999 och att Audience Manager-datakällans ID är 123.
+Du vill kvalificera kund-ID:n från tabellen nedan för motsvarande anpassade ID:n. Låt oss tänka på att dina [DPUID:n](../../reference/ids-in-aam.md) lagras i en datakälla med ID 999999, och att ditt Audience Manager-ID är 123.
 
 | Kund-ID (DPUID) | ID för introduktionstrafik |
 | -------------------------------------- | ------------------- |
@@ -74,9 +74,9 @@ I det här fallet måste du märka motsvarande datakälla som sådan:
 
 I det här fallet måste du skapa en ny datakälla för olika enheter som lagrar dina hashade e-postadresser. Så här gör du:
 
-1. Logga in på ditt Audience Manager-konto och gå till **[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]** och klicka på **[!UICONTROL Add New]**.
+1. Logga in på ditt Audience Manager-konto, gå till **[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]** och klicka på **[!UICONTROL Add New]**.
 1. Ange **[!UICONTROL Name]** och **[!UICONTROL Description]** som ny datakälla.
-1. Välj **[!UICONTROL Cross Device]** i listrutan **[!UICONTROL ID Type]**.
+1. Välj **[!UICONTROL ID Type]** i listrutan **[!UICONTROL Cross Device]**.
 1. I avsnittet **[!UICONTROL Data Source Settings]** markerar du både alternativen **[!UICONTROL Inbound]** och **[!UICONTROL Outbound]** och aktiverar alternativet **[!UICONTROL Share associated cross-device IDs in people-based destinations]**.
 1. Använd listrutan för att välja etiketten **[!UICONTROL Emails(SHA256, lowercased)]** för den här datakällan.
    >[!IMPORTANT]
@@ -163,7 +163,7 @@ Om du vill skapa nya segment från data som bara är offline använder du [Segme
    ![Personbaserad-plattform](assets/pbd-add.png)
 1. Klicka på **[!UICONTROL Confirm]** om du vill omdirigeras till autentiseringssidan för den valda plattformen.
 1. När du har autentiserat dig på ditt konto för sociala plattformar omdirigeras du till Audience Manager där du ska se dina associerade annonskonton. Välj det annonserarkonto som du vill använda och klicka på **[!UICONTROL Confirm]**.
-1. Audience Manager visar ett meddelande högst upp på sidan för att tala om för dig om kontot har lagts till eller inte. I meddelandet kan du även lägga till en e-postadress för kontakt för att få meddelanden när autentiseringen för den sociala plattformen håller på att gå ut.
+1. Audience Manager visar ett meddelande högst upp på sidan för att tala om för dig om kontot har lagts till. I meddelandet kan du även lägga till en e-postadress för kontakt för att få meddelanden när autentiseringen för den sociala plattformen håller på att gå ut.
 
 >[!IMPORTANT]
 >
@@ -177,7 +177,6 @@ Om du vill skapa nya segment från data som bara är offline använder du [Segme
    * **[!UICONTROL Type]**: Personbaserad;
    * **[!UICONTROL Platform]**: välj den personbaserade plattform som du vill skicka målgruppssegment till;
    * **[!UICONTROL Account]**: välj önskat annonserarkonto som är associerat med den valda plattformen.
-
      ![create-destination](assets/pbd-create-destination.png)
 1. Klicka på **[!UICONTROL Next]**.
 1. Välj den **[!UICONTROL Data Export Labels]** som du vill ange för det här målet.

@@ -1,5 +1,5 @@
 ---
-description: Bland Audience Manager-tagghanteringskomponenterna finns klientportalen, Adobe Tag Manager (ersatt till förmån för Adobe Experience Platform Launch), DIL, Akamai och kontrolldatabasen.
+description: Audience Manager tagghanteringskomponenter är bland annat klientportalen, Adobe Tag Manager (ersatt till förmån för Adobe Experience Platform Launch), DIL, Akamai och kontrolldatabasen.
 seo-description: Audience Manager tag management components include the client portal, Adobe Tag Manager (deprecated in favor of Adobe Experience Platform Launch), DIL, Akamai, and the control database.
 seo-title: Tag Management Components
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Tag Management Components{#tag-management-components}
 
-Bland tagghanteringskomponenterna för Audience Manager finns klientportalen, Adobe Tag Manager (ersatt till förmån för Adobe Experience Platform Tags), DIL, Akamai och kontrolldatabasen.
+Audience Manager tagghanteringskomponenter är bland annat klientportalen, Adobe Tag Manager (ersatt till förmån för Adobe Experience Platform Tags), DIL, Akamai och kontrolldatabasen.
 
 <!-- 
 
@@ -38,11 +38,11 @@ Klientportalen är det primära användargränssnittet för tagg- och datahanter
 
 ## DIL/TIM-behållare {#dil-tim}
 
-Behållaren [!UICONTROL DIL] hjälper till att distribuera [!DNL Audience Manager]-datainsamlingskod till din webbplats. [!UICONTROL TIM] är den inaktuella hanteraren för tagginfogning. Den används inte längre av [!DNL Audience Manager]. I stället använder du tillägget [!DNL Audience Manager] i [Adobe Experience Platform Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html?lang=sv-SE) för att konfigurera och generera behållarkod som du placerar på sidor i lagret.
+Behållaren [!UICONTROL DIL] hjälper till att distribuera [!DNL Audience Manager]-datainsamlingskod till din webbplats. [!UICONTROL TIM] är den inaktuella hanteraren för tagginfogning. Den används inte längre av [!DNL Audience Manager]. I stället använder du tillägget [!DNL Audience Manager] i [Adobe Experience Platform Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html) för att konfigurera och generera behållarkod som du placerar på sidor i lagret.
 
 ## Data Integration Library (DIL) {#dil}
 
-[Datainformationsbiblioteket](../../dil/dil-overview.md) (DIL) är en självständig API-modul som samlar in data från din webbplats. [!UICONTROL DIL] hjälper till att eliminera behovet av att skriva specialkod för datainsamling, integrering, läsning av cookie-värden och återställning av siddata. [!UICONTROL DIL] utför dessa åtgärder automatiskt. Dessutom är [!UICONTROL DIL] kompakt. Det är ett självständigt kodbibliotek som minskar mängden kod som krävs för att samla in information. Slutligen kan [!UICONTROL DIL] hjälpa dig att integrera [!DNL Audience Manager] med andra produkter i Experience Cloud [!DNL Adobe].
+[Datainformationsbiblioteket](../../dil/dil-overview.md) (DIL) är en självständig API-modul som samlar in data från din webbplats. [!UICONTROL DIL] hjälper till att eliminera behovet av att skriva specialkod för datainsamling, integrering, läsning av cookie-värden och återställning av siddata. [!UICONTROL DIL] utför dessa åtgärder automatiskt. Dessutom är [!UICONTROL DIL] kompakt. Det är ett självständigt kodbibliotek som minskar mängden kod som krävs för att samla in information. Slutligen kan [!UICONTROL DIL] hjälpa dig att integrera [!DNL Audience Manager] med andra produkter i [!DNL Adobe] Experience Cloud.
 
 ## Akamai {#akamai}
 

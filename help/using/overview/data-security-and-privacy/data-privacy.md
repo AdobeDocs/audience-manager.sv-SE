@@ -37,24 +37,24 @@ För att uppfylla kraven för [!DNL GDPR] stöder [!DNL Audience Manager] dataå
 
 I [California Consumer Privacy Act (CCPA)](https://www.caprivacy.org/about), som trädde i kraft den 1 januari 2020, ges personer bosatta i Kalifornien nya rättigheter när det gäller personuppgifter och det gör att vissa enheter som bedriver verksamhet i Kalifornien åläggs dataskyddsansvar.
 
-[!DNL CCPA] ger personer bosatta i Kalifornien nya integritetsrättigheter, inklusive rätten att få tillgång till och ta bort sina personuppgifter och att få veta om deras personuppgifter säljs eller avslöjas (och till vem). [!DNL Audience Manager] stöder [!DNL CCPA] åtkomst och borttagning av [förfrågningar](data-privacy-requests.md) för att uppfylla kraven för [!DNL CCPA].
+[!DNL CCPA] ger personer bosatta i Kalifornien nya integritetsrättigheter, inklusive rätten att få tillgång till och ta bort sina personuppgifter och att få veta om deras personuppgifter säljs eller avslöjas (och till vem). [!DNL CCPA] stöder [!DNL Audience Manager] åtkomst och borttagning av [!DNL CCPA]förfrågningar[ för att uppfylla kraven för ](data-privacy-requests.md).
 
 Mer information finns på [Adobes sekretesscenter](https://www.adobe.com/se/privacy/opt-out.html#customeruse).
 
 ## Regelefterlevnad {#compliance}
 
-[!DNL Audience Manager] hjälper dig att uppfylla dina skyldigheter enligt vissa sekretessregler, via sekretessverktyg som [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv-SE) för dataåtkomst och borttagningsbegäranden.
+[!DNL Audience Manager] hjälper dig att uppfylla dina skyldigheter enligt vissa sekretessregler, via sekretessverktyg som [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) för dataåtkomst och borttagningsbegäranden.
 
-Den här tjänsten tillhandahåller ett [!DNL RESTful API] och användargränssnitt som hjälper er att hantera förfrågningar om konsumentdata. Med hjälp av [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv-SE) kan ni skicka förfrågningar om att få tillgång till och radera personuppgifter baserat på en kunds begäran vilket hjälper er att automatisera denna del av era efterlevnadsskyldigheter.
+Den här tjänsten tillhandahåller ett [!DNL RESTful API] och användargränssnitt som hjälper er att hantera förfrågningar om konsumentdata. Med hjälp av [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) kan ni skicka förfrågningar om att få tillgång till och radera personuppgifter baserat på en kunds begäran vilket hjälper er att automatisera denna del av era efterlevnadsskyldigheter.
 
-Dataåtkomst- och borttagningsbegäranden hanteras via Privacy Servicen, men [avanmälningsbegäranden](data-privacy-requests.md#opt-out-requests) stöds för närvarande via [DCS API](../../api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md). Mer information finns i [Förfrågningar om datasekretess](data-privacy-requests.md).
+Begäran om dataåtkomst och borttagning hanteras via Privacy Service, men [avanmälningsbegäranden](data-privacy-requests.md#opt-out-requests) stöds för närvarande via [DCS API](../../api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md). Mer information finns i [Förfrågningar om datasekretess](data-privacy-requests.md).
 
 ## Relaterade begrepp {#related-concepts}
 
 * [Förfrågningar om datasekretess](data-privacy-requests.md)
 * [Hantering av samtycke](data-privacy-consent.md)
 * [Plugin-program för Audience Manager för IAB TCF](aam-iab-plugin.md)
-* [Audience Manager-identifierare](data-privacy-ids.md)
+* [Audience Manager Identifiers](data-privacy-ids.md)
 * [CCPA-ordlista](aam-ccpa-glossary.md)
 * [GDPR-ordlista](aam-gdpr-glossary.md)
 * [GDPR-överväganden för destinationer](aam-gdpr-partners.md)

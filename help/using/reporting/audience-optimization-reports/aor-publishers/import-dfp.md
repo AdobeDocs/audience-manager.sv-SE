@@ -32,7 +32,7 @@ Så här anger du ID:t för [!DNL Audience Manager] i annonstagganropet, vilket 
 Du måste ange [!DNL Audience Manager]-ID:t själv och kan arbeta med [!DNL Audience Manager]-konsulter för att kontrollera om allt fungerar. Du har angett [!DNL Audience Manager]-ID korrekt om:
 
 * `'aamid'` är nyckeln som används som identifierare.
-* Värdet för användar-ID är korrekt formaterat som [!DNL Audience Manager] UUID, vilket beskrivs i [Index för ID:n i Audience Manager](../../../reference/ids-in-aam.md).
+* Värdet för användar-ID är korrekt formaterat som [!DNL Audience Manager]-UUID, vilket beskrivs i vårt [index för ID:n i Audience Manager](../../../reference/ids-in-aam.md).
 * Du har inkluderat [!DNL Audience Manager]-UUID i ett definierat fält i [!DNL Google Ad Manager]-loggarna (t.ex. CustomTargeting).
 
 ## Krav för aktivering av logginmatning {#prereqs-ingestion-enablement}
@@ -48,7 +48,7 @@ Du måste ange [!DNL Audience Manager]-ID:t själv och kan arbeta med [!DNL Audi
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Steg 1 </p> </td> 
-   <td colname="col2"> <p>Bekräfta att de nödvändiga stegen för att ange UUID för <span class="keyword"> Audience Manager </span> (se ovan) har slutförts innan du går till steg 2 </p> </td> 
+   <td colname="col2"> <p>Bekräfta att de steg som krävs för att ställa in <span class="keyword"> Audience Manager</span> UUID (se ovan) har slutförts innan du går till steg 2 </p> </td> 
    <td colname="col3"> <p><span class="keyword"> Audience Manager</span> kundtjänst eller konsulttjänster </p> </td> 
   </tr> 
   <tr> 
@@ -82,8 +82,8 @@ Du måste ange [!DNL Audience Manager]-ID:t själv och kan arbeta med [!DNL Audi
   </tr> 
   <tr> 
    <td colname="col1"> <p>Steg 6 </p> </td> 
-   <td colname="col2"> <p>Kompilera förutsättningarna och öppna en supportanmälan genom att följa instruktionerna som beskrivs <a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=sv-SE">här</a> för att starta loggningsprocessen. </p> </td> 
-   <td colname="col3"> <p>Du eller <span class="keyword"> Audience Manager</span> konsulting å dina vägnar </p> </td> 
+   <td colname="col2"> <p>Kompilera förutsättningarna och öppna en supportanmälan genom att följa instruktionerna som beskrivs <a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html">här</a> för att starta loggningsprocessen. </p> </td> 
+   <td colname="col3"> <p>Du, eller <span class="keyword"> Audience Manager</span> Consulting åt dig </p> </td> 
   </tr> 
  </tbody> 
 </table>

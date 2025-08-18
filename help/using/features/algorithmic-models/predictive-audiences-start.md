@@ -20,12 +20,12 @@ ht-degree: 2%
 
 ## Skapa en modell för prediktiva målgrupper {#create-predictive-audiences}
 
-Innan du skapar en [!UICONTROL Predictive Audiences]-modell måste du bestämma vilken första parts datakälla du vill tilldela dina [!UICONTROL Predictive Audiences]-egenskaper och segment till. Du kan använda en befintlig datakälla från första part eller skapa en ny. Se [Hantera datakällor](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html?lang=sv-SE) för mer information om hur du skapar en ny datakälla från första part.
+Innan du skapar en [!UICONTROL Predictive Audiences]-modell måste du bestämma vilken första parts datakälla du vill tilldela dina [!UICONTROL Predictive Audiences]-egenskaper och segment till. Du kan använda en befintlig datakälla från första part eller skapa en ny. Se [Hantera datakällor](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html) för mer information om hur du skapar en ny datakälla från första part.
 
 När du vet vilken datakälla du ska använda följer du stegen nedan.
 
 1. Gå till **[!UICONTROL Audience Data]** > **[!UICONTROL Models]**.
-1. Klicka på **[!UICONTROL Add New]** i avsnittet [!UICONTROL Predictive Audiences].
+1. Klicka på [!UICONTROL Predictive Audiences] i avsnittet **[!UICONTROL Add New]**.
 
    ![smart-persona-add](assets/predictive-audiences-add.png)
 
@@ -42,7 +42,6 @@ När du vet vilken datakälla du ska använda följer du stegen nedan.
    * **[!UICONTROL Description]**: Ange en beskrivning av modellen som hjälper dig att identifiera dess användningsfall.
    * **[!UICONTROL Data Source]**: Välj den första parts datakälla som du vill att [!UICONTROL Predictive Audiences]-segmenten från den här modellen ska tilldelas till.
    * **[!UICONTROL Profile Merge Rule]**: Välj [!UICONTROL Profile Merge Rule] som ska tilldelas för alla prediktiva [!UICONTROL segments] som skapas av den här modellen. Om den valda målgruppen är en [!UICONTROL segment] rekommenderar vi att du väljer samma [!UICONTROL Profile Merge Rule] av målgruppen.
-
      ![prediktiv-audiences-save](assets/predictive-audiences-save.png)
 1. Klicka på **[!UICONTROL Save]**.
 
