@@ -142,7 +142,7 @@ Följande tabell definierar elementen i datafilen [!DNL JSON] som du skickar til
 
 ## Säkerhet
 
-Du kan skydda din utgående dataöverföringsprocess i realtid genom att [signera HTTP-begäranden](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md) med hjälp av privata nycklar eller genom att låta [!DNL Audience Manager] autentisera via protokollet [ OAuth 2.0](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md).
+Du kan skydda din utgående dataöverföringsprocess i realtid genom att [signera HTTP-begäranden](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md) med hjälp av privata nycklar eller genom att låta [!DNL Audience Manager] autentisera via protokollet [&#x200B; OAuth 2.0](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md).
 
 ## Begäran
 

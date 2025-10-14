@@ -84,7 +84,7 @@ I filen omges strängdata med citattecken. Se modelldata nedan. Detta har trunke
 
 ## Poster för segment-till-segment-rapporter {#segment-segment-records}
 
-En datafil för [segmentöverlappningsrapporten ](segment-segment-overlap-report.md) från segment till segment innehåller följande poster.
+En datafil för [segmentöverlappningsrapporten &#x200B;](segment-segment-overlap-report.md) från segment till segment innehåller följande poster.
 
 <table id="table_1BDC7019DF2543069D7AE229C5E2454E"> 
  <thead> 
@@ -210,7 +210,7 @@ En datafil för [Överlappningsrapporten för segment-till-trait](segment-trait-
 
 ## Rapportposter för fack till fack {#trait-trait-records}
 
-En datafil för [Överlappningsrapporten ](trait-trait-overlap-report.md) av typen Trait-to-Trait innehåller följande poster.
+En datafil för [Överlappningsrapporten &#x200B;](trait-trait-overlap-report.md) av typen Trait-to-Trait innehåller följande poster.
 
 <table id="table_603216E6AFE4439A87C91DDFF2989F53"> 
  <thead> 

@@ -40,7 +40,7 @@ En korrekt formaterad metadatafil kan dock knyta denna kreativitet till ett verk
 
 Först krävs en metadatafil och alla parametrar som anges nedan i ett händelseanrop när du vill använda [Audience Optimization-rapporter](../../../reporting/audience-optimization-reports/audience-optimization-reports.md).
 
-För det andra behöver du en metadatafil om du skickar egna data till [!DNL Audience Manager] eller om du vill se data från andra leverantörer som vi inte är integrerade med. [!DNL Audience Manager] har till exempel en integrering med Google [Kampanjhanterare ](../../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) (DCM). På grund av den här relationen kan [!DNL Audience Manager] associera ID:n med namn och beskrivningar som används av rapportalternativen. Utan integrering kan vi fortfarande importera data, men rapportalternativen visar numeriska ID:n i stället för beskrivande namn.
+För det andra behöver du en metadatafil om du skickar egna data till [!DNL Audience Manager] eller om du vill se data från andra leverantörer som vi inte är integrerade med. [!DNL Audience Manager] har till exempel en integrering med Google [Kampanjhanterare &#x200B;](../../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) (DCM). På grund av den här relationen kan [!DNL Audience Manager] associera ID:n med namn och beskrivningar som används av rapportalternativen. Utan integrering kan vi fortfarande importera data, men rapportalternativen visar numeriska ID:n i stället för beskrivande namn.
 
 ![metadata-menybild](/help/using/reporting/audience-optimization-reports/metadata-files-intro/assets/metadata_menu.png)
 

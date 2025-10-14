@@ -55,7 +55,7 @@ Det andra steget när du definierar implementeringsstrategin är att bestämma v
 
 ## &#x200B;3. Identifiera vilken typ av kund-ID (CRM ID) du har {#identify-customer-id}
 
-Om du riktar in dig på målgrupper i [!DNL People-Based Destinations] måste du skicka [ SHA256 hashed](people-based-destinations-prerequisites.md)-versioner av dina kunders e-postadresser. Beroende på din befintliga Audience Manager-konfiguration kan du befinna dig i något av följande två scenarier:
+Om du riktar in dig på målgrupper i [!DNL People-Based Destinations] måste du skicka [&#x200B; SHA256 hashed](people-based-destinations-prerequisites.md)-versioner av dina kunders e-postadresser. Beroende på din befintliga Audience Manager-konfiguration kan du befinna dig i något av följande två scenarier:
 
 **A) Dina Audience Manager-kund-ID:n ([DPUID:n](../../reference/ids-in-aam.md)) är redan små och har e-postadresser** som hashas. I det här scenariot kan du använda dessa befintliga ID:n för att rikta in dig på dina målgrupper i [!DNL People-Based Destinations].
 
@@ -65,13 +65,13 @@ Om du riktar in dig på målgrupper i [!DNL People-Based Destinations] måste du
 
 För att rikta in er målgrupp korrekt i [!DNL People-Based Destinations] måste era användare kvalificera sig för regelbaserade eller onboardbaserade egenskaper, beroende på vilken typ av målgruppsanpassning du vill utföra.
 
-**A) Kvalificera dina kund-ID:n och enhets-ID:n i realtid för regelbaserade egenskaper**. Det här alternativet gäller för fall A från [ 1. Definierar ditt användningsfall ](people-based-destinations-workflow.md#defining-your-use-case). Om din plan är att rikta in er mot målgrupper baserat på online- och offlineaktiviteter är det troligt att du redan kvalificerar er målgrupp för [regelbaserade egenskaper](../traits/trait-and-segment-qualification-reference.md).
+**A) Kvalificera dina kund-ID:n och enhets-ID:n i realtid för regelbaserade egenskaper**. Det här alternativet gäller för fall A från [&#x200B; 1. Definierar ditt användningsfall &#x200B;](people-based-destinations-workflow.md#defining-your-use-case). Om din plan är att rikta in er mot målgrupper baserat på online- och offlineaktiviteter är det troligt att du redan kvalificerar er målgrupp för [regelbaserade egenskaper](../traits/trait-and-segment-qualification-reference.md).
 
-**B) Integrera egenskaper mot dina kund-ID via inkommande datafiler**. Det här alternativet gäller för användning av fall B från [1. Definierar ditt användningsfall ](people-based-destinations-workflow.md#defining-your-use-case). När ni riktar er till era målgrupper baserat på enbart offlineaktivitet måste ni kvalificera er för kundens ID:n för anpassade egenskaper via [inkommande datafiler](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md).
+**B) Integrera egenskaper mot dina kund-ID via inkommande datafiler**. Det här alternativet gäller för användning av fall B från [1. Definierar ditt användningsfall &#x200B;](people-based-destinations-workflow.md#defining-your-use-case). När ni riktar er till era målgrupper baserat på enbart offlineaktivitet måste ni kvalificera er för kundens ID:n för anpassade egenskaper via [inkommande datafiler](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md).
 
 ## &#x200B;5. Skapa eller etikettera datakällor och inbyggda hashed-e-postadresser {#create-label-data-sources}
 
-Beroende på vilken typ av kund-ID som du har i Audience Manager (se [3. Identifiera vilken typ av kund-ID (CRM ID) du har ](people-based-destinations-workflow.md#identify-customer-id), så hittar du dig själv i något av följande scenarier:
+Beroende på vilken typ av kund-ID som du har i Audience Manager (se [3. Identifiera vilken typ av kund-ID (CRM ID) du har &#x200B;](people-based-destinations-workflow.md#identify-customer-id), så hittar du dig själv i något av följande scenarier:
 
 **A) Ange en etikett för en befintlig datakälla**. Det här alternativet gäller scenariot där dina Audience Manager kund-ID:n ([DPUID:n](../../reference/ids-in-aam.md)) redan är gemena, hashkodade e-postadresser. I det här fallet behöver du ange för datakällan att du lagrar ID:n som en [!DNL PII]-datakälla. Mer information om inställningarna för datakällan finns i [Inställningar för Data Source](../datasources-list-and-settings.md). Vad du behöver göra är att se till att alternativet Kan inte kopplas till personligt identifierbar information inte är markerat.
 
@@ -82,7 +82,7 @@ Beroende på vilken typ av kund-ID som du har i Audience Manager (se [3. Identif
 
 ## &#x200B;6. Använd en profilkopplingsregel för segmentering {#use-profile-merge-rules}
 
-Beroende på ditt användningssätt (se [1. Det finns två sätt att använda ](people-based-destinations-workflow.md#defining-your-use-case) för segmentering genom att definiera ditt användningsfall [!DNL Profile Merge Rules]).
+Beroende på ditt användningssätt (se [1. Det finns två sätt att använda &#x200B;](people-based-destinations-workflow.md#defining-your-use-case) för segmentering genom att definiera ditt användningsfall [!DNL Profile Merge Rules]).
 
 **A) Använd befintlig[!DNL Profile Merge Rules]**. Det här alternativet gäller för det första användningsexemplet (målgruppsanpassning baserad på kombinerad online- och offlineanvändaraktivitet). I det här scenariot har du en befintlig kundaktivitet i Audience Manager och du har redan definierat minst en profilkopplingsregel som du har använt vid segmentering. I det här fallet behöver du inte skapa några nya [!DNL Profile Merge Rules].
 

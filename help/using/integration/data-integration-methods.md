@@ -166,4 +166,4 @@ Batchdataintegrationsprocessen ([!DNL server-to-server]) följer de flesta av de
 
 ![](assets/s2s_70.png)
 
-Information som beskriver tidsramarna när Audience Manager bearbetar inkommande och utgående [!DNL Server-to-Server] ([!UICONTROL S2S]) filöverföringar finns i [Riktlinjer för rapportering och filöverföring ](../reference/reporting-file-transfer-timeframe.md).
+Information som beskriver tidsramarna när Audience Manager bearbetar inkommande och utgående [!DNL Server-to-Server] ([!UICONTROL S2S]) filöverföringar finns i [Riktlinjer för rapportering och filöverföring &#x200B;](../reference/reporting-file-transfer-timeframe.md).

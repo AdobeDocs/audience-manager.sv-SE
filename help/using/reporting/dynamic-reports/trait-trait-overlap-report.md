@@ -46,7 +46,7 @@ Följande bild ger en översikt på hög nivå över element i rapporten [!UICON
 
 >[!NOTE]
 >
->Mappegenskaper är inte tillgängliga för jämförelse i rapporter om trait-to-trait-överlappning. Genom att skapa ett segment med hjälp av en viss mappegenskap, kan du utföra analyser via [segmentöverlappningsrapporten ](/help/using/reporting/dynamic-reports/segment-trait-overlap-report.md).
+>Mappegenskaper är inte tillgängliga för jämförelse i rapporter om trait-to-trait-överlappning. Genom att skapa ett segment med hjälp av en viss mappegenskap, kan du utföra analyser via [segmentöverlappningsrapporten &#x200B;](/help/using/reporting/dynamic-reports/segment-trait-overlap-report.md).
 
 ![](assets/trait-to-trait-overlap.png)
 

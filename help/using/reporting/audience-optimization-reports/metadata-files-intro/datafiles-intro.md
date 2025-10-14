@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Datafiler för Audience Optimization-rapporter och körbara loggfiler {#data-files-for-audience-optimization-reports}
 
-En datafil innehåller indata för att visa, klicka eller konvertera. När dessa data är korrekt formaterade kan du importera dem till Audience Manager för att visa dem i [Audience Optimization Reports](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) och skapa egenskaper med hjälp av data via [loggfiler som kan användas ](/help/using/integration/media-data-integration/actionable-log-files.md). Formatera datafilerna enligt dessa specifikationer i det här avsnittet.
+En datafil innehåller indata för att visa, klicka eller konvertera. När dessa data är korrekt formaterade kan du importera dem till Audience Manager för att visa dem i [Audience Optimization Reports](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) och skapa egenskaper med hjälp av data via [loggfiler som kan användas &#x200B;](/help/using/integration/media-data-integration/actionable-log-files.md). Formatera datafilerna enligt dessa specifikationer i det här avsnittet.
 
 ## Översikt {#overview}
 

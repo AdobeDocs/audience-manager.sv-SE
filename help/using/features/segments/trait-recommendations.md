@@ -30,7 +30,7 @@ I nästa video visas arbetsflödet för [!UICONTROL Marketplace Recommendations]
 ## Översikt
 
 [!UICONTROL Trait Recommendations], som drivs av [!DNL Adobe Sensei], för in datavetenskap i dina dagliga Audience Manager-arbetsflöden.
-När du skapar eller redigerar ett segment i [!UICONTROL Trait Recommendations]Segment Builder[ i ](segment-builder.md) får du rekommendationer om ytterligare egenskaper som du kan inkludera, som liknar egenskaperna i segmentregeln.
+När du skapar eller redigerar ett segment i [!UICONTROL Trait Recommendations]Segment Builder[&#x200B; i &#x200B;](segment-builder.md) får du rekommendationer om ytterligare egenskaper som du kan inkludera, som liknar egenskaperna i segmentregeln.
 
 Audience Manager visar dig rekommendationer för att dra fördel av både dina egna egenskaper, i avsnittet **[!UICONTROL Recommendations]** och från **[!UICONTROL Audience Marketplace]** i avsnittet **[!UICONTROL Recommendations from Marketplace]**.
 

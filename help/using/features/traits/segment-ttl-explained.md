@@ -55,4 +55,4 @@ Kom ihåg att [!DNL TTL]-uppsättningen på din [!DNL Audience Manager] -pixel f
 
 >[!MORELIKETHIS]
 >
->* [Ange ett förfallointervall för trait ](../../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval)
+>* [Ange ett förfallointervall för trait &#x200B;](../../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval)

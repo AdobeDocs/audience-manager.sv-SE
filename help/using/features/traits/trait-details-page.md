@@ -26,7 +26,7 @@ Den övre delen av informationssidan för [!UICONTROL trait] innehåller verktyg
 1. **[!UICONTROL Add New]**: Använd det här alternativet om du vill skapa nya [!UICONTROL rule-based], [!UICONTROL algorithmic] eller [!UICONTROL onboarded traits].
 2. **[!UICONTROL Edit]**: Använd det här alternativet om du vill ändra konfigurationen för aktuell [!UICONTROL trait].
 3. **[!UICONTROL Delete]**: Använd det här alternativet om du vill ta bort den aktuella [!UICONTROL trait] från ditt Audience Manager-konto.
-4. **[!UICONTROL Marketplace Recommendations]**: Använd det här alternativet för att hitta liknande [!UICONTROL traits] som den du visar, från [!UICONTROL Audience Marketplace] dataavgifter som du inte prenumererar på. Mer information om hur du navigerar i [ och hittar liknande egenskaper finns i ](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)Audience Marketplace for Data Buyers[!UICONTROL Marketplace] .
+4. **[!UICONTROL Marketplace Recommendations]**: Använd det här alternativet för att hitta liknande [!UICONTROL traits] som den du visar, från [!UICONTROL Audience Marketplace] dataavgifter som du inte prenumererar på. Mer information om hur du navigerar i [&#x200B; och hittar liknande egenskaper finns i &#x200B;](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)Audience Marketplace for Data Buyers[!UICONTROL Marketplace] .
 
 ![grundläggande-trait-information](assets/basic-trait-information.png)
 

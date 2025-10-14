@@ -124,5 +124,5 @@ Uttryck med frekvensbegränsning inkluderar alla användare vars antal [!UICONTR
 
 >[!MORELIKETHIS]
 >
->* [Segmentbyggaren-kontroller: Traits Section ](../../features/segments/segment-builder.md#segment-builder-controls-traits)
+>* [Segmentbyggaren-kontroller: Traits Section &#x200B;](../../features/segments/segment-builder.md#segment-builder-controls-traits)
 >* [Kodsyntax som används i Segment Expression Editor](../../features/segments/segment-code-syntax.md)

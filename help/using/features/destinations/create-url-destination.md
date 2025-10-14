@@ -56,7 +56,7 @@ Detta gör att du kan skicka segment till en [!DNL destination] sekventiellt i s
 | Fält | Beskrivning |
 |--- |--- |
 | [!UICONTROL Base URL] | Basdelen av standarden `HTTP` [!DNL URL] som inte ändras. Du måste också placera `%ALIAS%` [platshållarmakrot](../../features/destinations/destination-macros.md#destination-macros-defined) i bas-URL:en. Exempel: `https://www.myCompany.com/%alias%...` |
-| [!UICONTROL Secure URL] | Basdelen av en säker `HTTPS` [!DNL URL] som inte ändras. Du måste också placera `%ALIAS%`   [ platshållarmakro ](../../features/destinations/destination-macros.md#destination-macros-defined) i bas-URL:en. Exempel: `https://www.myCompany.com/%alias%...` |
+| [!UICONTROL Secure URL] | Basdelen av en säker `HTTPS` [!DNL URL] som inte ändras. Du måste också placera `%ALIAS%`   [&#x200B; platshållarmakro &#x200B;](../../features/destinations/destination-macros.md#destination-macros-defined) i bas-URL:en. Exempel: `https://www.myCompany.com/%alias%...` |
 | [!UICONTROL Delimiter] | Den symbol som avgränsar segmentvariablerna i strängen [!DNL URL]. Det här är vanligtvis ett komma eller semikolon. Hämta den här informationen från din målpartner. |
 
 ## [!UICONTROL Segment Mappings] {#segment-mappings}

@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Status för besöksautentisering i Audience Manager avgör om den nya trait-informationen skrivs till besökarens autentiserade profil eller till enhetsprofilen, från vilken data samlades in. Audience Manager hanterar autentiseringsstatusarna för besökar-ID UNKNOWN och LOGGED_OUT i händelseanrop på samma sätt.
 
-Från och med [!DNL Experience Cloud] ID-tjänsten v1.5+ innehåller metoden `setCustomerID` det valfria `AuthState`-objektet. `AuthState` identifierar besökare enligt deras [autentiseringsstatus](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=sv-SE). [!DNL Audience Manager] hanterar de realiserade egenskaperna på olika sätt, beroende på vilken autentiseringsstatus som skickas i anropet och vilken [profilkopplingsregel ](../features/profile-merge-rules/merge-rules-dashboard.md) du använder för segmentering.
+Från och med [!DNL Experience Cloud] ID-tjänsten v1.5+ innehåller metoden `setCustomerID` det valfria `AuthState`-objektet. `AuthState` identifierar besökare enligt deras [autentiseringsstatus](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=sv-SE). [!DNL Audience Manager] hanterar de realiserade egenskaperna på olika sätt, beroende på vilken autentiseringsstatus som skickas i anropet och vilken [profilkopplingsregel &#x200B;](../features/profile-merge-rules/merge-rules-dashboard.md) du använder för segmentering.
 
 ## Autentiseringsstatus: OKÄND {#auth-status-unknown}
 

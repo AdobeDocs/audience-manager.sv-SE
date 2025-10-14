@@ -37,7 +37,7 @@ För att uppfylla kraven för [!DNL GDPR] stöder [!DNL Audience Manager] dataå
 
 I [California Consumer Privacy Act (CCPA)](https://www.caprivacy.org/about), som trädde i kraft den 1 januari 2020, ges personer bosatta i Kalifornien nya rättigheter när det gäller personuppgifter och det gör att vissa enheter som bedriver verksamhet i Kalifornien åläggs dataskyddsansvar.
 
-[!DNL CCPA] ger personer bosatta i Kalifornien nya integritetsrättigheter, inklusive rätten att få tillgång till och ta bort sina personuppgifter och att få veta om deras personuppgifter säljs eller avslöjas (och till vem). [!DNL CCPA] stöder [!DNL Audience Manager] åtkomst och borttagning av [!DNL CCPA]förfrågningar[ för att uppfylla kraven för ](data-privacy-requests.md).
+[!DNL CCPA] ger personer bosatta i Kalifornien nya integritetsrättigheter, inklusive rätten att få tillgång till och ta bort sina personuppgifter och att få veta om deras personuppgifter säljs eller avslöjas (och till vem). [!DNL CCPA] stöder [!DNL Audience Manager] åtkomst och borttagning av [!DNL CCPA]förfrågningar[&#x200B; för att uppfylla kraven för &#x200B;](data-privacy-requests.md).
 
 Mer information finns på [Adobes sekretesscenter](https://www.adobe.com/se/privacy/opt-out.html#customeruse).
 

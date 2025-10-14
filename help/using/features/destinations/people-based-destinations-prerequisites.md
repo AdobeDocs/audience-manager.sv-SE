@@ -113,7 +113,7 @@ Om dina kunder vill avanmäla sig från annonskampanjer finns mer information om
 
 När du använder [!UICONTROL People-Based Destinations] kan du bara använda egna data för att aktivera målgruppssegment i personbaserade kanaler. Ni kan inte använda data från andra leverantörer för målgruppsaktivering i personbaserade kanaler.
 
-När du använder [!UICONTROL People-Based Destinations] använder du [ Dataexportkontroller ](../data-export-controls.md) för att märka [!UICONTROL data sources] och [!UICONTROL destinations] enligt riktlinjerna och kraven från målplattformar och dataleverantörer.
+När du använder [!UICONTROL People-Based Destinations] använder du [&#x200B; Dataexportkontroller &#x200B;](../data-export-controls.md) för att märka [!UICONTROL data sources] och [!UICONTROL destinations] enligt riktlinjerna och kraven från målplattformar och dataleverantörer.
 
 ## Införliva autentiserade hash-ID:n via deklarerade ID-mål {#onboard-authenticated-declared-id}
 

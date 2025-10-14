@@ -34,7 +34,7 @@ Med [Anpassade målgrupper på Facebooks webbplats (WCA)](https://www.facebook.c
 ## Förutsättningar {#prerequisites}
 
 1. [!DNL Facebook Ad Account]
-2. [!DNL Audience Manager] segment, redo att tilldelas till ditt nya [!DNL Facebook]-mål. Så här skapar du ett segment [ i ](/help/using/features/segments/segment-builder.md)-gränssnittet: [!DNL Audience Manager]Så här skapar du ett segment.
+2. [!DNL Audience Manager] segment, redo att tilldelas till ditt nya [!DNL Facebook]-mål. Så här skapar du ett segment [&#x200B; i &#x200B;](/help/using/features/segments/segment-builder.md)-gränssnittet: [!DNL Audience Manager]Så här skapar du ett segment.
 3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID]) Version 4.1.0 eller senare. Hämta den senaste versionen **[här](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**.
 4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL]) version 9.0 eller senare, kan hämtas från **[här](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. Om du använder [SSF (Server-Side Forwarding)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=sv-SE) för att importera data till [!DNL Audience Manager] måste du använda AppMeasurement version 2.12 eller senare. Hämta [!DNL AppMeasurement] med [Analytics Code Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html?lang=sv-SE).
 

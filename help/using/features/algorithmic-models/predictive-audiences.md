@@ -122,7 +122,7 @@ När du konfigurerar dina [!UICONTROL Predictive Audiences]-modeller bör du tä
 
 ## [!UICONTROL Data Export Controls] {#dec}
 
-Prediktiva segment som skapats av [!UICONTROL Predictive Audiences] modeller ärver [ dataexportkontroller ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=sv-SE) från följande datakällor från första part:
+Prediktiva segment som skapats av [!UICONTROL Predictive Audiences] modeller ärver [&#x200B; dataexportkontroller &#x200B;](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=sv-SE) från följande datakällor från första part:
 
 1. Den datakälla från första part som du väljer när du skapar modellen.
 1. Målgruppens första datakällor. Det gäller särskilt dataexportkontrollerna för [!UICONTROL traits] eller [!UICONTROL segments] som utgör målgruppen.

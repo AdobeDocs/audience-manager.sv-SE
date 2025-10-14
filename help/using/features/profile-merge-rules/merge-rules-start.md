@@ -56,7 +56,7 @@ I avsnittet [!UICONTROL Data Source Settings] finns flera alternativ, men dessa 
 
 * **[!UICONTROL Data retention for inactive Customer IDs]**: Med den här kontrollen kan du ange datalagringsperioden för inaktiva kund-ID:n. Detta avgör hur länge Audience Manager behåller sina ID:n i vår databas efter att de senast sågs på Audience Manager-plattformen. Standardvärdet är 24 månader (720 dagar). Det minsta värde du kan ange är 1 månad och det högsta värdet är 5 år. Observera att vi räknar alla månader som 30 dagar. Audience Manager kör en process som tar bort inaktiva kund-ID:n en gång i veckan, i enlighet med den datalagring du anger för inaktiva kund-ID:n.
 
-Med textfälten som är kopplade till de här inställningarna kan du byta namn på [!UICONTROL Data Source] med ett alias som visas i alternativen för [profilkopplingsregel ](merge-rule-definitions.md). Om du till exempel lägger till ett alias i **[!UICONTROL Use as Authenticated Profile]** visas namnet i listan [!UICONTROL Authenticated Profile Options]. Om du lägger till ett alias i **[!UICONTROL Use as a Device Graph]** visas det namnet i listan [!UICONTROL Device Options].
+Med textfälten som är kopplade till de här inställningarna kan du byta namn på [!UICONTROL Data Source] med ett alias som visas i alternativen för [profilkopplingsregel &#x200B;](merge-rule-definitions.md). Om du till exempel lägger till ett alias i **[!UICONTROL Use as Authenticated Profile]** visas namnet i listan [!UICONTROL Authenticated Profile Options]. Om du lägger till ett alias i **[!UICONTROL Use as a Device Graph]** visas det namnet i listan [!UICONTROL Device Options].
 
 ## Skapa en profilkopplingsregel {#create-profile-merge-rule}
 

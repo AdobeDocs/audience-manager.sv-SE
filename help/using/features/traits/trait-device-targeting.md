@@ -32,7 +32,7 @@ Med plattformsnivåvariabler kan du ta data som skickas från en viss webbplats 
 
 ## Tangenter på plattformsnivå definierade av användaragenten {#keys-user-agent}
 
-[!UICONTROL Data Collection Servers] extraherar värdena för de här nycklarna från [användaragenthuvudet](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43) i `HTTP`-begäranden. Värdena representerar information på enhetsnivå från databasen [!UICONTROL Device Atlas]. Signalerna i tabellen nedan är tillgängliga, som hämtats från användaragentexemplet. [Hämta en lista med de vanligaste tangenterna ](assets/device_keys.csv) enligt [!UICONTROL Device Atlas] mått.
+[!UICONTROL Data Collection Servers] extraherar värdena för de här nycklarna från [användaragenthuvudet](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43) i `HTTP`-begäranden. Värdena representerar information på enhetsnivå från databasen [!UICONTROL Device Atlas]. Signalerna i tabellen nedan är tillgängliga, som hämtats från användaragentexemplet. [Hämta en lista med de vanligaste tangenterna &#x200B;](assets/device_keys.csv) enligt [!UICONTROL Device Atlas] mått.
 
 | [!DNL Signal] | [!DNL Type] | [!DNL Example] |
 |---|---|---|

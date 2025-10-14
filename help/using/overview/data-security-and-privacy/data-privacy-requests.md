@@ -40,7 +40,7 @@ Du kan skicka enskilda dataåtkomstbegäranden via [Privacy Service-gränssnitte
 
 Med användargränssnittet i [Privacy Service](https://privacyui.cloud.adobe.io/) kan du skapa nya jobbförfrågningar genom att använda [!UICONTROL Request Builder] eller överföra en [!DNL JSON]-fil.
 
-Om du vill se hur en giltig [!DNL JSON]-fil ser ut kan du [ ladda ned en JSON-fil som exempel](../data-security-and-privacy/assets/access_request.json).
+Om du vill se hur en giltig [!DNL JSON]-fil ser ut kan du [&#x200B; ladda ned en JSON-fil som exempel](../data-security-and-privacy/assets/access_request.json).
 
 Vi vet att ni strävar efter att uppfylla förfrågningar om datasekretess inom den tidsperiod som fastställs i lagstiftningen.
 
@@ -50,7 +50,7 @@ Du kan skicka begäranden om borttagning av data via [Privacy Service-gränssnit
 
 Med användargränssnittet i [Privacy Service](https://privacyui.cloud.adobe.io/) kan du skapa nya jobbförfrågningar genom att använda [!UICONTROL Request Builder] eller överföra en [!DNL JSON]-fil.
 
-Om du vill se hur en giltig [!DNL JSON]-fil ser ut kan du [ ladda ned en JSON-fil som exempel](../data-security-and-privacy/assets/access_request.json).
+Om du vill se hur en giltig [!DNL JSON]-fil ser ut kan du [&#x200B; ladda ned en JSON-fil som exempel](../data-security-and-privacy/assets/access_request.json).
 
 Adobe vet att ni strävar efter att uppfylla förfrågningar om datasekretess inom 30 dagar. Av den anledningen har [!DNL Adobe] åtagit sig att bearbeta din begäran om att ta bort data så snart som möjligt.
 
@@ -65,7 +65,7 @@ När du skickar deklarerade ID:n, till exempel [!DNL CRM] ID:n för olika enhete
 
 I sådana fall kan du inte skicka borttagningsbegäranden till aktiveringspartners på ett automatiskt sätt via [!DNL Audience Manager].
 
-Läs vår [enhetsbaserade mållista ](assets/AAM-Partners-October2019.xlsx) om du vill se vilka [!DNL Audience Manager] aktiveringspartners som stöder segmentdelning.
+Läs vår [enhetsbaserade mållista &#x200B;](assets/AAM-Partners-October2019.xlsx) om du vill se vilka [!DNL Audience Manager] aktiveringspartners som stöder segmentdelning.
 
 ## Avanvisningsbegäranden {#opt-out-requests}
 
