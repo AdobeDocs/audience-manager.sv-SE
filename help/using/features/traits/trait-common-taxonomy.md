@@ -31,7 +31,7 @@ Att göra det möjligt för våra kunder att bygga anpassade segment och datamod
 
 ## Taxonomin använder klassificeringskategorier enligt branschstandard
 
-Den gemensamma taxonomin baseras på klassificeringar som har skapats av [!DNL Interactive Advertising Bureau (IAB)]. Mer information om riktlinjer för kvalitetssäkring för nätverk och utbyte finns på [!DNL IAB]webbplatsen[ för ](https://www.iab.net/iab_products_and_industry_services/508676/ne_guidelines).
+Den gemensamma taxonomin baseras på klassificeringar som har skapats av [!DNL Interactive Advertising Bureau (IAB)]. Mer information om riktlinjer för kvalitetssäkring för nätverk och utbyte finns på [!DNL IAB]webbplatsen[&#x200B; för &#x200B;](https://www.iab.net/iab_products_and_industry_services/508676/ne_guidelines).
 
 ## Taxonomisk organisation
 

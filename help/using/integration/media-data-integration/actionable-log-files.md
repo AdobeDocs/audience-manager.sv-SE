@@ -309,7 +309,7 @@ Om du vill skapa regelbaserade egenskaper med hjälp av dina åtgärdbara signal
 
 ## Användningsexempel {#use-cases}
 
-En fördel med att implementera [!UICONTROL Actionable Log Files] är att du kan använda [- och ](../../features/segments/recency-and-frequency.md)-kontroller på alla [regelbaserade traits](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) som innehåller åtgärdbara signaler. Detta gör att du till exempel kan ange antalet gånger som en användare visas som en viss kreativ i en mediekampanj. Läs [Undertryckande av direktenheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md) om du vill veta hur du gör detta. Andra användningsområden:
+En fördel med att implementera [!UICONTROL Actionable Log Files] är att du kan använda [- och &#x200B;](../../features/segments/recency-and-frequency.md)-kontroller på alla [regelbaserade traits](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) som innehåller åtgärdbara signaler. Detta gör att du till exempel kan ange antalet gånger som en användare visas som en viss kreativ i en mediekampanj. Läs [Undertryckande av direktenheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md) om du vill veta hur du gör detta. Andra användningsområden:
 
 ### Återmarknadsföringsanvändare
 
