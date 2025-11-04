@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Autentisering med personbaserade plattformar
 feature: People-based Destinations
 exl-id: d3e136d0-2b06-412a-9b9b-75b661c9aa14
-source-git-commit: 1809e9ee0b19a8ffb4bec38162f728d543d13701
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -52,7 +52,9 @@ Så här lägger du till e-postadresser i befintliga integreringar:
 När en autentiseringstoken upphör att gälla avbryts integreringen mellan Audience Manager och motsvarande sociala plattform, så Audience Manager kan inte längre skicka målgruppssegment till målet. På sidan [!UICONTROL Integrated Accounts] visas förfallostatusen för varje integrering i kolumnen [!UICONTROL Expiration], och du kan när som helst förnya autentiseringen.
 
 Så här förnyar du en autentisering som har upphört att gälla eller som snart upphör att gälla:
+
 1. Logga in på ditt Audience Manager-konto och gå till **[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**.
 1. Identifiera den integrering som du behöver förnya autentiseringen för. Utgångna autentiseringar markeras som [!UICONTROL Expired], medan autentiseringar som snart upphör att gälla snart visar det återstående antalet autentiserade dagar.
 1. Klicka på motsvarande **[!UICONTROL Renew]**-ikon i kolumnen [!UICONTROL Expiration]. Detta utlöser arbetsflödet **[!UICONTROL Renew Account]**, som tar dig tillbaka genom den sociala plattformens autentiseringssida. När du autentiserar förnyas token med det nya förfallodatumet.
+
    ![pbd-renew](assets/pbd-renew.png)

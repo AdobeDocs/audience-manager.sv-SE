@@ -7,7 +7,7 @@ title: Ordlista
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
 feature: Reference
 exl-id: 9e2ee3d3-01b2-4038-abda-fedf0f16f163
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 96%
@@ -51,15 +51,17 @@ Se DPUUID i [Index över ID:n i Audience Manager](../reference/ids-in-aam.md).
 **Kundadresserbar målgrupp**
 
 I [Addressable Audience](/help/using/features/addressable-audiences.md) representerar detta mätvärde enheter som:
-* Har fått antingen ett regelbaserat eller registrerat trait under tillbakablicksperioden
-  **OCH**
-* Har en ID-synkronisering med den valda destinationen oavsett synkroniseringstidpunkten.
 
+* Har fått antingen ett regelbaserat eller registrerat trait under tillbakablicksperioden
+
+  **OCH**
+
+* Har en ID-synkronisering med den valda destinationen oavsett synkroniseringstidpunkten.
 
 
 **Kundattribut**
 
-Se [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=sv-SE) i [!DNL Experience Cloud Core Services] produktdokumentationen.
+Se [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) i [!DNL Experience Cloud Core Services] produktdokumentationen.
 
 
 
@@ -111,7 +113,7 @@ I [!DNL Audience Manager] är ett mål ett annat system (annonsserver, DSP, anno
 
 **Experience Cloud ID (ECID)**
 
-Tidigare kallat [!DNL Marketing Cloud] ID (MID eller MCID). [!DNL Experience Cloud]-ID är centralt för ID-tjänsten. Det är en unik och beständig identifierare för era webbplatsbesökare. Se Cookies och [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=sv-SE).
+Tidigare kallat [!DNL Marketing Cloud] ID (MID eller MCID). [!DNL Experience Cloud]-ID är centralt för ID-tjänsten. Det är en unik och beständig identifierare för era webbplatsbesökare. Se Cookies och [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html).
 
 
 
@@ -268,6 +270,6 @@ TTL definierar hur många dagar en kvalificerad besökare stannar i ett trait. T
 
 [!DNL Experience Cloud] ID-tjänsten (tidigare besökar-ID) tillhandahåller ett universellt, beständigt ID som identifierar era besökare i alla lösningar i [!DNL Experience Cloud].
 
-Se dokumentationen för [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=sv-SE).
+Se dokumentationen för [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html).
 
 ## W-X-Y-Z {#w-z}

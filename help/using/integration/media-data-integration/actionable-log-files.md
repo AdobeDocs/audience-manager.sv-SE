@@ -8,7 +8,7 @@ title: Loggfiler som kan användas
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 exl-id: bd499931-4e02-4f64-82ba-46ef7c4ffd3c
-source-git-commit: b3f97cfbbd5167f03a6951fcc571368e4a0d15a4
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 1%
@@ -41,7 +41,7 @@ Om du redan importerar loggdata till [!DNL Audience Manager] ber du din [!DNL Au
 
 >[!IMPORTANT]
 >
-> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/se/contact/enterprise-support.ec.html) to get started.
+> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
 
 -->
 
@@ -62,7 +62,7 @@ Signalerna är de [minsta dataenheterna](../../reference/signal-trait-segment.md
 >[!IMPORTANT]
 >
 >[!UICONTROL Actionable Log Files] stöds för följande annonsservrar:
->&#x200B;> <br>
+> <br>
 >
 > * [Google Campaign Manager](#dcm-logs-signals)
 > * [Google Ad Manager](#ad-manager-logs-signals)
@@ -309,7 +309,7 @@ Om du vill skapa regelbaserade egenskaper med hjälp av dina åtgärdbara signal
 
 ## Användningsexempel {#use-cases}
 
-En fördel med att implementera [!UICONTROL Actionable Log Files] är att du kan använda [- och &#x200B;](../../features/segments/recency-and-frequency.md)-kontroller på alla [regelbaserade traits](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) som innehåller åtgärdbara signaler. Detta gör att du till exempel kan ange antalet gånger som en användare visas som en viss kreativ i en mediekampanj. Läs [Undertryckande av direktenheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md) om du vill veta hur du gör detta. Andra användningsområden:
+En fördel med att implementera [!UICONTROL Actionable Log Files] är att du kan använda [- och ](../../features/segments/recency-and-frequency.md)-kontroller på alla [regelbaserade traits](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) som innehåller åtgärdbara signaler. Detta gör att du till exempel kan ange antalet gånger som en användare visas som en viss kreativ i en mediekampanj. Läs [Undertryckande av direktenheter](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md) om du vill veta hur du gör detta. Andra användningsområden:
 
 ### Återmarknadsföringsanvändare
 

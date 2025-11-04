@@ -6,7 +6,7 @@ title: Direkt undertryckning av olika enheter
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
 feature: Profile Merge
 exl-id: b9686210-e1aa-4f0a-a549-27d29c94e963
-source-git-commit: 2643bebea8618124d5c96906e8dc89e21024d51a
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -42,11 +42,13 @@ Dina besökare är kvalificerade för segmentet så länge de inte har konverter
 Du kan se till att du inte översvämmar dina användare med samma kreativa funktioner genom att ställa in kontroller för senaste och frekvens. I det här scenariot skapar du ett segment med två egenskaper, vilket beskrivs i stegen nedan.
 
 1. Skapa ett segment med hjälp av två egenskaper och använd logiken [!UICONTROL AND], som visas i bilden nedan. Du måste använda en regelbaserad trait för att definiera den intryckshändelse som ska utlösas i realtid. Läs mer om hur du [skapar regelbaserade egenskaper](../traits/create-onboarded-rule-based-traits.md).
+
    >[!NOTE]
    >
    >Du kan använda [!UICONTROL Actionable Log Files] eller [!UICONTROL Pixel Calls] för att skapa egenskaper baserat på användarexponeringar. Läs mer om [Aktiverbara loggfiler](../../integration/media-data-integration/actionable-log-files.md) och [Pixelanrop](../../integration/media-data-integration/impression-data-pixels.md).
-2. Använd frekvenskontroller på det andra tradet. Om du vill kan du även lägga till nya kontroller. Läs mer om [hur du använder kontroller för senaste och frekvens](../segments/recency-and-frequency.md).
-3. Mappa segmentet till valfritt antal server-till-server-mål i realtid. Läs vidare om hur du lägger till segment till [server-till-server-mål](../destinations/add-edit-segments.md).
+
+1. Använd frekvenskontroller på det andra tradet. Om du vill kan du även lägga till nya kontroller. Läs mer om [hur du använder kontroller för senaste och frekvens](../segments/recency-and-frequency.md).
+1. Mappa segmentet till valfritt antal server-till-server-mål i realtid. Läs vidare om hur du lägger till segment till [server-till-server-mål](../destinations/add-edit-segments.md).
 
 I det här scenariot kommer användarna att tas bort från segmentet när de har samlat in mer än tre exponeringar och de kommer inte att se just det här kreativa.
 
@@ -59,7 +61,7 @@ Tänk på följande när det gäller bearbetning:
 * För att segmenteringen i realtid ska fungera måste du mappa önskade segment till servermål i realtid.
 * För enheter som är anslutna till en enhet med ett [enhetsdiagram](profile-link-use-case.md#recommendations) tillämpar vi en gräns på fyra enheter för utvärdering och segmentering. Den här begränsningen beskrivs i [Alternativ för enhetsgrafik och Osegmentering av enhet](merge-rule-unsegment.md#device-graph-options-unsegmentation). &#x200B;
 * Delningskommandot inkluderas i en gruppfil, som skickas till mål var 24:e timme, för flera enheter som är anslutna via enhetsdiagrammet.
-* Enheten måste ses i realtid (på [Edge](../../reference/system-components/components-edge.md)) för att aktivera segmentutvärdering i realtid. För egenskaper som har [!UICONTROL time-to-live (TTL)] när trait [!DNL TTL] är uppfyllt, kommer enheten automatiskt att segmenteras upp inom 24 timmar via batchfilen. &#x200B;. Läs mer om hur du [anger ett förfallointervall för trait &#x200B;](../traits/create-onboarded-rule-based-traits.md#set-expiration-interval).
+* Enheten måste ses i realtid (på [Edge](../../reference/system-components/components-edge.md)) för att aktivera segmentutvärdering i realtid. För egenskaper som har [!UICONTROL time-to-live (TTL)] när trait [!DNL TTL] är uppfyllt, kommer enheten automatiskt att segmenteras upp inom 24 timmar via batchfilen. &#x200B;. Läs mer om hur du [anger ett förfallointervall för trait ](../traits/create-onboarded-rule-based-traits.md#set-expiration-interval).
 * Om du använder [!UICONTROL DCS API] för inbyggda regelbaserade egenskaper i realtid kan du utlösa segmentet med hjälp av logiken [!UICONTROL AND NOT]. Läs mer om att [skicka data till DCS API](../../api/dcs-intro/dcs-event-calls/dcs-url-send.md). &#x200B;
 
 ## Viktiga aspekter att anteckna - Timing {#timing-notes}

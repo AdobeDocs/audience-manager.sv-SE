@@ -8,7 +8,7 @@ uuid: e844e423-9701-42d4-9ba5-d82f41358adc
 keywords: Uppdelning av identitetstyp, identitetsuppdelning, rapportering av målgruppsidentitet, enhets-ID, enhets-ID
 feature: Segments
 exl-id: d33c8146-fd98-47fc-aa3d-96f002538df4
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -36,11 +36,11 @@ Detaljsidan för ett enskilt segment innehåller en översikt över segmentinfor
 Under segmenthanteringsverktygen hittar du följande segmentinformation:
 
 1. **[!UICONTROL Basic Information]:** Visar obligatorisk och valfri information som angavs när segmentet skapades. Se [Segmentbyggaren](segment-builder.md) för en detaljerad översikt över vad dessa fält betyder.
-2. **[!UICONTROL Segment Graph]:** Visar prestandadata grafiskt och för fasta intervall på 1, 7, 14, 30, 60 och 90 dagar. Vi förklarar segmentpopulationsnummer i en [separat artikel](../../features/segments/segment-builder-data.md).
+1. **[!UICONTROL Segment Graph]:** Visar prestandadata grafiskt och för fasta intervall på 1, 7, 14, 30, 60 och 90 dagar. Vi förklarar segmentpopulationsnummer i en [separat artikel](../../features/segments/segment-builder-data.md).
 
    ![segment-graph](assets/segment-graph.png)
 
-3. **[!UICONTROL Identity Type Breakdown]:** Rapporten visar antalet personer eller hushåll som är kvalificerade för ett segment genom att räkna antalet korsenhets-ID och/eller externa enhetsgraf-ID:n som är länkade till de enheter som är kvalificerade för segmentet (visas av [!UICONTROL Total Segment Population]). De olika enhets-ID:n och externa enhetsgraf-ID:n som visas i den här rapporten används för att sammanfoga profiler med den profilsammanfogningsregel som segmentet använder. Den här rapporten visas bara om du har valt en datakälla för olika enheter eller ett externt enhetsdiagram i den profilkopplingsregel som segmentet använder.
+1. **[!UICONTROL Identity Type Breakdown]:** Rapporten visar antalet personer eller hushåll som är kvalificerade för ett segment genom att räkna antalet korsenhets-ID och/eller externa enhetsgraf-ID:n som är länkade till de enheter som är kvalificerade för segmentet (visas av [!UICONTROL Total Segment Population]). De olika enhets-ID:n och externa enhetsgraf-ID:n som visas i den här rapporten används för att sammanfoga profiler med den profilsammanfogningsregel som segmentet använder. Den här rapporten visas bara om du har valt en datakälla för olika enheter eller ett externt enhetsdiagram i den profilkopplingsregel som segmentet använder.
 
    ![segment-graph](assets/segment-type.png)
 
@@ -49,8 +49,9 @@ Under segmenthanteringsverktygen hittar du följande segmentinformation:
    >Audience Manager visar bara rapporten [!UICONTROL Identity Type Breakdown] om du har ett ID mellan olika enheter som är kvalificerat för segmentet.
 
    I videon nedan visas en översikt över [!UICONTROL Identity Type Breakdown].
+
    >[!VIDEO](https://video.tv.adobe.com/v/27977/)
 
-4. **[!UICONTROL Segment Rules]:** Visar egenskaper i segmentet tillsammans med kvalificeringsregler.
-5. **[!UICONTROL Destination Mappings]:** Visar målmappningar för segmentet.
-6. **[!UICONTROL Management Tools]:** Kontroller som gör att du kan skapa, redigera, klona och ta bort segment.
+1. **[!UICONTROL Segment Rules]:** Visar egenskaper i segmentet tillsammans med kvalificeringsregler.
+1. **[!UICONTROL Destination Mappings]:** Visar målmappningar för segmentet.
+1. **[!UICONTROL Management Tools]:** Kontroller som gör att du kan skapa, redigera, klona och ta bort segment.

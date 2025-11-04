@@ -8,7 +8,7 @@ keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 feature: DCS
 exl-id: 1bdd7dcd-9411-4b0a-a236-059eb5faf00d
-source-git-commit: e10211057a87622340fd2c61737c7c7a45c0e99c
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 1%
@@ -80,7 +80,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Adobe Experience Platform identitetstjänst och beror på <code> idSyncDisable3rdPartySyncing</code>-konfigurationen. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html?lang=sv-SE" format="https" scope="external"> COPPA-stöd i Adobe Experience Platform Identity Service </a>. </p> </td>
+   <td colname="col2"> <p>Inaktivera användning av cookies från tredje part för att uppfylla regler för skydd av barn. Den här parametern ställs in dynamiskt av Adobe Adobe Experience Platform identitetstjänst och beror på <code> idSyncDisable3rdPartySyncing</code>-konfigurationen. Se <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html" format="https" scope="external"> COPPA-stöd i Adobe Experience Platform Identity Service </a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
@@ -90,14 +90,14 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
       <li id="li_F304CA651F3C444A9A24576726925D87"> <p><code> d_cts=2</code> returnerar segment-ID:n för segmenten. </p> </li>
      </ul> </p> <p>Ett exempelsvar kan se ut som det nedan: </p> <p>
      <code class="syntax javascript">
-      &lbrace;
+      {
       &nbsp;&nbsp;&nbsp;&nbsp;"stuff":&nbsp;[],
       &nbsp;&nbsp;&nbsp;&nbsp;"uuid":&nbsp;"07955261652886032950143702505894272138",
       &nbsp;&nbsp;&nbsp;&nbsp;"dcs_region":&nbsp;7,
       &nbsp;&nbsp;&nbsp;&nbsp;"traits":&nbsp;[420020,&nbsp;5421506],
       &nbsp;&nbsp;&nbsp;&nbsp;"segments":&nbsp;[984263,&nbsp;985264],
       &nbsp;&nbsp;&nbsp;&nbsp;"tid":&nbsp;"ss3OTqPiQp0="
-      &rbrace;
+      }
      </code> </p> </td> 
   </tr> 
   <tr> 
@@ -122,7 +122,7 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>Anger det Experience Cloud-ID som anges och används av <span class="keyword"> Experience Cloud</span>-ID-tjänsten. Mer information om ECID finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=sv-SE" format="https" scope="external"> Cookies och Experience Cloud Identity Service </a>. </p> </td> 
+   <td colname="col2"> <p>Anger det Experience Cloud-ID som anges och används av <span class="keyword"> Experience Cloud</span>-ID-tjänsten. Mer information om ECID finns i <a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies och Experience Cloud Identity Service </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
@@ -150,12 +150,12 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
       <li id="li_824C23B4C7AA4B5EBADF73D26016A18E">Om du tar med det här returnerar <span class="wintitle"> DCS</span> ett <code> JSON</code>-objekt i svarstexten. Se exemplet nedan. Svaret kan vara mer komplext. </li> 
      </ul> </p> <p> 
      <code class="syntax javascript">
-      &lbrace;
+      {
       &nbsp;&nbsp;&nbsp;&nbsp;"stuff":&nbsp;[],
       &nbsp;&nbsp;&nbsp;&nbsp;"uuid":&nbsp;"22920112968019678612904394744954398990",
       &nbsp;&nbsp;&nbsp;&nbsp;"dcs_region":&nbsp;7,
       &nbsp;&nbsp;&nbsp;&nbsp;"tid":&nbsp;"ss3OTqPiQp0="
-      &rbrace;
+      }
      </code> </p> </td> 
   </tr> 
   <tr> 
@@ -194,8 +194,8 @@ Alla dessa är valfria, såvida du inte vill ha ett svar från [!DNL DCS]. Om du
 Dessa rubriker innehåller information som förfrågningar om data och svar i ett HTTP-anrop.
 
 | Attribut | Beskrivning |
-| --- | --- | 
-| `h_host` | Detta anges till klientens specifika värdnamn för datainsamling. Det visas som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=sv-SE). |
+| --- | --- |
+| `h_host` | Detta anges till klientens specifika värdnamn för datainsamling. Det visas som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en). |
 | `h_user-agent` | Ange till rubrikvärdet `User-Agent`. |
 | `h_accept-language` | Ange till rubrikvärdet `Accept-Language`. |
 | `h_referer` | Ange till rubrikvärdet `Referer`. |

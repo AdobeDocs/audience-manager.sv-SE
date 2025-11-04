@@ -7,7 +7,7 @@ title: Segment Builder
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
 feature: Segments
 exl-id: 1bd681e4-fdf7-40df-b497-b1b0bf19d68e
-source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 1%
@@ -110,7 +110,7 @@ I [!UICONTROL Segment Builder] kan du med [!UICONTROL the Basic Information]-ins
 -->
 
 | Fält | Beskrivning |
----------|----------
+|---------|----------|
 | **[!UICONTROL Name]** | Ge segmentet ett kort logiskt namn som beskriver dess funktion eller syfte. Undvik förkortningar och specialtecken. Segmentnamnet får innehålla högst 255 tecken. |
 | **[!UICONTROL Description]** | Ett fält för ytterligare beskrivande information om segmentet. |
 | **[!UICONTROL Integration Code]** | Ett fält för ett användardefinierat ID eller annan företagsspecifik information. |

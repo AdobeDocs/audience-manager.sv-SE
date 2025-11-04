@@ -7,7 +7,7 @@ title: Kodsyntax i segmentuttrycksredigeraren
 uuid: 7b4b06ca-7879-4501-8ba7-b2b6467b8a3b
 feature: Segments
 exl-id: 64fa6f03-cef9-4187-866f-28c54f45f72e
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -44,9 +44,9 @@ Om du vill skapa grupper av segment omsluter du frekvensfunktionen inom parentes
 | Namn eller variabel | Beskrivning |
 |---|---|
 | `FREQUENCY` | En litteral som måste föregå uttrycket. |
-| ` [`&lt;`traitID`>`T]` | En matris med trait-ID:n följt av bokstaven `T`. Avgränsa flera egenskaper med komma. Exempel: `[123T, 456T]`. |
-| ` <Recency Operator><Numeric Value>D` | *(Valfritt)* Anger regler för senaste aktivitet för egenskaper i segmentet. Bokstaven `D` anger att det är aktuellt i dagar. |
-| ` <Frequency Operator><Numeric Value>` | Anger frekvensregler för egenskaper i segmentet. |
+| `[`&lt;`traitID`>`T]` | En matris med trait-ID:n följt av bokstaven `T`. Avgränsa flera egenskaper med komma. Exempel: `[123T, 456T]`. |
+| `<Recency Operator><Numeric Value>D` | *(Valfritt)* Anger regler för senaste aktivitet för egenskaper i segmentet. Bokstaven `D` anger att det är aktuellt i dagar. |
+| `<Frequency Operator><Numeric Value>` | Anger frekvensregler för egenskaper i segmentet. |
 
 ### Tillåtna operatorer för senaste och frekvens
 

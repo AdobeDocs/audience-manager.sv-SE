@@ -8,7 +8,7 @@ title: Klassificera egenskaper med en gemensam taxonomi
 uuid: 2e177344-07d9-40a7-8c99-c6c6518b9d97
 feature: Traits
 exl-id: 59000dc7-66cf-4e7e-8e9b-9d48157203bd
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Att göra det möjligt för våra kunder att bygga anpassade segment och datamod
 
 ## Taxonomin använder klassificeringskategorier enligt branschstandard
 
-Den gemensamma taxonomin baseras på klassificeringar som har skapats av [!DNL Interactive Advertising Bureau (IAB)]. Mer information om riktlinjer för kvalitetssäkring för nätverk och utbyte finns på [!DNL IAB]webbplatsen[&#x200B; för &#x200B;](https://www.iab.net/iab_products_and_industry_services/508676/ne_guidelines).
+Den gemensamma taxonomin baseras på klassificeringar som har skapats av [!DNL Interactive Advertising Bureau (IAB)]. Mer information om riktlinjer för kvalitetssäkring för nätverk och utbyte finns på [!DNL IAB]webbplatsen[ för ](https://www.iab.net/iab_products_and_industry_services/508676/ne_guidelines).
 
 ## Taxonomisk organisation
 
@@ -39,7 +39,7 @@ Den gemensamma taxonomin baseras på klassificeringar som har skapats av [!DNL I
 
 ## Klassificera egenskaper i datakategorier
 
-Du tilldelar taxonomiska klassificeringar när du skapar eller redigerar egenskaper i [!UICONTROL Add New Trait Wizard] (finns i * **[!UICONTROL Audience Data > Traits]***). Mer information finns i [dokumentationen om att skapa egenskaper](../../features/traits/create-onboarded-rule-based-traits.md).
+Du tilldelar taxonomiska klassificeringar när du skapar eller redigerar egenskaper i [!UICONTROL Add New Trait Wizard] (finns i ***[!UICONTROL Audience Data > Traits]***). Mer information finns i [dokumentationen om att skapa egenskaper](../../features/traits/create-onboarded-rule-based-traits.md).
 
 ## Arbeta med taxonomi: Ytterligare överväganden
 

@@ -7,7 +7,7 @@ title: Integrering av mediedata
 uuid: 6f6bbd03-084b-4226-8809-3b00b467606f
 feature: Adobe Campaign Integration
 exl-id: ca4906a7-0c39-49bc-9505-d76a61ec9eac
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%

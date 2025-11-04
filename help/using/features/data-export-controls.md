@@ -7,7 +7,7 @@ title: Dataexportkontroller
 uuid: de7f3608-c0cb-4049-973a-8be54525c600
 feature: Data Export Controls
 exl-id: 4369c210-bcf1-48cc-a9bb-0d122f6c03d4
-source-git-commit: 26aa0a210a045b40b2329844324315a092947188
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 0%
@@ -48,6 +48,7 @@ Dessutom måste minst en exportetikett matcha en exportkontroll innan datalevera
 >[!IMPORTANT]
 >
 >Du kan inte blockera exporten av ett segment genom att placera en dataexportkontroll i segmentets datakälla, du måste ange kontrollen på något av följande:
+>
 > * Datakällor för de egenskaper som används i segmentet.
 > * Den profilsammanfogningsregel som används av segmentet.
 > * Alla datakällor som segmentets profilkopplingsregel använder.

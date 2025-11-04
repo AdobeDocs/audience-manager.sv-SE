@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Vanliga frågor om personbaserade destinationer
 feature: People-based Destinations
 exl-id: 56506bf0-45f1-49df-81ac-10f57a2487eb
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '1161'
-ht-degree: 93%
+ht-degree: 85%
 
 ---
 
@@ -34,7 +34,7 @@ Det finns två sätt att överföra offlinedata till Audience Manager för [!DNL
 
 **Kan jag samla in hash-kodade e-postadresser via ett webbformulär eller en mobilapp eller måste de överföras i kommandofiler?**
 
-Du kan samla in hash-kodade e-postadresser via webbautentisering med [!DNL ECID] och [deklarerade ID:n](../features/declared-ids.md). Med kommandofilen kan du även samla in hash-kodade e-postadresser som inte kan skickas via autentisering (t.ex. vilande användare i ([!DNL CRM]) och aktivera dem i personbaserade destinationer.
+Du kan samla in hash-kodade e-postadresser via webbautentisering med [!DNL ECID] och [deklarerade ID:n](../features/declared-ids.md). Med gruppfilen kan du även samla in hashade e-postadresser som inte kan skickas via autentisering (t.ex. vilande användare i din ([!DNL CRM]) och aktivera dem i personbaserade mål.
 
 **Hur skiljer sig inmatningen av hash-kodade e-postadresser via webbformulär från överföringen av hash-kodade e-postadresser via kommandofiler?**
 
@@ -60,6 +60,7 @@ Ja. Kunder som köper [!DNL People-Based Destinations] får även tillgång till
 Det beror på ert användningsområde. Om ni planerar att aktivera befintliga förstapartssegment i personbaserade kanaler behöver ni inte skapa nya segment. Ni behöver bara mappa segmenten till en personbaserad destination.
 
 Om ni planerar att aktivera nya offlinemålgrupper i personbaserade kanaler måste ni skapa nya förstapartssegment med regeln [!DNL All Cross-Device Profiles] för sammanslagning.
+
 >[!NOTE]
 >
 > Ni kan bara mappa segment med förstapartsdata till [!DNL People-Based Destinations]. Våra destinationsplattformar accepterar inte segment med data från andra- eller tredjepartsleverantörer.
@@ -72,7 +73,7 @@ Nej. När målgruppssegment skickas till [!DNL People-Based Destinations] sker m
 
 **Hur skulle matchningsfrekvenser med [!DNL People-Based Destinations] teoretiskt kunna jämföras med andra metoder för att skicka målgrupper till destinationsplattformar?**
 
-Så länge e-postadressen är hash-kodad och korrekt inmatad bör det inte vara någon skillnad i matchningsfrekvensen mellan [!DNL People-Based Destinations] och andra metoder. Den enda anledningen till att en matchningsfrekvens är under 100 % är om e-postadresserna som hämtas till Audience Manager inte kan matchas med en e-postadress i destinationsplattformens användardatabas.
+Så länge e-postadressen är hash-kodad och korrekt inmatad bör det inte vara någon skillnad i matchningsfrekvensen mellan [!DNL People-Based Destinations] och andra metoder. Den enda anledningen till att en matchningsfrekvens skulle vara under 100 % är om e-postadresserna som hämtas till Audience Manager inte kan matchas med en e-postadress i målplattformens användarbas.
 
 **Jag samlar in e-postadresser till arbetet från mina kunder och de skiljer sig från de personliga e-postadresserna som används i sociala nätverk. Hur matchar ni identiteter för flera e-postadresser?**
 
@@ -106,13 +107,13 @@ Innan du kan använda [!DNL People-Based Destinations] för att skicka målgrupp
 
 **Har [!DNL People-Based Destinations] stöd för målgruppsanpassning i andra [!DNL Facebook]-appar som [!DNL Instagram]?**
 
-Du kan använda [!DNL People-Based Destinations] i alla [!DNL Facebook]-appar som stöds av [!DNL Custom Audiences], inklusive [!DNL Facebook], [!DNL Instagram], [!DNL Audience Network] och [!DNL Messenger]. Det program som ni valt att köra kampanjen mot anges av placeringsnivån i [!DNL Facebook Ads Manager].
+Du kan använda [!DNL People-Based Destinations] i alla program i [!DNL Facebook] som stöds av [!DNL Custom Audiences], inklusive [!DNL Facebook], [!DNL Instagram], [!DNL Audience Network] och [!DNL Messenger]. Det program som ni valt att köra kampanjen mot anges av placeringsnivån i [!DNL Facebook Ads Manager].
 
-**Vad är skillnaden mellan [!DNL People-Based Destinations] och [!DNL Website Custom Audiences]?**
+**Vad är skillnaden mellan [!DNL People-Based Destinations] och [!DNL Website Custom Audiences]?**
 
 [!DNL People-Based Destinations] utnyttjar [!DNL Custom Audiences (CA)]-integreringen med [!DNL Facebook]. Skillnaden mellan [!DNL WCA]- och [!DNL CA]-integreringarna är nyckeln som kunderna använder när de skickar målgrupper till [!DNL Facebook]. [!DNL WCA] använder [!DNL Facebook]-pixeln (som kan vara ett användar-ID för en webbplats) medan [!DNL People-Based Destinations] använder hash-kodade e-postadresser för integrering med [!DNL CA].
 
-Ni kan använda Audience Managers [!DNL Facebook]-integrering [!DNL WCA] via funktionen [!DNL URL Destinations] utan extra kostnad.
+Du kan använda Audience Manager [!DNL Facebook] [!DNL WCA]-integrering via funktionen [!DNL URL Destinations] utan extra kostnad.
 
 Dessa två integreringar kompletterar varandra och ni kan använda båda för att få bättre målgruppstäckning. Som exempel kan [!DNL WCA] användas för prospektering när ett företag söker efter webbplatsbesökare som inte har registrerat ett konto, medan [!DNL People-Based Destinations] kan hjälpa er att rikta er till befintliga kunder som har angett sin e-postadress men kanske inte besökt webbplatsen.
 

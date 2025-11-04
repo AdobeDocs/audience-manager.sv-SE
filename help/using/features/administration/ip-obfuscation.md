@@ -5,7 +5,7 @@ solution: Audience Manager
 title: IP-adressofficering
 feature: Data Governance & Privacy
 exl-id: 8c976d1e-f4ba-4892-bd68-d4e74bdb4d9b
-source-git-commit: ae074cdeb8dcf6f6a224c2ede5f3bb704b28f49f
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Se även Samla in IP-adresser och IP-adressofficering i avsnittet [Dataintegrite
 
 ### Prioritet för IP-obefuscation {#precedence}
 
-[IP-ojämnheter på datastranaminivå](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=sv-SE#create) har företräde framför IP-ofuskeringsalternativ som har angetts i Audience Manager, och de tillämpas på alla IP-adresser. Alla sökningar efter geopositionering som görs av Audience Manager påverkas av alternativet [!UICONTROL IP obfuscation] på datastream-nivå. En sökning efter geopositionering i Audience Manager, som baseras på en helt okomplicerad IP-adress, resulterar i en okänd region och eventuella segment som baseras på den resulterande geopositioneringsinformationen inte realiseras.
+[IP-ojämnheter på datastranaminivå](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#create) har företräde framför IP-ofuskeringsalternativ som har angetts i Audience Manager, och de tillämpas på alla IP-adresser. Alla sökningar efter geopositionering som görs av Audience Manager påverkas av alternativet [!UICONTROL IP obfuscation] på datastream-nivå. En sökning efter geopositionering i Audience Manager, som baseras på en helt okomplicerad IP-adress, resulterar i en okänd region och eventuella segment som baseras på den resulterande geopositioneringsinformationen inte realiseras.
 
 ## Krav för IP-adressofficering {#ip-obfuscation-requirements}
 
@@ -62,4 +62,5 @@ Om du vill inaktivera IP-adressofficering för specifika länder söker du efter
 
 * [Dataintegritet](/help/using/overview/data-security-and-privacy/data-privacy.md)
 * Videodemonstration om IP-adressofuscation
+
 >[!VIDEO](https://video.tv.adobe.com/v/27218/)

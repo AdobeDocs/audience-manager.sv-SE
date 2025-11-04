@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Arbetsflöde A - Personalization baserad på all onlineaktivitet i kombination med offlinedata
 feature: People-based Destinations
 exl-id: 1f906955-8fe7-4cce-95d6-0e4275d523e8
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 0%
@@ -36,11 +36,13 @@ I det här fallet måste du märka motsvarande datakälla som sådan:
 1. Kontrollera att alternativet [!UICONTROL Cannot be tied to personally identifiable information] inte är markerat.
 1. I avsnittet **[!UICONTROL Data Source Settings]** markerar du både alternativen **[!UICONTROL Inbound]** och **[!UICONTROL Outbound]** och aktiverar alternativet **[!UICONTROL Share associated cross-device IDs in people-based destinations]**.
 1. Använd listrutan för att välja etiketten **[!UICONTROL Emails(SHA256, lowercased)]** för den här datakällan.
+
    >[!IMPORTANT]
    >
    >Med det här alternativet anges endast att datakällan innehåller data som har hash-kodats med den specifika algoritmen. Audience Manager hash-kodar inte data i det här steget. Kontrollera att e-postadresserna som du planerar att lagra i den här datakällan redan har hash-kodats med algoritmen [!DNL SHA256]. Annars kan du inte använda den för [!DNL People-Based Destinations].
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
+
 1. Spara inställningarna för datakälla.
 
  
@@ -54,6 +56,7 @@ I det här fallet måste du skapa en ny datakälla för olika enheter som lagrar
 1. Välj **[!UICONTROL ID Type]** i listrutan **[!UICONTROL Cross Device]**.
 1. I avsnittet **[!UICONTROL Data Source Settings]** markerar du både alternativen **[!UICONTROL Inbound]** och **[!UICONTROL Outbound]** och aktiverar alternativet **[!UICONTROL Share associated cross-device IDs in people-based destinations]**.
 1. Använd listrutan för att välja etiketten **[!UICONTROL Emails(SHA256, lowercased)]** för den här datakällan.
+
    >[!IMPORTANT]
    >
    >Med det här alternativet anges endast att datakällan innehåller data som har hash-kodats med den specifika algoritmen. Audience Manager hash-kodar inte data i det här steget. Kontrollera att e-postadresserna som du planerar att lagra i den här datakällan redan har hash-kodats med algoritmen [!DNL SHA256]. Annars kan du inte använda den för [!DNL People-Based Destinations].
