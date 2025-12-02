@@ -101,7 +101,7 @@ Nollor anger att [!DNL Audience Manager] inte samlade in data för den dagen. To
 
 Titta på videon nedan för att få en detaljerad bild av hur enhetsövergripande mätvärden fungerar.
 
-[Mer information om enhetsövergripande värden i Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager)
+[Mer information om enhetsövergripande värden i Audience Manager](https://experienceleague.adobe.com/sv/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager)
 
 ## Trendrapportresultat för segment {#segment-report-results-traits}
 
