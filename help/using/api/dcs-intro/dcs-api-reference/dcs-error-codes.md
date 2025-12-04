@@ -181,7 +181,7 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
   <tr> 
    <td colname="col1"> <p>310 </p> </td> 
    <td colname="col2"> <p>Kund-ID ignorerades eftersom det överskred gränsen för ett givet namnutrymme. Namnområdes-ID är <code><i>ID</i></code>, kund-ID är <code><i>ID</i></code>. </p> </td> 
-   <td colname="col3"> <p>Den här felkoden returneras om fler än tre kund-ID har deklarerats för samma namnområde (<code> DPID</code>) i ett <span class="wintitle"> DCS</span> -anrop. </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>I det här exemplet på <span class="wintitle"> DCS</span>-begäran finns det 4 ID:n deklarerade för samma namnutrymme (med integreringskoden 1). Ett av ID:na ignoreras och fel 310 returneras. </p> </td> 
+   <td colname="col3"> <p>Den här felkoden returneras om fler än tre kund-ID har deklarerats för samma namnområde (<code> DPID</code>) i ett <span class="wintitle"> DCS</span> -anrop. </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one </code> </p> <p>I det här exemplet på <span class="wintitle"> DCS</span>-begäran finns det 4 ID:n deklarerade för samma namnutrymme (med integreringskoden 1). Ett av ID:na ignoreras och fel 310 returneras. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>311 </p> </td> 
@@ -192,7 +192,7 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
    <td colname="col1"> <p>312 </p> </td> 
    <td colname="col2"> <p>Begäran innehåller ett ogiltigt globalt enhets-ID </p> </td> 
    <td colname="col3"> <p><span class="wintitle">DCS</span> returnerar den här felkoden när begäran innehåller ett ogiltigt globalt enhets-ID. DCS ignorerar det ogiltiga ID:t och genererar ett 312-fel tillsammans med de specifika felen för det ogiltiga ID:t. Se <a href="../../../features/global-data-sources.md" format="dita" scope="local">Globala datakällor</a> och <a href="../../../reference/ids-in-aam.md" format="dita" scope="local">Index med ID:n i Audience Manager</a> för detaljerad information om rätt ID-format för enhetsannonsering och motsvarande globala datakällor.</p>
-   <p>Exempel på ett felaktigt anrop: <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
+   <p>Exempel på ett felaktigt anrop: <code>"http://partner.demdex.net/event?d_rtbd=json&d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
    <p>Förklaring: En <span class="keyword">IDFA (DPID 20915)</span> måste vara ett versalt ID. ID:t som angavs i begäran är gemener.</p>
    </td>
   </tr>
