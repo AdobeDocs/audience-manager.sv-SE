@@ -4,9 +4,9 @@ title: Felkoder, meddelanden och exempel för DCS
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 exl-id: 485e5ce2-143e-4d18-b157-c243c5a510ad
-source-git-commit: 2012c244f6fa5ca01c7e2719ce621214cb22f93e
+source-git-commit: f8ba09b674b71045e08f6d171471cdcdd0efb265
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1519'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
 |---|---|---|
 | 0 | Ospecificerat fel | Detta är ett catch-all-fel som hanterar händelser som inte täcks av de andra felhanterarna. Det är svårt att felsöka det här felet. Den kan orsakas av en mängd okända åtgärder eller händelser. Om du får det här felet kan du försöka med din [!DNL DCS]-begäran igen. Kontakta din [!DNL Adobe]-representant om problemet kvarstår. |
 | 1 | Det gick inte att hitta konfigurationen för värdnamnet: `hostname` | Värdnamnet som skickades i begäran har inte konfigurerats av vårt team för partneretablering. Kontakta din [!DNL Adobe]-representant om det här felmeddelandet visas. |
-| 2 | Ogiltigt `d_orgid`-värde (det gick inte att hitta någon konfiguration för detta organisations-ID): `ID` | Organisations-ID:t är felaktigt. Kontrollera ditt ID och försök igen. Om du inte känner till eller har ditt företags-ID kan du läsa avsnittet Administrationssida [Organisationer och kontolänkning](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=sv-SE) för mer information om hur du hittar det. |
+| 2 | Ogiltigt `d_orgid`-värde (det gick inte att hitta någon konfiguration för detta organisations-ID): `ID` | Organisations-ID:t är felaktigt. Kontrollera ditt ID och försök igen. Om du inte känner till eller har ditt företags-ID kan du läsa avsnittet Administrationssida [Organisationer och kontolänkning](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html) för mer information om hur du hittar det. |
 | 10 | Det går inte att utvärdera egenskaper | Förfrågans egenskaper har antingen utvärderats delvis eller inte utvärderats alls. Kontakta din [!DNL Adobe]-representant om problemet kvarstår. |
 
 ## Felkoder för integrering {#integration-error-codes}
@@ -129,92 +129,22 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
 
 ## Varningskoder för integrering {#integration-warning-codes}
 
-<table id="table_31F1593C46804DDBA2E9BEDE83F2417F"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Kod-ID </th> 
-   <th colname="col2" class="entry"> Meddelande </th> 
-   <th colname="col3" class="entry"> Beskrivning </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>300 </p> </td> 
-   <td colname="col2"> <p>Ogiltigt kund-ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Kund-ID är ogiltigt (värden saknas för datakälla, integreringskoder saknas, ogiltigt format för datakällor, blockerat kund-ID, tomt kund-ID, oauktoriserat åtkomstförsök till en datakälla som inte tillhör partnern). </p> </td>
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>301 </p> </td> 
-   <td colname="col2"> <p>Det högsta antalet kund-ID:n har överskridits. Högsta tillåtna antal är <code><i>maximum allowed</i></code>. <code><i>maximum found</i></code> hittades.</p> </td> 
-   <td colname="col3"> <p>Antalet kund-ID:n som är associerade med en datakälla mellan olika enheter överskrider det tillåtna antalet korsenhets-ID:n per begäran. Dessa ID:n omfattar enhets-, mobil- eller cookie-ID:n. Gränsen är för närvarande 10. </p> </td>
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>302 </p> </td> 
-   <td colname="col2"> <p>Oauktoriserat kund-ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Returneras när kundens ID-datakälla inte ägs av det aktuella organisations-ID:t. Om du inte känner till eller har ditt företags-ID kan du läsa avsnittet Hitta ditt företags-ID i <a href="https://experiencecloud.adobe.com/resources/help/en_US/mcloud/organizations.html" format="https" scope="external"> Organisationer och Kontolänkning </a> för mer information om hur du hittar det. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>303 </p> </td> 
-   <td colname="col2"> <p>Blockerat kund-ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Returneras när kund-ID:t har identifierats som skadligt och har lagts till i en blockeringslista. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>304 </p> </td> 
-   <td colname="col2"> <p>ID för blockerad datakälla: <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Returneras när datakällans ID har identifierats som skadligt och har lagts till i en blockeringslista </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>306 </p> </td> 
-   <td colname="col2"> <p>Blockerat deklarerat enhets-ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>Enhets-ID:t har identifierats som skadligt och har lagts till i en blockeringslista Det här kan hända om vi får ett mycket stort antal <span class="wintitle"> DCS</span>-begäranden som innehåller det här enhets-ID:t på kort tid. </p> </td>
-  </tr>
-  <tr> 
-   <td colname="col1"> <p>307 </p> </td> 
-   <td colname="col2"> <p>Åtgärd för blockerad profil för <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>En läs-/skrivåtgärd har blockerats eftersom ett ID har identifierats som skadligt och har lagts till i blockeringslista Se felkod 306. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>309 </p> </td> 
-   <td colname="col2"> <p>Kund-ID:t <code><i>ID</i></code> ignorerades eftersom det överskred gränsen för deklarerade kund-ID:n per begäran </p> </td> 
-   <td colname="col3"> <p>Relaterat till fel 301. Det här felet anger vilket kund-ID som ignorerades eftersom gränsen överskreds. </p> <p>Om till exempel 12 kund-ID har deklarerats för <span class="wintitle"> DCS</span> -anropet, kommer två av dem att ignoreras. För att kunna meddela vilka som har ignorerats visas det här felet två gånger i svaret (en gång för varje ignorerat kund-ID). </p> </td>
-  </tr>
-  <tr> 
-   <td colname="col1"> <p>310 </p> </td> 
-   <td colname="col2"> <p>Kund-ID ignorerades eftersom det överskred gränsen för ett givet namnutrymme. Namnområdes-ID är <code><i>ID</i></code>, kund-ID är <code><i>ID</i></code>. </p> </td> 
-   <td colname="col3"> <p>Den här felkoden returneras om fler än tre kund-ID har deklarerats för samma namnområde (<code> DPID</code>) i ett <span class="wintitle"> DCS</span> -anrop. </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one </code> </p> <p>I det här exemplet på <span class="wintitle"> DCS</span>-begäran finns det 4 ID:n deklarerade för samma namnutrymme (med integreringskoden 1). Ett av ID:na ignoreras och fel 310 returneras. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>311 </p> </td> 
-   <td colname="col2"> <p>Begäran innehåller ogiltiga parametrar </p> </td> 
-   <td colname="col3"> <p><span class="wintitle"> DCS</span> returnerar den här felkoden när minst en URL-parameter inte är korrekt kodad. I det här fallet ignorerar <span class="wintitle"> DCS</span> hela begäran. </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%esid!&amp;d_creative=%ecid!&amp;d_adgroup=%eaid!&amp;d_placement=%epid!&amp;d_campaign=%ebuy!&amp;d_adsrc=48123</code> </p> <p>I exempelbegäran ovan är sekvensen <code> %</code> felaktigt kodad. Därför ignorerar <span class="wintitle"> DCS</span> den. </p> <p>Det korrekt kodade exemplet ska se ut så här: </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%25esid!&amp;d_creative=%25ecid!&amp;d_adgroup=%25eaid!&amp;d_placement=%25epid!&amp;d_campaign=%25ebuy!&amp;d_adsrc=48123</code> </p> </td> 
-  </tr>
-  <tr> 
-   <td colname="col1"> <p>312 </p> </td> 
-   <td colname="col2"> <p>Begäran innehåller ett ogiltigt globalt enhets-ID </p> </td> 
-   <td colname="col3"> <p><span class="wintitle">DCS</span> returnerar den här felkoden när begäran innehåller ett ogiltigt globalt enhets-ID. DCS ignorerar det ogiltiga ID:t och genererar ett 312-fel tillsammans med de specifika felen för det ogiltiga ID:t. Se <a href="../../../features/global-data-sources.md" format="dita" scope="local">Globala datakällor</a> och <a href="../../../reference/ids-in-aam.md" format="dita" scope="local">Index med ID:n i Audience Manager</a> för detaljerad information om rätt ID-format för enhetsannonsering och motsvarande globala datakällor.</p>
-   <p>Exempel på ett felaktigt anrop: <code>"http://partner.demdex.net/event?d_rtbd=json&d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
-   <p>Förklaring: En <span class="keyword">IDFA (DPID 20915)</span> måste vara ett versalt ID. ID:t som angavs i begäran är gemener.</p>
-   </td>
-  </tr>
-   <tr> 
-   <td colname="col1"> <p>313 </p> </td> 
-   <td colname="col2"> <p>CMP ID finns inte i GCL</p> </td> 
-   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av ett CMP-ID som inte finns i Audience Manager cachelagrade version av den globala CMP-listan vid tidpunkten för utvärderingen, tar Audience Manager-plugin-programmet för IAB TCF bort IAB TC-strängen och bearbetar begäran som vanligt. IAB TCF v2.2 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p>
-   </td>
-  </tr>
-   <tr> 
-   <td colname="col1"> <p>314 </p> </td> 
-   <td colname="col2"> <p>CMP ID har markerats som borttaget i GCL</p> </td> 
-   <td colname="col3"> <p>När <code>gdpr=1</code> och IAB TC-strängen genereras av en CMP som har markerats som borttagen i vår cachelagrade version av Global CMP-listan, ignorerar Audience Manager-plugin-programmet för IAB TCF TC-strängen och bearbetar begäran som vanligt, om utvärderingstiden är förbi raderingstiden från den globala CMP-listan. IAB TCF v2.2 ${GDPR}-makrot är inställt på 0 och ${GDPR_CONSENT_XXX}-makrot är tomt.</p></td>
-  </tr>
-   <tr> 
-   <td colname="col1"> <p>315 </p> </td> 
-   <td colname="col2"> <p>Godkännandesträngen anger inget samtycke</p> </td> 
-   <td colname="col3"> <p>När inget medgivande ges, kommer Audience Manager-plugin-programmet för IAB TCF att stoppa användaren från ytterligare datainsamling eller helt koppla från samtalet om inget partnersammanhang hittas.</p>
-   </td>
-  </tr>
- </tbody>
-</table>
+| Kod-ID | Meddelande | Beskrivning |
+| --- | --- | --- |
+| 300 | Ogiltigt kund-ID `_ID_` | Kund-ID är ogiltigt (värden saknas för datakälla, integreringskoder saknas, ogiltigt format för datakällor, blockerat kund-ID, tomt kund-ID, oauktoriserat åtkomstförsök till en datakälla som inte tillhör partnern). |
+| 301 | Det högsta antalet kund-ID:n har överskridits. Högsta tillåtna antal är `_maximum allowed_`. `_maximum found_` hittades. | Antalet kund-ID:n som är associerade med en datakälla mellan olika enheter överskrider det tillåtna antalet korsenhets-ID:n per begäran. Dessa ID:n omfattar enhets-, mobil- eller cookie-ID:n. Gränsen är för närvarande 10. |
+| 302 | Oauktoriserat kund-ID `_ID_` | Returneras när kundens ID-datakälla inte ägs av det aktuella organisations-ID:t. Om du inte känner till eller har ditt organisations-ID kan du läsa avsnittet Hitta ditt företags-ID i [Organisationer och Kontolänkning](https://experiencecloud.adobe.com/resources/help/en_US/mcloud/organizations.html) för mer information om hur du hittar det. |
+| 303 | Blockerat kund-ID `_ID_` | Returneras när kund-ID:t har identifierats som skadligt och har lagts till i en blockeringslista. |
+| 304 | ID för blockerad datakälla: `_ID_` | Returneras när datakällans ID har identifierats som skadligt och har lagts till i en blockeringslista |
+| 306 | Blockerat deklarerat enhets-ID `_ID_` | Enhets-ID:t har identifierats som skadligt och har lagts till i en blockeringslista Det här kan hända om vi tar emot ett mycket stort antal DCS-begäranden som innehåller detta enhets-ID på kort tid. |
+| 307 | Åtgärd för blockerad profil för `_ID_` | En läs-/skrivåtgärd har blockerats eftersom ett ID har identifierats som skadligt och har lagts till i blockeringslista Se felkod 306. |
+| 309 | Kund-ID:t `_ID_` ignorerades eftersom det överskred gränsen för deklarerade kund-ID:n per begäran | Relaterat till fel 301. Det här felet anger vilket kund-ID som ignorerades eftersom gränsen överskreds.<br><br>Om till exempel 12 kund-ID har deklarerats i DCS-anropet kommer två av dem att ignoreras. För att kunna meddela vilka som har ignorerats visas det här felet två gånger i svaret (en gång för varje ignorerat kund-ID). |
+| 310 | Kund-ID ignorerades eftersom det överskred gränsen för ett givet namnutrymme. Namnområdes-ID är `_ID_`, kund-ID är `_ID_`. | Den här felkoden returneras om fler än tre kund-ID har deklarerats för samma namnområde ( `DPID`) i ett DCS-anrop.<br><br>`https://partner.demdex.net/event?d_rtbd=json&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one`<br><br>I det här exemplet på DCS-begäran finns det 4 ID:n deklarerade för samma namnutrymme (med integreringskoden 1). Ett av ID:na ignoreras och fel 310 returneras. |
+| 311 | Begäran innehåller ogiltiga parametrar | DCS returnerar den här felkoden när minst en URL-parameter inte är korrekt kodad. I det här fallet ignorerar DCS hela begäran.<br><br>`http(s)://partner.demdex.net/event?d_event=imp&d_rtbd=json&d_src=38454&d_site=%esid!&d_creative=%ecid!&d_adgroup=%eaid!&d_placement=%epid!&d_campaign=%ebuy!&d_adsrc=48123`<br><br>I exempelbegäran ovan är `%`-sekvensen felaktigt kodad. DCS kommer därför att bortse från det.<br><br>Det korrekt kodade exemplet ska se ut så här:<br><br>`http(s)://partner.demdex.net/event?d_event=imp&d_rtbd=json&d_src=38454&d_site=%25esid!&d_creative=%25ecid!&d_adgroup=%25eaid!&d_placement=%25epid!&d_campaign=%25ebuy!&d_adsrc=48123` |
+| 312 | Begäran innehåller ett ogiltigt globalt enhets-ID | DCS returnerar den här felkoden när begäran innehåller ett ogiltigt globalt enhets-ID. DCS ignorerar det ogiltiga ID:t och genererar ett 312-fel tillsammans med de specifika felen för det ogiltiga ID:t. Se [Globala datakällor](../../../features/global-data-sources.md) och [Index med ID:n i Audience Manager](../../../reference/ids-in-aam.md) för detaljerad information om rätt ID-format för enhetsannonsering och motsvarande globala datakällor.<br><br>Exempel på ett felaktigt anrop: `"http://partner.demdex.net/event?d_rtbd=json&d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"`<br><br>Förklaring: En IDFA (DPID 20915) måste vara ett versalt ID. ID:t som angavs i begäran är gemener. |
+| 313 | CMP ID finns inte i GCL | När `gdpr=1` och IAB TC-strängen genereras av ett CMP-ID som inte finns i Audience Manager cachelagrade version av den globala CMP-listan vid tidpunkten för utvärderingen, tar Audience Manager-plugin-programmet för IAB TCF bort IAB TC-strängen och bearbetar begäran som vanligt. IAB TCF v2.2 ${GDPR}-makrot är inställt på 0 och ${GDPR\_CONSENT\_XXX}-makrot är tomt. |
+| 314 | CMP ID har markerats som borttaget i GCL | När `gdpr=1` och IAB TC-strängen genereras av en CMP som har markerats som borttagen i vår cachelagrade version av Global CMP-listan, ignorerar Audience Manager-plugin-programmet för IAB TCF TC-strängen och bearbetar begäran som vanligt, om utvärderingstiden är förbi raderingstiden från den globala CMP-listan. IAB TCF v2.2 ${GDPR}-makrot är inställt på 0 och ${GDPR\_CONSENT\_XXX}-makrot är tomt. |
+| 315 | Godkännandesträngen anger inget samtycke | När inget medgivande ges, kommer Audience Manager-plugin-programmet för IAB TCF att stoppa användaren från ytterligare datainsamling eller helt koppla från samtalet om inget partnersammanhang hittas. |
 
 ## Exempel på felkodmeddelanden {#sample-error-codes}
 
