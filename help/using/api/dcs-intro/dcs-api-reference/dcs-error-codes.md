@@ -4,7 +4,7 @@ title: Felkoder, meddelanden och exempel för DCS
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 exl-id: 485e5ce2-143e-4d18-b157-c243c5a510ad
-source-git-commit: 5044a38c751abace922008f00b9ff463ea9c7e57
+source-git-commit: 2012c244f6fa5ca01c7e2719ce621214cb22f93e
 workflow-type: tm+mt
 source-wordcount: '1517'
 ht-degree: 2%
@@ -23,7 +23,7 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
 |---|---|---|
 | 0 | Ospecificerat fel | Detta är ett catch-all-fel som hanterar händelser som inte täcks av de andra felhanterarna. Det är svårt att felsöka det här felet. Den kan orsakas av en mängd okända åtgärder eller händelser. Om du får det här felet kan du försöka med din [!DNL DCS]-begäran igen. Kontakta din [!DNL Adobe]-representant om problemet kvarstår. |
 | 1 | Det gick inte att hitta konfigurationen för värdnamnet: `hostname` | Värdnamnet som skickades i begäran har inte konfigurerats av vårt team för partneretablering. Kontakta din [!DNL Adobe]-representant om det här felmeddelandet visas. |
-| 2 | Ogiltigt `d_orgid`-värde (det gick inte att hitta någon konfiguration för detta organisations-ID): `ID` | Organisations-ID:t är felaktigt. Kontrollera ditt ID och försök igen. Om du inte känner till eller har ditt företags-ID kan du läsa avsnittet Administrationssida [Organisationer och kontolänkning](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=sv-SE) för mer information om hur du hittar det. |
+| 2 | Ogiltigt `d_orgid`-värde (det gick inte att hitta någon konfiguration för detta organisations-ID): `ID` | Organisations-ID:t är felaktigt. Kontrollera ditt ID och försök igen. Om du inte känner till eller har ditt företags-ID kan du läsa avsnittet Administrationssida [Organisationer och kontolänkning](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html) för mer information om hur du hittar det. |
 | 10 | Det går inte att utvärdera egenskaper | Förfrågans egenskaper har antingen utvärderats delvis eller inte utvärderats alls. Kontakta din [!DNL Adobe]-representant om problemet kvarstår. |
 
 ## Felkoder för integrering {#integration-error-codes}
@@ -181,7 +181,7 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
   <tr> 
    <td colname="col1"> <p>310 </p> </td> 
    <td colname="col2"> <p>Kund-ID ignorerades eftersom det överskred gränsen för ett givet namnutrymme. Namnområdes-ID är <code><i>ID</i></code>, kund-ID är <code><i>ID</i></code>. </p> </td> 
-   <td colname="col3"> <p>Den här felkoden returneras om fler än tre kund-ID har deklarerats för samma namnområde (<code> DPID</code>) i ett <span class="wintitle"> DCS</span> -anrop. </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one </code> </p> <p>I det här exemplet på <span class="wintitle"> DCS</span>-begäran finns det 4 ID:n deklarerade för samma namnutrymme (med integreringskoden 1). Ett av ID:na ignoreras och fel 310 returneras. </p> </td> 
+   <td colname="col3"> <p>Den här felkoden returneras om fler än tre kund-ID har deklarerats för samma namnområde (<code> DPID</code>) i ett <span class="wintitle"> DCS</span> -anrop. </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>I det här exemplet på <span class="wintitle"> DCS</span>-begäran finns det 4 ID:n deklarerade för samma namnutrymme (med integreringskoden 1). Ett av ID:na ignoreras och fel 310 returneras. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>311 </p> </td> 
@@ -192,7 +192,7 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
    <td colname="col1"> <p>312 </p> </td> 
    <td colname="col2"> <p>Begäran innehåller ett ogiltigt globalt enhets-ID </p> </td> 
    <td colname="col3"> <p><span class="wintitle">DCS</span> returnerar den här felkoden när begäran innehåller ett ogiltigt globalt enhets-ID. DCS ignorerar det ogiltiga ID:t och genererar ett 312-fel tillsammans med de specifika felen för det ogiltiga ID:t. Se <a href="../../../features/global-data-sources.md" format="dita" scope="local">Globala datakällor</a> och <a href="../../../reference/ids-in-aam.md" format="dita" scope="local">Index med ID:n i Audience Manager</a> för detaljerad information om rätt ID-format för enhetsannonsering och motsvarande globala datakällor.</p>
-   <p>Exempel på ett felaktigt anrop: <code>"http://partner.demdex.net/event?d_rtbd=json&d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
+   <p>Exempel på ett felaktigt anrop: <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
    <p>Förklaring: En <span class="keyword">IDFA (DPID 20915)</span> måste vara ett versalt ID. ID:t som angavs i begäran är gemener.</p>
    </td>
   </tr>
@@ -213,8 +213,7 @@ I tabellerna nedan representerar *kursiv* en variabelplatshållare.
    <td colname="col3"> <p>När inget medgivande ges, kommer Audience Manager-plugin-programmet för IAB TCF att stoppa användaren från ytterligare datainsamling eller helt koppla från samtalet om inget partnersammanhang hittas.</p>
    </td>
   </tr>
-
-</tbody>
+ </tbody>
 </table>
 
 ## Exempel på felkodmeddelanden {#sample-error-codes}
