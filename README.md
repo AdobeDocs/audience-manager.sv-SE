@@ -7,4 +7,4 @@ ht-degree: 0%
 ---
 # ARKIVERAD
 
-Den här versionen migreras till <https://github.com/Adobe-Enterprise-Docs/audience-manager.en>.
+Den här versionen migreras till <https://github.com/Adobe-Enterprise-Docs/audience-manager.sv-SE>.
